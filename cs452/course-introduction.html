@@ -452,7 +452,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_virtualizing_memory">Virtualizing Memory</a></li>
 <li><a href="#_concurrency">Concurrency</a></li>
 <li><a href="#_persistence">Persistence</a></li>
-<li><a href="#_thousands_of_operating_systems">Thousands of Operating Systems</a>
+<li><a href="#_tools">Tools</a></li>
+<li><a href="#_virtual_machine">Virtual Machine</a></li>
+<li><a href="#_operating_systems">Operating Systems</a>
 <ul class="sectlevel2">
 <li><a href="#_monolithic_posixunix_kernel">Monolithic POSIX/Unix Kernel</a></li>
 <li><a href="#_unikernel">Unikernel</a></li>
@@ -505,11 +507,6 @@ that each process has access to 100% of the machine memory.</p>
 <p>The operating system is also responsible for protecting processes from each other. You don&#8217;t want
 your errant program that has a segfault to take down your entire machine!</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="images/virtual_memory.jpg" alt="Virtual memory Diagram">
-</div>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -542,11 +539,66 @@ pieces of hardware in exactly the same way!</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_thousands_of_operating_systems">Thousands of Operating Systems</h2>
+<h2 id="_tools">Tools</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>A small collection of research, hobby, and production operating systems. Some of these are in active
-development some have been abandoned years ago.</p>
+<p>In order to work on all the projects this semester you have several options.
+I have listed all the different options that you can use this semester.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Use <a href="https://github.com/features/codespaces">Github Codespaces</a></p>
+</li>
+<li>
+<p>Install Linux in a <a href="#_virtual_machine">Virtual Machine</a></p>
+</li>
+<li>
+<p>Install an Emulator</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><a href="https://bochs.sourceforge.io/">bochs emulator</a></p>
+</li>
+<li>
+<p><a href="https://www.qemu.org/">qemu</a></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Come in and use the Lab machines directly</p>
+</li>
+<li>
+<p>Code remotely using ssh!</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_virtual_machine">Virtual Machine</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>One of the biggest barriers to getting started is to get all your tools
+installed and configured correctly.  While it is certainly possible to develop
+on any platform (Windows, OSX, BSD, etc.), developing on Linux is by far the
+quickest and easiest method. Thus if you want to jump right in and start writing
+code without getting all your tools configured and your development machine is
+not running Linux you can start developing in a Virtual machine. Once you get
+some experience with the tools and process you should be able to setup any
+machine to do OS development on.  Instructions for getting a VM up and running
+are available
+<a href="https://docs.google.com/document/d/1qmOEfgJ0d_-mVFotFbRgInRVfINe98rU-Z6TJiiTMck/edit?usp=sharing">here</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_operating_systems">Operating Systems</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A small collection of research, hobby, and production operating systems. Some of
+these are in active development some have been abandoned years ago.</p>
 </div>
 <div class="sect2">
 <h3 id="_monolithic_posixunix_kernel">Monolithic POSIX/Unix Kernel</h3>
@@ -658,7 +710,7 @@ teaching operating systems</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-05-04 21:24:09 UTC
+Last updated 2023-05-05 00:53:38 UTC
 </div>
 </div>
 </body>

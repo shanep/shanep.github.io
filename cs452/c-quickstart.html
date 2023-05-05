@@ -466,6 +466,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#_structures">Structures</a></li>
+<li><a href="#_compilation_process">Compilation process</a>
+<ul class="sectlevel2">
+<li><a href="#_building_code">Building code</a></li>
+<li><a href="#_cross_compiler">Cross-compiler</a></li>
+</ul>
+</li>
 <li><a href="#_the_c_unstandard">The C (un)standard</a></li>
 <li><a href="#_references">References</a></li>
 </ul>
@@ -493,7 +499,7 @@ will visit the topic of <em>declaration</em> and <em>definition</em> throughout 
 <div class="paragraph">
 <p>This document is by no means an exhaustive reference for the C language, its purpose is to help
 refresh your previous experience with C and point out common pitfalls that plague students. Several
-very thorough treatises of the C language are listed in the <a href="#references">references</a> section below
+very thorough treatises of the C language are listed in the <a href="#_references">References</a> section below
 for those who want to dig deeper.</p>
 </div>
 </div>
@@ -806,6 +812,110 @@ fooptr-&gt;y;</code></pre>
 </div>
 </div>
 <div class="sect1">
+<h2 id="_compilation_process">Compilation process</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In C the compilation process is slightly more complex than Java and has multiple
+stages. It is important to understand the stages that your code goes through
+during the process so you can differentiate between compilation problems and
+linking problems.  When compiling your code you should <strong>always</strong> enable as many
+warnings as possible and should treat warnings as errors.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/c_compile.svg" alt="Compiling C Code">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_building_code">Building code</h3>
+<div class="paragraph">
+<p>If your program consists of one .c file and one .h file then it is possible to
+build everything by hand. However, things get very complex once you start to add
+more files into the process thus another tool must be used to drive everything.
+There are hundreds of options available to build a C code base. For this class
+we will use <a href="https://cmake.org">cmake</a> . While cmake is not a perfect system it is
+generally available everywhere and is good enough for our purposes.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cross_compiler">Cross-compiler</h3>
+<div class="paragraph">
+<p>Compiling an OS requires us to use a cross-compiler. Your system compiler is
+setup to create binaries that will run on the host OS. If we don&#8217;t have a
+cross-compiler then we will likely generate binaries that will not run on bare
+metal because we will either be missing some of the required components (libc,
+headers, runtime, etc), the generated code will be for the wrong architecture
+(arm, x86_64, i386, etc.), or a multitude of other subtle issues that can trip
+us up.</p>
+</div>
+<div class="paragraph">
+<p>If we were using the <a href="https://gcc.gnu.org/">GCC compiler collection</a> and we wanted
+to cross compile we would need to install the appropriate cross compiler using
+the systems package manger or build our own. On the other hand if we use the
+LLVM compiler infrastructure project we get a
+<a href="https://clang.llvm.org/docs/CrossCompilation.html">cross-compiler</a> out of the
+box. Either way we will need to know what our
+<a href="https://clang.llvm.org/docs/CrossCompilation.html#target-triple">target triple</a>
+is so we can make sure the compiler produces the correct object code which we
+can then pass to the linker to create our final kernel image.</p>
+</div>
+<div class="paragraph">
+<p>The format of a target triple is <code>&lt;arch&gt;&lt;sub&gt;-&lt;vendor&gt;-&lt;sys&gt;-&lt;abi&gt;</code>. For our OS
+this will be i386-pc-none-elf. Which breaks down as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>arch</code> = <code>i386</code> - We will target the i386 CPU</p>
+</li>
+<li>
+<p><code>sub</code> = not necessary for i386</p>
+</li>
+<li>
+<p><code>vendor</code>= <code>pc</code> - we will use the generic pc vendor</p>
+</li>
+<li>
+<p><code>sys</code> = <code>none</code> - we are building our own so set to none.</p>
+</li>
+<li>
+<p><code>abi</code> = <code>elf</code> - Use the elf abi</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>We can browse all the different options that LLVM supports by reading the
+<a href="https://llvm.org/doxygen/Triple_8h_source.html">docs</a>.</p>
+</div>
+<div class="paragraph">
+<p>In addition to having a cross-compiler we will need to have a linker that is
+capable of generating a raw binary image that can be loaded into a specific
+offset into memory. When we boot up a machine the kernel needs to know where in
+memory it will be loaded so all memory addresses are correct so instructions
+like <code>jmp</code> will jump to the correct spot! The LLVM project has a linker called
+<a href="https://lld.llvm.org/">lld</a> that is a drop in replacement for system linkers and
+can generate the correct raw binary image.</p>
+</div>
+<div class="paragraph">
+<p>Now that we know what we need we can get installing!</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ sudo apt update
+$ sudo apt install build-essential clang lld
+$ clang --version
+clang version 10.0.0-4ubuntu1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+
+$ ld.lld --version
+LLD 10.0.0 (compatible with GNU linkers)</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_the_c_unstandard">The C (un)standard</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -841,9 +951,6 @@ within the kernel as a matter of course.</p>
 </div>
 </blockquote>
 </div>
-<div class="paragraph">
-<p>Fun stuff!</p>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -866,6 +973,19 @@ within the kernel as a matter of course.</p>
 <li>
 <p><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-api.pdf">OSTEP ch 14</a></p>
 </li>
+<li>
+<p><a href="https://software.intel.com/content/www/us/en/develop/download/intel-64-and-ia-32-architectures-sdm-combined-volumes-1-2a-2b-2c-2d-3a-3b-3c-3d-and-4.html">Intel® 64 and IA-32 Architectures
+Software Developer&#8217;s Manual</a></p>
+</li>
+<li>
+<p><a href="https://www.nasm.us/xdoc/2.15.05/html/">NASM Manual</a></p>
+</li>
+<li>
+<p><a href="https://www.gnu.org/software/make/manual/html_node/index.html">GNU make</a></p>
+</li>
+<li>
+<p><a href="https://clang.llvm.org/docs/ClangCommandLineReference.html">Clang command line documentation</a></p>
+</li>
 </ul>
 </div>
 </div>
@@ -873,7 +993,7 @@ within the kernel as a matter of course.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-05-04 21:24:09 UTC
+Last updated 2023-05-05 00:53:38 UTC
 </div>
 </div>
 </body>

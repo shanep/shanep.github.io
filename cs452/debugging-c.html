@@ -447,13 +447,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_memory_errors">Memory Errors</a>
-<ul class="sectlevel2">
-<li><a href="#_address_sanitizer">Address sanitizer</a></li>
-<li><a href="#_valgrind">Valgrind</a></li>
-<li><a href="#_avoid_shooting_yourself_in_the_foot">Avoid shooting yourself in the foot</a></li>
-</ul>
-</li>
 <li><a href="#_dumping_deadlocked_threads_with_gdb">Dumping deadlocked threads with GDB</a>
 <ul class="sectlevel2">
 <li><a href="#_get_the_pid_of_the_process">Get the PID of the process</a></li>
@@ -466,163 +459,34 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_memory_errors">Memory Errors</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>We will look at a few open source tools that you can use to help track down and solve memory errors
-in C and C&#43;&#43;.  Due to the  unsafe nature of these languages we need to be extra careful not to let
-latent memory bugs creep into our code. Luckily, there have been lots of tools developed over the
-years that can help us track down these errors.</p>
-</div>
-<div class="paragraph">
-<p>While it may be tempting to just eschew C and C&#43;&#43;  for a more modern language that has reduced or
-eliminated these types of errors, that may not always be practical because of your working domain.
-For example, some micro controllers may have an instruction set architecture (ISA) that a newer
-language such as Rust can&#8217;t even generate code for, so your ony choice is to use the software
-development kit (SDK) that is provided by the manufacturer which is most certainly written in C!</p>
-</div>
-<div class="paragraph">
-<p>Finally, even if everyone in the world stopped creating any <strong>new</strong> projects in C and C&#43;&#43; there are
-still <strong>billions</strong> of lines of existing C and C&#43;&#43; code that can&#8217;t be replaced overnight. So the need
-to maintain, update, and port existing C and C&#43;&#43; code bases will remain an active area of
-development for the forseeable future.</p>
-</div>
-<div class="sect2">
-<h3 id="_address_sanitizer">Address sanitizer</h3>
-<div class="paragraph">
-<p>According to the LLVM documentation <a href="https://clang.llvm.org/docs/AddressSanitizer.html">Address
-Sanitizer</a> is a fast memory error detector. It
-consists of a compiler instrumentation module and a run-time library. Address sanitizer should <a href="https://www.openwall.com/lists/oss-security/2016/02/17/9">not
-be used in production</a>, it is a development
-tool to help the engineer track down memory issues when developing code or tracking down elusive
-bugs.</p>
-</div>
-<div class="paragraph">
-<p>One of the best uses of address sanitizer is to use it while unit testing your code to make sure
-and catch any low hanging fruit. The tool can detect the following types of bugs:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Out-of-bounds accesses to heap, stack and globals</p>
-</li>
-<li>
-<p>Use-after-free</p>
-</li>
-<li>
-<p>Use-after-return (clang flag -fsanitize-address-use-after-return=(never|runtime|always) default:
-runtime)</p>
-</li>
-<li>
-<p>Enable runtime with: ASAN_OPTIONS=detect_stack_use_after_return=1</p>
-</li>
-<li>
-<p>Use-after-scope (clang flag -fsanitize-address-use-after-scope)</p>
-</li>
-<li>
-<p>Double-free, invalid free</p>
-</li>
-<li>
-<p>Memory leaks (experimental and currently only on linux)</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Here is an example of using address sanitizer (from the llvm docs):</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-c" data-lang="c">% cat example_UseAfterFree.cc
-int main(int argc, char **argv) {
-  int *array = new int[100];
-  delete [] array;
-  return array[argc];  // BOOM
-}
-
-# Compile and link
-% clang++ -O1 -g -fsanitize=address -fno-omit-frame-pointer example_UseAfterFree.cc</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_valgrind">Valgrind</h3>
-<div class="paragraph">
-<p><a href="https://valgrind.org/">Valgrind</a> is an awesome tool that can detect <a href="https://github.com/google/sanitizers/wiki/AddressSanitizerComparisonOfMemoryTools">most, but not
-all</a>, of the same
-type of errors that Address Sanitizer can. The biggest difference is Valgrind doesn&#8217;t have to be
-compiled into your binary, so if you don&#8217;t have the source code to a particular component you can
-still debug issues with valgrind. Valgrind acts as a virtual machine that dynamically recompiles the
-code during runtime. This adds considerable overhead to your program and can slow down execution by
-as much as 20x. While valgrind can&#8217;t detect all errors it can help you track down read/write errors
-and memory leaks without having to recompile your executable. This is nice if you have a nasty bug
-that only shows up in a release build but disappears in debug builds.</p>
-</div>
-<div class="paragraph">
-<p>You should not use valgrind on executables that are already compiled with address sanitizer. You
-will not get <em>better</em> detection it will just slow down your code even more and make your life more
-difficult. A good approach is to use Address Sanitizer on debug builds and Valgrind on release
-builds where address sanitizer has been disabled.</p>
-</div>
-<div class="paragraph">
-<p>After you run your program valgrind will report any leaks or errors after your program exits.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">All heap blocks were freed -- no leaks are possible
-ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Anything else in the valgrind output indicates that you have an error and it must be fixed no matter
-how minor.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_avoid_shooting_yourself_in_the_foot">Avoid shooting yourself in the foot</h3>
-<div class="paragraph">
-<p>One of the easiest ways to prevent memory related errors is to just avoid (to
-the greatest extent possible) some of the more dangerous and poorly designed
-parts of C and the C standard library. Remember that C was invented in a simpler
-time and was a vast improvement over writing raw assembly at the time. So while
-some things may seem obvious now, remember we have the advantage of hindsight!</p>
-</div>
-<div class="paragraph">
-<p>In the last 40+ years much has been learned about writing secure code and we
-should take advantage of those lessons learned. While it would be great to just
-remove all the legacy cruft and start new, there is simply too much code in the
-world that still depends on some unsafe and poorly designed API&#8217;s. So while we
-can&#8217;t remove the old cruft, we can still avoid using anything dangerous in any
-<strong>new</strong> code that is written.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="_dumping_deadlocked_threads_with_gdb">Dumping deadlocked threads with GDB</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>When you are working on multi-threaded programs it is pretty easy to get into a deadlocked scenario.
-Debugging multi-threaded programs can be difficult because running your program under the debugger
-can change the timing of your code and thus make the issue go away. So sometimes the only way to see
-where your program is stuck is to attach a debugger post mortem and dump out the threads.</p>
+<p>When you are working on multi-threaded programs it is pretty easy to get into a
+deadlocked scenario. Debugging multi-threaded programs can be difficult because
+running your program under the debugger can change the timing of your code and
+thus make the issue go away. So sometimes the only way to see where your program
+is stuck is to attach a debugger post mortem and dump out the threads.</p>
 </div>
 <div class="paragraph">
-<p>So assuming you have a program that you ran and it is currently stuck somewhere here are the steps
-to at least see where it is stuck which can help you fix the issue!</p>
+<p>So assuming you have a program that you ran and it is currently stuck somewhere
+here are the steps to at least see where it is stuck which can help you fix the
+issue!</p>
 </div>
 <div class="sect2">
 <h3 id="_get_the_pid_of_the_process">Get the PID of the process</h3>
 <div class="paragraph">
-<p>Before you attach a debugger you want to confirm that your program is completely stopped and you
-want to get the pid of the program so you can attach to it. Open up a second terminal and run the
-command <code>ps ux</code> and look for your program. If you can&#8217;t find your program you can try <code>ps aux</code> which will
-output all users. If you still cant find it make sure that your program hasn&#8217;t exited.
-<strong>NOTE:</strong> You can not attach to another users program unless you have access to the
-root account, you can only attach to your programs.</p>
+<p>Before you attach a debugger you want to confirm that your program is completely
+stopped and you want to get the pid of the program so you can attach to it. Open
+up a second terminal and run the command <code>ps ux</code> and look for your program. If
+you can&#8217;t find your program you can try <code>ps aux</code> which will output all users. If
+you still cant find it make sure that your program hasn&#8217;t exited. <strong>NOTE:</strong> You
+can not attach to another users program unless you have access to the root
+account, you can only attach to your programs.</p>
 </div>
 <div class="paragraph">
-<p>In the example below you can see the program <code>./mylab -c 3 -p 8 -i 100 -s 5</code> with PID <strong>254167</strong> is
-what we want to debug.</p>
+<p>In the example below you can see the program <code>./mylab -c 3 -p 8 -i 100 -s 5</code>
+with PID <strong>254167</strong> is what we want to debug.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -644,15 +508,17 @@ shanepa+ 254514  0.0  0.0 166156  2392 pts/6    R+   11:36   0:00 ps ux</code></
 <div class="sect2">
 <h3 id="_attach_to_the_process">Attach to the process</h3>
 <div class="paragraph">
-<p>In the same terminal that you ran the <code>ps ux</code> command start gdb and attach to the process  with the
-PID that you found in step 1. Once you have attached to the process issue the command
-<code>thread apply all bt</code> where <code>bt</code> stands for backtrace applied to all the current threads.</p>
+<p>In the same terminal that you ran the <code>ps ux</code> command start gdb and attach to
+the process  with the PID that you found in step 1. Once you have attached to
+the process issue the command <code>thread apply all bt</code> where <code>bt</code> stands for
+backtrace applied to all the current threads.</p>
 </div>
 <div class="paragraph">
-<p>The example below shows that we have 4 threads. Thread 1 is the main thread and we can see
-that it is waiting on a <code>pthread_join</code> which is expected so we don&#8217;t need to worry about Thread 1.
-Thread 2, 3, and 4 are all blocked on a condition variable and we can see in the stack trace
-they are all stuck in the <code>dequeue</code> function.</p>
+<p>The example below shows that we have 4 threads. Thread 1 is the main thread and
+we can see that it is waiting on a <code>pthread_join</code> which is expected so we don&#8217;t
+need to worry about Thread 1. Thread 2, 3, and 4 are all blocked on a condition
+variable and we can see in the stack trace they are all stuck in the <code>dequeue</code>
+function.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -718,10 +584,11 @@ Thread 1 (Thread 0x7f067f534740 (LWP 254167)):
 <div class="sect2">
 <h3 id="_debug_it">Debug it</h3>
 <div class="paragraph">
-<p>Now that we at least know <strong>where</strong> our process is stuck we can exam the code and come up with all the
-ways that this scenario could occur. Be aware that the issue may not be in the <code>dequeue</code> function!
-More likely than not the bug is somewhere else entirely. All this does is give you some insight
-into where your program is getting stuck <strong>NOT</strong> where the problem is!</p>
+<p>Now that we at least know <strong>where</strong> our process is stuck we can exam the code and
+come up with all the ways that this scenario could occur. Be aware that the
+issue may not be in the <code>dequeue</code> function! More likely than not the bug is
+somewhere else entirely. All this does is give you some insight into where your
+program is getting stuck <strong>NOT</strong> where the problem is!</p>
 </div>
 </div>
 </div>
@@ -729,7 +596,7 @@ into where your program is getting stuck <strong>NOT</strong> where the problem 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-05-04 21:24:09 UTC
+Last updated 2023-05-05 00:53:38 UTC
 </div>
 </div>
 </body>
