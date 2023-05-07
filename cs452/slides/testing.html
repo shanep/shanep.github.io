@@ -455,7 +455,16 @@ with gtest_main</p></div>
 <div class="ulist"><ul><li><p>Projects are setup with CMake to run all your tests</p></li><li><p>Run all your tests with <code>make test</code></p></li></ul></div>
 <div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-bash hljs" data-noescape="true" data-lang="bash">make test</code></pre></div></div></div></section>
 <section id="_questions"><h2>Questions?</h2></section>
-<section id="_references"><h2>References</h2><div class="slide-content"><div class="ulist"><ul><li><p><a href="https://ros-developer.com/2019/08/28/example-of-test-driven-development-with-c-and-google-test/">C and Google Test</a></p></li></ul></div></div></section></div></div><script src="/reveal.js/dist/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
+<section id="_references"><h2>References</h2><div class="slide-content"><div class="ulist"><ul><li><p><a href="https://ros-developer.com/2019/08/28/example-of-test-driven-development-with-c-and-google-test/">C and Google Test</a></p></li></ul></div></div></section>
+<section id="_in_class_activity"><h2>In Class Activity</h2><div class="slide-content"><div class="paragraph"><p>Generate as many test cases as possible for the following function.</p></div>
+<div class="listingblock"><div class="content"><pre class="highlightjs highlight"><code class="language-c hljs" data-noescape="true" data-lang="c">/**
+* Adds data to the front of the list
+*
+* @param list a pointer to an existing list.
+* @param data the data to add
+* @return A list pointer to the new head of the list
+*/
+LAB_EXPORT list_t *list_add(list_t *list, void *data);</code></pre></div></div></div></section></div></div><script src="/reveal.js/dist/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
   if (slide.getAttribute('data-background-color')) return;
   // user needs to explicitly say he wants CSS color to override otherwise we might break custom css or theme (#226)
   if (!(slide.classList.contains('canvas') || slide.classList.contains('background'))) return;
