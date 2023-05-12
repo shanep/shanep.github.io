@@ -413,9 +413,23 @@ ul.byline {
 ul.byline li + li {
   margin-top: 0.25em;
 }
-</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/v4-shims.min.css"></head><body><div class="reveal"><div class="slides"><section class="title" data-state="title"><h1>Scheduling</h1><h2>Introduction</h2><p class="byline">
+</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/v4-shims.min.css"><script>window.MathJax = {"tex":{"inlineMath":[["\\(", "\\)"]], "displayMath":[["\\[", "\\]"]], "processEscapes":false, "tags":"none"}, "options":{"ignoreHtmlClass":"nostem|nolatexmath"}, "asciimath":{"delimiters":[["\\$", "\\$"]]}, "loader":{"load":["input/asciimath", "output/chtml", "ui/menu"]}};</script><script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script></head><body><div class="reveal"><div class="slides"><section class="title" data-state="title"><h1>Scheduling</h1><h2>Introduction</h2><p class="byline">
   <span class="author">Shane K. Panter <a href="mailto:shanepanter@boisestate.edu">shanepanter@boisestate.edu</a></span>
-  </p></section></div></div><script src="/reveal.js/dist/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
+  </p></section><section id="_workload_assumptions"><h2>Workload Assumptions</h2><div class="slide-content"><div class="olist arabic"><ol class="arabic"><li><p>Each job runs for the same amount of time.</p></li><li><p>All jobs arrive at the same time.</p></li><li><p>Once started, each job runs to completion.</p></li><li><p>All jobs only use the CPU (i.e., they perform no I/O)</p></li><li><p>The run-time of each job is known.</p></li></ol></div></div></section>
+<section id="_scheduling_metrics"><h2>Scheduling Metrics</h2><div class="slide-content"><div class="ulist"><ul><li><p>\(T_{turnaround} = T_{completion} - T_{arrival} \)</p></li><li><p>Assume \(T_{arrival} = 0\)</p></li><li><p>Thus \(T_{turnaround} = T_{completion}\)</p></li></ul></div></div></section>
+<section><section id="_first_in_first_out_fifo"><h2>First In, First Out (FIFO)</h2><div class="slide-content"><div class="ulist"><ul><li><p>Most basic algorithm</p></li><li><p>Also know as First Come, First Served (FCFS)</p></li><li><p>Simple to implement</p></li><li><p>Not a great performer</p></li></ul></div></div></section><section id="_perfect"><h2>Perfect</h2><div class="slide-content"><div class="imageblock"><img src="images/fcfs-perfect.png" alt="FCFS"></div>
+<div class="paragraph"><p>\(T_{turnaround} = \frac{10+10+10}3 = 20\)</p></div></div></section><section id="_bad_performance"><h2>Bad Performance</h2><div class="slide-content"><div class="imageblock"><img src="images/fcfs-worst.png" alt="Bag"></div>
+<div class="paragraph"><p>\(T_{turnaround} = \frac{100+110+120}3 = 110\)</p></div></div></section></section>
+<section id="_shortest_job_first_sjf"><h2>Shortest Job First (SJF)</h2><div class="slide-content"><div class="imageblock"><img src="images/sjf.png" alt="sjf"></div>
+<div class="paragraph"><p>\(T_{turnaround} = \frac{10+20+120}3 = 50\)</p></div></div></section>
+<section><section id="_a_new_metric_response_time"><h2>A New Metric: Response Time</h2><div class="slide-content"><div class="ulist"><ul><li><p>\(T_{response} = T_{firstrun} - T_{arrival} \)</p></li></ul></div></div></section><section id="_details"><h2>Details</h2><div class="slide-content"><div class="imageblock"><img src="images/response-time.png" alt="response time"></div></div></section></section>
+<section id="_round_robin"><h2>Round Robin</h2><div class="slide-content"><div class="paragraph"><p>The basic idea is simple: instead of running jobs to completion, RR runs a job
+for a time slice (sometimes called a scheduling quantum) and then switches to
+the next job in the run queue</p></div></div></section>
+<section id="_advanced_algorithms"><h2>Advanced Algorithms</h2><div class="slide-content"><div class="paragraph"><p>All the algorithms discussed are fairly simple and modern operating systems use
+more advanced data structures such as a multi-level feedback queue to further
+improve performance!</p></div></div></section>
+<section id="_questions"><h2>Questions</h2></section></div></div><script src="/reveal.js/dist/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
   if (slide.getAttribute('data-background-color')) return;
   // user needs to explicitly say he wants CSS color to override otherwise we might break custom css or theme (#226)
   if (!(slide.classList.contains('canvas') || slide.classList.contains('background'))) return;
