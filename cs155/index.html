@@ -448,10 +448,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_catalog_description">Catalog Description</a></li>
 <li><a href="#_logistics">Logistics</a></li>
+<li><a href="#_catalog_description">Catalog Description</a></li>
 <li><a href="#_course_materials">Course Materials</a></li>
-<li><a href="#_grade_categories">Grade Categories</a></li>
+<li><a href="#_modules">Modules</a></li>
+<li><a href="#_assessments">Assessments</a>
+<ul class="sectlevel2">
+<li><a href="#_quizzes">Quizzes</a></li>
+<li><a href="#_participation">Participation</a></li>
+<li><a href="#_assignments">Assignments</a></li>
+<li><a href="#_final">Final</a></li>
+</ul>
+</li>
 <li><a href="#_grading_policy">Grading Policy</a>
 <ul class="sectlevel2">
 <li><a href="#_letter_grade">Letter Grade</a></li>
@@ -490,23 +498,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_student_well_being">Student Well-being</a></li>
 </ul>
 </li>
-<li><a href="#_schedule">Schedule</a></li>
-<li><a href="#_learning_objectives">Learning Objectives</a></li>
+<li><a href="#_learning_outcomes">Learning Outcomes</a>
+<ul class="sectlevel2">
+<li><a href="#_course_learning_outcomes">Course Learning Outcomes</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="_catalog_description">Catalog Description</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><strong>CS155 Introduction to Version Control</strong> (1-0-1)(F,S). Introduction to the
-central ideas, practices, and day to day usage of software version control using
-Git. Basic client side usage such as committing, branching, merging, and
-pull-requests will be explored. COREQ: CS153.</p>
-</div>
-</div>
-</div>
 <div class="sect1">
 <h2 id="_logistics">Logistics</h2>
 <div class="sectionbody">
@@ -611,40 +611,73 @@ Class Time
 </div>
 </div>
 <div class="sect1">
+<h2 id="_catalog_description">Catalog Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>CS155 Introduction to Version Control (1-0-1)(F,S).</strong> Introduction to the central ideas, practices, and day to day usage of software version control using Git. Basic client side usage such as committing, branching, merging, and pull-requests will be explored. COREQ: CS153.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_course_materials">Course Materials</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
 <p><a href="https://git-scm.com/book/en/v2">Pro Git (2nd edition)</a></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Scott Chacon and Ben Straub</p>
-</li>
-</ul>
-</div>
 </li>
 <li>
 <p><a href="https://drive.google.com/file/d/1nJ0XC0H7eI5I_g9WCqY9v-LlBMREaRBe/view?usp=share_link">The Linux Command Line</a></p>
-<div class="ulist">
-<ul>
-<li>
-<p>William Shotts</p>
-</li>
-</ul>
-</div>
 </li>
 <li>
 <p><a href="https://www.youtube.com/playlist?list=PLFziFbk-D-X3wbyZiKOu5aEcf9NGFUj8R">Course Videos</a></p>
+</li>
+<li>
+<p><a href="https://github.com/shanep?tab=repositories&amp;q=250&amp;type=&amp;language=&amp;sort=">Labs</a></p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_grade_categories">Grade Categories</h2>
+<h2 id="_modules">Modules</h2>
 <div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 5%;">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="course-introduction.html">Course Introduction</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="git-introduction.html">Git Introduction</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="git-basics.html">Git Basics</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="git-branching-and-merging.html">Branching and Merging</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="github.html">Github</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_assessments">Assessments</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Your final grade will be calculated with the following weights in canvas.</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -660,6 +693,36 @@ Class Time
 <p>Final - 20%</p>
 </li>
 </ul>
+</div>
+<div class="sect2">
+<h3 id="_quizzes">Quizzes</h3>
+<div class="paragraph">
+<p>There will be several quizzes over the assigned reading and general git usage.
+The quizzes are open notes and open book and must be done individually.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_participation">Participation</h3>
+<div class="paragraph">
+<p>This is an online asynchronous class, thus all of our interactions and
+participation will be done through canvas using discussion boards and video
+posts.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_assignments">Assignments</h3>
+<div class="paragraph">
+<p>This class is centered around hand on practice. There are several
+<a href="https://github.com/shanep?tab=repositories&amp;q=250&amp;type=&amp;language=&amp;sort=">Hands on
+Labs</a> that you will work on each week. You will get credit for doing the labs
+through canvas quizzes.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_final">Final</h3>
+<div class="paragraph">
+<p>We will have a take home final exam that must be done individually.</p>
+</div>
 </div>
 </div>
 </div>
@@ -963,7 +1026,7 @@ repository over the course of working on your project. For example if you have 3
 weeks to work on a project I should see a minimum of 3 commits (1 per week).</p>
 </div>
 <div class="paragraph">
-<p>The late policy does not apply to exams or quizzes. All exams and quizzes must
+<p><strong>The late policy does not apply to exams or quizzes</strong>. All exams and quizzes must
 be taken within the time frame specified on canvas. The secret code for the
 syllabus quiz is "green". Students are responsible for
 scheduling their own appointment in the testing center. If an emergency happens
@@ -1096,47 +1159,14 @@ immediately with Counseling Services (1529 Belmont Street, Norco Building) at
 </div>
 </div>
 <div class="sect1">
-<h2 id="_schedule">Schedule</h2>
+<h2 id="_learning_outcomes">Learning Outcomes</h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 10%;">
-<col>
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Module</th>
-<th class="tableblock halign-left valign-top">Topic</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="course-introduction.html">Course Introduction</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="git-introduction.html">Git Introduction</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="git-basics.html">Git Basics</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="git-branching-and-merging.html">Branching and Merging</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="github.html">Github</a></p></td>
-</tr>
-</tbody>
-</table>
+<div class="paragraph">
+<p>By the end of this course the student should have achieved the following course
+and program learning outcomes.</p>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_learning_objectives">Learning Objectives</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_course_learning_outcomes">Course Learning Outcomes</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 10%;">
@@ -1254,9 +1284,10 @@ immediately with Counseling Services (1529 Belmont Street, Norco Building) at
 </div>
 </div>
 </div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-05-13 14:56:43 UTC
+Last updated 2023-05-13 19:47:57 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
