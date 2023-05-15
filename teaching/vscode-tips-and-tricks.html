@@ -448,20 +448,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_installing_vscode_locally">Installing VSCode Locally</a></li>
-<li><a href="#_github_codespaces">GitHub Codespaces</a></li>
+<li><a href="#_developing_locally">Developing Locally</a></li>
+<li><a href="#_developing_remotely_codespaces">Developing Remotely (Codespaces)</a>
+<ul class="sectlevel2">
+<li><a href="#_starting_a_codespace">Starting a Codespace</a></li>
+<li><a href="#_configuring_codespace">Configuring Codespace</a></li>
+<li><a href="#_remote_website_development">Remote Website Development</a></li>
+<li><a href="#_running_a_web_server">Running a Web Server</a></li>
+<li><a href="#_accessing_the_menu_in_codespaces">Accessing the menu in Codespaces</a></li>
+<li><a href="#_accessing_all_my_codespaces">Accessing all my Codespaces</a></li>
+<li><a href="#_codespaces_set_default_timeout">Codespaces Set default timeout</a></li>
+</ul>
+</li>
 <li><a href="#_first_time_configuration">First time configuration</a>
 <ul class="sectlevel2">
 <li><a href="#_configure_defaults">Configure defaults</a></li>
-<li><a href="#_configure_the_default_terminal">Configure the default terminal</a></li>
-</ul>
-</li>
-<li><a href="#_developing_remotely">Developing Remotely</a>
-<ul class="sectlevel2">
-<li><a href="#_connecting_to_a_server">Connecting to a Server</a></li>
-<li><a href="#_verify_your_connection">Verify your connection</a></li>
-<li><a href="#_installing_remote_extensions">Installing remote extensions</a></li>
-<li><a href="#_website_development">Website Development</a></li>
+<li><a href="#_configure_the_default_terminal_windows_only">Configure the default terminal (Windows Only)</a></li>
 </ul>
 </li>
 <li><a href="#_debugging_pointers">Debugging Pointers</a>
@@ -485,12 +487,13 @@ machine, or you can use VSCode in the cloud with
 </div>
 </div>
 <div class="sect1">
-<h2 id="_installing_vscode_locally">Installing VSCode Locally</h2>
+<h2 id="_developing_locally">Developing Locally</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The steps below walk you through getting VSCode setup on your personal machine.
-The advantages of using a local install is it is 100% free. The disadvantage is
-it can sometimes be difficult and time consuming to install all the tools
+<p>You can install VSCode and all the required tools on your personal (local)
+machine. The advantages of using a local install is it is 100% free and you
+don&#8217;t need an internet connection to do your work. The disadvantage is it can
+sometimes be difficult and time consuming to install and configure all the tools
 correctly especially if you are using the Windows operating system.</p>
 </div>
 <div class="olist arabic">
@@ -515,26 +518,175 @@ correctly especially if you are using the Windows operating system.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_github_codespaces">GitHub Codespaces</h2>
+<h2 id="_developing_remotely_codespaces">Developing Remotely (Codespaces)</h2>
 <div class="sectionbody">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+You are not required to use Codespaces! All the programming
+assignments can be done with a local install. These instructions are just
+provided for students who either want to use Codespaces or don&#8217;t have a machine
+that is capable of running VSCode. You still need to complete all the steps in
+the <a href="#_first_time_configuration">First time configuration</a> section of this document.
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p><a href="https://github.com/features/codespaces">GitHub Codespaces</a> is a complete VSCode
 development environment in the cloud. It is the quickest and easiest way to
-write code on any machine that has an internet connection and web browser. The
-only downside to using Codespaces is you have to pay a monthly fee to use it.
-GitHub Codespaces does provide free tier that should cover all the usage for a
-student working on projects. However, you still may need to pay a small fee
-depending on how much you use the service over the course of a semester.</p>
+write code on any machine that has an internet connection and web browser.
+GitHub Codespaces provides a free tier (60 hours) that should be enough cover
+all the usage for a student working on homework. However, you still may need to
+pay a small fee depending on how much you use the service over the course of a
+semester.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://docs.github.com/en/codespaces">Codespaces Documentation</a></p>
-</li>
-<li>
 <p><a href="https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces">Codespaces Billing</a></p>
 </li>
+<li>
+<p><a href="https://docs.github.com/en/codespaces">Codespaces Documentation</a></p>
+</li>
 </ul>
+</div>
+<div class="sect2">
+<h3 id="_starting_a_codespace">Starting a Codespace</h3>
+<div class="paragraph">
+<p>Every repository will need its own Codespace. Creating a Codespace is fairly
+straight forward after you have cloned your repository simply click the <strong>code
+button</strong> and then click the <strong>Create Codespaces</strong> as shown below. This will launch
+a Codespace that you can use to work on your project</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/start-codespaces.gif" alt="start codespaces">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuring_codespace">Configuring Codespace</h3>
+<div class="paragraph">
+<p>When you are working remote VSCode does not automatically install any of your
+extensions. To get all your remote extensions installed open the
+<a href="https://code.visualstudio.com/docs/editor/extension-gallery">Extension manager</a>
+and then select the local extensions that you wish to install on the remote
+machine. The first extension that you should install is Live Preview as shown
+below.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/vscode-live-preview.png" alt="VSCode Live preview">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_remote_website_development">Remote Website Development</h3>
+<div class="paragraph">
+<p>As long as you are using the
+<a href="https://code.visualstudio.com/docs/editor/integrated-terminal">integrated
+terminal</a> in VSCode you can launch a website that you built on the server and
+VSCode will automatically forward the ports for you so you can view it locally.
+With this setup it is possible to develop on any laptop that is capable of
+running VSCode without having to install any tools locally. For simple websites
+that don&#8217;t need to run a web server you can use the Live preview feature. After
+you have installed the VScode Live preview extension you can start the built in
+web server just as you would when developing locally.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Sometimes you will see an error when trying to view your website
+(shown below). This is because there is sometimes a delay on how fast Codespaces
+sets up port forwarding. If you click the "Open in Browser" popup it should open
+up a new tab showing you your website.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/vscode-live-preview-problems.png" alt="VSCode Live preview problems">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_running_a_web_server">Running a Web Server</h3>
+<div class="paragraph">
+<p>For more complicated setups like when you want to run a PHP server or run a
+nodejs server you can access the ports that VSCode is forwarding on the ports
+tab.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/vscode-port-forward.gif" alt="VSCode connected">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_accessing_the_menu_in_codespaces">Accessing the menu in Codespaces</h3>
+<div class="paragraph">
+<p>For the most part using Codespaces is identical to developing remotely. One of
+the biggest differences is accessing the Menu toolbar. The screenshot below
+shows you how to access the toolbar in Codespaces.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/codespaces-tool-bar.png" alt="codespaces toolbar">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_accessing_all_my_codespaces">Accessing all my Codespaces</h3>
+<div class="paragraph">
+<p>You can access all the Codespaces you created from your main profile page. Click
+on the <strong>Codespaces</strong> menu option as shown below.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/all-codespaces.png" alt="All Codespaces">
+</div>
+</div>
+<div class="paragraph">
+<p>Then you should see all the Codespaces that you have created and can use!</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/all-codespaces-view.png" alt="All Codespaces view">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_codespaces_set_default_timeout">Codespaces Set default timeout</h3>
+<div class="paragraph">
+<p>The default idle timeout for codespaces is 30 minutes. You can quickly burn
+through all your free hours if you keep this default. I recommend that you set
+the default timeout to 10 minutes to preserve your free tier time.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/github-settings.png" alt="Github settings">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/github-settings-codespaces.png" alt="Github settings codespaces">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/github-settings-codespaces-default-idle.png" alt="Github settings idle">
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -543,7 +695,8 @@ depending on how much you use the service over the course of a semester.</p>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Before we can start using VSCode we need to set a few basic configurations. Each
-section is clearly labeled with what Operating system it applies to.</p>
+section is clearly labeled with what Operating system it applies to. You need to
+follow these steps on both local and remote setups.</p>
 </div>
 <div class="sect2">
 <h3 id="_configure_defaults">Configure defaults</h3>
@@ -598,7 +751,7 @@ git config --global diff.colorMoved zebra</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_configure_the_default_terminal">Configure the default terminal</h3>
+<h3 id="_configure_the_default_terminal_windows_only">Configure the default terminal (Windows Only)</h3>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -606,9 +759,10 @@ git config --global diff.colorMoved zebra</code></pre>
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-This section only applies to Windows users. If "Git Bash" is not listed as
-an option you need to <a href="https://git-scm.com/downloads">install Git</a> as detailed in
-the first section of this document.
+This section only applies to Windows users who are developing
+locally. If "Git Bash" is not listed as an option you need to
+<a href="https://git-scm.com/downloads">install Git</a> as detailed in the first section of
+this document.
 </td>
 </tr>
 </table>
@@ -637,141 +791,6 @@ terminal to Git Bash so everything works correctly</p>
 <div class="imageblock">
 <div class="content">
 <img src="images/vscode-default-terminal.png" alt="Set Default Terminal">
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_developing_remotely">Developing Remotely</h2>
-<div class="sectionbody">
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-This section on applies if you installed VSCode on your personal computer.
-If you are using Codespaces you can skip this section.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>This section will walk you through using a local install of VSCode to develop on
-a remote system. This is incredibly convenient as it allows you to connect
-directly to a server to run and test your code. For advanced users you can read
-through the <a href="https://code.visualstudio.com/docs/remote/ssh">official
-documentation</a> for more details on how everything works.</p>
-</div>
-<div class="paragraph">
-<p>Before you can connect to a remote server you need to install the
-<a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack">remote
-development extension pack</a></p>
-</div>
-<div class="sect2">
-<h3 id="_connecting_to_a_server">Connecting to a Server</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Open the <a href="https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette">command pallet</a></p>
-</li>
-<li>
-<p>Select <em>Remote-SSH: Connect to Host&#8230;&#8203;</em> from the Command Palette (F1) and connect to <em>username@servername.com</em></p>
-<div class="ulist">
-<ul>
-<li>
-<p>VSCode will save your information so when you connect again you will just select the server from the list!</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Select connect to started developing</p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>NOTE:</strong> The first time you connect it may take some time for VSCode to
-install all the tools so be patient and don&#8217;t close or stop the process or it
-could cause your install to fail!</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/vscode_remote_devel.gif" alt="Visual walk through">
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_verify_your_connection">Verify your connection</h3>
-<div class="paragraph">
-<p>Once you are connected you can verify your status as shown below:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>You should see SSH: onyx.boisestate.edu</p>
-</li>
-<li>
-<p>When you run the command <em>hostname</em> in the integrated terminal you should see
-onyx.boisestate.edu</p>
-</li>
-<li>
-<p>When you run the command <em>whoami</em> in the integrated terminal you should see
-your Boise State username.</p>
-</li>
-</ol>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/vscode_connected.png" alt="VSCode connected">
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_installing_remote_extensions">Installing remote extensions</h3>
-<div class="paragraph">
-<p>When you are working remote VSCode does not automatically install any of your extensions. To get
-all your remote extensions installed open the <a href="https://code.visualstudio.com/docs/editor/extension-gallery">Extension manager</a>
-and then select the local extensions that you wish to install on the remote machine.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/vscode-remote-extensions.png" alt="VSCode remote extensions">
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_website_development">Website Development</h3>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-This section only applies if you are running your own server on AWS or
-some other hosting service. You can not run a website on onyx.boisestate.edu.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>As long as you are using the
-<a href="https://code.visualstudio.com/docs/editor/integrated-terminal">integrated
-terminal</a> in VSCode you can launch a website that you built on the server and
-VSCode will automatically forward the ports for you so you can view it locally.
-With this setup it is possible to develop on any laptop that is capable of
-running VSCode without having to install any tools locally.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/vscode-port-forward.gif" alt="VSCode connected">
 </div>
 </div>
 </div>
@@ -882,7 +901,7 @@ single variable we can easily inspect the data and track down any issues you are
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-05-13 20:02:49 UTC
+Last updated 2023-05-15 18:04:06 UTC
 </div>
 </div>
 </body>
