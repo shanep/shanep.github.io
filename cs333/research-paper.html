@@ -5,8 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<meta name="author" content="Shane K. Panter">
-<title>Debugging C and C++</title>
+<title>Research Paper</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -439,168 +438,260 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Debugging C and C++</h1>
-<div class="details">
-<span id="author" class="author">Shane K. Panter</span><br>
-<span id="email" class="email"><a href="mailto:shanepanter@boisestate.edu">shanepanter@boisestate.edu</a></span><br>
-</div>
+<h1>Research Paper</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_dumping_deadlocked_threads_with_gdb">Dumping deadlocked threads with GDB</a>
+<li><a href="#_overview">Overview</a></li>
+<li><a href="#_default_topic_zero_day_vulnerabilities">Default topic - Zero Day Vulnerabilities</a>
 <ul class="sectlevel2">
-<li><a href="#_get_the_pid_of_the_process">Get the PID of the process</a></li>
-<li><a href="#_attach_to_the_process">Attach to the process</a></li>
-<li><a href="#_debug_it">Debug it</a></li>
+<li><a href="#_zero_day_discussion">Zero day Discussion</a></li>
 </ul>
 </li>
+<li><a href="#_custom_topic">Custom topic</a></li>
+<li><a href="#_paper_outline">Paper outline</a></li>
+<li><a href="#_research_paper_instructions">Research Paper Instructions</a>
+<ul class="sectlevel2">
 <li><a href="#_references">References</a></li>
+</ul>
+</li>
+<li><a href="#_checklist_for_papers">Checklist for Papers</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_dumping_deadlocked_threads_with_gdb">Dumping deadlocked threads with GDB</h2>
+<h2 id="_overview">Overview</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>When you are working on multi-threaded programs it is pretty easy to get into a
-deadlocked scenario. Debugging multi-threaded programs can be difficult because
-running your program under the debugger can change the timing of your code and
-thus make the issue go away. So sometimes the only way to see where your program
-is stuck is to attach a debugger post mortem and dump out the threads.</p>
+<p>A research paper is intended to provide the student with an opportunity to
+explore a topic relevant to what is being taught in the class. It is important
+that you begin your research early. The first step is to choose a topic that is
+of interest to you or you can use the default topic detailed below. If you are
+choosing a custom topic, you should consult with your instructor to make certain
+that your topic fits within their expectations for the assignment.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_default_topic_zero_day_vulnerabilities">Default topic - Zero Day Vulnerabilities</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A zero day is a computer-software or hardware vulnerability previously unknown
+and is used by malicious actors to write malware. The list below is a good
+starting point to help you understand what a zero day vulnerabilities is and
+some real world examples that you can explore.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Simple google search for zero day</p>
+</li>
+<li>
+<p><a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C13&amp;q=zero+day&amp;btnG=">Google scholar</a></p>
+</li>
+<li>
+<p><a href="https://googleprojectzero.blogspot.com/">Google project zero</a></p>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-zero-day-vulnerabilities?view=o365-worldwide">Microsoft</a></p>
+</li>
+<li>
+<p><a href="https://zerodium.com/">Zerodium</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Zero-day_(computing)">zero day vulnerabilities</a></p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>So assuming you have a program that you ran and it is currently stuck somewhere
-here are the steps to at least see where it is stuck which can help you fix the
-issue!</p>
+<p>Below are a few high profile examples from the last few years. You are welcome
+to use one of these in your paper.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://heartbleed.com/">Heartblead</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Shellshock_(software_bug)">Shell shock</a></p>
+</li>
+<li>
+<p><a href="https://meltdownattack.com/">meltdownattach</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Row_hammer">Row hammer</a></p>
+</li>
+</ul>
 </div>
 <div class="sect2">
-<h3 id="_get_the_pid_of_the_process">Get the PID of the process</h3>
+<h3 id="_zero_day_discussion">Zero day Discussion</h3>
 <div class="paragraph">
-<p>Before you attach a debugger you want to confirm that your program is completely
-stopped and you want to get the pid of the program so you can attach to it. Open
-up a second terminal and run the command <code>ps ux</code> and look for your program. If
-you can&#8217;t find your program you can try <code>ps aux</code> which will output all users. If
-you still cant find it make sure that your program hasn&#8217;t exited. <strong>NOTE:</strong> You
-can not attach to another users program unless you have access to the root
-account, you can only attach to your programs.</p>
+<p>This is the meat of your paper. Each student in the team will need to identify 1
+high profile <strong>zero day vulnerabilities</strong> that have happened in the last 10 years
+and find out the following:</p>
 </div>
-<div class="paragraph">
-<p>In the example below you can see the program <code>./mylab -c 3 -p 8 -i 100 -s 5</code>
-with PID <strong>254167</strong> is what we want to debug.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">[shanepanter@onyx:~]
-$ ps ux
-USER        PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-shanepa+  46764  0.0  0.0 1178788    0 ?        S     2020   0:00 /bin/bash
-shanepa+ 129368  0.0  0.0 182776  2632 ?        S    10:02   0:01 sshd: shanepanter@pts/32
-shanepa+ 129377  0.0  0.0 127848  3864 pts/32   Ss   10:02   0:02 -bash
-shanepa+ 154093  0.0  0.0 1178792    0 ?        S     2020   0:00 /bin/bash
-shanepa+ 240623  0.0  0.0 1178788    0 ?        S     2020   0:00 /bin/bash
-shanepa+ 254167  0.1  0.0 590304   828 pts/32   Sl+  11:36   0:00 ./mylab -c 3 -p 8 -i 100 -s 5
-shanepa+ 254357  0.0  0.0 182776  2472 ?        S    11:36   0:00 sshd: shanepanter@pts/6
-shanepa+ 254358  0.5  0.0 127716  3536 pts/6    Ss   11:36   0:00 -bash
-shanepa+ 254514  0.0  0.0 166156  2392 pts/6    R+   11:36   0:00 ps ux</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_attach_to_the_process">Attach to the process</h3>
-<div class="paragraph">
-<p>In the same terminal that you ran the <code>ps ux</code> command start gdb and attach to
-the process  with the PID that you found in step 1. Once you have attached to
-the process issue the command <code>thread apply all bt</code> where <code>bt</code> stands for
-backtrace applied to all the current threads.</p>
-</div>
-<div class="paragraph">
-<p>The example below shows that we have 4 threads. Thread 1 is the main thread and
-we can see that it is waiting on a <code>pthread_join</code> which is expected so we don&#8217;t
-need to worry about Thread 1. Thread 2, 3, and 4 are all blocked on a condition
-variable and we can see in the stack trace they are all stuck in the <code>dequeue</code>
-function.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">[shanepanter@onyx:~]
-$ gdb
-GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
-Copyright (C) 2013 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
-and "show warranty" for details.
-This GDB was configured as "x86_64-redhat-linux-gnu".
-For bug reporting instructions, please see:
-&lt;http://www.gnu.org/software/gdb/bugs/&gt;.
-(gdb) attach 254167
-Attaching to process 254167
-Reading symbols from /home/ShanePanter/repos/shanep.github.io/os/labs/lab2/_solution/mylab...done.
-Reading symbols from /lib64/libpthread.so.0...(no debugging symbols found)...done.
-[New LWP 254178]
-[New LWP 254177]
-[New LWP 254176]
-[Thread debugging using libthread_db enabled]
-Using host libthread_db library "/lib64/libthread_db.so.1".
-Loaded symbols for /lib64/libpthread.so.0
-Reading symbols from /lib64/libc.so.6...(no debugging symbols found)...done.
-Loaded symbols for /lib64/libc.so.6
-Reading symbols from /lib64/ld-linux-x86-64.so.2...(no debugging symbols found)...done.
-Loaded symbols for /lib64/ld-linux-x86-64.so.2
-Reading symbols from /lib64/libgcc_s.so.1...(no debugging symbols found)...done.
-Loaded symbols for /lib64/libgcc_s.so.1
-0x00007f067f11e017 in pthread_join () from /lib64/libpthread.so.0
-Missing separate debuginfos, use: debuginfo-install glibc-2.17-317.el7.x86_64 libgcc-4.8.5-44.el7.x86_64
-(gdb) thread apply all bt
-
-Thread 4 (Thread 0x7f06767fc700 (LWP 254176)):
-#0  0x00007f067f120a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
-#1  0x00000000004014a0 in dequeue (q=0x2066010) at queue.c:97
-#2  0x0000000000400e55 in consumer (args=0x0) at lab.c:76
-#3  0x00007f067f11cea5 in start_thread () from /lib64/libpthread.so.0
-#4  0x00007f067ee4596d in clone () from /lib64/libc.so.6
-
-Thread 3 (Thread 0x7f0675ffb700 (LWP 254177)):
-#0  0x00007f067f120a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
-#1  0x00000000004014a0 in dequeue (q=0x2066010) at queue.c:97
-#2  0x0000000000400e55 in consumer (args=0x0) at lab.c:76
-#3  0x00007f067f11cea5 in start_thread () from /lib64/libpthread.so.0
-#4  0x00007f067ee4596d in clone () from /lib64/libc.so.6
-
-Thread 2 (Thread 0x7f06757fa700 (LWP 254178)):
-#0  0x00007f067f120a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
-#1  0x00000000004014a0 in dequeue (q=0x2066010) at queue.c:97
-#2  0x0000000000400e55 in consumer (args=0x0) at lab.c:76
-#3  0x00007f067f11cea5 in start_thread () from /lib64/libpthread.so.0
-#4  0x00007f067ee4596d in clone () from /lib64/libc.so.6
-
-Thread 1 (Thread 0x7f067f534740 (LWP 254167)):
-#0  0x00007f067f11e017 in pthread_join () from /lib64/libpthread.so.0
-#1  0x0000000000401151 in main (argc=9, argv=0x7fff5b567418) at lab.c:176
-(gdb)</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_debug_it">Debug it</h3>
-<div class="paragraph">
-<p>Now that we at least know <strong>where</strong> our process is stuck we can exam the code and
-come up with all the ways that this scenario could occur. Be aware that the
-issue may not be in the <code>dequeue</code> function! More likely than not the bug is
-somewhere else entirely. All this does is give you some insight into where your
-program is getting stuck <strong>NOT</strong> where the problem is!</p>
+<div class="ulist">
+<ul>
+<li>
+<p>What piece of software did they impact?</p>
+</li>
+<li>
+<p>What Operating system was it present on?</p>
+</li>
+<li>
+<p>Was it Network related?</p>
+</li>
+<li>
+<p>Firmware Hardware</p>
+</li>
+<li>
+<p>Was it a <a href="https://www.kaspersky.com/resource-center/definitions/what-is-zero-click-malware">zero click exploit?</a></p>
+</li>
+<li>
+<p>Was customer data breached?</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_references">References</h2>
+<h2 id="_custom_topic">Custom topic</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You are allowed to research any relevant topic that was introduced in class.
+The research paper and associated presentation is due at the end of the semester
+so you have some time to explore different areas that you may be interested in.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_paper_outline">Paper outline</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Mid semester you will be required to submit an outline that details the high
+level direction of the paper. An example outline is shown below to help guide
+you. Each section needs to be assigned to a specific person in the team. Each
+team member will be responsible for their assigned work. Your final grade on
+the paper will be an individual grade based on your efforts and will not be
+impacted by team mates that don&#8217;t pull their weight. The example shown below
+assumes that there is a team of 3, for a team of two there would be only two
+subtopics instead of 3.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Introduction (Joe)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Introductory Statement (Jane)</p>
+</li>
+<li>
+<p>Thesis Statement (Jill)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Body (Joe, Jane, Jill)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>First Subtopic (Joe)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>supporting evidence</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Second Subtopic (Jane)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>supporting evidence</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Third Subtopic (Jill)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>supporting evidence</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Conclusion (Jill)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Restatement of Thesis (Joe)</p>
+</li>
+<li>
+<p>Compelling Conclusion (Jane)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_research_paper_instructions">Research Paper Instructions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Your paper will be checked for plagiarism automatically by canvas. Make sure and
+cite all your sources as appropriate. Your paper should be a minimum of 2,500
+words with a maximum of 5,000 words. Citations can be in either MLA or APA
+format.</p>
+</div>
+<div class="sect2">
+<h3 id="_references">References</h3>
+<div class="paragraph">
+<p>You need to cite all your sources that you found and used to construct your
+paper, you need a minimum of 5 sources.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_checklist_for_papers">Checklist for Papers</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p><a href="../../articles/modern-debugging-acm.pdf">Modern Debugging</a></p>
+<p>Organization</p>
+</li>
+<li>
+<p>Does the paper follow the outline that you submitted before?</p>
+</li>
+<li>
+<p>Is the paper double spaced?</p>
+</li>
+<li>
+<p>Did you run spell checker?</p>
+</li>
+<li>
+<p>Are all papers cited in the text found in the References (and vice versa)?</p>
+</li>
+<li>
+<p>Have major points been backed up with appropriate references rather than
+forcing the reader to take my word for it?</p>
+</li>
+<li>
+<p>Are any tables and figures organized to minimize space?</p>
 </li>
 </ul>
 </div>

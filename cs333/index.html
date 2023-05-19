@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
 <meta name="author" content="Shane K. Panter">
-<title>Debugging C and C++</title>
+<title>Network Security and Defense</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -436,10 +436,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Debugging C and C++</h1>
+<h1>Network Security and Defense</h1>
 <div class="details">
 <span id="author" class="author">Shane K. Panter</span><br>
 <span id="email" class="email"><a href="mailto:shanepanter@boisestate.edu">shanepanter@boisestate.edu</a></span><br>
@@ -447,162 +448,682 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_dumping_deadlocked_threads_with_gdb">Dumping deadlocked threads with GDB</a>
+<li><a href="#_logistics">Logistics</a></li>
+<li><a href="#_catalog_description">Catalog Description</a></li>
+<li><a href="#_assessments">Assessments</a>
 <ul class="sectlevel2">
-<li><a href="#_get_the_pid_of_the_process">Get the PID of the process</a></li>
-<li><a href="#_attach_to_the_process">Attach to the process</a></li>
-<li><a href="#_debug_it">Debug it</a></li>
+<li><a href="#_quizzes">Quizzes</a></li>
+<li><a href="#_labs">Labs</a></li>
 </ul>
 </li>
-<li><a href="#_references">References</a></li>
+<li><a href="#_grading_policy">Grading Policy</a>
+<ul class="sectlevel2">
+<li><a href="#_letter_grade">Letter Grade</a></li>
+<li><a href="#_incomplete">Incomplete</a></li>
+<li><a href="#_course_challenge">Course Challenge</a></li>
+</ul>
+</li>
+<li><a href="#_extra_credit_opportunities">Extra Credit Opportunities</a>
+<ul class="sectlevel2">
+<li><a href="#_standing_extra_credit">Standing Extra Credit</a></li>
+</ul>
+</li>
+<li><a href="#_university_policies">University Policies</a>
+<ul class="sectlevel2">
+<li><a href="#_academic_honesty">Academic Honesty</a></li>
+<li><a href="#_attendance">Attendance</a></li>
+<li><a href="#_time_commitment">Time Commitment</a></li>
+</ul>
+</li>
+<li><a href="#_homework_policy">Homework Policy</a>
+<ul class="sectlevel2">
+<li><a href="#_collaboration">Collaboration</a></li>
+<li><a href="#_late_work">Late Work</a></li>
+<li><a href="#_ai">AI 🤖</a></li>
+</ul>
+</li>
+<li><a href="#_communication_policy">Communication Policy</a>
+<ul class="sectlevel2">
+<li><a href="#_email">Email</a></li>
+<li><a href="#_discussion_board">Discussion Board</a></li>
+<li><a href="#_office_hours">Office Hours</a></li>
+</ul>
+</li>
+<li><a href="#_student_support">Student support</a>
+<ul class="sectlevel2">
+<li><a href="#_student_well_being">Student Well-being</a></li>
+</ul>
+</li>
+<li><a href="#_learning_outcomes">Learning Outcomes</a>
+<ul class="sectlevel2">
+<li><a href="#_program_learning_outcomes">Program Learning Outcomes</a></li>
+<li><a href="#_course_learning_outcomes">Course Learning Outcomes</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_dumping_deadlocked_threads_with_gdb">Dumping deadlocked threads with GDB</h2>
+<h2 id="_logistics">Logistics</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="icon"><i class="fa fa-university"></i></span>  Boise State University</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="icon"><i class="fa fa-envelope"></i></span> Contact</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Department
+</td>
+<td class="hdlist2">
+<p><a href="https://www.boisestate.edu/coen-cs/">Computer Science</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Building
+</td>
+<td class="hdlist2">
+<p><a href="https://www.boisestate.edu/coen-cs/currentstudents/aboutccp/">City Center Plaza (CCP)</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Office
+</td>
+<td class="hdlist2">
+<p>CCP246</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Address
+</td>
+<td class="hdlist2">
+<p><a href="https://www.google.com/maps/place/777+W+Main+St,+Boise,+ID+83702/@43.6152228,-116.2057248,17z/data=!3m1!4b1!4m6!3m5!1s0x54aef8e4e8e75a1d:0xf034e272f3bd83d9!8m2!3d43.6152228!4d-116.2035361!16s%2Fg%2F11dzp1dc67">777 W Main St, Boise, ID 83702</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Department Phone
+</td>
+<td class="hdlist2">
+<p>1-208-426-5766</p>
+</td>
+</tr>
+</table>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Instructor
+</td>
+<td class="hdlist2">
+<p>Available on Canvas</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Email
+</td>
+<td class="hdlist2">
+<p>Available on Canvas</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Office Hours
+</td>
+<td class="hdlist2">
+<p>Available on Canvas</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Class Time
+</td>
+<td class="hdlist2">
+<p>Available on Canvas</p>
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_catalog_description">Catalog Description</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>When you are working on multi-threaded programs it is pretty easy to get into a
-deadlocked scenario. Debugging multi-threaded programs can be difficult because
-running your program under the debugger can change the timing of your code and
-thus make the issue go away. So sometimes the only way to see where your program
-is stuck is to attach a debugger post mortem and dump out the threads.</p>
+<p><strong>CS 333 Network Security and Defense (3-0-3)(S).</strong> Topics include firewalls, virtual private networks, intrusion detection, intrusion prevention, traffic analysis, techniques for responding to network attacks. PREREQ: CS253 or CS331 or ITM455.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_assessments">Assessments</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>So assuming you have a program that you ran and it is currently stuck somewhere
-here are the steps to at least see where it is stuck which can help you fix the
-issue!</p>
+<p>Your final grade will be calculated with the following weights in canvas.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Quizzes - 30%</p>
+</li>
+<li>
+<p>Labs - 40%</p>
+</li>
+<li>
+<p>Textbook Activities - 10%</p>
+</li>
+<li>
+<p>Final Exam - 20%</p>
+</li>
+</ul>
 </div>
 <div class="sect2">
-<h3 id="_get_the_pid_of_the_process">Get the PID of the process</h3>
+<h3 id="_quizzes">Quizzes</h3>
 <div class="paragraph">
-<p>Before you attach a debugger you want to confirm that your program is completely
-stopped and you want to get the pid of the program so you can attach to it. Open
-up a second terminal and run the command <code>ps ux</code> and look for your program. If
-you can&#8217;t find your program you can try <code>ps aux</code> which will output all users. If
-you still cant find it make sure that your program hasn&#8217;t exited. <strong>NOTE:</strong> You
-can not attach to another users program unless you have access to the root
-account, you can only attach to your programs.</p>
-</div>
-<div class="paragraph">
-<p>In the example below you can see the program <code>./mylab -c 3 -p 8 -i 100 -s 5</code>
-with PID <strong>254167</strong> is what we want to debug.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">[shanepanter@onyx:~]
-$ ps ux
-USER        PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-shanepa+  46764  0.0  0.0 1178788    0 ?        S     2020   0:00 /bin/bash
-shanepa+ 129368  0.0  0.0 182776  2632 ?        S    10:02   0:01 sshd: shanepanter@pts/32
-shanepa+ 129377  0.0  0.0 127848  3864 pts/32   Ss   10:02   0:02 -bash
-shanepa+ 154093  0.0  0.0 1178792    0 ?        S     2020   0:00 /bin/bash
-shanepa+ 240623  0.0  0.0 1178788    0 ?        S     2020   0:00 /bin/bash
-shanepa+ 254167  0.1  0.0 590304   828 pts/32   Sl+  11:36   0:00 ./mylab -c 3 -p 8 -i 100 -s 5
-shanepa+ 254357  0.0  0.0 182776  2472 ?        S    11:36   0:00 sshd: shanepanter@pts/6
-shanepa+ 254358  0.5  0.0 127716  3536 pts/6    Ss   11:36   0:00 -bash
-shanepa+ 254514  0.0  0.0 166156  2392 pts/6    R+   11:36   0:00 ps ux</code></pre>
-</div>
+<p>There will be several quizzes over the assigned reading during the semester. The
+quizzes are open notes and open book and must be done individually.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_attach_to_the_process">Attach to the process</h3>
+<h3 id="_labs">Labs</h3>
 <div class="paragraph">
-<p>In the same terminal that you ran the <code>ps ux</code> command start gdb and attach to
-the process  with the PID that you found in step 1. Once you have attached to
-the process issue the command <code>thread apply all bt</code> where <code>bt</code> stands for
-backtrace applied to all the current threads.</p>
+<p>There are four individual labs this semester. Each lab below
+has been carefully crafted to satisfy one or more <a href="#_learning_outcomes">Learning Outcomes</a> as
+detailed below.</p>
 </div>
-<div class="paragraph">
-<p>The example below shows that we have 4 threads. Thread 1 is the main thread and
-we can see that it is waiting on a <code>pthread_join</code> which is expected so we don&#8217;t
-need to worry about Thread 1. Thread 2, 3, and 4 are all blocked on a condition
-variable and we can see in the stack trace they are all stuck in the <code>dequeue</code>
-function.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">[shanepanter@onyx:~]
-$ gdb
-GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-120.el7
-Copyright (C) 2013 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
-and "show warranty" for details.
-This GDB was configured as "x86_64-redhat-linux-gnu".
-For bug reporting instructions, please see:
-&lt;http://www.gnu.org/software/gdb/bugs/&gt;.
-(gdb) attach 254167
-Attaching to process 254167
-Reading symbols from /home/ShanePanter/repos/shanep.github.io/os/labs/lab2/_solution/mylab...done.
-Reading symbols from /lib64/libpthread.so.0...(no debugging symbols found)...done.
-[New LWP 254178]
-[New LWP 254177]
-[New LWP 254176]
-[Thread debugging using libthread_db enabled]
-Using host libthread_db library "/lib64/libthread_db.so.1".
-Loaded symbols for /lib64/libpthread.so.0
-Reading symbols from /lib64/libc.so.6...(no debugging symbols found)...done.
-Loaded symbols for /lib64/libc.so.6
-Reading symbols from /lib64/ld-linux-x86-64.so.2...(no debugging symbols found)...done.
-Loaded symbols for /lib64/ld-linux-x86-64.so.2
-Reading symbols from /lib64/libgcc_s.so.1...(no debugging symbols found)...done.
-Loaded symbols for /lib64/libgcc_s.so.1
-0x00007f067f11e017 in pthread_join () from /lib64/libpthread.so.0
-Missing separate debuginfos, use: debuginfo-install glibc-2.17-317.el7.x86_64 libgcc-4.8.5-44.el7.x86_64
-(gdb) thread apply all bt
-
-Thread 4 (Thread 0x7f06767fc700 (LWP 254176)):
-#0  0x00007f067f120a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
-#1  0x00000000004014a0 in dequeue (q=0x2066010) at queue.c:97
-#2  0x0000000000400e55 in consumer (args=0x0) at lab.c:76
-#3  0x00007f067f11cea5 in start_thread () from /lib64/libpthread.so.0
-#4  0x00007f067ee4596d in clone () from /lib64/libc.so.6
-
-Thread 3 (Thread 0x7f0675ffb700 (LWP 254177)):
-#0  0x00007f067f120a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
-#1  0x00000000004014a0 in dequeue (q=0x2066010) at queue.c:97
-#2  0x0000000000400e55 in consumer (args=0x0) at lab.c:76
-#3  0x00007f067f11cea5 in start_thread () from /lib64/libpthread.so.0
-#4  0x00007f067ee4596d in clone () from /lib64/libc.so.6
-
-Thread 2 (Thread 0x7f06757fa700 (LWP 254178)):
-#0  0x00007f067f120a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
-#1  0x00000000004014a0 in dequeue (q=0x2066010) at queue.c:97
-#2  0x0000000000400e55 in consumer (args=0x0) at lab.c:76
-#3  0x00007f067f11cea5 in start_thread () from /lib64/libpthread.so.0
-#4  0x00007f067ee4596d in clone () from /lib64/libc.so.6
-
-Thread 1 (Thread 0x7f067f534740 (LWP 254167)):
-#0  0x00007f067f11e017 in pthread_join () from /lib64/libpthread.so.0
-#1  0x0000000000401151 in main (argc=9, argv=0x7fff5b567418) at lab.c:176
-(gdb)</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_debug_it">Debug it</h3>
-<div class="paragraph">
-<p>Now that we at least know <strong>where</strong> our process is stuck we can exam the code and
-come up with all the ways that this scenario could occur. Be aware that the
-issue may not be in the <code>dequeue</code> function! More likely than not the bug is
-somewhere else entirely. All this does is give you some insight into where your
-program is getting stuck <strong>NOT</strong> where the problem is!</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Lab 1</p>
+</li>
+<li>
+<p>Lab 2</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_references">References</h2>
+<h2 id="_grading_policy">Grading Policy</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Grades will be posted in canvas and calculated with the percentages specified
+below. <strong>Grades will not be rounded</strong>, I offer plenty of extra credit during the
+semester. If your grade is a 79.99% you can select any of the extra credit
+assignments to improve your grade. Please see the <a href="#_extra_credit_opportunities
+">Extra Credit Opportunities</a> section for more information. According to
+<a href="https://www.boisestate.edu/policy/student-affairs/computation-of-the-grade-point-average/">Boise
+State Policy 3230</a> section 3 the letter grade of A and A+ both represent a 4.0.
+So there is no effective difference between the two when calculating your GPA.</p>
+</div>
+<div class="sect2">
+<h3 id="_letter_grade">Letter Grade</h3>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="../../articles/modern-debugging-acm.pdf">Modern Debugging</a></p>
+<p>A 94% &lt; 100%</p>
+</li>
+<li>
+<p>A- 90% &lt; 94%</p>
+</li>
+<li>
+<p>B+ 87% &lt; 90%</p>
+</li>
+<li>
+<p>B 84% &lt; 87%</p>
+</li>
+<li>
+<p>B- 80% &lt; 84%</p>
+</li>
+<li>
+<p>C+ 77% &lt; 80%</p>
+</li>
+<li>
+<p>C 74% &lt; 77%</p>
+</li>
+<li>
+<p>C- 70% &lt; 74%</p>
+</li>
+<li>
+<p>D+ 67% &lt; 70%</p>
+</li>
+<li>
+<p>D 64% &lt; 67%</p>
+</li>
+<li>
+<p>D- 60% &lt; 64%</p>
+</li>
+<li>
+<p>F 0 &lt; 60%</p>
 </li>
 </ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_incomplete">Incomplete</h3>
+<div class="paragraph">
+<p>Instructors can enter a grade of I—for incomplete—if both of the following
+conditions are present:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>You have completed either 80% of the course or 80% of the coursework.</p>
+</li>
+<li>
+<p>Extenuating circumstances make it impossible for you to complete the course
+before the end of the semester.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Be aware that the University considers an extenuating circumstance to be along
+the lines of "I was in the hospital for the last 2 weeks in a coma". More
+information can be found on the
+<a href="https://www.boisestate.edu/registrar/degree-requirements/grades/">registrar&#8217;s
+page</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_course_challenge">Course Challenge</h3>
+<div class="paragraph">
+<p>If you already know everything that is taught in this class you can reach out to
+your instructor for guidance on how to complete a
+<a href="https://www.boisestate.edu/registrar/transfers/prior-learning-credit/course-challenge/">Course
+Challenge</a>. A course challenge will save you both time and money and is
+administered by the course coordinator. For courses where I am the coordinator,
+you can challenge the class by taking an exam (closed notes, closed book) and
+producing a software artifact. I do not provide study guides or examples beyond
+what is available in this syllabus.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_extra_credit_opportunities">Extra Credit Opportunities</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Standing extra credit is always offered to allow students to bump their grade up
+if they are on a grading boundary so please take advantage of any extra credit
+offered. Any extra credit given over the semester can not exceed 2.5% of the
+total points offered. For example, the maximum number of extra credit points
+that you can earn if the total points offered is 1000 would be 25.</p>
+</div>
+<div class="sect2">
+<h3 id="_standing_extra_credit">Standing Extra Credit</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Typos and Bugs - If you find any typos or bugs in the course materials email me
+what you found. You can claim this extra credit as many times as you wish (up to
+the maximum number of points).</p>
+</li>
+<li>
+<p>Use of AI technologies - If you are able to solve 100% of any assignment with
+AI, I will give you extra credit if you can submit proof that it was in fact
+100% AI generated. See the <a href="#_ai">AI 🤖</a> section for more details.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_university_policies">University Policies</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Please review all linked policies below. Violations of university policies can
+result in the student receiving a failing grade (F) in the course.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.boisestate.edu/policy/student-affairs/code-of-conduct/">Student Code of Conduct</a></p>
+</li>
+<li>
+<p><a href="https://www.boisestate.edu/registrar/general-information-and-policies/academic-integrity/">Academic Integrity</a></p>
+</li>
+<li>
+<p><a href="https://www.boisestate.edu/privacy/">Privacy policy</a></p>
+</li>
+<li>
+<p><a href="https://docs.google.com/document/d/10yCB9fiThidW9cNt8Eyqc1qVwoXfiLugbjyt_sg5fU8/edit#heading=h.x3pznnnsahws">COVID Policy</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_academic_honesty">Academic Honesty</h3>
+<div class="paragraph">
+<p>Boise State promotes Academic Excellence as a core Shared Value upholding the
+virtue of honesty in the pursuit of knowledge. Behaving with integrity and
+honesty is a hallmark of a Boise State University graduate. The conferring of a
+degree represents the University&#8217;s indication that the recipient has engaged in
+academic work that is representative of her/his own efforts and that was
+completed with integrity and honesty.</p>
+</div>
+<div class="paragraph">
+<p>Upholding academic integrity in all assignments provides students with the
+opportunity to engage with the material being investigated and assert their
+evidence based findings. This behavior demonstrates the commitment to learning
+and preparation necessary for a successful future. All work you submit must
+represent your own ideas and effort or be cited including any material you wrote
+for another course; when work does not, it is academic dishonesty. Academic
+dishonesty in any form may result in a failing grade in the course and other
+sanctions applied by the University.</p>
+</div>
+<div class="paragraph">
+<p>Students who allow their work to be copied will be written up along with the
+student who copied. Cheating is grounds for immediate failure of the course.
+This includes trying to find answers to problems, programs, exams or providing
+(directly or indirectly) your completed assignments to other students. Uploading
+solutions to sites such as chegg.com is also considered an academic honesty
+violation and will be reported to the dean of students.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_attendance">Attendance</h3>
+<div class="paragraph">
+<p>This class follows University policy
+<a href="https://www.boisestate.edu/policy/academic-affairs-student/policy-title-official-student-absence-policy/">3120</a>
+regarding Absences. For <strong>online asynchronous</strong> classes attendance is done through
+regular interactions on canvas. For face to face or remote classes, it is
+expected that you attend the lecture. I expect there to be times during the
+semester where you can&#8217;t make it to class due to unforeseen situations and will
+work with you to make up any missed work. However, chronic abusers of this
+policy may be cut off after they exceeded 6 instructional hours of absence as
+defined in policy 3120.</p>
+</div>
+<div class="paragraph">
+<p>Don&#8217;t come into class sick! There is no reason to come to class sick under any
+circumstances. Being sick is considered a recognized absence. If you
+are seriously ill and can&#8217;t finish the course please see the <a href="#_incomplete">Incomplete</a>
+section for how to file for an incomplete.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_time_commitment">Time Commitment</h3>
+<div class="paragraph">
+<p>According to Boise State University
+<a href="https://www.boisestate.edu/policy/academic-affairs-faculty-administration/policy-title-credit-hours/">policy
+4080</a>, a 1 credit course spread over 15 weeks should require roughly 3 hours of
+work per week divided over both in-class interactions and homework. Classes that
+are held in compressed time frames such as summer or winter breaks still need to
+complete the same number of credit hours in order for the class to count toward
+your degree. Thus, if you are taking this class in a compressed semester please
+consult the table below to make sure you have time to complete all the assigned
+course work. For example, as noted in the table below, taking two 3 credit
+courses in a 7 week semester  is equivalent to working a full time job.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+For a compressed course it is <strong>critical</strong> that you don&#8217;t fall behind!
+Compressed courses move fast and missing 1 week of class is very hard if not
+impossible to recover from.
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Credits</th>
+<th class="tableblock halign-left valign-top">Number of weeks</th>
+<th class="tableblock halign-left valign-top">Total hours</th>
+<th class="tableblock halign-left valign-top">Hours of work per week</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">45 hrs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15 hrs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">45 hrs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9 hrs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">135 hrs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19 hrs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">135 hrs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9 hrs</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_homework_policy">Homework Policy</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following sections detail all the policies regrading homework which past
+students have told me is the most fun part of the class!</p>
+</div>
+<div class="sect2">
+<h3 id="_collaboration">Collaboration</h3>
+<div class="paragraph">
+<p>Unless explicitly instructed otherwise students are expected to work on their
+own. All group work will be <strong>clearly</strong> marked so there should be no confusion.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_late_work">Late Work</h3>
+<div class="paragraph">
+<p>All programming assignments can be submitted up to 2 days late with no penalty.
+No work or extra credit will be accepted after the <strong>last day of course
+instruction</strong> , the semester has to end at some point so plan accordingly. Work
+submitted 1 second late is treated the same as work submitted 1 day late. You
+can find the last day of course instruction at the
+<a href="https://www.boisestate.edu/registrar/boise-state-academic-calendars/">registrar</a>.</p>
+</div>
+<div class="paragraph">
+<p>All of your programming assignments will be submitted using GitHub. You are
+responsible for ensuring all your code is properly pushed to Github. Submissions
+via any other method such as email, will not be accepted under any
+circumstances. You are encouraged to make consistent commits to your github
+repository over the course of working on your project. For example if you have 3
+weeks to work on a project I should see a minimum of 3 commits (1 per week).</p>
+</div>
+<div class="paragraph">
+<p><strong>The late policy does not apply to exams or quizzes</strong>. All exams and quizzes must
+be taken within the time frame specified on canvas. The secret code for the
+syllabus quiz is "green". Students are responsible for
+scheduling their own appointment in the testing center. If an emergency happens
+that prevents you from taking the exam or quiz during the specified time
+extensions will be handled on a case by case basis.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ai">AI 🤖</h3>
+<div class="paragraph">
+<p>I feel that we are experiencing a new paradigm shift that last happened in 1998
+when Google Search was released. Google Search fundamentally changed how
+students approached finding information. Then in 2004
+<a href="https://en.wikipedia.org/wiki/Google_Scholar">Google Scholar</a> was released and
+you no longer had to spend hours in the library combing through indexes or paper
+journals, you could just type your query into a little box and get millions of
+results instantly. It&#8217;s hard to understand how dramatic the shift was to people
+who didn&#8217;t live through it.</p>
+</div>
+<div class="paragraph">
+<p>Banning tools that are broadly available only results in creating a low trust
+environment in the classroom. Thus, in my class you are free to use any
+<a href="https://en.wikipedia.org/wiki/Skynet_(Terminator)">AI or Machine Learning
+technologies</a> to complete any assigned work. The only restriction is you
+<strong>must</strong> document and cite your usage. It is still plagiarism to claim work that
+was generated by <a href="https://openai.com/blog/chatgpt">ChatGPT</a> as your own.</p>
+</div>
+<div class="paragraph">
+<p>It is my job as an instructor to craft assignments that AI tools struggle to
+solve. As soon as an assignment can be 100% solved with AI it should be replaced
+with something new. I test my assignments against modern AI tools and sometimes
+see hilariously wrong results, so if you are not able to recognize correct vs
+incorrect results you should not be using AI in the first place. So the bottom
+line is if you know enough about the given subject to be able to recognize
+correct vs incorrect results then you should be free to use said tools to
+enhance your productivity and education.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_communication_policy">Communication Policy</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>During the semester communication outside of the classroom will be through email,
+canvas, and office hours as detailed below. Other methods such as
+<a href="https://www.iwm.org.uk/history/the-incredible-carrier-pigeons-of-the-first-world-war">carrier
+pigeon</a> 🐦 are not supported at this time.</p>
+</div>
+<div class="sect2">
+<h3 id="_email">Email</h3>
+<div class="paragraph">
+<p>BroncoMail is the official communication channel through which all university
+business is conducted. It is expected that you access and read university
+communications two or three times per week. For more information see the
+University Policy on Student Email Communications (Policy 2280). Your instructor
+will not respond to any emails sent from personal accounts such as Gmail or
+Yahoo.</p>
+</div>
+<div class="paragraph">
+<p>Your instructor will make every effort to return emails within 48hrs Monday thru
+Friday between the hours of 9:00am and 5:00pm (MST). Emails sent on Saturday,
+Sunday, or outside of the defined hours will be returned within 48hrs on the
+following business day. Emails should be reserved for questions that are not
+appropriate for a public forum such as grades or other personal issues. If you
+don&#8217;t receive a response from your instructor after 48hrs please check to make
+sure you are sending the email from BroncoMail and send a follow-up email.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_discussion_board">Discussion Board</h3>
+<div class="paragraph">
+<p>We will be using an online discussion board for this course. Rather than
+emailing questions to me, please post your questions on the discussion board and
+get replies from myself as well as your classmates! You can also post private
+messages to me. You are expected to log onto the board at least once a week and
+read all the posts.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_office_hours">Office Hours</h3>
+<div class="paragraph">
+<p>Office hours will be by appointment with details posted in Canvas. Office hours
+are a limited resource and students who regularly participate either in class or
+online will have priority over students to don&#8217;t. Office hours are intended to
+support student learning not replace missed lectures.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_student_support">Student support</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Kount Computer Tutoring Center (CCP 241) is accessible 24/7 by proxy card to
+all students enrolled in CS courses. Machines in the Kount Computer Tutoring
+Center have all the software you will need this semester. You can use the lab
+remotely via ssh (onyx.boisestate.edu) and use command line tools such as VIM.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://eac.boisestate.edu/">Educational access center</a></p>
+</li>
+<li>
+<p><a href="https://www.boisestate.edu/online/support-resources/">Support resources</a></p>
+</li>
+<li>
+<p><a href="https://www.boisestate.edu/aasc/academicsupportservices/">Academic support services</a></p>
+</li>
+<li>
+<p><a href="https://www.boisestate.edu/online/student-services/">Online student services</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_student_well_being">Student Well-being</h3>
+<div class="paragraph">
+<p>If you are struggling for any reason (COVID, relationship, family, or life&#8217;s
+stresses) and believe these may impact your performance in the course, I
+encourage you to contact the Dean of Students at (208) 426-1527 or email
+<a href="mailto:deanofstudents@boisestate.edu">deanofstudents@boisestate.edu</a> for support. Additionally, if you are comfortable
+doing so, please reach out to me and I will provide any resources or
+accommodations that I can. If you notice a significant change in your mood,
+sleep, feelings of hopelessness or a lack of self worth, consider connecting
+immediately with Counseling Services (1529 Belmont Street, Norco Building) at
+(208) 426-1459 or email <a href="mailto:healthservices@boisestate.edu">healthservices@boisestate.edu</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_learning_outcomes">Learning Outcomes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>By the end of this course the student should have achieved the following course
+and program learning outcomes.</p>
+</div>
+<div class="sect2">
+<h3 id="_program_learning_outcomes">Program Learning Outcomes</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_course_learning_outcomes">Course Learning Outcomes</h3>
+<table class="tableblock frame-all grid-all stretch">
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/">Blooms Taxonomy</a></p>
+</li>
+<li>
+<p><a href="https://tips.uark.edu/blooms-taxonomy-verb-chart/">Booms Taxonomy of Verbs</a></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -612,5 +1133,29 @@ program is getting stuck <strong>NOT</strong> where the problem is!</p>
 Last updated 2023-05-19 21:56:24 UTC
 </div>
 </div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
 </body>
 </html>
