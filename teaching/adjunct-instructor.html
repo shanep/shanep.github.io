@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
 <meta name="author" content="Shane K. Panter">
-<title>Visual Studio Code Tips and Tricks</title>
+<title>Adjunct Instructor Course Setup</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -440,7 +440,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Visual Studio Code Tips and Tricks</h1>
+<h1>Adjunct Instructor Course Setup</h1>
 <div class="details">
 <span id="author" class="author">Shane K. Panter</span><br>
 <span id="email" class="email"><a href="mailto:shanepanter@boisestate.edu">shanepanter@boisestate.edu</a></span><br>
@@ -448,457 +448,76 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_developing_locally">Developing Locally</a></li>
-<li><a href="#_developing_remotely_codespaces">Developing Remotely (Codespaces)</a>
-<ul class="sectlevel2">
-<li><a href="#_starting_a_codespace">Starting a Codespace</a></li>
-<li><a href="#_configuring_codespace">Configuring Codespace</a></li>
-<li><a href="#_remote_website_development">Remote Website Development</a></li>
-<li><a href="#_running_a_web_server">Running a Web Server</a></li>
-<li><a href="#_accessing_the_menu_in_codespaces">Accessing the menu in Codespaces</a></li>
-<li><a href="#_accessing_all_my_codespaces">Accessing all my Codespaces</a></li>
-<li><a href="#_codespaces_set_default_timeout">Codespaces Set default timeout</a></li>
-</ul>
-</li>
-<li><a href="#_first_time_configuration">First time configuration</a>
-<ul class="sectlevel2">
-<li><a href="#_configure_defaults">Configure defaults</a></li>
-<li><a href="#_configure_the_default_terminal_windows_only">Configure the default terminal (Windows Only)</a></li>
-</ul>
-</li>
-<li><a href="#_debugging_pointers">Debugging Pointers</a>
-<ul class="sectlevel2">
-<li><a href="#_dynamic_array">Dynamic array</a></li>
-<li><a href="#_cast_the_array">Cast the array</a></li>
-</ul>
-</li>
+<li><a href="#_email">Email</a></li>
+<li><a href="#_setup_canvas">Setup Canvas</a></li>
+<li><a href="#_setup_zybooks_course_dependent">Setup zyBooks (course dependent)</a></li>
+<li><a href="#_setup_github_course_dependent">Setup Github (course dependent)</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
-<div id="preamble">
+<div class="sect1">
+<h2 id="_email">Email</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This document will walk you through doing development using VSCode and introduce
-you to some cool tips and tricks. You can install VSCode on your personal
-machine, or you can use VSCode in the cloud with
-<a href="https://github.com/features/codespaces">GitHub Codespaces</a>.</p>
+<p>Email Shane and ask to be added to the course sandbox (canvas) and the course
+textbook.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_developing_locally">Developing Locally</h2>
+<h2 id="_setup_canvas">Setup Canvas</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>You can install VSCode and all the required tools on your personal (local)
-machine. The advantages of using a local install is it is 100% free and you
-don&#8217;t need an internet connection to do your work. The disadvantage is it can
-sometimes be difficult and time consuming to install and configure all the tools
-correctly especially if you are using the Windows operating system.</p>
-</div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><a href="https://git-scm.com/downloads">Install Git</a></p>
+<p><a href="https://boisestate.atlassian.net/wiki/spaces/LTS/pages/1262321666/Create+a+Canvas+Sandbox+Site+with+Middleware">Create a Canvas Sandbox Site with Middleware</a></p>
 </li>
 <li>
-<p><a href="https://code.visualstudio.com/learntocode/">Install Visual Studio Code (Java)</a></p>
+<p>Use the <a href="https://boisestate.atlassian.net/wiki/spaces/LTS/pages/1369604108/Canvas+to+Canvas+Course+Import+course+copy">Canvas to Canvas Course Import </a> to import the sandbox content</p>
 </li>
 <li>
-<p>Read through the <a href="https://code.visualstudio.com/docs/getstarted/userinterface">User interface tutorial</a></p>
+<p>Update the canvas home page with your info and links (TODO comments)</p>
 </li>
 <li>
-<p><a href="https://code.visualstudio.com/docs/terminal/basics">Read Terminal Basics</a></p>
+<p>Set due dates for all Assignments and Quizzes</p>
 </li>
 <li>
-<p>Complete all the steps in the <a href="#_first_time_configuration">First time configuration</a> section of this document.</p>
+<p>Verify all links in course are still valid</p>
+</li>
+<li>
+<p>Add in any custom content (slides, documents, etc.)</p>
 </li>
 </ol>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_developing_remotely_codespaces">Developing Remotely (Codespaces)</h2>
+<h2 id="_setup_zybooks_course_dependent">Setup zyBooks (course dependent)</h2>
 <div class="sectionbody">
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-You are not required to use Codespaces! All the programming
-assignments can be done with a local install. These instructions are just
-provided for students who either want to use Codespaces or don&#8217;t have a machine
-that is capable of running VSCode. You still need to complete all the steps in
-the <a href="#_first_time_configuration">First time configuration</a> section of this document after you start your
-Codespace.
-</td>
-</tr>
-</table>
-</div>
 <div class="paragraph">
-<p><a href="https://github.com/features/codespaces">GitHub Codespaces</a> is a complete VSCode
-development environment in the cloud. It is the quickest and easiest way to
-write code on any machine that has an internet connection and web browser.
-GitHub Codespaces provides a free tier (60 hours) that should be enough cover
-all the usage for a student working on homework. However, you still may need to
-pay a small fee depending on how much you use the service over the course of a
-semester.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces">Codespaces Billing</a></p>
-</li>
-<li>
-<p><a href="https://docs.github.com/en/codespaces">Codespaces Documentation</a></p>
-</li>
-</ul>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_W9B7qc9lVc?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_starting_a_codespace">Starting a Codespace</h3>
-<div class="paragraph">
-<p>Every repository will need its own Codespace. Creating a Codespace is fairly
-straight forward after you have cloned your repository simply click the <strong>code
-button</strong> and then click the <strong>Create Codespaces</strong> as shown below. This will launch
-a Codespace that you can use to work on your project.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/start-codespaces.gif" alt="start codespaces">
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_configuring_codespace">Configuring Codespace</h3>
-<div class="paragraph">
-<p>When you are working remote VSCode does not automatically install any of your
-extensions. To get all your remote extensions installed open the
-<a href="https://code.visualstudio.com/docs/editor/extension-gallery">Extension manager</a>
-and then select the local extensions that you wish to install on the remote
-machine. The first extension that you should install is Live Preview as shown
-below.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/vscode-live-preview.png" alt="VSCode Live preview">
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_remote_website_development">Remote Website Development</h3>
-<div class="paragraph">
-<p>As long as you are using the
-<a href="https://code.visualstudio.com/docs/editor/integrated-terminal">integrated
-terminal</a> in VSCode you can launch a website that you built on the server and
-VSCode will automatically forward the ports for you so you can view it locally.
-For simple websites that don&#8217;t need to run a web server you can use the Live
-preview feature. After you have installed the VScode Live preview extension you
-can start the built in web server just as you would when developing locally.</p>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-Sometimes you will see an error when trying to view your website
-(shown below). This is because there is sometimes a delay on how fast Codespaces
-sets up port forwarding. If you click the "Open in Browser" popup it should open
-up a new tab showing you your website.
-</td>
-</tr>
-</table>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/vscode-live-preview-problems.png" alt="VSCode Live preview problems">
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_running_a_web_server">Running a Web Server</h3>
-<div class="paragraph">
-<p>For more complicated setups like when you want to run a PHP server server from
-Nodejs, you can start the server just like you normally would and then view you
-website from the ports tab show below.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/vscode-port-forward.gif" alt="VSCode connected">
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_accessing_the_menu_in_codespaces">Accessing the menu in Codespaces</h3>
-<div class="paragraph">
-<p>For the most part using Codespaces is identical to developing remotely. One of
-the biggest differences is accessing the Menu toolbar. The screenshot below
-shows you how to access the toolbar in Codespaces.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/codespaces-tool-bar.png" alt="codespaces toolbar">
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_accessing_all_my_codespaces">Accessing all my Codespaces</h3>
-<div class="paragraph">
-<p>You can access all the Codespaces you created from your main profile page. Click
-on the <strong>Codespaces</strong> menu option as shown below.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/all-codespaces.png" alt="All Codespaces">
-</div>
-</div>
-<div class="paragraph">
-<p>Then you should see all the Codespaces that you have created and can use!</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/all-codespaces-view.png" alt="All Codespaces view">
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_codespaces_set_default_timeout">Codespaces Set default timeout</h3>
-<div class="paragraph">
-<p>The default idle timeout for codespaces is 30 minutes. You can quickly burn
-through all your free hours if you keep this default. I recommend that you set
-the default timeout to 10 minutes to preserve your free tier time.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/github-settings.png" alt="Github settings">
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/github-settings-codespaces.png" alt="Github settings codespaces">
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/github-settings-codespaces-default-idle.png" alt="Github settings idle">
-</div>
-</div>
+<p>If your course is using zyBooks
+<a href="https://support.zybooks.com/hc/en-us/articles/4402955317531-How-to-link-a-zyBook-assignment-section-TOC-to-an-LMS-">Link
+all Zybook reading assignments to your textbook</a> so zyBooks will automatically
+update your grade book.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_first_time_configuration">First time configuration</h2>
+<h2 id="_setup_github_course_dependent">Setup Github (course dependent)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Before we can start using VSCode we need to set a few basic configurations. Each
-section is clearly labeled with what Operating system it applies to. You need to
-follow these steps on both local and remote setups.</p>
-</div>
-<div class="sect2">
-<h3 id="_configure_defaults">Configure defaults</h3>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-This section must be completed on ALL operating systems.
-</td>
-</tr>
-</table>
+<p>If your class is submitting programming assignments you will need to setup
+<a href="github-classroom-setup.html">github classrooms</a> and then update each
+programming assignment in canvas.</p>
 </div>
 <div class="paragraph">
-<p>The last step before being to write code is to configure the user tags that will
-be stored as metadata on each commit for your development environment.  To do
-this, open VSCode then click View in the top menu and select Terminal. Enter the
-following commands in the terminal, using your name and email address</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">git config --global user.name "Your Name"
-git config --global user.email "you@example.com"</code></pre>
-</div>
+<p>Each programming assignment listed in the syllabus is already setup to use
+github classroom all you have to do is update the link in the canvas assignment
+as shown below.</p>
 </div>
 <div class="paragraph">
-<p>When you are first learning to use git using a rebase workflow can help to
-reduce the number of conflicts that you have to deal with. Thus, we will set
-it as the default method when pulling down code.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">git config --global pull.rebase true
-git config --global fetch.prune true
-git config --global diff.colorMoved zebra</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Additional reading:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">Merging vs. Rebasing</a></p>
-</li>
-<li>
-<p><a href="https://spin.atomicobject.com/2020/05/05/git-configurations-default/">Git configurations</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_configure_the_default_terminal_windows_only">Configure the default terminal (Windows Only)</h3>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-This section only applies to Windows users who are developing
-locally. If "Git Bash" is not listed as an option you need to
-<a href="https://git-scm.com/downloads">install Git</a> as detailed in the first section of
-this document.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>VSCode defaults to powershell on Windows. While powershell is a great terminal
-all the scripts in my classes require Git Bash. So it is best to set the default
-terminal to Git Bash so everything works correctly</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Open Visual Studio Code</p>
-</li>
-<li>
-<p>Press CTRL + SHIFT + P to open the Command Palette</p>
-</li>
-<li>
-<p>Search for “Terminal: Select Default Profile”</p>
-</li>
-<li>
-<p>Select "Git Bash"</p>
-</li>
-</ol>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/vscode-default-terminal.png" alt="Set Default Terminal">
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_debugging_pointers">Debugging Pointers</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>In the C programming language we can allocate a chunk of memory on the heap and treat that
-chunk of memory as an array. If you are working on debugging a problem and want to inspect the
-contents of the array using the GUI debugger interface in VSCode you may have to tell the
-debugger (with a cast) that a pointer is actually pointing to a dynamically allocated array not a
-single variable. This example walks through how to display a pointer as an array that is
-embedded within a struct.</p>
-</div>
-<div class="paragraph">
-<p>More reading about C and GDB.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="http://unixwiz.net/techtips/reading-cdecl.html">Reading C Declarations</a></p>
-</li>
-<li>
-<p><a href="https://sourceware.org/gdb/current/onlinedocs/gdb/Arrays.html">GDB Artificial Arrays</a></p>
-</li>
-<li>
-<p><a href="http://lldb.llvm.org/use/map.html">GDB to LLDB usage</a></p>
-</li>
-<li>
-<p><a href="https://code.visualstudio.com/docs/editor/debugging#_data-inspection">VSCode Data inspection</a></p>
-</li>
-</ul>
-</div>
-<div class="sect2">
-<h3 id="_dynamic_array">Dynamic array</h3>
-<div class="paragraph">
-<p>Consider the struct declaration <code>buddy_pool</code> shown below. The <code>avail</code> member is a pointer
-that we must dynamically allocate and want to display in the debugger as an array.
-We can allocate the a <code>buddy_pool</code> struct (in the stack or data segment) and then
-dynamically allocate the <code>avail</code> array using <code>malloc</code>.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-c" data-lang="c">struct avail
-{
-    int tag;
-    int kval;
-    struct avail *next;
-    struct avail *prev;
-}
-
-struct buddy_pool
-{
-    size_t kval_m;
-    uintptr_t base;
-    struct avail *avail; /*pointer to the start of the avail array*/
-};
-
-struct buddy_pool pool;
-pool.kval = 9;
-pool.base = 0;
-pool.avail = malloc(sizeof(struct avail) * 9);</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>If we run the debugger we will see the variable <code>pool</code> with the element <code>avail</code> is displayed as a
-single variable not an array of 9 structs as we expected.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/pointer_as_array_bad.png" alt="Pointer not showing the full array">
-</div>
-</div>
-<div class="paragraph">
-<p>The element <code>avail</code> is just a pointer to the memory address of element 0. The debugger can&#8217;t
-determine the size of the array and thus will display it as a single struct instead of an
-array as expected.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_cast_the_array">Cast the array</h3>
-<div class="paragraph">
-<p>Fortunately, all is not lost! Most debuggers allow you to set a watch on a memory location and you
-can force the debugger to cast the memory to a certain type. Both gdb and lldb have specific commands
-to display a memory block as an array. However, using casting works regardless of what debugger
-you are using.</p>
-</div>
-<div class="paragraph">
-<p>If we add a new <a href="https://code.visualstudio.com/docs/editor/debugging#_data-inspection">watch</a>
-on a variable and then force the debugger to display the memory block as an array instead of a
-single variable we can easily inspect the data and track down any issues you are experiencing.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-c" data-lang="c">(struct avail(*) [9])pool-&gt;avail</code></pre>
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/setting_watch_vscode.gif" alt="Watch var showing the full array">
-</div>
-</div>
+<p><span class="image"><img src="images/canvas-github-classroom-update.png" alt="canvas github classroom"></span></p>
 </div>
 </div>
 </div>
