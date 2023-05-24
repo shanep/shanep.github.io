@@ -449,6 +449,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_install_vscode">Install VSCode</a></li>
+<li><a href="#_first_time_configuration">First time configuration</a>
+<ul class="sectlevel2">
+<li><a href="#_configure_defaults">Configure defaults</a></li>
+<li><a href="#_configure_the_default_terminal_windows_only">Configure the default terminal (Windows Only)</a></li>
+</ul>
+</li>
 <li><a href="#_developing_remotely">Developing Remotely</a>
 <ul class="sectlevel2">
 <li><a href="#_connecting_to_a_server">Connecting to a Server</a></li>
@@ -465,12 +471,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_accessing_the_menu_in_codespaces">Accessing the menu in Codespaces</a></li>
 <li><a href="#_accessing_all_my_codespaces">Accessing all my Codespaces</a></li>
 <li><a href="#_codespaces_set_default_timeout">Codespaces Set default timeout</a></li>
-</ul>
-</li>
-<li><a href="#_first_time_configuration">First time configuration</a>
-<ul class="sectlevel2">
-<li><a href="#_configure_defaults">Configure defaults</a></li>
-<li><a href="#_configure_the_default_terminal_windows_only">Configure the default terminal (Windows Only)</a></li>
 </ul>
 </li>
 <li><a href="#_debugging_pointers">Debugging Pointers</a>
@@ -521,6 +521,112 @@ correctly especially if you are using the Windows operating system.</p>
 <p>Complete all the steps in the <a href="#_first_time_configuration">First time configuration</a> section of this document.</p>
 </li>
 </ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_first_time_configuration">First time configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Before we can start using VSCode we need to set a few basic configurations. Each
+section is clearly labeled with what Operating system it applies to. You need to
+follow these steps on both local and remote setups.</p>
+</div>
+<div class="sect2">
+<h3 id="_configure_defaults">Configure defaults</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This section must be completed on ALL operating systems.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The last step before being to write code is to configure the user tags that will
+be stored as metadata on each commit for your development environment.  To do
+this, open VSCode then click View in the top menu and select Terminal. Enter the
+following commands in the terminal, using your name and email address</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">git config --global user.name "Your Name"
+git config --global user.email "you@example.com"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When you are first learning to use git using a rebase workflow can help to
+reduce the number of conflicts that you have to deal with. Thus, we will set
+it as the default method when pulling down code.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">git config --global pull.rebase true
+git config --global fetch.prune true
+git config --global diff.colorMoved zebra</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Additional reading:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">Merging vs. Rebasing</a></p>
+</li>
+<li>
+<p><a href="https://spin.atomicobject.com/2020/05/05/git-configurations-default/">Git configurations</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configure_the_default_terminal_windows_only">Configure the default terminal (Windows Only)</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This section only applies to Windows users who are developing
+locally. If "Git Bash" is not listed as an option you need to
+<a href="https://git-scm.com/downloads">install Git</a> as detailed in the first section of
+this document.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>VSCode defaults to powershell on Windows. While powershell is a great terminal
+all the scripts in my classes require Git Bash. So it is best to set the default
+terminal to Git Bash so everything works correctly</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open Visual Studio Code</p>
+</li>
+<li>
+<p>Press CTRL + SHIFT + P to open the Command Palette</p>
+</li>
+<li>
+<p>Search for “Terminal: Select Default Profile”</p>
+</li>
+<li>
+<p>Select "Git Bash"</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/vscode-default-terminal.png" alt="Set Default Terminal">
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -793,112 +899,6 @@ the default timeout to 10 minutes to preserve your free tier time.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_first_time_configuration">First time configuration</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Before we can start using VSCode we need to set a few basic configurations. Each
-section is clearly labeled with what Operating system it applies to. You need to
-follow these steps on both local and remote setups.</p>
-</div>
-<div class="sect2">
-<h3 id="_configure_defaults">Configure defaults</h3>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-This section must be completed on ALL operating systems.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>The last step before being to write code is to configure the user tags that will
-be stored as metadata on each commit for your development environment.  To do
-this, open VSCode then click View in the top menu and select Terminal. Enter the
-following commands in the terminal, using your name and email address</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">git config --global user.name "Your Name"
-git config --global user.email "you@example.com"</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>When you are first learning to use git using a rebase workflow can help to
-reduce the number of conflicts that you have to deal with. Thus, we will set
-it as the default method when pulling down code.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">git config --global pull.rebase true
-git config --global fetch.prune true
-git config --global diff.colorMoved zebra</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Additional reading:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">Merging vs. Rebasing</a></p>
-</li>
-<li>
-<p><a href="https://spin.atomicobject.com/2020/05/05/git-configurations-default/">Git configurations</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_configure_the_default_terminal_windows_only">Configure the default terminal (Windows Only)</h3>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-This section only applies to Windows users who are developing
-locally. If "Git Bash" is not listed as an option you need to
-<a href="https://git-scm.com/downloads">install Git</a> as detailed in the first section of
-this document.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>VSCode defaults to powershell on Windows. While powershell is a great terminal
-all the scripts in my classes require Git Bash. So it is best to set the default
-terminal to Git Bash so everything works correctly</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Open Visual Studio Code</p>
-</li>
-<li>
-<p>Press CTRL + SHIFT + P to open the Command Palette</p>
-</li>
-<li>
-<p>Search for “Terminal: Select Default Profile”</p>
-</li>
-<li>
-<p>Select "Git Bash"</p>
-</li>
-</ol>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/vscode-default-terminal.png" alt="Set Default Terminal">
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="_debugging_pointers">Debugging Pointers</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -1003,7 +1003,7 @@ single variable we can easily inspect the data and track down any issues you are
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-05-24 00:01:05 UTC
+Last updated 2023-05-24 02:44:45 UTC
 </div>
 </div>
 </body>
