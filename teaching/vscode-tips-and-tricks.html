@@ -448,8 +448,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_developing_locally">Developing Locally</a></li>
-<li><a href="#_developing_remotely_codespaces">Developing Remotely (Codespaces)</a>
+<li><a href="#_install_vscode">Install VSCode</a></li>
+<li><a href="#_developing_remotely">Developing Remotely</a>
+<ul class="sectlevel2">
+<li><a href="#_connecting_to_a_server">Connecting to a Server</a></li>
+<li><a href="#_verify_your_connection">Verify your connection</a></li>
+<li><a href="#_installing_remote_extensions">Installing remote extensions</a></li>
+</ul>
+</li>
+<li><a href="#_developing_in_the_cloud_codespaces">Developing in the Cloud (Codespaces)</a>
 <ul class="sectlevel2">
 <li><a href="#_starting_a_codespace">Starting a Codespace</a></li>
 <li><a href="#_configuring_codespace">Configuring Codespace</a></li>
@@ -487,7 +494,7 @@ machine, or you can use VSCode in the cloud with
 </div>
 </div>
 <div class="sect1">
-<h2 id="_developing_locally">Developing Locally</h2>
+<h2 id="_install_vscode">Install VSCode</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>You can install VSCode and all the required tools on your personal (local)
@@ -518,7 +525,98 @@ correctly especially if you are using the Windows operating system.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_developing_remotely_codespaces">Developing Remotely (Codespaces)</h2>
+<h2 id="_developing_remotely">Developing Remotely</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section will walk you through using VSCode to develop remotely. This is
+incredibly convenient as it allows you to connect directly to a server to run and
+test your code. For advanced users you can read through the
+<a href="https://code.visualstudio.com/docs/remote/ssh">official documentation</a> for more
+details on how everything works.</p>
+</div>
+<div class="sect2">
+<h3 id="_connecting_to_a_server">Connecting to a Server</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>First you need to install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack">Remote development extension pack</a></p>
+</li>
+<li>
+<p>Open the <a href="https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette">command pallet</a></p>
+</li>
+<li>
+<p>Select <em>Remote-SSH: Connect to Host&#8230;&#8203;</em> from the Command Palette (F1) and connect to <em>username@servername.com</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p>VSCode will save your information so when you connect again you will just select the server from the list!</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Select connect to started developing</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>NOTE:</strong> The first time you connect it may take some time for VSCode to
+install all the tools so be patient and don&#8217;t close or stop the process or it
+could cause your install to fail!</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/vscode_remote_devel.gif" alt="Visual walk through">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_verify_your_connection">Verify your connection</h3>
+<div class="paragraph">
+<p>Once you are connected you can verify your status as shown below:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>You should see SSH: onyx.boisestate.edu</p>
+</li>
+<li>
+<p>When you run the command <em>hostname</em> in the integrated terminal you should see
+onyx.boisestate.edu</p>
+</li>
+<li>
+<p>When you run the command <em>whoami</em> in the integrated terminal you should see
+your Boise State username.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/vscode_connected.png" alt="VSCode connected">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_installing_remote_extensions">Installing remote extensions</h3>
+<div class="paragraph">
+<p>When you are working remote VSCode does not automatically install any of your extensions. To get
+all your remote extensions installed open the <a href="https://code.visualstudio.com/docs/editor/extension-gallery">Extension manager</a>
+and then select the local extensions that you wish to install on the remote machine.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/vscode-remote-extensions.png" alt="VSCode remote extensions">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_developing_in_the_cloud_codespaces">Developing in the Cloud (Codespaces)</h2>
 <div class="sectionbody">
 <div class="admonitionblock important">
 <table>
@@ -905,7 +1003,7 @@ single variable we can easily inspect the data and track down any issues you are
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-05-23 23:46:41 UTC
+Last updated 2023-05-24 00:01:05 UTC
 </div>
 </div>
 </body>
