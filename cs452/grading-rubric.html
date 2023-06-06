@@ -455,14 +455,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_grading_rubric">Grading Rubric</a></li>
 <li><a href="#_security">Security</a></li>
+<li><a href="#_testing">Testing</a>
+<ul class="sectlevel2">
 <li><a href="#_student_authored_tests">Student Authored Tests</a></li>
+</ul>
+</li>
+<li><a href="#_code_quality">Code Quality</a>
+<ul class="sectlevel2">
 <li><a href="#_correctness">Correctness</a></li>
-<li><a href="#_general_code_quality">General Code Quality</a></li>
-<li><a href="#_code_quality_ai">Code Quality AI 🤖</a></li>
-<li><a href="#_code_quality_global_variables">Code Quality Global Variables</a></li>
+<li><a href="#_ai">AI 🤖</a></li>
+<li><a href="#_global_variables">Global Variables</a></li>
 <li><a href="#_formatting">Formatting</a></li>
 <li><a href="#_spelling_and_grammar">Spelling and Grammar</a></li>
-<li><a href="#_ownership">Ownership</a></li>
+<li><a href="#_code_ownership">Code Ownership</a></li>
+</ul>
+</li>
 <li><a href="#_documentation">Documentation</a></li>
 <li><a href="#_retrospective">Retrospective</a></li>
 </ul>
@@ -613,14 +620,22 @@ release builds.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_student_authored_tests">Student Authored Tests</h2>
+<h2 id="_testing">Testing</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You will need to write tests to ensure your code is working. The question that
-is always asked is how many tests? The answer is enough to make sure your code
-is correct. At a minimum you should write at least one test for each function or
-method that you wrote. You should make sure that you test bad input as well as
-good input. Your program should not crash if a user inputs bad data!</p>
+<p>For the testing criteria your code will be ran against your instructors private
+test suite. The test suite will consist of both automated tests such as unit
+testing and system testing as well as manual testing in cases that unit testing
+is not feasible.</p>
+</div>
+<div class="sect2">
+<h3 id="_student_authored_tests">Student Authored Tests</h3>
+<div class="paragraph">
+<p>Students are expected to write tests to ensure correct code. The question that
+is always asked is how many tests? At a minimum you should write at least one
+test for each function or method that you wrote. You should make sure that you
+test bad inputs as well as good inputs. Your program should not crash if a user
+inputs bad data!</p>
 </div>
 <div class="paragraph">
 <p>If the project is UI based and must include manual testing you must detail the
@@ -628,9 +643,15 @@ manual tests that you used to ensure your code was correct.</p>
 </div>
 </div>
 </div>
+</div>
 <div class="sect1">
-<h2 id="_correctness">Correctness</h2>
+<h2 id="_code_quality">Code Quality</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Code Quality will be judged on the criteria defined in each section below.</p>
+</div>
+<div class="sect2">
+<h3 id="_correctness">Correctness</h3>
 <div class="paragraph">
 <p>Projects have been carefully crafted to ensure certain learning objectives are
 satisfied. Thus, you are required to solve the problem as described in the
@@ -645,13 +666,8 @@ specification correctly.</p>
 <p>You are not allowed to change the instructor provided tests in any way. You must
 pass the tests as they are written.</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_general_code_quality">General Code Quality</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>Code quality consists of (but is not limited to):</p>
+<p>Correctness consists of (but is not limited to):</p>
 </div>
 <div class="ulist">
 <ul>
@@ -690,18 +706,17 @@ pass the tests as they are written.</p>
 </ul>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_code_quality_ai">Code Quality AI 🤖</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_ai">AI 🤖</h3>
 <div class="paragraph">
 <p>I encourage anyone who is learning to code to <strong>NOT</strong> use AI or even an IDE.
 When you are learning something new it is OK to struggle and get things wrong
-that is part of the process 😃. Think back to your 2nd or 3rd grade class when
-you were learning to spell, did your teacher let you use spell check on your
-spelling tests? What would be the point of taking a spelling test if you could?
-As you have aged using spell check is a great tool, that helps to <strong>enhance</strong>
-your underlying skills that you learned the hard way.</p>
+that is part of the learning process 😃. Think back to your 2nd or 3rd grade
+class when you were learning to spell, did your teacher let you use spell check
+on your spelling tests? What would be the point of taking a spelling test if you
+could? As you have moved up in education using a spell checker is a great way to
+<strong>enhance</strong> your underlying skills. However, even the best spell checkers in the
+world can&#8217;t help someone who doesn&#8217;t understand the basics of grammar or syntax.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -759,10 +774,8 @@ public int size() {
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_code_quality_global_variables">Code Quality Global Variables</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_global_variables">Global Variables</h3>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -770,8 +783,10 @@ public int size() {
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-All <strong>public</strong> global variables are 100% banned. Private,
-protected, or stack local variables variables are OK.
+All <strong>public</strong> global variables are 100% banned. Private, protected,
+or stack local variables variables are OK. If you truly think that the only way
+to solve the problem is to use a global variable then you must <strong>clearly</strong>
+document why you are forced to use a global variable.
 </td>
 </tr>
 </table>
@@ -784,11 +799,6 @@ the project specification and you will be allowed to use global variables in
 those cases.</p>
 </div>
 <div class="paragraph">
-<p>If you truly think that the only way to solve the problem is to use a global
-variable then you must <strong>clearly</strong> document why you are forced to use a global
-variable.</p>
-</div>
-<div class="paragraph">
 <p>Global variables make writing concurrent, async, multi-threaded code very
 difficult. So even if you are not writing concurrent code (or don&#8217;t even know
 what that means at this point) it is good to start training yourself to use
@@ -796,21 +806,23 @@ good habits so the code you write can easily be used in a concurrent environment
 instead of having to refactor your code in the future.</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_formatting">Formatting</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_formatting">Formatting</h3>
 <div class="paragraph">
 <p>Except for languages like python, code formatting for the most part does not
 impact functionality. Formatting can be very subjective so no particular style
-is enforced just that you are consistent. There should be no reason for poorly
-formatted code when your editor will
+is enforced, it is only important that you are consistent within your own code.</p>
+</div>
+<div class="paragraph">
+<p>There should be no reason for poorly formatted code when your editor will
 <a href="https://stackoverflow.com/questions/29973357/how-do-you-format-code-in-visual-studio-code-vscode">do
 it for you</a>! What makes code more or less readable is often controversial and
 opinionated. In this class we will not address the philosophical aspect of
 putting braces on the end of the line or on a new line, or the classic debate of
-tabs vs spaces, we will primarily focus on being consistent. English scholars
-have long known that
+tabs vs spaces, we will primarily focus on being consistent.</p>
+</div>
+<div class="paragraph">
+<p>English scholars have long known that
 <a href="https://www.vappingo.com/word-blog/the-importance-of-punctuation/">punctuation
 matters</a>. To quote from
 <a href="https://owl.purdue.edu/owl/general_writing/academic_writing/paragraphs_and_paragraphing/index.html">purdue&#8217;s
@@ -820,10 +832,8 @@ good formatting. Just because the compiler or interpreter ignores whitespace
 doesn&#8217;t mean you should as well.</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_spelling_and_grammar">Spelling and Grammar</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_spelling_and_grammar">Spelling and Grammar</h3>
 <div class="paragraph">
 <p>I generally do not care about spelling or grammar mistakes, it is not an area I
 excel in :) The only exception to this rule is if your writing is so bad I
@@ -834,10 +844,8 @@ possible.
 checkers</a> are even available that work with camelCase code!</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_ownership">Ownership</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_code_ownership">Code Ownership</h3>
 <div class="paragraph">
 <p>The starter code that is given to you may not be up to the guidelines specified
 in the grading rubric. It is your responsibility to bring all code up to the
@@ -862,6 +870,7 @@ perfect.
 </td>
 </tr>
 </table>
+</div>
 </div>
 </div>
 </div>
@@ -933,6 +942,9 @@ would like to share.</p>
 <div class="ulist">
 <ul>
 <li>
+<p>How did you test your project?</p>
+</li>
+<li>
 <p>Were there any things that you struggled with?</p>
 </li>
 <li>
@@ -966,7 +978,7 @@ you didn&#8217;t use google at all. Be safe CITE!</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-06-06 18:48:28 UTC
+Last updated 2023-06-06 19:45:10 UTC
 </div>
 </div>
 <link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/monokai.css">
