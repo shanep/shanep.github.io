@@ -451,13 +451,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_minimum_standards">Minimum standards</a>
 <ul class="sectlevel2">
 <li><a href="#_compiling">Compiling</a></li>
-<li><a href="#_correctness">Correctness</a></li>
 </ul>
 </li>
 <li><a href="#_grading_rubric">Grading Rubric</a></li>
-<li><a href="#_testing">Testing</a></li>
-<li><a href="#_code_quality">Code Quality</a></li>
-<li><a href="#_security">Security</a></li>
+<li><a href="#_student_authored_tests">Student Authored Tests</a></li>
+<li><a href="#_correctness">Correctness</a></li>
+<li><a href="#_general_code_quality">General Code Quality</a></li>
 <li><a href="#_code_quality_ai">Code Quality AI 🤖</a></li>
 <li><a href="#_code_quality_global_variables">Code Quality Global Variables</a></li>
 <li><a href="#_formatting">Formatting</a></li>
@@ -505,19 +504,6 @@ your code it is strongly recommended that you compile and test your code using
 the terminal to ensure you have not introduced any IDE specific dependencies on
 accident.</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_correctness">Correctness</h3>
-<div class="paragraph">
-<p>Projects have been carefully crafted to ensure certain learning objectives are
-satisfied. Thus, you are required to solve the problem as described in the
-specification. For example, if the specification asks you to implement a quick
-sort algorithm and you implement a merge sort algorithm your solution would not
-be correct even though your code may pass all the instructor provided tests.
-Simply looking at the output is not sufficient to determine correctness! The
-bottom line is code that runs and produces correct output does not mean you
-implemented the specification correctly.</p>
-</div>
 <div class="paragraph">
 <p>All Header files and interfaces must be implemented as specified. You are not
 allowed to change the header files in any way. Header files will be reset to
@@ -553,7 +539,7 @@ their default state when grading.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Testing</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">60%</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Passes 100% of instructor test suite</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Passes between 90% and 100% of instructor test suite</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Passes between 90% and 99% of instructor test suite</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Passes 89% or less of instructor test suite</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Unable to test or Minimum standards were not meet.</p></td>
 </tr>
@@ -586,7 +572,7 @@ their default state when grading.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_testing">Testing</h2>
+<h2 id="_student_authored_tests">Student Authored Tests</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>You will need to write tests to ensure your code is working. The question that
@@ -596,43 +582,38 @@ method that you wrote. You should make sure that you test bad input as well as
 good input. Your program should not crash if a user inputs bad data!</p>
 </div>
 <div class="paragraph">
-<p>Here are some examples of what you should test:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Passing NULL to function arguments</p>
-</li>
-<li>
-<p>Passing values that are out of range such as negative numbers</p>
-</li>
-<li>
-<p>Checking the return values of your functions to ensure that the function is returning expected values</p>
-</li>
-<li>
-<p>Defining <a href="https://en.wikipedia.org/wiki/Loop_invariant">loop invariants</a> where appropriate.</p>
-</li>
-<li>
-<p>All memory that is allocated must be free&#8217;d (memory leaks)</p>
-</li>
-<li>
-<p>All memory access must be within the proper bounds (read/write errors)</p>
-</li>
-</ul>
+<p>If the project is UI based and must include manual testing you must detail the
+manual tests that you used to ensure your code was correct.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_code_quality">Code Quality</h2>
+<h2 id="_correctness">Correctness</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Projects have been carefully crafted to ensure certain learning objectives are
+satisfied. Thus, you are required to solve the problem as described in the
+specification. For example, if the specification asks you to write CSS in an
+external file and you write inline CSS your solution would not be correct even
+though your code may pass all the instructor provided tests. Simply looking at
+the output is not sufficient to determine correctness! The bottom line is code
+that runs and produces correct output does not mean you implemented the
+specification correctly.</p>
+</div>
+<div class="paragraph">
+<p>You are not allowed to change the instructor provided tests in any way. You must
+pass the tests as they are written.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_general_code_quality">General Code Quality</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Code quality consists of (but is not limited to):</p>
 </div>
 <div class="ulist">
 <ul>
-<li>
-<p>Proper use of qualifiers on functions or method when needed</p>
-</li>
 <li>
 <p>Validating user input</p>
 <div class="ulist">
@@ -654,85 +635,18 @@ good input. Your program should not crash if a user inputs bad data!</p>
 </div>
 </li>
 <li>
-<p>Compiler warnings</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Compiler warnings are never acceptable in any submitted code.</p>
+<p>What happens if you pass NULL or undefined to function arguments</p>
 </li>
 <li>
-<p>All files must compile warning free even if the warnings come from instructor provided code!</p>
+<p>Passing values that are out of range such as negative numbers</p>
+</li>
+<li>
+<p>Checking the return values of your functions to ensure that the function is returning expected values</p>
+</li>
+<li>
+<p>Defining <a href="https://en.wikipedia.org/wiki/Loop_invariant">loop invariants</a> where appropriate.</p>
 </li>
 </ul>
-</div>
-</li>
-<li>
-<p>Redundant statement or expressions</p>
-</li>
-<li>
-<p>Code that is commented out and clearly unused.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>In the example below you can see two functions badEqual and goodEqual. The
-badEqual method uses an unnecessary if statement. The expression a == b already
-returns a boolean value so there is no need for the if statement, it is
-redundant. Additionally the badEqual function has code that was commented out
-instead of deleted.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-c hljs" data-noescape="true" data-lang="c">bool badEqual(int a, int b){
-  if(a == b){
-    return true;
-  }else{
-    //return true;
-    return false;
-  }
-}
-
-bool goodEqual(int a, int b){
-  return a == b;
-}</code></pre>
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/goto.png" alt="GOTO">
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_security">Security</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>All C/C++ code must conform to the following standards.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Students must address all memory leaks</p>
-</li>
-<li>
-<p>Students must address any double free errors</p>
-</li>
-<li>
-<p>Students must not have any dangling pointers in their code</p>
-</li>
-<li>
-<p>All out of bounds read/write errors must be addressed.</p>
-</li>
-<li>
-<p><a href="https://github.com/git/git/blob/master/banned.h">Banned Functions</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>All projects are configured with a debug option that sets the appropriate
-compiler flags for you! Make sure and run all your tests under both debug and
-release builds.</p>
 </div>
 </div>
 </div>
@@ -972,7 +886,7 @@ you didn&#8217;t use google at all. Be safe CITE!</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-06-06 17:50:01 UTC
+Last updated 2023-06-06 18:03:42 UTC
 </div>
 </div>
 <link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/monokai.css">
