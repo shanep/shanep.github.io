@@ -458,6 +458,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_testing">Testing</a></li>
 <li><a href="#_code_quality">Code Quality</a></li>
 <li><a href="#_security">Security</a></li>
+<li><a href="#_code_quality_ai">Code Quality AI 🤖</a></li>
 <li><a href="#_formatting">Formatting</a></li>
 <li><a href="#_spelling_and_grammar">Spelling and Grammar</a></li>
 <li><a href="#_ownership">Ownership</a></li>
@@ -734,6 +735,75 @@ release builds.</p>
 </div>
 </div>
 <div class="sect1">
+<h2 id="_code_quality_ai">Code Quality AI 🤖</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I encourage anyone who is learning to code to <strong>NOT</strong> use AI or even an IDE.
+When you are learning something new it is OK to struggle and get things wrong
+that is part of the process 😃. Think back to your 2nd or 3rd grade class when
+you were learning to spell, did your teacher let you use spell check on your
+spelling tests? What would be the point of taking a spelling test if you could?
+As you have aged using spell check is a great tool, that helps to <strong>enhance</strong>
+your underlying skills that you learned the hard way.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Developer tools such as an IDE or AI should be used to <strong>enhance</strong>
+your skills not replace them! AI in the hands of an experienced developer makes
+that developer even more productive! AI in the hands of a student robs them of
+the opportunity to learn 📚!
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>That being said, as is stated in the class syllabus I am not banning AI or other
+developer tools because that is a battle that I will loose. You are allowed to
+use AI when working on assignments (assuming you cite your usage). However, you
+will now be graded on the code that it writes. If you truly believe that ChatGPT
+can <strong>always</strong> give the best solution to any problem then you may want to switch
+majors because why would a company hire you if they can just use ChatGPT to
+write all their code?</p>
+</div>
+<div class="paragraph">
+<p>Take for example the code snippet shown below. Can you spot the problem? While
+both solutions do work and produce correct results, the AI generated solution is
+O(N) while the correct solution is O(1). If you don&#8217;t know why one is better
+than the other then I would strongly suggests you not use AI tools until you get
+more experience.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">//ChatGPT O(N) function for a Linked List
+//This is D or C- level work
+public int size() {
+    int size = 0;
+    Node current = head;
+    while (current != null) {
+        size++;
+        current = current.next;
+    }
+    return size;
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">//O(1) version
+//This would be A level work
+public int size() {
+    return size;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_formatting">Formatting</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -815,7 +885,7 @@ documentation to explain why it is needed.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-06-01 21:07:51 UTC
+Last updated 2023-06-06 16:39:46 UTC
 </div>
 </div>
 </body>
