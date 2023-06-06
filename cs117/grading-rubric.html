@@ -459,6 +459,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_code_quality">Code Quality</a></li>
 <li><a href="#_security">Security</a></li>
 <li><a href="#_code_quality_ai">Code Quality AI 🤖</a></li>
+<li><a href="#_code_quality_global_variables">Code Quality Global Variables</a></li>
 <li><a href="#_formatting">Formatting</a></li>
 <li><a href="#_spelling_and_grammar">Spelling and Grammar</a></li>
 <li><a href="#_ownership">Ownership</a></li>
@@ -805,6 +806,43 @@ public int size() {
 </div>
 </div>
 <div class="sect1">
+<h2 id="_code_quality_global_variables">Code Quality Global Variables</h2>
+<div class="sectionbody">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+All <strong>public</strong> global variables are 100% banned. Private,
+protected, or stack local variables variables are OK.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>There are instances where it is necessary to use a public global variable
+because you are dealing with a legacy API, writing a device driver, or you are
+working with a poorly implemented SDK. These cases will be clearly detailed in
+the project specification and you will be allowed to use global variables in
+those cases.</p>
+</div>
+<div class="paragraph">
+<p>If you truly think that the only way to solve the problem is to use a global
+variable then you must <strong>clearly</strong> document why you are forced to use a global
+variable.</p>
+</div>
+<div class="paragraph">
+<p>Global variables make writing concurrent, async, multi-threaded code very
+difficult. So even if you are not writing concurrent code (or don&#8217;t even know
+what that means at this point) it is good to start training yourself to use
+good habits so the code you write can easily be used in a concurrent environment
+instead of having to refactor your code in the future.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_formatting">Formatting</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -934,7 +972,7 @@ you didn&#8217;t use google at all. Be safe CITE!</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-06-06 17:11:08 UTC
+Last updated 2023-06-06 17:50:01 UTC
 </div>
 </div>
 <link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/monokai.css">
