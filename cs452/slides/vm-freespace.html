@@ -415,7 +415,28 @@ ul.byline li + li {
 }
 </style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/v4-shims.min.css"></head><body><div class="reveal"><div class="slides"><section class="title" data-state="title"><h1>Free-Space Management 🆓</h1><p class="byline">
   <span class="author">Shane K. Panter <a href="mailto:shanepanter@boisestate.edu">shanepanter@boisestate.edu</a></span>
-  </p></section><div class="paragraph"><p>==</p></div></div></div><script src="/reveal.js/dist/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
+  </p></section><section id="_memory"><h2>Memory</h2><div class="slide-content"><div class="ulist"><ul><li><p>Managing free space can certainly be easy, as we will see when we discuss the
+concept of paging.</p></li><li><p>Where free-space management becomes more difficult (and interesting) is when
+the free space you are managing consists of variable-sized units;</p></li></ul></div></div></section>
+<section><section id="_partition_strategies"><h2>Partition Strategies</h2><div class="slide-content"><div class="ulist"><ul><li><p>Fixed Partitions: Simple but inflexible. Can have internal fragmentation.</p></li><li><p>Variable partitions: Flexible but more complex. Can lead to external fragmentation</p></li></ul></div></div></section><section id="_fixed_partition"><h2>Fixed Partition</h2><div class="slide-content"><div class="imageblock"><img src="images/vm-internal-frag.png" alt="Internal Frag"></div></div></section><section id="_variable_partition"><h2>Variable Partition</h2><div class="slide-content"><div class="imageblock"><img src="images/vm-external-frag.png" alt="External Frag"></div></div></section></section>
+<section><section id="_malloc"><h2>Malloc</h2><div class="slide-content"><div class="imageblock"><img src="images/malloc.png" alt="malloc meme"></div></div></section><section id="_malloc_header"><h2>Malloc Header</h2><div class="slide-content"><div class="imageblock"><img src="images/malloc-header.png" alt="malloc header"></div></div></section><section id="_malloc_internals"><h2>Malloc Internals</h2><div class="slide-content"><div class="ulist"><ul><li><p>All calls to malloc will incur a small amount of overhead to accommodate a header.</p></li><li><p>The pointer returned by malloc points at the free space not the header itself.</p></li><li><p>When you write outside of your memory area you have the possibility of stomping another memory blocks header which will eventually cause a segfault.</p></li></ul></div></div></section></section>
+<section><section id="_malloc_strategies"><h2>Malloc Strategies</h2><div class="slide-content"><div class="paragraph"><p>Now that we have some machinery under our belt, let&#8217;s go over some basic
+strategies for managing free space.</p></div></div></section><section id="_best_fit"><h2>Best Fit</h2><div class="slide-content"><div class="paragraph"><p>The best fit strategy is quite simple: first, search through the free list and
+find chunks of free memory that are as big or bigger than the requested size.
+Then, return the one that is the smallest in that group of candidates; this is
+the so called best-fit chunk (it could be called smallest fit too).</p></div>
+<div class="ulist"><ul><li><p>Pros?</p></li><li><p>Cons?</p></li></ul></div></div></section><section id="_worst_fit"><h2>Worst Fit</h2><div class="slide-content"><div class="paragraph"><p>The worst fit approach is the opposite of best fit; find the largest chunk and
+return the requested amount; keep the remaining (large) chunk on the free list.
+Worst fit tries to thus leave big chunks free instead of lots of small chunks
+that can arise from a best-fit approach</p></div>
+<div class="ulist"><ul><li><p>Pros?</p></li><li><p>Cons?</p></li></ul></div></div></section><section id="_first_fit"><h2>First Fit</h2><div class="slide-content"><div class="paragraph"><p>The first fit method simply finds the first block that is big enough and returns
+the requested amount to the user. As before, the remaining free space is kept
+free for subsequent requests.</p></div>
+<div class="ulist"><ul><li><p>Pros?</p></li><li><p>Cons?</p></li></ul></div></div></section><section id="_next_fit"><h2>Next Fit</h2><div class="slide-content"><div class="paragraph"><p>Instead of always beginning the first-fit search at the beginning of the list,
+the next fit algorithm keeps an extra pointer to the location within the list
+where one was looking last.</p></div>
+<div class="ulist"><ul><li><p>Pros?</p></li><li><p>Cons?</p></li></ul></div></div></section><section id="_other_approaches"><h2>Other approaches</h2><div class="slide-content"><div class="ulist"><ul><li><p>Segregated Lists (Memory pools)</p></li><li><p>Buddy Allocation - YA!! This is one of our projects 😍</p></li></ul></div></div></section></section>
+<section id="_questions"><h2>Questions?</h2></section></div></div><script src="/reveal.js/dist/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
   if (slide.getAttribute('data-background-color')) return;
   // user needs to explicitly say he wants CSS color to override otherwise we might break custom css or theme (#226)
   if (!(slide.classList.contains('canvas') || slide.classList.contains('background'))) return;
