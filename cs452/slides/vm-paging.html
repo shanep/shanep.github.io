@@ -415,7 +415,17 @@ ul.byline li + li {
 }
 </style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/v4-shims.min.css"></head><body><div class="reveal"><div class="slides"><section class="title" data-state="title"><h1>Paging 📟</h1><p class="byline">
   <span class="author">Shane K. Panter <a href="mailto:shanepanter@boisestate.edu">shanepanter@boisestate.edu</a></span>
-  </p></section></div></div><script src="/reveal.js/dist/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
+  </p></section><section id="_paging"><h2>Paging</h2><div class="slide-content"><div class="paragraph"><p>Instead of splitting up a process&#8217;s address space into some number of
+variable-sized logical segments (e.g., code, heap, stack), we divide it into
+fixed-sized units, each of which we call a page.</p></div>
+<div class="ulist"><ul><li><p>page frames - physical memory as an array of fixed-sized slots</p></li></ul></div></div></section>
+<section id="_memory"><h2>Memory</h2><div class="slide-content"><div class="imageblock"><img src="images/vm-page-frame.png" alt="Page Frame"></div></div></section>
+<section id="_page_table"><h2>Page Table</h2><div class="slide-content"><div class="paragraph"><p>To record where each virtual page of the address space is placed in physical
+memory, the operating system usually keeps a per-process data structure known as
+a page table.</p></div></div></section>
+<section id="_virtual_address"><h2>Virtual Address</h2><div class="slide-content"><div class="imageblock"><img src="images/vm-virtual-phy.png" alt="Virtual"></div></div></section>
+<section id="_address_translation"><h2>Address Translation</h2><div class="slide-content"><div class="imageblock"><img src="images/vm-add-trans.png" alt="Translation"></div></div></section>
+<section id="_questions"><h2>Questions?</h2></section></div></div><script src="/reveal.js/dist/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
   if (slide.getAttribute('data-background-color')) return;
   // user needs to explicitly say he wants CSS color to override otherwise we might break custom css or theme (#226)
   if (!(slide.classList.contains('canvas') || slide.classList.contains('background'))) return;
