@@ -436,6 +436,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/github.min.css">
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
@@ -458,19 +459,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_final_exam">Final Exam</a></li>
 </ul>
 </li>
-<li><a href="#_grading_policy">Grading Policy</a></li>
-<li><a href="#_extra_credit_opportunities">Extra Credit Opportunities</a>
+<li><a href="#_grading_policy">Grading Policy</a>
 <ul class="sectlevel2">
+<li><a href="#_extra_credit_opportunities">Extra Credit Opportunities</a></li>
 <li><a href="#_standing_extra_credit">Standing Extra Credit</a></li>
 </ul>
 </li>
 <li><a href="#_homework_policy">Homework Policy</a>
 <ul class="sectlevel2">
 <li><a href="#_submitting_projects">Submitting Projects</a></li>
+<li><a href="#_errors_and_omissions">Errors and Omissions</a></li>
 <li><a href="#_ai">AI 🤖</a></li>
 </ul>
 </li>
-<li><a href="#_late_work">Late Work</a>
+<li><a href="#_late_work_policy">Late Work Policy</a>
 <ul class="sectlevel2">
 <li><a href="#_late_work_projects">Late Work - Projects</a></li>
 <li><a href="#_late_work_exams">Late Work - Exams</a></li>
@@ -937,17 +939,15 @@ advantage of to improve your final grade 😃.</p>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_extra_credit_opportunities">Extra Credit Opportunities</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_extra_credit_opportunities">Extra Credit Opportunities</h3>
 <div class="paragraph">
 <p>Standing extra credit is always offered to allow students to bump their grade up
 if they are on a grading boundary so please take advantage of any extra credit
 offered. Any extra credit given over the semester can not exceed 2.5% of the
 total points offered. For example, the maximum number of extra credit points
 that you can earn if the total points offered is 1000 would be 25.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_standing_extra_credit">Standing Extra Credit</h3>
@@ -997,6 +997,15 @@ commits (1 per week).</p>
 </div>
 </div>
 <div class="sect2">
+<h3 id="_errors_and_omissions">Errors and Omissions</h3>
+<div class="paragraph">
+<p>There are very rare 🤣 instances where I have made a mistake. If I made a
+mistake with your grade don&#8217;t panic! Take a deep breath and just send me an
+email with the details and I will take a look. Remember everything will be OK,
+I am here to help you as best I can 😃.</p>
+</div>
+</div>
+<div class="sect2">
 <h3 id="_ai">AI 🤖</h3>
 <div class="paragraph">
 <p>I feel that we are experiencing a new paradigm shift that last happened in 1998
@@ -1013,8 +1022,62 @@ to what existed before.</p>
 <p>Banning tools that are broadly available only results in creating a low trust
 environment in the classroom. Thus, in my class you are free to use any
 <a href="https://en.wikipedia.org/wiki/Skynet_(Terminator)">AI or Machine Learning
-technologies</a> to complete any assigned work. The only restriction is you
-<strong>must</strong> document and cite your usage.</p>
+technologies</a> to complete any assigned work. However, I strongly encourage
+anyone who is learning to code to <strong>NOT</strong> use AI or even an IDE. When you are
+learning something new it is OK to struggle and get things wrong that is part of
+the learning process 😃. Think back to your 2nd or 3rd grade class when you were
+learning to spell, did your teacher let you use spell check on your spelling
+tests? What would be the point of taking a spelling test if you could? As you
+have moved up in education using a spell checker is a great way to <strong>enhance</strong>
+your underlying skills. However, even the best spell checkers in the world can&#8217;t
+help someone who doesn&#8217;t understand the basics of grammar or syntax.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Developer tools such as an IDE or AI should be used to <strong>enhance</strong>
+your skills not replace them! AI in the hands of an experienced developer makes
+that developer even more productive! AI in the hands of a student robs them of
+the opportunity to learn 📚!
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If you choose to ue AI you <strong>must cite</strong> your usage and you will now be graded
+on the code that it writes. If you truly believe that ChatGPT can <strong>always</strong>
+give the best solution to any problem then you may want to switch majors because
+why would a company hire you if they can just use ChatGPT to write all their
+code? Take for example the code snippet shown below. Can you spot the problem?
+While both solutions do work and produce correct results, the AI generated
+solution is O(N) while the correct solution is O(1). If you don&#8217;t know why one
+is better than the other then I would strongly suggests you not use AI tools
+until you get more experience.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">//ChatGPT O(N) function for a Linked List
+//This is D or C- level work
+public int size() {
+    int size = 0;
+    Node current = head;
+    while (current != null) {
+        size++;
+        current = current.next;
+    }
+    return size;
+}
+
+//O(1) version
+//This would be A level work
+public int size() {
+    return size;
+}</code></pre>
+</div>
 </div>
 <div class="admonitionblock warning">
 <table>
@@ -1032,20 +1095,22 @@ AI tools.
 </table>
 </div>
 <div class="paragraph">
-<p>It is my job as an instructor to craft assignments that AI tools struggle to
-solve. As soon as an assignment can be 100% solved with AI it should be replaced
-with something new. I test my assignments against modern AI tools and sometimes
-see hilariously wrong results, so if you are not able to recognize correct vs
-incorrect results you should not be using AI in the first place. So the bottom
-line is if you know enough about the given subject to be able to recognize
-correct vs incorrect results then you should be free to use said tools to
-enhance your productivity and education.</p>
+<p>When you are learning new material early assignments are intentionally easier to
+help you build up your skills. Leaning too heavily on AI early on will hurt you
+when you get to more complex assignments. You may not even feel the pain until
+you get to your 300 or 400 level courses. Trust me when I say AI can not solve
+most of the programming assignments in your 400 level courses. I test my
+assignments against modern AI tools and sometimes see hilariously wrong results,
+so if you are not able to recognize correct vs incorrect results you should not
+be using AI in the first place. So the bottom line is if you know enough about
+the given subject to be able to recognize correct vs incorrect results then you
+should be free to use said tools to enhance your productivity and education.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_late_work">Late Work</h2>
+<h2 id="_late_work_policy">Late Work Policy</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Once grades have been posted to canvas no further submissions will be accepted
@@ -1109,9 +1174,11 @@ the same time.</p>
 work with students if they are willing to work with me. I am always open to
 reasonable requests for extensions, all you have to do is ask. However, if the
 first request for an extension is emailed to me at 11:32PM the day it is due and
-you have had multiple days (if not weeks) to work on the assignment there is a
-87.3% chance the request will be denied. So procrastinate at your own risk ☠.
-The secret code for the syllabus quiz is "green".</p>
+you have had multiple days (if not weeks) to work on the assignment and I can
+see that the first time you have even opened the assignment was at 11:31PM there
+is a 87.3% chance the request will be denied. The bottom line is if I can see
+you have been putting in effort and genuinely want to learn I will approve your
+request 😃. The secret code for the syllabus quiz is "green".</p>
 </div>
 </div>
 </div>
@@ -1412,9 +1479,16 @@ impossible to recover from.
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-06-15 22:45:03 UTC
+Last updated 2023-06-16 16:45:22 UTC
 </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
+<script>
+if (!hljs.initHighlighting.called) {
+  hljs.initHighlighting.called = true
+  ;[].slice.call(document.querySelectorAll('pre.highlight > code')).forEach(function (el) { hljs.highlightBlock(el) })
+}
+</script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   messageStyle: "none",
