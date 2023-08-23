@@ -1214,16 +1214,20 @@ all the spelling and grammar errors that I make).</p>
 graded on the code that it writes. If you truly believe that ChatGPT can
 <strong>always</strong> give the best solution to any problem then you may want to switch
 majors because why would a company hire you if they can just use ChatGPT to
-write all their code? Take for example the code snippet shown below. Can you
-spot the problem? While both solutions do work and produce correct results, the
-AI generated solution is O(N) while the correct solution is O(1). If you don&#8217;t
-know why one is better than the other then I would strongly suggest you not use
-AI tools until you get more experience.</p>
+write all their code?</p>
+</div>
+<div class="paragraph">
+<p>Take for example the code snippet shown below. Can you spot the problem? While
+both solutions do work and produce correct results, the AI generated solution is
+O(N) while the <strong>better</strong> solution is O(1). If you don&#8217;t know why one is better
+than the other then I would strongly suggest you not use AI tools until you get
+more experience.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">//ChatGPT O(N) function for a Linked List
-//This is D or C- level work
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">//Two different approaches to writing a size function in a Linked List
+
+//ChatGPT generated - O(N) performance
 public int size() {
     int size = 0;
     Node current = head;
@@ -1234,8 +1238,7 @@ public int size() {
     return size;
 }
 
-//O(1) version
-//This would be A level work
+//Hand coded - O(1) performance
 public int size() {
     return size;
 }</code></pre>
@@ -1559,7 +1562,7 @@ impossible to recover from.
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-08-23 13:25:26 UTC
+Last updated 2023-08-23 13:45:36 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
