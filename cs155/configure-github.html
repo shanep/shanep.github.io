@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
 <meta name="author" content="Shane K. Panter">
-<title>Fullstack Introduction</title>
+<title>Configure Github</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -440,7 +440,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Fullstack Introduction</h1>
+<h1>Configure Github</h1>
 <div class="details">
 <span id="author" class="author">Shane K. Panter</span><br>
 <span id="email" class="email"><a href="mailto:shanepanter@boisestate.edu">shanepanter@boisestate.edu</a></span><br>
@@ -449,9 +449,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_overview">Overview</a></li>
-<li><a href="#_module_assignments">Module Assignments</a></li>
-<li><a href="#_important_topics">Important topics</a></li>
-<li><a href="#_objectives">Objectives</a></li>
+<li><a href="#_install_the_command_line_client">Install the command line client</a></li>
+<li><a href="#_setup_authorization">Setup Authorization</a></li>
+<li><a href="#_confirm_everything_works">Confirm everything works</a></li>
 </ul>
 </div>
 </div>
@@ -460,92 +460,123 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_overview">Overview</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>In this module, we will introduce server-side programming. Most websites and web
-applications require the development of client-side technologies that interact
-with server-side technologies. Client-side (or front-end) refers to those
-technologies that run in the web browser like HTML, CSS, and JavaScript.
-Server-side (or back-end) refers to those technologies that run on the web
-server like NodeJS. There are certain things that you should never do on the
-client side. For example, accessing a database (while possible) should never be
-done from the web browser.</p>
+<p>This document will walk you through configuring your personal github account to use ssh keys.
+We will be using the github cli app to complete this task.</p>
 </div>
-<div class="admonitionblock tip">
+</div>
+</div>
+<div class="sect1">
+<h2 id="_install_the_command_line_client">Install the command line client</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-This module will take an estimated 7 - 9 hours to complete.
+You can skip this task if you are working on one of the cs lab machines.
+The gh command line tool is already installed for you.
 </td>
 </tr>
 </table>
 </div>
+<div class="paragraph">
+<p>Install the github command line client <a href="https://cli.github.com/">cli.github.com</a>.</p>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Windows users <strong>MUST</strong> reboot their machines.
+If you are on windows do not continue until you have rebooted your machine.
+</td>
+</tr>
+</table>
 </div>
-<div class="sect1">
-<h2 id="_module_assignments">Module Assignments</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Complete the textbook reading assignments that are linked in canvas</p>
-</li>
-<li>
-<p>Complete the reading quiz on canvas</p>
-</li>
-<li>
-<p>Complete the project 4 on canvas</p>
-</li>
-<li>
-<p>Complete the end of module reflection on canvas(flip grid)</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>Once the gh tool is installed you should be able to open a terminal and type <strong>gh</strong> as shown below.</p>
 </div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">&gt; gh
+Work seamlessly with GitHub from the command line.
+
+USAGE
+  gh &lt;command&gt; &lt;subcommand&gt; [flags]
+
+... Lots more output!</code></pre>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_important_topics">Important topics</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Full stack development</p>
-</li>
-<li>
-<p>Nodejs fundamentals (conditionals, loops, arrays, etc.)</p>
-</li>
-<li>
-<p>Common functions such as date/time and math</p>
-</li>
-<li>
-<p>Cookies and sessions</p>
-</li>
-</ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_objectives">Objectives</h2>
+<h2 id="_setup_authorization">Setup Authorization</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>By the end of this module, you will be able to:</p>
+<p>We want to configure our machine to use ssh keys using the command <code>gh auth login</code>. Other tools and some Integrated developer environments need ssh to work properly.
+This will ensure that your setup will work no matter how you choose to write code 😃.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Identify when a server-side language such as NodeJS is useful in web development.</p>
-</li>
-<li>
-<p>Use NodeJS templates reduce repetitive HTML and produce dynamic content based on conditionals.</p>
-</li>
-<li>
-<p>Explore functions available in NodeJS and use them to implement server-side logic.</p>
-</li>
-<li>
-<p>Know basic database terms</p>
-</li>
-</ul>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">&gt; gh auth login
+? What account do you want to log into? GitHub.com
+? You're already logged into github.com. Do you want to re-authenticate? Yes
+? What is your preferred protocol for Git operations? SSH
+? Generate a new SSH key to add to your GitHub account? Yes
+? Enter a passphrase for your new SSH key (Optional)
+? Title for your SSH key: (GitHub CLI)
+
+? Title for your SSH key: GitHub CLI
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: C810-9853
+Press Enter to open github.com in your browser...
+✓ Authentication complete.
+- gh config set -h github.com git_protocol ssh
+✓ Configured git protocol
+✓ Uploaded the SSH key to your GitHub account: C:\Users\shane\.ssh\id_ed25519.pub
+✓ Logged in as shanep</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_confirm_everything_works">Confirm everything works</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We want to confirm that we have everything setup correctly.
+Luckily the command line tool has an option to do this for us.
+Run the command <code>gh auth status</code> and you should see output similar to what is shown below.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Your output will be slightly different depending on the OS and other factors.
+You are not required to match the output exactly, you just need to confirm that github.com is configured to use the ssh protocol.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">&gt; gh auth status
+github.com
+  ✓ Logged in to github.com as shanep (keyring)
+  ✓ Git operations for github.com configured to use ssh protocol.
+  ✓ Token: gho_************************************
+  ✓ Token scopes: admin:public_key, gist, read:org, repo</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Congrats you are now configured to use github.com with the ssh protocol!</p>
 </div>
 </div>
 </div>
