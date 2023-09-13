@@ -27,4 +27,4 @@ static-docs:
 
 .PHONY: clean
 clean:
-	rm -rf docs
+	rm -rf $(BUILD_DIR)

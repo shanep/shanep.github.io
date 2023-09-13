@@ -3,3 +3,4 @@ Shane K. Panter <shanepanter@boisestate.edu>
 :toc: left
 :stem: latexmath
 :source-highlighter: highlight.js
+:last-update-label!:
