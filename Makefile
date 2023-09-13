@@ -1,4 +1,4 @@
-BUILD_DIR ?= ./docs
+BUILD_DIR ?= ./build
 SRC_DIR ?= ./src
 STATIC_DIR ?= ./static
 UNAME_S := $(shell uname -s)
