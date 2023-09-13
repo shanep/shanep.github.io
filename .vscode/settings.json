@@ -20,6 +20,6 @@
         "struct"
     ],
 
-    "livePreview.serverRoot": "./docs",
-    "livePreview.defaultPreviewPath": "./docs",
+    "livePreview.serverRoot": "./build",
+    "livePreview.defaultPreviewPath": "./build",
 }
