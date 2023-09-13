@@ -1,0 +1,80 @@
+= Operating Systems
+include::../../includes/attributes-settings.adoc[]
+:catalog-title: CS 452/552 OPERATING SYSTEMS (3-0-3)(F,S).
+:catalog-description: Process management, concurrency, \
+inter-process communication, synchronization, scheduling, memory management, \
+file systems and security. Case studies of multiple operating systems. PREREQ: \
+CS 321 and ECE 330.
+
+
+include::../../includes/syllabus-logistics.adoc[]
+
+== Course Learning Outcomes
+
+By the end of this course the student should have achieved the following course
+learning outcomes.
+
+[%header,format=csv]
+[cols="10,10,~,15,15"]
+|===
+include::learning-objectives.csv[]
+|===
+
+* https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/[Blooms Taxonomy]
+* https://tips.uark.edu/blooms-taxonomy-verb-chart/[Booms Taxonomy of Verbs]
+
+== Course Materials
+
+* Textbook: https://pages.cs.wisc.edu/~remzi/OSTEP/[Operating Systems: Three Easy Pieces]
+** Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau
+* xref:../teaching/vscode-tips-and-tricks.adoc[VSCode Tips and Tricks]
+* https://github.com/shanep/ostep-code[Code Examples]
+* xref:debugging-c.adoc[Debugging C]
+* xref:memory-errors.adoc[Memory Errors]
+
+== Topics and Schedule
+
+[%header,format=csv]
+[cols="10,~,~,~"]
+|===
+include::schedule.csv[]
+|===
+
+== Assessments
+
+Your final grade will be calculated with the following weights in canvas.
+
+* Quizzes - 40%
+* Projects - 60%
+
+=== Quizzes
+
+There will be 7 quizzes over the assigned reading and general C programming
+during the semester. The quizzes are open notes and open book and must be done
+individually.
+
+=== Projects
+
+There are several individual projects this semester. All Projects will be graded
+with the xref:grading-rubric.adoc[project grading rubric].
+
+* https://github.com/shanep/os-p1-starter[Project 1] - This is a warm up project
+to introduce you to the project structure and tooling used as well as brush up
+on your C programming skills.
+* https://github.com/shanep/os-p2-starter[Project 2] - In this project you will
+write a simple shell to get a better understanding of processes.
+* https://github.com/shanep/os-p3-starter[Project 3] - In this project you will
+implement the buddy memory algorithm as described by Dr. Donald Knuth.
+* https://github.com/shanep/os-p4-starter[Project 4]  - This project will
+introduce using threads to speed up an application and then analyze the results.
+* https://github.com/shanep/os-p5-starter[Project 5] - In this project we will
+implement a simple bounded queue that can be used in the classic producer and
+consumer problem and then analyze the results.
+* Project 6 - In this project you will write a simple Linux Kernel
+device driver.
+** For undergraduates this project is optional and can replace the grade for one
+project. Only projects 3, 4, or 5 are eligible for this option.
+** For graduate students this project is required and will NOT replace an
+existing project.
+
+include::../../includes/syllabus-boiler.adoc[]

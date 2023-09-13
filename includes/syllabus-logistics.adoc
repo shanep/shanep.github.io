@@ -1,0 +1,23 @@
+== Logistics
+
+[cols="a,a"]
+|===
+| icon:university[]  Boise State University | icon:envelope[] Contact
+|
+[horizontal]
+Department:: https://www.boisestate.edu/coen-cs/[Computer Science]
+Building:: https://www.boisestate.edu/coen-cs/currentstudents/aboutccp/[City Center Plaza (CCP)]
+Office:: CCP246
+Address:: https://www.google.com/maps/place/777+W+Main+St,+Boise,+ID+83702/@43.6152228,-116.2057248,17z/data=!3m1!4b1!4m6!3m5!1s0x54aef8e4e8e75a1d:0xf034e272f3bd83d9!8m2!3d43.6152228!4d-116.2035361!16s%2Fg%2F11dzp1dc67[777 W Main St, Boise, ID 83702]
+Department email:: computerscience@boisestate.edu
+|
+[horizontal]
+Instructor:: Available on Canvas
+Email:: Available on Canvas
+Office Hours:: Available on Canvas
+Class Time:: Available on Canvas
+|===
+
+== Catalog Description
+
+**{catalog-title}** {catalog-description}

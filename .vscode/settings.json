@@ -1,0 +1,25 @@
+{
+    "cSpell.words": [
+        "boisestate",
+        "camelcase",
+        "chegg",
+        "COEN",
+        "COREQ",
+        "highlightjs",
+        "IHSAA",
+        "itemwidth",
+        "Joshi",
+        "Kount",
+        "labelwidth",
+        "latexmath",
+        "Leybourn",
+        "mkdirs",
+        "PREREQ",
+        "Quickstart",
+        "SSRS",
+        "struct"
+    ],
+
+    "livePreview.serverRoot": "./docs",
+    "livePreview.defaultPreviewPath": "./docs",
+}
