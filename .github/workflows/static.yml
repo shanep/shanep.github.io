@@ -31,6 +31,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Install Asciidoctor
+        run: sudo apt-get install -y asciidoctor
+      - name: Build Site
+        run: make
+      - uses: EndBug/add-and-commit@v9
+        with:
+          message: Publish docs
+          committer_name: Shane Panter
+          committer_email: shane@foundationcode.com
+          add: 'docs'
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
