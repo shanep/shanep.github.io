@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.18">
+<meta name="author" content="Shane K. Panter">
+<title>Introduction to Full Stack Web Development</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+dfn{font-style:italic}
+hr{height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/github.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Introduction to Full Stack Web Development</h1>
+<div class="details">
+<span id="author" class="author">Shane K. Panter</span><br>
+<span id="email" class="email"><a href="mailto:shanepanter@boisestate.edu">shanepanter@boisestate.edu</a></span><br>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_logistics">Logistics</a></li>
+<li><a href="#_catalog_description">Catalog Description</a></li>
+<li><a href="#_course_learning_outcomes">Course Learning Outcomes</a></li>
+<li><a href="#_course_materials">Course Materials</a></li>
+<li><a href="#_topics">Topics</a></li>
+<li><a href="#_assessments">Assessments</a>
+<ul class="sectlevel2">
+<li><a href="#_quizzes">Quizzes</a></li>
+<li><a href="#_participation">Participation</a></li>
+<li><a href="#_projects">Projects</a></li>
+</ul>
+</li>
+<li><a href="#_grading_policy">Grading Policy</a>
+<ul class="sectlevel2">
+<li><a href="#_extra_credit_opportunities">Extra Credit Opportunities</a></li>
+<li><a href="#_standing_extra_credit">Standing Extra Credit</a></li>
+</ul>
+</li>
+<li><a href="#_homework_policy">Homework Policy</a>
+<ul class="sectlevel2">
+<li><a href="#_programming_projects">Programming Projects</a></li>
+<li><a href="#_errors_and_omissions">Errors and Omissions</a></li>
+<li><a href="#_ai">AI 🤖</a></li>
+</ul>
+</li>
+<li><a href="#_attendance_policy">Attendance Policy</a></li>
+<li><a href="#_late_work_policy">Late Work Policy</a>
+<ul class="sectlevel2">
+<li><a href="#_late_work_projects">Late Work - Projects</a></li>
+<li><a href="#_late_work_exams_and_quizzes">Late Work - Exams and Quizzes</a></li>
+<li><a href="#_late_work_class_interaction">Late Work - Class Interaction</a></li>
+</ul>
+</li>
+<li><a href="#_communication_policy">Communication Policy</a>
+<ul class="sectlevel2">
+<li><a href="#_email">Email</a></li>
+<li><a href="#_discussion_board">Discussion Board</a></li>
+<li><a href="#_office_hours">Office Hours</a></li>
+</ul>
+</li>
+<li><a href="#_university_policies">University Policies</a>
+<ul class="sectlevel2">
+<li><a href="#_student_support">Student support</a></li>
+<li><a href="#_time_commitment">Time Commitment</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_logistics">Logistics</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="icon"><i class="fa fa-university"></i></span>  Boise State University</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="icon"><i class="fa fa-envelope"></i></span> Contact</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Department
+</td>
+<td class="hdlist2">
+<p><a href="https://www.boisestate.edu/coen-cs/">Computer Science</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Building
+</td>
+<td class="hdlist2">
+<p><a href="https://www.boisestate.edu/coen-cs/currentstudents/aboutccp/">City Center Plaza (CCP)</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Office
+</td>
+<td class="hdlist2">
+<p>CCP246</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Address
+</td>
+<td class="hdlist2">
+<p><a href="https://www.google.com/maps/place/777+W+Main+St,+Boise,+ID+83702/@43.6152228,-116.2057248,17z/data=!3m1!4b1!4m6!3m5!1s0x54aef8e4e8e75a1d:0xf034e272f3bd83d9!8m2!3d43.6152228!4d-116.2035361!16s%2Fg%2F11dzp1dc67">777 W Main St, Boise, ID 83702</a></p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Department email
+</td>
+<td class="hdlist2">
+<p><a href="mailto:computerscience@boisestate.edu">computerscience@boisestate.edu</a></p>
+</td>
+</tr>
+</table>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Instructor
+</td>
+<td class="hdlist2">
+<p>Available on Canvas</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Email
+</td>
+<td class="hdlist2">
+<p>Available on Canvas</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Office Hours
+</td>
+<td class="hdlist2">
+<p>Available on Canvas</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Class Time
+</td>
+<td class="hdlist2">
+<p>Available on Canvas</p>
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_catalog_description">Catalog Description</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>CS208 Introduction to Full Stack Web Development (3-0-3)(S,F)</strong> An introduction to web development using client-side (HTML/CSS/JavaScript) and server-side (Node.js) technologies. Students will work on large web development projects using agile methodologies and databases. Agile development topics include: scrum process, user stories, acceptance criteria, and test programming. Database topics include: data modeling, insertion, deletion, and update statements, basic SQL queries, and database APIs. PREREQ: CS121 COREQ: CS155.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_course_learning_outcomes">Course Learning Outcomes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>By the end of this course the student should have achieved the following course
+learning outcomes.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col>
+<col style="width: 15%;">
+<col style="width: 15%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">TLO</th>
+<th class="tableblock halign-left valign-top">SLO</th>
+<th class="tableblock halign-left valign-top">Objective</th>
+<th class="tableblock halign-left valign-top">Bloom Level</th>
+<th class="tableblock halign-left valign-top">Assessment Instrument</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Create a Full Stack Web Application</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final Project</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Create a dynamic front end UI</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final Project</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identify when to use JavaScript to add interactive components to your websites.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reading Assignments</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identify when a server-side language  is useful in web development.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reading Assignments</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use templates reduce repetitive HTML and produce dynamic content based on conditionals.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final Project</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Explore functions available in NodeJS and use them to implement server-side logic.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final Project</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand HTML and CSS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quiz</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identify basic HTML tags and attributes and use them to create a static web page.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quiz</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use CSS to style HTML elements.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text Book Labs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use CSS selectors to select specific HTML elements for styling.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text Book Labs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand JavaScript in a Full Stack environment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final Project</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Construct simple JavaScript programs that will run in the browser</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text Book Labs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use JavaScript DOM objects and functions to retrieve and manipulate HTML elements and properties.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final Project</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand how the modern web works</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quiz</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Explore Web History</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quiz</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand IP address, domain names, and URLs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quiz</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand HTTP/HTTPS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quiz</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Discuss how the Internet works at a high level and how data is shared over the World Wide Web (WWW).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quiz</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Explain the roles of a client and a server in the client-server communication model.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quiz</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand a REST API</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quiz</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Establish basic program development strategies</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final Project / Labs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand how to use a debugger</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final Project / Labs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use web developer tools to inspect existing web pages and network traffic.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final Project / Labs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use the Chrome Developer Tools and console logging to debug JavaScript in your web pages.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final Project / Labs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interact with Databases</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final Project</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand and explain core database concepts</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reading Assignments</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand how to connect to database systems using common industry tools</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reading Assignments</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Define and build database schemas in a database system</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final Project</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Practice Agile Development and work in a team to build a project incrementally</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final Project</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand and explain the purpose and responsibilities of each Scrum role</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quiz</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand User Stories, Acceptance Criteria, Tasks, Definition of Done</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quiz</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand Agile development techniques and software engineering best practices</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quiz</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/">Blooms Taxonomy</a></p>
+</li>
+<li>
+<p><a href="https://tips.uark.edu/blooms-taxonomy-verb-chart/">Booms Taxonomy of Verbs</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_course_materials">Course Materials</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Textbook: Sign up link is in canvas <strong>required</strong></p>
+</li>
+<li>
+<p><a href="grading-rubric.html">Grading Rubric</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/playlist?list=PLFziFbk-D-X2mH13IZ37GE-i_H2XvOpHw">Course Videos</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>We will be using zyBooks as our textbook. You should be prompted to sign up for
+the book when you complete the first assignment that is linked in canvas. Do not
+go to the zyBooks website and create a new account you <strong>must</strong> sign up through
+canvas so that your progress is properly recorded.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_topics">Topics</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 5%;">
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Module</th>
+<th class="tableblock halign-left valign-top">Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="course-introduction.html">Course Introduction</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="html-css-introduction.html">HTML and CSS Introduction</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="javascript-introduction.html">JavaScript Introduction</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="fullstack-introduction.html">Fullstack Introduction</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="relational-databases-and-sql.html">Relational Databases and SQL</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="agile-development.html">Agile development</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final Project</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_assessments">Assessments</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Your final grade will be calculated with the following weights in canvas.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Quizzes - 20%</p>
+</li>
+<li>
+<p>Reading - 20%</p>
+</li>
+<li>
+<p>Participation - 10%</p>
+</li>
+<li>
+<p>Assignments - 30%</p>
+</li>
+<li>
+<p>Final Project - 20%</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_quizzes">Quizzes</h3>
+<div class="paragraph">
+<p>There will be several quizzes over the assigned reading and general web
+programming during the semester. The quizzes are open notes and open book and
+must be done individually.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_participation">Participation</h3>
+<div class="paragraph">
+<p>This is an online asynchronous class, thus all of our interactions and
+participation will be done through canvas using discussion boards and video
+posts.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_projects">Projects</h3>
+<div class="paragraph">
+<p>There are several individual projects this semester. All Projects will be graded
+with the <a href="grading-rubric.html">project grading rubric</a>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/shanep/cs208-p1-starter">Project 1</a> - This project is a
+warmup project and is intended to introduce you to the tools and techniques
+that we will be using for the rest of the semester.</p>
+</li>
+<li>
+<p><a href="https://github.com/shanep/cs208-p2-starter">Project 2</a> - This project will
+evaluate your knowledge of HTML and CSS.</p>
+</li>
+<li>
+<p><a href="https://github.com/shanep/cs208-p3-starter">Project 3</a> - This project
+will evaluate your knowledge of Javascript.</p>
+</li>
+<li>
+<p><a href="https://github.com/shanep/cs208-p4-starter">Project 4</a> - This project
+introduces and evaluates full stack web development.</p>
+</li>
+<li>
+<p><a href="https://github.com/shanep/cs208-p5-starter">Project 5</a> -  This project will be
+group based and allow you to practice not only your web development skills but
+also use git and GitHub in a team based environment. All grades are given
+<strong>individually</strong> so even though you will work in a group you will grade will not
+be impacted by any team members lack of effort or contributions.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_grading_policy">Grading Policy</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Grades will be posted in canvas and calculated with the percentages specified below.
+Final grades will not be rounded.
+I offer plenty of <a href="#_extra_credit_opportunities">Extra Credit Opportunities</a> that you can take advantage of to improve your final grade 😃.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Letter Grade</th>
+<th class="tableblock halign-left valign-top">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">94% &lt; 100%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">90% &lt; 94%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B+</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">87% &lt; 90%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">84% &lt; 87%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">80% &lt; 84%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C+</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">77% &lt; 80%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">74% &lt; 77%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">70% &lt; 74%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D+</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">67% &lt; 70%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64% &lt; 67%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">60% &lt; 64%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">F</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0 &lt; 60%</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_extra_credit_opportunities">Extra Credit Opportunities</h3>
+<div class="paragraph">
+<p>Standing extra credit is always offered to allow students to bump their grade up
+if they are on a grading boundary so please take advantage of any extra credit
+offered. Any extra credit given over the semester can not exceed 2.5% of the
+total points offered. For example, the maximum number of extra credit points
+that you can earn if the total points offered is 1000 would be 25.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_standing_extra_credit">Standing Extra Credit</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Typos and Bugs - If you find any typos or bugs in the course materials, email
+me what you found. You can claim this extra credit once at the end of the
+semester for up to 10 points (1 point per error found). I have strategically placed
+several spelling and grammar errors for you to find so there is plenty of
+opportunity to get the maximum number of points offered. So make sure and read
+everything with an eagle 🦅 eye so you can rack up those points!</p>
+</li>
+<li>
+<p>Use of AI technologies - If you are able to solve 100% of any assignment with
+AI, I will give you extra credit if you can submit proof that it was in fact
+100% AI generated. See the <a href="#_ai">AI 🤖</a> section for more details.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_homework_policy">Homework Policy</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following sections detail all the policies regarding homework which past
+students have told me is the most fun part of the class! Unless explicitly
+instructed otherwise students are expected to work on their own. All group work
+will be <strong>clearly</strong> marked so there should be no confusion. The
+<a href="https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring">Kount
+Computer Learning Center</a> (CCP 241) is accessible 24/7 by proxy card to all
+students enrolled in CS courses. Machines in the Kount Computer Tutoring Center
+have all the software you will need this semester.</p>
+</div>
+<div class="sect2">
+<h3 id="_programming_projects">Programming Projects</h3>
+<div class="paragraph">
+<p>All of your programming assignments will be submitted using GitHub. You are
+responsible for ensuring all your code is properly pushed to Github. Submissions
+via any other method such as email, stone tablet, or wizard scroll 📜 will
+not be accepted under any circumstances. You are <strong>required</strong> to make consistent
+commits and pushes to your github repository over the course of working on your
+project. For example if you have 3 weeks to work on a project I should see a
+minimum of 3 commits (1 per week).</p>
+</div>
+<div class="paragraph">
+<p>Making regular pushes to GitHub is important because it is what I will look at
+if you request an extension for a project. Additionally, making regular commits
+and pushing to GitHub will prevent you from losing work if your local computer
+has a hardware failure.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_errors_and_omissions">Errors and Omissions</h3>
+<div class="paragraph">
+<p>I make mistakes all the time. Some semesters I have an overwhelming number of
+students to track and things unintentionally fall through the cracks.
+If I made a mistake with your grade don&#8217;t panic! Take a deep breath and just
+send me an email with the details and I will take a look. Remember everything
+will be OK, I am here to help you as best I can 😃.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ai">AI 🤖</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Developer tools such as an IDE or AI should be used to <strong>enhance</strong>
+your skills not replace them! AI in the hands of an experienced developer makes
+that developer even more productive! AI in the hands of a student robs them of
+the opportunity to learn 📚!
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>I feel that we are experiencing a new paradigm shift that last happened in 1998
+when Google Search was released. Google Search fundamentally changed how
+students approached finding information. Then in 2004
+<a href="https://en.wikipedia.org/wiki/Google_Scholar">Google Scholar</a> was released and
+you no longer had to spend hours in the library combing through indexes or paper
+journals, you could just type your query into a little box and get millions of
+results instantly. It&#8217;s hard to overstate how dramatic the shift was to people
+who didn&#8217;t live through it. Google was nothing short of mind blowing compared
+to what existed before.</p>
+</div>
+<div class="paragraph">
+<p>Banning tools that are broadly available only results in creating a low trust
+environment in the classroom. Thus, in my class you are free to use
+<a href="https://en.wikipedia.org/wiki/Skynet_(Terminator)">AI or Machine Learning
+technologies</a> to complete your assigned work. However, I strongly encourage
+anyone who is learning to code to <strong>NOT</strong> use AI or even an IDE. When you are
+learning something new it is OK to struggle and get things wrong that is part of
+the learning process 😃. Think back to your 2nd or 3rd grade class when you were
+learning to spell, did your teacher let you use spell check on your spelling
+tests? What would be the point of taking a spelling test if you could? As you
+have moved up in education, using a spell checker is a great way to <strong>enhance</strong>
+your underlying skills. However, even the best spell checkers in the world can&#8217;t
+help someone who doesn&#8217;t understand the basics of grammar or syntax (look at
+all the spelling and grammar errors that I make).</p>
+</div>
+<div class="paragraph">
+<p>If you do choose to use AI you <strong>must cite</strong> your usage and you will now be
+graded on the code that it writes. If you truly believe that ChatGPT can
+<strong>always</strong> give the best solution to any problem then you may want to switch
+majors because why would a company hire you if they can just use ChatGPT to
+write all their code?</p>
+</div>
+<div class="paragraph">
+<p>Take for example the code snippet shown below. Can you spot the problem? While
+both solutions do work and produce correct results, the AI generated solution is
+O(N) while the <strong>better</strong> solution is O(1). If you don&#8217;t know why one is better
+than the other then I would strongly suggest you not use AI tools until you get
+more experience.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">//Two different approaches to writing a size function in a Linked List
+
+//ChatGPT generated - O(N) performance
+public int size() {
+    int size = 0;
+    Node current = head;
+    while (current != null) {
+        size++;
+        current = current.next;
+    }
+    return size;
+}
+
+//Hand coded - O(1) performance
+public int size() {
+    return size;
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+It is still plagiarism to claim work that was generated by
+<a href="https://openai.com/blog/chatgpt">ChatGPT</a> or other AI tools as your own and you
+will be written up for Academic dishonesty if you do not cite your usage of any
+AI tools.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>When you are learning new material early assignments are intentionally easier to
+help you build up your skills. Leaning too heavily on AI early on will hurt you
+when you get to more complex assignments. You may not even feel the pain until
+you get to your 300 or 400 level courses. Trust me when I say AI can not solve
+most of the programming assignments in your 400 level courses. I test my
+assignments against modern AI tools and sometimes see hilariously wrong results,
+so if you are not able to recognize correct vs incorrect results you should not
+be using AI in the first place. So the bottom line is if you know enough about
+the given subject to be able to recognize correct vs incorrect results then you
+should be free to use said tools to enhance your productivity and education.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_attendance_policy">Attendance Policy</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I follow the official
+<a href="https://www.boisestate.edu/registrar/registration/attendance-policy/">attendance
+policy</a> as defined by the university. Please see the <a href="#_late_work_policy">Late Work Policy</a>
+section for details on how to make up any missed work. Students are responsible
+for all verbal announcements or updates given during class.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_late_work_policy">Late Work Policy</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once grades have been posted to canvas no further submissions will be accepted
+unless prior arrangements have been made. No work or extra credit will be
+accepted after the <strong>last day of course instruction</strong>, the semester has to end at
+some point so plan accordingly. Work submitted 1 second late is treated the same
+as work submitted 1 day late. You can find the last day of course instruction at
+the
+<a href="https://www.boisestate.edu/registrar/boise-state-academic-calendars/">registrar</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_late_work_projects">Late Work - Projects</h3>
+<div class="paragraph">
+<p>All programming assignments can be submitted up to <strong>2 days late with no
+penalty</strong>. You can request an extra day if the following conditions are met:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>You must have <strong>accepted</strong> the GitHub assignment at least 2 days before the due date</p>
+</li>
+<li>
+<p>You must have at least 1 commit that was done 1 day before the due date</p>
+</li>
+<li>
+<p>You must make the request <strong>before</strong> 5pm the day it is due.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>If you have satisfied the criteria stated above then you may email your
+instructor asking for 1 additional day on top of the existing 2 days for a
+total of 3 days late with no penalty 😃.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_late_work_exams_and_quizzes">Late Work - Exams and Quizzes</h3>
+<div class="paragraph">
+<p>All exams and quizzes must be taken within the time frame specified on canvas
+unless prior arrangements have been made. Clearly we can&#8217;t have some students
+taking an exam AFTER the questions (and possibly answers) have been released as
+it would give that student an unfair advantage. Extensions will be granted on a
+case by case basis for situations that were outside of the students control.
+Some exams or quizzes may require you to go to the testing center. It is the
+students responsibility to schedule their own appointment in a timely fashion.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_late_work_class_interaction">Late Work - Class Interaction</h3>
+<div class="paragraph">
+<p>All class interaction assignments must be completed within the time frame specified
+on canvas or <strong>during the lecture</strong> unless prior arrangements have been made.
+Assignments that are intended to be interactive are only valuable when everyone
+is participating at the same time. It is not fair for a student to expect their
+fellow classmates to respond or watch your submission that is 2 days late when
+everyone else submitted on time. The secret code for the syllabus quiz is
+"green".</p>
+</div>
+<div class="paragraph">
+<p>This applies (but is not limited to) to the following assignment types:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Discussion posts</p>
+</li>
+<li>
+<p>Reflections (both written and video)</p>
+</li>
+<li>
+<p>Group meetings - both virtual and in person</p>
+</li>
+<li>
+<p>Status updates</p>
+</li>
+<li>
+<p>Any in class activities</p>
+</li>
+<li>
+<p>Any quizzes or exams that are done on paper</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_communication_policy">Communication Policy</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>During the semester communication outside of the classroom will be through email,
+canvas, and office hours as detailed below. Other methods such as
+<a href="https://www.iwm.org.uk/history/the-incredible-carrier-pigeons-of-the-first-world-war">carrier
+pigeon</a> 🐦 are not supported at this time.</p>
+</div>
+<div class="paragraph">
+<p>I get a lot of email and sometimes I miss messages, so if you don&#8217;t receive a
+response from me after 48hrs please check to make sure you are sending the email
+from BroncoMail and send a follow-up email. You can also send an email directly
+in canvas if your emails are not going through.</p>
+</div>
+<div class="sect2">
+<h3 id="_email">Email</h3>
+<div class="paragraph">
+<p>I have lots of students. In order to facilitate quick communication please
+include the following information in all emails to myself or the class TA/GA.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>First and Last name</p>
+</li>
+<li>
+<p>Student ID - I need this so I can look you up in the system.</p>
+</li>
+<li>
+<p>The class and section number that you are in for example CS123 - section 1</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>BroncoMail is the official communication channel through which all university
+business is conducted. It is expected that you access and read university
+communications two or three times per week. For more information see the
+University Policy on Student Email Communications (Policy 2280). Your instructor
+will not respond to any emails sent from personal accounts such as Gmail or
+Yahoo.</p>
+</div>
+<div class="paragraph">
+<p>Your instructor will make every effort to return emails within 48hrs Monday thru
+Friday between the hours of 9:00am and 5:00pm (MST). Emails sent on Saturday,
+Sunday, or outside of the defined hours will be returned within 48hrs on the
+following business day. Emails should be reserved for questions that are not
+appropriate for a public forum such as grades or other personal issues.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_discussion_board">Discussion Board</h3>
+<div class="paragraph">
+<p>We will be using an online discussion board for this course. Rather than
+emailing questions to me, please post your questions on the discussion board and
+get replies from myself as well as your classmates! You can also post private
+messages to me. You are expected to log onto the board at least once a week and
+read all the posts.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_office_hours">Office Hours</h3>
+<div class="paragraph">
+<p>For classes taught in the online or remote format office hours will be by
+appointment. For classes that are taught in the face to face format office hours
+will be by posted in Canvas. If I forgot to post them please just email me and
+ask 🙋.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_university_policies">University Policies</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Please review all linked policies below. Violations of university policies can
+result in the student receiving a failing grade (F) in the course.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.boisestate.edu/policy/student-affairs/code-of-conduct/">Student Code of Conduct</a></p>
+</li>
+<li>
+<p><a href="https://www.boisestate.edu/registrar/general-information-and-policies/academic-integrity/">Academic Integrity</a></p>
+</li>
+<li>
+<p><a href="https://www.boisestate.edu/privacy/">Privacy policy</a></p>
+</li>
+<li>
+<p><a href="https://docs.google.com/document/d/10yCB9fiThidW9cNt8Eyqc1qVwoXfiLugbjyt_sg5fU8/edit#heading=h.x3pznnnsahws">COVID Policy</a></p>
+</li>
+<li>
+<p><a href="https://www.boisestate.edu/registrar/degree-requirements/grades/">Incomplete Policy</a>.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_student_support">Student support</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://eac.boisestate.edu/">Educational access center</a></p>
+</li>
+<li>
+<p><a href="https://www.boisestate.edu/online/support-resources/">Support resources</a></p>
+</li>
+<li>
+<p><a href="https://www.boisestate.edu/aasc/academicsupportservices/">Academic support services</a></p>
+</li>
+<li>
+<p><a href="https://www.boisestate.edu/online/student-services/">Online student services</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_time_commitment">Time Commitment</h3>
+<div class="paragraph">
+<p>According to Boise State University
+<a href="https://www.boisestate.edu/policy/academic-affairs-faculty-administration/policy-title-credit-hours/">policy
+4080</a>, a 1 credit course spread over 15 weeks should require roughly 3 hours of
+work per week divided over both in-class interactions and homework. Classes that
+are held in compressed time frames such as summer or winter breaks still need to
+complete the same number of credit hours in order for the class to count toward
+your degree. Thus, if you are taking this class in a compressed semester please
+consult the table below to make sure you have time to complete all the assigned
+course work. For example, as noted in the table below, taking two 3 credit
+courses in a 7 week semester  is equivalent to working a full time job.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+For a compressed course it is <strong>critical</strong> that you don&#8217;t fall behind!
+Compressed courses move fast and missing 1 week of class is very hard if not
+impossible to recover from.
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Credits</th>
+<th class="tableblock halign-left valign-top">Number of weeks</th>
+<th class="tableblock halign-left valign-top">Total hours</th>
+<th class="tableblock halign-left valign-top">Hours of work per week</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">45 hrs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15 hrs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">45 hrs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9 hrs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">135 hrs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19 hrs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">135 hrs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9 hrs</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2023-09-13 12:23:03 -0600
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
+<script>
+if (!hljs.initHighlighting.called) {
+  hljs.initHighlighting.called = true
+  ;[].slice.call(document.querySelectorAll('pre.highlight > code[data-lang]')).forEach(function (el) { hljs.highlightBlock(el) })
+}
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+</body>
+</html>

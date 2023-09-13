@@ -1,0 +1,98 @@
+= Introduction to Full Stack Web Development
+include::../../includes/attributes-settings.adoc[]
+:catalog-title: CS208 Introduction to Full Stack Web Development (3-0-3)(S,F)
+:catalog-description:  An introduction to web development using client-side \
+(HTML/CSS/JavaScript) and server-side (Node.js) technologies. Students will work \
+on large web development projects using agile methodologies and databases. Agile \
+development topics include: scrum process, user stories, acceptance criteria, \
+and test programming. Database topics include: data modeling, insertion, \
+deletion, and update statements, basic SQL queries, and database APIs. PREREQ: \
+CS121 COREQ: CS155.
+
+include::../../includes/syllabus-logistics.adoc[]
+
+== Course Learning Outcomes
+
+By the end of this course the student should have achieved the following course
+learning outcomes.
+
+[%header,format=csv]
+[cols="10,10,~,15,15"]
+|===
+include::learning-objectives.csv[]
+|===
+
+* https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/[Blooms Taxonomy]
+* https://tips.uark.edu/blooms-taxonomy-verb-chart/[Booms Taxonomy of Verbs]
+
+== Course Materials
+
+* Textbook: Sign up link is in canvas **required**
+* xref:grading-rubric.adoc[Grading Rubric]
+* https://www.youtube.com/playlist?list=PLFziFbk-D-X2mH13IZ37GE-i_H2XvOpHw[Course Videos]
+
+We will be using zyBooks as our textbook. You should be prompted to sign up for
+the book when you complete the first assignment that is linked in canvas. Do not
+go to the zyBooks website and create a new account you **must** sign up through
+canvas so that your progress is properly recorded.
+
+== Topics
+
+[cols="5,~"]
+|===
+|Module| Topic
+
+| 1| xref:course-introduction.adoc[Course Introduction]
+| 2| xref:html-css-introduction.adoc[HTML and CSS Introduction]
+| 3| xref:javascript-introduction.adoc[JavaScript Introduction]
+| 4| xref:fullstack-introduction.adoc[Fullstack Introduction]
+| 5| xref:relational-databases-and-sql.adoc[Relational Databases and SQL]
+| 6| xref:agile-development.adoc[Agile development]
+| 7| Final Project
+|===
+
+
+== Assessments
+
+Your final grade will be calculated with the following weights in canvas.
+
+* Quizzes - 20%
+* Reading - 20%
+* Participation - 10%
+* Assignments - 30%
+* Final Project - 20%
+
+=== Quizzes
+
+There will be several quizzes over the assigned reading and general web
+programming during the semester. The quizzes are open notes and open book and
+must be done individually.
+
+=== Participation
+
+This is an online asynchronous class, thus all of our interactions and
+participation will be done through canvas using discussion boards and video
+posts.
+
+=== Projects
+
+There are several individual projects this semester. All Projects will be graded
+with the xref:grading-rubric.adoc[project grading rubric].
+
+* https://github.com/shanep/cs208-p1-starter[Project 1] - This project is a
+warmup project and is intended to introduce you to the tools and techniques
+that we will be using for the rest of the semester.
+* https://github.com/shanep/cs208-p2-starter[Project 2] - This project will
+evaluate your knowledge of HTML and CSS.
+* https://github.com/shanep/cs208-p3-starter[Project 3] - This project
+will evaluate your knowledge of Javascript.
+* https://github.com/shanep/cs208-p4-starter[Project 4] - This project
+introduces and evaluates full stack web development.
+* https://github.com/shanep/cs208-p5-starter[Project 5] -  This project will be
+group based and allow you to practice not only your web development skills but
+also use git and GitHub in a team based environment. All grades are given
+**individually** so even though you will work in a group you will grade will not
+be impacted by any team members lack of effort or contributions.
+
+
+include::../../includes/syllabus-boiler.adoc[]

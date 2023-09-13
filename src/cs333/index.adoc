@@ -1,0 +1,76 @@
+= Network Security and Defense
+include::../../includes/attributes-settings.adoc[]
+:catalog-title: CS 333 Network Security and Defense (3-0-3)(S).
+:catalog-description:  Topics include firewalls, virtual private networks, \
+intrusion detection, intrusion prevention, traffic analysis, techniques for \
+responding to network attacks. PREREQ: CS253 or CS331 or ITM455.
+
+
+include::../../includes/syllabus-logistics.adoc[]
+
+== Course Learning Outcomes
+
+By the end of this course the student should have achieved the following course
+learning outcomes.
+
+[%header,format=csv]
+[cols="10,10,~,15,15"]
+|===
+include::learning-objectives.csv[]
+|===
+
+* https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/[Blooms Taxonomy]
+* https://tips.uark.edu/blooms-taxonomy-verb-chart/[Booms Taxonomy of Verbs]
+
+== Course Materials
+
+* Textbook: Sign up link is in canvas **required**
+
+We will be using zyBooks as our textbook. You should be prompted to sign up for
+the book when you complete the first assignment that is linked in canvas. Do not
+go to the zyBooks website and create a new account you **must** sign up through
+canvas so that your progress is properly recorded.
+
+== Topics and Schedule
+
+[%header,format=csv]
+[cols="10,~,~,~"]
+|===
+include::schedule.csv[]
+|===
+
+== Assessments
+
+Your final grade will be calculated with the following weights in canvas.
+
+* Quizzes - 30%
+* Labs - 40%
+* Textbook Activities - 10%
+* Final Exam - 20%
+
+=== Quizzes
+
+There will be several quizzes over the assigned reading during the semester. The
+quizzes are open notes and open book and must be done individually.
+
+=== Labs
+
+There are 11 individual labs this semester. Each lab below has been carefully
+crafted to satisfy one or more Learning Outcomes. The labs for this course are
+accessed through the textbook and will include Windows and Linux virtual
+machines that you will need to use and configure.
+
+=== Textbook Activities
+
+We will be using an interactive textbook this semester and your progress through
+the textbook will be tracked and reported back to canvas
+
+=== Final Exam
+
+The final exam will cover all the assigned reading and labs and will be a
+multiple choice exam that is closed book closed notes. The questions for the
+final exam are drawn from the same question pools as the quizzes so if you have
+taken the time to learn the material and have done well on the quizzes you have
+already studied for the final exam 😃.
+
+include::../../includes/syllabus-boiler.adoc[]
