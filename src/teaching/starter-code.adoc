@@ -10,5 +10,5 @@ email me and let me know I have forgotten to post the github classroom link 😁
 In the meantime check out these sweet under
 http://textfiles.com/underconstruction/[construction gif's] from the 1990's!
 
-image::../images/teaching/construction.gif[Under Construction]
+image::images/construction.gif[Under Construction]
 

@@ -49,7 +49,7 @@ semaphore used as a lock a binary semaphore.
 
 == The Dining Philosophers 🍽
 
-image::../../images/cs452/dining-philosophers.png[dining philosophers]
+image::images/dining-philosophers.png[dining philosophers]
 
 == Thread Throttling
 

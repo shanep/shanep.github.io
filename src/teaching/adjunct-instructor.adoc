@@ -37,4 +37,4 @@ Each programming assignment listed in the syllabus is already setup to use
 github classroom all you have to do is update the link in the canvas assignment
 as shown below.
 
-image:../images/teaching/canvas-github-classroom-update.png[canvas github classroom]
+image:images/canvas-github-classroom-update.png[canvas github classroom]

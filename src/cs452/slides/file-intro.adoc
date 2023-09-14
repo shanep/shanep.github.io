@@ -17,7 +17,7 @@ inode number), but its contents are quite specific: it contains a list of
 
 === Example
 
-image::../../images/cs452/dir-tree.png[dir]
+image::images/dir-tree.png[dir]
 
 
 == Interface
@@ -54,7 +54,7 @@ close(3) = 0
 
 == Process Sharing
 
-image::../../images/cs452/share-file-handle.png[sharing]
+image::images/share-file-handle.png[sharing]
 
 == Buffering
 

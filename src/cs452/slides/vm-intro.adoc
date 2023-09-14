@@ -14,7 +14,7 @@ Shane K. Panter <shanepanter@boisestate.edu>
 
 === Layout
 
-image::../../images/cs452/vm-early-os.png[early os,width=400px]
+image::images/vm-early-os.png[early os,width=400px]
 
 == Multiprogramming and Time Sharing
 
@@ -25,11 +25,11 @@ image::../../images/cs452/vm-early-os.png[early os,width=400px]
 
 === Layout
 
-image::../../images/cs452/time-sharing.png[time share,width=400px]
+image::images/time-sharing.png[time share,width=400px]
 
 == The Address Space
 
-image::../../images/cs452/modern-address-space.png[Address space,width=400px]
+image::images/modern-address-space.png[Address space,width=400px]
 
 == Virtualize Memory
 

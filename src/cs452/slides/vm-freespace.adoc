@@ -22,19 +22,19 @@ the free space you are managing consists of variable-sized units;
 
 === Fixed Partition
 
-image::../../images/cs452/vm-internal-frag.png[Internal Frag]
+image::images/vm-internal-frag.png[Internal Frag]
 
 === Variable Partition
 
-image::../../images/cs452/vm-external-frag.png[External Frag]
+image::images/vm-external-frag.png[External Frag]
 
 == Malloc
 
-image::../../images/cs452/malloc.png[malloc meme]
+image::images/malloc.png[malloc meme]
 
 === Malloc Header
 
-image::../../images/cs452/malloc-header.png[malloc header]
+image::images/malloc-header.png[malloc header]
 
 === Malloc Internals
 

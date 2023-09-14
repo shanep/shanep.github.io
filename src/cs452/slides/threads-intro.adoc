@@ -8,7 +8,7 @@ Shane K. Panter <shanepanter@boisestate.edu>
 
 == Threads!
 
-image::../../images/cs452/threads-intro.jpg[Threading]
+image::images/threads-intro.jpg[Threading]
 
 == What is a Thread
 
@@ -60,7 +60,7 @@ for(;;){
 
 == Memory Layout
 
-image::../../images/cs452/thread-memory-layout.png[Memory Layout]
+image::images/thread-memory-layout.png[Memory Layout]
 
 == Why Use Threads?
 
@@ -124,7 +124,7 @@ mov %eax, 0x8049a1c
 
 === Example
 
-image::../../images/cs452/instruction-interleaving.png[instruction interleaving]
+image::images/instruction-interleaving.png[instruction interleaving]
 
 == Atomicity
 

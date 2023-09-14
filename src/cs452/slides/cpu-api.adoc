@@ -22,7 +22,7 @@ Shane K. Panter <shanepanter@boisestate.edu>
 
 === Process Hierarchy
 
-image::../../images/cs452/process-hierarchy.png[process hierarchy]
+image::images/process-hierarchy.png[process hierarchy]
 
 === Exercise
 
