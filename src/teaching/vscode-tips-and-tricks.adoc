@@ -73,7 +73,7 @@ terminal to Git Bash so everything works correctly
 . Search for “Terminal: Select Default Profile”
 . Select "Git Bash"
 
-image::../images/teaching/vscode-default-terminal.png[Set Default Terminal]
+image::images/vscode-default-terminal.png[Set Default Terminal]
 
 == Developing Remotely
 
@@ -100,7 +100,7 @@ details on how everything works.
 install all the tools so be patient and don't close or stop the process or it
 could cause your install to fail!
 
-image::../images/teaching/vscode_remote_devel.gif[Visual walk through]
+image::images/vscode_remote_devel.gif[Visual walk through]
 
 === Verify your connection
 
@@ -112,7 +112,7 @@ Once you are connected you can verify your status as shown below:
 . When you run the command _whoami_ in the integrated terminal you should see
   your Boise State username.
 
-image::../images/teaching/vscode_connected.png[VSCode connected]
+image::images/vscode_connected.png[VSCode connected]
 
 === Installing remote extensions
 
@@ -120,7 +120,7 @@ When you are working remote VSCode does not automatically install any of your ex
 all your remote extensions installed open the https://code.visualstudio.com/docs/editor/extension-gallery[Extension manager]
 and then select the local extensions that you wish to install on the remote machine.
 
-image::../images/teaching/vscode-remote-extensions.png[VSCode remote extensions]
+image::images/vscode-remote-extensions.png[VSCode remote extensions]
 
 == Developing in the Cloud (GitHub Codespaces)
 
@@ -150,7 +150,7 @@ straight forward after you have cloned your repository simply click the **code
 button** and then click the **Create Codespaces** as shown below. This will launch
 a Codespace that you can use to work on your project.
 
-image::../images/teaching/start-codespaces.gif[start codespaces]
+image::images/start-codespaces.gif[start codespaces]
 
 === Configuring Codespace
 
@@ -161,7 +161,7 @@ and then select the local extensions that you wish to install on the remote
 machine. The first extension that you should install is Live Preview as shown
 below.
 
-image::../images/teaching/vscode-live-preview.png[VSCode Live preview]
+image::images/vscode-live-preview.png[VSCode Live preview]
 
 === Remote Website Development
 
@@ -178,7 +178,7 @@ WARNING: Sometimes you will see an error when trying to view your website
 sets up port forwarding. If you click the "Open in Browser" popup it should open
 up a new tab showing you your website.
 
-image::../images/teaching/vscode-live-preview-problems.png[VSCode Live preview problems]
+image::images/vscode-live-preview-problems.png[VSCode Live preview problems]
 
 === Running a Web Server
 
@@ -186,7 +186,7 @@ For more complicated setups like when you want to run a PHP server server from
 Nodejs, you can start the server just like you normally would and then view you
 website from the ports tab show below.
 
-image::../images/teaching/vscode-port-forward.gif[VSCode connected]
+image::images/vscode-port-forward.gif[VSCode connected]
 
 === Accessing the menu in Codespaces
 
@@ -194,18 +194,18 @@ For the most part using Codespaces is identical to developing remotely. One of
 the biggest differences is accessing the Menu toolbar. The screenshot below
 shows you how to access the toolbar in Codespaces.
 
-image::../images/teaching/codespaces-tool-bar.png[codespaces toolbar]
+image::images/codespaces-tool-bar.png[codespaces toolbar]
 
 === Accessing all my Codespaces
 
 You can access all the Codespaces you created from your main profile page. Click
 on the **Codespaces** menu option as shown below.
 
-image::../images/teaching/all-codespaces.png[All Codespaces]
+image::images/all-codespaces.png[All Codespaces]
 
 Then you should see all the Codespaces that you have created and can use!
 
-image::../images/teaching/all-codespaces-view.png[All Codespaces view]
+image::images/all-codespaces-view.png[All Codespaces view]
 
 === Codespaces Set default timeout
 
@@ -213,11 +213,11 @@ The default idle timeout for codespaces is 30 minutes. You can quickly burn
 through all your free hours if you keep this default. I recommend that you set
 the default timeout to 10 minutes to preserve your free tier time.
 
-image::../images/teaching/github-settings.png[Github settings]
+image::images/github-settings.png[Github settings]
 
-image::../images/teaching/github-settings-codespaces.png[Github settings codespaces]
+image::images/github-settings-codespaces.png[Github settings codespaces]
 
-image::../images/teaching/github-settings-codespaces-default-idle.png[Github settings idle]
+image::images/github-settings-codespaces-default-idle.png[Github settings idle]
 
 == Debugging Pointers
 
@@ -268,7 +268,7 @@ pool.avail = malloc(sizeof(struct avail) * 9);
 If we run the debugger we will see the variable `pool` with the element `avail` is displayed as a
 single variable not an array of 9 structs as we expected.
 
-image::../images/teaching/pointer_as_array_bad.png[Pointer not showing the full array]
+image::images/pointer_as_array_bad.png[Pointer not showing the full array]
 
 The element `avail` is just a pointer to the memory address of element 0. The debugger can't
 determine the size of the array and thus will display it as a single struct instead of an
@@ -290,7 +290,7 @@ single variable we can easily inspect the data and track down any issues you are
 (struct avail(*) [9])pool->avail
 ----
 
-image::../images/teaching/setting_watch_vscode.gif[Watch var showing the full array]
+image::images/setting_watch_vscode.gif[Watch var showing the full array]
 
 === Dynamic Array
 

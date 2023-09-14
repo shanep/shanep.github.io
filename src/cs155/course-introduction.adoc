@@ -1,7 +1,7 @@
 = Course Introduction
 include::../../includes/attributes-settings.adoc[]
 
-image::../images/cs155/git-banner.gif[Git Banner Logo,align="center"]
+image::images/git-banner.gif[Git Banner Logo,align="center"]
 
 == Overview
 

@@ -30,19 +30,19 @@ Shane K. Panter <shanepanter@boisestate.edu>
 
 === Perfect
 
-image::../../images/cs452/fcfs-perfect.png[FCFS]
+image::images/fcfs-perfect.png[FCFS]
 
 stem:[T_{turnaround} = \frac{10+10+10}3 = 20]
 
 === Bad Performance
 
-image::../../images/cs452/fcfs-worst.png[Bag]
+image::images/fcfs-worst.png[Bag]
 
 stem:[T_{turnaround} = \frac{100+110+120}3 = 110]
 
 == Shortest Job First (SJF)
 
-image::../../images/cs452/sjf.png[sjf]
+image::images/sjf.png[sjf]
 
 stem:[T_{turnaround} = \frac{10+20+120}3 = 50]
 
@@ -52,7 +52,7 @@ stem:[T_{turnaround} = \frac{10+20+120}3 = 50]
 
 === Details
 
-image::../../images/cs452/response-time.png[response time]
+image::images/response-time.png[response time]
 
 == Round Robin
 

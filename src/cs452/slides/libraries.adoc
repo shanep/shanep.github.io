@@ -36,11 +36,11 @@ Functions are loaded with system calls such as LoadLibrary or LoadLibraryEx (WIN
 
 === Disadvantages of Dynamic Linking
 
-image::../../images/cs452/dll-error.png[dll error]
+image::images/dll-error.png[dll error]
 
 === Loading
 
-image::../../images/cs452/dynamic-loading.png[dynamic loading]
+image::images/dynamic-loading.png[dynamic loading]
 
 == Static Libraries
 
@@ -63,7 +63,7 @@ image::../../images/cs452/dynamic-loading.png[dynamic loading]
 
 === Loading
 
-image::../../images/cs452/static-loading.png[static loading]
+image::images/static-loading.png[static loading]
 
 == Dependency Types
 
@@ -71,14 +71,14 @@ image::../../images/cs452/static-loading.png[static loading]
 
 Module A is implicitly linked with Module B at compile/link time
 
-image::../../images/cs452/implicit-dep.png[implicit]
+image::images/implicit-dep.png[implicit]
 
 === Explicit Dependency
 
 Module A is not linked with Module B at compile/link time. At runtime, Module A
 dynamically loads Module B via a LoadLibrary type function
 
-image::../../images/cs452/explicit-dep.png[explicit]
+image::images/explicit-dep.png[explicit]
 
 === Forward Dependency
 
@@ -86,6 +86,6 @@ Module A is linked with a LIB file for Module B at compile/link time, and Module
 A's source code actually calls one or more functions in Module B. One of the
 functions called in Module B is actually a forwarded function call to Module C
 
-image::../../images/cs452/forward-dep.png[forward]
+image::images/forward-dep.png[forward]
 
 == Questions?

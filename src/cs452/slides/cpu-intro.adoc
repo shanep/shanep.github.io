@@ -27,11 +27,11 @@ users. A process is a running program.
 
 == Loading A process
 
-image::../../images/cs452/the-process.png[the process]
+image::images/the-process.png[the process]
 
 == Process States
 
-image::../../images/cs452/process-states.png[process states]
+image::images/process-states.png[process states]
 
 == Data Structures
 

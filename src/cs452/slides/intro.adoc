@@ -8,7 +8,7 @@ Shane K. Panter <shanepanter@boisestate.edu>
 
 == The Von Neumann Model
 
-image::../../images/cs452/von-neumann.png[von neumann]
+image::images/von-neumann.png[von neumann]
 
 == The OS
 

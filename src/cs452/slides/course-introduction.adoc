@@ -25,7 +25,7 @@ Shane K. Panter <shanepanter@boisestate.edu>
 
 == Virtualization
 
-image::../../images/cs452/matrix.webp[matrix]
+image::images/matrix.webp[matrix]
 
 Everything you have been taught is a lie!
 
@@ -37,7 +37,7 @@ Everything you have been taught is a lie!
 
 == Concurrency
 
-image::../../images/cs452/concurrency.png[production]
+image::images/concurrency.png[production]
 
 Sometimes it works sometimes it doesn't 😆
 
@@ -47,7 +47,7 @@ Your code will now be executed by multiple threads at once!
 
 == Persistence
 
-image::../../images/cs452/ancient-greek-language.jpg[stone]
+image::images/ancient-greek-language.jpg[stone]
 
 Do you think our data will last as long? 🪦
 

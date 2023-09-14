@@ -35,7 +35,7 @@ that will walk you through creating a new organization. I create a new
 organization each semester that is specific to the class with the naming
 convention cs123-fall2020.
 
-image::../images/teaching/github-orgs.png[Github Orgs]
+image::images/github-orgs.png[Github Orgs]
 
 WARNING: It is CRITICAL that you used your personal GitHub account! Do not use the
 BoiseState account because you can accidentally expose private repositories
@@ -156,7 +156,7 @@ Github.
 Copy the Assignment URL as shown below and post the URL to your canvas site
 so students can access the assignment.
 
-image:../images/teaching/github-classroom-assignment-url.png[Classroom assignment url]
+image:images/github-classroom-assignment-url.png[Classroom assignment url]
 
 === Admin access
 

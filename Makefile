@@ -18,7 +18,7 @@ DOCS := $(SRCS:%.adoc=$(BUILD_DIR)/%.html)
 # We remove the old file in the build directory to force live preview to reload
 $(BUILD_DIR)/%.html: $(SRC_DIR)/%.adoc
 	@rm -f $@
-	$(if $(findstring slides,$<), $(REVEAL) $< -o $@ , asciidoctor -w -v $< -o $@)
+	$(if $(findstring slides,$<), $(REVEAL) -a data-uri $< -o $@ , asciidoctor -a data-uri -w -v $< -o $@)
 
 all: static-docs $(DOCS)
 

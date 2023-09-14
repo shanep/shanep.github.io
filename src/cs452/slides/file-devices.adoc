@@ -8,15 +8,15 @@ Shane K. Panter <shanepanter@boisestate.edu>
 
 == General System Architecture
 
-image::../../images/cs452/system-arch.png[system arch]
+image::images/system-arch.png[system arch]
 
 == Modern System (intel)
 
-image::../../images/cs452/modern-arch.png[modern arch]
+image::images/modern-arch.png[modern arch]
 
 == A Canonical Device
 
-image::../../images/cs452/device.png[device]
+image::images/device.png[device]
 
 === Protocols
 
@@ -49,13 +49,13 @@ interrupt service routine (ISR) or more simply an interrupt handler.
 
 === Example
 
-image::../../images/cs452/polling.png[polling]
+image::images/polling.png[polling]
 
-image::../../images/cs452/interrupts.png[interrupts]
+image::images/interrupts.png[interrupts]
 
 == DMA
 
-image::../../images/cs452/dma.png[dma]
+image::images/dma.png[dma]
 
 == Methods Of Device Interaction
 
@@ -70,6 +70,6 @@ routes the load/store to the device instead of main memory.
 
 == Fitting Into The OS: The Device Driver
 
-image::../../images/cs452/device-driver.png[driver]
+image::images/device-driver.png[driver]
 
 == Questions?

@@ -261,7 +261,7 @@ linking problems.  When compiling your code you should *always* enable as many
 warnings as possible and should treat warnings as errors.
 
 
-image::../images/cs452/c_compile.svg[Compiling C Code]
+image::images/c_compile.svg[Compiling C Code]
 
 === Building code
 

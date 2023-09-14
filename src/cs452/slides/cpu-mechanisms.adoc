@@ -49,11 +49,11 @@ https://www.intel.com/content/www/us/en/docs/programmable/683620/current/trap-in
 
 == System Call
 
-image::../../images/cs452/system-call.png[system call]
+image::images/system-call.png[system call]
 
 == Standard Library
 
-image::../../images/cs452/c-standard-lib.png[c standard lib]
+image::images/c-standard-lib.png[c standard lib]
 
 == Problem #2  Switching Between Processes
 
@@ -62,13 +62,13 @@ image::../../images/cs452/c-standard-lib.png[c standard lib]
 
 === A Cooperative Approach
 
-image::../../images/cs452/cooperative-approach.jpeg[Some hippies in a circle]
+image::images/cooperative-approach.jpeg[Some hippies in a circle]
 
 Cooperative Approach - the OS trusts the processes of the system to behave reasonably
 
 === A Non-Cooperative Approach
 
-image::../../images/cs452/take-control.jpeg[Take control]
+image::images/take-control.jpeg[Take control]
 
 * The OS Takes Control - Needs hardware support
 * Timer interrupt!

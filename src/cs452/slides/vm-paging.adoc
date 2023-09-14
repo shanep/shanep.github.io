@@ -17,7 +17,7 @@ fixed-sized units, each of which we call a page.
 
 == Memory
 
-image::../../images/cs452/vm-page-frame.png[Page Frame]
+image::images/vm-page-frame.png[Page Frame]
 
 
 == Page Table
@@ -28,11 +28,11 @@ a page table.
 
 == Virtual Address
 
-image::../../images/cs452/vm-virtual-phy.png[Virtual]
+image::images/vm-virtual-phy.png[Virtual]
 
 == Address Translation
 
-image::../../images/cs452/vm-add-trans.png[Translation]
+image::images/vm-add-trans.png[Translation]
 
 == Questions?
 
