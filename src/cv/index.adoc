@@ -34,7 +34,8 @@ Phone:: 1-208-426-3317
 == icon:university[] Academic Appointments
 
 [horizontal,labelwidth=25,itemwidth=75]
-August 2021 - Present:: Lecturer III, Boise State University
+August 2023 - Present:: Clinical Assistant Professor, Boise State University
+August 2021 - August 2023:: Lecturer III, Boise State University
 August 2013 - August 2021:: Lecturer II, Boise State University
 March 2009 - May 2011:: Research Assistant, Boise State University
 
@@ -55,7 +56,7 @@ March 2009 - May 2011:: Research Assistant, Boise State University
 * CS208 Introduction to Full Stack Web Development - **Course coordinator** (Spring 2023 - Present)
 * CS221 Introduction to Computer Science II
 * CS253 Introduction to Systems Programming - **Course coordinator** (Fall 2015 - Spring 2018)
-* CS333 Network Security and Defense
+* CS333 Network Security and Defense **Course coordinator** (Spring 2023 - Present)
 * CS354 Programming Languages
 * CS401 Introduction to Web Development - **Course coordinator** (Spring 2020 - Present)
 * CS452 Operating Systems - **Course coordinator** (Fall 2019 - Present)
@@ -64,7 +65,7 @@ March 2009 - May 2011:: Research Assistant, Boise State University
 
 === Teaching - Graduate
 
-* CS516 Introduction to Web Development - **Course coordinator** (Spring 2020 - Present)
+* CS516 Introduction to Web Development - **Course coordinator** (Spring 2020 - Fall 2023)
 * CS552 Operating Systems - **Course coordinator** (Fall 2019 - Present)
 
 === Service - Boise State University
