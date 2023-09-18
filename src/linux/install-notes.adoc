@@ -1,0 +1,27 @@
+= Install Notes
+include::../../includes/attributes-settings.adoc[]
+
+Install notes for various distributions
+
+== Fedora
+
+NOTE: Updated to fedora 38
+
+=== Install Tools
+
+[,bash]
+----
+sudo dnf -y update`
+sudo dnf -y groupinstall "Development Tools" "Development Libraries"
+sudo dnf -y install asciidoctor
+sudo dnf -y gnome-tweaks
+----
+
+* https://code.visualstudio.com/download[Install VSCode]
+* xref:../teaching/vscode-tips-and-tricks.adoc[Configure VSCode]
+
+
+=== Customizations
+
+* Use gnome-tweaks to remap caps lock to an additional ctrl
+* Install https://github.com/shanep/dot-files[dot-files]
