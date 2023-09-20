@@ -8,7 +8,7 @@ provides a solid set of commands that allows developers to work on several
 different versions of the code at once. These distinct versions are called
 branches. Branches may consist of a new feature, a bug that you need to isolate,
 or numerous other reasons to create a separate branch of code. We will leverage
-Gits fantastic branching and merging features in this module.
+Git's fantastic branching and merging features in this module.
 
 == Reading
 

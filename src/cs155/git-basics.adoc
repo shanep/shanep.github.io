@@ -12,7 +12,7 @@ under the hood as best as possible.
 
 TIP: This section takes an estimated 3-4 hours
 
-Complete the Reading assignments below are intended to give you some background
+Complete the reading assignments below are intended to give you some background
 knowledge before you attempt the hands on labs. Once you have completed the
 reading linked below log into the canvas site and take the associated quiz.
 
