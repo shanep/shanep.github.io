@@ -91,7 +91,7 @@ https://en.wikipedia.org/wiki/Google_Scholar[Google Scholar] was released and
 you no longer had to spend hours in the library combing through indexes or paper
 journals, you could just type your query into a little box and get millions of
 results instantly. It's hard to overstate how dramatic the shift was to people
-who didn't live through it. Google was nothing short of mind blowing compared
+who didn't live through it. Google was nothing short of mind-blowing compared
 to what existed before.
 
 Banning tools that are broadly available only results in creating a low trust

@@ -22,7 +22,7 @@ will leverage the integrated terminal of VSCode to interact with Git.
 
 TIP: This section takes an estimated 3-4 hours
 
-We will be using a Free (but well written) book for this module which you can
+We will be using a free (but well written) book for this module which you can
 https://drive.google.com/file/d/1nJ0XC0H7eI5I_g9WCqY9v-LlBMREaRBe/view?usp=share_link[download
 here]. Once you have downloaded the book read the following chapters as well as
 the post on the integrated terminal in VSCode before you attempt the homework

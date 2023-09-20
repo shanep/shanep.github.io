@@ -39,7 +39,7 @@ include::learning-objectives.csv[]
 |1| xref:git-introduction.adoc[Git Introduction]
 |2| xref:git-basics.adoc[Git Basics]
 |3| xref:git-branching-and-merging.adoc[Branching and Merging]
-|4| xref:github.adoc[Github]
+|4| xref:github.adoc[GitHub]
 |===
 
 == Assessments
