@@ -9,8 +9,8 @@ Week,Topic,Lecture,What Due?
 ,http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf[OSTEP ch4 - Abstraction the process],xref:slides/cpu-intro.adoc[slides],
 5,"http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf[OSTEP ch5 - Process API] ","xref:slides/cpu-api.adoc[slides] , https://github.com/shanep/ostep-code/tree/master/cpu-api[Examples]",
 ,http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf[OSTEP ch6 - Limited Direct Execution],xref:slides/cpu-mechanisms.adoc[slides],"Quiz 3 - ch2, ch4, ch5, C"
-6,https://github.com/shanep/os-p2-starter[Project 2 Introduction],Project Walkthrough,
-,http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf[ OSTEP ch7 - Scheduling Introduction],"xref:slides/cpu-sched.adoc[slides], https://github.com/shanep/ostep-code/tree/master/cpu-sched-lottery[Examples]",Project 1 Due
+6,http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf[ OSTEP ch7 - Scheduling Introduction],"xref:slides/cpu-sched.adoc[slides], https://github.com/shanep/ostep-code/tree/master/cpu-sched-lottery[Examples]",
+,https://github.com/shanep/os-p2-starter[Project 2 Introduction],Project Walkthrough,Project 1 Due
 7,https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf[OSTEP ch13 - Address Spaces],xref:slides/vm-intro.adoc[slides],
 ,https://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf[OSTEP ch17 - Free Space management],xref:slides/vm-freespace.adoc[slides],"Quiz 4 - ch6, ch7, ch13, C"
 8,https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf[OSTEP ch18 - Paging: Introduction],xref:slides/vm-paging.adoc[slides],
