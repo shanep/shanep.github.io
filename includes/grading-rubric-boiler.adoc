@@ -9,7 +9,8 @@ is not feasible.
 
 Students are expected to write tests to ensure correct code. The question that
 is always asked is how many tests? At a minimum you should write at least one
-test for each function or method that you wrote. You should make sure that you
+test for every **public** function or method. This includes any untested functions that
+were provided for you. You should make sure that you
 test bad inputs as well as good inputs. Your program should not crash if a user
 inputs bad data!
 
