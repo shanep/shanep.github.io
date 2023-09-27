@@ -6,22 +6,7 @@ inter-process communication, synchronization, scheduling, memory management, \
 file systems and security. Case studies of multiple operating systems. PREREQ: \
 CS 321 and ECE 330.
 
-
 include::../../includes/syllabus-logistics.adoc[]
-
-== Course Learning Outcomes
-
-By the end of this course the student should have achieved the following course
-learning outcomes.
-
-[%header,format=csv]
-[cols="10,10,~,15,15"]
-|===
-include::learning-objectives.csv[]
-|===
-
-* https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/[Blooms Taxonomy]
-* https://tips.uark.edu/blooms-taxonomy-verb-chart/[Booms Taxonomy of Verbs]
 
 == Course Materials
 
@@ -76,5 +61,19 @@ device driver.
 project. Only projects 3, 4, or 5 are eligible for this option.
 ** For graduate students this project is required and will NOT replace an
 existing project.
+
+== Course Learning Outcomes
+
+By the end of this course the student should have achieved the following course
+learning outcomes.
+
+[%header,format=csv]
+[cols="10,10,~,15,15"]
+|===
+include::learning-objectives.csv[]
+|===
+
+* https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/[Blooms Taxonomy]
+* https://tips.uark.edu/blooms-taxonomy-verb-chart/[Booms Taxonomy of Verbs]
 
 include::../../includes/syllabus-boiler.adoc[]
