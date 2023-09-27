@@ -1,5 +1,8 @@
 = Github Classroom Setup
-include::../../includes/attributes-settings.adoc[]
+Shane K. Panter <shanepanter@boisestate.edu>; Amit Jain <ajain@boisestate.edu>
+:toc: left
+:date: 2021-01-11
+:icons: font
 
 == Overview
 
@@ -29,11 +32,13 @@ must be added as owners of the organization so they can access the students
 submissions for grading or assisting students during office hours. Once a TA/GA is added as an
 owner they can see and access *all* of the repositories. It is
 possible, in upper division courses, to have a TA/GA who is grading for one
-class and also enrolled as a student in another. Github has great
+class and also enrolled as a student in another.
+
+Github has great
 https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch[documentation]
-that will walk you through creating a new organization. I create a new
-organization each semester that is specific to the class with the naming
-convention cs123-fall2020.
+that will walk you through creating a new organization. Choose the free tier when given the
+choice in creating a new organization. During the setup, I recommend creating a new organization
+each semester that is specific to the class with the naming convention such as cs123-fall2023.
 
 image::images/github-orgs.png[Github Orgs]
 
@@ -49,10 +54,9 @@ listed in the syllabus. If you are teaching a class that already has starter
 code repository's setup you can skip this step.
 
 In order to use github classrooms you have to have a starter code repository.
-There are three options for starter code repositories that you can choose, each
-are detailed below. All starter code repositories must be setup as a template
-repository in order to use github classrooms. Refer to the github documentation
-on how to
+There are three options for starter code repositories that you can choose,
+each are detailed below. All starter code repositories must be setup as a template
+repository in order to use github classrooms. Refer to the github documentation on how to
 https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository[create
 a template repository]. This repository must be set to public access.
 
@@ -105,8 +109,8 @@ pushing grading feedback into the repo.
 * Sign into https://classroom.github.com[Github classroom]
 
 * You can name your classroom whatever you want it does not impact any
-functionality. A suggested format is to name your classroom the same name as the
-organization that you will be using to host the repositories.
+functionality. A suggested format is to
+*name your classroom the same name as the organization* that you will be using to host the repositories.
 
 * Add in any TA's or grad students that you want to your organization. You can
 add or remove TA's later so you can skip this step on initial creation.
@@ -115,7 +119,7 @@ add or remove TA's later so you can skip this step on initial creation.
 University so you will have to import your class roster manually. I have found
 that is is beneficial to wait until the first or second week of the semester to
 add students to the roster so you don't have to deal with students adding late
-or dropping the class.
+or dropping the class. Note that GitHub wants the class rosters in CSV or one email per line format.
 
 == Step 4 - Create an Assignment
 
@@ -176,7 +180,7 @@ actions
 
 == Step 5: Download student submissions
 
-Github provides a cross platform command line downloader that you can use to get
-all your student submissions. Complete instructions on how to install and use
-the downloader are provided
-https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/using-github-classroom-with-github-cli[here].
+There are two ways to download student assignments. You can use the
+https://classroom.github.com/assistant[Classroom Assistant] provided by Github
+or you can use a terminal based downloader
+https://github.com/shanep/ghclass[ghclass].
