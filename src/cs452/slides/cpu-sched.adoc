@@ -32,7 +32,7 @@ Shane K. Panter <shanepanter@boisestate.edu>
 
 image::images/fcfs-perfect.png[FCFS]
 
-stem:[T_{turnaround} = \frac{10+10+10}3 = 20]
+stem:[T_{turnaround} = \frac{10+10+10}3 = 10]
 
 === Bad Performance
 
