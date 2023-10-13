@@ -57,10 +57,10 @@ have all the software you will need this semester.
 === Programming Projects
 
 All of your programming assignments will be submitted using GitHub. You are
-responsible for ensuring all your code is properly pushed to Github. Submissions
+responsible for ensuring all your code is properly pushed to GitHub. Submissions
 via any other method such as email, stone tablet, or wizard scroll 📜 will
 not be accepted under any circumstances. You are **required** to make consistent
-commits and pushes to your github repository over the course of working on your
+commits and pushes to your GitHub repository over the course of working on your
 project. For example if you have 3 weeks to work on a project I should see a
 minimum of 3 commits (1 per week).
 
