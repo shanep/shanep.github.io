@@ -17,7 +17,7 @@ include::../../includes/syllabus-logistics.adoc[]
 == Course Notes
 
 * xref:../teaching/vscode-tips-and-tricks.adoc[VSCode Tips and Tricks]
-* xref:xplatform.adoc[Cross Platform Development]
+* xref:cross-platform.adoc[Cross Platform Development]
 * xref:debugging-c.adoc[Debugging C]
 * xref:memory-errors.adoc[Memory Errors]
 
