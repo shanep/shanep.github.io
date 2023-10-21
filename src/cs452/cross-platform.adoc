@@ -15,14 +15,14 @@ for each operating system.
 
 == Windows 11+
 
-- Install [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
+- Install https://visualstudio.microsoft.com/downloads/[Visual Studio 2022]
   Community Edition Select "Desktop development with C++" when prompted.
 
 == MacOS
 
-- Install [homebrew](https://brew.sh/)
-- Install [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
-- xcode-select –install to install Command Line Tools.
+- Install https://brew.sh/[homebrew]
+- Install https://apps.apple.com/us/app/xcode/id497799835?mt=12[Xcode]
+- xcode-select -install to install Command Line Tools.
 - brew install cmake googletest
 
 == VSCode Notes
