@@ -12,8 +12,12 @@ include::../../includes/syllabus-logistics.adoc[]
 
 * Textbook: https://pages.cs.wisc.edu/~remzi/OSTEP/[Operating Systems: Three Easy Pieces]
 ** Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau
-* xref:../teaching/vscode-tips-and-tricks.adoc[VSCode Tips and Tricks]
 * https://github.com/shanep/ostep-code[Code Examples]
+
+== Course Notes
+
+* xref:../teaching/vscode-tips-and-tricks.adoc[VSCode Tips and Tricks]
+* xref:xplatform.adoc[Cross Platform Development]
 * xref:debugging-c.adoc[Debugging C]
 * xref:memory-errors.adoc[Memory Errors]
 
