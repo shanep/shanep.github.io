@@ -1,0 +1,33 @@
+= Cross Platform
+include::../../includes/attributes-settings.adoc[]
+
+Notes for developing cross platform applications with C/C++ and camke. using the
+https://github.com/shanep/cpp-project-template[cpp-project-template]. While the
+project template is configure to download and install some of the required
+dependencies each operating system still needs to have some tools installed to
+proceed. The following sections will help you install the required dependencies
+for each operating system.
+
+== Fedora 38+
+
+- sudo dnf group install "Development Tools"
+- sudo dnf install libasan lcov readline gtest-devel gtest
+
+== Windows 11+
+
+- Install [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
+  Community Edition Select "Desktop development with C++" when prompted.
+
+== MacOS
+
+- Install [homebrew](https://brew.sh/)
+- Install [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+- xcode-select –install to install Command Line Tools.
+- brew install cmake googletest
+
+== VSCode Notes
+
+The VSCode CMake extension (2023-10-17) does not support all the features of
+cmake presets that this project uses so you will need to add the following to
+your settings.json file so that the extension does not complain about the
+new features we are using.`"cmake.allowUnsupportedPresetsVersions": true`
