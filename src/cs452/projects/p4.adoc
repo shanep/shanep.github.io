@@ -78,9 +78,12 @@ end = getMilliSeconds();
 
 [,c]
 ----
+
+
 #ifndef LAB_H
 #define LAB_H
 #include <lab_export.h>
+#include <pthread.h>
 
 #ifdef __cplusplus
 extern "C"
@@ -169,13 +172,14 @@ extern "C"
          * @param argv The argument array
          * @return The exit code
          */
-        LAB_EXPORT int go(int argc, char **argv);
+        LAB_EXPORT int myMain(int argc, char **argv);
 
 #ifdef __cplusplus
 } // extern "C"
 #endif
 
 #endif
+
 ----
 
 == lab.ccp Implementation
@@ -184,7 +188,8 @@ extern "C"
 ----
 #include <stdlib.h>
 #include <lab.h>
-
+#include <sys/time.h>  /* for gettimeofday system call */
+#include <iostream>
 
 /**
  * @brief Standard insertion sort that is faster than merge sort for small array's
@@ -195,105 +200,119 @@ extern "C"
  */
 static void insertion_sort(int A[], int p, int r)
 {
-	int j;
+    int j;
 
-	for (j=p+1; j<=r; j++) {
-		int key = A[j];
-		int i = j-1;
-		while ((i > p-1) && (A[i] > key)) {
-			A[i+1] = A[i];
-			i--;
-		}
-		A[i+1] = key;
-	}
+    for (j = p + 1; j <= r; j++)
+    {
+        int key = A[j];
+        int i = j - 1;
+        while ((i > p - 1) && (A[i] > key))
+        {
+            A[i + 1] = A[i];
+            i--;
+        }
+        A[i + 1] = key;
+    }
 }
 
 void mergesort_sm(int A[], int p, int r, int min)
 {
-	if (r-p+1 <= min)  {
-			insertion_sort(A,p,r);
-	} else {
-		int q = (p+r)/2;
-		mergesort_s(A, p, q);
-		mergesort_s(A, q+1, r);
-		merge_s(A, p, q, r);
-	}
-
+    if (r - p + 1 <= min)
+    {
+        insertion_sort(A, p, r);
+    }
+    else
+    {
+        int q = (p + r) / 2;
+        mergesort_s(A, p, q);
+        mergesort_s(A, q + 1, r);
+        merge_s(A, p, q, r);
+    }
 }
 
 void mergesort_s(int A[], int p, int r)
 {
-	mergesort_sm(A, p, r, INSERTION_SORT_THRESHOLD);
+    mergesort_sm(A, p, r, INSERTION_SORT_THRESHOLD);
 }
-
 
 void merge_s(int A[], int p, int q, int r)
 {
-	int *B = (int *) malloc(sizeof(int) * (r-p+1));
+    int *B = (int *)malloc(sizeof(int) * (r - p + 1));
 
-	int i = p;
-	int j = q+1;
-	int k = 0;
-	int l;
+    int i = p;
+    int j = q + 1;
+    int k = 0;
+    int l;
 
-	/* as long as both lists have unexamined elements */
-	/*  this loop keeps executing. */
-	while ((i <= q) && (j <= r)) {
-		if (A[i] < A[j]) {
-			B[k] = A[i];
-			i++;
-		} else {
-			B[k] = A[j];
-			j++;
-		}
-		k++;
-	}
+    /* as long as both lists have unexamined elements */
+    /*  this loop keeps executing. */
+    while ((i <= q) && (j <= r))
+    {
+        if (A[i] < A[j])
+        {
+            B[k] = A[i];
+            i++;
+        }
+        else
+        {
+            B[k] = A[j];
+            j++;
+        }
+        k++;
+    }
 
-	 /* now only at most one list has unprocessed elements. */
-	if (i <= q) {
-		 /* copy remaining elements from the first list */
-		for (l=i; l<=q; l++) {
-			B[k] = A[l];
-			k++;
-		}
-	} else {
-		 /* copy remaining elements from the second list */
-		for (l=j; l<=r; l++) {
-			B[k] = A[l];
-			k++;
-		}
-	}
+    /* now only at most one list has unprocessed elements. */
+    if (i <= q)
+    {
+        /* copy remaining elements from the first list */
+        for (l = i; l <= q; l++)
+        {
+            B[k] = A[l];
+            k++;
+        }
+    }
+    else
+    {
+        /* copy remaining elements from the second list */
+        for (l = j; l <= r; l++)
+        {
+            B[k] = A[l];
+            k++;
+        }
+    }
 
-	/* copy merged output from array B back to array A */
-	k=0;
-	for (l=p; l<=r; l++) {
-		A[l] = B[k];
-		k++;
-	}
+    /* copy merged output from array B back to array A */
+    k = 0;
+    for (l = p; l <= r; l++)
+    {
+        A[l] = B[k];
+        k++;
+    }
 
-	free(B);
+    free(B);
 }
 
 double getMilliSeconds()
 {
-	//todo
+    //TODO
 }
 
 static void *parallel_mergesort(void *args)
 {
-	//todo
+    //TODO
 }
 
 void mergesort_mt(int *A, int n, int num_threads, int min)
 {
-	//todo
+    //TODO
 }
 
-int go(int argc, char **argv)
+
+int myMain(int argc, char **argv)
 {
-	//todo
+    //TODO
+    return 0;
 }
-
 ----
 
 == test-lab.cpp Implementation
