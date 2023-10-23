@@ -55,16 +55,12 @@ write a simple shell to get a better understanding of processes.
 * https://github.com/shanep/os-p3-starter[Project 3] - In this project you will
 implement the buddy memory algorithm as described by Dr. Donald Knuth.
 * https://github.com/shanep/os-p4-starter[Project 4]  - This project will
-introduce using threads to speed up an application and then analyze the results.
+introduce using threads to speed up an existing application
 * https://github.com/shanep/os-p5-starter[Project 5] - In this project we will
 implement a simple bounded queue that can be used in the classic producer and
-consumer problem and then analyze the results.
-* Project 6 - In this project you will write a simple Linux Kernel
-device driver.
-** For undergraduates this project is optional and can replace the grade for one
-project. Only projects 3, 4, or 5 are eligible for this option.
-** For graduate students this project is required and will NOT replace an
-existing project.
+consumer problem.
+* xref:projects/p6.adoc[Project 6] - In this project you will analyze the
+results of a previous project and write a report on your findings.
 
 == Course Learning Outcomes
 
