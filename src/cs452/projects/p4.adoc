@@ -1,0 +1,457 @@
+= Project 4
+include::../../../includes/attributes-settings.adoc[]
+
+== Overview
+
+In this lab, you are tasked with taking an existing data structure that is not
+thread safe and wrapping it to use in a multi-threaded environment. In industry
+you may be tasked with modifying legacy code to work in a multi-threaded
+environment so this is a critical skill to master while in school 😃.
+
+You are given an existing implementation of merge sort. This implementation is
+derived directly from the book "Introduction to Algorithms" by Cormen,
+Leiserson, Rivest, and Stein. Your job is to wrap this algorithm so you can use
+it in a multi-threaded environment.
+
+image::./images/yunowork.jpeg[UYNoWork, align="center"]
+
+
+## Objective 1 - Make Thread safe
+
+Read through the files `lab.h` and `lab.cpp` shown below to make sure you
+understand the algorithm. You are not allowed to modify the single threaded
+implementation in  you must implement the function `mergesort_mt`. Your
+implementation needs to split up the array into equal chunks and then hand each
+chunk to a new thread. You will then use `pthread_join` to wait for all the
+chucks to be sorted at which point you will need to merge the results together.
+You will not need to use locks for this approach because you are taking a large
+array and splitting it up between threads so each thread only operates on its
+section of the larger array. C pointers come in really handy for this approach
+because you can keep the original array in place and just declare new pointers
+into separate chunks of the existing array.
+
+- https://computing.llnl.gov/tutorials/pthreads/[pthread tutorial]
+- http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf[Intro to Threads]
+- http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf[Threads API]
+
+## Objective 2 - Driver app
+
+Once you have completed writing the multi-threaded version of the code you will
+need to create a small command line driver that will take two command line
+arguments and output the number of threads used and the total time to sort the
+array as shown in the example below. You must match what is show below exactly
+because you will be using the output in a future project. You will need to add a
+new function named `getMilliSeconds()` to get your timing You will need to add
+some additional headers to your code as detailed in the
+https://man7.org/linux/man-pages/man2/gettimeofday.2.html[manpage].
+
+[,bash]
+----
+usage: ./myprogram <array_size> <num_threads>
+$ ./myprogram 1000 2
+0.0820312 2
+$ ./myprogram 1000 3
+0.104004 3
+----
+
+[,c]
+----
+double getMilliSeconds()
+{
+    struct timeval now;
+    gettimeofday(&now, (struct timezone *)0);
+    return (double) now.tv_sec*1000.0 + now.tv_usec/1000.0;
+}
+----
+
+Here is how you would use the timing code:
+
+[,c]
+----
+double end = 0;
+double start = getMilliSeconds();
+mergesort_mt(A_,size,t,0);
+end = getMilliSeconds();
+----
+
+== lab.h Implementation
+
+[,c]
+----
+#ifndef LAB_H
+#define LAB_H
+#include <lab_export.h>
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+// The threshold that we will use to switch to insertion sort, make sure that
+// you use test arrays bigger than 5 so you are testing the merge sort
+#define INSERTION_SORT_THRESHOLD 5
+#define MAX_THREADS 32
+        /**
+         * @brief Sorts an array of ints into ascending order using the constant
+         * INSERTION_SORT_THRESHOLD internally
+         *
+         * @param A A pointer to the start of the array
+         * @param p The starting index
+         * @param r The ending index
+         */
+        LAB_EXPORT void mergesort_s(int *A, int p, int r);
+
+        /**
+         * @brief Sorts an array of ints into ascending order
+         *
+         * @param A A pointer to the start of the array
+         * @param p The starting index
+         * @param r The ending index
+         * @param min The min size that we will sort until we switch to insertion sort
+         */
+        LAB_EXPORT void mergesort_sm(int *A, int p, int r, int min);
+
+        /**
+         * @brief Merge two sorted sequences A[p..q] and A[q+1..r] and place merged
+         *              output back in array A. Uses extra space proportional to
+         *              A[p..r].
+         *
+         * @param A The array to merge into
+         * @param p The starting index of the first half
+         * @param q The middle
+         * @param r The ending index of the second half
+         */
+        LAB_EXPORT void merge_s(int A[], int p, int q, int r);
+
+        /**
+         * @brief Sorts an array of ints into ascending order using multiple
+         * threads
+         *
+         * @param A A pointer to the start of the array
+         * @param n The size of the array
+         * @param num_threads The number of threads to use.
+         * @param min The min size that we will sort until we switch to
+         * insertion sort passing 0 will default to INSERTION_SORT_THRESHOLD
+         */
+        LAB_EXPORT void mergesort_mt(int *A, int n, int num_threads, int min);
+
+        /*
+         * @brief retuns the current time as milliseconds
+         * @return the number of milliseconds
+         */
+        LAB_EXPORT double getMilliSeconds();
+
+        /**
+         * @brief Represents a chunk of the array to be sorted by a thread
+         *
+         */
+        struct parallel_args
+        {
+                int *A;
+                int start;
+                int end;
+                int min;
+                pthread_t tid;
+        };
+
+        /**
+         * @brief The function that is called by each thread to sort their chunk
+         *
+         * @param args see struct parallel_args
+         * @return void* always NULL
+         */
+        static void *parallel_mergesort(void *args);
+
+        /**
+         * @brief Entry point for the main function
+         *
+         * @param argc The argument count
+         * @param argv The argument array
+         * @return The exit code
+         */
+        LAB_EXPORT int go(int argc, char **argv);
+
+#ifdef __cplusplus
+} // extern "C"
+#endif
+
+#endif
+----
+
+== lab.ccp Implementation
+
+[,cpp]
+----
+#include <stdlib.h>
+#include <lab.h>
+
+
+/**
+ * @brief Standard insertion sort that is faster than merge sort for small array's
+ *
+ * @param A The array to sort
+ * @param p The starting index
+ * @param r The ending index
+ */
+static void insertion_sort(int A[], int p, int r)
+{
+	int j;
+
+	for (j=p+1; j<=r; j++) {
+		int key = A[j];
+		int i = j-1;
+		while ((i > p-1) && (A[i] > key)) {
+			A[i+1] = A[i];
+			i--;
+		}
+		A[i+1] = key;
+	}
+}
+
+void mergesort_sm(int A[], int p, int r, int min)
+{
+	if (r-p+1 <= min)  {
+			insertion_sort(A,p,r);
+	} else {
+		int q = (p+r)/2;
+		mergesort_s(A, p, q);
+		mergesort_s(A, q+1, r);
+		merge_s(A, p, q, r);
+	}
+
+}
+
+void mergesort_s(int A[], int p, int r)
+{
+	mergesort_sm(A, p, r, INSERTION_SORT_THRESHOLD);
+}
+
+
+void merge_s(int A[], int p, int q, int r)
+{
+	int *B = (int *) malloc(sizeof(int) * (r-p+1));
+
+	int i = p;
+	int j = q+1;
+	int k = 0;
+	int l;
+
+	/* as long as both lists have unexamined elements */
+	/*  this loop keeps executing. */
+	while ((i <= q) && (j <= r)) {
+		if (A[i] < A[j]) {
+			B[k] = A[i];
+			i++;
+		} else {
+			B[k] = A[j];
+			j++;
+		}
+		k++;
+	}
+
+	 /* now only at most one list has unprocessed elements. */
+	if (i <= q) {
+		 /* copy remaining elements from the first list */
+		for (l=i; l<=q; l++) {
+			B[k] = A[l];
+			k++;
+		}
+	} else {
+		 /* copy remaining elements from the second list */
+		for (l=j; l<=r; l++) {
+			B[k] = A[l];
+			k++;
+		}
+	}
+
+	/* copy merged output from array B back to array A */
+	k=0;
+	for (l=p; l<=r; l++) {
+		A[l] = B[k];
+		k++;
+	}
+
+	free(B);
+}
+
+double getMilliSeconds()
+{
+	//todo
+}
+
+static void *parallel_mergesort(void *args)
+{
+	//todo
+}
+
+void mergesort_mt(int *A, int n, int num_threads, int min)
+{
+	//todo
+}
+
+int go(int argc, char **argv)
+{
+	//todo
+}
+
+----
+
+== test-lab.cpp Implementation
+
+[,cpp]
+----
+#include <stdlib.h>
+#include <lab.h>
+#include <gtest/gtest.h>
+#include <algorithm>
+
+/**
+ * @brief Test Fixture that will create an array that is randomly populated
+ *
+ */
+class UnSortedArrayLarge : public testing::Test
+{
+protected:
+     void SetUp() override
+     {
+          A_ = new int[defaultSize_];
+          srandom(defaultSeed_);
+          for (int i = 0; i < defaultSize_; i++)
+               A_[i] = random() % defaultRange_;
+          // Make sure that the array is unsorted
+          bool rval = std::is_sorted(A_, A_ + defaultSize_);
+          EXPECT_FALSE(rval);
+     }
+
+     void TearDown() override
+     {
+          delete[] A_;
+     }
+
+     int defaultRange_ = 1000000;
+     int defaultSize_ = 1000000;
+     int defaultSeed_ = 1;
+     int *A_ = nullptr;
+};
+
+/**
+ * @brief Test Fixture that will create an array that is populated with
+ * a known small sequence that can make debugging easier
+ *
+ */
+class UnSortedArraySmall : public testing::Test
+{
+protected:
+     void SetUp() override
+     {
+          bool rval = std::is_sorted(A_, A_ + size_);
+          EXPECT_FALSE(rval);
+          rval = std::is_sorted(A_odd_, A_odd_ + size_);
+          EXPECT_FALSE(rval);
+     }
+
+     void TearDown() override
+     {
+          // We what to make sure we didn't loose any elements
+          // when sorting. For example if we clobber an element (duplicated it)
+          // the array would still be sorted but missing data.
+          for (int i = 0; i < size_; i++)
+          {
+               EXPECT_EQ(A_[i], A_sorted[i]);
+          }
+
+          for (int i = 0; i < size_; i++)
+          {
+               EXPECT_EQ(A_odd_[i], A_odd_sorted[i]);
+          }
+     }
+     // even size array
+     static const int size_ = 10;
+     int A_[size_] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+     int A_sorted[size_] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+     // Odd size array
+     static const int odd_ = 13;
+     int A_odd_[odd_] = {13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+     int A_odd_sorted[odd_] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+};
+
+TEST_F(UnSortedArraySmall, mergesort_sm_sorted)
+{
+     //Test to make sure a sorted array stays sorted
+     mergesort_sm(A_sorted, 0, size_ - 1,1);
+     mergesort_sm(A_, 0, size_ - 1,1);
+     EXPECT_TRUE(std::is_sorted(A_sorted, A_sorted + size_));
+     EXPECT_TRUE(std::is_sorted(A_, A_ + size_));
+     mergesort_sm(A_odd_sorted, 0, odd_ - 1,1);
+     mergesort_sm(A_odd_, 0, odd_ - 1,1);
+     EXPECT_TRUE(std::is_sorted(A_odd_sorted, A_odd_sorted + size_));
+     EXPECT_TRUE(std::is_sorted(A_odd_, A_odd_ + odd_));
+}
+
+TEST_F(UnSortedArraySmall, mergesort_mt_small_one)
+{
+     mergesort_mt(A_, size_, 1,1);
+     bool rval = std::is_sorted(A_, A_ + size_);
+     EXPECT_TRUE(rval);
+     mergesort_mt(A_odd_, odd_, 1,1);
+     rval = std::is_sorted(A_odd_, A_odd_ + odd_);
+     EXPECT_TRUE(rval);
+}
+
+TEST_F(UnSortedArraySmall, mergesort_mt_small_two)
+{
+     mergesort_mt(A_, size_, 2,1);
+     bool rval = std::is_sorted(A_, A_ + size_);
+     EXPECT_TRUE(rval);
+     mergesort_mt(A_odd_, odd_, 2,1);
+     rval = std::is_sorted(A_odd_, A_odd_ + odd_);
+     EXPECT_TRUE(rval);
+}
+
+TEST_F(UnSortedArraySmall, mergesort_mt_small_three)
+{
+     mergesort_mt(A_, size_, 3,1);
+     bool rval = std::is_sorted(A_, A_ + size_);
+     EXPECT_TRUE(rval);
+     mergesort_mt(A_odd_, odd_, 3,1);
+     rval = std::is_sorted(A_odd_, A_odd_ + odd_);
+     EXPECT_TRUE(rval);
+}
+
+TEST_F(UnSortedArrayLarge, mergesort_s)
+{
+     mergesort_s(A_, 0, defaultSize_ - 1);
+     bool rval = std::is_sorted(A_, A_ + defaultSize_);
+     EXPECT_TRUE(rval);
+}
+
+TEST_F(UnSortedArrayLarge, mergesort_mt_one)
+{
+
+     mergesort_mt(A_, defaultSize_ , 1,0);
+     bool rval = std::is_sorted(A_, A_ + defaultSize_);
+     EXPECT_TRUE(rval);
+}
+
+TEST_F(UnSortedArrayLarge, mergesort_mt_two)
+{
+     mergesort_mt(A_, defaultSize_, 2,0);
+     bool rval = std::is_sorted(A_, A_ + defaultSize_);
+     EXPECT_TRUE(rval);
+}
+
+TEST_F(UnSortedArrayLarge, mergesort_mt_three)
+{
+     mergesort_mt(A_, defaultSize_, 3,0);
+     bool rval = std::is_sorted(A_, A_ + defaultSize_);
+     EXPECT_TRUE(rval);
+}
+
+TEST_F(UnSortedArrayLarge, mergesort_mt_four)
+{
+     mergesort_mt(A_, defaultSize_, 4,0);
+     bool rval = std::is_sorted(A_, A_ + defaultSize_);
+     EXPECT_TRUE(rval);
+}
+----
