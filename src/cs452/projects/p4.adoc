@@ -16,7 +16,7 @@ it in a multi-threaded environment.
 image::./images/yunowork.jpeg[UYNoWork, align="center"]
 
 
-## Objective 1 - Make Thread safe
+## Task 1 - Make Thread safe
 
 Read through the files `lab.h` and `lab.cpp` shown below to make sure you
 understand the algorithm. You are not allowed to modify the single threaded
@@ -34,7 +34,7 @@ into separate chunks of the existing array.
 - http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf[Intro to Threads]
 - http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf[Threads API]
 
-## Objective 2 - Driver app
+## Task 2 - Driver app
 
 Once you have completed writing the multi-threaded version of the code you will
 need to create a small command line driver that will take two command line
@@ -74,7 +74,13 @@ mergesort_mt(A_,size,t,0);
 end = getMilliSeconds();
 ----
 
-== lab.h Implementation
+== Starter Code
+
+Each code block below is the starter code that you must use for this project.
+The README.md file in your github project will contain instructions on where
+to place the code blocks below.
+
+=== lab.h Implementation
 
 [,c]
 ----
@@ -182,7 +188,7 @@ extern "C"
 
 ----
 
-== lab.ccp Implementation
+=== lab.ccp Implementation
 
 [,cpp]
 ----
@@ -315,7 +321,7 @@ int myMain(int argc, char **argv)
 }
 ----
 
-== test-lab.cpp Implementation
+=== test-lab.cpp Implementation
 
 [,cpp]
 ----

@@ -47,9 +47,8 @@ individually.
 There are several individual projects this semester. All Projects will be graded
 with the xref:grading-rubric.adoc[project grading rubric].
 
-* https://github.com/shanep/os-p1-starter[Project 1] - This is a warm up project
-to introduce you to the project structure and tooling used as well as brush up
-on your C programming skills.
+* xref:projects/p1.adoc[Project 1] - This is a warm up project
+to introduce you to the project structure and tooling used in this course.
 * https://github.com/shanep/os-p2-starter[Project 2] - In this project you will
 write a simple shell to get a better understanding of processes.
 * https://github.com/shanep/os-p3-starter[Project 3] - In this project you will
