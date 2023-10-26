@@ -49,13 +49,13 @@ with the xref:grading-rubric.adoc[project grading rubric].
 
 * xref:projects/p1.adoc[Project 1] - This is a warm up project
 to introduce you to the project structure and tooling used in this course.
-* https://github.com/shanep/os-p2-starter[Project 2] - In this project you will
+* xref:projects/p2.adoc[Project 2] - In this project you will
 write a simple shell to get a better understanding of processes.
-* https://github.com/shanep/os-p3-starter[Project 3] - In this project you will
+* xref:projects/p3.adoc[Project 3] - In this project you will
 implement the buddy memory algorithm as described by Dr. Donald Knuth.
 * xref:projects/p4.adoc[Project 4]  - This project will
 introduce using threads to speed up an existing application
-* https://github.com/shanep/os-p5-starter[Project 5] - In this project we will
+* xref:projects/p5.adoc[Project 5] - In this project we will
 implement a simple bounded queue that can be used in the classic producer and
 consumer problem.
 * xref:projects/p6.adoc[Project 6] - In this project you will analyze the
