@@ -4,12 +4,13 @@ include::../../../includes/attributes-settings.adoc[]
 
 == Overview
 
-In this project, you are tasked with taking project 4 and analyzing the effects
-of multi-treading. You will be using the same github repository for this project
-as you did in project 4. If you did not complete project 4 I can provide a
-compiled binary that you can use for this project. You will need to contact me
-the day this project is assigned to get the binary, I will not be able to send
-it to you at 11:59pm the day before the project is due 🤷.
+In this project, you are tasked with taking xref:p4.adoc[project 4] and
+analyzing the effects of multi-treading. You will be using the same github
+repository for this project as you did in project 4. If you did not complete
+project 4 I can provide a compiled binary that you can use for this project. You
+will need to contact me the day this project is assigned to get the binary, I
+will not be able to send it to you at 11:59pm the day before the project is due
+🤷.
 
 image::./images/yunowork.jpeg[UYNoWork, align="center"]
 
@@ -21,36 +22,7 @@ This project measures the following course learning outcomes:
 * 3.1 Analyze a complex computing problem and apply principles of computing and
 other relevant disciplines to identify solutions. **(ABET Outcome 1)**
 
-
-== Task 1 - Add timing
-
-In this task you will need to add timing to your code. An example of how to do
-this is shown below. You will need to add the timing code to the `main` function
-and then output the results to the console. You will need to add some additional
-headers to your code as detailed in the
-https://man7.org/linux/man-pages/man2/gettimeofday.2.html[manpage].
-
-[,c]
-----
-double getMilliSeconds()
-{
-    struct timeval now;
-    gettimeofday(&now, (struct timezone *)0);
-    return (double) now.tv_sec*1000.0 + now.tv_usec/1000.0;
-}
-----
-
-Here is how you would use the timing code:
-
-[,c]
-----
-double end = 0;
-double start = getMilliSeconds();
-mergesort_mt(A_,size,t,0);
-end = getMilliSeconds();
-----
-
-== Task 2 - Add bash files
+== Task 1 - Add bash files
 
 Below is an example bash script and a gnuplot macro file that you will need to
 use to generate a nice plot showing the speedup when using multiple threads. You
@@ -148,7 +120,7 @@ Your results will vary depending on your hardware and current system load.
 
 image::./images/example_plot.png[example plot, align="center"]
 
-== Task 4 - Complete the Retrospective
+== Task 2 - Complete the Retrospective
 
 Once you have completed all the tasks open the file **Retrospective.md** and add
 a new section named **## Project 6** to the bottom of the document. In this
@@ -167,7 +139,7 @@ maybe go back and look at your original implementation, did you make a mistake
 somewhere? If you found a bug in your original implementation please note that
 and explain what you fixed 😃.
 
-== Task 5 - Add, Commit, Push your code
+== Task 3 - Add, Commit, Push your code
 
 Once you are finished you need to make sure that you have pushed all your code
 to GitHub for grading!
