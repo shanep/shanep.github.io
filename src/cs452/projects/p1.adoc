@@ -90,9 +90,7 @@ Each code block below is the starter code that you must use for this project.
 The README.md file in your github project will contain instructions on where
 to place the code blocks below.
 
-WARNING: While no intentional bugs have be inserted into the starter code it is
-possible that some bugs may have been overlooked. If you think you have found
-a bug notify your professor ASAP.
+
 
 === lab.h Implementation
 
