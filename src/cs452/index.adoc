@@ -34,32 +34,13 @@ include::schedule.csv[]
 Your final grade will be calculated with the following weights in canvas.
 
 * Quizzes - 40%
-* Projects - 60%
+* xref:projects/index.adoc[Projects] - 60%
 
 === Quizzes
 
-There will be 7 quizzes over the assigned reading and general C programming
+There will be several quizzes over the assigned reading and general C programming
 during the semester. The quizzes are open notes and open book and must be done
 individually.
-
-=== Projects
-
-There are several individual projects this semester. All Projects will be graded
-with the xref:grading-rubric.adoc[project grading rubric].
-
-* xref:projects/p1.adoc[Project 1] - This is a warm up project
-to introduce you to the project structure and tooling used in this course.
-* xref:projects/p2.adoc[Project 2] - In this project you will
-write a simple shell to get a better understanding of processes.
-* xref:projects/p3.adoc[Project 3] - In this project you will
-implement the buddy memory algorithm as described by Dr. Donald Knuth.
-* xref:projects/p4.adoc[Project 4]  - This project will
-introduce using threads to speed up an existing application
-* xref:projects/p5.adoc[Project 5] - In this project we will
-implement a simple bounded queue that can be used in the classic producer and
-consumer problem.
-* xref:projects/p6.adoc[Project 6] - In this project you will analyze the
-results of a previous project and write a report on your findings.
 
 == Course Learning Outcomes
 
