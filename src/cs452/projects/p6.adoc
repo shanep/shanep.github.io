@@ -12,7 +12,7 @@ will need to contact me the day this project is assigned to get the binary, I
 will not be able to send it to you at 11:59pm the day before the project is due
 🤷.
 
-image::./images/yunowork.jpeg[UYNoWork, align="center"]
+image::./images/p6-meme.jpg[UYNoWork, align="center"]
 
 == Learning Outcomes
 

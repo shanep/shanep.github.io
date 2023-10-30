@@ -36,12 +36,6 @@ Your final grade will be calculated with the following weights in canvas.
 * Quizzes - 40%
 * xref:projects/index.adoc[Projects] - 60%
 
-=== Quizzes
-
-There will be several quizzes over the assigned reading and general C programming
-during the semester. The quizzes are open notes and open book and must be done
-individually.
-
 == Course Learning Outcomes
 
 By the end of this course the student should have achieved the following course
