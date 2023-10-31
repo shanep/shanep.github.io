@@ -6,6 +6,7 @@ inter-process communication, synchronization, scheduling, memory management, \
 file systems and security. Case studies of multiple operating systems. PREREQ: \
 CS 321 and ECE 330.
 
+
 include::../../includes/syllabus-logistics.adoc[]
 
 == Course Materials
