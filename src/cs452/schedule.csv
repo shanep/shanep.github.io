@@ -26,7 +26,7 @@ Week,Topic,Lecture,What Due?
 13,https://pages.cs.wisc.edu/~remzi/OSTEP/threads-events.pdf[OSTEP ch33 - Event Based Concurrency],,
 ,https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf[OSTEP ch36 - I/O Devices],xref:slides/file-devices.adoc[slides],
 14,"Thanksgiving Break  ",,
-15,https://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf[OSTEP ch39 - Files and Directories],xref:slides/file-intro.adoc[slides],"Quiz 7 - ch32, ch36, ch39, ch53, C"
+15,https://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf[OSTEP ch39 - Files and Directories],xref:slides/file-intro.adoc[slides],"Quiz 7 - ch32, ch33, ch36, ch39, ch53, C"
 ,Project 6,,Project 5 Due
 16,https://pages.cs.wisc.edu/~remzi/OSTEP/security-intro.pdf[OSTEP ch53 - Security],xref:slides/security-intro.adoc[slides],
 ,Bonus day,,
