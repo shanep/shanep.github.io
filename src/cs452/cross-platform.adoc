@@ -1,33 +1,53 @@
 = Cross Platform
 include::../../includes/attributes-settings.adoc[]
 
-Notes for developing cross platform applications with C/C++ and camke. using the
+Notes for developing cross platform applications with C/C++ and cmake using the
 https://github.com/shanep/cpp-project-template[cpp-project-template]. While the
-project template is configure to download and install some of the required
+project template is configured to download and install some of the required
 dependencies each operating system still needs to have some tools installed to
 proceed. The following sections will help you install the required dependencies
 for each operating system.
 
+NOTE: Every Semester new issues pop up because of software upgrades and other
+changes that are outside of your instructors control so if you encounter any
+errors please attend office hours so we can work through the issues and update
+this document 😃.
+
+== Kount Lab and Onyx
+
+Follow the instructions in the https://github.com/shanep/cpp-project-template/blob/master/README-KOUNT-LAB.md[CS Lab] document.
+
 == Fedora 38+
 
-- sudo dnf group install "Development Tools"
-- sudo dnf install libasan lcov readline gtest-devel gtest
+* sudo dnf group install "Development Tools"
+* sudo dnf install libasan lcov readline gtest-devel gtest
 
 == Windows 11+
 
-- Install https://visualstudio.microsoft.com/downloads/[Visual Studio 2022]
+* Install https://visualstudio.microsoft.com/downloads/[Visual Studio 2022]
   Community Edition Select "Desktop development with C++" when prompted.
 
-== MacOS
+== MacOS 13.5.2+
 
-- Install https://brew.sh/[homebrew]
-- Install https://apps.apple.com/us/app/xcode/id497799835?mt=12[Xcode]
-- xcode-select -install to install Command Line Tools.
-- brew install cmake googletest
+* Install https://brew.sh/[homebrew]
+* Install https://apps.apple.com/us/app/xcode/id497799835?mt=12[Xcode]
+* xcode-select -install to install Command Line Tools.
+* brew install cmake googletest
+
+== Ubuntu 22.04 +
+
+Follow the instructions in the https://github.com/shanep/cpp-project-template/blob/master/README-KOUNT-LAB.md[CS Lab] document.
+
+== Codespaces
+
+* Codes Spaces should work out of the box. If you are having issues with developing
+in codespaces https://docs.github.com/en/codespaces/developing-in-a-codespace/deleting-a-codespace[delete] your codespace and create a new one.
 
 == VSCode Notes
 
 The VSCode CMake extension (2023-10-17) does not support all the features of
 cmake presets that this project uses so you will need to add the following to
 your settings.json file so that the extension does not complain about the
-new features we are using.`"cmake.allowUnsupportedPresetsVersions": true`
+new features we are using.`"cmake.allowUnsupportedPresetsVersions": true`.
+
+* https://code.visualstudio.com/docs/getstarted/settings[VSCode Settings]
