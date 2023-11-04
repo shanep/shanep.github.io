@@ -10,19 +10,14 @@ for each operating system.
 
 == ✅ Instructor support systems
 
-Your instructor and TA/GA will support the Kount Lab, Onyx and github codespaces
-using VSCode.
+Your instructor and GA/TA will support the Kount Lab, Onyx and GitHub
+codespaces. If you are working in the lab follow the instructions in the
+https://github.com/shanep/cpp-project-template/blob/master/README-KOUNT-LAB.md[CS
+Lab] document. Otherwise you can use
+https://docs.github.com/en/codespaces/getting-started/quickstart[GitHub
+Codespaces] to work on your projects.
 
-== Kount Lab and Onyx
-
-Follow the instructions in the https://github.com/shanep/cpp-project-template/blob/master/README-KOUNT-LAB.md[CS Lab] document.
-
-== Codespaces
-
-* Codes Spaces should work out of the box. If you are having issues with developing
-in codespaces https://docs.github.com/en/codespaces/developing-in-a-codespace/deleting-a-codespace[delete] your codespace and create a new one.
-
-== VSCode Notes
+=== VSCode Notes
 
 The VSCode CMake extension (2023-10-17) does not support all the features of
 cmake presets that this project uses so you will need to add the following to
@@ -34,11 +29,11 @@ new features we are using.`"cmake.allowUnsupportedPresetsVersions": true`.
 
 == ⚠️ Tested but Unsupported
 
-These systems have been tested by your instructor to work at one point in time.
-However, due to the high number of permutations that students personal systems
-can come in all systems listed below are **not supported**. If you can not get your
-personal system to work then you will need to work in either codespaces or in
-the CS Lab.
+The systems listed below have been tested by your instructor to work at one
+point in time. However, due to the high number of permutations that students
+personal systems can come in all systems listed below are **not supported**. If
+you can not get your personal system to work then you will need to work in
+either codespaces or in the CS Lab.
 
 NOTE: Every Semester new issues pop up because of software upgrades and other
 changes that are outside of your instructors control so if you encounter any
@@ -74,7 +69,8 @@ section can be updated for other students 😃.
 == ❌ Untested Systems
 
 The following systems have been deprecated and are no longer tested or supported.
-If you are running one of the systems below
+If you are running one of the systems below you should upgrade to a more recent
+system.
 
 * Windows 10
 * Ubuntu 20.04
