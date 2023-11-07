@@ -201,6 +201,30 @@ personal systems can come in all systems listed below are **not supported**. If
 you can not get your personal system to work then you will need to work in
 either codespaces or in the CS Lab.
 
+=== Conditional Compilation
+
+Take a look at the provided `src/lab.cpp` and notice the code that looks similar
+to what is show below. This is called a pre-processor directive and allows you
+to change what code is compiled based on the the operating system you are
+targeting. If you want to create a process on linux you would call
+https://man7.org/linux/man-pages/man2/fork.2.html[fork]/https://man7.org/linux/man-pages/man3/exec.3.html[exec].
+on windows you would need to call https://learn.microsoft.com/en-us/windows/win32/procthread/creating-processes[Create Process].
+Pre-processor directives allow you to have code that supports both operating
+systems in the same file which can help reduce overall code maintenance at the
+system level.
+
+As an example:
+
+```C
+#ifdef __linux__
+    //linux code goes here
+#leif _WIN32
+    // windows code goes here
+#else
+
+#endif
+```
+
 === Fedora 38+
 
 * sudo dnf group install "Development Tools"
@@ -239,3 +263,4 @@ system.
 == References
 
 * xref:../../articles/coverity-acm.pdf[Coverity]
+* link:https://gcc.gnu.org/onlinedocs/cpp/System-specific-Predefined-Macros.html[System-specific-Predefined-Macros]
