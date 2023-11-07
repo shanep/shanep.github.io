@@ -1,12 +1,18 @@
 = Network Security and Defense
 include::../../includes/attributes-settings.adoc[]
-:catalog-title: CS 333 Network Security and Defense (3-0-3)(S).
-:catalog-description:  Topics include firewalls, virtual private networks, \
-intrusion detection, intrusion prevention, traffic analysis, techniques for \
-responding to network attacks. PREREQ: CS253 or CS331 or ITM455.
 
+**CS 333 Network Security and Defense (3-0-3)(S).**  Topics include firewalls,
+virtual private networks, intrusion detection, intrusion prevention, traffic
+analysis, techniques for responding to network attacks. PREREQ: CS253 or CS331
+or ITM455.
 
-include::../../includes/syllabus-logistics.adoc[]
+== Topics and Schedule
+
+[%header,format=csv]
+[cols="10,~,~,~"]
+|===
+include::schedule.csv[]
+|===
 
 == Course Learning Outcomes
 
@@ -30,14 +36,6 @@ We will be using zyBooks as our textbook. You should be prompted to sign up for
 the book when you complete the first assignment that is linked in canvas. Do not
 go to the zyBooks website and create a new account you **must** sign up through
 canvas so that your progress is properly recorded.
-
-== Topics and Schedule
-
-[%header,format=csv]
-[cols="10,~,~,~"]
-|===
-include::schedule.csv[]
-|===
 
 == Assessments
 
