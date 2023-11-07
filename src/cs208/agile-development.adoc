@@ -15,7 +15,7 @@ TIP: This module will take an estimated 7 - 9 hours to complete.
 == Module Assignments
 
 * Read **this** document
-* There are **no** textbook labs for this module
+* Read xref:../../articles/IntroductiontoScrum-coursenotes.pdf[Introduction to Scrum] pages 1 - 16
 * Complete the end of module quiz on canvas
 * Complete the end of module reflection on canvas(flip grid)
 
