@@ -1,12 +1,10 @@
 = Operating Systems
 include::../../includes/attributes-settings.adoc[]
-:catalog-title: CS 452/552 OPERATING SYSTEMS (3-0-3)(F,S).
-:catalog-description: Process management, concurrency, \
-inter-process communication, synchronization, scheduling, memory management, \
-file systems and security. Case studies of multiple operating systems. PREREQ: \
-CS 321 and ECE 330.
 
-**{catalog-title}** {catalog-description}
+**CS 452/552 OPERATING SYSTEMS (3-0-3)(F,S)** Process management, concurrency,
+inter-process communication, synchronization, scheduling, memory management,
+file systems and security. Case studies of multiple operating systems. PREREQ:
+CS 321 and ECE 330.
 
 == Topics and Schedule
 

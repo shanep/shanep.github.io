@@ -1,45 +1,11 @@
 = C++ for Engineers
 include::../../includes/attributes-settings.adoc[]
-:catalog-title: CS 117 C++ for Engineers (3-0-3)(F,S).
-:catalog-description: An introductory course in computer programming using C++. \
-Topics include: scalar types; aggregate types; pointers and reference types; \
-statements; expressions; functions; libraries; and a brief introduction to \
-classes, objects. Emphasis is on: implementing given algorithms for numerical, \
+
+**CS 117 C++ for Engineers (3-0-3)(F,S)** An introductory course in computer
+programming using C+\+. Topics include: scalar types; aggregate types; reference
+types; statements; expressions; functions; and a brief introduction to classes
+and objects. Emphasis is on: implementing given algorithms for numerical,
 scientific, and engineering applications. PREREQ: MATH170
-
-include::../../includes/syllabus-logistics.adoc[]
-
-== New catalog description Fall 2024
-
-An introductory course in computer programming using C++. Topics include: scalar
-types; aggregate types; reference types; statements; expressions; functions; and
-a brief introduction to classes and objects. Emphasis is on: implementing given
-algorithms for numerical, scientific, and engineering applications.
-
-== Course Learning Outcomes
-
-By the end of this course the student should have achieved the following course
-learning outcomes.
-
-[%header,format=csv]
-[cols="10,~,15,15"]
-|===
-include::learning-objectives.csv[]
-|===
-
-* https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/[Blooms Taxonomy]
-* https://tips.uark.edu/blooms-taxonomy-verb-chart/[Booms Taxonomy of Verbs]
-
-== Required Materials/Texts
-
-* Textbook: zyBooks -  Sign up link is in canvas (**required**)
-* xref:grading-rubric.adoc[Grading Rubric]
-* https://github.com/BoiseState/CS117-resources[Code Examples]
-
-We will be using zyBooks as our textbook. You should be prompted to sign up for
-the book when you complete the first assignment that is linked in canvas. Do not
-go to the zyBooks website and create a new account you **must** sign up through
-canvas so that your progress is properly recorded.
 
 == Topics
 
@@ -57,6 +23,32 @@ canvas so that your progress is properly recorded.
 | **Streams (ch8)**, Input and Output streams, saving and opening files| 1
 | Final Exam | 1
 |===
+
+
+== Required Materials/Texts
+
+* Textbook: zyBooks -  Sign up link is in canvas (**required**)
+* xref:grading-rubric.adoc[Grading Rubric]
+* https://github.com/BoiseState/CS117-resources[Code Examples]
+
+We will be using zyBooks as our textbook. You should be prompted to sign up for
+the book when you complete the first assignment that is linked in canvas. Do not
+go to the zyBooks website and create a new account you **must** sign up through
+canvas so that your progress is properly recorded.
+
+== Course Learning Outcomes
+
+By the end of this course the student should have achieved the following course
+learning outcomes.
+
+[%header,format=csv]
+[cols="10,~,15,15"]
+|===
+include::learning-objectives.csv[]
+|===
+
+* https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/[Blooms Taxonomy]
+* https://tips.uark.edu/blooms-taxonomy-verb-chart/[Booms Taxonomy of Verbs]
 
 == Assessments
 
@@ -110,7 +102,7 @@ multiple choice exam that is closed book closed notes.
 
 include::../../includes/syllabus-boiler.adoc[]
 
-== Tentative Schedule
+== Tentative Schedule (Fall)
 
 [%header,format=csv]
 [cols="10,~,~,~"]
