@@ -1,6 +1,6 @@
 Week,Topic,Lecture,What Due?
 1,xref:1-course-introduction.adoc[Course Introduction],,
-,xref:2-dev-tools.adoc[Dev Tools],,
+,,,
 2,xref:projects/p0.adoc[Project 0 Introduction],,
 ,xref:c-quickstart.adoc[C Review],xref:slides/testing.adoc[slides],
 3,xref:libraries.adoc[Libraries],,
