@@ -123,10 +123,10 @@ Total consumed:10
 
 == Hints
 
-- [pthread tutorial](https://computing.llnl.gov/tutorials/pthreads/)
-- [Intro to Threads](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf)
-- [Condition Variables](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf)
-- [Threads API](http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf)
+- https://computing.llnl.gov/tutorials/pthreads/[pthread tutorial]
+- http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf[Intro to Threads]
+- http://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf[Condition Variables]
+- http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf[Threads API]
 
 == Starter Code
 
