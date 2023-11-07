@@ -1,0 +1,130 @@
+= Course Introduction 🎩
+include::../../includes/attributes-settings.adoc[]
+
+== Why This Class?
+
+This class is important because your code will be running on some sort of
+computing device and you will need to know how an operating system works in
+order to write good code and solve hard problems.
+
+In this course we will explore what an operating system is and its purpose. In
+the simplest terms an operating system is just a program that runs other
+programs. The operating system provides an abstraction that allows programmers
+to think in a higher level and not have to worry (as much) about how things
+actually get done. Instead of issuing commands to the hard disk to position the
+read head you can just call
+https://www.cplusplus.com/reference/cstdio/fopen/[fopen] and start reading
+bytes.
+
+== Introductions 👋
+
+* Name
+** Major - if something other than CS
+* Grad or Undergraduate
+* Share One cool thing about yourself
+
+== Textbook 📔
+
+* https://pages.cs.wisc.edu/~remzi/OSTEP/[Operating Systems: Three Easy Pieces]
+* https://github.com/shanep/ostep-code[Code Examples]
+
+== Virtualization
+
+image::images/matrix.webp[matrix]
+
+Everything you have been taught is a lie!
+
+=== Virtualizing the CPU
+
+An operating system gives the illusion that you can run multiple processes at
+once. In reality you can only run one process (per core) at a time. The
+operating system and cpu switch so fast that we perceive things happening all at
+once. This is similar to how a movie is really just a bunch of pictures shown in
+rapid succession, our brains perceive motion when there is none!
+
+=== Virtualizing Memory
+
+Most modern machines use a flat memory model, which means the machine represents
+memory as a big array. The operating system with assistance from hardware such
+as a memory management unit (MMU) and the translation lookaside buffer (TLB)
+creates a virtual memory address space to give the illusion that each process
+has access to 100% of the machine memory.
+
+The operating system is also responsible for protecting processes from each
+other. You don't want your errant program that has a segfault to take down your
+entire machine!
+
+== Concurrency
+
+image::images/concurrency.png[production]
+
+Concurrency is typically introduced in an Operating System class in a
+traditional CS curriculum because the operating system is responsible for
+scheduling processes to run on the CPU. Languages like golang extend the
+threading concept by multiplexing multiple user space threads onto one (or more)
+operating system threads.
+
+Concurrency adds a whole bunch of new problems that you have to deal with when
+writing high performance programs. We will look at how to use mutexes,
+semaphores, and pthreads and the common problems that result such as race
+conditions and deadlocks.
+
+== Persistence
+
+image::images/ancient-greek-language.jpg[stone]
+
+At some point you are going to need to save data. An operating system provides
+abstractions that allow you to persist data to non-volatile storage without
+having to worry about the specific medium that a machine may have. For example,
+saving data to a hard disk drive (hdd) is the exact same operation as saving to
+a solid state drive (ssd). Under the hood however the hardware is very different
+and requires different drivers. The operating system allows you to treat to very
+different pieces of hardware in exactly the same way!
+
+== Beyond Linux, MacOS, Linux
+
+A small collection of research, hobby, and production operating systems. Some of
+these are in active development some have been abandoned years ago.
+
+=== Monolithic POSIX/Unix Kernel
+
+* https://www.usenix.org/system/files/osdi18-cutler.pdf[Biscuit] - an operating system written in
+the Go programming language.
+* https://arrakis.cs.washington.edu/[Arrakis] - a nano-kernel operating system.
+* https://www.redox-os.org/[Redox] - a Unix like kernel written in the
+https://www.rust-lang.org/[rust] programming language.
+* http://www.barrelfish.org/[Barrelfish] - a research operating system built from scratch
+
+=== Unikernel
+
+* https://mirage.io/[Mirage OS] - A Unikernel operating system written in the https://ocaml.org/[ocaml]
+programming language.
+
+=== NT (Win32)
+
+* https://reactos.org/[ReactOS] - A kernel that aims for binary compatibility for NT (Windows)
+kernels
+
+=== Teaching OS
+
+* https://pdos.csail.mit.edu/6.828/2014/xv6/book-rev8.pdf[xv6] - a clone of Unix v6
+* https://www.minix3.org/[minix3] - A micro kernel written by Andrew S. Tanenbaum et al for
+teaching operating systems
+
+=== Written in D
+
+* https://github.com/PowerNex/PowerNex[PowerNex]
+* https://github.com/xomboverlord/xomb/tree/unborn[XOmB] - Exokernel
+* https://github.com/Rikarin/Trinix[Trinix] - Micro kernel architecture
+
+=== Written in x86 ASM
+
+* http://menuetos.net/[MenuetOS]
+
+=== Production Operating Systems
+
+* https://winworldpc.com/library/operating-systems[WinWorld]
+
+== Linux in the Browser
+
+* https://bellard.org/jslinux/index.html[JSLinux]
