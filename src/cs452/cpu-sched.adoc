@@ -1,11 +1,5 @@
 = Scheduling: Introduction
-Shane K. Panter <shanepanter@boisestate.edu>
-:toc: left
-:date: 2023-05-11
-:revealjsdir: /reveal.js
-:source-highlighter: highlightjs
-:icons: font
-:stem: latex
+include::../../includes/attributes-settings.adoc[]
 
 == Workload Assumptions
 

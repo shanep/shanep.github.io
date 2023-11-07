@@ -1,10 +1,5 @@
 = Free-Space Management 🆓
-Shane K. Panter <shanepanter@boisestate.edu>
-:toc: left
-:date: 2023-06-13
-:revealjsdir: /reveal.js
-:source-highlighter: highlightjs
-:icons: font
+include::../../includes/attributes-settings.adoc[]
 
 
 == Memory

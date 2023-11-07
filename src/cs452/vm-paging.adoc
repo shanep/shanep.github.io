@@ -1,11 +1,5 @@
 = Paging 📟
-Shane K. Panter <shanepanter@boisestate.edu>
-:toc: left
-:date: 2023-06-13
-:revealjsdir: /reveal.js
-:source-highlighter: highlightjs
-:icons: font
-
+include::../../includes/attributes-settings.adoc[]
 
 == Paging
 
@@ -35,5 +29,3 @@ image::images/vm-virtual-phy.png[Virtual]
 image::images/vm-add-trans.png[Translation]
 
 == Questions?
-
-

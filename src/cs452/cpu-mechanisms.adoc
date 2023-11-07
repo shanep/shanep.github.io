@@ -1,10 +1,5 @@
 = Limited Direct Execution
-Shane K. Panter <shanepanter@boisestate.edu>
-:toc: left
-:date: 2023-05-11
-:revealjsdir: /reveal.js
-:source-highlighter: highlightjs
-:icons: font
+include::../../includes/attributes-settings.adoc[]
 
 
 == THE CRUX
@@ -86,4 +81,3 @@ middle of doing something important
 * Not to worry we will go over that in a future chapter!
 
 == Questions?
-
