@@ -1,4 +1,4 @@
-= Grading Rubric
+= CS452/552 Grading Rubric
 include::../../../includes/attributes-settings.adoc[]
 
 Grades for programming projects will be assigned according to the rubric below.
@@ -7,17 +7,11 @@ through each section as examples are given for each criterion.
 
 == Minimum standards
 
-Your code must meet the two minimum standards of compiling and correctness in
-order to be graded. If your program fails to meet these standards it will not be
-graded and a score of 0 will be assigned.
-
-=== Compiling
-
-Unless otherwise stated all code must compile using github codespaces.
-https://github.com/features/codespaces[GitHub Codespaces] is free to use for up
-to 60 hours per month and can be accessed with any modern browser. If you run
-out of free hours you do not have to pay to continue using codespaces. You can
-complete all the assignments using a virtual machine or your own computer.
+Code that fails to compile will not be graded and will be assigned a score of 0.
+Unless otherwise stated all code must compile on **onyx.boisestate.edu**.  You
+can complete all the assignments using a virtual machine or your own computer
+but you should do your final testing in the lab. To be clear if your project
+works on your machine and **not** in the lab you will still receive a 0.
 
 All code will be compiled and tested on the command line using the scripts
 provided. Your instructor or teaching assistant will *not* use an IDE to build
@@ -26,9 +20,10 @@ your code it is strongly recommended that you compile and test your code using
 the terminal to ensure you have not introduced any IDE specific dependencies on
 accident.
 
-All Header files and interfaces must be implemented as specified. You are not
-allowed to change the header files in any way. Header files will be reset to
-their default state when grading.
+WARNING: Intentionally modifying the tests given to you in order to get your
+project to pass is considered academic dishonesty and will be dealt with
+accordingly. If you think you have found a legitimate bug in the provided tests
+you **must** attend office hours to discuss.
 
 == Grading Rubric
 
@@ -37,27 +32,35 @@ their default state when grading.
 
 | <<Testing>>
 | 50%
-| Passes 100% of instructor test suite and student authored tests cover all functions
-| Passes between 90% and 99% of instructor test suite or student authored tests cover most functions
-| Passes between 80% and 89% of instructor test suite or minimal student authored tests
-| Passes less then 80% of instructor test suite or no student authored tests
+| Passes 100% of the provided test suite
+| Passes between 90% and 99% of the provided test suite
+| Passes between 80% and 89% of the provided test suite
+| Passes less then 80% of the provided test suite
 | Unable to test or Minimum standards were not meet
 
+| Code Coverage
+| 20%
+| Between 80% and 100% coverage of lines and functions
+| Between 70% and 79% coverage of lines and functions
+| Between 60% and 69% coverage of lines and functions
+| Between 50% and 59% coverage of lines and functions
+| Less than 50%
+
 | <<Code Quality>>
-| 30%
+| 10%
 | No issues with code quality
 | One issue
 | Two issues
 | More than two issues
 | Unable to test or Minimum standards were not meet
 
-| <<Documentation>>
+| Compiling
 | 10%
-| Perfect documentation
-| One issue
-| Two issues
-| More that two issues
-| No documentation was done or Minimum standards were not meet
+| No Warnings
+| 1 or 2 Warnings
+| 3 or 4 Warnings
+| 4 or 5 Warnings
+| More than 5 warnings
 
 | <<Retrospective>>
 | 10%
@@ -66,26 +69,16 @@ their default state when grading.
 | Most TODO's are done
 | N/A
 | Unable to test or Minimum standards were not meet
-
-
-| <<Security>>
-| 10%
-| Secure programming techniques are correctly applied
-| One secure programming violations
-| Two secure programming violations
-| More than two secure programming violations
-| Secure programming techniques are not correctly applied or Minimum standards were not meet
 |===
 
 == Security
 
-All C/C++ code must conform to the following standards.
+All code must conform to the following standards.
 
 * Students must address all memory leaks
 * Students must address any double free errors
 * Students must not have any dangling pointers in their code
 * All out of bounds read/write errors must be addressed.
-* https://github.com/git/git/blob/master/banned.h[Banned Functions]
 
 All projects are configured with a debug option that sets the appropriate
 compiler flags for you! Make sure and run all your tests under both debug and
