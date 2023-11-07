@@ -8,13 +8,6 @@ CS 321 and ECE 330.
 
 **{catalog-title}** {catalog-description}
 
-* Textbook: https://pages.cs.wisc.edu/~remzi/OSTEP/[Operating Systems: Three Easy Pieces]
-** Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau
-* https://github.com/shanep/ostep-code[Code Examples]
-* xref:../teaching/vscode-tips-and-tricks.adoc[VSCode Tips and Tricks]
-* xref:cross-platform.adoc[Cross Platform Development]
-* xref:debugging-c.adoc[Debugging C]
-* xref:memory-errors.adoc[Memory Errors]
 
 == Topics and Schedule
 
@@ -24,13 +17,20 @@ CS 321 and ECE 330.
 include::schedule.csv[]
 |===
 
+== Textbook
+
+* Textbook: https://pages.cs.wisc.edu/~remzi/OSTEP/[Operating Systems: Three Easy Pieces]
+** Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau
+
 == Assessments
 
 Your final grade will be calculated with the following weights in canvas.
 
-* Midterm  - 15%
-* Final - 15%
 * xref:projects/index.adoc[Projects] - 70%
+* Final Exam - 30%
+** The final exam will cover the textbook reading assignments assigned throughout
+the semester.
+** The final exam must be taking in the testing center.
 
 == Course Learning Outcomes
 

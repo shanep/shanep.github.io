@@ -34,6 +34,7 @@ cmake presets that this project uses so you will need to add the following to
 your settings.json file so that the extension does not complain about the
 new features we are using.`"cmake.allowUnsupportedPresetsVersions": true`.
 
+* xref:../../teaching/vscode-tips-and-tricks.adoc[VSCode Tips and Tricks]
 * https://code.visualstudio.com/docs/getstarted/settings[VSCode Settings]
 
 

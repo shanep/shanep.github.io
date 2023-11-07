@@ -1,5 +1,5 @@
 = Grading Rubric
-include::../../includes/attributes-settings.adoc[]
+include::../../../includes/attributes-settings.adoc[]
 
 Grades for programming projects will be assigned according to the rubric below.
 Each criterion is clearly detailed in the following sections. Make sure and read
@@ -91,4 +91,4 @@ All projects are configured with a debug option that sets the appropriate
 compiler flags for you! Make sure and run all your tests under both debug and
 release builds.
 
-include::../../includes/grading-rubric-boiler.adoc[]
+include::../../../includes/grading-rubric-boiler.adoc[]
