@@ -15,6 +15,11 @@ it in a multi-threaded environment.
 
 image::./images/yunowork.jpeg[UYNoWork, align="center"]
 
+== Learning Outcomes
+
+* 3 Construct applications that utilize processes, threads, and synchronization primitives to solve problems requiring concurrent or parallel computation
+* 3.2	 Explore the effects of multiple threads operating on the same buffer
+
 ## Task 1 - Make Thread safe
 
 Read through the files `lab.h` and `lab.cpp` shown below to make sure you

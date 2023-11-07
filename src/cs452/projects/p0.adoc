@@ -18,6 +18,11 @@ framework and have it approved by the instructor. Choosing an unsupported
 language qualifies you for bonus points on the every project. So you will have
 to decide if the risk is worth the reward 😃.
 
+== Learning Outcomes
+
+* 5.4	 Explore compiling and running code on at least 2 different systems
+* 5.5	Explore how to setup a continuous integration and testing project
+
 == ✅ Instructor support systems
 
 Your instructor and GA/TA will support the Kount Lab, Onyx and GitHub

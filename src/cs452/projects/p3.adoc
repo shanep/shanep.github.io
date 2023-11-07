@@ -12,6 +12,11 @@ documented with all the necessary details.
 
 - link:/articles/Buddy-System.pdf[Buddy Algorithm Notes]
 
+== Learning Outcomes
+
+* 2.1	 Demonstrate how low level memory is managed in user space
+* 2.2	 Explore the system call interface
+
 == Task 1 - Implement Buddy
 
 From the example in Knuth's book we can calculate the buddy of a block of size

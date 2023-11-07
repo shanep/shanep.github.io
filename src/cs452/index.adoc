@@ -8,11 +8,10 @@ CS 321 and ECE 330.
 
 **{catalog-title}** {catalog-description}
 
-
 == Topics and Schedule
 
 [%header,format=csv]
-[cols="10,~,~,~"]
+[cols="5,5,~,~,~"]
 |===
 include::schedule.csv[]
 |===
@@ -30,7 +29,7 @@ Your final grade will be calculated with the following weights in canvas.
 * Final Exam - 30%
 ** The final exam will cover the textbook reading assignments assigned throughout
 the semester.
-** The final exam must be taking in the testing center.
+** The final exam must be taken in the testing center.
 
 == Course Learning Outcomes
 
