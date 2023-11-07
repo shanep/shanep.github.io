@@ -6,17 +6,11 @@ inter-process communication, synchronization, scheduling, memory management, \
 file systems and security. Case studies of multiple operating systems. PREREQ: \
 CS 321 and ECE 330.
 
-
-include::../../includes/syllabus-logistics.adoc[]
-
-== Course Materials
+**{catalog-title}** {catalog-description}
 
 * Textbook: https://pages.cs.wisc.edu/~remzi/OSTEP/[Operating Systems: Three Easy Pieces]
 ** Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau
 * https://github.com/shanep/ostep-code[Code Examples]
-
-== Course Notes
-
 * xref:../teaching/vscode-tips-and-tricks.adoc[VSCode Tips and Tricks]
 * xref:cross-platform.adoc[Cross Platform Development]
 * xref:debugging-c.adoc[Debugging C]
@@ -34,8 +28,9 @@ include::schedule.csv[]
 
 Your final grade will be calculated with the following weights in canvas.
 
-* Quizzes - 40%
-* xref:projects/index.adoc[Projects] - 60%
+* Midterm  - 15%
+* Final - 15%
+* xref:projects/index.adoc[Projects] - 70%
 
 == Course Learning Outcomes
 
