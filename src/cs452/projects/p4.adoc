@@ -20,44 +20,6 @@ image::./images/yunowork.jpeg[UYNoWork, align="center"]
 * 3 Construct applications that utilize processes, threads, and synchronization primitives to solve problems requiring concurrent or parallel computation
 * 3.2	 Explore the effects of multiple threads operating on the same buffer
 
-== Task 1 - Make Thread safe
-
-Read through the files `lab.h` and `lab.cpp` shown below to make sure you
-understand the algorithm. You are not allowed to modify the single threaded
-implementation in  you must implement the function `mergesort_mt`. Your
-implementation needs to split up the array into equal chunks and then hand each
-chunk to a new thread. You will then use `pthread_join` to wait for all the
-chucks to be sorted at which point you will need to merge the results together.
-You will not need to use locks for this approach because you are taking a large
-array and splitting it up between threads so each thread only operates on its
-section of the larger array. C pointers come in really handy for this approach
-because you can keep the original array in place and just declare new pointers
-into separate chunks of the existing array.
-
-- https://computing.llnl.gov/tutorials/pthreads/[pthread tutorial]
-- http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf[Intro to Threads]
-- http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf[Threads API]
-
-== Task 2 - Driver app
-
-Once you have completed writing the multi-threaded version of the code you will
-need to test your code with a simple command line driver that will take two
-command line arguments and output the number of threads used and the total time
-to sort the array as shown in the example below. You should see a speed up when
-you increase the number of threads used to sort the array. However, if you add
-too many threads you will see a slow down because of the overhead of context
-switching between threads. You will need to experiment with the number of
-threads to see what the optimal number is for your machine and document that in
-your Retrospective.md file.
-
-[,bash]
-----
-usage: ./myprogram <array_size> <num_threads>
-$ ./myprogram 1000 2
-0.0820312 2
-$ ./myprogram 1000 3
-0.104004 3
-----
 
 == Dumping deadlocked threads with GDB
 :tags: ["debugging"]
@@ -193,6 +155,42 @@ shown below.
 * https://gist.github.com/shanep/398f0cefb604697077275942888661f0[src/lab.cpp]
 * https://gist.github.com/shanep/1d34526608c210634629a750c2665735[tests/test-lab.cpp]
 
-== References
 
-* xref:../../../articles/modern-debugging-acm.pdf[Modern Debugging]
+== Task 1 - Make Thread safe
+
+Read through the files `lab.h` and `lab.cpp` shown below to make sure you
+understand the algorithm. You are not allowed to modify the single threaded
+implementation in  you must implement the function `mergesort_mt`. Your
+implementation needs to split up the array into equal chunks and then hand each
+chunk to a new thread. You will then use `pthread_join` to wait for all the
+chucks to be sorted at which point you will need to merge the results together.
+You will not need to use locks for this approach because you are taking a large
+array and splitting it up between threads so each thread only operates on its
+section of the larger array. C pointers come in really handy for this approach
+because you can keep the original array in place and just declare new pointers
+into separate chunks of the existing array.
+
+- https://computing.llnl.gov/tutorials/pthreads/[pthread tutorial]
+- http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf[Intro to Threads]
+- http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf[Threads API]
+
+== Task 2 - Driver app
+
+Once you have completed writing the multi-threaded version of the code you will
+need to test your code with a simple command line driver that will take two
+command line arguments and output the number of threads used and the total time
+to sort the array as shown in the example below. You should see a speed up when
+you increase the number of threads used to sort the array. However, if you add
+too many threads you will see a slow down because of the overhead of context
+switching between threads. You will need to experiment with the number of
+threads to see what the optimal number is for your machine and document that in
+your Retrospective.md file.
+
+[,bash]
+----
+usage: ./myprogram <array_size> <num_threads>
+$ ./myprogram 1000 2
+0.0820312 2
+$ ./myprogram 1000 3
+0.104004 3
+----

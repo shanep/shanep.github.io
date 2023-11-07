@@ -260,7 +260,13 @@ system.
 * Windows 10
 * Ubuntu 20.04
 
-== References
+== Task 1 - Fix Issues
 
-* xref:../../articles/coverity-acm.pdf[Coverity]
-* link:https://gcc.gnu.org/onlinedocs/cpp/System-specific-Predefined-Macros.html[System-specific-Predefined-Macros]
+You need to fix all the issues in the project template. There should be not
+build warnings, not disabled tests, and everything should pass.
+
+== Task 2 - Code coverage
+
+Add enough tests beyond what the professor has given you to get to 100% code
+coverage. You are not expected to have 100% code coverage for all your projects
+(see the grading rubric) but for this simple intro it is trivial to get to 100%.
