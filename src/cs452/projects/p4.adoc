@@ -145,17 +145,6 @@ somewhere else entirely. All this does is give you some insight into where your
 program is getting stuck *NOT* where the problem is!
 
 
-== Starter Code
-
-Each link block below is the starter code that you must use for this project.
-In your project you will need to find the files and replace them with what is
-shown below.
-
-* https://gist.github.com/shanep/ae42dbe844bd930da86cc3ae3e5f5d79[src/lab.h]
-* https://gist.github.com/shanep/398f0cefb604697077275942888661f0[src/lab.cpp]
-* https://gist.github.com/shanep/1d34526608c210634629a750c2665735[tests/test-lab.cpp]
-
-
 == Task 1 - Make Thread safe
 
 Read through the files `lab.h` and `lab.cpp` shown below to make sure you
@@ -194,3 +183,13 @@ $ ./myprogram 1000 2
 $ ./myprogram 1000 3
 0.104004 3
 ----
+
+== Starter Code
+
+Each link block below is the starter code that you must use for this project.
+In your project you will need to find the files and replace them with what is
+shown below.
+
+* https://gist.github.com/shanep/ae42dbe844bd930da86cc3ae3e5f5d79[src/lab.h]
+* https://gist.github.com/shanep/398f0cefb604697077275942888661f0[src/lab.cpp]
+* https://gist.github.com/shanep/1d34526608c210634629a750c2665735[tests/test-lab.cpp]
