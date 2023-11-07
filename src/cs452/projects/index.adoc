@@ -1,8 +1,12 @@
-= Projects
+= CS452/552 Projects
 include::../../../includes/attributes-settings.adoc[]
+
+== Overview
 
 There are several individual projects this semester. All Projects will be graded
 with the xref:grading-rubric.adoc[project grading rubric].
+
+== Projects
 
 * xref:p0.adoc[Project 0] - This is a project to introduce you to the default template
 * xref:p1.adoc[Project 1] - This is a warm up project to refresh your C programming skills.
