@@ -1,31 +1,89 @@
 = Project 0
 include::../../../includes/attributes-settings.adoc[]
 
-This assignment is intended to serve as a warm up assignment. In this class you
-can choose to implement your assignments using any programming language that has
-a https://en.wikipedia.org/wiki/Foreign_function_interface[FFI] for C. The only
-**officially** supported language is C. All the code examples will be in
-C or Rust and the text book is in C. So if you choose to use Java or Python
-you are 100% on your own regarding help with bugs and errors and will have to
-translate the example code from your instructor and the book into your language
-of choice. Also, be aware that some assignments can only be done in C or Rust
-due to limitations that higher level languages have.
+== Overview
 
-In order to keep your sanity during the semester you are encouraged to choose
-one language now and stick with it for the rest of the semester. This project is
-intended to be light weight in order to give you some time to explore using a
-programming language of your choice and introduce the default template for the
-semester.
+This assignment is intended to serve as an introduction to the build tools that
+you will be using this semester.  I have created a
+https://github.com/shanep/cpp-project-template[template] that will work for all
+the projects. This is the only **officially** supported template. If you feel
+ambitions you can create your own template using what ever  programming language
+and set of tools that you like. However, be aware that some assignments require
+you to deal with raw (untyped) memory which languages like python can't do
+without diving down into C.
 
-Below are some links to help you get started with each language:
+If you want to use a language like https://www.rust-lang.org/[Rust] you must
+create your own starter code template that works with the class grading
+framework and have it approved by the instructor. Choosing an unsupported
+language qualifies you for bonus points on the every project. So you will have
+to decide if the risk is worth the reward 😃.
 
-* Java - https://docs.oracle.com/javase/7/docs/technotes/guides/jni/spec/intro.html[JNI]
-* Python - https://python.readthedocs.io/en/latest/extending/extending.html[extension
-modules].
-* Rust - https://doc.rust-lang.org/nomicon/ffi.html[FFI]
+== ✅ Instructor support systems
 
+Your instructor and GA/TA will support the Kount Lab, Onyx and GitHub
+codespaces. If you are working in the lab follow the instructions in the
+https://github.com/shanep/cpp-project-template/blob/master/README-KOUNT-LAB.md[CS
+Lab] document. Otherwise you can use
+https://docs.github.com/en/codespaces/getting-started/quickstart[GitHub
+Codespaces] to work on your projects.
 
-WARNING: If you use a language other than the officially support languages you
-must create your own starter template and have it approved by the instructor.
-Choosing unsupported language qualifies you for bonus points on the every
-project. So you will have to decide if the risk is worth the reward 😃.
+=== VSCode Notes
+
+The VSCode CMake extension (2023-10-17) does not support all the features of
+cmake presets that this project uses so you will need to add the following to
+your settings.json file so that the extension does not complain about the
+new features we are using.`"cmake.allowUnsupportedPresetsVersions": true`.
+
+* https://code.visualstudio.com/docs/getstarted/settings[VSCode Settings]
+
+== Cross Platform Development
+
+While the https://github.com/shanep/cpp-project-template[project template] is
+configured to download and install some of the required dependencies each
+operating system still needs to have some tools installed to proceed. The
+following sections will help you install the required dependencies for each
+operating system. Every Semester new issues pop up because of software upgrades
+and other changes that are outside of your instructors control so if you
+encounter any errors please let your instructor know what you did to fix the
+problem so this section can be updated for other students 😃.
+
+WARNING: The systems listed below have been tested by your instructor to work at one
+point in time. However, due to the high number of permutations that students
+personal systems can come in all systems listed below are **not supported**. If
+you can not get your personal system to work then you will need to work in
+either codespaces or in the CS Lab.
+
+=== Fedora 38+
+
+* sudo dnf group install "Development Tools"
+* sudo dnf install libasan lcov readline gtest-devel gtest
+
+=== Windows 11+
+
+* Install https://visualstudio.microsoft.com/downloads/[Visual Studio 2022]
+  Community Edition Select "Desktop development with C++" when prompted.
+* https://learn.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-170[Learn about cmake in VS2022+]
+
+=== MacOS 13.5.2+
+
+* Install https://brew.sh/[homebrew]
+* Install https://apps.apple.com/us/app/xcode/id497799835?mt=12[Xcode]
+* xcode-select -install to install Command Line Tools.
+* brew install cmake googletest
+
+=== Ubuntu 22.04 +
+
+* sudo apt-get upgrade
+* sudo apt install build-essential manpages-dev
+* sudo snap install cmake --classic
+* sudo apt-get install git
+* sudo apt-get install libreadline-dev
+
+== ❌ Untested Systems
+
+The following systems have been deprecated and are no longer tested or supported.
+If you are running one of the systems below you should upgrade to a more recent
+system.
+
+* Windows 10
+* Ubuntu 20.04
