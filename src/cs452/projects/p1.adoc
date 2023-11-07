@@ -1,36 +1,6 @@
 = Project 1
 include::../../../includes/attributes-settings.adoc[]
 
-== Overview
-
-This assignment is intended to serve as a warm up assignment. In this class you
-can choose to implement your assignments using any programming language that has
-a https://en.wikipedia.org/wiki/Foreign_function_interface[FFI] for C. The only
-**officially** supported languages are C/C+\+, and Rust because your instructor
-doesn't have the bandwidth to support 40+ students all using a different
-language and different tool sets. All the code examples will be in C/C++ or Rust
-and the text book is in C. So if you choose to use Java or Python you are 100%
-on your own regarding help with bugs and errors and will have to translate the
-example code from your instructor and the book into your language of choice.
-
-In order to keep your sanity during the semester you are encouraged to choose
-one language now and stick with it for the rest of the semester. This project is
-intended to be light weight in order to give you some time to explore using a
-programming language of your choice.
-
-Below are some links to help you get started with each language:
-
-* Java - https://docs.oracle.com/javase/7/docs/technotes/guides/jni/spec/intro.html[JNI]
-* Python - https://python.readthedocs.io/en/latest/extending/extending.html[extension
-modules].
-* Rust - https://doc.rust-lang.org/nomicon/ffi.html[FFI]
-
-
-WARNING: If you use a language other than the officially support languages you
-are 100% on your own. However, choosing unsupported language qualifies you for
-bonus points on the every project. So you will have to decide if the risk is
-worth the reward 😃.
-
 image::./images/p1-meme.jpg[P1 Meme, align="center"]
 
 == Learning Outcomes

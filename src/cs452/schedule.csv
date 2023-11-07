@@ -1,30 +1,30 @@
 Week,Topic,Lecture,What Due?
 1,xref:1-course-introduction.adoc[Course Introduction],,
 ,xref:2-dev-tools.adoc[Dev Tools],,
-2,xref:c-quickstart.adoc[C Review],,
-,Project 0 Introduction,xref:slides/testing.adoc[slides],
-3,,xref:slides/libraries.adoc[slides],
-,Project 1 Introduction,Walkthrough,
+2,xref:projects/p0.adoc[Project 0 Introduction],,
+,xref:c-quickstart.adoc[C Review],xref:slides/testing.adoc[slides],
+3,xref:libraries.adoc[Libraries],,
+,xref:projects/p1.adoc[Project 1 Introduction],,Project 0
 4,http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf[OSTEP ch2 - Introduction],"xref:slides/intro.adoc[slides] , https://github.com/shanep/ostep-code/tree/master/intro[Examples]",
 ,http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf[OSTEP ch4 - Abstraction the process],xref:slides/cpu-intro.adoc[slides],
 5,"http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf[OSTEP ch5 - Process API] ","xref:slides/cpu-api.adoc[slides] , https://github.com/shanep/ostep-code/tree/master/cpu-api[Examples]",
 ,http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf[OSTEP ch6 - Limited Direct Execution],xref:slides/cpu-mechanisms.adoc[slides],
 6,http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf[ OSTEP ch7 - Scheduling Introduction],"xref:slides/cpu-sched.adoc[slides], https://github.com/shanep/ostep-code/tree/master/cpu-sched-lottery[Examples]",
-,"Projet 2 Introduction ",Walkthrough,Project 1 Due
+,"Projet 2 Introduction ",,Project 1 Due
 7,https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf[OSTEP ch13 - Address Spaces],xref:slides/vm-intro.adoc[slides],
 ,https://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf[OSTEP ch17 - Free Space management],xref:slides/vm-freespace.adoc[slides],
 8,https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf[OSTEP ch18 - Paging: Introduction],xref:slides/vm-paging.adoc[slides],
-,Project 3 Introduction,Walkthrough,Project 2 Due
+,Project 3 Introduction,,Project 2 Due
 9,https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf[OSTEP ch26 - Concurrency and Threads],"xref:slides/threads-intro.adoc[slides] , https://github.com/shanep/ostep-code/tree/master/threads-intro[Examples]",
 ,https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf[OSTEP ch28 - Locks],"xref:slides/threads-locks.adoc[slides], https://github.com/shanep/ostep-code/tree/master/threads-locks[Examples]",
 10,https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks-usage.pdf[OSTEP ch29 - Locked Data Structures],xref:slides/threads-locks-usage.adoc[slides],
-,Project 4 Introduction,Walkthrough,Project 3 DUE
+,Project 4 Introduction,,Project 3 DUE
 11,https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf[OSTEP ch30 - Condition Variables],"xref:slides/threads-cv.adoc[slides], https://github.com/shanep/ostep-code/tree/master/threads-cv[Examples]",
 ,https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf[OSTEP ch31 - Semaphores],"xref:slides/threads-sema.adoc[slides], https://github.com/shanep/ostep-code/tree/master/threads-sema[Examples]",
 12,https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf[OSTEP ch32 - Concurrency Bugs],"xref:slides/threads-bugs.adoc[slides], xref:debugging-c.adoc[Debugging]",
 ,https://pages.cs.wisc.edu/~remzi/OSTEP/threads-events.pdf[OSTEP ch33 - Event Based Concurrency],,
 13,https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf[OSTEP ch36 - I/O Devices],xref:slides/file-devices.adoc[slides],
-,Project 5 Introduction,Walkthrough,Project 4 Due
+,Project 5 Introduction,,Project 4 Due
 14,"Thanksgiving Break  ",,
 15,https://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf[OSTEP ch39 - Files and Directories],xref:slides/file-intro.adoc[slides],
 ,Project 6,,Project 5 Due

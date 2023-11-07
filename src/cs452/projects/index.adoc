@@ -4,6 +4,7 @@ include::../../../includes/attributes-settings.adoc[]
 There are several individual projects this semester. All Projects will be graded
 with the xref:../grading-rubric.adoc[project grading rubric].
 
+* xref:p0.adoc[Project 0] - This is a project to introduce you to the default template
 * xref:p1.adoc[Project 1] - This is a warm up project to refresh your C programming skills.
 * xref:p2.adoc[Project 2] - In this project you will write a simple shell.
 * xref:p3.adoc[Project 3] - In this project you will implement the buddy memory algorithm as described by Dr. Donald Knuth.
