@@ -1,12 +1,23 @@
 = Introduction to Version Control
 include::../../includes/attributes-settings.adoc[]
-:catalog-title: CS155 Introduction to Version Control (1-0-1)(F,S).
-:catalog-description: Introduction to the central ideas, practices, and day to \
-day usage of software version control using Git. Basic client side usage such as \
-committing, branching, merging, and pull-requests will be explored. COREQ: \
-CS153.
 
-include::../../includes/syllabus-logistics.adoc[]
+**CS155 Introduction to Version Control (1-0-1)(F,S).** Introduction to the
+central ideas, practices, and day to day usage of software version control
+using Git. Basic client side usage such as  committing, branching, merging, and
+pull-requests will be explored. COREQ: CS153.
+
+== Topics
+
+[cols="5,~"]
+|===
+|Module| Topic
+
+|0| xref:course-introduction.adoc[Course Introduction]
+|1| xref:git-introduction.adoc[Git Introduction]
+|2| xref:git-basics.adoc[Git Basics]
+|3| xref:git-branching-and-merging.adoc[Branching and Merging]
+|4| xref:github.adoc[GitHub]
+|===
 
 == Course Learning Outcomes
 
@@ -29,18 +40,6 @@ include::learning-objectives.csv[]
 * https://www.youtube.com/playlist?list=PLFziFbk-D-X3wbyZiKOu5aEcf9NGFUj8R[Course Videos]
 * https://github.com/shanep?tab=repositories&q=250&type=&language=&sort=[Labs]
 
-== Topics
-
-[cols="5,~"]
-|===
-|Module| Topic
-
-|0| xref:course-introduction.adoc[Course Introduction]
-|1| xref:git-introduction.adoc[Git Introduction]
-|2| xref:git-basics.adoc[Git Basics]
-|3| xref:git-branching-and-merging.adoc[Branching and Merging]
-|4| xref:github.adoc[GitHub]
-|===
 
 == Assessments
 
