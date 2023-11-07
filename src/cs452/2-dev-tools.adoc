@@ -1,7 +1,46 @@
-= Memory Errors
+= Development Tools
 include::../../includes/attributes-settings.adoc[]
 
-== Overview
+== Tools
+
+In order to work on all the projects this semester you have several options.
+I have listed all the different options that you can use this semester.
+
+. Use https://github.com/features/codespaces[Github Codespaces]
+. Install Linux in a <<Virtual Machine>>
+. Come in and use the Lab machines directly
+. Code remotely using ssh!
+
+=== Native Programming
+
+* Java is cross platform
+* This class is not!
+* You will be calling system calls directly
+* We will be using Linux
+
+== Virtual Machine
+
+One of the biggest barriers to getting started is to get all your tools
+installed and configured correctly.  While it is certainly possible to develop
+on any platform (Windows, OSX, BSD, etc.), developing on Linux is by far the
+quickest and easiest method. Thus, if you want to jump right in and start writing
+code without getting all your tools configured and your development machine is
+not running Linux you can start developing in a Virtual machine. Once you get
+some experience with the tools and process you should be able to setup any
+machine to do OS development on.
+
+== C++ ☠️
+
+* You are welcome to use C++ in your projects as long as you provide the appropriate C bindings
+* Can't use c++ to bypass the point of the assignment (linked list)
+
+== Building 🏛
+
+* Your project Must build from the command line
+* Your project Must build on onyx AND GitHub codespaces
+** Failure to compile on either will result in a 0! 💀
+
+== Memory Tools
 
 We will look at a few open source tools that you can use to help track down and
 solve memory errors in C and C{pp}.  Due to the  unsafe nature of these
