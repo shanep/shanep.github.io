@@ -6,7 +6,7 @@ export default {
   description: "Shane's Personal Site",
 
   markdown: {
-    theme: {light: 'github-light', dark: 'github-dark' }
+    theme: { light: 'github-light', dark: 'github-dark' }
   },
 
   themeConfig: {
@@ -25,7 +25,7 @@ export default {
       provider: 'local'
     },
 
-    editLink:{
+    editLink: {
       pattern: 'https://github.com/shanep/shanep.github.io/edit/master/docs/:path'
     },
 
@@ -36,11 +36,49 @@ export default {
         rootGroupText: 'Syllabus',
         rootGroupLink: '/',
         documentRootPath: 'docs',
+        scanStartPath: 'cs117',
+        resolvePath: '/cs117/',
+        useTitleFromFileHeading: true,
+        sortMenusByFrontmatterOrder: true,
+      },
+      {
+        rootGroupText: 'Syllabus',
+        rootGroupLink: '/',
+        documentRootPath: 'docs',
         scanStartPath: 'cs155',
         resolvePath: '/cs155/',
         useTitleFromFileHeading: true,
         sortMenusByFrontmatterOrder: true,
+      },
+      {
+        rootGroupText: 'Syllabus',
+        rootGroupLink: '/',
+        documentRootPath: 'docs',
+        scanStartPath: 'cs208',
+        resolvePath: '/cs208/',
+        useTitleFromFileHeading: true,
+        sortMenusByFrontmatterOrder: true,
+      },
+      {
+        rootGroupText: 'Syllabus',
+        rootGroupLink: '/',
+        documentRootPath: 'docs',
+        scanStartPath: 'cs333',
+        resolvePath: '/cs333/',
+        useTitleFromFileHeading: true,
+        sortMenusByFrontmatterOrder: true,
+      },
+      {
+        rootGroupText: 'Syllabus',
+        rootGroupLink: '/',
+        documentRootPath: 'docs',
+        scanStartPath: 'cs452',
+        resolvePath: '/cs452/',
+        useTitleFromFileHeading: true,
+        sortMenusByFrontmatterOrder: true,
       }
+
+
     ]),
 
     socialLinks: [
