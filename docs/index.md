@@ -17,22 +17,40 @@ hero:
     alt: Shane K. Panter
 features:
   - icon:
-      src: https://git-scm.com/images/logos/downloads/Git-Icon-1788C.svg
+      src: images/ISO_C++_Logo.svg
+    title: CS 117 C++ for Engineers
+    details: >
+        An introductory course in computer programming using C++.
+    link: /cs117/index
+  - icon:
+      src: images/Git-Icon-1788C.svg
     title: CS155 Introduction to Version Control
     details: >
       Introduction to the central ideas, practices, and day to day usage of
-      software version control using Git. Basic client side usage such as committing
-      branching, merging, and pull-requests will be explored. COREQ CS153.
+      software version control using Git.
     link: /cs155/index
+  - icon:
+      src: images/Node.js_logo.svg
+    title: CS208 Introduction to Full Stack Web Development
+    details: >
+        An introduction to web development using client-side (HTML/CSS/JavaScript) and
+        server-side (Node.js) technologies.
+    link: /cs208/index
+  - icon:
+      src: images/security-icon.svg
+    title: CS333 Network Security and Defense
+    details: >
+      Firewalls, virtual private networks, intrusion detection, intrusion
+      prevention, traffic analysis, techniques for responding to network
+      attacks.
+    link: /cs333/index
   - icon:
       src: images/os-icon.svg
     title: CS452/552 Operating Systems
     details: >
-      Process management, concurrency,
-      inter-process communication, synchronization, scheduling, memory management,
-      file systems and security. Case studies of multiple operating systems. PREREQ
-      CS 321 and ECE 330.
-
+      Process management, concurrency, inter-process communication,
+      synchronization, scheduling, memory management, file systems and security.
+    link: /cs452/index
 
 ---
 
