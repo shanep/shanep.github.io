@@ -1,11 +1,10 @@
-import { defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default {
   title: "Shane K. Panter",
   description: "Shane's Personal Site",
-  lastUpdated: true,
+
   markdown: {
     theme: {light: 'github-light', dark: 'github-dark' }
   },
@@ -15,6 +14,21 @@ export default {
     nav: [
       { text: 'Home', link: '/' },
     ],
+    lastUpdated: {
+      text: 'Updated at',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
+    },
+    search: {
+      provider: 'local'
+    },
+
+    editLink:{
+      pattern: 'https://github.com/shanep/shanep.github.io/edit/master/docs/:path'
+    },
+
 
     //https://github.com/jooy2/vitepress-sidebar#options
     sidebar: generateSidebar([
@@ -24,7 +38,7 @@ export default {
         documentRootPath: 'docs',
         scanStartPath: 'cs155',
         resolvePath: '/cs155/',
-        useTitleFromFrontmatter: true,
+        useTitleFromFileHeading: true,
         sortMenusByFrontmatterOrder: true,
       }
     ]),

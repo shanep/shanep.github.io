@@ -161,16 +161,15 @@ subject to be able to recognize correct vs incorrect results then you
 should be free to use said tools to enhance your productivity and
 education.
 
-# Attendance Policy
+## Attendance Policy
 
 I follow the official [attendance
-policy](https://www.boisestate.edu/registrar/registration/attendance-policy/)
-as defined by the university. Please see the [Late Work
-Policy](#_late_work_policy) section for details on how to make up any
-missed work. Students are responsible for all verbal announcements or
-updates given during class.
+policy](https://www.boisestate.edu/registrar/registration/attendance-policy/) as
+defined by the university. Please see the Late Work section for details on how
+to make up any missed work. Students are responsible for all verbal
+announcements or updates given during class.
 
-# Late Work Policy
+## Late Work Policy
 
 Once grades have been posted to canvas no further submissions will be
 accepted unless prior arrangements have been made. No work or extra
@@ -186,13 +185,10 @@ All programming assignments can be submitted up to **2 days late with no
 penalty**. You can request an extra day if the following conditions are
 met:
 
-1.  You must have **accepted** the GitHub assignment at least 2 days
-    before the due date
-
-2.  You must have at least 1 commit that was done 1 day before the due
-    date
-
-3.  You must make the request **before** 5pm the day it is due.
+1. You must have **accepted** the GitHub assignment at least 2 days before the
+   due date
+2. You must have at least 1 commit that was done 1 day before the due date
+3. You must make the request **before** 5pm the day it is due.
 
 If you have satisfied the criteria stated above then you may email your
 instructor asking for 1 additional day on top of the existing 2 days for
@@ -221,24 +217,18 @@ submitted on time. The secret code for the syllabus quiz is "green".
 
 This applies (but is not limited to) to the following assignment types:
 
--   Discussion posts
+- Discussion posts
+- Reflections (both written and video)
+- Group meetings - both virtual and in person
+- Status updates
+- Any in class activities
+- Any quizzes or exams that are done on paper
 
--   Reflections (both written and video)
+## Communication Policy
 
--   Group meetings - both virtual and in person
-
--   Status updates
-
--   Any in class activities
-
--   Any quizzes or exams that are done on paper
-
-# Communication Policy
-
-During the semester communication outside of the classroom will be
-through email, canvas, and office hours as detailed below. Other methods
-such as [carrier
-pigeon](https://www.iwm.org.uk/history/the-incredible-carrier-pigeons-of-the-first-world-war)
+During the semester communication outside of the classroom will be through
+email, canvas, and office hours as detailed below. Other methods such as
+[carrier pigeon](https://www.iwm.org.uk/history/the-incredible-carrier-pigeons-of-the-first-world-war)
 🐦 are not supported at this time.
 
 I get a lot of email and sometimes I miss messages, so if you don’t
@@ -253,12 +243,9 @@ I have lots of students. In order to facilitate quick communication
 please include the following information in all emails to myself or the
 class TA/GA.
 
--   First and Last name
-
--   Student ID - I need this so I can look you up in the system.
-
--   The class and section number that you are in for example CS123 -
-    section 1
+- First and Last name
+- Student ID - I need this so I can look you up in the system.
+- The class and section number that you are in for example CS123 - section 1
 
 BroncoMail is the official communication channel through which all
 university business is conducted. It is expected that you access and
@@ -289,43 +276,28 @@ by appointment. For classes that are taught in the face to face format
 office hours will be by posted in Canvas. If I forgot to post them
 please just email me and ask 🙋.
 
-# University Policies
+## University Policies
 
 Please review all linked policies below. Violations of university
 policies can result in the student receiving a failing grade (F) in the
 course.
 
--   [Student Code of
-    Conduct](https://www.boisestate.edu/policy/student-affairs/code-of-conduct/)
-
--   [Academic
-    Integrity](https://www.boisestate.edu/registrar/general-information-and-policies/academic-integrity/)
-
--   [Privacy policy](https://www.boisestate.edu/privacy/)
-
--   [COVID
-    Policy](https://docs.google.com/document/d/10yCB9fiThidW9cNt8Eyqc1qVwoXfiLugbjyt_sg5fU8/edit#heading=h.x3pznnnsahws)
-
--   [Incomplete
-    Policy](https://www.boisestate.edu/registrar/degree-requirements/grades/).
+- [Student Code of Conduct](https://www.boisestate.edu/policy/student-affairs/code-of-conduct/)
+- [Academic Integrity](https://www.boisestate.edu/registrar/general-information-and-policies/academic-integrity/)
+- [Privacy policy](https://www.boisestate.edu/privacy/)
+- [COVID Policy](https://docs.google.com/document/d/10yCB9fiThidW9cNt8Eyqc1qVwoXfiLugbjyt_sg5fU8/edit#heading=h.x3pznnnsahws)
+- [Incomplete Policy](https://www.boisestate.edu/registrar/degree-requirements/grades/).
 
 ## Student support
 
--   [Educational access center](https://eac.boisestate.edu/)
-
--   [Support
-    resources](https://www.boisestate.edu/online/support-resources/)
-
--   [Academic support
-    services](https://www.boisestate.edu/aasc/academicsupportservices/)
-
--   [Online student
-    services](https://www.boisestate.edu/online/student-services/)
+- [Educational access center](https://eac.boisestate.edu/)
+- [Support resources](https://www.boisestate.edu/online/support-resources/)
+- [Academic support services](https://www.boisestate.edu/aasc/academicsupportservices/)
+- [Online student services](https://www.boisestate.edu/online/student-services/)
 
 ## Time Commitment
 
-According to Boise State University [policy
-4080](https://www.boisestate.edu/policy/academic-affairs-faculty-administration/policy-title-credit-hours/),
+According to Boise State University [policy 4080](https://www.boisestate.edu/policy/academic-affairs-faculty-administration/policy-title-credit-hours/),
 a 1 credit course spread over 15 weeks should require roughly 3 hours of
 work per week divided over both in-class interactions and homework.
 Classes that are held in compressed time frames such as summer or winter
@@ -340,45 +312,9 @@ For a compressed course it is **critical** that you don’t fall behind!
 Compressed courses move fast and missing 1 week of class is very hard if
 not impossible to recover from.
 
-<table>
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Credits</th>
-<th style="text-align: left;">Number of weeks</th>
-<th style="text-align: left;">Total hours</th>
-<th style="text-align: left;">Hours of work per week</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><p>1</p></td>
-<td style="text-align: left;"><p>3</p></td>
-<td style="text-align: left;"><p>45 hrs</p></td>
-<td style="text-align: left;"><p>15 hrs</p></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><p>1</p></td>
-<td style="text-align: left;"><p>5</p></td>
-<td style="text-align: left;"><p>45 hrs</p></td>
-<td style="text-align: left;"><p>9 hrs</p></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><p>3</p></td>
-<td style="text-align: left;"><p>7</p></td>
-<td style="text-align: left;"><p>135 hrs</p></td>
-<td style="text-align: left;"><p>19 hrs</p></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><p>3</p></td>
-<td style="text-align: left;"><p>15</p></td>
-<td style="text-align: left;"><p>135 hrs</p></td>
-<td style="text-align: left;"><p>9 hrs</p></td>
-</tr>
-</tbody>
-</table>
+| Credits | Number of weeks | Total Hours | Hours of work per week |
+| ------- | --------------- | ----------- | ---------------------- |
+| 1       | 3               | 45 hrs      | 15 hrs                 |
+| 1       | 5               | 45 hrs      | 9 hrs                  |
+| 3       | 7               | 135 hrs     | 19 hrs                 |
+| 3       | 15              | 135 hrs     | 9 hrs                  |

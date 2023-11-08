@@ -1,12 +1,8 @@
 ---
-title: Git Basics
-titleTemplate: Introduction to Version Control
-editLink: true
-lastUpdated: false
 order: 3
 ---
 
-# {{ $frontmatter.title }}
+# Git Basics
 
 This module will introduce all of the basic git commands. It is
 important to understand the basic commands because all the advanced

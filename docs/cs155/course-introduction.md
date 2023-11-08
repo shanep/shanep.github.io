@@ -1,12 +1,8 @@
 ---
-title: Course Introduction
-titleTemplate: Introduction to Version Control
-editLink: true
-lastUpdated: false
 order: 1
 ---
 
-# {{ $frontmatter.title }}
+# Course Introduction
 
 The purpose of this class is to get you familiar with version control,
 specifically Git. This is a hands on class that consists of reading
