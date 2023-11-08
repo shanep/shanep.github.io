@@ -1,6 +1,8 @@
 = Project 3
 include::../../../includes/attributes-settings.adoc[]
 
+image::images/p3-meme.jpeg[P3 Meme, align="center"]
+
 == Overview
 
 You job is to implement a memory manager using the buddy algorithm as described

@@ -1,6 +1,7 @@
 = Project 6
 include::../../../includes/attributes-settings.adoc[]
 
+image::./images/p6-meme.jpg[UYNoWork, align="center"]
 
 == Overview
 
@@ -11,8 +12,6 @@ project 4 I can provide a compiled binary that you can use for this project. You
 will need to contact me the day this project is assigned to get the binary, I
 will not be able to send it to you at 11:59pm the day before the project is due
 🤷.
-
-image::./images/p6-meme.jpg[UYNoWork, align="center"]
 
 == Learning Outcomes
 

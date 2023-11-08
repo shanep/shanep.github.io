@@ -1,6 +1,8 @@
 = Project 2
 include::../../../includes/attributes-settings.adoc[]
 
+image::images/p2-meme.png[P2 Meme, align="center"]
+
 == Overview
 
 In this project, we will be implementing a simple shell that can start

@@ -1,6 +1,8 @@
 = Project 0
 include::../../../includes/attributes-settings.adoc[]
 
+image::images/p0-meme.jpeg[P0 Meme, align="center"]
+
 == Overview
 
 This assignment is intended to serve as an introduction to the build tools that

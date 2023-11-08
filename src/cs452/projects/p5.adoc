@@ -1,6 +1,8 @@
 = Project 5
 include::../../../includes/attributes-settings.adoc[]
 
+image::./images/p5-meme.jpg[Fun times, align="center"]
+
 == Overview
 
 In this project you will implement a FIFO queue as a monitor that can be used to
@@ -11,8 +13,6 @@ may seem like you have infinite memory. However, infinite memory is just an
 abstraction that the OS provides, in reality you are limited by the physical
 hardware the OS is running on. This data structure could be used to build higher
 level abstractions like a https://en.wikipedia.org/wiki/Thread_pool[thread pool].
-
-image::./images/p5-meme.jpg[Fun times, align="center"]
 
 == Learning Outcomes
 

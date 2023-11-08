@@ -1,6 +1,8 @@
 = Project 4
 include::../../../includes/attributes-settings.adoc[]
 
+image::./images/yunowork.jpeg[UYNoWork, align="center"]
+
 == Overview
 
 In this lab, you are tasked with taking an existing data structure that is not
@@ -12,8 +14,6 @@ You are given an existing implementation of merge sort. This implementation is
 derived directly from the book "Introduction to Algorithms" by Cormen,
 Leiserson, Rivest, and Stein. Your job is to wrap this algorithm so you can use
 it in a multi-threaded environment.
-
-image::./images/yunowork.jpeg[UYNoWork, align="center"]
 
 == Learning Outcomes
 
