@@ -1,12 +1,8 @@
 ---
-title: Branching and Merging
-titleTemplate: Introduction to Version Control
-editLink: true
-lastUpdated: false
 order: 4
 ---
 
-# {{ $frontmatter.title }}
+# Branching and Merging
 
 This module will introduce two powerful concepts, branching and merging.
 Git provides a solid set of commands that allows developers to work on
@@ -20,16 +16,11 @@ features in this module.
 
 This section takes an estimated 3-4 hours
 
-- [Branches in a
-    Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
-- [Basic Branching and
-    Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
-- [Branch
-    Management](https://git-scm.com/book/en/v2/Git-Branching-Branch-Management)
-- [Branching
-    Workflows](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
-- [Remote
-    Branches](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches)
+- [Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+- [Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+- [Branch Management](https://git-scm.com/book/en/v2/Git-Branching-Branch-Management)
+- [Branching Workflows](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
+- [Remote Branches](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches)
 - [Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
 - [Summary](https://git-scm.com/book/en/v2/Git-Branching-Summary)
 

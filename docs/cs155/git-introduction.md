@@ -1,12 +1,8 @@
 ---
-title: Git Introduction
-titleTemplate: Introduction to Version Control
-editLink: true
-lastUpdated: false
 order: 2
 ---
 
-# {{ $frontmatter.title }}
+# Git Introduction
 
 Version control is everywhere. For example, Google Docs has a way to
 [check or revert to earlier file
@@ -19,24 +15,15 @@ software.
 
 This section takes an estimated 3-4 hours
 
-- [1.1 About Version
-    Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
-- [1.2 A Short
-    History](https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git)
-- [1.3 What is
-    Git](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
-- [1.4 The Command
-    Line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
-- [1.5 Installing
-    Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [1.6 First Time Git
-    Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
-- [1.7 Getting
-    Help](https://git-scm.com/book/en/v2/Getting-Started-Getting-Help)
-- [1.8
-    Summary](https://git-scm.com/book/en/v2/Getting-Started-Summary)
-- [VSCode Terminal
-    Basics](https://code.visualstudio.com/docs/terminal/basics)
+- [1.1 About Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
+- [1.2 A Short History](https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git)
+- [1.3 What is Git](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
+- [1.4 The Command Line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
+- [1.5 Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [1.6 First Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+- [1.7 Getting Help](https://git-scm.com/book/en/v2/Getting-Started-Getting-Help)
+- [1.8 Summary](https://git-scm.com/book/en/v2/Getting-Started-Summary)
+- [VSCode Terminal Basics](https://code.visualstudio.com/docs/terminal/basics)
 
 ## Homework
 

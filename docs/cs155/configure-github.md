@@ -1,11 +1,8 @@
 ---
-title: Configure Github
-editLink: true
-lastUpdated: true
 order: 6
 ---
 
-# {{ $frontmatter.title }}
+# Configure Github
 
 This document will walk you through configuring your personal github
 account to use ssh keys. We will be using the github cli app to complete

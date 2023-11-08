@@ -1,12 +1,8 @@
 ---
-title: Github
-titleTemplate: Introduction to Version Control
-editLink: true
-lastUpdated: false
 order: 5
 ---
 
-# {{ $frontmatter.title }}
+# Github
 
 In this module we will explore GitHub and how it complements our usage
 of Git in the terminal and VSCode. We will explore how to use the GitHub

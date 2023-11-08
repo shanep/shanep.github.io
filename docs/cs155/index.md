@@ -1,14 +1,10 @@
 ---
-title: CS155
-titleTemplate: Introduction to Version Control
-editLink: true
-lastUpdated: false
 next:
   text: Course Introduction
   link: /cs155/course-introduction
 ---
 
-# {{ $frontmatter.title }}
+# CS155
 
 ![Git Logo](images/git-banner.gif)
 
