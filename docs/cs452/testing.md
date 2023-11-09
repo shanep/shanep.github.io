@@ -1,80 +1,52 @@
-# Types of Testing
+# Testing
 
 There are LOTS of different types of testing methods out there. For this
 class we will focus on the following:
 
--   Unit testing - small units of code
-
-    -   functions or classes in isolation
-
--   System testing
-
-    -   Test the entire application
+- Unit testing - small units of code
+  - functions or classes in isolation
+- System testing
+  - Test the entire application
 
 ## Differences
 
--   Unit testing
+- Unit testing
+  - Makes it easy to track down and fix problems
+  - Can’t test how units interact with each other
+- System testing
+  - Can make it difficult to track down the bug
+  - Ensures that all your code units actually work together
 
-    -   Makes it easy to track down and fix problems
-
-    -   Can’t test how units interact with each other
-
--   System testing
-
-    -   Can make it difficult to track down the bug
-
-    -   Ensures that all your code units actually work together
-
-# Test Driven Development (TDD)
+## Test Driven Development (TDD)
 
 Test-driven development reverses traditional development and testing.
 
 ## TDD 30K View ✈
 
--   Write your tests first
-
--   Then write your code until the test passes
-
--   Entire books have been written on this topic so you are not expected
-    to know everything.
+- Write your tests first
+- Then write your code until the test passes
+- Entire books have been written on this topic so you are not expected to know everything.
 
 ## This Class
 
--   Can be difficult to do **pure** TDD especially when you are dealing
-    with a lot of third party libraries and frameworks.
+- Can be difficult to do **pure** TDD especially when you are dealing with a lot of third party libraries and frameworks.
+- Try to do at least one project using the TDD method
 
--   Try to do at least one project using the TDD method
+## Unit Testing Frameworks
 
-## TDD Stages
+- Hundreds of options
+- In this class we will use Google Test
+- [Google Test Primer](http://google.github.io/googletest/primer.html)
 
-<figure>
-<img
-src="https://developer.ibm.com/developer/default/articles/5-steps-of-test-driven-development/images/tdd-red-green-refactoring-v3.png"
-alt="tdd graphic" />
-</figure>
+## Google Test
 
-# Unit Testing Frameworks
+- Written in C++
+  - Don’t worry you don’t need to know C++
+- Well supported
+- Integrates nicely with CMake
+- [C and GoogleTest](https://ros-developer.com/2019/08/28/example-of-test-driven-development-with-c-and-google-test/)
 
--   Hundreds of options
-
--   In this class we will use Google Test
-
--   [Google Test Primer](http://google.github.io/googletest/primer.html)
-
-# Google Test
-
--   Written in C++
-
-    -   Don’t worry you don’t need to know C++
-
--   Well supported
-
--   Integrates nicely with CMake
-
--   [C and Google
-    Test](https://ros-developer.com/2019/08/28/example-of-test-driven-development-with-c-and-google-test/)
-
-# Basic Concepts
+## Basic Concepts
 
 When using GoogleTest, you start by writing assertions, which are
 statements that check whether a condition is true. An assertion’s result
@@ -82,74 +54,68 @@ can be success, nonfatal failure, or fatal failure. If a fatal failure
 occurs, it aborts the current function; otherwise the program continues
 normally.
 
-# Assertions
+## Assertions
 
 Your Main tool!
 
-    ASSERT_EQ(x.size(), y.size()) << "Vectors unequal";
+```cpp
+ASSERT_EQ(x.size(), y.size()) << "Vectors unequal";
+for (int i = 0; i < x.size(); ++i) {
+  EXPECT_EQ(x[i], y[i]) << "Vectors differ at" << i;
+}
 
-    for (int i = 0; i < x.size(); ++i) {
-      EXPECT_EQ(x[i], y[i]) << "Vectors differ at" << i;
-    }
 
-# Simple Tests
 
-    TEST(TestSuiteName, TestName) {
-      ... test body ...
-    }
+TEST(TestSuiteName, TestName) {
+  ... test body ...
+}
 
-## Example
 
-    int Factorial(int n);  // Returns the factorial of n
 
-    // Tests factorial of 0.
-    TEST(FactorialTest, HandlesZeroInput) {
-      EXPECT_EQ(Factorial(0), 1);
-    }
+int Factorial(int n);  // Returns the factorial of n
 
-    // Tests factorial of positive numbers.
-    TEST(FactorialTest, HandlesPositiveInput) {
-      EXPECT_EQ(Factorial(1), 1);
-      EXPECT_EQ(Factorial(2), 2);
-      EXPECT_EQ(Factorial(3), 6);
-      EXPECT_EQ(Factorial(8), 40320);
-    }
+// Tests factorial of 0.
+TEST(FactorialTest, HandlesZeroInput) {
+  EXPECT_EQ(Factorial(0), 1);
+}
 
-# Test Fixtures
+// Tests factorial of positive numbers.
+TEST(FactorialTest, HandlesPositiveInput) {
+  EXPECT_EQ(Factorial(1), 1);
+  EXPECT_EQ(Factorial(2), 2);
+  EXPECT_EQ(Factorial(3), 6);
+  EXPECT_EQ(Factorial(8), 40320);
+}
+```
+
+## Test Fixtures
 
 If you find yourself writing two or more tests that operate on similar
 data, you can use a test fixture. This allows you to reuse the same
 configuration of objects for several different tests.
 
-## Test Fixtures cont.
+## Test Fixtures cont
 
--   This is a more advanced technique
+- This is a more advanced technique
+- An example in the project is given to you
+- In this class you can get by with just using Simple tests
 
--   An example in project 1 is given to you
-
--   In this class you can get by with just using Simple tests
-
-# Invoking the Tests
+## Invoking the Tests
 
 Most users should not need to write their own main function and instead
 link with gtest\_main
 
--   Projects are setup with CMake to run all your tests
+- Projects are setup with CMake to run all your tests
+- Run all your tests with `make test`
 
--   Run all your tests with `make test`
+`make test`
 
-<!-- -->
+## Test Logs
 
-    make test
+- Segfaults and other issues will be placed in the logs
+- The output from testing will be in the `Testing/Temporary/LastTest.log`
 
-# Test Logs
+## Code Coverage
 
--   Segfaults and other issues will be placed in the logs
-
--   The output from testing will be in the
-    build/Testing/Temporary/LastTest.log
-
-# Code Coverage
-
-Review how to use code coverage tools to see if your tests are hitting
+Use the code coverage tools to see if your tests are hitting
 all the necessary places!
