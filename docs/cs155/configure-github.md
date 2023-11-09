@@ -1,7 +1,3 @@
----
-order: 6
----
-
 # Configure Github
 
 This document will walk you through configuring your personal github
