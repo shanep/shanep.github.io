@@ -1,7 +1,3 @@
----
-order: 6
----
-
 # Relational Databases and SQL
 
 Applications often need to store and retrieve large amounts of information.

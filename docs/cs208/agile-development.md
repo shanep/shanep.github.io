@@ -1,7 +1,3 @@
----
-order: 7
----
-
 # Agile Development
 
 Agile software development is a term that is used for a set of

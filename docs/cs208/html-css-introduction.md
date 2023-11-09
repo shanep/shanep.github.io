@@ -1,7 +1,3 @@
----
-order: 3
----
-
 # HTML and CSS Introduction
 
 In this module, we will investigate basic website structure and using

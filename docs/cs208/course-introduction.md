@@ -1,7 +1,3 @@
----
-order: 2
----
-
 # Course Introduction
 
 In this course, we will explore how websites work, their structure, how

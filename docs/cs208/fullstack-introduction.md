@@ -1,7 +1,3 @@
----
-order: 5
----
-
 # Full Stack Introduction
 
 In this module, we will introduce server-side programming. Most websites
