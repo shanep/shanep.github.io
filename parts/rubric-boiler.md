@@ -1,3 +1,4 @@
+<!-- markdownlint-disable-next-line -->
 ## Minimum standards
 
 Unless otherwise stated all code must compile and run on the department’s
