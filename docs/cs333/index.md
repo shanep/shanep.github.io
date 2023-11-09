@@ -1,8 +1,5 @@
 ---
-next:
-  text: Presentation
-  link: /cs333/research-paper
-order: 1
+next: false
 ---
 
 # CS 333
