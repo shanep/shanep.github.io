@@ -1,8 +1,5 @@
 ---
-order: 1
-next:
-  text: Course Introduction
-  link: /cs208/course-introduction
+next: false
 ---
 
 # CS208
@@ -110,3 +107,6 @@ There are several individual projects this semester.
   also use git and GitHub in a team based environment. All grades are given
   **individually** so even though you will work in a group you will grade will
   not be impacted by any team members lack of effort or contributions.
+
+
+<!--@include: ../../parts/syllabus-boiler.md-->

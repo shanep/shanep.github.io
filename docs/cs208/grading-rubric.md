@@ -1,5 +1,6 @@
 ---
-order: 8
+next: false
+prev: false
 ---
 
 # Grading Rubric

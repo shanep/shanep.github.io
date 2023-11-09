@@ -1,7 +1,3 @@
----
-order: 4
----
-
 # JavaScript Introduction
 
 In this Module, we will introduce the JavaScript programming language.
