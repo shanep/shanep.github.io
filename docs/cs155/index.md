@@ -1,9 +1,6 @@
 ---
-next:
-  text: Course Introduction
-  link: /cs155/course-introduction
+next: false
 ---
-
 # CS155
 
 ![Git Logo](images/git-banner.gif)

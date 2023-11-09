@@ -1,7 +1,3 @@
----
-order: 1
----
-
 # Course Introduction
 
 The purpose of this class is to get you familiar with version control,

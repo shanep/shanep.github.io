@@ -1,7 +1,3 @@
----
-order: 2
----
-
 # Git Introduction
 
 Version control is everywhere. For example, Google Docs has a way to

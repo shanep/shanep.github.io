@@ -1,7 +1,3 @@
----
-order: 3
----
-
 # Git Basics
 
 This module will introduce all of the basic git commands. It is

@@ -1,7 +1,3 @@
----
-order: 4
----
-
 # Branching and Merging
 
 This module will introduce two powerful concepts, branching and merging.

@@ -1,7 +1,3 @@
----
-order: 5
----
-
 # Github
 
 In this module we will explore GitHub and how it complements our usage
