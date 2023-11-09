@@ -1,4 +1,4 @@
-# Why This Class?
+# Course Introduction
 
 This class is important because your code will be running on some sort
 of computing device and you will need to know how an operating system
@@ -13,28 +13,21 @@ commands to the hard disk to position the read head you can just call
 [fopen](https://www.cplusplus.com/reference/cstdio/fopen/) and start
 reading bytes.
 
-# Introductions 👋
+## Introductions 👋
 
--   Name
+- Name
+  - Major - if something other than CS
+- Grad or Undergraduate
+- Share One cool thing about yourself
 
-    -   Major - if something other than CS
+## Textbook 📔
 
--   Grad or Undergraduate
+- [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+- [Code Examples](https://github.com/shanep/ostep-code)
 
--   Share One cool thing about yourself
+## Virtualization
 
-# Textbook 📔
-
--   [Operating Systems: Three Easy
-    Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
-
--   [Code Examples](https://github.com/shanep/ostep-code)
-
-# Virtualization
-
-<figure>
-<img src="images/matrix.webp" alt="matrix" />
-</figure>
+![matrix](images/matrix.webp)
 
 Everything you have been taught is a lie!
 
@@ -59,11 +52,9 @@ The operating system is also responsible for protecting processes from
 each other. You don’t want your errant program that has a segfault to
 take down your entire machine!
 
-# Concurrency
+## Concurrency
 
-<figure>
-<img src="images/concurrency.png" alt="production" />
-</figure>
+![production](images/concurrency.png)
 
 Concurrency is typically introduced in an Operating System class in a
 traditional CS curriculum because the operating system is responsible
@@ -76,11 +67,7 @@ with when writing high performance programs. We will look at how to use
 mutexes, semaphores, and pthreads and the common problems that result
 such as race conditions and deadlocks.
 
-# Persistence
-
-<figure>
-<img src="images/ancient-greek-language.jpg" alt="stone" />
-</figure>
+## Persistence
 
 At some point you are going to need to save data. An operating system
 provides abstractions that allow you to persist data to non-volatile
@@ -91,61 +78,45 @@ hood however the hardware is very different and requires different
 drivers. The operating system allows you to treat to very different
 pieces of hardware in exactly the same way!
 
-# Beyond Linux, MacOS, Linux
+## Beyond Linux, MacOS, Linux
 
 A small collection of research, hobby, and production operating systems.
 Some of these are in active development some have been abandoned years
 ago.
 
-## Monolithic POSIX/Unix Kernel
+### Monolithic POSIX/Unix Kernel
 
--   [Biscuit](https://www.usenix.org/system/files/osdi18-cutler.pdf) -
-    an operating system written in the Go programming language.
+- [Biscuit](https://www.usenix.org/system/files/osdi18-cutler.pdf) - an operating system written in the Go programming language.
+- [Arrakis](https://arrakis.cs.washington.edu/) - a nano-kernel operating system.
+- [Redox](https://www.redox-os.org/) - a Unix like kernel written in the [rust](https://www.rust-lang.org/) programming language.
+- [Barrelfish](http://www.barrelfish.org/) - a research operating system built from scratch
 
--   [Arrakis](https://arrakis.cs.washington.edu/) - a nano-kernel
-    operating system.
+### Unikernel
 
--   [Redox](https://www.redox-os.org/) - a Unix like kernel written in
-    the [rust](https://www.rust-lang.org/) programming language.
+- [Mirage OS](https://mirage.io/) - A Unikernel operating system written in the [ocaml](https://ocaml.org/) programming language.
 
--   [Barrelfish](http://www.barrelfish.org/) - a research operating
-    system built from scratch
+### NT (Win32)
 
-## Unikernel
+- [ReactOS](https://reactos.org/) - A kernel that aims for binary compatibility for NT (Windows) kernels
 
--   [Mirage OS](https://mirage.io/) - A Unikernel operating system
-    written in the [ocaml](https://ocaml.org/) programming language.
+### Teaching OS
 
-## NT (Win32)
+- [xv6](https://pdos.csail.mit.edu/6.828/2014/xv6/book-rev8.pdf) - a clone of Unix v6
+- [minix3](https://www.minix3.org/) - A micro kernel written by Andrew S. Tanenbaum et al for teaching operating systems
 
--   [ReactOS](https://reactos.org/) - A kernel that aims for binary
-    compatibility for NT (Windows) kernels
+### Written in D
 
-## Teaching OS
+- [PowerNex](https://github.com/PowerNex/PowerNex)
+- [Trinix](https://github.com/Rikarin/Trinix) - Micro kernel architecture
 
--   [xv6](https://pdos.csail.mit.edu/6.828/2014/xv6/book-rev8.pdf) - a
-    clone of Unix v6
+### Written in x86 ASM
 
--   [minix3](https://www.minix3.org/) - A micro kernel written by
-    Andrew S. Tanenbaum et al for teaching operating systems
+- [MenuetOS](http://menuetos.net/)
 
-## Written in D
+### Production Operating Systems
 
--   [PowerNex](https://github.com/PowerNex/PowerNex)
+- [WinWorld](https://winworldpc.com/library/operating-systems)
 
--   [XOmB](https://github.com/xomboverlord/xomb/tree/unborn) - Exokernel
+### Linux in the Browser
 
--   [Trinix](https://github.com/Rikarin/Trinix) - Micro kernel
-    architecture
-
-## Written in x86 ASM
-
--   [MenuetOS](http://menuetos.net/)
-
-## Production Operating Systems
-
--   [WinWorld](https://winworldpc.com/library/operating-systems)
-
-# Linux in the Browser
-
--   [JSLinux](https://bellard.org/jslinux/index.html)
+- [JSLinux](https://bellard.org/jslinux/index.html)
