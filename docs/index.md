@@ -10,8 +10,8 @@ hero:
   tagline: Super fancy Website
   actions:
     - theme: brand
-      text: GitHub
-      link: https://github.com/shanep/shanep.github.io
+      text: CV
+      link: /cv/index
     - theme: alt
       text: teaching
       link: /teaching/index
