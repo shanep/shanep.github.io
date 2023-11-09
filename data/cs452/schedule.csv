@@ -1,9 +1,9 @@
 Week,Day,Topic,Textbook Reading,What Due?
-1,Tu,xref:1-course-introduction.adoc[Course Introduction],,
-,Th,xref:2-c-review.adoc[C Review],xref:../articles/modern-debugging-acm.pdf[Modern Debugging],
-2,Tu,xref:projects/p0.adoc[Project 0 Introduction],,
-,Th,xref:3-testing.adoc[Testing],xref:../articles/coverity-acm.pdf[Coverity],
-3,Tu,xref:4-libraries.adoc[Libraries],,
+1,Tu,[Course Introduction](1-course-introduction.md),,
+,Th,[C Review](2-c-review.md),xref:../articles/modern-debugging-acm.pdf[Modern Debugging],
+2,Tu,Project 0 Introduction,,
+,Th,[Testing](3-testing.md),xref:../articles/coverity-acm.pdf[Coverity],
+3,Tu,[Libraries](4-libraries.md),,
 ,Th,xref:projects/p1.adoc[Project 1 Introduction],,Project 0 Due
 4,Tu,xref:intro.adoc[Operating Systems Introduction],http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf[OSTEP ch2 - Introduction],
 ,Th,xref:cpu-intro.adoc[The Process],http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf[OSTEP ch4 - Abstraction the process],

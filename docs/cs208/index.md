@@ -108,5 +108,4 @@ There are several individual projects this semester.
   **individually** so even though you will work in a group you will grade will
   not be impacted by any team members lack of effort or contributions.
 
-
 <!--@include: ../../parts/syllabus-boiler.md-->
