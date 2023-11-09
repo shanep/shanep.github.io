@@ -1,7 +1,7 @@
 ---
 next:
   text: Presentation
-  link: /cs333/presentation
+  link: /cs333/research-paper
 order: 1
 ---
 
