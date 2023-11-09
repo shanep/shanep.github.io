@@ -1,7 +1,6 @@
 {
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.25",
-    "vitepress-sidebar": "^1.18.0"
+    "vitepress": "^1.0.0-rc.25"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
