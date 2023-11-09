@@ -36,7 +36,6 @@ export default defineConfig({
       '/cs208/': { base: '/cs208/', items: cs208() },
       '/cs333/': { base: '/cs333/', items: cs333() },
       '/cs452/': { base: '/cs452/', items: cs452() },
-      '/teaching/': { base: '/teaching/', items: teaching() },
     },
 
     socialLinks: [
@@ -116,7 +115,8 @@ function cs333(): DefaultTheme.SidebarItem[] {
       text: 'Course materials',
       collapsed: false,
       items: [
-        { text: 'Home', link: 'index'},
+        { text: 'Research Paper', link: 'research-paper'},
+        { text: 'Presentation', link: 'presentation'},
       ]
     }
   ]
@@ -131,18 +131,6 @@ function cs452(): DefaultTheme.SidebarItem[] {
     },
     {
       text: 'Course materials',
-      collapsed: false,
-      items: [
-        { text: 'Home', link: 'index'},
-        { text: 'Grading Rubric', link: 'grading-rubric' },
-      ]
-    }
-  ]
-}
-function teaching(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: 'Teaching',
       collapsed: false,
       items: [
         { text: 'Home', link: 'index'},
