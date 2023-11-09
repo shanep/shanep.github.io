@@ -12,6 +12,9 @@ hero:
     - theme: brand
       text: GitHub
       link: https://github.com/shanep/shanep.github.io
+    - theme: alt
+      text: teaching
+      link: /teaching/index
   image:
     src: images/me.jpg
     alt: Shane K. Panter

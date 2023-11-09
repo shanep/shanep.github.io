@@ -76,9 +76,13 @@ export default {
         resolvePath: '/cs452/',
         useTitleFromFileHeading: true,
         sortMenusByFrontmatterOrder: true,
+      },
+      {
+        documentRootPath: 'docs',
+        scanStartPath: 'teaching',
+        resolvePath: '/teaching/',
+        useTitleFromFileHeading: true,
       }
-
-
     ]),
 
     socialLinks: [
