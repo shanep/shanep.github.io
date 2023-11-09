@@ -9,46 +9,45 @@ you are welcome to use any IDE you wish to develop your code it is strongly
 recommended that you compile and test your code using the terminal to ensure you
 have not introduced any IDE specific dependencies on accident.
 
-Your code must meet the two minimum standards of compiling and correctness in
-order to be graded. If your program fails to meet these standards it will not be
-graded and a score of 0 will be assigned.
+Projects have been carefully crafted to ensure certain learning objectives are
+satisfied. Thus, you are required to solve the problem as described in the
+specification. For example, if the specification asks you to implement a linked
+list and you implement a hash map your solution would not be correct even though
+your code may pass all the instructor provided tests. Your final grade will be
+reduced up to 40% if you do not follow the specification.
 
 ## Rubric
 
 | Criterion         | Percentage | Expert (1)           | Proficient (.9)            | Apprentice (.8)            | Novice (.7)              |
 | ----------------- | ---------- | -------------------- | -------------------------- | -------------------------- | ------------------------ |
-| Testing           | 50%        | Passes 100% of tests | Passes between 90% and 99% | Passes between 79% and 89% | < 79%                    |
+| Testing           | 40%        | Passes 100% of tests | Passes between 90% and 99% | Passes between 79% and 89% | < 79%                    |
+| Code Coverage     | 10%        | 100% Coverage        | Between 90% and 99%        | Between 79% and 89%        | < 79%                    |
 | Documentation     | 10%        | Perfect              | One issue                  | Two issues                 | Three or More            |
 | Retrospective     | 10%        | Perfect              | N/A                        | N/A                        | Below minimum word count |
 | Coding Guidelines | 20%        | Perfect              | One issue                  | Two issues                 | Three or More            |
 
 ## Testing
 
-For the testing criteria your code will be ran against your instructors
-private test suite. The test suite will consist of both automated tests
-such as unit testing and system testing as well as manual testing in
-cases that unit testing is not feasible.
+For the testing criteria your code will be ran against the provided tests and
+any additional tests that you author. The test suite may consist of both
+automated tests and or manual testing in cases that automation is not feasible.
 
-Students are expected to write tests to ensure correct code. The
-question that is always asked is how many tests? At a minimum you should
-write at least one test for every **public** function or method. This
-includes any untested functions that were provided for you. You should
-make sure that you test bad inputs as well as good inputs. Your program
-should not crash if a user inputs bad data!
+The question that is always asked is how many tests do I write? At a minimum
+you should write at least one test for every **public** function or method. This
+includes any untested functions that were provided for you. You should make sure
+that you test bad inputs as well as good inputs. Your program should not crash
+if a user inputs bad data!
 
-Projects have been carefully crafted to ensure certain learning objectives are
-satisfied. Thus, you are required to solve the problem as described in the
-specification. For example, if the specification asks you to write CSS in an
-external file and you write inline CSS your solution would not be correct even
-though your code may pass all the instructor provided tests. Simply looking at
-the output is not sufficient to determine correctness! The bottom line is code
-that runs and produces correct output does not mean you implemented the
-specification correctly.
+::: warning
+Students are expected to write tests beyond what is provided for them to ensure
+their code operates as expected. Writing tests is part of the learning process
+and part of the grade for this project.
+:::
 
 You are not allowed to change the instructor provided tests in any way.
 You must pass the tests as they are written.
 
-Correctness consists of (but is not limited to):
+Testing consists of (but is not limited to):
 
 - Validating user input
   - User input should not crash your program
@@ -60,6 +59,13 @@ Correctness consists of (but is not limited to):
 - Defining [loop invariants](https://en.wikipedia.org/wiki/Loop_invariant) where appropriate.
 - Implementing header files as defined
 - Using the API calls that are explicitly called out in the specification.
+
+## Code Coverage
+
+Code coverage is a measure of how much of your code is executed by your tests.
+You are expected to get as close to 100% code coverage as possible. Code that is
+impossible to test without significant mocking or dependency injection does not
+have to be tested and will be clearly called out in the specification.
 
 ## Documentation
 
