@@ -75,11 +75,11 @@ course learning outcomes.
 |     | 1.2 | Use system library code                                                                                                                               | Apply       | Project 2             |
 |     | 1.3 | Use system documentation                                                                                                                              | Apply       | Project 2             |
 |     | 1.4 | Apply computer science theory and software development fundamentals to produce computing-based solutions. **(ABET Outcome 6)**                        | Apply       | Project 2             |
-|     | 1.5 | Use simple shell scripts and system tools to analyze process behavior                                                                                 | Apply       | Project 5, Project 6  |
+|     | 1.5 | Use simple shell scripts and system tools to analyze process behavior                                                                                 | Apply       | Project 5, Project 4  |
 | 2   |     | Describe the fundamental (core) abstractions used to implement Operating Systems                                                                      | Understand  | Exam                  |
 |     | 2.1 | Demonstrate how low level memory is managed in user space                                                                                             | Apply       | Project 3             |
-|     | 2.2 | Explore the system call interface                                                                                                                     | Apply       | Project 2 , Project 3 |
-|     | 2.3 | Show an understanding of the difference between user and kernel space                                                                                 | Understand  | Exam                  |
+|     | 2.2 | Explore the system call interface                                                                                                                     | Apply       | Project 2 , Project 6 |
+|     | 2.3 | Show an understanding of the difference between user and kernel space                                                                                 | Understand  | Project 6             |
 |     | 2.4 | Articulate common problems arising in Operating System design and implementation                                                                      | Understand  | Exam                  |
 | 3   |     | Construct applications that utilize processes, threads, and synchronization primitives to solve problems requiring concurrent or parallel computation | Create      | Project 4             |
 |     | 3.1 | Analyze a complex computing problem and apply principles of computing and other relevant disciplines to identify solutions. **(ABET Outcome 1)**      | Analyze     | Project 6             |
