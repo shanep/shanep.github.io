@@ -39,7 +39,7 @@
 
 ## Example
 
-![interrupt](images/interrupt.png)
+![interrupt](images/interrupts.png)
 ![polling](images/polling.png)
 
 ## DMA

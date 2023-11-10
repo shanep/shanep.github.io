@@ -1,9 +1,9 @@
 Week,Topic,Textbook Reading,What Due?
-1,[Course Introduction](1-course-introduction.md),,
-,[C Review](2-c-review.md),[Modern Debugging](/articles/modern-debugging-acm.pdf),
+1,[Course Introduction](course-introduction.md),,
+,[C Review](c-review.md),[Modern Debugging](/articles/modern-debugging-acm.pdf),
 2,Project 0 Introduction,,
-,[Testing](3-testing.md),[Coverity](/articles/coverity-acm.pdf),
-3,[Libraries](4-libraries.md),,
+,[Testing](testing.md),[Coverity](/articles/coverity-acm.pdf),
+3,[Libraries](libraries.md),,
 ,Project 1 Introduction,,Project 0 Due
 4,[Operating Systems Introduction](intro.md),[OSTEP ch2 - Introduction](http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf),
 ,[The Process](cpu-intro.md),[OSTEP ch4 - Abstraction the process](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf),

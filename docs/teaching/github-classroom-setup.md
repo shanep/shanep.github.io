@@ -2,7 +2,7 @@
 
 This is an opinionated guide to using [Github
 classrooms](https://classroom.github.com) This guide extends the
-[Offical documentation](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/manage-classrooms)
+[Official documentation](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/manage-classrooms)
 with some recommendations on how to setup and configure everything.
 After you read through the official documentation you can come back to
 this guide to get everything configured.
@@ -35,10 +35,6 @@ that will walk you through creating a new organization. Choose the free
 tier when given the choice in creating a new organization. During the
 setup, I recommend creating a new organization each semester that is
 specific to the class with the naming convention such as cs123-fall2023.
-
-<figure>
-<img src="images/github-orgs.png" alt="Github Orgs" />
-</figure>
 
 It is CRITICAL that you used your personal GitHub account! Do not use
 the BoiseState account because you can accidentally expose private
@@ -132,7 +128,7 @@ if the instructor or TA/GA is pushing grading feedback into the repo.
     create teams with whatever method you prefer, I use canvas to
     automatically create teams as this also sets up the grade book
     correctly. It is recommended that you do **not** give your students
-    [admin access](#_admin_access) unless you absolutely know you need
+    admin access unless you absolutely know you need
     that feature.
 - I typically name the assignment something generic like **p1** or
     **lab1**. That way it makes it easier to use and script the command
@@ -142,7 +138,7 @@ if the instructor or TA/GA is pushing grading feedback into the repo.
 Don’t use the **supported editor** feature as it seems to break for some
 students.
 
-- Add in any autograding that you want. These will be run using Github
+- Add in any auto-grading that you want. These will be run using Github
     actions.
 - (Optional) Setup the assignment to use github pull requests for
     student feedback.

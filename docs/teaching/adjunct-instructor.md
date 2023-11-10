@@ -10,11 +10,8 @@ The canvas sandbox site is a bare bones skeleton that you will need to
 customize to your liking and teaching style.
 
 1. Email Shane and ask to be added to the class github repository
-2. Attend a [canvas
-    training](https://www.boisestate.edu/oit-learning/training-events/)
-    session
-3. Import the canvas content from the github repository or do a course
-    copy from the sandbox
+2. Attend a [canvas training](https://www.boisestate.edu/oit-learning/training-events/) session
+3. Import the canvas content from the github repository or do a course copy from the sandbox
 4. Update the canvas home page with your info and links (TODO comments)
 5. Set due dates for all Assignments and Quizzes
 6. Verify all links in course are still valid
