@@ -1,4 +1,4 @@
-# Locks: The Basic Idea
+# Locks
 
     balance = balance + 1;
 
@@ -8,7 +8,7 @@
     4 balance = balance + 1;
     5 unlock(&mutex);
 
-# Pthread Locks
+## Pthread Locks
 
 The name that the POSIX library uses for a lock is a mutex, as it is
 used to provide mutual exclusion between threads, i.e., if one thread is
@@ -23,16 +23,12 @@ has completed the section.
     4 balance = balance + 1;
     5 Pthread_mutex_unlock(&lock);
 
-# Building A Lock
+## Building A Lock
 
--   To build a working lock, we will need some help from our old friend,
-    the hardware
-
--   Must provide mutual exclusion
-
--   Must be fair (thread starvation)
-
--   Must be performant (can’t add too much overhead)
+- To build a working lock, we will need some help from our old friend, the hardware
+- Must provide mutual exclusion
+- Must be fair (thread starvation)
+- Must be performant (can’t add too much overhead)
 
 ## Hardware support
 
@@ -40,23 +36,18 @@ Each platform architecture may provide different support to help build
 locks. The core idea in all these instructions is they are atomic.
 Meaning that they are guaranteed to complete once started.
 
--   Interrupts
+- Interrupts
+- test-and-set
+- compare-and-swap (SPARC)
+- compare-and-exchange (x86)
+- load-linked and store-conditional (MIPS)
+- Fetch-and-add
 
--   test-and-set
-
--   compare-and-swap (SPARC)
-
--   compare-and-exchange (x86)
-
--   load-linked and store-conditional (MIPS)
-
--   Fetch-and-add
-
-# Examples
+## Building a Lock
 
 Lets look at just a few examples of building a lock! 🔒
 
-# Controlling Interrupts
+### Controlling Interrupts
 
     1 void lock() {
     2       DisableInterrupts();
@@ -65,19 +56,13 @@ Lets look at just a few examples of building a lock! 🔒
     5       EnableInterrupts();
     6 }
 
-## Evaluating
+- The main positive of this approach is its simplicity
+- The negatives, unfortunately, are many
+  - Any calling thread to perform a privileged operation
+  - Thread can die before unlocking making the system unusable.
+- Does not work on multiprocessors
 
--   The main positive of this approach is its simplicity
-
--   The negatives, unfortunately, are many
-
-    -   Any calling thread to perform a privileged operation
-
-    -   Thread can die before unlocking making the system unusable.
-
--   Does not work on multiprocessors
-
-# Test-And-Set
+## Test-And-Set
 
 We define what the test-and-set instruction does via the following C
 code snippet.
@@ -94,35 +79,21 @@ examples!
 
 ## Test-And-Set details
 
--   Hardware instruction to test and set a variable atomicity
+- Hardware instruction to test and set a variable atomicity
+- It returns the old value pointed to by the old\_ptr, and simultaneously updates said value to new
+- Other instructions are compare\_and\_swap or compare-and-exchange
+- Typically implemented in assembly language.
 
--   It returns the old value pointed to by the old\_ptr, and
-    simultaneously updates said value to new
-
--   Other instructions are compare\_and\_swap or compare-and-exchange
-
--   Typically implemented in assembly language.
-
-# Dekker’s and Peterson’s Algorithms
+## Dekker’s and Peterson’s Algorithms
 
 Dekker’s algorithm and Peterson’s algorithm attempted to solve the
 mutual exclusion algorithm with only load and store instructions. These
 algorithms don’t work on modern hardware (due to relaxed memory
 consistency models).
 
-# Spin Locks
+## Spin Locks
 
--   It is the simplest type of lock to build, and simply spins, using
-    CPU cycles, until the lock becomes available.
-
--   To work correctly on a single processor, it requires a preemptive
+- It is the simplest type of lock to build, and simply spins, using CPU cycles, until the lock becomes available.
+- To work correctly on a single processor, it requires a preemptive
     scheduler (i.e., one that will interrupt a thread via a timer, in
     order to run a different thread, from time to time).
-
-## Evaluating
-
--   What are some advantages to spin locks?
-
--   What are some disadvantages?
-
-# Questions?

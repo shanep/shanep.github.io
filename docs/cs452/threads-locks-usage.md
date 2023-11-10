@@ -1,9 +1,9 @@
-# What?
+# Locked Data Structures
 
 A data structure that can be safely and correctly accessed by multiple
 threads at once.
 
-# Simple Counter
+## Simple Counter
 
 Not Thread Safe!
 
@@ -27,7 +27,7 @@ Not Thread Safe!
     18      return c->value;
     19 }
 
-# Concurrent Counter
+## Concurrent Counter
 
 Thread Safe!
 
@@ -47,7 +47,7 @@ Thread Safe!
     14      Pthread_mutex_unlock(&c->lock);
     15 }
 
-# Concurrent Linked Lists
+## Concurrent Linked Lists
 
     1 void List_Init(list_t *L) {
     2       L->head = NULL;
@@ -70,7 +70,7 @@ Thread Safe!
     19      pthread_mutex_unlock(&L->lock);
     20 }
 
-# In the Kernel
+## In the Kernel
 
 Many operating systems utilized a single lock when first transitioning
 to multiprocessors, including Sun OS and Linux. In the latter, this lock
@@ -80,5 +80,3 @@ even had a name, the big kernel lock (BKL)
 
 As more and more cores were added the BKL became a bottleneck and was
 eventually replaced with more fine grained locking in recent kernels.
-
-# Questions?

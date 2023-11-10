@@ -1,203 +1,56 @@
-# Early Systems
+# Address Spaces
 
--   OS was a set of routines (a library) that sat in memory at address 0
+- OS was a set of routines (a library) that sat in memory at address 0
+- One running program
+- Systems were simple!
 
--   One running program
+![early os](images/vm-early-os.png)
 
--   Systems were simple!
+## Multiprogramming and Time Sharing
 
-## Layout
+- Multiple processes were ready to run at a given time
+- Multiple people sharing one system
+- Time sharing the hardware
+- Systems became interactive!
 
-<figure>
-<img src="images/vm-early-os.png" alt="early os" />
-</figure>
+![time share](images/time-sharing.png)
 
-# Multiprogramming and Time Sharing
+## The Address Space
 
--   Multiple processes were ready to run at a given time
+![address space](images/modern-address-space.png)
 
--   Multiple people sharing one system
+## Virtualize Memory
 
--   Time sharing the hardware
+- The OS must virtualize the memory
+- All process can’t start at 0!
+- But all process think they do?
 
--   Systems became interactive!
-
-## Layout
-
-<figure>
-<img src="images/time-sharing.png" alt="time share" />
-</figure>
-
-# The Address Space
-
-<figure>
-<img src="images/modern-address-space.png" alt="Address space" />
-</figure>
-
-# Virtualize Memory
-
--   The OS must virtualize the memory
-
--   All process can’t start at 0!
-
--   But all process think they do?
-
-# Memory Quiz
+## Memory Quiz
 
 In class exercise! For all the following slides you will be shown a
 snippet of code and will need to determine where the variable lives.
 
--   Data
+- Data
+- Heap
+- Stack
 
--   Heap
+```c
+int *A;
+ void foo(int* bar, int len){
+     A = malloc(sizeof(int)*len);
+     /*...some code*/
+ }
+ void main(int argc, char **argv){
+     int length =10; int i; int bar[length];
+     foo(&bar[0], length);
+     /*...some code*/
+     free(A);
+ }
+```
 
--   Stack
-
-## Length
-
-    int *A;
-    void foo(int* bar, int len){
-        A = malloc(sizeof(int)*len);
-        /*...some code*/
-    }
-
-    void main(int argc, char **argv){
-        int length =10; int i; int bar[length];
-        foo(&bar[0], length);
-        /*...some code*/
-        free(A);
-    }
-
--   Data
-
--   Heap
-
--   Stack
-
-## A
-
-    int *A;
-    void foo(int* bar, int len){
-        A = malloc(sizeof(int)*len);
-        /*...some code*/
-    }
-
-    void main(int argc, char **argv){
-        int length =10; int i; int bar[length];
-        foo(&bar[0], length);
-        /*...some code*/
-        free(A);
-    }
-
--   Data
-
--   Heap
-
--   Stack
-
-## bar (in foo)
-
-    int *A;
-    void foo(int* bar, int len){
-        A = malloc(sizeof(int)*len);
-        /*...some code*/
-    }
-
-    void main(int argc, char **argv){
-        int length =10; int i; int bar[length];
-        foo(&bar[0], length);
-        /*...some code*/
-        free(A);
-    }
-
--   Data
-
--   Heap
-
--   Stack
-
-## bar (in main)
-
-    int *A;
-    void foo(int* bar, int len){
-        A = malloc(sizeof(int)*len);
-        /*...some code*/
-    }
-
-    void main(int argc, char **argv){
-        int length =10; int i; int bar[length];
-        foo(&bar[0], length);
-        /*...some code*/
-        free(A);
-    }
-
--   Data
-
--   Heap
-
--   Stack
-
-## bar\[0\]
-
-    int *A;
-    void foo(int* bar, int len){
-        A = malloc(sizeof(int)*len);
-        /*...some code*/
-    }
-
-    void main(int argc, char **argv){
-        int length =10; int i; int bar[length];
-        foo(&bar[0], length);
-        /*...some code*/
-        free(A);
-    }
-
--   Data
-
--   Heap
-
--   Stack
-
-## argc
-
-    int *A;
-    void foo(int* bar, int len){
-        A = malloc(sizeof(int)*len);
-        /*...some code*/
-    }
-
-    void main(int argc, char **argv){
-        int length =10; int i; int bar[length];
-        foo(&bar[0], length);
-        /*...some code*/
-        free(A);
-    }
-
--   Data
-
--   Heap
-
--   Stack
-
-## \*A (dereference A)
-
-    int *A;
-    void foo(int* bar, int len){
-        A = malloc(sizeof(int)*len);
-        /*...some code*/
-    }
-
-    void main(int argc, char **argv){
-        int length =10; int i; int bar[length];
-        foo(&bar[0], length);
-        /*...some code*/
-        free(A);
-    }
-
--   Data
-
--   Heap
-
--   Stack
-
-# Questions
+- Length
+- bar (in foo)
+- bar (in main)
+- bar[0]
+- argc
+- \*A (dereference A)

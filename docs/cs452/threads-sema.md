@@ -1,12 +1,4 @@
-# Semaphore!
-
-<figure>
-<img
-src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Semaphore_November.svg"
-alt="background" />
-</figure>
-
-# Semaphores: A Definition
+# Semaphore
 
 A semaphore is an object with an integer value that we can manipulate
 with two routines; in the POSIX standard, these routines are sem\_wait()
@@ -24,38 +16,30 @@ and sem\_post()
     8 if there are one or more threads waiting, wake one
     9 }
 
-# Binary Semaphores (Locks)
+## Binary Semaphores (Locks)
 
 Because locks only have two states (held and not held), we sometimes
 call a semaphore used as a lock a binary semaphore.
 
-# Semaphores For Ordering
+## Semaphores For Ordering
 
--   Semaphores are also useful to order events in a concurrent program.
+- Semaphores are also useful to order events in a concurrent program.
+- One thread waits for something to happen (blocks on a semaphore)
+- Another thread making that something happen and then signaling that it has happened
 
--   One thread waits for something to happen (blocks on a semaphore)
+## Reader-Writer Locks
 
--   Another thread making that something happen and then signaling that
-    it has happened
+- Multiple concurrent readers at a time
+- Only one writer at a time
 
-# Reader-Writer Locks
+## The Dining Philosophers 🍽
 
--   Multiple concurrent readers at a time
+![dining philosophers](images/dining-philosophers.png)
 
--   Only one writer at a time
-
-# The Dining Philosophers 🍽
-
-<figure>
-<img src="images/dining-philosophers.png" alt="dining philosophers" />
-</figure>
-
-# Thread Throttling
+## Thread Throttling
 
 Use a semaphore to limit the number of threads concurrently executing
 the piece of code in question
-
-# Example Implementation
 
     1 typedef struct __Zem_t {
     2   int value;
@@ -85,10 +69,8 @@ the piece of code in question
     26  Mutex_unlock(&s->lock);
     27 }
 
-# Summary
+## Summary
 
 Semaphores are a powerful and flexible primitive for writing concurrent
 programs. Some programmers use them exclusively, shunning locks and
 condition variables, due to their simplicity and utility.
-
-# Questions❓
