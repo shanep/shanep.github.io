@@ -9,6 +9,4 @@ github classroom link 😁
 In the meantime check out these sweet under [construction
 gif’s](http://textfiles.com/underconstruction/) from the 1990’s!
 
-<figure>
-<img src="images/construction.gif" alt="Under Construction" />
-</figure>
+![Under Construction](images/construction.gif)

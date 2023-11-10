@@ -13,11 +13,11 @@ operating systems. PREREQ: CS 321 and ECE 330.
 
 | Week | Topic                                            | Textbook Reading                                                                                      | What Due?     |
 | ---- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ------------- |
-| 1    | [Course Introduction](1-course-introduction.md)  |                                                                                                       |               |
-|      | [C Review](2-c-review.md)                        | [Modern Debugging](/articles/modern-debugging-acm.pdf)                                                |               |
+| 1    | [Course Introduction](course-introduction.md)    |                                                                                                       |               |
+|      | [C Review](c-review.md)                          | [Modern Debugging](/articles/modern-debugging-acm.pdf)                                                |               |
 | 2    | Project 0 Introduction                           |                                                                                                       |               |
-|      | [Testing](3-testing.md)                          | [Coverity](/articles/coverity-acm.pdf)                                                                |               |
-| 3    | [Libraries](4-libraries.md)                      |                                                                                                       |               |
+|      | [Testing](testing.md)                            | [Coverity](/articles/coverity-acm.pdf)                                                                |               |
+| 3    | [Libraries](libraries.md)                        |                                                                                                       |               |
 |      | Project 1 Introduction                           |                                                                                                       | Project 0 Due |
 | 4    | [Operating Systems Introduction](intro.md)       | [OSTEP ch2 - Introduction](http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf)                           |               |
 |      | [The Process](cpu-intro.md)                      | [OSTEP ch4 - Abstraction the process](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf)            |               |
@@ -36,7 +36,7 @@ operating systems. PREREQ: CS 321 and ECE 330.
 | 11   | [Condition Variables](threads-cv.md)             | [OSTEP ch30 - Condition Variables](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf)             |               |
 |      | Project 5 Introduction                           |                                                                                                       | Project 4 Due |
 | 12   | [Semaphores](threads-sema.md)                    | [OSTEP ch31 - Semaphores](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf)                    |               |
-|      | [Concurrency Bugs](threads-bugs.md)              | [OSTEP ch32 - Concurrency Bugs](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf)               |               |
+|      | [Concurrency Bugs](threads-bugs.md)              | [OSTEP ch32 - Concurrency Bugs](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf)              |               |
 | 13   | [Event Based Concurrency](threads-events.md)     | [OSTEP ch33 - Event Based Concurrency](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-events.pdf)     |               |
 |      | Project 6 Introduction                           |                                                                                                       | Project 5 Due |
 | 14   | Thanksgiving Break                               |                                                                                                       |               |
@@ -55,25 +55,13 @@ operating systems. PREREQ: CS 321 and ECE 330.
 ## Assessments
 
 Your final grade will be calculated with the following weights in
-canvas.
+canvas. All Projects will be graded with the
+[project grading rubric](grading-rubric.md).
 
 - Projects - 70%
 - Final Exam - 30%
   - The final exam will cover the textbook reading assignments assigned throughout the semester.
   - The final exam must be taken in the testing center.
-
-### Projects
-
-There are several individual projects this semester. All Projects will
-be graded with the [project grading rubric](grading-rubric.md).
-
-- [Project 0](https://github.com/shanep/cs452-p0-starter) - This is a project to introduce you to the default template
-- [Project 1](https://github.com/shanep/cs452-p1-starter) - This is a warm up project to refresh your C programming skills.
-- [Project 2](https://github.com/shanep/cs452-p2-starter) - In this project you will write a simple shell.
-- [Project 3](https://github.com/shanep/cs452-p3-starter) - In this project you will implement the buddy memory algorithm as described by Dr. Donald Knuth.
-- [Project 4](https://github.com/shanep/cs452-p4-starter) - This project will introduce using threads to speed up an existing application
-- [Project 5](https://github.com/shanep/cs452-p5-starter) - This project we will implement a simple bounded queue that can be used in the classic producer and consumer problem.
-- [Project 6](https://github.com/shanep/cs452-p6-starter) - This project you will analyze the results of a previous project and write a report on your findings.
 
 ## Course Learning Outcomes
 

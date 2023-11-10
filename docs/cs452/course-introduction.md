@@ -45,7 +45,7 @@ motion when there is none!
 Most modern machines use a flat memory model, which means the machine
 represents memory as a big array. The operating system with assistance
 from hardware such as a memory management unit (MMU) and the translation
-lookaside buffer (TLB) creates a virtual memory address space to give
+look-aside buffer (TLB) creates a virtual memory address space to give
 the illusion that each process has access to 100% of the machine memory.
 
 The operating system is also responsible for protecting processes from
