@@ -1,4 +1,6 @@
-# Non-Deadlock Bugs
+# Concurrency Bugs
+
+## Non-Deadlock Bugs
 
 Non-deadlock bugs make up a majority of concurrency bugs, according to
 Lu’s study. But what types of bugs are these? How do they arise? How can
@@ -16,7 +18,7 @@ AKA: Memory Stops
     Thread 2::
     thd->proc_info = NULL;
 
--   How to fix this?
+- How to fix this?
 
 ## Order-Violation Bugs
 
@@ -32,13 +34,9 @@ AKA: Race Conditions
         mState = mThread->State;
     }
 
-# Deadlock
+## Deadlock
 
-<figure>
-<img src="images/deadlock.png" alt="deadlock" />
-</figure>
-
-## Example
+![deadlock](images/deadlock.png)
 
     Thread 1: Thread 2:
     pthread_mutex_lock(L1); pthread_mutex_lock(L2);
@@ -46,28 +44,20 @@ AKA: Race Conditions
 
 ## Conditions for Deadlock
 
--   Mutual exclusion: Threads claim exclusive control of resources that
+- Mutual exclusion: Threads claim exclusive control of resources that
     they require (e.g., a thread grabs a lock).
-
--   Hold-and-wait: Threads hold resources allocated to them (e.g., locks
+- Hold-and-wait: Threads hold resources allocated to them (e.g., locks
     that they have already acquired) while waiting for additional
     resources (e.g., locks that they wish to acquire).
-
--   No preemption: Resources (e.g., locks) cannot be forcibly removed
+- No preemption: Resources (e.g., locks) cannot be forcibly removed
     from threads that are holding them.
-
--   Circular wait: There exists a circular chain of threads such that
+- Circular wait: There exists a circular chain of threads such that
     each thread holds one or more resources (e.g., locks) that are being
     requested by the next thread in the chain.
 
 ## Prevention
 
--   Circular Wait - total ordering or partial ordering
-
--   Hold-and-wait - global lock
-
--   try-lock
-
--   lock free data structures (HARD!)
-
-# Questions?
+- Circular Wait - total ordering or partial ordering
+- Hold-and-wait - global lock
+- try-lock
+- lock free data structures (HARD!)

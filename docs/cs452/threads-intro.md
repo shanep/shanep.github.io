@@ -1,10 +1,8 @@
-# Threads!
+# Threads
 
-<figure>
-<img src="images/threads-intro.jpg" alt="Threading" />
-</figure>
+![Threads](images/threads-intro.jpg)
 
-# What is a Thread
+## What is a Thread
 
 Instead of our classic view of a single point of execution within a
 program (i.e., a single PC where instructions are being fetched from and
@@ -17,23 +15,20 @@ Perhaps another way to think of this is that each thread is very much
 like a separate process, except for one difference: they share the same
 address space and thus can access the same data.
 
-# Important Terms
+## Important Terms
 
--   A **critical section** is a piece of code that accesses a shared
+- A **critical section** is a piece of code that accesses a shared
     resource, usually a variable or data structure.
-
--   A **race condition** arises if multiple threads of execution enter
+- A **race condition** arises if multiple threads of execution enter
     the critical section at roughly the same time
-
--   An **indeterminate program** consists of one or more race
+- An **indeterminate program** consists of one or more race
     conditions; the output of the program varies from run to run,
     depending on which threads ran when.
-
--   **mutual exclusion** guarantees that only a single thread ever
+- **mutual exclusion** guarantees that only a single thread ever
     enters a critical section, thus avoiding races, and resulting in
     deterministic program outputs.
 
-# Code Example
+## Code Example
 
 We assume that the process never terminates in the pre-protocol,
 critical section, and post-protocol areas. A process can terminate
@@ -47,43 +42,32 @@ section, it should not affect other processes.
             /*remainder*/
     }
 
-# Context Switch
+## Context Switch
 
--   Threads will context switch just like processes
+- Threads will context switch just like processes
+- Instead of a Process control block (PCB) we have a thread control block (TCB)
+- In a TCB the address space remains the same!
 
--   Instead of a Process control block (PCB) we have a thread control
-    block (TCB)
+## Memory Layout
 
--   In a TCB the address space remains the same!
+![Memory Layout](images/thread-memory-layout.png)
 
-# Memory Layout
+## Why Use Threads?
 
-<figure>
-<img src="images/thread-memory-layout.png" alt="Memory Layout" />
-</figure>
-
-# Why Use Threads?
-
--   First reason: Parallelism 🚙🚙🚙
-
--   The second reason: to avoid blocking program progress due to slow
-    I/O
-
-    -   Opening and reading 10 files all at once!
+- First reason: Parallelism 🚙🚙🚙
+- The second reason: to avoid blocking program progress due to slow I/O
+  - Opening and reading 10 files all at once!
 
 ## Why not just processes?
 
--   Of course, in either of the cases mentioned above, you could use
-    multiple processes instead of threads.
-
--   Threads share an address space and thus make it easy to share data,
+- Of course, in either of the cases mentioned above, you could use multiple processes instead of threads.
+- Threads share an address space and thus make it easy to share data,
     and hence are a natural choice when constructing these types of
     programs
-
--   Processes are a more sound choice for logically separate tasks where
+- Processes are a more sound choice for logically separate tasks where
     little sharing of data structures in memory is needed.
 
-# Example
+## Example
 
     1 #include <stdio.h>
     2 #include <assert.h>
@@ -110,7 +94,7 @@ section, it should not affect other processes.
     23      return 0;
     24 }
 
-# Instruction Interleaving
+## Instruction Interleaving
 
 We don’t control the scheduler! ⚠️
 
@@ -121,14 +105,9 @@ We don’t control the scheduler! ⚠️
     add $0x1, %eax
     mov %eax, 0x8049a1c
 
-## Example
+![instruction interleaving](images/instruction-interleaving.png)
 
-<figure>
-<img src="images/instruction-interleaving.png"
-alt="instruction interleaving" />
-</figure>
-
-# Atomicity
+## Atomicity
 
 One way to solve this problem would be to have more powerful
 instructions that, in a single step, did exactly whatever we needed done
@@ -142,26 +121,18 @@ and thus removed the possibility of an untimely interrupt.
     add $0x1, %eax
     mov %eax, 0x8049a1c
 
-# Synchronization Primitives
+## Synchronization Primitives
 
--   Need to build primitives that allow us to do atomic operations
+- Need to build primitives that allow us to do atomic operations
+  - Locks 🔒
+- Need to build primitives that allow us to wait for action to be complete
+  - Condition Variables
+- Need to build more powerful primitives
+  - Semaphores
 
-    -   Locks 🔒
-
--   Need to build primitives that allow us to wait for action to be
-    complete
-
-    -   Condition Variables
-
--   Need to build more powerful primitives
-
-    -   Semaphores
-
-# Why in OS Class?
+## Why in OS Class?
 
 Why are we studying this in OS class? “History” is the one-word answer;
 the OS was the first concurrent program, and many techniques were
 created for use within the OS. Later, with multi-threaded processes,
 application programmers also had to consider such things.
-
-# Questions?
