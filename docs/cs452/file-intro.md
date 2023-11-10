@@ -1,19 +1,16 @@
 # Files And Directories
 
--   File - A file is simply a linear array of bytes, each of which you
+- File - A file is simply a linear array of bytes, each of which you
     can read or write
-
--   Directory - A directory, like a file, also has a low-level name
+- Directory - A directory, like a file, also has a low-level name
     (i.e., an inode number), but its contents are quite specific: it
     contains a list of (user-readable name, low-level name) pairs
 
 ## Example
 
-<figure>
-<img src="images/dir-tree.png" alt="dir" />
-</figure>
+![dir](images/dir-tree.png)
 
-# Interface
+## Interface
 
 Let’s now discuss the file system interface in more detail. We’ll start
 with the basics of creating, accessing, and deleting files
@@ -40,13 +37,11 @@ to do so.
     read(3, "", 4096) = 0
     close(3) = 0
 
-# Process Sharing
+## Process Sharing
 
-<figure>
-<img src="images/share-file-handle.png" alt="sharing" />
-</figure>
+![sharing](images/share-file-handle.png)
 
-# Buffering
+## Buffering
 
 Most times when a program calls write(), it is just telling the file
 system: please write this data to persistent storage, at some point in
@@ -56,14 +51,12 @@ When a process calls fsync() for a particular file descriptor, the file
 system responds by forcing all dirty (i.e., not yet written) data to
 disk, for the file referred to by the specified file descriptor.
 
-# Getting Information About Files
+## Getting Information About Files
 
 Beyond file access, we expect the file system to keep a fair amount of
 information about each file it is storing. We generally call such data
 about files metadata. To see the metadata for a certain file, we can use
 the stat() or fstat() system calls.
-
-## Example
 
     struct stat {
         dev_t st_dev; // ID of device containing file
@@ -81,33 +74,31 @@ the stat() or fstat() system calls.
         time_t st_ctime; // time of last status change
     };
 
-# Removing Files
+## Removing Files
 
     $ strace rm foo
     ...
     unlink("foo") = 0
     ...
 
--   Removing a file doesn’t wipe it from the disk! The file is still
-    there just not directly accessible! Deleted files can still be
-    recovered (for a while).
+Removing a file doesn’t wipe it from the disk! The file is still
+there just not directly accessible! Deleted files can still be
+recovered (for a while).
 
-# Symbolic Links
+## Symbolic Links
 
--   There is one other type of link that is really useful, and it is
+- There is one other type of link that is really useful, and it is
     called a symbolic link or sometimes a soft link.
-
--   This allows you to create a link or pointer to a file
+- This allows you to create a link or pointer to a file
 
 # Permission Bits
 
     $ ls -l foo.txt
     -rw-r--r-- 1 remzi wheel 0 Aug 24 16:29 foo.txt
 
--   The first character here just shows the type of the file: - for a
+- The first character here just shows the type of the file: - for a
     regular file
-
--   The permissions consist of three groupings: what the owner of the
+- The permissions consist of three groupings: what the owner of the
     file can do to it, what someone in a group can do to the file, and
     finally, what anyone (sometimes referred to as other) can do.
 
@@ -116,14 +107,4 @@ the stat() or fstat() system calls.
 Linux has a single root for its directory while windows has a multi-root
 approach.
 
-    $ mount -t ext3 /dev/sda1 /home/users
-
-# Demo
-
--   Symbolic links
-
--   permissions (chmod, chown)
-
--   Permission bits
-
-# Questions?
+    mount -t ext3 /dev/sda1 /home/users
