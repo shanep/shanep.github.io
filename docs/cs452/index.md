@@ -11,41 +11,41 @@ operating systems. PREREQ: CS 321 and ECE 330.
 
 ## Topics and Schedule
 
-| Week | Day | Topic                                            | Textbook Reading                                                                                    | What Due?     |
-| ---- | --- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------- | ------------- |
-| 1    | Tu  | [Course Introduction](1-course-introduction.md)  |                                                                                                     |               |
-|      | Th  | [C Review](2-c-review.md)                        | [Modern Debugging](/articles/modern-debugging-acm.pdf)                                              |               |
-| 2    | Tu  | Project 0 Introduction                           |                                                                                                     |               |
-|      | Th  | [Testing](3-testing.md)                          | [Coverity](/articles/coverity-acm.pdf)                                                              |               |
-| 3    | Tu  | [Libraries](4-libraries.md)                      |                                                                                                     |               |
-|      | Th  | Project 1 Introduction                           |                                                                                                     | Project 0 Due |
-| 4    | Tu  | [Operating Systems Introduction](intro.md)       | http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf[OSTEP ch2 - Introduction]                           |               |
-|      | Th  | [The Process](cpu-intro.md)                      | http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf[OSTEP ch4 - Abstraction the process]            |               |
-| 5    | Tu  | [Process API](cpu-api.md)                        | http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf[OSTEP ch5 - Process API]                          |               |
-|      | Th  | Project 2 Introduction                           |                                                                                                     | Project 1 Due |
-| 6    | Tu  | [Limited Direct Execution](cpu-mechanisms.md)    | http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf[OSTEP ch6 - Limited Direct Execution]      |               |
-|      | Th  | [Scheduling](cpu-sched.md)                       | http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf[ OSTEP ch7 - Scheduling Introduction]           |               |
-| 7    | Tu  | [Address Spaces](vm-intro.md)                    | https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf[OSTEP ch13 - Address Spaces]                    |               |
-|      | Th  | Project 4 Introduction                           |                                                                                                     | Project 2 Due |
-| 8    | Tu  | [Free Space Management](vm-freespace.md)         | https://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf[OSTEP ch17 - Free Space management]         |               |
-|      | Th  | [Paging](vm-paging.md)                           | https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf[OSTEP ch18 - Paging: Introduction]             |               |
-| 9    | Tu  | [Concurrency](threads-intro.md)                  | https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf[OSTEP ch26 - Concurrency and Threads]      |               |
-|      | Th  | Project 4 Introduction                           |                                                                                                     | Project 3 Due |
-| 10   | Tu  | [Locks](threads-locks.md)                        | https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf[OSTEP ch28 - Locks]                        |               |
-|      | Th  | [Locked Data Structures](threads-locks-usage.md) | https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks-usage.pdf[OSTEP ch29 - Locked Data Structures] |               |
-| 11   | Tu  | [Condition Variables](threads-cv.md)             | https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf[OSTEP ch30 - Condition Variables]             |               |
-|      | Th  | Project 5 Introduction                           |                                                                                                     | Project 4 Due |
-| 12   | Tu  | [Semaphores](threads-sema.md)                    | https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf[OSTEP ch31 - Semaphores]                    |               |
-|      | Th  | [Concurrency Bugs](threads-bugs.md)              | https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf[OSTEP ch32 - Concurrency Bugs]              |               |
-| 13   | Tu  | [Event Based Concurrency](threads-events.md)     | https://pages.cs.wisc.edu/~remzi/OSTEP/threads-events.pdf[OSTEP ch33 - Event Based Concurrency]     |               |
-|      | Th  | Project 6 Introduction                           |                                                                                                     | Project 5 Due |
-| 14   | Tu  | Thanksgiving Break                               |                                                                                                     |               |
-|      | Th  | Thanksgiving Break                               |                                                                                                     |               |
-| 15   | Tu  | [I/O Devices](file-devices.md)                   | https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf[OSTEP ch36 - I/O Devices]                   |               |
-|      | Th  | [Files and Directories](file-intro.md)           | https://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf[OSTEP ch39 - Files and Directories]           | Project 6 Due |
-| 16   | Tu  | [Security](security-intro.md)                    | https://pages.cs.wisc.edu/~remzi/OSTEP/security-intro.pdf[OSTEP ch53 - Security]                    |               |
-|      | Th  | Bonus day                                        |                                                                                                     |               |
-| 17   |     | Final Exam                                       |                                                                                                     |               |
+| Week | Topic                                            | Textbook Reading                                                                                      | What Due?     |
+| ---- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ------------- |
+| 1    | [Course Introduction](1-course-introduction.md)  |                                                                                                       |               |
+|      | [C Review](2-c-review.md)                        | [Modern Debugging](/articles/modern-debugging-acm.pdf)                                                |               |
+| 2    | Project 0 Introduction                           |                                                                                                       |               |
+|      | [Testing](3-testing.md)                          | [Coverity](/articles/coverity-acm.pdf)                                                                |               |
+| 3    | [Libraries](4-libraries.md)                      |                                                                                                       |               |
+|      | Project 1 Introduction                           |                                                                                                       | Project 0 Due |
+| 4    | [Operating Systems Introduction](intro.md)       | [OSTEP ch2 - Introduction](http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf)                           |               |
+|      | [The Process](cpu-intro.md)                      | [OSTEP ch4 - Abstraction the process](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf)            |               |
+| 5    | [Process API](cpu-api.md)                        | [OSTEP ch5 - Process API](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf)                          |               |
+|      | Project 2 Introduction                           |                                                                                                       | Project 1 Due |
+| 6    | [Limited Direct Execution](cpu-mechanisms.md)    | [OSTEP ch6 - Limited Direct Execution](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf)      |               |
+|      | [Scheduling](cpu-sched.md)                       | [OSTEP ch7 - Scheduling Introduction](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf)            |               |
+| 7    | [Address Spaces](vm-intro.md)                    | [OSTEP ch13 - Address Spaces](https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf)                    |               |
+|      | Project 4 Introduction                           |                                                                                                       | Project 2 Due |
+| 8    | [Free Space Management](vm-freespace.md)         | [OSTEP ch17 - Free Space management](https://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf)         |               |
+|      | [Paging](vm-paging.md)                           | [OSTEP ch18 - Paging: Introduction](https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf)             |               |
+| 9    | [Concurrency](threads-intro.md)                  | [OSTEP ch26 - Concurrency and Threads](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf)      |               |
+|      | Project 4 Introduction                           |                                                                                                       | Project 3 Due |
+| 10   | [Locks](threads-locks.md)                        | [OSTEP ch28 - Locks](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf)                        |               |
+|      | [Locked Data Structures](threads-locks-usage.md) | [OSTEP ch29 - Locked Data Structures](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks-usage.pdf) |               |
+| 11   | [Condition Variables](threads-cv.md)             | [OSTEP ch30 - Condition Variables](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf)             |               |
+|      | Project 5 Introduction                           |                                                                                                       | Project 4 Due |
+| 12   | [Semaphores](threads-sema.md)                    | [OSTEP ch31 - Semaphores](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf)                    |               |
+|      | [Concurrency Bugs](threads-bugs.md)              | [OSTEP ch32 - Concurrency Bugs](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf)               |               |
+| 13   | [Event Based Concurrency](threads-events.md)     | [OSTEP ch33 - Event Based Concurrency](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-events.pdf)     |               |
+|      | Project 6 Introduction                           |                                                                                                       | Project 5 Due |
+| 14   | Thanksgiving Break                               |                                                                                                       |               |
+|      | Thanksgiving Break                               |                                                                                                       |               |
+| 15   | [I/O Devices](file-devices.md)                   | [OSTEP ch36 - I/O Devices](https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf)                   |               |
+|      | [Files and Directories](file-intro.md)           | [OSTEP ch39 - Files and Directories](https://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf)           | Project 6 Due |
+| 16   | [Security](security-intro.md)                    | [OSTEP ch53 - Security](https://pages.cs.wisc.edu/~remzi/OSTEP/security-intro.pdf)                    |               |
+|      | Bonus day                                        |                                                                                                       |               |
+| 17   | Final Exam                                       |                                                                                                       |               |
 
 ## Textbook
 
@@ -75,7 +75,7 @@ be graded with the [project grading rubric](grading-rubric.md).
 - [Project 5](https://github.com/shanep/cs452-p5-starter) - This project we will implement a simple bounded queue that can be used in the classic producer and consumer problem.
 - [Project 6](https://github.com/shanep/cs452-p6-starter) - This project you will analyze the results of a previous project and write a report on your findings.
 
-# Course Learning Outcomes
+## Course Learning Outcomes
 
 By the end of this course the student should have achieved the following
 course learning outcomes.

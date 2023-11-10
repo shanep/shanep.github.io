@@ -39,7 +39,7 @@ memory.
 
 ![system call](images/system-call.png)
 
-# Standard Library
+## Standard Library
 
 ![images/c-standard-lib.png](images/c-standard-lib.png)
 
@@ -51,12 +51,12 @@ memory.
 - The OS Takes Control - Needs hardware support
 - Timer interrupt!
 
-# Saving and Restoring Context
+## Saving and Restoring Context
 
 - The OS scheduler decides what to run next
 - A Context switch is what happens when on process is moved off the processor and another is moved on
 
-# Concurrency?
+## Concurrency?
 
 - Now we have to worry about what happens when we get interrupted right in the middle of doing something important
 - Not to worry we will go over that in a future chapter!

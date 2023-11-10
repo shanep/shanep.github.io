@@ -1,24 +1,17 @@
-# What are Libraries
+# Libraries
 
--   A dynamic-link library (DLL or .so) is a module that contains
+- A dynamic-link library (DLL or .so) is a module that contains
     functions and data
-
--   Applications (processes) can use the functions and data in the code
-
--   This is the most common way code is distributed.
-
--   Up until this point you have only ever distributed code in an
+- Applications (processes) can use the functions and data in the code
+- This is the most common way code is distributed.
+- Up until this point you have only ever distributed code in an
     executable (exe)
 
-# Dynamic Libraries
+## Dynamic Libraries
 
--   During compile time the linker stubs out calls to the .dll or .so
-
--   The actual implementation is not added into the image that is saved
-    to disk
-
--   The library is mapped into your applications address space at run
-    time
+- During compile time the linker stubs out calls to the .dll or .so
+- The actual implementation is not added into the image that is saved to disk
+- The library is mapped into your applications address space at run time
 
 ## Load-time dynamic linking
 
@@ -30,83 +23,57 @@ local functions.
 Functions are loaded with system calls such as LoadLibrary or
 LoadLibraryEx (WIN32)
 
-# Advantages of Dynamic Linking
+## Advantages of Dynamic Linking
 
--   Multiple processes that load the same DLL at the same base address
-    will share a single copy of the DLL
-
--   When you update a DLL the applications that use them do not need to
-    be recompiled
-
--   Programs written in different programming languages can call the
-    same DLL functions
+- Multiple processes that load the same DLL at the same base address will share a single copy of the DLL
+- When you update a DLL the applications that use them do not need to be recompiled
+- Programs written in different programming languages can call the same DLL functions
 
 ## Disadvantages of Dynamic Linking
 
-<figure>
-<img src="images/dll-error.png" alt="dll error" />
-</figure>
+![dll error](images/dll-error.png)
 
 ## Loading
 
-<figure>
-<img src="images/dynamic-loading.png" alt="dynamic loading" />
-</figure>
+![dynamic loading](images/dynamic-loading.png)
 
-# Static Libraries
+## Static Libraries
 
--   Similar to dynamic libraries
-
--   Code is added into your application at compile time instead of
+- Similar to dynamic libraries
+- Code is added into your application at compile time instead of
     runtime. The library becomes part of the image saved on disk
-
--   Your application will not have any dependencies that need to be
+- Your application will not have any dependencies that need to be
     resolved at runtime
 
 ## Advantages of Static Linking
 
--   All your code is contained in one file (your exe or lib)
-
--   Easier to ship to a customer
-
--   Could be more secure because you know exactly what you are loading
-
--   Eliminates any issues with missing libraries on the host system
+- All your code is contained in one file (your exe or lib)
+- Easier to ship to a customer
+- Could be more secure because you know exactly what you are loading
+- Eliminates any issues with missing libraries on the host system
 
 ## Disadvantages of Static Linking
 
--   Your program is bigger and takes longer to load into memory
+- Your program is bigger and takes longer to load into memory
+- If there is a security flaw in your linked code you will still be using the old version
+- If library code get faster or adds support for new hardware you are stuck on the old version
 
--   If there is a security flaw in your linked code you will still be
-    using the old version
+![static loading](images/static-loading.png)
 
--   If library code get faster or adds support for new hardware you are
-    stuck on the old version
-
-## Loading
-
-<figure>
-<img src="images/static-loading.png" alt="static loading" />
-</figure>
-
-# Dependency Types
+## Dependency Types
 
 ## Implicit Dependency
 
 Module A is implicitly linked with Module B at compile/link time
 
-<figure>
-<img src="images/implicit-dep.png" alt="implicit" />
-</figure>
+![implicit](images/implicit-dep.png)
 
 ## Explicit Dependency
 
 Module A is not linked with Module B at compile/link time. At runtime,
 Module A dynamically loads Module B via a LoadLibrary type function
 
-<figure>
-<img src="images/explicit-dep.png" alt="explicit" />
-</figure>
+![explicit](images/explicit-dep.png)
 
 ## Forward Dependency
 
@@ -115,6 +82,4 @@ and Module A’s source code actually calls one or more functions in
 Module B. One of the functions called in Module B is actually a
 forwarded function call to Module C
 
-<figure>
-<img src="images/forward-dep.png" alt="forward" />
-</figure>
+![forward](images/forward-dep.png)
