@@ -10,7 +10,9 @@ need to store data about student, faculty, and course entities. The term
 "relation" in "relational database" refers to the relationship of data that is
 stored in a relational database.
 
-TIP: This module will take an estimated 7 - 9 hours to complete.
+::: tip
+This module will take an estimated 7 - 9 hours to complete.
+:::
 
 ## Module Assignments
 

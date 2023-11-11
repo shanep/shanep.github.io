@@ -10,7 +10,9 @@ fairly easy language to pick up if you already know another language
 such as Java or C# there are enough gotchas to warrant reviewing the
 language in depth.
 
+::: tip
 This module will take an estimated 15 - 18 hours to complete.
+:::
 
 ## Module Assignments
 

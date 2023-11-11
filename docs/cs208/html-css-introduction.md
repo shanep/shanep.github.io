@@ -21,7 +21,9 @@ websites. CSS is now the defacto standard for adding style to your
 pages. Check out the [CSS Zen Garden](http://www.csszengarden.com/) for
 a demonstration on the power that modern CSS has!
 
+::: tip
 This module will take an estimated 20 - 25 hours to complete.
+:::
 
 ## Module Assignments
 

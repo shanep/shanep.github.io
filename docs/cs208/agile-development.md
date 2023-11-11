@@ -7,7 +7,9 @@ Agile software development is just a philosophy. In this class we will
 explore using a framework called scrum that has been modified for
 software development uses.
 
+::: tip
 This module will take an estimated 7 - 9 hours to complete.
+:::
 
 ## Module Assignments
 

@@ -21,7 +21,9 @@ in web development. While you are not expected to be an expert in
 everything having a general understanding of the terminology can help
 you be a better web developer.
 
+::: tip
 This module will take an estimated 15 - 18 hours to complete.
+:::
 
 ## Module Assignments
 
