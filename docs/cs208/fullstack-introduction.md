@@ -9,7 +9,9 @@ that run on the web server like NodeJS. There are certain things that
 you should never do on the client side. For example, accessing a
 database (while possible) should never be done from the web browser.
 
+::: tip
 This module will take an estimated 7 - 9 hours to complete.
+:::
 
 ## Module Assignments
 
