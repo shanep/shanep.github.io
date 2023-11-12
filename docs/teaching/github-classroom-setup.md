@@ -59,7 +59,7 @@ The **recommended** format is the single lab format as it provides the
 most flexibility and enables you to use **all** of the features that
 github classrooms provides.
 
-- [Example single lab format](https://github.com/shanep/os-p3-starter)
+- [Example single lab format](https://github.com/shanep/cpp-project-template)
 - [Example Empty repository](https://github.com/shanep/github-classroom-blank-starter)
 - [Example multi lab format](https://github.com/shanep/github-classroom-multi-lab)
 
