@@ -1,7 +1,7 @@
 = Project 5
 include::../../includes/attributes-settings.adoc[]
 
-image::./images/p5-meme.jpg[Fun times, align="center"]
+image::./projects/images/p5-meme.jpg[Fun times, align="center"]
 
 == Overview
 
