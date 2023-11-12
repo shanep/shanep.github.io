@@ -20,12 +20,6 @@ hero:
     alt: Shane K. Panter
 features:
   - icon:
-      src: images/ISO_C++_Logo.svg
-    title: CS 117 C++ for Engineers
-    details: >
-        An introductory course in computer programming using C++.
-    link: /cs117/index
-  - icon:
       src: images/Git-Icon-1788C.svg
     title: CS155 Introduction to Version Control
     details: >
@@ -39,14 +33,6 @@ features:
         An introduction to web development using client-side (HTML/CSS/JavaScript) and
         server-side (Node.js) technologies.
     link: /cs208/index
-  - icon:
-      src: images/security-icon.svg
-    title: CS333 Network Security and Defense
-    details: >
-      Firewalls, virtual private networks, intrusion detection, intrusion
-      prevention, traffic analysis, techniques for responding to network
-      attacks.
-    link: /cs333/index
   - icon:
       src: images/os-icon.svg
     title: CS452/552 Operating Systems
