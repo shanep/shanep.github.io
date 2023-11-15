@@ -14,17 +14,7 @@ satisfied. Thus, you are required to solve the problem as described in the
 specification. For example, if the specification asks you to implement a linked
 list and you implement a hash map your solution would not be correct even though
 your code may pass all the instructor provided tests. Your final grade will be
-reduced up to 40% if you do not follow the specification.
-
-## Rubric
-
-| Criterion         | Percentage | Expert (1)           | Proficient (.9)            | Apprentice (.8)            | Novice (.7)              |
-| ----------------- | ---------- | -------------------- | -------------------------- | -------------------------- | ------------------------ |
-| Testing           | 40%        | Passes 100% of tests | Passes between 90% and 99% | Passes between 79% and 89% | < 79%                    |
-| Code Coverage     | 10%        | 100% Coverage        | Between 90% and 99%        | Between 79% and 89%        | < 79%                    |
-| Documentation     | 10%        | Perfect              | One issue                  | Two issues                 | Three or More            |
-| Retrospective     | 10%        | Perfect              | N/A                        | N/A                        | Below minimum word count |
-| Coding Guidelines | 20%        | Perfect              | One issue                  | Two issues                 | Three or More            |
+reduced up to 50% if you do not follow the specification.
 
 ## Testing
 
@@ -41,13 +31,21 @@ if a user inputs bad data!
 ::: warning
 Students are expected to write tests beyond what is provided for them to ensure
 their code operates as expected. Writing tests is part of the learning process
-and part of the grade for this project.
+and **part of your grade** for this project.
 :::
 
-You are not allowed to change the instructor provided tests in any way.
-You must pass the tests as they are written.
+Some times it is not feasible to write tests for part of your program. For
+example, if the project includes a User Interface (UI) component it is very
+difficult to write automated tests without extensive mocking or complicated
+tooling. In these cases you will be given a pass on the testing criteria for
+that particular part and you will need to detail what manual tests you completed
+in the RETROSPECTIVE.md.
 
-Testing consists of (but is not limited to):
+You are not allowed to change the instructor provided tests in any way, if you
+think there is a bug in the given tests please attend office hours to review
+your findings. You must pass the tests as they are written.
+
+Testing consists of but is not limited to:
 
 - Validating user input
   - User input should not crash your program
@@ -64,8 +62,9 @@ Testing consists of (but is not limited to):
 
 Code coverage is a measure of how much of your code is executed by your tests.
 You are expected to get as close to 100% code coverage as possible. Code that is
-impossible to test without significant mocking or dependency injection does not
-have to be tested and will be clearly called out in the specification.
+difficult to test without significant mocking, dependency injection, or
+threading issues does not have to be tested and will be clearly called out in
+the specification.
 
 ## Documentation
 
@@ -144,15 +143,16 @@ it is expected that the **Experience** section is at least 200 words long.
 I would like you to address the following questions as well as anything
 else you would like to share.
 
-- How did you test your project?
+- How did you test your project? Were you able to rely on automated tests or
+  did you have to manually test your code?
 - Were there any things that you struggled with?
 - Were there any parts of this lab that were unclear or poorly specified?
 - Were you able to get the entire project done?
 - Detail one new thing you learned.
 - Anything else you would like to share is awesome and encourage 😃.
 
-You must include any graphs, screenshots or other artifacts as
-requested. You can reference the
+If the assignments ask you to include any graphs, screenshots or other artifacts
+as they must display correctly when viewed on github. You can reference the
 [markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images)
 help docs for how to include images.
 
@@ -163,9 +163,11 @@ write NONE in this section.
 
 For the **Sources used section** you must detail any sources you used outside of
 the textbook or course website. If you write NONE in this section it is assumed
-that you didn’t use google at all. Be safe CITE!
+that you didn’t use google at all. Be safe CITE! Remember that using ChatGPT,
+Google Bard, or any other AI generated text is considered a source and must be
+listed here.
 
-## Coding Guidelines
+## General Coding Guidelines
 
 ### Global Variables
 
@@ -212,7 +214,7 @@ ignores whitespace doesn’t mean you should as well.
 ### Spelling and Grammar
 
 I generally do not care about spelling or grammar mistakes, it is not an
-area I excel in :) The only exception to this rule is if your writing is
+area I excel in :). The only exception to this rule is if your writing is
 so bad I literally can’t make heads or tails of what you are trying to
 say. At a minimum you should spell check your documents and attempt to
 write as clearly as possible. [Spell checkers](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
@@ -230,6 +232,6 @@ may be wrong on purpose. Learning how to read and fix other engineers
 code is a very important skill to learn. You take responsibility for
 100% of the code that you submit regardless of who originally wrote it.
 
-Some of the starter code will have **intentional defects**! That your
+Some of the starter code will have **intentional defects** that your
 instructor intends for you to fix! Do NOT assume that all code given to
 you is perfect.
