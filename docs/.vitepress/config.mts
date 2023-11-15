@@ -6,7 +6,8 @@ export default defineConfig({
   description: "Shane's Personal Site",
 
   markdown: {
-    theme: { light: 'github-light', dark: 'github-dark' }
+    theme: { light: 'github-light', dark: 'github-dark' },
+    math: true
   },
   cleanUrls: true,
 

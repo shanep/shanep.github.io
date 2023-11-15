@@ -2,11 +2,21 @@
 
 ## Rubric
 
-| Criterion                 | Percentage | Expert (1)           | Proficient (.9)            | Apprentice (.8)            | Novice (.7)              |
-| ------------------------- | ---------- | -------------------- | -------------------------- | -------------------------- | ------------------------ |
-| Testing                   | 50%        | Passes 100% of tests | Passes between 90% and 99% | Passes between 79% and 89% | < 79%                    |
-| Code Coverage             | 10%        | Between 90% - 100%   | Between 80% - 89%          | Between 70% - 79%          | < 69%                    |
-| Retrospective             | 10%        | Perfect              | N/A                        | N/A                        | Below minimum word count |
-| General Coding Guidelines | 20%        | Perfect              | One issue                  | Two issues                 | Three or More            |
+Your grade will be calculated with the following weights and formula:
+
+**Weights:**
+
+- 50% - Testing
+  - Number of tests Passed / Total Number of Tests
+- 10% - Code Coverage
+  - Number of functions covered / Total Number of Functions
+- 10% - Retrospective
+  - Criteria detailed below
+- 20% - General Coding Guidelines
+  - Criteria detailed below
+
+**Formula:**
+
+$$Grade = (0.5 * Testing\%) + (0.1 * Coverage\%) + (0.1 * Retro\%) + (0.2 * General\%)$$
 
 <!--@include: ../../parts/rubric-boiler.md-->
