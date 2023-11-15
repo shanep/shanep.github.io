@@ -12,11 +12,11 @@ Your grade will be calculated with the following weights and formula:
   - Number of functions covered / Total Number of Functions
 - 10% - Retrospective
   - Criteria detailed below
-- 20% - General Coding Guidelines
+- 30% - General Coding Guidelines
   - Criteria detailed below
 
 **Formula:**
 
-$$Grade = (0.5 * Testing\%) + (0.1 * Coverage\%) + (0.1 * Retro\%) + (0.2 * General\%)$$
+$$Grade = (0.5 * Testing\%) + (0.1 * Coverage\%) + (0.1 * Retro\%) + (0.3 * General\%)$$
 
 <!--@include: ../../parts/rubric-boiler.md-->

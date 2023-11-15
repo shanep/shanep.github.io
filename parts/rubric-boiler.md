@@ -66,6 +66,16 @@ difficult to test without significant mocking, dependency injection, or
 threading issues does not have to be tested and will be clearly called out in
 the specification.
 
+::: warning
+
+Functions that you can exclude from the code coverage report will be clearly
+denoted in the project specification. You can **NOT** exclude any functions that
+are not explicitly called out in the specification in order to artificially
+inflate your code coverage metric. Doing so, and getting caught, will result in
+a 0% for this section of the rubric.
+
+:::
+
 ## Retrospective
 
 Each programming project contains a file name Retrospective.md. While I really
