@@ -58,78 +58,13 @@ Testing consists of but is not limited to:
 - Implementing header files as defined
 - Using the API calls that are explicitly called out in the specification.
 
-## Code Coverage
+### Code Coverage
 
 Code coverage is a measure of how much of your code is executed by your tests.
 You are expected to get as close to 100% code coverage as possible. Code that is
 difficult to test without significant mocking, dependency injection, or
 threading issues does not have to be tested and will be clearly called out in
 the specification.
-
-## Documentation
-
-For the purpose of grading there are two important things to note.
-
-1. Each function (method) or class must have a header documentation string
-   specifying what the function does, what each function parameter does, and
-   what the return value is.
-2. Documentation inside a function (method) is only necessary when you have
-   exceptionally complex code or you need to detail **why** you are doing
-   something non-obvious or against what has been taught in class or the
-   textbook.
-
-Your documentation string will be language dependent. For example in
-Java you will use [JavaDoc](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html)
-while Javascript will use [JSDoc](https://jsdoc.app/) and C/C++ will use
-[Doxygen](https://www.doxygen.nl/). If you have any questions as to what
-documentation tool you should be using you need to reach out to your
-instructor or TA for guidance.
-
-::: code-group
-
-```java
-/**
- * Validates a chess move.
- *
- * @param fromFile file from which a piece is being moved
- * @param fromRank rank from which a piece is being moved
- * @param toFile   file to which a piece is being moved
- * @param toRank   rank to which a piece is being moved
- * @return         true if the move is valid, otherwise false
- * @since          1.0
- */
-boolean isValidMove(int fromFile, int fromRank, int toFile, int toRank) {
-    // ...body
-}
-```
-
-```javascript
-/**
- * Updates the current position of the mouse given an x,y coordinate
- *
- * @param {double} x The x coordinate of the mouse
- * @param {double} y The y coordinate of the mouse
- */
-function updateMouseLocation(x, y) {
-    // ...body
-}
-```
-
-```c++
-/**
-* @brief Create a new list with callbacks that know how to deal with the
-* data that list is storing. The caller must pass the list to list_destroy
-* when finished to free any memory that was allocated.
-*
-* @param destroy_data Function will free the memory for user supplied data
-* @param compare_to Function that will compare two user data elements
-* @return struct list* pointer to the newly allocated list.
-*/
-LAB_EXPORT list_t *list_init(void (*destroy_data)(void *),
-                            int (*compare_to)(const void *, const void *));
-```
-
-:::
 
 ## Retrospective
 
@@ -168,6 +103,12 @@ Google Bard, or any other AI generated text is considered a source and must be
 listed here.
 
 ## General Coding Guidelines
+
+For all projects the following guidelines are enforced. Your project will be
+**spot checked** for these issues and if any are found you will lose _5 points_
+per issue found. Not every issue will be caught by the spot checks so don't
+assume that just because you didn't lose points on a project that you won't lose
+points in a future project.
 
 ### Global Variables
 
@@ -235,3 +176,87 @@ code is a very important skill to learn. You take responsibility for
 Some of the starter code will have **intentional defects** that your
 instructor intends for you to fix! Do NOT assume that all code given to
 you is perfect.
+
+### Documentation
+
+For the purpose of grading there are two important things to note.
+
+1. Each function (method) or class must have a header documentation string
+   specifying what the function does, what each function parameter does, and
+   what the return value is.
+2. Documentation inside a function (method) is only necessary when you have
+   exceptionally complex code or you need to detail **why** you are doing
+   something non-obvious or against what has been taught in class or the
+   textbook.
+
+Your documentation string will be language dependent. For example in
+Java you will use [JavaDoc](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html)
+while Javascript will use [JSDoc](https://jsdoc.app/) and C/C++ will use
+[Doxygen](https://www.doxygen.nl/). If you have any questions as to what
+documentation tool you should be using you need to reach out to your
+instructor or TA for guidance.
+
+::: code-group
+
+```java
+/**
+ * Validates a chess move.
+ *
+ * @param fromFile file from which a piece is being moved
+ * @param fromRank rank from which a piece is being moved
+ * @param toFile   file to which a piece is being moved
+ * @param toRank   rank to which a piece is being moved
+ * @return         true if the move is valid, otherwise false
+ * @since          1.0
+ */
+boolean isValidMove(int fromFile, int fromRank, int toFile, int toRank) {
+    // ...body
+}
+```
+
+```javascript
+/**
+ * Updates the current position of the mouse given an x,y coordinate
+ *
+ * @param {double} x The x coordinate of the mouse
+ * @param {double} y The y coordinate of the mouse
+ */
+function updateMouseLocation(x, y) {
+    // ...body
+}
+```
+
+```c++
+/**
+* @brief Create a new list with callbacks that know how to deal with the
+* data that list is storing. The caller must pass the list to list_destroy
+* when finished to free any memory that was allocated.
+*
+* @param destroy_data Function will free the memory for user supplied data
+* @param compare_to Function that will compare two user data elements
+* @return struct list* pointer to the newly allocated list.
+*/
+LAB_EXPORT list_t *list_init(void (*destroy_data)(void *),
+                            int (*compare_to)(const void *, const void *));
+```
+
+:::
+
+### Compiler Warnings
+
+Warnings emitted by the compiler or static analysis tools need to be fixed.
+Under no circumstances should you ignore compiler warnings. In the **very** rare
+case that a warning cannot be fixed either because it is part of the assignment
+or a result of some other external dependency your instructor will clearly call
+this out and give you instructions on how to disable the warning. You are not
+allowed to disable any warnings without explicit permission from your
+instructor. If you submit code with warnings disabled you forfeit 100% of the
+points from the appropriate section in the rubric.
+
+::: tip
+
+Warnings are something that is really easy to automatically check for.
+Thus, unlike the other issues that may slip past the grader it is highly
+unlikely that you will be given a pass on this criteria. :)
+
+:::
