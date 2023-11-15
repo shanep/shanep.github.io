@@ -58,7 +58,7 @@ Testing consists of but is not limited to:
 - Implementing header files as defined
 - Using the API calls that are explicitly called out in the specification.
 
-### Code Coverage
+## Code Coverage
 
 Code coverage is a measure of how much of your code is executed by your tests.
 You are expected to get as close to 100% code coverage as possible. Code that is
@@ -74,9 +74,13 @@ minimum **some** students will take advantage of that and submit nothing of
 substance. The Retrospective is important for me as it gives some insight into
 your learning process and helps me understand where you may be struggling. Thus,
 it is expected that the **Experience** section is at least 200 words long.
+Points will be deducted based on how far below the required word count you are.
+Additionally, up to 50% of your score for this section can be deducted if filler
+sentences are used to artificially inflate the word count. 200 words is a pretty
+low bar for a college level course.
 
-I would like you to address the following questions as well as anything
-else you would like to share.
+Having trouble figuring out what to write? Here are some questions to get you
+started.
 
 - How did you test your project? Were you able to rely on automated tests or
   did you have to manually test your code?
