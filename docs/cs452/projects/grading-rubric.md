@@ -1,3 +1,7 @@
+---
+next: false
+prev: false
+---
 # Grading Rubric
 
 ## Rubric
