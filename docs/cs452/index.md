@@ -59,9 +59,9 @@ canvas. All Projects will be graded with the
 [project grading rubric](grading-rubric.md).
 
 - Projects - 70%
-- Final Exam - 30%
-  - The final exam will cover the textbook reading assignments assigned throughout the semester.
-  - The final exam must be taken in the testing center.
+- Exams - 30%
+  - Several exams covering the textbook reading assignments and project learning objectives.
+  - All exams will be on canvas and must be taken in the testing center.
 
 ## Course Learning Outcomes
 
