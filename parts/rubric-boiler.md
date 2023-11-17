@@ -86,8 +86,7 @@ your learning process and helps me understand where you may be struggling. Thus,
 it is expected that the **Experience** section is at least 200 words long.
 Points will be deducted based on how far below the required word count you are.
 Additionally, up to 50% of your score for this section can be deducted if filler
-sentences are used to artificially inflate the word count. 200 words is a pretty
-low bar for a college level course.
+sentences are used to artificially inflate the word count.
 
 Having trouble figuring out what to write? Here are some questions to get you
 started.

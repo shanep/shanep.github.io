@@ -49,6 +49,7 @@ will set it as the default method when pulling down code.
 git config --global pull.rebase true
 git config --global fetch.prune true
 git config --global diff.colorMoved zebra
+git config --global core.ignorecase false
 ```
 
 Additional reading:

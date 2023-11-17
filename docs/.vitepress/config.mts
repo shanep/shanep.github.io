@@ -128,7 +128,7 @@ function cs452(): DefaultTheme.SidebarItem[] {
       text: 'CS452',
       items: [
         { text: 'Syllabus', link: 'index'},
-        { text: 'Grading Rubric', link: 'grading-rubric' },
+        { text: 'Grading Rubric', link: 'projects/grading-rubric' },
         { text: 'Projects', link: 'projects/index'}
       ]
     },

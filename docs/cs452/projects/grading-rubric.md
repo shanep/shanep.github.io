@@ -19,4 +19,4 @@ Your grade will be calculated with the following weights and formula:
 
 $$Grade = (0.5 * Testing\%) + (0.1 * Coverage\%) + (0.1 * Retro\%) + (0.3 * General\%)$$
 
-<!--@include: ../../parts/rubric-boiler.md-->
+<!--@include: ../../../parts/rubric-boiler.md-->
