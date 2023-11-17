@@ -129,18 +129,7 @@ function cs452(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Syllabus', link: 'index'},
         { text: 'Grading Rubric', link: 'grading-rubric' },
-      ]
-    },
-    {
-      text: 'Projects',
-      items: [
-        { text: 'Project 0', link: 'p0'},
-        { text: 'Project 1', link: 'p1'},
-        { text: 'Project 2', link: 'p2'},
-        { text: 'Project 3', link: 'p3'},
-        { text: 'Project 4', link: 'p4'},
-        { text: 'Project 5', link: 'p5'},
-        { text: 'Project 6', link: 'p6'},
+        { text: 'Projects', link: 'projects/index'}
       ]
     },
     {
