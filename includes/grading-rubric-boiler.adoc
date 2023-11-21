@@ -47,6 +47,7 @@ Correctness consists of (but is not limited to):
 * Defining https://en.wikipedia.org/wiki/Loop_invariant[loop invariants] where appropriate.
 * Implementing header files as defined
 * Using the API calls that are explicitly called out in the specification.
+* Ignoring Compiler warnings
 
 === Global Variables
 
