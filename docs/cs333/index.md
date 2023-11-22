@@ -21,12 +21,12 @@ attacks. PREREQ: CS253 or CS331 or ITM455.
 | 6    | Secure Network Design (ch6)                                          | Virtual private network (VPN)   |                      |
 | 7    | Wireless, Mobile, and IoT Security (ch7)                             | RADIUS Server                   | Quiz 3 (ch5 - ch6)   |
 | 8    | Application Attacks (ch8)                                            | Pass the hash                   |                      |
-| 9    | Secure Application Development (ch9)                                 | Application fuzzing             | Quiz 3 (ch7 - ch8)   |
+| 9    | Secure Application Development (ch9)                                 | Application fuzzing             | Quiz 4 (ch7 - ch8)   |
 | 10   | Endpoint Security (ch10)                                             | Host security                   |                      |
 | 11   | Spring Break                                                         |                                 |                      |
-| 12   | Cloud Security (ch11)                                                | Secure virtualization           | Quiz 4 (ch9 - ch10)  |
+| 12   | Cloud Security (ch11)                                                | Secure virtualization           | Quiz 5 (ch9 - ch10)  |
 | 13   | Physical Security (ch12) / Standards, Policies and Procedures (ch13) | In Class Ping Sweep             |                      |
-| 14   | Incident Response (ch14) / Risk Management (ch15)                    | In Class Ping Sweep             | Quiz 5 (ch11 - ch13) |
+| 14   | Incident Response (ch14) / Risk Management (ch15)                    | In Class Ping Sweep             | Quiz 6 (ch11 - ch13) |
 | 15   | Security Assessment (ch16) / Digital Forensics (ch17)                | In Class Ping Sweep             |                      |
 | 16   | Privacy (ch18) / Cybersecurity Resilience (ch19)                     |                                 |                      |
 | 17   | Final Exam                                                           |                                 |                      |
