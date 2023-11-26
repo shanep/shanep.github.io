@@ -2,8 +2,15 @@
 ## Grading Policy
 
 Grades will be posted in canvas and calculated with the percentages specified
-below. Final grades will not be rounded. I offer plenty of Extra Credit
+below. **Final grades will not be rounded**. I offer plenty of Extra Credit
 Opportunities that you can take advantage of to improve your final grade 😃.
+
+I, like most people, am far from perfect. Some semesters I have an overwhelming
+number of students to track and things unintentionally fall through the
+cracks. If I made a mistake with your grade don’t panic! Take a deep
+breath and just send me an email with the details and I will take a
+look. Remember everything will be OK, I am here to help you as best I
+can 😃.
 
 | Letter Grade | Percentage |
 | ------------ | ---------- |
@@ -29,49 +36,34 @@ not exceed 2.5% of the total points offered. For example, the maximum
 number of extra credit points that you can earn if the total points
 offered is 1000 would be 25.
 
-## Standing Extra Credit
-
-Typos and Bugs - If you find any typos or bugs in the course materials, email
+- Typos and Bugs - If you find any typos or bugs in the course materials, email
 me what you found. You can claim this extra credit once at the end of the
 semester for up to 10 points (1 point per error found). I have strategically
 placed several spelling and grammar errors for you to find so there is plenty of
-opportunity to get the maximum number of points offered. So make sure and read
+opportunities to get the maximum number of points offered. So make sure and read
 everything with an eagle 🦅 eye so you can rack up those points!
-
-Use of AI technologies - If you are able to solve 100% of any assignment with
+- Use of AI technologies - If you are able to solve 100% of any assignment with
 AI, I will give you extra credit if you can submit proof that it was in fact
 100% AI generated. See the AI 🤖 section for more details.
 
 ## Homework Policy
 
-The following sections detail all the policies regarding homework which
-past students have told me is the most fun part of the class! Unless
-explicitly instructed otherwise students are expected to work on their
-own. All group work will be **clearly** marked so there should be no
-confusion. The [Kount Computer Learning
+Unless explicitly instructed otherwise students are expected to work on their
+own. All group work will be **clearly** marked so there should be no confusion.
+The [Kount Computer Learning
 Center](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring)
-(CCP 241) is accessible 24/7 by proxy card to all students enrolled in
-CS courses. Machines in the Kount Computer Tutoring Center have all the
-software you will need this semester.
+(CCP 241) is accessible 24/7 by proxy card to all students enrolled in CS
+courses. Machines in the Kount Computer Tutoring Center have all the software
+you will need this semester.
 
-## Programming Projects
+All of your programming assignments will be submitted using Git. Submissions via
+any other method such engraving your source code onto a stone tablet, or wizard
+scroll 📜 will not be accepted under any circumstances. You are **required** to
+make consistent commits and pushes to your Git repository over the course of
+working on your project. For example if you have 3 weeks to work on a project I
+should see a minimum of 3 commits (1 per week).
 
-One of the cool things about my class is I encourage students to use their
-projects as a way to build their portfolio. I have had several students get
-internships and jobs because they were able to show off their projects to
-potential employers. So treat all your projects as if you were going to show
-them off to a potential employer that wants to hire you for your dream job!
-
-All of your programming assignments will be submitted using GitHub. You
-are responsible for ensuring all your code is properly pushed to GitHub.
-Submissions via any other method such as email, stone tablet, or wizard
-scroll 📜 will not be accepted under any circumstances. You are
-**required** to make consistent commits and pushes to your GitHub
-repository over the course of working on your project. For example if
-you have 3 weeks to work on a project I should see a minimum of 3
-commits (1 per week).
-
-Making regular pushes to GitHub is important because it is what I will
+Making regular pushes to Git is important because it is what I will
 look at if you request an extension for a project. Additionally, making
 regular commits and pushing to GitHub will prevent you from losing work
 if your local computer has a hardware failure.
@@ -91,16 +83,7 @@ help instead of searching for a solution online.
 
 :::
 
-## Errors and Omissions
-
-I make mistakes all the time. Some semesters I have an overwhelming
-number of students to track and things unintentionally fall through the
-cracks. If I made a mistake with your grade don’t panic! Take a deep
-breath and just send me an email with the details and I will take a
-look. Remember everything will be OK, I am here to help you as best I
-can 😃.
-
-## AI 🤖
+## AI Policy
 
 Developer tools such as an IDE or AI should be used to **enhance** your
 skills not replace them! AI in the hands of an experienced developer
@@ -139,14 +122,15 @@ can **always** give the best solution to any problem then you may want
 to switch majors because why would a company hire you if they can just
 use ChatGPT to write all their code?
 
-Take for example the code snippet shown below. Can you spot the problem?
-While both solutions do work and produce correct results, the AI
-generated solution is O(N) while the **better** solution is O(1). If you
-don’t know why one is better than the other then I would strongly
-suggest you not use AI tools until you get more experience.
+Take for example the two possible solutions for a `size()` method in a typical
+linked list. Can you spot the problem? While both solutions do work and produce
+correct results, the AI generated solution is O(N) while the **better** solution
+is O(1). If you don’t know why one is better than the other then I would
+strongly suggest you not use AI tools until you get more experience.
+
+::: code-group
 
 ```java
-//Two different approaches to writing a size function in a Linked List
 //ChatGPT generated - O(N) performance
 public int size() {
     int size = 0;
@@ -157,11 +141,16 @@ public int size() {
     }
     return size;
 }
+```
+
+```java
 //Hand coded - O(1) performance
 public int size() {
     return size;
 }
 ```
+
+:::
 
 ::: danger
 
@@ -195,30 +184,26 @@ announcements or updates given during class.
 
 ## Late Work Policy
 
-Once grades have been posted to canvas no further submissions will be
-accepted unless prior arrangements have been made. No work or extra
-credit will be accepted after the **last day of course instruction**,
-the semester has to end at some point so plan accordingly. Work
-submitted 1 second late is treated the same as work submitted 1 day
-late. You can find the last day of course instruction at the
+All homework assignments can be submitted up to **2 days late with no penalty**.
+Once grades have been posted to canvas no further submissions will be accepted
+unless prior arrangements have been made. No work or extra credit will be
+accepted after the **last day of course instruction**, the semester has to end
+at some point so plan accordingly. Work submitted 1 second late is treated the
+same as work submitted 1 day late. You can find the last day of course
+instruction at the
 [registrar](https://www.boisestate.edu/registrar/boise-state-academic-calendars/).
 
-## Late Work - Projects
+::: info
 
-All programming assignments can be submitted up to **2 days late with no
-penalty**. You can request an extra day if the following conditions are
-met:
+For classes taught in the first 5wk or 7wk session of the semester, the last day
+of course instruction is **NOT** the same as a regular semester. Please consult
+the
+[registrar](https://www.boisestate.edu/registrar/boise-state-academic-calendars/)
+for the last day of course instruction for your specific class.
 
-1. You must have **accepted** the GitHub assignment at least 2 days before the
-   due date
-2. You must have at least 1 commit that was done 1 day before the due date
-3. You must make the request **before** 5pm the day it is due.
+:::
 
-If you have satisfied the criteria stated above then you may email your
-instructor asking for 1 additional day on top of the existing 2 days for
-a total of 3 days late with no penalty 😃.
-
-## Late Work - Exams and Quizzes
+## Exam and Quiz Policy
 
 All exams and quizzes must be taken within the time frame specified on
 canvas unless prior arrangements have been made. Clearly we can’t have
@@ -229,15 +214,15 @@ were outside of the students control. Some exams or quizzes may require
 you to go to the testing center. It is the students responsibility to
 schedule their own appointment in a timely fashion.
 
-## Late Work - Class Interaction
+## Class Interaction Policy
 
-All class interaction assignments must be completed within the time
-frame specified on canvas or **during the lecture** unless prior
-arrangements have been made. Assignments that are intended to be
-interactive are only valuable when everyone is participating at the same
-time. It is not fair for a student to expect their fellow classmates to
-respond or watch your submission that is 2 days late when everyone else
-submitted on time. The secret code for the syllabus quiz is "green".
+All class interaction assignments must be completed within the time frame
+specified on canvas or **during the lecture** unless prior arrangements have
+been made. Assignments that are intended to be interactive are only valuable
+when everyone is participating at the same time. It is not fair for a student to
+expect their fellow classmates to respond or watch your submission that is late
+when everyone else submitted on time. The secret code for the syllabus quiz is
+"green".
 
 This applies (but is not limited to) to the following assignment types:
 
@@ -255,20 +240,18 @@ email, canvas, and office hours as detailed below. Other methods such as
 [carrier pigeon](https://www.iwm.org.uk/history/the-incredible-carrier-pigeons-of-the-first-world-war)
 🐦 are not supported at this time.
 
-I get a lot of email and sometimes I miss messages, so if you don’t
-receive a response from me after 48hrs please check to make sure you are
-sending the email from BroncoMail and send a follow-up email. You can
-also send an email directly in canvas if your emails are not going
-through.
-
-## Email
-
-I have lots of students. In order to facilitate quick communication
-please include the following information in all emails to myself or the
-class TA/GA.
+I get a lot of email and sometimes I miss messages, so if you don’t receive a
+response from me after 48hrs please check to make sure you are sending the email
+from BroncoMail and send a follow-up email. You can also send an email directly
+in canvas if your emails are not going through. To help facilitate quick
+communication please include the following information in all emails to myself
+or the class TA/GA.
 
 - First and Last name
-- Student ID - I need this so I can look you up in the system.
+- Student ID - I need this so I can look you up in the system. You would be
+  surprised how many students have the same name or have changed their default
+  name in the system to something other than their legal name so it is difficult
+  to locate them in a timely manner.
 - The class and section number that you are in for example CS123 - section 1
 
 BroncoMail is the official communication channel through which all
@@ -285,39 +268,13 @@ returned within 48hrs on the following business day. Emails should be
 reserved for questions that are not appropriate for a public forum such
 as grades or other personal issues.
 
-## Discussion Board
-
-We will be using an online discussion board for this course. Rather than
-emailing questions to me, please post your questions on the discussion
-board and get replies from myself as well as your classmates! You can
-also post private messages to me. You are expected to log onto the board
-at least once a week and read all the posts.
-
-## Office Hours
+## Office Hours Policy
 
 For classes taught in the online or remote format office hours will be
-by appointment. For classes that are taught in the face to face format
-office hours will be by posted in Canvas. If I forgot to post them
-please just email me and ask 🙋.
-
-## University Policies
-
-Please review all linked policies below. Violations of university
-policies can result in the student receiving a failing grade (F) in the
-course.
-
-- [Student Code of Conduct](https://www.boisestate.edu/policy/student-affairs/code-of-conduct/)
-- [Academic Integrity](https://www.boisestate.edu/registrar/general-information-and-policies/academic-integrity/)
-- [Privacy policy](https://www.boisestate.edu/privacy/)
-- [COVID Policy](https://docs.google.com/document/d/10yCB9fiThidW9cNt8Eyqc1qVwoXfiLugbjyt_sg5fU8/edit#heading=h.x3pznnnsahws)
-- [Incomplete Policy](https://www.boisestate.edu/registrar/degree-requirements/grades/).
-
-## Student support
-
-- [Educational access center](https://eac.boisestate.edu/)
-- [Support resources](https://www.boisestate.edu/online/support-resources/)
-- [Academic support services](https://www.boisestate.edu/aasc/academicsupportservices/)
-- [Online student services](https://www.boisestate.edu/online/student-services/)
+accessible on canvas by appointment. For classes that are taught in the face to
+face format office hours will only be available in person with times posted in
+Canvas. If you can not find the office hours appointment link in canvas please
+email me ASAP as I sometimes forget to post them at the start of the semester.
 
 ## Time Commitment
 
@@ -342,3 +299,21 @@ not impossible to recover from.
 | 1       | 5               | 45 hrs      | 9 hrs                  |
 | 3       | 7               | 135 hrs     | 19 hrs                 |
 | 3       | 15              | 135 hrs     | 9 hrs                  |
+
+## University Policies
+
+All students are required to be familiar with the policies posted below. Please
+review all linked policies below. Violations of university policies can result
+in the student receiving a failing grade (F) in the course.
+
+- [Student Code of Conduct](https://www.boisestate.edu/policy/student-affairs/code-of-conduct/)
+- [Academic Integrity](https://www.boisestate.edu/registrar/general-information-and-policies/academic-integrity/)
+- [Privacy policy](https://www.boisestate.edu/privacy/)
+- [Incomplete Policy](https://www.boisestate.edu/registrar/degree-requirements/grades/)
+
+## Student support
+
+- [Educational access center](https://www.boisestate.edu/eac/)
+- [Support resources](https://www.boisestate.edu/online/support-resources/)
+- [Academic support services](https://www.boisestate.edu/aasc/academicsupportservices/)
+- [Online student services](https://www.boisestate.edu/online/student-services/)
