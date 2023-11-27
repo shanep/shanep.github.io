@@ -10,9 +10,6 @@ hero:
   tagline: Super fancy Website
   actions:
     - theme: brand
-      text: CV
-      link: /cv/index
-    - theme: alt
       text: teaching
       link: /teaching/index
   image:
