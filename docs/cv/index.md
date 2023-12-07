@@ -1,44 +1,13 @@
 # Shane K. Panter
 
 - Master of Science in Computer Science, Boise State University, 2013
-  - Area of emphasis - Machine Learning
 
 ## Industry Experience
 
 - **September 2012 - Present** Senior Software Engineer, Foundation Code
-  - Worked with the DWFToolkit from AutoDesk
-  - Worked on extensions to Visual Manufacturing (Infor)
-  - Built and maintained custom solutions using AutoCAD Mechanical and ObjectARX
-  - Built and maintained software to generate and manage DOT approved VIN numbers
-  - Recover and Secured company network assets after internal Cyber Attack
-  - Perform log file analysis to identify malicious internal threats
-
 - **May 2011 - September 2012** System Firmware Engineer, Hewlett Packard
-  - Worked in both kernel (Windows CE) and user space
-  - Collaborated with engineering teams in India and Brazil
-  - Responsible for the maintenance and development of the Energy Star framework components on enterprise LaserJet printers
-
 - **June 2005 - May 2011** Software Developer / Cybersecurity, Western Trailer
-  - Configured and Secured SQL Server Reporting Services (SSRS)
-  - Configured and Secured Microsoft Sharepoint Services
-  - Configured and Secured Microsoft SQL Server
-  - Managed Active Directory for 50+ machines and 100+ users
-  - Configured and Secured company VPN infrastructure between 2 states and multiple remote locations
-  - Lean Knowledge certified by the Society of Manufacturing Engineers Certificate No. 112833
-  - Developed custom water marking solution to track documents in a manufacturing environment
-
 - **August 2002 - June 2005** Network Technician, Price Electric
-  - Installed and programmed structured wiring and home automation systems (i-touch)
-  - Configured and racked servers and switches for commercial and residential buildings
-  - Installed low voltage and high voltage electrical and networking systems
-
-### Technologies
-
-- Operating Systems: OSX, Linux (Fedora, Ubuntu, RedHat), Windows
-- Languages: Java, C# (.NET core / compact embedded), C, C++, JavaScript
-- Databases: MSSql, MySql, Sqlite3
-- ERP Systems: Visual Manufacturing, Microsoft Dynamics NAV
-- Other: SSRS, Sharepoint (2009)
 
 ## Academic Experience
 
