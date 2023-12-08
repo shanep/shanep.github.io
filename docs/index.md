@@ -7,13 +7,14 @@ titleTemplate: Personal Website
 hero:
   name: Shane K. Panter
   text: "BOOM!"
+  tagline: Assistant Clinical Professor
   actions:
-    - theme: alt
-      text: teaching
-      link: /teaching/index
     - theme: brand
       text: CV
       link: /cv/index
+    - theme: alt
+      text: teaching
+      link: /teaching/index
   image:
     src: images/me.jpg
     alt: Shane K. Panter

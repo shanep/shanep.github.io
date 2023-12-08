@@ -66,6 +66,7 @@ function cs155(): DefaultTheme.SidebarItem[] {
       text: 'CS155',
       items: [
         { text: 'Syllabus', link: 'index'},
+	{ text: 'Projects', link: 'projects/index'}
       ]
     },
     {
@@ -75,8 +76,7 @@ function cs155(): DefaultTheme.SidebarItem[] {
         { text: 'Git Introduction', link: 'git-introduction' },
         { text: 'Git Basics', link: 'git-basics' },
         { text: 'Git Branching and Merging', link: 'git-branching-and-merging' },
-        { text: 'Configure Github', link: 'configure-github' },
-        { text: 'Github', link: 'github' },
+     	{ text: 'Github', link: 'github' },
       ]
     }
   ]
