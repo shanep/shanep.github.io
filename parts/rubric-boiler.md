@@ -39,7 +39,7 @@ example, if the project includes a User Interface (UI) component it is very
 difficult to write automated tests without extensive mocking or complicated
 tooling. In these cases you will be given a pass on the testing criteria for
 that particular part and you will need to detail what manual tests you completed
-in the RETROSPECTIVE.md.
+by commenting your code with the details.
 
 You are not allowed to change the instructor provided tests in any way, if you
 think there is a bug in the given tests please attend office hours to review
@@ -58,7 +58,7 @@ Testing consists of but is not limited to:
 - Implementing header files as defined
 - Using the API calls that are explicitly called out in the specification.
 
-## Code Coverage
+### Code Coverage
 
 Code coverage is a measure of how much of your code is executed by your tests.
 You are expected to get as close to 100% code coverage as possible. Code that is
@@ -75,45 +75,6 @@ inflate your code coverage metric. Doing so, and getting caught, will result in
 a 0% for this section of the rubric.
 
 :::
-
-## Retrospective
-
-Each programming project contains a file name Retrospective.md. While I really
-don’t like having hard word counts I have found that if I don’t specify a
-minimum **some** students will take advantage of that and submit nothing of
-substance. The Retrospective is important for me as it gives some insight into
-your learning process and helps me understand where you may be struggling. Thus,
-it is expected that the **Experience** section is at least 200 words long.
-Points will be deducted based on how far below the required word count you are.
-Additionally, up to 50% of your score for this section can be deducted if filler
-sentences are used to artificially inflate the word count.
-
-Having trouble figuring out what to write? Here are some questions to get you
-started.
-
-- How did you test your project? Were you able to rely on automated tests or
-  did you have to manually test your code?
-- Were there any things that you struggled with?
-- Were there any parts of this lab that were unclear or poorly specified?
-- Were you able to get the entire project done?
-- Detail one new thing you learned.
-- Anything else you would like to share is awesome and encourage 😃.
-
-If the assignments ask you to include any graphs, screenshots or other artifacts
-as they must display correctly when viewed on github. You can reference the
-[markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images)
-help docs for how to include images.
-
-For the **Known issues or Bugs** section you need to detail any issues or bugs
-that you have in your code. For example maybe your code crashes randomly and you
-couldn’t figure out why. If your code doesn’t have any issues you can simply
-write NONE in this section.
-
-For the **Sources used section** you must detail any sources you used outside of
-the textbook or course website. If you write NONE in this section it is assumed
-that you didn’t use google at all. Be safe CITE! Remember that using ChatGPT,
-Google Bard, or any other AI generated text is considered a source and must be
-listed here.
 
 ## General Coding Guidelines
 
@@ -257,14 +218,13 @@ LAB_EXPORT list_t *list_init(void (*destroy_data)(void *),
 
 ### Compiler Warnings
 
-Warnings emitted by the compiler or static analysis tools need to be fixed.
-Under no circumstances should you ignore compiler warnings. In the **very** rare
-case that a warning cannot be fixed either because it is part of the assignment
-or a result of some other external dependency your instructor will clearly call
-this out and give you instructions on how to disable the warning. You are not
-allowed to disable any warnings without explicit permission from your
-instructor. If you submit code with warnings disabled you forfeit 100% of the
-points from the appropriate section in the rubric.
+Warnings emitted by the compiler, interpreter, or static analysis tools need to be fixed.  Under no
+circumstances should you ignore warnings. In the **very** rare case that a warning cannot be fixed
+either because it is part of the assignment or a result of some other external dependency your
+instructor will clearly call this out and give you instructions on how to disable the warning. You
+are not allowed to disable any warnings without explicit permission from your instructor. If you
+submit code with warnings disabled you forfeit 100% of the points from the appropriate section in
+the rubric.
 
 ::: tip
 
