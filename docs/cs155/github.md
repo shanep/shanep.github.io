@@ -21,7 +21,8 @@ This section takes an estimated 3-4 hours
 This section takes an estimated 3-4 hours
 
 - Complete the module reading quiz (canvas)
-- [Configure your github account](configure-github.md)
+- [Configure Github](projects/p1.md)
+- [Create a Patch](projects/p2.md)
 - Complete the GitHub Pages lab (canvas)
 
 ## Module Retrospective - Class Interaction
