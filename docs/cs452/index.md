@@ -55,8 +55,7 @@ operating systems. PREREQ: CS 321 and ECE 330.
 ## Assessments
 
 Your final grade will be calculated with the following weights in
-canvas. All Projects will be graded with the
-[project grading rubric](grading-rubric.md).
+canvas.
 
 - Projects - 70%
 - Exams - 30%
