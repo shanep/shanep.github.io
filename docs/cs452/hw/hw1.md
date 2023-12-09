@@ -3,5 +3,5 @@ next: false
 prev: false
 submit: cs452-project-0-group@boisestate.edu
 ---
-# Project 0
-<!--@include: ../../../parts/git-email-project.md -->
+# Homework 1
+<!--@include: ../../../parts/setup-gh-cli.md -->

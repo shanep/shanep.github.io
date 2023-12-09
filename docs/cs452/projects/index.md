@@ -5,8 +5,7 @@ prev: false
 # Projects
 
 
-- [Grading Rubric](grading-rubric.md)
-- [Project 0](p0.md) - Setup git send-email
+- [Grading Rubric](grading-rubric.md) - Universal Grading Rubric for all projects
 - [Project 1](p1.md) - Development Environment Setup and Familiarization
 - [Project 2](p2.md) - Warmup project
 - [Project 3](p3.md) - Simple shell project

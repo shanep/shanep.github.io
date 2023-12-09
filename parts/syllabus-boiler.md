@@ -56,17 +56,10 @@ Center](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring)
 courses. Machines in the Kount Computer Tutoring Center have all the software
 you will need this semester.
 
-All of your programming assignments will be submitted using Git. Submissions via
-any other method such engraving your source code onto a stone tablet, or wizard
-scroll 📜 will not be accepted under any circumstances. You are **required** to
-make consistent commits and pushes to your Git repository over the course of
-working on your project. For example if you have 3 weeks to work on a project I
-should see a minimum of 3 commits (1 per week).
-
-Making regular pushes to Git is important because it is what I will
-look at if you request an extension for a project. Additionally, making
-regular commits and pushing to GitHub will prevent you from losing work
-if your local computer has a hardware failure.
+All of your programming assignments will be submitted using GitHub or with emailed
+patches. Submissions via any other method such engraving your source code onto a stone tablet, or
+wizard scroll 📜 will not be accepted under any circumstances. You are encouraged to make consistent
+commits to your Git repository over the course of working on your project.
 
 ::: warning
 

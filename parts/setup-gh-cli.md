@@ -1,8 +1,4 @@
----
-next: false
-prev: false
----
-# Configure Github
+## Configure Github
 
 This document will walk you through configuring your personal github
 account to use ssh keys. We will be using the github cli app to complete
@@ -76,3 +72,9 @@ github.com
 ```
 
 Congrats you are now configured to use github.com with the ssh protocol!
+
+## Submitting
+
+Log into canvas and submit a screen shot showing that you have completed the assignment. An example is shown below.
+
+![gh cli](/images/gh-cli-submit.png)
