@@ -3,5 +3,5 @@ next: false
 prev: false
 submit: cs155-project-2-group@boisestate.edu
 ---
-# Project 2
+# Homework 2
 <!--@include: ../../../parts/git-email-project.md -->

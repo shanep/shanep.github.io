@@ -66,7 +66,7 @@ function cs155(): DefaultTheme.SidebarItem[] {
       text: 'CS155',
       items: [
         { text: 'Syllabus', link: 'index'},
-	{ text: 'Projects', link: 'projects/index'}
+	{ text: 'Homework', link: 'hw/index'}
       ]
     },
     {
@@ -128,8 +128,8 @@ function cs452(): DefaultTheme.SidebarItem[] {
       text: 'CS452',
       items: [
         { text: 'Syllabus', link: 'index'},
-        { text: 'Grading Rubric', link: 'projects/grading-rubric' },
-        { text: 'Projects', link: 'projects/index'}
+        { text: 'Projects', link: 'projects/index'},
+	{ text: 'Homework', link: 'hw/index'}
       ]
     },
     {
@@ -138,9 +138,7 @@ function cs452(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Course Introduction', link: 'course-introduction'},
         { text: 'C Review', link: 'c-review'},
-        { text: 'Testing', link: 'testing'},
-        { text: 'Libraries', link: 'libraries'},
-        { text: 'OS Introduction', link: 'intro'},
+    	{ text: 'OS Introduction', link: 'intro'},
         { text: 'The Process', link: 'cpu-intro'},
         { text: 'Process API', link: 'cpu-api'},
         { text: 'Limited Direct Execution', link: 'cpu-mechanisms'},
