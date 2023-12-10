@@ -19,12 +19,12 @@ By the end of this course the student should have achieved the following
 course learning outcomes.
 
 | TLO | SLO | Objective                                                                                            | Bloom Level | Assessment Instrument |
-| --- | --- | ---------------------------------------------------------------------------------------------------- | ----------- | --------------------- |
+|-----|-----|------------------------------------------------------------------------------------------------------|-------------|-----------------------|
 | 1   |     | Create a Full Stack Web Application                                                                  | Apply       | Final Project         |
 |     | 1.1 | Create a dynamic front end UI                                                                        | Apply       | Final Project         |
 |     | 1.2 | Identify when to use JavaScript to add interactive components to your websites.                      | Understand  | Reading Assignments   |
 |     | 1.3 | Identify when a server-side language  is useful in web development.                                  | Understand  | Reading Assignments   |
-|     | 1.4 | Use templates reduce repetitive HTML and produce dynamic content based on conditionals.              | Apply       | Final Project         |
+|     | 1.4 | Use templates to reduce repetitive HTML and produce dynamic content based on conditionals.           | Apply       | Final Project         |
 |     | 1.5 | Explore functions available in NodeJS and use them to implement server-side logic.                   | Apply       | Final Project         |
 | 2   |     | Understand HTML and CSS                                                                              | Understand  | Quiz                  |
 |     | 2.1 | Identify basic HTML tags and attributes and use them to create a static web page.                    | Understand  | Quiz                  |

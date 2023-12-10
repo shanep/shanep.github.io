@@ -11,11 +11,11 @@ operating systems. PREREQ: CS 321 and ECE 330.
 
 ## Topics and Schedule
 
-| Week | Day | Topic                                            | Textbook Reading                                                                                      | What Due?        |
+| Week | Day | Topic                                            | Reading Assignment                                                                                    | What Due?        |
 |------|-----|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|------------------|
 | 1    | Tu  | [Course Introduction](course-introduction.md)    |                                                                                                       |                  |
-|      | Th  | [C Review](c-review.md)                          | [Modern Debugging](/articles/modern-debugging-acm.pdf)                                                | [Hw1](hw/hw1.md) |
-| 2    | Tu  | [Hw2](hw/hw2.md)                                 | [Coverity](/articles/coverity-acm.pdf)                                                                |                  |
+|      | Th  | [C Review](c-review.md)                          | [Modern Debugging](/articles/modern-debugging-acm.pdf),  [Coverity](/articles/coverity-acm.pdf)       | [Hw1](hw/hw1.md) |
+| 2    | Tu  | [Hw2](hw/hw2.md)                                 | [Kernel patches](https://www.kernel.org/doc/html/latest/process/submitting-patches.html)              |                  |
 |      | Th  | [P1](projects/p1.md)                             |                                                                                                       | [Hw2](hw/hw2.md) |
 | 3    | Tu  | [Operating Systems Introduction](intro.md)       | [OSTEP ch2 - Introduction](http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf)                           |                  |
 |      | Th  | [P2](projects/p2.md)                             |                                                                                                       | P1 Due           |
@@ -54,10 +54,8 @@ operating systems. PREREQ: CS 321 and ECE 330.
 
 ## Assessments
 
-Your final grade will be calculated as follows:
+Final Grade formula: **Grade = [Earned points] / [Total Points Offered]**.
 
-
-Grade = [Earned points] / [Total Points]
 
 - Projects
   - 100 points each
@@ -75,7 +73,7 @@ By the end of this course the student should have achieved the following
 course learning outcomes.
 
 | TLO | SLO | Objective                                                                                                                                             | Bloom Level | Assessment Instrument |
-| --- | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | --------------------- |
+|-----|-----|-------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------------------|
 | 1   |     | Describe the fundamental components of a modern operating system                                                                                      | Remember    | Exam                  |
 |     | 1.1 | Articulate process creation and destruction                                                                                                           | Understand  | Exam                  |
 |     | 1.2 | Use system library code                                                                                                                               | Apply       | Project 2             |
@@ -98,8 +96,8 @@ course learning outcomes.
 |     | 4.3 | Identify common attack vectors with respect to the operating system                                                                                   | Understand  | Exam                  |
 |     | 4.4 | Identify common programming constructs that cause security vulnerabilities                                                                            | Understand  | Exam                  |
 | 5   |     | Use professional software engineering tools and techniques.                                                                                           | Apply       | All Projects          |
-|     | 5.1 | Use a cross platform build system (win32, posix)                                                                                                      | Apply       | Project 6             |
-|     | 5.2 | Use a professional unit test framework  (win32, posix)                                                                                                | Apply       | Project 6             |
+|     | 5.1 | Compile your code with a build system                                                                                                                 | Apply       | Project 6             |
+|     | 5.2 | Use a unit test framework                                                                                                                             | Project 6   |                       |
 |     | 5.3 | Use a professional version control system (git)                                                                                                       | Apply       | Project 6             |
 |     | 5.4 | Explore compiling and running code on at least 2 different systems                                                                                    | Apply       | Project 0             |
 |     | 5.5 | Explore how to setup a continuous integration and testing project                                                                                     | Apply       | Project 0             |
