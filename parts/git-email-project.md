@@ -95,7 +95,7 @@ git merge --squash master
 - Now commit those new changes to your submit branch
 
 ```bash
-git commit -m "Submit project 2"
+git commit -m "Submit project"
 ```
 
 This is what the whole sequence looks like.
@@ -110,7 +110,7 @@ Squash commit -- not updating HEAD
  2 files changed, 2 insertions(+)
  create mode 100644 my-name.txt
  create mode 100644 the-date.txt
-shane|(submit +=):git-send-email$ git commit -m "Submit project 2"
+shane|(submit +=):git-send-email$ git commit -m "Submit project"
 [submit d9e1c85] Submit project 2
  2 files changed, 2 insertions(+)
  create mode 100644 my-name.txt

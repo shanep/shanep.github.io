@@ -204,7 +204,7 @@ some students taking an exam AFTER the questions (and possibly answers)
 have been released as it would give that student an unfair advantage.
 Extensions will be granted on a case by case basis for situations that
 were outside of the students control. Some exams or quizzes may require
-you to go to the testing center. It is the students responsibility to
+you to go to the testing center. It is the student's responsibility to
 schedule their own appointment in a timely fashion.
 
 ## Class Interaction Policy

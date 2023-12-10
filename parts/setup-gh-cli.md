@@ -1,8 +1,23 @@
 ## Configure Github
 
-This document will walk you through configuring your personal github
-account to use ssh keys. We will be using the github cli app to complete
-this task.
+This document will walk you through configuring your personal github account to use ssh keys and
+getting a **free** GitHub Pro account. We will be using the github cli app to complete this task.
+
+## GitHub Student Developer Pack
+
+As a student you can get access to a free GitHub Pro account as well as other really cool features
+such as GitHub Copilot and GitHub Codespaces.
+
+- [Get your developer Pack](https://education.github.com/pack)
+- [Sign up for Copilot](https://education.github.com/experiences/primer_copilot)
+
+::: danger
+
+Be aware that there are some professors in the CS department who view using A.I. technologies such
+as Copilot as cheating. So please carefully read the syllabus in all your classes and look for their
+policy regarding using A.I. tools.
+
+:::
 
 ## Install the command line client
 
