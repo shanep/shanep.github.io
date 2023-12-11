@@ -1,4 +1,4 @@
-## Submit at Patch
+## Learn to submit at patch over email
 
 In this project you will learn how to use git to create a patch that can be emailed to another
 developer. This method of development is how git was originally designed to work and is still widely
@@ -7,7 +7,7 @@ Kernel](https://www.kernel.org/doc/html/v4.15/process/submitting-patches.html). 
 attempts to get everything correct but once you are able to wrap your head around the process you
 will have unlocked a powerful software development skill!
 
-## Task 1 - Setup Email
+## Task 1 - Generate App Password
 
 In order to use [git send-email](https://git-scm.com/docs/git-send-email) you will need to generate
 an app password. Navigate to
@@ -20,37 +20,60 @@ Make sure you use your university supplied email when generating your password. 
 personal Gmail account or you will not receive a grade on the assignment.
 :::
 
-## Task 2 - Setup SMTP
+![generate app password](/images/gen-app-password.png)
 
-Open up a terminal (git-bash on windows) and configure git. You will need to change the info listed
-below to match your own name, email and Password that you generated in the previous step.
+## Task 2 - Fork Repo
 
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "you@u.boisestate.edu"
-git config --global sendemail.smtpserver smtp.gmail.com
-git config --global sendemail.smtpuser "you@u.boisestate.edu"
-git config --global sendemail.smtpPass "xxx xxx xxx xxx"
-git config --global sendemail.smtpencryption ssl
-git config --global sendemail.smtpserverport 465
+- Fork the starter repository:
+  [https://github.com/shanep/git-send-email](https://github.com/shanep/git-send-email)
+
+![fork repo](/images/fork-the-repo.png)
+
+## Task 3 - Start a Codespace
+
+We will use GitHub Codespaces to do most of our coding. Codespaces is just VSCode in the cloud. This
+makes it really easy to setup a developer environment and code from any computer that has a browser
+and internet connection!
+
+![Start Codespace](/images/start-codespace.png)
+
+## Task 4 - Setup SMTP
+
+- Open up a terminal in codespaces
+
+![Open Terminal](/images/open-terminal.png)
+
+
+- In the terminal type `git config --global --edit` and modify the file with the info listed below.
+You will need to change the info listed below to match your own name, email and Password that you
+generated in the previous step.
+
+```text
+[User]
+	name =  YOUR NAME
+	email = YOURNAME@u.boisestate.edu
+[sendemail]
+	smtpserver = smtp.gmail.com
+	smtpuser = YOURNAME@u.boisestate.edu
+	smtpPass = xxxx xxxx xxxx xxxx
+	smtpencryption = ssl
+	smtpserverport = 465
 ```
 
-## Task 3 - Clone Reno
+![Edit config](/images/edit-config.png)
+
+## Task 5 - Create Some commits
+
+
+- Create your first commit using the terminal
 
 ```bash
-git clone https://github.com/shanep/git-send-email
-```
-
-Create your first commit.
-
-```bash
-cd git-send-email
 date >> the-date.txt
 git add the-date.txt
 git commit -m "Added a date file"
 ```
 
-Create your second commit.
+- Create your second commit using the terminal
 
 ```bash
 echo "My Name" > my-name.txt
@@ -58,7 +81,7 @@ git add my-name.txt
 git commit -m "Added a file with my name in it"
 ```
 
-Make sure everything looks good.
+- Make sure everything looks good.
 
 ```bash
 shane|(master>):git-send-email$ git status
@@ -69,12 +92,11 @@ Your branch is ahead of 'origin/master' by 2 commits.
 nothing to commit, working tree clean
 ```
 
-:::info
-You will not be pushing your changes back to GitHub, so do not do a `git push` :)
-:::
+- Push your changes to your repository.
 
+![Check your changes](/images/git-sync-changes.png)
 
-## Task 4 - Create a patch file
+## Task 6 - Create a patch file
 
 We are now going to do what is called a [squash
 merge](https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html) and then create
@@ -123,7 +145,19 @@ Your branch is ahead of 'origin/master' by 1 commit.
 nothing to commit, working tree clean
 ```
 
-## Task 5 - Email Patch File
+## Task 7 - Install Libraries
+
+If you are working on codespaces you will need to install the required dependencies.
+
+```bash
+make install-deps
+```
+
+::: info
+Your can skip this step if you are working on your personal machine.
+:::
+
+## Task 8 - Email Patch File
 
 Finally we can create our patch to email out!
 
@@ -177,7 +211,7 @@ You should see results similar to what is show below.
 You should now be able to check your email and see your patch because `git send-email` automatically
 adds the author to the CC list.
 
-## Task 6 - Test your patch
+## Task 9 - Test your patch
 
 You can now get your patch from GMail and test it to make sure that everything works and your patch
 was correct.
@@ -237,6 +271,7 @@ Assuming all went well you are now complete! You have create a patch file from a
 then emailed and also tested the resulting email! You are well on your way to becoming an advanced
 git user!
 
-## Grading
+## Final Task - Submit for Grading
 
+Assuming you made it through all the previous tasks successfully you are now done!
 There is nothing to submit on canvas for this assignment. Your email was your submission :)
