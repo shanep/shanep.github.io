@@ -1,6 +1,0 @@
-Shane K. Panter <shanepanter@boisestate.edu>
-:icons: font
-:toc: left
-:stem: latexmath
-:source-highlighter: highlight.js
-:last-update-label!:
