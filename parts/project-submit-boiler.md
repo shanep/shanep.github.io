@@ -1,102 +1,9 @@
-## Learn to submit at patch over email
+## Final Task - Submit your code
 
-In this project you will learn how to use git to create a patch that can be emailed to another
-developer. This method of development is how git was originally designed to work and is still widely
-used by massive projects like the [Linux
-Kernel](https://www.kernel.org/doc/html/v4.15/process/submitting-patches.html).  It may take a few
-attempts to get everything correct but once you are able to wrap your head around the process you
-will have unlocked a powerful software development skill!
+Now that you have completed all the tasks the only thing left to do is to submit your code as a
+patch so you can receive a grade for all your hard work.
 
-## Task 1 - Generate App Password
-
-In order to use [git send-email](https://git-scm.com/docs/git-send-email) you will need to generate
-an app password. Navigate to
-[https://security.google.com/settings/security/apppasswords](https://security.google.com/settings/security/apppasswords)
-and generate a new app password. Make sure and copy the password before you close the window because
-you will not be able to see it again.
-
-::: warning
-Make sure you use your university supplied email when generating your password. Do not use your
-personal Gmail account or you will not receive a grade on the assignment.
-:::
-
-![generate app password](/images/gen-app-password.png)
-
-## Task 2 - Fork Repo
-
-- Fork the starter repository:
-  [https://github.com/shanep/git-send-email](https://github.com/shanep/git-send-email)
-
-![fork repo](/images/fork-the-repo.png)
-
-## Task 3 - Start a Codespace
-
-We will use GitHub Codespaces to do most of our coding. Codespaces is just VSCode in the cloud. This
-makes it really easy to setup a developer environment and code from any computer that has a browser
-and internet connection!
-
-![Start Codespace](/images/start-codespace.png)
-
-## Task 4 - Setup SMTP
-
-- Open up a terminal in codespaces
-
-![Open Terminal](/images/open-terminal.png)
-
-
-- In the terminal type `git config --global --edit` and modify the file with the info listed below.
-You will need to change the info listed below to match your own name, email and Password that you
-generated in the previous step.
-
-```text
-[User]
-	name =  YOUR NAME
-	email = YOURNAME@u.boisestate.edu
-[sendemail]
-	smtpserver = smtp.gmail.com
-	smtpuser = YOURNAME@u.boisestate.edu
-	smtpPass = xxxx xxxx xxxx xxxx
-	smtpencryption = ssl
-	smtpserverport = 465
-```
-
-![Edit config](/images/edit-config.png)
-
-## Task 5 - Create Some commits
-
-
-- Create your first commit using the terminal
-
-```bash
-date >> the-date.txt
-git add the-date.txt
-git commit -m "Added a date file"
-```
-
-- Create your second commit using the terminal
-
-```bash
-echo "My Name" > my-name.txt
-git add my-name.txt
-git commit -m "Added a file with my name in it"
-```
-
-- Make sure everything looks good.
-
-```bash
-shane|(master>):git-send-email$ git status
-On branch master
-Your branch is ahead of 'origin/master' by 2 commits.
-  (use "git push" to publish your local commits)
-
-nothing to commit, working tree clean
-```
-
-- Push your changes to your repository.
-
-![Check your changes](/images/git-sync-changes.png)
-
-## Task 6 - Create a patch file
+### Create a patch file
 
 We are now going to do what is called a [squash
 merge](https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html) and then create
@@ -145,7 +52,7 @@ Your branch is ahead of 'origin/master' by 1 commit.
 nothing to commit, working tree clean
 ```
 
-## Task 7 - Install Libraries
+### Install Libraries
 
 If you are working on codespaces you will need to install the required dependencies.
 
@@ -153,24 +60,20 @@ If you are working on codespaces you will need to install the required dependenc
 make install-deps
 ```
 
-::: info
-Your can skip this step if you are working on your personal machine.
-:::
-
-## Task 8 - Email Patch File
+### Email Patch File
 
 Finally we can create our patch to email out!
 
-	git send-email --to {{ $frontmatter.submit}} HEAD^
+	git send-email --to {{ $frontmatter.submit_email}} HEAD^
 
 You should see results similar to what is show below.
 
-	$ git send-email --to {{ $frontmatter.submit}} HEAD^
+	$ git send-email --to {{ $frontmatter.submit_email}} HEAD^
 	/tmp/T/NWEw4f1sIj/0001-Submit-project-2.patch
 	(mbox) Adding cc: Shane Panter <shanepanter@boisestate.edu>
 
 	From: Shane Panter <shanepanter@boisestate.edu>
-	To: {{ $frontmatter.submit}}
+	To: {{ $frontmatter.submit_email}}
 	Cc: Shane Panter <shanepanter@boisestate.edu>
 	Subject: [PATCH] Submit project 2
 	Date: Thu,  7 Dec 2023 20:31:55 -0700
@@ -193,10 +96,10 @@ You should see results similar to what is show below.
 	OK. Log says:
 	Server: smtp.gmail.com
 	MAIL FROM:<shanepanter@boisestate.edu>
-	RCPT TO: {{ $frontmatter.submit}}
+	RCPT TO: {{ $frontmatter.submit_email}}
 	RCPT TO:<shanepanter@boisestate.edu>
 	From: Shane Panter <shanepanter@boisestate.edu>
-	To:  {{ $frontmatter.submit}}
+	To:  {{ $frontmatter.submit_email}}
 	Cc: Shane Panter <shanepanter@boisestate.edu>
 	Subject: [PATCH] Submit project 2
 	Date: Thu,  7 Dec 2023 20:31:55 -0700
@@ -211,7 +114,7 @@ You should see results similar to what is show below.
 You should now be able to check your email and see your patch because `git send-email` automatically
 adds the author to the CC list.
 
-## Task 9 - Test your patch
+### Submit Task 4 - Test your patch
 
 You can now get your patch from GMail and test it to make sure that everything works and your patch
 was correct.
@@ -271,7 +174,7 @@ Assuming all went well you are now complete! You have create a patch file from a
 then emailed and also tested the resulting email! You are well on your way to becoming an advanced
 git user!
 
-## Final Task - Submit for Grading
+### Submit Final Task
 
 Assuming you made it through all the previous tasks successfully you are now done!
 There is nothing to submit on canvas for this assignment. Your email was your submission :)
