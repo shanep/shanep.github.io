@@ -1,7 +1,13 @@
 ## Configure Github
 
-This document will walk you through configuring your personal github account to use ssh keys and
-getting a **free** GitHub Pro account. We will be using the github cli app to complete this task.
+This document will walk you through configuring your personal github account so you can work
+effectively from the command line in your future classes.
+
+Students can get a free [Github Pro](https://education.github.com/pack) account as long as you sign
+up with your Boise State email address. This will allow you to use Github Codespaces and other cool
+services for free in all your classes. If you run out of free hours on codespaces you can use the CS
+department lab machines to complete all projects. You **never** have to pay for GitHub, all
+assignments can be completed with the free tier or in the CS Labs.
 
 ## GitHub Student Developer Pack
 

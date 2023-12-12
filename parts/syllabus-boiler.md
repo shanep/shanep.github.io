@@ -269,6 +269,14 @@ face format office hours will only be available in person with times posted in
 Canvas. If you can not find the office hours appointment link in canvas please
 email me ASAP as I sometimes forget to post them at the start of the semester.
 
+## IT support Policy
+
+Your instructor and teaching assistant can not provide IT support for your personal machine. If you
+can not get your personal machine configured correctly you will need to come into the lab to
+complete all assignments. All machines in the CS labs are supported by the departments IT staff and
+are guaranteed to work.
+
+
 ## Time Commitment
 
 According to Boise State University [policy 4080](https://www.boisestate.edu/policy/academic-affairs-faculty-administration/policy-title-credit-hours/),
