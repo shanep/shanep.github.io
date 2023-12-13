@@ -14,22 +14,23 @@ extern "C"
 #endif
 
   /**
-   * @brief Returns a string containing the version of the library. This string
-   * has been allocated using malloc and must be freed by the caller. The
-   * version of the library is generated using the cmake version.
+   * @brief Returns a string containing the version of the library.
+   * This string has been allocated using malloc and must be freed
+   * by the caller.
    *
    * @return char* The version string
    */
   char *getVersion(void);
 
   /**
-   * @brief This function causes a segfault
+   * @brief This function causes a segfault to demo Address Sanitizer
    *
    */
   int segfault(void);
 
   /**
-   * @brief This function causes an array out of bounds error
+   * @brief This function causes an array out of bounds error to
+   * demo Address Sanitizer
    *
    */
   void outOfBounds(void);
