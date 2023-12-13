@@ -180,3 +180,17 @@ There are two ways to download student assignments. You can use the
 [Classroom Assistant](https://classroom.github.com/assistant) provided
 by Github or you can use a terminal based downloader
 [ghclass](https://github.com/shanep/ghclass).
+
+
+### Downloading Groups
+
+To download groups make sure and download your roster from
+[classroom.github.com](https://classroom.github.com) with group names.  This tool should
+automatically detect that the roster has group names and will download the assignment into a folder
+named after the team.
+
+![group names](images/group-names.jpg)
+
+## Demo
+
+![demo](images/demo.gif)
