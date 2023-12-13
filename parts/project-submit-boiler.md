@@ -3,19 +3,75 @@
 Now that you have completed all the tasks the only thing left to do is to submit your code as a
 patch so you can receive a grade for all your hard work.
 
+### Setup SMTP
+
+::: info
+
+If you are working in GitHub codespaces you will need to setup SMTP for **EACH** project. This is
+because each codespace is tied to a specific repository and the settings are not shared. However,
+if you are working on your own personal machine or in the CS Lab then you will only have to setup
+SMTP once!
+
+:::
+
+In order to use [git send-email](https://git-scm.com/docs/git-send-email) you will need to generate
+an app password. Navigate to
+[https://security.google.com/settings/security/apppasswords](https://security.google.com/settings/security/apppasswords)
+and generate a new app password. Make sure and copy the password before you close the window because
+you will not be able to see it again.
+
+::: warning
+Make sure you use your university supplied email when generating your password. Do not use your
+personal Gmail account or you will not receive a grade on the assignment.
+
+You will need to save this password somewhere safe you can't access the password after you close the window.
+:::
+
+![generate app password](/images/gen-app-password.png)
+
+- Open up a terminal in codespaces
+
+![Open Terminal](/images/open-terminal.png)
+
+- In the terminal type `git config --global --edit` and modify the file with the info listed below.
+You will need to change the info listed below to match your own name, email and Password that you
+generated in the previous step.
+
+```text
+[User]
+	name =  YOUR NAME
+	email = YOURNAME@u.boisestate.edu
+[sendemail]
+	smtpserver = smtp.gmail.com
+	smtpuser = YOURNAME@u.boisestate.edu
+	smtpPass = xxxx xxxx xxxx xxxx
+	smtpencryption = ssl
+	smtpserverport = 465
+```
+
+![Edit config](/images/edit-config.png)
+
+Congrats you should be all setup to send code patch's over email. Now lets create a patch!
+
 ### Create a patch file
 
 We are now going to do what is called a [squash
 merge](https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html) and then create
 a patch file with all our changes in one commit.
 
-- Checkout a new branch named submit from the `origin/master` branch.
+- First lets fetch the upstream branch. This is the branch that you originally forked from at the
+  start of the project
 
 ```bash
-git checkout origin/master -b submit
+git fetch upstream
+```
+- Checkout a new branch named submit from the `upstream/master` branch.
+
+```bash
+git checkout upstream/master -b submit
 ```
 
-- Now we will do a squash merge onto our new submit branch.
+- Now we will do a squash merge all the commits we did onto our new submit branch.
 
 ```bash
 git merge --squash master
@@ -27,40 +83,37 @@ git merge --squash master
 git commit -m "Submit project"
 ```
 
-This is what the whole sequence looks like.
+- Push your submit branch to GitHub
 
 ```bash
-shane|(submit=):git-send-email$ git merge --squash master
-Updating 71c88c5..03028ce
-Fast-forward
-Squash commit -- not updating HEAD
- my-name.txt  | 1 +
- the-date.txt | 1 +
- 2 files changed, 2 insertions(+)
- create mode 100644 my-name.txt
- create mode 100644 the-date.txt
-shane|(submit +=):git-send-email$ git commit -m "Submit project"
-[submit d9e1c85] Submit project 2
- 2 files changed, 2 insertions(+)
- create mode 100644 my-name.txt
- create mode 100644 the-date.txt
-shane|(submit>):git-send-email$ git status
-On branch submit
-Your branch is ahead of 'origin/master' by 1 commit.
-  (use "git push" to publish your local commits)
-
-nothing to commit, working tree clean
+git push -u origin
 ```
+
+- Open up a web browser and navigate to your repository on GitHub and confirm that your submit
+  branch is correctly pushed. Open up the files and make sure that everything looks good before
+  going to the next step.
+
+![submit-branch](/images/git-submit-branch.png)
 
 ### Install Libraries
 
-If you are working on codespaces you will need to install the required dependencies.
+If you are working on codespaces you will need to install the required dependencies before you
+attempt to email out your patch file.
 
 ```bash
 make install-deps
 ```
 
 ### Email Patch File
+
+First make sure you are still on the submit branch that you created. If you type `git branch` you
+should see a start next to the submit branch that indicates you are currently on the submit branch.
+
+```bash
+$ git branch
+  master
+* submit
+```
 
 Finally we can create our patch to email out!
 
@@ -114,18 +167,28 @@ You should see results similar to what is show below.
 You should now be able to check your email and see your patch because `git send-email` automatically
 adds the author to the CC list.
 
-### Submit Task 4 - Test your patch
+### Test your patch
+
+::: danger
+
+This section is not optional! If there is a problem with your patch in anyway this step is required
+if there is any problem with your grade. For example, if somehow your patch is wrong or does not
+apply you will be required to show this step completed before any regrades are considered.
+:::
 
 You can now get your patch from GMail and test it to make sure that everything works and your patch
 was correct.
 
-- Checkout a new branch named `test-patch` from the origin/master branch
+- Checkout a new branch named `test-patch` from the upstream/master branch
 
 ```bash
-shane|(submit>):git-send-email$ git checkout origin/master -b test-patch
-branch 'test-patch' set up to track 'origin/master'.
-Switched to a new branch 'test-patch'
-shane|(test-patch=):git-send-email$
+git checkout upstream/master -b test-patch
+```
+
+- Push your new `test-patch` branch to **your** repo instead of the upstream
+
+```bash
+ git push -u origin
 ```
 
 - Get the patch file from GMail
@@ -133,10 +196,18 @@ shane|(test-patch=):git-send-email$
 ![download gmail](/images/gmail-original-email.png)
 
 
-- Copy the email to your clip board and then create a file in the repository named my-patch.txt and paste the contents
-  into that file.
+- Copy the email to your clip board
 
 ![copy to clipboard](/images/gmail-copy-email.png)
+
+- Create a new file and paste the contents that you just copied and save it in the root folder in a
+  file named `my-patch.txt`
+
+![new file](/images/new-file.png)
+
+- Make sure you saved the file correctly. It should show up in the file explorer as shown below.
+
+![created file](/images/created-file.png)
 
 - Now apply that patch to your new `test-patch` branch
 
@@ -144,37 +215,25 @@ shane|(test-patch=):git-send-email$
 git am my-patch.txt
 ```
 
-- This is an example of the complete process.
+- Commit your patch
 
 ```bash
-shane|(test-patch=):git-send-email$ ls
-LICENSE      README.md    my-patch.txt
-shane|(test-patch %=):git-send-email$ git am my-patch.txt
-Applying: Submit project 2
-shane|(test-patch %>):git-send-email$ git log
-commit 7c547614e032064d2d0e8f0dbc0e8e8f22bb58f6 (HEAD -> test-patch)
-Author: Shane Panter <shanepanter@boisestate.edu>
-Date:   Thu Dec 7 20:31:55 2023 -0700
-
-    Submit project 2
-
-commit 71c88c58735532d679d7d51598b2b46b33d6c7e3 (origin/master, origin/HEAD)
-Author: Shane K. Panter <shane@foundationcode.com>
-Date:   Sun Dec 3 09:39:46 2023 -0700
-
-    Initial commit
-shane|(test-patch %>):git-send-email$ ls
-LICENSE      README.md    my-name.txt  my-patch.txt the-date.txt
-shane|(test-patch %>):git-send-email$ rm my-patch.txt
-shane|(test-patch>):git-send-email$
-
+git commit -m "Testing my email patch"
 ```
 
-Assuming all went well you are now complete! You have create a patch file from a squash merge and
-then emailed and also tested the resulting email! You are well on your way to becoming an advanced
+- Push your test patch branch to your Github Account
+
+```bash
+git push
+```
+
+- Finally open up the browser again and make sure you have 3 branches `master`, `submit`, and
+  `test-patch`. The `submit` and `test-patch` branches should be identical. Each should have exactly
+  1 commit from you will all your changes.
+
+![final state](/images/final-repo-state.png)
+
+
+Assuming all went well you are now complete! You have create a patch file from a squash merge,
+emailed it and tested the resulting patch. You are well on your way to becoming an advanced
 git user!
-
-### Submit Final Task
-
-Assuming you made it through all the previous tasks successfully you are now done!
-There is nothing to submit on canvas for this assignment. Your email was your submission :)

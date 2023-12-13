@@ -3,6 +3,7 @@ next: false
 prev: false
 submit_email: cs452-hw-2-group@boisestate.edu
 repo: https://github.com/shanep/git-send-email
+project: cs452-hw-2
 ---
 
 # Homework 2
