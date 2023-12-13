@@ -36,15 +36,17 @@ not exceed 2.5% of the total points offered. For example, the maximum
 number of extra credit points that you can earn if the total points
 offered is 1000 would be 25.
 
-- Typos and Bugs - If you find any typos or bugs in the course materials, email
-me what you found. You can claim this extra credit once at the end of the
-semester for up to 10 points (1 point per error found). I have strategically
-placed several spelling and grammar errors for you to find so there is plenty of
-opportunities to get the maximum number of points offered. So make sure and read
-everything with an eagle 🦅 eye so you can rack up those points!
-- Use of AI technologies - If you are able to solve 100% of any assignment with
-AI, I will give you extra credit if you can submit proof that it was in fact
-100% AI generated. See the AI 🤖 section for more details.
+- Typos and Bugs - If you find any typos or bugs in the course materials, you can click the "Edit
+this page" link at the bottom of the page, make the corrections, and then issue a [pull
+request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request). If
+I merge your changes back into my repository then I will give you 5 bonus points. I have
+strategically placed several spelling and grammar errors for you to find so there is plenty of
+opportunities to get the maximum number of points offered. So make sure and read everything with an
+eagle 🦅 eye so you can rack up those points!
+
+- Use of AI technologies - If you are able to solve 100% of any assignment with AI, I will give you
+extra credit if you submit your chat logs as proof that it was in fact 100% AI generated.  See the
+AI 🤖 section for more details.
 
 ## Homework Policy
 
