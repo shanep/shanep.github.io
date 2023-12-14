@@ -115,66 +115,68 @@ $ git branch
 * submit
 ```
 
+::: warning
+
+You MUST test your patch by emailing it to your self first! You will go through all the steps below
+with your **own** email. After you have sent the email to yourself and tested it you can then email
+your submission to the class mailing list!
+
+:::
+
 Finally we can create our patch to email out!
 
-	git send-email --to {{ $frontmatter.submit_email}} HEAD^
+```bash
+git send-email --to youremail@u.boisestate.edu HEAD^
+```
 
 You should see results similar to what is show below.
 
-	$ git send-email --to {{ $frontmatter.submit_email}} HEAD^
-	/tmp/T/NWEw4f1sIj/0001-Submit-project-2.patch
-	(mbox) Adding cc: Shane Panter <shanepanter@boisestate.edu>
+```bash
+$ git send-email --to youremail@u.boisestate.edu HEAD^
+/tmp/T/NWEw4f1sIj/0001-Submit-project-2.patch
 
-	From: Shane Panter <shanepanter@boisestate.edu>
-	To: {{ $frontmatter.submit_email}}
-	Cc: Shane Panter <shanepanter@boisestate.edu>
-	Subject: [PATCH] Submit project 2
-	Date: Thu,  7 Dec 2023 20:31:55 -0700
-	Message-Id: <20231208033155.83099-1-shanepanter@boisestate.edu>
-	X-Mailer: git-send-email 2.39.3 (Apple Git-145)
-	MIME-Version: 1.0
-	Content-Transfer-Encoding: 8bit
+From: youremail@u.boisestate.edu
+To:  youremail@u.boisestate.edu
+Subject: [PATCH] Submit project
+Date: Thu,  7 Dec 2023 20:31:55 -0700
+Message-Id: <20231208033155.83099-1-shanepanter@boisestate.edu>
+X-Mailer: git-send-email 2.39.3 (Apple Git-145)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
 
-    The Cc list above has been expanded by additional
-    addresses found in the patch commit message. By default
-    send-email prompts before sending whenever this occurs.
-    This behavior is controlled by the sendemail.confirm
-    configuration setting.
+The Cc list above has been expanded by additional
+addresses found in the patch commit message. By default
+send-email prompts before sending whenever this occurs.
+This behavior is controlled by the sendemail.confirm
+configuration setting.
 
-    For additional information, run 'git send-email --help'.
-    To retain the current behavior, but squelch this message,
-    run 'git config --global sendemail.confirm auto'.
+For additional information, run 'git send-email --help'.
+To retain the current behavior, but squelch this message,
+run 'git config --global sendemail.confirm auto'.
 
-	Send this email? ([y]es|[n]o|[e]dit|[q]uit|[a]ll): y
-	OK. Log says:
-	Server: smtp.gmail.com
-	MAIL FROM:<shanepanter@boisestate.edu>
-	RCPT TO: {{ $frontmatter.submit_email}}
-	RCPT TO:<shanepanter@boisestate.edu>
-	From: Shane Panter <shanepanter@boisestate.edu>
-	To:  {{ $frontmatter.submit_email}}
-	Cc: Shane Panter <shanepanter@boisestate.edu>
-	Subject: [PATCH] Submit project 2
-	Date: Thu,  7 Dec 2023 20:31:55 -0700
-	Message-Id: <20231208033155.83099-1-shanepanter@boisestate.edu>
-	X-Mailer: git-send-email 2.39.3 (Apple Git-145)
-	MIME-Version: 1.0
-	Content-Transfer-Encoding: 8bit
+Send this email? ([y]es|[n]o|[e]dit|[q]uit|[a]ll): y
+OK. Log says:
+Server: smtp.gmail.com
+MAIL FROM:  youremail@u.boisestate.edu
+RCPT TO:  youremail@u.boisestate.edu
+RCPT TO:  youremail@u.boisestate.edu
+From: youremail@u.boisestate.edu
+To:  youremail@u.boisestate.edu
+Subject: [PATCH] Submit project 2
+Date: Thu,  7 Dec 2023 20:31:55 -0700
+Message-Id: <20231208033155.83099-1-shanepanter@boisestate.edu>
+X-Mailer: git-send-email 2.39.3 (Apple Git-145)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
 
-	Result: 250
+Result: 250
+```
 
-
-You should now be able to check your email and see your patch because `git send-email` automatically
-adds the author to the CC list.
+You should now be able to check your email and see your patch. Be aware that sometimes email
+delivery is slightly delayed so you may have to wait a few minutes for it to show up. Make sure and
+check your **spam** folder if you don't see any mail.
 
 ### Test your patch
-
-::: danger
-
-This section is not optional! If there is a problem with your patch in anyway this step is required
-if there is any problem with your grade. For example, if somehow your patch is wrong or does not
-apply you will be required to show this step completed before any regrades are considered.
-:::
 
 You can now get your patch from GMail and test it to make sure that everything works and your patch
 was correct.
@@ -233,6 +235,30 @@ git push
 
 ![final state](/images/final-repo-state.png)
 
+
+### Submit your Patch for grading
+
+Assuming you have successfully completed all the steps above with your own email and everything
+looked good you can now submit your patch for grading.
+
+::: danger
+
+Do not use the class mailing list to test your patch. You should only send an email to **{{
+$frontmatter.submit_email}}** after you have tested the process with your own email. Spamming the
+mailing list with excessive patches will result in a lower grade.
+
+When you submit to the mailing list you will automatically be cc'd on the email so you will have a
+copy in your own email as proof that you completed the assignment.
+
+You are allowed to submit up to 3 times without penalty.
+
+:::
+
+Open a terminal and submit your patch.
+
+
+	git checkout submit
+	git send-email --to {{ $frontmatter.submit_email}} HEAD^
 
 Assuming all went well you are now complete! You have create a patch file from a squash merge,
 emailed it and tested the resulting patch. You are well on your way to becoming an advanced
