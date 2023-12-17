@@ -44,6 +44,16 @@ strategically placed several spelling and grammar errors for you to find so ther
 opportunities to get the maximum number of points offered. So make sure and read everything with an
 eagle 🦅 eye so you can rack up those points!
 
+::: tip
+
+Creating a pull request is important and is the core learning objective in the extra credit
+process. No points will be awarded for any other method of submission. Some pages may include other
+markdown pages so when you click the edit button if you don't see the content that you want to
+correct look for an `<!--@include: ../path/to/file.md -->` directive which will have the path to the
+file that needs to be updated :)
+
+:::
+
 - Use of AI technologies - If you are able to solve 100% of any assignment with AI, I will give you
 extra credit if you submit your chat logs as proof that it was in fact 100% AI generated.  See the
 AI 🤖 section for more details.
