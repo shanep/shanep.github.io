@@ -13,23 +13,24 @@ attacks. PREREQ: CS253 or CS331 or ITM455.
 
 | Week | Topic                                                                | Labs                            | Quizzes              |
 | ---- | -------------------------------------------------------------------- | ------------------------------- | -------------------- |
-| 1    | Course Introduction / Introduction to Security (ch1)                 | Malware                         |                      |
-| 2    | Identity and Access Management (ch2)                                 | Account management              |                      |
-| 3    | Cryptography (ch3)                                                   | Public Key Infrastructure (PKI) | Quiz 1 (ch1 - ch2)   |
-| 4    | Network Attacks (ch4)                                                | Denial-of-Service (DoS) attacks |                      |
-| 5    | Secure Network Protocols (ch5)                                       | Secure shell (SSH)              | Quiz 2 (ch3 - ch4)   |
-| 6    | Secure Network Design (ch6)                                          | Virtual private network (VPN)   |                      |
-| 7    | Wireless, Mobile, and IoT Security (ch7)                             | RADIUS Server                   | Quiz 3 (ch5 - ch6)   |
-| 8    | Application Attacks (ch8)                                            | Pass the hash                   |                      |
-| 9    | Secure Application Development (ch9)                                 | Application fuzzing             | Quiz 4 (ch7 - ch8)   |
-| 10   | Endpoint Security (ch10)                                             | Host security                   |                      |
+| 1    | Course Introduction / Introduction to Security (ch1)                 | Intro Lab                       |                      |
+| 2    | Introduction to Security (ch1)                                       | Malware and Phishing            |                      |
+| 3    | Identity and Access Management (ch2)                                 | Account management              |                      |
+| 4    | Cryptography (ch3)                                                   | Public Key Infrastructure (PKI) | Quiz 1 (ch1 - ch2)   |
+| 5    | Network Attacks and Secure Network Protocols (ch4)                   | Enum, DoS, SSH, HTTPS           |                      |
+| 6    | Secure Network Design (ch5)                                          | Firewalls, VPN                  | Quiz 2 (ch3 - ch4)   |
+| 7    | Wireless, Mobile, and IoT Security (ch6)                             | RADIUS Server, Wireless         |                      |
+| 8    | Application Attacks (ch7)                                            | Pass the hash                   | Quiz 3 (ch5 - ch6)   |
+| 9    | Secure Application Development (ch8)                                 | Application fuzzing             |                      |
+| 10   | Cloud Security (ch10)                                                | Secure virtualization           | Quiz 4 (ch7 - ch8)   |
 | 11   | Spring Break                                                         |                                 |                      |
-| 12   | Cloud Security (ch11)                                                | Secure virtualization           | Quiz 5 (ch9 - ch10)  |
-| 13   | Physical Security (ch12) / Standards, Policies and Procedures (ch13) | In Class Ping Sweep             |                      |
-| 14   | Incident Response (ch14) / Risk Management (ch15)                    | In Class Ping Sweep             | Quiz 6 (ch11 - ch13) |
-| 15   | Security Assessment (ch16) / Digital Forensics (ch17)                | In Class Ping Sweep             |                      |
-| 16   | Privacy (ch18) / Cybersecurity Resilience (ch19)                     |                                 |                      |
-| 17   | Final Exam                                                           |                                 |                      |
+| 12   | Security Assessment (ch12)                                           | Vulnerability Assessment        |                      |
+| 13   | Endpoint Security (ch9)                                              | Host security                   | Quiz 5 (ch10 - ch12) |
+| 14   | Incident Response and Digital Forensics (ch13)                       | Digital Forensics               |                      |
+| 15   | Risk Management and Privacy (ch15)                                   | (None)                          | Quiz 6 (ch9 - ch13)  |
+| 16   | Final Exam                                                           |                                 |                      |
+<!-- |      | Physical Security and Cybersecurity Resilience (ch11)                |                                 |                      | -->
+<!-- |      | Security Standards and Policies (ch14)                               |                                 |                      |  -->
 
 ## Course Learning Outcomes
 
