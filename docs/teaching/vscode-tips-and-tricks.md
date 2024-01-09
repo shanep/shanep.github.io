@@ -80,7 +80,12 @@ to set the default terminal to Git Bash so everything works correctly
 ::: info
 This section is optional and is provided for students who wish to
 develop remotely. You are not required to develop remotely, all the
-homework assignments can be done on the CS lab machines in person.
+homework assignments can be done on the CS lab machines in the CCP
+building.
+
+Your professor or teaching assistant can not provide tech support
+for personal machines.
+
 :::
 
 
