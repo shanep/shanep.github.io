@@ -77,9 +77,12 @@ to set the default terminal to Git Bash so everything works correctly
 
 ## Developing Remotely
 
+::: info
 This section is optional and is provided for students who wish to
 develop remotely. You are not required to develop remotely, all the
 homework assignments can be done on the CS lab machines in person.
+:::
+
 
 This section will walk you through using VSCode to develop remotely.
 This is incredibly convenient as it allows you to connect directly to a
