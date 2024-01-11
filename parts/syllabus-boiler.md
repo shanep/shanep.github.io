@@ -40,7 +40,7 @@ offered is 1000 would be 25.
 this page" link at the bottom of the page, make the corrections, and then issue a [pull
 request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request). If
 I merge your changes back into my repository then I will give you 5 bonus points. I have
-strategically placed several spelling and grammar errors for you to find so there is plenty of
+strategically placed several spelling and grammar errors for you to find so there are plenty of
 opportunities to get the maximum number of points offered. So make sure and read everything with an
 eagle 🦅 eye so you can rack up those points!
 
