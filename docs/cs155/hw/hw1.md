@@ -2,5 +2,5 @@
 next: false
 prev: false
 ---
-# Homework 1
+# HW1 - Configure GitHub CLI
 <!--@include: ../../../parts/setup-gh-cli.md -->

@@ -5,7 +5,7 @@ submit_email: cs155-hw-2-group@boisestate.edu
 repo: https://github.com/shanep/git-send-email
 project: cs155-hw-2
 ---
-# Homework 2
+# HW2 - Create a Patch
 
 In this homework you will learn how to use git to create a patch that can be emailed to another
 developer. This method of development is how git was originally designed to work and is still widely
