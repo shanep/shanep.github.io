@@ -99,7 +99,7 @@ details on how everything works.
 
 - First you need to install the [Remote development extension
   pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
-- Click in the lower right hand corner and then select "Connect to Host..." as shown in the screenshot below.
+- Click in the lower left hand corner and then select "Connect to Host..." as shown in the screenshot below.
 ![connect](images/vscode_connect.png)
 - Select "+ Add New SSH Host..."
 ![new host](images/vscode_connect_add_new_host.png)
