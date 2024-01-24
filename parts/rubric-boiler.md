@@ -18,7 +18,7 @@ reduced up to 50% if you do not follow the specification.
 
 ## Testing
 
-For the testing criteria your code will be ran against the provided tests and
+For the testing criteria your code will be run against the provided tests and
 any additional tests that you author. The test suite may consist of both
 automated tests and or manual testing in cases that automation is not feasible.
 
