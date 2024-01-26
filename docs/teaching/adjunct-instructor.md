@@ -59,7 +59,7 @@ You can use the built in Quizzes that zyBooks provides in canvas with the steps 
 ## Setup Github (course dependent)
 
 If your class is submitting programming assignments you will need to
-setup [github classrooms](github-classroom-setup.xml) and then update
+setup [github classrooms](github-classroom-setup.md) and then update
 each programming assignment in canvas.
 
 Each programming assignment listed in the syllabus is already setup to
