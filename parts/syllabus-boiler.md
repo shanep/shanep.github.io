@@ -3,7 +3,7 @@
 
 Grades will be posted in canvas and calculated with the percentages specified
 below. **Final grades will not be rounded**. I offer plenty of Extra Credit
-Opportunities that you can take advantage of to improve your final grade 😃.
+Opportunities that you can take advantage of to improve your final grade.
 
 I, like most people, am far from perfect. Some semesters I have an overwhelming
 number of students to track and things unintentionally fall through the
