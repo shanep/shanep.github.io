@@ -20,8 +20,8 @@ This section takes an estimated 3-4 hours
 - [Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
 - [Summary](https://git-scm.com/book/en/v2/Git-Branching-Summary)
 
-While the reading workload is less that other modules these concepts are
-by far the most difficult to understand so take your time it will be
+While the reading workload is less than other modules, these concepts are
+by far the most difficult to understand so take your time, it will be
 worth it!
 
 ## Homework
