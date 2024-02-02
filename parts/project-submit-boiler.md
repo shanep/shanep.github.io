@@ -45,7 +45,7 @@ generated in the previous step.
 	email = YOURNAME@u.boisestate.edu
 [sendemail]
 	smtpserver = smtp.gmail.com
-	smtpuser = YOURNAME@u.boisestate.edu
+	smtpuser = YOURNAME@gmail.com
 	smtpPass = xxxx xxxx xxxx xxxx
 	smtpencryption = ssl
 	smtpserverport = 465
