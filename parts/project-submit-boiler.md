@@ -21,10 +21,12 @@ and generate a new app password. Make sure and copy the password before you clos
 you will not be able to see it again.
 
 ::: warning
-Make sure you use your university supplied email when generating your password. Do not use your
-personal Gmail account or you will not receive a grade on the assignment.
+You will need to use your personal gmail account to send the email. If you don't have a gmail
+account you will need to create one to complete this assignment.
 
-You will need to save this password somewhere safe you can't access the password after you close the window.
+You will need to save this password somewhere safe you can't access the password after you close the
+window.
+
 :::
 
 ![generate app password](/images/gen-app-password.png)
