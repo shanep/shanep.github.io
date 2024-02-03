@@ -14,20 +14,27 @@ SMTP once!
 
 :::
 
+- Turn on [Two factor
+  authentication](https://support.google.com/accounts/answer/185839?hl=en&co=GENIE.Platform%3DDesktop)
+  for your Boise State provided email account
+
+
+::: danger
+
+Do NOT skip the step above. Boise State University uses GMail as their email provider and GMail
+requires you to use two factor authentication in order to generate an app password.
+
+You need to use your Boise State University issued email account to send the email and you **must**
+have two factor authentication turned on.
+
+:::
+
 In order to use [git send-email](https://git-scm.com/docs/git-send-email) you will need to generate
 an app password. Navigate to
 [https://security.google.com/settings/security/apppasswords](https://security.google.com/settings/security/apppasswords)
 and generate a new app password. Make sure and copy the password before you close the window because
 you will not be able to see it again.
 
-::: warning
-You will need to use your personal gmail account to send the email. If you don't have a gmail
-account you will need to create one to complete this assignment.
-
-You will need to save this password somewhere safe you can't access the password after you close the
-window.
-
-:::
 
 ![generate app password](/images/gen-app-password.png)
 
@@ -45,7 +52,7 @@ generated in the previous step.
 	email = YOURNAME@u.boisestate.edu
 [sendemail]
 	smtpserver = smtp.gmail.com
-	smtpuser = YOURNAME@gmail.com
+	smtpuser = YOURNAME@u.boisestate.edu
 	smtpPass = xxxx xxxx xxxx xxxx
 	smtpencryption = ssl
 	smtpserverport = 465
