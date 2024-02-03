@@ -1,5 +1,7 @@
 # Shane K. Panter
 
+## Education
+
 - Master of Science in Computer Science, Boise State University, 2013
 
 ## Industry Experience
