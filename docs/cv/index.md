@@ -18,14 +18,6 @@
 - **August 2013 - August 2021** Lecturer II, Boise State University
 - **March 2009 - May 2011** Research Assistant, Boise State University
 
-### Publications
-
-- Joshi, A., Schmidt, M. A., Panter, S., & Jain, A. (2020). Evaluating the Benefits of Team-Based
-  Learning in a Systems Programming Class. In Frontiers in Education 2020. [PDF](/papers/2020-TBL-IEEE-FIE.pdf)
-- Panter S., Schmidt M., Jain A. (2014) Team Based learning in Computer Science. Poster presented
-  at Great Ideas for Teaching and Learning Symposium
-- Panter, Shane K., "Document Classification" (2013). Boise State University Theses and Dissertations. 362
-
 ### Teaching - Undergraduate
 
 - CS117 C++ for Engineers - **Course coordinator** (Fall 2015 - Present)
