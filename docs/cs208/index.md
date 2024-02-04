@@ -13,6 +13,93 @@ criteria, and test programming. Database topics include: data modeling,
 insertion, deletion, and update statements, basic SQL queries, and
 database APIs. PREREQ: CS121 COREQ: CS155.
 
+## Tentative Schedule
+
+Below is a tentative schedule for the semester that you can use to plan out your work. Hard due
+dates are all posted in canvas. While every effort is made to maintain the schedule below minor
+changes may be made to accommodate events that are outside of anyone control (snow days, global
+pandemics, etc.)
+
+**All due dates are posted in canvas.**
+
+### Week 1
+
+-   1.0 Syllabus quiz
+-   1.1 Course Introduction
+-   1.2 Introduction Reading Assignment (ch1)
+
+### Week 2
+
+-   1.3 Introduction Quiz
+-   1.4 Project 1 - Developer Setup
+-   1.5 Module Retrospective
+
+### Week 3
+
+-   2.1 HTML Reading Assignment (ch2)
+-   2.2 More HTML Reading Assignment (ch3)
+
+### Week 4
+
+-   2.3 Basic CSS Reading Assignment (ch4)
+-   2.4 Quiz - HTML and CSS
+
+### Week 5
+
+-   2.5 Project 2 - HTML and CSS
+-   2.6 Module Retrospective (HTML and CSS)
+
+### Week 6
+
+-   3.1 Basic Javascript Reading Assignment (ch5)
+
+### Week 7
+
+-   3.2 JavaScript in the Browser Reading Assignment (ch6) - Part 1
+
+### Week 8
+
+-   3.3 JavaScript in the Browser Reading Assignment (ch6) - Part 2
+-   3.4 JavaScript Quiz
+
+### Week 9
+
+-   3.5 Project 3 - JavaScript
+-   3.6 Module Retrospective (JavaScript)
+
+### Week 10
+
+-   4.1 Relational Databases and SQL Reading Assignment (ch7)
+
+### Week 11
+
+-   Spring Break
+
+### Week 12
+
+-   4.2 Full Stack Reading Assignment (ch8)
+-   4.3 Full Stack Quiz
+
+### Week 13
+
+-   4.4 Project 4 - Full Stack Lab
+-   4.5 Module Retrospective (Full Stack)
+
+### Week 14
+
+-   5.1 Final Project
+-   5.2 Final project simulated stand up meeting 1
+
+### Week 15
+
+-   5.3 Final project simulated stand up meeting 2
+-   5.4 Final project simulated stand up meeting 3 (Merging Madness)
+
+### Week 16
+
+-   5.5  Final Project - 100% Complete
+-   5.6 Final Project Demo
+
 ## Course Learning Outcomes
 
 By the end of this course the student should have achieved the following
