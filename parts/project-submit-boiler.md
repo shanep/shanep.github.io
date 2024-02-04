@@ -116,7 +116,7 @@ make install-deps
 ### Email Patch File
 
 First make sure you are still on the submit branch that you created. If you type `git branch` you
-should see a start next to the submit branch that indicates you are currently on the submit branch.
+should see a star next to the submit branch that indicates you are currently on the submit branch.
 
 ```bash
 $ git branch
@@ -126,7 +126,7 @@ $ git branch
 
 ::: warning
 
-You MUST test your patch by emailing it to your self first! You will go through all the steps below
+You MUST test your patch by emailing it to yourself first! You will go through all the steps below
 with your **own** email. After you have sent the email to yourself and tested it you can then email
 your submission to the class mailing list!
 
@@ -240,7 +240,7 @@ git push
 
 - Finally open up the browser again and make sure you have 3 branches `master`, `submit`, and
   `test-patch`. The `submit` and `test-patch` branches should be identical. Each should have exactly
-  1 commit from you will all your changes.
+  1 commit from you with all your changes.
 
 ![final state](/images/final-repo-state.png)
 
@@ -269,6 +269,6 @@ Open a terminal and submit your patch.
 	git checkout submit
 	git send-email --to {{ $frontmatter.submit_email}} HEAD^
 
-Assuming all went well you are now complete! You have create a patch file from a squash merge,
+Assuming all went well you are now complete! You have created a patch file from a squash merge,
 emailed it and tested the resulting patch. You are well on your way to becoming an advanced
 git user!
