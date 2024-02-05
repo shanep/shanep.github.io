@@ -14,6 +14,13 @@ Kernel](https://www.kernel.org/doc/html/latest/process/submitting-patches.html).
 attempts to get everything correct but once you are able to wrap your head around the process you
 will have unlocked a powerful software development skill!
 
+::: warning
+
+GitHub pull requests are **not** accepted for this assignment and will result in a score of 0. You
+must follow the instructions to create a patch to send over email.
+
+:::
+
 
 <!--@include: ../../../parts/project-setup-boiler.md -->
 
