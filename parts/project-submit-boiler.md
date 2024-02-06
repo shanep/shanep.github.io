@@ -3,6 +3,21 @@
 Now that you have completed all the tasks the only thing left to do is to submit your code as a
 patch so you can receive a grade for all your hard work.
 
+### Turn on Two Factor
+
+Turn on [Two factor authentication](https://support.google.com/accounts/answer/185839?hl=en&co=GENIE.Platform%3DDesktop)
+for your Boise State provided email account
+
+::: danger
+
+Do NOT skip this step. Boise State University uses GMail as their email provider and GMail
+requires you to use two factor authentication in order to generate an app password.
+
+You need to use your Boise State University issued email account to send the email and you **must**
+have two factor authentication turned on.
+
+:::
+
 ### Setup SMTP
 
 ::: info
@@ -14,20 +29,6 @@ SMTP once!
 
 :::
 
-- Turn on [Two factor
-  authentication](https://support.google.com/accounts/answer/185839?hl=en&co=GENIE.Platform%3DDesktop)
-  for your Boise State provided email account
-
-
-::: danger
-
-Do NOT skip the step above. Boise State University uses GMail as their email provider and GMail
-requires you to use two factor authentication in order to generate an app password.
-
-You need to use your Boise State University issued email account to send the email and you **must**
-have two factor authentication turned on.
-
-:::
 
 In order to use [git send-email](https://git-scm.com/docs/git-send-email) you will need to generate
 an app password. Navigate to
