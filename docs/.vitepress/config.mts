@@ -36,6 +36,7 @@ export default defineConfig({
       '/cs155/': { base: '/cs155/', items: cs155() },
       '/cs208/': { base: '/cs208/', items: cs208() },
       '/cs333/': { base: '/cs333/', items: cs333() },
+      '/cs408/': { base: '/cs408/', items: cs408() },
       '/cs452/': { base: '/cs452/', items: cs452() },
     },
 
@@ -118,6 +119,31 @@ function cs333(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Research Paper', link: 'research-paper'},
         { text: 'Presentation', link: 'presentation'},
+      ]
+    }
+  ]
+}
+
+function cs408(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'CS408',
+      items: [
+        { text: 'Syllabus', link: 'index'},
+      ]
+    },
+    {
+      text: 'Course materials',
+      collapsed: false,
+      items: [
+        { text: 'Project Brainstorm', link: 'project-brainstorm'},
+        { text: 'Project Selection', link: 'project-selection'},
+	{ text: 'Project Setup', link: 'project-setup'},
+	{ text: 'Continuous Integration', link: 'ci'},
+	{ text: 'Planning', link: 'Planning'},
+	{ text: 'Feature Developemnt', link: 'feature-dev'},
+	{ text: 'Github Page', link: 'github-page'},
+	{ text: 'Final Presentation', link: 'final-presentation'}
       ]
     }
   ]

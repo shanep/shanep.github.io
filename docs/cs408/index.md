@@ -11,5 +11,44 @@ scalable web applications. Tools used will be mainly open source such as HTML, C
 server-side technologies such as Node.js. Topics include templating, single page apps, multi-page
 apps, continuous integration, and advanced serverless deployments using AWS or Azure.
 
+## Tentative Schedule
+
+### Week 1
+
+- Introductions
+- Course Overview
+
+### Week 2
+
+- [Project Brainstorm](project-brainstorm.md)
+
+### Week 3
+
+- [Project Selection](project-selection.md)
+
+### Week 4
+
+- [Project Setup](project-setup.md)
+
+### Week 5
+
+- [Continuous Integration](ci.md)
+
+### Week 6 - 7
+
+- [Planning](planning.md)
+
+### Week 8 - 13
+
+- [Feature Development](feature-dev.md)
+
+### Week 14
+
+- [GitHub Page](github-page.md)
+
+### Week 15 - 16
+
+- [Final Presentation](final-presentation.md)
+
 
 <!--@include: ../../parts/syllabus-boiler.md-->
