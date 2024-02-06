@@ -10,13 +10,14 @@ for your Boise State provided email account
 
 ::: danger
 
-Do NOT skip this step. Boise State University uses GMail as their email provider and GMail
+Do NOT skip this step. Boise State University uses Gmail as their email provider and Gmail
 requires you to use two factor authentication in order to generate an app password.
 
 You need to use your Boise State University issued email account to send the email and you **must**
 have two factor authentication turned on.
 
 :::
+
 
 ### Setup SMTP
 
@@ -38,6 +39,24 @@ you will not be able to see it again.
 
 
 ![generate app password](/images/gen-app-password.png)
+
+::: details I can't generate a password
+
+If you get the error shown below it typically means that you have not enabled two factor
+authentication. Follow these steps to resolve the issue:
+
+
+1. Go back and ensure you have [two factor authentication](#turn-on-two-factor) enabled.
+2. [Log out](https://support.google.com/mail/answer/8154) of your
+   Gmail account
+3. Log back into your Gmail account and make sure you did have to use two factor authentication
+4. If the steps above fail then open an [incognito
+   tab](https://support.google.com/chrome/answer/95464) and go back to the first step
+5. If you still have issues reboot your machine and go back to the first step
+
+![app password error](/images/AppPasswords.png)
+
+:::
 
 - Open up a terminal in codespaces
 
@@ -188,7 +207,7 @@ check your **spam** folder if you don't see any mail.
 
 ### Test your patch
 
-You can now get your patch from GMail and test it to make sure that everything works and your patch
+You can now get your patch from Gmail and test it to make sure that everything works and your patch
 was correct.
 
 - Checkout a new branch named `test-patch` from the upstream/master branch
@@ -203,7 +222,7 @@ git checkout upstream/master -b test-patch
  git push -u origin
 ```
 
-- Get the patch file from GMail
+- Get the patch file from Gmail
 
 ![download gmail](/images/gmail-original-email.png)
 
