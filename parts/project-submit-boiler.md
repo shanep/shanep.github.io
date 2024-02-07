@@ -88,31 +88,31 @@ We are now going to do what is called a [squash
 merge](https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html) and then create
 a patch file with all our changes in one commit.
 
-- First lets fetch the upstream branch. This is the branch that you originally forked from at the
+1. First lets fetch the upstream branch. This is the branch that you originally forked from at the
   start of the project
 
 ```bash
 git fetch upstream
 ```
-- Checkout a new branch named submit from the `upstream/master` branch.
+2. Checkout a new branch named submit from the `upstream/master` branch.
 
 ```bash
 git checkout upstream/master -b submit
 ```
 
-- Now we will do a squash merge all the commits we did onto our new submit branch.
+3. Now we will do a squash merge all the commits we did onto our new submit branch.
 
 ```bash
 git merge --squash master
 ```
 
-- Now commit those new changes to your submit branch
+4. Now commit those new changes to your submit branch
 
 ```bash
 git commit -m "Submit project"
 ```
 
-- Push your submit branch to GitHub
+5. Push your submit branch to GitHub
 
 ```bash
 git push -u origin
