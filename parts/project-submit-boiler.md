@@ -210,55 +210,58 @@ check your **spam** folder if you don't see any mail.
 You can now get your patch from Gmail and test it to make sure that everything works and your patch
 was correct.
 
-- Checkout a new branch named `test-patch` from the upstream/master branch
+1. Checkout a new branch named `test-patch` from the upstream/master branch
 
 ```bash
 git checkout upstream/master -b test-patch
 ```
 
-- Push your new `test-patch` branch to **your** repo instead of the upstream
+2. Push your new `test-patch` branch to **your** repo instead of the upstream
 
 ```bash
  git push -u origin
 ```
 
-- Get the patch file from Gmail
+3. Get the patch file from Gmail
 
 ![download gmail](/images/gmail-original-email.png)
 
 
-- Copy the email to your clip board
+4. Copy the email to your clip board
 
 ![copy to clipboard](/images/gmail-copy-email.png)
 
-- Create a new file and paste the contents that you just copied and save it in the root folder in a
-  file named `my-patch.txt`
+5. Create a new file and paste the contents that you just copied and save it in the root folder in a
+  file named `my-patch.txt`.
 
 ![new file](/images/new-file.png)
 
-- Make sure you saved the file correctly. It should show up in the file explorer as shown below.
+6. Make sure you saved the file correctly. It should show up in the file explorer as shown below.
 
 ![created file](/images/created-file.png)
 
-- Now apply that patch to your new `test-patch` branch
+7. Now apply that patch to your new `test-patch` branch
 
 ```bash
 git am my-patch.txt
 ```
 
-- Commit your patch
+8. Commit your patch
 
 ```bash
 git commit -m "Testing my email patch"
 ```
 
-- Push your test patch branch to your Github Account
+9. Push your test patch branch to your Github Account
 
 ```bash
 git push
 ```
 
-- Finally open up the browser again and make sure you have 3 branches `master`, `submit`, and
+10. After you have successfully applied the patch you can delete the file `my-patch.txt`. **Don't**
+  commit the file `my-patch.txt` it is just a temporary file that you don't want to save.
+
+11. Finally open up the browser again and make sure you have 3 branches `master`, `submit`, and
   `test-patch`. The `submit` and `test-patch` branches should be identical. Each should have exactly
   1 commit from you with all your changes.
 
