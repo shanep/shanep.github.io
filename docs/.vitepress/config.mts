@@ -136,11 +136,10 @@ function cs408(): DefaultTheme.SidebarItem[] {
       text: 'Course materials',
       collapsed: false,
       items: [
+      	{ text: 'Introduction', link: 'Introduction'},
         { text: 'Project Brainstorm', link: 'project-brainstorm'},
         { text: 'Project Selection', link: 'project-selection'},
 	{ text: 'Project Setup', link: 'project-setup'},
-	{ text: 'Continuous Integration', link: 'ci'},
-	{ text: 'Planning', link: 'Planning'},
 	{ text: 'Feature Developemnt', link: 'feature-dev'},
 	{ text: 'Github Page', link: 'github-page'},
 	{ text: 'Final Presentation', link: 'final-presentation'}
