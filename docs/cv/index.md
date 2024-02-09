@@ -11,7 +11,7 @@
 - **June 2005 - May 2011** Software Developer / Cybersecurity, Western Trailer
 - **August 2002 - June 2005** Network Technician, Price Electric
 
-## Academic Experience
+## Academic Appointments
 
 - **August 2023 - Present** Clinical Assistant Professor, Boise State University
 - **August 2021 - August 2023** Lecturer III, Boise State University
