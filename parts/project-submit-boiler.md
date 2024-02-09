@@ -19,7 +19,7 @@ have two factor authentication turned on.
 :::
 
 
-### Setup SMTP
+### Generate an app password
 
 ::: info
 
@@ -58,11 +58,13 @@ authentication. Follow these steps to resolve the issue:
 
 :::
 
-- Open up a terminal in codespaces
+### Setup SMTP
+
+1. Open up a terminal in codespaces
 
 ![Open Terminal](/images/open-terminal.png)
 
-- In the terminal type `git config --global --edit` and modify the file with the info listed below.
+2. In the terminal type `git config --global --edit` and modify the file with the info listed below.
 You will need to change the info listed below to match your own name, email and Password that you
 generated in the previous step.
 
@@ -118,7 +120,7 @@ git commit -m "Submit project"
 git push -u origin
 ```
 
-- Open up a web browser and navigate to your repository on GitHub and confirm that your submit
+6. Open up a web browser and navigate to your repository on GitHub and confirm that your submit
   branch is correctly pushed. Open up the files and make sure that everything looks good before
   going to the next step.
 

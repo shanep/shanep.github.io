@@ -33,5 +33,5 @@ Can't think of anything to build? Here are some ideas:
 
 ## Submitting
 
-At the end of the week all students must submit a slide deck that that you will present to the class
-in the following week.
+- You must submit a slide deck to canvas
+- You must submit a Video of you presenting your idea to the canvas forum.
