@@ -65,8 +65,9 @@ authentication. Follow these steps to resolve the issue:
 ![Open Terminal](/images/open-terminal.png)
 
 2. In the terminal type `git config --global --edit` and modify the file with the info listed below.
-You will need to change the info listed below to match your own name, email and Password that you
-generated in the previous step.
+You will need to change the info listed below to match your own name, email and **App Password** that you
+generated in the [previous step](#generate-an-app-password).
+
 
 ```text
 [User]
