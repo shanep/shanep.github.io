@@ -26,19 +26,12 @@ apps, continuous integration, and advanced serverless deployments using AWS or A
 
 - [Project Selection](project-selection.md)
 
-### Week 4
+### Week 4 - 6
 
 - [Project Setup](project-setup.md)
 
-### Week 5
 
-- [Continuous Integration](ci.md)
-
-### Week 6 - 7
-
-- [Planning](planning.md)
-
-### Week 8 - 13
+### Week 7 - 13
 
 - [Feature Development](feature-dev.md)
 
