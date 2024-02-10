@@ -6,12 +6,12 @@ completed in the CS Lab or on your personal machine if you prefer.
 
 ### Fork the starter repository
 
-- Fork the starter repository into your personal GitHub account: **{{$frontmatter.repo}}**
+1. Fork the starter repository into your personal GitHub account: **{{$frontmatter.repo}}**
 
 
 ![fork repo](/images/fork-the-repo.png)
 
-- In the new fork name the repository **{{$frontmatter.project}}**
+2. In the new fork name the repository **{{$frontmatter.project}}**
 
 ![fork name](/images/fork-name.png)
 
@@ -23,7 +23,7 @@ and internet connection!
 
 ![Start Codespace](/images/start-codespace.png)
 
-- If you are asked to install recommended extensions click "install". You may not be asked to
+1. If you are asked to install recommended extensions click "install". You may not be asked to
   install extensions if you are already syncing your account.
 
 ![Codespace extensions](/images/codespace-extensions.png)
