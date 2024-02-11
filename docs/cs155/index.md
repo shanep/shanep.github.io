@@ -10,6 +10,8 @@ the central ideas, practices, and day to day usage of software version
 control using Git. Basic client side usage such as committing,
 branching, merging, and pull-requests will be explored. COREQ: CS153.
 
+Instructor Email: shanepanter@boisestate.edu
+
 ## Course Learning Outcomes
 
 By the end of this course the student should have achieved the following
