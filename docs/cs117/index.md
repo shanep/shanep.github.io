@@ -37,23 +37,6 @@ canvas. Do not go to the zyBooks website and create a new account you
 **must** sign up through canvas so that your progress is properly
 recorded.
 
-## Course Learning Outcomes
-
-By the end of this course the student should have achieved the following
-course learning outcomes.
-| CLO | Objective                                                                                                     | Bloom Level | Assessment Instrument |
-| --- | ------------------------------------------------------------------------------------------------------------- | ----------- | --------------------- |
-| 1   | Design and implement working solutions to common engineering problems                                         | Create      | Project 2             |
-| 2   | Explain what scalar types; aggregate types; reference types are in the C++ Language                           | Understand  | Final Exam            |
-| 3   | Express how to use statements, expressions, and loops                                                         | Understand  | Project 3             |
-| 4   | Demonstrate how to use functions to decompose complex problems                                                | Apply       | Project 4, Project 5  |
-| 5   | Demonstrate how to use vectors, arrays and files                                                              | Apply       | Project 4, Project 5  |
-| 6   | Explain core object oriented programming concepts such as objects, classes, and methods in the context of C++ | Understand  | Final Exam            |
-| 7   | Use professional software engineering tools and techniques.                                                   | Apply       | Project 1             |
-
-- [Blooms Taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/)
-- [Booms Taxonomy of Verbs](https://tips.uark.edu/blooms-taxonomy-verb-chart/)
-
 ## Assessments
 
 Your final grade will be calculated with the following weights in
