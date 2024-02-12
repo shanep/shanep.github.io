@@ -71,8 +71,15 @@ function cs155(): DefaultTheme.SidebarItem[] {
     {
       text: 'CS155',
       items: [
-        { text: 'Syllabus', link: 'index'},
-	{ text: 'Homework', link: 'hw/index'}
+        { text: 'Syllabus', link: 'index'}
+      ]
+    },
+    {
+      text: 'Homework',
+      items: [
+      { text: 'Configure GitHub', link: 'hw/hw1'},
+      { text: 'Submit a Patch', link: 'hw/hw2'},
+      { text: 'Create a GitHub Page', link: 'hw/hw3'}
       ]
     },
     {
@@ -141,7 +148,7 @@ function cs408(): DefaultTheme.SidebarItem[] {
       text: 'Course materials',
       collapsed: false,
       items: [
-      	{ text: 'Introduction', link: 'Introduction'},
+      	{ text: 'Introduction', link: 'course-introduction'},
 	{ text: 'HTML Review' , link: 'html-review'},
 	{ text: 'CSS Reveiw' , link: 'css-review'},
 	{ text: 'Javascript Review', link: 'javascript-review'},
@@ -149,7 +156,6 @@ function cs408(): DefaultTheme.SidebarItem[] {
         { text: 'Project Selection', link: 'project-selection'},
 	{ text: 'Project Setup', link: 'project-setup'},
 	{ text: 'Feature Developemnt', link: 'feature-dev'},
-	{ text: 'Github Page', link: 'github-page'},
 	{ text: 'Final Presentation', link: 'final-presentation'}
       ]
     }
