@@ -29,29 +29,27 @@ attacks. PREREQ: CS253 or CS331 or ITM455.
 | 14   | Incident Response and Digital Forensics (ch13)                       | Digital Forensics               |                      |
 | 15   | Risk Management and Privacy (ch15)                                   | (None)                          | Quiz 6 (ch9 - ch13)  |
 | 16   | Final Exam                                                           |                                 |                      |
-<!-- |      | Physical Security and Cybersecurity Resilience (ch11)                |                                 |                      | -->
-<!-- |      | Security Standards and Policies (ch14)                               |                                 |                      |  -->
 
 ## Course Learning Outcomes
 
 By the end of this course the student should have achieved the following
 course learning outcomes.
 
-| TLO | SLO | Objective                                                         | Bloom Level | Assessment Instrument |
-| --- | --- | ----------------------------------------------------------------- | ----------- | --------------------- |
-| 1   |     | Understand the threats to today's networks                        | Understand  | Final Exam            |
-|     | 1.1 | Explore how to use Identity and access management tools           | Apply       | Labs                  |
-|     | 1.2 | Explore industry standard security assessment techniques          | Apply       | Labs                  |
-|     | 1.3 | Demonstrate an understanding of cybersecurity resilience          | Understand  | Labs                  |
-| 2   |     | Explain the goals of network security                             | Understand  | Final Exam            |
-|     | 2.1 | Review  how a network is attacked                                 | Understand  | Labs                  |
-|     | 2.2 | Review Secure Network Protocols                                   | Understand  | Labs                  |
-|     | 2.3 | Review Secure Network Design                                      | Understand  | Labs                  |
-| 3   |     | Explain how security defenses affect individuals or organizations | Analyze     | Final Exam            |
-|     | 3.1 | Demonstrate appropriate incident response                         | Apply       | Labs                  |
-|     | 3.2 | State standards, policies and procedures                          | Remember    | Quiz                  |
-|     | 3.3 | Articulate  risk management                                       | Understand  | Quiz                  |
-| 4   |     | Understand the skills and processes needed to protect networks    | Understand  | Final Exam            |
+| TLO | SLO | Objective                                                         | Assessment Instrument |
+|-----|-----|-------------------------------------------------------------------|-----------------------|
+| 1   |     | Understand the threats to today's networks                        | Final Exam            |
+|     | 1.1 | Explore how to use Identity and access management tools           | Labs                  |
+|     | 1.2 | Explore industry standard security assessment techniques          | Labs                  |
+|     | 1.3 | Demonstrate an understanding of cybersecurity resilience          | Labs                  |
+| 2   |     | Explain the goals of network security                             | Final Exam            |
+|     | 2.1 | Review  how a network is attacked                                 | Labs                  |
+|     | 2.2 | Review Secure Network Protocols                                   | Labs                  |
+|     | 2.3 | Review Secure Network Design                                      | Labs                  |
+| 3   |     | Explain how security defenses affect individuals or organizations | Final Exam            |
+|     | 3.1 | Demonstrate appropriate incident response                         | Labs                  |
+|     | 3.2 | State standards, policies and procedures                          | Quiz                  |
+|     | 3.3 | Articulate  risk management                                       | Quiz                  |
+| 4   |     | Understand the skills and processes needed to protect networks    | Final Exam            |
 
 - [Blooms Taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/)
 - [Booms Taxonomy of Verbs](https://tips.uark.edu/blooms-taxonomy-verb-chart/)

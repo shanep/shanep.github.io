@@ -15,18 +15,18 @@ branching, merging, and pull-requests will be explored. COREQ: CS153.
 By the end of this course the student should have achieved the following
 course learning outcomes.
 
-| TLO | SLO | Objective                                   | Bloom Level | Assessment Instrument |
-|-----|-----|---------------------------------------------|-------------|-----------------------|
-| 1   |     | Explain the basics of version control       | Understand  | Reading Quiz          |
-|     | 1.1 | Practice adding commits                     | Apply       | Hands on Lab          |
-|     | 1.2 | Practice pushing and pulling code           | Apply       | Hands on Lab          |
-|     | 1.3 | Explain how Git works on the client side    | Understand  | Hands on Lab          |
-| 2   |     | Explore the tooling needed to work with Git | Remember    | Reading Quiz          |
-|     | 2.1 | Practice using Git, VSCode and GitHub       | Apply       | Homework 1 and 2      |
-| 3   |     | Explain the basics of branching/merging     | Understand  | Reading Quiz          |
-|     | 3.1 | Practice merging code                       | Apply       | Hands on Lab          |
-|     | 3.2 | Practice resolving merge conflicts          | Apply       | Hands on Lab          |
-|     | 3.3 | Explore sending a Patch over email          | Apply       | Homework 2            |
+| TLO | SLO | Objective                                   | Assessment Instrument |
+|-----|-----|---------------------------------------------|-----------------------|
+| 1   |     | Explain the basics of version control       | Reading Quiz          |
+|     | 1.1 | Practice adding commits                     | Hands on Lab          |
+|     | 1.2 | Practice pushing and pulling code           | Hands on Lab          |
+|     | 1.3 | Explain how Git works on the client side    | Hands on Lab          |
+| 2   |     | Explore the tooling needed to work with Git | Reading Quiz          |
+|     | 2.1 | Practice using Git, VSCode and GitHub       | Homework 1 and 2      |
+| 3   |     | Explain the basics of branching/merging     | Reading Quiz          |
+|     | 3.1 | Practice merging code                       | Hands on Lab          |
+|     | 3.2 | Practice resolving merge conflicts          | Hands on Lab          |
+|     | 3.3 | Explore sending a Patch over email          | Homework 2            |
 
 - [Blooms Taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/)
 - [Booms Taxonomy of Verbs](https://tips.uark.edu/blooms-taxonomy-verb-chart/)

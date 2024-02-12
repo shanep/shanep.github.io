@@ -1,4 +1,9 @@
 <!-- markdownlint-disable-next-line -->
+## Instructor Contact
+
+- **email:** shanepanter@boisestate.edu
+- **office:** [CCP246](https://www.boisestate.edu/coen-cs/currentstudents/aboutccp/)
+
 ## Grading Policy
 
 Grades will be posted in canvas and calculated with the percentages specified
