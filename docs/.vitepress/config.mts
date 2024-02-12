@@ -1,4 +1,5 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
+import footnote from 'markdown-it-footnote'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,7 +8,11 @@ export default defineConfig({
 
   markdown: {
     theme: { light: 'github-light', dark: 'github-dark' },
-    math: true
+    math: true,
+    config: (md) => {
+        md.use(footnote)
+    }
+
   },
   cleanUrls: true,
 
@@ -137,6 +142,9 @@ function cs408(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
       	{ text: 'Introduction', link: 'Introduction'},
+	{ text: 'HTML Review' , link: 'html-review'},
+	{ text: 'CSS Reveiw' , link: 'css-review'},
+	{ text: 'Javascript Review', link: 'javascript-review'},
         { text: 'Project Brainstorm', link: 'project-brainstorm'},
         { text: 'Project Selection', link: 'project-selection'},
 	{ text: 'Project Setup', link: 'project-setup'},
