@@ -1,5 +1,9 @@
 #  Project Brainstorm
 
+![banner](/images/project-brainstorm.jpg)
+*Content credentials Generated with AI ∙ February 13, 2024 at 2:35 PM Students who are brainstorming
+a solution to a hard programming project*
+
 This class allows students to work on an open-ended project that can be driven in a number of
 different directions.  Your task for this week is to come up with one potential project that you
 would like to work on and present it to the class. You will then review other student project ideas
