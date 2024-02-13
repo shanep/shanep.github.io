@@ -96,6 +96,8 @@ Congrats you are now configured to use github.com with the ssh protocol!
 
 ## Submitting
 
-Log into canvas and submit a screen shot showing that you have completed the assignment. An example is shown below.
+Log into canvas and submit a screen shot showing that you have completed the assignment. An example
+is shown below. **NOTE:** Your screen shot may look slightly different depending on the Operating
+System so don't worry if it doe not match exactly.
 
 ![gh cli](/images/gh-cli-submit.png)

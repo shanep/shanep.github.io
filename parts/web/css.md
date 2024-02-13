@@ -1,5 +1,7 @@
 ## Overview
 
+![css banner](/images/css-banner.jpg)[^1]
+
 In this article, we will take a simple HTML document and apply CSS to it, learning some practical
 things about the language along the way.
 
@@ -312,3 +314,6 @@ the document, and look up properties and values in the MDN documentation.
 
 Portions of this document are covered under [CC 2.5](https://creativecommons.org/licenses/by-sa/2.5/)
 ![cc2.5](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)
+
+
+[^1]: Content credentials Generated with AI ∙ February 12, 2024 at 4:37 PM **prompt:** A super happy web designer in a coffee shop writing CSS and there is an alien invasion happening outside

@@ -34,7 +34,10 @@ to your published github page which should be in the form https://username.gith
 
 :::
 
-To get credit for this assignment please submit the url to your published page to canvas
-
 There is no cost to publish a page so you do not need to pay GitHub or any other company money to
 complete this assignment!
+
+## Submitting
+
+To get credit for this assignment please submit the URL to your published page to the canvas
+assignment. Your grade will be updated after the due date (and late window) have passed.
