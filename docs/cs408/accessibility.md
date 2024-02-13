@@ -1,5 +1,3 @@
-# Accessibility Review
+# Accessibility
 
-In this lesson we will do a quick review of Accessibility that was covered in CS208.
-
-<!--@include: ../../parts/web/css.md-->
+In this lesson we will introduce you to Accessibility and how to incorporate it into your designs
