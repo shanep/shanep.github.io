@@ -298,3 +298,8 @@ Open a terminal and submit your patch.
 Assuming all went well you are now complete! You have created a patch file from a squash merge,
 emailed it and tested the resulting patch. You are well on your way to becoming an advanced
 git user!
+
+## Submitting
+
+You do not need to submit anything to canvas for this assignment. Your email is your submission,
+your grade will be updated after the due date (and late window) have passed.

@@ -1,5 +1,7 @@
 ## Overview
 
+![css banner](/images/javascript-banner.jpg)[^1]
+
 JavaScript is a scripting or programming language that allows you to implement complex features on
 web pages — every time a web page does more than just sit there and display static information for
 you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics,
@@ -548,3 +550,7 @@ code on your website, amongst other things.
 
 Portions of this document are covered under [CC 2.5](https://creativecommons.org/licenses/by-sa/2.5/)
 ![cc2.5](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)
+
+[^1]:Content credentials Generated with AI ∙ February 12, 2024 at 4:44 PM **prompt:** "A
+construction worker who is building something but clearly using the wrong tool but is super happy
+and all of the other workers are looking at him weird"

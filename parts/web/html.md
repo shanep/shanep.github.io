@@ -1,5 +1,7 @@
 ## Overview
 
+![html banner](/images/html-banner.jpg)[^1]
+
 In this article, we cover the absolute basics of HTML. To get you started, this article defines
 elements, attributes, and all the other important terms you may have heard. It also explains where
 these fit into HTML. You will learn how HTML elements are structured, how a typical HTML page is
@@ -358,3 +360,5 @@ language.
 
 Portions of this document are covered under [CC 2.5](https://creativecommons.org/licenses/by-sa/2.5/)
 ![cc2.5](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)
+
+[^1]: Content credentials Generated with AI ∙ February 12, 2024 at 4:27 PM **prompt:** "slinging HTML like its 1995"

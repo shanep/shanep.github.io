@@ -15,33 +15,30 @@ apps, continuous integration, and advanced serverless deployments using AWS or A
 
 ### Week 1
 
-- Introductions
-- Course Overview
+| Task    | Link                                          |
+|:--------|:----------------------------------------------|
+| Reading | [Course Introduction](course-introduction.md) |
+| Quiz    | Class Introductions                           |
+| Quiz    | Syllabus Quiz                                 |
 
 ### Week 2
 
-- [Project Brainstorm](project-brainstorm.md)
 
-### Week 3
+#### Reading
 
-- [Project Selection](project-selection.md)
+- [HTML Review](html-review.md)
 
-### Week 4 - 6
+#### Homework
 
-- [Project Setup](project-setup.md)
+- HTML Quiz (canvas)
+- Weekly Reflection (canvas)
 
+#### Week 3
 
-### Week 7 - 13
+#### Homework
 
-- [Feature Development](feature-dev.md)
+- [Homework 1](hw/hw1.md)
 
-### Week 14
-
-- [GitHub Page](github-page.md)
-
-### Week 15 - 16
-
-- [Final Presentation](final-presentation.md)
 
 
 <!--@include: ../../parts/syllabus-boiler.md-->
