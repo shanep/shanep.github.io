@@ -7,7 +7,8 @@ next:
 
 # Course Introduction
 
-![introduction](images/introduction.jpg)[^1]
+![introduction](images/introduction.jpg)
+*Content credentials Generated with AI ∙ February 12, 2024 at 4:12 PM **prompt:** "Students on the first day of class about to learn full stack web development"*
 
 In this course, we will pick up were we left off in CS208 - Introduction to Full Stack Web
 Development. We will start off will a quick review of the basics to refresh our memory, then we will
@@ -25,5 +26,4 @@ to design from start to finish.
 Portions of this document are covered under [CC 2.5](https://creativecommons.org/licenses/by-sa/2.5/)
 ![cc2.5](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)
 
-[^1]: Content credentials Generated with AI ∙ February 12, 2024 at 4:12 PM **prompt:** "Students on the
-    first day of class about to learn advanced full stack web development"
+[^1]:

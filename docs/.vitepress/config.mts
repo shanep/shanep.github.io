@@ -152,9 +152,11 @@ function cs408(): DefaultTheme.SidebarItem[] {
 	{ text: 'HTML Review' , link: 'html-review'},
 	{ text: 'CSS Reveiw' , link: 'css-review'},
 	{ text: 'Javascript Review', link: 'javascript-review'},
+	{ text: 'Frontend Review', link: 'frontend-review'},
+	{ text: 'Backend Review', link: 'backend-review' },
+	{ text: 'Accessibility' , link: 'accessibility'},
         { text: 'Project Brainstorm', link: 'project-brainstorm'},
-        { text: 'Project Selection', link: 'project-selection'},
-	{ text: 'Project Setup', link: 'project-setup'},
+        { text: 'Project Setup', link: 'project-setup'},
 	{ text: 'Feature Developemnt', link: 'feature-dev'},
 	{ text: 'Final Presentation', link: 'final-presentation'}
       ]

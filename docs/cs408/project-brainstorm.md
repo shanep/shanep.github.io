@@ -1,9 +1,13 @@
 #  Project Brainstorm
 
 This class allows students to work on an open-ended project that can be driven in a number of
-different directions.  Your task for this week is to come up with potential project ideas to present
-to the class. You are allowed to form teams if you wish or work individually. The project
-presentations will allow you to potentially recruit other students to work with.
+different directions.  Your task for this week is to come up with one potential project that you
+would like to work on and present it to the class. You will then review other student project ideas
+and select what you would like to work on.
+
+## Teams
+
+You can choose to work individually or form a team of up to 3 other students.
 
 ## Project requirements
 
@@ -12,8 +16,8 @@ Student are allowed to work on any project as long as the following constraints 
 1. Your project must be full stack and use [Node.js](https://nodejs.org/en) on the backend.
 2. Your project can use a front end framework like [vue](https://vuejs.org) or you can write
    everything from scratch
-3. Your project must be substantial enough for all team members to make contributions
-   for the duration of the semester.
+3. If you are working on a team the project must be substantial enough for all team members to make
+   meaningful contributions for the duration of the semester.
 4. Due to University rules you can't do anything that requires the team to operate in a legal gray
   zone. For example, using [Nintendo
   ROM's](https://www.polygon.com/2019/9/11/20860039/nintendo-copyright-trademark-infringement-rom-lawsuit)
@@ -33,5 +37,6 @@ Can't think of anything to build? Here are some ideas:
 
 ## Submitting
 
-- You must submit a slide deck to canvas
-- You must submit a Video of you presenting your idea to the canvas forum.
+- You must submit a 1 page outline detailing what website you want to build to the canvas discussion group
+- You must view and respond to 4 other posts
+- (optional) Form a team and setup a way to communicate (canvas, discord, slack, etc.)
