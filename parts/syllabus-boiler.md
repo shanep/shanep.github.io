@@ -335,3 +335,4 @@ in the student receiving a failing grade (F) in the course.
 - [Support resources](https://www.boisestate.edu/online/support-resources/)
 - [Academic support services](https://www.boisestate.edu/aasc/academicsupportservices/)
 - [Online student services](https://www.boisestate.edu/online/student-services/)
+- [Accessing University Support Services](https://docs.google.com/document/d/14ZMRsHAgo356h0nHtJuStDKGwvg6LY-XOA7PxacwECw/edit#heading=h.oohv0l26wvu1)
