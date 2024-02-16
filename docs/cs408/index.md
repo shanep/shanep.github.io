@@ -9,9 +9,50 @@ client-side and server-side web development. Learn advanced concepts behind comp
 technologies, best practices for design and usability, and build rich, dynamic, n-tier secure and
 scalable web applications. Tools used will be mainly open source such as HTML, CSS, JavaScript and
 server-side technologies such as Node.js. Topics include templating, single page apps, multi-page
-apps, continuous integration, and advanced serverless deployments using AWS or Azure.
+apps, continuous integration, and advanced serverless deployments using AWS or Azure.  PREREQ:
+CS208, CS321
 
-## Tentative Schedule
+## Learning Objectives
+
+| TLO | SLO | Objective                                                                                                                          |
+|-----|-----|------------------------------------------------------------------------------------------------------------------------------------|
+| 1   |     | Create a Full Stack Web Application                                                                                                |
+|     | 1.1 | Use a Database to store state information about your application                                                                   |
+|     | 1.2 | Apply responsive UI design techniques that displays correctly on both desktop and mobile                                           |
+|     | 1.3 | .Use JavaScript to add interactive components to your websites.                                                                     |
+|     | 1.4 | Use backend templates reduce repetitive HTML and produce dynamic content based on conditionals.                                    |
+|     | 1.5 | Given several professional frameworks that you could use (React, HTMX, etc.) evaluate their pros and cons for your selected domain |
+| 2   |     | Apply Advanced HTML and CSS properties                                                                                             |
+|     | 2.1 | Explain the purpose of advanced HTML/CSS tags                                                                                      |
+|     | 2.2 | Use advanced HTML tags in your designs                                                                                             |
+|     | 2.3 | Use advanced CSS to style HTML elements.                                                                                           |
+|     | 2.4 | Apply styles using id and class attributes.                                                                                        |
+| 3   |     | Given JavaScript in a Full Stack environment, Explain Its Purpose                                                                  |
+|     | 3.1 | Identify the differences between using Javascript on the frontend vs backend                                                       |
+|     | 3.2 | Use async/wait where appropriate                                                                                                   |
+|     | 3.3 | Use callbacks where appropriate                                                                                                    |
+|     | 3.4 | Use AJAX to retrieve and manipulate HTML elements and properties.                                                                  |
+| 4   |     | Develop an Accessible Website                                                                                                      |
+|     | 4.1 | Understand why WAI-ARIA was created (very simple explanation)                                                                      |
+|     | 4.2 | Memorize a given list of important WAI-ARIA rules (the plain language version)                                                     |
+|     | 4.3 | Explain in layman's terms the given list of important WAI-ARIA rules                                                               |
+|     | 4.4 | Given a specific accessibilty problem, identify the appropriate section of the WAI-ARIA document that contains the rules           |
+|     | 4.5 | Explain the legal ramifications for not creating accessible websites                                                               |
+|     | 4.6 | Describe the elements of an accessible design                                                                                      |
+|     | 4.7 | Incorporate common accessibility features from a given list                                                                        |
+| 5   |     | Establish advanced program development strategies                                                                                  |
+|     | 5.1 | Use a debugger for both front end and backend                                                                                      |
+|     | 5.2 | Explain when you need to write tests and when you don't                                                                            |
+|     | 5.3 | Use web developer tools to inspect existing web pages and network traffic.                                                         |
+|     | 5.4 | Use the Chrome Developer Tools and console logging to debug JavaScript in your web pages.                                          |
+| 6   |     | Apply good software engineering practices (cross cutting)                                                                          |
+|     | 6.1 | Use Version Control for all projects                                                                                               |
+|     | 6.2 | Configure and Use Continuous Integration and testing with github actions                                                           |
+|     | 6.3 | Configure and Use  Automatic Version extraction from github tags                                                                   |
+|     | 6.4 | Configure Continuous deployment                                                                                                    |
+|     | 6.5 | Configure Continuous Integration                                                                                                   |
+
+## Topics and  Schedule
 
 Below is a tentative schedule for the semester that you can use to plan out your work. Hard due
 dates are all posted in canvas. While every effort is made to maintain the schedule below minor
