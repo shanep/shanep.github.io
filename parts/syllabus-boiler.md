@@ -195,7 +195,7 @@ announcements or updates given during class.
 ## Late Work Policy
 
 All homework assignments can be submitted up to **2 days late with no penalty**.
-Once grades have been posted to canvas no further submissions will be accepted
+After the 2 day grade period no further submissions will be accepted
 unless prior arrangements have been made. No work or extra credit will be
 accepted after the **last day of course instruction**, the semester has to end
 at some point so plan accordingly. Work submitted 1 second late is treated the
@@ -334,5 +334,12 @@ in the student receiving a failing grade (F) in the course.
 - [Educational access center](https://www.boisestate.edu/eac/)
 - [Support resources](https://www.boisestate.edu/online/support-resources/)
 - [Academic support services](https://www.boisestate.edu/aasc/academicsupportservices/)
-- [Online student services](https://www.boisestate.edu/online/student-services/)
-- [Accessing University Support Services](https://docs.google.com/document/d/14ZMRsHAgo356h0nHtJuStDKGwvg6LY-XOA7PxacwECw/edit#heading=h.oohv0l26wvu1)
+
+### Accessing University Support Services
+
+Boise State cares about you! You can find many kinds of help, including technical, academic,
+financial, life needs, learning accommodations, data privacy agreements, and much more. These
+resources have been gathered into one convenient document for you to keep on hand. Almost all of the
+student services on campus are also available to online students. Make sure to take a look at the
+[Accessing University Support Services](https://docs.google.com/document/d/14ZMRsHAgo356h0nHtJuStDKGwvg6LY-XOA7PxacwECw/edit#heading=h.oohv0l26wvu1)
+ document.
