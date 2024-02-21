@@ -85,11 +85,11 @@ pandemics, etc.)
 
 ### Week 4
 
-| Task    | Link                                      | Due |
-|:--------|:------------------------------------------|-----|
-| Reading | [JavaScript Review](javascript-review.md) | We  |
-| Quiz    | Reading Quiz (canvas)                     | Th  |
-| Quiz    | Weekly Reflection (canvas)                | Fr  |
+| Task    | Link                        | Due |
+|:--------|:----------------------------|-----|
+| Reading | [JavaScript](javascript.md) | We  |
+| Quiz    | Reading Quiz (canvas)       | Th  |
+| Quiz    | Weekly Reflection (canvas)  | Fr  |
 
 ### Week 5
 
