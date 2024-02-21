@@ -151,7 +151,7 @@ function cs408(): DefaultTheme.SidebarItem[] {
       	{ text: 'Introduction', link: 'course-introduction'},
 	{ text: 'HTML Review' , link: 'html-review'},
 	{ text: 'CSS Reveiw' , link: 'css-review'},
-	{ text: 'Javascript Review', link: 'javascript-review'},
+	{ text: 'Javascript', link: 'javascript'},
 	{ text: 'Frontend Review', link: 'frontend-review'},
 	{ text: 'Backend Review', link: 'backend-review' },
 	{ text: 'Accessibility' , link: 'accessibility'},
