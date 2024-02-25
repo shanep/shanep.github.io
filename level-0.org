@@ -1,0 +1,12 @@
+#+AUTHOR:     Shane K. Panter
+#+EMAIL:      shanepanter@boisestate.edu
+#+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate
+#+LANGUAGE:   en
+#+CATEGORY:   teaching syllabus
+
+#+HTML_LINK_HOME: ../index.html
+#+HTML_LINK_UP: ../index.html
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+#+MACRO: options (eval (if (org-export-derived-backend-p org-export-current-backend 'html) "#+OPTIONS: num:nil"))
+#+OPTIONS:  toc:1 \n:nil ::t |:t ^:t -:t f:t *:t tags:not-in-toc email:t

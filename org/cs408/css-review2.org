@@ -1,0 +1,24 @@
+#+SETUPFILE: ../../level-1.org
+#+TITLE: CSS Review Part 2
+#+SUBTITLE: CS408 Full Stack Web Development
+#+DESCRIPTION: CS408 Full Stack Web Development
+{{{options}}}
+#+OPTIONS: toc:nil
+
+* Overview
+
+In this lesson we will do a quick review of CSS that was covered in CS208.
+
+* Reading
+
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance][Cascade, specificity, and inheritance]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_layers][Cascade layers]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model][The box model]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders][Backgrounds and borders]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Handling_different_text_directions][Handling different text directions]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content][Overflowing content]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units][CSS values and units]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS][Sizing items in CSS]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements][Images, media, and form elements]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables][Styling Tables]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS][Debugging CSS]]
