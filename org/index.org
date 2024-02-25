@@ -1,0 +1,14 @@
+#+TITLE:      Shane K. Panter
+#+SUBTITLE: BOOM!
+#+DESCRIPTION: Shane K. Panters personal website
+#+AUTHOR:     Shane K. Panter
+#+EMAIL:      shanepanter@boisestate.edu
+#+OPTIONS:    H:3 num:nil toc:nil \n:nil ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:t tags:not-in-toc email:t
+#+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate
+#+LANGUAGE:   en
+#+CATEGORY:   teaching syllabus
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/solarized-light.css" title="My Style" />
+
+* Teaching
+
+- [[file:cs408/index.org][CS408 - Full Stack Web Development]]
