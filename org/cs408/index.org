@@ -1,10 +1,12 @@
-#+SETUPFILE: ../../level-0.org
-#+TITLE: CS408 Full Stack Web Development
-#+SUBTITLE: Syllabus
+#+SETUPFILE: ../../level-1.org
+#+TITLE: Syllabus
+#+SUBTITLE: CS408 Full Stack Web Development
 #+DESCRIPTION: CS408 Full Stack Web Development Syllabus
-{{{options}}}
 
 * Catalog Statement
+:PROPERTIES:
+:custom_id: catalog-statement
+:END:
 
 *CS408 - Full Stack Web Development (3-0-3)(F).* Learn how to apply various technologies used for
 client-side and server-side web development. Learn advanced concepts behind competing web
@@ -13,48 +15,6 @@ scalable web applications. Tools used will be mainly open source such as HTML, C
 server-side technologies such as Node.js. Topics include templating, single page apps, multi-page
 apps, continuous integration, and advanced serverless deployments using AWS or Azure. PREREQ: CS208,
 CS321
-
-* Schedule
-:PROPERTIES:
-:CUSTOM_ID: schedule
-:END:
-
-Below is a tentative schedule for the semester that you can use to plan out your work. Hard due
-dates are all posted in canvas. While every effort is made to maintain the schedule below minor
-changes may be made to accommodate events that are outside of anyone's control (snow days, global
-pandemics, etc.)
-
-- Week 1
-  - [[file:course-introduction.org][Course Introduction]]
-  - [[https://canvas.boisestate.edu/][Syllabus Quiz]] **Due:** TBD
-- Week 2
-  - [[file:html-review.org][HTML Review]]
-  - [[https://canvas.boisestate.edu/][Quiz]] **Due:** TBD
-- Week 3
-  - [[file:css-review1.org][CSS Review Part 1]]
-  - [[https://canvas.boisestate.edu/][Quiz]] **Due:** TBD
-- Week 4
-  - [[file:css-review2.org][CSS Review Part 2]]
-  - [[https://canvas.boisestate.edu/][Quiz]] **Due:** TBD
-- Week 5
-  - [[file:javascript.org][JavaScript]]
-  - [[https://canvas.boisestate.edu/][Quiz]] **Due:** TBD
-- Week 6
-  - Fullstack
-  - Quiz
-- Week 7
-  - Accessibility
-  - Quiz
-- Week 8 - 9
-  - Project Brainstorm
-  - Teams
-- Week 10
-  - Project Setup
-- Week 11 - 14
-  - Feature Development
-  - Progress Reports
-- Week 15 - 16
-  - Final Presentation
 
 * Learning Objectives
 :PROPERTIES:

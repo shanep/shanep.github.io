@@ -1,12 +1,13 @@
+#+options: html-link-use-abs-url:nil html-postamble:auto html-preamble:t html-scripts:nil
+#+options: html-style:nil html5-fancy:t tex:t num:nil
+#+html_doctype: html5
+#+html_container: div
+#+html_content_class: content
+#+html_equation_reference_format: \eqref{%s}
+#+html_head: <link rel="stylesheet" type="text/css" href="css/style.css" />
+#+html_head_extra:
+#+creator: <a href="https://www.gnu.org/software/emacs/">Emacs</a> 30.0.50 (<a href="https://orgmode.org">Org</a> mode 9.6.13)
 #+AUTHOR:     Shane K. Panter
 #+EMAIL:      shanepanter@boisestate.edu
-#+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate
 #+LANGUAGE:   en
-#+CATEGORY:   teaching syllabus
-
-#+HTML_LINK_HOME: ../index.html
-#+HTML_LINK_UP: ../index.html
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
-
-#+MACRO: options (eval (if (org-export-derived-backend-p org-export-current-backend 'html) "#+OPTIONS: num:nil"))
-#+OPTIONS:  toc:1 \n:nil ::t |:t ^:t -:t f:t *:t tags:not-in-toc email:t
+#+MACRO: latex_options (eval (if (org-export-derived-backend-p org-export-current-backend 'html) "#+OPTIONS: num:nil"))
