@@ -1,0 +1,297 @@
+#+SETUPFILE: ../../level-1.org
+#+TITLE: Schedule
+#+SUBTITLE: CS408 Full Stack Web Development
+#+DESCRIPTION: CS408 Full Stack Web Development Syllabus
+#+options: html-preamble:"<a href=../index.html>Home</a> | <a href=index.html>Up</a>"
+
+* Week 1 - Course Introduction
+
+In this course, we will pick up were we left off in CS208 - Introduction
+to Full Stack Web Development. We will start off will a quick review of
+the basics to refresh our memory, then we will introduce some new
+concepts and polish off the course with a full stack web application
+that you get to design from start to finish.
+
+** Assignments
+
+- [[https://canvas.boisestate.edu/][Syllabus Quiz]] **Due:** TBD
+
+* Week 2 - HTML Review
+
+This week we will do a quick review of HTML that was covered in CS208.
+
+** Reading
+
+Please read each linked article below.
+
+- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML][Introduction to HTML]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started][Getting started with HTML]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML][What's in the head? Metadata in HTML]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals][HTML text fundamentals]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks][Creating hyperlinks]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting][Advanced text formatting]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure][Document and website structure]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML][Debugging HTML]]
+
+** TODO Assignments
+  - [[https://canvas.boisestate.edu/][Quiz]] **Due:** TBD
+
+* Week 3 - CSS Review Part 1
+
+This week we will do a quick review of CSS that was covered in CS208.
+
+** Reading
+
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS][What is CSS]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started][Getting started with CSS]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured][How CSS is structured]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works][How CSS works]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks][CSS Building blocks]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors][CSS Selectors]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors][Type, class, and ID selectors]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors][Attribute selectors]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements][Pseudo-classes and pseudo-elements]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators][Combinators]]
+
+** Assignments
+  - [[https://canvas.boisestate.edu/][Quiz]] **Due:** TBD
+
+* Week 4 - CSS Review Part 2
+
+** Reading
+
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance][Cascade, specificity, and inheritance]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_layers][Cascade layers]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model][The box model]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders][Backgrounds and borders]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Handling_different_text_directions][Handling different text directions]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content][Overflowing content]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units][CSS values and units]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS][Sizing items in CSS]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements][Images, media, and form elements]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables][Styling Tables]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS][Debugging CSS]]
+
+** Assignments
+- [[https://canvas.boisestate.edu/][Quiz]] **Due:** TBD
+
+* Week 5 - JavaScript
+
+In this week we will look at some of the more advanced features of JavaScript
+
+** Reading
+
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics][JavaScript Objects]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes][Object prototypes]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming][OO programming]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript][Classes in JavaScript]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON][Working with JSON]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducin][Introducing asynchronous JavaScript]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises][How to use promises]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Implementing_a_promise-based_API][How to implement a promise-based API]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing_workers][Introducing workers]]
+
+** Assignments
+  - [[https://canvas.boisestate.edu/][Quiz]] **Due:** TBD
+
+* Week 6 Fullstack
+  - Quiz
+
+* Week 7 Accessibility
+  - Quiz
+
+* Week 8 - 9 Project Brainstorm
+
+This class allows students to work on an open-ended project that can be
+driven in a number of different directions. Your task for this week is
+to come up with one potential project that you would like to work on and
+present it to the class. You will then review other student project
+ideas and select what you would like to work on.
+
+** Teams
+
+You can choose to work individually or form a team of up to 3 other
+students.
+
+** Project requirements
+
+Student are allowed to work on any project as long as the following
+constraints are met:
+
+1. Your project must be full stack and use
+   [[https://nodejs.org/en][Node.js]] on the backend.
+2. Your project can use a front end framework like
+   [[https://vuejs.org][vue]] or you can write everything from scratch
+3. If you are working on a team the project must be substantial enough
+   for all team members to make meaningful contributions for the
+   duration of the semester.
+4. Due to University rules you can't do anything that requires the team
+   to operate in a legal gray zone. For example, using
+   [[https://www.polygon.com/2019/9/11/20860039/nintendo-copyright-trademark-infringement-rom-lawsuit][Nintendo ROM's]] to build an emulator or building a website that hosts them.
+
+** Project Ideas
+
+Can't think of anything to build? Here are some ideas:
+
+- The [[https://killedbygoogle.com/][google graveyard]] has (at the time
+  of this writing) 205 killed projects. Keep in mind that google thinks
+  in billions; billions of users, billions of dollars, and billions of
+  servers! So a lot of these projects were killed not because they were
+  bad ideas or not successful, they were just not in the billions.
+- Write a discord bot with a website frontend that does something
+  interesting, like give interesting facts about nocturnal giant russian
+  mountain gophers.
+- Write a web game. For example you can write a simple asteroids clone
+  or [[http://slither.io][slither.io]]
+
+** Submitting
+
+- You must submit a 1 page outline detailing what website you want to
+  build to the canvas discussion group
+- You must view and respond to 4 other posts
+- (optional) Form a team and setup a way to communicate (canvas,
+  discord, slack, etc.)
+
+* Week 10 Project setup
+
+** Starter repo
+:PROPERTIES:
+:CUSTOM_ID: starter-repo
+:END:
+Each team is expected to use the starter repo with the same layout. Your
+team needs to create a public repo on Github with all team members as
+contributors.
+
+** Repo Bookkeeping
+:PROPERTIES:
+:CUSTOM_ID: repo-bookkeeping
+:END:
+Before we get started you will need to take care of some simple book
+keeping items for your repo. You need to update the CONTRIBUTORS file
+with every team members University provided email addresses
+(name@u.boisestate.edu) and update the license that your team wants to
+use. You can read about all the different licenses
+[[https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository][here]]
+
+Each team member needs to ensure they can push and pull commits to the
+repo.
+
+** Team contract
+:PROPERTIES:
+:CUSTOM_ID: team-contract
+:END:
+You will need to create a team contract to use for the rest of the
+semester. The intent of a team contract is to promote academic integrity
+and accountability among all team members. The template that you will
+use is located in the root directory in the class starter repo.
+
+You will be held accountable to the standards that the team comes up
+with during the semester so make sure you understand what is expected of
+you. You should use the team contract template as a jumping off point.
+Remember that the team contract is between the team members *not*
+between the team and the instructor! The team contract will be used to
+resolve any conflicts that arise over the semester.
+
+** Continuous Integration
+
+Keeping your code base healthy is an important part of the software
+engineering process. For this class we will leverage
+[[https://github.com/features/actions][Github Actions]] to test your
+code.
+
+For this lab you will *setup* some basic GitHub actions to build and
+test your code. you must also document *how* you setup continuous
+integration with your particular language and frameworks. If you are
+working on a project where CI is not possible (Robotics, Unsupported OS,
+etc.) then you must contact your instructor for alternatives.
+Additionally, if you use other CI services such as
+[[https://travis-ci.org/][travis-ci]] you must get instructor permission
+first!
+
+One cool feature of GitHub Actions the ability to have a
+[[https://docs.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow#adding-a-workflow-status-badge-to-your-repository][status
+badge]] that you can add to your README so your users can quickly know
+what the status of your project is by just looking on GitHub. You need
+to add a status badge to the README.md in your repository showing at a
+minimum your build status. If your code does not have a build
+(JavaScript, python, etc.) then you must show your testing status
+instead. You can set up as many different badges as you wish you are not
+just limited to one.
+
+** Submission checklist
+
+- Download the starter code and setupAccept the Github Classrooms
+  Assignment
+- Update the CONTRIBUTORS file with each students email.
+- Choose and update your LICENSE file.
+- team-contract.md is completed to the teams satisfaction
+- Setup a github action to build and test your project on every commit
+- Add a Status Badge to the root README.md
+
+* Week 11 - 14 Feature Development
+
+You will be given in class time to meet with your team and instructor to
+collaborate and work on your project features. In industry a typical
+software company will have what is called a daily standup. We can't do a
+daily standup in this class so we will be doing a weekly standup meeting
+using zoom.
+
+** Progress Reports
+
+* Week 15 - 16 Final Presentation
+
+Students will be randomly ordered on presentation day(s) so if you are
+late to class you could miss your time slot. Students can not request to
+go first or last. While minor technical difficulties are expected and
+will not impact your grade, it is expected that students make their
+presentation as robust as possible, a minor glitch should not tank your
+entire presentation. Here are some tips to ensure you have a smooth
+experience:
+
+** Requirements
+
+1. Make sure your presentation is available in multiple formats. For
+   example you should upload your presentation to your google drive
+   account and copy it to a flash drive.
+2. Make sure you have all the correct dongles to connect to the
+   projector. If you have a Macbook with only thunderbolt connectors you
+   need to make sure you bring what is necessary to hook into the
+   projectors. If you show up to class on presentation day and you can't
+   connect to the projectors because you don't have the correct dongles
+   your grade may be impacted!
+3. Make sure your laptop is charged! Make sure you have your charger
+   with you. If you are running windows make sure you have updates
+   paused and reboot your computer to make sure everything is working.
+4. Test your setup in the classroom before the presentation day to make
+   sure everything works. Your instructor can arrange time for you to
+   test your setup in the classroom, it is strongly encouraged that
+   teams take advantage of this!
+5. The only thing that should stop you from presenting is a power
+   outage, so plan accordingly!
+6. If the presentations are done remotely using zoom make sure that you
+   have a reliable internet connection and a quite place to present.
+7. All students must have their cameras on if the presentations are over
+   zoom. If students don't have a camera they must notify the instructor
+   *before* presentations are due!
+
+*** Rubric
+
+| Criterion                  | Expert (1)                                                                                                                                 | Proficient (.8)                                                                                                                                   | Apprentice (.7)                                                                                                                                     | Novice (.5)                                                                                                                                    |
+|----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------|
+| Content (.20)              | Topic is tightly focused and relevant; presentation contains accurate information with no errors                                           | Topic is adequately focused and relevant; major facts are accurate and generally complete                                                         | Topic would benefit from more focus; presentation contains some fact errors or omissions                                                            | Topic lacks relevance or focus; presentation contains multiple fact errors                                                                     |
+| Organization/Clarity (.20) | Ideas are presented in logical order with effective transitions between major ideas; presentation is clear and concise                     | Most ideas are in logical order with adequate transitions between most major ideas; presentation is generally clear and understandable            | Some ideas not presented in proper order; transitions are needed between some ideas; some parts of presentation may be wordy or unclear             | Ideas are not presented in proper order; transition are lacking between major ideas; several parts of presentation are wordy or unclear        |
+| Completeness (.20)         | Presentation provides good depth and detail; ideas well developed; facts have adequate background; presentation is within specified length | Presentation provides adequate depth; few needed details are omitted; major ideas adequately developed; presentation is within specified length   | Additional depth needed in places; important information omitted or not fully developed; presentation is too short or too long                      | Presentation does not provide adequate depth; key details are omitted or undeveloped; presentation is too short or too long                    |
+| Delivery (.20)             | Good volume and energy; proper pace and diction; avoidance of distracting gestures; professional appearance; visual aids used effectively  | Adequate volume and energy; generally good pace and diction; few or no distracting gestures; professional appearance; visual aids used adequately | More volume/energy needed at times; pace too slow or fast; some distracting gestures or posture; adequate appearance; visual aids could be improved | Low volume or energy; pace too slow or fast; poor diction; distracting gestures or posture; unprofessional appearance; visual aids poorly used |
+| Interactions (.20)         | Good eye contact with audience; excellent listening skills; answers audience questions with authority and accuracy                         | Fairly good eye contact with audience; displays ability to listen; provides adequate answers to audience questions                                | Additional eye contact needed at times; better listening skills needed; some difficulty answering audience questions                                | Little or no eye contact with audience; poor listening skills; uneasiness or inability to answer audience questions                            |
+
+*** How to calculate your presentation grade
+
+| Criterion            | Level      | Points   | Weight | Total |
+|----------------------+------------+----------+--------+-------|
+| Content              | Expert     | 100 *.20 | 1      | 20    |
+| Organization/Clarity | Apprentice | 100 *.20 | .7     | 14    |
+| Completeness         | Proficient | 100 *.20 | .8     | 16    |
+| Delivery             | Expert     | 100 *.20 | 1      | 20    |
+| Interactions         | Novice     | 100 *.20 | .5     | 10    |
+|                      |            |          |        |       |
+| *Total Points*       |            |          |        | 80    |
