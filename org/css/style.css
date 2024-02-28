@@ -353,9 +353,8 @@ template {
 
 :root {
   --font-family: 'Arial, Helvetica, sans-serif';
-  --font-size: 18px;
-  --font-weight: 300;
-  --line-height: 1.5;
+  --font-size: 16px;
+  --line-height: 1.6;
   --color-back: whitesmoke;
   --color-light: #EEEEEE;
   --color-bsu-orange: #D64309;
@@ -397,20 +396,25 @@ body{
     columns: 2;
 }
 
+#table-of-contents a{
+    text-decoration: none;
+}
+
 h1 {
     font-size: 2em;
-    color: var(--color-bsu-orange)
+    color: var(--color-bsu-orange);
 }
 
 h2, h3, h4 {
-    color: var(--color-bsu-blue);
+    color: var(--color-dark);
 }
 
 h2 {
     border-top-style: dotted;
-    border-color: var(--color-bsu-orange);
-    border-width: 2px;
+    border-color: var(--color-dark);
+    border-width: 1px;
     font-size: 1.5em;
+    padding: 5px;
 }
 
 h3 {
