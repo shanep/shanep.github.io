@@ -40,7 +40,7 @@ jobs:
         with:
           version: 29.2
       - name: Build orgmode
-        run: make cs480
+        run: make cs408
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
