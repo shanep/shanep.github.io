@@ -36,7 +36,7 @@ jobs:
       - name: Build Site
         run: npm run docs:build
       - name: Setup Emacs
-        uses: purcell/setup-emacs
+        uses: purcell/setup-emacs@master
         with:
           version: 29.2
       - name: Build orgmode
