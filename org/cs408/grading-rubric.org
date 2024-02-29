@@ -1,0 +1,10 @@
+#+SETUPFILE: ../../level-1.org
+#+TITLE: Grading Rubric
+#+SUBTITLE: CS408 Full Stack Web Development
+#+DESCRIPTION: CS408 Full Stack Web Development
+
+* Patch file
+
+TODO: how to download and apply a patch
+
+#+include: ../../parts/rubric-boiler.org :minlevel 1

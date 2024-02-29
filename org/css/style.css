@@ -354,7 +354,7 @@ template {
 :root {
   --font-family: 'Arial, Helvetica, sans-serif';
   --font-size: 16px;
-  --line-height: 1.6;
+  --line-height: 1.5;
   --color-back: whitesmoke;
   --color-light: #EEEEEE;
   --color-bsu-orange: #D64309;
@@ -375,7 +375,7 @@ body{
 }
 
 #content, #postamble, #preamble {
-    max-width: 50em;
+    max-width: 60em;
     margin: auto;
     padding: 10px;
     border-style: outset;

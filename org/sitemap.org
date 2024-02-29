@@ -2,5 +2,9 @@
 
 - [[file:index.org][Shane K. Panter]]
 - cs408
+  - [[file:cs408/grading-rubric.org][Grading Rubric]]
   - [[file:cs408/schedule.org][Schedule]]
   - [[file:cs408/index.org][Syllabus]]
+  - [[file:cs408/week1.org][Week 1 - Introduction]]
+  - [[file:cs408/week2.org][Week 2 - Developer Setup]]
+  - [[file:cs408/week3.org][Week 3 - Accessibility]]

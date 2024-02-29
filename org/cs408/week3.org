@@ -1,0 +1,20 @@
+#+SETUPFILE: ../../level-1.org
+#+TITLE: Week 3 - Accessibility
+#+SUBTITLE: CS408 Full Stack Web Development
+#+DESCRIPTION: CS408 Full Stack Web Development
+
+
+* Reading
+
+- [[https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility][What is accessibility]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML][HTML: A good basis for accessibility]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript][CSS and JavaScript accessibility best practices]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics][WAI-ARIA basics]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Multimedia][Accessible multimedia]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Mobile][Mobile accessibility]]
+
+
+* Lab
+:PROPERTIES:
+:custom-id: lab
+:END:
