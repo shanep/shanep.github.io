@@ -2,7 +2,7 @@
 #+TITLE: Schedule
 #+SUBTITLE: CS408 Full Stack Web Development
 #+DESCRIPTION: CS408 Full Stack Web Development Syllabus
-#+options: html-preamble:"<a href=../index.html>Home</a> | <a href=index.html>Up</a>"
+
 
 * Week 1 - Course Introduction
 

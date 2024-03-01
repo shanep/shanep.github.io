@@ -1,13 +1,14 @@
 #+options: html-link-use-abs-url:nil html-postamble:auto html-preamble:t html-scripts:nil
 #+options: html-style:nil html5-fancy:t tex:t num:nil toc:1
+#+options: html-preamble:"<a href=/index.html>Home</a>"
 #+html_doctype: html5
 #+html_container: div
 #+html_content_class: content
 #+html_equation_reference_format: \eqref{%s}
-#+html_head: <link rel="stylesheet" type="text/css" href="css/style.css" />
-#+html_head_extra:
+#+html_head: <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+#+html_head_extra: <link rel="stylesheet" type="text/css" href="../css/style.css" />
 #+creator: <a href="https://www.gnu.org/software/emacs/">Emacs</a> 30.0.50 (<a href="https://orgmode.org">Org</a> mode 9.6.13)
 #+AUTHOR:     Shane K. Panter
 #+EMAIL:      shanepanter@boisestate.edu
-#+LANGUAGE:   en
+#+LANGUAGE: en
 #+MACRO: latex_options (eval (if (org-export-derived-backend-p org-export-current-backend 'html) "#+OPTIONS: num:nil"))
