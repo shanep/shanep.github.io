@@ -17,9 +17,23 @@ apps, continuous integration, and advanced serverless deployments using AWS or A
 CS321
 
 * Schedule
+:PROPERTIES:
+:custom_id: schedule
+:END:
+
  - [[file:week1.org][Week 1 - Introduction]]
  - [[file:week2.org][Week 2 - Developer Setup]]
  - [[file:week3.org][Week 3 - Accessibility]]
+ - [[file:week4.org][Week 4 - HTML]]
+ - [[file:week5.org][Week 5 - CSS Part 1]]
+ - [[file:week6.org][Week 6 - CSS Part 2]]
+ - [[file:week7.org][Week 7 - JavaScript]]
+ - Week 8 - Midterm (canvas)
+ - [[file:week9.org][Week 9 - Front End]]
+ - [[file:week10.org][Week 10 - Back End]]
+ - [[file:week11-16.org][Week 11-14 - Final Project]]
+ - Final Exam (canvas)
+
 * Learning Objectives
 :PROPERTIES:
 :CUSTOM_ID: learning-objectives

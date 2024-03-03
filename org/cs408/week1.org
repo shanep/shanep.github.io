@@ -4,7 +4,7 @@
 #+DESCRIPTION: CS408 Full Stack Web Development
 #+options: toc:nil
 
-* Welcome!
+* Overview
 
 Hello! My name is Shane Panter and I will be your instructor for this class. In this class we will
 continue where CS208 left off learning about Full stack web development.  This course has been
