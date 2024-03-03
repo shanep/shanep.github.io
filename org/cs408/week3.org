@@ -3,6 +3,11 @@
 #+SUBTITLE: CS408 Full Stack Web Development
 #+DESCRIPTION: CS408 Full Stack Web Development
 
+* Overview
+
+This week we will be learning about accessibility. Making your websites accessible is not only the
+right thing to do it is required by law. Every web developer needs to have a good understanding of
+accessibility basics so you can build awesome websites.
 
 * Reading
 
@@ -13,8 +18,7 @@
 - [[https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Multimedia][Accessible multimedia]]
 - [[https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Mobile][Mobile accessibility]]
 
-
-* Lab
+* Homework
 :PROPERTIES:
-:custom-id: lab
+:custom-id: homework
 :END:

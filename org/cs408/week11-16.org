@@ -1,106 +1,10 @@
 #+SETUPFILE: ../../level-1.org
-#+TITLE: Schedule
+#+TITLE: Week 11-16 Final Project
 #+SUBTITLE: CS408 Full Stack Web Development
-#+DESCRIPTION: CS408 Full Stack Web Development Syllabus
+#+DESCRIPTION: CS408 Full Stack Web Development
 
 
-* Week 1 - Course Introduction
-
-In this course, we will pick up were we left off in CS208 - Introduction
-to Full Stack Web Development. We will start off will a quick review of
-the basics to refresh our memory, then we will introduce some new
-concepts and polish off the course with a full stack web application
-that you get to design from start to finish.
-
-** Assignments
-
-- [[https://canvas.boisestate.edu/][Syllabus Quiz]] **Due:** TBD
-
-* Week 2 - HTML Review
-
-This week we will do a quick review of HTML that was covered in CS208.
-
-** Reading
-
-Please read each linked article below.
-
-- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML][Introduction to HTML]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started][Getting started with HTML]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML][What's in the head? Metadata in HTML]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals][HTML text fundamentals]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks][Creating hyperlinks]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting][Advanced text formatting]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure][Document and website structure]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML][Debugging HTML]]
-
-** TODO Assignments
-  - [[https://canvas.boisestate.edu/][Quiz]] **Due:** TBD
-
-* Week 3 - CSS Review Part 1
-
-This week we will do a quick review of CSS that was covered in CS208.
-
-** Reading
-
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS][What is CSS]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started][Getting started with CSS]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured][How CSS is structured]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works][How CSS works]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks][CSS Building blocks]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors][CSS Selectors]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors][Type, class, and ID selectors]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors][Attribute selectors]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements][Pseudo-classes and pseudo-elements]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators][Combinators]]
-
-** Assignments
-  - [[https://canvas.boisestate.edu/][Quiz]] **Due:** TBD
-
-* Week 4 - CSS Review Part 2
-
-** Reading
-
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance][Cascade, specificity, and inheritance]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_layers][Cascade layers]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model][The box model]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders][Backgrounds and borders]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Handling_different_text_directions][Handling different text directions]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content][Overflowing content]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units][CSS values and units]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS][Sizing items in CSS]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements][Images, media, and form elements]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables][Styling Tables]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS][Debugging CSS]]
-
-** Assignments
-- [[https://canvas.boisestate.edu/][Quiz]] **Due:** TBD
-
-* Week 5 - JavaScript
-
-In this week we will look at some of the more advanced features of JavaScript
-
-** Reading
-
-- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics][JavaScript Objects]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes][Object prototypes]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming][OO programming]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript][Classes in JavaScript]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON][Working with JSON]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducin][Introducing asynchronous JavaScript]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises][How to use promises]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Implementing_a_promise-based_API][How to implement a promise-based API]]
-- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing_workers][Introducing workers]]
-
-** Assignments
-  - [[https://canvas.boisestate.edu/][Quiz]] **Due:** TBD
-
-* Week 6 Fullstack
-  - Quiz
-
-* Week 7 Accessibility
-  - Quiz
-
-* Week 8 - 9 Project Brainstorm
+* Project Brainstorm
 
 This class allows students to work on an open-ended project that can be
 driven in a number of different directions. Your task for this week is
@@ -152,7 +56,7 @@ Can't think of anything to build? Here are some ideas:
 - (optional) Form a team and setup a way to communicate (canvas,
   discord, slack, etc.)
 
-* Week 10 Project setup
+* Project setup
 
 ** Starter repo
 :PROPERTIES:
@@ -228,7 +132,7 @@ just limited to one.
 - Setup a github action to build and test your project on every commit
 - Add a Status Badge to the root README.md
 
-* Week 11 - 14 Feature Development
+* Feature Development
 
 You will be given in class time to meet with your team and instructor to
 collaborate and work on your project features. In industry a typical
@@ -238,7 +142,7 @@ using zoom.
 
 ** Progress Reports
 
-* Week 15 - 16 Final Presentation
+* Final Presentation
 
 Students will be randomly ordered on presentation day(s) so if you are
 late to class you could miss your time slot. Students can not request to

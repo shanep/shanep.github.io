@@ -27,9 +27,9 @@ Important topics that this week covers:
 - [[https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works][How the Web Works]]
 - [[https://www.youtube.com/watch?v=wkgPvezGpX8][Canvas Peer Review]]
 
-* Lab
+* Homework
 :PROPERTIES:
-:custom_id: lab
+:custom_id: homework
 :END:
 
 Given the open nature of the web programming assignments in this class will be a bit different than

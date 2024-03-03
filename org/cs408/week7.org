@@ -1,0 +1,23 @@
+#+SETUPFILE: ../../level-1.org
+#+TITLE: Week 7 - JavaScript
+#+SUBTITLE: CS408 Full Stack Web Development
+#+DESCRIPTION: CS408 Full Stack Web Development Syllabus
+
+
+* Overview
+
+In this week we will look at some of the more advanced features of JavaScript
+
+* Reading
+
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics][JavaScript Objects]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes][Object prototypes]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming][OO programming]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript][Classes in JavaScript]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON][Working with JSON]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducin][Introducing asynchronous JavaScript]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises][How to use promises]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Implementing_a_promise-based_API][How to implement a promise-based API]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing_workers][Introducing workers]]
+
+* Homework
