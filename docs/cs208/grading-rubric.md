@@ -35,7 +35,7 @@ started.
 - Were there any parts of this lab that were unclear or poorly specified?
 - Were you able to get the entire project done?
 - Detail one new thing you learned.
-- Anything else you would like to share is awesome and encourage 😃.
+- Anything else you would like to share is awesome and encouraged 😃.
 
 If the assignments ask you to include any graphs, screenshots or other artifacts
 as they must display correctly when viewed on github. You can reference the
