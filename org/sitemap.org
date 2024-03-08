@@ -1,14 +1,8 @@
 #+TITLE: 
 
 - [[file:index.org][Shane K. Panter]]
-- cs408
-  - [[file:cs408/grading-rubric.org][Grading Rubric]]
-  - [[file:cs408/index.org][Syllabus]]
-  - [[file:cs408/week1.org][Week 1 - Introduction]]
-  - [[file:cs408/week11-16.org][Week 11-16 Final Project]]
-  - [[file:cs408/week2.org][Week 2 - Developer Setup]]
-  - [[file:cs408/week3.org][Week 3 - Accessibility]]
-  - [[file:cs408/week4.org][Week 4 - HTML]]
-  - [[file:cs408/week5.org][Week 5 - CSS Part 1]]
-  - [[file:cs408/week6.org][Week 5 - CSS Part 2]]
-  - [[file:cs408/week7.org][Week 7 - JavaScript]]
+- research
+  - [[file:research/workflow.org][Research Workflow and Tooling]]
+  - [[file:research/slr.org][Systematic Literature review]]
+- teaching
+  - [[file:teaching/cs408-syllabus.org][CS 408 Syllabus]]
