@@ -6,8 +6,7 @@
 ;;; Code:
 
 (require 'ox-publish)
-(load-file "./htmlize/htmlize.el")
-(customize-set-variable 'htmlize-output-type 'font)
+
 
 (defun my-org-publish-sitemap-entry (entry style project)
   "Default format for site map ENTRY, as a string.
@@ -37,19 +36,15 @@ representation for the files to include, as returned by
   (concat "#+TITLE: " title "\n\n"
 	  (org-list-to-org list)))
 
-(defun my-html-postamble (opts)
-  )
-
-
 (customize-set-variable 'org-publish-project-alist
-			'(("index"
-			   :base-directory "org/"
+			`(("index"
+			   :base-directory ,(concat (vc-root-dir)  "org/")
 			   :base-extension "org"
-			   :publishing-directory "build"
+			   :publishing-directory ,(concat (vc-root-dir) "build/")
 			   :publishing-function org-html-publish-to-html)
 
 			  ("teaching"
-			   :base-directory "org/teaching"
+			   :base-directory ,(concat (vc-root-dir)  "org/teaching")
 			   :base-extension "org"
 			   :recursive t
 			   :auto-sitemap t
@@ -57,12 +52,12 @@ representation for the files to include, as returned by
 			   :sitemap-filename "sitemap.org"
 			   :sitemap-format-entry my-org-publish-sitemap-entry
 			   :sitemap-function my-org-publish-sitemap
-			   :publishing-directory "build/teaching"
+			   :publishing-directory ,(concat (vc-root-dir) "build/teaching")
 			   :publishing-function org-html-publish-to-html
 			   :html-postamble "<ul><li>Author: %a (%e)</li><li>Exported: %T</li></ul>")
 
 			  ("blog"
-			   :base-directory "org/blog"
+			   :base-directory ,(concat (vc-root-dir)  "org/blog")
 			   :base-extension "org"
 			   :recursive t
 			   :auto-sitemap t
@@ -70,20 +65,20 @@ representation for the files to include, as returned by
 			   :sitemap-filename "sitemap.org"
 			   :sitemap-format-entry my-org-publish-sitemap-entry
 			   :sitemap-function my-org-publish-sitemap
-			   :publishing-directory "build/blog"
+			   :publishing-directory ,(concat (vc-root-dir) "build/blog")
 			   :publishing-function org-html-publish-to-html
 			   :html-postamble "<ul><li>Author: %a (%e)</li><li>Exported: %T</li></ul>")
 
 			  ("images"
-			   :base-directory "org/img/"
+			   :base-directory ,(concat (vc-root-dir)  "org/img")
 			   :base-extension "jpg\\|gif\\|png"
-			   :publishing-directory "build/img/"
+			   :publishing-directory ,(concat (vc-root-dir) "build/img")
 			   :publishing-function org-publish-attachment)
 
 			  ("css"
-			   :base-directory "org/css/"
+			   :base-directory ,(concat (vc-root-dir)  "org/css")
 			   :base-extension "css\\|el"
-			   :publishing-directory "build/css/"
+			   :publishing-directory ,(concat (vc-root-dir) "build/css")
 			   :publishing-function org-publish-attachment)
 			  ("website"
 			   :components ("index" "teaching" "images" "css"))))
@@ -92,15 +87,18 @@ representation for the files to include, as returned by
 (defun skp-publish ()
   (interactive)
   (let ((default-directory (vc-root-dir)))
-    (org-publish-remove-all-timestamps)
-    (org-publish-reset-cache)
+    (message default-directory)
+    ;(org-publish-remove-all-timestamps)
+    ;(org-publish-reset-cache)
     (org-publish-all)))
 
 ;
 
 ;;If running in batch mode
 (if noninteractive
-    (org-publish-all))
+    (progn
+      (load-file "./htmlize/htmlize.el")
+      (org-publish-all)))
 
 
 ;;; publish.el ends here

@@ -3,7 +3,11 @@
 #+SUBTITLE: BOOM!
 #+DESCRIPTION: Shane K. Panter's personal website
 
+
 [[file:img/me.jpg]]
+
+I am an Assistant Clinical Professor in the Department of Computer Science at Boise State University, where I
+research Software Security and Memory Safety.
 
 * Links
 
