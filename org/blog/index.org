@@ -1,0 +1,6 @@
+#+SETUPFILE: ../../level-1.org
+#+TITLE: Blog
+#+SUBTITLE: Blog Stuff
+#+DESCRIPTION: Blog stuff
+
+#+include: sitemap.org

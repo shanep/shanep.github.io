@@ -1,6 +1,5 @@
-#+options: html-link-use-abs-url:nil html-postamble:auto html-preamble:t html-scripts:nil
-#+options: html-style:nil html5-fancy:t tex:t num:nil toc:1
-#+options: html-preamble:"<a href=/index.html>Home</a>"
+#+options: html-link-use-abs-url:nil html-postamble:nil html-preamble:nil html-scripts:nil
+#+options: html-style:nil html5-fancy:t tex:t num:nil toc:nil
 #+html_doctype: html5
 #+html_container: div
 #+html_content_class: content
