@@ -1,0 +1,94 @@
+#+SETUPFILE: ../../level-2.org
+#+TITLE: CS 408 Syllabus
+#+SUBTITLE: CS408 Full Stack Web Development
+#+DESCRIPTION: CS408 Full Stack Web Development Syllabus
+
+* Catalog Statement
+:PROPERTIES:
+:custom_id: catalog-statement
+:END:
+
+*CS408 - Full Stack Web Development (3-0-3)(F).* Learn how to apply various technologies used for
+client-side and server-side web development. Learn advanced concepts behind competing web
+technologies, best practices for design and usability, and build rich, dynamic, n-tier secure and
+scalable web applications. Tools used will be mainly open source such as HTML, CSS, JavaScript and
+server-side technologies such as Node.js. Topics include templating, single page apps, multi-page
+apps, continuous integration, and advanced serverless deployments using AWS or Azure. PREREQ: CS208,
+CS321
+
+* Topics
+:PROPERTIES:
+:custom_id: schedule
+:END:
+
+ 1. Introduction
+ 2. Developer Setup
+ 3. HTML
+ 4. CSS Part 1
+ 5. Accessibility
+ 6. CSS Part 2
+ 7. CSS Layout
+ 8. Midterm Exam
+ 9. JavaScript Objects
+ 10. Asynchronous JavaScript
+ 11. Client-side web APIs
+ 12. Full Stack
+ 13. Final Exam
+
+* Learning Objectives
+:PROPERTIES:
+:CUSTOM_ID: learning-objectives
+:END:
+
+1. Create a Full Stack Web Application
+   1. Use a Database to store state information about your application
+   2. Apply responsive UI design techniques that displays correctly on both desktop and mobile
+   3. Use JavaScript to add interactive components to your websites.
+   4. Use backend templates reduce repetitive HTML and produce dynamic content based on conditionals.
+   5. Given several professional frameworks that you could use (React, HTMX, etc.) evaluate their pros and cons for your selected domain
+2. Apply Advanced HTML and CSS properties
+   1. Explain the purpose of advanced HTML/CSS tags
+   2. Use advanced HTML tags in your designs
+   3. Use advanced CSS to style HTML elements.
+   4. Apply styles using id and class attributes.
+3. Given JavaScript in a Full Stack environment, Explain Its Purpose
+   1. Identify the differences between using Javascript on the frontend vs backend
+   2. Use async/wait where appropriate
+   3. Use callbacks where appropriate
+   4. Use AJAX to retrieve and manipulate HTML elements and properties.
+4. Develop an Accessible Website
+   1. Understand why WAI-ARIA was created (very simple explanation)
+   2. Memorize a given list of important WAI-ARIA rules (the plain language version)
+   3. Explain in layman's terms the given list of important WAI-ARIA rules
+   4. Given a specific accessibilty problem, identify the appropriate section of the WAI-ARIA document that contains the rules
+   5. Explain the legal ramifications for not creating accessible websites
+   6. Describe the elements of an accessible design
+   7. Incorporate common accessibility features from a given list
+5. Establish advanced program development strategies
+   1. Use a debugger for both front end and backend
+   2. Explain when you need to write tests and when you don't
+   3. Use web developer tools to inspect existing web pages and network traffic.
+   4. Use the Chrome Developer Tools and console logging to debug JavaScript in your web pages.
+6. Apply good software engineering practices (cross cutting)
+   1. Use Version Control for all projects
+   2. Configure and Use Continuous Integration and testing with github actions
+   3. Configure and Use Automatic Version extraction from github tags
+   4. Configure Continuous deployment
+   5. Configure Continuous Integration
+
+* Assessments
+:PROPERTIES:
+:CUSTOM_ID: assessments
+:END:
+
+Your final grade will be calculated with the following points in canvas.
+
+- Labs - 225 points
+- Lab Code Review - 225 points
+- Reflections  - 110 points
+  - This is an online asynchronous class, thus all of our interactions and participation will be done
+    through canvas using discussion boards and video posts.
+- Exams and Quizzes - 120 points
+- Final Project - 320 points
+
+#+include: ../../parts/syllabus-boiler.org :minlevel 1

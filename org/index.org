@@ -3,4 +3,9 @@
 #+SUBTITLE: BOOM!
 #+DESCRIPTION: Shane K. Panter's personal website
 
-#+include: sitemap.org
+[[file:img/me.jpg]]
+
+* Links
+
+- [[file:blog/index.org][Blog]]
+- [[file:teaching/index.org][Teaching]]

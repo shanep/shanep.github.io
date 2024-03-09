@@ -1,0 +1,19 @@
+#+SETUPFILE: ../../level-2.org
+#+TITLE: Research Workflow and Tooling
+#+SUBTITLE: Workflow and Tooling
+#+DESCRIPTION: My personal research workflow and tooling
+
+* Tools
+
+- Reference Management - [[https://paperpile.com/app/shared/fhcK6u][Paperpile]]
+- Editor - Emacs and [[https://www.overleaf.com/][Overleaf]]
+  - Latex and Bibtex
+- Build System - Make
+- Graphics and Charts - [[https://graphviz.org/][Graphviz]]
+
+* Workflow
+
+1. Start with paperpile to collect the related work and reference
+2. Create a new project on overleaf and use the git integration to clone down the repository
+3. Write and work mostly offline with Emacs, Make, git, etc.
+4. Paper review and collaboration happens in overleaf
