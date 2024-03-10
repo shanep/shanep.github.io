@@ -1,7 +1,8 @@
 #+SETUPFILE: ../../level-2.org
-#+TITLE: Research Workflow and Tooling
+#+TITLE: Tooling
 #+SUBTITLE: Workflow and Tooling
 #+DESCRIPTION: My personal research workflow and tooling
+#+DATE: <2024-03-09 Sat 10:03>
 
 * Tools
 

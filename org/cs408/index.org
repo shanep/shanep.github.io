@@ -2,6 +2,8 @@
 #+TITLE: CS 408 Syllabus
 #+SUBTITLE: CS408 Full Stack Web Development
 #+DESCRIPTION: CS408 Full Stack Web Development Syllabus
+#+DATE: <2024-01-15 Mon 8:05>
+{{{latex_options}}}
 
 * Catalog Statement
 :PROPERTIES:

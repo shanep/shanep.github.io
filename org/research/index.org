@@ -1,5 +1,5 @@
 #+SETUPFILE: ../../level-1.org
-#+TITLE: Blog
+#+TITLE: Research
 #+SUBTITLE: Blog Stuff
 #+DESCRIPTION: Blog stuff
 

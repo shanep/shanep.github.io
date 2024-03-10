@@ -1,3 +1,0 @@
-#+TITLE: 
-
-- [03/08/24] - [[file:research-workflow.org][Research Workflow and Tooling]]

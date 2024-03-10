@@ -11,4 +11,4 @@
 #+AUTHOR:     Shane K. Panter
 #+EMAIL:      shanepanter@boisestate.edu
 #+LANGUAGE: en
-#+MACRO: latex_options (eval (if (org-export-derived-backend-p org-export-current-backend 'html) "#+OPTIONS: num:nil"))
+#+MACRO: latex_options (eval (if (org-export-derived-backend-p org-export-current-backend 'latex) "#+OPTIONS: num:t"))
