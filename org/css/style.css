@@ -9,12 +9,30 @@ MIT-License
 body {
     background-color: white;
     font-size: 13pt;
-}
-
-body {
     font-family: 'Latin Modern Roman', serif;
     counter-reset: theorem;
     counter-reset: definition;
+    max-width: 720px;
+    margin: 2em auto;
+    text-align: justify;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    padding: 0 1em;
+
+}
+
+h1 {
+  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #f9a825, #ff5722);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 2px;
+}
+
+h1:first-of-type  {
+    text-align: center;
+    display: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,26 +48,12 @@ ul {
     list-style: disc;
 }
 
-/* Content Box */
-
-body {
-    max-width: 720px;
-    margin: 2em auto;
-}
-
-h1:first-of-type  {
-    text-align: center;
-    display: block;
-}
-
-/* Article Body */
-
-body {
-    text-align: justify;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-    padding: 0 1em;
+img {
+    -moz-box-shadow: 0 0 10px #ef5350;
+    -webkit-box-shadow: 0 0 10px #ef5350;
+    box-shadow: 0px 0px 10px #ef5350;
+    max-width: 100%;
+    height: auto;
 }
 
 dl dd {
@@ -111,22 +115,39 @@ dl dd {
     font-style: normal;
 }
 
+/* orgmode id's */
+
 #preamble, #postamble {
     border-top-style: solid;
     border-top-width: 1px;
+    text-align: left;
 }
 
 #postamble > ul {
     list-style-type: none;
 }
 
+#content > article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#content > article > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30ch;
+    padding: 5px;
+}
+
+/*org mode tags and  classes */
+
 .author, date {
     margin-top: 8px;
     margin-bottom: 8px;
     font-variant-caps: small-caps;
 }
-
-/*org mode classes */
 
 .title  {
     text-align: center;

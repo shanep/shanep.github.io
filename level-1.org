@@ -1,5 +1,5 @@
 #+options: html-link-use-abs-url:nil html-preamble:t html-postamble:nil html-scripts:nil
-#+options: html-style:nil html5-fancy:t tex:t num:nil toc:1
+#+options: html-style:nil html5-fancy:t tex:t num:nil toc:nil
 #+options: html-preamble:"<a href=../index.html>Home</a>"
 #+html_doctype: html5
 #+html_container: div
@@ -11,4 +11,4 @@
 #+AUTHOR:     Shane K. Panter
 #+EMAIL:      shanepanter@boisestate.edu
 #+LANGUAGE: en
-#+MACRO: latex_options (eval (if (org-export-derived-backend-p org-export-current-backend 'html) "#+OPTIONS: num:nil"))
+#+MACRO: latex_options (eval (if (org-export-derived-backend-p org-export-current-backend 'latex) "#+OPTIONS: num:t"))

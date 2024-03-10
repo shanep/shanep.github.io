@@ -1,0 +1,86 @@
+#+SETUPFILE: ../../level-2.org
+#+TITLE: Adjunct Instructor Guide
+#+SUBTITLE: Computer Science Department
+#+DESCRIPTION: Guide for adjunct instructors at BSU
+#+DATE: <2023-12-13 Wed 08:25>
+
+* Overview
+:PROPERTIES:
+:CUSTOM_ID: adjunct-instructor
+:END:
+This page will walk you through getting your course setup for the first
+time. In order to complete these steps you will need a Boise State
+provided email, you can not use your personal email to teach your class.
+
+* Setup Canvas
+:PROPERTIES:
+:CUSTOM_ID: setup-canvas
+:END:
+The canvas sandbox site is a bare bones skeleton that you will need to
+customize to your liking and teaching style.
+
+1. Email Shane and ask to be added to the class github repository and
+   sandbox course
+2. Review the [[https://boisestate.atlassian.net/wiki/spaces/LTS/pages/160006166/Canvas+Quick-Start][Canvas Quick-Start]]
+3. Attend a [[https://www.boisestate.edu/oit-learning/training-events/][canvas training]] session
+4. [[https://boisestate.atlassian.net/wiki/spaces/LTS/pages/1363214337/Creating+a+Single-Section+Canvas+Course+with+Middleware][Create your course]] and then [[https://boisestate.atlassian.net/wiki/spaces/LTS/pages/1369604108/Canvas+to+Canvas+Course+Import+course+copy][import]] the sandbox into your new course.
+5. Update the canvas home page with your info and links (TODO comments)
+6. Set due dates for all Assignments and Quizzes
+7. Verify all links in course are still valid
+8. Add in any custom content (slides, documents, etc.)
+9. (optional) Create a Welcome video and update the home page
+10. (optional) Organize canvas into modules or weeks
+
+* Link zyBooks to your gradebook
+:PROPERTIES:
+:CUSTOM_ID: link-zybooks-to-your-gradebook
+:END:
+The sandbox course is already setup for you to link your zyBook reading assignments and labs back to
+your grade book. You will follow these instructions for *both* type of assignments.
+
+- Locate the assignment as shown below.
+
+#+caption: locate assignment
+[[file:images/locate-textbook-activities.png]]
+
+- Link the assignment
+
+#+caption: edit assignment
+[[file:images/link-assignment.png]]
+
+- Choose the correct book in your zyBook account.
+- Create your assignment in zyBook
+
+#+caption: create assignment
+[[file:images/create-assignment.png]]
+
+* Create your Quizzes
+:PROPERTIES:
+:CUSTOM_ID: create-your-quizzes
+:END:
+You can use the built in Quizzes that zyBooks provides in canvas with the steps below.
+
+- Open the test tab to create the test
+
+#+caption: create test
+[[file:images/zybook-create-test.png]]
+
+- Export the test as a question bank
+
+#+caption: export test
+[[file:images/zybook-export-test.png]]
+
+- [[https://boisestate.atlassian.net/wiki/spaces/LTS/pages/1723891720/Canvas+FAQ+How+do+I+import+quizzes+from+QTI+packages][Import the question bank]]
+
+* Setup Github (course dependent)
+:PROPERTIES:
+:CUSTOM_ID: setup-github-course-dependent
+:END:
+If your class is submitting programming assignments you will need to setup [[file:github-classroom-setup.md][github classrooms]] and
+then update each programming assignment in canvas.
+
+Each programming assignment listed in the syllabus is already setup to use github classroom all you
+have to do is update the link in the canvas assignment as shown below.
+
+#+caption: canvas github classroom
+[[file:images/canvas-github-classroom-update.png]]
