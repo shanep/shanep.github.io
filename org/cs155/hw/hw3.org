@@ -1,0 +1,45 @@
+#+SETUPFILE: ../../../level-3.org
+#+TITLE: Homework 3
+#+SUBTITLE: Create a GitHub Page
+#+DESCRIPTION: CS155 Introduction to version Control
+#+DATE: <2017-01-01 Mon 08:00>
+
+
+* Overview
+:PROPERTIES:
+:CUSTOM_ID: create-a-github-page
+:END:
+In this assignment we are going to shift gears and work with some GitHub services beyond just simple
+repository hosting. Github is very popular in the open source community so it is very likely that
+you will have to interact with the service at some point in your career.
+
+This assignment will create your own GitHub page so you can showcase any
+open source work that you do. This is a great way to build a portfolio
+so you can land that high paying $$$ job when you graduate!
+
+1. Watch the [[https://www.youtube.com/watch?v=0NW0hidCdYw][introduction video]]
+2. Work through the [[https://guides.github.com/activities/hello-world/][hello world]] tutorial on GitHub.
+3. Work through the [[https://guides.github.com/features/pages/][getting started with github pages]]tutorial
+4. Read the [[https://guides.github.com/features/mastering-markdown/][mastering markdown]] tutorial
+5. Publish your GitHub page!
+
+*NOTE:* In the step 3 above the file =_config.yml= may not be automatically created. So you will
+have to create it yourself and add it to your repository. You can see an example of what you need to
+submit at: https://bsu-shanepanter.github.io/
+
+It can take up to 10 - 30 minutes for your GitHub page to be live!  Your page will not instantly
+update when published. It is your responsibility to make sure your page publishes correctly. You
+will not get credit for submitting a link to your github repo! You must submit a link to your
+published github page which should be in the form https://username.github.io
+
+There is no cost to publish a page so you do not need to pay GitHub or
+any other company money to complete this assignment!
+
+* Submitting
+:PROPERTIES:
+:CUSTOM_ID: submitting
+:END:
+
+To get credit for this assignment please submit the URL to your
+published page to the canvas assignment. Your grade will be updated
+after the due date (and late window) have passed.

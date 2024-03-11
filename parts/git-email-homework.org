@@ -1,0 +1,35 @@
+** Task 2 - Create Some commits
+:PROPERTIES:
+:CUSTOM_ID: task-2---create-some-commits
+:END:
+- Create your first commit using the terminal
+
+#+begin_src sh
+date >> the-date.txt
+git add the-date.txt
+git commit -m "Added a date file"
+#+end_src
+
+- Create your second commit using the terminal
+
+#+begin_src sh
+echo "My Name" > my-name.txt
+git add my-name.txt
+git commit -m "Added a file with my name in it"
+#+end_src
+
+- Make sure everything looks good.
+
+#+begin_src sh
+shane|(master>):git-send-email$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+#+end_src
+
+- Push your changes to your repository.
+
+#+caption: Check your changes
+[[../org/images/git-sync-changes.png]]
