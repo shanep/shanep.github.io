@@ -1,0 +1,7 @@
+#+SETUPFILE: ../../../level-3.org
+#+TITLE: Homework 1
+#+SUBTITLE: Configure GitHub CLI
+#+DESCRIPTION: CS155 Introduction to version Control
+#+DATE: <2017-01-01 Mon 08:00>
+
+#+include: ../../../parts/setup-gh-cli.org :minlevel 1

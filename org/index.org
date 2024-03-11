@@ -19,7 +19,10 @@ research Software Security and Memory Safety.
 
 * Courses
 
-- [[file:cs408/index.org][CS408]]
+- [[file:cs117/index.org][CS117 - C++ for Engineers]]
+- [[file:cs155/index.org][CS155 - Introduction to Version Control]]
+- [[file:cs333/index.org][CS333 - Network Security and Defense]]
+- [[file:cs408/index.org][CS408 - Full Stack Web Development]]
 
 #+BEGIN_EXPORT html
 </article>

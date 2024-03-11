@@ -1,0 +1,54 @@
+#+SETUPFILE: ../../level-2.org
+#+TITLE: Git Basics
+#+SUBTITLE: CS155 Introduction to version Control
+#+DESCRIPTION: CS155 Introduction to version Control
+#+DATE: <2017-01-01 Mon 08:00>
+
+* Overview
+:PROPERTIES:
+:CUSTOM_ID: git-basics
+:END:
+This module will introduce all of the basic git commands. It is
+important to understand the basic commands because all the advanced
+commands build on the basics. So take your time to make sure you really
+understand what is going on under the hood as best as possible.
+
+* Reading
+:PROPERTIES:
+:CUSTOM_ID: reading
+:END:
+This section takes an estimated 3-4 hours
+
+Complete the reading assignments below are intended to give you some
+background knowledge before you attempt the hands on labs. Once you have
+completed the reading linked below log into the canvas site and take the
+associated quiz.
+
+- [[https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository][Getting a Git Repository]]
+- [[https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository][Recording Changes to the Repository]]
+- [[https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History][Viewing the commit History]]
+- [[https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things][Undoing Things]]
+- [[https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes][Working with Remotes]]
+- [[https://git-scm.com/book/en/v2/Git-Basics-Tagging][Tagging]]
+- [[https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases][Aliases]]
+- [[https://git-scm.com/book/en/v2/Git-Basics-Summary][Summary]]
+- [[https://code.visualstudio.com/docs/terminal/basics][VSCode Terminal Basics]]
+
+* Homework
+:PROPERTIES:
+:CUSTOM_ID: homework
+:END:
+This section takes an estimated 3-4 hours
+
+- Complete the module reading Quiz (canvas)
+- Complete the hands on lab (canvas)
+
+* Retrospective - Class Interaction
+:PROPERTIES:
+:CUSTOM_ID: retrospective---class-interaction
+:END:
+This section takes an estimated 2-3 hours. This includes the time
+required to create your own video or discussion post and then watch and
+read posts from other students and your instructor.
+
+- Complete the module retrospective assignment (canvas)

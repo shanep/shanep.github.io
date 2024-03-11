@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2024-03-10 Sun 17:56 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Homework 1</title>
+<meta name="author" content="Shane K. Panter" />
+<meta name="description" content="CS155 Introduction to version Control" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="../../css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+</head>
+<body>
+<div id="preamble" class="status">
+<a href=../../index.html>Home</a> | <a href=../index.html>Up</a>
+</div>
+<div id="content" class="content">
+<header>
+<h1 class="title">Homework 1</h1>
+<p class="subtitle" role="doc-subtitle">Configure GitHub CLI</p>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#configure-github">Configure Github</a></li>
+<li><a href="#github-student-developer-pack">GitHub Student Developer Pack</a></li>
+<li><a href="#install-the-command-line-client">Install the command line client</a></li>
+<li><a href="#setup-authorization">Setup Authorization</a></li>
+<li><a href="#confirm-everything-works">Confirm everything works</a></li>
+<li><a href="#submitting">Submitting</a></li>
+</ul>
+</div>
+</nav>
+
+<div id="outline-container-configure-github" class="outline-2">
+<h2 id="configure-github">Configure Github</h2>
+<div class="outline-text-2" id="text-configure-github">
+<p>
+This document will walk you through configuring your personal github
+account so you can work effectively from the command line in your future
+classes.
+</p>
+
+<p>
+Students can get a free <a href="https://education.github.com/pack">Github
+Pro</a> account as long as you sign up with your Boise State email
+address. This will allow you to use Github Codespaces and other cool
+services for free in all your classes. If you run out of free hours on
+codespaces you can use the CS department lab machines to complete all
+projects. You <b>never</b> have to pay for GitHub, all assignments can be
+completed with the free tier or in the CS Labs.
+</p>
+</div>
+</div>
+
+<div id="outline-container-github-student-developer-pack" class="outline-2">
+<h2 id="github-student-developer-pack">GitHub Student Developer Pack</h2>
+<div class="outline-text-2" id="text-github-student-developer-pack">
+<p>
+As a student you can get access to a free GitHub Pro account as well as
+other really cool features such as GitHub Copilot and GitHub Codespaces.
+</p>
+
+<ul class="org-ul">
+<li><a href="https://education.github.com/pack">Get your developer Pack</a></li>
+<li><a href="https://education.github.com/experiences/primer_copilot">Sign up for
+Copilot</a></li>
+</ul>
+
+<p>
+Be aware that there are some professors in the CS department who view
+using A.I. technologies such as Copilot as cheating. So please carefully
+read the syllabus in all your classes and look for their policy
+regarding using A.I. tools.
+</p>
+</div>
+</div>
+
+<div id="outline-container-install-the-command-line-client" class="outline-2">
+<h2 id="install-the-command-line-client">Install the command line client</h2>
+<div class="outline-text-2" id="text-install-the-command-line-client">
+<p>
+You can skip this task if you are working on one of the cs lab machines.
+The gh command line tool is already installed for you.
+</p>
+
+<p>
+Install the github command line client
+<a href="https://cli.github.com/">cli.github.com</a>.
+</p>
+
+<p>
+Windows users <b>MUST</b> reboot their machines. If you are on windows do not
+continue until you have rebooted your machine. Once the gh tool is
+installed you should be able to open a terminal and type <b>gh</b> as shown
+below.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">$ gh
+Work seamlessly with GitHub from the command line.
+
+USAGE
+  gh &lt;command&gt; &lt;subcommand&gt; [flags]
+
+... Lots more output!
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-setup-authorization" class="outline-2">
+<h2 id="setup-authorization">Setup Authorization</h2>
+<div class="outline-text-2" id="text-setup-authorization">
+<p>
+We want to configure our machine to use ssh keys using the command
+<code>gh auth login</code>. Other tools and some Integrated developer environments
+need ssh to work properly. This will ensure that your setup will work no
+matter how you choose to write code 😃.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">$ gh auth login
+? What account<span style="color: #3a81c3; font-weight: bold;"> do</span> you want to log into? GitHub.com
+? You<span style="color: #2d9574;">'re already logged into github.com. Do you want to re-authenticate? Yes</span>
+<span style="color: #2d9574;">? What is your preferred protocol for Git operations? SSH</span>
+<span style="color: #2d9574;">? Generate a new SSH key to add to your GitHub account? Yes</span>
+<span style="color: #2d9574;">? Enter a passphrase for your new SSH key (Optional)</span>
+<span style="color: #2d9574;">? Title for your SSH key: (GitHub CLI</span>
+<span style="color: #2d9574;">? Title for your SSH key: GitHub CLI</span>
+<span style="color: #2d9574;">? How would you like to authenticate GitHub CLI? Login with a web browse</span>
+<span style="color: #2d9574;">! First copy your one-time code: XXXX-XXXX</span>
+<span style="color: #2d9574;">Press Enter to open github.com in your browser...</span>
+<span style="color: #2d9574;">&#10003; Authentication complete.</span>
+<span style="color: #2d9574;">- gh config set -h github.com git_protocol ssh</span>
+<span style="color: #2d9574;">&#10003; Configured git protocol</span>
+<span style="color: #2d9574;">&#10003; Uploaded the SSH key to your GitHub account: C:\Users\shane\.ssh\id_ed25519.pub</span>
+<span style="color: #2d9574;">&#10003; Logged in as shanep</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-confirm-everything-works" class="outline-2">
+<h2 id="confirm-everything-works">Confirm everything works</h2>
+<div class="outline-text-2" id="text-confirm-everything-works">
+<p>
+We want to confirm that we have everything setup correctly. Luckily the
+command line tool has an option to do this for us. Run the command
+<code>gh auth status</code> and you should see output similar to what is shown
+below.
+</p>
+
+<p>
+Your output will be slightly different depending on the OS and other
+factors. You are not required to match the output exactly, you just need
+to confirm that github.com is configured to use the ssh protocol.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">gh auth status
+github.com
+  &#10003; Logged<span style="color: #3a81c3; font-weight: bold;"> in</span> to github.com as shanep (keyring)
+  &#10003; Git operations for github.com configured to use ssh protocol.
+  &#10003; Token: gho_************************************
+  &#10003; Token scopes: admin:public_key, gist, read:org, repo
+</pre>
+</div>
+
+<p>
+Congrats you are now configured to use github.com with the ssh protocol!
+</p>
+</div>
+</div>
+
+<div id="outline-container-submitting" class="outline-2">
+<h2 id="submitting">Submitting</h2>
+<div class="outline-text-2" id="text-submitting">
+<p>
+Log into canvas and submit a screen shot showing that you have completed
+the assignment. An example is shown below. <b>NOTE:</b> Your screen shot may
+look slightly different depending on the Operating System so don&rsquo;t worry
+if it doe not match exactly.
+</p>
+
+
+<figure id="orgc2c1664">
+<img src="../../parts/images/gh-cli-submit.png" alt="gh-cli-submit.png">
+
+<figcaption><span class="figure-number">Figure 1: </span>gh cli</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2017-01-01 Sun 08:00</p>
+<p class="author">Author: Shane K. Panter</p>
+<p class="date">Created: 2024-03-10 Sun 17:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
