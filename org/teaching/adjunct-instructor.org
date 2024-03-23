@@ -38,49 +38,34 @@ customize to your liking and teaching style.
 The sandbox course is already setup for you to link your zyBook reading assignments and labs back to
 your grade book. You will follow these instructions for *both* type of assignments.
 
-- Locate the assignment as shown below.
-
-#+caption: locate assignment
+#+caption: Locate the assignment as shown
 [[file:images/locate-textbook-activities.png]]
 
-- Link the assignment
-
-#+caption: edit assignment
+#+caption: Link the assignment
 [[file:images/link-assignment.png]]
 
-- Choose the correct book in your zyBook account.
-- Create your assignment in zyBook
-
-#+caption: create assignment
+#+caption: Choose the correct book in your zyBook account and create the assignment.
 [[file:images/create-assignment.png]]
 
 * Create your Quizzes
 :PROPERTIES:
 :CUSTOM_ID: create-your-quizzes
 :END:
-You can use the built in Quizzes that zyBooks provides in canvas with the steps below.
+You can use the built in quizzes that zyBooks provides and [[https://boisestate.atlassian.net/wiki/spaces/LTS/pages/1723891720/Canvas+FAQ+How+do+I+import+quizzes+from+QTI+packages][import them into canvas]] with the steps below.
 
-- Open the test tab to create the test
-
-#+caption: create test
+#+caption: Open the test tab to create the test.
 [[file:images/zybook-create-test.png]]
 
-- Export the test as a question bank
-
-#+caption: export test
+#+caption: Export the test as a question bank
 [[file:images/zybook-export-test.png]]
-
-- [[https://boisestate.atlassian.net/wiki/spaces/LTS/pages/1723891720/Canvas+FAQ+How+do+I+import+quizzes+from+QTI+packages][Import the question bank]]
 
 * Setup Github (course dependent)
 :PROPERTIES:
 :CUSTOM_ID: setup-github-course-dependent
 :END:
 If your class is submitting programming assignments you will need to setup [[file:github-classroom-setup.md][github classrooms]] and
-then update each programming assignment in canvas.
+then update each programming assignment in canvas. Each programming assignment listed in the
+syllabus is already setup to use GitHub classroom.
 
-Each programming assignment listed in the syllabus is already setup to use github classroom all you
-have to do is update the link in the canvas assignment as shown below.
-
-#+caption: canvas github classroom
+#+caption: Update the link in the canvas assignment
 [[file:images/canvas-github-classroom-update.png]]

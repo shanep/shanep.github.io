@@ -1,0 +1,33 @@
+#+SETUPFILE: ../../level-2.org
+#+TITLE: The Kitchen Sink
+#+SUBTITLE: CSS styling of this site
+#+DESCRIPTION: CSS styling of this site
+#+DATE: <2024-03-11 Mon 8:33>
+
+
+* Text
+** Headings
+*** Heading 3
+**** Heading 4
+***** Heading 5
+****** Heading 6
+
+
+* Paragraphs
+
+A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained
+unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one
+or more sentences. Though not required by the syntax of any language, paragraphs are usually an
+expected part of formal writing, used to organize longer prose.
+
+
+* Block quotes
+
+#+BEGIN_QUOTE
+A block quotation (also known as a long quotation or extract) is a quotation in a written document,
+that is set off from the main text as a paragraph, or block of text.
+
+It is typically distinguished visually using indentation and a different typeface or smaller size
+quotation. It may or may not include a citation, usually placed at the bottom.
+[[https://example.com][Said no one, ever]]
+#+END_QUOTE
