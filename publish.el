@@ -106,7 +106,7 @@ representation for the files to include, as returned by
 			   :sitemap-format-entry my-org-publish-sitemap-entry
 			   :sitemap-function my-org-publish-sitemap
 			   :publishing-directory ,(concat (vc-root-dir) "build/research")
-			   :publishing-function org-html-publish-to-html
+			   :publishing-function skp-org-html-publish-to-html
 			   :html-postamble "<ul><li>Author: %a (%e)</li><li>Date: %d</li><li>Exported: %T</li><li>%v</li></ul>")
 
 			  ("images"
@@ -117,7 +117,8 @@ representation for the files to include, as returned by
 
 			  ("css"
 			   :base-directory ,(concat (vc-root-dir)  "org/css")
-			   :base-extension "css\\|el"
+			   :base-extension "css\\|el\\ttf\\|woff\\|woff2"
+			   :recursive t
 			   :publishing-directory ,(concat (vc-root-dir) "build/css")
 			   :publishing-function org-publish-attachment)
 			  ("website"
@@ -134,6 +135,8 @@ representation for the files to include, as returned by
     (progn
       (load-file "./htmlize/htmlize.el")
       (org-publish-all)))
+
+
 
 
 ;;; publish.el ends here

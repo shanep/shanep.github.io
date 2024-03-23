@@ -1,7 +1,14 @@
 #+SETUPFILE: ../../level-1.org
 #+TITLE: Teaching
-#+SUBTITLE: Teaching Stuff
 #+DESCRIPTION: All my stuff related to teaching
 
+* Resources
 
 #+include: sitemap.org
+
+* Courses
+
+- [[../cs117/index.org][CS117 - C++ for Engineers]]
+- [[../cs155/index.org][CS155 - Introduction to Version Control]]
+- [[../cs333/index.org][CS333 - Network Security and Defense]]
+- [[../cs408/index.org][CS408 - Full Stack Web Development]]
