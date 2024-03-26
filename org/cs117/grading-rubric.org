@@ -1,8 +1,0 @@
-#+SETUPFILE: ../../level-2.org
-#+TITLE: Grading Rubric
-#+SUBTITLE: CS117 C++ for Engineers
-#+DESCRIPTION: CS117 C++ for Engineers
-#+DATE: <2016-01-01 Mon 08:00>
-{{{latex_options}}}
-
-#+include: ../../parts/rubric-boiler.org :minlevel 1

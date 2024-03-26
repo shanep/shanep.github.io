@@ -4,8 +4,7 @@
 #+html_container: div
 #+html_content_class: content
 #+html_equation_reference_format: \eqref{%s}
-#+html_head: <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
-#+html_head_extra: <link rel="stylesheet" type="text/css" href="../css/style.css" />
+#+html_head: <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 #+creator: <a href="https://www.gnu.org/software/emacs/">Emacs</a> 30.0.50 (<a href="https://orgmode.org">Org</a> mode 9.6.13)
 #+AUTHOR:     Shane K. Panter
 #+EMAIL:      shanepanter@boisestate.edu

@@ -43,14 +43,6 @@ representation for the files to include, as returned by
 			   :publishing-directory ,(concat (vc-root-dir) "build/")
 			   :publishing-function org-html-publish-to-html)
 
-			  ("cs155"
-			   :base-directory ,(concat (vc-root-dir)  "org/cs155")
-			   :base-extension "org"
-			   :recursive t
-			   :publishing-directory ,(concat (vc-root-dir) "build/cs155")
-			   :publishing-function org-html-publish-to-html
-			   :html-postamble "<ul><li>Author: %a (%e)</li><li>Date: %d</li><li>Exported: %T</li><li>%v</li></ul>")
-
 			  ("teaching"
 			   :base-directory ,(concat (vc-root-dir)  "org/teaching")
 			   :base-extension "org"
@@ -71,20 +63,6 @@ representation for the files to include, as returned by
 			   :publishing-directory ,(concat (vc-root-dir) "build/teaching/images")
 			   :publishing-function org-publish-attachment)
 
-			  ("research"
-			   :base-directory ,(concat (vc-root-dir)  "org/research")
-			   :base-extension "org"
-			   :recursive t
-			   :auto-sitemap t
-			   :sitemap-title ""
-			   :sitemap-filename "sitemap.org"
-			   :sitemap-sort-files chronologically
-			   :sitemap-format-entry my-org-publish-sitemap-entry
-			   :sitemap-function my-org-publish-sitemap
-			   :publishing-directory ,(concat (vc-root-dir) "build/research")
-			   :publishing-function skp-org-html-publish-to-html
-			   :html-postamble "<ul><li>Author: %a (%e)</li><li>Date: %d</li><li>Exported: %T</li><li>%v</li></ul>")
-
 			  ("images"
 			   :base-directory ,(concat (vc-root-dir)  "org/images")
 			   :base-extension "jpg\\|gif\\|png"
@@ -97,8 +75,9 @@ representation for the files to include, as returned by
 			   :recursive t
 			   :publishing-directory ,(concat (vc-root-dir) "build/css")
 			   :publishing-function org-publish-attachment)
+
 			  ("website"
-			   :components ("index" "teaching" "research" "images" "css"))))
+			   :components ("index" "teaching" "teaching-images" "images" "css"))))
 
 
 (defun skp-publish ()
