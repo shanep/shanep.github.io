@@ -8,12 +8,11 @@
 I am an Assistant Clinical Professor in the Department of Computer Science at Boise State University, where I
 research Software Security and Memory Safety.
 
-
-
 #+begin_export html
  <br style="clear:both;" />
 #+end_export
-* Links
+
+* Research
 
 - [[file:cv.org][CV]]
 - [[https://orcid.org/0009-0009-1852-3655][ORCID]]
@@ -23,7 +22,3 @@ research Software Security and Memory Safety.
 * Teaching
 
 #+include: teaching/sitemap.org
-
-* Research
-
-#+include: research/sitemap.org
