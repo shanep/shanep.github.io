@@ -43,35 +43,11 @@ representation for the files to include, as returned by
 			   :publishing-directory ,(concat (vc-root-dir) "build/")
 			   :publishing-function org-html-publish-to-html)
 
-			  ("cs117"
-			   :base-directory ,(concat (vc-root-dir)  "org/cs117")
-			   :base-extension "org"
-			   :recursive t
-			   :publishing-directory ,(concat (vc-root-dir) "build/cs117")
-			   :publishing-function org-html-publish-to-html
-			   :html-postamble "<ul><li>Author: %a (%e)</li><li>Date: %d</li><li>Exported: %T</li><li>%v</li></ul>")
-
 			  ("cs155"
 			   :base-directory ,(concat (vc-root-dir)  "org/cs155")
 			   :base-extension "org"
 			   :recursive t
 			   :publishing-directory ,(concat (vc-root-dir) "build/cs155")
-			   :publishing-function org-html-publish-to-html
-			   :html-postamble "<ul><li>Author: %a (%e)</li><li>Date: %d</li><li>Exported: %T</li><li>%v</li></ul>")
-
-			  ("cs333"
-			   :base-directory ,(concat (vc-root-dir)  "org/cs333")
-			   :base-extension "org"
-			   :recursive t
-			   :publishing-directory ,(concat (vc-root-dir) "build/cs333")
-			   :publishing-function org-html-publish-to-html
-			   :html-postamble "<ul><li>Author: %a (%e)</li><li>Date: %d</li><li>Exported: %T</li><li>%v</li></ul>")
-
-			  ("cs408"
-			   :base-directory ,(concat (vc-root-dir)  "org/cs408")
-			   :base-extension "org"
-			   :recursive t
-			   :publishing-directory ,(concat (vc-root-dir) "build/cs408")
 			   :publishing-function org-html-publish-to-html
 			   :html-postamble "<ul><li>Author: %a (%e)</li><li>Date: %d</li><li>Exported: %T</li><li>%v</li></ul>")
 
