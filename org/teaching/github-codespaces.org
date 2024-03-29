@@ -1,4 +1,4 @@
-#+SETUPFILE: ../../level-2.org
+#+SETUPFILE: ../../parts/org-boiler.org
 #+TITLE: GitHub Codespaces
 #+SUBTITLE: Computer Science Department
 #+DESCRIPTION: Guide for instructors at BSU

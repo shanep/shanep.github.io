@@ -1,4 +1,4 @@
-#+SETUPFILE: ../level-0.org
+#+SETUPFILE: ../parts/org-boiler.org
 #+TITLE: Shane K. Panter
 #+SUBTITLE: Curriculum Vitae
 #+DESCRIPTION: Shane K. Panter's CV
@@ -6,7 +6,7 @@
 
 * Education
 
-- Ph.D. in Computing, Boise State University, 2026 (ABD)
+- Ph.D. in Computing (ABD), Boise State University, 2026
 - M.S.  in Computer Science, Boise State University, 2013
 
 * Academic Appointments

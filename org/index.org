@@ -1,22 +1,32 @@
-#+SETUPFILE: ../level-0.org
+:PROPERTIES:
+:custom_id: front-pic
+:END:
+#+SETUPFILE: ../parts/org-boiler.org
 #+TITLE: Shane K. Panter
 #+DESCRIPTION: Shane K. Panter's personal website
+#+options: html-preamble:nil toc:nil
 
-#+ATTR_HTML: :style float:left;margin-right:30px;
+#+begin_export html
+ <div class="front">
+#+end_export
+
+
+
 [[file:images/me.jpg]]
 
+#+ATTR_HTML: :class me
 I am an Assistant Clinical Professor in the Department of Computer Science at Boise State University, where I
 research Software Security and Memory Safety.
 
 #+begin_export html
- <br style="clear:both;" />
+ </div>
 #+end_export
+
 
 * Research
 
 - [[file:cv.org][CV]]
 - [[https://orcid.org/0009-0009-1852-3655][ORCID]]
-- [[https://figshare.com/authors/Shane_Panter/18157354][Figshare]]
 - [[https://scholar.google.com/citations?user=0B7MuswAAAAJ&hl=en][Google Scholar]]
 
 * Teaching

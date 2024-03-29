@@ -1,4 +1,4 @@
-#+SETUPFILE: ../../level-1.org
+#+SETUPFILE: ../../parts/org-boiler.org
 #+TITLE: Adjunct Instructor Guide
 #+SUBTITLE: Computer Science Department
 #+DESCRIPTION: Guide for adjunct instructors at BSU
