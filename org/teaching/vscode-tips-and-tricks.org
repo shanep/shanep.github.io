@@ -1,4 +1,4 @@
-#+SETUPFILE: ../../level-2.org
+#+SETUPFILE: ../../parts/org-boiler.org
 #+TITLE: VSCode Tips and Tricks
 #+SUBTITLE: Computer Science Department
 #+DESCRIPTION: Guide for students at BSU

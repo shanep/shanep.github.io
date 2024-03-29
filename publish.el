@@ -88,7 +88,6 @@ representation for the files to include, as returned by
 ;;If running in batch mode
 (if noninteractive
     (progn
-      (load-file "./htmlize/htmlize.el")
       (org-publish-all)))
 
 

@@ -1,29 +1,32 @@
-
 #preamble, #postamble {
     border-top-style: solid;
     border-top-width: 1px;
     text-align: left;
 }
 
-#postamble > ul {
+#postamble > address > ul {
     list-style-type: none;
 }
 
-#content > article {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-#content > article > * {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 30ch;
-    padding: 5px;
-}
-
 /*org mode tags and  classes */
+
+.front {
+    display:flex;
+    flex-direction: row ;
+    justify-content: flex-start;
+}
+
+.me{
+    flex-shrink: 4;
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .front {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
 
 .author, date {
     margin-top: 8px;
@@ -32,9 +35,14 @@
 }
 
 .title  {
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #f9a825, #ff5722);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     margin-bottom: .2em;
 }
+
 .subtitle {
     text-align: center;
     font-size: medium;
@@ -43,7 +51,7 @@
 }
 .todo   {
     font-family: monospace;
-    color: red;
+    color: darkred;
 }
 .done   {
     font-family: monospace;
@@ -89,10 +97,11 @@ p.verse { margin-left: 3%; }
 
 /** Source Code **/
 
+
 pre {
     border: 1px solid #e6e6e6;
     border-radius: 3px;
-    background-color: #f2f2f2;
+
     padding: 8pt;
     font-family: monospace;
     overflow: auto;

@@ -1,8 +1,9 @@
-#+SETUPFILE: ../../level-2.org
+#+SETUPFILE: ../../parts/org-boiler.org
 #+TITLE: GitHub Classroom Setup
 #+SUBTITLE: Computer Science Department
 #+DESCRIPTION: Guide for instructors at BSU
 #+DATE: <2021-09-20 Mon 10:43>
+
 
 
 * Overview
@@ -64,7 +65,7 @@ you to use *all* of the features that github classrooms provides.
 - [[https://github.com/shanep/github-classroom-blank-starter][Example Empty repository]]
 - [[https://github.com/shanep/github-classroom-multi-lab][Example multi lab format]]
 
-* Single lab format (Recommended)
+** Single lab format (Recommended)
 :PROPERTIES:
 :CUSTOM_ID: single-lab-format-recommended
 :END:
@@ -78,7 +79,7 @@ possible for students to get merge conflicts if they are moving between machines
 (desktop/laptop/lab) this model helps keep difficult merge conflicts lower because each lab starts
 with a fresh repository.
 
-* Empty repository
+** Empty repository
 :PROPERTIES:
 :CUSTOM_ID: empty-repository
 :END:
@@ -88,7 +89,7 @@ the project entirely from scratch. In either case you can direct
 students to any supplemental material through another means such as
 canvas or email.
 
-* Multi lab format
+** Multi lab format
 :PROPERTIES:
 :CUSTOM_ID: multi-lab-format
 :END:
@@ -157,7 +158,7 @@ While VSCode is not required to use Github or Github Classrooms it has phenomena
 Github that makes it trivial to work with repositories. VSCode is the recommended way for students
 to interact with GitHub.
 
-* Copy Assignment URL
+** Copy Assignment URL
 :PROPERTIES:
 :CUSTOM_ID: copy-assignment-url
 :END:
@@ -167,7 +168,7 @@ site so students can access the assignment.
 #+caption: Classroom assignment url
 [[file:images/github-classroom-assignment-url.png]]
 
-* Admin access
+** Admin access
 :PROPERTIES:
 :CUSTOM_ID: admin-access
 :END:
@@ -191,7 +192,7 @@ repositories. Here are a few cases where they *do* need admin access.
 There are two ways to download student assignments. You can use the [[https://classroom.github.com/assistant][Classroom Assistant]] provided by
 Github or you can use a terminal based downloader [[https://github.com/shanep/ghclass][ghclass]].
 
-*** Downloading Groups
+** Downloading Groups
 :PROPERTIES:
 :CUSTOM_ID: downloading-groups
 :END:
