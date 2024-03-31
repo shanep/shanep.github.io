@@ -22,10 +22,10 @@
 
 /* Small screens */
 @media all and (max-width: 500px) {
-  .front {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
-  }
+    .front {
+	/* On small screens, we are no longer using row direction but column */
+	flex-direction: column;
+    }
 }
 
 .author, date {
@@ -39,19 +39,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: center;
-    margin-bottom: .2em;
 }
 
-.subtitle {
-    text-align: center;
-    font-size: medium;
-    font-weight: bold;
-    margin-top:0;
-}
 .todo   {
     font-family: monospace;
-    color: darkred;
+    color:red;
 }
 .done   {
     font-family: monospace;
@@ -61,6 +53,7 @@
     font-family: monospace;
     color: orange;
 }
+
 .tag    {
     background-color: #eee;
     font-family: monospace;
@@ -68,6 +61,13 @@
     font-size: 80%;
     font-weight: normal;
 }
+
+@media (prefers-color-scheme: dark) {
+    .tag    {
+	color:black;
+    }
+}
+
 .timestamp {
     color: #bebebe;
 }

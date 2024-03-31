@@ -1,0 +1,19 @@
+#+SETUPFILE: ../../parts/org-boiler.org
+#+TITLE: Universal Project Grading Rubric
+#+SUBTITLE: Grading rubic for Programming projects
+#+DATE: <2024-05-01 Wed>
+
+* Grading Rubric
+:PROPERTIES:
+:CUSTOM_ID: grading-rubric
+:END:
+| Criteria      | Expert                      | Proficient                                        | Apprentice                                        | Novice                                      | Unknown                            |
+|---------------+-----------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------------------+------------------------------------|
+| Testing       | *(50 pts)* Passes All Tests | (45 pts) Passes between 90% and 99% of test suite | (40 pts) Passes between 80% and 89% of test suite | (35 pts) Passes less then 80% of test suite | (0 pts) Minimum standards not meet |
+| Code Quality  | *(30 pts)* No issue         | (27 pts) One issue                                | (24 pts) Two issues                               | (21 pts) More than two issues               | (0 pts) Minimum standards not meet |
+| Documentation | *(10 pts)* No issues        | (9 pts) One issue                                 | (8 pts) Two issues                                | (7 pts) More than two issues                | (0 pts) Minimum standards not meet |
+| Retrospective | *(10 pts)* No issues        | (9 pts) One issue                                 | (8 pts) Two issues                                | (7 pts) More than two issues                | (0 pts) Minimum standards not meet |
+| Total Points  | *100*                       |                                                   |                                                   |                                             |                                    |
+
+
+#+include: ../../parts/rubric-boiler.org :minlevel 1

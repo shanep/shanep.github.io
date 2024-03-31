@@ -69,7 +69,7 @@ called out in the specification.
 Functions that you can exclude from the code coverage report will be clearly denoted in the project
 specification. You can *NOT* exclude any functions that are not explicitly called out in the
 specification in order to artificially inflate your code coverage metric. Doing so, and getting
-caught, will result in a 0% for this section of the rubric.
+caught can be considered academic dishonesty.
 
 ** General Coding Guidelines
 :PROPERTIES:
@@ -84,9 +84,10 @@ you won't lose points in a future project.
 :PROPERTIES:
 :CUSTOM_ID: global-variables
 :END:
-All *public* global variables are 100% banned. Private, protected, or stack local variables
-variables are OK. If you truly think that the only way to solve the problem is to use a global
-variable then you must *clearly* document why you are forced to use a global variable.
+All *public* global variables are 100% banned unless you are required to use them. Private,
+protected, or stack local variables variables are OK. If you truly think that the only way to solve
+the problem is to use a global variable then you must *clearly* document why you are forced to use a
+global variable.
 
 There are instances where it is necessary to use a public global variable because you are dealing
 with a legacy API, writing a device driver, or you are working with a poorly implemented SDK. These

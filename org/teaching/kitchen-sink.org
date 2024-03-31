@@ -4,8 +4,6 @@
 #+DESCRIPTION: CSS styling of this site
 #+DATE: <2024-03-11 Mon 8:33>
 
-
-
 CSS styling of a HTML file exported from orgmode. ~<h1>~ will be for the title only.
 
 * h2

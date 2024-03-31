@@ -1,0 +1,32 @@
+#+SETUPFILE: ../../parts/org-boiler.org
+#+TITLE: Course Materials
+#+SUBTITLE: Canvas and Github Links
+#+DATE: <2024-03-31 Sun>
+#+options: toc:nil
+
+
+* Courses
+
+** CS177
+
+- [[https://boisestatecanvas.instructure.com/courses/23688][Canvas Sandbox]]
+- [[https://github.com/shanep?tab=repositories&q=117&type=&language=&sort=][GitHub Labs]]
+
+** CS155
+
+- [[https://boisestatecanvas.instructure.com/courses/22149][Canvas Sandbox]]
+- [[https://github.com/shanep?tab=repositories&q=250&type=&language=&sort=][GitHub Labs]]
+
+** CS208
+
+- [[https://boisestatecanvas.instructure.com/courses/27608][Canvas Sandbox]]
+- [[https://github.com/shanep?tab=repositories&q=208&type=&language=&sort=][GitHub Labs]]
+
+** CS333
+
+- [[https://boisestatecanvas.instructure.com/courses/23740][Canvas Sandbox]]
+- Labs are integrated into the textbook
+
+** CS452/552
+
+- [[https://boisestatecanvas.instructure.com/courses/10394][Canvas Sandbox]]
