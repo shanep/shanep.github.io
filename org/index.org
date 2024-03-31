@@ -1,6 +1,3 @@
-:PROPERTIES:
-:custom_id: front-pic
-:END:
 #+SETUPFILE: ../parts/org-boiler.org
 #+TITLE: Shane K. Panter
 #+DESCRIPTION: Shane K. Panter's personal website
@@ -9,8 +6,6 @@
 #+begin_export html
  <div class="front">
 #+end_export
-
-
 
 [[file:images/me.jpg]]
 
