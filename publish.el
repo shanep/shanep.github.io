@@ -36,6 +36,11 @@ representation for the files to include, as returned by
   (concat "#+TITLE: " title "\n\n"
 	  (org-list-to-org list)))
 
+(defun my-html-postamble (info)
+  "Return custom footer with github link.
+INFO is is a plist with all the page data."
+)
+
 (customize-set-variable 'org-publish-project-alist
 			`(("index"
 			   :base-directory ,(concat (vc-root-dir)  "org/")
@@ -54,8 +59,7 @@ representation for the files to include, as returned by
 			   :sitemap-format-entry my-org-publish-sitemap-entry
 			   :sitemap-function my-org-publish-sitemap
 			   :publishing-directory ,(concat (vc-root-dir) "build/teaching")
-			   :publishing-function org-html-publish-to-html
-			   :html-postamble "<ul><li>Author: %a (%e)</li><li>Date: %d</li><li>Exported: %T</li><li>%v</li></ul>")
+			   :publishing-function org-html-publish-to-html)
 
 			  ("teaching-images"
 			   :base-directory ,(concat (vc-root-dir)  "org/teaching/images")
@@ -69,6 +73,12 @@ representation for the files to include, as returned by
 			   :publishing-directory ,(concat (vc-root-dir) "build/images")
 			   :publishing-function org-publish-attachment)
 
+			  ("papers"
+			   :base-directory ,(concat (vc-root-dir)  "org/papers")
+			   :base-extension "pdf"
+			   :publishing-directory ,(concat (vc-root-dir) "build/papers")
+			   :publishing-function org-publish-attachment)
+
 			  ("css"
 			   :base-directory ,(concat (vc-root-dir)  "org/css")
 			   :base-extension "css\\|el\\ttf\\|woff\\|woff2"
@@ -77,7 +87,7 @@ representation for the files to include, as returned by
 			   :publishing-function org-publish-attachment)
 
 			  ("website"
-			   :components ("index" "teaching" "teaching-images" "images" "css"))))
+			   :components ("index" "teaching" "teaching-images" "images" "css" "papers"))))
 
 
 (defun skp-publish ()

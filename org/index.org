@@ -22,8 +22,7 @@ research Software Security and Memory Safety.
  </div>
 #+end_export
 
-
-* Research
+* Links
 
 - [[file:cv.org][CV]]
 - [[https://orcid.org/0009-0009-1852-3655][ORCID]]

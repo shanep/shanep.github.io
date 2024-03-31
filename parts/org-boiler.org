@@ -1,7 +1,7 @@
 #+options: html-link-use-abs-url:nil html-scripts:nil html-style:nil html5-fancy:t tex:t num:nil toc:t
 #+options: author:t date:t
 #+options: html-preamble:"<a href=../index.html>Home</a>"
-#+options: html-postamble:"<address> <ul><li> %e</li> <li>%d</li> <li>%v</li></ul> </address>"
+#+options: html-postamble:"<address> <ul><li>%e</li><li>%d</li><li>%v</li></ul></address>"
 #+html_doctype: html5
 #+html_container: div
 #+html_content_class: content

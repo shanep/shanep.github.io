@@ -4,4 +4,4 @@ all:
 	rm -rf build
 	emacs -Q --batch -l publish.el
 serve:
-	python -m http.server 3000 -d build
+	python3 -m http.server 3000 -d build
