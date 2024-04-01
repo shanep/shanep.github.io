@@ -1,6 +1,6 @@
 #+SETUPFILE: ../../parts/org-boiler.org
 #+TITLE: GitHub Classroom Setup
-#+SUBTITLE: Computer Science Department
+#+SUBTITLE: Guide for Instructors using GitHub Classroom
 #+DESCRIPTION: Guide for instructors at BSU
 #+DATE: <2021-09-20 Mon 10:43>
 

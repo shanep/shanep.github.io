@@ -5,28 +5,50 @@
 #+options: toc:nil
 
 
-* Courses
+* Overview
 
-** CS177
+Course materials, labs, and canvas instances for all courses where I am the coordinator. Please
+contact me directly if you need to be added to the canvas sandbox site. If you find any stale or
+dead links in any of the course materials listed below please notify me so I can push an update.
 
-- [[https://boisestatecanvas.instructure.com/courses/23688][Canvas Sandbox]]
-- [[https://github.com/shanep?tab=repositories&q=117&type=&language=&sort=][GitHub Labs]]
+* CS177 - Introduction C++ For Engineers
 
-** CS155
+- [[https://boisestatecanvas.instructure.com/courses/23688][Canvas Sandbox]] - Syllabus, Quizzes, Grade book
+- [[https://github.com/shanep?tab=repositories&q=117&type=&language=&sort=][GitHub Labs]] - Starter Code for GitHub Classroom
+- [[https://www.boisestate.edu/registrar-catalog/#/courses/ryAIJ8U58?q=117&&limit=20&skip=0&bc=true&bcCurrent=&bcCurrent=C%2B%2B%20for%20Engineers&bcItemType=courses][Catalog Statement]] - Boise State University Current Catalog
+- [[https://github.com/BoiseState/CS117-resources][Code Examples]] - **Public** repository for Instructors to post example code
+- [[https://github.com/BoiseState/CS117][Instructor Archive]] - **Private** repository for archived course material
 
-- [[https://boisestatecanvas.instructure.com/courses/22149][Canvas Sandbox]]
-- [[https://github.com/shanep?tab=repositories&q=250&type=&language=&sort=][GitHub Labs]]
+* CS155 - Introduction to Version Control
 
-** CS208
+- [[https://boisestatecanvas.instructure.com/courses/22149][Canvas Sandbox]] - Syllabus, Quizzes, Grade book
+- [[https://github.com/shanep?tab=repositories&q=250&type=&language=&sort=][GitHub Labs]] - Companion labs for the Canvas site
+- [[https://www.boisestate.edu/registrar-catalog/#/courses/HkWNqXI89U?q=cs155&&limit=20&skip=0&bc=true&bcCurrent=&bcCurrent=Introduction%20to%20Version%20Control&bcItemType=courses][Catalog Statement]] - Boise State University Current Catalog
 
-- [[https://boisestatecanvas.instructure.com/courses/27608][Canvas Sandbox]]
-- [[https://github.com/shanep?tab=repositories&q=208&type=&language=&sort=][GitHub Labs]]
+* CS208 - Introduction to Full Stack Web Development
 
-** CS333
+- [[https://boisestatecanvas.instructure.com/courses/27608][Canvas Sandbox]] -  Syllabus, Quizzes, Grade book
+- [[https://github.com/shanep?tab=repositories&q=208&type=&language=&sort=][GitHub Labs]] - Starter Code for GitHub Classroom
+- [[https://www.boisestate.edu/registrar-catalog/#/courses/Hk9gqpkej?q=cs208&&limit=20&skip=0&bc=true&bcCurrent=&bcCurrent=Introduction%20to%20Full%20Stack%20Web%20Development&bcItemType=courses][Catalog Statement]] - Boise State University Current Catalog
 
-- [[https://boisestatecanvas.instructure.com/courses/23740][Canvas Sandbox]]
+* CS333 - Network Security and Defense
+
+- [[https://boisestatecanvas.instructure.com/courses/23740][Canvas Sandbox]] - Syllabus, Quizzes, Grade book
 - Labs are integrated into the textbook
+- [[https://www.boisestate.edu/registrar-catalog/#/courses/SJ77QIUcI?q=cs333&&limit=20&skip=0&bc=true&bcCurrent=&bcCurrent=Network%20Security%20and%20Defense&bcItemType=courses][Catalog Statement]] - Boise State University Current Catalog
 
-** CS452/552
+* CS408 - Full Stack Web Development
 
-- [[https://boisestatecanvas.instructure.com/courses/10394][Canvas Sandbox]]
+- [[https://boisestatecanvas.instructure.com/courses/523][Canvas Sandbox]] - Syllabus, Quizzes, Grade book
+- Labs are integrated into canvas
+- [[https://www.boisestate.edu/registrar-catalog/#/courses/B1pZ7LL9I?q=cs408&&limit=20&skip=0&bc=true&bcCurrent=&bcCurrent=Full%20Stack%20Web%20Development&bcItemType=courses][Catalog Statement]] -  Boise State University Current Catalog
+
+* CS452/552 - Operating Systems
+
+**NOTE:Dual Listed with CS552**
+
+- [[https://boisestatecanvas.instructure.com/courses/10394][Canvas Sandbox]] - Syllabus, Quizzes, Grade book
+- [[https://github.com/shanep?tab=repositories&q=452&type=&language=&sort=][GitHub Labs]] -  Starter Code for GitHub Classroom
+- [[https://www.boisestate.edu/registrar-catalog/#/courses/r1GvJLI58?q=cs452&&limit=20&skip=0&bc=true&bcCurrent=&bcCurrent=Operating%20Systems&bcItemType=courses][Catalog Statement]] - Boise State University Current Catalog
+- [[https://github.com/BoiseState/CS453-resources][Code Examples]] - **Public** repository for Instructors to post example code
+- [[https://github.com/BoiseState/CS453][Instructor Archive]] - **Private** repository for archived course material

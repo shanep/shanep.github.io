@@ -1,6 +1,6 @@
 #+SETUPFILE: ../../parts/org-boiler.org
 #+TITLE: Starter Code
-#+SUBTITLE: Computer Science Department
+#+SUBTITLE: Place holder for GitHub Classrooms Link
 #+DESCRIPTION: Guide for students at BSU
 #+DATE: <2021-01-05 Tue 12:45>
 #+options: toc:nil

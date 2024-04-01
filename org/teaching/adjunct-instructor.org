@@ -1,6 +1,6 @@
 #+SETUPFILE: ../../parts/org-boiler.org
 #+TITLE: Adjunct Instructor Guide
-#+SUBTITLE: Computer Science Department
+#+SUBTITLE: Guide for new adjunct instructors at BSU
 #+DESCRIPTION: Guide for adjunct instructors at BSU
 #+DATE: <2023-12-13 Wed 08:25>
 
