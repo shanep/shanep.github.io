@@ -1,21 +1,15 @@
 #+SETUPFILE: ../../parts/org-boiler.org
 #+TITLE: Syllabus Boilerplate
-#+SUBTITLE: General Syllabus Statements for all syllabi
+#+SUBTITLE: General Syllabus Statements for all courses
 #+DATE: <2024-08-01 Thu>
-
-* Overview
-
-Below are statements that are common to all syllabi and statements that are required by Boise State
-University. These statements are to be combined with course specific learning objects and
-schedules. The full syllabus for each course is stored in canvas.
 
 * Instructor Contact
 :PROPERTIES:
 :CUSTOM_ID: instructor-contact
 :END:
 
-- **email:** TODO
-- **office hours:** TODO
+- **email:** shanepanter@boisestate.edu
+- **office hours:** Book on the canvas homepage
 
 * Grading Policy
 :PROPERTIES:
@@ -24,11 +18,6 @@ schedules. The full syllabus for each course is stored in canvas.
 Grades will be posted in canvas and calculated with the percentages specified below. *Final grades
 will not be rounded*. I offer plenty of Extra Credit Opportunities that you can take advantage of to
 improve your final grade.
-
-I, like most people, am far from perfect. Some semesters I have an overwhelming number of students
-to track and things unintentionally fall through the cracks. If I made a mistake with your grade
-don't panic!  Take a deep breath and just send me an email with the details and I will take a
-look. Remember everything will be OK, I am here to help you as best I can.
 
 | Letter Grade | Percentage |
 |--------------+------------|
@@ -54,13 +43,13 @@ grading boundary so please take advantage of any extra credit offered. Any extra
 the semester can not exceed 2.5% of the total points offered. For example, the maximum number of
 extra credit points that you can earn if the total points offered is 1000 would be 25.
 
-**Typos and Bugs** If you find any typos or bugs in the course materials, you can make the
-corrections on GitHub, and then issue a [[https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request][pull request]]. If I merge your changes back into the
+**Typos and Bugs** If you find any typos or bugs in the course that are hosted on GitHub materials,
+you can make the corrections and then issue a [[https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request][pull request]]. If I merge your changes back into the
 repository then I will give you 5 bonus points. I have strategically placed several spelling and
 grammar errors for you to find so there are plenty of opportunities to get the maximum number of
-points offered. So make sure and read everything with an eagle eye so you can rack up those points!
-Creating a pull request is important and is the core learning objective in the extra credit
-process. No points will be awarded for any other method of submission.
+points offered.  Creating a pull request is important and is the core learning objective in the
+extra credit process. If the typo or bug is within canvas you will need to submit the correction to
+the canvas assignment named "Canvas Typos and bugs".
 
 **Use of AI technologies** If you are able to solve 100% of any assignment with AI, I will give you
 extra credit if you submit your chat logs as proof that it was in fact 100% AI generated. See the
@@ -80,15 +69,6 @@ patches. Submissions via any other method such engraving your source code onto a
 wizard scroll will not be accepted under any circumstances. You are encouraged to make consistent
 commits to your Git repository over the course of working on your project.
 
-Former students will post their projects for employers to see and you can find them with a simple
-Google search. ChatGPT can give at least a partial solution if not full solution to some of the
-projects in this class. Stackoverflow.com has solutions to most common problems that students will
-encounter. It is not feasible for me to create brand new projects every semester nor is it feasible
-to police the internet for solutions to my projects. Therefore in this class I will trust that you
-are here to learn and will not seek out solutions to the projects. I expect all students to adhere
-to the Universities Academic Integrity policy. If you get stuck on a project please attend office
-hours for help instead of searching for a solution online.
-
 * AI Policy
 :PROPERTIES:
 :CUSTOM_ID: ai-policy
@@ -97,28 +77,14 @@ Developer tools such as an IDE or AI should be used to *enhance* your skills not
 the hands of an experienced developer makes that developer even more productive! AI in the hands of
 a student robs them of the opportunity to learn!
 
-I feel that we are experiencing a new paradigm shift that last happened in 1998 when Google Search
-was released. Google Search fundamentally changed how students approached finding information. Then
-in 2004 [[https://en.wikipedia.org/wiki/Google_Scholar][Google Scholar]] was released and you no longer had to spend hours in the library combing
-through indexes or paper journals, you could just type your query into a little box and get millions
-of results instantly. It's hard to overstate how dramatic the shift was to people who didn't live
-through it. Google was nothing short of mind-blowing compared to what existed before.
-
 Banning tools that are broadly available only results in creating a low trust environment in the
 classroom. Thus, in my class you are free to use [[https://en.wikipedia.org/wiki/Skynet_(Terminator)][AI or Machine Learning technologies]] to complete
-your assigned work. However, I strongly encourage anyone who is learning to code to *NOT* use AI or
-even an IDE. When you are learning something new it is OK to struggle and get things wrong that is
-part of the learning process. Think back to your 2nd or 3rd grade class when you were learning to
-spell, did your teacher let you use spell check on your spelling tests? What would be the point of
-taking a spelling test if you could? As you have moved up in education, using a spell checker is a
-great way to *enhance* your underlying skills. However, even the best spell checkers in the world
-can't help someone who doesn't understand the basics of grammar or syntax (look at all the spelling
-and grammar errors that I make).
-
-If you do choose to use AI you *must cite* your usage and you will now be graded on the code that it
-writes. If you truly believe that ChatGPT can *always* give the best solution to any problem then
-you may want to switch majors because why would a company hire you if they can just use ChatGPT to
-write all their code?
+your assigned work. However, I strongly encourage anyone who is learning to *NOT* use AI or even an
+IDE. When you are learning something new it is OK to struggle and get things wrong that is part of
+the learning process. If you do choose to use AI you *must cite* your usage and you will now be
+graded on the code that it writes. If you truly believe that ChatGPT can *always* give the best
+solution to any problem then you may want to switch majors because why would a company hire you if
+they can just use ChatGPT to write all their code?
 
 Take for example the two possible solutions for a =size()= method in a typical linked list. Can you
 spot the problem? While both solutions do work and produce correct results, the AI generated
@@ -126,39 +92,31 @@ solution is O(N) while the *better* solution is O(1). If you don't know why one 
 other then I would strongly suggest you not use AI tools until you get more experience.
 
 #+begin_src java
-//ChatGPT generated - O(N) performance
-public int size() {
-    int size = 0;
-    Node current = head;
-    while (current != null) {
-        size++;
-        current = current.next;
-    }
-    return size;
-}
+  //ChatGPT generated - O(N) performance
+  //Walk the list every time you call size
+  public int size() {
+      int size = 0;
+      Node current = head;
+      while (current != null) {
+          size++;
+          current = current.next;
+      }
+      return size;
+  }
 #+end_src
 
 #+begin_src java
-//Hand coded - O(1) performance
-public int size() {
-    return size;
-}
+  //Hand coded - O(1) performance
+  //store the size var and just return it.
+  public int size() {
+      return size;
+  }
 #+end_src
 
 #+begin_quote
 It is still plagiarism to claim work that was generated by [[https://openai.com/blog/chatgpt][ChatGPT]] or other AI tools as your own and
 you will be written up for Academic dishonesty if you do not cite your usage of any AI tools.
 #+end_quote
-
-When you are learning new material early assignments are intentionally easier to help you build up
-your skills. Leaning too heavily on AI early on will hurt you when you get to more complex
-assignments. You may not even feel the pain until you get to your 300 or 400 level courses. Trust me
-when I say AI can not solve most of the programming assignments in your 400 level courses. I test my
-assignments against modern AI tools and sometimes see hilariously wrong results, so if you are not
-able to recognize correct vs incorrect results you should not be using AI in the first place. So the
-bottom line is if you know enough about the given subject to be able to recognize correct vs
-incorrect results then you should be free to use said tools to enhance your productivity and
-education.
 
 * Attendance Policy
 :PROPERTIES:
