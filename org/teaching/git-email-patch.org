@@ -1,5 +1,6 @@
 #+SETUPFILE: ../../parts/org-boiler.org
 #+TITLE: Email a Git Patch
+#+subtitle: How to create and email a patch using git
 #+Date: <2023-12-07 Thu>
 
 * Setup
@@ -39,42 +40,6 @@ extensions if you are already syncing your account.
 
 #+caption: You now should have a new repository (forked from the starter template) that is ready to use.
 [[../images/codespace-extensions.png]]
-
-
-
-* Create Some commits
-:PROPERTIES:
-:CUSTOM_ID: create-some-commits
-:END:
-- Create your first commit using the terminal
-
-#+begin_src sh
-date >> the-date.txt
-git add the-date.txt
-git commit -m "Added a date file"
-#+end_src
-
-- Create your second commit using the terminal
-
-#+begin_src sh
-echo "My Name" > my-name.txt
-git add my-name.txt
-git commit -m "Added a file with my name in it"
-#+end_src
-
-- Make sure everything looks good.
-
-#+begin_src sh
-shane|(master>):git-send-email$ git status
-On branch master
-Your branch is ahead of 'origin/master' by 2 commits.
-  (use "git push" to publish your local commits)
-
-nothing to commit, working tree clean
-#+end_src
-
-#+caption: Push your changes to your repository.
-[[../images/git-sync-changes.png]]
 
 * Configure Git Email
 :PROPERTIES:
@@ -156,9 +121,43 @@ issue:
 Congrats you should be all setup to send code patch's over email. Now
 lets create a patch!
 
-** Create a patch file
+* Create Some commits
 :PROPERTIES:
-:CUSTOM_ID: create-a-patch-file
+:CUSTOM_ID: create-some-commits
+:END:
+- Create your first commit using the terminal
+
+#+begin_src sh
+date >> the-date.txt
+git add the-date.txt
+git commit -m "Added a date file"
+#+end_src
+
+- Create your second commit using the terminal
+
+#+begin_src sh
+echo "My Name" > my-name.txt
+git add my-name.txt
+git commit -m "Added a file with my name in it"
+#+end_src
+
+- Make sure everything looks good.
+
+#+begin_src sh
+shane|(master>):git-send-email$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+#+end_src
+
+#+caption: Push your changes to your repository.
+[[../images/git-sync-changes.png]]
+
+* Create and email a patch file
+:PROPERTIES:
+:CUSTOM_ID: create-and-email-a-patch-file
 :END:
 
 We are now going to do what is called a [[https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html][squash merge]] and then create a patch file with all our
@@ -213,10 +212,11 @@ If you are working on codespaces you will need to install the required
 dependencies before you attempt to email out your patch file.
 
 #+begin_src sh
-make install-deps
+  sudo apt-get update -y
+  sudo apt-get install -y libio-socket-ssl-perl libmime-tools-perl
 #+end_src
 
-* Email Patch File
+** Email Patch File
 :PROPERTIES:
 :CUSTOM_ID: email-patch-file
 :END:

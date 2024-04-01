@@ -1,6 +1,6 @@
 #+SETUPFILE: ../../parts/org-boiler.org
 #+TITLE: VSCode Tips and Tricks
-#+SUBTITLE: Computer Science Department
+#+SUBTITLE: Help document for students new to VSCode
 #+DESCRIPTION: Guide for students at BSU
 #+DATE: <2023-01-08 Sun 05:45>
 

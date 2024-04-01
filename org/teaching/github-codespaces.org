@@ -1,6 +1,6 @@
 #+SETUPFILE: ../../parts/org-boiler.org
 #+TITLE: GitHub Codespaces
-#+SUBTITLE: Computer Science Department
+#+SUBTITLE: Help Document for students using Codespaces
 #+DESCRIPTION: Guide for instructors at BSU
 #+DATE: <2023-01-18 Wed 09:45>
 
