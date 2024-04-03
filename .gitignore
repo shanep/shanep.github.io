@@ -13,3 +13,4 @@ docs/.vitepress/dist
 node_modules# Added automatically by ‘eldev init’.
 /.eldev
 /Eldev-local
+/node_modules/
