@@ -14,3 +14,6 @@ node_modules# Added automatically by ‘eldev init’.
 /.eldev
 /Eldev-local
 /node_modules/
+/docs/cv/shanekpanter.aux
+/docs/cv/shanekpanter.log
+/docs/cv/shanekpanter.out
