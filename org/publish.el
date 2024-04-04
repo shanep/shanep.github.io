@@ -39,13 +39,13 @@ representation for the files to include, as returned by
 
 (customize-set-variable 'org-publish-project-alist
 			`(("index"
-			   :base-directory ,(concat (vc-root-dir)  "org/docs")
+			   :base-directory "~/repos/shanep.github.io/org/docs/"
 			   :base-extension "org"
-			   :publishing-directory ,(concat (vc-root-dir) "org/build/")
+			   :publishing-directory "~/repos/shanep.github.io/org/build/"
 			   :publishing-function org-html-publish-to-html)
 
 			  ("teaching"
-			   :base-directory ,(concat (vc-root-dir)  "org/docs/teaching")
+			   :base-directory "~/repos/shanep.github.io/org/docs/teaching/"
 			   :base-extension "org"
 			   :recursive t
 			   :auto-sitemap t
@@ -54,32 +54,32 @@ representation for the files to include, as returned by
 			   :sitemap-sort-files chronologically
 			   :sitemap-format-entry my-org-publish-sitemap-entry
 			   :sitemap-function my-org-publish-sitemap
-			   :publishing-directory ,(concat (vc-root-dir) "org/build/teaching")
+			   :publishing-directory "~/repos/shanep.github.io/org/build/teaching/"
 			   :publishing-function org-html-publish-to-html)
 
 			  ("teaching-images"
-			   :base-directory ,(concat (vc-root-dir)  "org/docs/teaching/images")
+			   :base-directory "~/repos/shanep.github.io/org/docs/teaching/images/"
 			   :base-extension "jpg\\|gif\\|png"
-			   :publishing-directory ,(concat (vc-root-dir) "org/build/teaching/images")
+			   :publishing-directory "~/repos/shanep.github.io/org/build/teaching/images"
 			   :publishing-function org-publish-attachment)
 
 			  ("images"
-			   :base-directory ,(concat (vc-root-dir)  "org/docs/images")
+			   :base-directory "~/repos/shanep.github.io/org/docs/images/"
 			   :base-extension "jpg\\|gif\\|png"
-			   :publishing-directory ,(concat (vc-root-dir) "org/build/images")
+			   :publishing-directory "~/repos/shanep.github.io/org/build/images/"
 			   :publishing-function org-publish-attachment)
 
 			  ("papers"
-			   :base-directory ,(concat (vc-root-dir)  "org/docs/papers")
+			   :base-directory "~/repos/shanep.github.io/org/docs/papers/"
 			   :base-extension "pdf"
-			   :publishing-directory ,(concat (vc-root-dir) "org/build/papers")
+			   :publishing-directory "~/repos/shanep.github.io/org/build/papers/"
 			   :publishing-function org-publish-attachment)
 
 			  ("css"
-			   :base-directory ,(concat (vc-root-dir)  "org/docs/css")
+			   :base-directory "~/repos/shanep.github.io/org/docs/css/"
 			   :base-extension "css\\|el\\ttf\\|woff\\|woff2"
 			   :recursive t
-			   :publishing-directory ,(concat (vc-root-dir) "org/build/css")
+			   :publishing-directory "~/repos/shanep.github.io/org/build/css/"
 			   :publishing-function org-publish-attachment)
 
 			  ("website"
