@@ -36,20 +36,16 @@ representation for the files to include, as returned by
   (concat "#+TITLE: " title "\n\n"
 	  (org-list-to-org list)))
 
-(defun my-html-postamble (info)
-  "Return custom footer with github link.
-INFO is is a plist with all the page data."
-)
 
 (customize-set-variable 'org-publish-project-alist
 			`(("index"
-			   :base-directory ,(concat (vc-root-dir)  "org/")
+			   :base-directory ,(concat (vc-root-dir)  "org/docs")
 			   :base-extension "org"
-			   :publishing-directory ,(concat (vc-root-dir) "build/")
+			   :publishing-directory ,(concat (vc-root-dir) "org/build/")
 			   :publishing-function org-html-publish-to-html)
 
 			  ("teaching"
-			   :base-directory ,(concat (vc-root-dir)  "org/teaching")
+			   :base-directory ,(concat (vc-root-dir)  "org/docs/teaching")
 			   :base-extension "org"
 			   :recursive t
 			   :auto-sitemap t
@@ -58,32 +54,32 @@ INFO is is a plist with all the page data."
 			   :sitemap-sort-files chronologically
 			   :sitemap-format-entry my-org-publish-sitemap-entry
 			   :sitemap-function my-org-publish-sitemap
-			   :publishing-directory ,(concat (vc-root-dir) "build/teaching")
+			   :publishing-directory ,(concat (vc-root-dir) "org/build/teaching")
 			   :publishing-function org-html-publish-to-html)
 
 			  ("teaching-images"
-			   :base-directory ,(concat (vc-root-dir)  "org/teaching/images")
+			   :base-directory ,(concat (vc-root-dir)  "org/docs/teaching/images")
 			   :base-extension "jpg\\|gif\\|png"
-			   :publishing-directory ,(concat (vc-root-dir) "build/teaching/images")
+			   :publishing-directory ,(concat (vc-root-dir) "org/build/teaching/images")
 			   :publishing-function org-publish-attachment)
 
 			  ("images"
-			   :base-directory ,(concat (vc-root-dir)  "org/images")
+			   :base-directory ,(concat (vc-root-dir)  "org/docs/images")
 			   :base-extension "jpg\\|gif\\|png"
-			   :publishing-directory ,(concat (vc-root-dir) "build/images")
+			   :publishing-directory ,(concat (vc-root-dir) "org/build/images")
 			   :publishing-function org-publish-attachment)
 
 			  ("papers"
-			   :base-directory ,(concat (vc-root-dir)  "org/papers")
+			   :base-directory ,(concat (vc-root-dir)  "org/docs/papers")
 			   :base-extension "pdf"
-			   :publishing-directory ,(concat (vc-root-dir) "build/papers")
+			   :publishing-directory ,(concat (vc-root-dir) "org/build/papers")
 			   :publishing-function org-publish-attachment)
 
 			  ("css"
-			   :base-directory ,(concat (vc-root-dir)  "org/css")
+			   :base-directory ,(concat (vc-root-dir)  "org/docs/css")
 			   :base-extension "css\\|el\\ttf\\|woff\\|woff2"
 			   :recursive t
-			   :publishing-directory ,(concat (vc-root-dir) "build/css")
+			   :publishing-directory ,(concat (vc-root-dir) "org/build/css")
 			   :publishing-function org-publish-attachment)
 
 			  ("website"

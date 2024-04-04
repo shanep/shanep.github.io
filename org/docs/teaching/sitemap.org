@@ -1,7 +1,7 @@
 #+TITLE: 
 
 - [08/01/24] - [[file:syllabus-boiler-plate.org][Syllabus Boilerplate]]
-- [05/01/24] - [[file:universal-grading-rubric.org][Universal Project Grading Rubric]]
+- [05/01/24] - [[file:universal-grading-rubric.org][Universal Grading Rubric]]
 - [03/31/24] - [[file:course-materials.org][Course Materials]]
 - [03/11/24] - [[file:kitchen-sink.org][The Kitchen Sink]]
 - [12/13/23] - [[file:adjunct-instructor.org][Adjunct Instructor Guide]]
