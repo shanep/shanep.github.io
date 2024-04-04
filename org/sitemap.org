@@ -1,7 +1,0 @@
-#+TITLE: 
-
-- [[file:index.org][Shane K. Panter]]
-- blog
-  - [[file:blog/research-workflow.org][Research Workflow and Tooling]]
-- teaching
-  - [[file:teaching/cs408-syllabus.org][CS 408 Syllabus]]
