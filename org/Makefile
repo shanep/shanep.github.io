@@ -9,3 +9,4 @@ serve:
 .PHONY: clean
 clean:
 	rm -rf build
+	rm -rf ~/.org-timestamps
