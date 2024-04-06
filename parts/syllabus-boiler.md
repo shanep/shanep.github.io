@@ -194,12 +194,11 @@ announcements or updates given during class.
 
 ## Late Work Policy
 
-All homework assignments can be submitted up to **2 days late with no penalty**.
-After the 2 day grade period no further submissions will be accepted
-unless prior arrangements have been made. No work or extra credit will be
-accepted after the **last day of course instruction**, the semester has to end
-at some point so plan accordingly. Work submitted 1 second late is treated the
-same as work submitted 1 day late. You can find the last day of course
+All homework assignments can be submitted up to **2 days late with no penalty**.  After the 2 day
+grade period no further submissions will be accepted unless prior arrangements have been made before
+the original due date. No work or extra credit will be accepted after the **last day of course
+instruction**, the semester has to end at some point so plan accordingly. Work submitted 1 second
+late is treated the same as work submitted 1 day late. You can find the last day of course
 instruction at the
 [registrar](https://www.boisestate.edu/registrar/boise-state-academic-calendars/).
 
