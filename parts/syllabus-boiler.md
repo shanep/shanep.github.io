@@ -6,16 +6,9 @@
 
 ## Grading Policy
 
-Grades will be posted in canvas and calculated with the percentages specified
-below. **Final grades will not be rounded**. I offer plenty of Extra Credit
-Opportunities that you can take advantage of to improve your final grade.
-
-I, like most people, am far from perfect. Some semesters I have an overwhelming
-number of students to track and things unintentionally fall through the
-cracks. If I made a mistake with your grade don’t panic! Take a deep
-breath and just send me an email with the details and I will take a
-look. Remember everything will be OK, I am here to help you as best I
-can 😃.
+Grades will be posted in canvas and calculated with the percentages specified below. **Final grades
+will not be rounded**. I offer plenty of Extra Credit Opportunities that you can take advantage of
+to improve your final grade.
 
 | Letter Grade | Percentage |
 | ------------ | ---------- |
@@ -34,12 +27,10 @@ can 😃.
 
 ## Extra Credit Opportunities
 
-Standing extra credit is always offered to allow students to bump their
-grade up if they are on a grading boundary so please take advantage of
-any extra credit offered. Any extra credit given over the semester can
-not exceed 2.5% of the total points offered. For example, the maximum
-number of extra credit points that you can earn if the total points
-offered is 1000 would be 25.
+Standing extra credit is always offered to allow students to bump their grade up if they are on a
+grading boundary so please take advantage of any extra credit offered. Any extra credit given over
+the semester can not exceed 2.5% of the total points offered. For example, the maximum number of
+extra credit points that you can earn if the total points offered is 1000 would be 25.
 
 - Typos and Bugs - If you find any typos or bugs in the course materials, you can click the "Edit
 this page" link at the bottom of the page, make the corrections, and then issue a [pull
@@ -65,13 +56,11 @@ AI 🤖 section for more details.
 
 ## Homework Policy
 
-Unless explicitly instructed otherwise students are expected to work on their
-own. All group work will be **clearly** marked so there should be no confusion.
-The [Kount Computer Learning
-Center](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring)
-(CCP 241) is accessible 24/7 by proxy card to all students enrolled in CS
-courses. Machines in the Kount Computer Tutoring Center have all the software
-you will need this semester.
+Unless explicitly instructed otherwise students are expected to work on their own. All group work
+will be **clearly** marked so there should be no confusion.  The [Kount Computer Learning
+Center](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring) (CCP 241) is accessible
+24/7 by proxy card to all students enrolled in CS courses. Machines in the Kount Computer Tutoring
+Center have all the software you will need this semester.
 
 All of your programming assignments will be submitted using GitHub or with emailed
 patches. Submissions via any other method such engraving your source code onto a stone tablet, or
@@ -80,63 +69,33 @@ commits to your Git repository over the course of working on your project.
 
 ::: warning
 
-Former students will post their projects for employers to see and you can find
-them with a simple Google search. ChatGPT can give at least a partial solution
-if not full solution to some of the projects in this class. Stackoverflow.com
-has solutions to most common problems that students will encounter.  It is not
-feasible for me to create brand new projects every semester nor is it feasible
-to police the internet for solutions to my projects. Therefore in this class I
-will trust that you are here to learn and will not seek out solutions to the
-projects.  I expect all students to adhere to the Universities Academic
-Integrity policy. If you get stuck on a project please attend office hours for
-help instead of searching for a solution online.
+Former students will post their projects for employers to see and you can find them with a simple
+Google search. ChatGPT can give at least a partial solution if not full solution to some of the
+projects in this class. Stackoverflow.com has solutions to most common problems that students will
+encounter.  It is not feasible for me to create brand new projects every semester nor is it feasible
+to police the internet for solutions to my projects. Therefore in this class I will trust that you
+are here to learn and will not seek out solutions to the projects.  I expect all students to adhere
+to the Universities Academic Integrity policy. If you get stuck on a project please attend office
+hours for help instead of searching for a solution online.
 
 :::
 
 ## AI Policy
 
-Developer tools such as an IDE or AI should be used to **enhance** your
-skills not replace them! AI in the hands of an experienced developer
-makes that developer even more productive! AI in the hands of a student
-robs them of the opportunity to learn 📚!
+Developer tools such as an IDE or AI should be used to **enhance** your skills not replace them! AI
+in the hands of an experienced developer makes that developer even more productive! AI in the hands
+of a student robs them of the opportunity to learn 📚!
 
-I feel that we are experiencing a new paradigm shift that last happened
-in 1998 when Google Search was released. Google Search fundamentally
-changed how students approached finding information. Then in 2004
-[Google Scholar](https://en.wikipedia.org/wiki/Google_Scholar) was
-released and you no longer had to spend hours in the library combing
-through indexes or paper journals, you could just type your query into a
-little box and get millions of results instantly. It’s hard to overstate
-how dramatic the shift was to people who didn’t live through it. Google
-was nothing short of mind-blowing compared to what existed before.
+If you do choose to use AI you **must cite** your usage and you will now be graded on the code that
+the AI writes. If you truly believe that ChatGPT can always give the best solution to any problem
+then you may want to switch majors because why would a company hire you if they can just use ChatGPT
+to write all their code?
 
-Banning tools that are broadly available only results in creating a low
-trust environment in the classroom. Thus, in my class you are free to
-use [AI or Machine Learning
-technologies](https://en.wikipedia.org/wiki/Skynet_(Terminator)) to
-complete your assigned work. However, I strongly encourage anyone who is
-learning to code to **NOT** use AI or even an IDE. When you are learning
-something new it is OK to struggle and get things wrong that is part of
-the learning process 😃. Think back to your 2nd or 3rd grade class when
-you were learning to spell, did your teacher let you use spell check on
-your spelling tests? What would be the point of taking a spelling test
-if you could? As you have moved up in education, using a spell checker
-is a great way to **enhance** your underlying skills. However, even the
-best spell checkers in the world can’t help someone who doesn’t
-understand the basics of grammar or syntax (look at all the spelling and
-grammar errors that I make).
-
-If you do choose to use AI you **must cite** your usage and you will now
-be graded on the code that it writes. If you truly believe that ChatGPT
-can **always** give the best solution to any problem then you may want
-to switch majors because why would a company hire you if they can just
-use ChatGPT to write all their code?
-
-Take for example the two possible solutions for a `size()` method in a typical
-linked list. Can you spot the problem? While both solutions do work and produce
-correct results, the AI generated solution is O(N) while the **better** solution
-is O(1). If you don’t know why one is better than the other then I would
-strongly suggest you not use AI tools until you get more experience.
+Take for example the two possible solutions for a `size()` method in a typical linked list written
+in the `java` programming language. Can you spot the problem? While both solutions do work and
+produce correct results, the AI generated solution is O(N) while the **better** solution is O(1). If
+you don’t know why one is better than the other then I would strongly suggest you not use AI tools
+until you get more experience.
 
 ::: code-group
 
@@ -165,32 +124,17 @@ public int size() {
 ::: danger
 
 It is still plagiarism to claim work that was generated by
-[ChatGPT](https://openai.com/blog/chatgpt) or other AI tools as your own
-and you will be written up for Academic dishonesty if you do not cite
-your usage of any AI tools.
+[ChatGPT](https://openai.com/blog/chatgpt) or other AI tools as your own and you will be written up
+for Academic dishonesty if you do not cite your usage of any AI tools.
 
 :::
-
-When you are learning new material early assignments are intentionally
-easier to help you build up your skills. Leaning too heavily on AI early
-on will hurt you when you get to more complex assignments. You may not
-even feel the pain until you get to your 300 or 400 level courses. Trust
-me when I say AI can not solve most of the programming assignments in
-your 400 level courses. I test my assignments against modern AI tools
-and sometimes see hilariously wrong results, so if you are not able to
-recognize correct vs incorrect results you should not be using AI in the
-first place. So the bottom line is if you know enough about the given
-subject to be able to recognize correct vs incorrect results then you
-should be free to use said tools to enhance your productivity and
-education.
 
 ## Attendance Policy
 
 I follow the official [attendance
-policy](https://www.boisestate.edu/registrar/registration/attendance-policy/) as
-defined by the university. Please see the Late Work section for details on how
-to make up any missed work. Students are responsible for all verbal
-announcements or updates given during class.
+policy](https://www.boisestate.edu/registrar/registration/attendance-policy/) as defined by the
+university. Please see the Late Work section for details on how to make up any missed work. Students
+are responsible for all verbal announcements or updates given during class.
 
 ## Late Work Policy
 
@@ -204,34 +148,29 @@ instruction at the
 
 ::: info
 
-For classes taught in the first 5wk or 7wk session of the semester, the last day
-of course instruction is **NOT** the same as a regular semester. Please consult
-the
-[registrar](https://www.boisestate.edu/registrar/boise-state-academic-calendars/)
-for the last day of course instruction for your specific class.
+For classes taught in the first 5wk or 7wk session of the semester, the last day of course
+instruction is **NOT** the same as a regular semester. Please consult the
+[registrar](https://www.boisestate.edu/registrar/boise-state-academic-calendars/) for the last day
+of course instruction for your specific class.
 
 :::
 
 ## Exam and Quiz Policy
 
-All exams and quizzes must be taken within the time frame specified on
-canvas unless prior arrangements have been made. Clearly we can’t have
-some students taking an exam AFTER the questions (and possibly answers)
-have been released as it would give that student an unfair advantage.
-Extensions will be granted on a case by case basis for situations that
-were outside of the students control. Some exams or quizzes may require
-you to go to the testing center. It is the student's responsibility to
-schedule their own appointment in a timely fashion.
+All exams and quizzes must be taken within the time frame specified on canvas unless prior
+arrangements have been made. Clearly we can’t have some students taking an exam AFTER the questions
+(and possibly answers) have been released as it would give that student an unfair advantage.
+Extensions will be granted on a case by case basis for situations that were outside of the students
+control. Some exams or quizzes may require you to go to the testing center. It is the student's
+responsibility to schedule their own appointment in a timely fashion.
 
 ## Class Interaction Policy
 
-All class interaction assignments must be completed within the time frame
-specified on canvas or **during the lecture** unless prior arrangements have
-been made. Assignments that are intended to be interactive are only valuable
-when everyone is participating at the same time. It is not fair for a student to
-expect their fellow classmates to respond or watch your submission that is late
-when everyone else submitted on time. The secret code for the syllabus quiz is
-"green".
+All class interaction assignments must be completed within the time frame specified on canvas or
+**during the lecture** unless prior arrangements have been made. Assignments that are intended to be
+interactive are only valuable when everyone is participating at the same time. It is not fair for a
+student to expect their fellow classmates to respond or watch your submission that is late when
+everyone else submitted on time. The secret code for the syllabus quiz is "green".
 
 This applies (but is not limited to) to the following assignment types:
 
@@ -244,46 +183,40 @@ This applies (but is not limited to) to the following assignment types:
 
 ## Communication Policy
 
-During the semester communication outside of the classroom will be through
-email, canvas, and office hours as detailed below. Other methods such as
-[carrier pigeon](https://www.iwm.org.uk/history/the-incredible-carrier-pigeons-of-the-first-world-war)
-🐦 are not supported at this time.
+During the semester communication outside of the classroom will be through email, canvas, and office
+hours as detailed below. Other methods such as [carrier
+pigeon](https://www.iwm.org.uk/history/the-incredible-carrier-pigeons-of-the-first-world-war) 🐦 are
+not supported at this time.
 
-I get a lot of email and sometimes I miss messages, so if you don’t receive a
-response from me after 48hrs please check to make sure you are sending the email
-from BroncoMail and send a follow-up email. You can also send an email directly
-in canvas if your emails are not going through. To help facilitate quick
-communication please include the following information in all emails to myself
-or the class TA/GA.
+I get a lot of email and sometimes I miss messages, so if you don’t receive a response from me after
+48hrs please check to make sure you are sending the email from BroncoMail and send a follow-up
+email. You can also send an email directly in canvas if your emails are not going through. To help
+facilitate quick communication please include the following information in all emails to myself or
+the class TA/GA.
 
 - First and Last name
-- Student ID - I need this so I can look you up in the system. You would be
-  surprised how many students have the same name or have changed their default
-  name in the system to something other than their legal name so it is difficult
-  to locate them in a timely manner.
+- Student ID - I need this so I can look you up in the system. You would be surprised how many
+  students have the same name or have changed their default name in the system to something other
+  than their legal name so it is difficult to locate them in a timely manner.
 - The class and section number that you are in for example CS123 - section 1
 
-BroncoMail is the official communication channel through which all
-university business is conducted. It is expected that you access and
-read university communications two or three times per week. For more
-information see the University Policy on Student Email Communications
-(Policy 2280). Your instructor will not respond to any emails sent from
-personal accounts such as Gmail or Yahoo.
+BroncoMail is the official communication channel through which all university business is
+conducted. It is expected that you access and read university communications two or three times per
+week. For more information see the University Policy on Student Email Communications (Policy
+2280). Your instructor will not respond to any emails sent from personal accounts such as Gmail or
+Yahoo.
 
-Your instructor will make every effort to return emails within 48hrs
-Monday thru Friday between the hours of 9:00am and 5:00pm (MST). Emails
-sent on Saturday, Sunday, or outside of the defined hours will be
-returned within 48hrs on the following business day. Emails should be
-reserved for questions that are not appropriate for a public forum such
-as grades or other personal issues.
+Your instructor will make every effort to return emails within 24hrs Monday thru Friday between the
+hours of 9:00am and 5:00pm (MST). Emails sent on Saturday, Sunday, or outside of the defined hours
+will be returned within 24hrs on the following business day. Emails should be reserved for questions
+that are not appropriate for a public forum such as grades or other personal issues.
 
 ## Office Hours Policy
 
-For classes taught in the online or remote format office hours will be
-accessible on canvas by appointment. For classes that are taught in the face to
-face format office hours will only be available in person with times posted in
-Canvas. If you can not find the office hours appointment link in canvas please
-email me ASAP as I sometimes forget to post them at the start of the semester.
+For classes taught in the online or remote format office hours will be accessible on canvas by
+appointment. For classes that are taught in the face to face format office hours will only be
+available in person with times posted in Canvas. If you can not find the office hours appointment
+link in canvas please email me ASAP as I sometimes forget to post them at the start of the semester.
 
 ## IT support Policy
 
@@ -295,20 +228,18 @@ are guaranteed to work.
 
 ## Time Commitment
 
-According to Boise State University [policy 4080](https://www.boisestate.edu/policy/academic-affairs-faculty-administration/policy-title-credit-hours/),
-a 1 credit course spread over 15 weeks should require roughly 3 hours of
-work per week divided over both in-class interactions and homework.
-Classes that are held in compressed time frames such as summer or winter
-breaks still need to complete the same number of credit hours in order
-for the class to count toward your degree. Thus, if you are taking this
-class in a compressed semester please consult the table below to make
-sure you have time to complete all the assigned course work. For
-example, as noted in the table below, taking two 3 credit courses in a 7
-week semester is equivalent to working a full time job.
+According to Boise State University [policy
+4080](https://www.boisestate.edu/policy/academic-affairs-faculty-administration/policy-title-credit-hours/),
+a 1 credit course spread over 15 weeks should require roughly 3 hours of work per week divided over
+both in-class interactions and homework.  Classes that are held in compressed time frames such as
+summer or winter breaks still need to complete the same number of credit hours in order for the
+class to count toward your degree. Thus, if you are taking this class in a compressed semester
+please consult the table below to make sure you have time to complete all the assigned course
+work. For example, as noted in the table below, taking two 3 credit courses in a 7 week semester is
+equivalent to working a full time job.
 
-For a compressed course it is **critical** that you don’t fall behind!
-Compressed courses move fast and missing 1 week of class is very hard if
-not impossible to recover from.
+For a compressed course it is **critical** that you don’t fall behind!  Compressed courses move fast
+and missing 1 week of class is very hard if not impossible to recover from.
 
 | Credits | Number of weeks | Total Hours | Hours of work per week |
 | ------- | --------------- | ----------- | ---------------------- |
@@ -319,9 +250,9 @@ not impossible to recover from.
 
 ## University Policies
 
-All students are required to be familiar with the policies posted below. Please
-review all linked policies below. Violations of university policies can result
-in the student receiving a failing grade (F) in the course.
+All students are required to be familiar with the policies posted below. Please review all linked
+policies below. Violations of university policies can result in the student receiving a failing
+grade (F) in the course.
 
 - [Student Code of Conduct](https://www.boisestate.edu/policy/student-affairs/code-of-conduct/)
 - [Academic Integrity](https://www.boisestate.edu/registrar/general-information-and-policies/academic-integrity/)
