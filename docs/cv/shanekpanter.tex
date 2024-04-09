@@ -1,286 +1,180 @@
-% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author)
-% http://mboedick.org (c) 2003 David J. Grant <dgrant@ieee.org>
-% http://www.davidgrant.ca (c) 2007 Todd C. Miller
-% http://github.com/shanep (c) 2013 Shane K. Panter
-%. <Todd.Miller@courtesan.com> http://www.courtesan.com/todd (c) 2009
-% Derek R. Hildreth <derek@derekhildreth.com>
-% http://www.derekhildreth.com This work is licensed under the
-% Creative Commons Attribution-NonCommercial-ShareAlike License. To
-% view a copy of this license, visit
-% http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter
-% to Creative Commons, 559 Nathan Abbott Way, Stanford, California
-% 94305, USA.
-% GENERAL NOTE: There may be some notes specific to myself.  If you're
-% only interested in my LaTeX source or it doesn't make sense, please
-% disregard it.
+%%% Local Variables:
+%%% mode: pdflatex
+%%% TeX-master: t
+%%% End:
 
-\documentclass[letterpaper,11pt]{article}
-% -----------------------------------------------------------
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage[pdftex]{hyperref}
-\usepackage{graphicx}
-\usepackage{multirow}
-
-\hypersetup{
-  colorlinks,%
-  citecolor=black,%
-  filecolor=black,%
-  linkcolor=black,%
-  urlcolor=MidnightBlue% can put red here to visualize the links
-}
-
-\urlstyle{same}
-
-\textheight=9.0in
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.375in}
-\addtolength{\evensidemargin}{0.375in}
-\addtolength{\textwidth}{0.5in}
-\addtolength{\topmargin}{-.375in}
-\addtolength{\textheight}{0.75in}
-
-%Custom commands
-\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-
-\newcommand{\resheading}[1]{{\large
-    \colorbox{Orange}{\begin{minipage}{\textwidth}{\textbf{#1
-            \vphantom{p\^{E}}}}\end{minipage}}}}
-
-\newcommand{\ressubheadingG}[5]{
-\item[]
-	\begin{tabular*}{6.5in}{l@{\hspace{.1in}} l@{\extracolsep{\fill}}r}
-		\multirow{2}{1in}{#1} & \textbf{#2} & #3 \\
-		& \textit{#4} & \textit{#5} \\
-         \end{tabular*}
-	 \vspace{-6pt}}
-
-\newcommand{\ressubheading}[4]{
-  \begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
-    \textbf{#1} & #2 \\
-    \textit{#3} & \textit{#4} \\
-  \end{tabular*}\vspace{-6pt}}
-
-\newcommand{\mywebheader}{
-  \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-    \textbf{\href{https://shanepanter.com}{\LARGE Shane K. Panter}}
-	  & \href{mailto:shanepanter@boisestate.edu}{shanepanter@boisestate.edu}\\
-    {\footnotesize \texttt{208-921-3287}}
-	  & \href{https://shanepanter.com} {https://shanepanter.com} \\
-  \end{tabular*}
-  \\
-  \vspace{0.1in}}
-% -----------------------------------------------------------
+\documentclass{shanep}
+\addbibresource{shanekpanter.bib}
 \begin{document}
-\mywebheader
+\mywebheader{https://shanepanter.com}{Shane K. Panter}{shanepanter@boisestate.edu}
 
 \resheading{Education}
 \begin{itemize}
-  \ressubheadingG
-	{\includegraphics[scale=.3]{bsu.jpg}}
-	{\href{http://www.boisestate.edu}{Boise State University }}
-	{Boise, Idaho }
-	{Master of Science in Computer Science}
-	{May 2013}
-	{ \footnotesize
-	    \begin{itemize}
-	      \resitem{Relevant Courses: Topics in Artificial Intelligence, Distributed
-		Systems, Operating Systems, Topics in Machine Learning,
-		Programming Language Translation, Computer Networks, Data
-		Structures and Algorithms}
-	      \resitem{Thesis topic - Document Classification}
-	      \resitem{Area of emphasis - Machine Learning}
-	      \resitem{Deans list with highest honors}
-	      \resitem{\textbf{Graduated: 4.0}}
-	    \end{itemize}
-	}
 
-%   \ressubheadingG
-% 	{\includegraphics[scale=.3]{park.jpg}}
-% 	{\href{http://www.park.edu}{Park University}}
-% 	{Parkville, Missouri }
-% 	{Bachelor of Science in CIS/Management}
-% 	{December 2002}
-% 	{\footnotesize
-% 	    \begin{itemize}
-% 	      \resitem{Relevant Courses: Programming Fundamentals, Database Management,
-% 		Computer Architecture, Managing Information Systems, Computer
-% 		Systems Analysis and Design I and II}
-% 	       \resitem{\textbf{Graduated: Magna Cum Laude}}
-% 	    \end{itemize}
-% 	 }
+  \ressubheading
+      {\includegraphics[scale=.3]{bsu.jpg}}
+      {Ph.D in Computing \textbf{ABD}}
+      {Spring 2026}
+      {\href{http://www.boisestate.edu}{Boise State University }}
+      {est.}
+      {}
+
+      \ressubheading
+          {}
+          {M.S. in Computer Science}
+	  {Spring 2013}
+	  {\href{http://www.boisestate.edu}{Boise State University }}
+	  {}
+	  {}
 
 \end{itemize} % End Education list
 
-\resheading{Professional Experience}
+\resheading{Academic Appointments}
 \begin{itemize}
-    \ressubheadingG
-    {\includegraphics[scale=.3]{bsu.jpg}}
-    {{\href{https://boisestate.edu}{Boise State University}}}
-    {Boise, Idaho}
-    {Lecturer}
-    {August 2013 -- Present}
-    { \footnotesize
-    \begin{itemize}
-	    \resitem{CS117 C++ for Engineers -
-		     S-2014, F-2015, S/F-2016
-		    }
-	    \resitem{CS121 Introduction to Computer Science I -
-		     F-2013, F-2014
-		    }
-            \resitem{CS221 Introduction to Computer Science II -
-	             F-2013, S-2014
-		    }
-            \resitem{CS-HU250 Introduction to Version Control -
-		     Su/F-2018, S/F-2019
-		    }
-            \resitem{CS253 Introduction to Systems Programming -
-		     S/F-2014, S/F-2015, S-2016, S/F-2017
-		    }
-            \resitem{CS354 Programming Languages -
-		    S-2016
-		    }
-            \resitem{CS453 Operating Systems -
-		     F-2014, S-2015, S/F-2016, S/F-2017 S/F-2018, F-2019
-		    }
-	    \resitem{CS471 Software Engineering -
-		    F-2016
-		    }
-	    \resitem{CS481 Senior Design -
-                    F-2016, S/F-2017, S/F-2018, S/F-2019
-		    }
-            \resitem{CS552 Operating Systems (Graduate) -
-		     S-2015, S-2016
-		    }
-    \end{itemize}
-  }
+  \ressubheading
+      {\includegraphics[scale=.3]{bsu.jpg}}
+      {Clinical Assistant Professor}
+      {August 2023 -- Present}
+      {{\href{https://boisestate.edu}{Boise State University}}}
+      {}
 
-  \ressubheadingG
-    {\includegraphics[scale=.15]{fc.png}}
-    {{\href{https://foundationcode.com}{Foundation Code}}}
-    {Boise, Idaho}
-    {Senior Software Engineer}
-    {September 2012 -- Present}
-    { \footnotesize
-    \begin{itemize}
-      \resitem{Managed a team of up to 5 engineers}
-      \resitem{Primary architect for custom software solutions in the
-	       manufacturing domain}
-      \resitem{Responsible for meeting contractual deadlines on
-		    concurrently scheduled contracts}
-    \end{itemize}
-  }
+  \ressubheading
+      {}
+      {Lecturer III}
+      {August 2021 -- August 2023}
+      {{\href{https://boisestate.edu}{Boise State University}}}
+      {}
 
-  \ressubheadingG
-    {\includegraphics[scale=.05]{hp.png}}
-    {{\href{https://hp.com}{Hewlett Packard}}}
-    {Boise, Idaho}
-    {System Firmware Engineer III}
-    {May 2011 -- September 2012}
-    { \footnotesize
-    \begin{itemize}
-      \resitem{Developed firmware for Enterprise Laser printers}
-      \resitem{Responsible for the maintenance and development of the Energy
-          Star\textsuperscript{\textregistered}  framework components}
-      \resitem{Supported marketing and sales to bring critical features
-               and bug fixes to large enterprise accounts}
-      \resitem{Designed, developed, tested, and integrated core framework services}
-    \end{itemize}
-  }
+  \ressubheading
+      {}
+      {Lecturer II}
+      {August 2013 -- August 2021}
+      {{\href{https://boisestate.edu}{Boise State University}}}
+      {}
 
- \ressubheadingG
-    {\includegraphics[scale=.3]{bsu.jpg}}
-    {{\href{https://boisestate.edu}{Boise State University}}}
-    {Boise, Idaho}
-    {Research Assistant}
-    {March 2009 -- May 2011}
-    { \footnotesize
-    \begin{itemize}
-      \resitem {Developed a graphical user interface with swing
-                and the Open IDE framework to facilitate document annotation and
-                classification using the MALLET machine learning toolkit}
-      \resitem {Designed and implemented a build environment with Ant
-                and Maven for a team of 3 software developers}
-      \resitem {Coordinated work with a third party software
-                development company during the life of the Text Annotation
-                (Tapp) project}
-    \end{itemize}
-    }
+  \ressubheading
+      {}
+      {Research Assistant}
+      {March 2009 -- May 2011}
+      {{\href{https://boisestate.edu}{Boise State University}}}
+      {}
 
-% \ressubheadingG
-%    {\includegraphics[scale=.1]{wt.png}}
-%    {{\href{http://westerntrailer.com}{Western Trailers}}}
-%    {Boise, Idaho}
-%    {Software Developer / Information Technology}
-%    {June 2005 -- June 2010}
-%    { \footnotesize
-%    \begin{itemize}
-%      \resitem{Identified data patterns and trends, designed data mapping requirements}
-%      \resitem{Researched and resolved problems and inconsistencies
-%               within SQL Server databases}
-%      \resitem{Developed custom applications in .NET to connect
-%               AutoCAD and Design Review with Visual Manufacturing}
-%      \resitem{Lean Knowledge certified by the Society of
-%               Manufacturing Engineers Certificate No. 112833}
-%      \resitem{Designed a solution to facilitate the routing of
-%               parts through a 100,000 square foot manufacturing facility}
-%    \end{itemize}
-%    }
+\end{itemize}
 
-% \item \ressubheading{Price Electric }
-%     {Phoenix, Arizona}
-%     {Network Specialist / Electrician }
-%     {August 2002 -- June 2005}
-%     { \footnotesize
-%     \begin{itemize}
-%       \resitem{Managed the installation of custom residential
-% 	       and commercial high voltage electrical systems}
-%       \resitem{Installed and repaired structured wiring systems and
-% 	       home automation systems}
-%     \end{itemize}
-%     }
-%
-\end{itemize} % End Experience list
-
-% \resheading{Academic Activities}
-% \begin{itemize}
-
-% \item \ressubheading{Course Coordinator}
-%     {Undergraduate}
-%     {CS253 - Introduction to Systems Programming}
-%     {Fall 2015 - Spring 2018}
-% \item \ressubheading{Course Coordinator}
-%     {Undergraduate}
-%     {CS117 - C++ for Engineers}
-%     {Fall 2015 - Present}
-% \item \ressubheading{Course Coordinator}
-%     {Undergraduate}
-%     {CS-HU250 - Introduction to Version Control}
-%     {Spring 2018 - Present}
-% \item \ressubheading{Course Coordinator}
-%     {Undergraduate}
-%     {CS481- Senior Design}
-%     {Spring 2018 - Present}
-% \end{itemize} % End Professional Activities
-
-%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Technologies}
-Technologies and languages that I have used over the years in varying capacities.
+\resheading{Industry Experience}
 \begin{itemize}
-	\item \ressubheading{Languages}
-		{}
-		{C/C++, C\#, Java, {\LaTeX}, SQL}
-		{}
-	\item \ressubheading{Tools and Frameworks}
-		{}
-		{git, cmake, hugo, .NET core}
-		{}
-\end{itemize} %End Skills list
+
+  \ressubheading
+      {\includegraphics[scale=.15]{fc.png}}
+      {{\href{https://foundationcode.com}{Foundation Code}}}
+      {Boise, Idaho}
+      {Senior Software Engineer}
+      {September 2012 -- Present}
+      { \footnotesize
+        \begin{itemize}
+          \resitem{Managed a team of up to 5 engineers}
+          \resitem{Primary architect for custom software solutions in the manufacturing domain}
+          \resitem{Responsible for meeting deadlines on concurrently scheduled contracts}
+        \end{itemize}
+      }
+
+   \ressubheading
+       {\includegraphics[scale=.05]{hp.png}}
+       {{\href{https://hp.com}{Hewlett Packard}}}
+       {Boise, Idaho}
+       {System Firmware Engineer III}
+       {May 2011 -- September 2012}
+       { \footnotesize
+         \begin{itemize}
+           \resitem{Developed firmware for Enterprise Laser printers}
+           \resitem{Responsible for the maintenance and development of the Energy
+             Star\textsuperscript{\textregistered}  framework components}
+           \resitem{Supported marketing and sales to bring critical features
+             and bug fixes to large enterprise accounts}
+           \resitem{Designed, developed, tested, and integrated core framework services}
+         \end{itemize}
+       }
+
+
+   \ressubheading
+       {\includegraphics[scale=.1]{wt.png}}
+       {{\href{http://westerntrailer.com}{Western Trailers}}}
+       {Boise, Idaho}
+       {Software Developer / Information Technology}
+       {June 2005 -- May 2011}
+       { \footnotesize
+         \begin{itemize}
+           \resitem{Identified data patterns and trends, designed data mapping requirements}
+           \resitem{Researched and resolved problems and inconsistencies
+             within SQL Server databases}
+           \resitem{Developed custom applications in .NET to connect
+             AutoCAD and Design Review with Visual Manufacturing}
+           \resitem{Lean Knowledge certified by the Society of
+             Manufacturing Engineers Certificate No. 112833}
+           \resitem{Designed a solution to facilitate the routing of
+             parts through a 100,000 square foot manufacturing facility}
+         \end{itemize}
+       }
+
+\end{itemize}
+
+
+\resheading{Publications}
+\printbibliography[heading=none]
+
+\resheading{Grants}
+
+\begin{itemize}
+  \item{NSA, “GenCyber 2024 Summer Camp at Boise State University for Secondary Teachers,” PI:
+    Jyh-haw Yeh (Program Director), Co-PIs: Doug Twitchell, Shane Panter and Edward Vasko, 7/24/2023
+    - 7/24/2025, \$150K. \textbf{Funded}}
+  \item{National Renewable Energy Laboratory, "Running Like the Wind: Boise State Broncos CWC20" PI:
+    Lynn Catlin, Co-PI: Shane Panter, 8/1/2019 - 8/1/2020, \$20K Not Funded}
+  \item{Mozilla, "Mozilla Responsible CS Challenge" PI: Donald Winiecki, Co-PIs: Amit Jain, Shane
+    Panter, 8/1/2019 - 8/1/2020, \$144,388 Not Funded}
+  \item{Idaho Department of Commerce, "Predictable Ryde" PI: Bogdan Dit, Co-PI: Shane Panter,
+    5/14/2018 - 8/13/2019, \$131,995.20 Not Funded}
+\end{itemize}
+
+\resheading{Teaching}
+
+\begin{itemize}
+  \item CS117 C++ for Engineers - Course coordinator (Fall 2015 - Present)
+  \item CS119 Introduction to Java
+  \item CS121 Introduction to Computer Science I
+  \item CS155 Introduction to Version Control - Course coordinator (Spring 2018 - Present)
+  \item CS208 Introduction to Full Stack Web Development - Course coordinator (Spring 2023 - Present)
+  \item CS221 Introduction to Computer Science II
+  \item CS253 Introduction to Systems Programming - Course coordinator (Fall 2015 - Spring 2018)
+  \item CS333 Network Security and Defense Course coordinator (Spring 2023 - Present)
+  \item CS354 Programming Languages
+  \item CS408 Full Stack Web Development - Course coordinator (Spring 2020 - Present)
+  \item CS452 Operating Systems - Course coordinator (Fall 2019 - Present)
+  \item CS471 Software Engineering
+  \item CS481 Senior Design - Course coordinator (Spring 2018 - Spring 2021)
+  \item CS516 Introduction to Web Development - Course coordinator (Spring 2020 - Fall 2023)
+  \item CS552 Operating Systems - Course coordinator (Fall 2019 - Present)
+\end{itemize}
+
+\resheading{Service}
+
+\subsubsection*{Internal - Boise State University}
+\begin{itemize}
+  \item Spring 2023 - Present Idaho Cyber Range liaison for Boise State University
+  \item Spring 2023 - Present Computer Science Department Outreach Committee member
+  \item Spring 2017 - Spring 2023 Computer Science Department Curriculum Committee member
+  \item Spring 2019 - Spring 2021 Industry liaison for CS481 - senior design
+  \item Spring 2019 - Spring 2021 Committee Member University Foundations Finishing Foundations courses
+  \item Spring 2019 - Spring 2021 Committee member COEN Senior design committee
+  \item Spring 2017 - Spring 2018 Interim Chair of the Computer Science Department Curriculum Committee
+  \item Spring 2016 Chair of the EN-0020-15 Lecturer search committee
+\end{itemize}
+
+\subsubsection*{External - Volunteer Service}
+\begin{itemize}
+  \item Spring 2017 - Present Business Professionals of America (BPA) Judge
+  \item Fall 2019 - Fall 2021 IHSAA speech and debate Judge
+  \item Fall 2015 - Spring 2016 Lowell Scott CS Club instructor
+\end{itemize}
 
 \end{document}
