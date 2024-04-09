@@ -17,3 +17,9 @@ node_modules# Added automatically by ‘eldev init’.
 /docs/cv/shanekpanter.aux
 /docs/cv/shanekpanter.log
 /docs/cv/shanekpanter.out
+/docs/cv/shanekpanter.bbl
+/docs/cv/shanekpanter.bcf
+/docs/cv/shanekpanter.blg
+/docs/cv/shanekpanter.fdb_latexmk
+/docs/cv/shanekpanter.fls
+/docs/cv/shanekpanter.run.xml
