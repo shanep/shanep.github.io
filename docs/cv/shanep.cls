@@ -33,8 +33,6 @@
   {\textbf{#1}}
   {#1}}
 
-
-
 \renewcommand*{\mkbibnamefamily}[1]{%
   \ifitemannotation{highlight}
                    {\textbf{#1}}
@@ -54,15 +52,20 @@
 \addtolength{\topmargin}{-.375in}
 \addtolength{\textheight}{0.75in}
 
+\newcommand{\updateinfo}[1][\today]{\par\vfill\hfill{\color{gray}Last updated on #1}}
+
 \newcommand{\resheading}[1]{{
     \large
     \colorbox{lightgray}{
-      \begin{minipage}{\textwidth}{
-          \textbf{#1}}
+      \begin{minipage}{6.75in}{
+          \textbf{#1}
+        }
       \end{minipage}
     }
   }
 }
+
+
 
 \newcommand{\ressubheading}[5]{
 \item[]
