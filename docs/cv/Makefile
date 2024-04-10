@@ -2,7 +2,8 @@
 	latexmk -pdf $<
 
 all: shanekpanter.pdf
-	mv shanekpanter.pdf ../public/shanekpanter.pdf
+	mkdir -p ../public/cv/
+	cp shanekpanter.pdf ../public/cv/shanekpanter.pdf
 
 shanekpanter.pdf: shanep.cls shanekpanter.bib
 
