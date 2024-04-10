@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: CV
-      link: /shanekpanter.pdf
+      link: /cv/shanekpanter.pdf
     - theme: alt
       text: teaching
       link: /teaching/index
