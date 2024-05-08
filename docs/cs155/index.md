@@ -29,7 +29,7 @@ course learning outcomes.
 |     | 3.3 | Explore sending a Patch over email          | Homework 2            |
 
 - [Blooms Taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/)
-- [Booms Taxonomy of Verbs](https://tips.uark.edu/blooms-taxonomy-verb-chart/)
+- [Blooms Taxonomy of Verbs](https://tips.uark.edu/blooms-taxonomy-verb-chart/)
 
 ## Course Materials
 
