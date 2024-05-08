@@ -21,7 +21,7 @@ This section takes an estimated 3-4 hours
 
 We will be using a free (but well written) book for this module which
 you can [download here](https://drive.google.com/file/d/1nJ0XC0H7eI5I_g9WCqY9v-LlBMREaRBe/view?usp=share_link).
-Once you have downloaded the book read the following chapters as well as
+Once you have downloaded the book, read the following chapters as well as
 the post on the integrated terminal in VSCode before you attempt the
 homework section.
 
@@ -43,7 +43,7 @@ configuration.
 - Complete the module reading Quiz (canvas)
 - Complete the history of version control essay (canvas)
 
-Getting a Github Student Developer pack requires that you used your
+Getting a Github Student Developer pack requires that you use your
 University email address! It may take a few days for GitHub to approve
 your account but don’t worry you will be able to complete all the labs
 with the standard free account. The student account just gives you
