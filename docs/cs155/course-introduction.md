@@ -1,17 +1,17 @@
 # Course Introduction
 
 The purpose of this class is to get you familiar with version control,
-specifically Git. This is a hands on class that consists of reading
-about concepts and then practicing those concepts with walk through
-labs. Git can only be mastered by **lots** of practice so we will be
+specifically Git. This is a hands-on class that consists of reading
+about concepts and then practicing those concepts with walk-through
+labs. Git can only be mastered by **lots** of practice, so we will be
 doing a lot of labs that involve interacting with existing repositories.
-In future classes you will then start to use Git when working on team
+In future classes, you will then start to use Git when working on team
 assignments.
 
-Before we get started learning about Git we need to introduce basic
+Before we get started learning about Git, we need to introduce basic
 terminal usage. You will primarily be using the terminal to interact
 with Git in this class. While you can do most basic git operations using
-a Graphical User Interface(GUI), advanced operations will require you to
+a Graphical User Interface (GUI), advanced operations will require you to
 use the terminal. We will leverage the integrated terminal of VSCode to
 interact with Git.
 
@@ -43,9 +43,9 @@ configuration.
 - Complete the module reading Quiz (canvas)
 - Complete the history of version control essay (canvas)
 
-Getting a Github Student Developer pack requires that you use your
+Getting a GitHub Student Developer pack requires that you use your
 University email address! It may take a few days for GitHub to approve
-your account but don’t worry you will be able to complete all the labs
+your account but don’t worry, you will be able to complete all the labs
 with the standard free account. The student account just gives you
 access to cool resources that you would normally have to pay for.
 
