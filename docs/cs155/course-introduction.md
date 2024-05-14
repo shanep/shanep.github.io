@@ -17,9 +17,7 @@ interact with Git.
 
 ## Reading
 
-This section takes an estimated 3-4 hours
-
-We will be using a free (but well written) book for this module which
+This section takes an estimated 3-4 hours. We will be using a free (but well written) book for this module which
 you can [download here](https://drive.google.com/file/d/1nJ0XC0H7eI5I_g9WCqY9v-LlBMREaRBe/view?usp=share_link).
 Once you have downloaded the book, read the following chapters as well as
 the post on the integrated terminal in VSCode before you attempt the
@@ -33,15 +31,15 @@ homework section.
 
 ## Homework
 
-This section takes an estimated 3-4 hours - The time commitment in this
+This section takes an estimated 3-4 hours. The time commitment in this
 module can vary widely because you will be downloading and installing
 tools which can take more time depending on your personal computing
 configuration.
 
 - [Sign up for a FREE GitHub student account](https://education.github.com/pack)
 - [Install VSCode and Git](https://shanepanter.com/teaching/vscode-tips-and-tricks.html)
-- Complete the module reading Quiz (canvas)
-- Complete the history of version control essay (canvas)
+- Complete the module reading quiz (Canvas)
+- Complete the history of version control essay (Canvas)
 
 Getting a GitHub Student Developer pack requires that you use your
 University email address! It may take a few days for GitHub to approve
@@ -55,7 +53,7 @@ This section takes an estimated 2-3 hours. This includes the time
 required to create your own video or discussion post and then watch and
 read posts from other students and your instructor.
 
-- Complete the module retrospective assignment (canvas)
+- Complete the module retrospective assignment (Canvas)
 
 Even though this is an online asynchronous course we will still have
 interactions with each other in the form of discussion posts or video
