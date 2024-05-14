@@ -10,7 +10,7 @@ features in this module.
 
 ## Reading
 
-This section takes an estimated 3-4 hours
+This section takes an estimated 3-4 hours.
 
 - [Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 - [Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
@@ -21,15 +21,15 @@ This section takes an estimated 3-4 hours
 - [Summary](https://git-scm.com/book/en/v2/Git-Branching-Summary)
 
 While the reading workload is less than other modules, these concepts are
-by far the most difficult to understand so take your time, it will be
+by far the most difficult to understand, so take your time. It will be
 worth it!
 
 ## Homework
 
-This section takes an estimated 3-4 hours
+This section takes an estimated 3-4 hours.
 
-- Complete the module reading Quiz (canvas)
-- Complete the hands on lab (canvas)
+- Complete the module reading quiz (Canvas)
+- Complete the hands-on lab (Canvas)
 
 ## Retrospective - Class Interaction
 
@@ -37,4 +37,4 @@ This section takes an estimated 2-3 hours. This includes the time
 required to create your own video or discussion post and then watch and
 read posts from other students and your instructor.
 
-- Complete the module retrospective assignment (canvas)
+- Complete the module retrospective assignment (Canvas)
