@@ -1,25 +1,23 @@
 # Course Introduction
 
 The purpose of this class is to get you familiar with version control,
-specifically Git. This is a hands on class that consists of reading
-about concepts and then practicing those concepts with walk through
-labs. Git can only be mastered by **lots** of practice so we will be
+specifically Git. This is a hands-on class that consists of reading
+about concepts and then practicing those concepts with walk-through
+labs. Git can only be mastered by **lots** of practice, so we will be
 doing a lot of labs that involve interacting with existing repositories.
-In future classes you will then start to use Git when working on team
+In future classes, you will then start to use Git when working on team
 assignments.
 
-Before we get started learning about Git we need to introduce basic
+Before we get started learning about Git, we need to introduce basic
 terminal usage. You will primarily be using the terminal to interact
 with Git in this class. While you can do most basic git operations using
-a Graphical User Interface(GUI), advanced operations will require you to
+a Graphical User Interface (GUI), advanced operations will require you to
 use the terminal. We will leverage the integrated terminal of VSCode to
 interact with Git.
 
 ## Reading
 
-This section takes an estimated 3-4 hours
-
-We will be using a free (but well written) book for this module which
+This section takes an estimated 3-4 hours. We will be using a free (but well written) book for this module which
 you can [download here](https://drive.google.com/file/d/1nJ0XC0H7eI5I_g9WCqY9v-LlBMREaRBe/view?usp=share_link).
 Once you have downloaded the book, read the following chapters as well as
 the post on the integrated terminal in VSCode before you attempt the
@@ -33,19 +31,19 @@ homework section.
 
 ## Homework
 
-This section takes an estimated 3-4 hours - The time commitment in this
+This section takes an estimated 3-4 hours. The time commitment in this
 module can vary widely because you will be downloading and installing
 tools which can take more time depending on your personal computing
 configuration.
 
 - [Sign up for a FREE GitHub student account](https://education.github.com/pack)
 - [Install VSCode and Git](https://shanepanter.com/teaching/vscode-tips-and-tricks.html)
-- Complete the module reading Quiz (canvas)
-- Complete the history of version control essay (canvas)
+- Complete the module reading quiz (Canvas)
+- Complete the history of version control essay (Canvas)
 
-Getting a Github Student Developer pack requires that you use your
+Getting a GitHub Student Developer pack requires that you use your
 University email address! It may take a few days for GitHub to approve
-your account but don’t worry you will be able to complete all the labs
+your account but don’t worry, you will be able to complete all the labs
 with the standard free account. The student account just gives you
 access to cool resources that you would normally have to pay for.
 
@@ -55,7 +53,7 @@ This section takes an estimated 2-3 hours. This includes the time
 required to create your own video or discussion post and then watch and
 read posts from other students and your instructor.
 
-- Complete the module retrospective assignment (canvas)
+- Complete the module retrospective assignment (Canvas)
 
 Even though this is an online asynchronous course we will still have
 interactions with each other in the form of discussion posts or video
