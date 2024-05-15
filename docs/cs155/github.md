@@ -1,13 +1,13 @@
-# Github
+# GitHub
 
 In this module we will explore GitHub and how it complements our usage
 of Git in the terminal and VSCode. We will explore how to use the GitHub
-interface and build our first GitHub page so we can exhibit all our cool
+interface and build our first GitHub page so that we can exhibit all our cool
 work.
 
 ## Reading
 
-This section takes an estimated 3-4 hours
+This section takes an estimated 3-4 hours.
 
 - [6.1 Account Setup and Configuration](https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration)
 - [6.2 Contributing to a Project](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project)
@@ -18,12 +18,12 @@ This section takes an estimated 3-4 hours
 
 ## Homework
 
-This section takes an estimated 3-4 hours
+This section takes an estimated 3-4 hours.
 
-- Complete the module reading quiz (canvas)
-- [Configure Github](hw/hw1.md)
+- Complete the module reading quiz (Canvas)
+- [Configure GitHub](hw/hw1.md)
 - [Create a Patch](hw/hw2.md)
-- Complete the GitHub Pages lab (canvas)
+- Complete the GitHub Pages lab (Canvas)
 
 ## Module Retrospective - Class Interaction
 
@@ -31,4 +31,4 @@ This section takes an estimated 2-3 hours. This includes the time
 required to create your own video or discussion post and then watch and
 read posts from other students and your instructor.
 
-- Complete the module retrospective assignment (canvas)
+- Complete the module retrospective assignment (Canvas)
