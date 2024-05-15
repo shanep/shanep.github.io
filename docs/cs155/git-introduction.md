@@ -2,14 +2,14 @@
 
 Version control is everywhere. For example, Google Docs has a way to
 [check or revert to earlier file
-versions](https://support.google.com/a/users/answer/9308971?hl=en). Git
-however, is a LOT more powerful than what Google Docs provides and in
-this module we will learn the basics of how to use Git when developing
+versions](https://support.google.com/a/users/answer/9308971?hl=en). Git,
+however, is a LOT more powerful than what Google Docs provides. In
+this module, we will learn the basics of how to use Git when developing
 software.
 
 ## Reading
 
-This section takes an estimated 3-4 hours
+This section takes an estimated 3-4 hours.
 
 - [1.1 About Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
 - [1.2 A Short History](https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git)
@@ -23,13 +23,13 @@ This section takes an estimated 3-4 hours
 
 ## Homework
 
-This section takes an estimated 3-4 hours - The time commitment in this
+This section takes an estimated 3-4 hours. The time commitment in this
 module can vary widely because you will be downloading and installing
-tools which can take more time depending on your personal computing
+tools, which can take more time depending on your personal computing
 configuration.
 
-- Complete the module reading Quiz (canvas)
-- Complete the hands on lab (canvas)
+- Complete the module reading quiz (Canvas)
+- Complete the hands-on lab (Canvas)
 
 ## Retrospective - Class Interaction
 
@@ -37,4 +37,4 @@ This section takes an estimated 2-3 hours. This includes the time
 required to create your own video or discussion post and then watch and
 read posts from other students and your instructor.
 
-- Complete the module retrospective assignment (canvas)
+- Complete the module retrospective assignment (Canvas)
