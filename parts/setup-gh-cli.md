@@ -98,6 +98,6 @@ Congrats you are now configured to use github.com with the ssh protocol!
 
 Log into canvas and submit a screen shot showing that you have completed the assignment. An example
 is shown below. **NOTE:** Your screen shot may look slightly different depending on the Operating
-System so don't worry if it doe not match exactly.
+System so don't worry if it does not match exactly.
 
 ![gh cli](/images/gh-cli-submit.png)
