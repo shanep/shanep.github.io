@@ -3,7 +3,7 @@
 The purpose of this class is to get you familiar with version control,
 specifically Git. This is a hands-on class that consists of reading
 about concepts and then practicing those concepts with walk-through
-labs. Git can only be mastered by **lots** of practice, so we will be
+labs. Git can only be mastered through **lots** of practice, so we will be
 doing a lot of labs that involve interacting with existing repositories.
 In future classes, you will then start to use Git when working on team
 assignments.
