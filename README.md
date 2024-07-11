@@ -4,7 +4,7 @@
 
 Theses are the raw files to generate shanepanter.com
 
-## Development
+### Development
 
 - `npm install`
 - `npm run docs:dev`
