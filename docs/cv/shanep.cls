@@ -24,7 +24,7 @@
 \RequirePackage{graphicx}
 \RequirePackage{multirow}
 \RequirePackage{hyperref}
-\RequirePackage[backend=biber, style=alphabetic, maxbibnames=99]{biblatex}
+\RequirePackage[style=ieee,backend=biber,maxbibnames=99, sorting=ydnt,]{biblatex}
 
 \nocite{*}
 
