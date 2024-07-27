@@ -9,6 +9,7 @@ General resources for teaching and other fun stuff.
 - [CS208 - Introduction to Full Stack Web Development](../cs208/index.md)
 - [CS333 - Network Security and Defense](../cs333/index.md)
 - [CS452 - Operating Systems](../cs452/index.md)
+- [CS554 - Advanced Operating Systems](../cs554/index.md)
 
 ## Guides and Tutorials
 

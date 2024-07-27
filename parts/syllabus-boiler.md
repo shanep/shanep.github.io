@@ -51,8 +51,7 @@ file that needs to be updated :)
 :::
 
 - Use of AI technologies - If you are able to solve 100% of any assignment with AI, I will give you
-extra credit if you submit your chat logs as proof that it was in fact 100% AI generated.  See the
-AI 🤖 section for more details.
+extra credit if you submit your chat logs as proof that it was 100% AI generated.
 
 ## Homework Policy
 
@@ -61,65 +60,6 @@ will be **clearly** marked so there should be no confusion.  The [Kount Computer
 Center](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring) (CCP 241) is accessible
 24/7 by proxy card to all students enrolled in CS courses. Machines in the Kount Computer Tutoring
 Center have all the software you will need this semester.
-
-All of your programming assignments will be submitted using GitHub or with emailed
-patches. Submissions via any other method such engraving your source code onto a stone tablet, or
-wizard scroll 📜 will not be accepted under any circumstances. You are encouraged to make consistent
-commits to your Git repository over the course of working on your project.
-
-::: warning
-
-Former students will post their projects for employers to see and you can find them with a simple
-Google search. ChatGPT can give at least a partial solution if not full solution to some of the
-projects in this class. Stackoverflow.com has solutions to most common problems that students will
-encounter.  It is not feasible for me to create brand new projects every semester nor is it feasible
-to police the internet for solutions to my projects. Therefore in this class I will trust that you
-are here to learn and will not seek out solutions to the projects.  I expect all students to adhere
-to the Universities Academic Integrity policy. If you get stuck on a project please attend office
-hours for help instead of searching for a solution online.
-
-:::
-
-## AI Policy
-
-Developer tools such as an IDE or AI should be used to **enhance** your skills not replace them! AI
-in the hands of an experienced developer makes that developer even more productive! AI in the hands
-of a student robs them of the opportunity to learn 📚!
-
-If you do choose to use AI you **must cite** your usage and you will now be graded on the code that
-the AI writes. If you truly believe that ChatGPT can always give the best solution to any problem
-then you may want to switch majors because why would a company hire you if they can just use ChatGPT
-to write all their code?
-
-Take for example the two possible solutions for a `size()` method in a typical linked list written
-in the `java` programming language. Can you spot the problem? While both solutions do work and
-produce correct results, the AI generated solution is O(N) while the **better** solution is O(1). If
-you don’t know why one is better than the other then I would strongly suggest you not use AI tools
-until you get more experience.
-
-::: code-group
-
-```java
-//ChatGPT generated - O(N) performance
-public int size() {
-    int size = 0;
-    Node current = head;
-    while (current != null) {
-        size++;
-        current = current.next;
-    }
-    return size;
-}
-```
-
-```java
-//Hand coded - O(1) performance
-public int size() {
-    return size;
-}
-```
-
-:::
 
 ::: danger
 
@@ -195,9 +135,7 @@ facilitate quick communication please include the following information in all e
 the class TA/GA.
 
 - First and Last name
-- Student ID - I need this so I can look you up in the system. You would be surprised how many
-  students have the same name or have changed their default name in the system to something other
-  than their legal name so it is difficult to locate them in a timely manner.
+- Student ID - I need this so I can look you up in the system.
 - The class and section number that you are in for example CS123 - section 1
 
 BroncoMail is the official communication channel through which all university business is
@@ -224,7 +162,6 @@ Your instructor and teaching assistant can not provide IT support for your perso
 can not get your personal machine configured correctly you will need to come into the lab to
 complete all assignments. All machines in the CS labs are supported by the departments IT staff and
 are guaranteed to work.
-
 
 ## Time Commitment
 
