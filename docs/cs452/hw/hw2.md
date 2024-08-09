@@ -1,7 +1,7 @@
 ---
 next: false
 prev: false
-submit_email: TBD
+submit_email: email is in the syllabus
 repo: https://github.com/shanep/git-send-email
 project: cs452-hw-2
 ---
