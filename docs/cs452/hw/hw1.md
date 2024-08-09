@@ -1,7 +1,7 @@
 ---
 next: false
 prev: false
-submit: cs452-project-0-group@boisestate.edu
+submit: TBD
 ---
 # Homework 1
 <!--@include: ../../../parts/setup-gh-cli.md -->
