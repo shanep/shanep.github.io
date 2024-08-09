@@ -1,7 +1,7 @@
 ---
 next: false
 prev: false
-submit_email: cs452-hw-2-group@boisestate.edu
+submit_email: TBD
 repo: https://github.com/shanep/git-send-email
 project: cs452-hw-2
 ---
