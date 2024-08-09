@@ -4,7 +4,6 @@ prev: false
 ---
 # Projects
 
-
 - [Grading Rubric](grading-rubric.md) - Universal Grading Rubric for all projects
 - [Project 1](p1.md) - Development Environment Setup and Familiarization
 - [Project 2](p2.md) - Warmup project
