@@ -62,6 +62,9 @@ writing a new scheduler, a new file system, a new memory management system, etc.
   - You can write your own OS to be used for teaching purposes, this is how
     [Minix](https://en.wikipedia.org/wiki/Minix) was created
 - If the class is small enough we can work on a single project together!
+
+#### Wed 08/21
+
 - Why do we need to read research papers?
   - To learn about the state of the art
   - To learn about the open problems
@@ -69,28 +72,22 @@ writing a new scheduler, a new file system, a new memory management system, etc.
   - To learn about the evaluation techniques
   - To learn about the future work
   - [Make millions](https://en.wikipedia.org/wiki/Binary_space_partitioning)
-
-#### Wed 08/21
-
 - Using ACM Digital Library or IEEE Xplore to find research papers
   - [IEEE Proxy](https://guides.boisestate.edu/az/databases?q=ieee)
   - [ACM Proxy](https://guides.boisestate.edu/az/az-database-76256756)
 - Suggested keywords to use: operating systems, real-time systems, virtualization, cloud
   computing, edge computing, IoT, etc.
-- In class: Each student needs to find 2 research paper in either ACM or IEEE
-  that they find interesting and be prepared to discuss them next week.
 - Start to think about your project proposal and be prepared to discuss it next
   week. We will need to define our key words, research questions, and approach.
 
 ::: tip Week 1 - Deliverable
 
-If you did not find a research paper in class you will need to email me by Friday
-with the research papers that you will present next week. If you completed this
-in class you are done for the week!
+You will need to write out a 1 page project proposal detailing your research or
+project idea. You will need to turn in a hard copy at the beginning of class
+next week. You will be able to change or evolve your idea as the semester progresses,
+this is just a starting point.
 
 :::
-
-
 
 ## Paper Presentations
 
