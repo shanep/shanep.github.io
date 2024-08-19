@@ -51,6 +51,7 @@ writing a new scheduler, a new file system, a new memory management system, etc.
 #### Mon 08/19
 
 - Review the syllabus
+- Introductions
 - Discuss the course structure
 - Discuss the final deliverable (research paper or artifact)
 - Start brainstorming research/project ideas (you can work on your own or in groups)
@@ -65,27 +66,15 @@ writing a new scheduler, a new file system, a new memory management system, etc.
 
 #### Wed 08/21
 
-- Why do we need to read research papers?
-  - To learn about the state of the art
-  - To learn about the open problems
-  - To learn about the existing solutions
-  - To learn about the evaluation techniques
-  - To learn about the future work
-  - [Make millions](https://en.wikipedia.org/wiki/Binary_space_partitioning)
-- Using ACM Digital Library or IEEE Xplore to find research papers
-  - [IEEE Proxy](https://guides.boisestate.edu/az/databases?q=ieee)
-  - [ACM Proxy](https://guides.boisestate.edu/az/az-database-76256756)
-- Suggested keywords to use: operating systems, real-time systems, virtualization, cloud
-  computing, edge computing, IoT, etc.
-- Start to think about your project proposal and be prepared to discuss it next
-  week. We will need to define our key words, research questions, and approach.
+- Discuss the research/project ideas
+- Discuss class meeting locations off campus
+- Discuss Zoom meetings for remote students (if needed)
 
 ::: tip Week 1 - Deliverable
 
-You will need to write out a 1 page project proposal detailing your research or
-project idea. You will need to turn in a hard copy at the beginning of class
-next week. You will be able to change or evolve your idea as the semester progresses,
-this is just a starting point.
+Your initial research/project idea is due by the start of class on Monday 08/26.
+We will discuss these ideas in class and you will have the opportunity to revise
+your idea based on feedback.
 
 :::
 
@@ -120,6 +109,6 @@ Explain each section in detail so we can discuss it.
 Final Grade formula: **Grade = [Earned points] / [Total Points Offered]**.
 
 - 20% In class participation and discussion
-- 80% Research Paper / Artifact
+- 80% Research Paper or Artifact
 
 <!--@include: ../../parts/syllabus-boiler.md-->
