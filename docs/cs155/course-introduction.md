@@ -49,7 +49,7 @@ access to cool resources that you would normally have to pay for.
 
 ## Retrospective - Class Interaction
 
-This section takes an estimated 2-3 hours. This includes the time
+This section takes an estimated 3-4 hours. This includes the time
 required to create your own video or discussion post and then watch and
 read posts from other students and your instructor.
 
