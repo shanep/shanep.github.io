@@ -10,7 +10,7 @@ assignments.
 
 Before we get started learning about Git, we need to introduce basic
 terminal usage. You will primarily be using the terminal to interact
-with Git in this class. While you can do most basic git operations using
+with Git in this class. While you can do most basic Git operations using
 a Graphical User Interface (GUI), advanced operations will require you to
 use the terminal. We will leverage the integrated terminal of VSCode to
 interact with Git.
