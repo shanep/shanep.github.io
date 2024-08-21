@@ -10,14 +10,14 @@ assignments.
 
 Before we get started learning about Git, we need to introduce basic
 terminal usage. You will primarily be using the terminal to interact
-with Git in this class. While you can do most basic git operations using
+with Git in this class. While you can do most basic Git operations using
 a Graphical User Interface (GUI), advanced operations will require you to
 use the terminal. We will leverage the integrated terminal of VSCode to
 interact with Git.
 
 ## Reading
 
-This section takes an estimated 3-4 hours. We will be using a free (but well written) book for this module which
+Reading is expected to take about 3-4 hours. We will be using a free (but well written) book for this module which
 you can [download here](https://drive.google.com/file/d/1nJ0XC0H7eI5I_g9WCqY9v-LlBMREaRBe/view?usp=share_link).
 Once you have downloaded the book, read the following chapters as well as
 the post on the integrated terminal in VSCode before you attempt the
@@ -31,7 +31,7 @@ homework section.
 
 ## Homework
 
-This section takes an estimated 3-4 hours. The time commitment in this
+Homework is expected to take about 3-4 hours. The time commitment in this
 module can vary widely because you will be downloading and installing
 tools which can take more time depending on your personal computing
 configuration.
@@ -49,7 +49,7 @@ access to cool resources that you would normally have to pay for.
 
 ## Retrospective - Class Interaction
 
-This section takes an estimated 2-3 hours. This includes the time
+Retrospectives are expected to take about 2-3 hours. This includes the time
 required to create your own video or discussion post and then watch and
 read posts from other students and your instructor.
 
