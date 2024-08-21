@@ -80,6 +80,18 @@ your idea based on feedback.
 
 :::
 
+### Week 2: 
+
+##### Monday 8/26 
+
+- Present deliverables
+
+##### Wed 
+
+- Present deliverables (cont)
+- Questions
+- Rust for Linux
+
 ## Paper Presentations
 
 Each presentation will last 5 minutes and should include the sections listed
