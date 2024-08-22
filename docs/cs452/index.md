@@ -73,7 +73,7 @@ course learning outcomes.
 |     | 1.1 | Articulate process creation and destruction                                                                                                           | Exam                  |
 |     | 1.2 | Use system library code                                                                                                                               | Project 3             |
 |     | 1.3 | Use system documentation                                                                                                                              | Project 3             |
-|     | 1.4 | Apply computer science theory and software development fundamentals to produce computing-based solutions. **(ABET Outcome 6)**                        | Project 3             |
+|     | 1.4 | Apply computer science theory and software development fundamentals to produce computing-based solutions. **(ABET Outcome 6)**                        | Project 5             |
 |     | 1.5 | Use simple shell scripts and system tools to analyze process behavior                                                                                 | Project 5             |
 | 2   |     | Describe the fundamental (core) abstractions used to implement Operating Systems                                                                      | Exam                  |
 |     | 2.1 | Demonstrate how low level memory is managed in user space                                                                                             | Project 4             |
