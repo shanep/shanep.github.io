@@ -81,7 +81,7 @@ course learning outcomes.
 |     | 2.3 | Show an understanding of the difference between user and kernel space                                                                                 | Project 7             |
 |     | 2.4 | Articulate common problems arising in Operating System design and implementation                                                                      | Exam                  |
 | 3   |     | Construct applications that utilize processes, threads, and synchronization primitives to solve problems requiring concurrent or parallel computation | Project 5             |
-|     | 3.1 | Analyze a complex computing problem and apply principles of computing and other relevant disciplines to identify solutions. **(ABET Outcome 1)**      | Project 5             |
+|     | 3.1 | Analyze a complex computing problem and apply principles of computing and other relevant disciplines to identify solutions. **(ABET Outcome 1)**      | Project 4             |
 |     | 3.2 | Explore the effects of multiple threads operating on the same buffer                                                                                  | Project 5             |
 |     | 3.3 | Identify the sources of deadlocks, race conditions, memory stomps and data loss                                                                       | Project 6             |
 |     | 3.4 | Apply concurrent programming techniques such as threads, event loops, and inter-process communication                                                 | Project 6             |
