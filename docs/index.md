@@ -60,3 +60,8 @@ cybersecurity in both user space and kernel space.
 - Systems
 - Cybersecurity
 - Software Security
+
+## Links
+
+- ORCID ID: [0009-0009-1852-3655](https://orcid.org/0009-0009-1852-3655)
+- Figshare: [Shane K. Panter](https://figshare.com/authors/Shane_Panter/18157354)
