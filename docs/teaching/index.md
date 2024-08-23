@@ -18,3 +18,4 @@ General resources for teaching and other fun stuff.
 - [Github Classroom Starter Code](starter-code.md)
 - [VSCode Tips and Tricks](vscode-tips-and-tricks.md)
 - [Github Codespaces](github-codespaces.md)
+- [RStudio Tips and Tricks](rstudio-tips-and-tricks.md)
