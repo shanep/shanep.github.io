@@ -16,11 +16,11 @@ database APIs. PREREQ: CS121 COREQ: CS155.
 ## Tentative Schedule
 
 Below is a tentative schedule for the semester that you can use to plan out your
-work. Hard due dates are all posted in canvas. While every effort is made to
+work. Hard due dates are all posted in Canvas. While every effort is made to
 maintain the schedule below minor changes may be made to accommodate events that
 are outside of anyone control (snow days, global pandemics, etc.)
 
-**All due dates are posted in canvas.**
+**All due dates are posted in Canvas.**
 
 ### Week 1
 
@@ -51,7 +51,7 @@ are outside of anyone control (snow days, global pandemics, etc.)
 
 ### Week 6
 
-- 3.1 Basic Javascript Reading Assignment (ch5)
+- 3.1 Basic JavaScript Reading Assignment (ch5)
 
 ### Week 7
 
@@ -108,7 +108,7 @@ course learning outcomes.
 | TLO | SLO | Objective                                                                                            | Assessment Instrument |
 |-----|-----|------------------------------------------------------------------------------------------------------|-----------------------|
 | 1   |     | Create a Full Stack Web Application                                                                  | Final Project         |
-|     | 1.1 | Create a dynamic front end UI                                                                        | Final Project         |
+|     | 1.1 | Create a dynamic front-end UI                                                                        | Final Project         |
 |     | 1.2 | Identify when to use JavaScript to add interactive components to your websites.                      | Reading Assignments   |
 |     | 1.3 | Identify when a server-side language  is useful in web development.                                  | Reading Assignments   |
 |     | 1.4 | Use templates to reduce repetitive HTML and produce dynamic content based on conditionals.           | Final Project         |
@@ -145,18 +145,18 @@ course learning outcomes.
 
 ## Course Materials
 
-- Textbook: Sign up link is in canvas **required**
+- Textbook: Sign up link is in Canvas **required**
 - [Course Videos](https://www.youtube.com/playlist?list=PLFziFbk-D-X2mH13IZ37GE-i_H2XvOpHw)
 
 We will be using zyBooks as our textbook. You should be prompted to sign
 up for the book when you complete the first assignment that is linked in
-canvas. Do not go to the zyBooks website and create a new account you
-**must** sign up through canvas so that your progress is properly
+Canvas. Do not go to the zyBooks website and create a new account you
+**must** sign up through Canvas so that your progress is properly
 recorded.
 
 ## Assessments
 
-Your final grade will be calculated with the following weights in canvas.
+Your final grade will be calculated with the following weights in Canvas.
 
 - Quizzes - 20%
 - Reading - 20%
@@ -172,8 +172,8 @@ book and must be done individually.
 
 ## Participation
 
-This is an online asynchronous class, thus all of our interactions and
-participation will be done through canvas using discussion boards and
+This is an online asynchronous class; thus all of our interactions and
+participation will be done through Canvas using discussion boards and
 video posts.
 
 ## Projects
@@ -186,12 +186,12 @@ There are several individual projects this semester.
 - [Project 2](https://github.com/shanep/cs208-p2-starter) - This project will
   evaluate your knowledge of HTML and CSS.
 - [Project 3](https://github.com/shanep/cs208-p3-starter) - This project will
-  evaluate your knowledge of Javascript.
+  evaluate your knowledge of JavaScript.
 - [Project 4](https://github.com/shanep/cs208-p4-starter) - This project
   introduces and evaluates full stack web development.
 - [Project 5](https://github.com/shanep/cs208-p5-starter) - This project will be
   group based and allow you to practice not only your web development skills but
-  also use git and GitHub in a team based environment. All grades are given
+  also use git and GitHub in a team-based environment. All grades are given
   **individually** so even though you will work in a group you will grade will
   not be impacted by any team members lack of effort or contributions.
 
