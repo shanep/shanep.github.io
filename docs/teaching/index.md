@@ -17,5 +17,6 @@ General resources for teaching and other fun stuff.
 - [Github Classroom Setup](github-classroom-setup.md)
 - [Github Classroom Starter Code](starter-code.md)
 - [VSCode Tips and Tricks](vscode-tips-and-tricks.md)
+- [VSCode Remote Development](vscode-remote-dev.md)
 - [Github Codespaces](github-codespaces.md)
 - [RStudio Tips and Tricks](rstudio-tips-and-tricks.md)
