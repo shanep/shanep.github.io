@@ -1,22 +1,17 @@
 # Developing Remotely
 
-::: info
-This section is optional and is provided for students who wish to
-develop remotely. You are not required to develop remotely, all the
-homework assignments can be done on the CS lab machines in the CCP
-building.
-
-Your professor or teaching assistant can not provide tech support
-for personal machines.
-:::
-
-
-This section will walk you through using VSCode to develop remotely.
+This document will walk you through using VSCode to develop remotely.
 This is incredibly convenient as it allows you to connect directly to a
 server to run and test your code. For advanced users you can read
 through the [official
 documentation](https://code.visualstudio.com/docs/remote/ssh) for more
 details on how everything works.
+
+Developing remotely is optional and is provided for students who wish to
+get everything setup. You are not required to develop remotely, all the
+homework assignments can be done on the CS lab machines in the CCP
+building. Your professor or teaching assistant can not provide tech support
+for personal machines.
 
 ## Setup a Remote Connection
 
@@ -72,10 +67,12 @@ Assuming you have followed the steps above to setup a new remote connection you 
 anytime.
 
 - Select *Remote-SSH: Connect to Host…​* from the Command Palette and connect to *username@servername.com*
+
 :::tip
 You can bring up the Command Palette by hitting the F1 key
 :::
 ![connect existing](images/vscode_connect_existing.png)
+
 - Select connect to started developing
 
 :::tip
