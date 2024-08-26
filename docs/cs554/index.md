@@ -80,13 +80,13 @@ your idea based on feedback.
 
 :::
 
-### Week 2: 
+### Week 2: Project Intros
 
-##### Monday 8/26 
+#### Monday 8/26
 
 - Present deliverables
 
-##### Wed 
+#### Wed
 
 - Present deliverables (cont)
 - Questions
