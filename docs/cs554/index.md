@@ -89,7 +89,8 @@ your idea based on feedback.
 #### Wed
 
 - Present deliverables (cont)
-- Questions
+- Review Boise State proxy's for accessing research papers
+- Review ACM DL and IEEE Xplore for accessing research papers
 - Rust for Linux
 
 ## Paper Presentations
