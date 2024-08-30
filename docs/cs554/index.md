@@ -93,6 +93,18 @@ your idea based on feedback.
 - Review ACM DL and IEEE Xplore for accessing research papers
 - Rust for Linux
 
+### Week 3: Projects
+
+#### Mon 09/02
+
+- Labor Day - No Class
+- Work on your project
+
+#### Wed 09/04
+
+- Present deliverables
+- Rust for Linux
+
 ## Paper Presentations
 
 Each presentation will last 5 minutes and should include the sections listed
