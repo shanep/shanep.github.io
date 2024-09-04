@@ -105,6 +105,17 @@ your idea based on feedback.
 - Present deliverables
 - Rust for Linux
 
+### Week 4
+
+#### Mon 09/09
+
+- (Zoom) - C to Rust (RFL)
+- ACM DL Updates
+
+#### Wed 9/11
+
+- Updates on project
+
 ## Paper Presentations
 
 Each presentation will last 5 minutes and should include the sections listed
