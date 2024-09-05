@@ -6,7 +6,7 @@ next: false
 ![Git Logo](images/git-banner.gif)
 
 **CS155 Introduction to Version Control(1-0-1)(F,S).** Introduction to
-the central ideas, practices, and day to day usage of software version
+the central ideas, practices, and day-to-day usage of software version
 control using Git. Basic client side usage such as committing,
 branching, merging, and pull-requests will be explored. COREQ: CS153.
 
@@ -28,8 +28,8 @@ course learning outcomes.
 |     | 3.2 | Practice resolving merge conflicts          | Hands on Lab          |
 |     | 3.3 | Explore sending a Patch over email          | Homework 2            |
 
-- [Blooms Taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/)
-- [Blooms Taxonomy of Verbs](https://tips.uark.edu/blooms-taxonomy-verb-chart/)
+- [Bloom's Taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/)
+- [Bloom's Taxonomy of Verbs](https://tips.uark.edu/blooms-taxonomy-verb-chart/)
 
 ## Course Materials
 
@@ -49,7 +49,7 @@ Your final grade will be calculated with the following weights in canvas.
 
 There will be several quizzes over the assigned reading and general git usage.
 The quizzes are open notes and open book and must be done individually. This
-class is centered around hands on practice. There are several [Hands on
+class is centered around hands on practice. There are several [Hands-on
 Labs](https://github.com/shanep?tab=repositories&q=250&type=&language=&sort=)
 that you will work on each week. You will get credit for doing the labs through
 canvas quizzes.
