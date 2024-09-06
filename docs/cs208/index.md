@@ -18,7 +18,7 @@ database APIs. PREREQ: CS121 COREQ: CS155.
 Below is a tentative schedule for the semester that you can use to plan out your
 work. Hard due dates are all posted in Canvas. While every effort is made to
 maintain the schedule below minor changes may be made to accommodate events that
-are outside of anyone control (snow days, global pandemics, etc.)
+are outside of anyone's control (snow days, global pandemics, etc.)
 
 **All due dates are posted in Canvas.**
 
@@ -140,8 +140,8 @@ course learning outcomes.
 |     | 7.2 | Understand User Stories, Acceptance Criteria, Tasks, Definition of Done                              | Quiz                  |
 |     | 7.3 | Understand Agile development techniques and software engineering best practices                      | Quiz                  |
 
-- [Blooms Taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/)
-- [Booms Taxonomy of Verbs](https://tips.uark.edu/blooms-taxonomy-verb-chart/)
+- [Bloom's Taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/)
+- [Bloom' Taxonomy of Verbs](https://tips.uark.edu/blooms-taxonomy-verb-chart/)
 
 ## Course Materials
 
