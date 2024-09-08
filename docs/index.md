@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: teaching
       link: /teaching/index
+    - theme: alt
+      text: research
+      link: /research/index
   image:
     src: /images/me.jpg
     alt: Shane K. Panter
