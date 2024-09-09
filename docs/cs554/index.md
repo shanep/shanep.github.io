@@ -109,12 +109,26 @@ your idea based on feedback.
 
 #### Mon 09/09
 
-- (Zoom) - C to Rust (RFL)
-- ACM DL Updates
+- Class will be over Zoom. We will discuss the following:
+  - ACM DL Updates
+  - Project updates
+  - Paper presentations
 
 #### Wed 9/11
 
 - Updates on project
+
+### Week 5
+
+#### Mon 09/16
+
+- Each student will present a research paper that they found on their topic.
+  This will be a 5-minute presentation followed by a 5-minute discussion. See
+  the Paper Presentations section below for more details.
+
+#### Wed 9/18
+
+- Updates on projects
 
 ## Paper Presentations
 
