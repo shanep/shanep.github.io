@@ -141,7 +141,7 @@ course learning outcomes.
 |     | 7.3 | Understand Agile development techniques and software engineering best practices                      | Quiz                  |
 
 - [Bloom's Taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/)
-- [Bloom' Taxonomy of Verbs](https://tips.uark.edu/blooms-taxonomy-verb-chart/)
+- [Bloom's Taxonomy of Verbs](https://tips.uark.edu/blooms-taxonomy-verb-chart/)
 
 ## Course Materials
 
@@ -172,7 +172,7 @@ book and must be done individually.
 
 ## Participation
 
-This is an online asynchronous class; thus all of our interactions and
+This is an online asynchronous class; thus, all of our interactions and
 participation will be done through Canvas using discussion boards and
 video posts.
 
