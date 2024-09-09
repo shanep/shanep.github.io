@@ -71,7 +71,7 @@ $ gh auth login
 ? What is your preferred protocol for Git operations? SSH
 ? Generate a new SSH key to add to your GitHub account? Yes
 ? Enter a passphrase for your new SSH key (Optional)
-? Title for your SSH key: (GitHub CLI
+? Title for your SSH key: (GitHub CLI)
 ? Title for your SSH key: GitHub CLI
 ? How would you like to authenticate GitHub CLI? Login with a web browse
 ! First copy your one-time code: XXXX-XXXX
