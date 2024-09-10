@@ -49,7 +49,7 @@ write NONE in this section.
 
 For the **Sources used section** you must detail any sources you used outside of
 the textbook or course website. If you write NONE in this section it is assumed
-that you didn’t use google at all. Be safe CITE! Remember that using ChatGPT,
+that you didn’t use Google at all. Be safe; CITE! Remember that using ChatGPT,
 Google Bard, or any other AI generated text is considered a source and must be
 listed here.
 
