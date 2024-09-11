@@ -130,6 +130,57 @@ your idea based on feedback.
 
 - Updates on projects
 
+### Week 6
+
+#### Mon 09/23
+
+- Each student will present a research paper that they found on their topic.
+  This will be a 5-minute presentation followed by a 5-minute discussion. See
+  the Paper Presentations section below for more details.
+
+#### Wed 9/25
+
+- Updates on projects
+
+### Week 7
+
+#### Mon 09/30
+
+- Each student will present a research paper that they found on their topic.
+  This will be a 5-minute presentation followed by a 5-minute discussion. See
+  the Paper Presentations section below for more details.
+
+#### Wed 10/02
+
+- Updates on projects
+
+### Week 8
+
+#### Mon 10/07
+
+- Mid Term Presentations - 20 minutes each
+
+You will present your progress on your project formally. You will need to have a
+slide deck that includes the following sections:
+
+- Project Title
+  - Description of the project
+- Research or Project Goal
+  - What problem are you trying to solve?
+  - Why is this problem important? What is the impact of solving this problem?
+  - What is the current state of the art? You should have a good idea of what
+    the current state of the art is in your area from the research papers you
+    have read and shared with the class.
+- Approach
+  - What is your approach to solving the problem?
+- What is the current state of your project?
+  - What are the next steps?
+- Conclusion
+
+#### Wed 10/09
+
+- Midterm Presentations continued.
+
 ## Paper Presentations
 
 Each presentation will last 5 minutes and should include the sections listed
@@ -162,5 +213,8 @@ Final Grade formula: **Grade = [Earned points] / [Total Points Offered]**.
 
 - 20% In class participation and discussion
 - 80% Research Paper or Artifact
+  - Midterm Presentation: 20%
+  - Final Presentation: 20%
+  - Final Paper or Artifact: 40%
 
 <!--@include: ../../parts/syllabus-boiler.md-->
