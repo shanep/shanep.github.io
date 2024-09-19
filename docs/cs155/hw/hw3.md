@@ -29,8 +29,8 @@ You can see an example of what you need to submit at: https://bsu-shanepanter.gi
 
 It can take up to 10 - 30 minutes for your GitHub page to be live!  Your page will
 not instantly update when published. It is your responsibility to make sure your page publishes
-correctly. You will not get credit for submitting a link to your github repo! You must submit a link
-to your published github page which should be in the form https://username.github.io
+correctly. You will not get credit for submitting a link to your GitHub repo! You must submit a link
+to your published GitHub page which should be in the form https://username.github.io
 
 :::
 
@@ -39,5 +39,5 @@ complete this assignment!
 
 ## Submitting
 
-To get credit for this assignment please submit the URL to your published page to the canvas
+To get credit for this assignment please submit the URL to your published page to the Canvas
 assignment. Your grade will be updated after the due date (and late window) have passed.
