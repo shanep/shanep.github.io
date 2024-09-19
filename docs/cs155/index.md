@@ -40,7 +40,7 @@ course learning outcomes.
 
 ## Assessments
 
-Your final grade will be calculated with the following weights in canvas.
+Your final grade will be calculated with the following weights in Canvas.
 
 - Quizzes - 35%
 - Participation - 10%
@@ -52,6 +52,6 @@ The quizzes are open notes and open book and must be done individually. This
 class is centered around hands on practice. There are several [Hands-on
 Labs](https://github.com/shanep?tab=repositories&q=250&type=&language=&sort=)
 that you will work on each week. You will get credit for doing the labs through
-canvas quizzes.
+Canvas quizzes.
 
 <!--@include: ../../parts/syllabus-boiler.md-->
