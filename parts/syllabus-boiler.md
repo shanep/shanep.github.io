@@ -160,8 +160,26 @@ link in canvas please email me ASAP as I sometimes forget to post them at the st
 
 Your instructor and teaching assistant can not provide IT support for your personal machine. If you
 can not get your personal machine configured correctly you will need to come into the lab to
-complete all assignments. All machines in the CS labs are supported by the departments IT staff and
-are guaranteed to work.
+complete all assignments.
+
+### Labs and Other Building Spaces
+
+The CCP building (downtown Boise) contains three labs and other spaces secured
+by proxy card access during and after business hours. All machines in the CS
+labs are supported by the departments IT staff and are guaranteed to work.
+
+- **Kount Learning Center (CCP 241)**: This lab is accessible 24/7 by proxy card
+  access to all CS students and students enrolled in CS courses. You can learn
+  more about this resource on our [Success & Tutoring
+  page](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring/).
+- **CS 121 Classroom Lab (CCP 242)**: This lab is accessible 24/7 by proxy card
+  access to all CS students and students enrolled in CS courses. However this
+  lab is not available during scheduled courses and course labs scheduled here
+  (see schedule posted outside of lab).
+- **Metageek Lab (CCP 240)**: This lab is accessible 24/7 by proxy card access to
+  all CS students and students enrolled in CS courses. However this lab is not
+  during scheduled CS courses and course labs (see schedule posted outside of
+  lab).
 
 ## Time Commitment
 
