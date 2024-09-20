@@ -7,7 +7,7 @@ project: cs155-hw-2
 ---
 # HW2 - Create a Patch
 
-In this homework you will learn how to use Git to create a patch that can be emailed to another
+In this homework, you will learn how to use Git to create a patch that can be emailed to another
 developer. This method of development is how Git was originally designed to work and is still widely
 used by massive projects like the [Linux
 Kernel](https://www.kernel.org/doc/html/latest/process/submitting-patches.html).  It may take a few
