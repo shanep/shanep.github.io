@@ -38,6 +38,41 @@ course learning outcomes.
 - [Course Videos](https://www.youtube.com/playlist?list=PLFziFbk-D-X3wbyZiKOu5aEcf9NGFUj8R)
 - [Labs](https://github.com/shanep?tab=repositories&q=250&type=&language=&sort=)
 
+## Schedule of Assignments
+
+This is a complete list of assignments that you will be working on this semester
+and their due dates. All assignments are due at 11:59 PM on the due date and
+will be submitted through Canvas.
+
+| Week | Assignment                          | Week day due |
+|------|-------------------------------------|--------------|
+| 1    | M0.1 Syllabus Quiz                  | Wed          |
+| 1    | M0.2 Reading Quiz                   | Wed          |
+| 1    | M0.3 Version Control Overview       | Wed          |
+| 1    | M0.4 M0.4 Install VSCode and Git    | Fri          |
+| 1    | M0.5 Introduction and Retrospective | Fri          |
+|      |                                     |              |
+| 2    | M1.1 Reading Quiz                   | Wed          |
+| 2    | M1.2 Hands on Lab                   | Wed          |
+| 2    | M1.3 Retrospective                  | Fri          |
+|      |                                     |              |
+| 3    | M2.1 Reading Quiz                   | Wed          |
+| 3    | M2.2 Hands on Lab                   | Wed          |
+| 3    | M2.3 Retrospective                  | Fri          |
+|      |                                     |              |
+| 4    | M3.1 Reading Quiz                   | Wed          |
+| 4    | M3.2 Hands on Lab                   | Wed          |
+| 4    | M3.3 Retrospective                  | Fri          |
+|      |                                     |              |
+| 5    | M4.1 Reading Quiz                   | Wed          |
+| 5    | M4.2 Configure Github               | Wed          |
+| 5    | M4.3 Create a GitHub Page           | Wed          |
+| 5    | M4.4 Submit a Patch                 | Fri          |
+| 5    | M4.5 Retrospective                  | Fri          |
+| 5    | M5.1 Final Exam                     | Fri          |
+| 5    | M5.2 End of Semester Evals          | Sat          |
+| 5    | M5.3 Extra Credit                   | Sat          |
+
 ## Assessments
 
 Your final grade will be calculated with the following weights in Canvas.
