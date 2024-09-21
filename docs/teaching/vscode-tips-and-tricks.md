@@ -11,14 +11,14 @@ You can install VSCode and all the required tools on your personal
 (local) machine. The advantages of using a local install is it is 100%
 free and you don’t need an internet connection to do your work. The
 disadvantage is it can sometimes be difficult and time consuming to
-install and configure all the tools correctly especially if you are
+install and configure all the tools correctly, especially if you are
 using the Windows operating system.
 
 1. [Install Git](https://git-scm.com/downloads)
 2. [Install Visual Studio Code (Java)](https://code.visualstudio.com/learntocode/)
 3. Read through the [User interface tutorial](https://code.visualstudio.com/docs/getstarted/userinterface)
 4. [Read Terminal Basics](https://code.visualstudio.com/docs/terminal/basics)
-5. Complete all the steps in the first time configuration section of this document.
+5. Complete all the steps in the first-time configuration section of this document.
 
 ## First time configuration
 
@@ -60,7 +60,7 @@ Additional reading:
 ### Configure the default terminal (Windows Only)
 
 This section only applies to Windows users who are developing locally.
-If "Git Bash" is not listed as an option you need to [install
+If "Git Bash" is not listed as an option, you need to [install
 Git](https://git-scm.com/downloads) as detailed in the first section of
 this document.
 
