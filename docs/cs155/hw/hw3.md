@@ -6,10 +6,10 @@ prev: false
 
 
 In this assignment we are going to shift gears and work with some GitHub services beyond just simple
-repository hosting. Github is very popular in the open source community so it is very likely that
+repository hosting. Github is very popular in the open-source community so it is very likely that
 you will have to interact with the service at some point in your career.
 
-This assignment will create your own GitHub page so you can showcase any open source work that you
+In this assignment you will create your own GitHub page so you can showcase any open-source work that you
 do. This is a great way to build a portfolio so you can land that high paying $$$ job when you
 graduate!
 
