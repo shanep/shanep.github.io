@@ -17,7 +17,7 @@ interact with Git.
 
 ## Reading
 
-Reading is expected to take about 3-4 hours. We will be using a free (but well written) book for this module which
+Reading is expected to take about 3-4 hours. We will be using a free (but well-written) book for this module, which
 you can [download here](https://drive.google.com/file/d/1nJ0XC0H7eI5I_g9WCqY9v-LlBMREaRBe/view?usp=share_link).
 Once you have downloaded the book, read the following chapters as well as
 the post on the integrated terminal in VSCode before you attempt the
@@ -33,7 +33,7 @@ homework section.
 
 Homework is expected to take about 3-4 hours. The time commitment in this
 module can vary widely because you will be downloading and installing
-tools which can take more time depending on your personal computing
+tools, which can take more time depending on your personal computing
 configuration.
 
 - [Sign up for a FREE GitHub student account](https://education.github.com/pack)
@@ -42,8 +42,8 @@ configuration.
 - Complete the history of version control essay (Canvas)
 
 Getting a GitHub Student Developer pack requires that you use your
-University email address! It may take a few days for GitHub to approve
-your account but don’t worry, you will be able to complete all the labs
+university email address! It may take a few days for GitHub to approve
+your account, but don’t worry, you will be able to complete all the labs
 with the standard free account. The student account just gives you
 access to cool resources that you would normally have to pay for.
 
@@ -63,8 +63,7 @@ with your fellow students and instructors.
 
 A class of 90+ students can produce a **huge** amount of content that is
 impossible for one person to consume in a reasonable time frame. For
-example, my classes typically have well over 30+ hours of student
-produced content **each week**. So as your instructor it is absolutely
+example, my classes typically have well over 30+ hours of student-produced content **each week**. So as your instructor, it is absolutely
 impossible for me to watch every single post in its entirety. I will
 select a few posts from each student over the course of the semester to
 watch and give feedback on. If you have a question please send a
