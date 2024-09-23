@@ -7,25 +7,25 @@ next: false
 
 **CS155 Introduction to Version Control(1-0-1)(F,S).** Introduction to
 the central ideas, practices, and day-to-day usage of software version
-control using Git. Basic client side usage such as committing,
-branching, merging, and pull-requests will be explored. COREQ: CS153.
+control using Git. Basic client-side usage such as committing,
+branching, merging, and pull requests will be explored. COREQ: CS153.
 
 ## Course Learning Outcomes
 
-By the end of this course the student should have achieved the following
+By the end of this course, the student should have achieved the following
 course learning outcomes.
 
 | TLO | SLO | Objective                                   | Assessment Instrument |
 |-----|-----|---------------------------------------------|-----------------------|
 | 1   |     | Explain the basics of version control       | Reading Quiz          |
-|     | 1.1 | Practice adding commits                     | Hands on Lab          |
-|     | 1.2 | Practice pushing and pulling code           | Hands on Lab          |
-|     | 1.3 | Explain how Git works on the client side    | Hands on Lab          |
+|     | 1.1 | Practice adding commits                     | Hands-on Lab          |
+|     | 1.2 | Practice pushing and pulling code           | Hands-on Lab          |
+|     | 1.3 | Explain how Git works on the client side    | Hands-on Lab          |
 | 2   |     | Explore the tooling needed to work with Git | Reading Quiz          |
 |     | 2.1 | Practice using Git, VSCode and GitHub       | Homework 1 and 2      |
 | 3   |     | Explain the basics of branching/merging     | Reading Quiz          |
-|     | 3.1 | Practice merging code                       | Hands on Lab          |
-|     | 3.2 | Practice resolving merge conflicts          | Hands on Lab          |
+|     | 3.1 | Practice merging code                       | Hands-on Lab          |
+|     | 3.2 | Practice resolving merge conflicts          | Hands-on Lab          |
 |     | 3.3 | Explore sending a Patch over email          | Homework 2            |
 
 - [Bloom's Taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/)
@@ -82,9 +82,9 @@ Your final grade will be calculated with the following weights in Canvas.
 - Assignments - 35%
 - Final - 20%
 
-There will be several quizzes over the assigned reading and general git usage.
+There will be several quizzes over the assigned reading and general Git usage.
 The quizzes are open notes and open book and must be done individually. This
-class is centered around hands on practice. There are several [Hands-on
+class is centered around hands-on practice. There are several [Hands-on
 Labs](https://github.com/shanep?tab=repositories&q=250&type=&language=&sort=)
 that you will work on each week. You will get credit for doing the labs through
 Canvas quizzes.
