@@ -3,18 +3,18 @@
 Now that you have completed all the tasks the only thing left to do is to submit your code as a
 patch so you can receive a grade for all your hard work.
 
-### Turn on Two Factor
+### Turn on Two-Factor
 
-Turn on [Two factor authentication](https://support.google.com/accounts/answer/185839?hl=en&co=GENIE.Platform%3DDesktop)
+Turn on [Two-factor authentication](https://support.google.com/accounts/answer/185839?hl=en&co=GENIE.Platform%3DDesktop)
 for your Boise State provided email account
 
 ::: danger
 
 Do NOT skip this step. Boise State University uses Gmail as their email provider and Gmail
-requires you to use two factor authentication in order to generate an app password.
+requires you to use two-factor authentication in order to generate an app password.
 
 You need to use your Boise State University issued email account to send the email and you **must**
-have two factor authentication turned on.
+have two-factor authentication turned on.
 
 :::
 
@@ -42,14 +42,14 @@ you will not be able to see it again.
 
 ::: details I can't generate a password
 
-If you get the error shown below it typically means that you have not enabled two factor
+If you get the error shown below it typically means that you have not enabled two-factor
 authentication. Follow these steps to resolve the issue:
 
 
-1. Go back and ensure you have [two factor authentication](#turn-on-two-factor) enabled.
+1. Go back and ensure you have [two-factor authentication](#turn-on-two-factor) enabled.
 2. [Log out](https://support.google.com/mail/answer/8154) of your
    Gmail account
-3. Log back into your Gmail account and make sure you did have to use two factor authentication
+3. Log back into your Gmail account and make sure you were required to use two-factor authentication to log in.
 4. If the steps above fail then open an [incognito
    tab](https://support.google.com/chrome/answer/95464) and go back to the first step
 5. If you still have issues reboot your machine and go back to the first step
@@ -83,7 +83,7 @@ generated in the [previous step](#generate-an-app-password).
 
 ![Edit config](/images/edit-config.png)
 
-Congrats you should be all setup to send code patch's over email. Now lets create a patch!
+Congrats you should be all setup to send code patches over email. Now let's create a patch!
 
 ### Create a patch file
 
@@ -91,7 +91,7 @@ We are now going to do what is called a [squash
 merge](https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html) and then create
 a patch file with all our changes in one commit.
 
-1. First lets fetch the upstream branch. This is the branch that you originally forked from at the
+1. First let's fetch the upstream branch. This is the branch that you originally forked from at the
   start of the project
 
 ```bash
@@ -155,13 +155,13 @@ your submission to the class mailing list!
 
 :::
 
-Finally we can create our patch to email out!
+Finally, we can create our patch to email out!
 
 ```bash
 git send-email --to youremail@u.boisestate.edu HEAD^
 ```
 
-You should see results similar to what is show below.
+You should see results similar to what is shown below.
 
 ```bash
 $ git send-email --to youremail@u.boisestate.edu HEAD^
@@ -295,7 +295,7 @@ Open a terminal and submit your patch.
 	git checkout submit
 	git send-email --to {{ $frontmatter.submit_email}} HEAD^
 
-Assuming all went well you are now complete! You have created a patch file from a squash merge,
+Assuming all went well you have now completed the assignment! You have created a patch file from a squash merge,
 emailed it and tested the resulting patch. You are well on your way to becoming an advanced
 git user!
 
