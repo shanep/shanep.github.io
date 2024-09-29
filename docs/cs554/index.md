@@ -181,6 +181,37 @@ slide deck that includes the following sections:
 
 - Midterm Presentations continued.
 
+### Week 9
+
+#### Mon 10/14
+
+- I have created an overleaf project for each of you and shared it with your student account
+- All students will need to submit a 5 page write up with 1 page for references.
+- Review the latex template in class
+- Sections
+  - Abstract
+  - Introduciton
+  - Related work - Use the papers that you have been presenting
+  - Methodology/Architecture
+  - Evaluation/Results Section
+  - Discussion
+  - Conclusion
+
+#### Wed 10/16
+
+- Individual meeting with: Sean
+
+### Week 10
+
+#### Mon 10/21
+
+- Present research papers.
+
+#### Wed 10/23
+
+- Individual meeting with: Matt
+
+
 ## Paper Presentations
 
 Each presentation will last 5 minutes and should include the sections listed
