@@ -190,7 +190,7 @@ slide deck that includes the following sections:
 - Review the latex template in class
 - Sections
   - Abstract
-  - Introduciton
+  - Introduction
   - Related work - Use the papers that you have been presenting
   - Methodology/Architecture
   - Evaluation/Results Section
@@ -205,12 +205,66 @@ slide deck that includes the following sections:
 
 #### Mon 10/21
 
-- Present research papers.
+- Present research papers in class.
 
 #### Wed 10/23
 
 - Individual meeting with: Matt
 
+### Week 11
+
+#### Mon 10/28
+
+- Present research papers in class.
+
+#### Wed 10/30
+
+- Individual meeting with: Claude
+
+### Week 12
+
+#### Mon 11/04
+
+- Present research papers in class.
+
+#### Wed 11/06
+
+- Individual meeting with: Alex
+
+### Week 13
+
+#### Mon 11/11
+
+- Present research papers in class.
+
+#### Wed 11/13
+
+- Individual meeting with: Sharif
+
+### Week 14
+
+- Thanksgiving Break
+
+### Week 15
+
+#### Mon 11/25
+
+- Present research papers in class.
+
+#### Wed 11/27
+
+- Individual meeting with: Luke
+
+### Week 16
+
+#### Mon 12/02
+
+- Final presentations - 20 minutes each
+- Final write up due on canvas
+
+#### Wed 12/04
+
+- Final presentations continued
 
 ## Paper Presentations
 
@@ -244,8 +298,7 @@ Final Grade formula: **Grade = [Earned points] / [Total Points Offered]**.
 
 - 20% In class participation and discussion
 - 80% Research Paper or Artifact
-  - Midterm Presentation: 20%
-  - Final Presentation: 20%
-  - Final Paper or Artifact: 40%
+  - Midterm Presentation
+  - Final Presentation and Final Paper or Artifact
 
 <!--@include: ../../parts/syllabus-boiler.md-->
