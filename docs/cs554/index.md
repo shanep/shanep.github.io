@@ -69,7 +69,7 @@ writing a new scheduler, a new file system, a new memory management system, etc.
 - Discuss the research/project ideas
 - Discuss class meeting locations off campus
 - Discuss Zoom meetings for remote students (if needed)
-- Come to class with a small write up detailing your idea/direction, you will be given 10 minutes of class time to present. 
+- Come to class with a small write up detailing your idea/direction, you will be given 10 minutes of class time to present.
   - If you can't think of anything that's OK!! Come to class with nothing and I will help you figure out an awesome project to work on.
 
 ::: tip Week 1 - Deliverable
@@ -199,17 +199,11 @@ slide deck that includes the following sections:
 
 #### Wed 10/16
 
-- Individual meeting with: Sean
+- Individual meeting with: Sean and Matt
 
 ### Week 10
 
-#### Mon 10/21
-
-- Present research papers in class.
-
-#### Wed 10/23
-
-- Individual meeting with: Matt
+- No class this week
 
 ### Week 11
 
