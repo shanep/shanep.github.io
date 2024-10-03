@@ -12,14 +12,14 @@ background knowledge before you attempt the hands-on labs. Once you have
 completed the reading linked below, log into the canvas site and take the
 associated quiz.
 
-- [Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
-- [Recording Changes to the Repository](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
-- [Viewing the commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
-- [Undoing Things](https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things)
-- [Working with Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
-- [Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
-- [Aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
-- [Summary](https://git-scm.com/book/en/v2/Git-Basics-Summary)
+- [2.1 Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
+- [2.2 Recording Changes to the Repository](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
+- [2.3 Viewing the commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
+- [2.4 Undoing Things](https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things)
+- [2.5 Working with Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
+- [2.6 Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+- [2.7 Aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
+- [2.8 Summary](https://git-scm.com/book/en/v2/Git-Basics-Summary)
 - [VSCode Terminal Basics](https://code.visualstudio.com/docs/terminal/basics)
 
 ## Homework
