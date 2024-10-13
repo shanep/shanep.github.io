@@ -183,7 +183,11 @@ slide deck that includes the following sections:
 
 ### Week 9
 
-#### Mon 10/14
+#### Wed 10/14
+
+- Midterm Presentations continued.
+
+#### Wed 10/16
 
 - I have created an overleaf project for each of you and shared it with your student account
 - All students will need to submit a 5 page write up with 1 page for references.
@@ -197,43 +201,40 @@ slide deck that includes the following sections:
   - Discussion
   - Conclusion
 
-#### Wed 10/16
-
-- Individual meeting with: Sean and Matt
-
 ### Week 10
 
-- No class this week
+- No class this week. Use class time to prepare for your individual meetings starting next
+  week. Please prepare the following to review.
+
+-  A rough draft of your Introduction
+-  A Related Work section that incorporates the papers you have presented
+-  A Methodology or Architecture diagram
 
 ### Week 11
 
 #### Mon 10/28
 
-- Present research papers in class.
+- Each student will have a 30 minute individual meeting
+- Individual meeting with: Sean and Matt
 
 #### Wed 10/30
 
-- Individual meeting with: Claude
+- Present research papers in class.
 
 ### Week 12
 
 #### Mon 11/04
 
-- Present research papers in class.
+- Each student will have a 30 minute individual meeting
+- Individual meeting with: Alex Sharif
 
 #### Wed 11/06
 
-- Individual meeting with: Alex
+- Present research papers in class.
 
 ### Week 13
 
-#### Mon 11/11
-
-- Present research papers in class.
-
-#### Wed 11/13
-
-- Individual meeting with: Sharif
+- Bonus Week!
 
 ### Week 14
 
@@ -241,24 +242,14 @@ slide deck that includes the following sections:
 
 ### Week 15
 
-#### Mon 11/25
-
-- Present research papers in class.
-
-#### Wed 11/27
-
-- Individual meeting with: Luke
+- Final Presentations - 30 minutes each
+- Final write up due on canvas
 
 ### Week 16
 
-#### Mon 12/02
-
-- Final presentations - 20 minutes each
+- Final Presentations - 30 minutes each
 - Final write up due on canvas
 
-#### Wed 12/04
-
-- Final presentations continued
 
 ## Paper Presentations
 
