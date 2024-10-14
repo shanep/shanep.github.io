@@ -83,7 +83,7 @@ As you can see by the table below we are going to start with a simpler
 process and just focus on **User Stories** and **Tasks** in this course.
 In future classes you will continue to use scrum and have a chance to
 explore some of the other concepts. By the time you get to CS481 -
-Senior Design you will be ready to apply the entire process on an real
+Senior Design you will be ready to apply the entire process on a real
 project from industry.
 
 It is important to take the time to understand this process because in
@@ -118,7 +118,7 @@ prepared for harder classes 😁.
   at a time
 
 When you start working on your final project you will notice that it has
-been configured with several user stories and and associated tasks for
+been configured with several user stories and associated tasks for
 you to complete. Using the scrum/agile process should help tame to
 complexity of software development.
 
