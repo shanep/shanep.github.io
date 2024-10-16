@@ -205,10 +205,13 @@ slide deck that includes the following sections:
 
 - No class this week. Use class time to prepare for your individual meetings starting next
   week. Please prepare the following to review.
-
--  A rough draft of your Introduction
+-  Identify at least one conference or journal that you may be able to publish in.
+   - Look into previous work
+   - What template do you need
+   - What tracks are there? (short paper, research, poster, etc.)
 -  A Related Work section that incorporates the papers you have presented
 -  A Methodology or Architecture diagram
+-  At least one research question
 
 ### Week 11
 
@@ -219,7 +222,7 @@ slide deck that includes the following sections:
 
 #### Wed 10/30
 
-- Present research papers in class.
+- Present research papers in class AND present what journals/conferences you found
 
 ### Week 12
 
