@@ -5,12 +5,16 @@
 
 \documentclass{shanep}
 \addbibresource{shanekpanter.bib}
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
 \begin{document}
 \mywebheader{https://shanepanter.com}{Shane K. Panter}{shanepanter@boisestate.edu}
 
-\resheading{Education}
+\section*{Education}
 \begin{itemize}
-
   \ressubheading
       {\includegraphics[scale=.2]{bsu.jpg}}
       {Ph.D in Computing \textbf{(ABD)}}
@@ -24,10 +28,9 @@
       {Spring 2013}
       {Boise State University}
       {}
-
 \end{itemize} % End Education list
 
-\resheading{Academic Appointments}
+\section*{Academic Appointments}
 \begin{itemize}
   \ressubheading
       {\includegraphics[scale=.2]{bsu.jpg}}
@@ -59,7 +62,7 @@
 
 \end{itemize}
 
-\resheading{Industry Experience}
+\section*{Industry Experience}
 \begin{itemize}
 
   \ressubheading
@@ -85,10 +88,11 @@
 
 \end{itemize}
 
-\resheading{Publications}
+\section*{Publications}
+
 \printbibliography[heading=none]
 
-\resheading{Grants}
+\section*{Grants}
 
 \begin{itemize}
   \item{NSA, “GenCyber 2024 Summer Camp at Boise State University for Secondary Teachers,” PI:
@@ -102,7 +106,7 @@
     5/14/2018 - 8/13/2019, \$131,995.20 Not Funded}
 \end{itemize}
 
-\resheading{Teaching}
+\section*{Teaching}
 
 \begin{itemize}
   \item CS117 C++ for Engineers - Course coordinator (Fall 2015 - Present)
@@ -123,7 +127,7 @@
 \end{itemize}
 
 \pagebreak
-\resheading{Service}
+\section*{Service}
 
 \subsection*{Internal - Boise State University}
 \begin{itemize}
