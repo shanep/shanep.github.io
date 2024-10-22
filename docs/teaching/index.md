@@ -37,10 +37,10 @@ in the respective syllabus.
 All exams are closed book, closed notes, closed internet.
 :::
 
-- CS117 - C++ for Engineers (exam)
-- CS155 - Introduction to Version Control (exam)
-- CS208 - Introduction to Full Stack Web Development (exam)
-- CS452 - Operating Systems (portfolio)
+- [CS117](../cs117) - C++ for Engineers (exam)
+- [CS155](../cs155) - Introduction to Version Control (exam)
+- [CS208](../cs208) - Introduction to Full Stack Web Development (exam)
+- [CS452](../cs452) - Operating Systems (portfolio)
 
 If you would like to proceed with a course challenge please review the
 [guidelines](https://www.boisestate.edu/registrar/transfers/prior-learning-credit/course-challenge/)
