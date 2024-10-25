@@ -205,39 +205,47 @@ slide deck that includes the following sections:
 
 - No class this week. Use class time to prepare for your individual meetings starting next
   week. Please prepare the following to review.
--  Identify at least one conference or journal that you may be able to publish in.
-   - Look into previous work
-   - What template do you need
-   - What tracks are there? (short paper, research, poster, etc.)
--  A Related Work section that incorporates the papers you have presented
--  A Methodology or Architecture diagram
--  At least one research question
+- Identify at least one conference or journal that you may be able to publish in.
+  - Look into previous work
+  - What template do you need
+  - What tracks are there? (short paper, research, poster, etc.)
+- A Related Work section that incorporates the papers you have presented
+- A Methodology or Architecture diagram
+- At least one research question
 
 ### Week 11
 
 #### Mon 10/28
 
-- Each student will have a 30 minute individual meeting
-- Individual meeting with: Sean and Matt
+- Each student will have 10-20 minutes review their work from the previous week.
+- You will need to show the following:
+  - Related Work section
+  - Methodology or Architecture diagram
+  - At least one research question
+  - What conference or journal you are targeting
 
 #### Wed 10/30
 
-- Present research papers in class AND present what journals/conferences you found
+- Continue presenting work.
+- Set goals for following week and update progress notes
 
 ### Week 12
 
 #### Mon 11/04
 
-- Each student will have a 30 minute individual meeting
-- Individual meeting with: Alex Sharif
+- Each student will present the following sections of their paper:
+  - Methodology/Architecture (complete)
 
 #### Wed 11/06
 
-- Present research papers in class.
+- Continue presenting work.
+- Set goals for following week and update progress notes
 
 ### Week 13
 
-- Bonus Week!
+#### Mon 11/11 and Wed 11/13
+
+- Present the completed Evaluation/Results Section
 
 ### Week 14
 
@@ -252,7 +260,6 @@ slide deck that includes the following sections:
 
 - Final Presentations - 30 minutes each
 - Final write up due on canvas
-
 
 ## Paper Presentations
 
