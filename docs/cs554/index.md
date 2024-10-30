@@ -2,13 +2,15 @@
 next: false
 ---
 
-# CS 554 Operating Systems
+# CS 554 Advanced Operating Systems
 
-**CS 554 ADVANCED OPERATING SYSTEMS (3-0-3)(S)** Operating system kernels: process management,
-memory management, file systems, security and protection. Advanced concurrent programming
-techniques. Operating system design and construction techniques. Modifying operating system code to
-observe behavior, add new functionality and run experiments. Support for soft and hard real-time
-systems, big data, cybersecurity, virtual machines and other domains. PREREQ: CS 552
+**CS 554 ADVANCED OPERATING SYSTEMS (3-0-3)(S)** Operating system kernels:
+process management, memory management, file systems, security and protection.
+Advanced concurrent programming techniques. Operating system design and
+construction techniques. Modifying operating system code to observe behavior,
+add new functionality and run experiments. Support for soft and hard real-time
+systems, big data, cybersecurity, virtual machines and other domains. PREREQ: CS
+552
 
 ## Description
 
@@ -233,19 +235,28 @@ slide deck that includes the following sections:
 
 #### Mon 11/04
 
-- Each student will present the following sections of their paper:
-  - Methodology/Architecture (complete)
+- Present Research Paper
+  - Sean - [A low-latency optimization of a rust-based secure operating system for embedded devices](https://drive.google.com/file/d/1-2QfBrzwhgwK5gffJFqaoMaSzQjPiMqA/view?usp=drive_link)
+  - Matt - [CHERIoT: Complete Memory Safety for Embedded Devices](https://drive.google.com/file/d/1XSKbrxhlt4RJPiigFzEPG905HttSeDZc/view?usp=drive_link)
 
 #### Wed 11/06
 
-- Continue presenting work.
-- Set goals for following week and update progress notes
+- Present Research Paper
+  - Claude [Emulation of Intel's 8086 Microprocessor using Rust and Web Assembly](https://drive.google.com/file/d/1IwPY7_2h7jnyzJefkShPZIZsv79X7QOa/view?usp=drive_link)
+  - Alex [RedLeaf: Towards an operating system for safe and verified firmware](https://drive.google.com/file/d/1eY_TUqN8OO_sAQulgIjP_yR-sfGYtP2Q/view?usp=drive_link)
 
 ### Week 13
 
-#### Mon 11/11 and Wed 11/13
+#### Mon 11/11
 
-- Present the completed Evaluation/Results Section
+- Present Research Paper
+  - Sharif [An Empirical Study of Rust-for-Linux: The Success, Dissatisfaction, and Compromise](https://drive.google.com/file/d/1tq2idSyoTmX1VLgGtZE-0ANGDAnn_BAG/view?usp=drive_link)
+  - Luke [rOOM: a Rust-Based linux out of memory kernel component](https://drive.google.com/file/d/1UFC9t7-N59c0161EK4E9UoUj1oHUtcOu/view?usp=drive_link)
+
+#### Wed 11/13
+
+- Set presentation schedule for final presentations
+- Final off campus meeting (location TBD)
 
 ### Week 14
 
@@ -253,25 +264,24 @@ slide deck that includes the following sections:
 
 ### Week 15
 
-- Final Presentations - 30 minutes each
-- Final write up due on canvas
+- Final Presentations - 20 minutes each
 
 ### Week 16
 
-- Final Presentations - 30 minutes each
+- Final Presentations - 20 minutes each
 - Final write up due on canvas
 
 ## Paper Presentations
 
-Each presentation will last 5 minutes and should include the sections listed
+Each presentation will last 20 minutes and should include the sections listed
 below. We will not create a slide deck for this presentation. Instead, you will
 need to have a **hard** copy of the paper with handwritten annotations that you will
 use to guide your presentation. You will turn in your annotated paper at the end
 of your presentation (**this is your participation grade**).
 
-After the presentation, you will lead a 5-minute discussion about the paper.
+After the presentation, you will lead a 5-10 minute discussion about the paper.
 You should prepare questions in advance for the discussion, e.g., things in
-which you disagree with the authors or on which you would like to hear others’
+which you disagree with the authors or on which you would like to hear others'
 opinions.
 
 Sections to include in your presentation:
