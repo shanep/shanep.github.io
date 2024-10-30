@@ -237,7 +237,7 @@ slide deck that includes the following sections:
 
 - Present Research Paper
   - Sean - [A low-latency optimization of a rust-based secure operating system for embedded devices](https://drive.google.com/file/d/1-2QfBrzwhgwK5gffJFqaoMaSzQjPiMqA/view?usp=drive_link)
-  - Matt - [CHERIoT: Complete Memory Safety for Embedded Devices](https://drive.google.com/file/d/1XSKbrxhlt4RJPiigFzEPG905HttSeDZc/view?usp=drive_link)
+  - Matt - [HermitCore: A Unikernel for Extreme Scale Computing](https://drive.google.com/file/d/12AdL580iAKlYpHtKtL_exk9XEf95dIDh/view?usp=drive_link)
 
 #### Wed 11/06
 
