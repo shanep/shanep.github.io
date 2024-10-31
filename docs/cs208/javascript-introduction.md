@@ -1,12 +1,12 @@
 # JavaScript Introduction
 
-In this Module, we will introduce the JavaScript programming language.
+In this module, we will introduce the JavaScript programming language.
 JavaScript is one of the most popular programming languages in the
 world. JavaScript is supported by every major web browser and makes web
 applications like Gmail and Google Maps possible. JavaScript is also
 popular outside the web browser for creating server-side web
-applications (Ex: Node.js, which runs JavaScript). While JavaScript is a
-fairly easy language to pick up if you already know another language
+applications (e.g, Node.js - which runs JavaScript). While JavaScript is a
+fairly easy language to pick up if you already know another language,
 such as Java or C# there are enough gotchas to warrant reviewing the
 language in depth.
 
@@ -21,7 +21,7 @@ This module will take an estimated 15 - 18 hours to complete.
 - Complete the project 3 on canvas
 - Complete the end of module reflection on canvas(flip grid)
 
-## Important topics
+## Important Topics
 
 - Syntax and variables
 - Conditionals
@@ -37,6 +37,6 @@ This module will take an estimated 15 - 18 hours to complete.
 
 By the end of this lesson, you will be able to:
 
-- Identify the differences between JavaScript and and more traditional Object Oriented language like Java or C#
+- Identify the differences between JavaScript and more traditional Object-Oriented language like Java or C#
 - Explore how to use Javascript in an asynchronous manner
 - Construct simple JavaScript programs that will run in the browser
