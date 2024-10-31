@@ -264,12 +264,27 @@ slide deck that includes the following sections:
 
 ### Week 15
 
-- Final Presentations - 20 minutes each
+#### Mon 11/25
+
+- Sean Presentation
+- Luke Presentation
+
+#### Wed 11/27
+
+- Matt Presentation
+- Claude Presentation
 
 ### Week 16
 
-- Final Presentations - 20 minutes each
-- Final write up due on canvas
+#### Mon 12/02
+
+- Sharif Presentation
+- Alex Presentation
+
+#### Wed 12/04
+
+- Final Presentations overflow time
+- Final class wrap up and discussion
 
 ## Paper Presentations
 
