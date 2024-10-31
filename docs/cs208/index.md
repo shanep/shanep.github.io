@@ -17,7 +17,7 @@ database APIs. PREREQ: CS121 COREQ: CS155.
 
 Below is a tentative schedule for the semester that you can use to plan out your
 work. Hard due dates are all posted in Canvas. While every effort is made to
-maintain the schedule below minor changes may be made to accommodate events that
+maintain the schedule below, minor changes may be made to accommodate events that
 are outside of anyone's control (snow days, global pandemics, etc.)
 
 **All due dates are posted in Canvas.**
@@ -84,7 +84,7 @@ are outside of anyone's control (snow days, global pandemics, etc.)
 ### Week 13
 
 - 5.1 Final Project
-- 5.2 Final project simulated stand up meeting 1
+- 5.2 Final project simulated stand-up meeting 1
 
 ### Week 14
 
@@ -92,8 +92,8 @@ are outside of anyone's control (snow days, global pandemics, etc.)
 
 ### Week 15
 
-- 5.3 Final project simulated stand up meeting 2
-- 5.4 Final project simulated stand up meeting 3 (Merging Madness)
+- 5.3 Final project simulated stand-up meeting 2
+- 5.4 Final project simulated stand-up meeting 3 (Merging Madness)
 
 ### Week 16
 
@@ -192,7 +192,7 @@ There are several individual projects this semester.
 - [Project 5](https://github.com/shanep/cs208-p5-starter) - This project will be
   group based and allow you to practice not only your web development skills but
   also use git and GitHub in a team-based environment. All grades are given
-  **individually** so even though you will work in a group you will grade will
+  **individually** so even though you will work in a group, your grade will
   not be impacted by any team members lack of effort or contributions.
 
 <!--@include: ../../parts/syllabus-boiler.md-->
