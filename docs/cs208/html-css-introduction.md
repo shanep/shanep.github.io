@@ -1,15 +1,15 @@
 # HTML and CSS Introduction
 
-In this module, we will investigate basic website structure and using
+In this module, we will investigate basic website structure and be using
 HTML and CSS concepts. We will learn how to build simple static websites
 and style our HTML using Cascading Style Sheets (CSS).
 
 HyperText Markup Language (HTML) is a fundamental building block of the
 web. When HTML was first invented it was very simple. However, the
 modern web has added a lot of complexity to the standard. For example,
-the current HTML living standard pdf is (as of 2021) 1298 pages long!
-Compare that to the current (as of 2021) C++ standard pdf at 1448 pages
-long. C++ is a turing complete programming language and HTML is only a
+the current HTML living standard PDF is (as of 2021) 1298 pages long!
+Compare that to the current (as of 2021) C++ standard PDF at 1448 pages
+long. C++ is a turing-complete programming language and HTML is only a
 markup language. Even if you have extensive experience in HTML take some
 time to dive deep into the standard because there is always something
 you can learn 😁.
@@ -17,7 +17,7 @@ you can learn 😁.
 CSS (Cascading Style Sheets) is a textual language for describing how a
 web page is styled for visual presentation. Before CSS was invented it
 was common for web developers to use the `<table>` tag to layout
-websites. CSS is now the defacto standard for adding style to your
+websites. CSS is now the de facto standard for adding style to your
 pages. Check out the [CSS Zen Garden](http://www.csszengarden.com/) for
 a demonstration on the power that modern CSS has!
 
