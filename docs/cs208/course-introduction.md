@@ -6,7 +6,7 @@ building websites. Web development consists of a lot of different
 technologies that have evolved significantly over the years. Originally
 the web was only supposed to enable researchers to share documents in an
 easy manner. However, the web has now evolved into a way to develop and
-deliver applications in a cross platform environment that is almost on
+deliver applications in a cross-platform environment that is almost on
 par with native applications.
 
 What makes web development hard is the vast number of languages,
@@ -16,7 +16,7 @@ very rapidly so what is the new hot thing today will be considered
 obsolete in a few years. This class doesn’t teach frameworks, this class
 teaches the fundamentals that are used to build everything else.
 
-This week gives a very high level overview of all the technologies used
+This week gives a very high-level overview of all the technologies used
 in web development. While you are not expected to be an expert in
 everything having a general understanding of the terminology can help
 you be a better web developer.
