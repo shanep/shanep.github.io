@@ -32,7 +32,7 @@ This module will take an estimated 20 - 25 hours to complete.
 - Complete project 2 on canvas
 - Complete the end of module reflection on canvas(flip grid)
 
-## Important topics
+## Important Topics
 
 - Document Structure
 - Fundamental HTML Tags
