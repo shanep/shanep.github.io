@@ -32,7 +32,7 @@ This module will take an estimated 15 - 18 hours to complete.
 - Complete the project 1 on canvas
 - Complete the end of module reflection on canvas(flip grid)
 
-## Important topics
+## Important Topics
 
 - Web History
 - IP addresses, domain names, and URLs
