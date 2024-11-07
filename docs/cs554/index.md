@@ -255,44 +255,58 @@ slide deck that includes the following sections:
 
 #### Wed 11/13
 
-- Set presentation schedule for final presentations
-- Final off campus meeting (location TBD)
+- Present Research Paper and Discuss Research Papers
+  - [Linux kernel vulnerabilities: State-of-the-art defenses and open problems](https://drive.google.com/file/d/1LIEWswkWezQWb4nOmXl8t7gXGiTSXfy3/view?usp=drive_link)
+  - [Theseus: an Experiment in Operating System Structure and State Management](https://drive.google.com/file/d/1hL2MF5V4RYMljTkCRfMqiW-skk5gBlGK/view?usp=drive_link)
 
 ### Week 14
 
-- Thanksgiving Break
+#### Mon 11/18
+
+With one week to go until the end of the semester we will have a round of
+lightning talks to get everyone up to speed on their projects and make sure we
+are on track to finish the semester strong. Each student will have 5 minutes to
+present their project and discuss their progress. Timings will be strictly
+enforced!
+
+- Presentation Lighting Round (10 minutes total)
+  - 5 minute presentation
+  - 5 minute discussion
+
+#### Wed 11/20
+
+- Final off campus meeting to wrap up the semester!
 
 ### Week 15
 
-#### Mon 11/25
-
-- Sean Presentation
-- Luke Presentation
-
-#### Wed 11/27
-
-- Matt Presentation
-- Claude Presentation
+- Thanksgiving Break
 
 ### Week 16
 
+Each student will have 15 minutes to present with 5 minutes of questions.
+Timings will be strictly enforced because we are at the end of the semester and
+need to make sure everyone has time to present.
+
 #### Mon 12/02
 
-- Sharif Presentation
-- Alex Presentation
+- Luke Presentation
+- Matt Presentation
+- Sean Presentation
 
 #### Wed 12/04
 
-- Final Presentations overflow time
-- Final class wrap up and discussion
+- Claude Presentation
+- Sharif Presentation
+- Alex Presentation
 
 ## Paper Presentations
 
-Each presentation will last 20 minutes and should include the sections listed
-below. We will not create a slide deck for this presentation. Instead, you will
-need to have a **hard** copy of the paper with handwritten annotations that you will
-use to guide your presentation. You will turn in your annotated paper at the end
-of your presentation (**this is your participation grade**).
+Each presentation will last 20 minutes (15 min for presentation and 5 min for
+questions) and should include the sections listed below. We will not create a
+slide deck for this presentation. Instead, you will need to have a **hard** copy
+of the paper with handwritten annotations that you will use to guide your
+presentation. You will turn in your annotated paper at the end of your
+presentation (**this is your participation grade**).
 
 After the presentation, you will lead a 5-10 minute discussion about the paper.
 You should prepare questions in advance for the discussion, e.g., things in
