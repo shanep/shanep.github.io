@@ -290,14 +290,14 @@ need to make sure everyone has time to present.
 #### Mon 12/02
 
 - Luke Presentation
-- Matt Presentation
+- Alex Presentation
 - Sean Presentation
 
 #### Wed 12/04
 
 - Claude Presentation
 - Sharif Presentation
-- Alex Presentation
+- Matt Presentation
 
 ## Paper Presentations
 
