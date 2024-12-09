@@ -4,12 +4,7 @@ General resources for teaching and other fun stuff.
 
 
 ## Course Materials
-- [CS117 - C++ for Engineers](../cs117/index.md)
 - [CS208 - Introduction to Full Stack Web Development](../cs208/index.md)
-- [CS452 - Operating Systems](../cs452/index.md)
-
-## Syllabi
-- [CS155 - Introduction to Version Control](../syllabi/cs155-syllabus.pdf)
 
 ## Guides
 
