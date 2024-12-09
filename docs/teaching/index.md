@@ -9,7 +9,7 @@ General resources for teaching and other fun stuff.
 - [CS452 - Operating Systems](../cs452/index.md)
 
 ## Syllabi
-- [CS155 - Introduction to Version Control](../public/syllabi/cs155-syllabus.pdf)
+- [CS155 - Introduction to Version Control](../syllabi/cs155-syllabus.pdf)
 
 ## Guides
 
