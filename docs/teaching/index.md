@@ -3,9 +3,6 @@
 General resources for teaching and other fun stuff.
 
 
-## Course Materials
-- [CS208 - Introduction to Full Stack Web Development](../cs208/index.md)
-
 ## Guides
 
 - [Github Classroom Setup](github-classroom-setup.md)
