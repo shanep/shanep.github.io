@@ -15,7 +15,7 @@ install and configure all the tools correctly, especially if you are
 using the Windows operating system.
 
 1. [Install Git](https://git-scm.com/downloads)
-2. [Install Visual Studio Code (Java)](https://code.visualstudio.com/learntocode/)
+2. [Install Visual Studio Code](https://code.visualstudio.com/)
 3. Read through the [User interface tutorial](https://code.visualstudio.com/docs/getstarted/userinterface)
 4. [Read Terminal Basics](https://code.visualstudio.com/docs/terminal/basics)
 5. Complete all the steps in the first-time configuration section of this document.
