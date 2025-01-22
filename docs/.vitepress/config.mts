@@ -8,11 +8,10 @@ export default defineConfig({
 
   markdown: {
     theme: { light: 'github-light', dark: 'github-dark' },
-    math: true,
     config: (md) => {
+        // @ts-ignore
         md.use(footnote)
     }
-
   },
   cleanUrls: true,
 
