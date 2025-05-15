@@ -47,15 +47,16 @@ hero:
 
 ## Bio
 
-Shane Panter spent 10+ years in industry before joining the Computer Science
-department at Boise State University as a Clinical Assistant Professor. Prior to
-joining Boise State University he worked in the manufacturing industry at
-several companies supporting and developing large scale Enterprise Resource
-Planning (ERP) and Material Requirements Planning (MRP) Systems. Additionally,
-he spent time at Hewlett Packard working on Firmware in both kernel and user
-space to manage the energy star components of their enterprise laser jet
-printers. His research interests are in systems, software engineering, and
-cybersecurity in both user space and kernel space.
+Shane K. Panter brings over a decade of industry experience to his role as a
+Clinical Assistant Professor in the Computer Science Department at Boise State
+University. His professional background includes extensive work in
+manufacturing, where he developed and supported large-scale Enterprise Resource
+Planning (ERP) and Material Requirements Planning (MRP) systems. At
+Hewlett-Packard, Shane contributed to firmware development, working in both
+kernel and user space to optimize energy efficiency for enterprise laser jet
+printers. His current research interests focus on empirical software
+engineering, and cybersecurity, particularly within kernel and user space
+environments.
 
 ## Research Interests
 
