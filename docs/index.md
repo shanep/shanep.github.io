@@ -52,10 +52,10 @@ Clinical Assistant Professor in the Computer Science Department at Boise State
 University. His professional background includes extensive work in
 manufacturing, where he developed and supported large-scale Enterprise Resource
 Planning (ERP) and Material Requirements Planning (MRP) systems. At
-Hewlett-Packard, Shane contributed to firmware development, working in both
+Hewlett-Packard, Shane contributed to firmware development, working in
 kernel and user space to optimize energy efficiency for enterprise laser jet
 printers. His current research interests focus on empirical software
-engineering, and cybersecurity, particularly within kernel and user space
+engineering and cybersecurity, particularly within kernel and user space
 environments.
 
 ## Research Interests
