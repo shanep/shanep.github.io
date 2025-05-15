@@ -19,7 +19,7 @@ hero:
       text: research
       link: /research/index
   image:
-    src: /images/me.jpg
+    src: /images/shane_panter.jpeg
     alt: Shane K. Panter
 ---
 
