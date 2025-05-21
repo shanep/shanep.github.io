@@ -60,8 +60,7 @@ environments.
 
 ## Research Interests
 
-- Software Engineering
-- Systems
+- Empirical Software Engineering
 - Cybersecurity
 - Software Security
 
