@@ -13,9 +13,6 @@ hero:
       text: CV
       link: https://docs.google.com/document/d/13OEBs0UK4xZEHBpWOfhIjOzPBn9ocpYrtajHZHN7zpw/edit?usp=sharing
     - theme: alt
-      text: teaching
-      link: /teaching/index
-    - theme: alt
       text: research
       link: /research/index
   image:
