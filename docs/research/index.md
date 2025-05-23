@@ -10,18 +10,21 @@ conference. Delft University of Technology has developed and maintains a website
 called [conf.researchr.org](https://conf.researchr.org/) that a lot of conferences
 use to manage their conferences.
 
-### Top Conferences (A*)
-
+- [ESEM](https://conf.researchr.org/series/esem) - Empirical Software Engineering and Measurement
 - [ICSE](http://www.icse-conferences.org/) - International Conference on Software Engineering
 - [FSE](https://www.esec-fse.org/index) - Foundations of Software Engineering
 - [ASE](https://ase-conferences.org/) - Automated Software Engineering
 - [ISSTA](https://www.issta.org/) - International Symposium on Software Testing and Analysis
+- [ICPC](https://conf.researchr.org/series/icpc) - International Conference on Program Comprehension
+- [MSR](https://conf.researchr.org/series/msr) - Mining Software Repositories
 
-### Other Conferences (A)
+## Journals
 
-- [ICPC](https://conf.researchr.org/home/icpc-2021) - International Conference on Program Comprehension
-- [SANER](https://saner2021.shidler.hawaii.edu/) - Software Analysis, Evolution, and Reengineering
-- [MSR](https://conf.researchr.org/home/msr-2021) - Mining Software Repositories
-- [ICSME](https://icsme2021.github.io/) - International Conference on Software Maintenance and Evolution
-- [ESEM](https://esem-conferences.org/2021/) - Empirical Software Engineering and Measurement
-- [EASE](https://ease2021.org/) - Evaluation and Assessment in Software Engineering
+- [IEEE Transactions on Software Engineering](https://www.computer.org/csdl/journal/ts)[^1]
+- [Empirical Software Engineering](https://www.springer.com/journal/10664)[^1]
+- [Information and Software Technology](https://www.journals.elsevier.com/information-and-software-technology)[^1]
+- [Journal of Systems and Software](https://www.journals.elsevier.com/journal-of-systems-and-software)[^1]
+- [IEEE Software](https://www.computer.org/csdl/journal/so)[^1]
+- [ACM Transactions on Software Engineering and Methodology](https://dl.acm.org/journal/tosem)[^1]
+
+[^1]: Partnered with ESEM Journal first track
