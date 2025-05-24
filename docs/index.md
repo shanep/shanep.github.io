@@ -42,6 +42,7 @@ hero:
 }
 </style>
 
+
 ## Bio
 
 Shane K. Panter brings over a decade of industry experience to his role as a
@@ -52,8 +53,8 @@ Planning (ERP) and Material Requirements Planning (MRP) systems. At
 Hewlett-Packard, Shane contributed to firmware development, working in
 kernel and user space to optimize energy efficiency for enterprise laser jet
 printers. His current research interests focus on empirical software
-engineering and cybersecurity, particularly within kernel and user space
-environments.
+engineering, cybersecurity, and software security, with a particular emphasis on
+the security of software supply chains.
 
 ## Research Interests
 
