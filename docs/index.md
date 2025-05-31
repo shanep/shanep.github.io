@@ -65,4 +65,5 @@ the security of software supply chains.
 ## Links
 
 - ORCID ID: [0009-0009-1852-3655](https://orcid.org/0009-0009-1852-3655)
-- Figshare: [Shane K. Panter](https://figshare.com/authors/Shane_Panter/18157354)
+- [Google Scholar](https://scholar.google.com/citations?user=0B7MuswAAAAJ&hl=en)
+- [Figshare](https://figshare.com/authors/Shane_Panter/18157354)
