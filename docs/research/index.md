@@ -20,6 +20,16 @@ use to manage their conferences.
 
 ## Journals
 
+Journal impact factors vary significantly by discipline, making cross-field
+comparisons inappropriate. Citation behaviors and perceptions of what
+constitutes "high-impact" research differ markedly across academic fields. For
+instance, life sciences journals typically exhibit higher impact factors owing
+to larger researcher populations and more frequent citation practices.
+Conversely, disciplines within the humanities and social sciences often report
+lower impact factors but place greater emphasis on the enduring relevance and
+longevity of published research.
+
+
 - [ACM Transactions on Software Engineering and Methodology](https://dl.acm.org/journal/tosem)[^1]
   - Impact factor - 6.6 (2023)
 - [IEEE Transactions on Software Engineering](https://www.computer.org/csdl/journal/ts)[^1]
@@ -32,6 +42,12 @@ use to manage their conferences.
   - Impact factor - 3.5 (2023)
 - [IEEE Software](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=52)[^1]
   - Impact factor - 3.3 (2023)
+
+## Published Research links
+
+- [PVAC: Package Version Activity Categorizer, Leveraging Semantic Versioning in a Heterogeneous System](https://rdcu.be/eoUim)
+- [Rusty Linux: Advances in Rust for Linux Kernel Development](https://doi.org/10.1145/3674805.3690756)
+- [Evaluating the Benefits of Team-Based Learning in a Systems Programming Class](https://doi.org/10.1109/FIE44824.2020.9274183)
 
 
 [^1]: Partnered with ESEM Journal first track
