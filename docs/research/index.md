@@ -17,6 +17,7 @@ use to manage their conferences.
 - [ISSTA](https://www.issta.org/) - International Symposium on Software Testing and Analysis (A)
 - [ICPC](https://conf.researchr.org/series/icpc) - International Conference on Program Comprehension (A)
 - [MSR](https://conf.researchr.org/series/msr) - Mining Software Repositories (A)
+- [EASE](https://ease2024.github.io/) - Evaluation and Assessment in Software Engineering (A)
 
 ## Journals
 
