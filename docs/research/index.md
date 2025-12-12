@@ -19,6 +19,7 @@ use to manage their conferences.
 - [MSR](https://conf.researchr.org/series/msr) - Mining Software Repositories (A)
 - [EASE](https://conf.researchr.org/series/ease) - Evaluation and Assessment in Software Engineering (A)
 - [TechDebt](https://conf.researchr.org/series/TechDebt) - International Conference on Technical Debt (B)
+- [ICCIT](https://iccit.org.bd/2025/home/) - International Conference on Computer and Information Technology
 
 ## Journals
 
