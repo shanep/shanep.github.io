@@ -32,7 +32,7 @@ Conversely, disciplines within the humanities and social sciences often report
 lower impact factors but place greater emphasis on the enduring relevance and
 longevity of published research.
 
-- [IEEE Transactions on Software Engineering TSE](https://www.computer.org/csdl/journal/ts)[^1]
+- [IEEE Transactions on Software Engineering TSE](https://www.computer.org/csdl/journal/ts)[^2]
   - Impact factor - 6.5 (2023)
 - [ACM Transactions on Software Engineering and Methodology TOSEM](https://dl.acm.org/journal/tosem)[^1]
   - Impact factor - 6.6 (2023)
@@ -56,3 +56,4 @@ longevity of published research.
 
 
 [^1]: Partnered with ESEM Journal first track
+[^2]: Partnered with ICSE Journal first track
