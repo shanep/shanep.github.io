@@ -193,9 +193,67 @@ repositories. Here are a few cases where they **do** need admin access.
     ```bash
     gh classroom clone student-repos
     ```
-### Example
-
 ![Downloading submissions](images/github-classroom-cli.gif)
+
+### Renaming directories (optional)
+
+Get the classroom roster from the GitHub classroom web interface by going to
+the classroom and clicking on the "Students" tab. Download the roster
+as a CSV file and put it in the same directory where you downloaded the student
+submissions.
+
+![Downloading roster](images/github-classroom-roster.png)
+
+The github cli names the with the assignment name followed by the student's
+GitHub username. For easier scripting you can use
+[this](https://gist.github.com/shanep/5226245d533f436a364b7c8a2267018a) script
+to rename all the directories to be their university email.
+
+Here is what your directory should look like before running the script:
+
+```
+shanepanter:classroom$ tree
+.
+├── classroom_roster.csv
+├── rename-repos.sh
+└── test-assignment-submissions
+    ├── test-assignment-BSU-ShanePanter
+    │   ├── hello.c
+    │   ├── LICENSE
+    │   ├── README.md
+    │   └── test-ssh-stuff
+    └── test-assignment-shanep
+        ├── hello.c
+        ├── LICENSE
+        ├── README.md
+        └── test-ssh-stuff
+
+4 directories, 10 files
+```
+
+After running the script the directories will be renamed to their university email:
+```
+shanepanter:classroom$ ./rename-repos.sh classroom_roster.csv test-assignment-submissions
+✔ Successfully renamed test-assignment-submissions/test-assignment-BSU-ShanePanter to test-assignment-submissions/shanepanter@u.boisestate.edu
+✔ Successfully renamed test-assignment-submissions/test-assignment-shanep to test-assignment-submissions/demo@example.com
+shanepanter:classroom$ tree
+.
+├── classroom_roster.csv
+├── rename-repos.sh
+└── test-assignment-submissions
+    ├── demo@example.com
+    │   ├── hello.c
+    │   ├── LICENSE
+    │   ├── README.md
+    │   └── test-ssh-stuff
+    └── shanepanter@u.boisestate.edu
+        ├── hello.c
+        ├── LICENSE
+        ├── README.md
+        └── test-ssh-stuff
+
+4 directories, 10 files
+```
 
 ## Legacy Downloading
 
