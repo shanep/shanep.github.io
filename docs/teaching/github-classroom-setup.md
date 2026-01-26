@@ -176,21 +176,30 @@ repositories. Here are a few cases where they **do** need admin access.
 
 ## Step 5: Download student submissions
 
-There are two ways to download student assignments. You can use the
-[Classroom Assistant](https://classroom.github.com/assistant) provided
-by Github or you can use a terminal based downloader
+- Install GitHub CLI by following the instructions
+  [here](https://cli.github.com/).
+- Authenticate GitHub CLI by running the following command in your terminal:
+    ```bash
+    gh auth login
+    ```
+- Install the official GitHub Classroom CLI tool by running the following command:
+    ```bash
+    gh extension install github/gh-classroom
+    ```
+- Navigate to the directory where you want to download student submissions.
+- The [official](https://classroom.github.com/assistant) docs detail all the
+  options for downloading student submissions using the CLI tool.
+- To download all submissions for a specific assignment, run the following command:
+    ```bash
+    gh classroom clone student-repos
+    ```
+### Example
+
+![Downloading submissions](images/github-classroom-cli.gif)
+
+## Legacy Downloading
+
+Before the official CLI tool was released we had our own method for downloading
+student submissions called `ghclass`. While it is recommended to use the official CLI
+tool above, if you want to use the legacy tool you can find it here:
 [ghclass](https://github.com/shanep/ghclass).
-
-
-### Downloading Groups
-
-To download groups make sure and download your roster from
-[classroom.github.com](https://classroom.github.com) with group names.  This tool should
-automatically detect that the roster has group names and will download the assignment into a folder
-named after the team.
-
-![group names](images/group-names.jpg)
-
-## Demo
-
-![demo](images/demo.gif)
