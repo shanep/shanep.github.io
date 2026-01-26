@@ -209,50 +209,58 @@ student's GitHub username. For easier scripting you can use
 [this](https://gist.github.com/shanep/5226245d533f436a364b7c8a2267018a) script
 to rename all the directories to be their university email.
 
+- Get the student submissions:
+
+```
+shanepanter:classroom$ gh classroom clone student-repos
+? Select a classroom: demo-classroom
+? Select an assignment: p1
+Creating directory:  /Users/shanepanter/classroom/p1-submissions
+Cloning into: /Users/shanepanter/classroom/p1-submissions/p1-BSU-ShanePanter
+Cloned 1 repos.
+```
+
 Here is what your directory should look like before running the script:
 
 ```
 shanepanter:classroom$ tree
 .
 ├── classroom_roster.csv
-├── rename-repos.sh
-└── test-assignment-submissions
-    ├── test-assignment-BSU-ShanePanter
-    │   ├── hello.c
-    │   ├── LICENSE
-    │   ├── README.md
-    │   └── test-ssh-stuff
-    └── test-assignment-shanep
-        ├── hello.c
-        ├── LICENSE
-        ├── README.md
-        └── test-ssh-stuff
+├── p1-submissions
+│   └── p1-BSU-ShanePanter
+│       ├── hello.c
+│       ├── LICENSE
+│       ├── README.md
+│       └── test-ssh-stuff
+└── rename-repos.sh
 
-4 directories, 10 files
+3 directories, 6 files
+```
+- Run the rename script the assignment name is the same as gh classroom used when
+downloading the repos. In this example the assignment name is `p1`.:
+
+Run the script like this:
+```bash
+./rename-repos.sh classroom_roster.csv p1
 ```
 
-After running the script the directories will be renamed to their university email:
+- After running the script the directories will be renamed to their university email:
+
 ```
-shanepanter:classroom$ ./rename-repos.sh classroom_roster.csv test-assignment-submissions
-✔ Successfully renamed test-assignment-submissions/test-assignment-BSU-ShanePanter to test-assignment-submissions/shanepanter@u.boisestate.edu
-✔ Successfully renamed test-assignment-submissions/test-assignment-shanep to test-assignment-submissions/demo@example.com
+shanepanter:classroom$ ./rename-repos.sh classroom_roster.csv p1
+✔ Successfully renamed p1-submissions/p1-BSU-ShanePanter to p1-submissions/shanepanter@u.boisestate.edu
 shanepanter:classroom$ tree
 .
 ├── classroom_roster.csv
-├── rename-repos.sh
-└── test-assignment-submissions
-    ├── demo@example.com
-    │   ├── hello.c
-    │   ├── LICENSE
-    │   ├── README.md
-    │   └── test-ssh-stuff
-    └── shanepanter@u.boisestate.edu
-        ├── hello.c
-        ├── LICENSE
-        ├── README.md
-        └── test-ssh-stuff
+├── p1-submissions
+│   └── shanepanter@u.boisestate.edu
+│       ├── hello.c
+│       ├── LICENSE
+│       ├── README.md
+│       └── test-ssh-stuff
+└── rename-repos.sh
 
-4 directories, 10 files
+3 directories, 6 files
 ```
 
 ## Legacy Downloading
