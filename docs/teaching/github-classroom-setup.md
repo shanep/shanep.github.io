@@ -204,8 +204,8 @@ submissions.
 
 ![Downloading roster](images/github-classroom-roster.png)
 
-The github cli names the with the assignment name followed by the student's
-GitHub username. For easier scripting you can use
+The github cli names the directories with the assignment name followed by the
+student's GitHub username. For easier scripting you can use
 [this](https://gist.github.com/shanep/5226245d533f436a364b7c8a2267018a) script
 to rename all the directories to be their university email.
 
