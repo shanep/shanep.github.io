@@ -6,8 +6,8 @@ titleTemplate: Personal Website
 
 hero:
   name: Shane K. Panter
-  text: "Dr. BOOM!"
-  tagline: Assistant Clinical Professor
+  text: Assistant Clinical Professor
+  tagline: Boise State University
   actions:
     - theme: brand
       text: CV
@@ -43,12 +43,23 @@ hero:
     --vp-home-hero-image-filter: blur(68px);
   }
 }
+
+.VPHero .text {
+  font-size: 1.5rem !important;
+  line-height: 1.4 !important;
+}
+
+@media (min-width: 640px) {
+  .VPHero .text {
+    font-size: 1.75rem !important;
+  }
+}
 </style>
 
 
 ## Bio
 
-Dr. Shane Panter brings more than a decade of industry experience to the Computer Science Department at Boise State University. Before entering academia, he worked in manufacturing developing large-scale Enterprise Resource Planning (ERP) and Material Requirements Planning (MRP) systems, and at Hewlett-Packard contributed to firmware development for enterprise LaserJet printers, optimizing energy efficiency across both kernel and user space. He now channels that real-world expertise into research at the intersection of empirical software engineering, cybersecurity, and software security, with a particular focus on software supply chain security.
+Shane Panter brings more than a decade of industry experience to the Computer Science Department at Boise State University. Before entering academia, he worked in manufacturing developing large-scale Enterprise Resource Planning (ERP) and Material Requirements Planning (MRP) systems, and at Hewlett-Packard contributed to firmware development for enterprise LaserJet printers, optimizing energy efficiency across both kernel and user space. He now channels that real-world expertise into research at the intersection of empirical software engineering, cybersecurity, and software security, with a particular focus on software supply chain security.
 
 ## Research Interests
 
@@ -69,4 +80,4 @@ Dr. Shane Panter brings more than a decade of industry experience to the Compute
 
 - LinkedIn: [Shane Panter](https://www.linkedin.com/in/shanepanter)
 - ORCID ID: [0009-0009-1852-3655](https://orcid.org/0009-0009-1852-3655)
-- [Google Scholar](https://scholar.google.com/citations?user=0B7MuswAAAAJ&hl=en)
+- Google Scholar: [Shane Panter](https://scholar.google.com/citations?user=0B7MuswAAAAJ&hl=en)
