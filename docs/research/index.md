@@ -47,13 +47,5 @@ longevity of published research.
 - [IEEE Access](https://ieeeaccess.ieee.org)
   - Impact factor - 3.6 (2024)
 
-## Published Research links
-
-- [Technical Lag as Latent Technical Debt: A Rapid Review](https://doi.org/10.48550/arXiv.2601.11693)
-- [PVAC: Package Version Activity Categorizer, Leveraging Semantic Versioning in a Heterogeneous System](https://rdcu.be/eoUim)
-- [Rusty Linux: Advances in Rust for Linux Kernel Development](https://doi.org/10.1145/3674805.3690756)
-- [Evaluating the Benefits of Team-Based Learning in a Systems Programming Class](https://doi.org/10.1109/FIE44824.2020.9274183)
-
-
 [^1]: Partnered with ESEM Journal first track
 [^2]: Partnered with ICSE Journal first track
