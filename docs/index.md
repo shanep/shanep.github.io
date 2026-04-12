@@ -6,7 +6,7 @@ titleTemplate: Personal Website
 
 hero:
   name: Shane K. Panter
-  text: "BOOM!"
+  text: "Dr. BOOM!"
   tagline: Assistant Clinical Professor
   actions:
     - theme: brand
@@ -48,22 +48,14 @@ hero:
 
 ## Bio
 
-Shane K. Panter brings over a decade of industry experience to his role as a
-Clinical Assistant Professor in the Computer Science Department at Boise State
-University. His professional background includes extensive work in
-manufacturing, where he developed and supported large-scale Enterprise Resource
-Planning (ERP) and Material Requirements Planning (MRP) systems. At
-Hewlett-Packard, Shane contributed to firmware development, working in
-kernel and user space to optimize energy efficiency for enterprise laser jet
-printers. His current research interests focus on empirical software
-engineering, cybersecurity, and software security, with a particular emphasis on
-the security of software supply chains.
+Dr. Shane Panter brings more than a decade of industry experience to the Computer Science Department at Boise State University. Before entering academia, he worked in manufacturing developing large-scale Enterprise Resource Planning (ERP) and Material Requirements Planning (MRP) systems, and at Hewlett-Packard contributed to firmware development for enterprise LaserJet printers, optimizing energy efficiency across both kernel and user space. He now channels that real-world expertise into research at the intersection of empirical software engineering, cybersecurity, and software security, with a particular focus on software supply chain security.
 
 ## Research Interests
 
 - Empirical Software Engineering
 - Cybersecurity
 - Software Security
+- Software Supply Chain Security
 
 ## Links
 
