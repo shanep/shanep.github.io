@@ -66,4 +66,4 @@ within the list where one was looking last.
 ## Other approaches
 
 - Segregated Lists (Memory pools)
-- Buddy Allocation - YA!! This is one of our projects 😍
+- Buddy Allocation (Project 4)

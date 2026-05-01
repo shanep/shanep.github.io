@@ -66,10 +66,23 @@ Linux/Unix signals are a type of event. Signals are asynchronous in
 nature and are used to inform processes of certain events happening (man
 7 signal).
 
-## Examples
+## Common Signals
 
-- SIGIN
-- SIGCON
-- SIGKILL
+| Signal    | Default Action | Description                                      |
+|-----------|---------------|--------------------------------------------------|
+| `SIGINT`  | Terminate     | Interrupt from keyboard (Ctrl+C)                 |
+| `SIGTERM` | Terminate     | Termination request (default signal from `kill`) |
+| `SIGKILL` | Terminate     | Forceful termination; cannot be caught or ignored |
+| `SIGCONT` | Continue      | Resume a stopped process                         |
+| `SIGSTOP` | Stop          | Pause process; cannot be caught or ignored       |
+| `SIGSEGV` | Core dump     | Invalid memory reference (segmentation fault)   |
+| `SIGABRT` | Core dump     | Abort signal from `abort()`                      |
+| `SIGALRM` | Terminate     | Timer expiration set by `alarm()`                |
+| `SIGUSR1` | Terminate     | User-defined signal 1                            |
+| `SIGUSR2` | Terminate     | User-defined signal 2                            |
+| `SIGPIPE` | Terminate     | Broken pipe: write to pipe with no readers       |
+| `SIGCHLD` | Ignore        | Child process stopped or terminated              |
 
-[Signals](https://man7.org/linux/man-pages/man7/signal.7.html)
+`SIGKILL` and `SIGSTOP` cannot be caught, blocked, or ignored — the kernel handles them directly.
+
+[Full signal list](https://man7.org/linux/man-pages/man7/signal.7.html)

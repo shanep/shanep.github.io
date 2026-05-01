@@ -9,6 +9,6 @@ prev: false
 - [Project 2](p2.md) - Warmup project
 - [Project 3](p3.md) - Simple shell project
 - [Project 4](p4.md) - Buddy allocator
-- [Project 5](p5.md) - Threads!
+- [Project 5](p5.md) - Threads! (ABET Outcome 1 and 6)
 - [Project 6](p6.md) - The classic bounded buffer problem
 - [Project 7](p7.md) - In the Kernel
