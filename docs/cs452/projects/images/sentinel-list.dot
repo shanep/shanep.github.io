@@ -1,0 +1,19 @@
+digraph structs {
+    node [shape=Mrecord];
+    n0 [label="<data> sentinel node |<next> next | <prev> prev"];
+    n1 [label="<data> n1|<next> next | <prev> prev"];
+    n2 [label="<data> n2|<next> next | <prev> prev"];
+    n3 [label="<data> n3|<next> next | <prev> prev"];
+
+
+    n0:next -> n1:next -> n2:next -> n3:next [color=red]
+    n3:prev ->n2:prev -> n1:prev -> n0:prev [color=blue]
+
+    n3:next -> n0
+    n0:prev -> n3
+
+    layout=dot
+    rankdir=LR
+    bgcolor="transparent"
+
+}
