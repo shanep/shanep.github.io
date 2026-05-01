@@ -1,6 +1,8 @@
-# Teaching Resources and Course Evaluations
+# Teaching Resources
 
-General resources for teaching and other fun stuff.
+## Course Materials
+
+- [CS452: Operating Systems](../cs452/index.md)
 
 ## Guides
 

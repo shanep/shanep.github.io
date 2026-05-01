@@ -74,7 +74,11 @@ for Academic dishonesty if you do not cite your usage of any AI tools.
 I follow the official [attendance
 policy](https://www.boisestate.edu/registrar/registration/attendance-policy/) as defined by the
 university. Please see the Late Work section for details on how to make up any missed work. Students
-are responsible for all verbal announcements or updates given during class.
+are responsible for all verbal announcements or updates given during class. If you miss a class it is
+your responsibility to get caught up on any announcements or updates that were given during class. If
+you have an excused absence please contact me as soon as possible so we can make arrangements for
+you to make up any missed work. Students who are chronically late disrupt the learning environment and
+can lose up to 10% of their final grade for excessive tardiness after being warned in writing.
 
 ## Late Work Policy
 
