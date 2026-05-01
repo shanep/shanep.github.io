@@ -12,7 +12,7 @@ operating systems. PREREQ: CS 321 and ECE 330.
 ## Topics and Schedule
 
 | Week | Day | Topic                                            | Reading Assignment                                                                                    | What Due?        |
-|------|-----|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|------------------|
+| ---- | --- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ---------------- |
 | 1    | Tu  | [Course Introduction](course-introduction.md)    |                                                                                                       |                  |
 |      | Th  | [C Review](c-review.md)                          | [Modern Debugging](/articles/modern-debugging-acm.pdf),  [Coverity](/articles/coverity-acm.pdf)       | [Hw1](hw/hw1.md) |
 | 2    | Tu  | [Hw2](hw/hw2.md)                                 | [Kernel patches](https://www.kernel.org/doc/html/latest/process/submitting-patches.html)              |                  |
@@ -54,12 +54,24 @@ operating systems. PREREQ: CS 321 and ECE 330.
 
 ## Assessments
 
-Final Grade formula: **Grade = [Earned points] / [Total Points Offered]**.
+Final Grade formula: **Grade = [Earned points] / 1000**.
 
 
-- Projects -100 points each
-- Homework - 25 points each
-- Exams - 150 points each
+- Projects (600 pts) - 6 projects at 100 points each
+  - [Grading Rubric](projects/grading-rubric.md) - Universal Grading Rubric for all projects
+  - [Project 1](projects/p1.md)
+  - [Project 2](projects/p2.md)
+  - [Project 3](projects/p3.md)
+  - [Project 4](projects/p4.md)
+  - [Project 5](projects/p5.md)
+  - [Project 6](projects/p6.md)
+  - [Project 7](projects/p7.md) - Extra Credit (can be used to replace a missed project or boost your grade)
+- Homework (100 pts) - 2 homework assignments at 50 points each
+  - [Hw1](hw/hw1.md)
+  - [Hw2](hw/hw2.md)
+- Exams (300 pts)
+  - Midterm Exam (150 pts)
+  - Final Exam (150 pts)
 
 
 ## Course Learning Outcomes
@@ -68,7 +80,7 @@ By the end of this course the student should have achieved the following
 course learning outcomes.
 
 | TLO | SLO | Objective                                                                                                                                             | Assessment Instrument |
-|-----|-----|-------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| --- | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
 | 1   |     | Describe the fundamental components of a modern operating system                                                                                      | Exam                  |
 |     | 1.1 | Articulate process creation and destruction                                                                                                           | Exam                  |
 |     | 1.2 | Use system library code                                                                                                                               | Project 3             |
