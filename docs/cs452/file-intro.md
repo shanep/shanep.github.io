@@ -81,9 +81,18 @@ the stat() or fstat() system calls.
     unlink("foo") = 0
     ...
 
-Removing a file doesn’t wipe it from the disk! The file is still
-there just not directly accessible! Deleted files can still be
-recovered (for a while).
+Calling `unlink()` removes the directory entry (the name-to-inode mapping) and
+decrements the file’s hard link count. The underlying data blocks are only freed
+when **both** conditions are true:
+
+1. The link count drops to zero (no more directory entries point to the inode)
+2. No process has the file open (no open file descriptors)
+
+This means a process can `open()` a file, another process can `unlink()` it, and
+the first process can keep reading/writing through its descriptor — the data
+survives until the last descriptor is closed. Tools like `lsof` can reveal files
+that have been unlinked but are still held open, which is why "deleted" files can
+sometimes be recovered from `/proc/<pid>/fd/`.
 
 ## Symbolic Links
 

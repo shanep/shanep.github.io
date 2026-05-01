@@ -87,9 +87,27 @@ examples!
 ## Dekker’s and Peterson’s Algorithms
 
 Dekker’s algorithm and Peterson’s algorithm attempted to solve the
-mutual exclusion algorithm with only load and store instructions. These
-algorithms don’t work on modern hardware (due to relaxed memory
-consistency models).
+mutual exclusion problem using only load and store instructions —
+no special hardware atomics required. They work correctly under the
+sequential consistency memory model (the model assumed when reasoning
+about code on paper).
+
+**Why they fail on modern hardware:** CPUs and compilers are allowed to
+reorder memory operations for performance as long as the result looks
+correct *from a single thread’s perspective*. This is called a
+**relaxed memory model**. Under a relaxed model, a store by thread A
+may not be visible to thread B in program order — it can be buffered in
+a store queue, reordered by the compiler, or delayed by cache coherence
+protocols. Both algorithms rely on the assumption that a store is
+immediately visible to all other threads, which modern hardware does
+**not** guarantee.
+
+To enforce ordering on real hardware, you need explicit **memory
+barriers** (also called fences): instructions that flush store buffers
+and prevent the CPU from reordering across the fence. The hardware
+atomic primitives (test-and-set, compare-and-swap, etc.) implicitly
+include the necessary barriers, which is why they work correctly where
+Peterson’s algorithm does not.
 
 ## Spin Locks
 
