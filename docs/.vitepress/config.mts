@@ -5,7 +5,7 @@ import footnote from 'markdown-it-footnote'
 export default defineConfig({
   title: "Shane K. Panter",
   description: "Shane's Personal Site",
-
+  ignoreDeadLinks: false,
   markdown: {
     theme: { light: 'github-light', dark: 'github-dark' },
     config: (md) => {
