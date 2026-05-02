@@ -1,0 +1,44 @@
+{
+  "name": "CS452/552 Operating Systems",
+  "code": "CS452",
+  "siteBase": "https://shanepanter.com/cs452",
+  "totalPoints": 1000,
+  "groups": [
+    {
+      "name": "Projects",
+      "assignments": [
+        { "name": "Project 1: Development Environment",  "points": 100, "path": "/projects/p1" },
+        { "name": "Project 2: Circular Linked List",      "points": 100, "path": "/projects/p2" },
+        { "name": "Project 3: Simple Shell",              "points": 100, "path": "/projects/p3" },
+        { "name": "Project 4: Buddy Allocator",           "points": 100, "path": "/projects/p4" },
+        { "name": "Project 5: Multi-threaded Merge Sort", "points": 100, "path": "/projects/p5" },
+        { "name": "Project 6: Bounded Buffer Monitor",    "points": 100, "path": "/projects/p6" }
+      ]
+    },
+    {
+      "name": "Homework",
+      "assignments": [
+        { "name": "Homework 1: GitHub CLI Setup", "points": 50, "path": "/hw/hw1" },
+        { "name": "Homework 2: git send-email",   "points": 50, "path": "/hw/hw2" }
+      ]
+    },
+    {
+      "name": "Exams",
+      "assignments": [
+        { "name": "Midterm Exam", "points": 150 },
+        { "name": "Final Exam",   "points": 150 }
+      ]
+    },
+    {
+      "name": "Extra Credit",
+      "assignments": [
+        {
+          "name": "Project 7: Kernel Module",
+          "points": 100,
+          "path": "/projects/p7",
+          "extraCredit": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,234 +1,201 @@
 <!-- markdownlint-disable-next-line -->
-## Instructor Contact
-
-- **email:** shanepanter@boisestate.edu
-- **office:** [CCP246](https://www.boisestate.edu/coen-cs/currentstudents/aboutccp/)
-
 ## Grading Policy
 
-Grades will be posted in canvas and calculated with the percentages specified below. **Final grades
-will not be rounded**. I offer plenty of Extra Credit Opportunities that you can take advantage of
-to improve your final grade.
+Grades will be posted in Canvas and calculated using the percentages below. **Final grades will not
+be rounded.** Extra Credit opportunities are available throughout the semester to help improve your
+final grade.
 
-| Letter Grade | Percentage |
-| ------------ | ---------- |
-| A            | 94% < 100% |
-| A-           | 90% < 94%  |
-| B+           | 87% < 90%  |
-| B            | 84% < 87%  |
-| B-           | 80% < 84%  |
-| C+           | 77% < 80%  |
-| C            | 74% < 77%  |
-| C-           | 70% < 74%  |
-| D+           | 67% < 70%  |
-| D            | 64% < 67%  |
-| D-           | 60% < 64%  |
-| F            | 0 < 60%    |
+| Letter Grade | Percentage    |
+| ------------ | ------------- |
+| A            | 94% – 100%    |
+| A-           | 90% – 93.99%  |
+| B+           | 87% – 89.99%  |
+| B            | 84% – 86.99%  |
+| B-           | 80% – 83.99%  |
+| C+           | 77% – 79.99%  |
+| C            | 74% – 76.99%  |
+| C-           | 70% – 73.99%  |
+| D+           | 67% – 69.99%  |
+| D            | 64% – 66.99%  |
+| D-           | 60% – 63.99%  |
+| F            | Below 60%     |
 
 ## Extra Credit Opportunities
 
-Standing extra credit is always offered to allow students to bump their grade up if they are on a
-grading boundary so please take advantage of any extra credit offered. Any extra credit given over
-the semester can not exceed 2.5% of the total points offered. For example, the maximum number of
-extra credit points that you can earn if the total points offered is 1000 would be 25.
+Standing extra credit is always available to help students on a grading boundary. Extra credit
+earned over the semester cannot exceed **2.5% of total points offered** (e.g., a maximum of 25
+points in a 1000-point course).
 
-- Typos and Bugs - If you find any typos or bugs in the course materials, you can click the "Edit
-this page" link at the bottom of the page, make the corrections, and then issue a [pull
-request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request). If
-I merge your changes back into my repository then I will give you 5 bonus points. I have
-strategically placed several spelling and grammar errors for you to find so there are plenty of
-opportunities to get the maximum number of points offered. So make sure and read everything with an
-eagle 🦅 eye so you can rack up those points!
+- **Typos and Bugs** — If you find a typo or bug in the course materials, click the "Edit this page"
+  link at the bottom of any page, make the correction, and submit a
+  [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+  If your pull request is merged you will receive 5 bonus points. Read carefully — there are
+  deliberately placed errors throughout the materials. 🦅
 
 ::: tip
 
-Creating a pull request is important and is the core learning objective in the extra credit
-process. No points will be awarded for any other method of submission. Some pages may include other
-markdown pages so when you click the edit button if you don't see the content that you want to
-correct look for an `<!--@include: ../path/to/file.md -->` directive which will have the path to the
-file that needs to be updated :)
+Submitting a pull request is the core objective of this extra credit. No points will be awarded for
+any other submission method. If you click "Edit this page" and don't see the content you want to
+fix, look for a `<!--@include: ../path/to/file.md -->` directive — that points to the source file
+that actually needs editing.
 
 :::
 
-- Use of AI technologies - If you are able to solve 100% of any assignment with AI, I will give you
-extra credit if you submit your chat logs as proof that it was 100% AI generated.
+- **AI-Generated Assignments** — If you complete 100% of any assignment using AI tools, you may
+  receive extra credit by submitting your full chat logs as proof.
 
 ## Homework Policy
 
-Unless explicitly instructed otherwise students are expected to work on their own. All group work
-will be **clearly** marked so there should be no confusion.  The [Kount Computer Learning
-Center](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring) (CCP 241) is accessible
-24/7 by proxy card to all students enrolled in CS courses. Machines in the Kount Computer Tutoring
-Center have all the software you will need this semester.
+Unless explicitly stated otherwise, all work is individual. Group assignments will be **clearly**
+marked. The [Kount Computer Learning Center](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring)
+(CCP 241) is accessible 24/7 by proxy card to all students enrolled in CS courses and has all the
+software you will need.
 
-::: danger
+::: danger Academic Integrity
 
-It is still plagiarism to claim work that was generated by
-[ChatGPT](https://openai.com/blog/chatgpt) or other AI tools as your own and you will be written up
-for Academic dishonesty if you do not cite your usage of any AI tools.
+Submitting work generated by [ChatGPT](https://openai.com/blog/chatgpt) or any other AI tool as
+your own, without citation, is plagiarism and will be reported as academic dishonesty.
 
 :::
 
 ## Attendance Policy
 
-I follow the official [attendance
-policy](https://www.boisestate.edu/registrar/registration/attendance-policy/) as defined by the
-university. Please see the Late Work section for details on how to make up any missed work. Students
-are responsible for all verbal announcements or updates given during class. If you miss a class it is
-your responsibility to get caught up on any announcements or updates that were given during class. If
-you have an excused absence please contact me as soon as possible so we can make arrangements for
-you to make up any missed work. Students who are chronically late disrupt the learning environment and
-can lose up to 10% of their final grade for excessive tardiness after being warned in writing.
+I follow the official [attendance policy](https://www.boisestate.edu/registrar/registration/attendance-policy/)
+as defined by the university. Students are responsible for all announcements made during class. If
+you miss a class, it is your responsibility to get caught up. Students with an excused absence
+should contact me as soon as possible to arrange make-up work. Students who are chronically late
+may lose up to 10% of their final grade for excessive tardiness after receiving a written warning.
 
 ## Late Work Policy
 
-All homework assignments can be submitted up to **2 days late with no penalty**.  After the 2 day
-grace period no further submissions will be accepted unless prior arrangements have been made before
-the original due date. No work or extra credit will be accepted after the **last day of course
-instruction**, the semester has to end at some point so plan accordingly. Work submitted 1 second
-late is treated the same as work submitted 1 day late. You can find the last day of course
-instruction at the
-[registrar](https://www.boisestate.edu/registrar/boise-state-academic-calendars/).
+Homework assignments may be submitted up to **2 days late with no penalty.** After the grace period,
+no submissions will be accepted unless prior arrangements were made before the original due date. No
+work or extra credit will be accepted after the **last day of course instruction** — the semester
+must end at some point, so plan accordingly. Work submitted 1 second late is treated the same as
+work submitted 1 day late. You can find the last day of course instruction on the
+[registrar's academic calendar](https://www.boisestate.edu/registrar/boise-state-academic-calendars/).
 
-::: info
+::: info Compressed Semesters
 
-For classes taught in the first 5wk or 7wk session of the semester, the last day of course
-instruction is **NOT** the same as a regular semester. Please consult the
-[registrar](https://www.boisestate.edu/registrar/boise-state-academic-calendars/) for the last day
-of course instruction for your specific class.
+For courses taught in a 5-week or 7-week session, the last day of course instruction is **NOT** the
+same as a regular 15-week semester. Consult the
+[registrar's academic calendar](https://www.boisestate.edu/registrar/boise-state-academic-calendars/)
+for the exact date.
 
 :::
 
 ## Exam and Quiz Policy
 
-All exams and quizzes must be taken within the time frame specified on canvas unless prior
-arrangements have been made. Clearly we can’t have some students taking an exam AFTER the questions
-(and possibly answers) have been released as it would give that student an unfair advantage.
-Extensions will be granted on a case by case basis for situations that were outside of the students
-control. Some exams or quizzes may require you to go to the testing center. It is the student's
-responsibility to schedule their own appointment in a timely fashion.
+All exams and quizzes must be completed within the time frame specified in Canvas unless prior
+arrangements have been made. Extensions are granted on a case-by-case basis for circumstances
+outside the student's control. Some assessments may require the testing center — it is the
+student's responsibility to schedule their own appointment in a timely manner.
 
 ## Class Interaction Policy
 
-All class interaction assignments must be completed within the time frame specified on canvas or
-**during the lecture** unless prior arrangements have been made. Assignments that are intended to be
-interactive are only valuable when everyone is participating at the same time. It is not fair for a
-student to expect their fellow classmates to respond or watch your submission that is late when
-everyone else submitted on time. The secret code for the syllabus quiz is "green".
+All class interaction assignments must be completed within the time frame specified in Canvas or
+**during the lecture** unless prior arrangements have been made. Interactive assignments are only
+valuable when everyone participates at the same time. It is not fair to classmates who submitted on
+time to have to respond to or view late submissions. The secret code for the syllabus quiz is
+"green".
 
-This applies (but is not limited to) to the following assignment types:
+This applies to (but is not limited to):
 
 - Discussion posts
-- Reflections (both written and video)
-- Group meetings - both virtual and in person
+- Reflections (written and video)
+- Group meetings (virtual and in person)
 - Status updates
-- Any in class activities
-- Any quizzes or exams that are done on paper
+- In-class activities
+- Paper quizzes and exams
 
 ## Communication Policy
 
-During the semester communication outside of the classroom will be through email, canvas, and office
-hours as detailed below. Other methods such as [carrier
-pigeon](https://www.iwm.org.uk/history/the-incredible-carrier-pigeons-of-the-first-world-war) 🐦 are
-not supported at this time.
+Outside the classroom, communication will be through email, Canvas, and office hours. Other methods
+such as [carrier pigeon](https://www.iwm.org.uk/history/the-incredible-carrier-pigeons-of-the-first-world-war) 🐦
+are not supported.
 
-I get a lot of email and sometimes I miss messages, so if you don’t receive a response from me after
-48hrs please check to make sure you are sending the email from BroncoMail and send a follow-up
-email. You can also send an email directly in canvas if your emails are not going through. To help
-facilitate quick communication please include the following information in all emails to myself or
-the class TA/GA.
+If you do not receive a reply within 48 hours, verify you are emailing from BroncoMail and send a
+follow-up. You can also message through Canvas if email is not going through. Please include the
+following in all emails:
 
-- First and Last name
-- Student ID - I need this so I can look you up in the system.
-- The class and section number that you are in for example CS123 - section 1
+- First and last name
+- Student ID
+- Course and section number (e.g., CS452 – Section 1)
 
-BroncoMail is the official communication channel through which all university business is
-conducted. It is expected that you access and read university communications two or three times per
-week. For more information see the University Policy on Student Email Communications (Policy
-2280). Your instructor will not respond to any emails sent from personal accounts such as Gmail or
-Yahoo.
+BroncoMail is the official university communication channel. Check it two to three times per week.
+Your instructor will not respond to emails from personal accounts (Gmail, Yahoo, etc.). See
+University Policy 2280 for details.
 
-Your instructor will make every effort to return emails within 24hrs Monday thru Friday between the
-hours of 9:00am and 5:00pm (MST). Emails sent on Saturday, Sunday, or outside of the defined hours
-will be returned within 24hrs on the following business day. Emails should be reserved for questions
-that are not appropriate for a public forum such as grades or other personal issues.
+Emails are answered within 24 hours, Monday–Friday, 9:00 am–5:00 pm (MST). Emails sent on
+weekends or outside those hours will receive a reply on the next business day. Reserve email for
+private matters such as grades — general course questions belong in the class discussion forum.
 
 ## Office Hours Policy
 
-For classes taught in the online or remote format office hours will be accessible on canvas by
-appointment. For classes that are taught in the face to face format office hours will only be
-available in person with times posted in Canvas. If you can not find the office hours appointment
-link in canvas please email me ASAP as I sometimes forget to post them at the start of the semester.
+Office hours are available by appointment. Use the link below to book a time:
 
-## IT support Policy
+<OfficeHoursLink />
 
-Your instructor and teaching assistant can not provide IT support for your personal machine. If you
-can not get your personal machine configured correctly you will need to come into the lab to
-complete all assignments.
+For in-person courses, office hours are held in person; for online or remote courses, they are
+conducted virtually through Canvas. If the booking link does not work, email me and I will send you
+a direct link.
+
+## IT Support Policy
+
+Your instructor and teaching assistant cannot provide IT support for personal machines. If you
+cannot get your personal machine configured correctly, use a lab machine to complete your work.
 
 ### Labs and Other Building Spaces
 
-The CCP building (downtown Boise) contains three labs and other spaces secured
-by proxy card access during and after business hours. All machines in the CS
-labs are supported by the departments IT staff and are guaranteed to work.
+The CCP building (downtown Boise) has three labs secured by proxy card access. All lab machines are
+supported by department IT staff and are guaranteed to work.
 
-- **Kount Learning Center (CCP 241)**: This lab is accessible 24/7 by proxy card
-  access to all CS students and students enrolled in CS courses. You can learn
-  more about this resource on our [Success & Tutoring
-  page](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring/).
-- **CS 121 Classroom Lab (CCP 242)**: This lab is accessible 24/7 by proxy card
-  access to all CS students and students enrolled in CS courses. However this
-  lab is not available during scheduled courses and course labs scheduled here
-  (see schedule posted outside of lab).
-- **Metageek Lab (CCP 240)**: This lab is accessible 24/7 by proxy card access to
-  all CS students and students enrolled in CS courses. However this lab is not
-  during scheduled CS courses and course labs (see schedule posted outside of
-  lab).
+- **Kount Learning Center (CCP 241)** — Accessible 24/7 by proxy card to all CS students. See the
+  [Success & Tutoring page](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring/)
+  for details.
+- **CS 121 Classroom Lab (CCP 242)** — Accessible 24/7 by proxy card, but not available during
+  scheduled courses and labs (see the schedule posted outside the lab).
+- **Metageek Lab (CCP 240)** — Accessible 24/7 by proxy card, but not available during scheduled
+  CS courses and labs (see the schedule posted outside the lab).
 
 ## Time Commitment
 
-According to Boise State University [policy
-4080](https://www.boisestate.edu/policy/academic-affairs-faculty-administration/policy-title-credit-hours/),
-a 1 credit course spread over 15 weeks should require roughly 3 hours of work per week divided over
-both in-class interactions and homework.  Classes that are held in compressed time frames such as
-summer or winter breaks still need to complete the same number of credit hours in order for the
-class to count toward your degree. Thus, if you are taking this class in a compressed semester
-please consult the table below to make sure you have time to complete all the assigned course
-work. For example, as noted in the table below, taking two 3 credit courses in a 7 week semester is
-equivalent to working a full time job.
+Per Boise State [Policy 4080](https://www.boisestate.edu/policy/academic-affairs-faculty-administration/policy-title-credit-hours/),
+a 1-credit course over 15 weeks requires roughly 3 hours of work per week across in-class and
+homework time. Compressed courses cover the same total hours in less time — if you are in a
+compressed section, consult the table below to confirm you can fit the workload.
 
-For a compressed course it is **critical** that you don’t fall behind!  Compressed courses move fast
-and missing 1 week of class is very hard if not impossible to recover from.
+::: warning Compressed Courses
 
-| Credits | Number of weeks | Total Hours | Hours of work per week |
-| ------- | --------------- | ----------- | ---------------------- |
-| 1       | 3               | 45 hrs      | 15 hrs                 |
-| 1       | 5               | 45 hrs      | 9 hrs                  |
-| 3       | 7               | 135 hrs     | 19 hrs                 |
-| 3       | 15              | 135 hrs     | 9 hrs                  |
+Missing even one week in a compressed course can be very difficult or impossible to recover from.
+Do not fall behind.
+
+:::
+
+| Credits | Weeks | Total       | Per Week       |
+| ------- | ----- | ----------- | -------------- |
+| 1       | 3     | 45 hrs      | 15 hrs         |
+| 1       | 5     | 45 hrs      | 9 hrs          |
+| 3       | 7     | 135 hrs     | 19 hrs         |
+| 3       | 15    | 135 hrs     | 9 hrs          |
 
 ## University Policies
 
-All students are required to be familiar with the policies posted below. Please review all linked
-policies below. Violations of university policies can result in the student receiving a failing
-grade (F) in the course.
+Violations of university policies may result in a failing grade (F) for the course. All students
+are required to review the following:
 
 - [Student Code of Conduct](https://www.boisestate.edu/policy/student-affairs/code-of-conduct/)
 - [Academic Integrity](https://www.boisestate.edu/registrar/general-information-and-policies/academic-integrity/)
-- [Privacy policy](https://www.boisestate.edu/privacy/)
-- [Incomplete Policy](https://www.boisestate.edu/registrar/degree-requirements/grades/)
+- [Privacy Policy](https://www.boisestate.edu/privacy/)
+- [Incomplete Grade Policy](https://www.boisestate.edu/registrar/degree-requirements/grades/)
 
-## Student support
+## Student Support
 
-- [Educational access center](https://www.boisestate.edu/eac/)
-- [Support resources](https://www.boisestate.edu/online/support-resources/)
-- [Academic support services](https://www.boisestate.edu/aasc/academicsupportservices/)
+Boise State cares about your success. Help is available for technical, academic, financial, and
+personal needs, as well as learning accommodations. Nearly all services are available to online
+students as well.
 
-### Accessing University Support Services
-
-Boise State cares about you! You can find many kinds of help, including technical, academic,
-financial, life needs, learning accommodations, data privacy agreements, and much more. These
-resources have been gathered into one convenient document for you to keep on hand. Almost all of the
-student services on campus are also available to online students. Make sure to take a look at the
-[Accessing University Support Services](https://docs.google.com/document/d/14ZMRsHAgo356h0nHtJuStDKGwvg6LY-XOA7PxacwECw/edit#heading=h.oohv0l26wvu1)
- document.
+- [Educational Access Center](https://www.boisestate.edu/eac/)
+- [Support Resources](https://www.boisestate.edu/online/support-resources/)
+- [Academic Support Services](https://www.boisestate.edu/aasc/academicsupportservices/)
+- [Accessing University Support Services](https://docs.google.com/document/d/14ZMRsHAgo356h0nHtJuStDKGwvg6LY-XOA7PxacwECw/edit#heading=h.oohv0l26wvu1) (full resource guide)

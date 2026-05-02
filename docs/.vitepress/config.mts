@@ -1,6 +1,14 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
 import footnote from 'markdown-it-footnote'
 
+declare module 'vitepress' {
+  namespace DefaultTheme {
+    interface Config {
+      officeHoursUrl?: string
+    }
+  }
+}
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Shane K. Panter",
@@ -30,6 +38,8 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
+
+    officeHoursUrl: 'https://calendar.app.google/3NEb1xLYYwZRejY18',
 
     editLink: {
       pattern: 'https://github.com/shanep/shanep.github.io/edit/master/docs/:path'
@@ -167,35 +177,35 @@ function cs452(): DefaultTheme.SidebarItem[] {
     {
       text: 'CS452',
       items: [
-        { text: 'Syllabus', link: 'index'},
-        { text: 'Projects', link: 'projects/index'},
-	{ text: 'Homework', link: 'hw/index'}
+        { text: 'Syllabus',     link: 'index' },
+        { text: 'Schedule',     link: 'schedule/index' },
+        { text: 'Assignments',  link: 'assignments/index' },
       ]
     },
     {
-      text: 'Course materials',
+      text: 'Course Notes',
       collapsed: false,
       items: [
-        { text: 'Course Introduction', link: 'course-introduction'},
-        { text: 'C Review', link: 'c-review'},
-    	{ text: 'OS Introduction', link: 'intro'},
-        { text: 'The Process', link: 'cpu-intro'},
-        { text: 'Process API', link: 'cpu-api'},
-        { text: 'Limited Direct Execution', link: 'cpu-mechanisms'},
-        { text: 'Scheduling', link: 'cpu-sched'},
-        { text: 'Address Spaces', link: 'vm-intro'},
-        { text: 'Free Space Management', link: 'vm-freespace'},
-        { text: 'Paging', link: 'vm-paging'},
-        { text: 'Concurrency', link: 'threads-intro'},
-        { text: 'Locks', link: 'threads-locks'},
-        { text: 'Locked Data Structures', link: 'threads-locks-usage'},
-        { text: 'Condition Variables', link: 'threads-cv'},
-        { text: 'Semaphores', link: 'threads-sema'},
-        { text: 'Concurrency Bugs', link: 'threads-bugs'},
-        { text: 'Event Based Concurrency', link: 'threads-events'},
-        { text: 'I/O Devices', link: 'file-devices'},
-        { text: 'Files and Directories', link: 'file-intro'},
-        { text: 'Security', link: 'security-intro'},
+        { text: 'Course Introduction',    link: 'notes/course-introduction' },
+        { text: 'C Review',               link: 'notes/c-review' },
+        { text: 'OS Introduction',        link: 'notes/intro' },
+        { text: 'The Process',            link: 'notes/cpu-intro' },
+        { text: 'Process API',            link: 'notes/cpu-api' },
+        { text: 'Limited Direct Execution', link: 'notes/cpu-mechanisms' },
+        { text: 'Scheduling',             link: 'notes/cpu-sched' },
+        { text: 'Address Spaces',         link: 'notes/vm-intro' },
+        { text: 'Free Space Management',  link: 'notes/vm-freespace' },
+        { text: 'Paging',                 link: 'notes/vm-paging' },
+        { text: 'Concurrency',            link: 'notes/threads-intro' },
+        { text: 'Locks',                  link: 'notes/threads-locks' },
+        { text: 'Locked Data Structures', link: 'notes/threads-locks-usage' },
+        { text: 'Condition Variables',    link: 'notes/threads-cv' },
+        { text: 'Semaphores',             link: 'notes/threads-sema' },
+        { text: 'Concurrency Bugs',       link: 'notes/threads-bugs' },
+        { text: 'Event Based Concurrency', link: 'notes/threads-events' },
+        { text: 'I/O Devices',            link: 'notes/file-devices' },
+        { text: 'Files and Directories',  link: 'notes/file-intro' },
+        { text: 'Security',               link: 'notes/security-intro' },
       ]
     }
   ]

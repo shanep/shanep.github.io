@@ -8,7 +8,7 @@
 
 ## Example
 
-![dir](images/dir-tree.png)
+![dir](../images/dir-tree.png)
 
 ## Interface
 
@@ -39,7 +39,7 @@ to do so.
 
 ## Process Sharing
 
-![sharing](images/share-file-handle.png)
+![sharing](../images/share-file-handle.png)
 
 ## Buffering
 

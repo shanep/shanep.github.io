@@ -9,7 +9,7 @@ into fixed-sized units, each of which we call a page.
 
 ## Memory
 
-![Page Frame](images/vm-page-frame.png)
+![Page Frame](../images/vm-page-frame.png)
 
 ## Page Table
 
@@ -26,7 +26,7 @@ a **Page Table Entry (PTE)** and contains:
 
 ## Virtual Address
 
-![Virtual](images/vm-virtual-phy.png)
+![Virtual](../images/vm-virtual-phy.png)
 
 A virtual address is split into two parts:
 - **VPN (Virtual Page Number)**: index into the page table
@@ -34,7 +34,7 @@ A virtual address is split into two parts:
 
 ## Address Translation
 
-![Translation](images/vm-add-trans.png)
+![Translation](../images/vm-add-trans.png)
 
 On every memory access the hardware Memory Management Unit (MMU)
 performs: `physical_address = page_table[VPN] * page_size + offset`

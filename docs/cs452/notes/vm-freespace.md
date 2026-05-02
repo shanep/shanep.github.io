@@ -13,15 +13,15 @@
 
 ## Fixed Partition
 
-![Internal Frag](images/vm-internal-frag.png)
+![Internal Frag](../images/vm-internal-frag.png)
 
 ## Variable Partition
 
-![External Frag](images/vm-external-frag.png)
+![External Frag](../images/vm-external-frag.png)
 
 ## malloc
 
-![malloc header](images/malloc-header.png)
+![malloc header](../images/malloc-header.png)
 
 ## malloc Internals
 
