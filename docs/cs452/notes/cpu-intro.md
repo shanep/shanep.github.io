@@ -19,11 +19,11 @@ provides to users. A process is a running program.
 
 ## Loading A process
 
-![the process](../images/the-process.png)
+![the process](images/the-process.png)
 
 ## Process States
 
-![process states](../images/process-states.png)
+![process states](images/process-states.png)
 
 ## Data Structures
 
@@ -64,11 +64,11 @@ LoadLibraryEx (WIN32)
 
 ## Disadvantages of Dynamic Linking
 
-![dll error](../images/dll-error.png)
+![dll error](images/dll-error.png)
 
 ## Loading
 
-![dynamic loading](../images/dynamic-loading.png)
+![dynamic loading](images/dynamic-loading.png)
 
 ## Static Libraries
 
@@ -91,7 +91,7 @@ LoadLibraryEx (WIN32)
 - If there is a security flaw in your linked code you will still be using the old version
 - If library code get faster or adds support for new hardware you are stuck on the old version
 
-![static loading](../images/static-loading.png)
+![static loading](images/static-loading.png)
 
 ## Dependency Types
 
@@ -99,14 +99,14 @@ LoadLibraryEx (WIN32)
 
 Module A is implicitly linked with Module B at compile/link time
 
-![implicit](../images/implicit-dep.png)
+![implicit](images/implicit-dep.png)
 
 ## Explicit Dependency
 
 Module A is not linked with Module B at compile/link time. At runtime,
 Module A dynamically loads Module B via a LoadLibrary type function
 
-![explicit](../images/explicit-dep.png)
+![explicit](images/explicit-dep.png)
 
 ## Forward Dependency
 
@@ -115,4 +115,4 @@ and Module A’s source code actually calls one or more functions in
 Module B. One of the functions called in Module B is actually a
 forwarded function call to Module C
 
-![forward](../images/forward-dep.png)
+![forward](images/forward-dep.png)
