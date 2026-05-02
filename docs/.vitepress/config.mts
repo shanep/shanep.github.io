@@ -177,19 +177,6 @@ function cs408(): DefaultTheme.SidebarItem[] {
         { text: 'Sprint 6: Analytics (Weeks 13–14)', link: 'notes/sprint6' },
         { text: 'Hardening (Week 15)',               link: 'notes/hardening' },
       ]
-    },
-    {
-      text: 'Reference',
-      collapsed: true,
-      items: [
-        { text: 'Course Introduction', link: 'notes/course-introduction' },
-        { text: 'HTML Review',         link: 'notes/html-review' },
-        { text: 'CSS Review',          link: 'notes/css-review' },
-        { text: 'JavaScript',          link: 'notes/javascript' },
-        { text: 'Frontend Review',     link: 'notes/frontend-review' },
-        { text: 'Backend Review',      link: 'notes/backend-review' },
-        { text: 'Accessibility',       link: 'notes/accessibility' },
-      ]
     }
   ]
 }
