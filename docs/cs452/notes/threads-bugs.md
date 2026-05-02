@@ -1,5 +1,7 @@
 # Concurrency Bugs
 
+<SlideView />
+
 ## Non-Deadlock Bugs
 
 Non-deadlock bugs make up a majority of concurrency bugs, according to

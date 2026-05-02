@@ -1,5 +1,9 @@
 # Condition Variables
 
+<SlideView />
+
+## Introduction
+
 - There are many cases where a thread wishes to check whether a
     condition is true before continuing its execution
 - A naive approach could just constantly check a global (spin)

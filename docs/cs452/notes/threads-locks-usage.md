@@ -1,5 +1,9 @@
 # Locked Data Structures
 
+<SlideView />
+
+## Introduction
+
 A data structure that can be safely and correctly accessed by multiple
 threads at once.
 

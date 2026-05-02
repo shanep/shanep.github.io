@@ -1,5 +1,7 @@
 # Operating Systems Introduction
 
+<SlideView />
+
 ## The Von Neumann Model
 
 ![von neumann](images/von-neumann.png)

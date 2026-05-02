@@ -1,5 +1,9 @@
 # Free Space Management
 
+<SlideView />
+
+## Introduction
+
 - Managing free space can certainly be easy, as we will see when we
     discuss the concept of paging.
 - Where free-space management becomes more difficult (and interesting)

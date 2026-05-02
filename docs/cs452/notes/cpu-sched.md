@@ -1,5 +1,7 @@
 # Scheduling
 
+<SlideView />
+
 ## First In, First Out (FIFO)
 
 - Most basic algorithm

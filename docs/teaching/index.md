@@ -3,6 +3,7 @@
 ## Course Materials
 
 - [CS452: Operating Systems](../cs452/index.md)
+- [CS408: Full Stack Web Development](../cs408/index.md)
 
 ## Guides
 

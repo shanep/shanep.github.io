@@ -1,5 +1,6 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
 import footnote from 'markdown-it-footnote'
+import container from 'markdown-it-container'
 
 declare module 'vitepress' {
   namespace DefaultTheme {
@@ -19,6 +20,14 @@ export default defineConfig({
     config: (md) => {
         // @ts-ignore
         md.use(footnote)
+        md.use(container, 'cols', {
+          render: (tokens: any[], idx: number) =>
+            tokens[idx].nesting === 1 ? '<div class="cols">\n' : '</div>\n'
+        })
+        md.use(container, 'col', {
+          render: (tokens: any[], idx: number) =>
+            tokens[idx].nesting === 1 ? '<div class="col">\n' : '</div>\n'
+        })
     }
   },
   cleanUrls: true,
@@ -151,6 +160,8 @@ function cs408(): DefaultTheme.SidebarItem[] {
       text: 'CS408',
       items: [
         { text: 'Syllabus', link: 'index'},
+        { text: 'Schedule',     link: 'schedule/index' },
+        { text: 'Assignments',  link: 'assignments/index' },
       ]
     },
     {
@@ -183,7 +194,7 @@ function cs452(): DefaultTheme.SidebarItem[] {
       ]
     },
     {
-      text: 'Course Notes',
+      text: 'Lecture Notes',
       collapsed: false,
       items: [
         { text: 'Course Introduction',    link: 'notes/course-introduction' },

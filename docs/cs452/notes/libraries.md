@@ -1,5 +1,9 @@
 # Libraries
 
+<SlideView />
+
+## Introduction
+
 - A dynamic-link library (DLL or .so) is a module that contains
     functions and data
 - Applications (processes) can use the functions and data in the code

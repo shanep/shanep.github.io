@@ -1,5 +1,9 @@
 # I/O Devices
 
+<SlideView />
+
+## Introduction
+
 ![system arch](images/system-arch.png)
 
 ## Modern System (intel)

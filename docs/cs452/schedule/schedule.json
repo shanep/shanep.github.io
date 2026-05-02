@@ -1,0 +1,208 @@
+{
+  "startDate": "2025-08-25",
+  "meetingOffsets": [0, 2],
+  "weeks": [
+    {
+      "week": 1,
+      "days": [
+        { "topic": "Course Introduction", "topicUrl": "/cs452/notes/course-introduction" },
+        { "topic": "C Review", "topicUrl": "/cs452/notes/c-review" }
+      ],
+      "assignments": [
+        { "name": "Hw1", "url": "/cs452/assignments/hw1", "assignedSlot": 0, "dueDay": "Friday" }
+      ],
+      "readings": [
+        { "text": "Modern Debugging", "url": "/articles/modern-debugging-acm.pdf" },
+        { "text": "Coverity", "url": "/articles/coverity-acm.pdf" }
+      ]
+    },
+    {
+      "week": 2,
+      "days": [
+        { "topic": "Hw2 - In Class Review", "topicUrl": "/cs452/assignments/hw2" },
+        { "topic": "P1 - In Class Review", "topicUrl": "/cs452/assignments/p1" }
+      ],
+      "assignments": [
+        { "name": "Hw2", "url": "/cs452/assignments/hw2", "assignedSlot": 0, "dueDay": "Friday" },
+        { "name": "P1",  "url": "/cs452/assignments/p1",  "assignedSlot": 1 }
+      ],
+      "readings": [
+        { "text": "Kernel patches", "url": "https://www.kernel.org/doc/html/latest/process/submitting-patches.html" }
+      ]
+    },
+    {
+      "week": 3,
+      "days": [
+        { "topic": "Operating Systems Introduction", "topicUrl": "/cs452/notes/intro" },
+        { "topic": "P2 - In Class Review", "topicUrl": "/cs452/assignments/p2" }
+      ],
+      "assignments": [
+        { "name": "P1", "url": "/cs452/assignments/p1", "dueDay": "Friday" },
+        { "name": "P2", "url": "/cs452/assignments/p2", "assignedSlot": 1 }
+      ],
+      "readings": [
+        { "text": "OSTEP ch2 - Introduction", "url": "http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf" }
+      ]
+    },
+    {
+      "week": 4,
+      "days": [
+        { "topic": "The Process", "topicUrl": "/cs452/notes/cpu-intro" },
+        { "topic": "Process API", "topicUrl": "/cs452/notes/cpu-api" }
+      ],
+      "readings": [
+        { "text": "OSTEP ch4 - Abstraction the process", "url": "http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf" },
+        { "text": "OSTEP ch5 - Process API", "url": "http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf" }
+      ]
+    },
+    {
+      "week": 5,
+      "days": [
+        { "topic": "Limited Direct Execution", "topicUrl": "/cs452/notes/cpu-mechanisms" },
+        { "topic": "P3 - In Class Review", "topicUrl": "/cs452/assignments/p3" }
+      ],
+      "assignments": [
+        { "name": "P2", "url": "/cs452/assignments/p2", "dueDay": "Friday" },
+        { "name": "P3", "url": "/cs452/assignments/p3", "assignedSlot": 1 }
+      ],
+      "readings": [
+        { "text": "OSTEP ch6 - Limited Direct Execution", "url": "http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf" }
+      ]
+    },
+    {
+      "week": 6,
+      "days": [
+        { "topic": "Scheduling", "topicUrl": "/cs452/notes/cpu-sched" },
+        { "topic": "Address Spaces", "topicUrl": "/cs452/notes/vm-intro" }
+      ],
+      "readings": [
+        { "text": "OSTEP ch7 - Scheduling Introduction", "url": "http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf" },
+        { "text": "OSTEP ch13 - Address Spaces", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf" }
+      ]
+    },
+    {
+      "week": 7,
+      "days": [
+        { "topic": "Free Space Management", "topicUrl": "/cs452/notes/vm-freespace" },
+        { "topic": "P4 - In Class Review", "topicUrl": "/cs452/assignments/p4" }
+      ],
+      "assignments": [
+        { "name": "P3", "url": "/cs452/assignments/p3", "dueDay": "Friday" },
+        { "name": "P4", "url": "/cs452/assignments/p4", "assignedSlot": 1 }
+      ],
+      "readings": [
+        { "text": "OSTEP ch17 - Free Space management", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf" }
+      ]
+    },
+    {
+      "week": 8,
+      "days": [
+        { "topic": "Midterm review" },
+        { "topic": "Midterm exam" }
+      ],
+      "readings": [
+        { "text": "ch2, ch4, ch5, ch6, ch7, ch13, ch17" }
+      ]
+    },
+    {
+      "week": 9,
+      "days": [
+        { "topic": "Paging", "topicUrl": "/cs452/notes/vm-paging" },
+        { "topic": "Concurrency", "topicUrl": "/cs452/notes/threads-intro" }
+      ],
+      "readings": [
+        { "text": "OSTEP ch18 - Paging: Introduction", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf" },
+        { "text": "OSTEP ch26 - Concurrency and Threads", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf" }
+      ]
+    },
+    {
+      "week": 10,
+      "days": [
+        { "topic": "Locks", "topicUrl": "/cs452/notes/threads-locks" },
+        { "topic": "P5 - In Class Review", "topicUrl": "/cs452/assignments/p5" }
+      ],
+      "assignments": [
+        { "name": "P4", "url": "/cs452/assignments/p4", "dueDay": "Friday" },
+        { "name": "P5", "url": "/cs452/assignments/p5", "assignedSlot": 1 }
+      ],
+      "readings": [
+        { "text": "OSTEP ch28 - Locks", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf" }
+      ]
+    },
+    {
+      "week": 11,
+      "days": [
+        { "topic": "Locked Data Structures", "topicUrl": "/cs452/notes/threads-locks-usage" },
+        { "topic": "Condition Variables", "topicUrl": "/cs452/notes/threads-cv" }
+      ],
+      "readings": [
+        { "text": "OSTEP ch29 - Locked Data Structures", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks-usage.pdf" },
+        { "text": "OSTEP ch30 - Condition Variables", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf" }
+      ]
+    },
+    {
+      "week": 12,
+      "days": [
+        { "topic": "Semaphores", "topicUrl": "/cs452/notes/threads-sema" },
+        { "topic": "P6 - In Class Review", "topicUrl": "/cs452/assignments/p6" }
+      ],
+      "assignments": [
+        { "name": "P5", "url": "/cs452/assignments/p5", "dueDay": "Friday" },
+        { "name": "P6", "url": "/cs452/assignments/p6", "assignedSlot": 1 }
+      ],
+      "readings": [
+        { "text": "OSTEP ch31 - Semaphores", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf" }
+      ]
+    },
+    {
+      "week": 13,
+      "days": [
+        { "topic": "Concurrency Bugs", "topicUrl": "/cs452/notes/threads-bugs" },
+        { "topic": "Event Based Concurrency", "topicUrl": "/cs452/notes/threads-events" }
+      ],
+      "readings": [
+        { "text": "OSTEP ch32 - Concurrency Bugs", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf" },
+        { "text": "OSTEP ch33 - Event Based Concurrency", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-events.pdf" }
+      ]
+    },
+    {
+      "week": 14,
+      "days": [
+        { "topic": "Thanksgiving Break" },
+        { "topic": "Thanksgiving Break" }
+      ]
+    },
+    {
+      "week": 15,
+      "days": [
+        { "topic": "I/O Devices", "topicUrl": "/cs452/notes/file-devices" },
+        { "topic": "P7", "topicUrl": "/cs452/assignments/p7" }
+      ],
+      "assignments": [
+        { "name": "P6", "url": "/cs452/assignments/p6", "dueDay": "Friday" },
+        { "name": "P7", "url": "/cs452/assignments/p7", "assignedSlot": 1 }
+      ],
+      "readings": [
+        { "text": "OSTEP ch36 - I/O Devices", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf" }
+      ]
+    },
+    {
+      "week": 16,
+      "days": [
+        { "topic": "Files and Directories", "topicUrl": "/cs452/notes/file-intro" },
+        { "topic": "Security", "topicUrl": "/cs452/notes/security-intro" }
+      ],
+      "assignments": [
+        { "name": "P7", "url": "/cs452/assignments/p7", "dueDay": "Friday" }
+      ],
+      "readings": [
+        { "text": "OSTEP ch39 - Files and Directories", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf" },
+        { "text": "OSTEP ch53 - Security", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/security-intro.pdf" }
+      ]
+    },
+    {
+      "week": 17,
+      "note": "Final Exam"
+    }
+  ]
+}

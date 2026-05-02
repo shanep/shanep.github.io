@@ -1,5 +1,9 @@
 # Files And Directories
 
+<SlideView />
+
+## Introduction
+
 - File - A file is simply a linear array of bytes, each of which you
     can read or write
 - Directory - A directory, like a file, also has a low-level name
