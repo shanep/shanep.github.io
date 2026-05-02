@@ -1,5 +1,9 @@
 # Locks
 
+<SlideView />
+
+## Introduction
+
     balance = balance + 1;
 
     1 lock_t mutex; // some globally-allocated lock ’mutex’

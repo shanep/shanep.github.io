@@ -1,5 +1,9 @@
 # Event Based Concurrency
 
+<SlideView />
+
+## Introduction
+
 Threads are one way to handle concurrent work, but they come with real
 costs: synchronization bugs, deadlocks, and the overhead of context
 switching. **Event-based concurrency** is an alternative model used by

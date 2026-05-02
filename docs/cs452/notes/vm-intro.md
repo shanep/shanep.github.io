@@ -1,5 +1,9 @@
 # Address Spaces
 
+<SlideView />
+
+## Early Systems
+
 - OS was a set of routines (a library) that sat in memory at address 0
 - One running program
 - Systems were simple!
@@ -34,6 +38,10 @@ snippet of code and will need to determine where the variable lives.
 - Heap
 - Stack
 
+## Quiz 1
+
+:::: cols
+::: col
 ```c
 int *A;
  void foo(int* bar, int len){
@@ -47,6 +55,9 @@ int *A;
      free(A);
  }
 ```
+:::
+::: col
+Which of the following are on the heap?
 
 - Length
 - bar (in foo)
@@ -54,3 +65,5 @@ int *A;
 - bar[0]
 - argc
 - \*A (dereference A)
+:::
+::::

@@ -1,0 +1,121 @@
+{
+  "startDate": "2026-08-25",
+  "weeks": [
+    {
+      "week": 1,
+      "assignments": [
+        { "name": "Course Introduction", "url": "/cs408/course-introduction", "dueDay": "Wednesday" },
+        { "name": "Syllabus Quiz (Canvas)",        "dueDay": "Thursday" },
+        { "name": "Class Introductions (Canvas)",  "dueDay": "Friday" }
+      ]
+    },
+    {
+      "week": 2,
+      "assignments": [
+        { "name": "HTML Review", "url": "/cs408/html-review", "dueDay": "Wednesday" },
+        { "name": "Reading Quiz (Canvas)",      "dueDay": "Thursday" },
+        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+      ]
+    },
+    {
+      "week": 3,
+      "assignments": [
+        { "name": "CSS Review", "url": "/cs408/css-review", "dueDay": "Wednesday" },
+        { "name": "Reading Quiz (Canvas)",      "dueDay": "Thursday" },
+        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+      ]
+    },
+    {
+      "week": 4,
+      "assignments": [
+        { "name": "JavaScript", "url": "/cs408/javascript", "dueDay": "Wednesday" },
+        { "name": "Reading Quiz (Canvas)",      "dueDay": "Thursday" },
+        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+      ]
+    },
+    {
+      "week": 5,
+      "assignments": [
+        { "name": "Frontend Review", "url": "/cs408/frontend-review", "dueDay": "Wednesday" },
+        { "name": "Reading Quiz (Canvas)",      "dueDay": "Thursday" },
+        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+      ]
+    },
+    {
+      "week": 6,
+      "assignments": [
+        { "name": "Backend Review", "url": "/cs408/backend-review", "dueDay": "Wednesday" },
+        { "name": "Reading Quiz (Canvas)",      "dueDay": "Thursday" },
+        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+      ]
+    },
+    {
+      "week": 7,
+      "assignments": [
+        { "name": "Accessibility", "url": "/cs408/accessibility", "dueDay": "Wednesday" },
+        { "name": "Reading Quiz (Canvas)",      "dueDay": "Thursday" },
+        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+      ]
+    },
+    {
+      "week": 8,
+      "assignments": [
+        { "name": "Project Brainstorm", "url": "/cs408/project-brainstorm", "dueDay": "Wednesday" }
+      ]
+    },
+    {
+      "week": 9,
+      "assignments": [
+        { "name": "Project Brainstorm Discussions (Canvas)", "dueDay": "Wednesday" },
+        { "name": "Form a Team — optional (Canvas)",         "dueDay": "Friday" }
+      ]
+    },
+    {
+      "week": 10,
+      "assignments": [
+        { "name": "Project Setup", "url": "/cs408/project-setup", "dueDay": "Wednesday" },
+        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+      ]
+    },
+    {
+      "week": 11,
+      "assignments": [
+        { "name": "Feature Development", "url": "/cs408/feature-dev", "dueDay": "Wednesday" },
+        { "name": "Progress Report (Canvas)", "dueDay": "Friday" }
+      ]
+    },
+    {
+      "week": 12,
+      "assignments": [
+        { "name": "Feature Development", "url": "/cs408/feature-dev", "dueDay": "Wednesday" },
+        { "name": "Progress Report (Canvas)", "dueDay": "Friday" }
+      ]
+    },
+    {
+      "week": 13,
+      "assignments": [
+        { "name": "Feature Development", "url": "/cs408/feature-dev", "dueDay": "Wednesday" },
+        { "name": "Progress Report (Canvas)", "dueDay": "Friday" }
+      ]
+    },
+    {
+      "week": 14,
+      "assignments": [
+        { "name": "Feature Development", "url": "/cs408/feature-dev", "dueDay": "Wednesday" },
+        { "name": "Progress Report (Canvas)", "dueDay": "Friday" }
+      ]
+    },
+    {
+      "week": 15,
+      "assignments": [
+        { "name": "Final Presentation", "url": "/cs408/final-presentation", "dueDay": "Friday" }
+      ]
+    },
+    {
+      "week": 16,
+      "assignments": [
+        { "name": "Presentation Review (Canvas)", "dueDay": "Friday" }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,9 @@
 # Paging
 
+<SlideView />
+
+## Introduction
+
 Instead of splitting up a process's address space into some number of
 variable-sized logical segments (e.g., code, heap, stack), we divide it
 into fixed-sized units, each of which we call a page.

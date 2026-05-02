@@ -1,4 +1,6 @@
-# Course Introduction
+#  Course Introduction
+
+<SlideView />
 
 This class is important because your code will be running on some sort
 of computing device and you will need to know how an operating system

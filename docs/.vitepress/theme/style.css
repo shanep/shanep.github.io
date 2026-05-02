@@ -1,0 +1,9 @@
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.cols .col > :first-child { margin-top: 0; }
+.cols .col > :last-child  { margin-bottom: 0; }

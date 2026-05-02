@@ -1,5 +1,9 @@
 # Threads
 
+<SlideView />
+
+## Introduction
+
 ![Threads](images/threads-intro.jpg)
 
 ## What is a Thread
@@ -35,13 +39,14 @@ critical section, and post-protocol areas. A process can terminate
 abnormally in the remainder section. If a process dies in the remainder
 section, it should not affect other processes.
 
-    for(;;){
-            /*pre-protocol*/
-            /*critical section*/
-            /*post-protocol*/
-            /*remainder*/
-    }
-
+```c
+for(;;){
+        /*pre-protocol*/
+        /*critical section*/
+        /*post-protocol*/
+        /*remainder*/
+}
+```
 ## Context Switch
 
 - Threads will context switch just like processes
