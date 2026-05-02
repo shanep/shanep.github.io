@@ -65,18 +65,25 @@ CS208, CS321
 
 ## Assessments
 
-Your final grade will be calculated with the following weights.
+Your final grade is based on work you ship to the class GitHub repository as merged pull requests.
+There are no exams. There are no individual homework assignments.
 
-- Homework - 10%
-- Participation - 20%
-- Final Project Checkpoints - 20%
-- Final Project - 50%
+| Grade | Merged PRs | Reviews Given |
+|-------|-----------|---------------|
+| A | ≥ 12 | ≥ 10 |
+| B | ≥ 8  | ≥ 6  |
+| C | ≥ 5  | ≥ 0  |
+| D/F | < 5 | — |
+
+A merged PR must: pass all CI checks (ruff, pyright, pytest), have 2 peer approvals, and be
+linked to a GitHub issue. Canvas weekly reflections (10%) and the final demo video (10%) round
+out the grade.
 
 ## Participation
 
-This is an online asynchronous class, thus all of our interactions and
-participation will be done through canvas using discussion boards and
-video posts.
+Participation happens on GitHub, not Canvas. Leaving a substantive code review counts as
+participation. Opening a well-written issue counts. Posting a weekly reflection in Canvas also
+counts (required every other week, see the schedule).
 
 
 <!--@include: ../../parts/syllabus-boiler.md-->

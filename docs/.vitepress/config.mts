@@ -165,20 +165,30 @@ function cs408(): DefaultTheme.SidebarItem[] {
       ]
     },
     {
-      text: 'Course materials',
+      text: 'Project Phases',
       collapsed: false,
       items: [
-      	{ text: 'Introduction', link: 'course-introduction'},
-	{ text: 'HTML Review' , link: 'html-review'},
-	{ text: 'CSS Reveiw' , link: 'css-review'},
-	{ text: 'Javascript', link: 'javascript'},
-	{ text: 'Frontend Review', link: 'frontend-review'},
-	{ text: 'Backend Review', link: 'backend-review' },
-	{ text: 'Accessibility' , link: 'accessibility'},
-        { text: 'Project Brainstorm', link: 'project-brainstorm'},
-        { text: 'Project Setup', link: 'project-setup'},
-	{ text: 'Feature Developemnt', link: 'feature-dev'},
-	{ text: 'Final Presentation', link: 'final-presentation'}
+        { text: 'Onboarding (Weeks 1–2)',           link: 'notes/onboarding' },
+        { text: 'Sprint 1: Core CRUD (Weeks 3–4)',  link: 'notes/sprint1' },
+        { text: 'Sprint 2: Auth (Weeks 5–6)',        link: 'notes/sprint2' },
+        { text: 'Sprint 3: Search (Weeks 7–8)',      link: 'notes/sprint3' },
+        { text: 'Sprint 4: Admin (Weeks 9–10)',      link: 'notes/sprint4' },
+        { text: 'Sprint 5: Email (Weeks 11–12)',     link: 'notes/sprint5' },
+        { text: 'Sprint 6: Analytics (Weeks 13–14)', link: 'notes/sprint6' },
+        { text: 'Hardening (Week 15)',               link: 'notes/hardening' },
+      ]
+    },
+    {
+      text: 'Reference',
+      collapsed: true,
+      items: [
+        { text: 'Course Introduction', link: 'notes/course-introduction' },
+        { text: 'HTML Review',         link: 'notes/html-review' },
+        { text: 'CSS Review',          link: 'notes/css-review' },
+        { text: 'JavaScript',          link: 'notes/javascript' },
+        { text: 'Frontend Review',     link: 'notes/frontend-review' },
+        { text: 'Backend Review',      link: 'notes/backend-review' },
+        { text: 'Accessibility',       link: 'notes/accessibility' },
       ]
     }
   ]
