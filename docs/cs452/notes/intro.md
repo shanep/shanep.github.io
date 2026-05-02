@@ -2,7 +2,7 @@
 
 ## The Von Neumann Model
 
-![von neumann](../images/von-neumann.png)
+![von neumann](images/von-neumann.png)
 
 ## The OS
 

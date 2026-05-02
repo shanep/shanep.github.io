@@ -1,6 +1,6 @@
 # Threads
 
-![Threads](../images/threads-intro.jpg)
+![Threads](images/threads-intro.jpg)
 
 ## What is a Thread
 
@@ -50,7 +50,7 @@ section, it should not affect other processes.
 
 ## Memory Layout
 
-![Memory Layout](../images/thread-memory-layout.png)
+![Memory Layout](images/thread-memory-layout.png)
 
 ## Why Use Threads?
 
@@ -105,7 +105,7 @@ We don’t control the scheduler! ⚠️
     add $0x1, %eax
     mov %eax, 0x8049a1c
 
-![instruction interleaving](../images/instruction-interleaving.png)
+![instruction interleaving](images/instruction-interleaving.png)
 
 ## Atomicity
 

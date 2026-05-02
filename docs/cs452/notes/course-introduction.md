@@ -27,7 +27,7 @@ reading bytes.
 
 ## Virtualization
 
-![matrix](../images/matrix.webp)
+![matrix](images/matrix.webp)
 
 Everything you have been taught is a lie!
 
@@ -54,7 +54,7 @@ take down your entire machine!
 
 ## Concurrency
 
-![production](../images/concurrency.png)
+![production](images/concurrency.png)
 
 Concurrency is typically introduced in an Operating System class in a
 traditional CS curriculum because the operating system is responsible

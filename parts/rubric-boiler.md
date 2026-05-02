@@ -1,178 +1,141 @@
 <!-- markdownlint-disable-next-line -->
-## Minimum standards
+## Minimum Standards
 
-Unless otherwise stated all code must compile and run on the department’s
-computers in the Kount Computer Lab (CCP241). All code will be compiled and
-tested on the command line using the scripts provided. Your instructor or
-teaching assistant will **not** use an IDE to build and test your code. While
-you are welcome to use any IDE you wish to develop your code it is strongly
-recommended that you compile and test your code using the terminal to ensure you
-have not introduced any IDE specific dependencies on accident.
+All code must compile and run on the department computers in the Kount Computer Lab (CCP 241).
+Code is compiled and tested on the command line using the provided scripts — your instructor will
+**not** use an IDE to build or test your submission. You are welcome to develop in any IDE, but
+always verify your code compiles and runs cleanly from the terminal before submitting to avoid
+accidentally introducing IDE-specific dependencies.
 
-Projects have been carefully crafted to ensure certain learning objectives are
-satisfied. Thus, you are required to solve the problem as described in the
-specification. For example, if the specification asks you to implement a linked
-list and you implement a hash map your solution would not be correct even though
-your code may pass all the instructor provided tests. Your final grade will be
-reduced up to 50% if you do not follow the specification.
+Projects are designed to satisfy specific learning objectives, so you are required to solve the
+problem as described in the specification. For example, if the spec asks for a linked list but you
+implement a hash map, your solution is incorrect even if it passes every test.
+
+::: danger
+
+Solving the problem in a way that contradicts the specification can reduce your grade by up to
+**50%**, even if your code passes all provided tests.
+
+:::
 
 ## Testing
 
-For the testing criteria your code will be run against the provided tests and
-any additional tests that you author. The test suite may consist of both
-automated tests and or manual testing in cases that automation is not feasible.
+Your code will be run against the provided tests and any additional tests you author. The test suite
+may include both automated and manual tests where automation is not feasible.
 
-The question that is always asked is how many tests do I write? At a minimum
-you should write at least one test for every **public** function or method. This
-includes any untested functions that were provided for you. You should make sure
-that you test bad inputs as well as good inputs. Your program should not crash
-if a user inputs bad data!
+**How many tests should you write?** At a minimum, write at least one test per **public** function
+or method — including any untested functions provided to you in the starter code. Always test both
+valid and invalid inputs. Your program must not crash on bad data.
 
 ::: warning
-Students are expected to write tests beyond what is provided for them to ensure
-their code operates as expected. Writing tests is part of the learning process
-and **part of your grade** for this project.
+
+Writing tests beyond what is provided is **required** and is part of your grade. Students who only
+verify the provided tests pass will lose points.
+
 :::
 
-Some times it is not feasible to write tests for part of your program. For
-example, if the project includes a User Interface (UI) component it is very
-difficult to write automated tests without extensive mocking or complicated
-tooling. In these cases you will be given a pass on the testing criteria for
-that particular part and you will need to detail what manual tests you completed
-by commenting your code with the details.
+For UI components or other areas where automated testing is not practical, you will be given a pass
+on automated testing — but you must document your manual test cases in comments in the source code.
 
-You are not allowed to change the instructor provided tests in any way, if you
-think there is a bug in the given tests please attend office hours to review
-your findings. You must pass the tests as they are written.
+You are **not** allowed to modify the instructor-provided tests. If you believe a provided test
+contains a bug, bring it to office hours. You must pass the tests as written.
 
-Testing consists of but is not limited to:
+Testing includes but is not limited to:
 
-- Validating user input
-  - User input should not crash your program
-- Validating function arguments
-  - Malformed input to your functions should not cause a crash
-  - What happens if you pass NULL or undefined to function arguments
-  - Passing values that are out of range such as negative numbers
-  - Checking the return values of your functions to ensure that the function is returning expected values
-- Defining [loop invariants](https://en.wikipedia.org/wiki/Loop_invariant) where appropriate.
-- Implementing header files as defined
-- Using the API calls that are explicitly called out in the specification.
+- **User input validation** — bad input must not crash the program
+- **Function argument validation** — handle `NULL`, undefined, negative, or out-of-range values
+- **Return value checking** — verify functions return the expected values
+- **Loop invariants** — define [loop invariants](https://en.wikipedia.org/wiki/Loop_invariant) where appropriate
+- **Header file conformance** — implement headers exactly as defined
+- **API compliance** — use the specific API calls listed in the specification
 
 ### Code Coverage
 
-Code coverage is a measure of how much of your code is executed by your tests.
-You are expected to get as close to 100% code coverage as possible. Code that is
-difficult to test without significant mocking, dependency injection, or
-threading issues does not have to be tested and will be clearly called out in
-the specification.
+Code coverage measures how much of your code is exercised by your tests. You are expected to get
+as close to **100% coverage** as possible. Areas that are genuinely difficult to test (complex
+mocking, threading, external dependencies) will be explicitly called out in the spec and excluded.
 
 ::: warning
 
-Functions that you can exclude from the code coverage report will be clearly
-denoted in the project specification. You can **NOT** exclude any functions that
-are not explicitly called out in the specification in order to artificially
-inflate your code coverage metric. Doing so, and getting caught, will result in
-a 0% for this section of the rubric.
+Functions excluded from the coverage report will be **clearly listed** in the project spec. You
+may **not** exclude functions that are not on that list to inflate your coverage metric. Doing so
+will result in a **0%** for the testing section of the rubric.
 
 :::
 
 ## General Coding Guidelines
 
-For all projects the following guidelines are enforced. Your project will be
-**spot checked** for these issues and if any are found you will lose _5 points_
-per issue found. Not every issue will be caught by the spot checks so don't
-assume that just because you didn't lose points on a project that you won't lose
-points in a future project.
+The following guidelines apply to all projects. Your submission will be **spot checked**, and you
+will lose **5 points per violation** found. Not every issue will be caught in every project — but
+do not assume a clean score on one project means these rules will be overlooked on future ones.
 
 ### Global Variables
 
-All **public** global variables are 100% banned. Private, protected, or
-stack local variables variables are OK. If you truly think that the only
-way to solve the problem is to use a global variable then you must
-**clearly** document why you are forced to use a global variable.
+Public global variables are **banned**. Private, protected, or stack-local variables are fine. If
+you genuinely believe a global variable is the only solution, you must document clearly why in a
+comment.
 
-There are instances where it is necessary to use a public global
-variable because you are dealing with a legacy API, writing a device
-driver, or you are working with a poorly implemented SDK. These cases
-will be clearly detailed in the project specification and you will be
-allowed to use global variables in those cases.
+Exceptions exist when dealing with legacy APIs, device drivers, or poorly designed SDKs — these
+cases will be explicitly called out in the project spec.
 
-Global variables make writing concurrent, async, multi-threaded code
-very difficult. So even if you are not writing concurrent code (or don’t
-even know what that means at this point) it is good to start training
-yourself to use good habits so the code you write can easily be used in
-a concurrent environment instead of having to refactor your code in the
-future.
+Global state makes concurrent and asynchronous code much harder to write correctly. Even if your
+current project is single-threaded, avoiding globals builds habits that will matter when you start
+writing multithreaded code.
 
 ### Formatting
 
-Except for languages like python, code formatting for the most part does
-not impact functionality. Formatting can be very subjective so no
-particular style is enforced, it is only important that you are
-consistent within your own code.
+Consistent formatting is required. No specific style is enforced, but your code must be internally
+consistent. There is no excuse for poorly formatted code when your editor
+[can do it for you](https://stackoverflow.com/questions/29973357/how-do-you-format-code-in-visual-studio-code-vscode).
 
-There should be no reason for poorly formatted code when your editor
-will [do it for you](https://stackoverflow.com/questions/29973357/how-do-you-format-code-in-visual-studio-code-vscode)!
-What makes code more or less readable is often controversial and
-opinionated. In this class we will not address the philosophical aspect
-of putting braces on the end of the line or on a new line, or the
-classic debate of tabs vs spaces, we will primarily focus on being
-consistent.
-
-English scholars have long known that [punctuation matters](https://www.vappingo.com/word-blog/the-importance-of-punctuation/).
-To quote from [purdue’s writing lab](https://owl.purdue.edu/owl/general_writing/academic_writing/paragraphs_and_paragraphing/index.html)
-“Good paragraphing also greatly assists your readers in following a
-piece of writing”. The readability of source code is also greatly
-improved by good formatting. Just because the compiler or interpreter
-ignores whitespace doesn’t mean you should as well.
+As [Purdue's Writing Lab](https://owl.purdue.edu/owl/general_writing/academic_writing/paragraphs_and_paragraphing/index.html)
+notes, good structure greatly aids comprehension. The same applies to source code — just because
+the compiler ignores whitespace doesn't mean your reader does.
 
 ### Spelling and Grammar
 
-I generally do not care about spelling or grammar mistakes, it is not an
-area I excel in :). The only exception to this rule is if your writing is
-so bad I literally can’t make heads or tails of what you are trying to
-say. At a minimum you should spell check your documents and attempt to
-write as clearly as possible. [Spell checkers](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-are even available that work with camelCase code!
+Code comments and documentation should be readable. Spell-check your work — a
+[spell checker extension](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+for VS Code even handles camelCase identifiers. The bar is clarity: if a reader cannot understand
+what you are trying to say, points will be deducted.
 
 ### Code Ownership
 
-The starter code that is given to you may not be up to the guidelines
-specified in the grading rubric. It is your responsibility to bring all
-code up to the standards specified regardless of the original author. If
-your instructor does not intend for you to fix any pre-existing issues
-it will be clearly marked by a comment in the source. Don’t assume that
-all code pushed out by your instructors is perfect, in fact some code
-may be wrong on purpose. Learning how to read and fix other engineers
-code is a very important skill to learn. You take responsibility for
-100% of the code that you submit regardless of who originally wrote it.
+Starter code provided to you may not meet the guidelines in this rubric. It is your responsibility
+to bring **all** code up to standard, regardless of who wrote it. If your instructor does not
+intend for you to fix a pre-existing issue, it will be marked with a comment.
 
-Some of the starter code will have **intentional defects** that your
-instructor intends for you to fix! Do NOT assume that all code given to
-you is perfect.
+Some starter code contains **intentional defects** you are expected to find and fix. Do not assume
+that code provided to you is correct. You take full responsibility for 100% of what you submit.
 
 ### Documentation
 
-For the purpose of grading there are two important things to note.
+Two things are required for documentation credit:
 
-1. Each function (method) or class must have a header documentation string
-   specifying what the function does, what each function parameter does, and
-   what the return value is.
-2. Documentation inside a function (method) is only necessary when you have
-   exceptionally complex code or you need to detail **why** you are doing
-   something non-obvious or against what has been taught in class or the
-   textbook.
+1. Every public function, method, or class must have a doc-comment describing what it does, what
+   each parameter means, and what it returns.
+2. Inline comments inside a function are only needed for non-obvious logic — explain **why**, not
+   what the code does.
 
-Your documentation string will be language dependent. For example in
-Java you will use [JavaDoc](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html)
-while Javascript will use [JSDoc](https://jsdoc.app/) and C/C++ will use
-[Doxygen](https://www.doxygen.nl/). If you have any questions as to what
-documentation tool you should be using you need to reach out to your
-instructor or TA for guidance.
+Use the appropriate tool for the language:
 
 ::: code-group
 
-```java
+```c [C / C++]
+/**
+ * @brief Initializes a new list with caller-supplied callbacks.
+ * The caller must pass the list to list_destroy when finished
+ * to free any allocated memory.
+ *
+ * @param destroy_data Function to free memory for user-supplied data
+ * @param compare_to   Function to compare two user data elements
+ * @return Pointer to the newly allocated list, or NULL on failure
+ */
+list_t *list_init(void (*destroy_data)(void *),
+                  int  (*compare_to)(const void *, const void *));
+```
+
+```java [Java]
 /**
  * Validates a chess move.
  *
@@ -181,55 +144,39 @@ instructor or TA for guidance.
  * @param toFile   file to which a piece is being moved
  * @param toRank   rank to which a piece is being moved
  * @return         true if the move is valid, otherwise false
- * @since          1.0
  */
 boolean isValidMove(int fromFile, int fromRank, int toFile, int toRank) {
     // ...body
 }
 ```
 
-```javascript
+```javascript [JavaScript]
 /**
- * Updates the current position of the mouse given an x,y coordinate
+ * Updates the current mouse position.
  *
- * @param {double} x The x coordinate of the mouse
- * @param {double} y The y coordinate of the mouse
+ * @param {number} x The x coordinate of the mouse
+ * @param {number} y The y coordinate of the mouse
  */
 function updateMouseLocation(x, y) {
     // ...body
 }
 ```
 
-```c++
-/**
-* @brief Create a new list with callbacks that know how to deal with the
-* data that list is storing. The caller must pass the list to list_destroy
-* when finished to free any memory that was allocated.
-*
-* @param destroy_data Function will free the memory for user supplied data
-* @param compare_to Function that will compare two user data elements
-* @return struct list* pointer to the newly allocated list.
-*/
-LAB_EXPORT list_t *list_init(void (*destroy_data)(void *),
-                            int (*compare_to)(const void *, const void *));
-```
-
 :::
 
 ### Compiler Warnings
 
-Warnings emitted by the compiler, interpreter, or static analysis tools need to be fixed.  Under no
-circumstances should you ignore warnings. In the **very** rare case that a warning cannot be fixed
-either because it is part of the assignment or a result of some other external dependency your
-instructor will clearly call this out and give you instructions on how to disable the warning. You
-are not allowed to disable any warnings without explicit permission from your instructor. If you
-submit code with warnings disabled you forfeit 100% of the points from the appropriate section in
-the rubric.
+All warnings from the compiler, interpreter, or static analysis tools must be fixed. Warnings are
+never acceptable in submitted code.
 
-::: tip
+In the rare case that a warning truly cannot be resolved — due to assignment constraints or an
+external dependency — your instructor will explicitly call this out and provide instructions for
+suppressing it. You may **not** disable warnings without that explicit permission.
 
-Warnings are something that is really easy to automatically check for.
-Thus, unlike the other issues that may slip past the grader it is highly
-unlikely that you will be given a pass on this criteria. :)
+::: warning
+
+Compiler warnings are trivial to check automatically, so unlike other style issues they will
+**always** be caught. Submitting code with unauthorized warnings disabled forfeits 100% of the
+points for the affected rubric section.
 
 :::
