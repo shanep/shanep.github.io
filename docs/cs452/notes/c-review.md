@@ -249,7 +249,7 @@ during the process so you can differentiate between compilation problems and
 linking problems.  When compiling your code you should **always** enable as many
 warnings as possible and should treat warnings as errors.
 
-![Compiling C Code](images/c_compile.svg)
+![Compiling C Code](../images/c_compile.svg)
 
 ### Building code
 

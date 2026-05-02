@@ -37,11 +37,11 @@ memory.
 
 ## System Call
 
-![system call](images/system-call.png)
+![system call](../images/system-call.png)
 
 ## Standard Library
 
-![images/c-standard-lib.png](images/c-standard-lib.png)
+![images/c-standard-lib.png](../images/c-standard-lib.png)
 
 ## Problem \#2 Switching Between Processes
 

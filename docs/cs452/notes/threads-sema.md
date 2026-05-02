@@ -34,7 +34,7 @@ call a semaphore used as a lock a binary semaphore.
 
 ## The Dining Philosophers 🍽
 
-![dining philosophers](images/dining-philosophers.png)
+![dining philosophers](../images/dining-philosophers.png)
 
 ## Thread Throttling
 

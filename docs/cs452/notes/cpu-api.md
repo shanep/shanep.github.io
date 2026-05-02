@@ -14,7 +14,7 @@
 
 ## Process Hierarchy
 
-![process hierarchy](images/process-hierarchy.png)
+![process hierarchy](../images/process-hierarchy.png)
 
 ## Exercise
 

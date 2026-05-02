@@ -4,7 +4,7 @@
 - One running program
 - Systems were simple!
 
-![early os](images/vm-early-os.png)
+![early os](../images/vm-early-os.png)
 
 ## Multiprogramming and Time Sharing
 
@@ -13,11 +13,11 @@
 - Time sharing the hardware
 - Systems became interactive!
 
-![time share](images/time-sharing.png)
+![time share](../images/time-sharing.png)
 
 ## The Address Space
 
-![address space](images/modern-address-space.png)
+![address space](../images/modern-address-space.png)
 
 ## Virtualize Memory
 

@@ -9,19 +9,19 @@
 
 ## Perfect
 
-![Perfect](images/fcfs-perfect.png)
+![Perfect](../images/fcfs-perfect.png)
 
 $T\_{turnaround} = \frac{10+10+10}3 = 10$
 
 ## Bad Performance
 
-![Bad](images/fcfs-worst.png)
+![Bad](../images/fcfs-worst.png)
 
 $T\_{turnaround} = \frac{100+110+120}3 = 110$
 
 ## Shortest Job First (SJF)
 
-![SJF](images/sjf.png)
+![SJF](../images/sjf.png)
 
 $T\_{turnaround} = \frac{10+20+120}3 = 50$
 

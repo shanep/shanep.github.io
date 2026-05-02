@@ -1,14 +1,14 @@
 # I/O Devices
 
-![system arch](images/system-arch.png)
+![system arch](../images/system-arch.png)
 
 ## Modern System (intel)
 
-![modern arch](images/modern-arch.png)
+![modern arch](../images/modern-arch.png)
 
 ## A Canonical Device
 
-![device](images/device.png)
+![device](../images/device.png)
 
 ## Protocols
 
@@ -39,12 +39,12 @@
 
 ## Example
 
-![interrupt](images/interrupts.png)
-![polling](images/polling.png)
+![interrupt](../images/interrupts.png)
+![polling](../images/polling.png)
 
 ## DMA
 
-![dma](images/dma.png)
+![dma](../images/dma.png)
 
 ## Methods Of Device Interaction
 
@@ -60,4 +60,4 @@
 
 ## Fitting Into The OS: The Device Driver
 
-![driver](images/device-driver.png)
+![driver](../images/device-driver.png)

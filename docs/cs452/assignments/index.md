@@ -12,3 +12,8 @@ prev: false
 - [Project 5](p5.md) - Threads! (ABET Outcome 1 and 6)
 - [Project 6](p6.md) - The classic bounded buffer problem
 - [Project 7](p7.md) - In the Kernel (extra credit project)
+
+# Homework
+
+- [hw 1](hw1.md) - Setup gh client
+- [hw 2](hw2.md) - Setup git send-email
