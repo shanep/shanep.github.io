@@ -30,4 +30,4 @@ in all your classes and look for their policy regarding using A.I. tools.
 
 :::
 
-<!--@include: ../../../parts/setup-gh-cli.md -->
+<!--@include: ../../parts/setup-gh-cli.md -->
