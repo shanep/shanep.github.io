@@ -1,7 +1,5 @@
 # Sprint 1: Core CRUD (Weeks 3–4)
 
-![team work](images/team.gif)
-
 The scaffolding is in place. Sprint 1 is about extending it: making the job board more polished,
 better tested, and deployed somewhere real. By the end of week 4 the app should be running on
 Render (or Railway) and every route should have test coverage.

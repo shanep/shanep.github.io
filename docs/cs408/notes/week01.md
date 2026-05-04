@@ -1,6 +1,6 @@
 # Week 1: Get Set Up
 
-**Phase:** Onboarding  
+**Phase:** Onboarding
 **Due by Friday:** Class Introductions post in Canvas
 
 ## Goal
@@ -34,7 +34,7 @@ uv sync --all-groups
 uv run uvicorn app.main:app --reload
 ```
 
-Open [http://localhost:8000](http://localhost:8000) in your browser. You should see the TechHire home page.
+Open `http://localhost:8000` in your browser. You should see the TechHire home page.
 
 Then run the test suite to make sure everything passes:
 
@@ -46,7 +46,7 @@ If anything fails, post the exact error output in the `#help` channel on Discord
 
 ## Thursday
 
-Read **[CONTRIBUTING.md](https://github.com/YOUR_ORG/cs408-fall26/blob/main/CONTRIBUTING.md)** end to end. This is the most important document in the repo. It explains:
+Read **CONTRIBUTING.md** end to end. This is the most important document in the repo. It explains:
 
 - How to name branches
 - How to open a PR
