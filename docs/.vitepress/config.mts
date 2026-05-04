@@ -159,23 +159,45 @@ function cs408(): DefaultTheme.SidebarItem[] {
     {
       text: 'CS408',
       items: [
-        { text: 'Syllabus', link: 'index'},
-        { text: 'Schedule',     link: 'schedule/index' },
-        { text: 'Assignments',  link: 'assignments/index' },
+        { text: 'Syllabus',        link: 'index' },
+        { text: 'Schedule',        link: 'schedule/index' },
+        { text: 'Instructor Guide', link: 'notes/instructor-guide' },
       ]
     },
     {
-      text: 'Project Phases',
+      text: 'Week by Week',
       collapsed: false,
       items: [
-        { text: 'Onboarding (Weeks 1–2)',           link: 'notes/onboarding' },
-        { text: 'Sprint 1: Core CRUD (Weeks 3–4)',  link: 'notes/sprint1' },
-        { text: 'Sprint 2: Auth (Weeks 5–6)',        link: 'notes/sprint2' },
-        { text: 'Sprint 3: Search (Weeks 7–8)',      link: 'notes/sprint3' },
-        { text: 'Sprint 4: Admin (Weeks 9–10)',      link: 'notes/sprint4' },
-        { text: 'Sprint 5: Email (Weeks 11–12)',     link: 'notes/sprint5' },
-        { text: 'Sprint 6: Analytics (Weeks 13–14)', link: 'notes/sprint6' },
-        { text: 'Hardening (Week 15)',               link: 'notes/hardening' },
+        { text: 'Week 1 — Get Set Up',           link: 'notes/week01' },
+        { text: 'Week 2 — First Pull Request',   link: 'notes/week02' },
+        { text: 'Week 3 — Sprint 1 Kickoff',     link: 'notes/week03' },
+        { text: 'Week 4 — Sprint 1 Delivery',    link: 'notes/week04' },
+        { text: 'Week 5 — Sprint 2 Kickoff',     link: 'notes/week05' },
+        { text: 'Week 6 — Sprint 2 Delivery',    link: 'notes/week06' },
+        { text: 'Week 7 — Sprint 3 Kickoff',     link: 'notes/week07' },
+        { text: 'Week 8 — Sprint 3 Delivery',    link: 'notes/week08' },
+        { text: 'Week 9 — Sprint 4 Kickoff',     link: 'notes/week09' },
+        { text: 'Week 10 — Sprint 4 Delivery',   link: 'notes/week10' },
+        { text: 'Week 11 — Sprint 5 Kickoff',    link: 'notes/week11' },
+        { text: 'Week 12 — Sprint 5 Delivery',   link: 'notes/week12' },
+        { text: 'Week 13 — Sprint 6 Kickoff',    link: 'notes/week13' },
+        { text: 'Week 14 — Sprint 6 Delivery',   link: 'notes/week14' },
+        { text: 'Week 15 — Hardening',           link: 'notes/week15' },
+        { text: 'Week 16 — Demo Review',         link: 'notes/week16' },
+      ]
+    },
+    {
+      text: 'Sprint Reference',
+      collapsed: true,
+      items: [
+        { text: 'Onboarding',          link: 'notes/onboarding' },
+        { text: 'Sprint 1: Core CRUD', link: 'notes/sprint1' },
+        { text: 'Sprint 2: Auth',      link: 'notes/sprint2' },
+        { text: 'Sprint 3: Search',    link: 'notes/sprint3' },
+        { text: 'Sprint 4: Admin',     link: 'notes/sprint4' },
+        { text: 'Sprint 5: Email',     link: 'notes/sprint5' },
+        { text: 'Sprint 6: Analytics', link: 'notes/sprint6' },
+        { text: 'Hardening',           link: 'notes/hardening' },
       ]
     }
   ]
