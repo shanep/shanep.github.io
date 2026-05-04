@@ -1,80 +1,68 @@
-# Week 15: Hardening
+# Week 15: Sprint 6 Delivery — Analytics + Retrospective
 
-**Phase:** Hardening  
-**Due by Friday:** End-to-end test PR merged + README update PR merged + demo video recorded
+**Phase:** Sprint 6 — Analytics
+**Due by Friday:** PR merged + 2 reviews given + Sprint Retrospective in Canvas
 
 ## Goal
 
-No new features. Make what you have reliable, documented, and demonstrable. Leave the codebase in a state where a new engineer could clone it and be productive in under 10 minutes.
+Analytics are live. All three charts render with real data. The semester's final feature sprint is complete.
 
 ## Monday
 
-Triage every open issue:
+Connect the charts to real data. Replace hardcoded values with `fetch()` calls:
 
-- **Can be fixed this week (< 2 hours):** Assign yourself, open a PR
-- **Cannot be fixed this week:** Close it with a comment explaining why, label it `wont-fix`
-- **Belongs in a future version:** Close it with a comment, label it `future`
-
-Do not leave issues open with no comment. A well-maintained issue tracker is part of the final grade.
-
-## Tuesday–Wednesday
-
-**QA — end-to-end test (`tests/test_e2e.py`):**
-
-Write one test that exercises the complete user journey:
-
-```python
-def test_full_apply_flow(client):
-    # 1. Register a new user
-    # 2. Log in
-    # 3. Post a job
-    # 4. Log out
-    # 5. Apply to the job (unauthenticated user)
-    # 6. Log back in as admin
-    # 7. Verify application appears in /applications
-    # 8. Update status to "accepted"
-    # 9. Verify status change reflected in database
+```javascript
+fetch('/admin/analytics/status-breakdown')
+  .then(r => r.json())
+  .then(data => {
+    new Chart(document.getElementById('status-chart'), {
+      type: 'doughnut',
+      data: {
+        labels: Object.keys(data),
+        datasets: [{ data: Object.values(data) }]
+      }
+    });
+  });
 ```
 
-This test must be merged and passing before the demo.
+Verify with real database state — create a few applications with different statuses before checking the charts.
 
-**PM — README update:**
+## Wednesday
 
-The `README.md` must have all of the following:
+**Performance check (Tech Lead leads this):**
 
-- [ ] One-paragraph project description
-- [ ] Complete tech stack list
-- [ ] Copy-pasteable local setup instructions (test on a fresh machine or Codespace)
-- [ ] All required environment variables with descriptions
-- [ ] How to run tests
-- [ ] How to deploy to Render
-- [ ] Link to the live deployment
-- [ ] CI status badge
+Open the Render logs while loading `/admin/analytics`. How long does each query take? If any query takes more than 200ms, there is likely a missing index. Add an index on `Application.job_id` and `Application.status` if not already present.
+
+**QA:** The analytics endpoints must have tests with three cases:
+- Empty database (all zeros)
+- One data point
+- Multiple data points with known values (assert exact counts)
 
 ## Thursday
 
-Record the demo video. It must be under 5 minutes and show:
+Write the **Sprint Retrospective** in Canvas. It should answer:
 
-1. Job seeker browses jobs, applies a filter, clicks a listing
-2. Job seeker applies for the role
-3. Admin logs in, sees dashboard stats
-4. Admin updates the application status
-5. Analytics charts with real data
+1. What went well across all 6 sprints?
+2. What was the most frustrating part of the workflow?
+3. What would you change if you could start over?
+4. What is one thing a future CS408 student should know on day 1?
 
-Use the **deployed Render URL** — not localhost. Record with screen recording software (Loom, QuickTime, OBS). Post the link in Canvas.
+This is individual reflection — not a group submission.
 
 ## Friday
 
-- Submit demo video in Canvas
-- Final PR count and review count are locked at 11:59pm tonight
-- The grading script runs over the weekend
+- Merge your Sprint 6 PR
+- Give 2 reviews on remaining Sprint 6 PRs
+- Submit Sprint Retrospective in Canvas
+
+After this Friday, no new feature PRs. Week 16 is hardening only.
 
 ## Week 15 checklist
 
-- [ ] All open issues are closed or labeled `wont-fix` / `future`
-- [ ] End-to-end test is merged and passing in CI
-- [ ] `README.md` is complete and accurate
-- [ ] Live deployment URL is in the README
-- [ ] Demo video is under 5 minutes and uses the deployed URL
-- [ ] Demo video submitted in Canvas
-- [ ] `uv run pytest`, `ruff check`, and `pyright` all pass with no errors
+- [ ] All three charts render with real data from the database
+- [ ] Analytics endpoints return 403 for non-admins
+- [ ] Performance verified (queries under 200ms in Render logs)
+- [ ] QA tests cover empty, single, and multi-record cases
+- [ ] PR merged with 2 approvals and green CI
+- [ ] 2 reviews given
+- [ ] Sprint Retrospective submitted in Canvas
