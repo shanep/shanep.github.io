@@ -3,115 +3,123 @@
   "weeks": [
     {
       "week": 1,
+      "weekUrl": "/cs408/notes/week01",
       "assignments": [
-        { "name": "Onboarding", "url": "/cs408/notes/onboarding", "dueDay": "Wednesday" },
-        { "name": "Syllabus Quiz (Canvas)",       "dueDay": "Thursday" },
-        { "name": "Class Introductions (Canvas)", "dueDay": "Friday" }
+        { "name": "Python Quickstart for Java Programmers", "url": "/cs408/notes/python-quickstart", "dueDay": "Wednesday" },
+        { "name": "Onboarding", "url": "/cs408/notes/onboarding", "dueDay": "Wednesday" }
       ]
     },
     {
       "week": 2,
+      "weekUrl": "/cs408/notes/week02",
       "assignments": [
-        { "name": "Onboarding PR due (GitHub)",   "dueDay": "Friday" },
+        { "name": "Onboarding PR due (GitHub)", "dueDay": "Friday" },
         { "name": "2 Peer Reviews given (GitHub)", "dueDay": "Friday" }
       ]
     },
     {
       "week": 3,
+      "weekUrl": "/cs408/notes/week03",
       "assignments": [
-        { "name": "Sprint 1: Core CRUD", "url": "/cs408/notes/sprint1", "dueDay": "Wednesday" },
-        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+        { "name": "Sprint 1: Core CRUD", "url": "/cs408/notes/sprint1", "dueDay": "Wednesday" }
       ]
     },
     {
       "week": 4,
+      "weekUrl": "/cs408/notes/week04",
       "assignments": [
-        { "name": "Sprint 1 PRs due (GitHub)",    "dueDay": "Friday" },
-        { "name": "Weekly Reflection (Canvas)",   "dueDay": "Friday" }
+        { "name": "Sprint 1 PRs due (GitHub)", "dueDay": "Friday" }
       ]
     },
     {
       "week": 5,
+      "weekUrl": "/cs408/notes/week05",
       "assignments": [
         { "name": "Sprint 2: Authentication", "url": "/cs408/notes/sprint2", "dueDay": "Wednesday" },
-        { "name": "auth-design.md PR due (GitHub)", "dueDay": "Wednesday" },
-        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+        { "name": "auth-design.md PR due (GitHub)", "dueDay": "Wednesday" }
       ]
     },
     {
       "week": 6,
+      "weekUrl": "/cs408/notes/week06",
       "assignments": [
-        { "name": "Sprint 2 PRs due (GitHub)",  "dueDay": "Friday" },
-        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+        { "name": "Sprint 2 PRs due (GitHub)", "dueDay": "Friday" }
       ]
     },
     {
       "week": 7,
+      "weekUrl": "/cs408/notes/week07",
       "assignments": [
-        { "name": "Sprint 3: Search & Filtering", "url": "/cs408/notes/sprint3", "dueDay": "Wednesday" },
-        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+        { "name": "Sprint 3: Search & Filtering", "url": "/cs408/notes/sprint3", "dueDay": "Wednesday" }
       ]
     },
     {
       "week": 8,
+      "weekUrl": "/cs408/notes/week08",
       "assignments": [
-        { "name": "Sprint 3 PRs due (GitHub)",  "dueDay": "Friday" },
-        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+        { "name": "Sprint 3 PRs due (GitHub)", "dueDay": "Friday" }
       ]
     },
     {
       "week": 9,
+      "weekUrl": "/cs408/notes/week09",
       "assignments": [
-        { "name": "Sprint 4: Admin Dashboard", "url": "/cs408/notes/sprint4", "dueDay": "Wednesday" },
-        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+        { "name": "Sprint 4: Admin Dashboard", "url": "/cs408/notes/sprint4", "dueDay": "Wednesday" }
       ]
     },
     {
       "week": 10,
+      "weekUrl": "/cs408/notes/week10",
       "assignments": [
-        { "name": "Sprint 4 PRs due (GitHub)",  "dueDay": "Friday" },
-        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+        { "name": "Sprint 4 PRs due (GitHub)", "dueDay": "Friday" }
       ]
     },
     {
       "week": 11,
+      "weekUrl": "/cs408/notes/week11",
       "assignments": [
         { "name": "Sprint 5: Email Notifications", "url": "/cs408/notes/sprint5", "dueDay": "Wednesday" },
-        { "name": "email-design.md PR due (GitHub)", "dueDay": "Wednesday" },
-        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+        { "name": "email-design.md PR due (GitHub)", "dueDay": "Wednesday" }
       ]
     },
     {
       "week": 12,
+      "weekUrl": "/cs408/notes/week12",
       "assignments": [
-        { "name": "Sprint 5 PRs due (GitHub)",  "dueDay": "Friday" },
-        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+        { "name": "Sprint 5 PRs due (GitHub)", "dueDay": "Friday" }
       ]
     },
     {
       "week": 13,
+      "weekUrl": "/cs408/notes/week13",
       "assignments": [
-        { "name": "Sprint 6: Analytics", "url": "/cs408/notes/sprint6", "dueDay": "Wednesday" },
-        { "name": "Weekly Reflection (Canvas)", "dueDay": "Friday" }
+        { "name": "Sprint 6: Analytics", "url": "/cs408/notes/sprint6", "dueDay": "Wednesday" }
       ]
     },
     {
       "week": 14,
-      "assignments": [
-        { "name": "Sprint 6 PRs due (GitHub)",       "dueDay": "Friday" },
-        { "name": "Sprint Retrospective (Canvas)",   "dueDay": "Friday" }
-      ]
+      "note": "Thanksgiving Break — no assignments due"
     },
     {
       "week": 15,
+      "weekUrl": "/cs408/notes/week15",
       "assignments": [
-        { "name": "Hardening", "url": "/cs408/notes/hardening", "dueDay": "Wednesday" },
-        { "name": "End-to-end test PR due (GitHub)", "dueDay": "Friday" },
-        { "name": "README update PR due (GitHub)",   "dueDay": "Friday" }
+        { "name": "Sprint 6 PRs due (GitHub)", "dueDay": "Friday" },
+        { "name": "Sprint Retrospective (Canvas)", "dueDay": "Friday" }
       ]
     },
     {
       "week": 16,
+      "weekUrl": "/cs408/notes/week16",
+      "assignments": [
+        { "name": "Hardening", "url": "/cs408/notes/hardening", "dueDay": "Wednesday" },
+        { "name": "End-to-end test PR due (GitHub)", "dueDay": "Friday" },
+        { "name": "README update PR due (GitHub)", "dueDay": "Friday" }
+      ]
+    },
+    {
+      "week": 17,
+      "weekUrl": "/cs408/notes/week17",
       "assignments": [
         { "name": "Final Demo Video (Canvas)", "dueDay": "Friday" },
         { "name": "Peer Demo Review (Canvas)", "dueDay": "Friday" }

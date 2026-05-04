@@ -15,6 +15,8 @@ By Friday you should have the app running on your machine and know what your rol
 
 ## Wednesday
 
+If you come from a Java background, read the [Python Quickstart for Java Programmers](/cs408/notes/python-quickstart) before touching the codebase. It covers decorators, type hints, and the patterns FastAPI uses — the things that trip up Java developers most.
+
 Set up your development environment:
 
 ```bash

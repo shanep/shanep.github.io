@@ -23,6 +23,7 @@ interface Assignment {
 interface Week {
   week: number
   note?: string
+  weekUrl?: string
   days?: Day[]
   assignments?: Assignment[]
   readings?: Reading[]
@@ -72,7 +73,7 @@ function weekRange(w: Week): string {
 }
 
 function weekVariant(w: Week): 'break' | 'exam' | 'normal' {
-  if (w.note) return 'exam'
+  if (w.note) return w.note.toLowerCase().includes('break') ? 'break' : 'exam'
   const topics = w.days?.map(d => d.topic.toLowerCase()) ?? []
   if (topics.some(t => t.includes('break'))) return 'break'
   if (topics.some(t => t.includes('exam'))) return 'exam'
@@ -128,9 +129,11 @@ function assignmentEvents(w: Week): AssignmentEvent[] {
       :class="`week-card--${weekVariant(w)}`"
     >
       <div class="week-header">
-        <span class="week-badge">{{ String(w.week).padStart(2, '0') }}</span>
+        <a v-if="w.weekUrl" :href="w.weekUrl" class="week-badge week-badge--link">{{ String(w.week).padStart(2, '0') }}</a>
+        <span v-else class="week-badge">{{ String(w.week).padStart(2, '0') }}</span>
         <div class="week-header-text">
-          <span class="week-label">Week {{ w.week }}</span>
+          <a v-if="w.weekUrl" :href="w.weekUrl" class="week-label week-label--link">Week {{ w.week }}</a>
+          <span v-else class="week-label">Week {{ w.week }}</span>
           <span class="week-range">{{ weekRange(w) }}</span>
         </div>
       </div>
@@ -254,6 +257,25 @@ function assignmentEvents(w: Week): AssignmentEvent[] {
   font-size: 0.88rem;
   color: var(--vp-c-text-1);
   line-height: 1.2;
+}
+
+.week-badge--link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.week-badge--link:hover {
+  background: var(--vp-c-brand-2);
+}
+
+.week-label--link {
+  text-decoration: none;
+  color: var(--vp-c-text-1);
+}
+
+.week-label--link:hover {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
 }
 
 .week-range {

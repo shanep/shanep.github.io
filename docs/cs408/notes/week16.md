@@ -1,48 +1,72 @@
-# Week 16: Final Demo Review
+# Week 16: Hardening
 
-**Phase:** Wrap-up  
-**Due by Friday:** Peer Demo Review submitted in Canvas
+**Phase:** Hardening
+**Due by Friday:** End-to-end test PR merged + README update PR merged
 
 ## Goal
 
-Watch three of your classmates' demo videos and write a short peer review for each.
+No new features. Make what you have reliable, documented, and demonstrable. Leave the codebase in a state where a new engineer could clone it and be productive in under 10 minutes.
 
-## What to do this week
+## Monday
 
-The grading script has already run. Your PR count and review count are final — no GitHub submissions are accepted after Week 15 Friday at 11:59pm.
+Triage every open issue:
 
-This week has one deliverable: the **Peer Demo Review**.
+- **Can be fixed this week (< 2 hours):** Assign yourself, open a PR
+- **Cannot be fixed this week:** Close it with a comment explaining why, label it `wont-fix`
+- **Belongs in a future version:** Close it with a comment, label it `future`
 
-## Peer Demo Review
+Do not leave issues open with no comment. A well-maintained issue tracker is part of the final grade.
 
-In Canvas, you will be assigned three classmates' demo videos to review. For each video, write 150–250 words covering:
+## Tuesday–Wednesday
 
-1. **What worked well** — specific features that impressed you or were implemented cleanly
-2. **What could be improved** — specific UX problems, missing features, or bugs you noticed
-3. **One thing you learned** — something from their demo you want to apply to your own work
+**QA — end-to-end test (`tests/test_e2e.py`):**
 
-Be specific. "Good job" is not useful feedback. "The HTMX search with debounce was smooth — no flicker" is useful feedback.
+Write one test that exercises the complete user journey:
 
-## Final grade timeline
+```python
+def test_full_apply_flow(client):
+    # 1. Register a new user
+    # 2. Log in
+    # 3. Post a job
+    # 4. Log out
+    # 5. Apply to the job (unauthenticated user)
+    # 6. Log back in as admin
+    # 7. Verify application appears in /applications
+    # 8. Update status to "accepted"
+    # 9. Verify status change reflected in database
+```
 
-| Date | Event |
-|------|-------|
-| Week 15 Friday 11:59pm | PR submissions close |
-| Week 16 Monday | Grading script runs; CSV exported |
-| Week 16 Wednesday | Instructor cross-references Canvas reflections and demo video |
-| Week 16 Friday | Grades posted in Canvas |
+This test must be merged and passing before the demo.
 
-## Questions about your grade?
+**PM — README update:**
 
-If you believe your PR count is incorrect, email the instructor with:
+The `README.md` must have all of the following:
 
-- Your GitHub username
-- The PR numbers you believe were not counted
-- The reason they should count (e.g., "PR #42 was merged before the deadline but the script missed it")
+- [ ] One-paragraph project description
+- [ ] Complete tech stack list
+- [ ] Copy-pasteable local setup instructions (test on a fresh machine or Codespace)
+- [ ] All required environment variables with descriptions
+- [ ] How to run tests
+- [ ] How to deploy to Render
+- [ ] Link to the live deployment
+- [ ] CI status badge
 
-Do not ask for a recount without evidence. The grading script is deterministic — if your PRs were merged before the deadline and linked to an issue, they count.
+## Thursday
+
+Do a final pass on the deployed site. Walk through the full user journey — job seeker, applicant,
+admin, analytics — and note anything broken. Fix what you can; close everything else as `wont-fix`.
+
+## Friday
+
+- End-to-end test PR merged and CI green
+- README update PR merged
+- Final PR count and review count are locked at 11:59pm tonight
+- The grading script runs over the weekend
 
 ## Week 16 checklist
 
-- [ ] Peer Demo Review submitted for all three assigned classmates
-- [ ] Review for each classmate is 150–250 words and specific
+- [ ] All open issues are closed or labeled `wont-fix` / `future`
+- [ ] End-to-end test is merged and passing in CI
+- [ ] `README.md` is complete and accurate
+- [ ] Live deployment URL is in the README
+- [ ] `uv run pytest`, `ruff check`, and `pyright` all pass with no errors
