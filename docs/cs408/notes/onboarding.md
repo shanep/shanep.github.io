@@ -1,7 +1,5 @@
 # Onboarding (Weeks 1–2)
 
-![setup](images/setup.gif)
-
 Welcome to CS408. This is not a traditional course — you are a new hire at **TechHire**, a
 fictional web development company. Your team of 35 engineers will spend the semester building a
 real job board application on a shared GitHub repository. Your grade comes entirely from the work

@@ -1,7 +1,5 @@
 # Hardening (Week 15)
 
-![planning](images/planning.gif)
-
 No new features. Week 15 is about making what you have reliable, documented, and demonstrable.
 The goal is to hand off a codebase that a new engineer could clone and run in under ten minutes.
 

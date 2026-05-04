@@ -1,7 +1,5 @@
 # Sprint 2: Authentication (Weeks 5–6)
 
-![planning](images/planning.gif)
-
 Right now anyone can post or delete a job. Sprint 2 adds user accounts so that only registered,
 logged-in users can post jobs, and only admins can delete them. This is the sprint that introduces
 the most cross-cutting change to the codebase — coordinate with your teammates before you start.
