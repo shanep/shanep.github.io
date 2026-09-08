@@ -60,6 +60,7 @@ export default defineConfig({
       '/cs208/': { base: '/cs208/', items: cs208() },
       '/cs333/': { base: '/cs333/', items: cs333() },
       '/cs408/': { base: '/cs408/', items: cs408() },
+      '/cs425/': { base: '/cs425/', items: cs425() },
       '/cs452/': { base: '/cs452/', items: cs452() },
     },
 
@@ -198,6 +199,71 @@ function cs408(): DefaultTheme.SidebarItem[] {
         { text: 'Sprint 5: Email',     link: 'notes/sprint5' },
         { text: 'Sprint 6: Analytics', link: 'notes/sprint6' },
         { text: 'Hardening',           link: 'notes/hardening' },
+      ]
+    }
+  ]
+}
+function cs425(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'CS425',
+      items: [
+        { text: 'Syllabus',     link: 'index' },
+        { text: 'Schedule',     link: 'schedule/index' },
+        { text: 'Objectives',   link: 'objectives' },
+        { text: 'Resources',    link: 'resources' },
+        { text: 'Projects',     link: 'assignments/index' },
+      ]
+    },
+    {
+      text: 'Lecture Notes',
+      collapsed: false,
+      items: [
+        { text: 'Course Introduction',              link: 'notes/course-introduction' },
+        { text: '1. Networks and the Internet',     link: 'notes/ch01-internet' },
+        { text: '2. The Application Layer',         link: 'notes/ch02-application' },
+        { text: '3. The Transport Layer',           link: 'notes/ch03-transport' },
+        { text: 'Midterm Review',                   link: 'notes/midterm-review' },
+        { text: '4. Network Layer: Data Plane',     link: 'notes/ch04-network-data' },
+        { text: '5. Network Layer: Control Plane',  link: 'notes/ch05-network-control' },
+        { text: '6. The Link Layer and LANs',       link: 'notes/ch06-link' },
+        { text: '7. Wireless and Mobile Networks',  link: 'notes/ch07-wireless' },
+        { text: '8. Network Security',              link: 'notes/ch08-security' },
+        { text: 'Final Review',                     link: 'notes/final-review' },
+      ]
+    },
+    {
+      text: 'Projects',
+      collapsed: false,
+      items: [
+        { text: 'Grading Rubric',                   link: 'assignments/grading-rubric' },
+        { text: 'P0 - Compile, Test, Debug',        link: 'assignments/p0' },
+        { text: 'P1 - Simple Mail Client',          link: 'assignments/p1' },
+        { text: 'P2 - Reliable Data Transfer',      link: 'assignments/p2' },
+        { text: 'P3 - Subnetting and Forwarding',   link: 'assignments/p3' },
+        { text: 'P4 - Packet Capture and Analysis', link: 'assignments/p4' },
+      ]
+    },
+    {
+      text: 'Exams',
+      collapsed: true,
+      items: [
+        { text: 'Midterm Study Guide', link: 'assignments/midterm-exam-guide' },
+        { text: 'Final Study Guide',   link: 'assignments/final-exam-guide' },
+      ]
+    },
+    {
+      text: 'Knowledge Checks',
+      collapsed: true,
+      items: [
+        { text: 'Chapter 1', link: 'quizzes/quiz-ch01' },
+        { text: 'Chapter 2', link: 'quizzes/quiz-ch02' },
+        { text: 'Chapter 3', link: 'quizzes/quiz-ch03' },
+        { text: 'Chapter 4', link: 'quizzes/quiz-ch04' },
+        { text: 'Chapter 5', link: 'quizzes/quiz-ch05' },
+        { text: 'Chapter 6', link: 'quizzes/quiz-ch06' },
+        { text: 'Chapter 7', link: 'quizzes/quiz-ch07' },
+        { text: 'Chapter 8', link: 'quizzes/quiz-ch08' },
       ]
     }
   ]

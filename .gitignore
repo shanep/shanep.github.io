@@ -25,3 +25,6 @@ node_modules# Added automatically by ‘eldev init’.
 /docs/cv/shanekpanter.run.xml
 docs/cv/shanekpanter.synctex.gz
 auto
+
+# Course textbooks are distributed through Canvas, not this public repo
+docs/*/docs/*.pdf
