@@ -104,8 +104,11 @@ lab        = "activities/a[0-9]*.md"
 discussion = "discussions/*.md"
 
 # Per-item exceptions to the policy above, keyed by path relative to this file.
-# [override."assignments/p1.md"]
-# due = "thu 23:59"
+
+# P1 lands the week the application layer wraps up, and Thursday gives the class
+# the two lectures on SMTP before it is due instead of one.
+[override."assignments/p1.md"]
+due = "thu 23:59"
 
 # ---------------------------------------------------------------------------
 # Canvas modules. `page` is the module overview; `items` are published in order.
