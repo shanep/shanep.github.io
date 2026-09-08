@@ -10,5 +10,3 @@ before you leave. Per the [syllabus](../index.md), work done in class cannot be
 made up, so bring your laptop.
 
 One submission per group, with every member's name on it.
-
-- [A1](a1-onyx-devbox.md) - Get on the Box

@@ -1,6 +1,28 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
 import footnote from 'markdown-it-footnote'
 import container from 'markdown-it-container'
+import { globSync, readFileSync } from 'node:fs'
+import { join } from 'node:path'
+
+// Course files carry `draft: true` in their frontmatter while they are being
+// written. `edutools` reads the same flag to keep them out of Canvas; here it
+// keeps them off the website, so a draft is invisible in both places at once.
+//
+// Excluded pages are real dead links, and ignoreDeadLinks is false on purpose,
+// so a draft that is still linked from an index page fails the build. That is
+// the intended behaviour: it is the reminder to unlink it.
+function draftPages(): string[] {
+  const root = join(import.meta.dirname, '..')
+  return globSync('**/*.md', { cwd: root })
+    .filter((rel) => /^---\r?\n[\s\S]*?^draft[ \t]*:[ \t]*(true|yes|on)[ \t]*$/im
+      .test(readFileSync(join(root, rel), 'utf-8')))
+    .sort()
+}
+
+const drafts = draftPages()
+if (drafts.length > 0) {
+  console.log(`vitepress: skipping ${drafts.length} draft page(s): ${drafts.join(', ')}`)
+}
 
 declare module 'vitepress' {
   namespace DefaultTheme {
@@ -15,6 +37,7 @@ export default defineConfig({
   title: "Shane K. Panter",
   description: "Shane's Personal Site",
   ignoreDeadLinks: false,
+  srcExclude: drafts,
   markdown: {
     theme: { light: 'github-light', dark: 'github-dark' },
     config: (md) => {
