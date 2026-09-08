@@ -1,6 +1,6 @@
 # Chapter 2 - Knowledge Check
 
-**Week 4 · 20 points · about 20 minutes · taken in Canvas**
+**Week 5 · 20 points · about 20 minutes · taken in Canvas**
 
 Ten questions on the application layer. Three attempts, highest score kept. Items 5
 and 10 are multiple-answer.

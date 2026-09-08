@@ -1,6 +1,6 @@
 # Chapter 1 - Knowledge Check
 
-**Week 2 · 20 points · about 20 minutes · taken in Canvas**
+**Week 3 · 20 points · about 20 minutes · taken in Canvas**
 
 Ten questions on the Internet's architecture, delay, and layering. Three attempts,
 highest score kept. Items 4 and 9 are multiple-answer.
