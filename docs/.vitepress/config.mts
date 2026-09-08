@@ -251,20 +251,6 @@ function cs425(): DefaultTheme.SidebarItem[] {
         { text: 'Midterm Study Guide', link: 'assignments/midterm-exam-guide' },
         { text: 'Final Study Guide',   link: 'assignments/final-exam-guide' },
       ]
-    },
-    {
-      text: 'Knowledge Checks',
-      collapsed: true,
-      items: [
-        { text: 'Chapter 1', link: 'quizzes/quiz-ch01' },
-        { text: 'Chapter 2', link: 'quizzes/quiz-ch02' },
-        { text: 'Chapter 3', link: 'quizzes/quiz-ch03' },
-        { text: 'Chapter 4', link: 'quizzes/quiz-ch04' },
-        { text: 'Chapter 5', link: 'quizzes/quiz-ch05' },
-        { text: 'Chapter 6', link: 'quizzes/quiz-ch06' },
-        { text: 'Chapter 7', link: 'quizzes/quiz-ch07' },
-        { text: 'Chapter 8', link: 'quizzes/quiz-ch08' },
-      ]
     }
   ]
 }

@@ -48,11 +48,6 @@
           "name": "P0",
           "url": "/cs425/assignments/p0",
           "dueDay": "Tuesday"
-        },
-        {
-          "name": "Chapter 1 Knowledge Check",
-          "url": "/cs425/quizzes/quiz-ch01",
-          "assignedSlot": 1
         }
       ],
       "readings": [
@@ -75,11 +70,6 @@
         }
       ],
       "assignments": [
-        {
-          "name": "Chapter 1 Knowledge Check",
-          "url": "/cs425/quizzes/quiz-ch01",
-          "dueDay": "Friday"
-        },
         {
           "name": "P1",
           "url": "/cs425/assignments/p1",
@@ -110,11 +100,6 @@
           "name": "P1",
           "url": "/cs425/assignments/p1",
           "dueDay": "Tuesday"
-        },
-        {
-          "name": "Chapter 2 Knowledge Check",
-          "url": "/cs425/quizzes/quiz-ch02",
-          "assignedSlot": 1
         }
       ],
       "readings": [
@@ -137,11 +122,6 @@
         }
       ],
       "assignments": [
-        {
-          "name": "Chapter 2 Knowledge Check",
-          "url": "/cs425/quizzes/quiz-ch02",
-          "dueDay": "Friday"
-        },
         {
           "name": "P2",
           "url": "/cs425/assignments/p2",
@@ -192,11 +172,6 @@
           "name": "P2",
           "url": "/cs425/assignments/p2",
           "dueDay": "Tuesday"
-        },
-        {
-          "name": "Chapter 3 Knowledge Check",
-          "url": "/cs425/quizzes/quiz-ch03",
-          "dueDay": "Friday"
         }
       ],
       "readings": [
@@ -275,11 +250,6 @@
           "name": "P3",
           "url": "/cs425/assignments/p3",
           "dueDay": "Tuesday"
-        },
-        {
-          "name": "Chapter 4 Knowledge Check",
-          "url": "/cs425/quizzes/quiz-ch04",
-          "assignedSlot": 1
         }
       ],
       "readings": [
@@ -301,18 +271,7 @@
           "topicUrl": "/cs425/notes/ch05-network-control"
         }
       ],
-      "assignments": [
-        {
-          "name": "Chapter 4 Knowledge Check",
-          "url": "/cs425/quizzes/quiz-ch04",
-          "dueDay": "Friday"
-        },
-        {
-          "name": "Chapter 5 Knowledge Check",
-          "url": "/cs425/quizzes/quiz-ch05",
-          "assignedSlot": 1
-        }
-      ],
+      "assignments": [],
       "readings": [
         {
           "text": "Kurose & Ross 5.1 - 5.4",
@@ -333,11 +292,6 @@
         }
       ],
       "assignments": [
-        {
-          "name": "Chapter 5 Knowledge Check",
-          "url": "/cs425/quizzes/quiz-ch05",
-          "dueDay": "Friday"
-        },
         {
           "name": "P4",
           "url": "/cs425/assignments/p4",
@@ -368,11 +322,6 @@
           "name": "P4",
           "url": "/cs425/assignments/p4",
           "dueDay": "Tuesday"
-        },
-        {
-          "name": "Chapter 6 Knowledge Check",
-          "url": "/cs425/quizzes/quiz-ch06",
-          "assignedSlot": 1
         }
       ],
       "readings": [
@@ -394,18 +343,7 @@
           "topicUrl": "/cs425/notes/ch07-wireless"
         }
       ],
-      "assignments": [
-        {
-          "name": "Chapter 6 Knowledge Check",
-          "url": "/cs425/quizzes/quiz-ch06",
-          "dueDay": "Friday"
-        },
-        {
-          "name": "Chapter 7 Knowledge Check",
-          "url": "/cs425/quizzes/quiz-ch07",
-          "assignedSlot": 1
-        }
-      ],
+      "assignments": [],
       "readings": [
         {
           "text": "Kurose & Ross 7.1 - 7.6",
@@ -425,18 +363,7 @@
           "topicUrl": "/cs425/notes/final-review"
         }
       ],
-      "assignments": [
-        {
-          "name": "Chapter 7 Knowledge Check",
-          "url": "/cs425/quizzes/quiz-ch07",
-          "dueDay": "Friday"
-        },
-        {
-          "name": "Chapter 8 Knowledge Check",
-          "url": "/cs425/quizzes/quiz-ch08",
-          "dueDay": "Friday"
-        }
-      ],
+      "assignments": [],
       "readings": [
         {
           "text": "Kurose & Ross 8.1 - 8.9",

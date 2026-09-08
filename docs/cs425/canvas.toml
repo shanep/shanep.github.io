@@ -19,26 +19,19 @@ finals_end              = 2026-12-18
 # Projects 10%), so there is no fixed point total to check against.
 total_points            = 0
 
-# How each kind of gradable item is scheduled inside its week. `grace_days` is
-# the gap between due_at and lock_at; the syllabus promises 2 days with no
-# penalty, and nothing is ever accepted past the last day of instruction.
+# How each kind of gradable item is scheduled inside its week. No `unlock`, so
+# Canvas leaves "Available from" blank and an item is visible once published.
+# `grace_days` is the gap between due_at and lock_at; the syllabus promises 2
+# days with no penalty, and nothing is accepted past the last day of instruction.
 [term.policy.project]
-unlock     = "mon 00:00"
 due        = "tue 23:59"
 grace_days = 2
 
-[term.policy.quiz]
-unlock     = "mon 00:00"
-due        = "fri 23:59"
-grace_days = 2
-
 [term.policy.discussion]
-unlock     = "mon 00:00"
 due        = "sun 23:59"
 grace_days = 2
 
 [term.policy.exam]
-unlock     = "mon 00:00"
 due        = "fri 23:59"
 grace_days = 0
 
@@ -64,7 +57,6 @@ files = []
 
 [layout.gradable]
 project    = "assignments/p[0-9]*.md"
-quiz       = "quizzes/quiz-*.md"
 discussion = "discussions/*.md"
 
 # Per-item exceptions to the policy above, keyed by path relative to this file.
@@ -80,17 +72,17 @@ discussion = "discussions/*.md"
 [[module]]
 title = "Week 1-2: Computer Networks and the Internet"
 page  = "notes/ch01-internet.md"
-items = ["assignments/p0.md", "quizzes/quiz-ch01.md"]
+items = ["assignments/p0.md"]
 
 [[module]]
 title = "Week 3-4: The Application Layer"
 page  = "notes/ch02-application.md"
-items = ["assignments/p1.md", "quizzes/quiz-ch02.md"]
+items = ["assignments/p1.md"]
 
 [[module]]
 title = "Week 5-7: The Transport Layer"
 page  = "notes/ch03-transport.md"
-items = ["assignments/p2.md", "quizzes/quiz-ch03.md"]
+items = ["assignments/p2.md"]
 
 [[module]]
 title = "Week 8: Midterm Exam"
@@ -100,27 +92,24 @@ items = ["assignments/midterm-exam-guide.md"]
 [[module]]
 title = "Week 9-10: The Network Layer - Data Plane"
 page  = "notes/ch04-network-data.md"
-items = ["assignments/p3.md", "quizzes/quiz-ch04.md"]
+items = ["assignments/p3.md"]
 
 [[module]]
 title = "Week 11: The Network Layer - Control Plane"
 page  = "notes/ch05-network-control.md"
-items = ["quizzes/quiz-ch05.md"]
 
 [[module]]
 title = "Week 12-13: The Link Layer and LANs"
 page  = "notes/ch06-link.md"
-items = ["assignments/p4.md", "quizzes/quiz-ch06.md"]
+items = ["assignments/p4.md"]
 
 [[module]]
 title = "Week 14: Wireless and Mobile Networks"
 page  = "notes/ch07-wireless.md"
-items = ["quizzes/quiz-ch07.md"]
 
 [[module]]
 title = "Week 15: Security in Computer Networks"
 page  = "notes/ch08-security.md"
-items = ["quizzes/quiz-ch08.md"]
 
 [[module]]
 title = "Finals Week"

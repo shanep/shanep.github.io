@@ -26,7 +26,7 @@ taken once for credit.
 | ------------------------------------ | ------ |
 | Exams                                | 50%    |
 | In Class Activities & Knowledge Checks | 40%  |
-| [Projects](assignments/)             | 10%    |
+| [Projects](assignments/index.md)      | 10%    |
 | Extra Credit                         | 2.5%   |
 
 All programming projects are written in C and must compile and run on **both**
