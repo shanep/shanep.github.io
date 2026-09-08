@@ -127,9 +127,14 @@ page  = "notes/ch02-application.md"
 items = ["assignments/p1.md"]
 
 [[module]]
-title = "Week 5-7: The Transport Layer"
+title = "Week 5-6: The Transport Layer"
 page  = "notes/ch03-transport.md"
 items = ["assignments/p2.md"]
+
+[[module]]
+title = "Week 7: The Network Layer - Data Plane"
+page  = "notes/ch04-network-data.md"
+items = ["assignments/p3.md"]
 
 [[module]]
 title = "Week 8: Midterm Exam"
@@ -137,25 +142,20 @@ page  = "notes/midterm-review.md"
 items = ["assignments/midterm-exam-guide.md"]
 
 [[module]]
-title = "Week 9-10: The Network Layer - Data Plane"
-page  = "notes/ch04-network-data.md"
-items = ["assignments/p3.md"]
-
-[[module]]
-title = "Week 11: The Network Layer - Control Plane"
+title = "Week 9-10: The Network Layer - Control Plane"
 page  = "notes/ch05-network-control.md"
 
 [[module]]
-title = "Week 12-13: The Link Layer and LANs"
+title = "Week 11-12: The Link Layer and LANs"
 page  = "notes/ch06-link.md"
 items = ["assignments/p4.md"]
 
 [[module]]
-title = "Week 14: Wireless and Mobile Networks"
+title = "Week 13: Wireless and Mobile Networks"
 page  = "notes/ch07-wireless.md"
 
 [[module]]
-title = "Week 15: Security in Computer Networks"
+title = "Week 14-15: Security in Computer Networks"
 page  = "notes/ch08-security.md"
 
 [[module]]

@@ -7,8 +7,9 @@ prev: false
 
 **Week 8 · 120 points · 75 minutes · taken in Canvas**
 
-The midterm covers chapters 1 through 3: the Internet's architecture, the
-application layer, and the transport layer. It is taken in Canvas during class.
+The midterm covers chapters 1 through 4: the Internet's architecture, the
+application layer, the transport layer, and the network layer's data plane. It is
+taken in Canvas during class.
 
 ## Format
 
@@ -56,6 +57,21 @@ application layer, and the transport layer. It is taken in Canvas during class.
   different things, and the exam will check that you know which is which.
 - TCP congestion control: slow start, congestion avoidance, fast recovery, and how
   the window evolves after a triple duplicate ACK versus a timeout.
+
+### Chapter 4 - The Network Layer: Data Plane
+
+- The split between the data plane and the control plane, and which of the two
+  forwarding belongs to.
+- What a router does to a packet, in order: input port, switching fabric, output
+  port, queuing. Know where a packet can be dropped and why.
+- Longest prefix matching. You will be given a forwarding table and asked where a
+  destination goes, so practice running one by hand.
+- The IPv4 datagram format, fragmentation, and TTL.
+- Addressing: CIDR notation, subnetting, and what DHCP does for a host that has
+  just joined a network.
+- NAT: what it rewrites on the way out and on the way back, and what it breaks.
+- IPv6, and why the transition needs tunneling.
+- Generalized forwarding and the match-plus-action abstraction.
 
 ## How to prepare
 

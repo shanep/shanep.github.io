@@ -7,7 +7,7 @@ prev: false
 
 **Finals week · 120 points · 120 minutes · taken in Canvas**
 
-The final is comprehensive but weighted toward chapters 4 through 8. Expect roughly
+The final is comprehensive but weighted toward chapters 5 through 8. Expect roughly
 a quarter of the questions to come from the material the midterm covered.
 
 ## Format
@@ -20,21 +20,12 @@ a quarter of the questions to come from the material the midterm covered.
 
 ## What to review
 
-### Chapters 1 through 3 (review)
+### Chapters 1 through 4 (review)
 
 Everything on the [midterm study guide](midterm-exam-guide.md), with emphasis on
-delay computation, reliable data transfer, and TCP congestion control.
-
-### Chapter 4 - The Network Layer: Data Plane
-
-- What a router does to a packet, in order: input port, switching fabric, output
-  port, queuing.
-- Longest prefix matching.
-- The IPv4 datagram format, fragmentation, and TTL.
-- Addressing: CIDR, subnetting, DHCP.
-- NAT: what it does to addresses and ports, and what it breaks.
-- IPv6 and the transition mechanisms.
-- Generalized forwarding and the match-plus-action abstraction.
+delay computation, reliable data transfer, TCP congestion control, and longest
+prefix matching. Chapter 4 is on that guide because the midterm covers it, and the
+control plane in chapter 5 will not make sense without it.
 
 ### Chapter 5 - The Network Layer: Control Plane
 

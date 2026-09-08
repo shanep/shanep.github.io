@@ -1,10 +1,10 @@
 # Midterm Review
 
-**Covers:** chapters 1 through 3
+**Covers:** chapters 1 through 4
 
 This session is a working review, not a lecture. Come with questions.
 
-## The three things that decide most grades
+## The four things that decide most grades
 
 **1. Transmission delay versus propagation delay.** Transmission delay is `L/R`:
 how long to push the bits out. Propagation delay is `d/s`: how long for a bit to
@@ -21,6 +21,11 @@ signaled by loss and delay. Same-shaped mechanism, entirely different problem.
 not the last byte received. Go-Back-N is cumulative; Selective Repeat is individual.
 Half the tracing questions turn on this.
 
+**4. Longest prefix matching.** A forwarding table is searched for the **longest**
+matching prefix, not the first one that matches. Entries overlap on purpose, so the
+order they are written in tells you nothing. Work the table top to bottom, keep
+every match, then take the most specific.
+
 ## Worked problems to bring
 
 Do these before the review session and bring what you got stuck on:
@@ -34,6 +39,12 @@ Do these before the review session and bring what you got stuck on:
 - Trace Go-Back-N with window 4 when packet 2 is lost.
 - Trace Selective Repeat on the same loss and compare what got retransmitted.
 - Trace `cwnd` for 20 RTTs through one triple-duplicate-ACK event and one timeout.
+- Given a forwarding table with overlapping prefixes, say which interface each of
+  several destination addresses leaves on.
+- Split a /24 into subnets that fit a given set of host counts, and give the CIDR
+  block of each.
+- Walk a packet through a NAT: what the translation table holds, and what the
+  addresses and ports look like on each side.
 
 ## Format reminder
 
