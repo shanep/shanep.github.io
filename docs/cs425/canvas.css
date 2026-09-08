@@ -111,13 +111,9 @@ blockquote {
 
 /* --- sections the decorator recognises --------------------------------- */
 
-.cs-overview {
-  background-color: #F6F7F9;
-  border-left: 5px solid #0033A0;
-  padding: 4px 18px 12px 18px;
-  margin: 22px 0;
-  border-radius: 0 3px 3px 0;
-}
+/* Overview is deliberately NOT boxed. A section div runs from its h2 to the next
+   one, so on these pages it contains the ::: danger callout, and boxing it would
+   nest one callout inside another and bury the warning. */
 
 .cs-rubric {
   border: 1px solid #D9DEE5;
@@ -126,8 +122,8 @@ blockquote {
   margin: 26px 0;
 }
 
-/* Headings inside a callout should not re-draw the section rule. */
-.cs-overview h2, .cs-rubric h2, .cs-meta h2 {
+/* Headings inside a boxed section should not re-draw the section rule. */
+.cs-rubric h2, .cs-meta h2 {
   border-bottom: 0;
   margin-top: 16px;
 }
