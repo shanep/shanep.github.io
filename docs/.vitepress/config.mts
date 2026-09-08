@@ -213,6 +213,7 @@ function cs425(): DefaultTheme.SidebarItem[] {
         { text: 'Objectives',   link: 'objectives' },
         { text: 'Resources',    link: 'resources' },
         { text: 'Projects',     link: 'assignments/index' },
+        { text: 'Activities',   link: 'activities/index' },
       ]
     },
     {
@@ -233,12 +234,18 @@ function cs425(): DefaultTheme.SidebarItem[] {
       ]
     },
     {
+      text: 'In Class Activities',
+      collapsed: false,
+      items: [
+        { text: 'A1 - Get on the Box',              link: 'activities/a1-onyx-devbox' },
+      ]
+    },
+    {
       text: 'Projects',
       collapsed: false,
       items: [
         { text: 'Grading Rubric',                   link: 'assignments/grading-rubric' },
         { text: 'P0 - Compile, Test, Debug',        link: 'assignments/p0' },
-        { text: 'P5 - Build Your Own Dev Box',      link: 'assignments/p5' },
         { text: 'P1 - Simple Mail Client',          link: 'assignments/p1' },
         { text: 'P2 - Reliable Data Transfer',      link: 'assignments/p2' },
         { text: 'P3 - Subnetting and Forwarding',   link: 'assignments/p3' },

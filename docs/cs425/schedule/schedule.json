@@ -19,6 +19,11 @@
       ],
       "assignments": [
         {
+          "name": "A1",
+          "url": "/cs425/activities/a1-onyx-devbox",
+          "dueDay": "Wednesday"
+        },
+        {
           "name": "P0",
           "url": "/cs425/assignments/p0",
           "assignedSlot": 0
@@ -48,11 +53,6 @@
           "name": "P0",
           "url": "/cs425/assignments/p0",
           "dueDay": "Tuesday"
-        },
-        {
-          "name": "P5",
-          "url": "/cs425/assignments/p5",
-          "assignedSlot": 0
         }
       ],
       "readings": [
@@ -75,11 +75,6 @@
         }
       ],
       "assignments": [
-        {
-          "name": "P5",
-          "url": "/cs425/assignments/p5",
-          "dueDay": "Tuesday"
-        },
         {
           "name": "P1",
           "url": "/cs425/assignments/p1",
