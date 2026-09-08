@@ -70,9 +70,12 @@ name   = "Projects"
 weight = 10
 kinds  = ["project"]
 
+# No weight on purpose. Extra credit stays at 0% all semester and is raised to
+# 2.5% by hand at the end, just before final grades are pushed. A weight declared
+# here would be written back over that on the next push; leaving it out means a
+# push positions the group and never touches what Canvas holds.
 [[group]]
-name   = "Extra Credit"
-weight = 2.5
+name = "Extra Credit"
 
 # ---------------------------------------------------------------------------
 # What this repo calls its files. This directory is a VitePress site as well as a
