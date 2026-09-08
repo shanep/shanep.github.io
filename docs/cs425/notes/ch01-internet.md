@@ -55,15 +55,6 @@ Four sources of delay at each node:
 | Transmission | Pushing bits onto the link | `L / R` |
 | Propagation | Bits traveling down the link | `d / s` |
 
-::: warning
-
-Transmission delay and propagation delay are the pair students confuse most.
-Transmission delay depends on the packet length and the link *rate*. Propagation
-delay depends on the link *length* and the speed of the medium. They are unrelated,
-and a link can have huge propagation delay with negligible transmission delay, or
-the reverse.
-
-:::
 
 **Traffic intensity** is `La/R`, where `L` is packet length, `a` is average arrival
 rate, and `R` is the link rate. As it approaches 1, queuing delay grows without
