@@ -32,15 +32,6 @@ points in a 1000-point course).
   If your pull request is merged you will receive 5 bonus points. Read carefully — there are
   deliberately placed errors throughout the materials. 🦅
 
-::: tip
-
-Submitting a pull request is the core objective of this extra credit. No points will be awarded for
-any other submission method. If you click "Edit this page" and don't see the content you want to
-fix, look for a `<!--@include: ../path/to/file.md -->` directive — that points to the source file
-that actually needs editing.
-
-:::
-
 ## Homework Policy
 
 Unless explicitly stated otherwise, all work is individual. Group assignments will be **clearly**
