@@ -110,11 +110,3 @@ cryptographic protocol goes poorly even when professionals do it.
 - **Application gateways** inspect at the application layer.
 - **IDS/IPS** perform deep packet inspection against signatures, detecting or
   blocking.
-
-## Check yourself
-
-- Which property does a MAC provide that a plain hash does not, and which does a
-  digital signature provide that a MAC does not?
-- Why does TLS use public key crypto for the handshake and symmetric crypto for the
-  data?
-- What can a passive observer learn about a TLS connection?

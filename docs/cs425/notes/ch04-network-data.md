@@ -95,10 +95,3 @@ balancers, and NAT boxes, which is the point.
 Firewalls, NAT boxes, load balancers, caches. They violate the end-to-end principle
 that the original architecture assumed, and they are everywhere, and the tension
 between those two facts is worth thinking about.
-
-## Check yourself
-
-- Split `10.0.0.0/22` into eight equal subnets. What is the range of the fifth one?
-- A 4000 byte datagram crosses a link with an MTU of 1500. How many fragments, and
-  what are their offsets?
-- Why does the destination host reassemble fragments rather than the next router?

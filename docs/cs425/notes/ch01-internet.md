@@ -103,12 +103,3 @@ on afterward.
 ## 1.7 History
 
 Worth reading for context. Not worth memorizing dates.
-
-## Check yourself
-
-- A 1500 byte packet crosses a 10 Mbps link that is 3000 km long. Which dominates,
-  transmission delay or propagation delay?
-- Why does adding a second parallel link between two routers not necessarily double
-  end-to-end throughput?
-- List, in order, every header that gets added to an HTTP GET on its way down the
-  stack.

@@ -113,10 +113,3 @@ This is the payoff for the whole course. Work through it slowly:
 
 Every chapter of the book appears in that sequence. If you can narrate it without
 notes, you are ready for the final.
-
-## Check yourself
-
-- Compute the CRC for a given data word and generator.
-- Why does Ethernet use CSMA/CD but 802.11 cannot?
-- A host sends to an IP address on a different subnet. Whose MAC address goes in the
-  destination field of the frame, and why?

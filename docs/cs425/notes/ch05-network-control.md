@@ -103,11 +103,3 @@ deliberately causing errors, which is a nice trick.
 ## 5.7 Network management and SNMP
 
 MIBs, SNMP, and NETCONF/YANG. Read for awareness.
-
-## Check yourself
-
-- Run Dijkstra by hand on a six-node graph and produce the forwarding table for the
-  source node.
-- Construct a three-node topology where poisoned reverse does not prevent
-  count-to-infinity.
-- Why would an AS prefer a longer AS-PATH?

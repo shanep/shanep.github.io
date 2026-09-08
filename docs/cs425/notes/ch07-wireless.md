@@ -92,10 +92,3 @@ congestion. TCP therefore cuts its window for the wrong reason, and throughput
 collapses on a link that is merely noisy. The fixes (local recovery, split
 connections, explicit notification) all involve breaking a layer boundary somewhere,
 which is why none of them is clean.
-
-## Check yourself
-
-- Why can 802.11 not use collision detection?
-- Draw a topology with a hidden terminal and show how RTS/CTS resolves it.
-- Why does TCP perform badly over a lossy wireless link even when there is no
-  congestion?

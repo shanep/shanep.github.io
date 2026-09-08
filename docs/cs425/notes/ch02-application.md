@@ -125,10 +125,3 @@ The call sequence for TCP:
 
 For UDP there is no connection: `socket`, `bind` on the server, then `sendto` and
 `recvfrom` on both sides.
-
-## Check yourself
-
-- Why is SMTP a push protocol and HTTP a pull protocol?
-- How many RTTs does a page with one HTML file and three images take over
-  non-persistent HTTP? Over persistent HTTP?
-- Trace a DNS lookup for a name that is not in any cache.
