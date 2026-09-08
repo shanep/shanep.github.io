@@ -24,6 +24,25 @@ if (drafts.length > 0) {
   console.log(`vitepress: skipping ${drafts.length} draft page(s): ${drafts.join(', ')}`)
 }
 
+// A course file can carry a section written for whoever is teaching it rather
+// than for the class. `edutools` already drops those before pushing to Canvas;
+// without the same rule here they stayed on the public website, which is the
+// one place they must not be.
+//
+// Deliberately the same rule as edutools/publish.py strip_instructor_sections:
+// split the file into `## ` sections and drop any whose body carries the marker
+// line, so the heading can be called anything and one marker hides a section in
+// both places. Keep the two in step if either changes.
+const INSTRUCTOR_MARKER = 'Instructor note, not shown to students'
+
+function stripInstructorSections(src: string): string {
+  if (!src.includes(INSTRUCTOR_MARKER)) return src
+  return src
+    .split(/^(?=## )/m)
+    .filter((block) => !block.includes(INSTRUCTOR_MARKER))
+    .join('')
+}
+
 declare module 'vitepress' {
   namespace DefaultTheme {
     interface Config {
@@ -41,6 +60,11 @@ export default defineConfig({
   markdown: {
     theme: { light: 'github-light', dark: 'github-dark' },
     config: (md) => {
+        // Runs on the raw markdown, before anything is parsed, so the section
+        // never reaches the page, the outline, or the search index.
+        md.core.ruler.before('normalize', 'strip_instructor_sections', (state: any) => {
+          state.src = stripInstructorSections(state.src)
+        })
         // @ts-ignore
         md.use(footnote)
         md.use(container, 'cols', {
