@@ -137,9 +137,3 @@ connections, which is not so much a flaw in TCP as a fact about the incentives.
 
 **Explicit congestion notification (ECN)** lets routers signal congestion by marking
 packets instead of dropping them.
-
-## Check yourself
-
-- Why does Selective Repeat need a sequence number space twice the window size?
-- Trace `cwnd` through slow start, a triple duplicate ACK, and a timeout.
-- Why is a TCP socket identified by four values and a UDP socket by two?
