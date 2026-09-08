@@ -54,6 +54,6 @@ course is about.
 
 ## Course logistics
 
-Read the [syllabus](../) and the [schedule](../schedule/). The grade breakdown,
+Read the [syllabus](../index.md) and the [schedule](https://shanepanter.com/cs425/schedule/). The grade breakdown,
 the late work policy, and the university policies are all there, and you are
 responsible for them.
