@@ -1,6 +1,6 @@
 # Chapter 6 - Knowledge Check
 
-**Week 13 · 20 points · about 20 minutes · taken in Canvas**
+**Week 14 · 20 points · about 20 minutes · taken in Canvas**
 
 Ten questions on the link layer and LANs. Three attempts, highest score kept. Items
 5 and 10 are multiple-answer.

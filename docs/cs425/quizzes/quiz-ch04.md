@@ -1,6 +1,6 @@
 # Chapter 4 - Knowledge Check
 
-**Week 10 · 20 points · about 25 minutes · taken in Canvas**
+**Week 11 · 20 points · about 25 minutes · taken in Canvas**
 
 Ten questions on the network layer data plane. Three attempts, highest score kept.
 Items 7 and 10 are multiple-answer.

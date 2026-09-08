@@ -1,6 +1,6 @@
 # Chapter 7 - Knowledge Check
 
-**Week 14 · 20 points · about 20 minutes · taken in Canvas**
+**Week 15 · 20 points · about 20 minutes · taken in Canvas**
 
 Ten questions on wireless and mobile networks. Three attempts, highest score kept.
 Items 3 and 9 are multiple-answer.

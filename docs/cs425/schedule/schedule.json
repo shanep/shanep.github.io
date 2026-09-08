@@ -1,211 +1,451 @@
 {
   "startDate": "2026-08-24",
-  "meetingOffsets": [0, 2],
+  "meetingOffsets": [
+    0,
+    2
+  ],
   "weeks": [
     {
       "week": 1,
       "days": [
-        { "topic": "Course Introduction", "topicUrl": "/cs425/notes/course-introduction" },
-        { "topic": "What Is the Internet?", "topicUrl": "/cs425/notes/ch01-internet" }
+        {
+          "topic": "Course Introduction",
+          "topicUrl": "/cs425/notes/course-introduction"
+        },
+        {
+          "topic": "What Is the Internet?",
+          "topicUrl": "/cs425/notes/ch01-internet"
+        }
       ],
       "assignments": [
-        { "name": "P0", "url": "/cs425/assignments/p0", "assignedSlot": 0 }
+        {
+          "name": "P0",
+          "url": "/cs425/assignments/p0",
+          "assignedSlot": 0
+        }
       ],
       "readings": [
-        { "text": "Kurose & Ross 1.1 - 1.3", "url": "/cs425/notes/ch01-internet" }
+        {
+          "text": "Kurose & Ross 1.1 - 1.3",
+          "url": "/cs425/notes/ch01-internet"
+        }
       ]
     },
     {
       "week": 2,
       "days": [
-        { "topic": "Delay, Loss, and Throughput", "topicUrl": "/cs425/notes/ch01-internet" },
-        { "topic": "Protocol Layers and Service Models", "topicUrl": "/cs425/notes/ch01-internet" }
+        {
+          "topic": "Delay, Loss, and Throughput",
+          "topicUrl": "/cs425/notes/ch01-internet"
+        },
+        {
+          "topic": "Protocol Layers and Service Models",
+          "topicUrl": "/cs425/notes/ch01-internet"
+        }
       ],
       "assignments": [
-        { "name": "P0", "url": "/cs425/assignments/p0", "dueDay": "Tuesday" },
-        { "name": "Chapter 1 Knowledge Check", "url": "/cs425/quizzes/quiz-ch01", "assignedSlot": 1 }
+        {
+          "name": "P0",
+          "url": "/cs425/assignments/p0",
+          "dueDay": "Tuesday"
+        },
+        {
+          "name": "Chapter 1 Knowledge Check",
+          "url": "/cs425/quizzes/quiz-ch01",
+          "assignedSlot": 1
+        }
       ],
       "readings": [
-        { "text": "Kurose & Ross 1.4 - 1.6", "url": "/cs425/notes/ch01-internet" }
+        {
+          "text": "Kurose & Ross 1.4 - 1.6",
+          "url": "/cs425/notes/ch01-internet"
+        }
       ]
     },
     {
       "week": 3,
       "days": [
-        { "topic": "Principles of Network Applications", "topicUrl": "/cs425/notes/ch02-application" },
-        { "topic": "The Web and HTTP", "topicUrl": "/cs425/notes/ch02-application" }
+        {
+          "topic": "Principles of Network Applications",
+          "topicUrl": "/cs425/notes/ch02-application"
+        },
+        {
+          "topic": "The Web and HTTP",
+          "topicUrl": "/cs425/notes/ch02-application"
+        }
       ],
       "assignments": [
-        { "name": "Chapter 1 Knowledge Check", "url": "/cs425/quizzes/quiz-ch01", "dueDay": "Friday" },
-        { "name": "P1", "url": "/cs425/assignments/p1", "assignedSlot": 0 }
+        {
+          "name": "Chapter 1 Knowledge Check",
+          "url": "/cs425/quizzes/quiz-ch01",
+          "dueDay": "Friday"
+        },
+        {
+          "name": "P1",
+          "url": "/cs425/assignments/p1",
+          "assignedSlot": 0
+        }
       ],
       "readings": [
-        { "text": "Kurose & Ross 2.1 - 2.2", "url": "/cs425/notes/ch02-application" }
+        {
+          "text": "Kurose & Ross 2.1 - 2.2",
+          "url": "/cs425/notes/ch02-application"
+        }
       ]
     },
     {
       "week": 4,
       "days": [
-        { "topic": "Electronic Mail and SMTP", "topicUrl": "/cs425/notes/ch02-application" },
-        { "topic": "DNS and P2P Applications", "topicUrl": "/cs425/notes/ch02-application" }
+        {
+          "topic": "Electronic Mail and SMTP",
+          "topicUrl": "/cs425/notes/ch02-application"
+        },
+        {
+          "topic": "DNS and P2P Applications",
+          "topicUrl": "/cs425/notes/ch02-application"
+        }
       ],
       "assignments": [
-        { "name": "P1", "url": "/cs425/assignments/p1", "dueDay": "Tuesday" },
-        { "name": "Chapter 2 Knowledge Check", "url": "/cs425/quizzes/quiz-ch02", "assignedSlot": 1 }
+        {
+          "name": "P1",
+          "url": "/cs425/assignments/p1",
+          "dueDay": "Tuesday"
+        },
+        {
+          "name": "Chapter 2 Knowledge Check",
+          "url": "/cs425/quizzes/quiz-ch02",
+          "assignedSlot": 1
+        }
       ],
       "readings": [
-        { "text": "Kurose & Ross 2.3 - 2.6", "url": "/cs425/notes/ch02-application" }
+        {
+          "text": "Kurose & Ross 2.3 - 2.6",
+          "url": "/cs425/notes/ch02-application"
+        }
       ]
     },
     {
       "week": 5,
       "days": [
-        { "topic": "Transport Layer Services and Multiplexing", "topicUrl": "/cs425/notes/ch03-transport" },
-        { "topic": "Connectionless Transport: UDP", "topicUrl": "/cs425/notes/ch03-transport" }
+        {
+          "topic": "Transport Layer Services and Multiplexing",
+          "topicUrl": "/cs425/notes/ch03-transport"
+        },
+        {
+          "topic": "Connectionless Transport: UDP",
+          "topicUrl": "/cs425/notes/ch03-transport"
+        }
       ],
       "assignments": [
-        { "name": "Chapter 2 Knowledge Check", "url": "/cs425/quizzes/quiz-ch02", "dueDay": "Friday" },
-        { "name": "P2", "url": "/cs425/assignments/p2", "assignedSlot": 0 }
+        {
+          "name": "Chapter 2 Knowledge Check",
+          "url": "/cs425/quizzes/quiz-ch02",
+          "dueDay": "Friday"
+        },
+        {
+          "name": "P2",
+          "url": "/cs425/assignments/p2",
+          "assignedSlot": 0
+        }
       ],
       "readings": [
-        { "text": "Kurose & Ross 3.1 - 3.3", "url": "/cs425/notes/ch03-transport" }
+        {
+          "text": "Kurose & Ross 3.1 - 3.3",
+          "url": "/cs425/notes/ch03-transport"
+        }
       ]
     },
     {
       "week": 6,
       "days": [
-        { "topic": "Principles of Reliable Data Transfer", "topicUrl": "/cs425/notes/ch03-transport" },
-        { "topic": "Go-Back-N and Selective Repeat", "topicUrl": "/cs425/notes/ch03-transport" }
+        {
+          "topic": "Principles of Reliable Data Transfer",
+          "topicUrl": "/cs425/notes/ch03-transport"
+        },
+        {
+          "topic": "Go-Back-N and Selective Repeat",
+          "topicUrl": "/cs425/notes/ch03-transport"
+        }
       ],
       "assignments": [],
       "readings": [
-        { "text": "Kurose & Ross 3.4", "url": "/cs425/notes/ch03-transport" }
+        {
+          "text": "Kurose & Ross 3.4",
+          "url": "/cs425/notes/ch03-transport"
+        }
       ]
     },
     {
       "week": 7,
       "days": [
-        { "topic": "Connection-Oriented Transport: TCP", "topicUrl": "/cs425/notes/ch03-transport" },
-        { "topic": "TCP Congestion Control", "topicUrl": "/cs425/notes/ch03-transport" }
+        {
+          "topic": "Connection-Oriented Transport: TCP",
+          "topicUrl": "/cs425/notes/ch03-transport"
+        },
+        {
+          "topic": "TCP Congestion Control",
+          "topicUrl": "/cs425/notes/ch03-transport"
+        }
       ],
       "assignments": [
-        { "name": "P2", "url": "/cs425/assignments/p2", "dueDay": "Tuesday" },
-        { "name": "Chapter 3 Knowledge Check", "url": "/cs425/quizzes/quiz-ch03", "assignedSlot": 1 }
+        {
+          "name": "P2",
+          "url": "/cs425/assignments/p2",
+          "dueDay": "Tuesday"
+        },
+        {
+          "name": "Chapter 3 Knowledge Check",
+          "url": "/cs425/quizzes/quiz-ch03",
+          "dueDay": "Friday"
+        }
       ],
       "readings": [
-        { "text": "Kurose & Ross 3.5 - 3.7", "url": "/cs425/notes/ch03-transport" }
+        {
+          "text": "Kurose & Ross 3.5 - 3.7",
+          "url": "/cs425/notes/ch03-transport"
+        }
       ]
     },
     {
       "week": 8,
       "days": [
-        { "topic": "Midterm Review", "topicUrl": "/cs425/notes/midterm-review" },
-        { "topic": "Midterm Exam", "topicUrl": "/cs425/assignments/midterm-exam-guide" }
+        {
+          "topic": "Midterm Review",
+          "topicUrl": "/cs425/notes/midterm-review"
+        },
+        {
+          "topic": "Midterm Exam",
+          "topicUrl": "/cs425/assignments/midterm-exam-guide"
+        }
       ],
       "assignments": [
-        { "name": "Chapter 3 Knowledge Check", "url": "/cs425/quizzes/quiz-ch03", "dueDay": "Friday" },
-        { "name": "Midterm Exam", "url": "/cs425/assignments/midterm-exam-guide", "dueDay": "Friday" }
+        {
+          "name": "Midterm Exam",
+          "url": "/cs425/assignments/midterm-exam-guide",
+          "dueDay": "Friday"
+        }
       ],
       "readings": [
-        { "text": "Midterm Study Guide", "url": "/cs425/assignments/midterm-exam-guide" }
+        {
+          "text": "Midterm Study Guide",
+          "url": "/cs425/assignments/midterm-exam-guide"
+        }
       ]
     },
     {
       "week": 9,
       "days": [
-        { "topic": "Network Layer Overview and Router Internals", "topicUrl": "/cs425/notes/ch04-network-data" },
-        { "topic": "The Internet Protocol: IPv4 and Addressing", "topicUrl": "/cs425/notes/ch04-network-data" }
+        {
+          "topic": "Network Layer Overview and Router Internals",
+          "topicUrl": "/cs425/notes/ch04-network-data"
+        },
+        {
+          "topic": "The Internet Protocol: IPv4 and Addressing",
+          "topicUrl": "/cs425/notes/ch04-network-data"
+        }
       ],
       "assignments": [
-        { "name": "P3", "url": "/cs425/assignments/p3", "assignedSlot": 0 }
+        {
+          "name": "P3",
+          "url": "/cs425/assignments/p3",
+          "assignedSlot": 0
+        }
       ],
       "readings": [
-        { "text": "Kurose & Ross 4.1 - 4.3", "url": "/cs425/notes/ch04-network-data" }
+        {
+          "text": "Kurose & Ross 4.1 - 4.3",
+          "url": "/cs425/notes/ch04-network-data"
+        }
       ]
     },
     {
       "week": 10,
       "days": [
-        { "topic": "Subnetting, NAT, and IPv6", "topicUrl": "/cs425/notes/ch04-network-data" },
-        { "topic": "Generalized Forwarding and SDN", "topicUrl": "/cs425/notes/ch04-network-data" }
+        {
+          "topic": "Subnetting, NAT, and IPv6",
+          "topicUrl": "/cs425/notes/ch04-network-data"
+        },
+        {
+          "topic": "Generalized Forwarding and SDN",
+          "topicUrl": "/cs425/notes/ch04-network-data"
+        }
       ],
       "assignments": [
-        { "name": "P3", "url": "/cs425/assignments/p3", "dueDay": "Tuesday" },
-        { "name": "Chapter 4 Knowledge Check", "url": "/cs425/quizzes/quiz-ch04", "assignedSlot": 1 }
+        {
+          "name": "P3",
+          "url": "/cs425/assignments/p3",
+          "dueDay": "Tuesday"
+        },
+        {
+          "name": "Chapter 4 Knowledge Check",
+          "url": "/cs425/quizzes/quiz-ch04",
+          "assignedSlot": 1
+        }
       ],
       "readings": [
-        { "text": "Kurose & Ross 4.3 - 4.5", "url": "/cs425/notes/ch04-network-data" }
+        {
+          "text": "Kurose & Ross 4.3 - 4.5",
+          "url": "/cs425/notes/ch04-network-data"
+        }
       ]
     },
     {
       "week": 11,
       "days": [
-        { "topic": "Routing Algorithms: Link State and Distance Vector", "topicUrl": "/cs425/notes/ch05-network-control" },
-        { "topic": "Intra-AS Routing, BGP, and the Control Plane", "topicUrl": "/cs425/notes/ch05-network-control" }
+        {
+          "topic": "Routing Algorithms: Link State and Distance Vector",
+          "topicUrl": "/cs425/notes/ch05-network-control"
+        },
+        {
+          "topic": "Intra-AS Routing, BGP, and the Control Plane",
+          "topicUrl": "/cs425/notes/ch05-network-control"
+        }
       ],
       "assignments": [
-        { "name": "Chapter 4 Knowledge Check", "url": "/cs425/quizzes/quiz-ch04", "dueDay": "Friday" },
-        { "name": "Chapter 5 Knowledge Check", "url": "/cs425/quizzes/quiz-ch05", "assignedSlot": 1 }
+        {
+          "name": "Chapter 4 Knowledge Check",
+          "url": "/cs425/quizzes/quiz-ch04",
+          "dueDay": "Friday"
+        },
+        {
+          "name": "Chapter 5 Knowledge Check",
+          "url": "/cs425/quizzes/quiz-ch05",
+          "assignedSlot": 1
+        }
       ],
       "readings": [
-        { "text": "Kurose & Ross 5.1 - 5.4", "url": "/cs425/notes/ch05-network-control" }
+        {
+          "text": "Kurose & Ross 5.1 - 5.4",
+          "url": "/cs425/notes/ch05-network-control"
+        }
       ]
     },
     {
       "week": 12,
       "days": [
-        { "topic": "Link Layer Services and Error Detection", "topicUrl": "/cs425/notes/ch06-link" },
-        { "topic": "Multiple Access Protocols", "topicUrl": "/cs425/notes/ch06-link" }
+        {
+          "topic": "Link Layer Services and Error Detection",
+          "topicUrl": "/cs425/notes/ch06-link"
+        },
+        {
+          "topic": "Multiple Access Protocols",
+          "topicUrl": "/cs425/notes/ch06-link"
+        }
       ],
       "assignments": [
-        { "name": "Chapter 5 Knowledge Check", "url": "/cs425/quizzes/quiz-ch05", "dueDay": "Friday" },
-        { "name": "P4", "url": "/cs425/assignments/p4", "assignedSlot": 0 }
+        {
+          "name": "Chapter 5 Knowledge Check",
+          "url": "/cs425/quizzes/quiz-ch05",
+          "dueDay": "Friday"
+        },
+        {
+          "name": "P4",
+          "url": "/cs425/assignments/p4",
+          "assignedSlot": 0
+        }
       ],
       "readings": [
-        { "text": "Kurose & Ross 6.1 - 6.3", "url": "/cs425/notes/ch06-link" }
+        {
+          "text": "Kurose & Ross 6.1 - 6.3",
+          "url": "/cs425/notes/ch06-link"
+        }
       ]
     },
     {
       "week": 13,
       "days": [
-        { "topic": "Switched LANs: ARP, Ethernet, and Switches", "topicUrl": "/cs425/notes/ch06-link" },
-        { "topic": "A Day in the Life of a Web Request", "topicUrl": "/cs425/notes/ch06-link" }
+        {
+          "topic": "Switched LANs: ARP, Ethernet, and Switches",
+          "topicUrl": "/cs425/notes/ch06-link"
+        },
+        {
+          "topic": "A Day in the Life of a Web Request",
+          "topicUrl": "/cs425/notes/ch06-link"
+        }
       ],
       "assignments": [
-        { "name": "P4", "url": "/cs425/assignments/p4", "dueDay": "Tuesday" },
-        { "name": "Chapter 6 Knowledge Check", "url": "/cs425/quizzes/quiz-ch06", "assignedSlot": 1 }
+        {
+          "name": "P4",
+          "url": "/cs425/assignments/p4",
+          "dueDay": "Tuesday"
+        },
+        {
+          "name": "Chapter 6 Knowledge Check",
+          "url": "/cs425/quizzes/quiz-ch06",
+          "assignedSlot": 1
+        }
       ],
       "readings": [
-        { "text": "Kurose & Ross 6.4 - 6.7", "url": "/cs425/notes/ch06-link" }
+        {
+          "text": "Kurose & Ross 6.4 - 6.7",
+          "url": "/cs425/notes/ch06-link"
+        }
       ]
     },
     {
       "week": 14,
       "days": [
-        { "topic": "Wireless Links and 802.11", "topicUrl": "/cs425/notes/ch07-wireless" },
-        { "topic": "Cellular Networks and Mobility Management", "topicUrl": "/cs425/notes/ch07-wireless" }
+        {
+          "topic": "Wireless Links and 802.11",
+          "topicUrl": "/cs425/notes/ch07-wireless"
+        },
+        {
+          "topic": "Cellular Networks and Mobility Management",
+          "topicUrl": "/cs425/notes/ch07-wireless"
+        }
       ],
       "assignments": [
-        { "name": "Chapter 6 Knowledge Check", "url": "/cs425/quizzes/quiz-ch06", "dueDay": "Friday" },
-        { "name": "Chapter 7 Knowledge Check", "url": "/cs425/quizzes/quiz-ch07", "assignedSlot": 1 }
+        {
+          "name": "Chapter 6 Knowledge Check",
+          "url": "/cs425/quizzes/quiz-ch06",
+          "dueDay": "Friday"
+        },
+        {
+          "name": "Chapter 7 Knowledge Check",
+          "url": "/cs425/quizzes/quiz-ch07",
+          "assignedSlot": 1
+        }
       ],
       "readings": [
-        { "text": "Kurose & Ross 7.1 - 7.6", "url": "/cs425/notes/ch07-wireless" }
+        {
+          "text": "Kurose & Ross 7.1 - 7.6",
+          "url": "/cs425/notes/ch07-wireless"
+        }
       ]
     },
     {
       "week": 15,
       "days": [
-        { "topic": "Network Security: Cryptography and Integrity", "topicUrl": "/cs425/notes/ch08-security" },
-        { "topic": "TLS, Firewalls, and Final Review", "topicUrl": "/cs425/notes/final-review" }
+        {
+          "topic": "Network Security: Cryptography and Integrity",
+          "topicUrl": "/cs425/notes/ch08-security"
+        },
+        {
+          "topic": "TLS, Firewalls, and Final Review",
+          "topicUrl": "/cs425/notes/final-review"
+        }
       ],
       "assignments": [
-        { "name": "Chapter 7 Knowledge Check", "url": "/cs425/quizzes/quiz-ch07", "dueDay": "Friday" },
-        { "name": "Chapter 8 Knowledge Check", "url": "/cs425/quizzes/quiz-ch08", "dueDay": "Friday" }
+        {
+          "name": "Chapter 7 Knowledge Check",
+          "url": "/cs425/quizzes/quiz-ch07",
+          "dueDay": "Friday"
+        },
+        {
+          "name": "Chapter 8 Knowledge Check",
+          "url": "/cs425/quizzes/quiz-ch08",
+          "dueDay": "Friday"
+        }
       ],
       "readings": [
-        { "text": "Kurose & Ross 8.1 - 8.9", "url": "/cs425/notes/ch08-security" },
-        { "text": "Final Study Guide", "url": "/cs425/assignments/final-exam-guide" }
+        {
+          "text": "Kurose & Ross 8.1 - 8.9",
+          "url": "/cs425/notes/ch08-security"
+        },
+        {
+          "text": "Final Study Guide",
+          "url": "/cs425/assignments/final-exam-guide"
+        }
       ]
     }
   ]

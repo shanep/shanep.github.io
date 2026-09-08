@@ -1,6 +1,6 @@
 # Chapter 5 - Knowledge Check
 
-**Week 11 · 20 points · about 20 minutes · taken in Canvas**
+**Week 12 · 20 points · about 20 minutes · taken in Canvas**
 
 Ten questions on the network layer control plane. Three attempts, highest score
 kept. Items 4 and 9 are multiple-answer.
