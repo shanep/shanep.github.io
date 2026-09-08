@@ -1,0 +1,133 @@
+/* CS 425 — Canvas page styling
+ *
+ * ONE stylesheet for the whole course. Canvas strips <style> elements from page
+ * bodies, so `edutools push` inlines this into style attributes at publish time.
+ * Edit here, re-push, and every page restyles.
+ *
+ * CONSTRAINTS, from canvas-lms gems/canvas_sanitize/:
+ *   - No pseudo-classes (:hover, :nth-child) and no @media queries: neither can
+ *     be expressed as an inline attribute. Zebra striping is done by the
+ *     decorator adding .cs-row-odd / .cs-row-even instead.
+ *   - font-weight is NOT on Canvas's property allowlist. Use the `font`
+ *     shorthand, or <strong>, which pandoc already emits for **bold**.
+ *   - box-shadow, opacity, transform, transition, letter-spacing, and
+ *     text-transform are all blocked. The publisher fails the run if any appear.
+ *   - No fixed widths, so Canvas's own responsive layout keeps working.
+ *
+ * Palette: https://www.boisestate.edu/brand/visual-identity/colors/
+ *   Boise State Blue #0033A0 · Boise State Orange #D64309
+ *   secondary blues #001F60 #006BA6 · neutrals #F6F7F9 #E3E7EC #D9DEE5
+ * The brand allows secondary colours in small amounts (20% or less) and asks for
+ * the two primaries to dominate. Blue carries all the structure here; orange is
+ * reserved for the two places a page is telling a student they will lose points.
+ */
+
+/* --- base rhythm ------------------------------------------------------- */
+
+h2 {
+  color: #001F60;
+  border-bottom: 2px solid #F6F7F9;
+  padding-bottom: 6px;
+  margin-top: 32px;
+}
+
+h3 { color: #0033A0; margin-top: 24px; }
+
+p, li { line-height: 1.65; }
+
+a { color: #0033A0; }
+
+pre {
+  background-color: #F6F7F9;
+  border: 1px solid #D9DEE5;
+  border-radius: 4px;
+  padding: 12px 14px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+/* --- tables ------------------------------------------------------------ */
+
+.cs-scroll { overflow-x: auto; max-width: 100%; margin: 18px 0; }
+
+table { border-collapse: collapse; max-width: 100%; }
+
+th {
+  background-color: #F6F7F9;
+  color: #001F60;
+  text-align: left;
+  border-bottom: 2px solid #0033A0;
+  padding: 8px 12px;
+}
+
+td { border-bottom: 1px solid #E3E7EC; padding: 8px 12px; vertical-align: top; }
+
+.cs-row-even td { background-color: #FBFCFD; }
+
+/* --- the meta line: "Week 2 · 50 points · about 3 hours" --------------- */
+
+.cs-meta {
+  background-color: #F6F7F9;
+  border-left: 5px solid #0033A0;
+  padding: 10px 16px;
+  margin-bottom: 24px;
+  color: #001F60;
+  border-radius: 0 3px 3px 0;
+}
+
+/* --- callouts, from the ::: containers in the markdown ----------------- */
+
+blockquote {
+  border-left: 4px solid #0033A0;
+  background-color: #F6F7F9;
+  padding: 12px 18px;
+  margin: 18px 0;
+  color: #22252A;
+  border-radius: 0 3px 3px 0;
+}
+
+/* ::: danger — the portability rule, which is what students actually lose
+   whole projects to. The one place orange earns being the loudest thing. */
+.cs-danger {
+  border-left: 5px solid #D64309;
+  background-color: #FDF3EE;
+  color: #7A2705;
+}
+
+/* ::: warning — a caution worth stopping for, but not a zero. */
+.cs-warning {
+  border-left: 5px solid #006BA6;
+  background-color: #F2F8FB;
+}
+
+/* ::: tip and ::: info — an aside; quietest of the three. */
+.cs-tip, .cs-info {
+  border-left: 4px solid #C7D2E8;
+  background-color: #F8FAFC;
+}
+
+/* --- sections the decorator recognises --------------------------------- */
+
+.cs-overview {
+  background-color: #F6F7F9;
+  border-left: 5px solid #0033A0;
+  padding: 4px 18px 12px 18px;
+  margin: 22px 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.cs-rubric {
+  border: 1px solid #D9DEE5;
+  border-radius: 4px;
+  padding: 4px 18px 14px 18px;
+  margin: 26px 0;
+}
+
+/* Headings inside a callout should not re-draw the section rule. */
+.cs-overview h2, .cs-rubric h2, .cs-meta h2 {
+  border-bottom: 0;
+  margin-top: 16px;
+}
