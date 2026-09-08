@@ -1,0 +1,128 @@
+# Canvas configuration for CS425/525 - Computer Networks
+#
+# Everything about scheduling is derived from the [term] skeleton below, so
+# rolling this course to a new semester means changing `first_monday` and the
+# four other dates, not editing seventy timestamps.
+#
+#   edutools dates docs/cs425 --show
+#   edutools push  docs/cs425 --course 48194 --dry-run
+
+[term]
+timezone                = "America/Boise"
+first_monday            = 2026-08-24   # first Monday of instruction, Fall 2026
+weeks                   = 15
+break_after_week        = 13           # Thanksgiving break, Nov 23-27 2026
+last_day_of_instruction = 2026-12-11
+finals_start            = 2026-12-14
+finals_end              = 2026-12-18
+# Grades are weighted by Canvas assignment group (Exams 50%, In Class 40%,
+# Projects 10%), so there is no fixed point total to check against.
+total_points            = 0
+
+# How each kind of gradable item is scheduled inside its week. `grace_days` is
+# the gap between due_at and lock_at; the syllabus promises 2 days with no
+# penalty, and nothing is ever accepted past the last day of instruction.
+[term.policy.project]
+unlock     = "mon 00:00"
+due        = "tue 23:59"
+grace_days = 2
+
+[term.policy.quiz]
+unlock     = "mon 00:00"
+due        = "fri 23:59"
+grace_days = 2
+
+[term.policy.discussion]
+unlock     = "mon 00:00"
+due        = "sun 23:59"
+grace_days = 2
+
+[term.policy.exam]
+unlock     = "mon 00:00"
+due        = "fri 23:59"
+grace_days = 0
+
+# ---------------------------------------------------------------------------
+# What this repo calls its files. This directory is a VitePress site as well as a
+# Canvas course repo, so the syllabus is index.md rather than syllabus.md and the
+# projects are p0.md rather than lab-0.md.
+# ---------------------------------------------------------------------------
+
+[layout]
+syllabus = "index.md"
+pages = [
+    "objectives.md",
+    "resources.md",
+    "notes/*.md",
+    "assignments/index.md",
+    "assignments/grading-rubric.md",
+    "assignments/*-exam-guide.md",
+]
+# The textbook PDF under docs/ stays out of Canvas; it is already provided there
+# under Course Materials.
+files = []
+
+[layout.gradable]
+project    = "assignments/p[0-9]*.md"
+quiz       = "quizzes/quiz-*.md"
+discussion = "discussions/*.md"
+
+# Per-item exceptions to the policy above, keyed by path relative to this file.
+# [override."assignments/p1.md"]
+# due = "thu 23:59"
+
+# ---------------------------------------------------------------------------
+# Canvas modules. `page` is the module overview; `items` are published in order.
+# Every key is a path relative to this file and must exist, or the push reports
+# it as unpublished rather than silently skipping it.
+# ---------------------------------------------------------------------------
+
+[[module]]
+title = "Week 1-2: Computer Networks and the Internet"
+page  = "notes/ch01-internet.md"
+items = ["assignments/p0.md", "quizzes/quiz-ch01.md"]
+
+[[module]]
+title = "Week 3-4: The Application Layer"
+page  = "notes/ch02-application.md"
+items = ["assignments/p1.md", "quizzes/quiz-ch02.md"]
+
+[[module]]
+title = "Week 5-7: The Transport Layer"
+page  = "notes/ch03-transport.md"
+items = ["assignments/p2.md", "quizzes/quiz-ch03.md"]
+
+[[module]]
+title = "Week 8: Midterm Exam"
+page  = "notes/midterm-review.md"
+items = ["assignments/midterm-exam-guide.md"]
+
+[[module]]
+title = "Week 9-10: The Network Layer - Data Plane"
+page  = "notes/ch04-network-data.md"
+items = ["assignments/p3.md", "quizzes/quiz-ch04.md"]
+
+[[module]]
+title = "Week 11: The Network Layer - Control Plane"
+page  = "notes/ch05-network-control.md"
+items = ["quizzes/quiz-ch05.md"]
+
+[[module]]
+title = "Week 12-13: The Link Layer and LANs"
+page  = "notes/ch06-link.md"
+items = ["assignments/p4.md", "quizzes/quiz-ch06.md"]
+
+[[module]]
+title = "Week 14: Wireless and Mobile Networks"
+page  = "notes/ch07-wireless.md"
+items = ["quizzes/quiz-ch07.md"]
+
+[[module]]
+title = "Week 15: Security in Computer Networks"
+page  = "notes/ch08-security.md"
+items = ["quizzes/quiz-ch08.md"]
+
+[[module]]
+title = "Finals Week"
+page  = "notes/final-review.md"
+items = ["assignments/final-exam-guide.md"]
