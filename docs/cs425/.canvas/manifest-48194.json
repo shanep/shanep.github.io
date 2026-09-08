@@ -1,0 +1,179 @@
+{
+  "entries": {
+    "activities/a1-onyx-devbox.md": {
+      "canvas_id": "1811263",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "A1 - Get on the Box"
+    },
+    "activities/index.md": {
+      "canvas_id": "in-class-activities",
+      "extra": {},
+      "kind": "page",
+      "page_url": "in-class-activities",
+      "title": "In Class Activities"
+    },
+    "assignments/final-exam-guide.md": {
+      "canvas_id": "final-study-guide",
+      "extra": {},
+      "kind": "page",
+      "page_url": "final-study-guide",
+      "title": "Final Study Guide"
+    },
+    "assignments/grading-rubric.md": {
+      "canvas_id": "grading-rubric",
+      "extra": {},
+      "kind": "page",
+      "page_url": "grading-rubric",
+      "title": "Grading Rubric"
+    },
+    "assignments/index.md": {
+      "canvas_id": "projects",
+      "extra": {},
+      "kind": "page",
+      "page_url": "projects",
+      "title": "Projects"
+    },
+    "assignments/midterm-exam-guide.md": {
+      "canvas_id": "midterm-study-guide",
+      "extra": {},
+      "kind": "page",
+      "page_url": "midterm-study-guide",
+      "title": "Midterm Study Guide"
+    },
+    "assignments/p0.md": {
+      "canvas_id": "1806250",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "P0 - Compile, Test, Debug"
+    },
+    "assignments/p1.md": {
+      "canvas_id": "1807221",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "P1 - Simple Mail Client"
+    },
+    "assignments/p2.md": {
+      "canvas_id": "1811260",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "P2 - Reliable Data Transfer"
+    },
+    "assignments/p3.md": {
+      "canvas_id": "1811261",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "P3 - Subnetting and Forwarding"
+    },
+    "assignments/p4.md": {
+      "canvas_id": "1811262",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "P4 - Packet Capture and Analysis"
+    },
+    "index.md": {
+      "canvas_id": "48194",
+      "extra": {},
+      "kind": "syllabus",
+      "page_url": "",
+      "title": "CS 425/525 Computer Networks"
+    },
+    "notes/ch01-internet.md": {
+      "canvas_id": "chapter-1-computer-networks-and-the-internet",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-1-computer-networks-and-the-internet",
+      "title": "Chapter 1 - Computer Networks and the Internet"
+    },
+    "notes/ch02-application.md": {
+      "canvas_id": "chapter-2-the-application-layer",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-2-the-application-layer",
+      "title": "Chapter 2 - The Application Layer"
+    },
+    "notes/ch03-transport.md": {
+      "canvas_id": "chapter-3-the-transport-layer",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-3-the-transport-layer",
+      "title": "Chapter 3 - The Transport Layer"
+    },
+    "notes/ch04-network-data.md": {
+      "canvas_id": "chapter-4-the-network-layer-data-plane",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-4-the-network-layer-data-plane",
+      "title": "Chapter 4 - The Network Layer: Data Plane"
+    },
+    "notes/ch05-network-control.md": {
+      "canvas_id": "chapter-5-the-network-layer-control-plane",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-5-the-network-layer-control-plane",
+      "title": "Chapter 5 - The Network Layer: Control Plane"
+    },
+    "notes/ch06-link.md": {
+      "canvas_id": "chapter-6-the-link-layer-and-lans",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-6-the-link-layer-and-lans",
+      "title": "Chapter 6 - The Link Layer and LANs"
+    },
+    "notes/ch07-wireless.md": {
+      "canvas_id": "chapter-7-wireless-and-mobile-networks",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-7-wireless-and-mobile-networks",
+      "title": "Chapter 7 - Wireless and Mobile Networks"
+    },
+    "notes/ch08-security.md": {
+      "canvas_id": "chapter-8-security-in-computer-networks",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-8-security-in-computer-networks",
+      "title": "Chapter 8 - Security in Computer Networks"
+    },
+    "notes/course-introduction.md": {
+      "canvas_id": "course-introduction",
+      "extra": {},
+      "kind": "page",
+      "page_url": "course-introduction",
+      "title": "Course Introduction"
+    },
+    "notes/final-review.md": {
+      "canvas_id": "final-review",
+      "extra": {},
+      "kind": "page",
+      "page_url": "final-review",
+      "title": "Final Review"
+    },
+    "notes/midterm-review.md": {
+      "canvas_id": "midterm-review",
+      "extra": {},
+      "kind": "page",
+      "page_url": "midterm-review",
+      "title": "Midterm Review"
+    },
+    "objectives.md": {
+      "canvas_id": "course-objectives",
+      "extra": {},
+      "kind": "page",
+      "page_url": "course-objectives",
+      "title": "Course Objectives"
+    },
+    "resources.md": {
+      "canvas_id": "resources",
+      "extra": {},
+      "kind": "page",
+      "page_url": "resources",
+      "title": "Resources"
+    }
+  }
+}
