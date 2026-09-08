@@ -27,6 +27,12 @@ total_points            = 0
 due        = "tue 23:59"
 grace_days = 2
 
+# In class activities are done and submitted during the class period they run in,
+# so there is no grace period. Wednesday is the second meeting of the week.
+[term.policy.lab]
+due        = "wed 23:59"
+grace_days = 0
+
 [term.policy.discussion]
 due        = "sun 23:59"
 grace_days = 2
@@ -48,6 +54,7 @@ pages = [
     "resources.md",
     "notes/*.md",
     "assignments/index.md",
+    "activities/index.md",
     "assignments/grading-rubric.md",
     "assignments/*-exam-guide.md",
 ]
@@ -57,6 +64,7 @@ files = []
 
 [layout.gradable]
 project    = "assignments/p[0-9]*.md"
+lab        = "activities/a[0-9]*.md"
 discussion = "discussions/*.md"
 
 # Per-item exceptions to the policy above, keyed by path relative to this file.
@@ -72,12 +80,12 @@ discussion = "discussions/*.md"
 [[module]]
 title = "Week 1-2: Computer Networks and the Internet"
 page  = "notes/ch01-internet.md"
-items = ["assignments/p0.md"]
+items = ["activities/a1-onyx-devbox.md", "assignments/p0.md"]
 
 [[module]]
 title = "Week 3-4: The Application Layer"
 page  = "notes/ch02-application.md"
-items = ["assignments/p5.md", "assignments/p1.md"]
+items = ["assignments/p1.md"]
 
 [[module]]
 title = "Week 5-7: The Transport Layer"
