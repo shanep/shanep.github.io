@@ -42,6 +42,39 @@ due        = "fri 23:59"
 grace_days = 0
 
 # ---------------------------------------------------------------------------
+# Canvas assignment groups, in the order the syllabus lists them. The weights
+# here are the weights in the Assessments table of index.md, and `edutools push`
+# turns on weight-by-group for the course, so these are what Canvas computes the
+# final grade from. Extra credit sits on top of a full 100 on purpose.
+#
+# The names have to match the groups already in Canvas character for character,
+# because a push pairs them up by name and would otherwise create a second group
+# beside the one that is already there.
+#
+# Exams carry half the grade and have nothing in this repo: the exam guides
+# publish as pages and the exams themselves are Canvas quizzes built by hand, so
+# the group is declared with no kinds and the quizzes are filed into it in Canvas.
+# ---------------------------------------------------------------------------
+
+[[group]]
+name   = "Exams"
+weight = 50
+
+[[group]]
+name   = "In Class Activities and Knowledge checks"
+weight = 40
+kinds  = ["lab", "quiz", "discussion"]
+
+[[group]]
+name   = "Projects"
+weight = 10
+kinds  = ["project"]
+
+[[group]]
+name   = "Extra Credit"
+weight = 2.5
+
+# ---------------------------------------------------------------------------
 # What this repo calls its files. This directory is a VitePress site as well as a
 # Canvas course repo, so the syllabus is index.md rather than syllabus.md and the
 # projects are p0.md rather than lab-0.md.
