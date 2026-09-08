@@ -117,11 +117,11 @@
       "week": 5,
       "days": [
         {
-          "topic": "Transport Layer Services and Multiplexing",
+          "topic": "Transport Services, Multiplexing, and UDP",
           "topicUrl": "/cs425/notes/ch03-transport"
         },
         {
-          "topic": "Connectionless Transport: UDP",
+          "topic": "Principles of Reliable Data Transfer",
           "topicUrl": "/cs425/notes/ch03-transport"
         }
       ],
@@ -134,33 +134,13 @@
       ],
       "readings": [
         {
-          "text": "Kurose & Ross 3.1 - 3.3",
+          "text": "Kurose & Ross 3.1 - 3.4",
           "url": "/cs425/notes/ch03-transport"
         }
       ]
     },
     {
       "week": 6,
-      "days": [
-        {
-          "topic": "Principles of Reliable Data Transfer",
-          "topicUrl": "/cs425/notes/ch03-transport"
-        },
-        {
-          "topic": "Go-Back-N and Selective Repeat",
-          "topicUrl": "/cs425/notes/ch03-transport"
-        }
-      ],
-      "assignments": [],
-      "readings": [
-        {
-          "text": "Kurose & Ross 3.4",
-          "url": "/cs425/notes/ch03-transport"
-        }
-      ]
-    },
-    {
-      "week": 7,
       "days": [
         {
           "topic": "Connection-Oriented Transport: TCP",
@@ -171,17 +151,41 @@
           "topicUrl": "/cs425/notes/ch03-transport"
         }
       ],
+      "readings": [
+        {
+          "text": "Kurose & Ross 3.5 - 3.7",
+          "url": "/cs425/notes/ch03-transport"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "days": [
+        {
+          "topic": "Network Layer Overview and Router Internals",
+          "topicUrl": "/cs425/notes/ch04-network-data"
+        },
+        {
+          "topic": "IP Addressing, Subnetting, and Forwarding",
+          "topicUrl": "/cs425/notes/ch04-network-data"
+        }
+      ],
       "assignments": [
         {
           "name": "P2",
           "url": "/cs425/assignments/p2",
           "dueDay": "Tuesday"
+        },
+        {
+          "name": "P3",
+          "url": "/cs425/assignments/p3",
+          "assignedSlot": 0
         }
       ],
       "readings": [
         {
-          "text": "Kurose & Ross 3.5 - 3.7",
-          "url": "/cs425/notes/ch03-transport"
+          "text": "Kurose & Ross 4.1 - 4.5",
+          "url": "/cs425/notes/ch04-network-data"
         }
       ]
     },
@@ -215,25 +219,18 @@
       "week": 9,
       "days": [
         {
-          "topic": "Network Layer Overview and Router Internals",
-          "topicUrl": "/cs425/notes/ch04-network-data"
+          "topic": "Routing Algorithms: Link State and Distance Vector",
+          "topicUrl": "/cs425/notes/ch05-network-control"
         },
         {
-          "topic": "The Internet Protocol: IPv4 and Addressing",
-          "topicUrl": "/cs425/notes/ch04-network-data"
-        }
-      ],
-      "assignments": [
-        {
-          "name": "P3",
-          "url": "/cs425/assignments/p3",
-          "assignedSlot": 0
+          "topic": "Intra-AS Routing and OSPF",
+          "topicUrl": "/cs425/notes/ch05-network-control"
         }
       ],
       "readings": [
         {
-          "text": "Kurose & Ross 4.1 - 4.3",
-          "url": "/cs425/notes/ch04-network-data"
+          "text": "Kurose & Ross 5.1 - 5.3",
+          "url": "/cs425/notes/ch05-network-control"
         }
       ]
     },
@@ -241,12 +238,12 @@
       "week": 10,
       "days": [
         {
-          "topic": "Subnetting, NAT, and IPv6",
-          "topicUrl": "/cs425/notes/ch04-network-data"
+          "topic": "BGP and Inter-AS Routing",
+          "topicUrl": "/cs425/notes/ch05-network-control"
         },
         {
-          "topic": "Generalized Forwarding and SDN",
-          "topicUrl": "/cs425/notes/ch04-network-data"
+          "topic": "The SDN Control Plane",
+          "topicUrl": "/cs425/notes/ch05-network-control"
         }
       ],
       "assignments": [
@@ -258,33 +255,13 @@
       ],
       "readings": [
         {
-          "text": "Kurose & Ross 4.3 - 4.5",
-          "url": "/cs425/notes/ch04-network-data"
-        }
-      ]
-    },
-    {
-      "week": 11,
-      "days": [
-        {
-          "topic": "Routing Algorithms: Link State and Distance Vector",
-          "topicUrl": "/cs425/notes/ch05-network-control"
-        },
-        {
-          "topic": "Intra-AS Routing, BGP, and the Control Plane",
-          "topicUrl": "/cs425/notes/ch05-network-control"
-        }
-      ],
-      "assignments": [],
-      "readings": [
-        {
-          "text": "Kurose & Ross 5.1 - 5.4",
+          "text": "Kurose & Ross 5.4 - 5.5",
           "url": "/cs425/notes/ch05-network-control"
         }
       ]
     },
     {
-      "week": 12,
+      "week": 11,
       "days": [
         {
           "topic": "Link Layer Services and Error Detection",
@@ -310,7 +287,7 @@
       ]
     },
     {
-      "week": 13,
+      "week": 12,
       "days": [
         {
           "topic": "Switched LANs: ARP, Ethernet, and Switches",
@@ -319,6 +296,25 @@
         {
           "topic": "A Day in the Life of a Web Request",
           "topicUrl": "/cs425/notes/ch06-link"
+        }
+      ],
+      "readings": [
+        {
+          "text": "Kurose & Ross 6.4 - 6.7",
+          "url": "/cs425/notes/ch06-link"
+        }
+      ]
+    },
+    {
+      "week": 13,
+      "days": [
+        {
+          "topic": "Wireless Links and 802.11",
+          "topicUrl": "/cs425/notes/ch07-wireless"
+        },
+        {
+          "topic": "Cellular Networks and Mobility Management",
+          "topicUrl": "/cs425/notes/ch07-wireless"
         }
       ],
       "assignments": [
@@ -330,8 +326,8 @@
       ],
       "readings": [
         {
-          "text": "Kurose & Ross 6.4 - 6.7",
-          "url": "/cs425/notes/ch06-link"
+          "text": "Kurose & Ross 7.1 - 7.6",
+          "url": "/cs425/notes/ch07-wireless"
         }
       ]
     },
@@ -339,19 +335,18 @@
       "week": 14,
       "days": [
         {
-          "topic": "Wireless Links and 802.11",
-          "topicUrl": "/cs425/notes/ch07-wireless"
+          "topic": "Network Security: Cryptography and Integrity",
+          "topicUrl": "/cs425/notes/ch08-security"
         },
         {
-          "topic": "Cellular Networks and Mobility Management",
-          "topicUrl": "/cs425/notes/ch07-wireless"
+          "topic": "Authentication and Message Integrity",
+          "topicUrl": "/cs425/notes/ch08-security"
         }
       ],
-      "assignments": [],
       "readings": [
         {
-          "text": "Kurose & Ross 7.1 - 7.6",
-          "url": "/cs425/notes/ch07-wireless"
+          "text": "Kurose & Ross 8.1 - 8.4",
+          "url": "/cs425/notes/ch08-security"
         }
       ]
     },
@@ -359,18 +354,17 @@
       "week": 15,
       "days": [
         {
-          "topic": "Network Security: Cryptography and Integrity",
+          "topic": "Securing TCP: TLS, IPsec, and VPNs",
           "topicUrl": "/cs425/notes/ch08-security"
         },
         {
-          "topic": "TLS, Firewalls, and Final Review",
-          "topicUrl": "/cs425/notes/final-review"
+          "topic": "Firewalls, IDS, and Final Review",
+          "topicUrl": "/cs425/notes/ch08-security"
         }
       ],
-      "assignments": [],
       "readings": [
         {
-          "text": "Kurose & Ross 8.1 - 8.9",
+          "text": "Kurose & Ross 8.5 - 8.9",
           "url": "/cs425/notes/ch08-security"
         },
         {
