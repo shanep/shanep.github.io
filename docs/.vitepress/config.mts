@@ -238,6 +238,7 @@ function cs425(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Grading Rubric',                   link: 'assignments/grading-rubric' },
         { text: 'P0 - Compile, Test, Debug',        link: 'assignments/p0' },
+        { text: 'P5 - Build Your Own Dev Box',      link: 'assignments/p5' },
         { text: 'P1 - Simple Mail Client',          link: 'assignments/p1' },
         { text: 'P2 - Reliable Data Transfer',      link: 'assignments/p2' },
         { text: 'P3 - Subnetting and Forwarding',   link: 'assignments/p3' },

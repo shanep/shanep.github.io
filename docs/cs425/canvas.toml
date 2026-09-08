@@ -77,7 +77,7 @@ items = ["assignments/p0.md"]
 [[module]]
 title = "Week 3-4: The Application Layer"
 page  = "notes/ch02-application.md"
-items = ["assignments/p1.md"]
+items = ["assignments/p5.md", "assignments/p1.md"]
 
 [[module]]
 title = "Week 5-7: The Transport Layer"
