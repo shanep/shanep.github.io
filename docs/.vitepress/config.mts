@@ -285,7 +285,7 @@ function cs425(): DefaultTheme.SidebarItem[] {
       text: 'In Class Activities',
       collapsed: false,
       items: [
-        { text: 'A1 - Get on the Box',              link: 'activities/a1-onyx-devbox' },
+        { text: 'A1 - Speaking the App Layer',      link: 'activities/a1-application-layer' },
         { text: 'A2 - Connectivity Triage',         link: 'activities/a2-connectivity-triage' },
         { text: 'A3 - Name the Layer',             link: 'activities/a3-name-the-layer' },
       ]

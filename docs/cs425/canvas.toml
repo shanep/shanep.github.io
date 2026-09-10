@@ -120,17 +120,22 @@ due = "fri 23:59"
 [[module]]
 title = "Week 1-2: Computer Networks and the Internet"
 page  = "notes/ch01-internet.md"
-items = ["activities/a1-onyx-devbox.md", "assignments/p0.md"]
+items = ["assignments/p0.md"]
 
 [[module]]
 title = "Week 3-4: The Application Layer"
 page  = "notes/ch02-application.md"
-items = ["activities/a2-connectivity-triage.md", "assignments/p1.md"]
+items = [
+    "activities/a1-application-layer.md",
+    "activities/a2-connectivity-triage.md",
+    "activities/a3-name-the-layer.md",
+    "assignments/p1.md",
+]
 
 [[module]]
 title = "Week 5-6: The Transport Layer"
 page  = "notes/ch03-transport.md"
-items = ["activities/a3-name-the-layer.md", "assignments/p2.md"]
+items = ["assignments/p2.md"]
 
 [[module]]
 title = "Week 7: The Network Layer - Data Plane"

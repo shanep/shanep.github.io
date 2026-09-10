@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A1 Worksheet</title>
+<style>
+  @page { size: letter; margin: 0.55in 0.6in 0.5in 0.6in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 10pt/1.35 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.6pt; }
+
+  .page { page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+  .box, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 10.5pt; margin: 9pt 0 4pt; text-transform: uppercase;
+       letter-spacing: 0.8pt; border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.8pt; margin: 8pt 0 3pt; }
+  p  { margin: 0 0 5pt; }
+  .lead { font-size: 8.6pt; font-style: italic; margin-bottom: 5pt; }
+  .tiny { font-size: 8pt; }
+  .dim  { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 7pt; }
+  .mast .right { text-align: right; font-size: 8.5pt; line-height: 1.3; }
+  .runner { font-size: 8pt; border-bottom: 1pt solid #000; padding-bottom: 3pt;
+            margin-bottom: 8pt; display: flex; justify-content: space-between;
+            text-transform: uppercase; letter-spacing: 0.6pt; }
+
+  .names { margin: 4pt 0 8pt; font-size: 9.5pt; }
+  .names div { margin-bottom: 6pt; }
+  .rule { display: inline-block; border-bottom: 0.75pt solid #000; vertical-align: baseline; }
+  .r-sm { width: 90pt; } .r-md { width: 150pt; } .r-lg { width: 235pt; }
+
+  .lines > div { border-bottom: 0.75pt solid #999; height: 14pt; }
+  .lines.tight > div { height: 12.5pt; }
+
+  .box { border: 1pt solid #000; padding: 4pt 8pt; margin-bottom: 6pt; }
+  .box.fill { background: #f0f0f0; }
+  .box h3 { margin-top: 0; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 2pt 4pt; vertical-align: top;
+           text-align: left; font-size: 8.3pt; }
+  th { background: #e4e4e4; font-size: 8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+  td.h { height: 19pt; }
+  td.hh { height: 34pt; }
+  .cmdcell { font-family: "SF Mono","Menlo","Consolas",monospace; font-size: 7.9pt; }
+
+  pre.setup { margin: 0 0 5pt; padding: 4pt 7pt; border: 0.75pt solid #000; background: #fff;
+              font-family: "SF Mono","Menlo","Consolas",monospace; font-size: 8pt; line-height: 1.35;
+              white-space: pre-wrap; word-break: break-word; }
+
+  ol, ul { margin: 0 0 6pt; padding-left: 16pt; }
+  li { margin-bottom: 3pt; }
+  ol.q > li { margin-bottom: 5pt; }
+</style>
+</head>
+<body>
+
+<!-- ============================ PAGE 1 ============================ -->
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A1 &middot; Speaking the Application Layer</h1>
+      <div class="tiny">CS425 Computer Networks &middot; in class activity &middot; everything runs on onyx.boisestate.edu</div>
+    </div>
+    <div class="right">
+      <strong>TURN THIS IN ON PAPER</strong><br>
+      before you leave the room<br>
+      <span class="dim">graded pass/fail</span>
+    </div>
+  </div>
+
+  <div class="names">
+    <div>Names <span class="rule r-lg"></span> &nbsp; Date <span class="rule r-sm"></span></div>
+    <div><span class="rule r-lg"></span> &nbsp;&nbsp; <span class="rule r-md"></span></div>
+  </div>
+
+  <h2>Round 1 &middot; Get on the box, and find your instruments</h2>
+  <p class="lead">One machine, everyone on it. If your answer differs from your neighbor's, one of you typed something
+  wrong, because there is no second network to blame.</p>
+
+<pre class="setup">ssh &lt;username&gt;@onyx.boisestate.edu
+cat /etc/redhat-release      <span class="dim"># which Red Hat</span>
+uname -srm                   <span class="dim"># kernel and architecture</span>
+who | wc -l                  <span class="dim"># how many of us are on here right now</span></pre>
+
+  <table>
+    <tr><th style="width:150pt">Question</th><th>What it printed</th></tr>
+    <tr><td>Red Hat release</td><td class="h"></td></tr>
+    <tr><td>Kernel and architecture</td><td class="h"></td></tr>
+    <tr><td>People logged in right now</td><td class="h"></td></tr>
+  </table>
+
+  <p class="tiny">Now find out <strong>which</strong> version of each instrument you have, because that decides which
+  switches work. There are at least three unrelated programs called <span class="mono">nc</span> and they take different
+  flags; knowing which one is in front of you is the difference between a five second answer and a lost afternoon.</p>
+
+<pre class="setup">dig -v          curl --version          nc --version          ping -V</pre>
+
+  <table>
+    <tr><th style="width:60pt">Tool</th><th>Version, and anything surprising</th></tr>
+    <tr><td class="cmdcell">dig</td><td class="h"></td></tr>
+    <tr><td class="cmdcell">curl</td><td class="h"></td></tr>
+    <tr><td class="cmdcell">nc</td><td class="h"></td></tr>
+    <tr><td class="cmdcell">ping</td><td class="h"></td></tr>
+  </table>
+
+  <h2>Round 2 &middot; <span class="mono" style="text-transform:none">dig</span>: the Domain Name System</h2>
+  <p class="lead">DNS is an application layer protocol. A real query goes to a real server and a real answer comes back,
+  and all of it can be inspected.</p>
+
+<pre class="setup">dig boisestate.edu</pre>
+
+  <table>
+    <tr><th style="width:130pt">Find this in the output</th><th>Write it here</th></tr>
+    <tr><td>The <span class="mono">status:</span> field</td><td class="h"></td></tr>
+    <tr><td>The QUESTION section</td><td class="h"></td></tr>
+    <tr><td>ANSWER: type, TTL, address</td><td class="h"></td></tr>
+    <tr><td><span class="mono">Query time:</span></td><td class="h"></td></tr>
+  </table>
+
+</section>
+
+<!-- ============================ PAGE 2 ============================ -->
+<section class="page">
+
+  <div class="runner"><span>A1 &middot; Application layer</span><span>Names: <span class="rule" style="width:150pt"></span></span><span>Round 2 &middot; dig</span></div>
+
+  <div class="box fill">
+    <h3>Now watch the TTL</h3>
+    <p class="tiny" style="margin-bottom:3pt">Run <span class="mono">dig +noall +answer boisestate.edu</span> four more
+    times. Then run <span class="mono">dig +noall +answer example.com</span>, wait three seconds, run it again.</p>
+    <table style="margin-bottom:4pt">
+      <tr><th style="width:150pt">TTL for boisestate.edu</th><th>TTL for example.com, twice</th></tr>
+      <tr><td class="h"></td><td class="h"></td></tr>
+    </table>
+    <p class="tiny" style="margin-bottom:3pt">One of them never moves and the other does, sometimes <em>upward</em>.
+    Explain both. You need two facts: a TTL counts down while an answer sits in a cache, and
+    <span class="mono">/etc/resolv.conf</span> here lists <strong>two</strong> resolvers.</p>
+    <div class="lines tight"><div></div><div></div></div>
+  </div>
+
+  <h2>Round 2, continued &middot; the switches that matter</h2>
+  <p class="lead">One sentence each: what did this switch change about the output?</p>
+
+  <table>
+    <tr><th style="width:190pt">Command</th><th>What it changed</th></tr>
+    <tr><td class="cmdcell">dig +short boisestate.edu</td><td class="h"></td></tr>
+    <tr><td class="cmdcell">dig +noall +answer boisestate.edu</td><td class="h"></td></tr>
+    <tr><td class="cmdcell">dig boisestate.edu MX</td><td class="h"></td></tr>
+    <tr><td class="cmdcell">dig boisestate.edu NS</td><td class="h"></td></tr>
+    <tr><td class="cmdcell">dig boisestate.edu TXT</td><td class="h"></td></tr>
+    <tr><td class="cmdcell">dig boisestate.edu AAAA</td><td class="h"></td></tr>
+    <tr><td class="cmdcell">dig @1.1.1.1 boisestate.edu <b>&larr; fails</b></td><td class="h"></td></tr>
+    <tr><td class="cmdcell">dig +trace boisestate.edu <b>&larr; fails</b></td><td class="h"></td></tr>
+  </table>
+  <p class="tiny">Also try <span class="mono">dig +tcp boisestate.edu</span> (same query over TCP) and
+  <span class="mono">dig +stats boisestate.edu</span> (timing, server used, message size). Note anything that surprised
+  you: <span class="rule" style="width:250pt"></span></p>
+
+  <div class="box">
+    <h3>The two that fail, and why that is the interesting part</h3>
+    <p class="tiny" style="margin-bottom:3pt"><span class="mono">@1.1.1.1</span> times out; <span class="mono">+trace</span>
+    stops after one step. Neither is broken software: both need to send DNS queries <strong>directly to a server out on
+    the internet</strong>, and this network does not allow it. What do the two failures have in common, and what is
+    sitting between Onyx and the internet that causes both?</p>
+    <div class="lines tight"><div></div><div></div></div>
+  </div>
+
+  <div class="box fill">
+    <h3>The trap, and it comes back in A2</h3>
+<pre class="setup" style="background:#fff">dig nosuchthing.boisestate.edu
+dig +short nosuchthing.boisestate.edu</pre>
+    <p class="tiny" style="margin-bottom:3pt">What was the <span class="mono">status:</span> field? And what exactly did
+    the second command print?</p>
+    <div class="lines tight"><div></div></div>
+    <p class="tiny" style="margin:4pt 0 3pt">In one sentence: why is <span class="mono">+short</span> dangerous when you
+    are debugging, even though it is convenient when you are scripting?</p>
+    <div class="lines tight"><div></div><div></div></div>
+  </div>
+
+</section>
+
+<section class="page">
+
+  <div class="runner"><span>A1 &middot; Application layer</span><span>Names: <span class="rule" style="width:150pt"></span></span><span>Round 3 &middot; ssh keys</span></div>
+
+  <h2>Round 3 &middot; Stop typing your password</h2>
+  <p class="lead">Key based login, then connection multiplexing, then measure what multiplexing bought you.</p>
+
+<pre class="setup">ssh-keygen -t ed25519 -C "you@boisestate.edu"
+ssh-copy-id &lt;username&gt;@onyx.boisestate.edu
+<span class="dim"># then on Onyx, because ssh ignores a loose ~/.ssh:</span>
+chmod 700 ~/.ssh ; chmod 600 ~/.ssh/authorized_keys
+<span class="dim"># then, on your laptop, with the Host block from the activity page:</span>
+ssh -O exit onyx 2>/dev/null   ; time ssh onyx true   ; time ssh onyx true</pre>
+
+  <table>
+    <tr><th style="width:90pt">Member</th><th style="width:74pt">Laptop OS</th><th style="width:80pt">Cold ssh</th><th style="width:80pt">Warm ssh</th><th>Speedup, and why</th></tr>
+    <tr><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+    <tr><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+    <tr><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+    <tr><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+  </table>
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt">Setup costs a handful of round trips. Given the cold time, roughly how many
+    round trips did it spend, and what was it doing in them?</p>
+    <div class="lines tight"><div></div><div></div></div>
+  </div>
+
+</section>
+
+<!-- ============================ PAGE 3 ============================ -->
+<section class="page">
+
+  <div class="runner"><span>A1 &middot; Application layer</span><span>Names: <span class="rule" style="width:150pt"></span></span><span>Round 4 &middot; curl</span></div>
+
+  <h2>Round 4 &middot; <span class="mono" style="text-transform:none">curl</span>: HTTP, and where the time goes</h2>
+  <p class="lead">Lines starting with &gt; are what you sent. Lines starting with &lt; are what the server replied.</p>
+
+<pre class="setup">curl -v http://example.com/</pre>
+
+  <table>
+    <tr><th style="width:130pt">Find this</th><th>Write it here</th></tr>
+    <tr><td>The request line you sent</td><td class="h"></td></tr>
+    <tr><td>The <span class="mono">Host:</span> header</td><td class="h"></td></tr>
+    <tr><td>The status line that came back</td><td class="h"></td></tr>
+    <tr><td>The <span class="mono">Content-Type</span></td><td class="h"></td></tr>
+  </table>
+
+  <table>
+    <tr><th style="width:200pt">Command</th><th>What it changed</th></tr>
+    <tr><td class="cmdcell">curl -I http://example.com/</td><td class="h"></td></tr>
+    <tr><td class="cmdcell">curl -IL http://www.boisestate.edu/</td><td class="h"></td></tr>
+    <tr><td class="cmdcell">curl -H 'User-Agent: cs425' -v http://example.com/</td><td class="h"></td></tr>
+    <tr><td class="cmdcell">curl --connect-timeout 3 -m 5 http://example.com/</td><td class="h"></td></tr>
+  </table>
+
+  <div class="box fill">
+    <h3>Where the time actually goes &middot; you will use this in A2 and A3</h3>
+<pre class="setup" style="background:#fff">curl -o /dev/null -s -w 'dns=%{time_namelookup} connect=%{time_connect} tls=%{time_appconnect} ttfb=%{time_starttransfer} total=%{time_total} code=%{http_code}\n' https://www.boisestate.edu/</pre>
+    <table style="margin-bottom:4pt">
+      <tr><th>dns</th><th>connect</th><th>tls</th><th>ttfb</th><th>total</th><th>code</th></tr>
+      <tr><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+    </table>
+    <ol class="q tiny" style="margin-bottom:0">
+      <li>Which phase took the longest?
+        <div class="lines tight"><div></div></div></li>
+      <li><span class="mono">dns</span> is name resolution and <span class="mono">connect</span> is the TCP handshake.
+        What is happening between <span class="mono">connect</span> and <span class="mono">ttfb</span>?
+        <div class="lines tight"><div></div><div></div></div></li>
+      <li>Run it against <span class="mono">http://</span> instead of <span class="mono">https://</span>. Which number
+        collapses to zero, and what does that tell you about what it was measuring?
+        <div class="lines tight"><div></div><div></div></div></li>
+    </ol>
+  </div>
+
+</section>
+
+<!-- ============================ PAGE 4 ============================ -->
+<section class="page">
+
+  <div class="runner"><span>A1 &middot; Application layer</span><span>Names: <span class="rule" style="width:150pt"></span></span><span>Round 5 &middot; nc</span></div>
+
+  <h2>Round 5 &middot; <span class="mono" style="text-transform:none">nc</span>: be the client yourself</h2>
+  <p class="lead">nc knows no protocol at all. It opens a connection and moves bytes, which means you get to be the
+  protocol. That is exactly what P1 asks you to write.</p>
+
+<pre class="setup">nc -vz onyx.boisestate.edu 22     <span class="dim"># something is listening</span>
+nc -vz onyx.boisestate.edu 9      <span class="dim"># nothing is</span></pre>
+
+  <table>
+    <tr><th style="width:80pt">Port</th><th>What nc printed, word for word</th><th style="width:70pt">How long</th></tr>
+    <tr><td class="cmdcell">22</td><td class="hh"></td><td class="hh"></td></tr>
+    <tr><td class="cmdcell">9</td><td class="hh"></td><td class="hh"></td></tr>
+  </table>
+  <p class="tiny">Those are two completely different failures. Telling them apart is most of A2.</p>
+
+  <h3>Speak HTTP by hand</h3>
+<pre class="setup">{ printf 'GET / HTTP/1.1\r\nHost: example.com\r\nConnection: close\r\n\r\n'; sleep 3; } | nc example.com 80</pre>
+  <p class="tiny"><strong>Why the <span class="mono">sleep 3</span>?</strong> Onyx has nmap-ncat, which closes the
+  connection the moment stdin runs out. Without the sleep, your request goes out and nc hangs up before the reply lands.
+  Run it once without, add <span class="mono">-v</span>, and read the bytes sent versus bytes received line.</p>
+
+  <ol class="q tiny">
+    <li>What was the very first line the server sent back?
+      <div class="lines tight"><div></div></div></li>
+    <li>Drop the <span class="mono">Host:</span> header and run it again. What changed, and why does HTTP/1.1 require it?
+      <div class="lines tight"><div></div><div></div></div></li>
+    <li>Change every <span class="mono">\r\n</span> to <span class="mono">\n</span>. What does the server do?
+      <strong>P1 is a mail client and SMTP has the same rule</strong>, so this is worth getting wrong now rather than at
+      2am in week 4.
+      <div class="lines tight"><div></div><div></div></div></li>
+  </ol>
+
+</section>
+
+<section class="page">
+
+  <div class="runner"><span>A1 &middot; Application layer</span><span>Names: <span class="rule" style="width:150pt"></span></span><span>Round 6 &middot; ping</span></div>
+
+  <div class="box">
+    <h3>Listen, and be listened to</h3>
+    <p class="tiny" style="margin-bottom:3pt">You are all on one machine, so one of you can be the server. Bind to
+    <span class="mono">127.0.0.1</span>, never <span class="mono">0.0.0.0</span>, and kill it when you are done.</p>
+<pre class="setup" style="margin-bottom:4pt">PORT=$((10000 + $(id -u) % 20000)); echo "$PORT"
+ss -ltn | grep ":$PORT" || echo "free"
+nc -l 127.0.0.1 "$PORT"          <span class="dim"># blocks, waiting. Another member: nc 127.0.0.1 &lt;PORT&gt;</span></pre>
+    <p class="tiny" style="margin-bottom:3pt">Whose port did you connect to, and what did you send? Confirm with
+    <span class="mono">ss -ltn</span> that nothing of yours is still listening afterwards.</p>
+    <div class="lines tight"><div></div></div>
+  </div>
+
+  <h2>Round 6 &middot; <span class="mono" style="text-transform:none">ping</span>: the one that is not an application tool</h2>
+  <p class="lead">Everything above spoke an application protocol. This one does not: ICMP rides directly in IP, and has
+  no ports and no idea what a service is.</p>
+
+<pre class="setup">ping -c 5 onyx.boisestate.edu       <span class="dim"># also try: -i 0.5   -s 1000   -W 2   -w 5   -n   -q</span>
+ping -c 3 example.com               <span class="dim"># the host you fetched a page from in Round 4</span></pre>
+
+  <table>
+    <tr><th style="width:150pt">Target</th><th>Packet loss</th><th>Did curl reach it earlier?</th></tr>
+    <tr><td class="cmdcell">onyx.boisestate.edu</td><td class="h"></td><td class="h"></td></tr>
+    <tr><td class="cmdcell">example.com</td><td class="h"></td><td class="h"></td></tr>
+  </table>
+  <p class="tiny">Those two rows contradict each other. That contradiction is the whole point of this round, and of
+  Round 3 in A2.</p>
+
+  <ol class="q tiny">
+    <li>What layer does ICMP live at, and what does that mean about ports?
+      <div class="lines tight"><div></div></div></li>
+    <li>Onyx answers ping. Does that prove the SSH server on it is running? Why not?
+      <div class="lines tight"><div></div></div></li>
+    <li><span class="mono">example.com</span> does not answer ping, and also served you a web page. So what did the
+      failed ping actually tell you? Name at least two different things that could produce that result.
+      <div class="lines tight"><div></div><div></div></div></li>
+  </ol>
+
+</section>
+
+<!-- ============================ PAGE 5 ============================ -->
+<section class="page">
+
+  <div class="runner"><span>A1 &middot; Application layer</span><span>Names: <span class="rule" style="width:150pt"></span></span><span>Round 7 &middot; .bashrc</span></div>
+
+  <h2>Round 7 &middot; Make it stick</h2>
+  <p class="lead">In A2 you will type one curl command more than a dozen times. Teach the shell a new word instead, and
+  make it survive a logout.</p>
+
+  <div class="box fill">
+    <h3>1. Find out where bash reads its configuration</h3>
+    <p class="tiny" style="margin-bottom:3pt">On Red Hat a login shell reads <span class="mono">~/.bash_profile</span>,
+    and the default one sources <span class="mono">~/.bashrc</span>. Confirm it on your own account.</p>
+<pre class="setup" style="background:#fff;margin-bottom:4pt">cat ~/.bash_profile
+head -20 ~/.bashrc</pre>
+    <p class="tiny" style="margin-bottom:3pt">Is there a line near the top of <span class="mono">~/.bashrc</span> like
+    <span class="mono">[ -z "$PS1" ] &amp;&amp; return</span>? On Onyx there is not, and that is why step 4b works. On a
+    machine that has one, the file gives up immediately for any shell that is not interactive. Write what you found.</p>
+    <div class="lines tight"><div></div></div>
+  </div>
+
+  <div class="box">
+    <h3>2. Add the function, at the bottom of <span class="mono" style="font-weight:normal">~/.bashrc</span></h3>
+<pre class="setup" style="margin-bottom:4pt"># CS425: probe a host and port, report how long each phase took
+probe() {
+    curl -sS -o /dev/null -m 8 \
+        -w 'connect=%{time_connect} total=%{time_total} code=%{http_code}\n' \
+        "http://$1:$2/"
+}</pre>
+    <h3>3. Load it and check that it took</h3>
+<pre class="setup" style="margin-bottom:4pt">source ~/.bashrc
+type probe          <span class="dim"># should say "probe is a function"</span>
+declare -f probe    <span class="dim"># prints the definition back</span>
+probe example.com 80</pre>
+    <p class="tiny" style="margin-bottom:3pt">What did <span class="mono">probe example.com 80</span> print?</p>
+    <div class="lines tight"><div></div></div>
+  </div>
+
+  <div class="box">
+    <h3>4. Prove it is permanent, which is the actual point</h3>
+    <p class="tiny" style="margin-bottom:3pt"><strong>a.</strong> Log out of Onyx completely, log back in, and run
+    <span class="mono">probe example.com 80</span> without sourcing anything. Did it work?</p>
+    <div class="lines tight"><div></div></div>
+    <p class="tiny" style="margin:4pt 0 3pt"><strong>b.</strong> From your laptop:
+    <span class="mono">ssh onyx probe example.com 80</span>. No prompt, no terminal, just one command. It should work,
+    because bash reads <span class="mono">~/.bashrc</span> when a remote shell daemon starts it. In one sentence: why
+    would this fail on a machine whose <span class="mono">~/.bashrc</span> began with the guard line from step 1?</p>
+    <div class="lines tight"><div></div><div></div></div>
+    <p class="tiny" style="margin:4pt 0 3pt"><strong>c.</strong> Why a function and not an alias? Try
+    <span class="mono">alias probe='curl ...'</span> and see what happens when you need
+    <span class="mono">$1</span> and <span class="mono">$2</span> in the <em>middle</em> of the command.</p>
+    <div class="lines tight"><div></div><div></div></div>
+  </div>
+
+  <h2>If you finish early</h2>
+  <p class="tiny" style="margin-bottom:4pt">Put the same function in your <strong>laptop's</strong> shell configuration
+  so it is there whichever machine you work from in A2: <span class="mono">~/.zshrc</span> on macOS,
+  <span class="mono">~/.bashrc</span> on Linux and in Git Bash. Then write a second function
+  <span class="mono">probes</span> that prints the full five phase breakdown from Round 4 instead of two numbers.</p>
+
+  <p class="tiny dim" style="text-align:center;margin-top:14pt">Graded pass/fail on a serious attempt at every round.
+  Hand this in before you leave, with every name at the top.</p>
+
+</section>
+
+</body>
+</html>

@@ -58,6 +58,7 @@ SSH_CIDR=""
 KEY_NAME=""
 KEY_FILE=""
 PURGE_KEY=false
+CHECK_COMMANDS=false
 REMOTE_HOST=alpha
 REMOTE_CMD=()
 
@@ -81,6 +82,8 @@ Commands:
   card        Print the target card to put on the board for the class
   status      Print instance ids, states and addresses
   verify      Probe all seven stations and print PASS or FAIL for each
+              (add --check-commands to also run every command the worksheets
+              and answer keys print, and check it against a stated expectation)
   dns         Rewrite and reload the $ZONE zone from the current addresses
   logs        Print the cloud-init and station logs from a host
   ssh         Open a shell on a host
@@ -97,6 +100,8 @@ Options:
   -k, --key NAME        existing EC2 key pair to use (default: create "\$NAME-key")
   -i, --identity FILE   private key file for ssh (default: ~/.ssh/\$NAME-key.pem)
   -H, --host WHICH      'logs' and 'ssh' only: alpha or bravo (default: alpha)
+      --check-commands  'verify' only: also run every command printed in the
+                        activity documents and check what it produces
       --purge-key       'destroy' only: also delete the generated key pair
       --                'ssh' only: everything after this runs on the instance
   -h, --help            show this message
@@ -107,6 +112,7 @@ Environment:
 Examples:
   $PROG handout
   $PROG create --region us-west-2 --cidr 132.178.0.0/16
+  $PROG verify --check-commands
   $PROG verify
   $PROG card
   $PROG logs --host bravo
@@ -140,6 +146,7 @@ while [ $# -gt 0 ]; do
         -k|--key)      KEY_NAME=$2; shift 2 ;;
         -i|--identity) KEY_FILE=$2; shift 2 ;;
         -H|--host)     REMOTE_HOST=$2; shift 2 ;;
+        --check-commands) CHECK_COMMANDS=true; shift ;;
         --purge-key)   PURGE_KEY=true; shift ;;
         -h|--help)     usage; exit 0 ;;
         --)            shift; REMOTE_CMD=("$@"); break ;;
@@ -746,6 +753,21 @@ cmd_verify() {
     fi
 
     printf '\n  %d passed, %d failed, %d skipped\n\n' "$PASS_COUNT" "$FAIL_COUNT" "$SKIP_COUNT"
+
+    # The station checks above exercise the testbed. They say nothing about the
+    # paper students actually type from, which is a separate artifact and has
+    # its own bugs; check-commands.py runs that.
+    if [ "$CHECK_COMMANDS" = true ]; then
+        local checker="$HERE/check-commands.py"
+        [ -f "$checker" ] || die "$checker not found"
+        printf '  ---- commands printed in the activity documents ----\n\n'
+        if python3 "$checker" --alpha "$alpha_ip" --bravo "$bravo_ip"; then
+            :
+        else
+            FAIL_COUNT=$((FAIL_COUNT + 1))
+        fi
+    fi
+
     [ "$FAIL_COUNT" -eq 0 ]
 }
 

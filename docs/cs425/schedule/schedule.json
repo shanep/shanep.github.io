@@ -19,10 +19,6 @@
       ],
       "assignments": [
         {
-          "name": "A1",
-          "dueDay": "Wednesday"
-        },
-        {
           "name": "P0",
           "url": "/cs425/assignments/p0",
           "assignedSlot": 0
@@ -75,6 +71,10 @@
       ],
       "assignments": [
         {
+          "name": "A1",
+          "dueDay": "Wednesday"
+        },
+        {
           "name": "P1",
           "url": "/cs425/assignments/p1",
           "assignedSlot": 0
@@ -105,6 +105,10 @@
           "dueDay": "Wednesday"
         },
         {
+          "name": "A3",
+          "dueDay": "Wednesday"
+        },
+        {
           "name": "P1",
           "url": "/cs425/assignments/p1",
           "dueDay": "Friday"
@@ -130,10 +134,6 @@
         }
       ],
       "assignments": [
-        {
-          "name": "A3",
-          "dueDay": "Wednesday"
-        },
         {
           "name": "P2",
           "url": "/cs425/assignments/p2",
@@ -164,7 +164,8 @@
           "text": "Kurose & Ross 3.5 - 3.7",
           "url": "/cs425/notes/ch03-transport"
         }
-      ]
+      ],
+      "assignments": []
     },
     {
       "week": 7,
@@ -240,7 +241,8 @@
           "text": "Kurose & Ross 5.1 - 5.3",
           "url": "/cs425/notes/ch05-network-control"
         }
-      ]
+      ],
+      "assignments": []
     },
     {
       "week": 10,
@@ -311,7 +313,8 @@
           "text": "Kurose & Ross 6.4 - 6.7",
           "url": "/cs425/notes/ch06-link"
         }
-      ]
+      ],
+      "assignments": []
     },
     {
       "week": 13,
@@ -356,7 +359,8 @@
           "text": "Kurose & Ross 8.1 - 8.4",
           "url": "/cs425/notes/ch08-security"
         }
-      ]
+      ],
+      "assignments": []
     },
     {
       "week": 15,
@@ -379,7 +383,8 @@
           "text": "Final Study Guide",
           "url": "/cs425/assignments/final-exam-guide"
         }
-      ]
+      ],
+      "assignments": []
     }
   ]
 }

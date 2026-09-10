@@ -6,7 +6,7 @@ draft: true
 
 # A3 - Name the Layer
 
-**Week 5 · 20 points · pass/fail · one paper worksheet per group, turned in before you leave**
+**Week 4 · 20 points · pass/fail · one paper worksheet per group, turned in before you leave**
 
 ## Overview
 

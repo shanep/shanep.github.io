@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A1 Answer Key</title>
+<style>
+  @page { size: letter; margin: 0.5in 0.55in 0.45in 0.55in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 9.3pt/1.33 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.1pt; }
+
+  .page { page-break-after: auto; }
+  .demo, .box, .ans, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 9.8pt; margin: 10pt 0 5pt; text-transform: uppercase; letter-spacing: 0.8pt;
+       border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.4pt; margin: 7pt 0 3pt; }
+  p { margin: 0 0 4pt; }
+  .tiny { font-size: 8.1pt; }
+  .dim { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 4pt; }
+  .mast .right { text-align: right; }
+  .stamp { display: inline-block; background: #000; color: #fff; padding: 3pt 8pt;
+           font-size: 8.5pt; font-weight: bold; letter-spacing: 1pt; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 3pt 5pt; vertical-align: top; text-align: left; font-size: 8.2pt; }
+  th { background: #e4e4e4; font-size: 7.8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+
+  .demo { border: 0.75pt solid #000; margin-bottom: 7pt; }
+  .demo .hd { background: #e4e4e4; padding: 3pt 6pt; font-size: 8.3pt; font-weight: bold;
+              border-bottom: 0.75pt solid #000; }
+  .demo pre { margin: 0; padding: 5pt 6pt; font-family: "SF Mono","Menlo","Consolas",monospace;
+              font-size: 7.5pt; line-height: 1.32; white-space: pre-wrap; word-break: break-word; }
+  .demo .say { padding: 4pt 6pt; border-top: 0.75pt dashed #666; font-size: 8.1pt; background: #f7f7f7; }
+  .demo .say b { text-transform: uppercase; font-size: 7.6pt; letter-spacing: 0.5pt; }
+  .cmd { font-weight: bold; }
+
+  .ans { border-left: 3pt solid #000; padding: 3pt 0 3pt 8pt; margin: 0 0 6pt; }
+  .ans .q { font-weight: bold; }
+  .box { border: 1pt solid #000; padding: 5pt 7pt; margin-bottom: 7pt; }
+  .box.fill { background: #eee; }
+  .box h3 { margin-top: 0; }
+  .bar { border: 1pt dashed #000; padding: 3pt 7pt; margin-bottom: 7pt; font-size: 8.1pt; background: #f6f6f6; }
+  .bar strong { text-transform: uppercase; letter-spacing: 0.6pt; font-size: 7.6pt; }
+
+  ol, ul { margin: 0 0 5pt; padding-left: 15pt; }
+  li { margin-bottom: 3pt; }
+  .push { font-size: 8.1pt; }
+  .push li { margin-bottom: 2.5pt; }
+</style>
+</head>
+<body>
+
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A1 &middot; Answer Key and Demo Script</h1>
+      <div class="tiny">CS425 &middot; Speaking the Application Layer</div>
+    </div>
+    <div class="right"><span class="stamp">INSTRUCTOR COPY</span></div>
+  </div>
+  <p class="tiny dim" style="margin-bottom:8pt">Graded pass/fail. Every transcript below is real output captured from
+  <span class="mono">onyx.boisestate.edu</span> while this was written, so you can run any of it at the podium and get
+  the same shape. Numbers will differ; the shapes will not.</p>
+
+  <h2>What is on the box</h2>
+  <table>
+    <tr><th style="width:110pt">Thing</th><th>Measured on Onyx</th></tr>
+    <tr><td>OS</td><td>Red Hat Enterprise Linux 9.8 (Plow), kernel 5.14</td></tr>
+    <tr><td><span class="mono">dig</span></td><td>DiG 9.16.23-RH</td></tr>
+    <tr><td><span class="mono">curl</span></td><td>7.76.1, OpenSSL 3.5.5, nghttp2</td></tr>
+    <tr><td><span class="mono">nc</span></td><td><b>nmap-ncat 7.92</b> at <span class="mono">/usr/bin/ncat</span>, not BSD netcat</td></tr>
+    <tr><td><span class="mono">ping</span></td><td>iputils 20210202</td></tr>
+    <tr><td>resolvers</td><td><span class="mono">10.50.18.111</span> and <span class="mono">10.50.18.112</span></td></tr>
+    <tr><td>outbound 80 / 443</td><td>open</td></tr>
+    <tr><td>outbound 53 elsewhere</td><td><b>blocked</b>, which is why two dig switches fail</td></tr>
+    <tr><td>outbound ICMP</td><td><b>blocked</b>, which is the whole of Round 6</td></tr>
+    <tr><td><span class="mono">~/.bashrc</span></td><td>no <span class="mono">PS1</span> guard; <span class="mono">~/.bash_profile</span> sources it</td></tr>
+  </table>
+
+  <h2>Round 2 &middot; dig</h2>
+
+  <div class="demo">
+    <div class="hd">Reading the answer</div>
+<pre><span class="cmd">$ dig boisestate.edu</span>
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: <b>NOERROR</b>, id: 59539
+;; flags: qr rd ra; QUERY: 1, <b>ANSWER: 1</b>, AUTHORITY: 0, ADDITIONAL: 1
+boisestate.edu.		<b>300</b>	IN	A	132.178.96.59
+;; Query time: 1 msec
+;; SERVER: 10.50.18.111#53(10.50.18.111)</pre>
+    <div class="say"><b>Say:</b> four things to point at. <b>status</b> is the verdict. <b>ANSWER: 1</b> is how many
+      records came back. <b>300</b> is the TTL. <b>SERVER</b> is who answered, and it is a campus box, not the
+      internet.</div>
+  </div>
+
+  <div class="demo">
+    <div class="hd">The TTL, and why the original version of this exercise was wrong</div>
+<pre><span class="cmd">$ dig +noall +answer boisestate.edu   # five times</span>
+boisestate.edu.		300	IN	A	132.178.96.59      <span class="dim">&larr; 300 every single time</span>
+
+<span class="cmd">$ dig +noall +answer example.com ; sleep 3 ; dig +noall +answer example.com</span>
+example.com.		<b>218</b>	IN	A	172.66.147.243
+example.com.		<b>241</b>	IN	A	172.66.147.243     <span class="dim">&larr; it went UP</span></pre>
+    <div class="say"><b>Say:</b> <span class="mono">boisestate.edu</span> never moves because the campus resolver is
+      <b>authoritative</b> for that zone: it is not caching the answer, it <em>is</em> the answer.
+      <span class="mono">example.com</span> moves because it really is cached, and it sometimes moves <b>up</b> because
+      <span class="mono">resolv.conf</span> lists two resolvers and you are getting whichever answers first, with caches
+      of different ages. A group that notices the increase and is bothered by it has understood caching better than one
+      that just wrote "it counts down".</div>
+  </div>
+
+  <div class="demo">
+    <div class="hd">The two switches that fail, and the one that lies</div>
+<pre><span class="cmd">$ dig @1.1.1.1 boisestate.edu</span>
+;; connection timed out; no servers could be reached
+
+<span class="cmd">$ dig +trace boisestate.edu</span>
+;; Received 239 bytes from 10.50.18.111#53(10.50.18.111) in 19 ms   <span class="dim">&larr; and then it stops</span>
+
+<span class="cmd">$ dig nosuchthing.boisestate.edu</span>
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: <b>NXDOMAIN</b>, id: 8848
+;; flags: qr rd ra; QUERY: 1, <b>ANSWER: 0</b>
+
+<span class="cmd">$ dig +short nosuchthing.boisestate.edu</span>
+<span class="dim">(nothing at all, and it exits 0)</span></pre>
+    <div class="say"><b>Say:</b> the first two fail for <b>the same reason</b>: both need to send a query directly to a
+      DNS server out on the internet, and outbound port 53 is blocked. That is a middlebox making a policy decision, and
+      in A2 they meet one that answers <em>wrongly</em> instead of not at all, which is worse.
+      <br><b>Then the trap:</b> <span class="mono">+short</span> prints an empty line for a name that does not exist. The
+      empty line is a real answer, badly displayed. This is A2 station 4, exactly.</div>
+  </div>
+
+  <div class="box fill">
+    <h3>The nuance worth having ready</h3>
+    <p class="tiny" style="margin:0">Someone will run <span class="mono">dig +short boisestate.edu AAAA</span> and get
+    nothing, and conclude the name does not exist. It does. The full output says
+    <span class="mono">status: NOERROR</span> with <span class="mono">ANSWER: 0</span>: <b>the name exists, that record
+    type does not.</b> Two different causes, one identical empty line, and only the long form tells them apart. If a
+    group finds this on their own, put it on the board.</p>
+  </div>
+
+  <div class="bar"><strong>Pass bar:</strong> the status field, answer and TTL are written down, and the group noticed
+  that <span class="mono">+short</span> printed nothing for the bad name.</div>
+
+  <h2>Round 3 &middot; SSH keys and multiplexing</h2>
+
+  <div class="demo">
+    <div class="hd">Cold versus warm, measured from a laptop</div>
+<pre><span class="cmd">$ ssh -O exit onyx ; time ssh onyx true</span>
+cold (full handshake): <b>1105 ms</b>
+
+<span class="cmd">$ time ssh onyx true</span>
+warm (reused master):  <b>248 ms</b>
+
+<span class="cmd">$ ping -c 3 onyx.boisestate.edu</span>
+rtt min/avg/max = <b>31.4</b>/33.7/35.3 ms</pre>
+    <div class="say"><b>Say:</b> about 1.1 seconds against a 31 ms round trip. Ask what the extra time bought: a TCP
+      handshake, a version exchange, a key exchange, and authentication. Accept any estimate in the range of a handful to
+      a few dozen round trips. <b>Do not let them conclude it is all network time</b>: key exchange is arithmetic, and on
+      a fast link the crypto dominates. The warm case is roughly 4x faster and still not zero, because starting a process
+      on the far end is not free.</div>
+  </div>
+  <div class="bar"><strong>Pass bar:</strong> everyone logs in without a password, and two real timings are recorded.</div>
+
+  <h2>Round 4 &middot; curl</h2>
+
+  <div class="demo">
+    <div class="hd">Both halves of the conversation</div>
+<pre><span class="cmd">$ curl -v http://example.com/</span>
+&gt; GET / HTTP/1.1
+&gt; Host: example.com
+&lt; HTTP/1.1 200 OK
+&lt; Content-Type: text/html</pre>
+    <div class="say"><b>Say:</b> <span class="mono">&gt;</span> is what you sent, <span class="mono">&lt;</span> is what
+      came back. Four lines of text is the whole of an HTTP exchange. They will write this by hand in Round 5.</div>
+  </div>
+
+  <div class="demo">
+    <div class="hd">Where the time goes &middot; this is the layer model, printed</div>
+<pre><span class="cmd">$ curl -o /dev/null -s -w 'dns=%{time_namelookup} connect=%{time_connect} tls=%{time_appconnect} ttfb=%{time_starttransfer} total=%{time_total} code=%{http_code}\n' https://www.boisestate.edu/</span>
+dns=0.002637 connect=0.020129 <b>tls=0.055797</b> ttfb=0.088997 total=0.144840 code=200
+
+<span class="cmd">$ ... the same thing against http:// instead</span>
+dns=0.022634 connect=0.034200 <b>tls=0.000000</b> ttfb=0.057717 total=0.057802 code=200</pre>
+    <div class="say"><b>Say:</b> the answers to the three questions are all in these two lines.
+      <b>(1)</b> Largest jump is usually <span class="mono">connect</span>&rarr;<span class="mono">tls</span> or
+      <span class="mono">tls</span>&rarr;<span class="mono">ttfb</span>. <b>(2)</b> Between
+      <span class="mono">connect</span> and <span class="mono">ttfb</span> sits the TLS handshake and then the server
+      thinking about your request. <b>(3)</b> <span class="mono">tls</span> collapses to <b>exactly zero</b> over plain
+      HTTP, because there is no TLS handshake to measure. Cumulative, not per-phase: each number is time since the start.
+      Subtract neighbors to get the cost of a phase.</div>
+  </div>
+  <div class="bar"><strong>Pass bar:</strong> all six numbers recorded, and the group said <span class="mono">tls</span>
+  is the one that went to zero.</div>
+
+  <h2>Round 5 &middot; nc</h2>
+
+  <div class="demo">
+    <div class="hd">Refused versus timed out, which is A2 in miniature</div>
+<pre><span class="cmd">$ nc -vz onyx.boisestate.edu 22</span>
+Ncat: <b>Connected to 132.178.227.11:22.</b>
+Ncat: 0 bytes sent, 0 bytes received in 0.01 seconds.
+
+<span class="cmd">$ nc -vz onyx.boisestate.edu 9</span>
+Ncat: <b>Connection refused.</b>
+
+<span class="cmd">$ nc -vz -w 3 example.com 8081</span>
+Ncat: Connection to 172.66.147.243 failed: <b>TIMEOUT.</b></pre>
+    <div class="say"><b>Say:</b> three outcomes, three meanings. Connected, refused (something answered "no"), and
+      timeout (nothing answered at all). Those are A2 stations 1, 3 and 2 respectively, a week early and on a machine
+      nobody deliberately broke.</div>
+  </div>
+
+  <div class="demo">
+    <div class="hd">HTTP by hand, and why the sleep is there</div>
+<pre><span class="cmd">$ printf 'GET / HTTP/1.1\\r\\nHost: example.com\\r\\nConnection: close\\r\\n\\r\\n' | nc -v example.com 80</span>
+Ncat: Connected to 172.66.147.243:80.
+Ncat: <b>56 bytes sent, 0 bytes received</b> in 0.06 seconds.        <span class="dim">&larr; no reply!</span>
+
+<span class="cmd">$ { printf 'GET / HTTP/1.1\\r\\nHost: example.com\\r\\nConnection: close\\r\\n\\r\\n'; sleep 3; } | nc example.com 80</span>
+HTTP/1.1 200 OK
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: close</pre>
+    <div class="say"><b>Say:</b> nmap-ncat closes the connection the instant stdin runs out. The request left the
+      machine, and nc hung up before the answer arrived. <b>Show them the "56 bytes sent, 0 bytes received" line</b>: the
+      tool told them exactly what happened, in numbers, and it is the sort of line people scroll past.
+      <br>The <span class="mono">\\r\\n</span> question is the same rule SMTP uses, so this is P1 preparation. A server
+      given bare <span class="mono">\\n</span> may tolerate it or may hang; either way they cannot see the difference in
+      a terminal, which is the lesson.</div>
+  </div>
+  <div class="bar"><strong>Pass bar:</strong> an HTTP status line obtained without a browser, and the group can say what
+  the two nc failure messages mean.</div>
+
+  <h2>Round 6 &middot; ping, and the contradiction</h2>
+
+  <div class="demo">
+    <div class="hd">The best ninety seconds in the activity</div>
+<pre><span class="cmd">$ ping -c 3 onyx.boisestate.edu</span>
+3 packets transmitted, 3 received, <b>0% packet loss</b>
+
+<span class="cmd">$ ping -c 3 example.com</span>
+3 packets transmitted, 0 received, <b>100% packet loss</b>
+
+<span class="dim">... and in Round 4, twenty minutes earlier, from this same machine:</span>
+<span class="cmd">$ curl -o /dev/null -s -w 'code=%{http_code}\n' http://example.com/</span>
+code=<b>200</b></pre>
+    <div class="say"><b>Say:</b> outbound ICMP is blocked from Onyx, so <em>every</em> host on the internet looks dead to
+      ping from here, including one that served them a web page in the same period. Put both lines on the board together.
+      <br>Answers: <b>(1)</b> ICMP is network layer, riding directly in IP, so it has no ports and no idea what a service
+      is. <b>(2)</b> No: pinging a host says nothing about any program running on it. <b>(3)</b> A failed ping is
+      consistent with a dead host, a filtered ICMP path, a filter at either end, or a middlebox in between. It rules
+      almost nothing out, which is why "it doesn't ping" is not a diagnosis.</div>
+  </div>
+  <div class="bar"><strong>Pass bar:</strong> both ping results recorded side by side, and the group names more than one
+  cause for the failure.</div>
+
+  <h2>Round 7 &middot; making it stick</h2>
+
+  <div class="demo">
+    <div class="hd">The function, loaded and proven</div>
+<pre><span class="cmd">$ type probe</span>
+probe is a function
+
+<span class="cmd">$ probe example.com 80</span>
+connect=0.033370 total=0.057519 code=200
+
+<span class="cmd">$ ssh onyx probe example.com 80</span>     <span class="dim"># non-interactive, from the laptop</span>
+connect=0.033370 total=0.057519 code=200</pre>
+    <div class="say"><b>Say:</b> the third one is the one that matters. That shell had no prompt and no terminal, and the
+      function was still there, because bash reads <span class="mono">~/.bashrc</span> when a remote shell daemon starts
+      it and Onyx has no guard line stopping it. <b>Verified on Onyx</b>, so if a student's fails, the cause is in their
+      file, not in the machine.
+      <br><b>Function versus alias:</b> an alias is textual substitution at the front of a command, so there is no way to
+      drop <span class="mono">$1</span> and <span class="mono">$2</span> into the middle of a URL. Positional parameters
+      are the entire reason this has to be a function.</div>
+  </div>
+  <div class="bar"><strong>Pass bar:</strong> <span class="mono">probe</span> survives a logout, and the group can say
+  why an alias cannot do the job.</div>
+
+  <div class="box">
+    <h3>Running the room</h3>
+    <ul class="push" style="margin-bottom:0">
+      <li><b>Round 2 is the spine.</b> If time is short, cut Round 6's switch table but keep the
+        <span class="mono">ping example.com</span> demonstration; it is ninety seconds and it is the best thing here.</li>
+      <li><b>A broken <span class="mono">~/.bashrc</span></b> can cost a student their shell.
+        <span class="mono">ssh onyx -t 'bash --norc'</span> gets them back in to fix it.</li>
+      <li><b>The Round 5 listener</b> must bind to <span class="mono">127.0.0.1</span> and must be killed. It is a shared
+        department machine.</li>
+      <li><b>Send them out with the worksheet graded and returned before A2</b>, which is the following week and reuses
+        all four commands.</li>
+    </ul>
+  </div>
+
+</section>
+
+</body>
+</html>
