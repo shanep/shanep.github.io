@@ -285,6 +285,7 @@ function cs425(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: 'A1 - Get on the Box',              link: 'activities/a1-onyx-devbox' },
+        { text: 'A2 - Connectivity Triage',         link: 'activities/a2-connectivity-triage' },
       ]
     },
     {

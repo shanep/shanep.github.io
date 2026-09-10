@@ -22,9 +22,9 @@ a quarter of the questions to come from the material the midterm covered.
 
 ### Chapters 1 through 4 (review)
 
-Everything on the [midterm study guide](midterm-exam-guide.md), with emphasis on
+Everything the midterm covered, with emphasis on
 delay computation, reliable data transfer, TCP congestion control, and longest
-prefix matching. Chapter 4 is on that guide because the midterm covers it, and the
+prefix matching. Chapter 4 is in scope because the midterm covers it, and the
 control plane in chapter 5 will not make sense without it.
 
 ### Chapter 5 - The Network Layer: Control Plane
