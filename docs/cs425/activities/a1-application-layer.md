@@ -1,7 +1,6 @@
 ---
 next: false
 prev: false
-draft: true
 ---
 
 # A1 - Speaking the Application Layer
@@ -27,9 +26,8 @@ result in this activity an argument about macOS versus Windows instead of an
 argument about protocols. On Onyx, if your answer differs from your neighbor's,
 one of you typed something wrong.
 
-This activity exists to prepare you for [A2](./a2-connectivity-triage.md) and
-[A3](./a3-name-the-layer.md), where you use these four commands against machines
-that are deliberately broken. Learn the instruments now, while nothing is on
+This activity exists to prepare you for **A2** and **A3**, where you use these
+four commands against machines that are deliberately broken. Learn the instruments now, while nothing is on
 fire.
 
 ::: warning
