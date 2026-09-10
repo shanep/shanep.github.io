@@ -131,6 +131,10 @@
       ],
       "assignments": [
         {
+          "name": "A3",
+          "dueDay": "Wednesday"
+        },
+        {
           "name": "P2",
           "url": "/cs425/assignments/p2",
           "assignedSlot": 0

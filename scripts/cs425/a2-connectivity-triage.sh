@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 #
-# cs425-triage-testbed.sh - stand up the two EC2 hosts that CS425 activity A2
-# runs against, where every station is broken in a different, diagnosable way.
+# a2-connectivity-triage.sh - everything needed to run CS425 activity A2.
+#
+# `handout` renders the paper worksheet students fill in; every other command
+# stands up the two EC2 hosts the activity probes, where each station is broken
+# in a different, diagnosable way.
 #
 #   ALPHA   tcp 8080  serves a page                       (the healthy baseline)
 #           tcp 8081  serves a page, security group drops (silent drop, no reply)
@@ -20,10 +23,30 @@
 #
 # Requires: the aws CLI v2 with credentials that can manage EC2, bash, ssh, curl.
 # dig and nc are used by 'verify' when they are present and skipped when not.
+# 'handout' needs Chrome, Chromium or Edge and nothing else.
 #
 set -euo pipefail
 
 PROG=$(basename "$0")
+ROOT=$(cd "$(dirname "$0")/../.." && pwd)
+
+# The source lives here beside the script; only the rendered PDF goes under
+# docs/public, which VitePress copies verbatim onto the website.
+HERE=$(cd "$(dirname "$0")" && pwd)
+
+# The worksheet source lives here; only the rendered PDF goes under docs/public,
+# which VitePress copies verbatim onto the website. The answer key never goes
+# there, and both its source and its PDF stay beside this script.
+# Overridable so that a3-name-the-layer.sh can point `handout` and `key` at its
+# own documents and forward everything else here, leaving one implementation of
+# both the renderer and the testbed.
+HANDOUT_HTML="${HANDOUT_HTML:-$HERE/a2-connectivity-triage.html}"
+HANDOUT_PDF="${HANDOUT_PDF:-$ROOT/docs/public/cs425/a2-worksheet.pdf}"
+HANDOUT_PAGES="${HANDOUT_PAGES:-5}"
+
+KEY_HTML="${KEY_HTML:-$HERE/a2-connectivity-triage-key.html}"
+KEY_PDF="${KEY_PDF:-$HERE/a2-connectivity-triage-key.pdf}"
+KEY_PAGES="${KEY_PAGES:-4}"
 
 NAME=${TRIAGE_TESTBED_NAME:-cs425-triage}
 REGION=${TRIAGE_TESTBED_REGION:-}
@@ -52,6 +75,8 @@ usage() {
 Usage: $PROG <command> [options]
 
 Commands:
+  handout     Render the paper worksheet to a PDF (no AWS involved)
+  key         Render the instructor answer key and demo script to a PDF
   create      Launch both hosts and wire up the lab DNS zone
   card        Print the target card to put on the board for the class
   status      Print instance ids, states and addresses
@@ -76,7 +101,11 @@ Options:
       --                'ssh' only: everything after this runs on the instance
   -h, --help            show this message
 
+Environment:
+  CHROME                'handout' only: a Chrome, Chromium or Edge binary to use
+
 Examples:
+  $PROG handout
   $PROG create --region us-west-2 --cidr 132.178.0.0/16
   $PROG verify
   $PROG card
@@ -118,7 +147,9 @@ while [ $# -gt 0 ]; do
     esac
 done
 
-command -v aws >/dev/null 2>&1 || die "the aws CLI is not installed"
+if [ "$COMMAND" != handout ] && [ "$COMMAND" != key ]; then
+    command -v aws >/dev/null 2>&1 || die "the aws CLI is not installed"
+fi
 
 case "$REMOTE_HOST" in alpha|bravo) ;; *) die "--host must be alpha or bravo" ;; esac
 
@@ -308,7 +339,7 @@ make_station 8081 ok
 make_station 8084 stall
 
 # A bootstrap zone so dnsmasq comes up before the launcher knows both public
-# addresses. `cs425-triage-testbed.sh dns` overwrites this with the real one.
+# addresses. The `dns` command overwrites this with the real one.
 for port in 53 5353; do
     cat > "/etc/dnsmasq-$port.conf" <<CONF
 port=$port
@@ -549,12 +580,13 @@ cmd_card() {
      Station 1   ALPHA 8080          baseline
      Station 2   ALPHA 8081
      Station 3   ALPHA 8082
-     Station 4   ghost.$ZONE     dig +short ghost.$ZONE @ALPHA
-     Station 5   mirage.$ZONE    dig +short mirage.$ZONE @ALPHA
+     Station 4   ghost.$ZONE     dig +short ghost.$ZONE @ALPHA -p 5353
+     Station 5   mirage.$ZONE    dig +short mirage.$ZONE @ALPHA -p 5353
      Station 6   BRAVO 8080
      Station 7   ALPHA 8084          stretch
 
-     If your network hijacks port 53, add -p 5353 to every dig.
+     The lab DNS answers on 53 and 5353. Use -p 5353: many networks
+     intercept outbound port 53 and will answer for the server.
 
   ------------------------------------------------------------------
 
@@ -598,6 +630,28 @@ ping_received() {
         awk '{for (i = 1; i <= NF; i++) if ($i == "received") { print $(i-1); exit }}'
 }
 
+# One query against the lab zone. `+short` is passed through rather than baked
+# in because station 4 is diagnosed from the status field and station 5 from the
+# answer, and both have to go to whichever port is actually reaching the server.
+zone_query() {
+    local ip=$1 port=$2 mode=$3 name=$4
+    if [ "$mode" = "+short" ]; then
+        dig +short +time=3 +tries=1 "$name" "@$ip" -p "$port" 2>/dev/null
+    else
+        dig +time=3 +tries=1 "$name" "@$ip" -p "$port" 2>/dev/null
+    fi
+}
+
+# BSD nc spells the connect timeout -G and treats -w as an idle timeout, so on a
+# Mac `nc -w 5` against a dropped port waits out the full OS timeout, about 75
+# seconds, rather than 5. GNU and OpenBSD nc use -w for both.
+nc_timeout_flag() {
+    case "$(uname -s)" in
+        Darwin|*BSD) printf -- '-G\n' ;;
+        *)           printf -- '-w\n' ;;
+    esac
+}
+
 # Echoes curl's exit status. 0 is a completed request, 7 is a refusal, 28 is a
 # timeout, and those three are the signatures the whole activity turns on.
 curl_status() {
@@ -626,14 +680,35 @@ cmd_verify() {
                   || fail "station 3  alpha:8082 should refuse (curl exit $rc, wanted 7)"
 
     if command -v dig >/dev/null 2>&1; then
-        out=$(dig +time=3 +tries=1 "ghost.$ZONE" "@$alpha_ip" 2>/dev/null |
-              awk -F'status: ' '/status:/ {split($2, a, ","); print a[1]}')
-        [ "$out" = NXDOMAIN ] && pass "station 4  ghost.$ZONE is NXDOMAIN" \
-                              || fail "station 4  ghost.$ZONE returned '${out:-no answer}', wanted NXDOMAIN"
+        local dns_port=""
+        for port in $DNS_PORTS; do
+            if [ "$(zone_query "$alpha_ip" "$port" +short "alpha.$ZONE")" = "$alpha_ip" ]; then
+                dns_port=$port
+                break
+            fi
+        done
 
-        out=$(dig +short +time=3 +tries=1 "mirage.$ZONE" "@$alpha_ip" 2>/dev/null | head -1)
-        [ "$out" = "$MIRAGE_ADDR" ] && pass "station 5  mirage.$ZONE resolves to $MIRAGE_ADDR" \
-                                    || fail "station 5  mirage.$ZONE returned '${out:-no answer}', wanted $MIRAGE_ADDR"
+        if [ -z "$dns_port" ]; then
+            fail "stations 4 and 5  the lab zone answers on neither port $DNS_PORTS"
+        else
+            if [ "$dns_port" != 53 ]; then
+                pass "stations 4 and 5  lab zone is live on port $dns_port"
+                warn "port 53 did not reach the server from this machine, so this"
+                warn "network intercepts outbound DNS. Students here must use -p $dns_port,"
+                warn "and a plain dig will lie to them rather than fail."
+            else
+                pass "stations 4 and 5  lab zone is live on port 53"
+            fi
+
+            out=$(zone_query "$alpha_ip" "$dns_port" +noshort "ghost.$ZONE" |
+                  awk -F'status: ' '/status:/ {split($2, a, ","); print a[1]}')
+            [ "$out" = NXDOMAIN ] && pass "station 4  ghost.$ZONE is NXDOMAIN" \
+                                  || fail "station 4  ghost.$ZONE returned '${out:-no answer}', wanted NXDOMAIN"
+
+            out=$(zone_query "$alpha_ip" "$dns_port" +short "mirage.$ZONE" | head -1)
+            [ "$out" = "$MIRAGE_ADDR" ] && pass "station 5  mirage.$ZONE resolves to $MIRAGE_ADDR" \
+                                        || fail "station 5  mirage.$ZONE returned '${out:-no answer}', wanted $MIRAGE_ADDR"
+        fi
     else
         skip "stations 4 and 5  dig is not installed on this machine"
     fi
@@ -659,7 +734,7 @@ cmd_verify() {
     fi
 
     if command -v nc >/dev/null 2>&1; then
-        if nc -z -w 5 "$alpha_ip" 8084 >/dev/null 2>&1; then
+        if nc -z "$(nc_timeout_flag)" 5 "$alpha_ip" 8084 >/dev/null 2>&1; then
             rc=$(curl_status "$alpha_ip" 8084)
             [ "$rc" = 28 ] && pass "station 7  alpha:8084 connects then stalls" \
                            || fail "station 7  alpha:8084 connected but curl exit $rc, wanted 28"
@@ -692,6 +767,109 @@ cmd_ssh() {
     else
         run_ssh "$ip"
     fi
+}
+
+# ------------------------------------------------------------------ handout
+
+# The worksheet is authored as HTML with a print stylesheet, because it needs
+# fill in rules, fixed page breaks and tables that survive a photocopier, and
+# none of that comes out of markdown. Headless Chrome is the renderer, so what
+# a browser previews is what comes off the printer.
+#
+# macOS keeps the binary inside the app bundle and Linux puts it on PATH under
+# one of several names, so both shapes are searched rather than assuming either.
+find_chrome() {
+    if [ -n "${CHROME:-}" ]; then
+        [ -x "$CHROME" ] || die "CHROME is set to $CHROME, which is not executable"
+        printf '%s\n' "$CHROME"
+        return 0
+    fi
+
+    local candidate
+    for candidate in \
+        "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+        "/Applications/Chromium.app/Contents/MacOS/Chromium" \
+        "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge"
+    do
+        [ -x "$candidate" ] && { printf '%s\n' "$candidate"; return 0; }
+    done
+
+    for candidate in google-chrome google-chrome-stable chromium chromium-browser microsoft-edge; do
+        command -v "$candidate" >/dev/null 2>&1 && { command -v "$candidate"; return 0; }
+    done
+
+    die "no Chrome, Chromium or Edge found; install one or set CHROME"
+}
+
+# stat's flags are one of the sharper BSD versus GNU splits, so ask wc instead.
+# The redirect is the shell's, not wc's, so a missing file has to be caught here
+# rather than swallowed with 2>/dev/null.
+file_size() {
+    [ -f "$1" ] || { printf '0\n'; return 0; }
+    wc -c < "$1" 2>/dev/null | tr -d '[:space:]'
+}
+
+# A worksheet that quietly grew a fifth page is the failure worth catching, and
+# counting the page objects is cheap enough to do on every render.
+pdf_pages() {
+    python3 -c 'import re,sys; print(len(re.findall(rb"/Type\s*/Page[^s]", open(sys.argv[1],"rb").read())))' \
+        "$1" 2>/dev/null || printf '?\n'
+}
+
+# render_pdf <source html> <target pdf> <expected page count>
+render_pdf() {
+    local html=$1 pdf=$2 want=$3
+    local chrome profile pid size last=x i=0 count
+    [ -f "$html" ] || die "no source at $html"
+    chrome=$(find_chrome)
+    info "rendering $(basename "$html") with $(basename "$chrome")"
+
+    rm -f "$pdf"
+    profile=$(mktemp -d "${TMPDIR:-/tmp}/a2-render.XXXXXX")
+
+    # The throwaway profile is what stops this being a silent no-op when the
+    # person running it already has Chrome open. The cost of it is that Chrome
+    # then writes the PDF and sits there instead of exiting, so rather than
+    # waiting on a process that is never going to return, wait for the file to
+    # stop growing and kill it.
+    "$chrome" \
+        --headless \
+        --disable-gpu \
+        --no-pdf-header-footer \
+        --user-data-dir="$profile" \
+        --print-to-pdf="$pdf" \
+        "file://$html" >/dev/null 2>&1 &
+    pid=$!
+
+    while [ $i -lt 60 ]; do
+        sleep 1
+        i=$((i + 1))
+        size=$(file_size "$pdf") || size=""
+        if [ -n "$size" ] && [ "$size" != 0 ] && [ "$size" = "$last" ]; then
+            break
+        fi
+        last=$size
+        kill -0 "$pid" 2>/dev/null || break
+    done
+
+    kill -9 "$pid" >/dev/null 2>&1 || true
+    wait "$pid" 2>/dev/null || true
+    rm -rf "$profile"
+
+    [ -s "$pdf" ] || die "chrome wrote no output; try CHROME=/path/to/chrome $PROG $COMMAND"
+
+    count=$(pdf_pages "$pdf")
+    info "wrote ${pdf#"$ROOT"/} ($count pages, $(file_size "$pdf") bytes)"
+    if [ "$count" != "$want" ]; then
+        warn "expected $want pages; the layout has overflowed, open the HTML and tighten it"
+    fi
+}
+
+cmd_handout() { render_pdf "$HANDOUT_HTML" "$HANDOUT_PDF" "$HANDOUT_PAGES"; }
+
+cmd_key() {
+    render_pdf "$KEY_HTML" "$KEY_PDF" "$KEY_PAGES"
+    warn "that is an answer key: it does not go in docs/public and does not go on the website"
 }
 
 # ------------------------------------------------------------------ destroy
@@ -741,6 +919,8 @@ cmd_destroy() {
 # ----------------------------------------------------------------- dispatch
 
 case "$COMMAND" in
+    handout) cmd_handout ;;
+    key)     cmd_key ;;
     create)  cmd_create ;;
     card)    cmd_card ;;
     status)  cmd_status ;;

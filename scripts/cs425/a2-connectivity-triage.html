@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A2 Worksheet</title>
+<style>
+  @page { size: letter; margin: 0.55in 0.6in 0.5in 0.6in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 10pt/1.35 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.6pt; }
+
+  .page { page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+  .box, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 10.5pt; margin: 10pt 0 5pt; text-transform: uppercase;
+       letter-spacing: 0.8pt; border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 10pt; margin: 9pt 0 3pt; }
+  p  { margin: 0 0 5pt; }
+  .lead { font-size: 9pt; font-style: italic; margin-bottom: 8pt; }
+  .tiny { font-size: 8pt; }
+  .dim  { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 8pt; }
+  .mast .right { text-align: right; font-size: 8.5pt; line-height: 1.3; }
+  .runner { font-size: 8pt; border-bottom: 1pt solid #000; padding-bottom: 3pt;
+            margin-bottom: 8pt; display: flex; justify-content: space-between;
+            text-transform: uppercase; letter-spacing: 0.6pt; }
+
+  .names { margin: 4pt 0 7pt; font-size: 9.5pt; }
+  .names div { margin-bottom: 6pt; }
+  .rule { display: inline-block; border-bottom: 0.75pt solid #000; vertical-align: baseline; }
+  .r-sm { width: 90pt; } .r-md { width: 150pt; } .r-lg { width: 235pt; }
+
+  .lines > div { border-bottom: 0.75pt solid #999; height: 15pt; }
+  .lines.tight > div { height: 13pt; }
+
+  .box { border: 1pt solid #000; padding: 5pt 8pt; margin-bottom: 7pt; }
+  .box.fill { background: #f0f0f0; }
+  .box h3 { margin-top: 0; }
+  .card { border: 2pt solid #000; padding: 6pt 10pt; margin-bottom: 8pt; }
+  .card .row { display: flex; gap: 26pt; font-size: 12pt; margin-top: 4pt; }
+  .card .row span { flex: 1; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 3pt 4pt; vertical-align: top;
+           text-align: left; font-size: 8.4pt; }
+  th { background: #e4e4e4; font-size: 8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+  td.h { height: 46pt; }
+  .st { background: #e4e4e4; font-weight: bold; width: 12pt; text-align: center; }
+  .target { font-family: "SF Mono","Menlo","Consolas",monospace; font-size: 8pt; white-space: nowrap; }
+
+  table.probes td, table.probes th { font-size: 8pt; }
+  table.probes .mono { font-size: 7.8pt; }
+  .stepn { margin-bottom: 3pt; }
+  pre.setup { margin: 0; padding: 5pt 7pt; border: 0.75pt solid #000; background: #fff;
+              font-family: "SF Mono","Menlo","Consolas",monospace; font-size: 8pt; line-height: 1.35;
+              white-space: pre-wrap; word-break: break-word; }
+
+  ol, ul { margin: 0 0 6pt; padding-left: 16pt; }
+  li { margin-bottom: 3pt; }
+  ol.q > li { margin-bottom: 5pt; }
+
+  /* glossary back page */
+  .gloss { column-count: 2; column-gap: 16pt; font-size: 8.1pt; line-height: 1.3; }
+  .gloss dl { margin: 0; }
+  .gloss dt { font-weight: bold; margin-top: 5pt; }
+  .gloss dd { margin: 0; }
+  .gloss .grp { break-inside: avoid; margin-bottom: 2pt; }
+  .gloss h3 { font-size: 8.4pt; margin: 8pt 0 2pt; text-transform: uppercase;
+              letter-spacing: 0.7pt; border-bottom: 0.75pt solid #000; }
+  .gloss h3:first-child { margin-top: 0; }
+</style>
+</head>
+<body>
+
+<!-- ============================ PAGE 1 ============================ -->
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A2 &middot; It Is Always DNS (Except When It Is Not)</h1>
+      <div class="tiny">CS425 Computer Networks &middot; in class activity &middot; graded pass/fail</div>
+    </div>
+    <div class="right">
+      <strong>TURN THIS IN ON PAPER</strong><br>
+      before you leave the room<br>
+      <span class="dim">A3 is built on this</span>
+    </div>
+  </div>
+
+  <div class="names">
+    <div>Names <span class="rule r-lg"></span> &nbsp; Date <span class="rule r-sm"></span></div>
+    <div><span class="rule r-lg"></span> &nbsp;&nbsp; <span class="rule r-md"></span></div>
+  </div>
+
+  <div class="card">
+    <strong style="font-size:9pt;letter-spacing:.6pt;">TARGET CARD &middot; copy these from the board before you touch anything</strong>
+    <div class="row">
+      <span>ALPHA = <span class="rule" style="width:150pt"></span></span>
+      <span>BRAVO = <span class="rule" style="width:150pt"></span></span>
+    </div>
+  </div>
+
+  <h2>Your four probes</h2>
+
+  <div class="box fill" style="margin-bottom:7pt">
+    <h3>Set up your terminal, once</h3>
+    <p class="tiny" style="margin-bottom:5pt">All three are <strong>typed into your terminal</strong>, not saved into a
+    file, and last only as long as that window is open. New tab means all three again.</p>
+
+    <p class="tiny stepn"><strong>1. Store the two addresses.</strong> Use the numbers from your target card, not the
+    ones printed here. No spaces around the <span class="mono">=</span>.</p>
+<pre class="setup">ALPHA=203.0.113.10
+BRAVO=203.0.113.42
+<span class="dim">PowerShell instead:  $ALPHA = "203.0.113.10"</span></pre>
+
+    <p class="tiny stepn"><strong>2. Make a shortcut for the long curl command.</strong> Type this as <strong>one
+    line</strong> and press Enter. Nothing gets printed, which is correct: you have just taught the shell a new word.</p>
+<pre class="setup">probe() { curl -sS -o /dev/null -m 8 -w 'connect=%{time_connect} total=%{time_total} code=%{http_code}\n' "http://$1:$2/"; }</pre>
+    <p class="tiny" style="margin:3pt 0 0"><strong>If your prompt turns into a bare <span class="mono">&gt;</span></strong>
+    you missed a quote or a brace and the shell is waiting for the rest. Press <strong>Ctrl-C</strong> and type the line
+    again. This is the single most common way this step goes wrong.</p>
+
+    <p class="tiny stepn" style="margin-top:5pt"><strong>3. Test it before you trust it.</strong></p>
+<pre class="setup">probe $ALPHA 8080
+<span class="dim">connect=0.022526 total=0.065459 code=200</span></pre>
+    <p class="tiny" style="margin:3pt 0 0"><span class="mono">command not found</span> means step 2 did not take; do it
+    again. <span class="mono">probe</span> takes the address then the port, so <span class="mono">probe $ALPHA 8081</span>
+    is station 2 and <span class="mono">probe $BRAVO 8080</span> asks the other machine.</p>
+  </div>
+
+  <p class="tiny" style="margin-bottom:5pt"><strong>One piece of syntax worth knowing.</strong>
+  <span class="mono">$ALPHA</span> means &ldquo;the address I stored in step 1&rdquo;. In <span class="mono">dig</span>,
+  the <span class="mono">@</span> is <strong>not part of the address</strong>: it means &ldquo;ask <em>this</em>
+  server&rdquo;, so <span class="mono">@$ALPHA</span> reads as &ldquo;put this question to the ALPHA machine&rdquo;.
+  You have to say that here because <span class="mono">cs425.lab</span> is not a real internet name, so ALPHA is the
+  only machine that knows the answer.</p>
+
+  <table class="probes">
+    <tr><th style="width:92pt">Question</th><th>Type this, exactly</th><th style="width:132pt">Windows</th></tr>
+    <tr><td>Does the name resolve?<br><span class="dim">two forms, see below</span></td>
+        <td class="mono">dig +short alpha.cs425.lab @$ALPHA -p 5353<br>dig alpha.cs425.lab @$ALPHA -p 5353</td>
+        <td class="mono">nslookup -port=5353 alpha.cs425.lab 203.0.113.10</td></tr>
+    <tr><td>Does the host answer ICMP?</td>
+        <td class="mono">ping -c 3 $ALPHA</td><td class="mono">ping -n 3 $ALPHA</td></tr>
+    <tr><td>Is the port open?</td>
+        <td class="mono">Linux&nbsp;&nbsp;<b>nc -vz -w 5</b> $ALPHA 8080<br>macOS&nbsp;&nbsp;<b>nc -vz -G 5</b> $ALPHA 8080</td>
+        <td class="mono">Test-NetConnection $ALPHA -Port 8080</td></tr>
+    <tr><td>Does the service work?</td>
+        <td class="mono" colspan="2">curl -sS -o /dev/null -m 8 -w 'connect=%{time_connect} total=%{time_total} code=%{http_code}\n' http://$ALPHA:8080/</td></tr>
+  </table>
+
+  <p class="tiny">Shown against station 1 and against <span class="mono">alpha.cs425.lab</span>, a name that does
+  resolve. For other stations change the <strong>port</strong> (or the <strong>name</strong>), and use
+  <span class="mono">$BRAVO</span> where the station says so.</p>
+  <p class="tiny"><strong>Both forms of dig matter.</strong> <span class="mono">+short</span> prints <em>only the answer
+  records</em>, so a name with no answer prints <strong>nothing at all</strong> and still exits successfully. That is not
+  a broken command; the empty line <em>is</em> the answer. Whenever you get one, re-run without
+  <span class="mono">+short</span> and read the <span class="mono">status:</span> field. Station 4 is exactly this case.</p>
+
+  <p class="tiny" style="margin-top:5pt"><strong>Read what curl prints, and time it.</strong> Failing in milliseconds
+  and hanging for seconds are different failures. curl words the fast one differently per platform
+  (<span class="mono">Connection refused</span> on Linux, <span class="mono">Couldn't connect to server</span> on macOS);
+  <span class="mono">nc -vz</span> names it outright on both. Use the right nc timeout flag above, or it sits for 75
+  seconds printing nothing. <strong>Keep <span class="mono">-p 5353</span> on every dig.</strong> Terms: glossary on the back.</p>
+
+</section>
+
+<!-- ============================ PAGE 2 ============================ -->
+<section class="page">
+
+  <div class="runner"><span>A2 &middot; Connectivity triage</span><span>Names: <span class="rule" style="width:150pt"></span></span><span>page 3 of 5</span></div>
+
+  <h2>Round 1 &middot; The healthy signature</h2>
+  <p class="lead">You cannot recognize broken until you have looked at working. Probe ALPHA port 8080 with all four commands.</p>
+
+  <table>
+    <tr>
+      <th style="width:14pt">#</th><th style="width:74pt">Target</th>
+      <th style="width:76pt">dig said</th><th style="width:76pt">ping said</th>
+      <th>curl printed, word for word</th><th style="width:44pt">seconds<br>to answer</th>
+    </tr>
+    <tr><td class="st">1</td><td class="target">ALPHA 8080<br><span class="dim">baseline</span></td>
+        <td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+  </table>
+
+  <div class="box">
+    <h3>Answer before you move on</h3>
+    <p class="tiny" style="margin-bottom:4pt">What did ping report as the minimum round trip time, what did curl report for
+    <span class="mono">connect=</span>, and why are those two numbers in the same neighborhood?</p>
+    <div class="lines tight"><div></div><div></div><div></div></div>
+  </div>
+
+  <h2>Round 2 &middot; Four ways to fail</h2>
+  <p class="lead">Do them in order, the order is the argument. Stations 2 and 3 are the same host, the same laptop and the
+  same network, and they behave in opposite ways.</p>
+
+  <table>
+    <tr>
+      <th style="width:14pt">#</th><th style="width:76pt">Target</th>
+      <th style="width:70pt">dig said</th><th style="width:62pt">ping said</th>
+      <th>curl printed, word for word</th>
+      <th style="width:36pt">sec to<br>fail</th>
+      <th style="width:100pt">The cause, in your words</th>
+      <th style="width:44pt">Layer</th>
+    </tr>
+    <tr><td class="st">2</td><td class="target">ALPHA 8081</td>
+        <td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+    <tr><td class="st">3</td><td class="target">ALPHA 8082</td>
+        <td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+    <tr><td class="st">4</td><td class="target">ghost<br>.cs425.lab</td>
+        <td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+    <tr><td class="st">5</td><td class="target">mirage<br>.cs425.lab</td>
+        <td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+  </table>
+
+  <div class="box fill">
+    <h3>The one distinction that matters</h3>
+    <p class="tiny" style="margin-bottom:4pt">Stations 2 and 3 are the two failures you will meet for the rest of your career, and they are opposites.
+    One means a machine received your packet and answered &ldquo;no&rdquo;. The other means nobody answered anything at all.</p>
+    <p class="tiny" style="margin-bottom:3pt">Which is which, and <strong>what did the host send back</strong> in the case that failed fast? It is one TCP flag.</p>
+    <div class="lines tight"><div></div><div></div><div></div></div>
+  </div>
+
+</section>
+
+<!-- ============================ PAGE 3 ============================ -->
+<section class="page">
+
+  <div class="runner"><span>A2 &middot; Connectivity triage</span><span>Names: <span class="rule" style="width:150pt"></span></span><span>page 4 of 5</span></div>
+
+  <h2>Round 2, continued &middot; the two DNS stations</h2>
+
+  <div class="box">
+    <h3>Station 4 &middot; <span class="mono" style="font-weight:normal">ghost.cs425.lab</span></h3>
+<pre class="setup">dig ghost.cs425.lab @$ALPHA -p 5353     <span class="dim"># no +short, you need the status line</span></pre>
+    <p class="tiny" style="margin:4pt 0 4pt">With <span class="mono">+short</span> this prints nothing, which is a real
+    answer badly displayed. What was in the <span class="mono">status:</span> field, and is it even <em>possible</em> for
+    this to be a connectivity problem? How many packets did you send to the target?</p>
+    <div class="lines tight"><div></div><div></div></div>
+  </div>
+
+  <div class="box">
+    <h3>Station 5 &middot; <span class="mono" style="font-weight:normal">mirage.cs425.lab</span></h3>
+<pre class="setup">dig +short mirage.cs425.lab @$ALPHA -p 5353    <span class="dim"># this one does answer</span></pre>
+    <p class="tiny" style="margin:4pt 0 4pt">This looks identical to station 2 from where you are sitting, and it is not the same failure at all.
+    Name the <strong>one probe</strong> that separates them, and say what is special about the address dig handed you.</p>
+    <div class="lines tight"><div></div><div></div><div></div></div>
+  </div>
+
+  <h2>Round 3 &middot; The probe that lies</h2>
+  <p class="lead">Ping BRAVO. Then curl BRAVO port 8080. One fails, one succeeds, and the one that fails is the one most
+  people would have used to decide the host was dead.</p>
+
+  <table>
+    <tr>
+      <th style="width:14pt">#</th><th style="width:76pt">Target</th>
+      <th style="width:70pt">dig said</th><th style="width:62pt">ping said</th>
+      <th>curl printed, word for word</th>
+      <th style="width:36pt">sec to<br>fail</th>
+      <th style="width:100pt">The cause, in your words</th>
+      <th style="width:44pt">Layer</th>
+    </tr>
+    <tr><td class="st">6</td><td class="target">BRAVO 8080</td>
+        <td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+  </table>
+
+  <ol class="q tiny">
+    <li>Which probe reported the machine unreachable, and which one proved it was not?
+      <div class="lines tight"><div></div></div></li>
+    <li>What protocol does ping use, and at which layer does that protocol live?
+      <div class="lines tight"><div></div></div></li>
+    <li>ALPHA answers ping and BRAVO does not, yet both serve the same page on 8080. What is different between the
+      two hosts, and does that difference live <em>on</em> the host or <em>in front of</em> it?
+      <div class="lines tight"><div></div></div></li>
+    <li>Write one sentence you could say to a coworker who has just told you &ldquo;the server is down, it does not ping&rdquo;.
+      <div class="lines tight"><div></div><div></div></div></li>
+  </ol>
+
+  <h2>If you finish early</h2>
+  <p class="tiny" style="margin-bottom:4pt">Drop the <span class="mono">-p 5353</span> from one of your dig commands and
+  run it again. If the answer changes, your network is intercepting DNS and answering in place of the server you asked
+  for. Write down both answers: that is a middlebox lying to you, the same class of bug as station 5.</p>
+  <div class="lines tight"><div></div><div></div></div>
+
+  <p class="tiny dim" style="text-align:center;margin-top:14pt">Graded pass/fail on a serious attempt at every round.
+  Hand this in before you leave, with every name at the top. You get it back for A3, which is built on your station table.</p>
+
+</section>
+
+<!-- ============================ PAGE 4 ============================ -->
+<section class="page">
+
+  <div class="runner"><span>A2 &middot; Glossary</span><span>Keep this page</span><span>page 5 of 5</span></div>
+
+  <div class="gloss">
+    <h3>Names</h3>
+    <dl>
+      <div class="grp"><dt>DNS</dt><dd>The application layer protocol that turns a name into an IP address. A real query to a real server, so it can fail like anything else.</dd></div>
+      <div class="grp"><dt>Resolver</dt><dd>The server your machine asks. Handed to you by the network you joined, which means that network chooses who answers your questions.</dd></div>
+      <div class="grp"><dt>Zone</dt><dd>A slice of the name space one set of servers is responsible for, like <span class="mono">cs425.lab</span>.</dd></div>
+      <div class="grp"><dt>Authoritative</dt><dd>Holding the real records rather than a cached copy. An authoritative &ldquo;no&rdquo; is a fact.</dd></div>
+      <div class="grp"><dt>A record</dt><dd>Maps a name to an IPv4 address.</dd></div>
+      <div class="grp"><dt>NXDOMAIN</dt><dd><strong>That name does not exist.</strong> An answer, not an error: the server was reachable and told you there is nothing there. You have sent <strong>zero</strong> packets to your target, so this is not a connectivity problem. <span class="mono">dig +short</span> hides this by printing an empty line; drop <span class="mono">+short</span> to see it.</dd></div>
+    </dl>
+
+    <h3>Addresses</h3>
+    <dl>
+      <div class="grp"><dt>IP address</dt><dd>Network layer identifier for an <em>interface</em>, not a machine and not a user.</dd></div>
+      <div class="grp"><dt>Private address, RFC 1918</dt><dd><span class="mono">10.0.0.0/8</span>, <span class="mono">172.16.0.0/12</span>, <span class="mono">192.168.0.0/16</span>. <strong>Not routable on the public internet.</strong> Packets sent to one from outside its network go to your own gateway and die there.</dd></div>
+      <div class="grp"><dt>NAT</dt><dd>Rewrites addresses and ports so many private machines share one public address. Why nobody can open a connection <em>to</em> your laptop.</dd></div>
+      <div class="grp"><dt>CIDR, <span class="mono">/16</span></dt><dd>An address plus how many leading bits are fixed. <span class="mono">132.178.0.0/16</span> covers <span class="mono">132.178.0.0</span> through <span class="mono">132.178.255.255</span>.</dd></div>
+    </dl>
+
+    <h3>Getting there</h3>
+    <dl>
+      <div class="grp"><dt>RTT</dt><dd>Round trip time. Nothing completes faster than one RTT, and most things take several.</dd></div>
+      <div class="grp"><dt>ICMP</dt><dd>The network layer protocol for control and error messages, including ping's echo request and reply. Rides directly in IP <strong>alongside</strong> TCP and UDP, so it has no port numbers.</dd></div>
+      <div class="grp"><dt>ping</dt><dd>Sends an ICMP echo request. Success proves reachability. <strong>Failure proves almost nothing</strong>, because filtering ICMP while allowing TCP is extremely common.</dd></div>
+    </dl>
+
+    <h3>Connections</h3>
+    <dl>
+      <div class="grp"><dt>TCP</dt><dd>Reliable ordered byte stream. Sets up a connection before any data moves.</dd></div>
+      <div class="grp"><dt>Port</dt><dd>A 16 bit number saying <em>which program</em> gets the data. The address finds the machine, the port finds the process.</dd></div>
+      <div class="grp"><dt>Listening socket</dt><dd>A socket a server is waiting on. No listener means the host has nobody to hand an arriving connection to.</dd></div>
+      <div class="grp"><dt>Three way handshake</dt><dd>SYN, SYN-ACK, ACK. <span class="mono">connect()</span> returns when the SYN-ACK arrives, so connecting costs <strong>one round trip</strong> before any of your data moves.</dd></div>
+      <div class="grp"><dt>RST</dt><dd>A TCP flag meaning &ldquo;nothing here, stop&rdquo;, sent when a connection arrives for a port with no listener. Getting one is <strong>informative</strong>: it proves the address is routable, the host is up, and its stack is running.</dd></div>
+      <div class="grp"><dt>Connection refused</dt><dd>What a client reports after a RST. About one round trip, so effectively instant.</dd></div>
+      <div class="grp"><dt>Connection timeout</dt><dd>What a client reports after <strong>nothing at all</strong>. It retransmits with exponential backoff and gives up on its own clock, which is why a drop takes seconds and a refusal takes milliseconds.</dd></div>
+    </dl>
+
+    <h3>Filtering</h3>
+    <dl>
+      <div class="grp"><dt>Firewall, packet filter</dt><dd>Anything that inspects packets and decides whether they pass, usually on addresses and ports.</dd></div>
+      <div class="grp"><dt>DROP versus REJECT</dt><dd><strong>DROP</strong> discards silently; the sender waits out its own timeout. <strong>REJECT</strong> sends back an error, usually a RST. A dropped packet and a host that does not exist look identical from the client, which is exactly the point.</dd></div>
+      <div class="grp"><dt>Security group</dt><dd>AWS's packet filter, attached to the virtual interface rather than the host. Defaults to DROP, and sits <strong>in front of</strong> the machine, so a blocked packet never reaches the OS at all.</dd></div>
+      <div class="grp"><dt>Middlebox</dt><dd>Anything on the path doing more than forwarding: firewalls, NAT, proxies, DNS interceptors. Why one protocol behaves differently on two networks.</dd></div>
+    </dl>
+
+    <h3>curl exit codes</h3>
+    <dl>
+      <div class="grp"><dt><span class="mono">0 / 6 / 7 / 28</span></dt>
+        <dd>Worked, could not resolve, failed to connect, timed out. <strong>7 versus 28 is the pair that matters:</strong> 7 means something answered and said no, 28 means nothing answered.</dd></div>
+      <div class="grp"><dt><span class="mono">connect=</span></dt>
+        <dd><span class="mono">0.000000</span> means the handshake never completed. A real value followed by a timeout means TCP succeeded and the <em>application</em> never answered.</dd></div>
+    </dl>
+
+    <h3>The four layers</h3>
+    <dl>
+      <div class="grp"><dt>Application</dt><dd>Do the useful thing. HTTP, SMTP, DNS.</dd></div>
+      <div class="grp"><dt>Transport</dt><dd>Bytes to the right <em>program</em>. TCP, UDP.</dd></div>
+      <div class="grp"><dt>Network</dt><dd>A packet to the right <em>host</em>. IP, ICMP.</dd></div>
+      <div class="grp"><dt>Link</dt><dd>A frame to the next hop on this wire. Ethernet, Wi-Fi.</dd></div>
+    </dl>
+  </div>
+
+</section>
+
+</body>
+</html>
