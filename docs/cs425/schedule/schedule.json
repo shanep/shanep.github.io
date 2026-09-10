@@ -101,6 +101,10 @@
       ],
       "assignments": [
         {
+          "name": "A2",
+          "dueDay": "Wednesday"
+        },
+        {
           "name": "P1",
           "url": "/cs425/assignments/p1",
           "dueDay": "Friday"

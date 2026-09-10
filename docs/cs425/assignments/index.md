@@ -17,5 +17,4 @@ of them must compile and run on **both** GitHub Codespaces and Onyx.
 
 # Exams
 
-- [Midterm Study Guide](midterm-exam-guide.md) - chapters 1 through 3
 - [Final Study Guide](final-exam-guide.md) - comprehensive, weighted toward chapters 4 through 8
