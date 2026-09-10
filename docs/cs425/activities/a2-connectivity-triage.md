@@ -345,6 +345,26 @@ before thirty students do. Run it once the night before and once from the podium
 A clean run is **9 passed, 0 failed**; it checks the ICMP contrast between the two
 hosts and the lab zone's control record on top of the seven stations.
 
+**Check the paper too.** `verify` exercises the testbed, not the worksheets, and
+those are separate artifacts with separate bugs: `dig +short ghost.cs425.lab`
+once shipped on a worksheet even though it prints an empty line and teaches
+nothing, because everything that ran was checking the server rather than the
+handout.
+
+```bash
+./scripts/cs425/a2-connectivity-triage.sh verify --check-commands
+```
+
+That pulls every command out of all four documents, runs it against the live
+testbed, and compares the result to a stated expectation in
+`scripts/cs425/check-commands.py`. The useful part is the word *stated*: a
+command with no expectation is a **failure**, not a skip, so editing a document
+forces you to write down what a student should see. That sentence is the actual
+check; the code just enforces that you wrote one.
+
+`python3 scripts/cs425/check-commands.py --list` shows what it would run without
+needing AWS, which is enough to catch an unstated command after an edit.
+
 Narrow `--cidr` to campus if the whole section is on campus or on the VPN. Port
 8080 on an open address gets scanned within the hour; the scans are harmless but
 they clutter the logs. Note that a security group *drops* rather than rejects, so

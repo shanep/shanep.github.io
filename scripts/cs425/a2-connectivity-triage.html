@@ -145,12 +145,12 @@ BRAVO=203.0.113.42
     <tr><th style="width:92pt">Question</th><th>Type this, exactly</th><th style="width:132pt">Windows</th></tr>
     <tr><td>Does the name resolve?<br><span class="dim">two forms, see below</span></td>
         <td class="mono">dig +short alpha.cs425.lab @$ALPHA -p 5353<br>dig alpha.cs425.lab @$ALPHA -p 5353</td>
-        <td class="mono">nslookup -port=5353 alpha.cs425.lab 203.0.113.10</td></tr>
+        <td class="mono win">nslookup -port=5353 alpha.cs425.lab 203.0.113.10</td></tr>
     <tr><td>Does the host answer ICMP?</td>
-        <td class="mono">ping -c 3 $ALPHA</td><td class="mono">ping -n 3 $ALPHA</td></tr>
+        <td class="mono">ping -c 3 $ALPHA</td><td class="mono win">ping -n 3 $ALPHA</td></tr>
     <tr><td>Is the port open?</td>
         <td class="mono">Linux&nbsp;&nbsp;<b>nc -vz -w 5</b> $ALPHA 8080<br>macOS&nbsp;&nbsp;<b>nc -vz -G 5</b> $ALPHA 8080</td>
-        <td class="mono">Test-NetConnection $ALPHA -Port 8080</td></tr>
+        <td class="mono win">Test-NetConnection $ALPHA -Port 8080</td></tr>
     <tr><td>Does the service work?</td>
         <td class="mono" colspan="2">curl -sS -o /dev/null -m 8 -w 'connect=%{time_connect} total=%{time_total} code=%{http_code}\n' http://$ALPHA:8080/</td></tr>
   </table>
