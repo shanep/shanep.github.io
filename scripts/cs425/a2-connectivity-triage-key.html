@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A2 Answer Key</title>
+<style>
+  @page { size: letter; margin: 0.5in 0.55in 0.45in 0.55in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 9.3pt/1.33 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.1pt; }
+
+  /* Read at a podium rather than filled in, so it flows to whatever length it
+     needs and only the blocks are protected from splitting. */
+  .page { page-break-after: auto; }
+  .demo, .box, .ans, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 9.8pt; margin: 10pt 0 5pt; text-transform: uppercase; letter-spacing: 0.8pt;
+       border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.4pt; margin: 7pt 0 3pt; }
+  p { margin: 0 0 4pt; }
+  .tiny { font-size: 8.1pt; }
+  .dim { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 4pt; }
+  .mast .right { text-align: right; }
+  .stamp { display: inline-block; background: #000; color: #fff; padding: 3pt 8pt;
+           font-size: 8.5pt; font-weight: bold; letter-spacing: 1pt; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 3pt 5pt; vertical-align: top; text-align: left; font-size: 8.2pt; }
+  th { background: #e4e4e4; font-size: 7.8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+  .st { background: #e4e4e4; font-weight: bold; width: 13pt; text-align: center; }
+
+  .demo { border: 0.75pt solid #000; margin-bottom: 7pt; }
+  .demo .hd { background: #e4e4e4; padding: 3pt 6pt; font-size: 8.3pt; font-weight: bold;
+              border-bottom: 0.75pt solid #000; }
+  .demo pre { margin: 0; padding: 5pt 6pt; font-family: "SF Mono","Menlo","Consolas",monospace;
+              font-size: 7.5pt; line-height: 1.32; white-space: pre-wrap; word-break: break-word; }
+  .demo .say { padding: 4pt 6pt; border-top: 0.75pt dashed #666; font-size: 8.1pt; background: #f7f7f7; }
+  .demo .say b { text-transform: uppercase; font-size: 7.6pt; letter-spacing: 0.5pt; }
+  .cmd { font-weight: bold; }
+
+  .ans { border-left: 3pt solid #000; padding: 3pt 0 3pt 8pt; margin: 0 0 6pt; }
+  .ans .q { font-weight: bold; }
+  .box { border: 1pt solid #000; padding: 5pt 7pt; margin-bottom: 7pt; }
+  .box.fill { background: #eee; }
+  .box h3 { margin-top: 0; }
+  .bar { border: 1pt dashed #000; padding: 3pt 7pt; margin-bottom: 7pt; font-size: 8.1pt; background: #f6f6f6; }
+  .bar strong { text-transform: uppercase; letter-spacing: 0.6pt; font-size: 7.6pt; }
+
+  ol, ul { margin: 0 0 5pt; padding-left: 15pt; }
+  li { margin-bottom: 3pt; }
+  .push { font-size: 8.1pt; }
+  .push li { margin-bottom: 2.5pt; }
+</style>
+</head>
+<body>
+
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A2 &middot; Answer Key and Demo Script</h1>
+      <div class="tiny">CS425 &middot; It Is Always DNS (Except When It Is Not)</div>
+    </div>
+    <div class="right"><span class="stamp">INSTRUCTOR COPY</span></div>
+  </div>
+  <p class="tiny dim" style="margin-bottom:8pt">Graded pass/fail. Every transcript here is real output from a live
+  testbed, so you can run these at the podium and get the same shapes. Set the two addresses first, from
+  <span class="mono">a2-connectivity-triage.sh card</span>:</p>
+
+  <div class="demo">
+    <pre><span class="cmd">$ ALPHA=35.90.160.84        # yours will differ, every launch
+$ BRAVO=18.236.210.3</span></pre>
+  </div>
+
+  <h2>How each station is broken</h2>
+  <table>
+    <tr><th style="width:13pt">#</th><th style="width:86pt">Target</th><th>Mechanism</th><th style="width:132pt">Signature</th></tr>
+    <tr><td class="st">1</td><td class="mono">ALPHA 8080</td>
+        <td>Nothing wrong. Port allowed, server answers.</td><td>200, <span class="mono">connect=</span> one RTT</td></tr>
+    <tr><td class="st">2</td><td class="mono">ALPHA 8081</td>
+        <td>Server <em>is</em> listening. The security group has no rule for 8081, so the SYN is dropped with no reply.</td>
+        <td>Hang, then timeout. Ping to ALPHA still works.</td></tr>
+    <tr><td class="st">3</td><td class="mono">ALPHA 8082</td>
+        <td>Port allowed, nothing listening. Kernel answers RST.</td><td>Refused, effectively instant</td></tr>
+    <tr><td class="st">4</td><td class="mono">ghost.cs425.lab</td>
+        <td>dnsmasq is authoritative for the zone and has no such record.</td><td><span class="mono">status: NXDOMAIN</span></td></tr>
+    <tr><td class="st">5</td><td class="mono">mirage.cs425.lab</td>
+        <td>A record pointing at <span class="mono">10.42.13.37</span>, RFC 1918, not routable off their own LAN.</td>
+        <td>Resolves, then hangs like station 2</td></tr>
+    <tr><td class="st">6</td><td class="mono">BRAVO 8080</td>
+        <td>Second host, second security group. TCP 8080 allowed, no ICMP rule at all.</td>
+        <td>Ping 100% loss, curl 200</td></tr>
+    <tr><td class="st">7</td><td class="mono">ALPHA 8084</td>
+        <td>Accepts and never writes. <strong>Held back for A3</strong>; do not point the class at it today.</td>
+        <td>&mdash;</td></tr>
+  </table>
+
+  <h2>Demo &middot; stations 1, 2 and 3</h2>
+
+  <div class="demo">
+    <div class="hd">Station 1 &middot; the healthy signature</div>
+<pre><span class="cmd">$ curl -sS -o /dev/null -m 8 -w 'connect=%{time_connect} total=%{time_total} code=%{http_code}\n' \
+      http://$ALPHA:8080/</span>
+connect=0.022526 total=0.065459 code=200
+
+<span class="cmd">$ ping -c 3 $ALPHA</span>
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 21.009/22.100/22.936/0.807 ms</pre>
+    <div class="say"><b>Say:</b> connect is 22.5 ms, the ping RTT is 21 ms. The handshake costs
+      <b>one round trip</b>: you send SYN, and <span class="mono">connect()</span> returns when the SYN-ACK lands.
+      That is the number every other station gets compared against.</div>
+  </div>
+
+  <div class="demo">
+    <div class="hd">Station 2 &middot; the silent drop</div>
+<pre><span class="cmd">$ curl -sS -o /dev/null -m 6 -w 'connect=%{time_connect} total=%{time_total}\n' http://$ALPHA:8081/</span>
+curl: (28) Connection timed out after 6003 milliseconds
+connect=0.000000 total=6.003387
+
+<span class="cmd">$ nc -vz -G 6 $ALPHA 8081</span>   <span class="dim"># -G on macOS, -w on Linux</span>
+nc: connectx to 35.90.160.84 port 8081 (tcp) failed: Operation timed out
+<span class="dim">   ... 6.007 s total. With -w on a Mac this sits for about 75 s instead.</span>
+
+<span class="cmd">$ ping -c 2 $ALPHA</span>   <span class="dim"># the host is fine, prove it</span>
+2 packets transmitted, 2 packets received, 0.0% packet loss</pre>
+    <div class="say"><b>Say:</b> <span class="mono">connect=0.000000</span>. The connection never happened, so there is
+      no time to report. Nothing came back at all; curl retransmitted its SYN and gave up on its own clock. And ping
+      still works, so the host is up. Whatever is wrong sits in front of <em>one port</em>.</div>
+  </div>
+
+  <div class="demo">
+    <div class="hd">Station 3 &middot; the refusal, the same host seconds later</div>
+<pre><span class="cmd">$ curl -sS -o /dev/null -m 6 http://$ALPHA:8082/</span>
+curl: (7) Failed to connect to 35.90.160.84 port 8082 after 25 ms: Couldn't connect to server
+
+<span class="cmd">$ nc -vz -G 6 $ALPHA 8082</span>
+nc: connectx to 35.90.160.84 port 8082 (tcp) failed: <b>Connection refused</b>
+<span class="dim">   ... 0.029 s total.</span></pre>
+    <div class="say"><b>Say:</b> <b>25 milliseconds against 6000.</b> Same host, same laptop, same network. That 25 ms is
+      one round trip, so something answered immediately: a <b>TCP RST</b>. Note that curl on macOS says "Couldn't connect
+      to server" while <span class="mono">nc</span> names the reset outright, so run <span class="mono">nc</span> if the
+      room needs the word. This is the single most valuable moment of the period.
+      <b>Flag warning:</b> the connect timeout is <span class="mono">-G</span> on macOS and
+      <span class="mono">-w</span> on Linux. Using <span class="mono">-w</span> on a Mac against station 2 hangs for
+      about 75 seconds with no output, which at a podium looks like you broke something.</div>
+  </div>
+
+  <h2>Demo &middot; stations 4, 5 and 6</h2>
+
+  <div class="demo">
+    <div class="hd">Stations 4 and 5 &middot; the DNS pair</div>
+<pre><span class="cmd">$ dig ghost.cs425.lab @$ALPHA -p 5353</span>
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: <b>NXDOMAIN</b>, id: 21746
+;; flags: qr rd ra; QUERY: 1, <b>ANSWER: 0</b>, AUTHORITY: 0, ADDITIONAL: 1
+
+<span class="cmd">$ dig +short mirage.cs425.lab @$ALPHA -p 5353</span>
+<b>10.42.13.37</b>
+
+<span class="cmd">$ curl -sS -o /dev/null -m 6 http://10.42.13.37:8080/</span>
+curl: (28) Connection timed out after 6004 milliseconds
+
+<span class="cmd">$ dig +short alpha.cs425.lab @$ALPHA -p 5353</span>   <span class="dim"># control: the zone works</span>
+35.90.160.84</pre>
+    <div class="say"><b>Say:</b> Station 4 sent <b>zero packets</b> to any target. There is no connectivity problem
+      because there was never a destination. Station 5 resolved perfectly and still hangs, identically to station 2,
+      because <span class="mono">10.0.0.0/8</span> is RFC 1918 and goes nowhere off their own LAN. <b>dig is the only
+      probe that tells those two apart.</b></div>
+  </div>
+
+  <div class="demo">
+    <div class="hd">Station 6 &middot; the probe that lies</div>
+<pre><span class="cmd">$ ping -c 3 $BRAVO</span>
+3 packets transmitted, <b>0 packets received, 100.0% packet loss</b>
+
+<span class="cmd">$ curl -sS -o /dev/null -m 8 -w 'connect=%{time_connect} code=%{http_code}\n' http://$BRAVO:8080/</span>
+connect=0.025437 <b>code=200</b></pre>
+    <div class="say"><b>Say:</b> 100% loss, and the service is fine. ICMP is a <b>network layer</b> protocol riding
+      directly in IP, and BRAVO's security group has no rule for it. Ask which host is misconfigured. Answer: neither.
+      The difference lives <em>in front of</em> BRAVO, not on it.</div>
+  </div>
+
+  <h2>Round 1 &middot; The healthy signature</h2>
+  <div class="ans">
+    <div class="q">Why are the ping RTT and curl's <span class="mono">connect=</span> in the same neighborhood?</div>
+    The TCP handshake costs one round trip: the client sends SYN and <span class="mono">connect()</span> returns when the
+    SYN-ACK arrives. Ping measures the same path with an ICMP echo. Accept anything saying "the handshake is one round
+    trip over the same path".
+  </div>
+  <div class="bar"><strong>Pass bar:</strong> a real number in each probe column, not "it worked".</div>
+
+  <h2>Round 2 &middot; Stations 2 and 3</h2>
+  <div class="ans">
+    <div class="q">Which is which, and what did the host send back in the case that failed fast?</div>
+    <b>Station 3 failed fast</b> because the host sent a <b>TCP RST</b>. Something received the packet and answered "no".
+    <b>Station 2 hung</b> because <b>nothing came back at all</b>: the SYN was dropped silently, the client retransmitted
+    with exponential backoff and eventually gave up on its own timer.
+    <p style="margin:3pt 0 0"><b>A refusal is the more informative failure.</b> A RST proves the address is routable, the
+    host is up and its IP stack is running; it narrows the fault to one port on one machine. A timeout tells you almost
+    nothing, because a drop can happen anywhere along the path.</p>
+  </div>
+  <div class="box fill">
+    <h3>Push on this if you hear it</h3>
+    <ul class="push">
+      <li><b>"Station 3 means the server is down."</b> The exact opposite. Chase this one; it is the most valuable
+        correction available in the period.</li>
+      <li><b>"Station 2 is down, station 3 is up."</b> Same host, and ping proves it is up in both cases.</li>
+      <li><b>"The firewall rejected it"</b> for station 2. Reject and drop are different behaviors. A filter that
+        rejected would produce station 3's symptom, which is why choosing between them is a design decision.</li>
+    </ul>
+  </div>
+  <div class="bar"><strong>Pass bar:</strong> stations 2 and 3 are not described the same way, and one is identified as
+  having produced no reply at all.</div>
+
+  <h2>Round 2 &middot; Stations 4 and 5</h2>
+  <div class="ans">
+    <div class="q">Station 4: what was the status field, and how many packets reached the target?</div>
+    <b>NXDOMAIN</b>, and <b>zero</b>. The failure happened before a single packet was addressed to anything, so there is
+    no connectivity problem here at all. Layer: application (DNS). Fixed by whoever owns the zone.
+  </div>
+  <div class="ans">
+    <div class="q">Station 5: which one probe separates it from station 2, and what is special about the address?</div>
+    <b>dig</b>, and it is the only one; curl, ping and nc all behave identically. The address is inside
+    <span class="mono">10.0.0.0/8</span>, <b>RFC 1918 private space</b>, not routable across the public internet. Their
+    packets go to their own default gateway and die, or reach an unrelated machine on their own LAN.
+    <p style="margin:3pt 0 0">DNS succeeded and still caused the outage. "It resolved" is not "it resolved to something
+    useful". Layer: application, with the symptom appearing at the network layer.</p>
+  </div>
+  <div class="bar"><strong>Pass bar:</strong> station 4 is called a name problem rather than a connectivity problem, and
+  station 5's row records the <span class="mono">10.x</span> address rather than only "it timed out".</div>
+
+  <h2>Round 3 &middot; The probe that lies</h2>
+  <ol>
+    <li><b>Ping</b> reported it unreachable; <b>curl</b> proved it was not.</li>
+    <li><b>ICMP</b>, at the <b>network layer</b>. It rides directly in IP, alongside TCP and UDP rather than on top of
+      them. Accept "layer 3" or "same layer as IP".</li>
+    <li>The <b>security group</b>: ALPHA's allows ICMP, BRAVO's has no ICMP rule. It lives <b>in front of</b> the host.
+      Nothing on BRAVO itself differs, and its kernel would answer the echo if the packet ever arrived. "BRAVO has ICMP
+      turned off in its OS" has the right shape and the wrong location; correct it out loud, because it is the
+      difference between debugging the host and debugging the path.</li>
+    <li>Something shaped like: <i>"Not answering ping only tells us ICMP is filtered. Plenty of production hosts drop it
+      on purpose. Let me try the actual port before we page anyone."</i></li>
+  </ol>
+  <div class="bar"><strong>Pass bar:</strong> ping is named as the probe that lied, and ICMP is placed at the network layer.</div>
+
+  <h2>If they finish early &middot; the DNS interception check</h2>
+  <div class="ans">
+    <div class="q">Drop <span class="mono">-p 5353</span> and compare.</div>
+    On a network that hijacks outbound port 53, the plain query is answered by the interceptor rather than by ALPHA, and
+    an interceptor that has never heard of <span class="mono">cs425.lab</span> answers <b>NXDOMAIN for everything</b>.
+    That makes station 4 look right and station 5 look broken, which is the most confusing possible way for this to fail.
+    <p style="margin:3pt 0 0"><b>This happened on the machine this activity was built on</b>, so it is worth expecting.
+    <span class="mono">verify</span> detects it and warns you. If you see that warning, tell the room: they are sitting on
+    a live middlebox lying to them, and it is the same class of bug as station 5 one layer up.</p>
+  </div>
+
+  <div class="box">
+    <h3>Debrief, in this order</h3>
+    <ol class="push" style="margin-bottom:0">
+      <li><b>Station 3 proves the host is alive.</b> Refusal is information; timeout is the absence of it. Sets up the
+        TCP state machine in chapter 3.</li>
+      <li><b>Station 5 is a DNS bug wearing a network bug's clothes.</b> Sets up RFC 1918 and NAT in chapter 4.</li>
+      <li><b>Station 6 means ping tests ICMP, not reachability.</b> Sets up firewalls in chapter 8.</li>
+    </ol>
+    <p class="tiny" style="margin:4pt 0 0"><b>Grade these and hand them back at the start of A3.</b> A3 is built on the
+    station table, and a group that arrives without data spends the period re-probing instead of thinking. Pass/fail on
+    a flip-through is quick enough to do this between the two class meetings.</p>
+  </div>
+
+  <div class="box fill">
+    <h3>Before each section</h3>
+    <p class="tiny" style="margin:0">Run <span class="mono">./scripts/cs425/a2-connectivity-triage.sh verify</span>. It
+    asserts every signature above from your machine in about twenty seconds, and it is how you find out a security group
+    drifted before thirty students do. A clean run is <b>9 passed, 0 failed</b>. Leave the testbed up for A3, or relaunch
+    and put the new addresses on the board.</p>
+  </div>
+
+</section>
+
+</body>
+</html>

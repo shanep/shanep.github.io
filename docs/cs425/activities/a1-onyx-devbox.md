@@ -41,9 +41,8 @@ policy.
 - **Pick a scribe.** The scribe owns the worksheet at the bottom of this page and
   submits it to Canvas for the whole group at the end of class. Put everyone's
   name on it.
-- **Pick a timekeeper.** The round times below are real. If a round runs long,
-  write down where you got stuck and move on. An honest "we got as far as X" is
-  worth more points than a blank section.
+- If a round bogs down, write down where you got stuck and move on. An honest
+  "we got as far as X" is worth more points than a blank section.
 - Everyone works on their own laptop. This is not a driver and navigator activity,
   because the whole point is that your machines differ.
 
@@ -51,7 +50,7 @@ You need a terminal with an SSH client. macOS and Linux already have one. On
 Windows use PowerShell (which ships with OpenSSH), WSL, or Git Bash. If your
 machine will not cooperate, pair with someone and say so on the worksheet.
 
-## Round 1 - Get on the box (10 minutes)
+## Round 1 - Get on the box
 
 Every member, from your own laptop:
 
@@ -78,7 +77,7 @@ on the machine with you.
 
 :::
 
-## Round 2 - Four laptops, one destination (20 minutes)
+## Round 2 - Four laptops, one destination
 
 This is the round that needs a group. Each member runs the same three commands
 **from their own laptop**, and the scribe collects the answers into the comparison
@@ -125,7 +124,7 @@ hop counts differ.
 
 :::
 
-## Round 3 - Stop typing your password (15 minutes)
+## Round 3 - Stop typing your password
 
 Each member, on your own laptop:
 
@@ -179,7 +178,7 @@ timings in units of round trips rather than in seconds.
 
 :::
 
-## Round 4 - It is a shared machine (10 minutes)
+## Round 4 - It is a shared machine
 
 **Collision.** Two members, at the same time, on Onyx:
 
@@ -230,7 +229,7 @@ Then kill the server and confirm with `ss -ltn` that nothing of yours is left
 listening. Leaving a process running on a shared machine is how you end up in
 somebody's incident report.
 
-## Round 5 - Build the devbox script (15 minutes)
+## Round 5 - Build the devbox script
 
 You now want to edit code on your laptop and build it on Onyx without a pile of
 `scp` commands. Everyone copy this into `devbox.sh` in a scratch directory, then
@@ -359,9 +358,9 @@ Instructor note, not shown to students.
 and have two or three spare accounts ready. A student with no account is dead in
 the water for Rounds 1, 3 and 4, and the only fix in the moment is to pair them.
 
-**Timing.** The rounds add to 70 minutes, which leaves nothing. If the period is
-50 minutes, run Rounds 1 through 3 on the first day and Rounds 4 and 5 on the
-second, and split the worksheet at the same seam.
+**Pacing.** There is more here than one period holds. Rounds 1 through 3 make a
+coherent first day and Rounds 4 and 5 a second, and the worksheet splits at the
+same seam. If you are running it in a single period, Round 5 is the one to drop.
 
 **Where it goes wrong.**
 

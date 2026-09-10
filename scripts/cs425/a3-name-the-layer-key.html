@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A3 Answer Key</title>
+<style>
+  @page { size: letter; margin: 0.5in 0.55in 0.45in 0.55in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 9.3pt/1.33 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.1pt; }
+
+  .page { page-break-after: auto; }
+  .demo, .box, .ans, .bar, .node, .leaf, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 9.8pt; margin: 10pt 0 5pt; text-transform: uppercase; letter-spacing: 0.8pt;
+       border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.4pt; margin: 7pt 0 3pt; }
+  p { margin: 0 0 4pt; }
+  .tiny { font-size: 8.1pt; }
+  .dim { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 4pt; }
+  .mast .right { text-align: right; }
+  .stamp { display: inline-block; background: #000; color: #fff; padding: 3pt 8pt;
+           font-size: 8.5pt; font-weight: bold; letter-spacing: 1pt; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 3pt 5pt; vertical-align: top; text-align: left; font-size: 8.2pt; }
+  th { background: #e4e4e4; font-size: 7.8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+  .st { background: #e4e4e4; font-weight: bold; width: 13pt; text-align: center; }
+
+  .demo { border: 0.75pt solid #000; margin-bottom: 7pt; }
+  .demo .hd { background: #e4e4e4; padding: 3pt 6pt; font-size: 8.3pt; font-weight: bold;
+              border-bottom: 0.75pt solid #000; }
+  .demo pre { margin: 0; padding: 5pt 6pt; font-family: "SF Mono","Menlo","Consolas",monospace;
+              font-size: 7.5pt; line-height: 1.32; white-space: pre-wrap; word-break: break-word; }
+  .demo .say { padding: 4pt 6pt; border-top: 0.75pt dashed #666; font-size: 8.1pt; background: #f7f7f7; }
+  .demo .say b { text-transform: uppercase; font-size: 7.6pt; letter-spacing: 0.5pt; }
+  .cmd { font-weight: bold; }
+
+  .ans { border-left: 3pt solid #000; padding: 3pt 0 3pt 8pt; margin: 0 0 6pt; }
+  .ans .q { font-weight: bold; }
+  .box { border: 1pt solid #000; padding: 5pt 7pt; margin-bottom: 7pt; }
+  .box.fill { background: #eee; }
+  .box h3 { margin-top: 0; }
+  .bar { border: 1pt dashed #000; padding: 3pt 7pt; margin-bottom: 7pt; font-size: 8.1pt; background: #f6f6f6; }
+  .bar strong { text-transform: uppercase; letter-spacing: 0.6pt; font-size: 7.6pt; }
+
+  ol, ul { margin: 0 0 5pt; padding-left: 15pt; }
+  li { margin-bottom: 3pt; }
+  .push { font-size: 8.1pt; }
+  .push li { margin-bottom: 2.5pt; }
+
+  .tree { font-size: 8.4pt; }
+  .node { border: 1pt solid #000; padding: 3pt 6pt; margin-bottom: 4pt; }
+  .node.q { background: #e4e4e4; font-weight: bold; }
+  .branch { margin-left: 13pt; padding-left: 9pt; border-left: 0.75pt dashed #666; }
+  .leaf { border: 0.75pt solid #000; padding: 3pt 6pt; margin-bottom: 4pt; }
+</style>
+</head>
+<body>
+
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A3 &middot; Answer Key and Demo Script</h1>
+      <div class="tiny">CS425 &middot; Name the Layer</div>
+    </div>
+    <div class="right"><span class="stamp">INSTRUCTOR COPY</span></div>
+  </div>
+  <p class="tiny dim" style="margin-bottom:8pt">Graded pass/fail. A3 runs on A2's testbed and needs stations 1, 2, 3 and
+  7 live. Relaunch if you tore it down, and <b>put the new addresses on the board</b>: they will not match A2's, which is
+  worth saying out loud, because it is the whole reason the worksheet is written in terms of ALPHA and BRAVO.</p>
+
+  <div class="demo">
+    <pre><span class="cmd">$ ./scripts/cs425/a2-connectivity-triage.sh verify   # expect 9 passed, 0 failed
+$ ./scripts/cs425/a2-connectivity-triage.sh card     # the two IPs, for the board
+$ ALPHA=35.90.160.84</span></pre>
+  </div>
+
+  <h2>Round 1 &middot; The decision tree</h2>
+  <div class="tree">
+    <div class="node q">Q1. Does the name resolve, and to what address?</div>
+    <div class="branch">
+      <div class="leaf"><b>NXDOMAIN.</b> cause: no such name &middot; layer: application (DNS) &middot; fixed by: whoever
+        owns the zone. <span class="dim">A2 station 4. Zero packets sent to the target.</span></div>
+      <div class="leaf"><b>Resolves to an unroutable address.</b> cause: the record is wrong, RFC 1918 &middot;
+        layer: application, symptom at the network layer &middot; fixed by: whoever owns the record.
+        <span class="dim">A2 station 5.</span></div>
+      <div class="node q">Q2. Does the TCP connection complete?</div>
+      <div class="branch">
+        <div class="leaf"><b>Instant, "refused", host sent a RST.</b> cause: nothing listening on that port &middot;
+          layer: transport &middot; fixed by: whoever runs the server. <span class="dim">A2 station 3.</span></div>
+        <div class="leaf"><b>Hangs, nothing came back.</b> cause: a packet filter dropping silently &middot; layer: filter
+          acting on transport ports at the network edge &middot; fixed by: whoever runs the network or the security group.
+          <span class="dim">A2 station 2.</span></div>
+        <div class="node q">Q3. Does the application actually send a response?</div>
+        <div class="branch">
+          <div class="leaf"><b>Open, no bytes.</b> cause: the server accepted and never wrote &middot; layer: application &middot;
+            fixed by: whoever runs the server. <span class="dim">Station 7, today's Round 2.</span></div>
+          <div class="leaf"><b>It works.</b> If ping still fails, that tells you <b>only that ICMP is filtered</b>, and
+            nothing about the service. <span class="dim">A2 station 6.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="tiny">The ordering is the content. Q1 has to come first because a name failure means <b>no packet was ever
+  sent</b>, so nothing below it can possibly be the cause. Q3 has to come last because it is the only question you cannot
+  ask until a connection exists. A group that puts "can I ping it" anywhere in this tree has missed Round 3 of A2, and
+  that is worth catching.</p>
+  <div class="bar"><strong>Pass bar:</strong> Q1 is about name resolution and comes first, every leaf has something in the
+  layer and owner slots, and all six A2 stations land somewhere in the summary table.</div>
+
+  <h2>Round 2 &middot; Station 7, the stall</h2>
+
+  <div class="demo">
+    <div class="hd">Station 7 &middot; the handshake that leads nowhere</div>
+<pre><span class="cmd">$ nc -vz -G 5 $ALPHA 8084</span>   <span class="dim"># -G on macOS, -w on Linux</span>
+Connection to 35.90.160.84 port 8084 [tcp/*] <b>succeeded!</b>
+
+<span class="cmd">$ curl -sS -o /dev/null -m 6 -w 'connect=%{time_connect}\n' http://$ALPHA:8084/</span>
+curl: (28) <b>Operation timed out</b> after 6006 milliseconds <b>with 0 bytes received</b>
+connect=0.024711
+
+<span class="dim"># for contrast, station 2 from A2:</span>
+curl: (28) <b>Connection timed out</b> after 6003 milliseconds
+connect=<b>0.000000</b></pre>
+    <div class="say"><b>Say:</b> both are exit 28, and they are different failures. Station 2 says "<b>Connection</b>
+      timed out" with <span class="mono">connect=0.000000</span>: the handshake never happened. Station 7 says
+      "<b>Operation</b> timed out with 0 bytes received" and <span class="mono">connect=0.024711</span>, a real number.
+      Transport succeeded. The application never wrote.</div>
+  </div>
+
+  <div class="ans">
+    <div class="q">1. Which layer completed, which never did?</div>
+    <b>Transport completed</b>, which is why <span class="mono">nc -vz</span> is happy. <b>The application never did.</b>
+  </div>
+  <div class="ans">
+    <div class="q">2. What does the <span class="mono">connect=</span> difference tell you?</div>
+    It is the dividing line. A zero means the fault is at or below transport; a real value with a timeout after it means
+    transport is fine and the fault is above it. This single field turns one symptom into two diagnoses.
+  </div>
+  <div class="ans">
+    <div class="q">3. What does the load balancer's health check say, and why is that worse than nothing?</div>
+    It says <b>healthy</b>. That is worse than no check because it actively keeps a wedged instance in the pool, hides the
+    outage behind a green dashboard, and sends real users to a server that will never answer them. A check that opens a
+    port tests the kernel, not the service. A useful check reads a response.
+    <p style="margin:3pt 0 0">If a group gets fired up about this one, they are right to: it is one of the most common
+    real world outages there is.</p>
+  </div>
+  <div class="ans">
+    <div class="q">4. Where does it land on the tree?</div>
+    Under Q3, the branch most groups do not have until they meet this station. Adding the branch <em>is</em> the answer;
+    a group that says "our tree was missing this" has done the round correctly.
+  </div>
+  <div class="bar"><strong>Pass bar:</strong> the two timeout messages are distinguished, and the tree has a branch for
+  "connected and nothing came back".</div>
+
+  <h2>Round 3 &middot; Predict, then watch</h2>
+  <p class="tiny"><b>Do not run the capture until every group has written a prediction.</b> The point of the round is that
+  a wrong prediction is informative, and it stops being informative once they have seen the answer.</p>
+
+  <div class="demo">
+    <div class="hd">The demo &middot; run this on ALPHA, project it</div>
+<pre><span class="cmd">$ ./scripts/cs425/a2-connectivity-triage.sh ssh -- \
+      sudo tcpdump -nni any 'tcp port 8081 or tcp port 8082'</span>
+
+<span class="dim"># a volunteer probes 8081 ... nothing appears at all ...
+# the same volunteer probes 8082:</span>
+01:09:55.964937 ens5 In  IP 135.134.183.169.64447 &gt; 172.31.1.125.8082: Flags [<b>S</b>], length 0
+01:09:55.964963 ens5 Out IP 172.31.1.125.8082 &gt; 135.134.183.169.64447: Flags [<b>R.</b>], win 0, length 0</pre>
+    <div class="say"><b>Say:</b> port 8081 produces <b>no packets at all</b>. Port 8082 shows the SYN arriving and the RST
+      leaving <b>26 microseconds later</b>. Same host, same capture, same instant.
+      <span class="dim">Use <span class="mono">-nn</span>, not <span class="mono">-n</span>, or tcpdump renames 8082 to a
+      service name and the output stops being readable.</span></div>
+  </div>
+
+  <div class="ans">
+    <div class="q">The answer: before or after?</div>
+    <b>Before.</b> An AWS security group is enforced at the virtual network interface, ahead of delivery to the instance,
+    so the host genuinely never sees the SYN for 8081. The absence of packets is the evidence.
+    <p style="margin:3pt 0 0"><b>The useful wrong prediction</b> is "they arrived and something on the host rejected
+    them". That is exactly what a <em>host</em> firewall like <span class="mono">iptables</span> would do, and the
+    capture would then show the SYNs arriving. The client cannot tell those two apart, which is the entire reason you go
+    and look at the server. Give full credit for it and use it at the board.</p>
+  </div>
+  <div class="bar"><strong>Pass bar:</strong> a prediction was written before the demo, the command names a packet capture
+  tool, and the group recorded that 8081 showed nothing while 8082 showed a SYN and a RST.</div>
+
+  <h2>Round 4 &middot; Say it out loud</h2>
+  <div class="ans">
+    <div class="q">1. The two symptom words, and what the server sends.</div>
+    <b>Timeout</b> and <b>refused</b>. On a refusal the kernel sends a <b>TCP RST</b>. On a timeout the server
+    <b>sends nothing at all</b>, which is why it takes seconds instead of milliseconds: the client is waiting out its own
+    retransmissions rather than reacting to a reply.
+  </div>
+  <div class="ans">
+    <div class="q">2. One command, three outcomes.</div>
+    The intended answer is one <span class="mono">curl -v --connect-timeout 5</span> at the real endpoint, because it
+    walks all three layers and reports where it stopped: <b>(a)</b> could not resolve, so it is DNS and no packet was
+    sent; <b>(b)</b> refused or timed out, separating a live host with a dead service from a path that drops;
+    <b>(c)</b> a status line, so the service is up and the reporter's problem is elsewhere.
+    <p style="margin:3pt 0 0">Any command with three genuinely distinct outcomes passes. A group that picks
+    <span class="mono">dig</span> and argues resolution is cheapest to rule out first has made a real argument; take it.
+    A group that picks <b>ping</b> has not, and A2 Round 3 is the counterexample they collected themselves.</p>
+  </div>
+  <div class="bar"><strong>Pass bar:</strong> a command is named and three outcomes are listed. Whether the choice is the
+  one you would make matters less than whether they can say what the output would tell them.</div>
+
+  <div class="box">
+    <h3>Running the room</h3>
+    <ul class="push" style="margin-bottom:0">
+      <li><b>A group without their A2 data.</b> Hand them the mechanism table from the A2 key rather than letting them
+        burn the period re-probing stations 1 through 6.</li>
+      <li><b>Round 1 is the deliverable.</b> If the period runs short, compress Round 2 to questions 1 and 3 and keep
+        Round 3, which needs you at the projector anyway.</li>
+      <li><b>The tree is the artifact they keep</b>, so say that out loud before they hand it in. The stretch,
+        compressing it to five runbook lines with no diagram, is the real test of whether they understood it.</li>
+    </ul>
+  </div>
+
+  <div class="box fill">
+    <h3>When the last section is done</h3>
+    <p class="tiny" style="margin:0">Nothing expires on its own.
+    <span class="mono">./scripts/cs425/a2-connectivity-triage.sh destroy --purge-key</span></p>
+  </div>
+
+</section>
+
+</body>
+</html>

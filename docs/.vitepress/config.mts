@@ -259,6 +259,7 @@ function cs425(): DefaultTheme.SidebarItem[] {
         { text: 'Schedule',     link: 'schedule/index' },
         { text: 'Objectives',   link: 'objectives' },
         { text: 'Resources',    link: 'resources' },
+        { text: 'Glossary',     link: 'glossary' },
         { text: 'Projects',     link: 'assignments/index' },
         { text: 'Activities',   link: 'activities/index' },
       ]
@@ -286,6 +287,7 @@ function cs425(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'A1 - Get on the Box',              link: 'activities/a1-onyx-devbox' },
         { text: 'A2 - Connectivity Triage',         link: 'activities/a2-connectivity-triage' },
+        { text: 'A3 - Name the Layer',             link: 'activities/a3-name-the-layer' },
       ]
     },
     {
