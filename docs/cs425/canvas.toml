@@ -51,9 +51,10 @@ grace_days = 0
 # because a push pairs them up by name and would otherwise create a second group
 # beside the one that is already there.
 #
-# Exams carry half the grade and have nothing in this repo: the exam guides
-# publish as pages and the exams themselves are Canvas quizzes built by hand, so
-# the group is declared with no kinds and the quizzes are filed into it in Canvas.
+# Exams carry half the grade and have nothing in this repo: the review notes
+# publish as module pages and the exams themselves are Canvas quizzes built by
+# hand, so the group is declared with no kinds and the quizzes are filed into it
+# in Canvas.
 # ---------------------------------------------------------------------------
 
 [[group]]
@@ -93,7 +94,6 @@ pages = [
     "assignments/index.md",
     "activities/index.md",
     "assignments/grading-rubric.md",
-    "assignments/*-exam-guide.md",
 ]
 # The activity worksheets. The real PDFs live in docs/public/cs425/activities/,
 # because that is the only place VitePress serves them from; the entries under
@@ -161,7 +161,6 @@ items = ["assignments/p3.md"]
 [[module]]
 title = "Week 8: Midterm Exam"
 page  = "notes/midterm-review.md"
-items = ["assignments/midterm-exam-guide.md"]
 
 [[module]]
 title = "Week 9-10: The Network Layer - Control Plane"
@@ -183,4 +182,3 @@ page  = "notes/ch08-security.md"
 [[module]]
 title = "Finals Week"
 page  = "notes/final-review.md"
-items = ["assignments/final-exam-guide.md"]

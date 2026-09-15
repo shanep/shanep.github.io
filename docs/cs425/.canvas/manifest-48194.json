@@ -14,13 +14,6 @@
       "page_url": "in-class-activities",
       "title": "In Class Activities"
     },
-    "assignments/final-exam-guide.md": {
-      "canvas_id": "final-study-guide",
-      "extra": {},
-      "kind": "page",
-      "page_url": "final-study-guide",
-      "title": "Final Study Guide"
-    },
     "assignments/grading-rubric.md": {
       "canvas_id": "grading-rubric",
       "extra": {},
@@ -34,13 +27,6 @@
       "kind": "page",
       "page_url": "projects",
       "title": "Projects"
-    },
-    "assignments/midterm-exam-guide.md": {
-      "canvas_id": "midterm-study-guide",
-      "extra": {},
-      "kind": "page",
-      "page_url": "midterm-study-guide",
-      "title": "Midterm Study Guide"
     },
     "assignments/p0.md": {
       "canvas_id": "1806250",
