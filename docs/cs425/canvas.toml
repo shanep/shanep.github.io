@@ -129,29 +129,35 @@ due = "fri 23:59"
 # it as unpublished rather than silently skipping it.
 # ---------------------------------------------------------------------------
 
+# `canvas` names objects that live only in Canvas, built by hand: the knowledge
+# check quizzes and the exams. A push rebuilds every module from this file, so a
+# quiz that is not listed here falls out of its module on the next push.
 [[module]]
-title = "Week 1-2: Computer Networks and the Internet"
-page  = "notes/ch01-internet.md"
-items = ["assignments/p0.md"]
+title  = "Week 1-2: Computer Networks and the Internet"
+page   = "notes/ch01-internet.md"
+items  = ["assignments/p0.md"]
+canvas = [{ quiz = 393657, title = "Chapter 1 - Knowledge Check" }]
 
 [[module]]
-title = "Week 3-4: The Application Layer"
-page  = "notes/ch02-application.md"
-items = [
+title  = "Week 3-4: The Application Layer"
+page   = "notes/ch02-application.md"
+items  = [
     "activities/a1-application-layer.md",
     "activities/a2-stop-typing-your-password.md",
     "assignments/p1.md",
 ]
+canvas = [{ quiz = 393659, title = "Chapter 2 - Knowledge Check" }]
 
 [[module]]
-title = "Week 5-6: The Transport Layer"
-page  = "notes/ch03-transport.md"
-items = [
+title  = "Week 5-6: The Transport Layer"
+page   = "notes/ch03-transport.md"
+items  = [
     "activities/a3-curl-nc-ping.md",
     "activities/a4-connectivity-triage.md",
     "activities/a5-name-the-layer.md",
     "assignments/p2.md",
 ]
+canvas = [{ quiz = 393660, title = "Chapter 3 - Knowledge Check" }]
 
 [[module]]
 title = "Week 7: The Network Layer - Data Plane"
@@ -159,8 +165,12 @@ page  = "notes/ch04-network-data.md"
 items = ["assignments/p3.md"]
 
 [[module]]
-title = "Week 8: Midterm Exam"
-page  = "notes/midterm-review.md"
+title  = "Week 8: Midterm Exam"
+page   = "notes/midterm-review.md"
+canvas = [
+    { quiz = 394147, title = "Midterm Practice Exam" },
+    { quiz = 393662, title = "Midterm Exam" },
+]
 
 [[module]]
 title = "Week 9-10: The Network Layer - Control Plane"
@@ -180,5 +190,6 @@ title = "Week 14-15: Security in Computer Networks"
 page  = "notes/ch08-security.md"
 
 [[module]]
-title = "Finals Week"
-page  = "notes/final-review.md"
+title  = "Finals Week"
+page   = "notes/final-review.md"
+canvas = [{ quiz = 393664, title = "Final Exam" }]

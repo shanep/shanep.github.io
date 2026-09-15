@@ -133,20 +133,6 @@
       "page_url": "course-introduction",
       "title": "Course Introduction"
     },
-    "notes/final-review.md": {
-      "canvas_id": "final-review",
-      "extra": {},
-      "kind": "page",
-      "page_url": "final-review",
-      "title": "Final Review"
-    },
-    "notes/midterm-review.md": {
-      "canvas_id": "midterm-review",
-      "extra": {},
-      "kind": "page",
-      "page_url": "midterm-review",
-      "title": "Midterm Review"
-    },
     "objectives.md": {
       "canvas_id": "course-objectives",
       "extra": {},
