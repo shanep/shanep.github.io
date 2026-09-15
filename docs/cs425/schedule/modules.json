@@ -1,0 +1,252 @@
+[
+  {
+    "title": "Week 1-2: Computer Networks and the Internet",
+    "items": [
+      {
+        "kind": "page",
+        "title": "Chapter 1 - Computer Networks and the Internet",
+        "path": "notes/ch01-internet",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "P0 - Compile, Test, Debug",
+        "path": "assignments/p0",
+        "due_at": "2026-09-01T23:59:00-06:00",
+        "points": 50.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "quiz",
+        "title": "Chapter 1 - Knowledge Check",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "393657"
+      }
+    ]
+  },
+  {
+    "title": "Week 3-4: The Application Layer",
+    "items": [
+      {
+        "kind": "page",
+        "title": "Chapter 2 - The Application Layer",
+        "path": "notes/ch02-application",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "A1 - Speaking the Application Layer",
+        "path": "activities/a1-application-layer",
+        "due_at": "2026-09-09T23:59:00-06:00",
+        "points": 20.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "A2 - Stop Typing Your Password",
+        "path": "activities/a2-stop-typing-your-password",
+        "due_at": "2026-09-16T23:59:00-06:00",
+        "points": 20.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "P1 - Simple Mail Client",
+        "path": "assignments/p1",
+        "due_at": "2026-09-18T23:59:00-06:00",
+        "points": 100.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "quiz",
+        "title": "Chapter 2 - Knowledge Check",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "393659"
+      }
+    ]
+  },
+  {
+    "title": "Week 5-6: The Transport Layer",
+    "items": [
+      {
+        "kind": "page",
+        "title": "Chapter 3 - The Transport Layer",
+        "path": "notes/ch03-transport",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "A3 - curl, nc, and ping",
+        "path": "activities/a3-curl-nc-ping",
+        "due_at": "2026-09-23T23:59:00-06:00",
+        "points": 20.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "P2 - Reliable Data Transfer",
+        "path": "assignments/p2",
+        "due_at": "2026-10-06T23:59:00-06:00",
+        "points": 100.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "quiz",
+        "title": "Chapter 3 - Knowledge Check",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "393660"
+      }
+    ]
+  },
+  {
+    "title": "Week 7: The Network Layer - Data Plane",
+    "items": [
+      {
+        "kind": "page",
+        "title": "Chapter 4 - The Network Layer: Data Plane",
+        "path": "notes/ch04-network-data",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "P3 - Subnetting and Forwarding",
+        "path": "assignments/p3",
+        "due_at": "2026-10-27T23:59:00-06:00",
+        "points": 100.0,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
+    "title": "Week 8: Midterm Exam",
+    "items": [
+      {
+        "kind": "quiz",
+        "title": "Midterm Practice Exam",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "394147"
+      },
+      {
+        "kind": "quiz",
+        "title": "Midterm Exam",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "393662"
+      }
+    ]
+  },
+  {
+    "title": "Week 9-10: The Network Layer - Control Plane",
+    "items": [
+      {
+        "kind": "page",
+        "title": "Chapter 5 - The Network Layer: Control Plane",
+        "path": "notes/ch05-network-control",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
+    "title": "Week 11-12: The Link Layer and LANs",
+    "items": [
+      {
+        "kind": "page",
+        "title": "Chapter 6 - The Link Layer and LANs",
+        "path": "notes/ch06-link",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "P4 - Packet Capture and Analysis",
+        "path": "assignments/p4",
+        "due_at": "2026-11-17T23:59:00-07:00",
+        "points": 100.0,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
+    "title": "Week 13: Wireless and Mobile Networks",
+    "items": [
+      {
+        "kind": "page",
+        "title": "Chapter 7 - Wireless and Mobile Networks",
+        "path": "notes/ch07-wireless",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
+    "title": "Week 14-15: Security in Computer Networks",
+    "items": [
+      {
+        "kind": "page",
+        "title": "Chapter 8 - Security in Computer Networks",
+        "path": "notes/ch08-security",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
+    "title": "Week 16",
+    "items": [
+      {
+        "kind": "assignment",
+        "title": "End of Semester Student Evaluation (15 min)",
+        "path": "extra-credit/ec-evaluation",
+        "due_at": "2026-12-11T23:59:00-07:00",
+        "points": 10.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "Finding Typos, Bugs, and Improvements (15 min)",
+        "path": "extra-credit/ec-typos",
+        "due_at": "2026-12-11T23:59:00-07:00",
+        "points": 10.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "General Extra Credit",
+        "path": "extra-credit/ec-general",
+        "due_at": "2026-12-11T23:59:00-07:00",
+        "points": 10.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "quiz",
+        "title": "Final Exam",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "393664"
+      }
+    ]
+  }
+]

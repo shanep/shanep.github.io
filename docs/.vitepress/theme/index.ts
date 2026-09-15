@@ -3,6 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import OfficeHoursLink from './OfficeHoursLink.vue'
 import CourseSchedule from './CourseSchedule.vue'
+import CanvasModules from './CanvasModules.vue'
 import SlideView from './SlideView.vue'
 import type { Theme } from 'vitepress'
 
@@ -11,6 +12,7 @@ export default {
   enhanceApp({ app }) {
     app.component('OfficeHoursLink', OfficeHoursLink)
     app.component('CourseSchedule', CourseSchedule)
+    app.component('CanvasModules', CanvasModules)
     app.component('SlideView', SlideView)
   }
 } satisfies Theme
