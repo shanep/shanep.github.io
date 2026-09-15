@@ -28,8 +28,7 @@ the start and the instructor will get you a filled in copy; do not spend the
 period re-probing stations 1 through 6.
 
 One paper worksheet per group, turned in before you leave, graded pass/fail.
-Copies are handed out in class, and the same worksheet is at
-[a5-worksheet.pdf](./a5-worksheet.pdf).
+Copies are handed out in class.
 
 :::
 
@@ -152,6 +151,8 @@ runbook: five lines, no diagram, each line a symptom and the first thing to chec
 Being able to compress it is the test of whether you understand it.
 
 ## Worksheet
+
+**Download: [a5-worksheet.pdf](./a5-worksheet.pdf)**
 
 The printed worksheet handed out in class is what you fill in and turn in. It has,
 in this order:

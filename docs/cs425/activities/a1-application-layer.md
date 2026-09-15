@@ -27,8 +27,7 @@ wrong, and that is a much more useful argument to have.
 ::: warning
 
 This is a paper activity. Your group turns in **one filled out worksheet, on
-paper, before you leave the room**. Copies are handed out in class, and the same
-worksheet is at [a1-worksheet.pdf](./a1-worksheet.pdf).
+paper, before you leave the room**. Copies are handed out in class.
 
 It is graded pass/fail. Both rounds attempted in good faith is a pass. Being
 wrong about what a switch did costs you nothing as long as you wrote down what
@@ -183,6 +182,8 @@ Write down what came back. Is the name it gave you the one you started with? If
 not, that is a good thing to ask about.
 
 ## Worksheet
+
+**Download: [a1-worksheet.pdf](./a1-worksheet.pdf)**
 
 The printed worksheet handed out in class is what you fill in and turn in. It
 covers, in order: the box and your tool versions; reading one `dig` answer; the

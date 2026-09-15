@@ -31,8 +31,7 @@ minute.
 ::: warning
 
 This is a paper activity. Your group turns in **one filled out worksheet, on
-paper, before you leave the room**. Copies are handed out in class, and the same
-worksheet is at [a3-worksheet.pdf](./a3-worksheet.pdf).
+paper, before you leave the room**. Copies are handed out in class.
 
 It is graded pass/fail. Every round attempted in good faith is a pass, and being
 wrong about what a switch did costs you nothing as long as you wrote down what
@@ -238,6 +237,8 @@ probe onyx.boisestate.edu 9
 Compare that to what `nc -vz` said about the same port in Round 2.
 
 ## Worksheet
+
+**Download: [a3-worksheet.pdf](./a3-worksheet.pdf)**
 
 The printed worksheet handed out in class is what you fill in and turn in. It
 covers, in order: the `curl` reading and phase breakdown; the two `nc` port

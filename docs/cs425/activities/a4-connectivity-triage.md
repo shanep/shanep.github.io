@@ -32,8 +32,7 @@ This is a paper activity. Your group turns in **one filled out worksheet, on
 paper, before you leave the room**. Nothing is submitted to Canvas and nothing is
 accepted afterward, so write as you go rather than at the end.
 
-Copies are handed out in class. The same worksheet is at
-[a4-worksheet.pdf](./a4-worksheet.pdf) if you need another one.
+Copies are handed out in class.
 
 It is graded pass/fail. Every round attempted in good faith is a pass, and being
 wrong about a station costs you nothing as long as you wrote down what you saw.
@@ -274,6 +273,8 @@ Then hand the worksheet in. Names on it, all of them. You get it back at the
 start of A5, which is built on your station table.
 
 ## Worksheet
+
+**Download: [a4-worksheet.pdf](./a4-worksheet.pdf)**
 
 The printed worksheet handed out in class is what you fill in and turn in. It has,
 in this order:
