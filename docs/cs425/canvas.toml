@@ -164,9 +164,10 @@ title = "Week 7: The Network Layer - Data Plane"
 page  = "notes/ch04-network-data.md"
 items = ["assignments/p3.md"]
 
+# The two exam modules have no repo content at all: the review pages were
+# removed, and what is left is the quizzes built by hand in Canvas.
 [[module]]
 title  = "Week 8: Midterm Exam"
-page   = "notes/midterm-review.md"
 canvas = [
     { quiz = 394147, title = "Midterm Practice Exam" },
     { quiz = 393662, title = "Midterm Exam" },
@@ -191,5 +192,4 @@ page  = "notes/ch08-security.md"
 
 [[module]]
 title  = "Finals Week"
-page   = "notes/final-review.md"
 canvas = [{ quiz = 393664, title = "Final Exam" }]
