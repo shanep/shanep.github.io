@@ -7,6 +7,47 @@
       "page_url": "",
       "title": "A1 - Speaking the Application Layer"
     },
+    "activities/a1-worksheet.pdf": {
+      "canvas_id": "25109507",
+      "extra": {
+        "size": "157542"
+      },
+      "kind": "file",
+      "page_url": "",
+      "title": "a1-worksheet.pdf"
+    },
+    "activities/a2-stop-typing-your-password.md": {
+      "canvas_id": "1813614",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "A2 - Stop Typing Your Password"
+    },
+    "activities/a2-worksheet.pdf": {
+      "canvas_id": "25109510",
+      "extra": {
+        "size": "112818"
+      },
+      "kind": "file",
+      "page_url": "",
+      "title": "a2-worksheet.pdf"
+    },
+    "activities/a3-curl-nc-ping.md": {
+      "canvas_id": "1813615",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "A3 - curl, nc, and ping"
+    },
+    "activities/a3-worksheet.pdf": {
+      "canvas_id": "25109512",
+      "extra": {
+        "size": "159152"
+      },
+      "kind": "file",
+      "page_url": "",
+      "title": "a3-worksheet.pdf"
+    },
     "activities/index.md": {
       "canvas_id": "in-class-activities",
       "extra": {},
@@ -75,7 +116,7 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
-      "title": "General Extra credit"
+      "title": "General Extra Credit"
     },
     "extra-credit/ec-typos.md": {
       "canvas_id": "1810606",
@@ -83,6 +124,13 @@
       "kind": "assignment",
       "page_url": "",
       "title": "Finding Typos, Bugs, and Improvements (15 min)"
+    },
+    "glossary.md": {
+      "canvas_id": "glossary",
+      "extra": {},
+      "kind": "page",
+      "page_url": "glossary",
+      "title": "Glossary"
     },
     "index.md": {
       "canvas_id": "48194",
