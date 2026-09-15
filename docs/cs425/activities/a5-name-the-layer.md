@@ -4,42 +4,42 @@ prev: false
 draft: true
 ---
 
-# A3 - Name the Layer
+# A5 - Name the Layer
 
-**Week 4 · 20 points · pass/fail · one paper worksheet per group, turned in before you leave**
+**Week 6 · 20 points · pass/fail · one paper worksheet per group, turned in before you leave**
 
 ## Overview
 
-In [A2](./a2-connectivity-triage.md) you collected fingerprints. Six stations, six
+In [A4](./a4-connectivity-triage.md) you collected fingerprints. Six stations, six
 different failures, and a table full of what each one actually printed. That table
 is raw data. Today you turn it into something you can use at three in the morning
 when something is broken and you are the one holding the pager.
 
 By the end you will have a **decision procedure**: a short sequence of questions
 that takes any "it doesn't work" and lands on a layer, a cause, and a name of who
-can fix it. You will also meet the one failure A2 deliberately held back, because
+can fix it. You will also meet the one failure A4 deliberately held back, because
 it breaks the procedure that most people carry around in their head.
 
 ::: warning
 
-**Your A2 worksheet comes back to you at the start of this period.** Round 1 is
+**Your A4 worksheet comes back to you at the start of this period.** Round 1 is
 built directly on the station table in it. If your group is missing one, say so at
 the start and the instructor will get you a filled in copy; do not spend the
 period re-probing stations 1 through 6.
 
 One paper worksheet per group, turned in before you leave, graded pass/fail.
 Copies are handed out in class, and the same worksheet is at
-[a3-worksheet.pdf](/cs425/a3-worksheet.pdf).
+[a5-worksheet.pdf](./a5-worksheet.pdf).
 
 :::
 
 ## Before you start
 
-- **Same groups as A2** if you can manage it, since the data came from those
+- **Same groups as A4** if you can manage it, since the data came from those
   laptops.
 - **One scribe** owns the worksheet and writes everyone's name at the top.
 - The two addresses go on the board again. They will be **different** from the
-  ones you used in A2, because the machines get rebuilt. Copy the new ones into
+  ones you used in A4, because the machines get rebuilt. Copy the new ones into
   the target card before you probe anything.
 
 The glossary on the back of your worksheet has every term used here. If somebody
@@ -62,13 +62,13 @@ Two rules for the leaves:
   network in between. This is the part people skip, and it is the part that
   decides who you wake up.
 
-Then fill in the summary table, one row per station from A2, so the tree and your
+Then fill in the summary table, one row per station from A4, so the tree and your
 observations agree with each other. If a row does not fit any leaf of your tree,
 your tree is missing a branch. That is a finding, not a mistake.
 
 ::: tip Checkpoint
 
-Every leaf of your tree has a layer and an owner written in it, and all six A2
+Every leaf of your tree has a layer and an owner written in it, and all six A4
 stations land somewhere.
 
 :::
@@ -77,7 +77,7 @@ stations land somewhere.
 
 **Station 7 is ALPHA port 8084.**
 
-Probe it the way you probed everything in A2:
+Probe it the way you probed everything in A4:
 
 ```bash
 ALPHA=203.0.113.10     # replace with YOUR alpha address from the board
@@ -88,7 +88,7 @@ curl -sS -o /dev/null -m 8 -w 'connect=%{time_connect} total=%{time_total}\n' ht
 
 `nc` is delighted. `curl` sits there and then gives up.
 
-Now compare the exact curl message to the one station 2 gave you in A2, and
+Now compare the exact curl message to the one station 2 gave you in A4, and
 compare the two `connect=` values. They are not the same, and the difference is
 the whole answer.
 
@@ -112,7 +112,7 @@ your group can say why a port check is not a health check.
 
 ## Round 3 - Predict, then watch
 
-For station 2 in A2, your packets vanished. Here is the question you could not
+For station 2 in A4, your packets vanished. Here is the question you could not
 answer from your laptop: **did they vanish before they reached the host, or
 after?**
 
@@ -160,7 +160,7 @@ in this order:
 Target card:  ALPHA = ______________   BRAVO = ______________
 
 Round 1: the decision tree, filled in, plus the summary table
-         (one row per A2 station: what you saw, what it means,
+         (one row per A4 station: what you saw, what it means,
           layer, who fixes it)
 Round 2: station 7 row plus the four questions
 Round 3: your prediction and command, then what the capture showed
@@ -173,27 +173,27 @@ Back page: glossary
 
 Instructor note, not shown to students.
 
-**A3 shares A2's testbed.** There is one script and it is named after A2, because
+**A5 shares A4's testbed.** There is one script and it is named after A4, because
 that is where the testbed is introduced:
 
 ```bash
-./scripts/cs425/a2-connectivity-triage.sh create --region us-west-2 --cidr 132.178.0.0/16
-./scripts/cs425/a2-connectivity-triage.sh verify
-./scripts/cs425/a2-connectivity-triage.sh card
+./scripts/cs425/a4-connectivity-triage.sh create --region us-west-2 --cidr 132.178.0.0/16
+./scripts/cs425/a4-connectivity-triage.sh verify
+./scripts/cs425/a4-connectivity-triage.sh card
 ```
 
-A3's own script renders A3's documents and forwards everything else to A2's, so
+A5's own script renders A5's documents and forwards everything else to A4's, so
 either of these works and there is only one implementation of the testbed:
 
 ```bash
-./scripts/cs425/a3-name-the-layer.sh handout   # student worksheet
-./scripts/cs425/a3-name-the-layer.sh key       # key and demo script
-./scripts/cs425/a3-name-the-layer.sh verify    # forwarded to the A2 script
+./scripts/cs425/a5-name-the-layer.sh handout   # student worksheet
+./scripts/cs425/a5-name-the-layer.sh key       # key and demo script
+./scripts/cs425/a5-name-the-layer.sh verify    # forwarded to the A4 script
 ```
 
-A3 needs stations 1, 2, 3 and 7 live, so if you tore the testbed down after A2,
+A5 needs stations 1, 2, 3 and 7 live, so if you tore the testbed down after A4,
 relaunch it and **put the new addresses on the board**. They will not match the
-ones from A2, which is worth one sentence out loud: the names are stable and the
+ones from A4, which is worth one sentence out loud: the names are stable and the
 addresses are not, and that is the entire reason the worksheet is written in terms
 of ALPHA and BRAVO.
 
@@ -202,7 +202,7 @@ design, so the capture is a demo. Have this ready before class and do not run it
 until every group has written a prediction:
 
 ```bash
-./scripts/cs425/a2-connectivity-triage.sh ssh -- \
+./scripts/cs425/a4-connectivity-triage.sh ssh -- \
     sudo tcpdump -nni any 'tcp port 8081 or tcp port 8082'
 ```
 
@@ -217,7 +217,7 @@ host. That is the useful wrong answer: it is what you would expect from a host
 firewall like `iptables`, and the point is that the client cannot tell the two
 apart, which is exactly why you go look at the server.
 
-**If a group lost their A2 worksheet**, hand them a completed station table rather
+**If a group lost their A4 worksheet**, hand them a completed station table rather
 than letting them burn the period re-probing. The key's mechanism table is the
 fastest thing to photocopy for that.
 

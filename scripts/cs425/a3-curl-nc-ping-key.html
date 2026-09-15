@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A3 Answer Key</title>
+<style>
+  @page { size: letter; margin: 0.5in 0.55in 0.45in 0.55in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 9.3pt/1.33 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.1pt; }
+
+  .page { page-break-after: auto; }
+  .demo, .box, .ans, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 9.8pt; margin: 10pt 0 5pt; text-transform: uppercase; letter-spacing: 0.8pt;
+       border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.4pt; margin: 7pt 0 3pt; }
+  p { margin: 0 0 4pt; }
+  .tiny { font-size: 8.1pt; }
+  .dim { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 4pt; }
+  .mast .right { text-align: right; }
+  .stamp { display: inline-block; background: #000; color: #fff; padding: 3pt 8pt;
+           font-size: 8.5pt; font-weight: bold; letter-spacing: 1pt; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 3pt 5pt; vertical-align: top; text-align: left; font-size: 8.2pt; }
+  th { background: #e4e4e4; font-size: 7.8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+
+  .demo { border: 0.75pt solid #000; margin-bottom: 7pt; }
+  .demo .hd { background: #e4e4e4; padding: 3pt 6pt; font-size: 8.3pt; font-weight: bold;
+              border-bottom: 0.75pt solid #000; }
+  .demo pre { margin: 0; padding: 5pt 6pt; font-family: "SF Mono","Menlo","Consolas",monospace;
+              font-size: 7.5pt; line-height: 1.32; white-space: pre-wrap; word-break: break-word; }
+  .demo .say { padding: 4pt 6pt; border-top: 0.75pt dashed #666; font-size: 8.1pt; background: #f7f7f7; }
+  .demo .say b { text-transform: uppercase; font-size: 7.6pt; letter-spacing: 0.5pt; }
+  .cmd { font-weight: bold; }
+
+  .ans { border-left: 3pt solid #000; padding: 3pt 0 3pt 8pt; margin: 0 0 6pt; }
+  .ans .q { font-weight: bold; }
+  .box { border: 1pt solid #000; padding: 5pt 7pt; margin-bottom: 7pt; }
+  .box.fill { background: #eee; }
+  .box h3 { margin-top: 0; }
+  .bar { border: 1pt dashed #000; padding: 3pt 7pt; margin-bottom: 7pt; font-size: 8.1pt; background: #f6f6f6; }
+  .bar strong { text-transform: uppercase; letter-spacing: 0.6pt; font-size: 7.6pt; }
+
+  ol, ul { margin: 0 0 5pt; padding-left: 15pt; }
+  li { margin-bottom: 3pt; }
+  .push { font-size: 8.1pt; }
+  .push li { margin-bottom: 2.5pt; }
+</style>
+</head>
+<body>
+
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A3 &middot; Answer Key and Demo Script</h1>
+      <div class="tiny">CS425 &middot; curl, nc, and ping</div>
+    </div>
+    <div class="right"><span class="stamp">INSTRUCTOR COPY</span></div>
+  </div>
+  <p class="tiny dim" style="margin-bottom:8pt">Graded pass/fail. Every transcript below is real output captured from
+  <span class="mono">onyx.boisestate.edu</span> while this was written, so you can run any of it at the podium and get
+  the same shape. Numbers will differ; the shapes will not.</p>
+
+  <div class="box fill">
+    <h3>Say this before you hand out the sheet</h3>
+    <p class="tiny" style="margin:0">"Three weeks ago you learned to read <span class="mono">dig</span>. Today, three
+    more tools, and then you have everything A4 needs. <span class="mono">curl</span> talks HTTP. <span class="mono">nc</span>
+    talks nothing, so you have to. <span class="mono">ping</span> is the odd one out and you will see why. Three rounds,
+    one sheet, write down what you see." One minute, then paper.</p>
+  </div>
+
+  <h2>What is on the box</h2>
+  <table>
+    <tr><th style="width:110pt">Thing</th><th>Measured on Onyx</th></tr>
+    <tr><td><span class="mono">curl</span></td><td>7.76.1, OpenSSL 3.5.5, nghttp2</td></tr>
+    <tr><td><span class="mono">nc</span></td><td><b>nmap-ncat 7.92</b> at <span class="mono">/usr/bin/ncat</span>, not BSD netcat</td></tr>
+    <tr><td><span class="mono">ping</span></td><td>iputils 20210202</td></tr>
+    <tr><td>outbound 80 / 443</td><td>open</td></tr>
+    <tr><td>outbound ICMP</td><td><b>blocked</b>, which is the whole of Round 3</td></tr>
+    <tr><td><span class="mono">probe</span></td><td>in <span class="mono">~/.bashrc</span> since A2; if missing, paste the function from the A2 page at the prompt</td></tr>
+  </table>
+
+  <h2>Round 1 &middot; curl</h2>
+
+  <div class="demo">
+    <div class="hd">Both halves of the conversation</div>
+<pre><span class="cmd">$ curl -v http://example.com/</span>
+&gt; GET / HTTP/1.1
+&gt; Host: example.com
+&lt; HTTP/1.1 200 OK
+&lt; Content-Type: text/html</pre>
+    <div class="say"><b>Say:</b> <span class="mono">&gt;</span> is what you sent, <span class="mono">&lt;</span> is what
+      came back. Four lines of text is the whole of an HTTP exchange. They will write this by hand in Round 2.</div>
+  </div>
+
+  <div class="demo">
+    <div class="hd">Where the time goes &middot; this is the layer model, printed</div>
+<pre><span class="cmd">$ curl -o /dev/null -s -w 'dns=%{time_namelookup} connect=%{time_connect} tls=%{time_appconnect} ttfb=%{time_starttransfer} total=%{time_total} code=%{http_code}\n' https://www.boisestate.edu/</span>
+dns=0.002637 connect=0.020129 <b>tls=0.055797</b> ttfb=0.088997 total=0.144840 code=200
+
+<span class="cmd">$ ... the same thing against http:// instead</span>
+dns=0.022634 connect=0.034200 <b>tls=0.000000</b> ttfb=0.057717 total=0.057802 code=200</pre>
+    <div class="say"><b>Say:</b> the answers to the three questions are all in these two lines.
+      <b>(1)</b> Largest jump is usually <span class="mono">connect</span>&rarr;<span class="mono">tls</span> or
+      <span class="mono">tls</span>&rarr;<span class="mono">ttfb</span>. <b>(2)</b> Between
+      <span class="mono">connect</span> and <span class="mono">ttfb</span> sits the TLS handshake and then the server
+      thinking about your request. <b>(3)</b> <span class="mono">tls</span> collapses to <b>exactly zero</b> over plain
+      HTTP, because there is no TLS handshake to measure. Cumulative, not per-phase: each number is time since the start.
+      Subtract neighbors to get the cost of a phase.</div>
+  </div>
+  <div class="ans"><span class="q">Question 4.</span> <span class="mono">probe</span> reports
+  <span class="mono">connect</span> and <span class="mono">total</span> (plus the status code). A group that answers
+  "dns and connect" read the variable names without running <span class="mono">declare -f</span>.</div>
+  <div class="bar"><strong>Pass bar:</strong> all six numbers recorded, and the group said <span class="mono">tls</span>
+  is the one that went to zero.</div>
+
+  <h2>Round 2 &middot; nc</h2>
+
+  <div class="demo">
+    <div class="hd">Refused versus timed out, which is A4 in miniature</div>
+<pre><span class="cmd">$ nc -vz onyx.boisestate.edu 22</span>
+Ncat: <b>Connected to 132.178.227.11:22.</b>
+Ncat: 0 bytes sent, 0 bytes received in 0.01 seconds.
+
+<span class="cmd">$ nc -vz onyx.boisestate.edu 9</span>
+Ncat: <b>Connection refused.</b>
+
+<span class="cmd">$ nc -vz -w 3 example.com 8081</span>
+Ncat: Connection to 172.66.147.243 failed: <b>TIMEOUT.</b></pre>
+    <div class="say"><b>Say:</b> three outcomes, three meanings. Connected, refused (something answered "no"), and
+      timeout (nothing answered at all). Those are A4 stations 1, 3 and 2 respectively, a week early and on a machine
+      nobody deliberately broke.</div>
+  </div>
+
+  <div class="demo">
+    <div class="hd">HTTP by hand, and why the sleep is there</div>
+<pre><span class="cmd">$ printf 'GET / HTTP/1.1\\r\\nHost: example.com\\r\\nConnection: close\\r\\n\\r\\n' | nc -v example.com 80</span>
+Ncat: Connected to 172.66.147.243:80.
+Ncat: <b>56 bytes sent, 0 bytes received</b> in 0.06 seconds.        <span class="dim">&larr; no reply!</span>
+
+<span class="cmd">$ { printf 'GET / HTTP/1.1\\r\\nHost: example.com\\r\\nConnection: close\\r\\n\\r\\n'; sleep 3; } | nc example.com 80</span>
+HTTP/1.1 200 OK
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: close</pre>
+    <div class="say"><b>Say:</b> nmap-ncat closes the connection the instant stdin runs out. The request left the
+      machine, and nc hung up before the answer arrived. <b>Show them the "56 bytes sent, 0 bytes received" line</b>: the
+      tool told them exactly what happened, in numbers, and it is the sort of line people scroll past.
+      <br>The <span class="mono">\\r\\n</span> question is the same rule SMTP uses, so this is P1 preparation. A server
+      given bare <span class="mono">\\n</span> may tolerate it or may hang; either way they cannot see the difference in
+      a terminal, which is the lesson.</div>
+  </div>
+  <div class="bar"><strong>Pass bar:</strong> an HTTP status line obtained without a browser, and the group can say what
+  the two nc failure messages mean.</div>
+
+  <h2>Round 3 &middot; ping, and the contradiction</h2>
+
+  <div class="demo">
+    <div class="hd">The best ninety seconds in the activity</div>
+<pre><span class="cmd">$ ping -c 3 onyx.boisestate.edu</span>
+3 packets transmitted, 3 received, <b>0% packet loss</b>
+
+<span class="cmd">$ ping -c 3 example.com</span>
+3 packets transmitted, 0 received, <b>100% packet loss</b>
+
+<span class="dim">... and in Round 1, twenty minutes earlier, from this same machine:</span>
+<span class="cmd">$ curl -o /dev/null -s -w 'code=%{http_code}\n' http://example.com/</span>
+code=<b>200</b></pre>
+    <div class="say"><b>Say:</b> outbound ICMP is blocked from Onyx, so <em>every</em> host on the internet looks dead to
+      ping from here, including one that served them a web page in the same period. Put both lines on the board together.
+      <br>Answers: <b>(1)</b> ICMP is network layer, riding directly in IP, so it has no ports and no idea what a service
+      is. <b>(2)</b> No: pinging a host says nothing about any program running on it. <b>(3)</b> A failed ping is
+      consistent with a dead host, a filtered ICMP path, a filter at either end, or a middlebox in between. It rules
+      almost nothing out, which is why "it doesn't ping" is not a diagnosis.</div>
+  </div>
+  <div class="bar"><strong>Pass bar:</strong> both ping results recorded side by side, and the group names more than one
+  cause for the failure.</div>
+
+  <div class="box">
+    <h3>Running the room</h3>
+    <ul class="push" style="margin-bottom:0">
+      <li><b>Round 1 twenty minutes, Round 2 twenty five, Round 3 ten.</b> If time is short, cut Round 3's switch table
+        but keep the <span class="mono">ping example.com</span> demonstration; it is ninety seconds and it is the best
+        thing here.</li>
+      <li><b>The Round 2 listener</b> must bind to <span class="mono">127.0.0.1</span> and must be killed. It is a shared
+        department machine.</li>
+      <li><b>Bare <span class="mono">\n</span></b> may be tolerated by the server. "Nothing changed" is still a pass; the
+        point is they could not have told from the terminal.</li>
+      <li><b>Send them out with the worksheet graded and returned before A4</b>, which is the following week and reuses
+        all of this.</li>
+    </ul>
+  </div>
+
+</section>
+
+</body>
+</html>

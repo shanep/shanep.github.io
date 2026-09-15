@@ -32,10 +32,10 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 
 DOCS = [
-    "a2-connectivity-triage.html",
-    "a2-connectivity-triage-key.html",
-    "a3-name-the-layer.html",
-    "a3-name-the-layer-key.html",
+    "a4-connectivity-triage.html",
+    "a4-connectivity-triage-key.html",
+    "a5-name-the-layer.html",
+    "a5-name-the-layer-key.html",
 ]
 
 # Commands that cannot run on the machine grading the check. They are reported
@@ -91,7 +91,7 @@ EXPECTATIONS: dict[str, Expect] = {
     "BRAVO=203.0.113.42     # replace with YOUR bravo address":
         Expect("define", why="assignment, prints nothing"),
     "ALPHA=203.0.113.10          # replace with YOUR alpha address from the card above":
-        Expect("define", why="A3 assignment, prints nothing"),
+        Expect("define", why="A5 assignment, prints nothing"),
     "probe() { curl -sS -o /dev/null -m 8 -w 'connect=%{time_connect} total=%{time_total} code=%{http_code}\\n' \"http://$1:$2/\"; }":
         Expect("define", why="function definition, prints nothing on success"),
 
@@ -120,7 +120,7 @@ EXPECTATIONS: dict[str, Expect] = {
     "dig +short mirage.cs425.lab @$ALPHA -p 5353    # this one does answer":
         Expect("match", r"^10\.42\.13\.37$", why="station 5 resolves into RFC 1918"),
 
-    # ---- A3 round 2 ---------------------------------------------------------
+    # ---- A5 round 2 ---------------------------------------------------------
     "nc -vz -w 5 $ALPHA 8084     # macOS: -G 5 instead of -w 5":
         Expect("match", r"succeeded", why="station 7 completes the handshake"),
     "curl -sS -o /dev/null -m 8 -w 'connect=%{time_connect} total=%{time_total}\\n' http://$ALPHA:8084/":
@@ -170,11 +170,11 @@ EXPECTATIONS: dict[str, Expect] = {
 
 # Commands the check deliberately does not run, with the reason shown.
 UNRUNNABLE_RAW = {
-    "./scripts/cs425/a2-connectivity-triage.sh verify   # expect 9 passed, 0 failed":
+    "./scripts/cs425/a4-connectivity-triage.sh verify   # expect 9 passed, 0 failed":
         "would recurse into the caller",
-    "./scripts/cs425/a2-connectivity-triage.sh card     # the two IPs, for the board":
+    "./scripts/cs425/a4-connectivity-triage.sh card     # the two IPs, for the board":
         "prints addresses, nothing to assert",
-    "./scripts/cs425/a2-connectivity-triage.sh ssh -- sudo tcpdump -nni any 'tcp port 8081 or tcp port 8082'":
+    "./scripts/cs425/a4-connectivity-triage.sh ssh -- sudo tcpdump -nni any 'tcp port 8081 or tcp port 8082'":
         "interactive capture on the instance",
 }
 

@@ -286,8 +286,10 @@ function cs425(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: 'A1 - Speaking the App Layer',      link: 'activities/a1-application-layer' },
-        { text: 'A2 - Connectivity Triage',         link: 'activities/a2-connectivity-triage' },
-        { text: 'A3 - Name the Layer',             link: 'activities/a3-name-the-layer' },
+        { text: 'A2 - Stop Typing Your Password',   link: 'activities/a2-stop-typing-your-password' },
+        { text: 'A3 - curl, nc, and ping',          link: 'activities/a3-curl-nc-ping' },
+        { text: 'A4 - Connectivity Triage',         link: 'activities/a4-connectivity-triage' },
+        { text: 'A5 - Name the Layer',              link: 'activities/a5-name-the-layer' },
       ]
     },
     {

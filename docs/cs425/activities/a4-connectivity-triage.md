@@ -4,9 +4,9 @@ prev: false
 draft: true
 ---
 
-# A2 - It Is Always DNS (Except When It Is Not)
+# A4 - It Is Always DNS (Except When It Is Not)
 
-**Week 4 · 20 points · pass/fail · one paper worksheet per group, turned in before you leave**
+**Week 6 · 20 points · pass/fail · one paper worksheet per group, turned in before you leave**
 
 ## Overview
 
@@ -16,14 +16,15 @@ one symptom and no vocabulary. This activity builds the vocabulary.
 Two machines are running in AWS. Between them they expose a set of stations, and
 almost all of them are broken. Each one is broken in a *different* way, and each
 way has a distinct fingerprint you can see from your laptop with tools you already
-have. Today you collect the fingerprints. In [A3](./a3-name-the-layer.md) you turn
+have. Today you collect the fingerprints. In [A5](./a5-name-the-layer.md) you turn
 them into a decision procedure.
 
-The reason this matters right now is P1. The single most common thing that goes
-wrong when you point a mail client at a server is that the connection **hangs**,
-and the second most common is that it is **refused**. Those two words describe two
-completely different failures with two completely different fixes, and this is
-where you learn to tell them apart in a few seconds.
+This lands in the week you are studying TCP, and you have just finished P1. The
+single most common thing that went wrong when you pointed your mail client at a
+server is that the connection **hung**, and the second most common is that it was
+**refused**. Those two words describe two completely different failures with two
+completely different fixes, and this is where you learn to tell them apart in a
+few seconds, and to say which layer each one came from.
 
 ::: warning
 
@@ -32,12 +33,12 @@ paper, before you leave the room**. Nothing is submitted to Canvas and nothing i
 accepted afterward, so write as you go rather than at the end.
 
 Copies are handed out in class. The same worksheet is at
-[a2-worksheet.pdf](/cs425/a2-worksheet.pdf) if you need another one.
+[a4-worksheet.pdf](./a4-worksheet.pdf) if you need another one.
 
 It is graded pass/fail. Every round attempted in good faith is a pass, and being
 wrong about a station costs you nothing as long as you wrote down what you saw.
 
-The data you collect today is what A3 is built on, so your worksheet comes back
+The data you collect today is what A5 is built on, so your worksheet comes back
 to you at the start of it.
 
 :::
@@ -270,7 +271,7 @@ asked for. Write down both answers. That is a middlebox lying to you, and it is
 the same class of bug as station 5.
 
 Then hand the worksheet in. Names on it, all of them. You get it back at the
-start of A3, which is built on your station table.
+start of A5, which is built on your station table.
 
 ## Worksheet
 
@@ -303,13 +304,13 @@ the back.
 Instructor note, not shown to students.
 
 Everything this activity needs is one script, named after it:
-`scripts/cs425/a2-connectivity-triage.sh`. A3 shares the same testbed.
+`scripts/cs425/a4-connectivity-triage.sh`. A5 shares the same testbed.
 
 **Print the worksheet, and print the key.**
 
 ```bash
-./scripts/cs425/a2-connectivity-triage.sh handout   # student worksheet
-./scripts/cs425/a2-connectivity-triage.sh key       # key and demo script
+./scripts/cs425/a4-connectivity-triage.sh handout   # student worksheet
+./scripts/cs425/a4-connectivity-triage.sh key       # key and demo script
 ```
 
 Both need no AWS and take a few seconds, and both find Chrome, Chromium or Edge on
@@ -318,7 +319,7 @@ complains if the layout spilled, which is the failure mode when you add a questi
 and do not take one away. Re-rendering rewrites the timestamp inside the PDF even
 when nothing else changed, so expect git to show the file as modified.
 
-The worksheet renders to `docs/public/cs425/a2-worksheet.pdf` so students can
+The worksheet renders to `docs/public/cs425/activities/a4-worksheet.pdf` so students can
 reach it from the site. **The key does not go there**, and neither does its
 source: both stay in `scripts/cs425/` beside the script, because everything under
 `docs/public` is copied verbatim onto the public website.
@@ -334,9 +335,9 @@ addresses change every time the testbed is launched. Put them on the board from
 **Stand the testbed up before class.** About four minutes end to end.
 
 ```bash
-./scripts/cs425/a2-connectivity-triage.sh create --region us-west-2 --cidr 132.178.0.0/16
-./scripts/cs425/a2-connectivity-triage.sh verify   # asserts every signature
-./scripts/cs425/a2-connectivity-triage.sh card     # the two IPs, for the board
+./scripts/cs425/a4-connectivity-triage.sh create --region us-west-2 --cidr 132.178.0.0/16
+./scripts/cs425/a4-connectivity-triage.sh verify   # asserts every signature
+./scripts/cs425/a4-connectivity-triage.sh card     # the two IPs, for the board
 ```
 
 `verify` is the one that matters. It probes every station from your machine and
@@ -352,7 +353,7 @@ nothing, because everything that ran was checking the server rather than the
 handout.
 
 ```bash
-./scripts/cs425/a2-connectivity-triage.sh verify --check-commands
+./scripts/cs425/a4-connectivity-triage.sh verify --check-commands
 ```
 
 That pulls every command out of all four documents, runs it against the live
@@ -373,12 +374,12 @@ station time out, and all of them then look like station 2. That failure looks
 exactly like the lesson, which is what makes it dangerous. Same applies to you:
 running `verify` from home against a campus-only CIDR fails everything.
 
-**Leave it up between A2 and A3, or relaunch.** A3 uses stations 1, 2, 3 and 7 on
+**Leave it up between A4 and A5, or relaunch.** A5 uses stations 1, 2, 3 and 7 on
 the same two hosts. Two `t3.micro` is a few cents an hour and nothing expires on
 its own.
 
 ```bash
-./scripts/cs425/a2-connectivity-triage.sh destroy --purge-key
+./scripts/cs425/a4-connectivity-triage.sh destroy --purge-key
 ```
 
 **How the stations are broken.** Measured against a live testbed from off campus,
@@ -392,7 +393,7 @@ so the numbers are the shape to expect rather than exact values:
 | 4 ghost | dnsmasq is authoritative for `cs425.lab` and has no such record, so NXDOMAIN | `status: NXDOMAIN`, `ANSWER: 0` |
 | 5 mirage | an A record pointing at `10.42.13.37`, which is RFC 1918 and goes nowhere from a laptop | resolves, then curl exit 28 |
 | 6 BRAVO 8080 | second instance, second security group, TCP 8080 allowed and ICMP not allowed at all | ping 100% loss, `code=200` |
-| 7 ALPHA 8084 | accepts the connection, never writes a byte, never closes | held back for A3 |
+| 7 ALPHA 8084 | accepts the connection, never writes a byte, never closes | held back for A5 |
 
 **Where it goes wrong.**
 
