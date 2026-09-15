@@ -17,7 +17,7 @@ docs/<course>/
   canvas.toml       term skeleton, date policies, Canvas module layout
   objectives.md     course learning outcomes (Canvas page)
   resources.md      textbook, tools, links (Canvas page)
-  schedule/         schedule.json + a page that renders it
+  schedule/         modules.json (generated) + a page that renders it
   notes/            lecture notes (Canvas pages)
   assignments/      p0.md, p1.md, ... (Canvas assignments)
   quizzes/          quiz-*.md (Canvas quizzes; see the quiz format below)
@@ -30,6 +30,14 @@ Authoring rules that the Canvas push depends on:
   `edutools` reads the week and the points from it to compute due dates.
 - A `## Rubric` table (`| n | description | points |`) becomes a Canvas rubric.
 - A `## Instructor Notes` section marked instructor-only is stripped before publishing.
+
+The website's schedule page mirrors the Canvas modules. It renders
+`schedule/modules.json`, which is generated from `canvas.toml` and the item meta
+lines, so regenerate it after changing either and commit the result:
+
+```bash
+edutools outline docs/cs425 --out docs/cs425/schedule/modules.json
+```
 
 ## Canvas
 
