@@ -41,6 +41,12 @@ grace_days = 2
 due        = "fri 23:59"
 grace_days = 0
 
+# Extra credit is open until the last day of instruction, which is the Friday
+# of week 16, and nothing is accepted after that.
+[term.policy.extra]
+due        = "fri 23:59"
+grace_days = 0
+
 # ---------------------------------------------------------------------------
 # Canvas assignment groups, in the order the syllabus lists them. The weights
 # here are the weights in the Assessments table of index.md, and `edutools push`
@@ -76,7 +82,8 @@ kinds  = ["project"]
 # here would be written back over that on the next push; leaving it out means a
 # push positions the group and never touches what Canvas holds.
 [[group]]
-name = "Extra Credit"
+name  = "Extra Credit"
+kinds = ["extra"]
 
 # ---------------------------------------------------------------------------
 # What this repo calls its files. This directory is a VitePress site as well as a
@@ -114,6 +121,7 @@ files = [
 [layout.gradable]
 project    = "assignments/p[0-9]*.md"
 lab        = "activities/a[0-9]*.md"
+extra      = "extra-credit/ec-*.md"
 discussion = "discussions/*.md"
 
 # Per-item exceptions to the policy above, keyed by path relative to this file.
@@ -190,6 +198,14 @@ page  = "notes/ch07-wireless.md"
 title = "Week 14-15: Security in Computer Networks"
 page  = "notes/ch08-security.md"
 
+# The extra credit assignments are shared across every course: each file under
+# extra-credit/ is a title and a meta line around a body included from
+# ../../parts/, so a fix to the wording lands everywhere.
 [[module]]
-title  = "Finals Week"
+title  = "Week 16"
+items  = [
+    "extra-credit/ec-evaluation.md",
+    "extra-credit/ec-typos.md",
+    "extra-credit/ec-general.md",
+]
 canvas = [{ quiz = 393664, title = "Final Exam" }]

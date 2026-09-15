@@ -301,6 +301,15 @@ function cs425(): DefaultTheme.SidebarItem[] {
         { text: 'P3 - Subnetting and Forwarding',   link: 'assignments/p3' },
         { text: 'P4 - Packet Capture and Analysis', link: 'assignments/p4' },
       ]
+    },
+    {
+      text: 'Extra Credit',
+      collapsed: true,
+      items: [
+        { text: 'Course Evaluation',      link: 'extra-credit/ec-evaluation' },
+        { text: 'Typos and Bugs',         link: 'extra-credit/ec-typos' },
+        { text: 'General Extra Credit',   link: 'extra-credit/ec-general' },
+      ]
     }
   ]
 }
