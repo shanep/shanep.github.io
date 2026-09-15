@@ -63,6 +63,27 @@
       "page_url": "",
       "title": "P4 - Packet Capture and Analysis"
     },
+    "extra-credit/ec-evaluation.md": {
+      "canvas_id": "1810605",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "End of Semester Student Evaluation (15 min)"
+    },
+    "extra-credit/ec-general.md": {
+      "canvas_id": "1812854",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "General Extra credit"
+    },
+    "extra-credit/ec-typos.md": {
+      "canvas_id": "1810606",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "Finding Typos, Bugs, and Improvements (15 min)"
+    },
     "index.md": {
       "canvas_id": "48194",
       "extra": {},
