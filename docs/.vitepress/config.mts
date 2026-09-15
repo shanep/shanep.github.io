@@ -303,14 +303,6 @@ function cs425(): DefaultTheme.SidebarItem[] {
         { text: 'P3 - Subnetting and Forwarding',   link: 'assignments/p3' },
         { text: 'P4 - Packet Capture and Analysis', link: 'assignments/p4' },
       ]
-    },
-    {
-      text: 'Exams',
-      collapsed: true,
-      items: [
-        { text: 'Midterm Study Guide', link: 'assignments/midterm-exam-guide' },
-        { text: 'Final Study Guide',   link: 'assignments/final-exam-guide' },
-      ]
     }
   ]
 }

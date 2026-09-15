@@ -216,22 +216,17 @@
         },
         {
           "topic": "Midterm Exam",
-          "topicUrl": "/cs425/assignments/midterm-exam-guide"
+          "topicUrl": "/cs425/notes/midterm-review"
         }
       ],
       "assignments": [
         {
           "name": "Midterm Exam",
-          "url": "/cs425/assignments/midterm-exam-guide",
+          "url": "/cs425/notes/midterm-review",
           "dueDay": "Friday"
         }
       ],
-      "readings": [
-        {
-          "text": "Midterm Study Guide",
-          "url": "/cs425/assignments/midterm-exam-guide"
-        }
-      ]
+      "readings": []
     },
     {
       "week": 9,
@@ -387,10 +382,6 @@
         {
           "text": "Kurose & Ross 8.5 - 8.9",
           "url": "/cs425/notes/ch08-security"
-        },
-        {
-          "text": "Final Study Guide",
-          "url": "/cs425/assignments/final-exam-guide"
         }
       ],
       "assignments": []
