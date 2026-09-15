@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>CS425 A3 Worksheet</title>
+<title>CS425 A5 Worksheet</title>
 <style>
   @page { size: letter; margin: 0.55in 0.6in 0.5in 0.6in; }
   * { box-sizing: border-box; }
@@ -87,13 +87,13 @@
 
   <div class="mast">
     <div>
-      <h1>A3 &middot; Name the Layer</h1>
+      <h1>A5 &middot; Name the Layer</h1>
       <div class="tiny">CS425 Computer Networks &middot; in class activity &middot; graded pass/fail</div>
     </div>
     <div class="right">
       <strong>TURN THIS IN ON PAPER</strong><br>
       before you leave the room<br>
-      <span class="dim">bring your A2 station table</span>
+      <span class="dim">bring your A4 station table</span>
     </div>
   </div>
 
@@ -103,7 +103,7 @@
   </div>
 
   <div class="card">
-    <strong style="font-size:9pt;letter-spacing:.6pt;">TARGET CARD &middot; these are NEW addresses, not your A2 ones</strong>
+    <strong style="font-size:9pt;letter-spacing:.6pt;">TARGET CARD &middot; these are NEW addresses, not your A4 ones</strong>
     <div class="row">
       <span>ALPHA = <span class="rule" style="width:150pt"></span></span>
       <span>BRAVO = <span class="rule" style="width:150pt"></span></span>
@@ -166,16 +166,16 @@
 <!-- ============================ PAGE 2 ============================ -->
 <section class="page">
 
-  <div class="runner"><span>A3 &middot; Name the layer</span><span>Names: <span class="rule" style="width:150pt"></span></span><span>page 2 of 4</span></div>
+  <div class="runner"><span>A5 &middot; Name the layer</span><span>Names: <span class="rule" style="width:150pt"></span></span><span>page 2 of 4</span></div>
 
   <h2>Round 1 &middot; Summary table</h2>
-  <p class="lead">One row per station from A2, so your tree and your observations agree. A row that fits no leaf means
+  <p class="lead">One row per station from A4, so your tree and your observations agree. A row that fits no leaf means
   your tree is missing a branch. That is a finding, not a mistake.</p>
 
   <table>
     <tr>
       <th style="width:22pt">Sta</th>
-      <th style="width:150pt">What you saw in A2</th>
+      <th style="width:150pt">What you saw in A4</th>
       <th>What it means about what the other end did</th>
       <th style="width:56pt">Layer</th>
       <th style="width:64pt">Who fixes it</th>
@@ -190,7 +190,7 @@
   </table>
 
   <h2>Round 2 &middot; The failure your tree probably misses</h2>
-  <p class="lead">Station 7 is ALPHA port 8084. Probe it the way you probed everything in A2.</p>
+  <p class="lead">Station 7 is ALPHA port 8084. Probe it the way you probed everything in A4.</p>
 <pre class="setup">ALPHA=203.0.113.10          <span class="dim"># replace with YOUR alpha address from the card above</span>
 nc -vz -w 5 $ALPHA 8084     <span class="dim"># macOS: -G 5 instead of -w 5</span>
 curl -sS -o /dev/null -m 8 -w 'connect=%{time_connect} total=%{time_total}\n' http://$ALPHA:8084/</pre>
@@ -223,10 +223,10 @@ curl -sS -o /dev/null -m 8 -w 'connect=%{time_connect} total=%{time_total}\n' ht
 <!-- ============================ PAGE 3 ============================ -->
 <section class="page">
 
-  <div class="runner"><span>A3 &middot; Name the layer</span><span>Names: <span class="rule" style="width:150pt"></span></span><span>page 3 of 4</span></div>
+  <div class="runner"><span>A5 &middot; Name the layer</span><span>Names: <span class="rule" style="width:150pt"></span></span><span>page 3 of 4</span></div>
 
   <h2>Round 3 &middot; Predict, then watch</h2>
-  <p class="lead">For station 2 in A2 your packets vanished. Did they vanish <em>before</em> they reached the host, or
+  <p class="lead">For station 2 in A4 your packets vanished. Did they vanish <em>before</em> they reached the host, or
   <em>after</em>? You cannot answer that from your laptop. Commit to an answer in writing before anything is run: a
   prediction you got wrong is full credit, a blank box is not.</p>
 
@@ -269,7 +269,7 @@ curl -sS -o /dev/null -m 8 -w 'connect=%{time_connect} total=%{time_total}\n' ht
 <!-- ============================ PAGE 4 ============================ -->
 <section class="page">
 
-  <div class="runner"><span>A3 &middot; Glossary</span><span>Keep this page</span><span>page 4 of 4</span></div>
+  <div class="runner"><span>A5 &middot; Glossary</span><span>Keep this page</span><span>page 4 of 4</span></div>
 
   <div class="gloss">
     <h3>The four layers</h3>

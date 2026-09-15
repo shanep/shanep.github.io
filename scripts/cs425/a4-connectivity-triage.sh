@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# a2-connectivity-triage.sh - everything needed to run CS425 activity A2.
+# a4-connectivity-triage.sh - everything needed to run CS425 activity A4.
 #
 # `handout` renders the paper worksheet students fill in; every other command
 # stands up the two EC2 hosts the activity probes, where each station is broken
@@ -37,15 +37,15 @@ HERE=$(cd "$(dirname "$0")" && pwd)
 # The worksheet source lives here; only the rendered PDF goes under docs/public,
 # which VitePress copies verbatim onto the website. The answer key never goes
 # there, and both its source and its PDF stay beside this script.
-# Overridable so that a3-name-the-layer.sh can point `handout` and `key` at its
-# own documents and forward everything else here, leaving one implementation of
-# both the renderer and the testbed.
-HANDOUT_HTML="${HANDOUT_HTML:-$HERE/a2-connectivity-triage.html}"
-HANDOUT_PDF="${HANDOUT_PDF:-$ROOT/docs/public/cs425/a2-worksheet.pdf}"
+# Overridable so that the other activity scripts (a1, a2, a3, a5) can point
+# `handout` and `key` at their own documents and forward everything else here,
+# leaving one implementation of both the renderer and the testbed.
+HANDOUT_HTML="${HANDOUT_HTML:-$HERE/a4-connectivity-triage.html}"
+HANDOUT_PDF="${HANDOUT_PDF:-$ROOT/docs/public/cs425/activities/a4-worksheet.pdf}"
 HANDOUT_PAGES="${HANDOUT_PAGES:-5}"
 
-KEY_HTML="${KEY_HTML:-$HERE/a2-connectivity-triage-key.html}"
-KEY_PDF="${KEY_PDF:-$HERE/a2-connectivity-triage-key.pdf}"
+KEY_HTML="${KEY_HTML:-$HERE/a4-connectivity-triage-key.html}"
+KEY_PDF="${KEY_PDF:-$HERE/a4-connectivity-triage-key.pdf}"
 KEY_PAGES="${KEY_PAGES:-4}"
 
 NAME=${TRIAGE_TESTBED_NAME:-cs425-triage}
@@ -411,7 +411,7 @@ ensure_sg() {
         --query 'SecurityGroups[0].GroupId' --output text 2>/dev/null || true)
     if none "$sg"; then
         sg=$(awsx ec2 create-security-group --group-name "$name" --vpc-id "$vpc" \
-            --description "CS425 A2 triage testbed ($which)" \
+            --description "CS425 A4 triage testbed ($which)" \
             --tag-specifications "ResourceType=security-group,Tags=[{Key=Name,Value=$name},{Key=Project,Value=$NAME}]" \
             --query GroupId --output text)
         info "created security group $name ($sg)"
@@ -578,7 +578,7 @@ cmd_card() {
     cat <<EOF
 
   ------------------------------------------------------------------
-   CS425 A2 target card                        put this on the board
+   CS425 A4 target card                        put this on the board
   ------------------------------------------------------------------
 
      ALPHA = $alpha_ip
@@ -847,7 +847,7 @@ render_pdf() {
     info "rendering $(basename "$html") with $(basename "$chrome")"
 
     rm -f "$pdf"
-    profile=$(mktemp -d "${TMPDIR:-/tmp}/a2-render.XXXXXX")
+    profile=$(mktemp -d "${TMPDIR:-/tmp}/a4-render.XXXXXX")
 
     # The throwaway profile is what stops this being a silent no-op when the
     # person running it already has Chrome open. The cost of it is that Chrome

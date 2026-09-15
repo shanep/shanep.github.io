@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>CS425 A2 Answer Key</title>
+<title>CS425 A4 Answer Key</title>
 <style>
   @page { size: letter; margin: 0.5in 0.55in 0.45in 0.55in; }
   * { box-sizing: border-box; }
@@ -64,14 +64,14 @@
 
   <div class="mast">
     <div>
-      <h1>A2 &middot; Answer Key and Demo Script</h1>
+      <h1>A4 &middot; Answer Key and Demo Script</h1>
       <div class="tiny">CS425 &middot; It Is Always DNS (Except When It Is Not)</div>
     </div>
     <div class="right"><span class="stamp">INSTRUCTOR COPY</span></div>
   </div>
   <p class="tiny dim" style="margin-bottom:8pt">Graded pass/fail. Every transcript here is real output from a live
   testbed, so you can run these at the podium and get the same shapes. Set the two addresses first, from
-  <span class="mono">a2-connectivity-triage.sh card</span>:</p>
+  <span class="mono">a4-connectivity-triage.sh card</span>:</p>
 
   <div class="demo">
     <pre><span class="cmd">$ ALPHA=35.90.160.84        # yours will differ, every launch
@@ -97,7 +97,7 @@ $ BRAVO=18.236.210.3</span></pre>
         <td>Second host, second security group. TCP 8080 allowed, no ICMP rule at all.</td>
         <td>Ping 100% loss, curl 200</td></tr>
     <tr><td class="st">7</td><td class="mono">ALPHA 8084</td>
-        <td>Accepts and never writes. <strong>Held back for A3</strong>; do not point the class at it today.</td>
+        <td>Accepts and never writes. <strong>Held back for A5</strong>; do not point the class at it today.</td>
         <td>&mdash;</td></tr>
   </table>
 
@@ -267,16 +267,16 @@ connect=0.025437 <b>code=200</b></pre>
       <li><b>Station 5 is a DNS bug wearing a network bug's clothes.</b> Sets up RFC 1918 and NAT in chapter 4.</li>
       <li><b>Station 6 means ping tests ICMP, not reachability.</b> Sets up firewalls in chapter 8.</li>
     </ol>
-    <p class="tiny" style="margin:4pt 0 0"><b>Grade these and hand them back at the start of A3.</b> A3 is built on the
+    <p class="tiny" style="margin:4pt 0 0"><b>Grade these and hand them back at the start of A5.</b> A5 is built on the
     station table, and a group that arrives without data spends the period re-probing instead of thinking. Pass/fail on
     a flip-through is quick enough to do this between the two class meetings.</p>
   </div>
 
   <div class="box fill">
     <h3>Before each section</h3>
-    <p class="tiny" style="margin:0">Run <span class="mono">./scripts/cs425/a2-connectivity-triage.sh verify</span>. It
+    <p class="tiny" style="margin:0">Run <span class="mono">./scripts/cs425/a4-connectivity-triage.sh verify</span>. It
     asserts every signature above from your machine in about twenty seconds, and it is how you find out a security group
-    drifted before thirty students do. A clean run is <b>9 passed, 0 failed</b>. Leave the testbed up for A3, or relaunch
+    drifted before thirty students do. A clean run is <b>9 passed, 0 failed</b>. Leave the testbed up for A5, or relaunch
     and put the new addresses on the board.</p>
   </div>
 

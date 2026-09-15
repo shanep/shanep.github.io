@@ -95,9 +95,21 @@ pages = [
     "assignments/grading-rubric.md",
     "assignments/*-exam-guide.md",
 ]
+# The activity worksheets. The real PDFs live in docs/public/cs425/activities/,
+# because that is the only place VitePress serves them from; the entries under
+# activities/ are symlinks to them, so that the push finds the files inside the
+# course directory, uploads them, and rewrites each page's relative link to the
+# Canvas file. Listed one by one rather than globbed, because a file is never a
+# draft: the A4 and A5 worksheets would go up while their pages are still held
+# back. Add a worksheet here when its page loses `draft: true`; until then the
+# push reports the page's link as unresolved, which is the reminder.
 # The textbook PDF under docs/ stays out of Canvas; it is already provided there
 # under Course Materials.
-files = []
+files = [
+    "activities/a1-worksheet.pdf",
+    "activities/a2-worksheet.pdf",
+    "activities/a3-worksheet.pdf",
+]
 
 [layout.gradable]
 project    = "assignments/p[0-9]*.md"
@@ -127,15 +139,19 @@ title = "Week 3-4: The Application Layer"
 page  = "notes/ch02-application.md"
 items = [
     "activities/a1-application-layer.md",
-    "activities/a2-connectivity-triage.md",
-    "activities/a3-name-the-layer.md",
+    "activities/a2-stop-typing-your-password.md",
     "assignments/p1.md",
 ]
 
 [[module]]
 title = "Week 5-6: The Transport Layer"
 page  = "notes/ch03-transport.md"
-items = ["assignments/p2.md"]
+items = [
+    "activities/a3-curl-nc-ping.md",
+    "activities/a4-connectivity-triage.md",
+    "activities/a5-name-the-layer.md",
+    "assignments/p2.md",
+]
 
 [[module]]
 title = "Week 7: The Network Layer - Data Plane"

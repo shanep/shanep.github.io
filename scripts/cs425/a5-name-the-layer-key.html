@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>CS425 A3 Answer Key</title>
+<title>CS425 A5 Answer Key</title>
 <style>
   @page { size: letter; margin: 0.5in 0.55in 0.45in 0.55in; }
   * { box-sizing: border-box; }
@@ -68,18 +68,18 @@
 
   <div class="mast">
     <div>
-      <h1>A3 &middot; Answer Key and Demo Script</h1>
+      <h1>A5 &middot; Answer Key and Demo Script</h1>
       <div class="tiny">CS425 &middot; Name the Layer</div>
     </div>
     <div class="right"><span class="stamp">INSTRUCTOR COPY</span></div>
   </div>
-  <p class="tiny dim" style="margin-bottom:8pt">Graded pass/fail. A3 runs on A2's testbed and needs stations 1, 2, 3 and
-  7 live. Relaunch if you tore it down, and <b>put the new addresses on the board</b>: they will not match A2's, which is
+  <p class="tiny dim" style="margin-bottom:8pt">Graded pass/fail. A5 runs on A4's testbed and needs stations 1, 2, 3 and
+  7 live. Relaunch if you tore it down, and <b>put the new addresses on the board</b>: they will not match A4's, which is
   worth saying out loud, because it is the whole reason the worksheet is written in terms of ALPHA and BRAVO.</p>
 
   <div class="demo">
-    <pre><span class="cmd">$ ./scripts/cs425/a2-connectivity-triage.sh verify   # expect 9 passed, 0 failed
-$ ./scripts/cs425/a2-connectivity-triage.sh card     # the two IPs, for the board
+    <pre><span class="cmd">$ ./scripts/cs425/a4-connectivity-triage.sh verify   # expect 9 passed, 0 failed
+$ ./scripts/cs425/a4-connectivity-triage.sh card     # the two IPs, for the board
 $ ALPHA=35.90.160.84</span></pre>
   </div>
 
@@ -88,33 +88,33 @@ $ ALPHA=35.90.160.84</span></pre>
     <div class="node q">Q1. Does the name resolve, and to what address?</div>
     <div class="branch">
       <div class="leaf"><b>NXDOMAIN.</b> cause: no such name &middot; layer: application (DNS) &middot; fixed by: whoever
-        owns the zone. <span class="dim">A2 station 4. Zero packets sent to the target.</span></div>
+        owns the zone. <span class="dim">A4 station 4. Zero packets sent to the target.</span></div>
       <div class="leaf"><b>Resolves to an unroutable address.</b> cause: the record is wrong, RFC 1918 &middot;
         layer: application, symptom at the network layer &middot; fixed by: whoever owns the record.
-        <span class="dim">A2 station 5.</span></div>
+        <span class="dim">A4 station 5.</span></div>
       <div class="node q">Q2. Does the TCP connection complete?</div>
       <div class="branch">
         <div class="leaf"><b>Instant, "refused", host sent a RST.</b> cause: nothing listening on that port &middot;
-          layer: transport &middot; fixed by: whoever runs the server. <span class="dim">A2 station 3.</span></div>
+          layer: transport &middot; fixed by: whoever runs the server. <span class="dim">A4 station 3.</span></div>
         <div class="leaf"><b>Hangs, nothing came back.</b> cause: a packet filter dropping silently &middot; layer: filter
           acting on transport ports at the network edge &middot; fixed by: whoever runs the network or the security group.
-          <span class="dim">A2 station 2.</span></div>
+          <span class="dim">A4 station 2.</span></div>
         <div class="node q">Q3. Does the application actually send a response?</div>
         <div class="branch">
           <div class="leaf"><b>Open, no bytes.</b> cause: the server accepted and never wrote &middot; layer: application &middot;
             fixed by: whoever runs the server. <span class="dim">Station 7, today's Round 2.</span></div>
           <div class="leaf"><b>It works.</b> If ping still fails, that tells you <b>only that ICMP is filtered</b>, and
-            nothing about the service. <span class="dim">A2 station 6.</span></div>
+            nothing about the service. <span class="dim">A4 station 6.</span></div>
         </div>
       </div>
     </div>
   </div>
   <p class="tiny">The ordering is the content. Q1 has to come first because a name failure means <b>no packet was ever
   sent</b>, so nothing below it can possibly be the cause. Q3 has to come last because it is the only question you cannot
-  ask until a connection exists. A group that puts "can I ping it" anywhere in this tree has missed Round 3 of A2, and
+  ask until a connection exists. A group that puts "can I ping it" anywhere in this tree has missed Round 3 of A4, and
   that is worth catching.</p>
   <div class="bar"><strong>Pass bar:</strong> Q1 is about name resolution and comes first, every leaf has something in the
-  layer and owner slots, and all six A2 stations land somewhere in the summary table.</div>
+  layer and owner slots, and all six A4 stations land somewhere in the summary table.</div>
 
   <h2>Round 2 &middot; Station 7, the stall</h2>
 
@@ -127,7 +127,7 @@ Connection to 35.90.160.84 port 8084 [tcp/*] <b>succeeded!</b>
 curl: (28) <b>Operation timed out</b> after 6006 milliseconds <b>with 0 bytes received</b>
 connect=0.024711
 
-<span class="dim"># for contrast, station 2 from A2:</span>
+<span class="dim"># for contrast, station 2 from A4:</span>
 curl: (28) <b>Connection timed out</b> after 6003 milliseconds
 connect=<b>0.000000</b></pre>
     <div class="say"><b>Say:</b> both are exit 28, and they are different failures. Station 2 says "<b>Connection</b>
@@ -167,7 +167,7 @@ connect=<b>0.000000</b></pre>
 
   <div class="demo">
     <div class="hd">The demo &middot; run this on ALPHA, project it</div>
-<pre><span class="cmd">$ ./scripts/cs425/a2-connectivity-triage.sh ssh -- \
+<pre><span class="cmd">$ ./scripts/cs425/a4-connectivity-triage.sh ssh -- \
       sudo tcpdump -nni any 'tcp port 8081 or tcp port 8082'</span>
 
 <span class="dim"># a volunteer probes 8081 ... nothing appears at all ...
@@ -207,7 +207,7 @@ connect=<b>0.000000</b></pre>
     <b>(c)</b> a status line, so the service is up and the reporter's problem is elsewhere.
     <p style="margin:3pt 0 0">Any command with three genuinely distinct outcomes passes. A group that picks
     <span class="mono">dig</span> and argues resolution is cheapest to rule out first has made a real argument; take it.
-    A group that picks <b>ping</b> has not, and A2 Round 3 is the counterexample they collected themselves.</p>
+    A group that picks <b>ping</b> has not, and A4 Round 3 is the counterexample they collected themselves.</p>
   </div>
   <div class="bar"><strong>Pass bar:</strong> a command is named and three outcomes are listed. Whether the choice is the
   one you would make matters less than whether they can say what the output would tell them.</div>
@@ -215,7 +215,7 @@ connect=<b>0.000000</b></pre>
   <div class="box">
     <h3>Running the room</h3>
     <ul class="push" style="margin-bottom:0">
-      <li><b>A group without their A2 data.</b> Hand them the mechanism table from the A2 key rather than letting them
+      <li><b>A group without their A4 data.</b> Hand them the mechanism table from the A4 key rather than letting them
         burn the period re-probing stations 1 through 6.</li>
       <li><b>Round 1 is the deliverable.</b> If the period runs short, compress Round 2 to questions 1 and 3 and keep
         Round 3, which needs you at the projector anyway.</li>
@@ -227,7 +227,7 @@ connect=<b>0.000000</b></pre>
   <div class="box fill">
     <h3>When the last section is done</h3>
     <p class="tiny" style="margin:0">Nothing expires on its own.
-    <span class="mono">./scripts/cs425/a2-connectivity-triage.sh destroy --purge-key</span></p>
+    <span class="mono">./scripts/cs425/a4-connectivity-triage.sh destroy --purge-key</span></p>
   </div>
 
 </section>
