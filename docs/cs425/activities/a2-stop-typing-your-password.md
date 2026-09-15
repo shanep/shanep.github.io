@@ -29,8 +29,6 @@ One paper worksheet per group, turned in before you leave. It is short: a row pe
 person, two timings, and three questions. Graded pass/fail; a serious attempt at
 every step is a pass.
 
-The same worksheet is at [a2-worksheet.pdf](./a2-worksheet.pdf).
-
 :::
 
 ## Before you start
@@ -307,6 +305,8 @@ on at least one laptop.
 :::
 
 ## Worksheet
+
+**Download: [a2-worksheet.pdf](./a2-worksheet.pdf)**
 
 The printed worksheet is one page: a row per member (laptop OS, password login
 works, key login works, cold and warm timings), the round trip estimate, whether your
