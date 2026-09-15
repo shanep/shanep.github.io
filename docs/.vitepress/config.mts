@@ -272,13 +272,11 @@ function cs425(): DefaultTheme.SidebarItem[] {
         { text: '1. Networks and the Internet',     link: 'notes/ch01-internet' },
         { text: '2. The Application Layer',         link: 'notes/ch02-application' },
         { text: '3. The Transport Layer',           link: 'notes/ch03-transport' },
-        { text: 'Midterm Review',                   link: 'notes/midterm-review' },
         { text: '4. Network Layer: Data Plane',     link: 'notes/ch04-network-data' },
         { text: '5. Network Layer: Control Plane',  link: 'notes/ch05-network-control' },
         { text: '6. The Link Layer and LANs',       link: 'notes/ch06-link' },
         { text: '7. Wireless and Mobile Networks',  link: 'notes/ch07-wireless' },
         { text: '8. Network Security',              link: 'notes/ch08-security' },
-        { text: 'Final Review',                     link: 'notes/final-review' },
       ]
     },
     {

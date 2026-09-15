@@ -211,18 +211,15 @@
       "week": 8,
       "days": [
         {
-          "topic": "Midterm Review",
-          "topicUrl": "/cs425/notes/midterm-review"
+          "topic": "Midterm Review"
         },
         {
-          "topic": "Midterm Exam",
-          "topicUrl": "/cs425/notes/midterm-review"
+          "topic": "Midterm Exam"
         }
       ],
       "assignments": [
         {
           "name": "Midterm Exam",
-          "url": "/cs425/notes/midterm-review",
           "dueDay": "Friday"
         }
       ],
