@@ -135,6 +135,10 @@ pages = [
 # "Course textbooks are distributed through Canvas, not this public repo". So it
 # sits in the course directory as a real file, this push is what delivers it to
 # students, and a fresh clone has to have it dropped back in by hand.
+# Ungraded discussions: no points, no dates, never in the gradebook. Course
+# Questions is shared by every course; in 52107 it is the shell's own board,
+# adopted by id in the manifest, so the buttons' links to it keep working.
+discussions = ["course-resources/course-questions.md"]
 files = [
     "images/cs331-banner.svg",
     "data/auth.log",
@@ -201,6 +205,7 @@ due = "tue 23:59"
 "discussion guidelines"    = "icons/policies.svg"
 "communicating online"     = "icons/policies.svg"
 "when to message me"       = "icons/email.svg"
+"about this discussion"    = "icons/discussion.svg"
 "ai disclosure"            = "icons/ai-allowed.svg"
 "instructor: *"            = "icons/profile.svg"
 "note about grading"       = "icons/attention.svg"
@@ -250,6 +255,7 @@ items = [
     "course-resources/technology-support.md",
     "resources.md",
     "objectives.md",
+    "course-resources/course-questions.md",
 ]
 
 # Every module but Course Resources follows the shell: its overview page, then

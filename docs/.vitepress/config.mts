@@ -259,6 +259,7 @@ function cs331(): DefaultTheme.SidebarItem[] {
         { text: 'Canvas Resources',           link: 'course-resources/canvas-resources' },
         { text: 'Online Success Resources',   link: 'course-resources/online-success-resources' },
         { text: 'Technology Support',         link: 'course-resources/technology-support' },
+        { text: 'Course Questions',           link: 'course-resources/course-questions' },
       ]
     },
     {

@@ -105,6 +105,15 @@
       "page_url": "canvas-resources-2",
       "title": "Canvas Resources"
     },
+    "course-resources/course-questions.md": {
+      "canvas_id": "1174722",
+      "extra": {
+        "assignment_id": "None"
+      },
+      "kind": "discussion",
+      "page_url": "",
+      "title": "Course Questions"
+    },
     "course-resources/online-success-resources.md": {
       "canvas_id": "boise-state-online-success-resources-2",
       "extra": {},
