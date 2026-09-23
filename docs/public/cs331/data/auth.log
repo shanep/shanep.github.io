@@ -1,0 +1,569 @@
+Apr 21 00:48:50 vault-api-01 sshd[45681]: Failed password for jrivera from 10.12.4.44 port 55701 ssh2
+Apr 21 00:49:38 vault-api-01 sshd[53563]: Accepted publickey for jrivera from 10.12.4.44 port 49486 ssh2: RSA SHA256:9k1Tq263nZxW
+Apr 21 00:49:39 vault-api-01 sshd[53563]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 00:51:53 vault-api-01 sshd[40107]: Accepted publickey for jrivera from 10.12.4.44 port 56733 ssh2: RSA SHA256:9k1Tq892nZxW
+Apr 21 00:51:54 vault-api-01 sshd[40107]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 00:59:04 vault-api-01 sshd[53563]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 01:00:19 vault-api-01 sshd[40107]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 01:11:32 vault-api-01 sshd[9986]: Accepted publickey for deploy from 10.12.9.8 port 55510 ssh2: RSA SHA256:9k1Tq620nZxW
+Apr 21 01:11:33 vault-api-01 sshd[9986]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 01:19:20 vault-api-01 sshd[40821]: Accepted publickey for spanter from 10.12.4.31 port 62524 ssh2: RSA SHA256:9k1Tq983nZxW
+Apr 21 01:19:21 vault-api-01 sshd[40821]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 01:21:16 vault-api-01 sshd[9986]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 01:26:35 vault-api-01 sshd[43624]: Accepted publickey for jrivera from 10.12.4.44 port 56545 ssh2: RSA SHA256:9k1Tq208nZxW
+Apr 21 01:26:36 vault-api-01 sshd[43624]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 01:31:56 vault-api-01 sshd[40821]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 01:36:37 vault-api-01 sshd[43624]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 02:29:49 vault-api-01 sshd[24438]: Accepted publickey for jrivera from 10.12.4.44 port 43692 ssh2: RSA SHA256:9k1Tq272nZxW
+Apr 21 02:29:50 vault-api-01 sshd[24438]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 02:33:18 vault-api-01 sshd[24438]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 02:41:31 vault-api-01 sshd[32898]: Accepted publickey for deploy from 10.12.9.8 port 49769 ssh2: RSA SHA256:9k1Tq207nZxW
+Apr 21 02:41:32 vault-api-01 sshd[32898]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 02:49:54 vault-api-01 sshd[32898]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 03:17:12 vault-api-01 sshd[42638]: Invalid user root from 203.0.113.47 port 47892
+Apr 21 03:17:12 vault-api-01 sshd[42638]: Failed password for invalid user root from 203.0.113.47 port 47892 ssh2
+Apr 21 03:17:14 vault-api-01 sshd[39250]: Invalid user admin from 203.0.113.47 port 40227
+Apr 21 03:17:14 vault-api-01 sshd[39250]: Failed password for invalid user admin from 203.0.113.47 port 40227 ssh2
+Apr 21 03:17:17 vault-api-01 sshd[14479]: Invalid user oracle from 203.0.113.47 port 50090
+Apr 21 03:17:17 vault-api-01 sshd[14479]: Failed password for invalid user oracle from 203.0.113.47 port 50090 ssh2
+Apr 21 03:17:22 vault-api-01 sshd[34422]: Invalid user test from 203.0.113.47 port 54695
+Apr 21 03:17:22 vault-api-01 sshd[34422]: Failed password for invalid user test from 203.0.113.47 port 54695 ssh2
+Apr 21 03:17:27 vault-api-01 sshd[20193]: Invalid user postgres from 203.0.113.47 port 55735
+Apr 21 03:17:27 vault-api-01 sshd[20193]: Failed password for invalid user postgres from 203.0.113.47 port 55735 ssh2
+Apr 21 03:17:30 vault-api-01 sshd[49725]: Invalid user ubuntu from 203.0.113.47 port 42841
+Apr 21 03:17:30 vault-api-01 sshd[49725]: Failed password for invalid user ubuntu from 203.0.113.47 port 42841 ssh2
+Apr 21 03:17:35 vault-api-01 sshd[1293]: Invalid user git from 203.0.113.47 port 60441
+Apr 21 03:17:35 vault-api-01 sshd[1293]: Failed password for invalid user git from 203.0.113.47 port 60441 ssh2
+Apr 21 03:17:39 vault-api-01 sshd[13110]: Invalid user jenkins from 203.0.113.47 port 40337
+Apr 21 03:17:39 vault-api-01 sshd[13110]: Failed password for invalid user jenkins from 203.0.113.47 port 40337 ssh2
+Apr 21 03:17:42 vault-api-01 sshd[51758]: Failed password for deploy from 203.0.113.47 port 43500 ssh2
+Apr 21 03:17:45 vault-api-01 sshd[59795]: Invalid user root from 203.0.113.47 port 45676
+Apr 21 03:17:45 vault-api-01 sshd[59795]: Failed password for invalid user root from 203.0.113.47 port 45676 ssh2
+Apr 21 03:17:48 vault-api-01 sshd[38399]: Invalid user admin from 203.0.113.47 port 59441
+Apr 21 03:17:48 vault-api-01 sshd[38399]: Failed password for invalid user admin from 203.0.113.47 port 59441 ssh2
+Apr 21 03:17:51 vault-api-01 sshd[38633]: Invalid user oracle from 203.0.113.47 port 61565
+Apr 21 03:17:51 vault-api-01 sshd[38633]: Failed password for invalid user oracle from 203.0.113.47 port 61565 ssh2
+Apr 21 03:17:54 vault-api-01 sshd[2999]: Invalid user test from 203.0.113.47 port 56252
+Apr 21 03:17:54 vault-api-01 sshd[2999]: Failed password for invalid user test from 203.0.113.47 port 56252 ssh2
+Apr 21 03:17:57 vault-api-01 sshd[34165]: Invalid user postgres from 203.0.113.47 port 45506
+Apr 21 03:17:57 vault-api-01 sshd[34165]: Failed password for invalid user postgres from 203.0.113.47 port 45506 ssh2
+Apr 21 03:18:00 vault-api-01 sshd[41777]: Invalid user ubuntu from 203.0.113.47 port 59355
+Apr 21 03:18:00 vault-api-01 sshd[41777]: Failed password for invalid user ubuntu from 203.0.113.47 port 59355 ssh2
+Apr 21 03:18:02 vault-api-01 sshd[30656]: Invalid user git from 203.0.113.47 port 55332
+Apr 21 03:18:02 vault-api-01 sshd[30656]: Failed password for invalid user git from 203.0.113.47 port 55332 ssh2
+Apr 21 03:18:06 vault-api-01 sshd[36747]: Invalid user jenkins from 203.0.113.47 port 59799
+Apr 21 03:18:06 vault-api-01 sshd[36747]: Failed password for invalid user jenkins from 203.0.113.47 port 59799 ssh2
+Apr 21 03:18:09 vault-api-01 sshd[52863]: Failed password for deploy from 203.0.113.47 port 53099 ssh2
+Apr 21 03:18:13 vault-api-01 sshd[40149]: Invalid user root from 203.0.113.47 port 57822
+Apr 21 03:18:13 vault-api-01 sshd[40149]: Failed password for invalid user root from 203.0.113.47 port 57822 ssh2
+Apr 21 03:18:17 vault-api-01 sshd[23196]: Invalid user admin from 203.0.113.47 port 52883
+Apr 21 03:18:17 vault-api-01 sshd[23196]: Failed password for invalid user admin from 203.0.113.47 port 52883 ssh2
+Apr 21 03:18:22 vault-api-01 sshd[40460]: Invalid user oracle from 203.0.113.47 port 40911
+Apr 21 03:18:22 vault-api-01 sshd[40460]: Failed password for invalid user oracle from 203.0.113.47 port 40911 ssh2
+Apr 21 03:18:26 vault-api-01 sshd[40718]: Invalid user test from 203.0.113.47 port 42992
+Apr 21 03:18:26 vault-api-01 sshd[40718]: Failed password for invalid user test from 203.0.113.47 port 42992 ssh2
+Apr 21 03:18:31 vault-api-01 sshd[56667]: Invalid user postgres from 203.0.113.47 port 53830
+Apr 21 03:18:31 vault-api-01 sshd[56667]: Failed password for invalid user postgres from 203.0.113.47 port 53830 ssh2
+Apr 21 03:18:35 vault-api-01 sshd[18666]: Invalid user ubuntu from 203.0.113.47 port 61249
+Apr 21 03:18:35 vault-api-01 sshd[18666]: Failed password for invalid user ubuntu from 203.0.113.47 port 61249 ssh2
+Apr 21 03:18:38 vault-api-01 sshd[48604]: Invalid user git from 203.0.113.47 port 47226
+Apr 21 03:18:38 vault-api-01 sshd[48604]: Failed password for invalid user git from 203.0.113.47 port 47226 ssh2
+Apr 21 03:18:40 vault-api-01 sshd[31675]: Invalid user jenkins from 203.0.113.47 port 63834
+Apr 21 03:18:40 vault-api-01 sshd[31675]: Failed password for invalid user jenkins from 203.0.113.47 port 63834 ssh2
+Apr 21 03:18:42 vault-api-01 sshd[42984]: Failed password for deploy from 203.0.113.47 port 55939 ssh2
+Apr 21 03:18:47 vault-api-01 sshd[32253]: Invalid user root from 203.0.113.47 port 49024
+Apr 21 03:18:47 vault-api-01 sshd[32253]: Failed password for invalid user root from 203.0.113.47 port 49024 ssh2
+Apr 21 03:18:52 vault-api-01 sshd[8771]: Invalid user admin from 203.0.113.47 port 44411
+Apr 21 03:18:52 vault-api-01 sshd[8771]: Failed password for invalid user admin from 203.0.113.47 port 44411 ssh2
+Apr 21 03:18:54 vault-api-01 sshd[51078]: Invalid user oracle from 203.0.113.47 port 55038
+Apr 21 03:18:54 vault-api-01 sshd[51078]: Failed password for invalid user oracle from 203.0.113.47 port 55038 ssh2
+Apr 21 03:18:58 vault-api-01 sshd[49022]: Invalid user test from 203.0.113.47 port 46041
+Apr 21 03:18:58 vault-api-01 sshd[49022]: Failed password for invalid user test from 203.0.113.47 port 46041 ssh2
+Apr 21 03:19:00 vault-api-01 sshd[11501]: Invalid user postgres from 203.0.113.47 port 60118
+Apr 21 03:19:00 vault-api-01 sshd[11501]: Failed password for invalid user postgres from 203.0.113.47 port 60118 ssh2
+Apr 21 03:19:02 vault-api-01 sshd[55323]: Invalid user ubuntu from 203.0.113.47 port 49094
+Apr 21 03:19:02 vault-api-01 sshd[55323]: Failed password for invalid user ubuntu from 203.0.113.47 port 49094 ssh2
+Apr 21 03:19:07 vault-api-01 sshd[37680]: Invalid user git from 203.0.113.47 port 50421
+Apr 21 03:19:07 vault-api-01 sshd[37680]: Failed password for invalid user git from 203.0.113.47 port 50421 ssh2
+Apr 21 03:19:10 vault-api-01 sshd[20465]: Invalid user jenkins from 203.0.113.47 port 57830
+Apr 21 03:19:10 vault-api-01 sshd[20465]: Failed password for invalid user jenkins from 203.0.113.47 port 57830 ssh2
+Apr 21 03:19:13 vault-api-01 sshd[5312]: Failed password for deploy from 203.0.113.47 port 41302 ssh2
+Apr 21 03:19:16 vault-api-01 sshd[20856]: Invalid user root from 203.0.113.47 port 43472
+Apr 21 03:19:16 vault-api-01 sshd[20856]: Failed password for invalid user root from 203.0.113.47 port 43472 ssh2
+Apr 21 03:19:20 vault-api-01 sshd[32638]: Invalid user admin from 203.0.113.47 port 43855
+Apr 21 03:19:20 vault-api-01 sshd[32638]: Failed password for invalid user admin from 203.0.113.47 port 43855 ssh2
+Apr 21 03:19:24 vault-api-01 sshd[38692]: Invalid user oracle from 203.0.113.47 port 56708
+Apr 21 03:19:24 vault-api-01 sshd[38692]: Failed password for invalid user oracle from 203.0.113.47 port 56708 ssh2
+Apr 21 03:19:29 vault-api-01 sshd[34274]: Invalid user test from 203.0.113.47 port 55980
+Apr 21 03:19:29 vault-api-01 sshd[34274]: Failed password for invalid user test from 203.0.113.47 port 55980 ssh2
+Apr 21 03:19:31 vault-api-01 sshd[51571]: Invalid user postgres from 203.0.113.47 port 43140
+Apr 21 03:19:31 vault-api-01 sshd[51571]: Failed password for invalid user postgres from 203.0.113.47 port 43140 ssh2
+Apr 21 03:19:35 vault-api-01 sshd[34589]: Invalid user ubuntu from 203.0.113.47 port 49407
+Apr 21 03:19:35 vault-api-01 sshd[34589]: Failed password for invalid user ubuntu from 203.0.113.47 port 49407 ssh2
+Apr 21 03:19:39 vault-api-01 sshd[3245]: Invalid user git from 203.0.113.47 port 46798
+Apr 21 03:19:39 vault-api-01 sshd[3245]: Failed password for invalid user git from 203.0.113.47 port 46798 ssh2
+Apr 21 03:19:41 vault-api-01 sshd[26194]: Invalid user jenkins from 203.0.113.47 port 56940
+Apr 21 03:19:41 vault-api-01 sshd[26194]: Failed password for invalid user jenkins from 203.0.113.47 port 56940 ssh2
+Apr 21 03:19:45 vault-api-01 sshd[10946]: Failed password for deploy from 203.0.113.47 port 40540 ssh2
+Apr 21 03:19:50 vault-api-01 sshd[45099]: Invalid user root from 203.0.113.47 port 53496
+Apr 21 03:19:50 vault-api-01 sshd[45099]: Failed password for invalid user root from 203.0.113.47 port 53496 ssh2
+Apr 21 03:19:52 vault-api-01 sshd[26403]: Invalid user admin from 203.0.113.47 port 40168
+Apr 21 03:19:52 vault-api-01 sshd[26403]: Failed password for invalid user admin from 203.0.113.47 port 40168 ssh2
+Apr 21 03:19:57 vault-api-01 sshd[32875]: Invalid user oracle from 203.0.113.47 port 63572
+Apr 21 03:19:57 vault-api-01 sshd[32875]: Failed password for invalid user oracle from 203.0.113.47 port 63572 ssh2
+Apr 21 03:20:00 vault-api-01 sshd[59283]: Invalid user test from 203.0.113.47 port 63265
+Apr 21 03:20:00 vault-api-01 sshd[59283]: Failed password for invalid user test from 203.0.113.47 port 63265 ssh2
+Apr 21 03:20:02 vault-api-01 sshd[18777]: Invalid user postgres from 203.0.113.47 port 55615
+Apr 21 03:20:02 vault-api-01 sshd[18777]: Failed password for invalid user postgres from 203.0.113.47 port 55615 ssh2
+Apr 21 03:20:04 vault-api-01 sshd[35755]: Invalid user ubuntu from 203.0.113.47 port 42631
+Apr 21 03:20:04 vault-api-01 sshd[35755]: Failed password for invalid user ubuntu from 203.0.113.47 port 42631 ssh2
+Apr 21 03:20:07 vault-api-01 sshd[45167]: Invalid user git from 203.0.113.47 port 47596
+Apr 21 03:20:07 vault-api-01 sshd[45167]: Failed password for invalid user git from 203.0.113.47 port 47596 ssh2
+Apr 21 03:20:11 vault-api-01 sshd[46067]: Invalid user jenkins from 203.0.113.47 port 45275
+Apr 21 03:20:11 vault-api-01 sshd[46067]: Failed password for invalid user jenkins from 203.0.113.47 port 45275 ssh2
+Apr 21 03:20:15 vault-api-01 sshd[49345]: Failed password for deploy from 203.0.113.47 port 57086 ssh2
+Apr 21 03:20:20 vault-api-01 sshd[19751]: Invalid user root from 203.0.113.47 port 50154
+Apr 21 03:20:20 vault-api-01 sshd[19751]: Failed password for invalid user root from 203.0.113.47 port 50154 ssh2
+Apr 21 03:20:25 vault-api-01 sshd[59744]: Invalid user admin from 203.0.113.47 port 51413
+Apr 21 03:20:25 vault-api-01 sshd[59744]: Failed password for invalid user admin from 203.0.113.47 port 51413 ssh2
+Apr 21 03:20:29 vault-api-01 sshd[42845]: Invalid user oracle from 203.0.113.47 port 49936
+Apr 21 03:20:29 vault-api-01 sshd[42845]: Failed password for invalid user oracle from 203.0.113.47 port 49936 ssh2
+Apr 21 03:20:33 vault-api-01 sshd[56890]: Invalid user test from 203.0.113.47 port 60906
+Apr 21 03:20:33 vault-api-01 sshd[56890]: Failed password for invalid user test from 203.0.113.47 port 60906 ssh2
+Apr 21 03:20:36 vault-api-01 sshd[18276]: Invalid user postgres from 203.0.113.47 port 60385
+Apr 21 03:20:36 vault-api-01 sshd[18276]: Failed password for invalid user postgres from 203.0.113.47 port 60385 ssh2
+Apr 21 03:20:40 vault-api-01 sshd[18606]: Invalid user ubuntu from 203.0.113.47 port 47105
+Apr 21 03:20:40 vault-api-01 sshd[18606]: Failed password for invalid user ubuntu from 203.0.113.47 port 47105 ssh2
+Apr 21 03:20:44 vault-api-01 sshd[43882]: Invalid user git from 203.0.113.47 port 60702
+Apr 21 03:20:44 vault-api-01 sshd[43882]: Failed password for invalid user git from 203.0.113.47 port 60702 ssh2
+Apr 21 03:20:48 vault-api-01 sshd[37031]: Invalid user jenkins from 203.0.113.47 port 63479
+Apr 21 03:20:48 vault-api-01 sshd[37031]: Failed password for invalid user jenkins from 203.0.113.47 port 63479 ssh2
+Apr 21 03:20:50 vault-api-01 sshd[59153]: Failed password for deploy from 203.0.113.47 port 59208 ssh2
+Apr 21 03:20:54 vault-api-01 sshd[50723]: Invalid user root from 203.0.113.47 port 59558
+Apr 21 03:20:54 vault-api-01 sshd[50723]: Failed password for invalid user root from 203.0.113.47 port 59558 ssh2
+Apr 21 03:20:59 vault-api-01 sshd[2899]: Invalid user admin from 203.0.113.47 port 60969
+Apr 21 03:20:59 vault-api-01 sshd[2899]: Failed password for invalid user admin from 203.0.113.47 port 60969 ssh2
+Apr 21 03:21:04 vault-api-01 sshd[37066]: Invalid user oracle from 203.0.113.47 port 48861
+Apr 21 03:21:04 vault-api-01 sshd[37066]: Failed password for invalid user oracle from 203.0.113.47 port 48861 ssh2
+Apr 21 03:21:08 vault-api-01 sshd[1772]: Invalid user test from 203.0.113.47 port 55113
+Apr 21 03:21:08 vault-api-01 sshd[1772]: Failed password for invalid user test from 203.0.113.47 port 55113 ssh2
+Apr 21 03:21:12 vault-api-01 sshd[16236]: Invalid user postgres from 203.0.113.47 port 49779
+Apr 21 03:21:12 vault-api-01 sshd[16236]: Failed password for invalid user postgres from 203.0.113.47 port 49779 ssh2
+Apr 21 03:21:14 vault-api-01 sshd[41999]: Invalid user ubuntu from 203.0.113.47 port 48923
+Apr 21 03:21:14 vault-api-01 sshd[41999]: Failed password for invalid user ubuntu from 203.0.113.47 port 48923 ssh2
+Apr 21 03:21:17 vault-api-01 sshd[56679]: Invalid user git from 203.0.113.47 port 40833
+Apr 21 03:21:17 vault-api-01 sshd[56679]: Failed password for invalid user git from 203.0.113.47 port 40833 ssh2
+Apr 21 03:21:20 vault-api-01 sshd[52731]: Invalid user jenkins from 203.0.113.47 port 51799
+Apr 21 03:21:20 vault-api-01 sshd[52731]: Failed password for invalid user jenkins from 203.0.113.47 port 51799 ssh2
+Apr 21 03:21:22 vault-api-01 sshd[54416]: Failed password for deploy from 203.0.113.47 port 58200 ssh2
+Apr 21 03:21:26 vault-api-01 sshd[24631]: Invalid user root from 203.0.113.47 port 44676
+Apr 21 03:21:26 vault-api-01 sshd[24631]: Failed password for invalid user root from 203.0.113.47 port 44676 ssh2
+Apr 21 03:21:30 vault-api-01 sshd[52545]: Invalid user admin from 203.0.113.47 port 47316
+Apr 21 03:21:30 vault-api-01 sshd[52545]: Failed password for invalid user admin from 203.0.113.47 port 47316 ssh2
+Apr 21 03:21:32 vault-api-01 sshd[18917]: Invalid user oracle from 203.0.113.47 port 52768
+Apr 21 03:21:32 vault-api-01 sshd[18917]: Failed password for invalid user oracle from 203.0.113.47 port 52768 ssh2
+Apr 21 03:21:34 vault-api-01 sshd[8232]: Invalid user test from 203.0.113.47 port 42026
+Apr 21 03:21:34 vault-api-01 sshd[8232]: Failed password for invalid user test from 203.0.113.47 port 42026 ssh2
+Apr 21 03:21:37 vault-api-01 sshd[38432]: Invalid user postgres from 203.0.113.47 port 54916
+Apr 21 03:21:37 vault-api-01 sshd[38432]: Failed password for invalid user postgres from 203.0.113.47 port 54916 ssh2
+Apr 21 03:21:42 vault-api-01 sshd[56768]: Invalid user ubuntu from 203.0.113.47 port 55350
+Apr 21 03:21:42 vault-api-01 sshd[56768]: Failed password for invalid user ubuntu from 203.0.113.47 port 55350 ssh2
+Apr 21 03:21:47 vault-api-01 sshd[4981]: Invalid user git from 203.0.113.47 port 40442
+Apr 21 03:21:47 vault-api-01 sshd[4981]: Failed password for invalid user git from 203.0.113.47 port 40442 ssh2
+Apr 21 03:21:50 vault-api-01 sshd[20456]: Invalid user jenkins from 203.0.113.47 port 56804
+Apr 21 03:21:50 vault-api-01 sshd[20456]: Failed password for invalid user jenkins from 203.0.113.47 port 56804 ssh2
+Apr 21 03:21:55 vault-api-01 sshd[4982]: Failed password for deploy from 203.0.113.47 port 58051 ssh2
+Apr 21 03:21:58 vault-api-01 sshd[4948]: Invalid user root from 203.0.113.47 port 50733
+Apr 21 03:21:58 vault-api-01 sshd[4948]: Failed password for invalid user root from 203.0.113.47 port 50733 ssh2
+Apr 21 03:22:02 vault-api-01 sshd[56628]: Invalid user admin from 203.0.113.47 port 48745
+Apr 21 03:22:02 vault-api-01 sshd[56628]: Failed password for invalid user admin from 203.0.113.47 port 48745 ssh2
+Apr 21 03:22:06 vault-api-01 sshd[24389]: Invalid user oracle from 203.0.113.47 port 40258
+Apr 21 03:22:06 vault-api-01 sshd[24389]: Failed password for invalid user oracle from 203.0.113.47 port 40258 ssh2
+Apr 21 03:22:09 vault-api-01 sshd[27505]: Invalid user test from 203.0.113.47 port 59415
+Apr 21 03:22:09 vault-api-01 sshd[27505]: Failed password for invalid user test from 203.0.113.47 port 59415 ssh2
+Apr 21 03:22:11 vault-api-01 sshd[22624]: Invalid user postgres from 203.0.113.47 port 40765
+Apr 21 03:22:11 vault-api-01 sshd[22624]: Failed password for invalid user postgres from 203.0.113.47 port 40765 ssh2
+Apr 21 03:22:16 vault-api-01 sshd[25786]: Invalid user ubuntu from 203.0.113.47 port 48884
+Apr 21 03:22:16 vault-api-01 sshd[25786]: Failed password for invalid user ubuntu from 203.0.113.47 port 48884 ssh2
+Apr 21 03:22:18 vault-api-01 sshd[2200]: Invalid user git from 203.0.113.47 port 52081
+Apr 21 03:22:18 vault-api-01 sshd[2200]: Failed password for invalid user git from 203.0.113.47 port 52081 ssh2
+Apr 21 03:22:22 vault-api-01 sshd[53926]: Invalid user jenkins from 203.0.113.47 port 64954
+Apr 21 03:22:22 vault-api-01 sshd[53926]: Failed password for invalid user jenkins from 203.0.113.47 port 64954 ssh2
+Apr 21 03:22:26 vault-api-01 sshd[15743]: Failed password for deploy from 203.0.113.47 port 51250 ssh2
+Apr 21 03:22:30 vault-api-01 sshd[45718]: Invalid user root from 203.0.113.47 port 51247
+Apr 21 03:22:30 vault-api-01 sshd[45718]: Failed password for invalid user root from 203.0.113.47 port 51247 ssh2
+Apr 21 03:22:33 vault-api-01 sshd[12390]: Invalid user admin from 203.0.113.47 port 49047
+Apr 21 03:22:33 vault-api-01 sshd[12390]: Failed password for invalid user admin from 203.0.113.47 port 49047 ssh2
+Apr 21 03:22:35 vault-api-01 sshd[13123]: Invalid user oracle from 203.0.113.47 port 47038
+Apr 21 03:22:35 vault-api-01 sshd[13123]: Failed password for invalid user oracle from 203.0.113.47 port 47038 ssh2
+Apr 21 03:22:39 vault-api-01 sshd[34548]: Invalid user test from 203.0.113.47 port 58962
+Apr 21 03:22:39 vault-api-01 sshd[34548]: Failed password for invalid user test from 203.0.113.47 port 58962 ssh2
+Apr 21 03:22:41 vault-api-01 sshd[20920]: Invalid user postgres from 203.0.113.47 port 58284
+Apr 21 03:22:41 vault-api-01 sshd[20920]: Failed password for invalid user postgres from 203.0.113.47 port 58284 ssh2
+Apr 21 03:22:46 vault-api-01 sshd[44090]: Invalid user ubuntu from 203.0.113.47 port 62783
+Apr 21 03:22:46 vault-api-01 sshd[44090]: Failed password for invalid user ubuntu from 203.0.113.47 port 62783 ssh2
+Apr 21 03:22:49 vault-api-01 sshd[17059]: Invalid user git from 203.0.113.47 port 44333
+Apr 21 03:22:49 vault-api-01 sshd[17059]: Failed password for invalid user git from 203.0.113.47 port 44333 ssh2
+Apr 21 03:22:53 vault-api-01 sshd[31314]: Invalid user jenkins from 203.0.113.47 port 54124
+Apr 21 03:22:53 vault-api-01 sshd[31314]: Failed password for invalid user jenkins from 203.0.113.47 port 54124 ssh2
+Apr 21 03:22:58 vault-api-01 sshd[46242]: Failed password for deploy from 203.0.113.47 port 53377 ssh2
+Apr 21 03:23:00 vault-api-01 sshd[30154]: Invalid user root from 203.0.113.47 port 58231
+Apr 21 03:23:00 vault-api-01 sshd[30154]: Failed password for invalid user root from 203.0.113.47 port 58231 ssh2
+Apr 21 03:23:02 vault-api-01 sshd[50549]: Invalid user admin from 203.0.113.47 port 60653
+Apr 21 03:23:02 vault-api-01 sshd[50549]: Failed password for invalid user admin from 203.0.113.47 port 60653 ssh2
+Apr 21 03:23:04 vault-api-01 sshd[44212]: Invalid user oracle from 203.0.113.47 port 52060
+Apr 21 03:23:04 vault-api-01 sshd[44212]: Failed password for invalid user oracle from 203.0.113.47 port 52060 ssh2
+Apr 21 03:23:07 vault-api-01 sshd[14588]: Invalid user test from 203.0.113.47 port 41391
+Apr 21 03:23:07 vault-api-01 sshd[14588]: Failed password for invalid user test from 203.0.113.47 port 41391 ssh2
+Apr 21 03:23:09 vault-api-01 sshd[8440]: Invalid user postgres from 203.0.113.47 port 45772
+Apr 21 03:23:09 vault-api-01 sshd[8440]: Failed password for invalid user postgres from 203.0.113.47 port 45772 ssh2
+Apr 21 03:23:11 vault-api-01 sshd[25085]: Invalid user ubuntu from 203.0.113.47 port 40067
+Apr 21 03:23:11 vault-api-01 sshd[25085]: Failed password for invalid user ubuntu from 203.0.113.47 port 40067 ssh2
+Apr 21 03:23:15 vault-api-01 sshd[11072]: Invalid user git from 203.0.113.47 port 57871
+Apr 21 03:23:15 vault-api-01 sshd[11072]: Failed password for invalid user git from 203.0.113.47 port 57871 ssh2
+Apr 21 03:23:18 vault-api-01 sshd[55741]: Invalid user jenkins from 203.0.113.47 port 62277
+Apr 21 03:23:18 vault-api-01 sshd[55741]: Failed password for invalid user jenkins from 203.0.113.47 port 62277 ssh2
+Apr 21 03:23:21 vault-api-01 sshd[28186]: Failed password for deploy from 203.0.113.47 port 44614 ssh2
+Apr 21 03:23:23 vault-api-01 sshd[31153]: Invalid user root from 203.0.113.47 port 56593
+Apr 21 03:23:23 vault-api-01 sshd[31153]: Failed password for invalid user root from 203.0.113.47 port 56593 ssh2
+Apr 21 03:23:26 vault-api-01 sshd[35192]: Invalid user admin from 203.0.113.47 port 41773
+Apr 21 03:23:26 vault-api-01 sshd[35192]: Failed password for invalid user admin from 203.0.113.47 port 41773 ssh2
+Apr 21 03:23:28 vault-api-01 sshd[15849]: Invalid user oracle from 203.0.113.47 port 54466
+Apr 21 03:23:28 vault-api-01 sshd[15849]: Failed password for invalid user oracle from 203.0.113.47 port 54466 ssh2
+Apr 21 03:23:31 vault-api-01 sshd[5028]: Invalid user test from 203.0.113.47 port 57146
+Apr 21 03:23:31 vault-api-01 sshd[5028]: Failed password for invalid user test from 203.0.113.47 port 57146 ssh2
+Apr 21 03:23:33 vault-api-01 sshd[38889]: Invalid user postgres from 203.0.113.47 port 41615
+Apr 21 03:23:33 vault-api-01 sshd[38889]: Failed password for invalid user postgres from 203.0.113.47 port 41615 ssh2
+Apr 21 03:23:37 vault-api-01 sshd[50274]: Invalid user ubuntu from 203.0.113.47 port 43120
+Apr 21 03:23:37 vault-api-01 sshd[50274]: Failed password for invalid user ubuntu from 203.0.113.47 port 43120 ssh2
+Apr 21 03:23:42 vault-api-01 sshd[44633]: Invalid user git from 203.0.113.47 port 62194
+Apr 21 03:23:42 vault-api-01 sshd[44633]: Failed password for invalid user git from 203.0.113.47 port 62194 ssh2
+Apr 21 03:23:44 vault-api-01 sshd[24510]: Invalid user jenkins from 203.0.113.47 port 44690
+Apr 21 03:23:44 vault-api-01 sshd[24510]: Failed password for invalid user jenkins from 203.0.113.47 port 44690 ssh2
+Apr 21 03:23:48 vault-api-01 sshd[59940]: Failed password for deploy from 203.0.113.47 port 53769 ssh2
+Apr 21 03:23:53 vault-api-01 sshd[54161]: Invalid user root from 203.0.113.47 port 53278
+Apr 21 03:23:53 vault-api-01 sshd[54161]: Failed password for invalid user root from 203.0.113.47 port 53278 ssh2
+Apr 21 03:23:55 vault-api-01 sshd[44632]: Invalid user admin from 203.0.113.47 port 56625
+Apr 21 03:23:55 vault-api-01 sshd[44632]: Failed password for invalid user admin from 203.0.113.47 port 56625 ssh2
+Apr 21 03:23:57 vault-api-01 sshd[11635]: Invalid user oracle from 203.0.113.47 port 60419
+Apr 21 03:23:57 vault-api-01 sshd[11635]: Failed password for invalid user oracle from 203.0.113.47 port 60419 ssh2
+Apr 21 03:23:59 vault-api-01 sshd[22544]: Invalid user test from 203.0.113.47 port 61531
+Apr 21 03:23:59 vault-api-01 sshd[22544]: Failed password for invalid user test from 203.0.113.47 port 61531 ssh2
+Apr 21 03:24:01 vault-api-01 sshd[15659]: Invalid user postgres from 203.0.113.47 port 42444
+Apr 21 03:24:01 vault-api-01 sshd[15659]: Failed password for invalid user postgres from 203.0.113.47 port 42444 ssh2
+Apr 21 03:24:03 vault-api-01 sshd[41429]: Invalid user ubuntu from 203.0.113.47 port 41712
+Apr 21 03:24:03 vault-api-01 sshd[41429]: Failed password for invalid user ubuntu from 203.0.113.47 port 41712 ssh2
+Apr 21 03:24:05 vault-api-01 sshd[47402]: Invalid user git from 203.0.113.47 port 45719
+Apr 21 03:24:05 vault-api-01 sshd[47402]: Failed password for invalid user git from 203.0.113.47 port 45719 ssh2
+Apr 21 03:24:07 vault-api-01 sshd[22754]: Invalid user jenkins from 203.0.113.47 port 54687
+Apr 21 03:24:07 vault-api-01 sshd[22754]: Failed password for invalid user jenkins from 203.0.113.47 port 54687 ssh2
+Apr 21 03:24:12 vault-api-01 sshd[38378]: Failed password for deploy from 203.0.113.47 port 64585 ssh2
+Apr 21 03:24:14 vault-api-01 sshd[39595]: Invalid user root from 203.0.113.47 port 53200
+Apr 21 03:24:14 vault-api-01 sshd[39595]: Failed password for invalid user root from 203.0.113.47 port 53200 ssh2
+Apr 21 03:24:19 vault-api-01 sshd[42751]: Invalid user admin from 203.0.113.47 port 48954
+Apr 21 03:24:19 vault-api-01 sshd[42751]: Failed password for invalid user admin from 203.0.113.47 port 48954 ssh2
+Apr 21 03:24:24 vault-api-01 sshd[53252]: Invalid user oracle from 203.0.113.47 port 57621
+Apr 21 03:24:24 vault-api-01 sshd[53252]: Failed password for invalid user oracle from 203.0.113.47 port 57621 ssh2
+Apr 21 03:24:27 vault-api-01 sshd[33213]: Invalid user test from 203.0.113.47 port 62149
+Apr 21 03:24:27 vault-api-01 sshd[33213]: Failed password for invalid user test from 203.0.113.47 port 62149 ssh2
+Apr 21 03:24:32 vault-api-01 sshd[32813]: Invalid user postgres from 203.0.113.47 port 46677
+Apr 21 03:24:32 vault-api-01 sshd[32813]: Failed password for invalid user postgres from 203.0.113.47 port 46677 ssh2
+Apr 21 03:24:35 vault-api-01 sshd[14592]: Invalid user ubuntu from 203.0.113.47 port 44481
+Apr 21 03:24:35 vault-api-01 sshd[14592]: Failed password for invalid user ubuntu from 203.0.113.47 port 44481 ssh2
+Apr 21 03:24:37 vault-api-01 sshd[21876]: Invalid user git from 203.0.113.47 port 42486
+Apr 21 03:24:37 vault-api-01 sshd[21876]: Failed password for invalid user git from 203.0.113.47 port 42486 ssh2
+Apr 21 03:24:39 vault-api-01 sshd[9552]: Invalid user jenkins from 203.0.113.47 port 53754
+Apr 21 03:24:39 vault-api-01 sshd[9552]: Failed password for invalid user jenkins from 203.0.113.47 port 53754 ssh2
+Apr 21 03:24:42 vault-api-01 sshd[21992]: Failed password for deploy from 203.0.113.47 port 63874 ssh2
+Apr 21 03:24:45 vault-api-01 sshd[26188]: Invalid user root from 203.0.113.47 port 53670
+Apr 21 03:24:45 vault-api-01 sshd[26188]: Failed password for invalid user root from 203.0.113.47 port 53670 ssh2
+Apr 21 03:24:47 vault-api-01 sshd[4440]: Invalid user admin from 203.0.113.47 port 51462
+Apr 21 03:24:47 vault-api-01 sshd[4440]: Failed password for invalid user admin from 203.0.113.47 port 51462 ssh2
+Apr 21 03:24:51 vault-api-01 sshd[41895]: Invalid user oracle from 203.0.113.47 port 41455
+Apr 21 03:24:51 vault-api-01 sshd[41895]: Failed password for invalid user oracle from 203.0.113.47 port 41455 ssh2
+Apr 21 03:24:55 vault-api-01 sshd[12374]: Invalid user test from 203.0.113.47 port 61452
+Apr 21 03:24:55 vault-api-01 sshd[12374]: Failed password for invalid user test from 203.0.113.47 port 61452 ssh2
+Apr 21 03:24:59 vault-api-01 sshd[25903]: Invalid user postgres from 203.0.113.47 port 53062
+Apr 21 03:24:59 vault-api-01 sshd[25903]: Failed password for invalid user postgres from 203.0.113.47 port 53062 ssh2
+Apr 21 03:25:03 vault-api-01 sshd[41439]: Invalid user ubuntu from 203.0.113.47 port 43262
+Apr 21 03:25:03 vault-api-01 sshd[41439]: Failed password for invalid user ubuntu from 203.0.113.47 port 43262 ssh2
+Apr 21 03:25:07 vault-api-01 sshd[24004]: Invalid user git from 203.0.113.47 port 63256
+Apr 21 03:25:07 vault-api-01 sshd[24004]: Failed password for invalid user git from 203.0.113.47 port 63256 ssh2
+Apr 21 03:25:10 vault-api-01 sshd[1496]: Invalid user jenkins from 203.0.113.47 port 42019
+Apr 21 03:25:10 vault-api-01 sshd[1496]: Failed password for invalid user jenkins from 203.0.113.47 port 42019 ssh2
+Apr 21 03:25:13 vault-api-01 sshd[7661]: Failed password for deploy from 203.0.113.47 port 58366 ssh2
+Apr 21 03:25:16 vault-api-01 sshd[6731]: Invalid user root from 203.0.113.47 port 47145
+Apr 21 03:25:16 vault-api-01 sshd[6731]: Failed password for invalid user root from 203.0.113.47 port 47145 ssh2
+Apr 21 03:25:18 vault-api-01 sshd[57584]: Invalid user admin from 203.0.113.47 port 52948
+Apr 21 03:25:18 vault-api-01 sshd[57584]: Failed password for invalid user admin from 203.0.113.47 port 52948 ssh2
+Apr 21 03:25:23 vault-api-01 sshd[6726]: Invalid user oracle from 203.0.113.47 port 53924
+Apr 21 03:25:23 vault-api-01 sshd[6726]: Failed password for invalid user oracle from 203.0.113.47 port 53924 ssh2
+Apr 21 03:25:28 vault-api-01 sshd[19824]: Invalid user test from 203.0.113.47 port 41689
+Apr 21 03:25:28 vault-api-01 sshd[19824]: Failed password for invalid user test from 203.0.113.47 port 41689 ssh2
+Apr 21 03:25:30 vault-api-01 sshd[9341]: Invalid user postgres from 203.0.113.47 port 51853
+Apr 21 03:25:30 vault-api-01 sshd[9341]: Failed password for invalid user postgres from 203.0.113.47 port 51853 ssh2
+Apr 21 03:25:33 vault-api-01 sshd[34137]: Invalid user ubuntu from 203.0.113.47 port 54901
+Apr 21 03:25:33 vault-api-01 sshd[34137]: Failed password for invalid user ubuntu from 203.0.113.47 port 54901 ssh2
+Apr 21 03:25:35 vault-api-01 sshd[16478]: Invalid user git from 203.0.113.47 port 58376
+Apr 21 03:25:35 vault-api-01 sshd[16478]: Failed password for invalid user git from 203.0.113.47 port 58376 ssh2
+Apr 21 03:25:39 vault-api-01 sshd[57257]: Invalid user jenkins from 203.0.113.47 port 56843
+Apr 21 03:25:39 vault-api-01 sshd[57257]: Failed password for invalid user jenkins from 203.0.113.47 port 56843 ssh2
+Apr 21 03:25:43 vault-api-01 sshd[41437]: Failed password for deploy from 203.0.113.47 port 43314 ssh2
+Apr 21 03:25:46 vault-api-01 sshd[32170]: Invalid user root from 203.0.113.47 port 60362
+Apr 21 03:25:46 vault-api-01 sshd[32170]: Failed password for invalid user root from 203.0.113.47 port 60362 ssh2
+Apr 21 03:25:51 vault-api-01 sshd[28328]: Invalid user admin from 203.0.113.47 port 47701
+Apr 21 03:25:51 vault-api-01 sshd[28328]: Failed password for invalid user admin from 203.0.113.47 port 47701 ssh2
+Apr 21 03:25:56 vault-api-01 sshd[21680]: Invalid user oracle from 203.0.113.47 port 42514
+Apr 21 03:25:56 vault-api-01 sshd[21680]: Failed password for invalid user oracle from 203.0.113.47 port 42514 ssh2
+Apr 21 03:25:59 vault-api-01 sshd[2177]: Invalid user test from 203.0.113.47 port 57713
+Apr 21 03:25:59 vault-api-01 sshd[2177]: Failed password for invalid user test from 203.0.113.47 port 57713 ssh2
+Apr 21 03:26:02 vault-api-01 sshd[15663]: Invalid user postgres from 203.0.113.47 port 55189
+Apr 21 03:26:02 vault-api-01 sshd[15663]: Failed password for invalid user postgres from 203.0.113.47 port 55189 ssh2
+Apr 21 03:26:06 vault-api-01 sshd[30139]: Invalid user ubuntu from 203.0.113.47 port 61513
+Apr 21 03:26:06 vault-api-01 sshd[30139]: Failed password for invalid user ubuntu from 203.0.113.47 port 61513 ssh2
+Apr 21 03:26:08 vault-api-01 sshd[57625]: Invalid user git from 203.0.113.47 port 59709
+Apr 21 03:26:08 vault-api-01 sshd[57625]: Failed password for invalid user git from 203.0.113.47 port 59709 ssh2
+Apr 21 03:26:10 vault-api-01 sshd[53693]: Invalid user jenkins from 203.0.113.47 port 42369
+Apr 21 03:26:10 vault-api-01 sshd[53693]: Failed password for invalid user jenkins from 203.0.113.47 port 42369 ssh2
+Apr 21 03:26:14 vault-api-01 sshd[7708]: Failed password for deploy from 203.0.113.47 port 49333 ssh2
+Apr 21 03:26:18 vault-api-01 sshd[10601]: Invalid user root from 203.0.113.47 port 42768
+Apr 21 03:26:18 vault-api-01 sshd[10601]: Failed password for invalid user root from 203.0.113.47 port 42768 ssh2
+Apr 21 03:26:21 vault-api-01 sshd[8337]: Invalid user admin from 203.0.113.47 port 41473
+Apr 21 03:26:21 vault-api-01 sshd[8337]: Failed password for invalid user admin from 203.0.113.47 port 41473 ssh2
+Apr 21 03:26:24 vault-api-01 sshd[27082]: Invalid user oracle from 203.0.113.47 port 40318
+Apr 21 03:26:24 vault-api-01 sshd[27082]: Failed password for invalid user oracle from 203.0.113.47 port 40318 ssh2
+Apr 21 03:26:27 vault-api-01 sshd[20461]: Invalid user test from 203.0.113.47 port 46677
+Apr 21 03:26:27 vault-api-01 sshd[20461]: Failed password for invalid user test from 203.0.113.47 port 46677 ssh2
+Apr 21 03:26:31 vault-api-01 sshd[21042]: Invalid user postgres from 203.0.113.47 port 40884
+Apr 21 03:26:31 vault-api-01 sshd[21042]: Failed password for invalid user postgres from 203.0.113.47 port 40884 ssh2
+Apr 21 03:26:36 vault-api-01 sshd[50714]: Invalid user ubuntu from 203.0.113.47 port 51993
+Apr 21 03:26:36 vault-api-01 sshd[50714]: Failed password for invalid user ubuntu from 203.0.113.47 port 51993 ssh2
+Apr 21 03:26:38 vault-api-01 sshd[23387]: Invalid user git from 203.0.113.47 port 48985
+Apr 21 03:26:38 vault-api-01 sshd[23387]: Failed password for invalid user git from 203.0.113.47 port 48985 ssh2
+Apr 21 03:26:42 vault-api-01 sshd[1898]: Invalid user jenkins from 203.0.113.47 port 60004
+Apr 21 03:26:42 vault-api-01 sshd[1898]: Failed password for invalid user jenkins from 203.0.113.47 port 60004 ssh2
+Apr 21 03:26:44 vault-api-01 sshd[48701]: Failed password for deploy from 203.0.113.47 port 47331 ssh2
+Apr 21 03:26:47 vault-api-01 sshd[49107]: Invalid user root from 203.0.113.47 port 41465
+Apr 21 03:26:47 vault-api-01 sshd[49107]: Failed password for invalid user root from 203.0.113.47 port 41465 ssh2
+Apr 21 03:26:49 vault-api-01 sshd[1000]: Invalid user admin from 203.0.113.47 port 62128
+Apr 21 03:26:49 vault-api-01 sshd[1000]: Failed password for invalid user admin from 203.0.113.47 port 62128 ssh2
+Apr 21 03:26:52 vault-api-01 sshd[29200]: Invalid user oracle from 203.0.113.47 port 49222
+Apr 21 03:26:52 vault-api-01 sshd[29200]: Failed password for invalid user oracle from 203.0.113.47 port 49222 ssh2
+Apr 21 03:26:54 vault-api-01 sshd[11361]: Invalid user test from 203.0.113.47 port 47624
+Apr 21 03:26:54 vault-api-01 sshd[11361]: Failed password for invalid user test from 203.0.113.47 port 47624 ssh2
+Apr 21 03:26:57 vault-api-01 sshd[47799]: Invalid user postgres from 203.0.113.47 port 60768
+Apr 21 03:26:57 vault-api-01 sshd[47799]: Failed password for invalid user postgres from 203.0.113.47 port 60768 ssh2
+Apr 21 03:26:59 vault-api-01 sshd[47050]: Invalid user ubuntu from 203.0.113.47 port 47074
+Apr 21 03:26:59 vault-api-01 sshd[47050]: Failed password for invalid user ubuntu from 203.0.113.47 port 47074 ssh2
+Apr 21 03:27:03 vault-api-01 sshd[4314]: Invalid user git from 203.0.113.47 port 58632
+Apr 21 03:27:03 vault-api-01 sshd[4314]: Failed password for invalid user git from 203.0.113.47 port 58632 ssh2
+Apr 21 03:27:06 vault-api-01 sshd[38181]: Invalid user jenkins from 203.0.113.47 port 50081
+Apr 21 03:27:06 vault-api-01 sshd[38181]: Failed password for invalid user jenkins from 203.0.113.47 port 50081 ssh2
+Apr 21 03:27:09 vault-api-01 sshd[1470]: Failed password for deploy from 203.0.113.47 port 55184 ssh2
+Apr 21 03:27:12 vault-api-01 sshd[1421]: Invalid user root from 203.0.113.47 port 48947
+Apr 21 03:27:12 vault-api-01 sshd[1421]: Failed password for invalid user root from 203.0.113.47 port 48947 ssh2
+Apr 21 03:27:17 vault-api-01 sshd[58094]: Invalid user admin from 203.0.113.47 port 62473
+Apr 21 03:27:17 vault-api-01 sshd[58094]: Failed password for invalid user admin from 203.0.113.47 port 62473 ssh2
+Apr 21 03:27:19 vault-api-01 sshd[48232]: Invalid user oracle from 203.0.113.47 port 42005
+Apr 21 03:27:19 vault-api-01 sshd[48232]: Failed password for invalid user oracle from 203.0.113.47 port 42005 ssh2
+Apr 21 03:27:21 vault-api-01 sshd[46224]: Invalid user test from 203.0.113.47 port 58346
+Apr 21 03:27:21 vault-api-01 sshd[46224]: Failed password for invalid user test from 203.0.113.47 port 58346 ssh2
+Apr 21 03:27:27 vault-api-01 sshd[6485]: Accepted password for deploy from 203.0.113.47 port 51884 ssh2
+Apr 21 03:27:28 vault-api-01 sshd[6485]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 03:28:08 vault-api-01 sudo:   deploy : TTY=pts/1 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Apr 21 03:28:19 vault-api-01 sudo:   deploy : TTY=pts/1 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status snapvault-api
+Apr 21 03:47:31 vault-api-01 sshd[6485]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 04:17:44 vault-api-01 sshd[18646]: Accepted publickey for jrivera from 10.12.4.44 port 41786 ssh2: RSA SHA256:9k1Tq613nZxW
+Apr 21 04:17:45 vault-api-01 sshd[18646]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 04:26:31 vault-api-01 sshd[27671]: Accepted publickey for spanter from 10.12.4.31 port 58572 ssh2: RSA SHA256:9k1Tq675nZxW
+Apr 21 04:26:32 vault-api-01 sshd[27671]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 04:28:54 vault-api-01 sshd[18646]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 04:34:19 vault-api-01 sshd[55917]: Failed password for deploy from 10.12.9.8 port 56388 ssh2
+Apr 21 04:35:43 vault-api-01 sshd[27671]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 04:38:00 vault-api-01 sshd[11407]: Accepted publickey for deploy from 10.12.9.8 port 59676 ssh2: RSA SHA256:9k1Tq667nZxW
+Apr 21 04:38:01 vault-api-01 sshd[11407]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 04:38:50 vault-api-01 sshd[11407]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 04:39:08 vault-api-01 sshd[7002]: Accepted publickey for jrivera from 10.12.4.44 port 48859 ssh2: RSA SHA256:9k1Tq175nZxW
+Apr 21 04:39:09 vault-api-01 sshd[7002]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 04:42:17 vault-api-01 sshd[46737]: Accepted publickey for spanter from 10.12.4.31 port 47938 ssh2: RSA SHA256:9k1Tq137nZxW
+Apr 21 04:42:18 vault-api-01 sshd[46737]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 04:47:39 vault-api-01 sshd[7002]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 04:55:44 vault-api-01 sshd[46737]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 05:16:20 vault-api-01 sshd[49327]: Accepted publickey for spanter from 10.12.4.31 port 41189 ssh2: RSA SHA256:9k1Tq644nZxW
+Apr 21 05:16:21 vault-api-01 sshd[49327]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 05:24:37 vault-api-01 sshd[49327]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 05:32:21 vault-api-01 sshd[34062]: Accepted publickey for deploy from 10.12.9.8 port 46585 ssh2: RSA SHA256:9k1Tq146nZxW
+Apr 21 05:32:22 vault-api-01 sshd[34062]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 05:33:25 vault-api-01 sshd[34062]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 05:43:53 vault-api-01 sshd[43559]: Accepted publickey for deploy from 10.12.9.8 port 52343 ssh2: RSA SHA256:9k1Tq792nZxW
+Apr 21 05:43:54 vault-api-01 sshd[43559]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 05:44:51 vault-api-01 sshd[21960]: Accepted publickey for jrivera from 10.12.4.44 port 40319 ssh2: RSA SHA256:9k1Tq453nZxW
+Apr 21 05:44:52 vault-api-01 sshd[21960]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 05:47:21 vault-api-01 sshd[21960]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 05:53:11 vault-api-01 sshd[43559]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 06:06:39 vault-api-01 sshd[21129]: Accepted publickey for jrivera from 10.12.4.44 port 51512 ssh2: RSA SHA256:9k1Tq247nZxW
+Apr 21 06:06:40 vault-api-01 sshd[21129]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 06:07:37 vault-api-01 sshd[40490]: Accepted publickey for spanter from 10.12.4.31 port 50275 ssh2: RSA SHA256:9k1Tq741nZxW
+Apr 21 06:07:38 vault-api-01 sshd[40490]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 06:10:25 vault-api-01 sshd[40490]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 06:11:31 vault-api-01 sshd[21129]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 06:13:24 vault-api-01 sshd[28240]: Accepted publickey for deploy from 10.12.9.8 port 49631 ssh2: RSA SHA256:9k1Tq504nZxW
+Apr 21 06:13:25 vault-api-01 sshd[28240]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 06:27:20 vault-api-01 sshd[28240]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 08:11:49 vault-api-01 sshd[40365]: Accepted publickey for jrivera from 10.12.4.44 port 54278 ssh2: RSA SHA256:9k1Tq316nZxW
+Apr 21 08:11:50 vault-api-01 sshd[40365]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 08:22:24 vault-api-01 sshd[40365]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 08:28:42 vault-api-01 sshd[30622]: Accepted publickey for jrivera from 10.12.4.44 port 63195 ssh2: RSA SHA256:9k1Tq985nZxW
+Apr 21 08:28:43 vault-api-01 sshd[30622]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 08:36:54 vault-api-01 sshd[30622]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 09:48:53 vault-api-01 sshd[20837]: Accepted publickey for deploy from 10.12.9.8 port 62701 ssh2: RSA SHA256:9k1Tq373nZxW
+Apr 21 09:48:54 vault-api-01 sshd[20837]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 09:54:51 vault-api-01 sshd[29358]: Accepted publickey for jrivera from 10.12.4.44 port 50595 ssh2: RSA SHA256:9k1Tq190nZxW
+Apr 21 09:54:52 vault-api-01 sshd[29358]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 10:00:42 vault-api-01 sshd[20837]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 10:02:18 vault-api-01 sshd[29358]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 10:08:02 vault-api-01 sshd[39420]: Accepted publickey for deploy from 10.12.9.8 port 56564 ssh2: RSA SHA256:9k1Tq141nZxW
+Apr 21 10:08:03 vault-api-01 sshd[39420]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 10:17:21 vault-api-01 sshd[39420]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 10:17:27 vault-api-01 sshd[10562]: Accepted publickey for deploy from 10.12.9.8 port 49616 ssh2: RSA SHA256:9k1Tq875nZxW
+Apr 21 10:17:28 vault-api-01 sshd[10562]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 10:18:21 vault-api-01 sshd[10562]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 10:20:28 vault-api-01 sshd[36748]: Accepted publickey for spanter from 10.12.4.31 port 55846 ssh2: RSA SHA256:9k1Tq604nZxW
+Apr 21 10:20:29 vault-api-01 sshd[36748]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 10:32:49 vault-api-01 sshd[36748]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 10:36:07 vault-api-01 sshd[5376]: Accepted publickey for spanter from 10.12.4.31 port 55067 ssh2: RSA SHA256:9k1Tq351nZxW
+Apr 21 10:36:08 vault-api-01 sshd[5376]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 10:39:54 vault-api-01 sshd[5376]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 10:44:18 vault-api-01 sshd[30512]: Accepted publickey for jrivera from 10.12.4.44 port 60070 ssh2: RSA SHA256:9k1Tq707nZxW
+Apr 21 10:44:19 vault-api-01 sshd[30512]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 10:50:41 vault-api-01 sshd[30512]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 11:23:00 vault-api-01 sshd[5764]: Accepted publickey for spanter from 10.12.4.31 port 60084 ssh2: RSA SHA256:9k1Tq652nZxW
+Apr 21 11:23:01 vault-api-01 sshd[5764]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 11:28:10 vault-api-01 sshd[18963]: Accepted publickey for jrivera from 10.12.4.44 port 43387 ssh2: RSA SHA256:9k1Tq313nZxW
+Apr 21 11:28:11 vault-api-01 sshd[18963]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 11:31:36 vault-api-01 sshd[18963]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 11:32:48 vault-api-01 sshd[5764]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 11:41:29 vault-api-01 sshd[17248]: Accepted publickey for spanter from 10.12.4.31 port 60705 ssh2: RSA SHA256:9k1Tq205nZxW
+Apr 21 11:41:30 vault-api-01 sshd[17248]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 11:53:02 vault-api-01 sshd[17248]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 12:01:38 vault-api-01 sshd[3339]: Accepted publickey for jrivera from 10.12.4.44 port 58628 ssh2: RSA SHA256:9k1Tq166nZxW
+Apr 21 12:01:39 vault-api-01 sshd[3339]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 12:05:40 vault-api-01 sshd[32119]: Failed password for spanter from 10.12.4.31 port 60468 ssh2
+Apr 21 12:08:04 vault-api-01 sshd[3339]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 12:24:58 vault-api-01 sshd[5979]: Accepted publickey for deploy from 10.12.9.8 port 60171 ssh2: RSA SHA256:9k1Tq725nZxW
+Apr 21 12:24:59 vault-api-01 sshd[5979]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 12:26:11 vault-api-01 sshd[2939]: Failed password for jrivera from 10.12.4.44 port 43241 ssh2
+Apr 21 12:29:38 vault-api-01 sshd[5979]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 12:30:27 vault-api-01 sshd[13816]: Accepted publickey for deploy from 10.12.9.8 port 52617 ssh2: RSA SHA256:9k1Tq870nZxW
+Apr 21 12:30:28 vault-api-01 sshd[13816]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 12:41:12 vault-api-01 sshd[13816]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 12:47:50 vault-api-01 sshd[22279]: Accepted publickey for jrivera from 10.12.4.44 port 61803 ssh2: RSA SHA256:9k1Tq336nZxW
+Apr 21 12:47:51 vault-api-01 sshd[22279]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 12:50:32 vault-api-01 sshd[46677]: Accepted publickey for spanter from 10.12.4.31 port 46651 ssh2: RSA SHA256:9k1Tq314nZxW
+Apr 21 12:50:33 vault-api-01 sshd[46677]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 12:58:18 vault-api-01 sshd[46677]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 13:00:37 vault-api-01 sshd[22279]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 13:38:42 vault-api-01 sshd[19311]: Accepted publickey for deploy from 10.12.9.8 port 54457 ssh2: RSA SHA256:9k1Tq470nZxW
+Apr 21 13:38:43 vault-api-01 sshd[19311]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 13:45:32 vault-api-01 sshd[19311]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 13:56:46 vault-api-01 sshd[51571]: Accepted publickey for deploy from 10.12.9.8 port 42584 ssh2: RSA SHA256:9k1Tq544nZxW
+Apr 21 13:56:47 vault-api-01 sshd[51571]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 13:57:33 vault-api-01 sshd[8635]: Failed password for spanter from 10.12.4.31 port 55406 ssh2
+Apr 21 13:59:09 vault-api-01 sshd[37939]: Accepted publickey for spanter from 10.12.4.31 port 40934 ssh2: RSA SHA256:9k1Tq728nZxW
+Apr 21 13:59:10 vault-api-01 sshd[37939]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 14:03:09 vault-api-01 sshd[51571]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 14:12:57 vault-api-01 sshd[37939]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 15:09:35 vault-api-01 sshd[54604]: Accepted publickey for deploy from 10.12.9.8 port 54158 ssh2: RSA SHA256:9k1Tq885nZxW
+Apr 21 15:09:36 vault-api-01 sshd[54604]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 15:24:31 vault-api-01 sshd[54604]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 15:32:07 vault-api-01 sshd[23260]: Accepted publickey for jrivera from 10.12.4.44 port 63387 ssh2: RSA SHA256:9k1Tq992nZxW
+Apr 21 15:32:08 vault-api-01 sshd[23260]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 15:36:48 vault-api-01 sshd[23260]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 15:37:10 vault-api-01 sshd[38092]: Accepted publickey for jrivera from 10.12.4.44 port 49613 ssh2: RSA SHA256:9k1Tq973nZxW
+Apr 21 15:37:11 vault-api-01 sshd[38092]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 15:50:42 vault-api-01 sshd[38092]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 16:16:34 vault-api-01 sshd[53808]: Accepted publickey for spanter from 10.12.4.31 port 61614 ssh2: RSA SHA256:9k1Tq597nZxW
+Apr 21 16:16:35 vault-api-01 sshd[53808]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 16:23:18 vault-api-01 sshd[56721]: Accepted publickey for jrivera from 10.12.4.44 port 42214 ssh2: RSA SHA256:9k1Tq506nZxW
+Apr 21 16:23:19 vault-api-01 sshd[56721]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 16:24:54 vault-api-01 sshd[3269]: Accepted publickey for spanter from 10.12.4.31 port 58513 ssh2: RSA SHA256:9k1Tq642nZxW
+Apr 21 16:24:55 vault-api-01 sshd[3269]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 16:24:58 vault-api-01 sshd[56721]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 16:26:03 vault-api-01 sshd[53808]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 16:26:23 vault-api-01 sshd[3269]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 16:32:24 vault-api-01 sshd[44287]: Accepted publickey for deploy from 10.12.9.8 port 44197 ssh2: RSA SHA256:9k1Tq846nZxW
+Apr 21 16:32:25 vault-api-01 sshd[44287]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 16:44:16 vault-api-01 sshd[44287]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 16:46:37 vault-api-01 sshd[21592]: Accepted publickey for deploy from 10.12.9.8 port 41864 ssh2: RSA SHA256:9k1Tq215nZxW
+Apr 21 16:46:38 vault-api-01 sshd[21592]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 16:52:57 vault-api-01 sshd[21592]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 17:10:37 vault-api-01 sshd[3093]: Accepted publickey for spanter from 10.12.4.31 port 64289 ssh2: RSA SHA256:9k1Tq317nZxW
+Apr 21 17:10:38 vault-api-01 sshd[3093]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 17:18:42 vault-api-01 sshd[3093]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 17:19:18 vault-api-01 sshd[41787]: Accepted publickey for jrivera from 10.12.4.44 port 61728 ssh2: RSA SHA256:9k1Tq444nZxW
+Apr 21 17:19:19 vault-api-01 sshd[41787]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 17:21:32 vault-api-01 sshd[47242]: Failed password for jrivera from 10.12.4.44 port 43097 ssh2
+Apr 21 17:29:45 vault-api-01 sshd[41787]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 17:30:15 vault-api-01 sshd[33021]: Accepted publickey for spanter from 10.12.4.31 port 51928 ssh2: RSA SHA256:9k1Tq651nZxW
+Apr 21 17:30:16 vault-api-01 sshd[33021]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 17:30:54 vault-api-01 sshd[33021]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 17:32:59 vault-api-01 sshd[23016]: Accepted publickey for spanter from 10.12.4.31 port 41132 ssh2: RSA SHA256:9k1Tq682nZxW
+Apr 21 17:33:00 vault-api-01 sshd[23016]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 17:45:06 vault-api-01 sshd[23016]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 17:46:49 vault-api-01 sshd[54326]: Accepted publickey for jrivera from 10.12.4.44 port 56658 ssh2: RSA SHA256:9k1Tq534nZxW
+Apr 21 17:46:50 vault-api-01 sshd[54326]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 18:00:28 vault-api-01 sshd[54326]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 18:13:55 vault-api-01 sshd[10591]: Accepted publickey for spanter from 10.12.4.31 port 52128 ssh2: RSA SHA256:9k1Tq314nZxW
+Apr 21 18:13:56 vault-api-01 sshd[10591]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 18:22:14 vault-api-01 sshd[2477]: Accepted publickey for spanter from 10.12.4.31 port 61064 ssh2: RSA SHA256:9k1Tq823nZxW
+Apr 21 18:22:15 vault-api-01 sshd[2477]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 18:27:22 vault-api-01 sshd[10591]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 18:30:19 vault-api-01 sshd[2477]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 19:03:11 vault-api-01 sshd[36287]: Accepted publickey for spanter from 10.12.4.31 port 61333 ssh2: RSA SHA256:9k1Tq150nZxW
+Apr 21 19:03:12 vault-api-01 sshd[36287]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 19:08:55 vault-api-01 sshd[40198]: Accepted publickey for deploy from 10.12.9.8 port 50826 ssh2: RSA SHA256:9k1Tq920nZxW
+Apr 21 19:08:56 vault-api-01 sshd[40198]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 19:10:43 vault-api-01 sshd[36287]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 19:16:22 vault-api-01 sshd[40198]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 19:17:15 vault-api-01 sshd[13454]: Accepted publickey for deploy from 10.12.9.8 port 43352 ssh2: RSA SHA256:9k1Tq416nZxW
+Apr 21 19:17:16 vault-api-01 sshd[13454]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 19:18:18 vault-api-01 sshd[46836]: Accepted publickey for deploy from 10.12.9.8 port 53116 ssh2: RSA SHA256:9k1Tq553nZxW
+Apr 21 19:18:19 vault-api-01 sshd[46836]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 19:28:50 vault-api-01 sshd[46836]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 19:29:25 vault-api-01 sshd[13454]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 19:42:26 vault-api-01 sshd[16086]: Accepted publickey for deploy from 10.12.9.8 port 64469 ssh2: RSA SHA256:9k1Tq247nZxW
+Apr 21 19:42:27 vault-api-01 sshd[16086]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 19:48:16 vault-api-01 sshd[16086]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 19:57:53 vault-api-01 sshd[4396]: Accepted publickey for spanter from 10.12.4.31 port 43023 ssh2: RSA SHA256:9k1Tq963nZxW
+Apr 21 19:57:54 vault-api-01 sshd[4396]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 20:08:54 vault-api-01 sshd[4396]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 20:32:14 vault-api-01 sshd[33374]: Accepted publickey for deploy from 10.12.9.8 port 44567 ssh2: RSA SHA256:9k1Tq394nZxW
+Apr 21 20:32:15 vault-api-01 sshd[33374]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 20:46:11 vault-api-01 sshd[33374]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 21:16:48 vault-api-01 sshd[55614]: Accepted publickey for jrivera from 10.12.4.44 port 47119 ssh2: RSA SHA256:9k1Tq964nZxW
+Apr 21 21:16:49 vault-api-01 sshd[55614]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 21:27:49 vault-api-01 sshd[55614]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 21:33:12 vault-api-01 sshd[50852]: Accepted publickey for spanter from 10.12.4.31 port 41520 ssh2: RSA SHA256:9k1Tq518nZxW
+Apr 21 21:33:13 vault-api-01 sshd[50852]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 21:42:42 vault-api-01 sshd[18690]: Accepted publickey for jrivera from 10.12.4.44 port 44485 ssh2: RSA SHA256:9k1Tq340nZxW
+Apr 21 21:42:43 vault-api-01 sshd[18690]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 21:46:22 vault-api-01 sshd[50852]: pam_unix(sshd:session): session closed for user spanter
+Apr 21 21:55:28 vault-api-01 sshd[18690]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 22:14:49 vault-api-01 sshd[3652]: Accepted publickey for jrivera from 10.12.4.44 port 54199 ssh2: RSA SHA256:9k1Tq656nZxW
+Apr 21 22:14:50 vault-api-01 sshd[3652]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 22:20:08 vault-api-01 sshd[3652]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 22:28:03 vault-api-01 sshd[29380]: Accepted publickey for deploy from 10.12.9.8 port 50947 ssh2: RSA SHA256:9k1Tq634nZxW
+Apr 21 22:28:04 vault-api-01 sshd[29380]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 22:32:32 vault-api-01 sshd[12051]: Accepted publickey for deploy from 10.12.9.8 port 42666 ssh2: RSA SHA256:9k1Tq805nZxW
+Apr 21 22:32:33 vault-api-01 sshd[12051]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Apr 21 22:36:01 vault-api-01 sshd[29380]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 22:39:53 vault-api-01 sshd[38081]: Accepted publickey for jrivera from 10.12.4.44 port 58723 ssh2: RSA SHA256:9k1Tq696nZxW
+Apr 21 22:39:54 vault-api-01 sshd[38081]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 22:41:00 vault-api-01 sshd[38081]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 22:42:58 vault-api-01 sshd[12051]: pam_unix(sshd:session): session closed for user deploy
+Apr 21 22:49:08 vault-api-01 sshd[49123]: Accepted publickey for jrivera from 10.12.4.44 port 49066 ssh2: RSA SHA256:9k1Tq650nZxW
+Apr 21 22:49:09 vault-api-01 sshd[49123]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
+Apr 21 22:58:20 vault-api-01 sshd[49123]: pam_unix(sshd:session): session closed for user jrivera
+Apr 21 23:40:40 vault-api-01 sshd[17459]: Accepted publickey for spanter from 10.12.4.31 port 58289 ssh2: RSA SHA256:9k1Tq301nZxW
+Apr 21 23:40:41 vault-api-01 sshd[17459]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
+Apr 21 23:46:43 vault-api-01 sshd[17459]: pam_unix(sshd:session): session closed for user spanter
