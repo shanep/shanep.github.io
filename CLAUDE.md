@@ -41,6 +41,10 @@ edutools outline docs/cs425 --out docs/cs425/schedule/modules.json
 
 ## Canvas
 
+**Load the `canvas` skill at the start of any session in this repo**, before touching course
+content or running `edutools`. It documents the CLI's commands, required flags and safety
+rules, which the notes below assume.
+
 All Canvas code lives in the `edutools` app (`../edutools`), not in this repo. Do not add
 Canvas API calls here; extend the `edutools` CLI instead.
 
