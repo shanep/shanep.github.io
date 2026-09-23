@@ -1,4 +1,4 @@
-# Quiz 3: Cryptography
+# 8.03 Quiz 3: Cryptography
 
 **Week 8 · 30 points · 15 questions × 2 points · 15 minutes · one attempt · taken in Canvas**
 

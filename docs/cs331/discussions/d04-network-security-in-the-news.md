@@ -1,4 +1,4 @@
-# D4: Network Security in the News
+# 11.02 D4: Network Security in the News
 
 **Week 11 · 30 points · about 60 minutes · Canvas discussion board**
 
@@ -41,7 +41,7 @@ Two rules:
 - **Check the board before you post and pick something nobody has taken.** First come, first served.
   Post early if you want a well-documented one.
 
-## Initial post
+## Initial Post Directions
 
 **Due: Thursday of week 11. About 400-500 words.**
 
@@ -88,7 +88,7 @@ One short paragraph: **would your two controls have been in place at a realistic
 this size and budget?** If not, say what they would have displaced. Security recommendations that
 assume unlimited resources are the easiest kind to write and the least useful.
 
-## Replies
+## Reply Post Directions
 
 **Due: Sunday of week 11. Two replies, about 150 words each.**
 
@@ -113,9 +113,9 @@ Reply to **two** classmates who chose different incidents. Do one of these:
 **What loses points in row 2:** controls with no stated cost, and detection controls with no answer
 to "who reads the alert." Week 15 will show you what happens to alerts nobody reads.
 
-## Ground rules
+## Discussion Guidelines
 
-The [ground rules from D1](d01-introductions-and-security-mindset.md#ground-rules-for-every-discussion-in-this-course)
+The [discussion guidelines from D1](d01-introductions-and-security-mindset.md#discussion-guidelines)
 apply. Analyse published reporting only, do not probe, scan, or test any organisation's network.
 
 ## AI disclosure

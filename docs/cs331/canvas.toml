@@ -32,7 +32,16 @@ grace_days = 2
 
 # The Class Interaction Policy is the opposite: a discussion is only useful
 # during its week, so late participation may earn nothing and there is no grace.
+#
+# A discussion is dated by its initial post, due Thursday, which is what Canvas
+# marks on time or late. The replies are due Sunday, and each discussion has an
+# ungraded "Replies" reminder under reminders/ dated by that, following the
+# Boise State Online shell. The replies are still graded in the discussion.
 [term.policy.discussion]
+due        = "thu 23:59"
+grace_days = 0
+
+[term.policy.reminder]
 due        = "sun 23:59"
 grace_days = 0
 
@@ -70,7 +79,7 @@ kinds  = ["quiz"]
 [[group]]
 name   = "Discussions and Reflections"
 weight = 15
-kinds  = ["discussion"]
+kinds  = ["discussion", "reminder"]
 
 # The syllabus lists the midterm and the final as 15% each. A group is the unit
 # edutools can weight, and both exams are the same kind, so they share one group
@@ -84,21 +93,38 @@ kinds  = ["exam"]
 # ---------------------------------------------------------------------------
 # What this repo calls its files. This directory is a VitePress site as well as a
 # Canvas course repo, so the syllabus is index.md rather than syllabus.md and the
-# weekly module pages are under notes/.
+# weekly overview and lecture notes pages are under notes/.
 # ---------------------------------------------------------------------------
 
 [layout]
 syllabus = "index.md"
 pages = [
+    # The pages the Boise State Online shell expects: a front page, the
+    # Getting Started module's two pages, and Instructor Information.
+    "home.md",
+    "getting-started.md",
+    "communicating.md",
+    "instructor.md",
+    # Instructor-only pages shared by every course: instructor-resources is a
+    # symlink to shared/instructor-resources/ at the repo root, and the website
+    # excludes it, so these only ever reach Canvas, in a never_publish module.
+    "instructor-resources/*.md",
+    # Student-facing pages shared by every course, from shared/course-resources/
+    # through the course-resources symlink. These are on the website too.
+    "course-resources/*.md",
     "objectives.md",
     "resources.md",
     "notes/*.md",
     "data/index.md",
+    # The exam guides are pages, not assignments. The default layout lists this
+    # pattern, but a [layout] pages list replaces the default, so it is repeated.
+    "assignments/*-exam-guide.md",
     # The two written scenarios the labs work from. They are pages rather than
     # files because students read them rather than download them.
     "data/incident-report.md",
     "data/photoshare-system.md",
 ]
+
 # The lab data. The real files live in docs/public/cs331/data/, because that is
 # the only place VitePress serves them from; the entries under data/ are symlinks
 # to them, so the push finds the files inside the course directory, uploads them,
@@ -110,6 +136,7 @@ pages = [
 # sits in the course directory as a real file, this push is what delivers it to
 # students, and a fresh clone has to have it dropped back in by hand.
 files = [
+    "images/cs331-banner.svg",
     "data/auth.log",
     "data/cert_inspect.py",
     "data/crypto_demo.py",
@@ -127,137 +154,299 @@ files = [
 lab        = "assignments/lab-*.md"
 quiz       = "quizzes/quiz-*.md"
 discussion = "discussions/d*.md"
+reminder   = "reminders/d*-replies.md"
 
 # Per-item exceptions to the policy above, keyed by path relative to this file.
 
 # Week 15 is a four-day week: instruction ends Friday April 30, so its Sunday
-# falls outside the term. Both week 15 items move to that Friday, with no grace,
-# because the Late Work Policy accepts nothing after the last day of instruction.
+# falls outside the term. The lab and the D5 replies move to that Friday, with no
+# grace, because the Late Work Policy accepts nothing after the last day of
+# instruction. The D5 initial post keeps the Thursday every discussion has.
 [override."assignments/lab-10-log-analysis-and-incident-memo.md"]
 due        = "fri 23:59"
 grace_days = 0
 
-[override."discussions/d05-current-security-failure.md"]
+[override."reminders/d05-replies.md"]
 due = "fri 23:59"
 
+# D6 is a single post with no replies, due the last day of finals week, as it
+# was before discussions moved to Thursday.
+[override."discussions/d06-final-reflection.md"]
+due = "fri 23:59"
+
+# The diagnostic says it is due Tuesday of week 1, so Canvas does too.
+[override."quizzes/quiz-00-diagnostic.md"]
+due = "tue 23:59"
+
 # ---------------------------------------------------------------------------
-# Canvas modules. `page` is the module overview; `items` are published in order.
-# Every key is a path relative to this file and must exist, or the push reports
-# it as unpublished rather than silently skipping it.
-#
-# One module per week, matching the Course Workflow section of the syllabus: one
-# reading, one module page, one graded activity, and a quiz in five of the weeks.
+# Heading icons, as the Boise State Online shell draws them: a 45x35 image in
+# front of a section heading. edutools uploads each file below and inserts an
+# <img class="cs-icon"> into every h2 or h3 whose text matches the key (case is
+# ignored, * matches anything, first match wins). The images are the shell's own
+# icon set, pulled from course 52107 into docs/public/icons/, which every course
+# shares: docs/cs331/icons is a symlink to it. Only the icons named here upload.
 # ---------------------------------------------------------------------------
 
+[icons]
+"learning objectives"      = "icons/list.svg"
+"assignments and tasks"    = "icons/task.svg"
+"readings"                 = "icons/reading.svg"
+"worked example"           = "icons/work.svg"
+"key terms"                = "icons/document.svg"
+"looking ahead"            = "icons/looking-ahead.svg"
+"time estimate"            = "icons/clock.svg"
+"goal"                     = "icons/finish-line.svg"
+"what to submit"           = "icons/upload.svg"
+"*post directions"         = "icons/discussion.svg"
+"discussion guidelines"    = "icons/policies.svg"
+"communicating online"     = "icons/policies.svg"
+"when to message me"       = "icons/email.svg"
+"ai disclosure"            = "icons/ai-allowed.svg"
+"instructor: *"            = "icons/profile.svg"
+"note about grading"       = "icons/attention.svg"
+"next steps"               = "icons/looking-ahead.svg"
+
+# ---------------------------------------------------------------------------
+# Canvas modules, in the shape of the Boise State Online shell (course 52107):
+# Course Resources, Getting Started, then one "Module N" per week. `page` is the
+# module's first page; `items` follow in order. Every key is a path relative to
+# this file and must exist, or the push reports it as unpublished rather than
+# silently skipping it.
+#
+# Each week is two pages, as in the shell: "Module N Overview" (introduction,
+# learning objectives, and what is due when) and "N.01 Readings and Lecture
+# Notes", followed by that week's graded work.
+#
+# A module is matched to Canvas by title. The shell's own placeholder modules
+# ("Getting Started (start date - end date)", "Module 1: Title (...)") have
+# different titles, so a push builds these beside them rather than over them.
+# ---------------------------------------------------------------------------
+
+# The shell's Instructor Resources module, rebuilt from the shared pages.
+# never_publish: every push writes this module and everything in it unpublished,
+# ignoring --publish and pulling back anything published in the Canvas UI, and
+# locks the module until 2099 so a stray publish still shows students nothing.
+# `edutools verify` fails if any of it is ever found published.
 [[module]]
-title = "Week 1: What is Cyber Security?"
-page  = "notes/week-01-what-is-cyber-security.md"
+title = "Instructor Resources (leave unpublished)"
+never_publish = true
 items = [
+    "instructor-resources/instructor-guide.md",
+    "instructor-resources/course-suggestions.md",
+    "instructor-resources/learning-opportunities.md",
+]
+
+# Course Resources is for students from day one. publish: every push publishes
+# this module and everything in it, with or without --publish. Instructor
+# Information, the readings page and the objectives are this course's own; the
+# other three are shared by every course from shared/course-resources/.
+[[module]]
+title = "Course Resources"
+publish = true
+items = [
+    "instructor.md",
+    "course-resources/canvas-resources.md",
+    "course-resources/online-success-resources.md",
+    "course-resources/technology-support.md",
+    "resources.md",
+    "objectives.md",
+]
+
+# Every module but Course Resources follows the shell: its overview page, then
+# its items under "Due by" text headers, each item numbered N.0K in its title.
+# `week` puts the dates in the module's name, from the term skeleton above.
+# D1, Lab 0 and the diagnostic are week 1 work, but they are course setup, so
+# they sit in Getting Started. The Getting to Know You Survey is the shell's own
+# ungraded survey, kept by id.
+[[module]]
+title = "Getting Started"
+week  = 1
+page  = "getting-started.md"
+items = [
+    { header = "Due by Tuesday at 11:59 p.m. Mountain Time" },
+    "communicating.md",
     "quizzes/quiz-00-diagnostic.md",
-    "assignments/lab-00-course-setup.md",
+    { quiz = 393733, title = "0.03 Getting to Know You Survey" },
+    { header = "Due by Thursday at 11:59 p.m. Mountain Time" },
     "discussions/d01-introductions-and-security-mindset.md",
+    { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
+    "reminders/d01-replies.md",
+    "assignments/lab-00-course-setup.md",
 ]
 
 [[module]]
-title = "Week 2: Security Principles and the Human Factor"
-page  = "notes/week-02-security-principles-and-human-factors.md"
-items = ["assignments/lab-01-security-principles-audit.md"]
+title = "Module 1: What Is Cyber Security?"
+week  = 1
+page  = "notes/week-01-overview.md"
+items = [
+    { header = "Due by Tuesday at 11:59 p.m. Mountain Time" },
+    "notes/week-01-what-is-cyber-security.md",
+]
 
 [[module]]
-title = "Week 3: Law, Regulation, Ethics, and Privacy"
-page  = "notes/week-03-law-ethics-and-privacy.md"
+title = "Module 2: Security Principles and the Human Factor"
+week  = 2
+page  = "notes/week-02-overview.md"
 items = [
+    { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
+    "notes/week-02-security-principles-and-human-factors.md",
+    "assignments/lab-01-security-principles-audit.md",
+]
+
+[[module]]
+title = "Module 3: Law, Regulation, Ethics, and Privacy"
+week  = 3
+page  = "notes/week-03-overview.md"
+items = [
+    { header = "Due by Thursday at 11:59 p.m. Mountain Time" },
+    "notes/week-03-law-ethics-and-privacy.md",
     "discussions/d02-ethics-and-privacy-case.md",
+    { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
+    "reminders/d02-replies.md",
     "quizzes/quiz-01-foundations.md",
 ]
 
 [[module]]
-title = "Week 4: Risk Management and Threat Modeling"
-page  = "notes/week-04-risk-and-threat-modeling.md"
-items = ["assignments/lab-02-threat-model.md"]
+title = "Module 4: Risk Management and Threat Modeling"
+week  = 4
+page  = "notes/week-04-overview.md"
+items = [
+    { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
+    "notes/week-04-risk-and-threat-modeling.md",
+    "assignments/lab-02-threat-model.md",
+]
 
 [[module]]
-title = "Week 5: Authentication and Credentials"
-page  = "notes/week-05-authentication-and-credentials.md"
+title = "Module 5: Authentication and Credentials"
+week  = 5
+page  = "notes/week-05-overview.md"
 items = [
+    { header = "Due by Thursday at 11:59 p.m. Mountain Time" },
+    "notes/week-05-authentication-and-credentials.md",
     "discussions/d03-authentication-policy-critique.md",
+    { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
+    "reminders/d03-replies.md",
     "quizzes/quiz-02-authentication.md",
 ]
 
 [[module]]
-title = "Week 6: Authorisation, Access Control, and Accountability"
-page  = "notes/week-06-authorisation-and-access-control.md"
-items = ["assignments/lab-03-access-control-matrix.md"]
-
-[[module]]
-title = "Week 7: Symmetric Cryptography"
-page  = "notes/week-07-symmetric-cryptography.md"
-items = ["assignments/lab-04-symmetric-encryption.md"]
-
-[[module]]
-title = "Week 8: Public-Key Cryptography, Hashing, and Signatures"
-page  = "notes/week-08-public-key-cryptography.md"
+title = "Module 6: Authorisation, Access Control, and Accountability"
+week  = 6
+page  = "notes/week-06-overview.md"
 items = [
+    { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
+    "notes/week-06-authorisation-and-access-control.md",
+    "assignments/lab-03-access-control-matrix.md",
+]
+
+[[module]]
+title = "Module 7: Symmetric Cryptography"
+week  = 7
+page  = "notes/week-07-overview.md"
+items = [
+    { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
+    "notes/week-07-symmetric-cryptography.md",
+    "assignments/lab-04-symmetric-encryption.md",
+]
+
+[[module]]
+title = "Module 8: Public-Key Cryptography, Hashing, and Signatures"
+week  = 8
+page  = "notes/week-08-overview.md"
+items = [
+    { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
+    "notes/week-08-public-key-cryptography.md",
     "assignments/lab-05-hashing-and-signatures.md",
     "quizzes/quiz-03-cryptography.md",
 ]
 
-# An exam guide publishes as a Canvas page, not as an assignment: edutools maps
-# the `exam` kind to a page on purpose, because the exam itself is a Canvas quiz
-# built by hand. Once that quiz exists, add it here as
-# `canvas = [{ quiz = <id>, title = "Midterm Exam" }]` so a push keeps it in the
-# module. Until then the module carries the guide and the quiz sits outside it.
+# The midterm itself is a Canvas quiz built by hand. Once it exists, add it to
+# `items` as { quiz = <id>, title = "9.03 Midterm Exam" }.
 [[module]]
-title = "Week 9: Review and Midterm"
-page  = "notes/week-09-review-and-midterm.md"
-items = ["assignments/midterm-exam-guide.md"]
-
-[[module]]
-title = "Week 10: Keys, Certificates, PKI, and TLS"
-page  = "notes/week-10-keys-certificates-and-pki.md"
-items = ["assignments/lab-06-certificates-and-tls.md"]
-
-[[module]]
-title = "Week 11: Network Security and Attacks"
-page  = "notes/week-11-network-security.md"
+title = "Module 9: Review and Midterm"
+week  = 9
+page  = "notes/week-09-overview.md"
 items = [
+    { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
+    "notes/week-09-review-and-midterm.md",
+    "assignments/midterm-exam-guide.md",
+]
+
+[[module]]
+title = "Module 10: Keys, Certificates, PKI, and TLS"
+week  = 10
+page  = "notes/week-10-overview.md"
+items = [
+    { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
+    "notes/week-10-keys-certificates-and-pki.md",
+    "assignments/lab-06-certificates-and-tls.md",
+]
+
+[[module]]
+title = "Module 11: Network Security and Attacks"
+week  = 11
+page  = "notes/week-11-overview.md"
+items = [
+    { header = "Due by Thursday at 11:59 p.m. Mountain Time" },
+    "notes/week-11-network-security.md",
     "discussions/d04-network-security-in-the-news.md",
+    { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
+    "reminders/d04-replies.md",
     "quizzes/quiz-04-network-security.md",
 ]
 
 [[module]]
-title = "Week 12: Malware and Adversarial Behaviours"
-page  = "notes/week-12-malware-and-adversarial-behaviours.md"
-items = ["assignments/lab-07-malware-triage.md"]
-
-[[module]]
-title = "Week 13: Software Security, Memory Safety, and Assurance"
-page  = "notes/week-13-software-security-and-assurance.md"
-items = ["assignments/lab-08-memory-safety-and-assurance.md"]
-
-[[module]]
-title = "Week 14: Web Security and Injection"
-page  = "notes/week-14-web-security-and-injection.md"
+title = "Module 12: Malware and Adversarial Behaviours"
+week  = 12
+page  = "notes/week-12-overview.md"
 items = [
+    { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
+    "notes/week-12-malware-and-adversarial-behaviours.md",
+    "assignments/lab-07-malware-triage.md",
+]
+
+[[module]]
+title = "Module 13: Software Security, Memory Safety, and Assurance"
+week  = 13
+page  = "notes/week-13-overview.md"
+items = [
+    { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
+    "notes/week-13-software-security-and-assurance.md",
+    "assignments/lab-08-memory-safety-and-assurance.md",
+]
+
+[[module]]
+title = "Module 14: Web Security and Injection"
+week  = 14
+page  = "notes/week-14-overview.md"
+items = [
+    { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
+    "notes/week-14-web-security-and-injection.md",
     "assignments/lab-09-sql-injection.md",
     "quizzes/quiz-05-software-and-web.md",
 ]
 
 [[module]]
-title = "Week 15: Security Operations, Detection, and Incident Response"
-page  = "notes/week-15-security-operations-and-incident-response.md"
+title = "Module 15: Security Operations, Detection, and Incident Response"
+week  = 15
+page  = "notes/week-15-overview.md"
 items = [
-    "assignments/lab-10-log-analysis-and-incident-memo.md",
+    { header = "Due by Thursday at 11:59 p.m. Mountain Time" },
+    "notes/week-15-security-operations-and-incident-response.md",
     "discussions/d05-current-security-failure.md",
+    { header = "Due by Friday at 11:59 p.m. Mountain Time" },
+    "reminders/d05-replies.md",
+    "assignments/lab-10-log-analysis-and-incident-memo.md",
 ]
 
 # The finals-week items carry "**Finals week · ...**" instead of a week number,
-# which is what tells edutools to date them from the finals window rather than
-# from a Monday. The final exam quiz is hand built in Canvas like the midterm;
-# add it here as `canvas = [{ quiz = <id>, title = "Final Exam" }]`.
+# so edutools dates them from the finals window. The final exam quiz is hand
+# built like the midterm; add it as { quiz = <id>, title = "16.03 Final Exam" }.
 [[module]]
-title = "Finals Week"
+title = "Module 16: Finals Week"
+week  = "finals"
 items = [
+    { header = "Due by Friday at 11:59 p.m. Mountain Time" },
     "assignments/final-exam-guide.md",
     "discussions/d06-final-reflection.md",
 ]

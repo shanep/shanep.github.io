@@ -1,4 +1,4 @@
-# Lab 5: Hashing and Signatures
+# 8.02 Lab 5: Hashing and Signatures
 
 **Week 8 · 38 points · about 90 minutes · submit in Canvas**
 

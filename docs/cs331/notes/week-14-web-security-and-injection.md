@@ -1,32 +1,10 @@
-# Week 14: Web Security and Injection
+# 14.01 Readings and Lecture Notes
 
-**April 19-25 · Reading: 14 pages · Estimated total: 7 hours**
+**April 19-25 · Reading: 14 pages · About 2 hrs 55 min with the worked example**
 
-## Overview
+What to do this week, and when it is due, is on the [Module 14 Overview](week-14-overview.md).
 
-Last week a program copied bytes into a buffer without knowing how big it was. This week a program
-builds a *command* out of untrusted input without keeping the command and the data apart. It is the
-same shape of mistake one layer up, and CyBOK groups them accordingly: §15.1.2 calls this class
-**structured output generation vulnerabilities**.
-
-Seeing the class rather than the individual bug is the point. SQL injection, cross-site scripting,
-OS command injection, and path traversal are the same error against four different grammars, and
-they have the same fix: never let untrusted input be parsed as part of the structure.
-
-The week also covers phishing, which sits oddly in a technical chapter until you notice it is the
-same idea again, a person parsing a message and being unable to tell the trustworthy part from the
-attacker-supplied part.
-
-## Objectives this week
-
-- **[4.5](../objectives.md#tlo-4--analyzing-common-attacks-and-justifying-countermeasures)**: 
-  Perform and then remediate a SQL injection, and explain why parameterization defeats it.
-- **[5.5](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles)**: 
-  Recommend a prevention-first countermeasure for a class of vulnerability.
-
-Quiz 5 also assesses **4.4**, **6.1**, and **6.4** from week 13.
-
-## Read
+## Readings
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
@@ -181,17 +159,6 @@ a FIDO2 key checks the origin itself, so the person's judgement is taken out of 
 Detection: mail filtering, and a reporting process people actually use. Mitigation: limiting what a
 compromised account can reach, which is week 6's least privilege.
 
-## Do this week
-
-| | Task | Points | Due |
-| --- | --- | ---: | --- |
-| 1 | [Lab 9: SQL Injection](../assignments/lab-09-sql-injection.md) | 38 | Sunday |
-| 2 | [Quiz 5: Software and Web Security](../quizzes/quiz-05-software-and-web.md), covers weeks 13-14 | 30 | Sunday |
-
-**Everything in Lab 9 runs against a database inside one Python process on your own machine.**
-Attacking a web application you do not have written permission to test is a crime and a violation of
-the Student Code of Conduct. There is no exercise in this course that requires it.
-
 ## Key terms
 
 | Term | Short form |
@@ -207,19 +174,10 @@ the Student Code of Conduct. There is no exercise in this course that requires i
 | **Phishing** | Deceiving a person into giving up credentials or running something. |
 | **Defence in depth** | Layered controls, so one failure is not total. |
 
-## Time estimate
-
-| Activity | Time |
-| --- | --- |
-| Reading (14 pages plus OWASP) | 2 hrs 10 min |
-| This module page and running `sqli_demo.py` | 45 min |
-| Lab 9 | 1 hr 30 min |
-| Quiz 5 | 15 min |
-| Review and slack | 2 hrs 15 min |
-| **Total** | **~7 hrs** |
-
 ## Looking ahead
 
 Week 15 is the last week of instruction, and it is about what happens after something has already
 gone wrong: what your logs can and cannot tell you, how detection actually gets built, why
 mathematically excellent detectors produce unusable alert queues, and how to write the memo.
+
+<!--@include: ../../../parts/cs331-questions-button.md-->

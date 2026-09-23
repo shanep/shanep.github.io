@@ -100,7 +100,9 @@ export default defineConfig({
   title: "Shane K. Panter",
   description: "Shane's Personal Site",
   ignoreDeadLinks: false,
-  srcExclude: drafts,
+  // Instructor-only pages, shared by every course from shared/instructor-resources/
+  // through a symlink in each course directory. They go to Canvas, never to the site.
+  srcExclude: [...drafts, '**/instructor-resources/**'],
   markdown: {
     theme: { light: 'github-light', dark: 'github-dark' },
     config: (md) => {
@@ -233,32 +235,51 @@ function cs331(): DefaultTheme.SidebarItem[] {
     {
       text: 'CS331',
       items: [
-        { text: 'Syllabus',   link: 'index' },
-        { text: 'Schedule',   link: 'schedule/index' },
-        { text: 'Objectives', link: 'objectives' },
-        { text: 'Resources',  link: 'resources' },
-        { text: 'Data Files', link: 'data/index' },
+        { text: 'Home',                   link: 'home' },
+        { text: 'Syllabus',               link: 'index' },
+        { text: 'Schedule',               link: 'schedule/index' },
+        { text: 'Instructor Information', link: 'instructor' },
+        { text: 'Objectives',             link: 'objectives' },
+        { text: 'Resources',              link: 'resources' },
+        { text: 'Data Files',             link: 'data/index' },
+      ]
+    },
+    {
+      text: 'Getting Started',
+      collapsed: false,
+      items: [
+        { text: 'Getting Started Overview',    link: 'getting-started' },
+        { text: '0.01 Communicating Online',   link: 'communicating' },
+      ]
+    },
+    {
+      text: 'Course Resources',
+      collapsed: true,
+      items: [
+        { text: 'Canvas Resources',           link: 'course-resources/canvas-resources' },
+        { text: 'Online Success Resources',   link: 'course-resources/online-success-resources' },
+        { text: 'Technology Support',         link: 'course-resources/technology-support' },
       ]
     },
     {
       text: 'Weekly Modules',
       collapsed: false,
       items: [
-        { text: '1. What is Cyber Security?',        link: 'notes/week-01-what-is-cyber-security' },
-        { text: '2. Principles and Human Factors',   link: 'notes/week-02-security-principles-and-human-factors' },
-        { text: '3. Law, Ethics, and Privacy',       link: 'notes/week-03-law-ethics-and-privacy' },
-        { text: '4. Risk and Threat Modeling',       link: 'notes/week-04-risk-and-threat-modeling' },
-        { text: '5. Authentication and Credentials', link: 'notes/week-05-authentication-and-credentials' },
-        { text: '6. Authorisation and Access',       link: 'notes/week-06-authorisation-and-access-control' },
-        { text: '7. Symmetric Cryptography',         link: 'notes/week-07-symmetric-cryptography' },
-        { text: '8. Public-Key Cryptography',        link: 'notes/week-08-public-key-cryptography' },
-        { text: '9. Review and Midterm',             link: 'notes/week-09-review-and-midterm' },
-        { text: '10. Keys, Certificates, and PKI',   link: 'notes/week-10-keys-certificates-and-pki' },
-        { text: '11. Network Security',              link: 'notes/week-11-network-security' },
-        { text: '12. Malware and Adversaries',       link: 'notes/week-12-malware-and-adversarial-behaviours' },
-        { text: '13. Software Security',             link: 'notes/week-13-software-security-and-assurance' },
-        { text: '14. Web Security and Injection',    link: 'notes/week-14-web-security-and-injection' },
-        { text: '15. Security Operations',           link: 'notes/week-15-security-operations-and-incident-response' },
+        { text: '1. What is Cyber Security?', link: 'notes/week-01-overview', collapsed: true, items: [{ text: '1.01 Readings and Notes', link: 'notes/week-01-what-is-cyber-security' }] },
+        { text: '2. Principles and Human Factors', link: 'notes/week-02-overview', collapsed: true, items: [{ text: '2.01 Readings and Notes', link: 'notes/week-02-security-principles-and-human-factors' }] },
+        { text: '3. Law, Ethics, and Privacy', link: 'notes/week-03-overview', collapsed: true, items: [{ text: '3.01 Readings and Notes', link: 'notes/week-03-law-ethics-and-privacy' }] },
+        { text: '4. Risk and Threat Modeling', link: 'notes/week-04-overview', collapsed: true, items: [{ text: '4.01 Readings and Notes', link: 'notes/week-04-risk-and-threat-modeling' }] },
+        { text: '5. Authentication and Credentials', link: 'notes/week-05-overview', collapsed: true, items: [{ text: '5.01 Readings and Notes', link: 'notes/week-05-authentication-and-credentials' }] },
+        { text: '6. Authorisation and Access', link: 'notes/week-06-overview', collapsed: true, items: [{ text: '6.01 Readings and Notes', link: 'notes/week-06-authorisation-and-access-control' }] },
+        { text: '7. Symmetric Cryptography', link: 'notes/week-07-overview', collapsed: true, items: [{ text: '7.01 Readings and Notes', link: 'notes/week-07-symmetric-cryptography' }] },
+        { text: '8. Public-Key Cryptography', link: 'notes/week-08-overview', collapsed: true, items: [{ text: '8.01 Readings and Notes', link: 'notes/week-08-public-key-cryptography' }] },
+        { text: '9. Review and Midterm', link: 'notes/week-09-overview', collapsed: true, items: [{ text: '9.01 Readings and Notes', link: 'notes/week-09-review-and-midterm' }] },
+        { text: '10. Keys, Certificates, and PKI', link: 'notes/week-10-overview', collapsed: true, items: [{ text: '10.01 Readings and Notes', link: 'notes/week-10-keys-certificates-and-pki' }] },
+        { text: '11. Network Security', link: 'notes/week-11-overview', collapsed: true, items: [{ text: '11.01 Readings and Notes', link: 'notes/week-11-network-security' }] },
+        { text: '12. Malware and Adversaries', link: 'notes/week-12-overview', collapsed: true, items: [{ text: '12.01 Readings and Notes', link: 'notes/week-12-malware-and-adversarial-behaviours' }] },
+        { text: '13. Software Security', link: 'notes/week-13-overview', collapsed: true, items: [{ text: '13.01 Readings and Notes', link: 'notes/week-13-software-security-and-assurance' }] },
+        { text: '14. Web Security and Injection', link: 'notes/week-14-overview', collapsed: true, items: [{ text: '14.01 Readings and Notes', link: 'notes/week-14-web-security-and-injection' }] },
+        { text: '15. Security Operations', link: 'notes/week-15-overview', collapsed: true, items: [{ text: '15.01 Readings and Notes', link: 'notes/week-15-security-operations-and-incident-response' }] },
       ]
     },
     {

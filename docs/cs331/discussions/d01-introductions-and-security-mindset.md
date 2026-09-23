@@ -1,4 +1,4 @@
-# D1: Introductions and the Security Mindset
+# 0.04 D1: Introductions and the Security Mindset
 
 **Week 1 · 15 points · about 45 minutes · Canvas discussion board**
 
@@ -22,7 +22,7 @@ departments, and it helps everyone (me included) to know who is in the room. The
 the four words in objective 1.2 get used interchangeably in ordinary speech and precisely in this
 course, and the fastest way to learn the difference is to try to use them and get corrected.
 
-## Initial post
+## Initial Post Directions
 
 **Due: Thursday of week 1. About 250-350 words.**
 
@@ -60,7 +60,7 @@ If you are not sure whether something is a vulnerability or a threat, **say so i
 explain your uncertainty.** That is a better post than a confident wrong answer, and it is more
 useful to the class.
 
-## Reply
+## Reply Post Directions
 
 **Due: Sunday of week 1. One reply, about 100-150 words.**
 
@@ -83,7 +83,7 @@ Reply to **one** classmate whose incident is different from yours. Do one of the
 | 2 | One substantive reply to a classmate that does one of the three things above | 5 |
 | | **Total** | **15** |
 
-## Ground rules for every discussion in this course
+## Discussion Guidelines
 
 - **Do not name real individuals** as the cause of an incident, including yourself. Describe roles
   and systems.

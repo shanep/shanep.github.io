@@ -1,4 +1,4 @@
-# Lab 3: Access Control Matrix and Least Privilege
+# 6.02 Lab 3: Access Control Matrix and Least Privilege
 
 **Week 6 · 38 points · about 90 minutes · submit in Canvas**
 
@@ -38,7 +38,7 @@ No code. This is a modelling lab, and the modelling is the point.
   attribute-based access control.
 - CyBOK §14.3.2 (printed pages 472-474), enforcing access control, reference monitors.
 - CyBOK §14.6 (printed pages 489-493), accountability.
-- [data/photoshare-system.md](../data/photoshare-system.md), the same SnapVault system you
+- The [SnapVault system description](../data/photoshare-system.md), the same system you
   threat-modelled in Lab 2. You will use its actors and its data.
 
 ### Vocabulary you need
@@ -80,8 +80,8 @@ Fill every one of the 42 cells. Use these rights, or say what you mean if you ne
 Two rules for filling it in:
 
 - **Write down what the system does today**, not what it should do. That is what makes Step 4
-  interesting. Where the description in
-  [photoshare-system.md](../data/photoshare-system.md) tells you the answer, use it.
+  interesting. Where the
+  [SnapVault system description](../data/photoshare-system.md) tells you the answer, use it.
 - **Where the description does not say, mark the cell `?` and note it below the table.** An honest
   `?` scores better than a confident guess, and finding the `?`s is a real result, an access
   control policy nobody wrote down is a policy nobody can check.

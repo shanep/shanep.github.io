@@ -1,4 +1,4 @@
-# Final Exam Guide
+# 16.01 Final Exam Guide
 
 **Finals week · 150 points · 90 minutes · taken in Canvas**
 

@@ -1,4 +1,4 @@
-# D2: Ethics and Privacy Case
+# 3.02 D2: Ethics and Privacy Case
 
 **Week 3 · 30 points · about 60 minutes · Canvas discussion board**
 
@@ -42,7 +42,7 @@
 > would need to run it against real customer email addresses. She has access to the customer
 > database as part of her job.
 
-## Initial post
+## Initial Post Directions
 
 **Due: Thursday of week 3. About 400-500 words.**
 
@@ -85,7 +85,7 @@ authorisation for this purpose, what CyBOK §3.5 says about unauthorised access,
 mean for her position if she did. Then say what she should do instead to make the problem credible
 to someone with authority.
 
-## Replies
+## Reply Post Directions
 
 **Due: Sunday of week 3. Two replies, about 150 words each.**
 
@@ -112,9 +112,9 @@ agreement with no addition is not.
 **What loses points in row 1:** picking an option without engaging with the counterargument, and
 treating part 4 as rhetorical. It is not rhetorical, answer it.
 
-## Ground rules
+## Discussion Guidelines
 
-The [ground rules from D1](d01-introductions-and-security-mindset.md#ground-rules-for-every-discussion-in-this-course)
+The [discussion guidelines from D1](d01-introductions-and-security-mindset.md#discussion-guidelines)
 apply. In particular: if this case resembles something at a place you have worked, change the
 details enough that it is not identifiable.
 

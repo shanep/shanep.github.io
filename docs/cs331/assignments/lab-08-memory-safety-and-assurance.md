@@ -1,4 +1,4 @@
-# Lab 8: Memory Safety and Assurance Evidence
+# 13.02 Lab 8: Memory Safety and Assurance Evidence
 
 **Week 13 · 38 points · about 90 minutes · submit in Canvas**
 

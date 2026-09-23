@@ -1,4 +1,4 @@
-# Lab 0: Course Setup and CyBOK Navigation
+# 0.06 Lab 0: Course Setup and CyBOK Navigation
 
 **Week 1 · 20 points · about 45 minutes · submit in Canvas**
 

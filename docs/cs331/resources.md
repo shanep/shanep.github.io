@@ -62,7 +62,7 @@ what is not.
 | 22 | Physical Layer & Telecommunications Security | 741 | Not assigned |
 
 Reference sections: Bibliography p. 773 · Acronyms p. 929 · **Glossary p. 951** · Index p. 963.
-The glossary is the source for the *Key terms* list on every module page: it is worth
+The glossary is the source for the *Key terms* list on every lecture notes page: it is worth
 bookmarking.
 
 ### Why those chapters are not assigned
@@ -105,9 +105,9 @@ Two more references are used inside labs rather than as assigned reading:
 
 ## Course data files
 
-Labs use small data files that ship with the course in [data/](data/), a system description, a
+Labs use small data files that ship with the course: a system description, a
 vulnerable C program, five commented Python scripts, and two log files. See
-[data/index.md](data/index.md) for what each one is and which lab uses it. Nothing there
+[Course Data Files](data/index.md) for what each one is and which lab uses it. Nothing there
 requires a virtual machine, a server, or an internet connection.
 
 ## Software

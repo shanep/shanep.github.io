@@ -1,27 +1,10 @@
-# Week 10: Keys, Certificates, PKI, and TLS
+# 10.01 Readings and Lecture Notes
 
-**March 22-28 · Reading: 12 pages · Estimated total: 6.5 hours**
+**March 22-28 · Reading: 12 pages · About 2 hrs 15 min with the worked example**
 
-## Overview
+What to do this week, and when it is due, is on the [Module 10 Overview](week-10-overview.md).
 
-Welcome back. Week 8 ended with an unanswered question: a signature verifies against a public key,
-but what tells you whose key it is?
-
-This week is the answer. A **certificate** is a signed statement binding a public key to a name.
-Somebody you already trust signs it, and their key is vouched for by somebody else, up to a root
-that your browser or operating system simply believes because it shipped with a list.
-
-That last step is worth staring at. Four of the five checks a browser runs on a certificate are
-arithmetic. The fifth is a decision somebody made on your behalf, before you ever opened the
-browser.
-
-## Objectives this week
-
-- **[3.5](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits)**: Interpret
-  an X.509 certificate chain and identify the trust assumptions and failure modes of public key
-  infrastructure.
-
-## Read
+## Readings
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
@@ -135,15 +118,6 @@ certificate for it, free, in minutes. `paypa1-security.example` can have a perfe
 It also does not protect data once it arrives. Everything from week 4 onward about how the server
 stores what you send is untouched by TLS.
 
-## Do this week
-
-| | Task | Points | Due |
-| --- | --- | ---: | --- |
-| 1 | [Lab 6: Certificates and TLS](../assignments/lab-06-certificates-and-tls.md) | 38 | Sunday |
-
-Lab 6 asks you to inspect a real certificate chain in your browser as well as run the script. Do
-the browser part first; it takes ten minutes and makes the script output make sense.
-
 ## Key terms
 
 | Term | Short form |
@@ -160,17 +134,9 @@ the browser part first; it takes ten minutes and makes the script output make se
 | **Pinning** | A client requiring a specific key or CA for a specific site. |
 | **Forward secrecy** | Session keys not recoverable from the long-term key later. |
 
-## Time estimate
-
-| Activity | Time |
-| --- | --- |
-| Reading (12 pages) | 1 hr 35 min |
-| This module page and running `cert_inspect.py` | 40 min |
-| Lab 6 | 1 hr 30 min |
-| Review and slack | 2 hrs 30 min |
-| **Total** | **~6.5 hrs** |
-
 ## Looking ahead
 
 Week 11 moves down the stack to the network itself: what an attacker on the path can do, at which
 layer, and what firewalling, segmentation, and monitoring each actually buy. Quiz 4 covers it.
+
+<!--@include: ../../../parts/cs331-questions-button.md-->

@@ -1,27 +1,10 @@
-# Week 9: Review and Midterm
+# 9.01 Readings and Lecture Notes
 
-**March 8-14 · No new reading · Estimated total: 5 hours**
+**March 8-14 · No new reading**
 
-## Overview
+What to do this week, and when it is due, is on the [Module 9 Overview](week-09-overview.md).
 
-No new material this week. One graded item: the midterm.
-
-The week is deliberately light and deliberately placed here, immediately before spring break. Weeks
-1 through 8 introduced most of the vocabulary and all of the modelling techniques the second half
-of the course builds on, and this is the checkpoint.
-
-## Objectives this week
-
-The midterm assesses everything from weeks 1-8:
-
-| | Objectives |
-| --- | --- |
-| **[TLO 1](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation)** | 1.1, 1.2, 1.3, 1.4, 1.5 |
-| **[TLO 2](../objectives.md#tlo-2--modeling-subjects-objects-permissions-trust-boundaries-and-threats)** | 2.1, 2.2, 2.3, 2.4, 2.5 |
-| **[TLO 3](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits)** | 3.1, 3.2, 3.3, 3.4 |
-| **[TLO 5](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles)** | 5.1, 5.2, 5.3, 5.4 |
-
-## Read
+## Readings
 
 Nothing new. **Read the [midterm exam guide](../assignments/midterm-exam-guide.md) first**: it
 lists the exact format, the objective-by-objective coverage, and six practice questions in the
@@ -72,14 +55,6 @@ either can do or cannot, and looking them up during the exam costs you time you 
 **Budget your time so you reach Part C.** It is worth 60 of the 150 points and it takes the longest.
 Students who spend forty minutes perfecting Part B lose more than they gain.
 
-## Do this week
-
-| | Task | Points | Due |
-| --- | --- | ---: | --- |
-| 1 | [Midterm Exam](../assignments/midterm-exam-guide.md) | 150 | Sunday |
-
-Nothing else is due. No lab, no quiz, no discussion.
-
 ## After the exam
 
 **Spring break is March 15-19. Nothing is due and nothing opens.** Week 10 materials become
@@ -89,13 +64,4 @@ The second half of the course changes character. The first half was mostly about
 supposed to work; the second half is mostly about how they fail (network attacks, malware, memory
 safety, injection) and ends with what you do once something has already gone wrong.
 
-## Time estimate
-
-| Activity | Time |
-| --- | --- |
-| Reading the exam guide | 20 min |
-| Re-reading your graded labs and my comments | 1 hr |
-| Practice: threat model, access control matrix, principles | 1 hr |
-| Re-running the crypto demos and re-taking quizzes | 45 min |
-| The exam itself | 1 hr 30 min |
-| **Total** | **~4.5-5 hrs** |
+<!--@include: ../../../parts/cs331-questions-button.md-->

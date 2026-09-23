@@ -45,7 +45,7 @@ Two things to know about it:
    courses. The weeks below name the exact sections you are responsible for. You are not expected
    to read anything else.
 2. **CyBOK is a reference, not a tutorial.** It is precise and compact rather than chatty. Each
-   week's module page adds a worked example that shows the idea applied once, concretely, plus a
+   week's lecture notes page adds a worked example that shows the idea applied once, concretely, plus a
    plain-language supplement where one helps.
 
 **Finding a reading:** CyBOK section numbers (for example, §10.4) are the reliable way to
@@ -53,7 +53,7 @@ navigate. Every page of the PDF prints its page number in the footer, which will
 viewer's page counter, the book has 39 pages of front matter. Use your viewer's search box or the
 bookmarks panel and go by section number.
 
-A complete list of readings, supplements, and their licenses is in [resources.md](resources.md).
+A complete list of readings, supplements, and their licenses is in [Readings and Resources](resources.md).
 
 ## Required Tools
 
@@ -74,7 +74,8 @@ own machine gives you trouble, every lab runs on the lab machines described unde
 Every week follows the same rhythm, and **nothing in this course spans more than one week**:
 
 1. **Read** the assigned CyBOK sections (never more than 15 pages) and the week's supplement.
-2. **Work through the module page** in Canvas, which includes a worked example.
+2. **Work through the module** in Canvas. Its **Overview** page lists the objectives and what is
+   due when; its **Readings and Lecture Notes** page includes a worked example.
 3. **Complete one graded activity**: either a lab or a discussion, never both in the same week.
 4. **Take a quiz** in five of the fifteen weeks.
 
@@ -87,12 +88,12 @@ Quizzes and exams are taken in Canvas. Discussions happen in the Canvas discussi
 ## Weekly Time Budget
 
 This course is designed to take **8 hours per week or less, including everything**: reading,
-module pages, labs, discussions, quizzes, and study time. A typical week:
+lecture notes, labs, discussions, quizzes, and study time. A typical week:
 
 | Activity | Time |
 | --- | --- |
 | CyBOK reading (7-15 pages) and note-taking | 1.5-2.0 hrs |
-| Module page and worked example | 0.5-1.0 hrs |
+| Lecture notes and worked example | 0.5-1.0 hrs |
 | One lab (weeks with a lab) | 1.5-2.0 hrs |
 | *or* one discussion: initial post and replies (weeks with a discussion) | 1.0 hrs |
 | Quiz (five weeks only) | 0.5 hrs |
@@ -109,8 +110,8 @@ course, and every objective is required**: there are no optional objectives and 
 assumes you covered it somewhere else.
 
 Each terminal objective breaks down into supporting objectives that name the exact assignment,
-quiz, or exam that measures them. The complete alignment sheet is in
-[objectives.md](objectives.md).
+quiz, or exam that measures them. The complete alignment is on the
+[Objective Alignment Sheet](objectives.md).
 
 | # | The student will be able to… | Bloom level |
 | --- | --- | --- |
@@ -169,7 +170,7 @@ The course is worth **1000 points**. Every graded item is completed within a sin
 
 Labs, quizzes, discussions, and exams assess different objectives; a missed discussion cannot be
 replaced by extra lab work. Exact point values and due dates are posted in Canvas. Which objective
-each item measures is listed in [objectives.md](objectives.md).
+each item measures is listed in the [Objective Alignment Sheet](objectives.md).
 
 ## Grading Policy
 
@@ -310,3 +311,13 @@ students as well.
 - [Support Resources](https://www.boisestate.edu/online/support-resources/)
 - [Academic Support Services](https://www.boisestate.edu/aasc/academicsupportservices/)
 - [Accessing University Support Services](https://docs.google.com/document/d/14ZMRsHAgo356h0nHtJuStDKGwvg6LY-XOA7PxacwECw/edit#heading=h.oohv0l26wvu1) (full resource guide)
+
+---
+
+<div class="cs-buttons">
+
+[Instructor Information](instructor.md)
+[Course Resources](resources.md)
+[Course Questions](https://boisestatecanvas.instructure.com/courses/52107/discussion_topics/1174722)
+
+</div>

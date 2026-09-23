@@ -1,0 +1,163 @@
+/* CS 331: Canvas page styling, matched to the Boise State Online course shell
+ *
+ * ONE stylesheet for the whole course. Canvas strips <style> elements from page
+ * bodies, so `edutools push` inlines this into style attributes at publish time.
+ * Edit here, re-push, and every page restyles.
+ *
+ * The look is copied from the eCampus master shell (Canvas course 52107): Boise
+ * State Blue headings, a 2px blue rule closing each page, pill buttons for the
+ * Instructor Information / Course Resources / Course Questions row, and the
+ * "callout-left" box with a thick blue left border. The shell writes those as
+ * inline styles on every element; here they are written once, against the
+ * classes edutools and the markdown put on the page.
+ *
+ * The 45x35 icon in front of a section heading is not CSS. The [icons] table in
+ * canvas.toml names one per heading, and edutools inserts it as an <img
+ * class="cs-icon"> pointing at the uploaded file. Only its spacing lives here.
+ *
+ * CONSTRAINTS, from canvas-lms gems/canvas_sanitize/:
+ *   - No pseudo-classes (:hover, :nth-child) and no @media queries: neither can
+ *     be expressed as an inline attribute. Zebra striping is done by the
+ *     decorator adding .cs-row-odd / .cs-row-even instead.
+ *   - font-weight is NOT on Canvas's property allowlist. Use the `font`
+ *     shorthand, or <strong>, which pandoc already emits for **bold**.
+ *   - box-shadow, opacity, transform, transition, letter-spacing, and
+ *     text-transform are all blocked. The publisher fails the run if any appear.
+ *   - No fixed widths, so Canvas's own responsive layout keeps working.
+ *
+ * Palette: https://www.boisestate.edu/brand/visual-identity/colors/
+ *   Boise State Blue #0033A0 · Boise State Orange #D64309
+ *   secondary blues #001F60 #006BA6 · neutrals #F6F7F9 #E3E7EC #D9DEE5
+ */
+
+/* --- base rhythm ------------------------------------------------------- */
+
+h2 { color: #0033A0; margin-top: 32px; }
+
+h3 { color: #001F60; margin-top: 24px; }
+
+p, li { line-height: 1.65; }
+
+a { color: #0033A0; }
+
+/* The shell's closing rule. Every <hr> gets it: the shell uses a plain rule
+   between sections and this one at the foot, and one weight reads cleaner. */
+hr {
+  border-width: 0;
+  height: 2px;
+  background-color: #0033A0;
+  margin: 28px 0;
+}
+
+pre {
+  background-color: #F6F7F9;
+  border: 1px solid #D9DEE5;
+  border-radius: 4px;
+  padding: 12px 14px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+/* --- section icons, inserted from the [icons] table in canvas.toml ------ */
+
+.cs-icon { vertical-align: middle; margin: 0 10px 4px 0; }
+
+/* --- the page banner on the home page ---------------------------------- */
+
+.cs-banner { width: 100%; max-width: 100%; height: auto; }
+
+/* --- the button row at the foot of a page ------------------------------ */
+
+.cs-buttons { text-align: left; margin-top: 8px; }
+
+.cs-buttons a {
+  background-color: #0033A0;
+  color: #FFFFFF;
+  padding: 8px 12px;
+  margin: 0 4px 15px 0;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* "Select Next to continue", the bar that ends a Getting Started page. */
+.cs-next {
+  background-color: #0033A0;
+  color: #FFFFFF;
+  padding: 8px 12px;
+  text-align: right;
+}
+
+/* --- tables ------------------------------------------------------------ */
+
+.cs-scroll { overflow-x: auto; max-width: 100%; margin: 18px 0; }
+
+table { border-collapse: collapse; max-width: 100%; }
+
+th {
+  background-color: #F6F7F9;
+  color: #001F60;
+  text-align: left;
+  border-bottom: 2px solid #0033A0;
+  padding: 8px 12px;
+}
+
+td { border-bottom: 1px solid #E3E7EC; padding: 8px 12px; vertical-align: top; }
+
+.cs-row-even td { background-color: #FBFCFD; }
+
+/* --- the meta line: "February 8-14 · Estimated total: 6.5 hours" -------- */
+
+.cs-meta {
+  background-color: #F6F7F9;
+  border-left: 5px solid #0033A0;
+  padding: 10px 16px;
+  margin-bottom: 24px;
+  color: #001F60;
+}
+
+/* --- callouts, from the ::: containers in the markdown ----------------- */
+
+/* The shell's "callout-left wide" box. A plain blockquote and ::: info both
+   take it, since that is the only callout the shell itself uses. */
+blockquote {
+  background-color: #F6F7F9;
+  color: #0033A0;
+  padding: 15px;
+  margin: 18px 0;
+  border-left: 15px solid #0033A0;
+}
+
+/* ::: tip is an aside, so it keeps the shape and drops the weight. */
+.cs-tip {
+  border-left: 15px solid #C7D2E8;
+  color: #22252A;
+}
+
+/* ::: warning is a caution worth stopping for, but not a zero. */
+.cs-warning {
+  border-left: 15px solid #006BA6;
+  background-color: #F2F8FB;
+  color: #22252A;
+}
+
+/* ::: danger costs points. The one place orange earns being the loudest thing. */
+.cs-danger {
+  border-left: 15px solid #D64309;
+  background-color: #FDF3EE;
+  color: #7A2705;
+}
+
+/* --- sections the decorator recognises --------------------------------- */
+
+.cs-rubric {
+  border: 1px solid #D9DEE5;
+  border-radius: 4px;
+  padding: 4px 18px 14px 18px;
+  margin: 26px 0;
+}
+
+.cs-rubric h2 { margin-top: 16px; }

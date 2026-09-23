@@ -1,4 +1,4 @@
-# Lab 2: Threat Model a Small System
+# 4.02 Lab 2: Threat Model a Small System
 
 **Week 4 · 38 points · about 90 minutes · submit in Canvas**
 
@@ -31,8 +31,7 @@ being methodical rather than clever.
 
 ## Before you start
 
-- Read [data/photoshare-system.md](../data/photoshare-system.md) (the SnapVault system
-  description) all the way through, once, before you start diagramming.
+- Read the [SnapVault system description](../data/photoshare-system.md) all the way through, once, before you start diagramming.
 - CyBOK §2.2-2.4 (printed pages 20-26) for what risk is and why it is assessed.
 - CyBOK §2.6.1-2.6.2 (printed pages 31-33) for components versus systems, and the elements of risk.
 
@@ -85,7 +84,7 @@ least two of each). Columns:
 | # | Component or flow | STRIDE | The threat, in one or two sentences | Which fact from the description makes it possible |
 
 That last column is the one that matters most. Every threat you list must trace to something
-actually stated in [photoshare-system.md](../data/photoshare-system.md). If you cannot point at the
+actually stated in the [SnapVault system description](../data/photoshare-system.md). If you cannot point at the
 sentence, you are guessing, and guesses are what threat modelling exists to replace.
 
 Some places worth looking hard at, though this is not a complete list and you should find others:

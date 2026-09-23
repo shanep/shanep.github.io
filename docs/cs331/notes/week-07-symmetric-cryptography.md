@@ -1,33 +1,10 @@
-# Week 7: Symmetric Cryptography
+# 7.01 Readings and Lecture Notes
 
-**February 22-28 · Reading: 9 pages · Estimated total: 6.5 hours**
+**February 22-28 · Reading: 9 pages · About 2 hrs 25 min with the worked example**
 
-## Overview
+What to do this week, and when it is due, is on the [Module 7 Overview](week-07-overview.md).
 
-Cryptography is the part of this course students most expect to be mathematics, and the part where
-the mathematics matters least to you. You are not going to design a cipher. You are going to use
-one, and nearly every real-world cryptographic failure is a misuse of a sound primitive rather than
-a break of one.
-
-So this week asks three questions:
-
-1. What does a cipher actually give you?
-2. What does it not give you, that you might assume it does?
-3. What is the mode of operation for, and what happens when you get it wrong?
-
-CyBOK's cryptography chapter opens with two heavily mathematical sections, §10.1 Mathematics and
-§10.2 Cryptographic Security Models. **Neither is assigned.** We start at §10.3.
-
-## Objectives this week
-
-- **[3.1](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits)**: Explain
-  what a block cipher and a mode of operation each provide, and demonstrate why ECB mode leaks
-  structure.
-- **[3.2](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits)**: 
-  Distinguish confidentiality from integrity and authenticity, and name the primitive that supplies
-  each.
-
-## Read
+## Readings
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
@@ -169,14 +146,6 @@ to be **unique**. In real code this breaks when someone stores a key and a nonce
 config file, or reuses an object across messages, or restarts a service that generates nonces from
 a counter it did not persist.
 
-## Do this week
-
-| | Task | Points | Due |
-| --- | --- | ---: | --- |
-| 1 | [Lab 4: Symmetric Encryption in Practice](../assignments/lab-04-symmetric-encryption.md) | 38 | Sunday |
-
-Check that `cryptography` still imports before you start: `python3 -c "import cryptography; print('ok')"`.
-
 ## Key terms
 
 | Term | Short form |
@@ -192,18 +161,10 @@ Check that `cryptography` still imports before you start: `python3 -c "import cr
 | **KDF** | Derives keys from a password or another key. PBKDF2, HKDF, Argon2. |
 | **One-time pad** | Information-theoretically secure, and impractical: the key is as long as the message and must never be reused. Nonce reuse in CTR is this failure in miniature. |
 
-## Time estimate
-
-| Activity | Time |
-| --- | --- |
-| Reading (9 pages plus Nakov) | 1 hr 40 min |
-| This module page and running `crypto_demo.py` | 45 min |
-| Lab 4 | 1 hr 30 min |
-| Review and slack | 2 hrs 30 min |
-| **Total** | **~6.5 hrs** |
-
 ## Looking ahead
 
 Week 8 is the other half of cryptography: key pairs, hashing, and signatures, and the question
 symmetric cryptography cannot answer, which is how two people who have never met agree on a key.
 Quiz 3 covers both weeks.
+
+<!--@include: ../../../parts/cs331-questions-button.md-->

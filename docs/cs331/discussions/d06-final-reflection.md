@@ -1,4 +1,4 @@
-# D6: Final Reflection
+# 16.02 D6: Final Reflection
 
 **Finals week · 15 points · about 45 minutes · Canvas discussion board**
 
@@ -27,11 +27,11 @@ objective: it asks you to judge your own position against
 
 ## Before you start
 
-Open [objectives.md](../objectives.md) and read the seven terminal objectives and the 34 supporting
+Open the [Objective Alignment Sheet](../objectives.md) and read the seven terminal objectives and the 34 supporting
 objectives under them. Then skim your own graded work from the semester, the labs are the fastest
 way to remember what you actually did.
 
-## Post
+## Post Directions
 
 **Due: the last day of finals week. About 400-500 words. No replies required.**
 
