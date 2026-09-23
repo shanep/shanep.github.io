@@ -1,30 +1,10 @@
-# Week 2: Security Principles and the Human Factor
+# 2.01 Readings and Lecture Notes
 
-**January 18-24 · MLK Day is Monday, January 18 · Reading: 14 pages · Estimated total: 7 hours**
+**January 18-24 · MLK Day is Monday, January 18 · Reading: 14 pages · About 2 hrs 30 min with the worked example**
 
-## Overview
+What to do this week, and when it is due, is on the [Module 2 Overview](week-02-overview.md).
 
-In 1975 Jerome Saltzer and Michael Schroeder wrote down eight design principles for protecting
-information in computer systems. Fifty-two years later they are still the closest thing the field
-has to rules of thumb, and every serious breach you will read about this semester violates at least
-one of them.
-
-This week you learn the eight, and then you learn why knowing them is not enough. The second half of
-the reading is about human factors, and it makes an uncomfortable point: most security controls
-that fail in practice fail because people route around them. When that happens, the usual response
-is to blame the people. CyBOK's position (and this course's) is that a control people cannot
-comply with is a defective control.
-
-## Objectives this week
-
-- **[1.3](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation)**: 
-  Apply the Saltzer and Schroeder design principles to critique a familiar system.
-- **[1.4](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation)**: 
-  Explain how human error and usability failures contribute to security incidents.
-- **[5.4](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles)**: 
-  Apply fail-safe defaults and complete mediation when critiquing a system design.
-
-## Read
+## Readings
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
@@ -95,15 +75,6 @@ mediated.
 That is the pattern to look for all semester: **a control, a legitimate task it obstructs, and the
 predictable workaround.** When you find it, the workaround is evidence about the control.
 
-## Do this week
-
-| | Task | Points | Due |
-| --- | --- | ---: | --- |
-| 1 | [Lab 1: Security Principles Audit](../assignments/lab-01-security-principles-audit.md) | 38 | Sunday |
-
-No quiz and no discussion this week. Lab 1 is the only graded item, and it is a writing assignment,
-give it the full ninety minutes.
-
 ## Key terms
 
 | Term | Short form |
@@ -120,20 +91,10 @@ give it the full ninety minutes.
 *how much* access; separation of privilege is about *how many conditions*. Read-only backup access
 is least privilege. Two administrators to approve a deletion is separation of privilege.
 
-## Time estimate
-
-| Activity | Time |
-| --- | --- |
-| Reading (14 pages plus the Saltzer & Schroeder excerpt) | 1 hr 50 min |
-| This module page and the worked example | 40 min |
-| Lab 1 | 1 hr 25 min |
-| Review and slack | 2 hrs 30 min |
-| **Total** | **~6.5 hrs** |
-
-MLK Day falls on Monday, so the working week is short. Lab 1 is not due until Sunday.
-
 ## Looking ahead
 
 Week 3 moves from what you *should* do to what you are *allowed* to do: the legal, regulatory, and
 ethical setting for security work. It ends with the question of what you do when you find a
 vulnerability in somebody else's system. Quiz 1 covers weeks 1 through 3.
+
+<!--@include: ../../../parts/cs331-questions-button.md-->

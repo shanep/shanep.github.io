@@ -1,4 +1,4 @@
-# Lab 6: Certificates and TLS
+# 10.02 Lab 6: Certificates and TLS
 
 **Week 10 · 38 points · about 90 minutes · submit in Canvas**
 

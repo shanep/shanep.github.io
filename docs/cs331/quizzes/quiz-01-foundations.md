@@ -1,4 +1,4 @@
-# Quiz 1: Foundations
+# 3.04 Quiz 1: Foundations
 
 **Week 3 · 30 points · 15 questions × 2 points · 15 minutes · one attempt · taken in Canvas**
 

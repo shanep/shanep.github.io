@@ -51,7 +51,25 @@ edutools push  docs/cs425 --course 48194            # publish (unpublished objec
 edutools push  docs/cs425 --course 48194 --publish  # publish and make visible
 ```
 
-CS425 is Canvas course **48194**.
+CS425 is Canvas course **48194**. CS331 is Canvas course **52107**, the Boise State Online
+master shell; `docs/cs331/` follows its layout (Course Resources, Getting Started, then a
+"Module N Overview" and an "N.01 Readings and Lecture Notes" page per week), and `canvas.css`
+plus the `[icons]` table in `canvas.toml` reproduce its look.
+
+The Boise State Online icon set lives once, in `docs/public/icons/`, for every course. A course
+uses it by linking its own directory to it (`ln -s ../public/icons docs/<course>/icons`) and
+naming the icons it wants in its `[icons]` table; the push uploads only those.
+
+Two modules from the shell are shared the same way, from `shared/` at the repo root:
+
+- `shared/instructor-resources/` is the instructor-only Instructor Resources module. A course
+  links it (`ln -s ../../shared/instructor-resources docs/<course>/instructor-resources`), adds
+  `"instructor-resources/*.md"` to `[layout] pages`, and declares the module with
+  `never_publish = true`, which keeps it and its pages unpublished on every push, whatever the
+  flags. The site excludes `**/instructor-resources/**`, so it never reaches the website.
+- `shared/course-resources/` holds the student pages of Course Resources. A course links it
+  the same way, adds `"course-resources/*.md"`, and declares the module with `publish = true`
+  so every push publishes it, alongside its own Instructor Information page.
 
 ## Building the site
 

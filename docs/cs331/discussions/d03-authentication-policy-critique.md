@@ -1,4 +1,4 @@
-# D3: Authentication Policy Critique
+# 5.02 D3: Authentication Policy Critique
 
 **Week 5 · 30 points · about 60 minutes · Canvas discussion board**
 
@@ -49,7 +49,7 @@ record what the interface enforced: that absence is itself a finding.
 
 **Do not post credentials, and do not post anything that identifies your own account.**
 
-## Initial post
+## Initial Post Directions
 
 **Due: Thursday of week 5. About 400-500 words.**
 
@@ -100,7 +100,7 @@ Then recommend **which authentication factors** this organisation should require
 If your chosen threat is phishing, you should be able to say why not all second factors are equal
 against it.
 
-## Replies
+## Reply Post Directions
 
 **Due: Sunday of week 5. Two replies, about 150 words each.**
 
@@ -125,9 +125,9 @@ not stop a correct guess from being correct. It changes the attacker's rate (rou
 guesses a second down to about fifteen), which is decisive across a large wordlist and irrelevant
 for a password that is in the first twenty entries.
 
-## Ground rules
+## Discussion Guidelines
 
-The [ground rules from D1](d01-introductions-and-security-mindset.md#ground-rules-for-every-discussion-in-this-course)
+The [discussion guidelines from D1](d01-introductions-and-security-mindset.md#discussion-guidelines)
 apply. Additionally: do not post your own credentials, do not post screenshots containing your
 username or account details, and do not test any authentication system beyond creating an account
 you are entitled to create.

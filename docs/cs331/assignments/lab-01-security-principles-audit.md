@@ -1,4 +1,4 @@
-# Lab 1: Security Principles Audit
+# 2.02 Lab 1: Security Principles Audit
 
 **Week 2 · 38 points · about 90 minutes · submit in Canvas**
 

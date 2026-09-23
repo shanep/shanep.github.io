@@ -1,30 +1,10 @@
-# Week 8: Public-Key Cryptography, Hashing, and Signatures
+# 8.01 Readings and Lecture Notes
 
-**March 1-7 · Reading: 9 pages · Estimated total: 7 hours**
+**March 1-7 · Reading: 9 pages · About 2 hrs 30 min with the worked example**
 
-## Overview
+What to do this week, and when it is due, is on the [Module 8 Overview](week-08-overview.md).
 
-Symmetric cryptography works beautifully once two parties share a key. Getting them to share one is
-the problem it cannot solve. Two people who have never met, on a network run by strangers, cannot
-agree on a secret by exchanging messages that everyone can read, not with symmetric tools.
-
-Public-key cryptography solves that, by making one half of a key pair publishable. This week covers
-what that buys: encryption to someone you have never met, and signatures that prove a message came
-from a particular key and has not changed.
-
-It also sets up the gap that week 10 exists to fill. A signature verifies against a *key*. Nothing
-this week tells you the key belongs to the person you think it does.
-
-## Objectives this week
-
-- **[3.3](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits)**: Compare
-  symmetric and public-key cryptography by key distribution, performance, and typical use.
-- **[3.4](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits)**: Verify a
-  digital signature and explain what a verification failure does and does not prove.
-
-Quiz 3 also assesses **3.1** and **3.2** from week 7.
-
-## Read
+## Readings
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
@@ -142,16 +122,6 @@ of magnitude slower. Real protocols use both: public-key cryptography to agree a
 then a symmetric authenticated mode for the actual data. That is what TLS does, and it is why week
 10's material sits on top of this week's.
 
-## Do this week
-
-| | Task | Points | Due |
-| --- | --- | ---: | --- |
-| 1 | [Lab 5: Hashing and Signatures](../assignments/lab-05-hashing-and-signatures.md) | 38 | Sunday |
-| 2 | [Quiz 3: Cryptography](../quizzes/quiz-03-cryptography.md): covers weeks 7-8 | 30 | Sunday |
-
-Next week is the midterm and there is no new material, so this is the last week of new content
-before the break.
-
 ## Key terms
 
 | Term | Short form |
@@ -166,19 +136,10 @@ before the break.
 | **Forward secrecy** | Compromising a long-term key later does not expose past sessions. |
 | **Hybrid encryption** | Public-key for key establishment, symmetric for bulk data. What everything real does. |
 
-## Time estimate
-
-| Activity | Time |
-| --- | --- |
-| Reading (9 pages plus Nakov) | 1 hr 45 min |
-| This module page and running `sign_demo.py` | 45 min |
-| Lab 5 | 1 hr 30 min |
-| Quiz 3 | 15 min |
-| Review and slack | 2 hrs 30 min |
-| **Total** | **~7 hrs** |
-
 ## Looking ahead
 
 Week 9 is review and the midterm. No new reading, no lab, no discussion. The
 [midterm exam guide](../assignments/midterm-exam-guide.md) tells you exactly what is on it, read
 it this weekend rather than next.
+
+<!--@include: ../../../parts/cs331-questions-button.md-->

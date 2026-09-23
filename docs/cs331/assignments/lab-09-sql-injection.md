@@ -1,4 +1,4 @@
-# Lab 9: SQL Injection
+# 14.02 Lab 9: SQL Injection
 
 **Week 14 · 38 points · about 90 minutes · submit in Canvas**
 

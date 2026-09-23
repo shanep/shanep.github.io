@@ -4,7 +4,8 @@
 // dates and points that Canvas shows under Modules after a push.
 
 interface Item {
-  kind: 'page' | 'assignment' | 'discussion' | 'quiz' | 'file'
+  // 'header' is a Canvas text header (SubHeader), such as "Due by Sunday ...".
+  kind: 'page' | 'assignment' | 'discussion' | 'quiz' | 'file' | 'header'
   title: string
   path?: string        // repo path without .md; empty for a Canvas-native item
   due_at?: string | null
@@ -25,6 +26,7 @@ const ICONS: Record<Item['kind'], string> = {
   discussion: '💬',
   quiz: '🚀',
   file: '📎',
+  header: '',
 }
 
 const LABELS: Record<Item['kind'], string> = {
@@ -33,6 +35,7 @@ const LABELS: Record<Item['kind'], string> = {
   discussion: 'Discussion',
   quiz: 'Quiz',
   file: 'File',
+  header: 'Header',
 }
 
 function href(item: Item): string | undefined {
@@ -62,7 +65,9 @@ function points(item: Item): string {
         <span class="module-title">{{ m.title }}</span>
       </header>
       <ul class="module-items">
-        <li v-for="(item, i) in m.items" :key="i" class="module-item">
+        <template v-for="(item, i) in m.items" :key="i">
+        <li v-if="item.kind === 'header'" class="module-item module-item--header">{{ item.title }}</li>
+        <li v-else class="module-item">
           <span class="item-icon" :title="LABELS[item.kind]" aria-hidden="true">{{ ICONS[item.kind] }}</span>
           <span class="item-body">
             <a v-if="href(item)" :href="href(item)" class="item-title">{{ item.title }}</a>
@@ -74,6 +79,7 @@ function points(item: Item): string {
             </span>
           </span>
         </li>
+        </template>
         <li v-if="!m.items.length" class="module-item module-item--empty">No items</li>
       </ul>
     </section>
@@ -132,6 +138,13 @@ function points(item: Item): string {
 
 .module-item:last-child {
   border-bottom: none;
+}
+
+/* Canvas draws a text header flush left, bold, with no icon. */
+.module-item--header {
+  padding-left: 1rem;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
 }
 
 .module-item--empty {

@@ -1,27 +1,10 @@
-# Week 5: Authentication and Credentials
+# 5.01 Readings and Lecture Notes
 
-**February 8-14 · Reading: 10 pages plus NIST §3 · Estimated total: 6.5 hours**
+**February 8-14 · Reading: 10 pages plus NIST §3 · About 2 hrs 35 min with the worked example**
 
-## Overview
+What to do this week, and when it is due, is on the [Module 5 Overview](week-05-overview.md).
 
-Three words get used as if they meant the same thing:
-
-- **Identification**: you claim to be somebody. Typing a username.
-- **Authentication**: you provide evidence for the claim. Typing the password.
-- **Authorisation**: the system decides what that identity may do. Next week.
-
-This week is the middle one. It is also the week with the largest gap between what most
-organisations do and what the current guidance says, because NIST changed its recommendations in
-2017 and again in 2025, and a great many password policies have not caught up.
-
-## Objectives this week
-
-- **[5.1](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles)**: 
-  Select authentication factors appropriate to a stated threat model and justify the choice.
-- **[5.2](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles)**: 
-  Evaluate a real password and MFA policy against NIST SP 800-63B-4.
-
-## Read
+## Readings
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
@@ -126,16 +109,6 @@ Three rules advised against, one recommended practice missing, and one rule that
 something else. That is what a policy critique looks like: rule by rule, with a citation, ending in
 a count.
 
-## Do this week
-
-| | Task | Points | Due |
-| --- | --- | ---: | --- |
-| 1 | [D3: Authentication Policy Critique](../discussions/d03-authentication-policy-critique.md): initial post Thursday, two replies Sunday | 30 | Thu / Sun |
-| 2 | [Quiz 2: Authentication](../quizzes/quiz-02-authentication.md) | 30 | Sunday |
-
-Run `password_demo.py` before posting to D3, part 3 asks you to quote two numbers from your own
-run.
-
 ## Key terms
 
 | Term | Short form |
@@ -151,19 +124,10 @@ run.
 | **Credential stuffing** | Replaying username/password pairs from other breaches. |
 | **Federated identity** | A separate identity provider authenticates on the application's behalf. SAML, OIDC. |
 
-## Time estimate
-
-| Activity | Time |
-| --- | --- |
-| Reading (10 pages plus NIST §3) | 1 hr 55 min |
-| This module page and running `password_demo.py` | 40 min |
-| D3 post and two replies | 1 hr 5 min |
-| Quiz 2 | 15 min |
-| Review and slack | 2 hrs 30 min |
-| **Total** | **~6.5 hrs** |
-
 ## Looking ahead
 
 Week 6 is the other half: once the system knows who you are, what may you do? Lab 3 asks you to
 write an access control policy down precisely enough to argue about, and then cut it to least
 privilege.
+
+<!--@include: ../../../parts/cs331-questions-button.md-->

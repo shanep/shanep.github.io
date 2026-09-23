@@ -1,4 +1,4 @@
-# Diagnostic Self-Check
+# 0.02 Diagnostic Self-Check
 
 **Week 1 · 0 points · ungraded · take it in Canvas**
 

@@ -1,4 +1,4 @@
-# Lab 4: Symmetric Encryption in Practice
+# 7.02 Lab 4: Symmetric Encryption in Practice
 
 **Week 7 · 38 points · about 90 minutes · submit in Canvas**
 

@@ -1,47 +1,193 @@
 [
   {
-    "title": "Week 1: What is Cyber Security?",
+    "title": "Course Resources",
     "items": [
       {
         "kind": "page",
-        "title": "Week 1: What Is Cyber Security?",
-        "path": "notes/week-01-what-is-cyber-security",
+        "title": "Instructor Information",
+        "path": "instructor",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Canvas Resources",
+        "path": "course-resources/canvas-resources",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Boise State Online Success Resources",
+        "path": "course-resources/online-success-resources",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Technology Support",
+        "path": "course-resources/technology-support",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "CS 331: Readings and Resources",
+        "path": "resources",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "CS 331: Objective Alignment Sheet",
+        "path": "objectives",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
+    "title": "Getting Started (January 11 - January 17)",
+    "items": [
+      {
+        "kind": "page",
+        "title": "Getting Started Overview",
+        "path": "getting-started",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Tuesday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "0.01 Communicating with Each Other",
+        "path": "communicating",
         "due_at": null,
         "points": null,
         "canvas_id": ""
       },
       {
         "kind": "quiz",
-        "title": "Diagnostic Self-Check",
+        "title": "0.02 Diagnostic Self-Check",
         "path": "quizzes/quiz-00-diagnostic",
+        "due_at": "2027-01-12T23:59:00-07:00",
+        "points": 0.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "quiz",
+        "title": "0.03 Getting to Know You Survey",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "393733"
+      },
+      {
+        "kind": "header",
+        "title": "Due by Thursday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "discussion",
+        "title": "0.04 D1: Introductions and the Security Mindset",
+        "path": "discussions/d01-introductions-and-security-mindset",
+        "due_at": "2027-01-14T23:59:00-07:00",
+        "points": 15.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Sunday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "0.05 D1: Introductions and the Security Mindset - Replies",
+        "path": "reminders/d01-replies",
         "due_at": "2027-01-17T23:59:00-07:00",
         "points": 0.0,
         "canvas_id": ""
       },
       {
         "kind": "assignment",
-        "title": "Lab 0: Course Setup and CyBOK Navigation",
+        "title": "0.06 Lab 0: Course Setup and CyBOK Navigation",
         "path": "assignments/lab-00-course-setup",
         "due_at": "2027-01-17T23:59:00-07:00",
         "points": 20.0,
-        "canvas_id": ""
-      },
-      {
-        "kind": "discussion",
-        "title": "D1: Introductions and the Security Mindset",
-        "path": "discussions/d01-introductions-and-security-mindset",
-        "due_at": "2027-01-17T23:59:00-07:00",
-        "points": 15.0,
         "canvas_id": ""
       }
     ]
   },
   {
-    "title": "Week 2: Security Principles and the Human Factor",
+    "title": "Module 1: What Is Cyber Security? (January 11 - January 17)",
     "items": [
       {
         "kind": "page",
-        "title": "Week 2: Security Principles and the Human Factor",
+        "title": "Module 1 Overview",
+        "path": "notes/week-01-overview",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Tuesday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "1.01 Readings and Lecture Notes",
+        "path": "notes/week-01-what-is-cyber-security",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
+    "title": "Module 2: Security Principles and the Human Factor (January 18 - January 24)",
+    "items": [
+      {
+        "kind": "page",
+        "title": "Module 2 Overview",
+        "path": "notes/week-02-overview",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Sunday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "2.01 Readings and Lecture Notes",
         "path": "notes/week-02-security-principles-and-human-factors",
         "due_at": null,
         "points": null,
@@ -49,7 +195,7 @@
       },
       {
         "kind": "assignment",
-        "title": "Lab 1: Security Principles Audit",
+        "title": "2.02 Lab 1: Security Principles Audit",
         "path": "assignments/lab-01-security-principles-audit",
         "due_at": "2027-01-24T23:59:00-07:00",
         "points": 38.0,
@@ -58,11 +204,27 @@
     ]
   },
   {
-    "title": "Week 3: Law, Regulation, Ethics, and Privacy",
+    "title": "Module 3: Law, Regulation, Ethics, and Privacy (January 25 - January 31)",
     "items": [
       {
         "kind": "page",
-        "title": "Week 3: Law, Regulation, Ethics, and Privacy",
+        "title": "Module 3 Overview",
+        "path": "notes/week-03-overview",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Thursday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "3.01 Readings and Lecture Notes",
         "path": "notes/week-03-law-ethics-and-privacy",
         "due_at": null,
         "points": null,
@@ -70,15 +232,31 @@
       },
       {
         "kind": "discussion",
-        "title": "D2: Ethics and Privacy Case",
+        "title": "3.02 D2: Ethics and Privacy Case",
         "path": "discussions/d02-ethics-and-privacy-case",
-        "due_at": "2027-01-31T23:59:00-07:00",
+        "due_at": "2027-01-28T23:59:00-07:00",
         "points": 30.0,
         "canvas_id": ""
       },
       {
+        "kind": "header",
+        "title": "Due by Sunday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "3.03 D2: Ethics and Privacy Case - Replies",
+        "path": "reminders/d02-replies",
+        "due_at": "2027-01-31T23:59:00-07:00",
+        "points": 0.0,
+        "canvas_id": ""
+      },
+      {
         "kind": "quiz",
-        "title": "Quiz 1: Foundations",
+        "title": "3.04 Quiz 1: Foundations",
         "path": "quizzes/quiz-01-foundations",
         "due_at": "2027-01-31T23:59:00-07:00",
         "points": 30.0,
@@ -87,11 +265,27 @@
     ]
   },
   {
-    "title": "Week 4: Risk Management and Threat Modeling",
+    "title": "Module 4: Risk Management and Threat Modeling (February 1 - February 7)",
     "items": [
       {
         "kind": "page",
-        "title": "Week 4: Risk Management and Threat Modeling",
+        "title": "Module 4 Overview",
+        "path": "notes/week-04-overview",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Sunday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "4.01 Readings and Lecture Notes",
         "path": "notes/week-04-risk-and-threat-modeling",
         "due_at": null,
         "points": null,
@@ -99,7 +293,7 @@
       },
       {
         "kind": "assignment",
-        "title": "Lab 2: Threat Model a Small System",
+        "title": "4.02 Lab 2: Threat Model a Small System",
         "path": "assignments/lab-02-threat-model",
         "due_at": "2027-02-07T23:59:00-07:00",
         "points": 38.0,
@@ -108,11 +302,27 @@
     ]
   },
   {
-    "title": "Week 5: Authentication and Credentials",
+    "title": "Module 5: Authentication and Credentials (February 8 - February 14)",
     "items": [
       {
         "kind": "page",
-        "title": "Week 5: Authentication and Credentials",
+        "title": "Module 5 Overview",
+        "path": "notes/week-05-overview",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Thursday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "5.01 Readings and Lecture Notes",
         "path": "notes/week-05-authentication-and-credentials",
         "due_at": null,
         "points": null,
@@ -120,15 +330,31 @@
       },
       {
         "kind": "discussion",
-        "title": "D3: Authentication Policy Critique",
+        "title": "5.02 D3: Authentication Policy Critique",
         "path": "discussions/d03-authentication-policy-critique",
-        "due_at": "2027-02-14T23:59:00-07:00",
+        "due_at": "2027-02-11T23:59:00-07:00",
         "points": 30.0,
         "canvas_id": ""
       },
       {
+        "kind": "header",
+        "title": "Due by Sunday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "5.03 D3: Authentication Policy Critique - Replies",
+        "path": "reminders/d03-replies",
+        "due_at": "2027-02-14T23:59:00-07:00",
+        "points": 0.0,
+        "canvas_id": ""
+      },
+      {
         "kind": "quiz",
-        "title": "Quiz 2: Authentication",
+        "title": "5.04 Quiz 2: Authentication",
         "path": "quizzes/quiz-02-authentication",
         "due_at": "2027-02-14T23:59:00-07:00",
         "points": 30.0,
@@ -137,11 +363,27 @@
     ]
   },
   {
-    "title": "Week 6: Authorisation, Access Control, and Accountability",
+    "title": "Module 6: Authorisation, Access Control, and Accountability (February 15 - February 21)",
     "items": [
       {
         "kind": "page",
-        "title": "Week 6: Authorisation, Access Control, and Accountability",
+        "title": "Module 6 Overview",
+        "path": "notes/week-06-overview",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Sunday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "6.01 Readings and Lecture Notes",
         "path": "notes/week-06-authorisation-and-access-control",
         "due_at": null,
         "points": null,
@@ -149,7 +391,7 @@
       },
       {
         "kind": "assignment",
-        "title": "Lab 3: Access Control Matrix and Least Privilege",
+        "title": "6.02 Lab 3: Access Control Matrix and Least Privilege",
         "path": "assignments/lab-03-access-control-matrix",
         "due_at": "2027-02-21T23:59:00-07:00",
         "points": 38.0,
@@ -158,11 +400,27 @@
     ]
   },
   {
-    "title": "Week 7: Symmetric Cryptography",
+    "title": "Module 7: Symmetric Cryptography (February 22 - February 28)",
     "items": [
       {
         "kind": "page",
-        "title": "Week 7: Symmetric Cryptography",
+        "title": "Module 7 Overview",
+        "path": "notes/week-07-overview",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Sunday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "7.01 Readings and Lecture Notes",
         "path": "notes/week-07-symmetric-cryptography",
         "due_at": null,
         "points": null,
@@ -170,7 +428,7 @@
       },
       {
         "kind": "assignment",
-        "title": "Lab 4: Symmetric Encryption in Practice",
+        "title": "7.02 Lab 4: Symmetric Encryption in Practice",
         "path": "assignments/lab-04-symmetric-encryption",
         "due_at": "2027-02-28T23:59:00-07:00",
         "points": 38.0,
@@ -179,11 +437,27 @@
     ]
   },
   {
-    "title": "Week 8: Public-Key Cryptography, Hashing, and Signatures",
+    "title": "Module 8: Public-Key Cryptography, Hashing, and Signatures (March 1 - March 7)",
     "items": [
       {
         "kind": "page",
-        "title": "Week 8: Public-Key Cryptography, Hashing, and Signatures",
+        "title": "Module 8 Overview",
+        "path": "notes/week-08-overview",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Sunday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "8.01 Readings and Lecture Notes",
         "path": "notes/week-08-public-key-cryptography",
         "due_at": null,
         "points": null,
@@ -191,7 +465,7 @@
       },
       {
         "kind": "assignment",
-        "title": "Lab 5: Hashing and Signatures",
+        "title": "8.02 Lab 5: Hashing and Signatures",
         "path": "assignments/lab-05-hashing-and-signatures",
         "due_at": "2027-03-07T23:59:00-07:00",
         "points": 38.0,
@@ -199,7 +473,7 @@
       },
       {
         "kind": "quiz",
-        "title": "Quiz 3: Cryptography",
+        "title": "8.03 Quiz 3: Cryptography",
         "path": "quizzes/quiz-03-cryptography",
         "due_at": "2027-03-07T23:59:00-07:00",
         "points": 30.0,
@@ -208,11 +482,27 @@
     ]
   },
   {
-    "title": "Week 9: Review and Midterm",
+    "title": "Module 9: Review and Midterm (March 8 - March 14)",
     "items": [
       {
         "kind": "page",
-        "title": "Week 9: Review and Midterm",
+        "title": "Module 9 Overview",
+        "path": "notes/week-09-overview",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Sunday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "9.01 Readings and Lecture Notes",
         "path": "notes/week-09-review-and-midterm",
         "due_at": null,
         "points": null,
@@ -220,7 +510,7 @@
       },
       {
         "kind": "page",
-        "title": "Midterm Exam Guide",
+        "title": "9.02 Midterm Exam Guide",
         "path": "assignments/midterm-exam-guide",
         "due_at": "2027-03-14T23:59:00-06:00",
         "points": 150.0,
@@ -229,11 +519,27 @@
     ]
   },
   {
-    "title": "Week 10: Keys, Certificates, PKI, and TLS",
+    "title": "Module 10: Keys, Certificates, PKI, and TLS (March 22 - March 28)",
     "items": [
       {
         "kind": "page",
-        "title": "Week 10: Keys, Certificates, PKI, and TLS",
+        "title": "Module 10 Overview",
+        "path": "notes/week-10-overview",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Sunday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "10.01 Readings and Lecture Notes",
         "path": "notes/week-10-keys-certificates-and-pki",
         "due_at": null,
         "points": null,
@@ -241,7 +547,7 @@
       },
       {
         "kind": "assignment",
-        "title": "Lab 6: Certificates and TLS",
+        "title": "10.02 Lab 6: Certificates and TLS",
         "path": "assignments/lab-06-certificates-and-tls",
         "due_at": "2027-03-28T23:59:00-06:00",
         "points": 38.0,
@@ -250,11 +556,27 @@
     ]
   },
   {
-    "title": "Week 11: Network Security and Attacks",
+    "title": "Module 11: Network Security and Attacks (March 29 - April 4)",
     "items": [
       {
         "kind": "page",
-        "title": "Week 11: Network Security and Attacks",
+        "title": "Module 11 Overview",
+        "path": "notes/week-11-overview",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Thursday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "11.01 Readings and Lecture Notes",
         "path": "notes/week-11-network-security",
         "due_at": null,
         "points": null,
@@ -262,15 +584,31 @@
       },
       {
         "kind": "discussion",
-        "title": "D4: Network Security in the News",
+        "title": "11.02 D4: Network Security in the News",
         "path": "discussions/d04-network-security-in-the-news",
-        "due_at": "2027-04-04T23:59:00-06:00",
+        "due_at": "2027-04-01T23:59:00-06:00",
         "points": 30.0,
         "canvas_id": ""
       },
       {
+        "kind": "header",
+        "title": "Due by Sunday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "11.03 D4: Network Security in the News - Replies",
+        "path": "reminders/d04-replies",
+        "due_at": "2027-04-04T23:59:00-06:00",
+        "points": 0.0,
+        "canvas_id": ""
+      },
+      {
         "kind": "quiz",
-        "title": "Quiz 4: Network Security",
+        "title": "11.04 Quiz 4: Network Security",
         "path": "quizzes/quiz-04-network-security",
         "due_at": "2027-04-04T23:59:00-06:00",
         "points": 30.0,
@@ -279,11 +617,27 @@
     ]
   },
   {
-    "title": "Week 12: Malware and Adversarial Behaviours",
+    "title": "Module 12: Malware and Adversarial Behaviours (April 5 - April 11)",
     "items": [
       {
         "kind": "page",
-        "title": "Week 12: Malware and Adversarial Behaviours",
+        "title": "Module 12 Overview",
+        "path": "notes/week-12-overview",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Sunday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "12.01 Readings and Lecture Notes",
         "path": "notes/week-12-malware-and-adversarial-behaviours",
         "due_at": null,
         "points": null,
@@ -291,7 +645,7 @@
       },
       {
         "kind": "assignment",
-        "title": "Lab 7: Malware Triage Without Malware",
+        "title": "12.02 Lab 7: Malware Triage Without Malware",
         "path": "assignments/lab-07-malware-triage",
         "due_at": "2027-04-11T23:59:00-06:00",
         "points": 38.0,
@@ -300,11 +654,27 @@
     ]
   },
   {
-    "title": "Week 13: Software Security, Memory Safety, and Assurance",
+    "title": "Module 13: Software Security, Memory Safety, and Assurance (April 12 - April 18)",
     "items": [
       {
         "kind": "page",
-        "title": "Week 13: Software Security, Memory Safety, and Assurance",
+        "title": "Module 13 Overview",
+        "path": "notes/week-13-overview",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Sunday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "13.01 Readings and Lecture Notes",
         "path": "notes/week-13-software-security-and-assurance",
         "due_at": null,
         "points": null,
@@ -312,7 +682,7 @@
       },
       {
         "kind": "assignment",
-        "title": "Lab 8: Memory Safety and Assurance Evidence",
+        "title": "13.02 Lab 8: Memory Safety and Assurance Evidence",
         "path": "assignments/lab-08-memory-safety-and-assurance",
         "due_at": "2027-04-18T23:59:00-06:00",
         "points": 38.0,
@@ -321,11 +691,27 @@
     ]
   },
   {
-    "title": "Week 14: Web Security and Injection",
+    "title": "Module 14: Web Security and Injection (April 19 - April 25)",
     "items": [
       {
         "kind": "page",
-        "title": "Week 14: Web Security and Injection",
+        "title": "Module 14 Overview",
+        "path": "notes/week-14-overview",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Sunday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "14.01 Readings and Lecture Notes",
         "path": "notes/week-14-web-security-and-injection",
         "due_at": null,
         "points": null,
@@ -333,7 +719,7 @@
       },
       {
         "kind": "assignment",
-        "title": "Lab 9: SQL Injection",
+        "title": "14.02 Lab 9: SQL Injection",
         "path": "assignments/lab-09-sql-injection",
         "due_at": "2027-04-25T23:59:00-06:00",
         "points": 38.0,
@@ -341,7 +727,7 @@
       },
       {
         "kind": "quiz",
-        "title": "Quiz 5: Software and Web Security",
+        "title": "14.03 Quiz 5: Software and Web Security",
         "path": "quizzes/quiz-05-software-and-web",
         "due_at": "2027-04-25T23:59:00-06:00",
         "points": 30.0,
@@ -350,40 +736,80 @@
     ]
   },
   {
-    "title": "Week 15: Security Operations, Detection, and Incident Response",
+    "title": "Module 15: Security Operations, Detection, and Incident Response (April 26 - April 30)",
     "items": [
       {
         "kind": "page",
-        "title": "Week 15: Security Operations, Detection, and Incident Response",
+        "title": "Module 15 Overview",
+        "path": "notes/week-15-overview",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "Due by Thursday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "15.01 Readings and Lecture Notes",
         "path": "notes/week-15-security-operations-and-incident-response",
         "due_at": null,
         "points": null,
         "canvas_id": ""
       },
       {
-        "kind": "assignment",
-        "title": "Lab 10: Log Analysis and Incident Memo",
-        "path": "assignments/lab-10-log-analysis-and-incident-memo",
-        "due_at": "2027-04-30T23:59:00-06:00",
-        "points": 38.0,
+        "kind": "discussion",
+        "title": "15.02 D5: A Current Security Failure",
+        "path": "discussions/d05-current-security-failure",
+        "due_at": "2027-04-29T23:59:00-06:00",
+        "points": 30.0,
         "canvas_id": ""
       },
       {
-        "kind": "discussion",
-        "title": "D5: A Current Security Failure",
-        "path": "discussions/d05-current-security-failure",
+        "kind": "header",
+        "title": "Due by Friday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "15.03 D5: A Current Security Failure - Replies",
+        "path": "reminders/d05-replies",
         "due_at": "2027-04-30T23:59:00-06:00",
-        "points": 30.0,
+        "points": 0.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "15.04 Lab 10: Log Analysis and Incident Memo",
+        "path": "assignments/lab-10-log-analysis-and-incident-memo",
+        "due_at": "2027-04-30T23:59:00-06:00",
+        "points": 38.0,
         "canvas_id": ""
       }
     ]
   },
   {
-    "title": "Finals Week",
+    "title": "Module 16: Finals Week (May 3 - May 7)",
     "items": [
       {
+        "kind": "header",
+        "title": "Due by Friday at 11:59 p.m. Mountain Time",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
         "kind": "page",
-        "title": "Final Exam Guide",
+        "title": "16.01 Final Exam Guide",
         "path": "assignments/final-exam-guide",
         "due_at": "2027-05-07T23:59:00-06:00",
         "points": 150.0,
@@ -391,7 +817,7 @@
       },
       {
         "kind": "discussion",
-        "title": "D6: Final Reflection",
+        "title": "16.02 D6: Final Reflection",
         "path": "discussions/d06-final-reflection",
         "due_at": "2027-05-07T23:59:00-06:00",
         "points": 15.0,

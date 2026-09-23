@@ -1,4 +1,4 @@
-# Midterm Exam Guide
+# 9.02 Midterm Exam Guide
 
 **Week 9 · 150 points · 90 minutes · taken in Canvas**
 

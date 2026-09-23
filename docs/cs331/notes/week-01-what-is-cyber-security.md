@@ -1,32 +1,10 @@
-# Week 1: What Is Cyber Security?
+# 1.01 Readings and Lecture Notes
 
-**January 11-17 · Reading: 7 pages · Estimated total: 5.5 hours**
+**January 11-17 · Reading: 7 pages · About 1 hr 15 min with the worked example**
 
-## Overview
+What to do this week, and when it is due, is on the [Module 1 Overview](week-01-overview.md).
 
-The first week does two things. It gets your tools working, and it gives you the vocabulary the
-rest of the semester runs on.
-
-That vocabulary matters more than it sounds like it should. In ordinary speech, *threat*,
-*vulnerability*, *attack*, and *risk* are near-synonyms. In this course they are four different
-things, and confusing them produces sentences that cannot be acted on. "We have a threat in our
-login system" tells an engineer nothing. "Our login system has a vulnerability that an
-opportunistic attacker could exploit at low cost, and the impact would be total account takeover"
-tells them what to do on Monday.
-
-You are not expected to know any of this already. The diagnostic this week is ungraded and exists
-so you can see where you are starting from.
-
-## Objectives this week
-
-- **[1.1](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation)**: 
-  Define confidentiality, integrity, and availability, and identify which goal a described failure
-  violates.
-- **[1.2](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation)**: 
-  Use the terms threat, vulnerability, attack, and risk correctly in writing about a security
-  incident.
-
-## Read
+## Readings
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
@@ -36,10 +14,10 @@ so you can see where you are starting from.
 
 **Navigating the PDF:** go by section number, not page number. The printed page numbers in the
 footer do not match your PDF viewer's counter, the book has 39 pages of front matter. Use your
-viewer's search box or the bookmarks panel. See [resources.md](../resources.md) for more.
+viewer's search box or the bookmarks panel. See [Readings and Resources](../resources.md) for more.
 
 §1.2 is a map of the whole book. Skim it. You will not read most of what it lists, and
-[resources.md](../resources.md) tells you exactly which parts of it this course uses.
+[Readings and Resources](../resources.md) tells you exactly which parts of it this course uses.
 
 ## Worked example
 
@@ -89,17 +67,6 @@ The files were copied, not deleted; the victims still had them. So: confidential
 Being able to say "no, that one was not violated, and here is why" is as much of the skill as
 naming the one that was.
 
-## Do this week
-
-| | Task | Points | Due |
-| --- | --- | ---: | --- |
-| 1 | [Diagnostic self-check](../quizzes/quiz-00-diagnostic.md): ten questions, ungraded | 0 | Tuesday |
-| 2 | [Lab 0: Course Setup and CyBOK Navigation](../assignments/lab-00-course-setup.md) | 20 | Sunday |
-| 3 | [D1: Introductions and the Security Mindset](../discussions/d01-introductions-and-security-mindset.md), initial post Thursday, one reply Sunday | 15 | Thu / Sun |
-
-**Do Lab 0 early.** It installs the Python package that weeks 7, 8, and 10 depend on. If something
-does not work on your machine, week 1 is when to find out.
-
 ## Key terms
 
 From the [CyBOK Glossary](../docs/CyBOK_v1.1.0.pdf) (printed page 951) and §1.3:
@@ -115,21 +82,9 @@ From the [CyBOK Glossary](../docs/CyBOK_v1.1.0.pdf) (printed page 951) and §1.3
 | **Risk** | The combination of how likely an unwanted incident is with how much harm it would do. |
 | **Asset** | Something of value that is worth protecting. |
 
-## Time estimate
-
-| Activity | Time |
-| --- | --- |
-| Reading (7 pages) | 45 min |
-| This module page and the worked example | 30 min |
-| Diagnostic self-check | 20 min |
-| Lab 0 | 45 min |
-| D1 post and reply | 45 min |
-| Review and slack | 2 hrs |
-| **Total** | **~5.5 hrs** |
-
-Week 1 is deliberately light. Later weeks run closer to seven hours.
-
 ## Looking ahead
 
 Week 2 takes the eight design principles that security has been using since 1975 and asks you to
 apply them to something you use every day. Read §1.4 before Monday if you want a head start.
+
+<!--@include: ../../../parts/cs331-questions-button.md-->

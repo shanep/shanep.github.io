@@ -7,3 +7,26 @@
 
 .cols .col > :first-child { margin-top: 0; }
 .cols .col > :last-child  { margin-bottom: 0; }
+
+/* CS331 mirrors the Boise State Online Canvas shell. The same classes are
+   styled for Canvas in docs/cs331/canvas.css; these give the website the same
+   pill buttons, banner, and "Select Next" bar. */
+.cs-buttons a {
+  display: inline-block;
+  background-color: #0033a0;
+  color: #fff;
+  padding: 8px 12px;
+  margin: 0 4px 15px 0;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.cs-buttons a:hover { background-color: #001f60; color: #fff; }
+
+.cs-banner { width: 100%; height: auto; }
+
+.cs-next {
+  background-color: #0033a0;
+  color: #fff;
+  padding: 8px 12px;
+  text-align: right;
+}

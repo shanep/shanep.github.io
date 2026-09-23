@@ -1,4 +1,4 @@
-# D5: A Current Security Failure
+# 15.02 D5: A Current Security Failure
 
 **Week 15 · 30 points · about 60 minutes · Canvas discussion board**
 
@@ -39,7 +39,7 @@ CISA advisory, sworn testimony, or detailed reporting that includes a timeline.
 This is the last discussion of the semester, and it is deliberately the one that asks you to use the
 whole course. Pick something you find genuinely interesting.
 
-## Initial post
+## Initial Post Directions
 
 **Due: Thursday of week 15. About 450-550 words.**
 
@@ -95,9 +95,9 @@ Name **two specific changes** that would have most improved the outcome, and for
 At least one of your two must be about **preparation**, because preparation is the phase that
 decides how the other three go, and it is the phase organisations skip.
 
-## Replies
+## Reply Post Directions
 
-**Due: Sunday of week 15. Two replies, about 150 words each.**
+**Due: Friday of week 15. Two replies, about 150 words each.**
 
 Reply to **two** classmates who chose different incidents. Do one of these:
 
@@ -120,9 +120,9 @@ Reply to **two** classmates who chose different incidents. Do one of these:
 recommendations that are not tied to an interval in the timeline, and hindsight criticism that does
 not distinguish what responders knew at the time from what came out later.
 
-## Ground rules
+## Discussion Guidelines
 
-The [ground rules from D1](d01-introductions-and-security-mindset.md#ground-rules-for-every-discussion-in-this-course)
+The [discussion guidelines from D1](d01-introductions-and-security-mindset.md#discussion-guidelines)
 apply. In particular: analyse published reporting only, and do not name or blame individual
 employees of the organisation, even where reporting does.
 

@@ -1,34 +1,10 @@
-# Week 3: Law, Regulation, Ethics, and Privacy
+# 3.01 Readings and Lecture Notes
 
-**January 25-31 · Reading: 15 pages · Estimated total: 7 hours**
+**January 25-31 · Reading: 15 pages · About 2 hrs 15 min with the worked example**
 
-## Overview
+What to do this week, and when it is due, is on the [Module 3 Overview](week-03-overview.md).
 
-Everything you learn in this course is dual-use. The technique that finds a vulnerability in a
-system you are paid to test is the same technique that is a crime against a system you are not.
-The line between the two is not technical, and it is not obvious. This week is about where it sits.
-
-Three warnings before you start.
-
-First, **I am not a lawyer and this is not legal advice.** CyBOK's Law & Regulation chapter is
-written by one, and it is careful to say the same thing. What you are learning is which *kinds* of
-question arise and who they run to, not the law of any particular jurisdiction.
-
-Second, **good intentions are not a defence.** "I was going to report it" does not convert
-unauthorised access into authorised access. This surprises people every year.
-
-Third, this is the shortest reading in the course drawn from the longest chapter, CyBOK's law
-chapter runs 78 pages. You are assigned 15. Do not read the rest unless you want to.
-
-## Objectives this week
-
-- **[1.5](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation)**: 
-  Describe the legal, regulatory, and ethical constraints on security work, including vulnerability
-  disclosure and privacy obligations.
-
-Quiz 1 also assesses **1.1** through **1.4** from weeks 1 and 2.
-
-## Read
+## Readings
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
@@ -104,16 +80,6 @@ deadline when you work there? Who is the vendor? What is your leverage, and what
 you? That is the situation in [D2](../discussions/d02-ethics-and-privacy-case.md), and it does not
 have a clean answer.
 
-## Do this week
-
-| | Task | Points | Due |
-| --- | --- | ---: | --- |
-| 1 | [D2: Ethics and Privacy Case](../discussions/d02-ethics-and-privacy-case.md), initial post Thursday, two replies Sunday | 30 | Thu / Sun |
-| 2 | [Quiz 1: Foundations](../quizzes/quiz-01-foundations.md): covers weeks 1-3 | 30 | Sunday |
-
-Take Quiz 1 **after** you have done the D2 reading. Five of its fifteen items are on this week's
-material.
-
 ## Key terms
 
 | Term | Short form |
@@ -127,19 +93,10 @@ material.
 | **Privacy as control** | The subject decides what is collected and why. |
 | **Privacy as transparency** | The subject can find out what happened to their data. |
 
-## Time estimate
-
-| Activity | Time |
-| --- | --- |
-| Reading (15 pages) | 1 hr 45 min |
-| This module page and the worked example | 30 min |
-| D2 post and two replies | 1 hr |
-| Quiz 1 | 15 min |
-| Review and slack | 2 hrs 30 min |
-| **Total** | **~6 hrs** |
-
 ## Looking ahead
 
 Week 4 is the first modelling week: you take a written description of a system and turn it into a
 threat model. It is the single most transferable skill in the course, and Lab 2 is where the
 semester starts asking you to produce structured work rather than prose.
+
+<!--@include: ../../../parts/cs331-questions-button.md-->
