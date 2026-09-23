@@ -19,9 +19,53 @@ function draftPages(): string[] {
     .sort()
 }
 
+// VitePress skips its dead-link check for links ending in an extension it
+// recognises as a downloadable file (pdf, png, csv and about seventy others)
+// and treats everything else as a page route. CS331 hands out Python scripts,
+// a C file and two log files from docs/public/cs331/data/, so without this
+// every link to one of them is reported as a dead page. VITE_EXTRA_EXTENSIONS
+// is the documented way to extend that list; it has to be set before the first
+// link is resolved, which is why it sits here rather than in the config object.
+//
+// This exempts those links from the check rather than validating them, exactly
+// as VitePress already does for the PDFs under docs/public/cs425/. A typo in a
+// `.py` link will not fail the build.
+//
+// ignoreDeadLinks stays false: drafts must still break the build when linked.
+process.env.VITE_EXTRA_EXTENSIONS = 'py,c,log'
+
 const drafts = draftPages()
 if (drafts.length > 0) {
   console.log(`vitepress: skipping ${drafts.length} draft page(s): ${drafts.join(', ')}`)
+}
+
+// A quiz bank is the question and its answer in one file: `edutools push` reads
+// both and builds the Canvas quiz from them. The website gets the questions and
+// never the answers, so a student can see what a quiz covers while the key stays
+// in Canvas.
+//
+// An answer is a paragraph opening with `*Answer:*`, and its rationale wraps over
+// as many lines as it needs, so the rule drops from that line to the blank line
+// that ends the paragraph. The `## Canvas import notes` section, which says which
+// items are multiple-answer, is already removed by INSTRUCTOR_MARKER below.
+//
+// Marking the files `draft: true` instead would also keep them out of Canvas,
+// which is the one place they have to reach.
+function stripQuizAnswers(src: string): string {
+  if (!src.includes('*Answer:*')) return src
+  const kept: string[] = []
+  let inAnswer = false
+  for (const line of src.split('\n')) {
+    if (inAnswer) {
+      if (line.trim() !== '') continue
+      inAnswer = false
+    } else if (line.startsWith('*Answer:*')) {
+      inAnswer = true
+      continue
+    }
+    kept.push(line)
+  }
+  return kept.join('\n')
 }
 
 // A course file can carry a section written for whoever is teaching it rather
@@ -63,7 +107,7 @@ export default defineConfig({
         // Runs on the raw markdown, before anything is parsed, so the section
         // never reaches the page, the outline, or the search index.
         md.core.ruler.before('normalize', 'strip_instructor_sections', (state: any) => {
-          state.src = stripInstructorSections(state.src)
+          state.src = stripQuizAnswers(stripInstructorSections(state.src))
         })
         // @ts-ignore
         md.use(footnote)
@@ -105,6 +149,7 @@ export default defineConfig({
       '/cs117/': { base: '/cs117/', items: cs117() },
       '/cs155/': { base: '/cs155/', items: cs155() },
       '/cs208/': { base: '/cs208/', items: cs208() },
+      '/cs331/': { base: '/cs331/', items: cs331() },
       '/cs333/': { base: '/cs333/', items: cs333() },
       '/cs408/': { base: '/cs408/', items: cs408() },
       '/cs425/': { base: '/cs425/', items: cs425() },
@@ -179,6 +224,92 @@ function cs208(): DefaultTheme.SidebarItem[] {
         { text: 'Full Stack Introduction', link: 'fullstack-introduction' },
         { text: 'Relational Databases and SQL', link: 'relational-databases-and-sql' },
         { text: 'Agile Development', link: 'agile-development' },
+      ]
+    }
+  ]
+}
+function cs331(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'CS331',
+      items: [
+        { text: 'Syllabus',   link: 'index' },
+        { text: 'Schedule',   link: 'schedule/index' },
+        { text: 'Objectives', link: 'objectives' },
+        { text: 'Resources',  link: 'resources' },
+        { text: 'Data Files', link: 'data/index' },
+      ]
+    },
+    {
+      text: 'Weekly Modules',
+      collapsed: false,
+      items: [
+        { text: '1. What is Cyber Security?',        link: 'notes/week-01-what-is-cyber-security' },
+        { text: '2. Principles and Human Factors',   link: 'notes/week-02-security-principles-and-human-factors' },
+        { text: '3. Law, Ethics, and Privacy',       link: 'notes/week-03-law-ethics-and-privacy' },
+        { text: '4. Risk and Threat Modeling',       link: 'notes/week-04-risk-and-threat-modeling' },
+        { text: '5. Authentication and Credentials', link: 'notes/week-05-authentication-and-credentials' },
+        { text: '6. Authorisation and Access',       link: 'notes/week-06-authorisation-and-access-control' },
+        { text: '7. Symmetric Cryptography',         link: 'notes/week-07-symmetric-cryptography' },
+        { text: '8. Public-Key Cryptography',        link: 'notes/week-08-public-key-cryptography' },
+        { text: '9. Review and Midterm',             link: 'notes/week-09-review-and-midterm' },
+        { text: '10. Keys, Certificates, and PKI',   link: 'notes/week-10-keys-certificates-and-pki' },
+        { text: '11. Network Security',              link: 'notes/week-11-network-security' },
+        { text: '12. Malware and Adversaries',       link: 'notes/week-12-malware-and-adversarial-behaviours' },
+        { text: '13. Software Security',             link: 'notes/week-13-software-security-and-assurance' },
+        { text: '14. Web Security and Injection',    link: 'notes/week-14-web-security-and-injection' },
+        { text: '15. Security Operations',           link: 'notes/week-15-security-operations-and-incident-response' },
+      ]
+    },
+    {
+      text: 'Labs',
+      collapsed: false,
+      items: [
+        { text: 'Lab 0 - Course Setup',              link: 'assignments/lab-00-course-setup' },
+        { text: 'Lab 1 - Principles Audit',          link: 'assignments/lab-01-security-principles-audit' },
+        { text: 'Lab 2 - Threat Model',              link: 'assignments/lab-02-threat-model' },
+        { text: 'Lab 3 - Access Control Matrix',     link: 'assignments/lab-03-access-control-matrix' },
+        { text: 'Lab 4 - Symmetric Encryption',      link: 'assignments/lab-04-symmetric-encryption' },
+        { text: 'Lab 5 - Hashing and Signatures',    link: 'assignments/lab-05-hashing-and-signatures' },
+        { text: 'Lab 6 - Certificates and TLS',      link: 'assignments/lab-06-certificates-and-tls' },
+        { text: 'Lab 7 - Malware Triage',            link: 'assignments/lab-07-malware-triage' },
+        { text: 'Lab 8 - Memory Safety',             link: 'assignments/lab-08-memory-safety-and-assurance' },
+        { text: 'Lab 9 - SQL Injection',             link: 'assignments/lab-09-sql-injection' },
+        { text: 'Lab 10 - Log Analysis',             link: 'assignments/lab-10-log-analysis-and-incident-memo' },
+      ]
+    },
+    {
+      text: 'Exams',
+      collapsed: false,
+      items: [
+        { text: 'Midterm Exam Guide', link: 'assignments/midterm-exam-guide' },
+        { text: 'Final Exam Guide',   link: 'assignments/final-exam-guide' },
+      ]
+    },
+    {
+      // The answers are stripped from these pages by stripQuizAnswers; the quiz
+      // itself is taken in Canvas.
+      text: 'Quizzes',
+      collapsed: true,
+      items: [
+        { text: 'Diagnostic (ungraded)',     link: 'quizzes/quiz-00-diagnostic' },
+        { text: 'Quiz 1 - Foundations',      link: 'quizzes/quiz-01-foundations' },
+        { text: 'Quiz 2 - Authentication',   link: 'quizzes/quiz-02-authentication' },
+        { text: 'Quiz 3 - Cryptography',     link: 'quizzes/quiz-03-cryptography' },
+        { text: 'Quiz 4 - Network Security', link: 'quizzes/quiz-04-network-security' },
+        { text: 'Quiz 5 - Software and Web', link: 'quizzes/quiz-05-software-and-web' },
+      ]
+    },
+    {
+      text: 'Discussions',
+      collapsed: true,
+      items: [
+        { text: 'D1 - Introductions',        link: 'discussions/d01-introductions-and-security-mindset' },
+        { text: 'D2 - Ethics and Privacy',   link: 'discussions/d02-ethics-and-privacy-case' },
+        { text: 'D3 - Authentication Policy', link: 'discussions/d03-authentication-policy-critique' },
+        { text: 'D4 - Security in the News', link: 'discussions/d04-network-security-in-the-news' },
+        { text: 'D5 - A Current Failure',    link: 'discussions/d05-current-security-failure' },
+        { text: 'D6 - Final Reflection',     link: 'discussions/d06-final-reflection' },
       ]
     }
   ]

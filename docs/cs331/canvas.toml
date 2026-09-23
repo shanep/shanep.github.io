@@ -1,0 +1,263 @@
+# Canvas configuration for CS331 - Computer Security and Information Assurance
+#
+# Everything about scheduling is derived from the [term] skeleton below, so
+# rolling this course to a new semester means changing `first_monday` and the
+# four other dates, not editing sixty timestamps.
+#
+#   edutools dates docs/cs331 --show
+#   edutools push  docs/cs331 --course <id> --dry-run
+
+[term]
+timezone                = "America/Boise"
+first_monday            = 2027-01-11   # first Monday of instruction, Spring 2027
+weeks                   = 15
+break_after_week        = 9            # spring break, Mar 15-19 2027
+last_day_of_instruction = 2027-04-30
+finals_start            = 2027-05-03
+finals_end              = 2027-05-07
+# The Assessments table in index.md adds to exactly 1000: labs 400, quizzes 150,
+# discussions 150, midterm 150, final 150.
+total_points            = 1000
+
+# How each kind of gradable item is scheduled inside its week. The course is
+# asynchronous and weeks run Monday through Sunday, so everything anchors on the
+# Sunday that closes the week. No `unlock`, so Canvas leaves "Available from"
+# blank and an item is visible once published.
+
+# The Late Work Policy promises 2 days with no penalty on submitted work, and
+# nothing is accepted past the last day of instruction.
+[term.policy.lab]
+due        = "sun 23:59"
+grace_days = 2
+
+# The Class Interaction Policy is the opposite: a discussion is only useful
+# during its week, so late participation may earn nothing and there is no grace.
+[term.policy.discussion]
+due        = "sun 23:59"
+grace_days = 0
+
+# Quizzes and exams run inside the window Canvas enforces, per the Exam and Quiz
+# Policy, so an extension is granted per student rather than built into the date.
+[term.policy.quiz]
+due        = "sun 23:59"
+grace_days = 0
+
+[term.policy.exam]
+due        = "sun 23:59"
+grace_days = 0
+
+# ---------------------------------------------------------------------------
+# Canvas assignment groups, in the order the syllabus lists them. The weights
+# here are the weights in the Assessments table of index.md, and `edutools push`
+# turns on weight-by-group for the course, so these are what Canvas computes the
+# final grade from.
+#
+# The names have to match the groups already in Canvas character for character,
+# because a push pairs them up by name and would otherwise create a second group
+# beside the one that is already there.
+# ---------------------------------------------------------------------------
+
+[[group]]
+name   = "Labs"
+weight = 40
+kinds  = ["lab"]
+
+[[group]]
+name   = "Quizzes"
+weight = 15
+kinds  = ["quiz"]
+
+[[group]]
+name   = "Discussions and Reflections"
+weight = 15
+kinds  = ["discussion"]
+
+# The syllabus lists the midterm and the final as 15% each. A group is the unit
+# edutools can weight, and both exams are the same kind, so they share one group
+# at 30%. The arithmetic is identical: the two exams are 150 points each, so each
+# takes half of the 30% no matter which way it is declared.
+[[group]]
+name   = "Exams"
+weight = 30
+kinds  = ["exam"]
+
+# ---------------------------------------------------------------------------
+# What this repo calls its files. This directory is a VitePress site as well as a
+# Canvas course repo, so the syllabus is index.md rather than syllabus.md and the
+# weekly module pages are under notes/.
+# ---------------------------------------------------------------------------
+
+[layout]
+syllabus = "index.md"
+pages = [
+    "objectives.md",
+    "resources.md",
+    "notes/*.md",
+    "data/index.md",
+    # The two written scenarios the labs work from. They are pages rather than
+    # files because students read them rather than download them.
+    "data/incident-report.md",
+    "data/photoshare-system.md",
+]
+# The lab data. The real files live in docs/public/cs331/data/, because that is
+# the only place VitePress serves them from; the entries under data/ are symlinks
+# to them, so the push finds the files inside the course directory, uploads them,
+# and rewrites each page's relative link to the Canvas file.
+#
+# The textbook is here too, and it is the one entry that is not a symlink. The
+# 21 MB PDF stays out of git, under the .gitignore rule for docs/*/docs/*.pdf:
+# "Course textbooks are distributed through Canvas, not this public repo". So it
+# sits in the course directory as a real file, this push is what delivers it to
+# students, and a fresh clone has to have it dropped back in by hand.
+files = [
+    "data/auth.log",
+    "data/cert_inspect.py",
+    "data/crypto_demo.py",
+    "data/password_demo.py",
+    "data/sign_demo.py",
+    "data/sqli_demo.py",
+    "data/vuln.c",
+    "data/web_access.log",
+    "docs/CyBOK_v1.1.0.pdf",
+]
+
+# `*-exam-guide.md` under assignments/ is recognised as an exam without being
+# listed here, so the midterm and final guides need no pattern of their own.
+[layout.gradable]
+lab        = "assignments/lab-*.md"
+quiz       = "quizzes/quiz-*.md"
+discussion = "discussions/d*.md"
+
+# Per-item exceptions to the policy above, keyed by path relative to this file.
+
+# Week 15 is a four-day week: instruction ends Friday April 30, so its Sunday
+# falls outside the term. Both week 15 items move to that Friday, with no grace,
+# because the Late Work Policy accepts nothing after the last day of instruction.
+[override."assignments/lab-10-log-analysis-and-incident-memo.md"]
+due        = "fri 23:59"
+grace_days = 0
+
+[override."discussions/d05-current-security-failure.md"]
+due = "fri 23:59"
+
+# ---------------------------------------------------------------------------
+# Canvas modules. `page` is the module overview; `items` are published in order.
+# Every key is a path relative to this file and must exist, or the push reports
+# it as unpublished rather than silently skipping it.
+#
+# One module per week, matching the Course Workflow section of the syllabus: one
+# reading, one module page, one graded activity, and a quiz in five of the weeks.
+# ---------------------------------------------------------------------------
+
+[[module]]
+title = "Week 1: What is Cyber Security?"
+page  = "notes/week-01-what-is-cyber-security.md"
+items = [
+    "quizzes/quiz-00-diagnostic.md",
+    "assignments/lab-00-course-setup.md",
+    "discussions/d01-introductions-and-security-mindset.md",
+]
+
+[[module]]
+title = "Week 2: Security Principles and the Human Factor"
+page  = "notes/week-02-security-principles-and-human-factors.md"
+items = ["assignments/lab-01-security-principles-audit.md"]
+
+[[module]]
+title = "Week 3: Law, Regulation, Ethics, and Privacy"
+page  = "notes/week-03-law-ethics-and-privacy.md"
+items = [
+    "discussions/d02-ethics-and-privacy-case.md",
+    "quizzes/quiz-01-foundations.md",
+]
+
+[[module]]
+title = "Week 4: Risk Management and Threat Modeling"
+page  = "notes/week-04-risk-and-threat-modeling.md"
+items = ["assignments/lab-02-threat-model.md"]
+
+[[module]]
+title = "Week 5: Authentication and Credentials"
+page  = "notes/week-05-authentication-and-credentials.md"
+items = [
+    "discussions/d03-authentication-policy-critique.md",
+    "quizzes/quiz-02-authentication.md",
+]
+
+[[module]]
+title = "Week 6: Authorisation, Access Control, and Accountability"
+page  = "notes/week-06-authorisation-and-access-control.md"
+items = ["assignments/lab-03-access-control-matrix.md"]
+
+[[module]]
+title = "Week 7: Symmetric Cryptography"
+page  = "notes/week-07-symmetric-cryptography.md"
+items = ["assignments/lab-04-symmetric-encryption.md"]
+
+[[module]]
+title = "Week 8: Public-Key Cryptography, Hashing, and Signatures"
+page  = "notes/week-08-public-key-cryptography.md"
+items = [
+    "assignments/lab-05-hashing-and-signatures.md",
+    "quizzes/quiz-03-cryptography.md",
+]
+
+# An exam guide publishes as a Canvas page, not as an assignment: edutools maps
+# the `exam` kind to a page on purpose, because the exam itself is a Canvas quiz
+# built by hand. Once that quiz exists, add it here as
+# `canvas = [{ quiz = <id>, title = "Midterm Exam" }]` so a push keeps it in the
+# module. Until then the module carries the guide and the quiz sits outside it.
+[[module]]
+title = "Week 9: Review and Midterm"
+page  = "notes/week-09-review-and-midterm.md"
+items = ["assignments/midterm-exam-guide.md"]
+
+[[module]]
+title = "Week 10: Keys, Certificates, PKI, and TLS"
+page  = "notes/week-10-keys-certificates-and-pki.md"
+items = ["assignments/lab-06-certificates-and-tls.md"]
+
+[[module]]
+title = "Week 11: Network Security and Attacks"
+page  = "notes/week-11-network-security.md"
+items = [
+    "discussions/d04-network-security-in-the-news.md",
+    "quizzes/quiz-04-network-security.md",
+]
+
+[[module]]
+title = "Week 12: Malware and Adversarial Behaviours"
+page  = "notes/week-12-malware-and-adversarial-behaviours.md"
+items = ["assignments/lab-07-malware-triage.md"]
+
+[[module]]
+title = "Week 13: Software Security, Memory Safety, and Assurance"
+page  = "notes/week-13-software-security-and-assurance.md"
+items = ["assignments/lab-08-memory-safety-and-assurance.md"]
+
+[[module]]
+title = "Week 14: Web Security and Injection"
+page  = "notes/week-14-web-security-and-injection.md"
+items = [
+    "assignments/lab-09-sql-injection.md",
+    "quizzes/quiz-05-software-and-web.md",
+]
+
+[[module]]
+title = "Week 15: Security Operations, Detection, and Incident Response"
+page  = "notes/week-15-security-operations-and-incident-response.md"
+items = [
+    "assignments/lab-10-log-analysis-and-incident-memo.md",
+    "discussions/d05-current-security-failure.md",
+]
+
+# The finals-week items carry "**Finals week · ...**" instead of a week number,
+# which is what tells edutools to date them from the finals window rather than
+# from a Monday. The final exam quiz is hand built in Canvas like the midterm;
+# add it here as `canvas = [{ quiz = <id>, title = "Final Exam" }]`.
+[[module]]
+title = "Finals Week"
+items = [
+    "assignments/final-exam-guide.md",
+    "discussions/d06-final-reflection.md",
+]

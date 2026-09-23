@@ -2,6 +2,7 @@
 
 ## Course Materials
 
+- [CS331: Computer Security and Information Assurance](../cs331/index.md)
 - [CS452: Operating Systems](../cs452/index.md)
 - [CS408: Full Stack Web Development](../cs408/index.md)
 
