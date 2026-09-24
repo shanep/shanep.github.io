@@ -7,7 +7,7 @@ grading: pass_fail
 
 # M1 - Mini-Lab: GitHub Copilot CLI
 
-**Week 5 · 20 points · pass/fail · take home · individual · about 1 hour · submit in Canvas**
+**Week 6 · 20 points · pass/fail · take home · individual · about 1 hour · submit in Canvas**
 
 ## Why you are doing this
 
