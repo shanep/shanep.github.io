@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" role="img" aria-labelledby="t">
+  <title id="t">The P2 setup: myapp send and myapp recv each register with the relay, which forwards DATA and FIN one way and ACKs the other, dropping, corrupting and duplicating them</title>
+  <defs>
+    <marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0969da"/></marker>
+    <marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a7f37"/></marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="759" height="299" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+
+  <!-- sender -->
+  <rect x="30" y="60" width="180" height="120" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="120" y="88" text-anchor="middle" font-weight="700" font-size="15" fill="#1f2328">myapp send</text>
+  <text x="120" y="110" text-anchor="middle" fill="#57606a">reads in.bin, cuts it</text>
+  <text x="120" y="127" text-anchor="middle" fill="#57606a">into 1024 byte packets,</text>
+  <text x="120" y="144" text-anchor="middle" fill="#57606a">keeps a window of them</text>
+  <text x="120" y="161" text-anchor="middle" fill="#57606a">in flight, one timer</text>
+
+  <!-- relay -->
+  <rect x="290" y="40" width="180" height="160" rx="8" fill="#fff8c5" stroke="#9a6700" stroke-width="1.5"/>
+  <text x="380" y="66" text-anchor="middle" font-weight="700" font-size="15" fill="#1f2328">relay</text>
+  <text x="380" y="84" text-anchor="middle" fill="#57606a">AWS, UDP port 4250</text>
+  <line x1="306" y1="96" x2="454" y2="96" stroke="#d4a72c"/>
+  <text x="306" y="118" fill="#1f2328">each datagram, each way:</text>
+  <text x="314" y="140" fill="#cf222e" font-weight="600">✕</text><text x="330" y="140" fill="#1f2328">dropped (-l loss)</text>
+  <text x="312" y="162" fill="#bc4c00" font-weight="600">~</text><text x="330" y="162" fill="#1f2328">one bit flipped (-c)</text>
+  <text x="310" y="184" fill="#8250df" font-weight="600">×2</text><text x="330" y="184" fill="#1f2328">delivered twice (-d)</text>
+
+  <!-- receiver -->
+  <rect x="550" y="60" width="180" height="120" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="640" y="88" text-anchor="middle" font-weight="700" font-size="15" fill="#1f2328">myapp recv</text>
+  <text x="640" y="110" text-anchor="middle" fill="#57606a">writes out.bin, one</text>
+  <text x="640" y="127" text-anchor="middle" fill="#57606a">packet at a time, strictly</text>
+  <text x="640" y="144" text-anchor="middle" fill="#57606a">in order, and ACKs</text>
+  <text x="640" y="161" text-anchor="middle" fill="#57606a">every packet it gets</text>
+
+  <!-- data path -->
+  <line x1="212" y1="100" x2="287" y2="100" stroke="#0969da" stroke-width="2" marker-end="url(#blue)"/>
+  <line x1="472" y1="100" x2="547" y2="100" stroke="#0969da" stroke-width="2" marker-end="url(#blue)"/>
+  <text x="250" y="92" text-anchor="middle" fill="#0969da" font-weight="600">DATA, FIN</text>
+  <text x="510" y="92" text-anchor="middle" fill="#0969da" font-weight="600">DATA, FIN</text>
+  <!-- ack path -->
+  <line x1="547" y1="145" x2="472" y2="145" stroke="#1a7f37" stroke-width="2" marker-end="url(#green)"/>
+  <line x1="287" y1="145" x2="212" y2="145" stroke="#1a7f37" stroke-width="2" marker-end="url(#green)"/>
+  <text x="510" y="164" text-anchor="middle" fill="#1a7f37" font-weight="600">ACK</text>
+  <text x="250" y="164" text-anchor="middle" fill="#1a7f37" font-weight="600">ACK</text>
+
+  <!-- steps -->
+  <line x1="30" y1="222" x2="730" y2="222" stroke="#d0d7de"/>
+  <g fill="#1f2328">
+    <circle cx="44" cy="248" r="11" fill="#1f2328"/><text x="44" y="252" text-anchor="middle" fill="#fff" font-weight="700" font-size="12">1</text>
+    <text x="62" y="244">receiver says</text>
+    <text x="62" y="262" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12">HELLO jdoe-1 recv</text>
+    <circle cx="274" cy="248" r="11" fill="#1f2328"/><text x="274" y="252" text-anchor="middle" fill="#fff" font-weight="700" font-size="12">2</text>
+    <text x="292" y="244">sender says, with its damage rates</text>
+    <text x="292" y="262" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12">HELLO jdoe-1 send 0.1 0.05 0</text>
+    <circle cx="544" cy="248" r="11" fill="#1f2328"/><text x="544" y="252" text-anchor="middle" fill="#fff" font-weight="700" font-size="12">3</text>
+    <text x="562" y="244">relay answers OK to each,</text>
+    <text x="562" y="262">then forwards everything else</text>
+  </g>
+  <text x="380" y="288" text-anchor="middle" fill="#57606a" font-size="12">Hellos and their OK replies are never damaged. Use one socket for the whole run: the relay knows you by address and port.</text>
+</svg>
