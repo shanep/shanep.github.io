@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" role="img" aria-labelledby="t">
-  <title id="t">The P2 setup: myapp send and myapp recv each register with the relay, which forwards DATA and FIN one way and ACKs the other, dropping, corrupting and duplicating them</title>
+  <title id="t">The P2 setup: myapp send and myapp recv each register with a relay running on the same machine, which forwards DATA and FIN one way and ACKs the other, delaying, dropping, corrupting and duplicating them</title>
   <defs>
     <marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0969da"/></marker>
     <marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a7f37"/></marker>
@@ -15,14 +15,15 @@
   <text x="120" y="161" text-anchor="middle" fill="#57606a">in flight, one timer</text>
 
   <!-- relay -->
-  <rect x="290" y="40" width="180" height="160" rx="8" fill="#fff8c5" stroke="#9a6700" stroke-width="1.5"/>
-  <text x="380" y="66" text-anchor="middle" font-weight="700" font-size="15" fill="#1f2328">relay</text>
-  <text x="380" y="84" text-anchor="middle" fill="#57606a">AWS, UDP port 4250</text>
-  <line x1="306" y1="96" x2="454" y2="96" stroke="#d4a72c"/>
-  <text x="306" y="118" fill="#1f2328">each datagram, each way:</text>
-  <text x="314" y="140" fill="#cf222e" font-weight="600">✕</text><text x="330" y="140" fill="#1f2328">dropped (-l loss)</text>
-  <text x="312" y="162" fill="#bc4c00" font-weight="600">~</text><text x="330" y="162" fill="#1f2328">one bit flipped (-c)</text>
-  <text x="310" y="184" fill="#8250df" font-weight="600">×2</text><text x="330" y="184" fill="#1f2328">delivered twice (-d)</text>
+  <rect x="290" y="34" width="180" height="178" rx="8" fill="#fff8c5" stroke="#9a6700" stroke-width="1.5"/>
+  <text x="380" y="58" text-anchor="middle" font-weight="700" font-size="15" fill="#1f2328">relay</text>
+  <text x="380" y="76" text-anchor="middle" fill="#57606a">your machine, UDP 4250</text>
+  <line x1="306" y1="87" x2="454" y2="87" stroke="#d4a72c"/>
+  <text x="306" y="107" fill="#1f2328">each datagram, each way:</text>
+  <text x="310" y="128" fill="#0969da" font-weight="600">⧗</text><text x="330" y="128" fill="#1f2328">held 50 ms (--delay)</text>
+  <text x="314" y="150" fill="#cf222e" font-weight="600">✕</text><text x="330" y="150" fill="#1f2328">dropped (-l loss)</text>
+  <text x="312" y="172" fill="#bc4c00" font-weight="600">~</text><text x="330" y="172" fill="#1f2328">one bit flipped (-c)</text>
+  <text x="310" y="194" fill="#8250df" font-weight="600">×2</text><text x="330" y="194" fill="#1f2328">delivered twice (-d)</text>
 
   <!-- receiver -->
   <rect x="550" y="60" width="180" height="120" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
