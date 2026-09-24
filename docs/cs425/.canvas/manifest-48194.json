@@ -55,6 +55,15 @@
       "page_url": "in-class-activities",
       "title": "In Class Activities"
     },
+    "assignments/cs425_relay.py": {
+      "canvas_id": "25207152",
+      "extra": {
+        "size": "13838"
+      },
+      "kind": "file",
+      "page_url": "",
+      "title": "cs425_relay.py"
+    },
     "assignments/grading-rubric.md": {
       "canvas_id": "grading-rubric",
       "extra": {},
