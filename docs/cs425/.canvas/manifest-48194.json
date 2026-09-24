@@ -69,6 +69,13 @@
       "page_url": "projects",
       "title": "Projects"
     },
+    "assignments/m1-copilot-cli.md": {
+      "canvas_id": "1817263",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "M1 - Mini-Lab: GitHub Copilot CLI"
+    },
     "assignments/p0.md": {
       "canvas_id": "1806250",
       "extra": {},
