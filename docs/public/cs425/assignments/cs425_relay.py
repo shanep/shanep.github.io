@@ -20,7 +20,12 @@ forgotten after it has been idle for ``--idle`` seconds.
 on the same machine as the sender and receiver still gives them a realistic round
 trip time: ``--delay 50`` is 50 ms each way, a 100 ms round trip.
 
-Standard library only, so it runs on a stock Amazon Linux 2023 instance.
+Students run it on their own machine, beside their sender and receiver:
+
+    python3 cs425_relay.py --delay 50
+
+It binds 127.0.0.1 by default, so on a shared machine like Onyx nobody else can
+reach it. Standard library only, Python 3.9 or later.
 """
 
 from __future__ import annotations
@@ -334,7 +339,8 @@ class Relay:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description="CS425 P2 relay")
-    ap.add_argument("--host", default="0.0.0.0", help="address to bind (default: all)")
+    ap.add_argument("--host", default="127.0.0.1",
+                    help="address to bind (default: 127.0.0.1, this machine only)")
     ap.add_argument("--port", type=int, default=4250, help="UDP port (default: 4250)")
     ap.add_argument("--idle", type=float, default=30.0,
                     help="seconds before an idle session is forgotten (default: 30)")
