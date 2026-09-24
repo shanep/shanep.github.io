@@ -451,6 +451,7 @@ function cs425(): DefaultTheme.SidebarItem[] {
         { text: 'P0 - Compile, Test, Debug',        link: 'assignments/p0' },
         { text: 'P1 - Simple Mail Client',          link: 'assignments/p1' },
         { text: 'P2 - Reliable Data Transfer',      link: 'assignments/p2' },
+        { text: 'M1 - Mini-Lab: Copilot CLI',       link: 'assignments/m1-copilot-cli' },
         { text: 'P3 - Subnetting and Forwarding',   link: 'assignments/p3' },
         { text: 'P4 - Packet Capture and Analysis', link: 'assignments/p4' },
       ]
