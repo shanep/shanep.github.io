@@ -83,6 +83,33 @@
       "page_url": "",
       "title": "P1 - Simple Mail Client"
     },
+    "assignments/p2-gbn-timeline.svg": {
+      "canvas_id": "25206889",
+      "extra": {
+        "size": "7894"
+      },
+      "kind": "file",
+      "page_url": "",
+      "title": "p2-gbn-timeline.svg"
+    },
+    "assignments/p2-setup.svg": {
+      "canvas_id": "25206886",
+      "extra": {
+        "size": "4975"
+      },
+      "kind": "file",
+      "page_url": "",
+      "title": "p2-setup.svg"
+    },
+    "assignments/p2-window.svg": {
+      "canvas_id": "25206887",
+      "extra": {
+        "size": "4245"
+      },
+      "kind": "file",
+      "page_url": "",
+      "title": "p2-window.svg"
+    },
     "assignments/p2.md": {
       "canvas_id": "1811260",
       "extra": {},
