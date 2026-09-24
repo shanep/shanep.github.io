@@ -116,6 +116,10 @@ files = [
     "activities/a1-worksheet.pdf",
     "activities/a2-worksheet.pdf",
     "activities/a3-worksheet.pdf",
+    # P2's diagrams, linked the same way from docs/public/cs425/assignments/.
+    "assignments/p2-setup.svg",
+    "assignments/p2-window.svg",
+    "assignments/p2-gbn-timeline.svg",
 ]
 
 [layout.gradable]
