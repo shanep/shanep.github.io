@@ -108,7 +108,7 @@
     "course-resources/course-questions.md": {
       "canvas_id": "1174722",
       "extra": {
-        "assignment_id": "None"
+        "assignment_id": ""
       },
       "kind": "discussion",
       "page_url": "",
@@ -299,7 +299,7 @@
       "title": "Home"
     },
     "icons/ai-allowed.svg": {
-      "canvas_id": "25200040",
+      "canvas_id": "24964048",
       "extra": {
         "size": "1992"
       },
@@ -308,7 +308,7 @@
       "title": "ai-allowed.svg"
     },
     "icons/attention.svg": {
-      "canvas_id": "25201424",
+      "canvas_id": "24964023",
       "extra": {
         "size": "1055"
       },
@@ -317,7 +317,7 @@
       "title": "attention.svg"
     },
     "icons/clock.svg": {
-      "canvas_id": "25200034",
+      "canvas_id": "24964042",
       "extra": {
         "size": "1207"
       },
@@ -326,7 +326,7 @@
       "title": "clock.svg"
     },
     "icons/discussion.svg": {
-      "canvas_id": "25200037",
+      "canvas_id": "24964045",
       "extra": {
         "size": "1698"
       },
@@ -335,7 +335,7 @@
       "title": "discussion.svg"
     },
     "icons/document.svg": {
-      "canvas_id": "25200031",
+      "canvas_id": "24964015",
       "extra": {
         "size": "1014"
       },
@@ -344,7 +344,7 @@
       "title": "document.svg"
     },
     "icons/email.svg": {
-      "canvas_id": "25200039",
+      "canvas_id": "24964031",
       "extra": {
         "size": "3061"
       },
@@ -353,7 +353,7 @@
       "title": "email.svg"
     },
     "icons/finish-line.svg": {
-      "canvas_id": "25200035",
+      "canvas_id": "24964024",
       "extra": {
         "size": "2067"
       },
@@ -362,7 +362,7 @@
       "title": "finish-line.svg"
     },
     "icons/list.svg": {
-      "canvas_id": "25200025",
+      "canvas_id": "24964025",
       "extra": {
         "size": "1975"
       },
@@ -371,7 +371,7 @@
       "title": "list.svg"
     },
     "icons/looking-ahead.svg": {
-      "canvas_id": "25200032",
+      "canvas_id": "24964016",
       "extra": {
         "size": "1889"
       },
@@ -380,7 +380,7 @@
       "title": "looking-ahead.svg"
     },
     "icons/policies.svg": {
-      "canvas_id": "25200038",
+      "canvas_id": "24964026",
       "extra": {
         "size": "3196"
       },
@@ -389,7 +389,7 @@
       "title": "policies.svg"
     },
     "icons/profile.svg": {
-      "canvas_id": "25200041",
+      "canvas_id": "24964027",
       "extra": {
         "size": "1287"
       },
@@ -398,7 +398,7 @@
       "title": "profile.svg"
     },
     "icons/reading.svg": {
-      "canvas_id": "25200028",
+      "canvas_id": "24964043",
       "extra": {
         "size": "1929"
       },
@@ -407,7 +407,7 @@
       "title": "reading.svg"
     },
     "icons/task.svg": {
-      "canvas_id": "25200027",
+      "canvas_id": "24964028",
       "extra": {
         "size": "1440"
       },
@@ -416,7 +416,7 @@
       "title": "task.svg"
     },
     "icons/upload.svg": {
-      "canvas_id": "25200036",
+      "canvas_id": "24964008",
       "extra": {
         "size": "1418"
       },
@@ -425,7 +425,7 @@
       "title": "upload.svg"
     },
     "icons/work.svg": {
-      "canvas_id": "25200029",
+      "canvas_id": "24964039",
       "extra": {
         "size": "1148"
       },
@@ -434,7 +434,7 @@
       "title": "work.svg"
     },
     "images/cs331-banner.svg": {
-      "canvas_id": "25200014",
+      "canvas_id": "25113917",
       "extra": {
         "size": "63084"
       },
