@@ -120,6 +120,9 @@ files = [
     "assignments/p2-setup.svg",
     "assignments/p2-window.svg",
     "assignments/p2-gbn-timeline.svg",
+    # The relay students run themselves; a copy of relay/cs425_relay.py from
+    # the CS425-p2-solution repo.
+    "assignments/cs425_relay.py",
 ]
 
 [layout.gradable]
