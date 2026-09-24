@@ -123,7 +123,9 @@ files = [
 ]
 
 [layout.gradable]
-project    = "assignments/p[0-9]*.md"
+# Take home mini-labs (m1-*.md) sit beside the projects and count in the same
+# group, so one glob catches both.
+project    = "assignments/[pm][0-9]*.md"
 lab        = "activities/a[0-9]*.md"
 extra      = "extra-credit/ec-*.md"
 discussion = "discussions/*.md"
@@ -134,6 +136,12 @@ discussion = "discussions/*.md"
 # both lectures on SMTP and DNS before it is due instead of one.
 [override."assignments/p1.md"]
 due = "fri 23:59"
+
+# M1 is a one hour take home mini-lab, due the Sunday that ends its week with
+# the usual two days of grace, rather than on a project Tuesday.
+[override."assignments/m1-copilot-cli.md"]
+due        = "sun 23:59"
+grace_days = 2
 
 # ---------------------------------------------------------------------------
 # Canvas modules. `page` is the module overview; `items` are published in order.
@@ -168,6 +176,7 @@ items  = [
     "activities/a4-connectivity-triage.md",
     "activities/a5-name-the-layer.md",
     "assignments/p2.md",
+    "assignments/m1-copilot-cli.md",
 ]
 canvas = [{ quiz = 393660, title = "Chapter 3 - Knowledge Check" }]
 
