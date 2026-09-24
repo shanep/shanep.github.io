@@ -143,10 +143,10 @@ due = "fri 23:59"
 [override."assignments/p2.md"]
 due = "fri 23:59"
 
-# M1 is a one hour take home mini-lab, due the Sunday that ends its week with
-# the usual two days of grace, rather than on a project Tuesday.
+# M1 is a one hour take home mini-lab, due Thursday of week 6 (Oct 1) with the
+# usual two days of grace, rather than on a project Tuesday.
 [override."assignments/m1-copilot-cli.md"]
-due        = "sun 23:59"
+due        = "thu 23:59"
 grace_days = 2
 
 # ---------------------------------------------------------------------------
