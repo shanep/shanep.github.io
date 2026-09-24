@@ -88,7 +88,7 @@
         "kind": "assignment",
         "title": "A3 - curl, nc, and ping",
         "path": "activities/a3-curl-nc-ping",
-        "due_at": "2026-09-23T23:59:00-06:00",
+        "due_at": "2026-09-29T23:59:00-06:00",
         "points": 20.0,
         "canvas_id": ""
       },

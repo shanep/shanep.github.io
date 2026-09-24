@@ -143,6 +143,10 @@ due = "fri 23:59"
 [override."assignments/p2.md"]
 due = "fri 23:59"
 
+# A3 moved to week 6 and is due that Tuesday, Sep 29.
+[override."activities/a3-curl-nc-ping.md"]
+due = "tue 23:59"
+
 # M1 is a one hour take home mini-lab, due Thursday of week 6 (Oct 1) with the
 # usual two days of grace, rather than on a project Tuesday.
 [override."assignments/m1-copilot-cli.md"]

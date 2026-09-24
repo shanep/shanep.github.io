@@ -5,7 +5,7 @@ prev: false
 
 # A3 - curl, nc, and ping
 
-**Week 5 · 20 points · pass/fail · one paper worksheet per group, turned in before you leave**
+**Week 6 · 20 points · pass/fail · one paper worksheet per group, turned in before you leave**
 
 ## Why you are doing this
 
