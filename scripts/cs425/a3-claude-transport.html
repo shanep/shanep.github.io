@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A3 Worksheet</title>
+<style>
+  @page { size: letter; margin: 0.55in 0.6in 0.5in 0.6in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 10pt/1.35 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.6pt; }
+
+  .page { page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+  .box, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 10.5pt; margin: 9pt 0 4pt; text-transform: uppercase;
+       letter-spacing: 0.8pt; border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.8pt; margin: 8pt 0 3pt; }
+  p  { margin: 0 0 5pt; }
+  .lead { font-size: 8.6pt; font-style: italic; margin-bottom: 5pt; }
+  .tiny { font-size: 8pt; }
+  .dim  { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 7pt; }
+  .mast .right { text-align: right; font-size: 8.5pt; line-height: 1.3; }
+  .runner { font-size: 8pt; border-bottom: 1pt solid #000; padding-bottom: 3pt;
+            margin-bottom: 8pt; display: flex; justify-content: space-between;
+            text-transform: uppercase; letter-spacing: 0.6pt; }
+
+  .names { margin: 4pt 0 8pt; font-size: 9.5pt; }
+  .names div { margin-bottom: 6pt; }
+  .rule { display: inline-block; border-bottom: 0.75pt solid #000; vertical-align: baseline; }
+  .r-sm { width: 90pt; } .r-md { width: 150pt; } .r-lg { width: 235pt; }
+
+  .lines > div { border-bottom: 0.75pt solid #999; height: 14pt; }
+  .lines.tight > div { height: 12.5pt; }
+
+  .box { border: 1pt solid #000; padding: 4pt 8pt; margin-bottom: 6pt; }
+  .box.fill { background: #f0f0f0; }
+  .box h3 { margin-top: 0; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 2pt 4pt; vertical-align: top;
+           text-align: left; font-size: 8.3pt; }
+  th { background: #e4e4e4; font-size: 8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+  td.h { height: 19pt; }
+  td.hh { height: 44pt; }
+  .cmdcell { font-family: "SF Mono","Menlo","Consolas",monospace; font-size: 7.9pt; }
+
+  pre.setup { margin: 0 0 5pt; padding: 4pt 7pt; border: 0.75pt solid #000; background: #fff;
+              font-family: "SF Mono","Menlo","Consolas",monospace; font-size: 8pt; line-height: 1.35;
+              white-space: pre-wrap; word-break: break-word; }
+
+  ol, ul { margin: 0 0 6pt; padding-left: 16pt; }
+  li { margin-bottom: 3pt; }
+  ol.q > li { margin-bottom: 5pt; }
+  .pco td.lab { width: 62pt; font-weight: bold; text-transform: uppercase; font-size: 7.8pt; letter-spacing: 0.4pt; background: #f4f4f4; }
+  .pco td.h3x { height: 58pt; }
+  .prompt { border-left: 3pt solid #000; padding: 2pt 0 2pt 7pt; margin: 0 0 5pt; font-size: 8.3pt; font-style: italic; }
+</style>
+</head>
+<body>
+
+<!-- ============================ PAGE 1 ============================ -->
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A3 &middot; Interrogating the Transport Layer</h1>
+      <div class="tiny">CS425 Computer Networks &middot; in class activity &middot; I drive Claude Code, then your group drives</div>
+    </div>
+    <div class="right">
+      <strong>TURN THIS IN ON PAPER</strong><br>
+      before you leave the room<br>
+      <span class="dim">graded pass/fail</span>
+    </div>
+  </div>
+
+  <div class="names">
+    <div>Names <span class="rule r-lg"></span> &nbsp; Date <span class="rule r-sm"></span></div>
+    <div><span class="rule r-lg"></span> &nbsp;&nbsp; <span class="rule r-md"></span></div>
+  </div>
+
+  <div class="box fill">
+    <h3>How every round works</h3>
+    <p class="tiny" style="margin:0"><strong>Predict</strong> before anything runs; a prediction written afterwards is not
+    one. <strong>Prompt:</strong> read each action Claude asks permission for. <strong>Run</strong> and write what you see.
+    <strong>Check:</strong> were you right, was Claude right, and which section of chapter 3 says so? Wrong predictions
+    cost nothing.</p>
+  </div>
+
+  <h2>Round 0 &middot; Meet the agent</h2>
+<pre class="setup">mkdir a3-demo &amp;&amp; cd a3-demo &amp;&amp; claude</pre>
+  <ol class="q tiny">
+    <li>Claude asked whether you trust the files in this folder. Why is "yes" safe here and dangerous in your home directory?
+      <div class="lines tight"><div></div><div></div></div></li>
+    <li>What is the difference between approving one action and telling it not to ask again?
+      <div class="lines tight"><div></div><div></div></div></li>
+  </ol>
+
+  <h2>Round 1 &middot; Demultiplexing &middot; <span style="text-transform:none">&sect;3.2</span></h2>
+  <p class="prompt">Write a Python 3 program echo.py, standard library only, that runs a TCP echo server and a UDP echo
+  server at the same time, both on 127.0.0.1 at a port given on the command line. For every TCP connection and every UDP
+  datagram, print the client's IP address and port.</p>
+<pre class="setup">python3 echo.py 5425
+nc 127.0.0.1 5425                     <span class="dim"># two terminals, left open</span>
+echo hi | nc -u -w1 127.0.0.1 5425    <span class="dim"># twice</span>
+lsof -nP -i :5425</pre>
+  <table class="pco">
+    <tr><td class="lab">Predict</td><td class="h3x"><span class="tiny dim">Can TCP and UDP both bind port 5425? With two TCP and
+      two UDP clients, how many sockets does the server hold?</span></td></tr>
+    <tr><td class="lab">Observe</td><td class="h3x">
+      <span class="tiny">Server's lines in <span class="mono">lsof</span>: &nbsp; TCP LISTEN <span class="rule" style="width:30pt"></span>
+      &nbsp; TCP connected <span class="rule" style="width:30pt"></span> &nbsp; UDP <span class="rule" style="width:30pt"></span></span></td></tr>
+    <tr><td class="lab">Check</td><td class="h3x"><span class="tiny dim">Which lines show a four-tuple, and which a two-tuple?
+      Why does a web server need the four-tuple?</span></td></tr>
+  </table>
+
+</section>
+
+<!-- ============================ PAGE 2 ============================ -->
+<section class="page">
+
+  <div class="runner"><span>A3 &middot; Transport layer</span><span>Names: <span class="rule" style="width:150pt"></span></span><span>Rounds 2 and 3</span></div>
+
+  <h2>Round 2 &middot; Who is left holding TIME_WAIT &middot; <span style="text-transform:none">&sect;3.5.6</span></h2>
+  <p class="prompt">I am about to close one of the TCP clients connected to echo.py. Which side of that connection will end
+  up in TIME_WAIT, for how long, and why does TCP need that state at all?</p>
+<pre class="setup">netstat -an -p tcp | grep 5425        <span class="dim"># macOS;  Linux: ss -tan | grep 5425</span></pre>
+  <table class="pco">
+    <tr><td class="lab">Predict</td><td class="h3x"><span class="tiny dim">Client or server in TIME_WAIT? For roughly how long?</span></td></tr>
+    <tr><td class="lab">Claude said</td><td class="h3x"></td></tr>
+    <tr><td class="lab">Observe</td><td class="h3x"><span class="tiny dim">Whose port was in TIME_WAIT? Then the server was stopped
+      first and restarted: did the restart work?</span></td></tr>
+    <tr><td class="lab">Check</td><td class="h3x"><span class="tiny dim">Is <span class="mono">SO_REUSEADDR</span> in echo.py? Did
+      Claude's explanation of it match what happened?</span></td></tr>
+  </table>
+
+  <h2>Round 3 &middot; A byte stream is not a message &middot; <span style="text-transform:none">&sect;3.3, &sect;3.5.2</span></h2>
+  <p class="prompt">Change the TCP side of echo.py to wait one second after accepting a connection before its first recv.
+  For both TCP and UDP, print every recv on its own line with its length and the bytes received. Then write burst.py, which sends "one", "two" and "three" as three
+  separate sends with no delay, first over TCP and then as three UDP datagrams to the same port.</p>
+<pre class="setup">python3 echo.py 5425
+python3 burst.py 5425</pre>
+  <table class="pco">
+    <tr><td class="lab">Predict</td><td class="h3x">
+      <span class="tiny">recv calls that return data: &nbsp; TCP <span class="rule" style="width:30pt"></span>
+      &nbsp; UDP <span class="rule" style="width:30pt"></span></span></td></tr>
+    <tr><td class="lab">Observe</td><td class="h3x"><span class="tiny dim">What did the server print for each, with lengths?</span></td></tr>
+    <tr><td class="lab">Check</td><td class="h3x"><span class="tiny dim">Explain the TCP result using the phrase "byte stream". Why
+      did your P1 client have to look for <span class="mono">\r\n</span> rather than trust one recv to be one reply?</span></td></tr>
+  </table>
+
+</section>
+
+<!-- ============================ PAGE 3 ============================ -->
+<section class="page">
+
+  <div class="runner"><span>A3 &middot; Transport layer</span><span>Names: <span class="rule" style="width:150pt"></span></span><span>Round 4 &middot; your turn</span></div>
+
+  <h2>Round 4 &middot; Your turn</h2>
+  <p class="lead">One laptop with a command line coding agent (Claude Code, Copilot CLI, Codex CLI, or similar), in a new empty
+  directory. No agent in the group? Do it by hand; I will put Claude's answers on the projector at the end.</p>
+  <p class="names" style="margin:0 0 6pt">Agent we used <span class="rule r-md"></span> &nbsp; <span class="tiny dim">(or "by hand")</span></p>
+
+  <h3>Part A &middot; Repeat a step, in your own words</h3>
+  <table>
+    <tr><th style="width:90pt">Round repeated</th><th>Same code as the projector? Same behavior? If not Claude Code: how did your agent's code, permission requests and explanations differ?</th></tr>
+    <tr><td class="hh"></td><td class="hh"></td></tr>
+  </table>
+
+  <h3>Part B &middot; Check its arithmetic</h3>
+  <table>
+    <tr><th style="width:190pt">Question</th><th>Your agent's answer</th><th>Your answer, by hand</th></tr>
+    <tr><td class="tiny"><strong>UDP checksum.</strong> Words <span class="mono">01010011</span>, <span class="mono">01100110</span>,
+      <span class="mono">01110100</span>. One's complement sum, and the checksum?</td><td class="hh"></td><td class="hh"></td></tr>
+    <tr><td class="tiny"><strong>Stop-and-wait.</strong> 1 Gbps, 30 ms RTT, 1000 byte packets. Utilization? Packets in flight
+      for 90%?</td><td class="hh"></td><td class="hh"></td></tr>
+    <tr><td class="tiny"><strong>Timeout.</strong> EstimatedRTT 100 ms, DevRTT 5 ms, next SampleRTT 120 ms, &alpha; = 0.125,
+      &beta; = 0.25. New TimeoutInterval? Which EstimatedRTT went into DevRTT, old or new?</td><td class="hh"></td><td class="hh"></td></tr>
+  </table>
+
+  <ol class="q tiny">
+    <li>Where did the agent and your group disagree, and who turned out to be right? If you always agreed, what did you
+      check, and how?
+      <div class="lines tight"><div></div><div></div><div></div></div></li>
+    <li>Name one thing today where you would not have trusted an agent's answer without running it.
+      <div class="lines tight"><div></div><div></div></div></li>
+  </ol>
+
+  <p class="tiny"><strong>If you finish early:</strong> ask your agent why TIME_WAIT lasts about 30 s on macOS and 60 s on Linux,
+  then run <span class="mono">sysctl net.inet.tcp.msl</span> on a Mac. What is MSL? <span class="rule" style="width:170pt"></span></p>
+
+  <p class="tiny dim" style="text-align:center;margin-top:10pt">Graded pass/fail on a serious attempt at every round.
+  Hand this in before you leave, with every name at the top.</p>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A3 Answer Key</title>
+<style>
+  @page { size: letter; margin: 0.5in 0.55in 0.45in 0.55in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 9.3pt/1.33 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.1pt; }
+
+  .page { page-break-after: auto; }
+  .demo, .box, .ans, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 9.8pt; margin: 10pt 0 5pt; text-transform: uppercase; letter-spacing: 0.8pt;
+       border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.4pt; margin: 7pt 0 3pt; }
+  p { margin: 0 0 4pt; }
+  .tiny { font-size: 8.1pt; }
+  .dim { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 4pt; }
+  .mast .right { text-align: right; }
+  .stamp { display: inline-block; background: #000; color: #fff; padding: 3pt 8pt;
+           font-size: 8.5pt; font-weight: bold; letter-spacing: 1pt; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 3pt 5pt; vertical-align: top; text-align: left; font-size: 8.2pt; }
+  th { background: #e4e4e4; font-size: 7.8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+
+  .demo { border: 0.75pt solid #000; margin-bottom: 7pt; }
+  .demo .hd { background: #e4e4e4; padding: 3pt 6pt; font-size: 8.3pt; font-weight: bold;
+              border-bottom: 0.75pt solid #000; }
+  .demo pre { margin: 0; padding: 5pt 6pt; font-family: "SF Mono","Menlo","Consolas",monospace;
+              font-size: 7.5pt; line-height: 1.32; white-space: pre-wrap; word-break: break-word; }
+  .demo .say { padding: 4pt 6pt; border-top: 0.75pt dashed #666; font-size: 8.1pt; background: #f7f7f7; }
+  .demo .say b { text-transform: uppercase; font-size: 7.6pt; letter-spacing: 0.5pt; }
+  .cmd { font-weight: bold; }
+
+  .ans { border-left: 3pt solid #000; padding: 3pt 0 3pt 8pt; margin: 0 0 6pt; }
+  .ans .q { font-weight: bold; }
+  .box { border: 1pt solid #000; padding: 5pt 7pt; margin-bottom: 7pt; }
+  .box.fill { background: #eee; }
+  .box h3 { margin-top: 0; }
+  .bar { border: 1pt dashed #000; padding: 3pt 7pt; margin-bottom: 7pt; font-size: 8.1pt; background: #f6f6f6; }
+  .bar strong { text-transform: uppercase; letter-spacing: 0.6pt; font-size: 7.6pt; }
+
+  ol, ul { margin: 0 0 5pt; padding-left: 15pt; }
+  li { margin-bottom: 3pt; }
+  .push { font-size: 8.1pt; }
+  .push li { margin-bottom: 2.5pt; }
+</style>
+</head>
+<body>
+
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A3 &middot; Answer Key and Demo Script</h1>
+      <div class="tiny">CS425 &middot; Interrogating the Transport Layer with Claude Code</div>
+    </div>
+    <div class="right"><span class="stamp">INSTRUCTOR COPY</span></div>
+  </div>
+  <p class="tiny dim" style="margin-bottom:8pt">Graded pass/fail. Rehearsed on this Mac on Sep 27: the prompts
+  on the page went to Claude Code word for word, and the transcripts below are its own <span class="mono">echo.py</span>
+  and <span class="mono">burst.py</span> run with the page's commands. Ports and pids will differ; the shapes will not.
+  <strong>Use port 5425:</strong> AirPlay Receiver holds <span class="mono">*:5000</span> on macOS.</p>
+
+  <div class="box fill">
+    <h3>Say this before you hand out the sheet</h3>
+    <p class="tiny" style="margin:0">"Chapter 3 makes three claims you will be tested on: UDP sockets are named by two
+    things and TCP sockets by four, somebody is left holding TIME_WAIT, and TCP moves bytes, not messages. Today we watch
+    each one happen. I drive Claude Code; you predict before I press enter, and you catch it when it is wrong. Last round,
+    you drive." One minute, then paper.</p>
+  </div>
+
+  <div class="bar"><strong>Before class</strong> &nbsp; Logged in to Claude Code, font up, four
+  terminal tabs. Rehearsal copies of <span class="mono">echo.py</span> and <span class="mono">burst.py</span> in a spare
+  directory: if the wifi or Claude fails, switch to them and keep going.</div>
+
+  <h2>Round 0 &middot; Meet the agent</h2>
+  <div class="ans"><span class="q">Trust.</span> Trusting a folder lets Claude read and change everything under it. An
+  empty directory you just made holds nothing to lose; your home directory holds SSH keys, tokens and every other
+  project.</div>
+  <div class="ans"><span class="q">Approve once vs. always.</span> One approval covers one command you have read.
+  "Yes, and don't ask again" lets it run that kind of command in this directory without asking, including runs you never see. Model
+  approving one at a time, out loud.</div>
+
+  <h2>Round 1 &middot; Demultiplexing</h2>
+  <div class="demo">
+    <div class="hd">lsof -nP -i :5425, with two nc clients connected and two UDP datagrams sent</div>
+<pre>Python  73383 shane  3u  IPv4 ...  TCP 127.0.0.1:5425 (LISTEN)
+Python  73383 shane  4u  IPv4 ...  UDP 127.0.0.1:5425
+Python  73383 shane  5u  IPv4 ...  TCP 127.0.0.1:5425-&gt;127.0.0.1:62871 (ESTABLISHED)
+Python  73383 shane  6u  IPv4 ...  TCP 127.0.0.1:5425-&gt;127.0.0.1:62872 (ESTABLISHED)
+nc      73387 shane  3u  IPv4 ...  TCP 127.0.0.1:62871-&gt;127.0.0.1:5425 (ESTABLISHED)
+nc      73389 shane  3u  IPv4 ...  TCP 127.0.0.1:62872-&gt;127.0.0.1:5425 (ESTABLISHED)</pre>
+    <div class="say"><b>Point at</b> &nbsp; Both binds worked: TCP and UDP port numbers are separate namespaces. The
+    server holds 1 LISTEN, 2 connected TCP sockets (one per four-tuple), and exactly 1 UDP socket no matter how many
+    clients sent, because a UDP socket is named only by its own address and port. The server log shows a different
+    source port for each datagram, all arriving on that one socket. A web server needs the four-tuple so thousands of
+    clients can all talk to port 443 and still land in separate sockets.</div>
+  </div>
+
+</section>
+
+<section class="page">
+
+  <h2>Round 2 &middot; TIME_WAIT</h2>
+  <div class="demo">
+    <div class="hd">netstat -an -p tcp | grep 5425, just after the clients pressed Ctrl-C</div>
+<pre>tcp4  0  0  127.0.0.1.5425    *.*               LISTEN
+tcp4  0  0  127.0.0.1.62871   127.0.0.1.5425    TIME_WAIT
+tcp4  0  0  127.0.0.1.62872   127.0.0.1.5425    TIME_WAIT</pre>
+    <div class="say"><b>Point at</b> &nbsp; The TIME_WAIT lines carry the <em>client's</em> ephemeral ports. Whoever
+    closes first holds TIME_WAIT, for 2 MSL: about 30 s on macOS (<span class="mono">net.inet.tcp.msl</span> is 15000 ms; it measured 32 s), 60 s
+    on Linux. It exists so a late duplicate segment from this connection cannot be mistaken for part of a new one on the
+    same four-tuple, and so the final ACK can be resent if it was lost.</div>
+  </div>
+  <div class="ans"><span class="q">Server stopped first.</span> Now the server's side holds TIME_WAIT on port 5425. A
+  restart without <span class="mono">SO_REUSEADDR</span> fails: <span class="mono">[Errno 48] Address already in use</span>
+  (Linux: errno 98). In rehearsal Claude set <span class="mono">allow_reuse_address = True</span> unasked, so the restart worked, and a copy with it set to <span class="mono">False</span> failed; ask it why
+  the line is there and hold its answer against this. If it left it out, the failure is the lesson.</div>
+  <div class="ans"><span class="q">Grading the agent.</span> A common slip is "the server is left in TIME_WAIT" for a
+  client-initiated close. Credit any group that caught it.</div>
+
+  <h2>Round 3 &middot; A byte stream is not a message</h2>
+  <div class="demo">
+    <div class="hd">echo.py output while burst.py runs</div>
+<pre>TCP client 127.0.0.1:62960
+TCP recv 11 bytes: b'onetwothree'
+UDP client 127.0.0.1:62067
+UDP recv 3 bytes: b'one'
+UDP client 127.0.0.1:62067
+UDP recv 3 bytes: b'two'
+UDP client 127.0.0.1:62067
+UDP recv 5 bytes: b'three'</pre>
+    <div class="say"><b>Point at</b> &nbsp; TCP: one recv, 11 bytes. If Claude's version also prints a 0 byte recv, that is the client's FIN; ask the room. The three sends became bytes in one stream and the
+    receiver gets whatever has arrived; send boundaries are not preserved. UDP: three datagrams, 3, 3 and 5 bytes, one
+    recv each. That is why P1 read until <span class="mono">\r\n</span>: the protocol, not TCP, marks where a reply ends.
+    Without the one second sleep the TCP result varies run to run on loopback, which is why the prompt asks for it.</div>
+  </div>
+
+  <h2>Round 4 &middot; Part B</h2>
+  <div class="ans"><span class="q">UDP checksum.</span> <span class="mono">01010011 + 01100110 = 10111001</span>;
+  <span class="mono">+ 01110100 = 1 00101101</span>; wrap the carry: sum <span class="mono">00101110</span>. Checksum is the
+  complement, <strong class="mono">11010001</strong>. Watch for an agent answer that drops the wraparound carry.</div>
+  <div class="ans"><span class="q">Stop-and-wait.</span> <span class="mono">L/R = 8000 / 10<sup>9</sup> = 8 &micro;s</span>.
+  <span class="mono">U = 0.008 / 30.008 &asymp; 0.00027</span> (0.027%). For 90%:
+  <span class="mono">0.9 &times; 30.008 / 0.008 &asymp; 3376</span> packets in flight (3375 if <span class="mono">L/R</span> is dropped from the denominator; also fine).</div>
+  <div class="ans"><span class="q">Timeout.</span> <span class="mono">EstimatedRTT = 0.875&times;100 + 0.125&times;120 =
+  102.5 ms</span>. New estimate in DevRTT: <span class="mono">0.75&times;5 + 0.25&times;17.5 = 8.125</span>, timeout
+  <strong>135 ms</strong>. Old estimate (RFC 6298's order): <span class="mono">0.75&times;5 + 0.25&times;20 = 8.75</span>,
+  timeout <strong>137.5 ms</strong>. Both are right if the group can say which order; the credit is for noticing whether the agent
+  says which. In rehearsal Claude used the old estimate (137.5 ms), cited RFC 6298, and offered 135 ms unprompted.</div>
+  <div class="ans"><span class="q">If you finish early.</span> MSL is Maximum Segment Lifetime. TIME_WAIT is 2 MSL so a
+  segment can die in one direction and its reply in the other. macOS sets MSL to 15 s; Linux hard-codes TIME_WAIT at 60 s.</div>
+
+  <div class="bar"><strong>Grading</strong> &nbsp; Full 20 or nothing. A pass is every round with a prediction and an
+  observation written in, and Round 4 attempted, by hand or with any command line agent. A group on another agent should note how its results differ from Claude's; a difference never costs the pass. Wrong predictions pass.</div>
+
+</section>
+
+</body>
+</html>

@@ -86,8 +86,8 @@
       },
       {
         "kind": "assignment",
-        "title": "A3 - curl, nc, and ping",
-        "path": "activities/a3-curl-nc-ping",
+        "title": "A3 - Interrogating the Transport Layer with Claude Code",
+        "path": "activities/a3-claude-transport",
         "due_at": "2026-09-29T23:59:00-06:00",
         "points": 20.0,
         "canvas_id": ""
