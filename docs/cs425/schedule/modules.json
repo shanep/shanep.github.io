@@ -86,14 +86,6 @@
       },
       {
         "kind": "assignment",
-        "title": "A3 - Interrogating the Transport Layer with Claude Code",
-        "path": "activities/a3-claude-transport",
-        "due_at": "2026-09-29T23:59:00-06:00",
-        "points": 20.0,
-        "canvas_id": ""
-      },
-      {
-        "kind": "assignment",
         "title": "P2 - Reliable Data Transfer",
         "path": "assignments/p2",
         "due_at": "2026-10-09T23:59:00-06:00",
@@ -105,6 +97,14 @@
         "title": "M1 - Mini-Lab: GitHub Copilot CLI",
         "path": "assignments/m1-copilot-cli",
         "due_at": "2026-10-01T23:59:00-06:00",
+        "points": 20.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "A3 - Interrogating the Transport Layer with Claude Code",
+        "path": "activities/a3-claude-transport",
+        "due_at": "2026-09-29T23:59:00-06:00",
         "points": 20.0,
         "canvas_id": ""
       },
