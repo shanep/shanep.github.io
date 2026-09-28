@@ -43,8 +43,9 @@ If Copilot ever tells you that you are out of requests or asks you to upgrade,
 
 1. **Confirm your Copilot access.** Sign in to GitHub and open
    [github.com/settings/copilot](https://github.com/settings/copilot). It should
-   show that you have Copilot through GitHub Education. If it does not, email me
-   before the due date and I will help you sort it out.
+   show that you have Copilot through GitHub Education. If it does not, you can
+   sign up for a pro account at <https://education.github.com/pack> you will
+   need to use your student (edu) email address to qualify for the free stuff.
 2. **Pick a machine.** Your own laptop is the easiest place to do this. You need
    a terminal and a C compiler (`cc` or `gcc`) with `make`, the same toolchain you
    set up for P0.
