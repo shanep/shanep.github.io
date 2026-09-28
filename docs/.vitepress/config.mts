@@ -438,7 +438,7 @@ function cs425(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'A1 - Speaking the App Layer',      link: 'activities/a1-application-layer' },
         { text: 'A2 - Stop Typing Your Password',   link: 'activities/a2-stop-typing-your-password' },
-        { text: 'A3 - curl, nc, and ping',          link: 'activities/a3-curl-nc-ping' },
+        { text: 'A3 - Transport with Claude Code',  link: 'activities/a3-claude-transport' },
         { text: 'A4 - Connectivity Triage',         link: 'activities/a4-connectivity-triage' },
         { text: 'A5 - Name the Layer',              link: 'activities/a5-name-the-layer' },
       ]
