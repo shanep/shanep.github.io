@@ -37,12 +37,12 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
-      "title": "A3 - curl, nc, and ping"
+      "title": "A3 - Interrogating the Transport Layer with Claude Code"
     },
     "activities/a3-worksheet.pdf": {
-      "canvas_id": "25109512",
+      "canvas_id": "25241135",
       "extra": {
-        "size": "159152"
+        "size": "152074"
       },
       "kind": "file",
       "page_url": "",
