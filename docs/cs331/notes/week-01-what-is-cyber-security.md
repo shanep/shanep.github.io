@@ -21,7 +21,9 @@ viewer's search box or the bookmarks panel. See [Readings and Resources](../reso
 
 ## Worked example
 
-Here is the vocabulary applied to one incident, in the form D1 asks you to produce.
+Here is one incident broken down using the four terms from §1.3: vulnerability, threat, attack,
+and risk. This is the form D1 asks you to produce, one labelled paragraph per term. The short
+definitions are under Key terms at the end of this page.
 
 > **The incident.** In 2023 a file transfer product used by thousands of organisations was found to
 > contain a SQL injection flaw. Attackers exploited it to steal data from hundreds of companies
