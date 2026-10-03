@@ -38,6 +38,8 @@ jobs:
       # The CV PDF is built from docs/cv/index.md with pandoc and Tectonic.
       # Tectonic downloads only the LaTeX packages the CV uses; caching them
       # takes the build from about a minute and a half to under a second.
+      # TECTONIC_CACHE_DIR pins where that cache lives, since Tectonic's default
+      # location changed between releases.
       - name: Setup pandoc
         uses: pandoc/actions/setup@v1
         with:
@@ -45,7 +47,7 @@ jobs:
       - name: Cache Tectonic packages
         uses: actions/cache@v4
         with:
-          path: ~/.cache/Tectonic
+          path: ${{ runner.temp }}/tectonic-cache
           key: ${{ runner.os }}-tectonic-${{ hashFiles('scripts/cv/template.tex') }}
           restore-keys: |
             ${{ runner.os }}-tectonic-
@@ -55,6 +57,8 @@ jobs:
           tectonic-version: '0.17.0'
       - name: Build CV PDF
         run: npm run cv:pdf
+        env:
+          TECTONIC_CACHE_DIR: ${{ runner.temp }}/tectonic-cache
       - name: Build with VitePress
         run: npm run docs:build
       - name: Upload artifact
