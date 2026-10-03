@@ -61,8 +61,7 @@ role.
 My primary research interests are empirical software engineering, software security,
 and software supply chain security. I have publications in venues including ESEM
 (CORE A) and the *Empirical Software Engineering* journal, with collaborators in the
-Computer Science department at Boise State and at external universities. I have been Co-PI on two funded NSA grants totaling
-$645,890, and I am preparing an NSF proposal as PI.
+Computer Science department at Boise State and at external universities.
 
 </div>
 
@@ -87,6 +86,15 @@ $645,890, and I am preparing an NSF proposal as PI.
 
 ## Grants
 
+<div class="summary">
+
+I have been Co-PI on two funded NSA grants totaling $645,890 that bring cybersecurity
+education to K-12 teachers and classrooms. I am preparing an NSF proposal as PI, with
+Nasir Eisty as Co-PI, that extends my dissertation work on technical lag and software
+abandonment.
+
+</div>
+
 ### Funded
 
 - **Integrating AI and Cybersecurity into the Elementary Classrooms**, NSA NCAE-C-001-2026. Co-PI (PI: Jyh-haw Yeh). $495,890 for years 1 and 2, plus $227,770 for an optional year 3. Subawards to College of Eastern Idaho and Whatcom Community College. 8/03/2026 - 9/30/2028, or 9/30/2029 with the optional year.
@@ -108,6 +116,14 @@ $645,890, and I am preparing an NSF proposal as PI.
 - **PVAC**: dataset and scripts for the PVAC study of version activity in Ubuntu. [figshare](https://doi.org/10.6084/m9.figshare.27934632)
 
 ## Talks
+
+<div class="summary">
+
+I have presented my research at ESEM and TechDebt. I am also invited to speak on
+cybersecurity to teachers, industry, and students, including a hands-on workshop at
+Boise State's Teach the Tech: Digital Literacy Summit.
+
+</div>
 
 ### Conference Presentations
 
@@ -134,7 +150,9 @@ course coordinator for 11 of the department's courses and originated 6 courses f
 scratch. I also have extensive experience in developing and teaching asynchronous
 online courses at the undergraduate level. Over the last five-year period, I taught
 an average of 21 credits per year across 53 undergraduate and graduate courses,
-totaling 3,409 student-credit hours.
+totaling 3,409 student-credit hours. I coordinated CS481 Senior Design from 2018 to
+2021, supervising more than 75 student teams on projects sponsored by industry,
+nonprofits, and Boise State faculty.
 
 </div>
 

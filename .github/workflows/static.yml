@@ -55,12 +55,11 @@ jobs:
         uses: wtfjoke/setup-tectonic@v4
         with:
           tectonic-version: '0.17.0'
-      - name: Build CV PDF
-        run: npm run cv:pdf
-        env:
-          TECTONIC_CACHE_DIR: ${{ runner.temp }}/tectonic-cache
+      # docs:build also builds the CV PDFs (docs/.vitepress/cv-pdf.ts).
       - name: Build with VitePress
         run: npm run docs:build
+        env:
+          TECTONIC_CACHE_DIR: ${{ runner.temp }}/tectonic-cache
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

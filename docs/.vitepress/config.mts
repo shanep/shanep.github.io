@@ -3,6 +3,7 @@ import footnote from 'markdown-it-footnote'
 import container from 'markdown-it-container'
 import { globSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
+import { cvPdf } from './cv-pdf'
 
 // Course files carry `draft: true` in their frontmatter while they are being
 // written. `edutools` reads the same flag to keep them out of Canvas; here it
@@ -124,6 +125,9 @@ export default defineConfig({
     }
   },
   cleanUrls: true,
+  vite: {
+    plugins: [cvPdf()],
+  },
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
