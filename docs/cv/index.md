@@ -20,7 +20,7 @@ Boise State University, Boise, Idaho 83725<br>
 
 <div class="web-only cv-meta">
 
-[Download PDF](/panter-cv.pdf) · Updated {{ $frontmatter.updated }}
+[Download PDF](/panter-cv.pdf) · [PDF with section summaries](/panter-cv-summaries.pdf) · Updated {{ $frontmatter.updated }}
 
 </div>
 
@@ -41,12 +41,30 @@ technical lag and software abandonment.
 
 ## Academic Appointments
 
+<div class="summary">
+
+I have held several academic appointments at Boise State University, progressing
+from a strictly teaching role to a hybrid teaching/research position in my current
+role.
+
+</div>
+
 - **Assistant Clinical Professor**, Boise State University, 2023 - present
 - **Lecturer III**, Boise State University, 2021 - 2023
 - **Lecturer II**, Boise State University, 2013 - 2021
 - **Faculty Fellow**, Idaho AI Combine, Fall 2026 - present
 
 ## Publications
+
+<div class="summary">
+
+My primary research interests are empirical software engineering, software security,
+and software supply chain security. I have publications in venues including ESEM
+(CORE A) and the *Empirical Software Engineering* journal, with collaborators in the
+Computer Science department at Boise State and at external universities. I have been Co-PI on two funded NSA grants totaling
+$645,890, and I am preparing an NSF proposal as PI.
+
+</div>
 
 ### Journal Articles
 
@@ -108,10 +126,26 @@ technical lag and software abandonment.
 
 ## Teaching
 
-- 19 unique courses taught, undergraduate and graduate
+<div class="summary">
+
+I have taught 20 unique courses across all levels of our curriculum, from
+undergraduate to graduate, covering a broad range of CS topics. I have been the
+course coordinator for 11 of the department's courses and originated 6 courses from
+scratch. I also have extensive experience in developing and teaching asynchronous
+online courses at the undergraduate level. Over the last five-year period, I taught
+an average of 21 credits per year across 53 undergraduate and graduate courses,
+totaling 3,409 student-credit hours.
+
+</div>
+
+<div class="brief">
+
+- 20 unique courses taught, undergraduate and graduate
 - Course coordinator for 11 courses; created 6 courses from scratch
 - Over the last five years, an average of 21 credits per year across 53 course sections, totaling 3,409 student-credit hours
 - Developed asynchronous online versions of CS155, CS208, and CS408 with eCampus; CS331 in development, Fall 2026
+
+</div>
 
 ### Courses Taught
 
@@ -156,6 +190,14 @@ technical lag and software abandonment.
 
 ## Professional Experience
 
+<div class="summary">
+
+I have a decade of full-time industry experience before joining Boise State
+University as a faculty member. My experience allows me to enhance my curriculum and
+deliver engaging lectures, bridging academic theory to industry practice.
+
+</div>
+
 - **System Firmware Engineer**, Hewlett-Packard, 2011 - 2012
   - Firmware for enterprise LaserJet printers in kernel and user space, focused on energy efficiency
 - **Software Developer**, Western Trailer, 2005 - 2011
@@ -164,6 +206,13 @@ technical lag and software abandonment.
   - Installed and maintained both high-voltage and low-voltage electrical systems, including networking and home automation systems
 
 ## Service
+
+<div class="summary">
+
+I have served on departmental, college, and university committees, reviewed for
+ESEM, and worked with local industry as a university liaison.
+
+</div>
 
 ### Professional
 
@@ -204,6 +253,13 @@ technical lag and software abandonment.
 - [Coding is Cool Workshop](https://www.boisestate.edu/coen-cs/2014/06/23/coding-is-cool-workshop/) for high school students and teachers, Spring 2014
 
 ## Professional Development
+
+<div class="summary">
+
+I have participated in professional development through Boise State's Center for
+Teaching and Learning, eCampus, and the Linux Foundation.
+
+</div>
 
 - Reflection Teaching Certificate, Center for Teaching and Learning, 2026
 - Student Partners Program for CS333, Center for Teaching and Learning, 2026

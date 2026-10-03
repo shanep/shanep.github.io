@@ -1,7 +1,10 @@
 -- pandoc filter that turns the website's CV page (docs/cv/index.md) into the
 -- body of the LaTeX CV.
 --
---   * Anything inside <div class="web-only"> is dropped (the download link).
+--   * Anything inside <div class="web-only"> is dropped (the download links).
+--   * A <div class="summary"> (a section's summary paragraph) is kept only when
+--     the build passes -M summaries=true, which makes the second PDF. A
+--     <div class="brief"> is the reverse: the short form a summary replaces.
 --   * The # heading and the contact paragraph under it become a centered
 --     header, and the # name is handed to the template's footer.
 --   * ## and ### move up a level to \section and \subsection.
@@ -110,10 +113,16 @@ function Pandoc(doc)
   local out = pandoc.Blocks({})
   local name = nil
   local in_header = false
+  local summaries = doc.meta.summaries ~= nil
+    and pandoc.utils.stringify(doc.meta.summaries) == 'true'
 
   for _, block in ipairs(doc.blocks) do
     if block.t == 'Div' and block.classes:includes('web-only') then
       -- skip
+    elseif block.t == 'Div' and block.classes:includes('summary') then
+      if summaries then out:extend(block.content) end
+    elseif block.t == 'Div' and block.classes:includes('brief') then
+      if not summaries then out:extend(block.content) end
     elseif block.t == 'Header' and block.level == 1 then
       name = pandoc.utils.stringify(block.content)
       out:insert(pandoc.RawBlock('latex',
