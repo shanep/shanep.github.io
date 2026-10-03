@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: CV
-      link: https://docs.google.com/document/d/13OEBs0UK4xZEHBpWOfhIjOzPBn9ocpYrtajHZHN7zpw/edit?usp=sharing
+      link: /cv/
     - theme: alt
       text: research
       link: /research/index
@@ -59,18 +59,27 @@ hero:
 
 ## Bio
 
-Shane Panter brings more than a decade of industry experience to the Computer Science Department at Boise State University. Before entering academia, he worked in manufacturing developing large-scale Enterprise Resource Planning (ERP) and Material Requirements Planning (MRP) systems, and at Hewlett-Packard contributed to firmware development for enterprise LaserJet printers, optimizing energy efficiency across both kernel and user space. He now channels that real-world expertise into research at the intersection of empirical software engineering, cybersecurity, and software security, with a particular focus on software supply chain security.
+Shane Panter is an Assistant Clinical Professor of Computer Science at Boise
+State University, where he has taught since 2013. He teaches Operating Systems,
+Computer Networks, Computer Security, and Full Stack Web Development, and he
+holds a Ph.D. in Computing and an M.S. in Computer Science. Before joining
+academia, he spent a decade in industry working in IT and networking,
+enterprise software development, and embedded firmware. His research is in
+empirical software engineering and software security, with a focus on the
+software supply chain. His recent work looks at what happens to software when
+the open source packages it depends on fall behind or are abandoned. He is also
+Co-PI on two NSA-funded cybersecurity education grants.
 
 ## Research Interests
 
 - Empirical Software Engineering
-- Cybersecurity
-- Software Security
 - Software Supply Chain Security
+- Technical Lag and Software Abandonment
+- Systems Programming and Security
 
 ## Published Research links
 
-- MALTA: Maintenance-Aware Technical Lag, Estimation to Address Software Abandonment (Under Review) [ArXiv](https://arxiv.org/pdf/2603.10265)
+- MALTA: Maintenance-Aware Technical Lag Estimation to Address Software Abandonment (Under Review) [ArXiv](https://arxiv.org/pdf/2603.10265)
 - Technical Lag as Latent Technical Debt: A Rapid Review (2026) [ACM](https://doi.org/10.1145/3794915.3795784), [ArXiv](https://doi.org/10.48550/arXiv.2601.11693), [pdf](papers/26_techdebt.pdf)
 - PVAC: Package Version Activity Categorizer, Leveraging Semantic Versioning in a Heterogeneous System (2025) [Springer](https://rdcu.be/eoUim), [ArXiv](https://arxiv.org/abs/2409.04588), [pdf](papers/25_pvac.pdf)
 - Rusty Linux: Advances in Rust for Linux Kernel Development (2024) [ACM](https://doi.org/10.1145/3674805.3690756), [ArXiv](https://arxiv.org/abs/2407.18431), [pdf](papers/24_rusty_linux.pdf)
