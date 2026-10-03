@@ -45,6 +45,11 @@
   letter-spacing: 0.02em;
 }
 
+/* Section summaries appear only in panter-cv-summaries.pdf. */
+.cv-page .vp-doc .summary {
+  display: none;
+}
+
 .cv-page .vp-doc h1 + p,
 .cv-page .vp-doc .cv-meta {
   text-align: center;
