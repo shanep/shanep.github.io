@@ -244,7 +244,7 @@ ESEM, and worked with local industry as a university liaison.
 
 ### Community
 
-- Boy Scouts of America troop committee member and merit badge counselor, Spring 2025 - Summer 2026
+- Boy Scouts of America troop committee member, Spring 2025 - Summer 2026
 - Business Professionals of America (BPA) judge, Spring 2017 - Spring 2024
 - Boise Brewing [smart tap handle for charity](https://www.boisestate.edu/coen-cs/2019/05/23/pouring-one-out-for-charity/), Spring 2019
 - Interfaith Sanctuary [Adopt-a-meal website](https://www.ktvb.com/article/news/local/bsu-students-create-adopt-a-meal-website-for-interfaith-sanctuary/277-536114921), Spring 2018
