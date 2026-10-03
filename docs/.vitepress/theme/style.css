@@ -30,3 +30,68 @@
   padding: 8px 12px;
   text-align: right;
 }
+
+/* The CV page (docs/cv/index.md sets pageClass: cv-page) is styled to look
+   like the LaTeX PDF built from it (npm run cv:pdf). */
+.cv-page .vp-doc {
+  font-family: "Latin Modern Roman", "CMU Serif", "Computer Modern Serif", Georgia, serif;
+  font-size: 17px;
+}
+
+.cv-page .vp-doc h1 {
+  text-align: center;
+  font-variant: small-caps;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.cv-page .vp-doc h1 + p,
+.cv-page .vp-doc .cv-meta {
+  text-align: center;
+}
+
+.cv-page .vp-doc .cv-meta a {
+  display: inline-block;
+  padding: 2px 12px;
+  border: 1px solid var(--vp-c-brand-1);
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.cv-page .vp-doc h2 {
+  margin-top: 36px;
+  padding-top: 0;
+  padding-bottom: 2px;
+  border-top: none;
+  border-bottom: 1px solid var(--vp-c-text-1);
+  font-variant: small-caps;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.cv-page .vp-doc h3 {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.cv-page .vp-doc li + li {
+  margin-top: 2px;
+}
+
+/* Printing the page gives just the CV, though the PDF download is better. */
+@media print {
+  .cv-page .VPNav,
+  .cv-page .VPLocalNav,
+  .cv-page .VPSidebar,
+  .cv-page .VPDocFooter,
+  .cv-page .VPFooter,
+  .cv-page .cv-meta {
+    display: none !important;
+  }
+
+  .cv-page .VPContent,
+  .cv-page .VPDoc {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}

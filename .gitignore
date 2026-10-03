@@ -28,3 +28,6 @@ auto
 
 # Course textbooks are distributed through Canvas, not this public repo
 docs/*/docs/*.pdf
+
+# Built by npm run cv:pdf (locally or in the GitHub Action)
+docs/public/panter-cv.pdf
