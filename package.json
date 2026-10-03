@@ -12,7 +12,8 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "clean": "rm -rf node_modules && rm -rf dist && rm -rf .vitepress/dist",
-    "canvas:setup": "tsx scripts/create-canvas-course.ts"
+    "canvas:setup": "tsx scripts/create-canvas-course.ts",
+    "cv:pdf": "scripts/cv/build.sh"
   },
   "dependencies": {
     "markdown-it-container": "^4.0.0",
