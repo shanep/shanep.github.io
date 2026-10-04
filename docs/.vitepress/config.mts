@@ -444,6 +444,7 @@ function cs425(): DefaultTheme.SidebarItem[] {
         { text: 'A2 - Stop Typing Your Password',   link: 'activities/a2-stop-typing-your-password' },
         { text: 'A3 - Transport with Claude Code',  link: 'activities/a3-claude-transport' },
         { text: 'A4 - Where Does It Go?',           link: 'activities/a4-where-does-it-go' },
+        { text: 'A4 Slides',                        link: 'activities/slides-a4' },
       ]
     },
     {
