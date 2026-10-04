@@ -48,6 +48,22 @@
       "page_url": "",
       "title": "a3-worksheet.pdf"
     },
+    "activities/a4-where-does-it-go.md": {
+      "canvas_id": "1822326",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "A4 - Where Does This Datagram Go?"
+    },
+    "activities/a4-worksheet.pdf": {
+      "canvas_id": "25308500",
+      "extra": {
+        "size": "116505"
+      },
+      "kind": "file",
+      "page_url": "",
+      "title": "a4-worksheet.pdf"
+    },
     "activities/index.md": {
       "canvas_id": "in-class-activities",
       "extra": {},

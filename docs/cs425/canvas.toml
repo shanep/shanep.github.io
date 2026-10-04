@@ -112,15 +112,16 @@ pages = [
 # activities/ are symlinks to them, so that the push finds the files inside the
 # course directory, uploads them, and rewrites each page's relative link to the
 # Canvas file. Listed one by one rather than globbed, because a file is never a
-# draft: the A4 and A5 worksheets would go up while their pages are still held
-# back. Add a worksheet here when its page loses `draft: true`; until then the
-# push reports the page's link as unresolved, which is the reminder.
+# draft: a worksheet would go up while its page is still held back. Add a
+# worksheet here when its page loses `draft: true`; until then the push reports
+# the page's link as unresolved, which is the reminder.
 # The textbook PDF under docs/ stays out of Canvas; it is already provided there
 # under Course Materials.
 files = [
     "activities/a1-worksheet.pdf",
     "activities/a2-worksheet.pdf",
     "activities/a3-worksheet.pdf",
+    "activities/a4-worksheet.pdf",
     # P2's diagrams, linked the same way from docs/public/cs425/assignments/.
     "assignments/p2-setup.svg",
     "assignments/p2-window.svg",
@@ -199,15 +200,13 @@ items  = [
     "assignments/p2.md",
     "assignments/m1-copilot-cli.md",
     "activities/a3-claude-transport.md",
-    "activities/a4-connectivity-triage.md",
-    "activities/a5-name-the-layer.md",
 ]
 canvas = [{ quiz = 393660, title = "Chapter 3 - Knowledge Check" }]
 
 [[module]]
 title = "Week 7: The Network Layer - Data Plane"
 page  = "notes/ch04-network-data.md"
-items = ["assignments/p3.md"]
+items = ["activities/a4-where-does-it-go.md"]
 
 # The exam modules hold the quizzes built by hand in Canvas. Week 8 also lists
 # X1, the take home alternative to the midterm.
@@ -219,9 +218,12 @@ canvas = [
     { quiz = 393662, title = "Midterm Exam" },
 ]
 
+# P3 is chapter 4 material, but it is due in week 10, so it lives here with the
+# weeks students are working on it rather than in week 7.
 [[module]]
 title = "Week 9-10: The Network Layer - Control Plane"
 page  = "notes/ch05-network-control.md"
+items = ["assignments/p3.md"]
 
 [[module]]
 title = "Week 11-12: The Link Layer and LANs"

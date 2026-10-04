@@ -3,9 +3,7 @@
 # a1-application-layer.sh - documents for CS425 activity A1.
 #
 # A1 runs against onyx.boisestate.edu and needs no testbed, so this only renders
-# the worksheet. The renderer itself lives in a4-connectivity-triage.sh, which is
-# where the two documents that do need a testbed are handled; pointing at it here
-# keeps one implementation rather than five.
+# the worksheet, through the shared render-handout.sh.
 #
 set -euo pipefail
 
@@ -22,7 +20,7 @@ export KEY_PDF="$HERE/a1-application-layer-key.pdf"
 export KEY_PAGES=2
 
 case "${1:-}" in
-    handout|key|-h|--help) exec "$HERE/a4-connectivity-triage.sh" "$@" ;;
+    handout|key|-h|--help) exec "$HERE/render-handout.sh" "$@" ;;
     *) printf '%s: A1 needs no testbed; the commands are "handout" and "key"\n' \
            "$(basename "$0")" >&2; exit 1 ;;
 esac

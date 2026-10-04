@@ -15,9 +15,9 @@ when it logs you in, why the second login is faster than the first, and how to
 teach the shell a new word that is still there tomorrow.
 
 Two of those words matter for the rest of the course. `ssh onyx` is how you will
-reach the box for every project from here on. `probe` is a command you will type
-dozens of times in A3 and A4; you do not need to understand what is inside it
-yet, you just need it to exist.
+reach the box for every project from here on. `probe` is a quick connection
+test you can reach for whenever something will not connect; you do not need to
+understand what is inside it yet, you just need it to exist.
 
 This one is **instructor led**. I do each step on the projector, you do it on
 your laptop, and we do not move on until the room has caught up. Nobody is racing
@@ -284,8 +284,9 @@ Answer the last question on the worksheet.
 
 ## Step 9 - Same function, your laptop
 
-A4 runs from your laptop, not from Onyx, so put `probe` there too. Open your
-shell's configuration file:
+Onyx tests a connection from campus. To test one from the network you are
+actually on, put `probe` on your laptop too. Open your shell's configuration
+file:
 
 | Laptop | File |
 | ------ | ---- |
@@ -379,7 +380,6 @@ cold login about 1.1 s, warm about 250 ms, round trip about 31 ms;
 per member with two timings, and something written under each of the three
 questions. Canvas has no rubric attached, so award the full 20 or nothing.
 
-**What this sets up.** `ssh onyx` is used in every project from P1 on. `probe`
-is what A3 takes apart and what A4 is built around; students arriving at A4 with
-it already in their laptop's shell config skip the step that most often goes
-wrong there.
+**What this sets up.** `ssh onyx` is used in every project from P1 on, in X1
+(where key login lets a student's agent drive Onyx), and in A4, which runs
+entirely on Onyx. `probe` is a quick connection test students can keep using.

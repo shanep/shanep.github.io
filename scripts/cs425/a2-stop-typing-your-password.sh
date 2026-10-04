@@ -4,9 +4,7 @@
 #
 # A2 is instructor led, runs against onyx.boisestate.edu and the students' own
 # laptops, and needs no testbed, so this only renders the worksheet and the key.
-# The renderer itself lives in a4-connectivity-triage.sh, which is where the two
-# documents that do need a testbed are handled; pointing at it here keeps one
-# implementation rather than five.
+# The renderer is the shared render-handout.sh.
 #
 set -euo pipefail
 
@@ -23,7 +21,7 @@ export KEY_PDF="$HERE/a2-stop-typing-your-password-key.pdf"
 export KEY_PAGES=3
 
 case "${1:-}" in
-    handout|key|-h|--help) exec "$HERE/a4-connectivity-triage.sh" "$@" ;;
+    handout|key|-h|--help) exec "$HERE/render-handout.sh" "$@" ;;
     *) printf '%s: A2 needs no testbed; the commands are "handout" and "key"\n' \
            "$(basename "$0")" >&2; exit 1 ;;
 esac

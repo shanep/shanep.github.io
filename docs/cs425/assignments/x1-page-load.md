@@ -278,8 +278,10 @@ called `measure.sh` that does it for you, to the specification below.
   4. **Two at once.** Two copies of `pageload` against the Utah mirror at the same
      time, each writing to its own temporary file, then both files printed one after
      the other so the output does not interleave (question 11).
-  5. **DNS trace.** `dig +trace ftp.jaist.ac.jp` (question 7). If `dig` is not
-     installed, print a note saying so and keep going.
+  5. **DNS trace.** `dig +trace ftp.jaist.ac.jp` (question 7). It fails on Onyx,
+     which blocks DNS to every server but the campus one (you saw that in A1), and
+     if `dig` is not installed it cannot run at all. Either way, print a note
+     saying so and keep going.
 - **Keep going when a target fails.** A mirror that is down or slow should not end
   the run. Print the exit status of the failed `pageload` and move on to the next
   target.
@@ -357,9 +359,10 @@ right size for most questions.
 6. **DNS caching.** Compare the DNS time of trial 1 with trials 2 through 5 for
    one mirror at each vantage point. Explain the difference in terms of the local
    DNS server and caching.
-7. **The DNS hierarchy.** Using the DNS trace section of your measurements,
-   list, in order, the servers that were asked and what each one answered (a
-   referral or the address). Map each one to its place in the hierarchy from section 2.4.
+7. **The DNS hierarchy.** Using the DNS trace from a vantage point where it
+   worked, list, in order, the servers that were asked and what each one
+   answered (a referral or the address). Map each one to its place in the
+   hierarchy from section 2.4.
 8. **The CDN.** Did DNS give `example.com` the same address at all three vantage
    points? How does its connect time compare with the mirrors? Use section 2.6 to
    explain how the CDN got a server close to you, and say which technique your
