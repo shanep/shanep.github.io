@@ -1,4 +1,9 @@
-# Github Classroom Setup
+# Github Classroom Setup (Deprecated)
+
+::: danger DEPRECATED
+GitHub Classroom has been shut down, so none of the steps below work anymore. I am keeping this
+guide here for historical purposes only.
+:::
 
 This is an opinionated guide to using [Github
 classrooms](https://classroom.github.com) This guide extends the

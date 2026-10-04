@@ -1,8 +1,14 @@
-# Adjunct Instructor
+# Adjunct Instructor (Deprecated)
 
-This page will walk you through getting your course setup for the first
-time. In order to complete these steps you will need a Boise State
-provided email, you can not use your personal email to teach your class.
+::: danger DEPRECATED
+This guide is out of date and the steps below no longer apply. I now send adjunct instructors a
+Canvas export of the course with everything already configured, so there is no sandbox to copy
+and set up. I am keeping this page here for historical purposes only.
+:::
+
+This page is for adjunct instructors teaching a course that I coordinate. It will walk you
+through getting your course setup for the first time. In order to complete these steps you will
+need a Boise State provided email, you can not use your personal email to teach your class.
 
 ## Setup Canvas
 
