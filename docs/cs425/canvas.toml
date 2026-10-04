@@ -154,7 +154,7 @@ due = "fri 23:59"
 [override."activities/a3-claude-transport.md"]
 due = "tue 23:59"
 
-# A4 is due Thursday of week 7, Oct 8, a day after the Wednesday class.
+# A4 runs in class on Thursday of week 7, Oct 8, and is due that night.
 [override."activities/a4-where-does-it-go.md"]
 due = "thu 23:59"
 
