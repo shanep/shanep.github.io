@@ -112,6 +112,22 @@
       "page_url": "",
       "title": "a7-worksheet.pdf"
     },
+    "activities/a8-noisy-link.md": {
+      "canvas_id": "1822366",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "A8 - TCP on a Noisy Link"
+    },
+    "activities/a8-worksheet.pdf": {
+      "canvas_id": "25310222",
+      "extra": {
+        "size": "121954"
+      },
+      "kind": "file",
+      "page_url": "",
+      "title": "a8-worksheet.pdf"
+    },
     "activities/a9-who-are-you-talking-to.md": {
       "canvas_id": "1822353",
       "extra": {},
@@ -134,6 +150,15 @@
       "kind": "page",
       "page_url": "in-class-activities",
       "title": "In Class Activities"
+    },
+    "activities/tcpmeter.py": {
+      "canvas_id": "25310223",
+      "extra": {
+        "size": "4681"
+      },
+      "kind": "file",
+      "page_url": "",
+      "title": "tcpmeter.py"
     },
     "assignments/cs425_relay.py": {
       "canvas_id": "25207225",
