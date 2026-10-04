@@ -122,6 +122,10 @@ files = [
     "activities/a2-worksheet.pdf",
     "activities/a3-worksheet.pdf",
     "activities/a4-worksheet.pdf",
+    "activities/a5-worksheet.pdf",
+    "activities/a6-worksheet.pdf",
+    "activities/a7-worksheet.pdf",
+    "activities/a9-worksheet.pdf",
     # P2's diagrams, linked the same way from docs/public/cs425/assignments/.
     "assignments/p2-setup.svg",
     "assignments/p2-window.svg",
@@ -131,6 +135,9 @@ files = [
     "assignments/cs425_relay.py",
     # P4's captures, built by scripts/make-zip.sh in the CS425-p4-solution repo.
     "assignments/p4-captures.zip",
+    # A8's worksheet, and the meter students download onto Onyx and run.
+    "activities/a8-worksheet.pdf",
+    "activities/tcpmeter.py",
 ]
 
 [layout.gradable]
@@ -160,8 +167,26 @@ due = "tue 23:59"
 [override."activities/a4-where-does-it-go.md"]
 due = "thu 23:59"
 
-# A5 runs in class on Thursday of week 11, Nov 5, and is due that night.
-[override."activities/a5-one-hop-at-a-time.md"]
+# A5 and A6 run in class on Thursday of weeks 9 and 10, Oct 22 and Oct 29, and
+# are due that night.
+[override."activities/a5-errors-on-purpose.md"]
+due = "thu 23:59"
+
+[override."activities/a6-who-carries-your-packets.md"]
+due = "thu 23:59"
+
+# A7 runs in class on Thursday of week 11, Nov 5, and is due that night.
+[override."activities/a7-one-hop-at-a-time.md"]
+due = "thu 23:59"
+
+# A8 runs in class on Thursday of week 13, Nov 19, and is due that night. That
+# keeps it off Tuesday, when P4 is due.
+[override."activities/a8-noisy-link.md"]
+due = "thu 23:59"
+
+# A9 runs in class on Thursday of calendar week 15 (instruction week 14), Dec 3,
+# and is due that night.
+[override."activities/a9-who-are-you-talking-to.md"]
 due = "thu 23:59"
 
 # M1 is a one hour take home mini-lab, due Thursday of week 6 (Oct 1) with the
@@ -239,13 +264,17 @@ canvas = [
 [[module]]
 title  = "Week 9-10: The Network Layer - Control Plane"
 page   = "notes/ch05-network-control.md"
-items  = ["assignments/p3.md"]
+items  = [
+    "activities/a5-errors-on-purpose.md",
+    "assignments/p3.md",
+    "activities/a6-who-carries-your-packets.md",
+]
 canvas = [{ quiz = 395699, title = "Chapter 5 - knowledge check" }]
 
 [[module]]
 title  = "Week 11-12: The Link Layer and LANs"
 page   = "notes/ch06-link.md"
-items  = ["activities/a5-one-hop-at-a-time.md"]
+items  = ["activities/a7-one-hop-at-a-time.md"]
 canvas =[{ quiz = 395701, title = "Chapter 6 - Knowledge check" }]
 
 # The knowledge check comes before P4 here, so it is listed inline in `items`
@@ -256,6 +285,7 @@ page  = "notes/ch07-wireless.md"
 items = [
     { quiz = 395702, title = "Chapter 7 - Knowledge check" },
     "assignments/p4.md",
+    "activities/a8-noisy-link.md",
 ]
 
 # The module names count calendar weeks, so Thanksgiving is week 14 here. The
@@ -272,6 +302,7 @@ items = [{ header = "Thanksgiving Break - No Class" }]
 title = "Week 15-16: Security in Computer Networks"
 page  = "notes/ch08-security.md"
 items = [
+    "activities/a9-who-are-you-talking-to.md",
     "extra-credit/ec-evaluation.md",
     "extra-credit/ec-typos.md",
     "extra-credit/ec-general.md",

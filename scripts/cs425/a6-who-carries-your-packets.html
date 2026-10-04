@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A6 Worksheet</title>
+<style>
+  @page { size: letter; margin: 0.55in 0.6in 0.5in 0.6in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 10pt/1.35 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.6pt; }
+
+  .page { page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+  .box, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 10.5pt; margin: 9pt 0 4pt; text-transform: uppercase;
+       letter-spacing: 0.8pt; border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.8pt; margin: 8pt 0 3pt; }
+  p  { margin: 0 0 5pt; }
+  .lead { font-size: 8.6pt; font-style: italic; margin-bottom: 5pt; }
+  .tiny { font-size: 8pt; }
+  .dim  { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 7pt; }
+  .mast .right { text-align: right; font-size: 8.5pt; line-height: 1.3; }
+  .runner { font-size: 8pt; border-bottom: 1pt solid #000; padding-bottom: 3pt;
+            margin-bottom: 8pt; display: flex; justify-content: space-between;
+            text-transform: uppercase; letter-spacing: 0.6pt; }
+
+  .names { margin: 4pt 0 8pt; font-size: 9.5pt; }
+  .names div { margin-bottom: 6pt; }
+  .rule { display: inline-block; border-bottom: 0.75pt solid #000; vertical-align: baseline; }
+  .r-sm { width: 90pt; } .r-md { width: 150pt; } .r-lg { width: 235pt; }
+
+  .lines > div { border-bottom: 0.75pt solid #999; height: 14pt; }
+  .lines.tight > div { height: 12.5pt; }
+
+  .box { border: 1pt solid #000; padding: 4pt 8pt; margin-bottom: 6pt; }
+  .box.fill { background: #f0f0f0; }
+  .box h3 { margin-top: 0; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 2pt 4pt; vertical-align: top;
+           text-align: left; font-size: 8.3pt; }
+  th { background: #e4e4e4; font-size: 8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+  td.h { height: 19pt; }
+  td.hh { height: 34pt; }
+  .cmdcell { font-family: "SF Mono","Menlo","Consolas",monospace; font-size: 7.9pt; }
+
+  pre.setup { margin: 0 0 5pt; padding: 4pt 7pt; border: 0.75pt solid #000; background: #fff;
+              font-family: "SF Mono","Menlo","Consolas",monospace; font-size: 8pt; line-height: 1.35;
+              white-space: pre-wrap; word-break: break-word; }
+
+  ol, ul { margin: 0 0 6pt; padding-left: 16pt; }
+  li { margin-bottom: 3pt; }
+  ol.q > li { margin-bottom: 5pt; }
+  /* Two pages, run a little tighter than the older sheets, like A4's. */
+  body { font-size: 9.4pt; }
+  .lines > div { height: 12.5pt; }
+  td.h { height: 14pt; }
+  pre.setup { font-size: 7.6pt; line-height: 1.3; padding: 3pt 6pt; }
+  .box { padding: 3pt 7pt; margin-bottom: 4pt; }
+  h2 { margin: 7pt 0 3pt; }
+</style>
+</head>
+<body>
+
+<!-- ============================ PAGE 1 ============================ -->
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A6 &middot; Who Carries Your Packets?</h1>
+      <div class="tiny">CS425 Computer Networks &middot; instructor led &middot; every command runs on Onyx (<span class="mono">ssh onyx</span>)</div>
+    </div>
+    <div class="right">
+      <strong>TURN THIS IN ON PAPER</strong><br>
+      before you leave the room<br>
+      <span class="dim">graded pass/fail</span>
+    </div>
+  </div>
+
+  <div class="names">
+    <div>Names <span class="rule" style="width:360pt"></span> &nbsp; Date <span class="rule r-sm"></span></div>
+  </div>
+
+  <p class="tiny" style="margin-bottom:4pt">Every round: <strong>predict</strong> first, in ink, then <strong>run</strong>
+  the command with the projector, then <strong>check</strong>. A wrong prediction costs nothing. A prediction written
+  afterwards is not a prediction.</p>
+
+  <h2>Round 1 &middot; who owns Onyx's address? &nbsp;<span class="mono" style="text-transform:none;letter-spacing:0">dig +short TXT ... .cymru.com</span></h2>
+
+  <table>
+    <tr><th style="width:250pt">Question</th><th>Answer</th></tr>
+    <tr><td><strong>Predict:</strong> prefix length Boise State announces for Onyx's address (Onyx's own table says /25)</td><td class="h"></td></tr>
+    <tr><td>AS number and name &middot; prefix announced</td><td class="h"></td></tr>
+    <tr><td>How many addresses are in that prefix?</td><td class="h"></td></tr>
+  </table>
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt"><strong>Q1.</strong> Why announce one big prefix instead of all the little
+    subnets? Who knows about the /25, and which kind of routing protocol tells them?</p>
+    <div class="lines"><div></div><div></div><div></div></div>
+  </div>
+
+  <h2>Round 2 &middot; map the trace onto the ASes &nbsp;<span class="mono" style="text-transform:none;letter-spacing:0">mtr -n -z -T -P 443 -r -c 3 mirrors.xmission.com</span></h2>
+
+  <table>
+    <tr><th style="width:250pt">Question</th><th>Answer</th></tr>
+    <tr><td><strong>Predict:</strong> how many ASes do the 13 routers belong to?</td><td class="h"></td></tr>
+    <tr><td>The AS path from Onyx to XMission, as numbers</td><td class="h"></td></tr>
+    <tr><td>The same path, as company names</td><td class="h"></td></tr>
+  </table>
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt"><strong>Q2.</strong> Between which pairs of hops does the packet cross from one
+    AS into another (where eBGP lives)? Which hops are inside one AS, where an intra-AS protocol like OSPF decides?</p>
+    <div class="lines"><div></div><div></div><div></div></div>
+  </div>
+
+  <h2>Round 3 &middot; Boise State from the outside &nbsp;<span class="mono" style="text-transform:none;letter-spacing:0">RIPEstat: asn-neighbours, looking-glass</span></h2>
+
+  <table>
+    <tr><th style="width:250pt">Question</th><th>Answer</th></tr>
+    <tr><td><strong>Predict:</strong> how many ASes does Boise State exchange routes with?</td><td class="h"></td></tr>
+    <tr><td>Which ones? (number and name)</td><td class="h"></td></tr>
+    <tr><td><strong>Predict:</strong> of 298 paths, how many through Zayo &middot; through IRON?</td><td class="h"></td></tr>
+    <tr><td>Actual: through Zayo &middot; through IRON</td><td class="h"></td></tr>
+  </table>
+
+</section>
+
+<!-- ============================ PAGE 2 ============================ -->
+<section class="page">
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt"><strong>Q3.</strong> Why would a university pay for two providers instead of
+    one? Both neighbors are <span class="mono">left</span> and none are <span class="mono">right</span>: does Boise State carry
+    traffic <strong>between</strong> other networks? If AS 6461 got a route whose AS-PATH already contained 6461, what would
+    it do, and why?</p>
+    <div class="lines"><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
+
+  <h2>Round 4 &middot; near is not fast &nbsp;<span class="mono" style="text-transform:none;letter-spacing:0">mtr -n -z -T -P 443 -r -c 3 8.8.8.8</span></h2>
+
+  <table>
+    <tr><th style="width:250pt">Question</th><th>Answer</th></tr>
+    <tr><td><strong>Predict:</strong> faster to answer, Google's 8.8.8.8 or XMission (475 km)?</td><td class="h"></td></tr>
+    <tr><td><strong>Predict:</strong> ASes on the way to Google</td><td class="h"></td></tr>
+    <tr><td>Actual: time to Google &middot; time to XMission &middot; AS path to Google</td><td class="h"></td></tr>
+  </table>
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt"><strong>Q4.</strong> Light in fiber covers about 200 km per millisecond. How far
+    away could the 8.8.8.8 that answered be? Google announces 8.8.8.8 from many places (anycast): which copy do you reach,
+    and who decides? The first Lumen router on the XMission path is already 27 ms away. What does that suggest?</p>
+    <div class="lines"><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt"><strong>Exit.</strong> Boise State wants all outbound traffic to go through
+    IRON whenever IRON can reach the destination, even when the path through Zayo is shorter. Which BGP route selection
+    rule does that, and why does the shorter AS-PATH not win?</p>
+    <div class="lines"><div></div><div></div><div></div><div></div></div>
+  </div>
+
+  <p class="tiny dim" style="text-align:center;margin-top:4pt">Graded pass/fail on something in every box. Hand this in
+  before you leave.</p>
+
+</section>
+
+</body>
+</html>

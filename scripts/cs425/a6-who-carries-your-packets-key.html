@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A6 Answer Key</title>
+<style>
+  @page { size: letter; margin: 0.5in 0.55in 0.45in 0.55in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 9.3pt/1.33 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.1pt; }
+
+  .page { page-break-after: auto; }
+  .demo, .box, .ans, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 9.8pt; margin: 10pt 0 5pt; text-transform: uppercase; letter-spacing: 0.8pt;
+       border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.4pt; margin: 7pt 0 3pt; }
+  p { margin: 0 0 4pt; }
+  .tiny { font-size: 8.1pt; }
+  .dim { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 4pt; }
+  .mast .right { text-align: right; }
+  .stamp { display: inline-block; background: #000; color: #fff; padding: 3pt 8pt;
+           font-size: 8.5pt; font-weight: bold; letter-spacing: 1pt; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 3pt 5pt; vertical-align: top; text-align: left; font-size: 8.2pt; }
+  th { background: #e4e4e4; font-size: 7.8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+
+  .demo { border: 0.75pt solid #000; margin-bottom: 7pt; }
+  .demo .hd { background: #e4e4e4; padding: 3pt 6pt; font-size: 8.3pt; font-weight: bold;
+              border-bottom: 0.75pt solid #000; }
+  .demo pre { margin: 0; padding: 5pt 6pt; font-family: "SF Mono","Menlo","Consolas",monospace;
+              font-size: 7.5pt; line-height: 1.32; white-space: pre-wrap; word-break: break-word; }
+  .demo .say { padding: 4pt 6pt; border-top: 0.75pt dashed #666; font-size: 8.1pt; background: #f7f7f7; }
+  .demo .say b { text-transform: uppercase; font-size: 7.6pt; letter-spacing: 0.5pt; }
+  .cmd { font-weight: bold; }
+
+  .ans { border-left: 3pt solid #000; padding: 3pt 0 3pt 8pt; margin: 0 0 6pt; }
+  .ans .q { font-weight: bold; }
+  .box { border: 1pt solid #000; padding: 5pt 7pt; margin-bottom: 7pt; }
+  .box.fill { background: #eee; }
+  .box h3 { margin-top: 0; }
+  .bar { border: 1pt dashed #000; padding: 3pt 7pt; margin-bottom: 7pt; font-size: 8.1pt; background: #f6f6f6; }
+  .bar strong { text-transform: uppercase; letter-spacing: 0.6pt; font-size: 7.6pt; }
+
+  ol, ul { margin: 0 0 5pt; padding-left: 15pt; }
+  li { margin-bottom: 3pt; }
+  .push { font-size: 8.1pt; }
+  .push li { margin-bottom: 2.5pt; }
+</style>
+</head>
+<body>
+
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A6 &middot; Answer Key and Demo Script</h1>
+      <div class="tiny">CS425 &middot; Who Carries Your Packets? &middot; instructor led</div>
+    </div>
+    <div class="right"><span class="stamp">INSTRUCTOR COPY</span></div>
+  </div>
+  <p class="tiny dim" style="margin-bottom:8pt">Every transcript below is real output captured on
+  <span class="mono">onyx.boisestate.edu</span> on October 4, 2026. Hops, times and the RIPEstat counts will drift; the
+  shapes will not. About 40 minutes: 8, 10, 12, 6, then 4 for the exit question.</p>
+
+  <div class="box fill">
+    <h3>Say this at the start</h3>
+    <p class="tiny" style="margin:0">"The Internet is not one network, it is more than 70,000 of them, and Boise State is
+    one. Today we find out which one, who it pays to reach everybody else, and what the rest of the world sees when it
+    looks back at us. Everyone <span class="mono">ssh onyx</span>." Then hand out the sheet.</p>
+  </div>
+
+  <h2>Round 1 &middot; who owns Onyx's address?</h2>
+  <div class="demo">
+    <div class="hd">dig +short TXT 11.227.178.132.origin.asn.cymru.com &nbsp;then&nbsp; AS46662.asn.cymru.com</div>
+<pre>"46662 | 132.178.0.0/16 | US | arin | 1988-12-05"
+"46662 | US | arin | 2008-11-07 | BSU-AS - Boise State University, US"</pre>
+    <div class="say"><b>Say</b> "The address goes in backwards, like a reverse DNS lookup, because DNS names get more specific to the left."</div>
+  </div>
+  <div class="ans"><span class="q">Prefix.</span> AS 46662, BSU-AS, announces <span class="mono">132.178.0.0/16</span>:
+  2<sup>16</sup> = 65,536 addresses. Shorter than the /25, and it covers Onyx's /25 and every other campus subnet.</div>
+  <div class="ans"><span class="q">Q1.</span> Aggregation: one route for the whole campus keeps every BGP table on the
+  Internet smaller, and the outside world does not need to know how campus carves up its block. Only routers
+  <strong>inside</strong> AS 46662 know the /25, and they learn it from the intra-AS protocol (OSPF or similar, 5.3). BGP
+  carries only the /16 (5.4).</div>
+
+  <h2>Round 2 &middot; map the trace onto the ASes</h2>
+  <div class="demo">
+    <div class="hd">mtr -n -z -T -P 443 -r -c 3 mirrors.xmission.com</div>
+<pre>  1. AS46662  132.178.227.1        0.0%     3    0.7   0.6   0.6   0.7   0.0
+  2. AS???    ???                 100.0     3    0.0   0.0   0.0   0.0   0.0
+  3. AS46662  132.178.1.147        0.0%     3    0.6   0.7   0.6   0.9   0.1
+  4. AS46662  132.178.1.98         0.0%     3    1.3   1.4   1.3   1.5   0.1
+  5. AS6461   209.249.232.13       0.0%     3    1.3   1.7   1.2   2.6   0.8
+  6-9. AS???  ???                 100.0
+ 10. AS3356   4.69.220.109         0.0%     3   27.8  27.8  27.2  28.4   0.6
+ 11. AS3356   4.35.168.186         0.0%     3   51.7  52.2  51.7  52.5   0.4
+ 12. AS6315   166.70.1.2           0.0%     3   52.2  52.0  51.8  52.2   0.2
+ 13. AS6315   198.60.22.13         0.0%     3   51.8  51.9  51.8  52.0   0.1</pre>
+  </div>
+  <div class="ans"><span class="q">Count.</span> 4 ASes: 46662 Boise State, 6461 Zayo, 3356 Lumen (still registered as LEVEL3),
+  6315 XMission. AS path: <span class="mono">46662 6461 3356 6315</span>. BGP writes the AS-PATH newest first with the origin
+  last, so the route Boise State's routers hold for XMission reads <span class="mono">6461 3356 6315</span>.</div>
+  <div class="ans"><span class="q">Q2.</span> Crossings: hop 4 to 5 (Boise State to Zayo), somewhere in 5 to 10 (Zayo to
+  Lumen, hidden by the silent hops), 11 to 12 (Lumen to XMission). Hops 1 to 4 are inside Boise State, 10 to 11 inside
+  Lumen, 12 to 13 inside XMission; the silent hops 6 to 9 are probably inside Zayo. Thirteen routers, four ASes: BGP only
+  ever sees the four.</div>
+
+</section>
+
+<section class="page">
+
+  <h2>Round 3 &middot; Boise State from the outside</h2>
+  <div class="demo">
+    <div class="hd">RIPEstat asn-neighbours for AS46662, then the looking glass for 132.178.0.0/16</div>
+<pre>{"asn":46435,"type":"left","power":33,"v4_peers":43,"v6_peers":0}
+{"asn":6461,"type":"left","power":223,"v4_peers":292,"v6_peers":0}
+"46435 | US | arin | 2008-09-17 | IRON - IRON, US"
+
+     10 24482 6461 46662
+      4 6461 46662
+      4 14840 3356 46435 46662
+     ...
+     40 46435
+    258 6461</pre>
+    <div class="say"><b>Say</b> "Read a path right to left: that is the order the route was passed along, starting from us."</div>
+  </div>
+  <div class="ans"><span class="q">Neighbors.</span> Two, both providers: AS 6461 Zayo and AS 46435 IRON (Idaho Regional
+  Optical Network). Of 298 paths, 258 come in through Zayo and 40 through IRON.</div>
+  <div class="ans"><span class="q">Q3.</span> Two providers is <strong>multihoming</strong>: if one link or provider fails,
+  BGP withdraws those routes and traffic shifts to the other. No <span class="mono">right</span> neighbors means nobody reaches
+  the Internet through Boise State and it announces only its own /16: it is a <strong>stub</strong> AS, not a transit
+  AS, and its providers are paid to carry its traffic. A route whose AS-PATH already holds 6461 has been through Zayo
+  once, so Zayo <strong>rejects</strong> it: that is AS-PATH loop detection (5.4).</div>
+  <div class="bar"><strong>Fast group</strong> &nbsp;Why do most of the world's routers pick Zayo? Route selection is local
+  preference first, then path length. IRON is a regional network that buys its own transit (its paths run through Lumen,
+  <span class="mono">3356 46435 46662</span>), so the route through IRON is usually one AS longer than the route through
+  Zayo. That is the likely story, not something the data proves.</div>
+
+  <h2>Round 4 &middot; near is not fast</h2>
+  <div class="demo">
+    <div class="hd">mtr -n -z -T -P 443 -r -c 3 8.8.8.8</div>
+<pre>  1. AS46662  132.178.227.1        0.0%     3    0.7   0.6   0.6   0.7   0.0
+  3-4. AS46662  132.178.1.147, 132.178.1.98
+  5. AS6461   209.249.232.13       0.0%     3    1.2   1.3   1.2   1.4   0.1
+  6-8. AS???  ???                 100.0
+  9. AS15169  142.250.169.166      0.0%     3   11.3  11.4  11.3  11.5   0.1
+ 10-11. AS15169  (two or three addresses per hop)
+ 12. AS15169  8.8.8.8              0.0%     3   11.5  15.5  11.5  18.6   3.6</pre>
+  </div>
+  <div class="ans"><span class="q">Answers.</span> Google, about 11 ms, versus about 52 ms to Salt Lake City. AS path
+  <span class="mono">46662 6461 15169</span>: 3 ASes, so Zayo hands traffic straight to Google.</div>
+  <div class="ans"><span class="q">Q4.</span> 11 ms round trip is at most about 1,100 km each way, and less in practice. Because
+  8.8.8.8 is <strong>anycast</strong>, you reach whichever copy BGP gives you the best route to: Zayo hears 8.8.8.8 from
+  Google in many places and picks one by its own policy. On the XMission path, 27 ms at the first Lumen router means the
+  packet went a long way before Zayo handed it to Lumen, probably to some city where the two connect, then back to Salt
+  Lake. BGP picks paths by policy and AS hops, not by kilometers. The <span class="mono">mtr</span> lines with more than one
+  address at hops 10 and 11 are Google balancing load across parallel routers.</div>
+
+  <h2>Exit question</h2>
+  <div class="ans"><strong>Local preference.</strong> Boise State gives routes learned from IRON a higher local preference,
+  and every router in the AS prefers them. Local preference is the <strong>first</strong> rule in route selection, so it is
+  decided before AS-PATH length is ever compared. BGP is policy first: who you pay, and how much, beats how short the path
+  is.</div>
+
+  <h2>Grading</h2>
+  <p class="tiny">Pass/fail, 20 points. Pass when every box has something in it. Wrong predictions are fine; that is what they are for.</p>
+
+</section>
+
+</body>
+</html>

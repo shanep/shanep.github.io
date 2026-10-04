@@ -1,10 +1,9 @@
 ---
 next: false
 prev: false
-draft: true
 ---
 
-# A5 - One Hop at a Time
+# A7 - One Hop at a Time
 
 **Week 11 · 20 points · pass/fail · one paper worksheet per group, turned in before you leave**
 
@@ -56,18 +55,23 @@ ssh onyx
 ip -br link
 ```
 
-<!-- TODO: replace with real output from Onyx before this page loses draft: true -->
-
 ```text
 lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP>
-eno12399np0      UP             xx:xx:xx:xx:xx:xx <BROADCAST,MULTICAST,UP,LOWER_UP>
+eno8303          DOWN           e8:cf:83:2c:2c:b9 <NO-CARRIER,BROADCAST,MULTICAST,UP>
+eno8403          DOWN           e8:cf:83:2c:2c:ba <NO-CARRIER,BROADCAST,MULTICAST,UP>
+eno12399np0      UP             6c:92:cf:db:68:50 <BROADCAST,MULTICAST,UP,LOWER_UP>
+eno12409np1      DOWN           6c:92:cf:db:68:51 <NO-CARRIER,BROADCAST,MULTICAST,UP>
 ```
+
+Onyx has four network ports, and only one of them is plugged in. From here on,
+`eno12399np0` is the only one that matters.
 
 **Predict:** if Onyx were unplugged and moved to a different building on campus,
 on a different subnet, which of its two addresses would change?
 
 **Check:** a MAC address is 48 bits, written as 6 bytes in hex. The first 3 bytes
-are the **OUI**, the block of addresses a vendor bought from the IEEE. Write the
+are the **OUI**, the block of addresses a vendor bought from the IEEE. I will look
+up who owns `6c:92:cf` on the projector. Write the
 first byte of Onyx's MAC in binary. The lowest bit says unicast (0) or multicast
 (1), and the bit next to it says globally unique (0) or **locally administered**
 (1). Which is Onyx's?
@@ -87,6 +91,13 @@ how it gets one. Look at Onyx's ARP cache:
 ip neigh show dev eno12399np0
 ```
 
+```text
+132.178.227.1 lladdr 0c:d0:f8:cf:ec:eb REACHABLE
+```
+
+One entry. Onyx talks to hosts all over the Internet all day, and the only MAC
+address it knows is the gateway's.
+
 **Predict:** Onyx is about to ping `8.8.8.8`. Afterwards, will `8.8.8.8` be in
 this table? If not, whose MAC address does Onyx put in the frame?
 
@@ -96,14 +107,21 @@ ip neigh show 8.8.8.8
 ip neigh show 132.178.227.1
 ```
 
-<!-- TODO: replace with real output from Onyx before this page loses draft: true -->
-
 ```text
-132.178.227.1 lladdr xx:xx:xx:xx:xx:xx REACHABLE
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+
+--- 8.8.8.8 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+132.178.227.1 dev eno12399np0 lladdr 0c:d0:f8:cf:ec:eb REACHABLE
 ```
 
-**Check:** the first command prints nothing at all. Why does Onyx never ARP for
-`8.8.8.8`? Then fill in the four addresses on the frame that leaves Onyx carrying
+The ping never gets an answer, because something past the gateway drops it. That
+does not matter today. The request still left Onyx, and the frame carrying it
+had to be addressed to somebody.
+
+**Check:** `ip neigh show 8.8.8.8` printed nothing at all. Why does Onyx never
+ARP for `8.8.8.8`? Then fill in the four addresses on the frame that leaves Onyx carrying
 that ping:
 
 | Field | Address |
@@ -165,7 +183,7 @@ and why can it not? (section 6.7)
 
 ## Worksheet
 
-**Download: [a5-worksheet.pdf](./a5-worksheet.pdf)**
+**Download: [a7-worksheet.pdf](./a7-worksheet.pdf)**
 
 The printed worksheet is two pages: a box per round for the prediction, the
 result, and the check questions, plus the exit question.
@@ -177,16 +195,19 @@ Instructor note, not shown to students.
 **Print the worksheet, and the key for yourself.**
 
 ```bash
-./scripts/cs425/a5-one-hop-at-a-time.sh handout
-./scripts/cs425/a5-one-hop-at-a-time.sh key
+./scripts/cs425/a7-one-hop-at-a-time.sh handout
+./scripts/cs425/a7-one-hop-at-a-time.sh key
 ```
 
 The key stays in `scripts/cs425/` and never goes in `docs/public/`.
 
-**Not yet rehearsed on Onyx.** The transcripts in rounds 1 and 2 are
-placeholders. Run the commands on Onyx, paste the real output here and into the
-key, then drop `draft: true` and add `activities/a5-worksheet.pdf` to `files` in
-`canvas.toml`. Rounds 3 and 4 are paper only and need no rehearsal.
+**Rehearsed on Onyx on October 4, 2026.** The transcripts in rounds 1 and 2 are
+real output from that run. Rounds 3 and 4 are paper only, and their answers were
+checked by script. No testbed is needed, only Onyx and `ssh onyx`.
+
+**The ping to `8.8.8.8` gets no reply from Onyx.** The gateway answers ICMP (A4
+round 3), so it is dropped somewhere further out. It does not hurt the round,
+since the point is the frame that leaves Onyx, but say so before someone asks.
 
 **Budget.** About 8 minutes for round 1, 10 each for rounds 2 to 4, and 2 for the
 exit question. Round 2's address table is the one to slow down on: it is the

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A8 Answer Key</title>
+<style>
+  @page { size: letter; margin: 0.5in 0.55in 0.45in 0.55in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 9.3pt/1.33 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.1pt; }
+
+  .page { page-break-after: auto; }
+  .demo, .box, .ans, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 9.8pt; margin: 10pt 0 5pt; text-transform: uppercase; letter-spacing: 0.8pt;
+       border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.4pt; margin: 7pt 0 3pt; }
+  p { margin: 0 0 4pt; }
+  .tiny { font-size: 8.1pt; }
+  .dim { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 4pt; }
+  .mast .right { text-align: right; }
+  .stamp { display: inline-block; background: #000; color: #fff; padding: 3pt 8pt;
+           font-size: 8.5pt; font-weight: bold; letter-spacing: 1pt; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 3pt 5pt; vertical-align: top; text-align: left; font-size: 8.2pt; }
+  th { background: #e4e4e4; font-size: 7.8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+
+  .demo { border: 0.75pt solid #000; margin-bottom: 7pt; }
+  .demo .hd { background: #e4e4e4; padding: 3pt 6pt; font-size: 8.3pt; font-weight: bold;
+              border-bottom: 0.75pt solid #000; }
+  .demo pre { margin: 0; padding: 5pt 6pt; font-family: "SF Mono","Menlo","Consolas",monospace;
+              font-size: 7.5pt; line-height: 1.32; white-space: pre-wrap; word-break: break-word; }
+  .demo .say { padding: 4pt 6pt; border-top: 0.75pt dashed #666; font-size: 8.1pt; background: #f7f7f7; }
+  .demo .say b { text-transform: uppercase; font-size: 7.6pt; letter-spacing: 0.5pt; }
+  .cmd { font-weight: bold; }
+
+  .ans { border-left: 3pt solid #000; padding: 3pt 0 3pt 8pt; margin: 0 0 6pt; }
+  .ans .q { font-weight: bold; }
+  .box { border: 1pt solid #000; padding: 5pt 7pt; margin-bottom: 7pt; }
+  .box.fill { background: #eee; }
+  .box h3 { margin-top: 0; }
+  .bar { border: 1pt dashed #000; padding: 3pt 7pt; margin-bottom: 7pt; font-size: 8.1pt; background: #f6f6f6; }
+  .bar strong { text-transform: uppercase; letter-spacing: 0.6pt; font-size: 7.6pt; }
+
+  ol, ul { margin: 0 0 5pt; padding-left: 15pt; }
+  li { margin-bottom: 3pt; }
+  .push { font-size: 8.1pt; }
+  .push li { margin-bottom: 2.5pt; }
+</style>
+</head>
+<body>
+
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A8 &middot; Answer Key and Demo Script</h1>
+      <div class="tiny">CS425 &middot; TCP on a Noisy Link &middot; instructor led</div>
+    </div>
+    <div class="right"><span class="stamp">INSTRUCTOR COPY</span></div>
+  </div>
+  <p class="tiny dim" style="margin-bottom:8pt">Every transcript below is real output captured on
+  <span class="mono">onyx.boisestate.edu</span> on October 4, 2026. The loss is random, so the numbers move from run to run,
+  but the shape does not. About 45 minutes: 10, 10, 10, 11, then 4 for the exit question.</p>
+
+  <div class="box fill">
+    <h3>Say this at the start</h3>
+    <p class="tiny" style="margin:0">"Chapter 7 says TCP does badly on wireless links because it thinks noise is congestion.
+    Onyx has no radio, so we are going to build a bad link out of software and measure how badly. Everyone
+    <span class="mono">ssh onyx</span> and grab the meter. Predict before we run anything." Then hand out the sheet.</p>
+  </div>
+
+  <h2>Round 1 &middot; build a slow link</h2>
+  <div class="demo">
+    <div class="hd">unshare -rn bash &middot; ip link set lo up mtu 1500 &middot; ping, then tc, then ping again</div>
+<pre>64 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.050 ms
+qdisc netem 8004: root refcnt 2 limit 1000 delay 25ms rate 20Mbit seed 8230483813303860672
+64 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=50.2 ms</pre>
+    <div class="say"><b>Say</b> "Inside this shell you are root of a network with one interface in it. Nobody else on Onyx can
+    see it, and it is gone when you exit." Run <span class="mono" style="white-space:nowrap">ip -br link</span> to prove there is only <span class="mono">lo</span>.</div>
+  </div>
+  <div class="ans"><span class="q">RTT.</span> 0.05 ms before, 50.2 ms after. Most of the room predicts 25.</div>
+  <div class="ans"><span class="q">Q1.</span> The echo request leaves through <span class="mono">lo</span> and is held 25 ms, then the
+  reply leaves through <span class="mono">lo</span> and is held another 25 ms. One interface plays both directions of the link.</div>
+  <div class="ans"><span class="q">Transmission delay.</span> 1,500 &times; 8 = 12,000 bits / 20,000,000 bit/s = 0.6 ms. Small
+  next to 25 ms of propagation, which is why the ping barely notices the rate.</div>
+
+  <h2>Round 2 &middot; a clean link</h2>
+  <div class="demo">
+    <div class="hd">python3 tcpmeter.py</div>
+<pre> sec   Mbit/s   cwnd  ssthresh   rtt ms  retrans
+   1    12.37    128        80     95.3        0
+   2    16.02    191        80    127.5        0
+   5    18.22    427        80    256.2        0
+  10    19.85    823        80    493.8        0
+
+average 17.72 Mbit/s over 10 s, MSS 1448 bytes, 0 segments retransmitted</pre>
+    <div class="say"><b>Point at</b> the <span class="mono">rtt</span> column: the link has a 50 ms RTT and TCP is measuring ten times that.</div>
+  </div>
+  <div class="ans"><span class="q">Bandwidth-delay product.</span> 20,000,000 &times; 0.05 = 1,000,000 bits = 125,000 bytes, and
+  125,000 / 1,448 &asymp; 86 segments.</div>
+  <div class="ans"><span class="q">Q2.</span> In a queue. Everything past 86 segments waits in <span class="mono">netem</span>'s buffer,
+  the same as a router's output queue. 823 &minus; 86 = 737 segments &times; 1,448 &times; 8 &asymp; 8.5 Mbit, which takes
+  0.43 s to drain at 20 Mbit/s. Add the 50 ms base and you get about 480 ms, against 494 measured. CUBIC only backs off on
+  loss, so it keeps filling the buffer until it overflows. That is bufferbloat.</div>
+  <div class="bar"><strong>Fast group</strong> &nbsp;Why is <span class="mono">ssthresh</span> 80 with no loss? HyStart: CUBIC leaves slow
+  start early when it sees the RTT climbing, and sets <span class="mono">ssthresh</span> to the window at that moment.</div>
+
+  <h2>Grading</h2>
+  <p class="tiny">Pass/fail, 20 points. Pass when every box has something in it and the round 2 to 4 arithmetic was
+  attempted. Wrong predictions are fine; that is what they are for.</p>
+
+</section>
+
+<section class="page">
+
+  <h2>Round 3 &middot; add noise</h2>
+  <div class="demo">
+    <div class="hd">tc qdisc change dev lo root netem delay 25ms rate 20mbit loss 2% &middot; python3 tcpmeter.py</div>
+<pre> sec   Mbit/s   cwnd  ssthresh   rtt ms  retrans
+   1     7.46     21        19     51.5       13
+   2     3.39     10         9     54.2       21
+   5     2.07     10         8     53.3       32
+  10     1.59      4         3     62.3       53
+
+average 2.70 Mbit/s over 10 s, MSS 1448 bytes, 53 segments retransmitted</pre>
+    <div class="say"><b>Say</b> "Same link, still 20 Mbit/s, nothing full. TCP lost one segment in fifty and threw away 85% of the link."</div>
+  </div>
+  <div class="ans"><span class="q">Formula.</span> MSS = 1,448 &times; 8 = 11,584 bits. 11,584 / 0.05 = 231,680 bit/s. &radic;0.02 = 0.141.
+  1.22 &times; 231,680 / 0.141 &asymp; <strong>2.0 Mbit/s</strong>. Measured 2.7: the formula models Reno, and CUBIC with SACK does
+  a little better. Same ballpark is the point.</div>
+  <div class="ans"><span class="q">Q3.</span> TCP cannot tell noise from congestion. Every loss looks like a full router queue, so it
+  cuts the window (CUBIC to 70%, Reno to half). At 2% a loss comes every 50 segments or so, and the window sits around
+  10, nowhere near the 86 it needs. Section 7.6: it slows down for the wrong reason.</div>
+
+  <h2>Round 4 &middot; what 802.11 does about it</h2>
+  <div class="ans"><span class="q">Lost after 7 tries.</span> 0.2<sup>7</sup> = 0.0000128, about <strong>0.0013%</strong>.</div>
+  <div class="ans"><span class="q">Average tries.</span> 1 / (1 &minus; 0.2) = 1.25, so 20 / 1.25 = <strong>16 Mbit/s</strong> left for new
+  data. 20% loss per try costs 20% of the bandwidth, not 90% of it.</div>
+  <div class="ans"><span class="q">TCP's throughput.</span> No retries: 1.22 &times; 231,680 / &radic;0.2 &asymp; <strong>0.63 Mbit/s</strong>.
+  With retries the formula gives about 78 Mbit/s, more than the link has, so the link is the limit: <strong>about 16</strong>.</div>
+  <div class="demo">
+    <div class="hd">loss 20% &nbsp;then&nbsp; rate 16mbit loss 0.0013%</div>
+<pre>average 0.36 Mbit/s over 10 s, MSS 1448 bytes, 62 segments retransmitted
+average 14.31 Mbit/s over 10 s, MSS 1448 bytes, 0 segments retransmitted</pre>
+    <div class="say"><b>Say</b> "Forty times faster, same radio. The only difference is which layer fixed the loss."</div>
+  </div>
+  <div class="ans"><span class="q">Q4.</span> First run: TCP recovered every loss end to end, and read each one as congestion. Second run:
+  the link layer recovered it with 802.11's ACK and retransmit, one hop, and TCP never saw it. The second run is local
+  recovery. 0.36 is under the formula's 0.63 because at 20% loss timeouts dominate, and the formula assumes none.</div>
+
+  <h2>Exit question</h2>
+  <div class="ans">A radio's own transmission is far stronger at its antenna than anything it could receive, so it cannot listen
+  while it sends. With hidden terminals the collision happens at the access point anyway, where the sender could never hear
+  it. So 802.11 avoids collisions instead of detecting them (CSMA/CA): sense the channel, wait DIFS, back off a random time
+  that counts down only while the channel is idle, send the whole frame, and wait for an ACK. No ACK means retransmit with a
+  bigger backoff. Optional RTS/CTS: the AP's CTS reaches the hidden terminal, which stays quiet for the reserved time.</div>
+
+</section>
+
+</body>
+</html>

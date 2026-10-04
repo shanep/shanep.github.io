@@ -64,6 +64,22 @@
       "page_url": "",
       "title": "a4-worksheet.pdf"
     },
+    "activities/a9-who-are-you-talking-to.md": {
+      "canvas_id": "1822353",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "A9 - Who Are You Really Talking To?"
+    },
+    "activities/a9-worksheet.pdf": {
+      "canvas_id": "25309745",
+      "extra": {
+        "size": "117225"
+      },
+      "kind": "file",
+      "page_url": "",
+      "title": "a9-worksheet.pdf"
+    },
     "activities/index.md": {
       "canvas_id": "in-class-activities",
       "extra": {},
@@ -155,6 +171,15 @@
       "kind": "assignment",
       "page_url": "",
       "title": "P3 - Subnetting and Forwarding"
+    },
+    "assignments/p4-captures.zip": {
+      "canvas_id": "25309815",
+      "extra": {
+        "size": "5257"
+      },
+      "kind": "file",
+      "page_url": "",
+      "title": "p4-captures.zip"
     },
     "assignments/p4.md": {
       "canvas_id": "1811262",

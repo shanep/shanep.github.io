@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A5 Answer Key</title>
+<style>
+  @page { size: letter; margin: 0.5in 0.55in 0.45in 0.55in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 9.3pt/1.33 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.1pt; }
+
+  .page { page-break-after: auto; }
+  .demo, .box, .ans, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 9.8pt; margin: 10pt 0 5pt; text-transform: uppercase; letter-spacing: 0.8pt;
+       border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.4pt; margin: 7pt 0 3pt; }
+  p { margin: 0 0 4pt; }
+  .tiny { font-size: 8.1pt; }
+  .dim { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 4pt; }
+  .mast .right { text-align: right; }
+  .stamp { display: inline-block; background: #000; color: #fff; padding: 3pt 8pt;
+           font-size: 8.5pt; font-weight: bold; letter-spacing: 1pt; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 3pt 5pt; vertical-align: top; text-align: left; font-size: 8.2pt; }
+  th { background: #e4e4e4; font-size: 7.8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+
+  .demo { border: 0.75pt solid #000; margin-bottom: 7pt; }
+  .demo .hd { background: #e4e4e4; padding: 3pt 6pt; font-size: 8.3pt; font-weight: bold;
+              border-bottom: 0.75pt solid #000; }
+  .demo pre { margin: 0; padding: 5pt 6pt; font-family: "SF Mono","Menlo","Consolas",monospace;
+              font-size: 7.5pt; line-height: 1.32; white-space: pre-wrap; word-break: break-word; }
+  .demo .say { padding: 4pt 6pt; border-top: 0.75pt dashed #666; font-size: 8.1pt; background: #f7f7f7; }
+  .demo .say b { text-transform: uppercase; font-size: 7.6pt; letter-spacing: 0.5pt; }
+  .cmd { font-weight: bold; }
+
+  .ans { border-left: 3pt solid #000; padding: 3pt 0 3pt 8pt; margin: 0 0 6pt; }
+  .ans .q { font-weight: bold; }
+  .box { border: 1pt solid #000; padding: 5pt 7pt; margin-bottom: 7pt; }
+  .box.fill { background: #eee; }
+  .box h3 { margin-top: 0; }
+  .bar { border: 1pt dashed #000; padding: 3pt 7pt; margin-bottom: 7pt; font-size: 8.1pt; background: #f6f6f6; }
+  .bar strong { text-transform: uppercase; letter-spacing: 0.6pt; font-size: 7.6pt; }
+
+  ol, ul { margin: 0 0 5pt; padding-left: 15pt; }
+  li { margin-bottom: 3pt; }
+  .push { font-size: 8.1pt; }
+  .push li { margin-bottom: 2.5pt; }
+</style>
+</head>
+<body>
+
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A5 &middot; Answer Key and Demo Script</h1>
+      <div class="tiny">CS425 &middot; Errors on Purpose &middot; instructor led</div>
+    </div>
+    <div class="right"><span class="stamp">INSTRUCTOR COPY</span></div>
+  </div>
+  <p class="tiny dim" style="margin-bottom:8pt">Every transcript below is real output captured on
+  <span class="mono">onyx.boisestate.edu</span> on October 4, 2026. Hops and times will drift; the shapes will not.
+  About 40 minutes: 8, 8, 8, 12, then 4 for the exit question.</p>
+
+  <div class="box fill">
+    <h3>Say this at the start</h3>
+    <p class="tiny" style="margin:0">"In A4, tracepath counted routers by getting them to throw our packets away and
+    complain about it. Those complaints are ICMP. Today we send ICMP's most famous message and see how far it gets.
+    Everyone <span class="mono">ssh onyx</span>. Predict before we run anything." Then hand out the sheet.</p>
+  </div>
+
+  <h2>Round 1 &middot; is anybody out there?</h2>
+  <div class="demo">
+    <div class="hd">ping -c 3 8.8.8.8 &nbsp;then&nbsp; ping -c 3 132.178.227.1 &nbsp;then&nbsp; curl ... https://www.google.com</div>
+<pre>--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 2053ms
+
+64 bytes from 132.178.227.1: icmp_seq=1 ttl=254 time=0.603 ms
+...
+3 packets transmitted, 3 received, 0% packet loss, time 2028ms
+200</pre>
+    <div class="say"><b>Say</b> "Is Google down? Is Onyx off the Internet? Neither. Something between here and there does not like ping."</div>
+  </div>
+  <div class="ans"><span class="q">Q1.</span> Nothing is broken. The gateway answers echo requests, and TCP to port 443 at
+  Google works (<span class="mono">200</span>). ICMP echo requests leaving campus are filtered, while TCP 443 is allowed.
+  Ping tests one protocol on one path; it is not a test of "the network". Filtering by protocol and port is exactly what
+  a middlebox does (4.5).</div>
+
+  <h2>Round 2 &middot; traceroute by hand</h2>
+  <div class="demo">
+    <div class="hd">ping -c 1 -t 1 8.8.8.8 &nbsp;then -t 2, -t 3</div>
+<pre>From 132.178.227.1 icmp_seq=1 Time to live exceeded
+1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
+
+1 packets transmitted, 0 received, 100% packet loss, time 0ms   (-t 2)
+1 packets transmitted, 0 received, 100% packet loss, time 0ms   (-t 3)</pre>
+  </div>
+  <table>
+    <tr><th>TTL</th><th>What came back</th></tr>
+    <tr><td class="mono">-t 1</td><td>ICMP time exceeded (type 11, code 0) from the gateway, 132.178.227.1</td></tr>
+    <tr><td class="mono">-t 2</td><td>Nothing</td></tr>
+    <tr><td class="mono">-t 3</td><td>Nothing</td></tr>
+  </table>
+  <div class="ans"><span class="q">Q2.</span> The gateway: <span class="mono">From 132.178.227.1</span> is the source address of
+  the ICMP message, and the router that drops the datagram is the one that writes it. Silence does <strong>not</strong>
+  mean no router: round 4 shows a router at hop 3 that answers UDP probes. Either hop 2 does not send the message (or
+  rate limits it), or the echo request never reached hop 3. Round 4 settles which.</div>
+
+  <h2>Round 3 &middot; how do you know you arrived?</h2>
+  <div class="demo">
+    <div class="hd">python3: UDP datagram to 198.60.22.13 port 33434, then recv with a 3 second timeout</div>
+<pre>Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 6, in &lt;module&gt;
+ConnectionRefusedError: [Errno 111] Connection refused</pre>
+    <div class="say"><b>Say</b> "It came back in a few milliseconds, not 3 seconds. Somebody answered."</div>
+  </div>
+  <div class="ans"><span class="q">Q3.</span> Nothing was listening on port 33434, so XMission's server answered the UDP
+  datagram with ICMP <strong>port unreachable</strong> (type 3, code 3). Onyx's kernel matched the ICMP message to the
+  socket (the ICMP payload carries the original IP header and the first 8 bytes of the UDP header, so the ports are in
+  it) and reported it on the next call as <span class="mono">ECONNREFUSED</span>. That only works because the socket is
+  <span class="mono">connect()</span>ed. <span class="mono">127.0.0.1</span> gives the same error, from Onyx itself. This is how
+  <span class="mono">tracepath</span> printed <span class="mono">reached</span> in A4.</div>
+
+</section>
+
+<section class="page">
+
+  <h2>Round 4 &middot; same path, three ways</h2>
+  <div class="demo">
+    <div class="hd">mtr -n -r -c 5 mirrors.xmission.com &nbsp;(ICMP, the default)</div>
+<pre>  1.|-- 132.178.227.1              0.0%     5    0.6   0.6   0.6   0.7   0.1
+  2.|-- 10.1.2.53                 60.0%     5    0.5   0.5   0.5   0.5   0.0
+  3.|-- ???                       100.0     5    0.0   0.0   0.0   0.0   0.0</pre>
+  </div>
+  <div class="demo">
+    <div class="hd">mtr -n -u -r -c 5 mirrors.xmission.com &nbsp;(UDP; TCP with -T -P 443 looks the same)</div>
+<pre>  1.|-- 132.178.227.1              0.0%     5    0.7   0.6   0.5   0.7   0.1
+  2.|-- ???                       100.0     5    0.0   0.0   0.0   0.0   0.0
+  3.|-- 132.178.1.147              0.0%     5    0.8   0.8   0.8   0.9   0.1
+  4.|-- 132.178.1.98               0.0%     5    1.6   1.6   1.4   1.7   0.1
+  5.|-- 209.249.232.13             0.0%     5    1.6   1.5   1.2   1.7   0.2
+  6.|-- ???  ...  9.|-- ???       100.0
+ 10.|-- 4.69.220.109               0.0%     5   27.9  27.8  27.3  28.1   0.3
+ 11.|-- 4.35.168.186               0.0%     5   52.2  52.2  52.1  52.3   0.1
+ 12.|-- 166.70.1.2                 0.0%     5   52.3  52.2  52.1  52.4   0.1
+ 13.|-- 198.60.22.13               0.0%     5   52.2  52.1  52.1  52.2   0.0</pre>
+    <div class="say"><b>Say</b> "Same path, same moment, three different answers. The probe you pick changes what you see."</div>
+  </div>
+  <table>
+    <tr><th>Probe</th><th>Last hop that answered</th><th>Hop 2</th></tr>
+    <tr><td>ICMP echo</td><td>hop 2 (the trace stops at 3)</td><td><span class="mono">10.1.2.53</span>, 2 of 5 probes</td></tr>
+    <tr><td>UDP</td><td>hop 13, the server</td><td><span class="mono">???</span></td></tr>
+    <tr><td>TCP 443</td><td>hop 13, the server</td><td><span class="mono">???</span> (answered once in rehearsal)</td></tr>
+  </table>
+  <div class="ans"><span class="q">Q4.</span> Hop 2, or something right behind it. Hop 3 answers UDP and TCP probes every time,
+  and answers a direct ping, so it would almost certainly have answered a TTL-expired echo request too if one had reached it. None did, so
+  echo requests headed off campus are dropped at hop 2. Hop 2's address is <span class="mono">10.1.2.53</span>, an RFC 1918
+  private address: a box inside campus that is not meant to be reached from outside. Probably the campus firewall, but
+  that is not confirmed, so say "probably".</div>
+  <div class="ans"><span class="q">Q5.</span> Forwarding and answering are different jobs. Forwarding is the data plane,
+  done in hardware for every packet. Making an ICMP time exceeded message is work for the router's own CPU, the control
+  plane, and routers rate limit it, deprioritize it, or turn it off. A hop that loses 100% of the probes is a router that
+  does not talk back, not one that drops your traffic. Loss only matters if it carries through to the last hop.</div>
+  <div class="bar"><strong>If it happens live</strong> &nbsp;In one rehearsal the gateway took 1,032 ms to answer one TCP probe
+  while hop 3 behind it answered in 0.7 ms. A router behind it cannot be faster at forwarding; the gateway was just slow to
+  write the ICMP message. Same lesson as Q5.</div>
+
+  <h2>Exit question</h2>
+  <div class="ans">Any two of: the gateway answers ping, so ICMP works locally; <span class="mono">curl</span> to Google returned
+  <span class="mono">200</span>; UDP and TCP traces reached Salt Lake City; XMission's server answered round 3 with port
+  unreachable; the ICMP trace dies at a private address inside campus, so the drop is local policy, not a dead Internet.</div>
+
+  <h2>Grading</h2>
+  <p class="tiny">Pass/fail, 20 points. Pass when every box has something in it. Wrong predictions are fine; that is what they are for.</p>
+
+</section>
+
+</body>
+</html>
