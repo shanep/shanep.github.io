@@ -17,7 +17,22 @@ Install the [Remote
 Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 extension pack in VS Code. It includes Remote - SSH, which is the part we need.
 
-## Step 2 - Setup an SSH key
+## Step 2 - Connect to the VPN (off campus only)
+
+Onyx is only reachable from the campus network. When you are off campus you **must** connect to
+the Boise State VPN first, or every step below will just hang and time out. You can skip this step
+when you are on campus.
+
+1. Install the GlobalProtect VPN client from the [OIT VPN
+   page](https://www.boisestate.edu/oit/network/vpn-services/).
+2. When the client asks for a portal address, enter `bronco-vpn.boisestate.edu`. This is the
+   student portal, and it is **not** the default address the OIT instructions show.
+3. Click **Connect**, log in, and click **I Agree** on the welcome window.
+
+The [COEN IT VPN setup guide](https://docs.google.com/document/d/1dkMJf3NyVHfU60B-3RvWq_TBn4uyeF8g5PyjZCz2mUU/edit)
+has screenshots and instructions for installing the client on Linux.
+
+## Step 3 - Setup an SSH key
 
 Without an SSH key you will type your Onyx password every single time VS Code connects, and VS
 Code connects more often than you think. Setup a key once and you never type it again. You only
@@ -73,7 +88,7 @@ Now test it. You should land on Onyx without being asked for a password.
 ssh onyx
 ```
 
-## Step 3 - Connect from VS Code
+## Step 4 - Connect from VS Code
 
 1. Click the **Open a Remote Window** button in the lower left corner of VS Code and select
    **Connect to Host...** as shown below.
@@ -81,7 +96,7 @@ ssh onyx
    ![connect](images/vscode_connect.png)
 
 2. Select **onyx** from the list. VS Code reads the list from the `~/.ssh/config` file you created
-   in Step 2. If it asks what kind of server it is, select **Linux**.
+   in Step 3. If it asks what kind of server it is, select **Linux**.
 
 3. Wait. The first time you connect, VS Code installs its server on Onyx, which can take a minute
    or two. Do not close the window or cancel while it is installing, or the install can fail.
@@ -98,7 +113,7 @@ Depending on your operating system you may see slightly different popups than wh
 the screenshots. That is to be expected and should not stop you from connecting to Onyx.
 :::
 
-## Step 4 - Verify your connection
+## Step 5 - Verify your connection
 
 Once you are connected, check the following.
 
@@ -126,9 +141,23 @@ After the first time, getting back to your work is quick. You can do any of thes
 
 ## Troubleshooting
 
+::: details The connection times out
+If you are off campus, make sure you are connected to the VPN (Step 2). Onyx does not answer at
+all from outside the campus network, so a missing VPN connection looks like a hang and then a
+timeout.
+:::
+
+::: details The VPN will not connect
+Double check that the portal address is `bronco-vpn.boisestate.edu`. On a Mac, the computer name
+must only contain letters and numbers, so rename it if it has spaces or special characters, reboot,
+and try again. If it still will not connect, email COEN IT at COENITSVCS-group@boisestate.edu.
+Tell them you are trying to use the VPN to reach Onyx, which step is failing, the error message
+(screenshots help), and what you have already tried.
+:::
+
 ::: details It keeps asking for my password
 Your key is not being used. Run `ssh onyx` in a terminal on your laptop. If that also asks for a
-password, redo Step 2. If you see a permissions error, log in to Onyx and run
+password, redo Step 3. If you see a permissions error, log in to Onyx and run
 `chmod 700 ~/.ssh` and `chmod 600 ~/.ssh/authorized_keys`.
 :::
 
