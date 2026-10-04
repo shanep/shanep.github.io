@@ -64,6 +64,38 @@
       "page_url": "",
       "title": "a4-worksheet.pdf"
     },
+    "activities/a5-errors-on-purpose.md": {
+      "canvas_id": "1822357",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "A5 - Errors on Purpose"
+    },
+    "activities/a5-worksheet.pdf": {
+      "canvas_id": "25309993",
+      "extra": {
+        "size": "110859"
+      },
+      "kind": "file",
+      "page_url": "",
+      "title": "a5-worksheet.pdf"
+    },
+    "activities/a6-who-carries-your-packets.md": {
+      "canvas_id": "1822358",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "A6 - Who Carries Your Packets?"
+    },
+    "activities/a6-worksheet.pdf": {
+      "canvas_id": "25309995",
+      "extra": {
+        "size": "110810"
+      },
+      "kind": "file",
+      "page_url": "",
+      "title": "a6-worksheet.pdf"
+    },
     "activities/a7-one-hop-at-a-time.md": {
       "canvas_id": "1822356",
       "extra": {},
