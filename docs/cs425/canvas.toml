@@ -154,6 +154,10 @@ due = "fri 23:59"
 [override."activities/a3-claude-transport.md"]
 due = "tue 23:59"
 
+# A4 is due Thursday of week 7, Oct 8, a day after the Wednesday class.
+[override."activities/a4-where-does-it-go.md"]
+due = "thu 23:59"
+
 # M1 is a one hour take home mini-lab, due Thursday of week 6 (Oct 1) with the
 # usual two days of grace, rather than on a project Tuesday.
 [override."assignments/m1-copilot-cli.md"]
