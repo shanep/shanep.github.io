@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A4 Worksheet</title>
+<style>
+  @page { size: letter; margin: 0.55in 0.6in 0.5in 0.6in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 10pt/1.35 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.6pt; }
+
+  .page { page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+  .box, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 10.5pt; margin: 9pt 0 4pt; text-transform: uppercase;
+       letter-spacing: 0.8pt; border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.8pt; margin: 8pt 0 3pt; }
+  p  { margin: 0 0 5pt; }
+  .lead { font-size: 8.6pt; font-style: italic; margin-bottom: 5pt; }
+  .tiny { font-size: 8pt; }
+  .dim  { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 7pt; }
+  .mast .right { text-align: right; font-size: 8.5pt; line-height: 1.3; }
+  .runner { font-size: 8pt; border-bottom: 1pt solid #000; padding-bottom: 3pt;
+            margin-bottom: 8pt; display: flex; justify-content: space-between;
+            text-transform: uppercase; letter-spacing: 0.6pt; }
+
+  .names { margin: 4pt 0 8pt; font-size: 9.5pt; }
+  .names div { margin-bottom: 6pt; }
+  .rule { display: inline-block; border-bottom: 0.75pt solid #000; vertical-align: baseline; }
+  .r-sm { width: 90pt; } .r-md { width: 150pt; } .r-lg { width: 235pt; }
+
+  .lines > div { border-bottom: 0.75pt solid #999; height: 14pt; }
+  .lines.tight > div { height: 12.5pt; }
+
+  .box { border: 1pt solid #000; padding: 4pt 8pt; margin-bottom: 6pt; }
+  .box.fill { background: #f0f0f0; }
+  .box h3 { margin-top: 0; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 2pt 4pt; vertical-align: top;
+           text-align: left; font-size: 8.3pt; }
+  th { background: #e4e4e4; font-size: 8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+  td.h { height: 19pt; }
+  td.hh { height: 34pt; }
+  .cmdcell { font-family: "SF Mono","Menlo","Consolas",monospace; font-size: 7.9pt; }
+
+  pre.setup { margin: 0 0 5pt; padding: 4pt 7pt; border: 0.75pt solid #000; background: #fff;
+              font-family: "SF Mono","Menlo","Consolas",monospace; font-size: 8pt; line-height: 1.35;
+              white-space: pre-wrap; word-break: break-word; }
+
+  ol, ul { margin: 0 0 6pt; padding-left: 16pt; }
+  li { margin-bottom: 3pt; }
+  ol.q > li { margin-bottom: 5pt; }
+  /* One page: this sheet is deliberately small, so it runs a little tighter than the others. */
+  body { font-size: 9.4pt; }
+  .lines > div { height: 12.5pt; }
+  td.h { height: 14pt; }
+  pre.setup { font-size: 7.6pt; line-height: 1.3; padding: 3pt 6pt; }
+  .box { padding: 3pt 7pt; margin-bottom: 4pt; }
+  h2 { margin: 7pt 0 3pt; }
+</style>
+</head>
+<body>
+
+<!-- ============================ PAGE 1 ============================ -->
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A4 &middot; Where Does This Datagram Go?</h1>
+      <div class="tiny">CS425 Computer Networks &middot; instructor led &middot; every command runs on Onyx (<span class="mono">ssh onyx</span>)</div>
+    </div>
+    <div class="right">
+      <strong>TURN THIS IN ON PAPER</strong><br>
+      before you leave the room<br>
+      <span class="dim">graded pass/fail</span>
+    </div>
+  </div>
+
+  <div class="names">
+    <div>Names <span class="rule" style="width:360pt"></span> &nbsp; Date <span class="rule r-sm"></span></div>
+  </div>
+
+  <p class="tiny" style="margin-bottom:4pt">Every round: <strong>predict</strong> first, in ink, then <strong>run</strong>
+  the command with the projector, then <strong>check</strong>. A wrong prediction costs nothing. A prediction written
+  afterwards is not a prediction.</p>
+
+  <h2>Round 1 &middot; Onyx's address &nbsp;<span class="mono" style="text-transform:none;letter-spacing:0">ip -4 -br addr</span></h2>
+
+  <table>
+    <tr><th style="width:250pt">Question</th><th>Answer</th></tr>
+    <tr><td><strong>Predict:</strong> addresses in Onyx's subnet, and how many can be given to hosts</td><td class="h"></td></tr>
+    <tr><td>Onyx's address and prefix length, from the output</td><td class="h"></td></tr>
+    <tr><td>Last octet of Onyx's address in binary, with a line after the prefix bits</td><td class="h"></td></tr>
+    <tr><td>Network address &middot; broadcast address</td><td class="h"></td></tr>
+    <tr><td>Usable host range &middot; number of usable hosts</td><td class="h"></td></tr>
+    <tr><td>Is <span class="mono">132.178.227.200</span> on Onyx's subnet? Is Onyx's address private (RFC 1918)?</td><td class="h"></td></tr>
+  </table>
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt"><strong>Scratch.</strong> Work the binary here: the last octet of the
+    address, the last octet of the mask, and the last octet of <span class="mono">.200</span>.</p>
+    <div class="lines"><div></div><div></div><div></div></div>
+  </div>
+
+  <h2>Round 2 &middot; longest prefix match &nbsp;<span class="mono" style="text-transform:none;letter-spacing:0">ip route &middot; ip route get</span></h2>
+
+  <table>
+    <tr><th style="width:90pt">Destination</th><th>Predict: matching line</th><th style="width:80pt">Predict: direct or gateway</th><th>What <span class="mono" style="text-transform:none">ip route get</span> said</th></tr>
+    <tr><td class="mono">132.178.227.50</td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+    <tr><td class="mono">132.178.227.200</td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+    <tr><td class="mono">8.8.8.8</td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+    <tr><td class="mono">127.0.0.1</td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+  </table>
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt"><strong>Q1.</strong> <span class="mono">132.178.227.50</span> matches both
+    lines of the table. Why does it not go to the gateway? Where did the answer for <span class="mono">127.0.0.1</span>
+    come from, when it is not in <span class="mono">ip route</span>?</p>
+    <div class="lines tight"><div></div><div></div></div>
+  </div>
+
+</section>
+
+<!-- ============================ PAGE 2 ============================ -->
+<section class="page">
+
+  <h2>Round 3 &middot; how big can a datagram be? &nbsp;<span class="mono" style="text-transform:none;letter-spacing:0">ping -c 1 -M do -s SIZE 132.178.227.1</span></h2>
+
+  <table>
+    <tr><th style="width:250pt">Question</th><th>Answer</th></tr>
+    <tr><td>MTU of <span class="mono">eno12399np0</span>, from <span class="mono">ip link show</span></td><td class="h"></td></tr>
+    <tr><td><strong>Predict:</strong> the biggest <span class="mono">-s</span> payload that fits in one datagram</td><td class="h"></td></tr>
+    <tr><td>What happened at <span class="mono">-s 1472</span>? At <span class="mono">-s 1473</span>?</td><td class="h"></td></tr>
+  </table>
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt"><strong>Q2.</strong> Where did the other 28 bytes go? Did
+    <span class="mono">message too long</span> come from the network or from Onyx? Without <span class="mono">-M do</span>,
+    who would fragment the datagram, and who would reassemble it?</p>
+    <div class="lines"><div></div><div></div><div></div></div>
+  </div>
+
+  <h2>Round 4 &middot; counting routers with TTL &nbsp;<span class="mono" style="text-transform:none;letter-spacing:0">tracepath -n mirrors.xmission.com</span></h2>
+
+  <table>
+    <tr><th style="width:250pt">Question</th><th>Answer</th></tr>
+    <tr><td><strong>Predict:</strong> routers between Onyx and Salt Lake City (about 475 km)</td><td class="h"></td></tr>
+    <tr><td>Hops <span class="mono">tracepath</span> reported &middot; how many said <span class="mono">no reply</span></td><td class="h"></td></tr>
+  </table>
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt"><strong>Q3.</strong> How did <span class="mono">tracepath</span> learn the
+    address of hop 3? The trace reached the end despite the <span class="mono">no reply</span> hops. What does that tell you
+    about those routers?</p>
+    <div class="lines"><div></div><div></div><div></div><div></div></div>
+  </div>
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt"><strong>Exit.</strong> A traditional router forwards on the destination
+    address only. Name one other header field a middlebox on that path could match on, and what it might do with a
+    match.</p>
+    <div class="lines"><div></div><div></div></div>
+  </div>
+
+  <p class="tiny dim" style="text-align:center;margin-top:4pt">Graded pass/fail on something in every box. Hand this in
+  before you leave.</p>
+
+</section>
+
+</body>
+</html>

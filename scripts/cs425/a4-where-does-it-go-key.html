@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A4 Answer Key</title>
+<style>
+  @page { size: letter; margin: 0.5in 0.55in 0.45in 0.55in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 9.3pt/1.33 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.1pt; }
+
+  .page { page-break-after: auto; }
+  .demo, .box, .ans, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 9.8pt; margin: 10pt 0 5pt; text-transform: uppercase; letter-spacing: 0.8pt;
+       border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.4pt; margin: 7pt 0 3pt; }
+  p { margin: 0 0 4pt; }
+  .tiny { font-size: 8.1pt; }
+  .dim { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 4pt; }
+  .mast .right { text-align: right; }
+  .stamp { display: inline-block; background: #000; color: #fff; padding: 3pt 8pt;
+           font-size: 8.5pt; font-weight: bold; letter-spacing: 1pt; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 3pt 5pt; vertical-align: top; text-align: left; font-size: 8.2pt; }
+  th { background: #e4e4e4; font-size: 7.8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+
+  .demo { border: 0.75pt solid #000; margin-bottom: 7pt; }
+  .demo .hd { background: #e4e4e4; padding: 3pt 6pt; font-size: 8.3pt; font-weight: bold;
+              border-bottom: 0.75pt solid #000; }
+  .demo pre { margin: 0; padding: 5pt 6pt; font-family: "SF Mono","Menlo","Consolas",monospace;
+              font-size: 7.5pt; line-height: 1.32; white-space: pre-wrap; word-break: break-word; }
+  .demo .say { padding: 4pt 6pt; border-top: 0.75pt dashed #666; font-size: 8.1pt; background: #f7f7f7; }
+  .demo .say b { text-transform: uppercase; font-size: 7.6pt; letter-spacing: 0.5pt; }
+  .cmd { font-weight: bold; }
+
+  .ans { border-left: 3pt solid #000; padding: 3pt 0 3pt 8pt; margin: 0 0 6pt; }
+  .ans .q { font-weight: bold; }
+  .box { border: 1pt solid #000; padding: 5pt 7pt; margin-bottom: 7pt; }
+  .box.fill { background: #eee; }
+  .box h3 { margin-top: 0; }
+  .bar { border: 1pt dashed #000; padding: 3pt 7pt; margin-bottom: 7pt; font-size: 8.1pt; background: #f6f6f6; }
+  .bar strong { text-transform: uppercase; letter-spacing: 0.6pt; font-size: 7.6pt; }
+
+  ol, ul { margin: 0 0 5pt; padding-left: 15pt; }
+  li { margin-bottom: 3pt; }
+  .push { font-size: 8.1pt; }
+  .push li { margin-bottom: 2.5pt; }
+</style>
+</head>
+<body>
+
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A4 &middot; Answer Key and Demo Script</h1>
+      <div class="tiny">CS425 &middot; Where Does This Datagram Go? &middot; instructor led</div>
+    </div>
+    <div class="right"><span class="stamp">INSTRUCTOR COPY</span></div>
+  </div>
+  <p class="tiny dim" style="margin-bottom:8pt">Every transcript below is real output captured on
+  <span class="mono">onyx.boisestate.edu</span> on October 4, 2026. Hops and times will drift; the shapes will not.
+  About 40 minutes: 10, 10, 8, 8, then 4 for the exit question.</p>
+
+  <div class="box fill">
+    <h3>Say this at the start</h3>
+    <p class="tiny" style="margin:0">"Every router on the Internet answers one question for every packet: which way does
+    this go? Onyx is not a router, but it answers the same question the same way, so today we ask it. Everyone
+    <span class="mono">ssh onyx</span>. Predict before we run anything." Then hand out the sheet.</p>
+  </div>
+
+  <h2>Round 1 &middot; Onyx's address</h2>
+  <div class="demo">
+    <div class="hd">ip -4 -br addr</div>
+<pre>lo               UNKNOWN        127.0.0.1/8
+eno12399np0      UP             132.178.227.11/25</pre>
+    <div class="say"><b>Say</b> "A /25 is 25 network bits and 7 host bits. Do not recall it, derive it."</div>
+  </div>
+  <div class="ans"><span class="q">Subnet size.</span> 2<sup>7</sup> = 128 addresses, 126 usable (network and broadcast are reserved).</div>
+  <div class="ans"><span class="q">Binary.</span> 11 = <span class="mono">0|0001011</span>. The mask's last octet is <span class="mono">1|0000000</span> = 128, so the mask is 255.255.255.128.</div>
+  <div class="ans"><span class="q">Range.</span> Network 132.178.227.0, broadcast 132.178.227.127, usable .1 to .126, 126 hosts.</div>
+  <div class="ans"><span class="q">.200?</span> No: 200 = <span class="mono">1|1001000</span>, first host bit is 1, so it is in 132.178.227.128/25.
+  <span class="q">Private?</span> No. RFC 1918 is 10/8, 172.16/12 and 192.168/16. Onyx is public, with no NAT between it and the Internet. Worth contrasting with their laptops at home.</div>
+
+  <h2>Round 2 &middot; longest prefix match</h2>
+  <div class="demo">
+    <div class="hd">ip route &nbsp;then&nbsp; ip route get for each destination</div>
+<pre>default via 132.178.227.1 dev eno12399np0 proto static metric 100
+132.178.227.0/25 dev eno12399np0 proto kernel scope link src 132.178.227.11 metric 100
+
+132.178.227.50 dev eno12399np0 src 132.178.227.11 uid 26544
+132.178.227.200 via 132.178.227.1 dev eno12399np0 src 132.178.227.11 uid 26544
+8.8.8.8 via 132.178.227.1 dev eno12399np0 src 132.178.227.11 uid 26544
+local 127.0.0.1 dev lo src 127.0.0.1 uid 26544</pre>
+  </div>
+  <table>
+    <tr><th>Destination</th><th>Matching line</th><th>Direct or gateway</th></tr>
+    <tr><td class="mono">132.178.227.50</td><td>132.178.227.0/25 (also matches default)</td><td>Direct, no <span class="mono">via</span></td></tr>
+    <tr><td class="mono">132.178.227.200</td><td>default, outside the /25 (round 1)</td><td>Gateway .1</td></tr>
+    <tr><td class="mono">8.8.8.8</td><td>default</td><td>Gateway .1</td></tr>
+    <tr><td class="mono">127.0.0.1</td><td>none in <span class="mono">ip route</span>: the local table</td><td>Loopback, never leaves Onyx</td></tr>
+  </table>
+  <div class="ans"><span class="q">Q1.</span> Longest prefix wins: /25 beats /0, so .50 is delivered on the link. Loopback and
+  Onyx's own addresses live in the <strong>local</strong> routing table, which the kernel checks first
+  (<span class="mono">ip route show table local</span> lists <span class="mono">127.0.0.0/8</span>). Point at P3: this
+  lookup is the project.</div>
+
+  <h2>Grading</h2>
+  <p class="tiny">Pass/fail, 20 points. Pass when every box has something in it and the round 1 arithmetic was attempted
+  in binary. Wrong predictions are fine; that is what they are for.</p>
+
+</section>
+
+<section class="page">
+
+  <h2>Round 3 &middot; how big can a datagram be?</h2>
+  <div class="demo">
+    <div class="hd">ip link show eno12399np0 &nbsp;(look for mtu 1500) &nbsp;then two pings</div>
+<pre>PING 132.178.227.1 (132.178.227.1) 1472(1500) bytes of data.
+1480 bytes from 132.178.227.1: icmp_seq=1 ttl=254 time=0.654 ms
+
+PING 132.178.227.1 (132.178.227.1) 1473(1501) bytes of data.
+ping: local error: message too long, mtu=1500</pre>
+    <div class="say"><b>Point at</b> <span class="mono">1472(1500)</span>: ping itself prints the payload and the full datagram size.</div>
+  </div>
+  <div class="ans"><span class="q">Biggest payload.</span> 1,472 bytes. 1,472 + 8 (ICMP header) + 20 (IPv4 header, no options) = 1,500.</div>
+  <div class="ans"><span class="q">Q2.</span> The 28 bytes are the ICMP and IPv4 headers. The error came from <strong>Onyx's own
+  kernel</strong>: with don't fragment set and a 1,501 byte datagram, it refused to send, so nothing left the machine.
+  Without <span class="mono">-M do</span>, Onyx (or any router with a smaller MTU on the way) fragments, and only the
+  <strong>destination host</strong> reassembles, using the identifier, flags and offset fields. IPv6 routers never fragment.</div>
+  <div class="bar"><strong>Fast group</strong> &nbsp;Why <span class="mono">ttl=254</span> and not 255 from a gateway on the same link? Not confirmed; a virtual gateway address answered by a router behind it is the likely story. Discussion only.</div>
+
+  <h2>Round 4 &middot; counting routers with TTL</h2>
+  <div class="demo">
+    <div class="hd">tracepath -n mirrors.xmission.com</div>
+<pre> 1?: [LOCALHOST]                      pmtu 1500
+ 1:  132.178.227.1                                         0.651ms asymm  2
+ 1:  132.178.227.1                                         0.357ms asymm  2
+ 2:  no reply
+ 3:  132.178.1.147                                         1.238ms
+ 4:  132.178.1.98                                          1.301ms
+ 5:  209.249.232.13                                        1.911ms
+ 6:  no reply
+ 7:  no reply
+ 8:  no reply
+ 9:  no reply
+10:  4.69.220.109                                         28.173ms asymm  9
+11:  4.35.168.186                                         50.639ms asymm 16
+12:  166.70.1.2                                           50.208ms asymm 18
+13:  198.60.22.13                                         50.360ms reached
+     Resume: pmtu 1500 hops 13 back 19</pre>
+    <div class="say"><b>Say</b> "Hop 13 is the server, so that is 12 routers. Five of them never answered, and the packets went through them anyway."</div>
+  </div>
+  <div class="ans"><span class="q">Count.</span> 13 hops, so 12 routers before the server. 5 hops said <span class="mono">no reply</span> (2, 6, 7, 8, 9).</div>
+  <div class="ans"><span class="q">Q3.</span> <span class="mono">tracepath</span> sent a datagram with TTL 3. The first two routers
+  each decremented it, the third decremented it to zero, dropped it, and sent back an ICMP time exceeded message whose
+  source address is hop 3. The <span class="mono">no reply</span> routers forwarded traffic fine (later hops answered) but do
+  not send, or rate limit, or filter, those ICMP messages. Forwarding and answering ICMP are separate jobs.
+  <span class="mono">pmtu 1500</span> is round 3's MTU, discovered along the path.</div>
+  <div class="ans"><span class="q">Optional.</span> <span class="mono">asymm</span> means the reply came back over a different number of hops than the probe went out: the return path is not the same path.</div>
+
+  <h2>Exit question</h2>
+  <div class="ans">Any field outside the destination address, with an action. Examples: a firewall matching destination port
+  23 and dropping it; NAT matching the source address and port and rewriting them; a load balancer matching destination
+  port 443 and picking a server; a rate limiter matching the protocol field (ICMP). Generalized forwarding is exactly
+  match plus action over any header fields (sections 4.4 and 4.5).</div>
+
+</section>
+
+</body>
+</html>

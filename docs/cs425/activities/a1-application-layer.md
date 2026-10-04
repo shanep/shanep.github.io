@@ -147,8 +147,8 @@ and outbound port 53 to anything else is blocked.
 
 On the worksheet, say what those two failures have in common, and name the thing
 sitting between Onyx and the rest of the internet that causes both. You will meet
-that idea again in A4, where a network that intercepts DNS produces an answer that
-is worse than a failure: a *wrong* one.
+that idea again in chapter 4, where the boxes in the middle of the network are a
+topic of their own.
 
 ### The trap
 
@@ -234,7 +234,7 @@ Two consequences worth knowing before the room finds them:
   This is written into Round 2 as a deliberate finding rather than a broken step,
   and it is a good ninety seconds at the board: both commands need to talk to a
   DNS server that is not the campus one, and something in the middle will not let
-  them. It sets up A4 directly.
+  them.
 - **The TTL does not count down for `boisestate.edu`.** It sits at 300 every
   time, because the campus resolver is authoritative for that zone rather than
   caching it. Use `example.com` for the caching lesson, where the TTL moves, and
@@ -267,8 +267,8 @@ about why the TTL did not move. Canvas has no rubric attached, so award the full
 
 **Pacing.** Round 1 is fifteen minutes, most of it logging in. Round 2 is the
 rest of the period. If time is short, cut the `+tcp` and `+stats` rows and keep
-the two that fail and the `+short` trap; those are the parts A4 depends on.
+the two that fail and the `+short` trap; those are the parts that matter most.
 
 **What this sets up.** A2 (week 4, instructor led) puts SSH keys and a `probe`
 function on the box. A3 (week 5) does for `curl`, `nc` and `ping` what today did
-for `dig`. Round 2's `+short` trap is A4 station 4, exactly.
+for `dig`.

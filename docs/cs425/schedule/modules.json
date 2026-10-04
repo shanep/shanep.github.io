@@ -131,10 +131,10 @@
       },
       {
         "kind": "assignment",
-        "title": "P3 - Subnetting and Forwarding",
-        "path": "assignments/p3",
-        "due_at": "2026-10-27T23:59:00-06:00",
-        "points": 100.0,
+        "title": "A4 - Where Does This Datagram Go?",
+        "path": "activities/a4-where-does-it-go",
+        "due_at": "2026-10-07T23:59:00-06:00",
+        "points": 20.0,
         "canvas_id": ""
       }
     ]
@@ -177,6 +177,14 @@
         "path": "notes/ch05-network-control",
         "due_at": null,
         "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "P3 - Subnetting and Forwarding",
+        "path": "assignments/p3",
+        "due_at": "2026-10-27T23:59:00-06:00",
+        "points": 100.0,
         "canvas_id": ""
       }
     ]

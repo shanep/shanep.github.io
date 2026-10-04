@@ -3,10 +3,7 @@
 # a3-claude-transport.sh - documents for CS425 activity A3.
 #
 # A3 runs on the projector and on laptops and needs no testbed, so this only renders
-# the worksheet and the key. The renderer itself lives in
-# a4-connectivity-triage.sh, which is where the two documents that do need a
-# testbed are handled; pointing at it here keeps one implementation rather than
-# five.
+# the worksheet and the key, through the shared render-handout.sh.
 #
 set -euo pipefail
 
@@ -23,7 +20,7 @@ export KEY_PDF="$HERE/a3-claude-transport-key.pdf"
 export KEY_PAGES=2
 
 case "${1:-}" in
-    handout|key|-h|--help) exec "$HERE/a4-connectivity-triage.sh" "$@" ;;
+    handout|key|-h|--help) exec "$HERE/render-handout.sh" "$@" ;;
     *) printf '%s: A3 needs no testbed; the commands are "handout" and "key"\n' \
            "$(basename "$0")" >&2; exit 1 ;;
 esac
