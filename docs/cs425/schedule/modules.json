@@ -40,12 +40,30 @@
         "canvas_id": ""
       },
       {
+        "kind": "url",
+        "title": "A1 Slides",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "",
+        "url": "https://shanepanter.com/cs425/activities/slides-a1"
+      },
+      {
         "kind": "assignment",
         "title": "A1 - Speaking the Application Layer",
         "path": "activities/a1-application-layer",
         "due_at": "2026-09-09T23:59:00-06:00",
         "points": 20.0,
         "canvas_id": ""
+      },
+      {
+        "kind": "url",
+        "title": "A2 Slides",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "",
+        "url": "https://shanepanter.com/cs425/activities/slides-a2"
       },
       {
         "kind": "assignment",
@@ -99,6 +117,15 @@
         "due_at": "2026-10-01T23:59:00-06:00",
         "points": 20.0,
         "canvas_id": ""
+      },
+      {
+        "kind": "url",
+        "title": "A3 Slides",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "",
+        "url": "https://shanepanter.com/cs425/activities/slides-a3"
       },
       {
         "kind": "assignment",
@@ -197,6 +224,15 @@
         "canvas_id": ""
       },
       {
+        "kind": "url",
+        "title": "A5 Slides",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "",
+        "url": "https://shanepanter.com/cs425/activities/slides-a5"
+      },
+      {
         "kind": "assignment",
         "title": "A5 - Errors on Purpose",
         "path": "activities/a5-errors-on-purpose",
@@ -211,6 +247,15 @@
         "due_at": "2026-10-30T23:59:00-06:00",
         "points": 100.0,
         "canvas_id": ""
+      },
+      {
+        "kind": "url",
+        "title": "A6 Slides",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "",
+        "url": "https://shanepanter.com/cs425/activities/slides-a6"
       },
       {
         "kind": "assignment",
@@ -240,6 +285,15 @@
         "due_at": null,
         "points": null,
         "canvas_id": ""
+      },
+      {
+        "kind": "url",
+        "title": "A7 Slides",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "",
+        "url": "https://shanepanter.com/cs425/activities/slides-a7"
       },
       {
         "kind": "assignment",
@@ -287,6 +341,15 @@
         "canvas_id": ""
       },
       {
+        "kind": "url",
+        "title": "A8 Slides",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "",
+        "url": "https://shanepanter.com/cs425/activities/slides-a8"
+      },
+      {
         "kind": "assignment",
         "title": "A8 - TCP on a Noisy Link",
         "path": "activities/a8-noisy-link",
@@ -319,6 +382,15 @@
         "due_at": null,
         "points": null,
         "canvas_id": ""
+      },
+      {
+        "kind": "url",
+        "title": "A9 Slides",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "",
+        "url": "https://shanepanter.com/cs425/activities/slides-a9"
       },
       {
         "kind": "assignment",

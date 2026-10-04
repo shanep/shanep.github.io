@@ -441,15 +441,23 @@ function cs425(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: 'A1 - Speaking the App Layer',      link: 'activities/a1-application-layer' },
+        { text: 'A1 Slides',                        link: 'activities/slides-a1' },
         { text: 'A2 - Stop Typing Your Password',   link: 'activities/a2-stop-typing-your-password' },
+        { text: 'A2 Slides',                        link: 'activities/slides-a2' },
         { text: 'A3 - Transport with Claude Code',  link: 'activities/a3-claude-transport' },
+        { text: 'A3 Slides',                        link: 'activities/slides-a3' },
         { text: 'A4 - Where Does It Go?',           link: 'activities/a4-where-does-it-go' },
         { text: 'A4 Slides',                        link: 'activities/slides-a4' },
         { text: 'A5 - Errors on Purpose',           link: 'activities/a5-errors-on-purpose' },
+        { text: 'A5 Slides',                        link: 'activities/slides-a5' },
         { text: 'A6 - Who Carries Your Packets?',   link: 'activities/a6-who-carries-your-packets' },
+        { text: 'A6 Slides',                        link: 'activities/slides-a6' },
         { text: 'A7 - One Hop at a Time',           link: 'activities/a7-one-hop-at-a-time' },
+        { text: 'A7 Slides',                        link: 'activities/slides-a7' },
         { text: 'A8 - TCP on a Noisy Link',         link: 'activities/a8-noisy-link' },
+        { text: 'A8 Slides',                        link: 'activities/slides-a8' },
         { text: 'A9 - Who Are You Talking To?',     link: 'activities/a9-who-are-you-talking-to' },
+        { text: 'A9 Slides',                        link: 'activities/slides-a9' },
       ]
     },
     {

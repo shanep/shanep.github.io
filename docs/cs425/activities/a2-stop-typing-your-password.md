@@ -228,9 +228,12 @@ probe() {
 }
 ```
 
-Save and exit. You do not need to understand the `curl` line today; A3 takes it
-apart. What matters is the shape: `probe` is a **function**, `$1` is the first
-thing you type after it and `$2` is the second.
+Save and exit. The `curl` line makes one HTTP request and throws the page away
+(`-o /dev/null`), gives up after 8 seconds (`-m 8`), and prints how long the TCP
+connection took to open, how long the whole request took, and the HTTP status
+code (`-w`). The rest of the flags are in `man curl`. What matters today is the
+shape: `probe` is a **function**, `$1` is the first thing you type after it and
+`$2` is the second.
 
 Load it into the shell you are sitting in, then check it took:
 
