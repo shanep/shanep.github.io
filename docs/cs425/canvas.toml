@@ -57,15 +57,20 @@ grace_days = 0
 # because a push pairs them up by name and would otherwise create a second group
 # beside the one that is already there.
 #
-# Exams carry half the grade and have nothing in this repo: the review notes
-# publish as module pages and the exams themselves are Canvas quizzes built by
-# hand, so the group is declared with no kinds and the quizzes are filed into it
-# in Canvas.
+# The exams carry half the grade, a quarter each, and are Canvas quizzes built
+# by hand, so their groups are declared with no kinds and the quizzes are filed
+# into them in Canvas. The Midterm group also holds X1, the take home midterm
+# alternative, and drops the lowest score so the better of the two counts. That
+# drop rule is set in Canvas; a push never touches it.
 # ---------------------------------------------------------------------------
 
 [[group]]
-name   = "Exams"
-weight = 50
+name   = "Midterm"
+weight = 25
+
+[[group]]
+name   = "Final"
+weight = 25
 
 [[group]]
 name   = "In Class Activities and Knowledge checks"
@@ -127,8 +132,9 @@ files = [
 
 [layout.gradable]
 # Take home mini-labs (m1-*.md) sit beside the projects and count in the same
-# group, so one glob catches both.
-project    = "assignments/[pm][0-9]*.md"
+# group, so one glob catches both. X1, the midterm alternative, is a project by
+# kind too, and its override below files it into the Midterm group.
+project    = "assignments/[pmx][0-9]*.md"
 lab        = "activities/a[0-9]*.md"
 extra      = "extra-credit/ec-*.md"
 discussion = "discussions/*.md"
@@ -152,6 +158,14 @@ due = "tue 23:59"
 [override."assignments/m1-copilot-cli.md"]
 due        = "thu 23:59"
 grace_days = 2
+
+# X1 is the take home alternative to the midterm. It is due when the midterm
+# closes, Friday of week 8, with no grace period because it replaces an exam,
+# and it counts in the Midterm group, which keeps the better of the two scores.
+[override."assignments/x1-page-load.md"]
+due        = "fri 23:59"
+grace_days = 0
+group      = "Midterm"
 
 # ---------------------------------------------------------------------------
 # Canvas modules. `page` is the module overview; `items` are published in order.
@@ -195,10 +209,11 @@ title = "Week 7: The Network Layer - Data Plane"
 page  = "notes/ch04-network-data.md"
 items = ["assignments/p3.md"]
 
-# The two exam modules have no repo content at all: the review pages were
-# removed, and what is left is the quizzes built by hand in Canvas.
+# The exam modules hold the quizzes built by hand in Canvas. Week 8 also lists
+# X1, the take home alternative to the midterm.
 [[module]]
 title  = "Week 8: Midterm Exam"
+items  = ["assignments/x1-page-load.md"]
 canvas = [
     { quiz = 394147, title = "Midterm Practice Exam" },
     { quiz = 393662, title = "Midterm Exam" },

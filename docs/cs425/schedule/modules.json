@@ -143,6 +143,14 @@
     "title": "Week 8: Midterm Exam",
     "items": [
       {
+        "kind": "assignment",
+        "title": "X1 - Midterm Alternative: Anatomy of a Page Load",
+        "path": "assignments/x1-page-load",
+        "due_at": "2026-10-16T23:59:00-06:00",
+        "points": 160.0,
+        "canvas_id": ""
+      },
+      {
         "kind": "quiz",
         "title": "Midterm Practice Exam",
         "path": "",
