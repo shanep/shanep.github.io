@@ -24,7 +24,8 @@ taken once for credit.
 
 | Group                                | Weight |
 | ------------------------------------ | ------ |
-| Exams                                | 50%    |
+| Midterm Exam or [X1](assignments/x1-page-load.md), best score counts | 25% |
+| Final Exam                           | 25%    |
 | In Class Activities & Knowledge Checks | 40%  |
 | [Projects](assignments/index.md)      | 10%    |
 | Extra Credit                         | 2.5%   |
