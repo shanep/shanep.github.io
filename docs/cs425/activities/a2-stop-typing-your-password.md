@@ -288,17 +288,10 @@ Answer the last question on the worksheet.
 ## Step 9 - Same function, your laptop
 
 Onyx tests a connection from campus. To test one from the network you are
-actually on, put `probe` on your laptop too. Open your shell's configuration
-file:
-
-| Laptop | File |
-| ------ | ---- |
-| macOS | `~/.zshrc` |
-| Linux | `~/.bashrc` |
-| Windows, Git Bash | `~/.bashrc` |
-
-Paste the same function at the bottom, open a **new** terminal window, and run
-`probe example.com 80`. If it prints a `code=200` line, you are done.
+actually on, put `probe` on your laptop too. Open `~/.bashrc` on your laptop (on
+Windows, from Git Bash), paste the same function at the bottom, open a **new**
+terminal window, and run `probe example.com 80`. If it prints a `code=200` line,
+you are done.
 
 ::: tip Checkpoint
 
