@@ -159,6 +159,14 @@ due = "fri 23:59"
 [override."assignments/p2.md"]
 due = "fri 23:59"
 
+# P3 is due Friday of week 10, Oct 30.
+[override."assignments/p3.md"]
+due = "fri 23:59"
+
+# P4 is due Friday of week 13, Nov 20.
+[override."assignments/p4.md"]
+due = "fri 23:59"
+
 # A3 moved to week 6 and is due that Tuesday, Sep 29.
 [override."activities/a3-claude-transport.md"]
 due = "tue 23:59"
@@ -179,8 +187,8 @@ due = "thu 23:59"
 [override."activities/a7-one-hop-at-a-time.md"]
 due = "thu 23:59"
 
-# A8 runs in class on Thursday of week 13, Nov 19, and is due that night. That
-# keeps it off Tuesday, when P4 is due.
+# A8 runs in class on Thursday of week 13, Nov 19, and is due that night, the
+# day before P4.
 [override."activities/a8-noisy-link.md"]
 due = "thu 23:59"
 
