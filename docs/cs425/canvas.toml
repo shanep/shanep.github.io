@@ -226,11 +226,15 @@ page   = "notes/ch01-internet.md"
 items  = ["assignments/p0.md"]
 canvas = [{ quiz = 393657, title = "Chapter 1 - Knowledge Check" }]
 
+# Each activity's slides are a page on the website (they need the site's slide
+# viewer, so they are not a Canvas page), linked just ahead of the activity.
 [[module]]
 title  = "Week 3-4: The Application Layer"
 page   = "notes/ch02-application.md"
 items  = [
+    { url = "https://shanepanter.com/cs425/activities/slides-a1", title = "A1 Slides" },
     "activities/a1-application-layer.md",
+    { url = "https://shanepanter.com/cs425/activities/slides-a2", title = "A2 Slides" },
     "activities/a2-stop-typing-your-password.md",
     "assignments/p1.md",
 ]
@@ -242,12 +246,11 @@ page   = "notes/ch03-transport.md"
 items  = [
     "assignments/p2.md",
     "assignments/m1-copilot-cli.md",
+    { url = "https://shanepanter.com/cs425/activities/slides-a3", title = "A3 Slides" },
     "activities/a3-claude-transport.md",
 ]
 canvas = [{ quiz = 393660, title = "Chapter 3 - Knowledge Check" }]
 
-# The A4 slides are a page on the website (they need the site's slide viewer, so
-# they are not a Canvas page), linked from the module just ahead of A4.
 [[module]]
 title  = "Week 7: The Network Layer - Data Plane"
 page   = "notes/ch04-network-data.md"
@@ -273,8 +276,10 @@ canvas = [
 title  = "Week 9-10: The Network Layer - Control Plane"
 page   = "notes/ch05-network-control.md"
 items  = [
+    { url = "https://shanepanter.com/cs425/activities/slides-a5", title = "A5 Slides" },
     "activities/a5-errors-on-purpose.md",
     "assignments/p3.md",
+    { url = "https://shanepanter.com/cs425/activities/slides-a6", title = "A6 Slides" },
     "activities/a6-who-carries-your-packets.md",
 ]
 canvas = [{ quiz = 395699, title = "Chapter 5 - Knowledge Check" }]
@@ -282,7 +287,10 @@ canvas = [{ quiz = 395699, title = "Chapter 5 - Knowledge Check" }]
 [[module]]
 title  = "Week 11-12: The Link Layer and LANs"
 page   = "notes/ch06-link.md"
-items  = ["activities/a7-one-hop-at-a-time.md"]
+items  = [
+    { url = "https://shanepanter.com/cs425/activities/slides-a7", title = "A7 Slides" },
+    "activities/a7-one-hop-at-a-time.md",
+]
 canvas = [{ quiz = 395701, title = "Chapter 6 - Knowledge Check" }]
 
 # The knowledge check comes before P4 here, so it is listed inline in `items`
@@ -293,6 +301,7 @@ page  = "notes/ch07-wireless.md"
 items = [
     { quiz = 395702, title = "Chapter 7 - Knowledge Check" },
     "assignments/p4.md",
+    { url = "https://shanepanter.com/cs425/activities/slides-a8", title = "A8 Slides" },
     "activities/a8-noisy-link.md",
 ]
 
@@ -310,6 +319,7 @@ items = [{ header = "Thanksgiving Break - No Class" }]
 title = "Week 15-16: Security in Computer Networks"
 page  = "notes/ch08-security.md"
 items = [
+    { url = "https://shanepanter.com/cs425/activities/slides-a9", title = "A9 Slides" },
     "activities/a9-who-are-you-talking-to.md",
     "extra-credit/ec-evaluation.md",
     "extra-credit/ec-typos.md",
