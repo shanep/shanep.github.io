@@ -130,12 +130,29 @@
         "canvas_id": ""
       },
       {
+        "kind": "url",
+        "title": "A4 Slides",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "",
+        "url": "https://shanepanter.com/cs425/activities/slides-a4"
+      },
+      {
         "kind": "assignment",
         "title": "A4 - Where Does This Datagram Go?",
         "path": "activities/a4-where-does-it-go",
         "due_at": "2026-10-08T23:59:00-06:00",
         "points": 20.0,
         "canvas_id": ""
+      },
+      {
+        "kind": "quiz",
+        "title": "Chapter 4 - Knowledge check",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "395698"
       }
     ]
   },
@@ -186,6 +203,14 @@
         "due_at": "2026-10-27T23:59:00-06:00",
         "points": 100.0,
         "canvas_id": ""
+      },
+      {
+        "kind": "quiz",
+        "title": "Chapter 5 - knowledge check",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "395699"
       }
     ]
   },
@@ -201,12 +226,12 @@
         "canvas_id": ""
       },
       {
-        "kind": "assignment",
-        "title": "P4 - Packet Capture and Analysis",
-        "path": "assignments/p4",
-        "due_at": "2026-11-17T23:59:00-07:00",
-        "points": 100.0,
-        "canvas_id": ""
+        "kind": "quiz",
+        "title": "Chapter 6 - Knowledge check",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "395701"
       }
     ]
   },
@@ -220,11 +245,40 @@
         "due_at": null,
         "points": null,
         "canvas_id": ""
+      },
+      {
+        "kind": "quiz",
+        "title": "Chapter 7 - Knowledge check",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "395702"
+      },
+      {
+        "kind": "assignment",
+        "title": "P4 - Packet Capture and Analysis",
+        "path": "assignments/p4",
+        "due_at": "2026-11-17T23:59:00-07:00",
+        "points": 100.0,
+        "canvas_id": ""
       }
     ]
   },
   {
-    "title": "Week 14-15: Security in Computer Networks",
+    "title": "Week 14- Thanksgiving Break",
+    "items": [
+      {
+        "kind": "header",
+        "title": "Thanksgiving Break - No Class",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
+    "title": "Week 15-16: Security in Computer Networks",
     "items": [
       {
         "kind": "page",
@@ -233,12 +287,7 @@
         "due_at": null,
         "points": null,
         "canvas_id": ""
-      }
-    ]
-  },
-  {
-    "title": "Week 16",
-    "items": [
+      },
       {
         "kind": "assignment",
         "title": "End of Semester Student Evaluation (15 min)",
@@ -262,7 +311,12 @@
         "due_at": "2026-12-11T23:59:00-07:00",
         "points": 10.0,
         "canvas_id": ""
-      },
+      }
+    ]
+  },
+  {
+    "title": "Week 17: Finals Week",
+    "items": [
       {
         "kind": "quiz",
         "title": "Final Exam",

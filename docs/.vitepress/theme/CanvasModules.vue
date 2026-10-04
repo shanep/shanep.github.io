@@ -5,9 +5,11 @@
 
 interface Item {
   // 'header' is a Canvas text header (SubHeader), such as "Due by Sunday ...".
-  kind: 'page' | 'assignment' | 'discussion' | 'quiz' | 'file' | 'header'
+  // 'url' is an external link, such as a slide deck on this site.
+  kind: 'page' | 'assignment' | 'discussion' | 'quiz' | 'file' | 'url' | 'header'
   title: string
   path?: string        // repo path without .md; empty for a Canvas-native item
+  url?: string         // where an external link goes
   due_at?: string | null
   points?: number | null
   canvas_id?: string
@@ -26,6 +28,7 @@ const ICONS: Record<Item['kind'], string> = {
   discussion: '💬',
   quiz: '🚀',
   file: '📎',
+  url: '🔗',
   header: '',
 }
 
@@ -35,10 +38,12 @@ const LABELS: Record<Item['kind'], string> = {
   discussion: 'Discussion',
   quiz: 'Quiz',
   file: 'File',
+  url: 'External link',
   header: 'Header',
 }
 
 function href(item: Item): string | undefined {
+  if (item.url) return item.url
   if (!item.path) return undefined
   const base = props.base.endsWith('/') ? props.base : props.base + '/'
   return base + item.path

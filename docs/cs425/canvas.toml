@@ -158,6 +158,10 @@ due = "tue 23:59"
 [override."activities/a4-where-does-it-go.md"]
 due = "thu 23:59"
 
+# A5 runs in class on Thursday of week 11, Nov 5, and is due that night.
+[override."activities/a5-one-hop-at-a-time.md"]
+due = "thu 23:59"
+
 # M1 is a one hour take home mini-lab, due Thursday of week 6 (Oct 1) with the
 # usual two days of grace, rather than on a project Tuesday.
 [override."assignments/m1-copilot-cli.md"]
@@ -207,10 +211,16 @@ items  = [
 ]
 canvas = [{ quiz = 393660, title = "Chapter 3 - Knowledge Check" }]
 
+# The A4 slides are a page on the website (they need the site's slide viewer, so
+# they are not a Canvas page), linked from the module just ahead of A4.
 [[module]]
-title = "Week 7: The Network Layer - Data Plane"
-page  = "notes/ch04-network-data.md"
-items = ["activities/a4-where-does-it-go.md"]
+title  = "Week 7: The Network Layer - Data Plane"
+page   = "notes/ch04-network-data.md"
+items  = [
+    { url = "https://shanepanter.com/cs425/activities/slides-a4", title = "A4 Slides" },
+    "activities/a4-where-does-it-go.md",
+]
+canvas = [{ quiz = 395698, title = "Chapter 4 - Knowledge check" }]
 
 # The exam modules hold the quizzes built by hand in Canvas. Week 8 also lists
 # X1, the take home alternative to the midterm.
@@ -225,31 +235,46 @@ canvas = [
 # P3 is chapter 4 material, but it is due in week 10, so it lives here with the
 # weeks students are working on it rather than in week 7.
 [[module]]
-title = "Week 9-10: The Network Layer - Control Plane"
-page  = "notes/ch05-network-control.md"
-items = ["assignments/p3.md"]
+title  = "Week 9-10: The Network Layer - Control Plane"
+page   = "notes/ch05-network-control.md"
+items  = ["assignments/p3.md"]
+canvas = [{ quiz = 395699, title = "Chapter 5 - knowledge check" }]
 
 [[module]]
-title = "Week 11-12: The Link Layer and LANs"
-page  = "notes/ch06-link.md"
-items = ["assignments/p4.md"]
+title  = "Week 11-12: The Link Layer and LANs"
+page   = "notes/ch06-link.md"
+items  = ["activities/a5-one-hop-at-a-time.md"]
+canvas =[{ quiz = 395701, title = "Chapter 6 - Knowledge check" }]
 
+# The knowledge check comes before P4 here, so it is listed inline in `items`
+# to keep that order; a `canvas` entry would always land after the repo items.
 [[module]]
 title = "Week 13: Wireless and Mobile Networks"
 page  = "notes/ch07-wireless.md"
+items = [
+    { quiz = 395702, title = "Chapter 7 - Knowledge check" },
+    "assignments/p4.md",
+]
 
+# The module names count calendar weeks, so Thanksgiving is week 14 here. The
+# meta lines and [term] count weeks of instruction and skip the break, so the
+# extra credit files say "Week 15" for the week these modules call 16.
 [[module]]
-title = "Week 14-15: Security in Computer Networks"
-page  = "notes/ch08-security.md"
+title = "Week 14- Thanksgiving Break"
+items = [{ header = "Thanksgiving Break - No Class" }]
 
 # The extra credit assignments are shared across every course: each file under
 # extra-credit/ is a title and a meta line around a body included from
 # ../../parts/, so a fix to the wording lands everywhere.
 [[module]]
-title  = "Week 16"
-items  = [
+title = "Week 15-16: Security in Computer Networks"
+page  = "notes/ch08-security.md"
+items = [
     "extra-credit/ec-evaluation.md",
     "extra-credit/ec-typos.md",
     "extra-credit/ec-general.md",
 ]
+
+[[module]]
+title  = "Week 17: Finals Week"
 canvas = [{ quiz = 393664, title = "Final Exam" }]
