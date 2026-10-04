@@ -38,7 +38,7 @@ every step is a pass.
 - You need the SSH client you used in A1. On Windows, use **Git Bash** today;
   it has every command below.
 - The editor today is `vi`. It is on Onyx, on every Linux box you will ever
-  ssh into, and on your Mac. You need five things, and they are on the board:
+  ssh into, and in Git Bash. You need five things, and they are on the board:
   `i` to start typing, `Esc` to stop, `:wq` to save and quit, `:q!` to bail out
   without saving, and `G` to jump to the end of the file.
 
