@@ -129,6 +129,8 @@ files = [
     # The relay students run themselves; a copy of relay/cs425_relay.py from
     # the CS425-p2-solution repo.
     "assignments/cs425_relay.py",
+    # P4's captures, built by scripts/make-zip.sh in the CS425-p4-solution repo.
+    "assignments/p4-captures.zip",
 ]
 
 [layout.gradable]
