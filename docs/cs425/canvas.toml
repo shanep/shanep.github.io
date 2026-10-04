@@ -247,7 +247,7 @@ items  = [
     { url = "https://shanepanter.com/cs425/activities/slides-a4", title = "A4 Slides" },
     "activities/a4-where-does-it-go.md",
 ]
-canvas = [{ quiz = 395698, title = "Chapter 4 - Knowledge check" }]
+canvas = [{ quiz = 395698, title = "Chapter 4 - Knowledge Check" }]
 
 # The exam modules hold the quizzes built by hand in Canvas. Week 8 also lists
 # X1, the take home alternative to the midterm.
@@ -269,13 +269,13 @@ items  = [
     "assignments/p3.md",
     "activities/a6-who-carries-your-packets.md",
 ]
-canvas = [{ quiz = 395699, title = "Chapter 5 - knowledge check" }]
+canvas = [{ quiz = 395699, title = "Chapter 5 - Knowledge Check" }]
 
 [[module]]
 title  = "Week 11-12: The Link Layer and LANs"
 page   = "notes/ch06-link.md"
 items  = ["activities/a7-one-hop-at-a-time.md"]
-canvas =[{ quiz = 395701, title = "Chapter 6 - Knowledge check" }]
+canvas = [{ quiz = 395701, title = "Chapter 6 - Knowledge Check" }]
 
 # The knowledge check comes before P4 here, so it is listed inline in `items`
 # to keep that order; a `canvas` entry would always land after the repo items.
@@ -283,7 +283,7 @@ canvas =[{ quiz = 395701, title = "Chapter 6 - Knowledge check" }]
 title = "Week 13: Wireless and Mobile Networks"
 page  = "notes/ch07-wireless.md"
 items = [
-    { quiz = 395702, title = "Chapter 7 - Knowledge check" },
+    { quiz = 395702, title = "Chapter 7 - Knowledge Check" },
     "assignments/p4.md",
     "activities/a8-noisy-link.md",
 ]
@@ -292,7 +292,7 @@ items = [
 # meta lines and [term] count weeks of instruction and skip the break, so the
 # extra credit files say "Week 15" for the week these modules call 16.
 [[module]]
-title = "Week 14- Thanksgiving Break"
+title = "Week 14: Thanksgiving Break"
 items = [{ header = "Thanksgiving Break - No Class" }]
 
 # The extra credit assignments are shared across every course: each file under

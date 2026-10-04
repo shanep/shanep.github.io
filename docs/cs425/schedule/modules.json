@@ -148,7 +148,7 @@
       },
       {
         "kind": "quiz",
-        "title": "Chapter 4 - Knowledge check",
+        "title": "Chapter 4 - Knowledge Check",
         "path": "",
         "due_at": null,
         "points": null,
@@ -222,7 +222,7 @@
       },
       {
         "kind": "quiz",
-        "title": "Chapter 5 - knowledge check",
+        "title": "Chapter 5 - Knowledge Check",
         "path": "",
         "due_at": null,
         "points": null,
@@ -251,7 +251,7 @@
       },
       {
         "kind": "quiz",
-        "title": "Chapter 6 - Knowledge check",
+        "title": "Chapter 6 - Knowledge Check",
         "path": "",
         "due_at": null,
         "points": null,
@@ -272,7 +272,7 @@
       },
       {
         "kind": "quiz",
-        "title": "Chapter 7 - Knowledge check",
+        "title": "Chapter 7 - Knowledge Check",
         "path": "",
         "due_at": null,
         "points": null,
@@ -297,7 +297,7 @@
     ]
   },
   {
-    "title": "Week 14- Thanksgiving Break",
+    "title": "Week 14: Thanksgiving Break",
     "items": [
       {
         "kind": "header",
