@@ -445,6 +445,11 @@ function cs425(): DefaultTheme.SidebarItem[] {
         { text: 'A3 - Transport with Claude Code',  link: 'activities/a3-claude-transport' },
         { text: 'A4 - Where Does It Go?',           link: 'activities/a4-where-does-it-go' },
         { text: 'A4 Slides',                        link: 'activities/slides-a4' },
+        { text: 'A5 - Errors on Purpose',           link: 'activities/a5-errors-on-purpose' },
+        { text: 'A6 - Who Carries Your Packets?',   link: 'activities/a6-who-carries-your-packets' },
+        { text: 'A7 - One Hop at a Time',           link: 'activities/a7-one-hop-at-a-time' },
+        { text: 'A8 - TCP on a Noisy Link',         link: 'activities/a8-noisy-link' },
+        { text: 'A9 - Who Are You Talking To?',     link: 'activities/a9-who-are-you-talking-to' },
       ]
     },
     {

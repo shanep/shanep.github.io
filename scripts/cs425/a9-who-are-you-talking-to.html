@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A9 Worksheet</title>
+<style>
+  @page { size: letter; margin: 0.55in 0.6in 0.5in 0.6in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 10pt/1.35 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.6pt; }
+
+  .page { page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+  .box, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 10.5pt; margin: 9pt 0 4pt; text-transform: uppercase;
+       letter-spacing: 0.8pt; border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.8pt; margin: 8pt 0 3pt; }
+  p  { margin: 0 0 5pt; }
+  .lead { font-size: 8.6pt; font-style: italic; margin-bottom: 5pt; }
+  .tiny { font-size: 8pt; }
+  .dim  { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 7pt; }
+  .mast .right { text-align: right; font-size: 8.5pt; line-height: 1.3; }
+  .runner { font-size: 8pt; border-bottom: 1pt solid #000; padding-bottom: 3pt;
+            margin-bottom: 8pt; display: flex; justify-content: space-between;
+            text-transform: uppercase; letter-spacing: 0.6pt; }
+
+  .names { margin: 4pt 0 8pt; font-size: 9.5pt; }
+  .names div { margin-bottom: 6pt; }
+  .rule { display: inline-block; border-bottom: 0.75pt solid #000; vertical-align: baseline; }
+  .r-sm { width: 90pt; } .r-md { width: 150pt; } .r-lg { width: 235pt; }
+
+  .lines > div { border-bottom: 0.75pt solid #999; height: 14pt; }
+  .lines.tight > div { height: 12.5pt; }
+
+  .box { border: 1pt solid #000; padding: 4pt 8pt; margin-bottom: 6pt; }
+  .box.fill { background: #f0f0f0; }
+  .box h3 { margin-top: 0; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 2pt 4pt; vertical-align: top;
+           text-align: left; font-size: 8.3pt; }
+  th { background: #e4e4e4; font-size: 8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+  td.h { height: 19pt; }
+  td.hh { height: 34pt; }
+  .cmdcell { font-family: "SF Mono","Menlo","Consolas",monospace; font-size: 7.9pt; }
+
+  pre.setup { margin: 0 0 5pt; padding: 4pt 7pt; border: 0.75pt solid #000; background: #fff;
+              font-family: "SF Mono","Menlo","Consolas",monospace; font-size: 8pt; line-height: 1.35;
+              white-space: pre-wrap; word-break: break-word; }
+
+  ol, ul { margin: 0 0 6pt; padding-left: 16pt; }
+  li { margin-bottom: 3pt; }
+  ol.q > li { margin-bottom: 5pt; }
+  /* One page: this sheet is deliberately small, so it runs a little tighter than the others. */
+  body { font-size: 9.4pt; }
+  .lines > div { height: 12.5pt; }
+  td.h { height: 14pt; }
+  pre.setup { font-size: 7.6pt; line-height: 1.3; padding: 3pt 6pt; }
+  .box { padding: 3pt 7pt; margin-bottom: 4pt; }
+  h2 { margin: 7pt 0 3pt; }
+</style>
+</head>
+<body>
+
+<!-- ============================ PAGE 1 ============================ -->
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A9 &middot; Who Are You Really Talking To?</h1>
+      <div class="tiny">CS425 Computer Networks &middot; instructor led &middot; every command runs on Onyx (<span class="mono">ssh onyx</span>)</div>
+    </div>
+    <div class="right">
+      <strong>TURN THIS IN ON PAPER</strong><br>
+      before you leave the room<br>
+      <span class="dim">graded pass/fail</span>
+    </div>
+  </div>
+
+  <div class="names">
+    <div>Names <span class="rule" style="width:360pt"></span> &nbsp; Date <span class="rule r-sm"></span></div>
+  </div>
+
+  <p class="tiny" style="margin-bottom:4pt">Every round: <strong>predict</strong> first, in ink, then <strong>run</strong>
+  the command with the projector, then <strong>check</strong>. A wrong prediction costs nothing. A prediction written
+  afterwards is not a prediction.</p>
+
+  <h2>Round 1 &middot; did anyone change this? &nbsp;<span class="mono" style="text-transform:none;letter-spacing:0">sha256sum &middot; openssl dgst -hmac</span></h2>
+
+  <table>
+    <tr><th style="width:250pt">Question</th><th>Answer</th></tr>
+    <tr><td><strong>Predict:</strong> <span class="mono">$10</span> becomes <span class="mono">$90</span>. How many of the 64 hex digits change?</td><td class="h"></td></tr>
+    <tr><td>Roughly how many actually changed?</td><td class="h"></td></tr>
+  </table>
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt"><strong>Q1.</strong> Trudy changes <span class="mono">$10</span> to
+    <span class="mono">$90</span> and sends a fresh plain hash with it. Can Bob tell? Why does the same trick fail against
+    the MAC?</p>
+    <div class="lines"><div></div><div></div><div></div></div>
+  </div>
+
+  <h2>Round 2 &middot; who vouches for whom? &nbsp;<span class="mono" style="text-transform:none;letter-spacing:0">openssl s_client &middot; openssl x509</span></h2>
+
+  <table>
+    <tr><th style="width:250pt">Question</th><th>Answer</th></tr>
+    <tr><td><strong>Predict:</strong> who issued Boise State's certificate, and for how long is it good?</td><td class="h"></td></tr>
+    <tr><td>Issuer, and the <span class="mono">notBefore</span> to <span class="mono">notAfter</span> span in days</td><td class="h"></td></tr>
+    <tr><td>Whose name is in the subject? Where does <span class="mono">www.boisestate.edu</span> appear instead?</td><td class="h"></td></tr>
+  </table>
+
+  <table>
+    <tr><th style="width:40pt">Depth</th><th>Certificate for (<span class="mono" style="text-transform:none">s:</span>)</th><th>Signed by (<span class="mono" style="text-transform:none">i:</span>)</th></tr>
+    <tr><td class="mono">0</td><td class="h"></td><td class="h"></td></tr>
+    <tr><td class="mono">1</td><td class="h"></td><td class="h"></td></tr>
+    <tr><td class="mono">2</td><td class="h"></td><td class="h"></td></tr>
+  </table>
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt"><strong>Q2.</strong> Why does Onyx believe this certificate belongs to Boise
+    State? Who is Onyx really trusting at the end of the chain, and where did that trust come from?</p>
+    <div class="lines"><div></div><div></div><div></div></div>
+  </div>
+
+</section>
+
+<!-- ============================ PAGE 2 ============================ -->
+<section class="page">
+
+  <h2>Round 3 &middot; four ways to fail &nbsp;<span class="mono" style="text-transform:none;letter-spacing:0">curl https://*.badssl.com/</span></h2>
+
+  <table>
+    <tr><th style="width:110pt">Site</th><th style="width:70pt">Predict: refused?</th><th>What <span class="mono" style="text-transform:none">curl</span> said was wrong</th><th style="width:110pt">Broken link in the chain</th></tr>
+    <tr><td class="mono">expired</td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+    <tr><td class="mono">wrong.host</td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+    <tr><td class="mono">self-signed</td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+    <tr><td class="mono">untrusted-root</td><td class="h"></td><td class="h"></td><td class="h"></td></tr>
+  </table>
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt"><strong>Q3.</strong> With <span class="mono">-k</span> the connection is still
+    encrypted. What exactly did <span class="mono">-k</span> give up, and which property from section 8.1 is that?</p>
+    <div class="lines"><div></div><div></div><div></div></div>
+  </div>
+
+  <h2>Round 4 &middot; what TLS does not hide &nbsp;<span class="mono" style="text-transform:none;letter-spacing:0">curl -sv &middot; openssl s_client -trace</span></h2>
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt"><strong>Q4.</strong> You are on coffee shop Wi-Fi and every site you visit
+    uses HTTPS. List everything the person running the Wi-Fi still learns about you. Aim for at least four things.</p>
+    <div class="lines"><div></div><div></div><div></div><div></div></div>
+  </div>
+
+  <h2>Exit question &middot; the yes you typed in A2 &nbsp;<span class="mono" style="text-transform:none;letter-spacing:0">ssh-keygen -lf &middot; ssh-keygen -F</span></h2>
+
+  <table>
+    <tr><th style="width:250pt">Question</th><th>Answer</th></tr>
+    <tr><td>Do the two fingerprints match? (first 8 characters after <span class="mono">SHA256:</span>)</td><td class="h"></td></tr>
+  </table>
+
+  <div class="box">
+    <p class="tiny" style="margin-bottom:3pt"><strong>Exit.</strong> When you typed <span class="mono">yes</span> in A2, what
+    were you trusting? How is that different from the way <span class="mono">curl</span> decided to trust
+    <span class="mono">www.boisestate.edu</span>?</p>
+    <div class="lines"><div></div><div></div><div></div></div>
+  </div>
+
+  <p class="tiny dim" style="text-align:center;margin-top:4pt">Graded pass/fail on something in every box. Hand this in
+  before you leave.</p>
+
+</section>
+
+</body>
+</html>

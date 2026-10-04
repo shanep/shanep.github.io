@@ -198,10 +198,26 @@
       },
       {
         "kind": "assignment",
+        "title": "A5 - Errors on Purpose",
+        "path": "activities/a5-errors-on-purpose",
+        "due_at": "2026-10-22T23:59:00-06:00",
+        "points": 20.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
         "title": "P3 - Subnetting and Forwarding",
         "path": "assignments/p3",
         "due_at": "2026-10-27T23:59:00-06:00",
         "points": 100.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "A6 - Who Carries Your Packets?",
+        "path": "activities/a6-who-carries-your-packets",
+        "due_at": "2026-10-29T23:59:00-06:00",
+        "points": 20.0,
         "canvas_id": ""
       },
       {
@@ -223,6 +239,14 @@
         "path": "notes/ch06-link",
         "due_at": null,
         "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "A7 - One Hop at a Time",
+        "path": "activities/a7-one-hop-at-a-time",
+        "due_at": "2026-11-05T23:59:00-07:00",
+        "points": 20.0,
         "canvas_id": ""
       },
       {
@@ -261,6 +285,14 @@
         "due_at": "2026-11-17T23:59:00-07:00",
         "points": 100.0,
         "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "A8 - TCP on a Noisy Link",
+        "path": "activities/a8-noisy-link",
+        "due_at": "2026-11-19T23:59:00-07:00",
+        "points": 20.0,
+        "canvas_id": ""
       }
     ]
   },
@@ -286,6 +318,14 @@
         "path": "notes/ch08-security",
         "due_at": null,
         "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "A9 - Who Are You Really Talking To?",
+        "path": "activities/a9-who-are-you-talking-to",
+        "due_at": "2026-12-03T23:59:00-07:00",
+        "points": 20.0,
         "canvas_id": ""
       },
       {

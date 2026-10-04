@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A9 Answer Key</title>
+<style>
+  @page { size: letter; margin: 0.5in 0.55in 0.45in 0.55in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 9.3pt/1.33 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.1pt; }
+
+  .page { page-break-after: auto; }
+  .demo, .box, .ans, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 9.8pt; margin: 10pt 0 5pt; text-transform: uppercase; letter-spacing: 0.8pt;
+       border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.4pt; margin: 7pt 0 3pt; }
+  p { margin: 0 0 4pt; }
+  .tiny { font-size: 8.1pt; }
+  .dim { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 4pt; }
+  .mast .right { text-align: right; }
+  .stamp { display: inline-block; background: #000; color: #fff; padding: 3pt 8pt;
+           font-size: 8.5pt; font-weight: bold; letter-spacing: 1pt; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 3pt 5pt; vertical-align: top; text-align: left; font-size: 8.2pt; }
+  th { background: #e4e4e4; font-size: 7.8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+
+  .demo { border: 0.75pt solid #000; margin-bottom: 7pt; }
+  .demo .hd { background: #e4e4e4; padding: 3pt 6pt; font-size: 8.3pt; font-weight: bold;
+              border-bottom: 0.75pt solid #000; }
+  .demo pre { margin: 0; padding: 5pt 6pt; font-family: "SF Mono","Menlo","Consolas",monospace;
+              font-size: 7.5pt; line-height: 1.32; white-space: pre-wrap; word-break: break-word; }
+  .demo .say { padding: 4pt 6pt; border-top: 0.75pt dashed #666; font-size: 8.1pt; background: #f7f7f7; }
+  .demo .say b { text-transform: uppercase; font-size: 7.6pt; letter-spacing: 0.5pt; }
+  .cmd { font-weight: bold; }
+
+  .ans { border-left: 3pt solid #000; padding: 3pt 0 3pt 8pt; margin: 0 0 6pt; }
+  .ans .q { font-weight: bold; }
+  .box { border: 1pt solid #000; padding: 5pt 7pt; margin-bottom: 7pt; }
+  .box.fill { background: #eee; }
+  .box h3 { margin-top: 0; }
+  .bar { border: 1pt dashed #000; padding: 3pt 7pt; margin-bottom: 7pt; font-size: 8.1pt; background: #f6f6f6; }
+  .bar strong { text-transform: uppercase; letter-spacing: 0.6pt; font-size: 7.6pt; }
+
+  ol, ul { margin: 0 0 5pt; padding-left: 15pt; }
+  li { margin-bottom: 3pt; }
+  .push { font-size: 8.1pt; }
+  .push li { margin-bottom: 2.5pt; }
+</style>
+</head>
+<body>
+
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A9 &middot; Answer Key and Demo Script</h1>
+      <div class="tiny">CS425 &middot; Who Are You Really Talking To? &middot; instructor led</div>
+    </div>
+    <div class="right"><span class="stamp">INSTRUCTOR COPY</span></div>
+  </div>
+  <p class="tiny dim" style="margin-bottom:8pt">Every transcript below is real output captured on
+  <span class="mono">onyx.boisestate.edu</span> on October 4, 2026. Boise State's certificate renews every 90 days, so
+  re-run round 2 the morning of class. About 40 minutes: 8, 12, 8, 8, then 4 for the exit question.</p>
+
+  <div class="box fill">
+    <h3>Say this at the start</h3>
+    <p class="tiny" style="margin:0">"Every HTTPS page you load answers three questions: was it changed, is the server who it
+    says, and can anyone else read it. Today we watch each answer get made, and then we break them. Everyone
+    <span class="mono">ssh onyx</span>. Predict before we run anything." Then hand out the sheet.</p>
+  </div>
+
+  <h2>Round 1 &middot; did anyone change this?</h2>
+  <div class="demo">
+    <div class="hd">printf 'pay Bob $10' | sha256sum &nbsp;then $90, then with -hmac cs425</div>
+<pre>51f03ce57e0fd0078b481a668c361fdce4edb7a976d107f297f5e3d3e2e6bcb6  -
+04475cefd57cc3e00a47cde385a124f6706381701dabcd72bfd30cc5f1a05096  -
+SHA2-256(stdin)= da4f9b2c2f8002ea83506e462fb9c85a5e1516ca9c5ff126375eae65ca91e23a</pre>
+    <div class="say"><b>Say</b> "One character in, a completely different fingerprint out. Now, who can compute that fingerprint?"</div>
+  </div>
+  <div class="ans"><span class="q">Digits.</span> Essentially all of them. A good hash changes about half its bits for any change to the input, so a one character edit gives an unrelated looking hash.</div>
+  <div class="ans"><span class="q">Q1.</span> No: a plain hash proves nothing about who made it. Anyone, Trudy included, can hash the
+  altered message, so Bob sees a matching pair. The MAC hashes the message <strong>with a shared secret</strong>, and Trudy
+  does not have it, so she cannot produce a MAC that matches <span class="mono">$90</span>. Integrity needs a key. A MAC
+  gives integrity and authentication but not non-repudiation, since both sides hold the secret (section 8.3).</div>
+
+  <h2>Round 2 &middot; who vouches for whom?</h2>
+  <div class="demo">
+    <div class="hd">openssl s_client ... | openssl x509 -noout -subject -issuer -dates -ext subjectAltName &nbsp;then -showcerts</div>
+<pre>subject=CN=boise-state.implem-fe4.ps-pantheon.com
+issuer=C=US, O=Let's Encrypt, CN=YR1
+notBefore=Aug 25 08:11:11 2026 GMT
+notAfter=Nov 23 08:11:10 2026 GMT
+    DNS:boise-state.implem-fe4.ps-pantheon.com, DNS:boisestate.edu, DNS:pan-live.boisestate.edu, DNS:www.boisestate.edu
+
+ 0 s:CN=boise-state.implem-fe4.ps-pantheon.com     i:C=US, O=Let's Encrypt, CN=YR1
+ 1 s:C=US, O=Let's Encrypt, CN=YR1                 i:C=US, O=ISRG, CN=Root YR
+ 2 s:C=US, O=ISRG, CN=Root YR                      i:C=US, O=Internet Security Research Group, CN=ISRG Root X1</pre>
+  </div>
+  <div class="ans"><span class="q">Issuer.</span> Let's Encrypt (intermediate YR1), good for 90 days. Short lives limit the damage from a stolen key, and renewal is automated.</div>
+  <div class="ans"><span class="q">Subject.</span> The hosting company, Pantheon. <span class="mono">www.boisestate.edu</span> is in the
+  Subject Alternative Name list, and the SAN is what a client matches against.</div>
+  <div class="ans"><span class="q">Q2.</span> Each certificate is signed by the one above it, and Onyx can check each signature with
+  the signer's public key. The chain ends at ISRG Root X1, which the server did not send: it is one of the 147 roots in
+  <span class="mono">/etc/pki/tls/certs/ca-bundle.crt</span>, shipped by Red Hat with the OS. So Onyx trusts the OS vendor's
+  choice of CAs, and the CAs' checking that the requester controls the name. Certificates move the trust problem to the CA,
+  they do not remove it (section 8.3).</div>
+
+</section>
+
+<section class="page">
+
+  <h2>Round 3 &middot; four ways to fail</h2>
+  <div class="demo">
+    <div class="hd">curl -sS -o /dev/null https://{expired,wrong.host,self-signed,untrusted-root}.badssl.com/</div>
+<pre>curl: (60) SSL certificate problem: certificate has expired
+curl: (60) SSL: no alternative certificate subject name matches target host name 'wrong.host.badssl.com'
+curl: (60) SSL certificate problem: self-signed certificate
+curl: (60) SSL certificate problem: self-signed certificate in certificate chain
+
+$ curl -sS -k -o /dev/null -w '%{http_code}\n' https://expired.badssl.com/
+200</pre>
+  </div>
+  <table>
+    <tr><th>Site</th><th>What is wrong</th><th>Broken link</th></tr>
+    <tr><td class="mono">expired</td><td>past <span class="mono">notAfter</span></td><td>the leaf's dates</td></tr>
+    <tr><td class="mono">wrong.host</td><td>the name is not in the SAN list</td><td>the leaf's names</td></tr>
+    <tr><td class="mono">self-signed</td><td>the leaf signed itself</td><td>no chain at all</td></tr>
+    <tr><td class="mono">untrusted-root</td><td>the chain ends at a root Onyx does not have</td><td>the trust store</td></tr>
+  </table>
+  <div class="ans"><span class="q">Q3.</span> <span class="mono">-k</span> keeps the encryption and drops the
+  <strong>authentication</strong>: you get a private conversation with whoever answered, which could be Trudy in the middle.
+  Confidentiality without authentication is worth very little.</div>
+
+  <h2>Round 4 &middot; what TLS does not hide</h2>
+  <div class="demo">
+    <div class="hd">curl -sv ... | grep &nbsp;then&nbsp; openssl s_client -trace ... | grep -A3 server_name</div>
+<pre>*   Trying 172.66.147.243:443...
+* Connected to example.com (172.66.147.243) port 443 (#0)
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+
+        extension_type=server_name(0), length=16
+          0000 - 00 0e 00 00 0b 65 78 61-6d 70 6c 65 2e 63 6f   .....example.co
+          000f - 6d                                             m</pre>
+    <div class="say"><b>Point at</b> the right hand column of the hex dump: the hostname, in the clear, in the first message.</div>
+  </div>
+  <div class="ans"><span class="q">Q4.</span> The DNS lookup (normally unencrypted), the server's IP address and port, the hostname in
+  the SNI field, when each connection happens and how long it lasts, and how many bytes go each way. That is often
+  enough to tell what you are doing without reading a word. TLS protects the <strong>contents</strong> (section 8.6).</div>
+
+  <h2>Exit question</h2>
+  <div class="demo">
+    <div class="hd">ssh onyx ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub &nbsp;then, on the laptop,&nbsp; ssh-keygen -F onyx.boisestate.edu -l</div>
+<pre>256 SHA256:VX7Yg613MmiIsSzSzRJ3hoyMiAN0thmzQ+RvutdxPyA no comment (ED25519)
+# Host onyx.boisestate.edu found: line 46
+onyx.boisestate.edu ED25519 SHA256:VX7Yg613MmiIsSzSzRJ3hoyMiAN0thmzQ+RvutdxPyA</pre>
+  </div>
+  <div class="ans">Typing <span class="mono">yes</span> trusted that the very first connection really reached Onyx: <strong>trust on
+  first use</strong>. Nobody vouched for that key, and an attacker on that first connection would have been remembered instead.
+  After that, SSH checks the saved key every time. <span class="mono">curl</span> never asks: it trusts a key because a CA it
+  already trusts signed a certificate binding that key to the name. One model trusts the first contact, the other trusts
+  a third party.</div>
+
+  <h2>Grading</h2>
+  <p class="tiny">Pass/fail, 20 points. Pass when every box has something in it. Wrong predictions are fine, that is what
+  they are for.</p>
+
+</section>
+
+</body>
+</html>

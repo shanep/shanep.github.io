@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CS425 A7 Answer Key</title>
+<style>
+  @page { size: letter; margin: 0.5in 0.55in 0.45in 0.55in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font: 9.3pt/1.33 "Charter", "Georgia", "Times New Roman", serif; color: #000; background: #fff; }
+  code, .mono { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 8.1pt; }
+
+  .page { page-break-after: auto; }
+  .demo, .box, .ans, .bar, tr { break-inside: avoid; page-break-inside: avoid; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  h1 { font-size: 15pt; margin: 0 0 2pt; letter-spacing: -0.2pt; }
+  h2 { font-size: 9.8pt; margin: 10pt 0 5pt; text-transform: uppercase; letter-spacing: 0.8pt;
+       border-bottom: 1.5pt solid #000; padding-bottom: 2pt; }
+  h3 { font-size: 9.4pt; margin: 7pt 0 3pt; }
+  p { margin: 0 0 4pt; }
+  .tiny { font-size: 8.1pt; }
+  .dim { color: #444; }
+
+  .mast { display: flex; justify-content: space-between; align-items: flex-end;
+          border-bottom: 2.5pt solid #000; padding-bottom: 5pt; margin-bottom: 4pt; }
+  .mast .right { text-align: right; }
+  .stamp { display: inline-block; background: #000; color: #fff; padding: 3pt 8pt;
+           font-size: 8.5pt; font-weight: bold; letter-spacing: 1pt; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 6pt; }
+  th, td { border: 0.75pt solid #000; padding: 3pt 5pt; vertical-align: top; text-align: left; font-size: 8.2pt; }
+  th { background: #e4e4e4; font-size: 7.8pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+
+  .demo { border: 0.75pt solid #000; margin-bottom: 7pt; }
+  .demo .hd { background: #e4e4e4; padding: 3pt 6pt; font-size: 8.3pt; font-weight: bold;
+              border-bottom: 0.75pt solid #000; }
+  .demo pre { margin: 0; padding: 5pt 6pt; font-family: "SF Mono","Menlo","Consolas",monospace;
+              font-size: 7.5pt; line-height: 1.32; white-space: pre-wrap; word-break: break-word; }
+  .demo .say { padding: 4pt 6pt; border-top: 0.75pt dashed #666; font-size: 8.1pt; background: #f7f7f7; }
+  .demo .say b { text-transform: uppercase; font-size: 7.6pt; letter-spacing: 0.5pt; }
+
+  .ans { border-left: 3pt solid #000; padding: 3pt 0 3pt 8pt; margin: 0 0 6pt; }
+  .ans .q { font-weight: bold; }
+  .box { border: 1pt solid #000; padding: 5pt 7pt; margin-bottom: 7pt; }
+  .box.fill { background: #eee; }
+  .box h3 { margin-top: 0; }
+  .bar { border: 1pt dashed #000; padding: 3pt 7pt; margin-bottom: 7pt; font-size: 8.1pt; background: #f6f6f6; }
+  .bar strong { text-transform: uppercase; letter-spacing: 0.6pt; font-size: 7.6pt; }
+  .todo { background: #000; color: #fff; padding: 0 3pt; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<section class="page">
+
+  <div class="mast">
+    <div>
+      <h1>A7 &middot; Answer Key and Demo Script</h1>
+      <div class="tiny">CS425 &middot; One Hop at a Time &middot; instructor led</div>
+    </div>
+    <div class="right"><span class="stamp">INSTRUCTOR COPY</span></div>
+  </div>
+  <p class="tiny dim" style="margin-bottom:8pt">The round 1 and 2 transcripts are real output captured on
+  <span class="mono">onyx.boisestate.edu</span> on October 4, 2026. Rounds 3 and 4 are paper and were checked by script.
+  About 40 minutes: 8, 10, 10, 10, then 2 for the exit question.</p>
+
+  <div class="box fill">
+    <h3>Say this at the start</h3>
+    <p class="tiny" style="margin:0">"In A4 Onyx picked the next hop. Today is how the datagram actually gets across that
+    one hop. Every frame carries two pairs of addresses, and by the end you will know which pair changes at every router.
+    Everyone <span class="mono">ssh onyx</span>. Predict before we run anything." Then hand out the sheet.</p>
+  </div>
+
+  <h2>Round 1 &middot; Onyx's other address</h2>
+  <div class="demo">
+    <div class="hd">ip -br link</div>
+<pre>lo               UNKNOWN        00:00:00:00:00:00 &lt;LOOPBACK,UP,LOWER_UP&gt;
+eno8303          DOWN           e8:cf:83:2c:2c:b9 &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt;
+eno8403          DOWN           e8:cf:83:2c:2c:ba &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt;
+eno12399np0      UP             6c:92:cf:db:68:50 &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt;
+eno12409np1      DOWN           6c:92:cf:db:68:51 &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt;</pre>
+    <div class="say"><b>Say</b> "The IP address says where Onyx is. The MAC address says who Onyx is, wherever it goes."</div>
+  </div>
+  <div class="ans"><span class="q">Predict.</span> Only the IP address changes. The MAC is flat and belongs to the card, not
+  the location. That is the postal address versus social security number analogy from the notes.</div>
+  <div class="ans"><span class="q">OUI and bits.</span> <span class="mono">6c:92:cf</span> is Broadcom. The first byte
+  <span class="mono">0x6c</span> = <span class="mono">0110 1100</span>: lowest bit 0 (unicast), next bit 0 (globally
+  unique).</div>
+  <div class="bar"><strong>Fast group</strong> &nbsp;The two DOWN ports start <span class="mono">e8:cf:83</span>, which is Dell:
+  the ports built into the server. The Broadcom ports are an add-in card. Each card's two ports have consecutive
+  addresses (<span class="mono">...50</span>, <span class="mono">...51</span>), because a vendor hands out a block per card.</div>
+  <div class="ans"><span class="q">Phone.</span> A randomized address has the second lowest bit of the first byte set (the
+  first byte's hex digit pair ends in 2, 6, A or E), so it is locally administered.
+  <span class="q">Q1.</span> Privacy. A fixed hardware address lets every Wi-Fi network, store and stadium recognize the
+  same phone wherever it goes. A different made up address per network breaks that tracking.</div>
+
+  <h2>Round 2 &middot; ARP</h2>
+  <div class="demo">
+    <div class="hd">ip neigh show dev eno12399np0 &nbsp;then&nbsp; ping -c 1 8.8.8.8, ip neigh show 8.8.8.8, ip neigh show 132.178.227.1</div>
+<pre>132.178.227.1 lladdr 0c:d0:f8:cf:ec:eb REACHABLE
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+--- 8.8.8.8 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+132.178.227.1 dev eno12399np0 lladdr 0c:d0:f8:cf:ec:eb REACHABLE</pre>
+    <div class="say"><b>Point at</b> the empty output for <span class="mono">8.8.8.8</span>, then at the gateway's line. The ping went to the gateway's MAC. The 100% loss is something past the gateway dropping ICMP. It does not change the frame that left Onyx.</div>
+  </div>
+  <table>
+    <tr><th>Field</th><th>Address</th><th>Changes at the next hop?</th></tr>
+    <tr><td>Source MAC</td><td class="mono">6c:92:cf:db:68:50</td><td>Yes: becomes the gateway's outgoing interface</td></tr>
+    <tr><td>Destination MAC</td><td class="mono">0c:d0:f8:cf:ec:eb</td><td>Yes: becomes the next router's</td></tr>
+    <tr><td>Source IP</td><td class="mono">132.178.227.11</td><td>No (unless a NAT rewrites it)</td></tr>
+    <tr><td>Destination IP</td><td class="mono">8.8.8.8</td><td>No</td></tr>
+  </table>
+  <div class="ans"><span class="q">Q2.</span> ARP only works on the local link, and <span class="mono">8.8.8.8</span> is not on
+  Onyx's /25 (A4 round 2: it matches the default route, <span class="mono">via 132.178.227.1</span>). So Onyx ARPs for the
+  gateway instead, and the frame carries the gateway's MAC with Google's IP inside. Point at P4: these are the four
+  fields they will pull out of real frames.</div>
+
+  <h2>Grading</h2>
+  <p class="tiny">Pass/fail, 20 points. Pass when every box has something in it and the round 3 division was attempted.
+  Wrong predictions are fine; that is what they are for.</p>
+
+</section>
+
+<section class="page">
+
+  <h2>Round 3 &middot; CRC by hand</h2>
+  <div class="demo">
+    <div class="hd">11010011 000 divided by 1011, quotient 11110001, each line is the dividend after one XOR</div>
+<pre>1011 ) 11010011000
+       1011
+       01100011000
+        1011
+       00111011000
+         1011
+       00010111000
+          1011
+       00000001000
+              1011
+       00000000011      R = 011</pre>
+    <div class="say"><b>Say</b> "Line the generator up under the leftmost 1, XOR, repeat. When there is no 1 left in the first eight columns, the last three bits are R."</div>
+  </div>
+  <div class="ans"><span class="q">Predict.</span> <span class="mono">r</span> = 3 bits, one less than the 4 bit generator.</div>
+  <div class="ans"><span class="q">R.</span> <span class="mono">011</span>. On the wire: <span class="mono">11010011 011</span>.
+  The receiver divides <span class="mono">11010011011</span> by <span class="mono">1011</span> and gets <span class="mono">000</span>: no error.</div>
+  <div class="ans"><span class="q">Flip the third bit.</span> <span class="mono">11110011011</span> leaves remainder
+  <span class="mono">010</span>, not zero, so the receiver drops the frame. Every single bit error is caught, since the
+  generator has more than one term.</div>
+  <div class="bar"><strong>Fast group</strong> &nbsp;Find an error the CRC misses. Any error pattern that is a multiple of
+  <span class="mono">G</span> gets through: flip bits 2, 4 and 5 (pattern <span class="mono">01011000000</span>, which is
+  <span class="mono">G</span> shifted) and the remainder is <span class="mono">000</span>.</div>
+
+  <h2>Round 4 &middot; be the switch</h2>
+  <table>
+    <tr><th>#</th><th>Frame</th><th>Out which ports?</th><th>Table after</th></tr>
+    <tr><td>1</td><td>A to D</td><td>2, 3, 4 (D unknown: flood)</td><td>A:1</td></tr>
+    <tr><td>2</td><td>D to A</td><td>1</td><td>A:1, D:4</td></tr>
+    <tr><td>3</td><td>B to D</td><td>4</td><td>A:1, D:4, B:2</td></tr>
+    <tr><td>4</td><td>C to broadcast</td><td>1, 2, 4 (broadcast always floods)</td><td>A:1, D:4, B:2, C:3</td></tr>
+    <tr><td>5</td><td>A to C</td><td>3</td><td>unchanged</td></tr>
+  </table>
+  <div class="ans"><span class="q">Flooded.</span> 2 of 5: frame 1 (unknown destination) and frame 4 (broadcast). The switch
+  learns from the <strong>source</strong> address, never the destination, which is why frame 1 teaches it about A and not D.</div>
+  <div class="ans"><span class="q">Q3.</span> B sees frames 1 and 4 (flooded) plus frame 3, which it sent. It never sees 2
+  or 5. Behind a hub B would see all five, because a hub repeats every bit out every port. That is why Wireshark on a
+  switched network mostly shows your own traffic and broadcasts.</div>
+
+  <h2>Exit question</h2>
+  <div class="ans">ARP. An ARP request is a link layer broadcast, not an IP datagram, so a router has nothing to forward it
+  on and it stops at the edge of the subnet. DHCP starts as a broadcast too, but on campus a DHCP relay on the router
+  usually forwards it to a central server, so accept DHCP only if they explain why. DNS, TCP and HTTP are ordinary
+  datagrams and cross routers all day.</div>
+
+</section>
+
+</body>
+</html>
