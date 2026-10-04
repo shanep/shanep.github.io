@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CS425 A5 TCP meter: pushes bytes through one TCP connection and reports what TCP did.
+"""CS425 A8 TCP meter: pushes bytes through one TCP connection and reports what TCP did.
 
 It opens a TCP connection to itself on 127.0.0.1, sends as fast as TCP allows for
 a few seconds, and once a second prints the throughput the receiver saw beside
@@ -8,7 +8,7 @@ segments it has retransmitted so far. Those last three come straight from the
 kernel (the TCP_INFO socket option), so they are TCP's own numbers, not guesses.
 
 Run it inside a network namespace whose loopback has been slowed down with tc
-netem; the A5 page has the steps:
+netem; the A8 page has the steps:
 
     python3 tcpmeter.py               # 10 seconds
     python3 tcpmeter.py --seconds 20
