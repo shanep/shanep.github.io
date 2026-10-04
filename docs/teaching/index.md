@@ -12,6 +12,7 @@
 - [Github Codespaces](github-codespaces.md)
 - [Github Tips and Tricks](github-tips-and-tricks.md)
 - [Guide for Adjunct Instructors](adjunct-instructor.md)
+- [boisestate.ai Capabilities](boisestate-ai.md)
 
 
 ## Tools
