@@ -66,9 +66,12 @@ naming the icons it wants in its `[icons]` table; the push uploads only those.
 
 Two modules from the shell are shared the same way, from `shared/` at the repo root:
 
-- `shared/instructor-resources/` is the instructor-only Instructor Resources module. A course
-  links it (`ln -s ../../shared/instructor-resources docs/<course>/instructor-resources`), adds
-  `"instructor-resources/*.md"` to `[layout] pages`, and declares the module with
+- `shared/instructor-resources/` is the instructor-only Instructor Resources module. Its Instructor
+  Guide and Course Suggestions pages are templates, because eCampus makes a Google Doc of each per
+  course. A course gets a real `docs/<course>/instructor-resources/` directory holding its own
+  copies of those two pages, linked to its docs, plus a symlink to the shared
+  `learning-opportunities.md` (see `docs/cs331/instructor-resources/`). It adds
+  `"instructor-resources/*.md"` to `[layout] pages` and declares the module with
   `never_publish = true`, which keeps it and its pages unpublished on every push, whatever the
   flags. The site excludes `**/instructor-resources/**`, so it never reaches the website.
 - `shared/course-resources/` holds the student pages of Course Resources. A course links it
