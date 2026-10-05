@@ -9,7 +9,7 @@ prev: false
 
 ## Why you are doing this
 
-Section 7.6 makes a claim that is easy to nod along to: TCP treats every lost
+The chapter 7 notes make a claim that is easy to nod along to: TCP treats every lost
 segment as a sign of congestion, so on a wireless link, where most loss is just
 noise, TCP slows down for the wrong reason. Today you measure how much it slows
 down.
@@ -190,7 +190,7 @@ average 2.70 Mbit/s over 10 s, MSS 1448 bytes, 53 segments retransmitted
 **Check:** the link still carries 20 Mbit/s. How much of it did TCP use, and how
 close was the formula? Compare the `cwnd` column to round 2 and to your answer
 from round 2. TCP lost 2% of its segments and gave up most of the link. Why?
-(section 3.7, and section 7.6)
+(section 3.7, and the chapter 7 notes)
 
 ## Round 4 - What 802.11 does about it
 
@@ -232,8 +232,8 @@ average 14.31 Mbit/s over 10 s, MSS 1448 bytes, 0 segments retransmitted
 ```
 
 **Check:** same radio, same 20% of frames lost, and one is about 40 times faster
-than the other. Which layer recovered the loss in each run? The book lists local
-recovery as one fix for TCP on wireless links (section 7.6). Which one of those
+than the other. Which layer recovered the loss in each run? The chapter 7 notes list
+local recovery as one fix for TCP on wireless links. Which one of those
 two runs was it?
 
 When you are done, `exit` leaves the namespace, and the slow link disappears with
@@ -244,7 +244,7 @@ it.
 Your laptop and a friend's are on opposite sides of the room, both talking to the
 same access point, and they cannot hear each other. Why can 802.11 not detect a
 collision while sending, the way Ethernet does, and what does it do instead?
-(sections 7.1 and 7.3)
+(sections 7.2 and 7.3)
 
 ## Worksheet
 
@@ -296,6 +296,6 @@ The shape never changed.
   worse than its 0.63 prediction.
 - Round 4's emulation ignores the time the retries take, beyond the lost
   bandwidth. Real link-layer retries also add delay and jitter, which is the
-  other cost section 7.6 mentions.
+  other cost the chapter 7 notes mention.
 - Everything a student does is gone when they `exit` or their ssh drops. Nothing
   needs cleaning up on Onyx.

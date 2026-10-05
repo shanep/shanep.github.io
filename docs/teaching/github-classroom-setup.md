@@ -239,7 +239,7 @@ shanepanter:classroom$ tree
 │       └── test-ssh-stuff
 └── rename-repos.sh
 
-3 directories, 6 files
+2 directories, 6 files
 ```
 - Run the rename script, passing the same assignment name that `gh classroom` used when
   downloading the repos (`p1` in this example):
@@ -264,7 +264,7 @@ shanepanter:classroom$ tree
 │       └── test-ssh-stuff
 └── rename-repos.sh
 
-3 directories, 6 files
+2 directories, 6 files
 ```
 
 ## Legacy Downloading

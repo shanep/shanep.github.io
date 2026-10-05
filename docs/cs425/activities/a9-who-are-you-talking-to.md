@@ -195,7 +195,7 @@ can host many sites:
 
 ```bash
 openssl s_client -trace -connect example.com:443 -servername example.com </dev/null 2>/dev/null \
-    | grep -A3 'extension_type=server_name'
+    | grep -m1 -A2 'extension_type=server_name'
 ```
 
 ```text
