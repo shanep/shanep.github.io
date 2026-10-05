@@ -165,7 +165,7 @@ items = [
     "notes/01-06-ai-class-policy.md",
     { header = "CS208 - Material" },
     "notes/01-07-cs208-html.md",
-    "notes/01-08-cs208-css-and-accessiblity.md",
+    "notes/01-08-cs208-css-and-accessibility.md",
 ]
 
 [[module]]
@@ -213,6 +213,8 @@ items = [
     "discussions/14-01-final-project-checkpoint-7.md",
 ]
 
+# Canvas counts Thanksgiving week, so calendar week 16 is week 15 of instruction: the items
+# below are due in week 15 even though the module says Week 16.
 [[module]]
 title = "Week 16 - Final Project Showcase"
 items = [
