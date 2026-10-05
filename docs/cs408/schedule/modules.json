@@ -1,0 +1,315 @@
+[
+  {
+    "title": "Course Resources",
+    "items": [
+      {
+        "kind": "page",
+        "title": "Instructor Information",
+        "path": "instructor",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "discussion",
+        "title": "Course Questions",
+        "path": "discussions/course-questions",
+        "due_at": "2026-12-11T23:59:59-07:00",
+        "points": 16,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
+    "title": "Week 1 - Introduction and Overview",
+    "items": [
+      {
+        "kind": "page",
+        "title": "01.01 README - Introduction",
+        "path": "notes/01-01-readme-introduction",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "quiz",
+        "title": "01.02 Syllabus Quiz (15 - 30 min)",
+        "path": "quizzes/quiz-01-02-syllabus-quiz",
+        "due_at": "2026-08-26T23:59:59-06:00",
+        "points": 4,
+        "canvas_id": ""
+      },
+      {
+        "kind": "discussion",
+        "title": "01.03 Class Introductions (30 min - 1 hr)",
+        "path": "discussions/01-03-class-introductions",
+        "due_at": "2026-08-26T23:59:59-06:00",
+        "points": 10,
+        "canvas_id": ""
+      },
+      {
+        "kind": "discussion",
+        "title": "01.04 AI, Web Development, and Job Security",
+        "path": "discussions/01-04-ai-web-development-and-job-security",
+        "due_at": "2026-08-28T23:59:59-06:00",
+        "points": 25,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "01.05 Personalize Your Canvas Profile (15 min)",
+        "path": "assignments/01-05-personalize-your-canvas-profile",
+        "due_at": "2026-08-28T23:59:59-06:00",
+        "points": 5,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "01.06 AI Class Policy",
+        "path": "notes/01-06-ai-class-policy",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "header",
+        "title": "CS208 - Material",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "01.07 CS208 HTML",
+        "path": "notes/01-07-cs208-html",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "01.08 CS208  CSS and Accessiblity",
+        "path": "notes/01-08-cs208-css-and-accessiblity",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
+    "title": "Week 2 - CS208 Database Review",
+    "items": [
+      {
+        "kind": "page",
+        "title": "02.01 CS208 JavaScript",
+        "path": "notes/02-01-cs208-javascript",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "02.02 Database Lab (4- 8 hrs)",
+        "path": "assignments/02-02-database-lab",
+        "due_at": "2026-09-04T23:59:59-06:00",
+        "points": 50,
+        "canvas_id": ""
+      },
+      {
+        "kind": "quiz",
+        "title": "02.03  CS208 Review - Practice Quiz (5 - 6 hrs)",
+        "path": "quizzes/quiz-02-03-cs208-review-practice-quiz",
+        "due_at": "2026-09-04T23:59:59-06:00",
+        "points": 50,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
+    "title": "Weeks 3 and 4 - Tech Stack and MiniLab",
+    "items": [
+      {
+        "kind": "page",
+        "title": "03.00 README",
+        "path": "notes/03-00-readme",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "discussion",
+        "title": "03.01 Tech Stack Survey",
+        "path": "discussions/03-01-tech-stack-survey",
+        "due_at": "2026-09-11T23:59:59-06:00",
+        "points": 100,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "04.01 - Mini-Lab Warmup",
+        "path": "assignments/04-01-mini-lab-warmup",
+        "due_at": "2026-09-18T23:59:59-06:00",
+        "points": 100,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
+    "title": "Week 5 and 6 - Project Specification",
+    "items": [
+      {
+        "kind": "assignment",
+        "title": "05.01 Project Specification",
+        "path": "assignments/05-01-project-specification",
+        "due_at": "2026-09-25T23:59:59-06:00",
+        "points": 60,
+        "canvas_id": ""
+      },
+      {
+        "kind": "discussion",
+        "title": "6.01 Project Specification Peer Review",
+        "path": "discussions/06-01-project-specification-peer-review",
+        "due_at": "2026-10-02T23:59:59-06:00",
+        "points": 100,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "06.02 - Project Specification (Final Draft)",
+        "path": "assignments/06-02-project-specification",
+        "due_at": "2026-10-07T23:59:00-06:00",
+        "points": 40,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
+    "title": "Week 7 - AWS",
+    "items": [
+      {
+        "kind": "assignment",
+        "title": "07.01 - Setup",
+        "path": "assignments/07-01-setup",
+        "due_at": "2026-10-08T23:59:59-06:00",
+        "points": 50,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "07.02 - EC2 and Project Configuration",
+        "path": "assignments/07-02-ec2-and-project-configuration",
+        "due_at": "2026-10-10T23:59:59-06:00",
+        "points": 100,
+        "canvas_id": ""
+      },
+      {
+        "kind": "url",
+        "title": "Create EC2 VM and deploy Example App Walkthrough",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": "",
+        "url": "https://youtu.be/1WqQ2r7LHLM?si=cvB3vuCvGFZgfMqs"
+      }
+    ]
+  },
+  {
+    "title": "Week 8 - 15 - Final Project implementation",
+    "items": [
+      {
+        "kind": "page",
+        "title": "08.00 README",
+        "path": "notes/08-00-readme",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "discussion",
+        "title": "08.01 Final Project Checkpoint 1",
+        "path": "discussions/08-01-final-project-checkpoint-1",
+        "due_at": "2026-10-16T23:59:59-06:00",
+        "points": 50,
+        "canvas_id": ""
+      },
+      {
+        "kind": "discussion",
+        "title": "09.01 Final Project Checkpoint 2",
+        "path": "discussions/09-01-final-project-checkpoint-2",
+        "due_at": "2026-10-23T23:59:59-06:00",
+        "points": 50,
+        "canvas_id": ""
+      },
+      {
+        "kind": "discussion",
+        "title": "10.01 Final Project Checkpoint 3",
+        "path": "discussions/10-01-final-project-checkpoint-3",
+        "due_at": "2026-10-30T23:59:59-06:00",
+        "points": 50,
+        "canvas_id": ""
+      },
+      {
+        "kind": "discussion",
+        "title": "11.01 Final Project Checkpoint 4",
+        "path": "discussions/11-01-final-project-checkpoint-4",
+        "due_at": "2026-11-06T23:59:59-07:00",
+        "points": 50,
+        "canvas_id": ""
+      },
+      {
+        "kind": "discussion",
+        "title": "12.01 Final Project Checkpoint 5",
+        "path": "discussions/12-01-final-project-checkpoint-5",
+        "due_at": "2026-11-13T23:59:59-07:00",
+        "points": 50,
+        "canvas_id": ""
+      },
+      {
+        "kind": "discussion",
+        "title": "13.01 Final Project Checkpoint 6",
+        "path": "discussions/13-01-final-project-checkpoint-6",
+        "due_at": "2026-11-20T23:59:59-07:00",
+        "points": 50,
+        "canvas_id": ""
+      },
+      {
+        "kind": "discussion",
+        "title": "14.01 Final Project Checkpoint 7",
+        "path": "discussions/14-01-final-project-checkpoint-7",
+        "due_at": "2026-12-04T23:59:59-07:00",
+        "points": 50,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
+    "title": "Week 16 - Final Project Showcase",
+    "items": [
+      {
+        "kind": "discussion",
+        "title": "16.01 Project Showcase (4 -6 hrs)",
+        "path": "discussions/16-01-project-showcase",
+        "due_at": "2026-12-11T23:59:00-07:00",
+        "points": 200,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "16.02 End of Semester Student Evaluation (15 min)",
+        "path": "assignments/16-02-end-of-semester-student-evaluation",
+        "due_at": "2026-12-11T23:59:00-07:00",
+        "points": 10,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "16.03 Finding Typos, Bugs, and Improvements (15 min)",
+        "path": "assignments/16-03-finding-typos-bugs-and-improvements",
+        "due_at": "2026-12-11T23:59:00-07:00",
+        "points": 10,
+        "canvas_id": ""
+      }
+    ]
+  }
+]
