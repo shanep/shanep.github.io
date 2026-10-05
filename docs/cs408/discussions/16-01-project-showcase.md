@@ -63,12 +63,12 @@ Each review must use these six headings:
 5. **♿ Usability & Accessibility:** Is it easy to navigate and usable by everyone?
 6. **✨ Creativity & Originality:** What stands out about it?
 
-## Grading and Submission
+## Finish
 
 You are finished once your post has the four links and your video, and both of your reviews are
 posted.
 
-## Rubric
+## Grading
 
 Each item is checked against your post, your repository at the `final` tag, and your live site:
 

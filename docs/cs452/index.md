@@ -64,3 +64,7 @@ course learning outcomes.
 
 
 <!--@include: ../../parts/syllabus-boiler.md-->
+
+<!--@include: ../../parts/syllabus-in-person.md-->
+
+<!--@include: ../../parts/syllabus-policies.md-->

@@ -82,6 +82,7 @@ Produce a table with **at least twelve threats**, covering **all six STRIDE cate
 least two of each). Columns:
 
 | # | Component or flow | STRIDE | The threat, in one or two sentences | Which fact from the description makes it possible |
+| - | ----------------- | ------ | ----------------------------------- | ------------------------------------------------- |
 
 That last column is the one that matters most. Every threat you list must trace to something
 actually stated in the [SnapVault system description](../data/photoshare-system.md). If you cannot point at the

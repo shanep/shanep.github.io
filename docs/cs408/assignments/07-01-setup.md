@@ -28,7 +28,7 @@ please email me ASAP :)
 - You will have to click through a few screens to log in, eventually you should see the AWS
   console.
 - **IMPORTANT**: In the final screenshot make sure you are in United States (Oregon) or
-  **us-west2. ** Your account will NOT work in any other region!
+  **us-west-2**. Your account will NOT work in any other region!
 
 ## Task 2 - Launch a VM with EC2
 
@@ -58,7 +58,7 @@ please email me ASAP :)
   - Keep all other setting as default.
   - Launch the instance and wait for it to come online
 - Access your EC2 server via SSH
-  - In the left navigation on the AWS console click **Instances **and you should see your new
+  - In the left navigation on the AWS console click **Instances** and you should see your new
     instance with an instance state of "Running". If it doesn't say "Running" give a few minutes to
     fully come online.
 

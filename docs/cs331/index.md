@@ -149,7 +149,7 @@ printed page numbers shown in the PDF's footers.
 | 12 | Apr 5-11 | [Malware and adversarial behaviors](notes/week-12-malware-and-adversarial-behaviours.md) | §6.1-6.2 (pp. 202-207); §6.4 (pp. 214-219); §7.2 (pp. 236-242) | [Lab 7](assignments/lab-07-malware-triage.md) |
 | 13 | Apr 12-18 | [Software security, memory safety, and assurance](notes/week-13-software-security-and-assurance.md) | §15.1.1 (pp. 500-501); §15.2 (pp. 507-512); §15.4 (pp. 516-520); §17.4 (pp. 582-585) | [Lab 8](assignments/lab-08-memory-safety-and-assurance.md) |
 | 14 | Apr 19-25 | [Web security and injection](notes/week-14-web-security-and-injection.md) | §16.2.6-16.2.8 (pp. 536-540); §16.3.1 (pp. 543-545); §16.4.1 (pp. 547-552) | [Lab 9](assignments/lab-09-sql-injection.md) |
-| 15 | Apr 26-30 | [Security operations, detection, and incident response](notes/week-15-security-operations-and-incident-response.md) | §8.1 (pp. 253-256); §8.3.1-8.3.3 (pp. 264-268); §8.7 (pp. 283-286) | [Lab 10](assignments/lab-10-log-analysis-and-incident-memo.md); [D5](discussions/d05-current-security-failure.md) |
+| 15 | Apr 26-30 | [Security operations, detection, and incident response](notes/week-15-security-operations-and-incident-response.md) | §8.1 (pp. 253-256); §8.2, skim (pp. 256-263); §8.3.1-8.3.3 (pp. 264-268); §8.3.6 (p. 270); §8.7 (pp. 283-286) | [Lab 10](assignments/lab-10-log-analysis-and-incident-memo.md); [D5](discussions/d05-current-security-failure.md) |
 | Finals | May 3-7 | Wrap-up | No new reading | [D6 reflection](discussions/d06-final-reflection.md) |
 
 Spring break, the last day of instruction (April 30), and finals week (May 3-7) follow the
@@ -224,8 +224,9 @@ accommodation or make-up arrangement should contact me as soon as possible.
 
 Homework assignments may be submitted up to **2 days late with no penalty.** After the grace period,
 no submissions will be accepted unless prior arrangements were made before the original due date. No
-work or extra credit will be accepted after the **last day of course instruction**: the semester
-must end at some point, so plan accordingly. Work submitted 1 second late is treated the same as
+work or extra credit will be accepted after the **last day of course instruction**, except the D6
+final reflection, which is due the last day of finals week. The semester must end at some point, so
+plan accordingly. Work submitted 1 second late is treated the same as
 work submitted 1 day late. You can find the last day of course instruction on the
 [registrar's academic calendar](https://www.boisestate.edu/registrar/boise-state-academic-calendars/).
 

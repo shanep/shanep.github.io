@@ -114,3 +114,26 @@ A rough course outline is shown below.
   - Final Project Demo
 
 <!--@include: ../../parts/syllabus-boiler.md-->
+
+## Attendance Policy
+
+This course is asynchronous. I follow the official
+[attendance policy](https://www.boisestate.edu/registrar/registration/attendance-policy/) as defined
+by the university. Students are responsible for completing the weekly materials and assessments by
+the posted deadlines. Students who need an approved accommodation or make-up arrangement should
+contact me as soon as possible.
+
+## Class Interaction Policy
+
+Class interaction assignments must be completed within the time frame specified in Canvas.
+Interactive assignments are only valuable when everyone participates during the same week, and it
+is not fair to classmates who submitted on time to have to respond to or review late submissions.
+
+This applies to (but is not limited to):
+
+- Discussion posts
+- Project checkpoints
+- Peer reviews
+- The project showcase
+
+<!--@include: ../../parts/syllabus-policies.md-->

@@ -187,7 +187,7 @@ rather than an additional week, the 8-hour weekly budget has no room for a sixte
 
 **Notes.** Objective 7.4 (the base-rate fallacy) is the one piece of quantitative reasoning in the
 course; it is taught with worked arithmetic on the week 15 lecture notes page so that students without a
-statistics background can complete it. Reading support: CyBOK §8.1, §8.3.1-8.3.6, §8.7;
+statistics background can complete it. Reading support: CyBOK §8.1-8.2, §8.3.1-8.3.3, §8.3.6, §8.7;
 NIST SP 800-61r3.
 
 ---

@@ -1,7 +1,6 @@
 ---
 next: false
 prev: false
-submit_email: email is in the syllabus
 repo: https://github.com/shanep/git-send-email
 project: cs452-hw-2
 ---
@@ -154,7 +153,7 @@ If git says that `upstream` does not appear to be a git repository, then your cl
 about the repository you forked from yet. Add it and fetch again.
 
 ```bash
-git remote add upstream {{$frontmatter.repo}}
+git remote add upstream https://github.com/shanep/git-send-email
 git fetch upstream
 ```
 
@@ -310,10 +309,11 @@ git checkout upstream/master -b test-patch
 git am my-patch.txt
 ```
 
-8. Commit your patch
+8. Make sure `git am` created your commit. The top entry in the log should be your "Submit project"
+  commit.
 
 ```bash
-git commit -m "Testing my email patch"
+git log -1
 ```
 
 9. Push your test patch branch to your GitHub account
@@ -339,9 +339,9 @@ looked good you can now submit your patch for grading.
 
 ::: danger
 
-Do not use the class mailing list to test your patch. You should only send an email to **{{
-$frontmatter.submit_email}}** after you have tested the process with your own email. Spamming the
-mailing list with excessive patches will result in a lower grade.
+Do not use the class mailing list to test your patch. You should only send an email to the class
+mailing list (the address is in the syllabus) after you have tested the process with your own
+email. Spamming the mailing list with excessive patches will result in a lower grade.
 
 When you submit to the mailing list you will automatically be cc'd on the email so you will have a
 copy in your own email as proof that you completed the assignment.
@@ -350,11 +350,13 @@ You are allowed to submit up to 3 times without penalty.
 
 :::
 
-Open a terminal and submit your patch.
+Open a terminal and submit your patch. Replace `CLASS_LIST_ADDRESS` with the class mailing list
+address from the syllabus.
 
-
-	git checkout submit
-	git send-email --to {{ $frontmatter.submit_email}} HEAD^
+```bash
+git checkout submit
+git send-email --to CLASS_LIST_ADDRESS HEAD^
+```
 
 Assuming all went well you have now completed the assignment! You have created a patch file from a squash merge,
 emailed it and tested the resulting patch. You are well on your way to becoming an advanced

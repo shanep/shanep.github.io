@@ -92,6 +92,22 @@ function stripInstructorSections(src: string): string {
     .join('')
 }
 
+// Course textbooks sit in docs/<course>/docs/ and reach students through Canvas,
+// because .gitignore keeps them out of this public repo. On the website a link
+// to one is a 404 that the dead-link check never sees (VitePress skips .pdf
+// links), so it points at the publisher's free copy instead. Canvas still gets
+// the uploaded file: edutools reads the markdown, not this config.
+const TEXTBOOK_URLS: Record<string, string> = {
+  'CyBOK_v1.1.0.pdf': 'https://www.cybok.org/media/downloads/CyBOK_v1.1.0.pdf',
+}
+
+function publicTextbookUrl(href: string): string | undefined {
+  const match = /(?:^|\/)docs\/([^/#?]+\.pdf)(#.*)?$/.exec(href)
+  if (!match) return undefined
+  const url = TEXTBOOK_URLS[match[1]]
+  return url === undefined ? undefined : url + (match[2] ?? '')
+}
+
 declare module 'vitepress' {
   namespace DefaultTheme {
     interface Config {
@@ -115,6 +131,15 @@ export default defineConfig({
         // never reaches the page, the outline, or the search index.
         md.core.ruler.before('normalize', 'strip_instructor_sections', (state: any) => {
           state.src = stripQuizAnswers(stripInstructorSections(state.src))
+        })
+        md.core.ruler.after('inline', 'public_textbook_links', (state: any) => {
+          for (const block of state.tokens) {
+            for (const token of block.children ?? []) {
+              if (token.type !== 'link_open') continue
+              const url = publicTextbookUrl(token.attrGet('href') ?? '')
+              if (url) token.attrSet('href', url)
+            }
+          }
         })
         // @ts-ignore
         md.use(footnote)
