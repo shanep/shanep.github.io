@@ -55,7 +55,6 @@ Four sources of delay at each node:
 | Transmission | Pushing bits onto the link | `L / R` |
 | Propagation | Bits traveling down the link | `d / s` |
 
-
 **Traffic intensity** is `La/R`, where `L` is packet length, `a` is average arrival
 rate, and `R` is the link rate. As it approaches 1, queuing delay grows without
 bound. Design so it stays comfortably below 1.

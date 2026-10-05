@@ -56,7 +56,6 @@ hero:
 }
 </style>
 
-
 ## Bio
 
 Shane Panter is an Assistant Clinical Professor of Computer Science at Boise

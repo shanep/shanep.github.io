@@ -145,6 +145,7 @@ As long as you have not pushed yet, add the file and amend the commit.
 git add missing-file.c
 git commit --amend --no-edit
 ```
+
 :::
 
 ::: details I want to throw away my changes to a file
@@ -154,6 +155,7 @@ make sure that is what you want.
 ```bash
 git restore src/lab.c
 ```
+
 :::
 
 ::: details My push was rejected
@@ -164,6 +166,7 @@ machine, or a teammate pushed). Pull them in first and then push again.
 git pull --rebase
 git push
 ```
+
 :::
 
 ::: details I pushed a commit that broke everything
@@ -173,6 +176,7 @@ Create a new commit that undoes it. Use `git log --oneline` to find the commit i
 git revert a1b2c3d
 git push
 ```
+
 :::
 
 ::: details My repository is a mess and I do not know how to fix it

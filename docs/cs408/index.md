@@ -5,6 +5,7 @@ next: false
 # Syllabus
 
 ## CS408 - Full Stack Web Development
+
 Learn how to apply various technologies used for client-side and server-side web development. Learn
 advanced concepts behind competing web technologies, best practices for design and usability, and
 build rich, dynamic, n-tier secure and scalable web applications. Tools used will be mainly open
@@ -28,7 +29,6 @@ via web conferencing (e.g., Zoom).
 
 - **Email:** shanepanter (at) boisestate.edu
 - **Office Hours:** [Instructor Information](./instructor.md)
-
 
 ## Learning Objectives
 

@@ -39,6 +39,7 @@ page is valid but its present bit is 0, the OS brings the page in from disk
 ![Virtual](images/vm-virtual-phy.png)
 
 A virtual address is split into two parts:
+
 - **VPN (Virtual Page Number)**: index into the page table
 - **Offset**: byte position within the page (same in virtual and physical)
 
@@ -67,6 +68,7 @@ software-managed TLBs like MIPS) walks the page table, loads the
 translation into the TLB, and retries. This is expensive.
 
 TLBs work because programs exhibit **locality**:
+
 - *Temporal locality*: recently accessed pages are likely to be accessed again
 - *Spatial locality*: pages near recently accessed pages are likely to be accessed soon
 
@@ -107,23 +109,28 @@ When physical memory is full and a new page must be brought in, the OS
 must **evict** an existing page. Which one to pick?
 
 ### Optimal (OPT / MIN)
+
 Evict the page that will be used **furthest in the future**. Provably
 optimal, but impossible to implement (requires knowing the future).
 Used as a benchmark to evaluate real algorithms.
 
 ### FIFO (First In, First Out)
+
 Evict the page that has been in memory the longest. Simple but poor:
 evicts frequently used pages if they were loaded first. Suffers from
 **Belady's anomaly**: adding more physical frames can *increase* faults.
 
 ### LRU (Least Recently Used)
+
 Evict the page that was used **least recently**. Works well in practice
 because of temporal locality. True LRU is expensive (requires tracking
 access time for every page), so real systems approximate it.
 
 ### Clock Algorithm (Approximation of LRU)
+
 Uses the **reference bit** in each PTE. A clock hand sweeps through
 page frames in a circle:
+
 1. If the reference bit is 1, clear it and advance.
 2. If the reference bit is 0, evict this page.
 

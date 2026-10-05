@@ -73,6 +73,7 @@ angle brackets. The table keeps its formatting when pasted; add a row for each d
 | \<deliverable\> | \<Done, Partial or Not started\> | \<commit link, file path or live URL\> |
 | \<deliverable\> | \<Done, Partial or Not started\> | \<commit link, file path or live URL\> |
 | \<deliverable\> | \<Done, Partial or Not started\> | \<commit link, file path or live URL\> |
+
 :::
 
 Then record your Panopto video in the same reply (Task 3).

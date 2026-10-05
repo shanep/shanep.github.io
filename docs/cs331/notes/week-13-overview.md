@@ -23,7 +23,7 @@ By the end of this week, the successful student will be able to:
 - **[4.4](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures)**: Trace
   a buffer overflow in C source to the stack layout that makes it exploitable, and evaluate which
   mitigations would stop it.
-- **[5.5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)**: 
+- **[5.5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)**:
   Recommend a prevention-first countermeasure (a language, API, or coding practice) for a class of
   vulnerability.
 - **[6.1](../objectives.md#tlo-6-interpreting-assurance-arguments-and-evidence)**: Distinguish

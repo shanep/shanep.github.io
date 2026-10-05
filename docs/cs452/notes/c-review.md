@@ -118,7 +118,7 @@ In C you can also use the **static** declaration on internal variables (variable
 function). Internal static variables are local to a particular function just as automatic variables
 are, but unlike automatics, they remain in existence across function calls. This means that using
 the **static** keyword on internal variables provides private, permanent storage within a single
-function. Be aware however that internal static variables are *NOT* thread safe and should be
+function. Be aware however that internal static variables are _NOT_ thread safe and should be
 treated with the same care as global variables in a multi-threaded environment.
 
 ```c
@@ -201,7 +201,7 @@ to the address. This property is very useful when implementing the memory subsys
 ### Strings
 
 There is no explicit string type in C like there is in Java. In C a string is just an array of
-*chars* that are terminated with a null character ('\0'). Strings are typically represented by a
+_chars_ that are terminated with a null character ('\0'). Strings are typically represented by a
 pointer (typed to `char *`) that points to the first character in the string. In C the
 `char` type represents a character from the [ASCII table](https://www.asciitable.com/). A very
 common mistake for beginner C programmers is to forget about the null character when dealing with

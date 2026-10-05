@@ -16,11 +16,13 @@ make your website available on the public internet. I will provide you with an A
 can use to spin up your own virtual machine in the cloud.
 
 ### Using Rubrics
+
 For the remainder of the semester, we use **rubrics in Canvas** to make grading transparent,
 consistent, and aligned with the learning goals for each assignment. Rubrics describe precisely
 **what is expected** for full credit and how each part of your work will be evaluated.
 
 ### Rubrics in Canvas Discussions
+
 For discussion-based assignments (like the **Final Project Checkpoints**), the rubric is attached
 directly to the discussion page.
 
@@ -41,10 +43,12 @@ directly to the discussion page.
 ---
 
 ## How to View the Rubric and Feedback in the Gradebook
+
 After your instructor has graded your discussion or assignment, you can view your **rubric scores
 and comments** directly from the **Canvas Gradebook**.
 
-### To view the rubric in the Gradebook:
+### To view the rubric in the Gradebook
+
 1. **Open Canvas** and click on the **“Grades”** link in the course navigation menu.
 
 2. Locate the assignment in your list of graded items.

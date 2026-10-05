@@ -18,7 +18,7 @@ two distinct Canvas API endpoints, and it displays the results using your framew
 any way; in fact, using AI to generate boilerplate code to access the REST API is recommended, so
 you can spend more time on the creative and interesting parts :)
 
-#### Learning Objectives
+### Learning Objectives
 
 By completing this mini-lab, you will demonstrate your ability to:
 
@@ -56,6 +56,7 @@ Example:
 9. **CRITICAL**: Add .env to your .gitignore.
 
 #### Security Warning
+
 Your Canvas token grants full access to your account. Never commit it to a public (or private)
 repository. If you accidentally push a token, revoke it immediately in Canvas Settings and generate
 a new one.

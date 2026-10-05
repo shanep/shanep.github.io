@@ -14,7 +14,6 @@ Kernel](https://www.kernel.org/doc/html/latest/process/submitting-patches.html).
 attempts to get everything correct but once you are able to wrap your head around the process you
 will have unlocked a powerful software development skill!
 
-
 ## Task 1 - Setup
 
 Follow the steps below to get your repository all set up and ready to use. The steps below show you
@@ -24,7 +23,6 @@ below can be completed in the CS Lab or on your personal machine if you prefer.
 ### Fork the starter repository
 
 1. Fork the starter repository into your personal GitHub account: **{{$frontmatter.repo}}**
-
 
 ![fork repo](/images/fork-the-repo.png)
 
@@ -69,7 +67,6 @@ have two-factor authentication turned on.
 
 :::
 
-
 ### Generate an app password
 
 ::: info
@@ -81,13 +78,11 @@ SMTP once!
 
 :::
 
-
 In order to use [git send-email](https://git-scm.com/docs/git-send-email) you will need to generate
 an app password. Navigate to
 [https://myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords)
 and generate a new app password. Make sure and copy the password before you close the window because
 you will not be able to see it again.
-
 
 ![generate app password](/images/gen-app-password.png)
 
@@ -95,7 +90,6 @@ you will not be able to see it again.
 
 If you get the error shown below it typically means that you have not enabled two-factor
 authentication. Follow these steps to resolve the issue:
-
 
 1. Go back and ensure you have [two-factor authentication](#turn-on-two-factor) enabled.
 2. [Log out](https://support.google.com/mail/answer/8154) of your
@@ -118,7 +112,6 @@ authentication. Follow these steps to resolve the issue:
 2. In the terminal type `git config --global --edit` and modify the file with the info listed below.
 You will need to change the info listed below to match your own name, email and **App Password** that you
 generated in the [previous step](#generate-an-app-password).
-
 
 ```text
 [user]
@@ -289,7 +282,6 @@ git checkout upstream/master -b test-patch
 
 ![download gmail](/images/gmail-original-email.png)
 
-
 4. Copy the email to your clipboard
 
 ![copy to clipboard](/images/gmail-copy-email.png)
@@ -330,7 +322,6 @@ git push
   1 commit from you with all your changes.
 
 ![final state](/images/final-repo-state.png)
-
 
 ### Submit your Patch for grading
 

@@ -46,7 +46,6 @@ your grade book. You will follow these instructions for **both** types of assign
 
 ![create assignment](images/create-assignment.png)
 
-
 ## Create your Quizzes
 
 You can use the built-in quizzes that zyBooks provides in Canvas with the steps below.
@@ -55,12 +54,11 @@ You can use the built-in quizzes that zyBooks provides in Canvas with the steps 
 
 ![create test](images/zybook-create-test.png)
 
--  Export the test as a question bank
+- Export the test as a question bank
 
 ![export test](images/zybook-export-test.png)
 
 - [Import the question bank](https://boisestate.atlassian.net/wiki/spaces/LTS/pages/1723891720/Canvas+FAQ+How+do+I+import+quizzes+from+QTI+packages)
-
 
 ## Set Up GitHub (course dependent)
 
