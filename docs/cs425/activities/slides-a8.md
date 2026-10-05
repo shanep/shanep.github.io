@@ -178,7 +178,7 @@ Whether that is a good trade is today's question.
 
 ## Three ways to fix TCP on wireless
 
-Section 7.6 lists the options:
+The chapter 7 notes list the options:
 
 - **Local recovery.** Fix the loss on the wireless hop before TCP sees it.
 - **Make the sender wireless aware.** Teach TCP to tell corruption from

@@ -138,7 +138,7 @@ average 2.70 Mbit/s over 10 s, MSS 1448 bytes, 53 segments retransmitted</pre>
   a little better. Same ballpark is the point.</div>
   <div class="ans"><span class="q">Q3.</span> TCP cannot tell noise from congestion. Every loss looks like a full router queue, so it
   cuts the window (CUBIC to 70%, Reno to half). At 2% a loss comes every 50 segments or so, and the window sits around
-  10, nowhere near the 86 it needs. Section 7.6: it slows down for the wrong reason.</div>
+  10, nowhere near the 86 it needs. Chapter 7 notes: it slows down for the wrong reason.</div>
 
   <h2>Round 4 &middot; what 802.11 does about it</h2>
   <div class="ans"><span class="q">Lost after 7 tries.</span> 0.2<sup>7</sup> = 0.0000128, about <strong>0.0013%</strong>.</div>

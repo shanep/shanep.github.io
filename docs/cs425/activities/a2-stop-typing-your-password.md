@@ -372,7 +372,10 @@ cold login about 1.1 s, warm about 250 ms, round trip about 31 ms;
   odd things; `Esc` then `:q!` and start over) and pasting in insert mode with
   auto-indent (harmless here, the function still works). Nobody needs `nano`.
 - **A student who breaks their `~/.bashrc`** can lock themselves out of a usable
-  shell. `ssh onyx -t 'bash --norc'` gets them back in to fix it.
+  shell. `ssh onyx -t 'bash --norc'` gives them a clean shell to fix it in, as long
+  as the file still finishes loading (a typo, a bad alias or function, a broken
+  `PATH`). If the file exits or hangs, every ssh command runs it first, so that
+  student needs the Help Desk.
 - **The `-C` comment.** Some will type a literal `you@boisestate.edu`. It is a
   comment and harmless; do not stop the room for it.
 

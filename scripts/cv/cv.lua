@@ -12,7 +12,7 @@
 --   * Site-relative links (/papers/...) point at the live site, since a PDF
 --     has no site to be relative to.
 
-local SITE = 'https://shanep.github.io'
+local SITE = 'https://shanepanter.com'
 
 -- A list item that ends in a date (", 2013", ", Fall 2019 - present",
 -- ", June 2016 - present") gets the date pushed to the right margin, the way

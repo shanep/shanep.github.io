@@ -5,7 +5,7 @@
 Two separate problems that get taught together: the **link** is wireless, and the
 **host** may move. They are independent, and the chapter treats them separately.
 
-## 7.1 What makes wireless different
+## 7.2 What makes wireless different
 
 Wired links are boring in a good way. Wireless links are not:
 
@@ -31,12 +31,12 @@ CSMA/CD that Ethernet uses.
 sensing therefore fails: both hear silence, both transmit, and they collide at B.
 **Signal fading** produces the same effect for a different reason.
 
-## 7.2 Wireless links and network characteristics
+## 7.3.1 Sharing the wireless channel
 
 **CDMA** lets multiple senders share the same band by encoding with orthogonal
 chipping sequences, and the receiver decodes with the same sequence.
 
-## 7.3 WiFi: 802.11
+## 7.3.2 WiFi: 802.11
 
 **Architecture.** A **basic service set** is one access point plus its associated
 hosts. Hosts must **associate** with an AP before sending anything.
@@ -62,7 +62,7 @@ frame may pass between a host, an AP, and a router, and all of those need naming
 **Rate adaptation.** The sender lowers the modulation rate as the channel degrades
 and raises it as the channel improves.
 
-## 7.4 Cellular networks
+## 7.3.3 and 7.4 Cellular networks
 
 Architecture: base stations, the radio access network, and the core network. 4G LTE
 separates the data plane from the control plane and is entirely packet switched,
@@ -85,7 +85,10 @@ Two ways to route to a mobile node:
 
 **Handoff.** Moving between base stations without dropping the connection.
 
-## 7.6 Wireless and mobility: impact on higher layers
+## Wireless and mobility: impact on higher layers
+
+The 8th edition gave this its own section. The 9th edition does not, so these notes are the
+reference for it.
 
 TCP interprets loss as congestion. On a wireless link, most loss is corruption, not
 congestion. TCP therefore cuts its window for the wrong reason, and throughput
