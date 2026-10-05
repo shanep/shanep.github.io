@@ -41,7 +41,8 @@ dlclose(handle);
 
 ## Advantages of Dynamic Linking
 
-- Multiple processes that load the same DLL at the same base address will share a single copy of the DLL
+- Multiple processes that load the same library share a single copy of its code in memory (on
+  Windows, only when the DLL loads at the same base address)
 - When you update a DLL, the applications that use it do not need to be recompiled
 - Programs written in different programming languages can call the same DLL functions
 
@@ -70,7 +71,7 @@ dlclose(handle);
 
 ## Disadvantages of Static Linking
 
-- Your program is bigger and takes longer to load into memory
+- Your program is bigger, and no other program can share its copy of the library code
 - If there is a security flaw in your linked code you will still be using the old version
 - If library code gets faster or adds support for new hardware, you are stuck on the old version
 

@@ -56,7 +56,7 @@ learning outcomes.
 | 3   |     | Construct applications that use the transport layer to deliver data reliably                                                       | Project 2             |
 |     | 3.1 | Implement a reliable data transfer protocol over an unreliable channel                                                             | Project 2             |
 |     | 3.2 | Analyze TCP connection management, flow control, and congestion control                                                            | Exam                  |
-|     | 3.3 | Choose between TCP and UDP for a given application and defend the choice                                                           | Project 2             |
+|     | 3.3 | Choose between TCP and UDP for a given application and defend the choice                                                           | Exam                  |
 |     | 3.4 | Analyze a complex computing problem and apply principles of computing to identify solutions. **(ABET Outcome 1)**                    | Project 2             |
 | 4   |     | Explain how packets are forwarded and how forwarding tables are computed                                                           | Exam                  |
 |     | 4.1 | Describe the data plane: forwarding, the IP datagram, addressing, and NAT                                                          | Project 3             |
