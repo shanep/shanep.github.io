@@ -14,12 +14,12 @@ established. It has not been mapped to any framework: that is your job.
 
 ---
 
-## Day 0: Tuesday
+## Day 0: Monday
 
 At 09:14 a billing coordinator in Accounts Receivable received an email appearing to come from a
 medical-supply vendor the department uses. The message referred to an outstanding invoice by a
 plausible number and attached a file named `Invoice_44192_Cascade.xlsm`. The sender address was
-`ar@casca de-medsupply.com`, a domain registered eleven days earlier and not previously seen in
+`ar@cascade-medsupply[.]com`, a domain registered eleven days earlier and not previously seen in
 the organisation's mail logs.
 
 Four other staff in the same department received near-identical messages within six minutes. One
@@ -106,7 +106,7 @@ No payment was made. The exfiltrated data was published on a leak site on Day 19
 
 | Type | Value |
 | --- | --- |
-| Sender domain | `casca de-medsupply.com`, registered Day −11 |
+| Sender domain | `cascade-medsupply[.]com`, registered Day −11 |
 | Attachment | `Invoice_44192_Cascade.xlsm`, SHA-256 `4f1a…` (macro-enabled workbook) |
 | Stage-two host | `cdn-assets-delivery[.]net` |
 | Command and control | `api-telemetry-sync[.]com`, polled every 47 s |

@@ -71,7 +71,8 @@ data, about twenty lines. You will be asked to:
 1. Identify what the log extract shows and name the activity.
 2. Choose a detection model for it and justify the choice.
 3. Do a short base-rate calculation and interpret the result.
-4. Recommend containment, eradication, and recovery steps in the NIST SP 800-61r3 shape.
+4. Recommend containment, eradication, and recovery steps using the four-phase life cycle from
+   week 15.
 5. Recommend two network-level defenses and say what each would have limited.
 
 Covers objectives 4.2, 4.3, 7.1-7.5.
@@ -95,7 +96,7 @@ Then:
 4. **Practise reading log lines.** Open [auth.log](../data/auth.log) and
    [web_access.log](../data/web_access.log) and find three things in each without using your Lab 10
    answers.
-5. **Re-take Quizzes 4 and 5.**
+5. **Review your results on Quizzes 4 and 5.** Canvas shows each question with its rationale.
 6. **Make a one-page sheet** with: the six STRIDE categories, the ATT&CK tactics in order, the five
    certificate checks, the three countermeasure levels from CyBOK §15.2, and the base-rate formula.
    You may use it during the exam. Making it is the useful part.

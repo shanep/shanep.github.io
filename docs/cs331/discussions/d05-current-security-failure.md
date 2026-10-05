@@ -19,7 +19,7 @@
 ## Before you start
 
 - CyBOK §8.7 (printed pages 283-286), incident management: prepare, handle, follow up.
-- NIST SP 800-61r3, the incident response life cycle:
+- NIST SP 800-61r3, which maps incident response onto the CSF 2.0 functions:
   <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf>
 - You will have written a memo in [Lab 10](../assignments/lab-10-log-analysis-and-incident-memo.md)
   this week. This discussion applies the same structure to a real organisation, and you may reuse
@@ -69,9 +69,10 @@ If it was found internally, say **which data source** did it, and whether the al
 promptly. If there was a missed earlier signal (as there was in the
 [week 12 incident report](../data/incident-report.md)), identify it.
 
-### 3. The response, judged against NIST SP 800-61r3
+### 3. The response, judged against the incident response life cycle
 
-Take the response as reported and lay it against the life cycle. For **each** phase, say what the
+Take the response as reported and lay it against the four-phase life cycle from CyBOK §8.7 and
+NIST SP 800-61r2. For **each** phase, say what the
 organisation did, what it appears to have got right, and what it got wrong or you cannot tell:
 
 - **Preparation**: what was in place beforehand? Backups, a plan, a retainer, logging?
@@ -112,7 +113,7 @@ Reply to **two** classmates who chose different incidents. Do one of these:
 
 | Row | What is assessed | Points |
 | --- | --- | ---: |
-| 1 | Initial post: timeline with dwell time and containment time or a stated evidence gap; how it was detected and what that implies about monitoring; all four NIST SP 800-61r3 phases assessed with what is known separated from what is not; two changes, at least one about preparation, each tied to a specific interval in the timeline and each with a stated cost | 18 |
+| 1 | Initial post: timeline with dwell time and containment time or a stated evidence gap; how it was detected and what that implies about monitoring; all four life cycle phases assessed with what is known separated from what is not; two changes, at least one about preparation, each tied to a specific interval in the timeline and each with a stated cost | 18 |
 | 2 | Two substantive replies to classmates with different incidents, each questioning a judgement, testing a recommendation against the timeline, or identifying a shared root cause | 12 |
 | | **Total** | **30** |
 

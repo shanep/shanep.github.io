@@ -115,7 +115,7 @@ requires a virtual machine, a server, or an internet connection.
 | Tool | Needed for | Notes |
 | --- | --- | --- |
 | Python 3.11+ | Labs 4, 5, 6, 9, 10 and the week 5 worked example | Pre-installed on macOS and most Linux distributions |
-| `cryptography` package | Labs 4 and 6 only | `pip install cryptography`; installed step by step in Lab 0 |
+| `cryptography` package | Labs 4, 5, and 6 only | `pip install cryptography`; installed step by step in Lab 0 |
 | A web browser | Labs 0, 6, 7, 8 | Any modern browser |
 
 No virtual machine, no Docker, no Linux server, no git, no GitHub account.

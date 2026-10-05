@@ -116,7 +116,7 @@ stated scale. (CyBOK §2.2, §2.6.2)
 ---
 
 **Q8.** A building's door controller is configured so that if the network link to the access server
-fails, all doors unlock. Which design principle does this violate? *(Objective 1.3)*
+fails, all doors unlock. Which design principle is this choice in tension with? *(Objective 1.3)*
 
 - A. Economy of mechanism
 - B. Fail-safe defaults
@@ -198,8 +198,8 @@ browsing it normally. Which of these is the most defensible next step? *(Objecti
 
 *Answer:* **B**: Further testing without authorisation is very likely unlawful regardless of your
 intent, and "I was going to report it" is not a defence. Report through the published channel; if
-there is not one, report to a general contact and document that you stopped. CyBOK §3.13.2 covers
-disclosure and §3.5 covers the offences involved. (CyBOK §3.5, §3.13.1-3.13.2)
+there is not one, report to a general contact and document that you stopped. CyBOK §3.13.3 covers
+disclosure and §3.5 covers the offences involved. (CyBOK §3.5, §3.13.1-3.13.3)
 
 ---
 
@@ -212,8 +212,8 @@ describes it. *(Objective 1.5)*
 - D. "Hacking back" against an attacker is broadly permitted for private organisations
 
 *Answer:* **A and C**: B is false; intent rarely converts unauthorised access into authorised
-access. D is false; CyBOK §3.6.2 describes self-help of this kind as disfavoured and generally
-unlawful for private parties. (CyBOK §3.2, §3.4, §3.5, §3.6.2)
+access. D is false; CyBOK §3.5.6 describes self-help of this kind as disfavoured and generally
+unlawful for private parties. (CyBOK §3.2, §3.4, §3.5)
 
 ---
 

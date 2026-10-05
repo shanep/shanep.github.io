@@ -191,8 +191,8 @@ trade-off to make deliberately. (CyBOK §14.5.3.4)
 
 **Q13.** A university's password policy reads: *minimum 8 characters, must include one upper case
 letter, one digit, and one symbol; must be changed every 60 days; may not be pasted into the field;
-may not reuse the last 5 passwords.* How many of these five rules does NIST SP 800-63B-4 advise
-against? *(Objective 5.2)*
+may not reuse the last 5 passwords; every login also requires a code from the university's MFA
+app.* How many of these five rules does NIST SP 800-63B-4 advise against? *(Objective 5.2)*
 
 - A. None
 - B. One
@@ -200,8 +200,8 @@ against? *(Objective 5.2)*
 - D. Three
 
 *Answer:* **D**: Three: the composition requirement, the 60-day expiry, and the paste block. The
-8-character minimum is acceptable as a floor (though a longer one is better), and blocking reuse of
-recent passwords is not objectionable. (NIST SP 800-63B-4 §3)
+8-character minimum is the floor for a password used as one factor of MFA (a password used on its
+own needs 15), and blocking reuse of recent passwords is not objectionable. (NIST SP 800-63B-4 §3)
 
 ---
 

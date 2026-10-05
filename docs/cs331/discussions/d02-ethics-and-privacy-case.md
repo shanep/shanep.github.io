@@ -71,7 +71,7 @@ Pick **one** of the four options. Then:
   would make.
 - Say what would change your mind.
 
-Using CyBOK §3.13 on ethics and §3.13.2 on disclosure, explain how the professional norms around
+Using CyBOK §3.13 on ethics and §3.13.3 on disclosure, explain how the professional norms around
 disclosure apply to someone reporting a problem *inside* their own employer, where the usual
 coordinated-disclosure timeline does not obviously fit.
 

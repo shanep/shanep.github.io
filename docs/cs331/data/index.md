@@ -18,7 +18,7 @@ internet connection. Download the file the lab names, run it or read it, and go.
 
 ## Running the Python scripts
 
-Five of the files are Python programs. Three of them use only the standard library and will run on
+Five of the files are Python programs. Two of them use only the standard library and will run on
 any Python 3.11 or newer:
 
 ```
@@ -26,7 +26,7 @@ python3 password_demo.py
 python3 sqli_demo.py
 ```
 
-Two of them need the `cryptography` package, which you install once in
+Three of them need the `cryptography` package, which you install once in
 [Lab 0](../assignments/lab-00-course-setup.md):
 
 ```

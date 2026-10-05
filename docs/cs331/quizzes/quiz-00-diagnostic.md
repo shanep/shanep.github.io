@@ -128,7 +128,7 @@ genuinely malicious. Roughly how many alerts will it produce per day?
 - C. About 10,000
 - D. About 100,000
 
-*Answer:* **C**: Roughly 10,099: 99 true positives plus about 1% of 999,900 benign events, which
+*Answer:* **C**: Roughly 10,098: 99 true positives plus about 1% of 999,900 benign events, which
 is 9,999 false positives. Fewer than one alert in a hundred is real. This is the base-rate fallacy,
 and it is why real security teams drown. Covered in week 15.
 

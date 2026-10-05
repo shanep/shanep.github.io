@@ -166,7 +166,9 @@ The moves that work change something other than accuracy:
 
 ### 6. Writing it up
 
-§8.7 and NIST SP 800-61r3 give the same four-phase shape:
+§8.7 and NIST SP 800-61r2 give the same four-phase shape. The current revision, r3, keeps the same
+work but files it under the CSF 2.0 functions (Govern, Identify, Protect, Detect, Respond, Recover),
+so you will not find these four headings in it:
 
 | Phase | The question |
 | --- | --- |
