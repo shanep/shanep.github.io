@@ -47,8 +47,7 @@ If Copilot ever tells you that you are out of requests or asks you to upgrade,
    sign up for a pro account at <https://education.github.com/pack>. You will
    need to use your student (edu) email address to qualify for the free stuff.
 2. **Pick a machine.** Your own laptop is the easiest place to do this. You need
-   a terminal and a C compiler (`cc` or `gcc`) with `make`, the same toolchain you
-   set up for P0.
+   a terminal and a C compiler (`cc` or `gcc`) with `make`.
 3. **Budget about an hour.** Most of it is reading what Copilot produces.
 
 ## Part 1 - Install and log in
