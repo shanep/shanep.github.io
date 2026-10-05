@@ -26,8 +26,7 @@ By completing this mini-lab, you will demonstrate your ability to:
 - Make HTTP requests from application code and handle paginated responses.
 - Parse and transform JSON payloads into user-friendly HTML pages.
 - Manage secrets safely (environment variables, .env files, .gitignore).
-- Write clear developer documentation (README with setup instructions, usage examples, and a demo
-  GIF).
+- Write clear developer documentation (README with setup instructions).
 
 Example:
 

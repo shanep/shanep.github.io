@@ -1,10 +1,10 @@
-# 6.01 Project Specification Peer Review
+# 06.01 Project Specification Peer Review
 
 **Week 6 · 100 points**
 
 ## Overview
 
-In this discussion, you will review project specifications from other teams to help them improve
+In this discussion, you will review project specifications from other students to help them improve
 their plan. The goal is to give constructive, specific feedback that helps your peer produce a
 stronger, more complete proposal before they begin development. Please focus on the technical merits
 of the proposal, not the subject matter.
@@ -18,8 +18,8 @@ General access to "Anyone with the link (viewer)" as shown below, so other stude
 
 ### Task 2: Review two other students
 
-After carefully reading your assigned peer’s project specification, create a new discussion post
-with the following sections. Use the headings provided so your review is easy to follow. Rate each
+After carefully reading the specification you are reviewing, reply to that student's post with the
+following sections. Use the headings provided so your review is easy to follow. Rate each
 of the following 12 criteria on a 3-point scale: Strong (3), Adequate (2), or Needs Work (1).
 Present your ratings in a simple table or formatted list. For any item rated “Needs Work,” include a
 brief explanation of what’s missing.
@@ -70,8 +70,8 @@ End your review with one of the following overall assessments and a one-sentence
 
 You are finished when you have done the following:
 
-1. Posted the team's project spec to **be reviewed**
-2. Reviewed TWO other teams according to the criteria above.
+1. Posted your project spec to **be reviewed**
+2. Reviewed TWO other students according to the criteria above.
 3. Refer to the [Grading
     Rubric](https://community.instructure.com/en/kb/articles/661285-how-do-i-view-the-rubric-for-my-graded-discussion)
     for grading details
