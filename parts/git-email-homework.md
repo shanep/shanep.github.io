@@ -29,4 +29,8 @@ nothing to commit, working tree clean
 
 - Push your changes to your repository.
 
+```bash
+git push
+```
+
 ![Check your changes](/images/git-sync-changes.png)
