@@ -4,14 +4,13 @@ prev: false
 ---
 
 <script setup>
-import schedule from './schedule.json'
+import modules from './modules.json'
 </script>
 
-# Schedule
+# Schedule - Fall 2026
 
-Below is a tentative schedule for the semester that you can use to plan out your work. Hard due
-dates are all posted in canvas. While every effort is made to maintain the schedule below minor
-changes may be made to accommodate events that are outside of anyone control (snow days, global
-pandemics, etc.)
+This is the course as it appears under **Modules** in Canvas: the same modules,
+the same items in the same order, with the due date and points of each graded
+one. Work is due at 11:59 pm Mountain time on the day shown.
 
-<CourseSchedule :weeks="schedule.weeks" :start-date="schedule.startDate" />
+<CanvasModules :modules="modules" base="/cs408/" />
