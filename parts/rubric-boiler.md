@@ -39,9 +39,6 @@ verify the provided tests pass will lose points.
 For UI components or other areas where automated testing is not practical, you will be given a pass
 on automated testing, but you must document your manual test cases in comments in the source code.
 
-You are **not** allowed to modify the instructor-provided tests. If you believe a provided test
-contains a bug, bring it to office hours. You must pass the tests as written.
-
 Testing includes but is not limited to:
 
 - **User input validation**: bad input must not crash the program

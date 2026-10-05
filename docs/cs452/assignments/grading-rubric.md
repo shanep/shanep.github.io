@@ -18,5 +18,10 @@ All programming assignments will be calculated as follows:
 - 30% - General Coding Guidelines
   - Criteria detailed below
 
+## Provided Tests
+
+You are allowed to edit the instructor-provided tests, for example to fix a leak in a test or to
+add cases of your own (P1 asks you to fix the broken tests). Do not change what a test checks just
+so your code can pass it.
 
 <!--@include: ../../../parts/rubric-boiler.md-->

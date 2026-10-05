@@ -90,8 +90,8 @@ living in a file forever.
 much scope. Now the second problem in the same sentence of the description: *"The same key is also
 used by the API server."* One credential serving two components is a different failure. It defeats
 attribution (no log can distinguish the worker's actions from the API's), which makes it an
-**accountability** failure under §14.6, and giving two components one identity is arguably a
-**separation of privilege** failure too, since compromising either yields both.
+**accountability** failure under §14.6, and giving two components one shared credential is a
+**least common mechanism** failure too (week 2), since compromising either yields both.
 
 Students routinely name "least privilege" for all of it. The precision is the point:
 

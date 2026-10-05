@@ -78,8 +78,7 @@ Walk STRIDE against your diagram. For **each trust boundary crossing and each da
 six STRIDE questions. Most combinations produce nothing; that is normal and you do not need to
 write those down.
 
-Produce a table with **at least twelve threats**, covering **all six STRIDE categories** (so at
-least two of each). Columns:
+Produce a table with **at least twelve threats**, covering **all six STRIDE categories**. Columns:
 
 | # | Component or flow | STRIDE | The threat, in one or two sentences | Which fact from the description makes it possible |
 | - | ----------------- | ------ | ----------------------------------- | ------------------------------------------------- |
