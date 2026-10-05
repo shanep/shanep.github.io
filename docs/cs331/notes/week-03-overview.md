@@ -1,6 +1,6 @@
 # Module 3 Overview
 
-**January 25-31 · Reading: 15 pages · Estimated total: 6 hours**
+**January 25-31 · Reading: 15 pages, plus 14 to skim · Estimated total: 6 hours**
 
 Everything you learn in this course is dual-use. The technique that finds a vulnerability in a
 system you are paid to test is the same technique that is a crime against a system you are not.
@@ -16,7 +16,7 @@ Second, **good intentions are not a defense.** "I was going to report it" does n
 unauthorized access into authorized access. This surprises people every year.
 
 Third, this week's reading comes from the longest chapter in the book: CyBOK's law chapter runs
-about 80 pages. You are assigned 15. Do not read the rest unless you want to.
+about 80 pages. You are assigned 15, plus 14 to skim for D2. Do not read the rest unless you want to.
 
 ## Learning Objectives
 
@@ -31,7 +31,7 @@ By the end of this week, the successful student will be able to:
 ### Due by Thursday at 11:59 p.m. Mountain Time
 
 - Read [3.01 Readings and Lecture Notes](week-03-law-ethics-and-privacy.md) and work through the
-  worked example (2 hrs 15 min)
+  worked example (2 hrs 55 min)
 - [3.02 D2: Ethics and Privacy Case](../discussions/d02-ethics-and-privacy-case.md): initial post
 
 ### Due by Sunday at 11:59 p.m. Mountain Time
@@ -43,10 +43,10 @@ By the end of this week, the successful student will be able to:
 
 | Activity | Time |
 | --- | --- |
-| Reading (15 pages) | 1 hr 45 min |
+| Reading (15 pages, plus 14 to skim) | 2 hrs 25 min |
 | The notes page and the worked example | 30 min |
 | D2 post and two replies | 1 hr |
-| Review and slack | 2 hrs 30 min |
+| Review and slack | 1 hr 50 min |
 | **Total** | **~6 hrs** |
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

@@ -56,7 +56,7 @@ on this site and in Canvas.
 | 1.5 | Describe the legal, regulatory, and ethical constraints on security work, including vulnerability disclosure and privacy obligations. | Understand | Principle | D2 rubric row 1 | Week 3: [3.02 D2: Ethics and Privacy Case](discussions/d02-ethics-and-privacy-case.md) |
 
 **Notes.** Objectives 1.1-1.2 are carried forward into every later lab and discussion, which assume
-fluent use of this vocabulary throughout. Reading support: CyBOK §1.1-1.5, §3.1, §3.13, §4.3-4.4, §5.2-5.3.
+fluent use of this vocabulary throughout. Reading support: CyBOK §1.1-1.5, §3.1, §3.4-3.5, §3.13, §4.3-4.4, §5.2-5.3.
 
 ---
 

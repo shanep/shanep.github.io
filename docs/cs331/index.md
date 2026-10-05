@@ -75,7 +75,8 @@ own machine gives you trouble, every lab runs on the lab machines described unde
 
 Every week follows the same rhythm, and **nothing in this course spans more than one week**:
 
-1. **Read** the assigned CyBOK sections (never more than 15 pages) and the week's supplement.
+1. **Read** the assigned CyBOK sections (about 15 pages of close reading, plus the occasional skim)
+   and the week's supplement.
 2. **Work through the module** in Canvas. Its **Overview** page lists the objectives and what is
    due when; its **Readings and Lecture Notes** page includes a worked example.
 3. **Complete one graded activity**: either a lab or a discussion, never both in the same week.
@@ -93,7 +94,7 @@ lecture notes, labs, discussions, and study time. A typical week:
 
 | Activity | Time |
 | --- | --- |
-| CyBOK reading (7-15 pages) and note-taking | 1.5-2.0 hrs |
+| CyBOK reading (about 15 pages) and note-taking | 1.5-2.0 hrs |
 | Lecture notes and worked example | 0.5-1.0 hrs |
 | One lab (weeks with a lab) | 1.5-2.0 hrs |
 | *or* one discussion: initial post and replies (weeks with a discussion) | 1.0 hrs |
@@ -136,7 +137,7 @@ printed page numbers shown in the PDF's footers.
 | ---- | ----- | ----- | ------- | ---------------- |
 | 1 | Jan 11-17 | [What is cyber security? Goals, terms, and failures](notes/week-01-what-is-cyber-security.md) | §1.1-1.3 (pp. 2-8) | [Lab 0](assignments/lab-00-course-setup.md); [D1](discussions/d01-introductions-and-security-mindset.md) |
 | 2 | Jan 18-24 | [Security principles and the human factor](notes/week-02-security-principles-and-human-factors.md) | §1.4-1.5 (pp. 9-15); §4.3-4.4 (pp. 158-165) | [Lab 1](assignments/lab-01-security-principles-audit.md) |
-| 3 | Jan 25-31 | [Law, regulation, ethics, and privacy](notes/week-03-law-ethics-and-privacy.md) | §3.1 (pp. 52-58); §3.13 (pp. 122-127); §5.2-5.3 (pp. 187-191) | [D2](discussions/d02-ethics-and-privacy-case.md) |
+| 3 | Jan 25-31 | [Law, regulation, ethics, and privacy](notes/week-03-law-ethics-and-privacy.md) | §3.1 (pp. 52-58); §3.4-3.5, skim (pp. 72-86); §3.13 (pp. 122-127); §5.2-5.3 (pp. 187-191) | [D2](discussions/d02-ethics-and-privacy-case.md) |
 | 4 | Feb 1-7 | [Risk management and threat modeling](notes/week-04-risk-and-threat-modeling.md) | §2.2-2.4 (pp. 20-26); §2.6.1-2.6.2 (pp. 31-33); §2.6.6 (pp. 43-45) | [Lab 2](assignments/lab-02-threat-model.md) |
 | 5 | Feb 8-14 | [Authentication and credentials](notes/week-05-authentication-and-credentials.md) | §14.5 (pp. 479-489) | [D3](discussions/d03-authentication-policy-critique.md) |
 | 6 | Feb 15-21 | [Authorization, access control, and accountability](notes/week-06-authorisation-and-access-control.md) | §14.1-14.3 (pp. 466-475); §14.6 (pp. 489-493) | [Lab 3](assignments/lab-03-access-control-matrix.md) |

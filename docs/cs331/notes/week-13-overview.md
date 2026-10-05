@@ -1,6 +1,6 @@
 # Module 13 Overview
 
-**April 12-18 · Reading: 15 pages · Estimated total: 7 hours**
+**April 12-18 · Reading: 13 pages · Estimated total: 7 hours**
 
 This week has two halves that belong together.
 
@@ -50,7 +50,7 @@ what you actually see and say so: that is the correct answer, not a problem.
 
 | Activity | Time |
 | --- | --- |
-| Reading (15 pages plus Aleph One) | 2 hrs 20 min |
+| Reading (13 pages plus Aleph One) | 2 hrs 20 min |
 | The notes page and the worked example | 45 min |
 | Lab 8 | 1 hr 30 min |
 | Review and slack | 2 hrs 30 min |

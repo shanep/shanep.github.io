@@ -1,6 +1,6 @@
 # 13.01 Readings and Lecture Notes
 
-**April 12-18 · Reading: 15 pages · About 3 hrs 5 min with the worked example**
+**April 12-18 · Reading: 13 pages · About 3 hrs 5 min with the worked example**
 
 What to do this week, and when it is due, is on the [Module 13 Overview](week-13-overview.md).
 
@@ -8,9 +8,9 @@ What to do this week, and when it is due, is on the [Module 13 Overview](week-13
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §15.1.1 Memory Management Vulnerabilities | 500-501 | 2 pp | 15 min |
+| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §15.1.1 Memory Management Vulnerabilities | 500-501 | 1 p | 15 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §15.2 Prevention of Vulnerabilities: language design, API design, coding practices | 507-512 | 5 pp | 40 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §15.4 Mitigating Exploitation of Vulnerabilities | 516-520 | 5 pp | 35 min |
+| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §15.4 Mitigating Exploitation of Vulnerabilities | 516-520 | 4 pp | 35 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §17.4 Assessing the Secure Software Lifecycle: SAMM, BSIMM, Common Criteria | 582-585 | 3 pp | 25 min |
 | Aleph One, *Smashing the Stack for Fun and Profit* | Start through the stack frame layout | none | ~4 pp | 25 min |
 

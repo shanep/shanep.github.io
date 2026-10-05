@@ -53,8 +53,8 @@ These files were written for CS 331. They are not real data:
 - **NORTHWIND MEADOW** is a fictional incident at a fictional hospital network. Its shape (phishing
   to macro to fileless loader, a week of living-off-the-land lateral movement, exfiltration, then
   ransomware) follows patterns from published incident reporting, but no real organization, person,
-  or campaign is described. The domains in it are written with `[.]` so they cannot be clicked, and
-  none of them is registered.
+  or campaign is described. The domains in it are written with `[.]` so they cannot be clicked. They
+  were not registered when the report was written, but that can change, so do not visit them.
 - **`auth.log` and `web_access.log`** are synthetic, generated to contain specific patterns that
   Lab 10 asks you to find. The IP addresses are all from ranges reserved for documentation
   (RFC 5737: `192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24`) plus private addresses, so none
