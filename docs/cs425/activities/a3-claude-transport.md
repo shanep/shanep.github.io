@@ -42,7 +42,7 @@ and you do not need any agent installed to pass today.
 
 ::: warning
 
-This is a paper activity. Your group turns in **one filled out worksheet, on
+This is a paper activity. Your group turns in **one filled-out worksheet, on
 paper, before you leave the room**. Copies are handed out in class.
 
 It is graded pass/fail. Every round attempted in good faith is a pass, and a
@@ -92,7 +92,7 @@ Watch for two things, and note them on the worksheet:
 - Every time it wants to create a file or run a command, it **asks first**. What is
   the difference between approving one action and telling it not to ask again?
 
-## Round 1 - Demultiplexing: two tuples and four tuples
+## Round 1 - Demultiplexing: two-tuples and four-tuples
 
 *Section 3.2.*
 
@@ -236,10 +236,11 @@ Instructor note, not shown to students.
 ./scripts/cs425/a3-claude-transport.sh key
 ```
 
-**Set up before class.** Run the demo on the Mac in Claude Code, logged in. Font size up; three or four terminal tabs. Rehearse it once the
-night before and **keep that rehearsal's `echo.py` and `burst.py`** in a spare
-directory: if the wifi or Claude fails in the room, switch to them and keep going,
-because the networking is the lesson and the agent is the vehicle.
+**Set up before class.** Run the demo on the Mac in Claude Code, logged in. Font
+size up; three or four terminal tabs. Rehearse it once the night before and **keep
+that rehearsal's `echo.py` and `burst.py`** in a spare directory: if the Wi-Fi or
+Claude fails in the room, switch to them and keep going, because the networking
+is the lesson and the agent is the vehicle.
 
 **Why it is shaped like this.** Claude writes the scaffolding and the class spends
 its time on the predictions. It deliberately never touches reliable data transfer:
@@ -281,8 +282,9 @@ which socket a segment to `127.0.0.1:5000` is delivered to.
 - **Round 2.** The side that closes first is left in `TIME_WAIT`, so after the
   client's `Ctrl-C` it is the **client's** ephemeral port. macOS holds it for about
   30 seconds (`net.inet.tcp.msl` is 15000 ms, and TIME_WAIT is 2 MSL; it measured
-  32 s with timer slack); Linux holds it for 60. With the server stopped first, the **server** side holds it, and a
-  restart without `SO_REUSEADDR` fails with `[Errno 48] Address already in use`.
+  32 s with timer slack); Linux holds it for 60. With the server stopped first,
+  the **server** side holds it, and a restart without `SO_REUSEADDR` fails with
+  `[Errno 48] Address already in use`.
   Claude set `allow_reuse_address = True` on its `socketserver` class unasked
   in rehearsal, in which case the restart works;
   ask it why the line is there. If it did not add it, the failure is the lesson.

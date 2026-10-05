@@ -73,7 +73,11 @@ function weekRange(w: Week): string {
 }
 
 function weekVariant(w: Week): 'break' | 'exam' | 'normal' {
-  if (w.note) return w.note.toLowerCase().includes('break') ? 'break' : 'exam'
+  if (w.note) {
+    const note = w.note.toLowerCase()
+    if (note.includes('break')) return 'break'
+    return note.includes('exam') ? 'exam' : 'normal'
+  }
   const topics = w.days?.map(d => d.topic.toLowerCase()) ?? []
   if (topics.some(t => t.includes('break'))) return 'break'
   if (topics.some(t => t.includes('exam'))) return 'exam'

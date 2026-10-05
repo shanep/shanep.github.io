@@ -27,7 +27,7 @@ discussion board or email me now, in week 1, rather than in week 7 when a lab is
 ## Before you start
 
 - A terminal. On macOS that is Terminal or iTerm; on Windows use PowerShell; on Linux use whatever
-  you like. If you have never opened one, that is fine, every command you need is written out
+  you like. If you have never opened one, that is fine: every command you need is written out
   below.
 - A web browser.
 - Download [docs/CyBOK_v1.1.0.pdf](../docs/CyBOK_v1.1.0.pdf) from Canvas Files, or open it in the
@@ -72,7 +72,7 @@ python3 -c "import cryptography; print(cryptography.__version__)"
 You should see a version number such as `43.0.1`. Copy that output too.
 
 - **If `pip` is not found**, try `python3 -m pip install cryptography`.
-- **If you get a "externally managed environment" error**, your system Python is protected. Run
+- **If you get an "externally managed environment" error**, your system Python is protected. Run
   these three commands instead, which build a private Python environment in your home directory:
 
   ```

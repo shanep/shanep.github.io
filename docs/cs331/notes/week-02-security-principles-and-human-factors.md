@@ -67,7 +67,7 @@ extinguisher.
 
 The security team's instinct is to send an email about propped doors. Look at it through §4.3
 instead: a person with a legitimate task was given a control that made the task impossible, and
-they solved their problem. The propped door is not a discipline failure, it is a **design output**:
+they solved their problem. The propped door is not a discipline failure. It is a **design output**:
 it is what this design produces when it meets a person carrying a box. The fix is a door that
 opens on approach for badged staff, or a hands-free reader, or accepting that this door does not get
 mediated.

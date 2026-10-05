@@ -61,9 +61,9 @@ Part 1 hashed two messages that differ by one character.
 3. The script hashed the same input twice and got the same answer. **A hash takes no key.** Given
    that, explain in two or three sentences why a hash by itself cannot tell you who wrote a
    message.
-4. Change `HASH_INPUT_B` so it differs from `HASH_INPUT_A` by **one character**, run again, and
-   paste the new "Bits that differ" number. Then change it to something completely different and
-   paste that number too. **What do you notice?**
+4. Change `HASH_INPUT_B` so it differs from `HASH_INPUT_A` by **one different character** (for
+   example, `Transfer $100 to Rob`), run again, and paste the new "Bits that differ" number. Then
+   change it to something completely different and paste that number too. **What do you notice?**
 5. Suppose a download page publishes a file and its SHA-256 digest next to it. **What attack does
    that digest stop, and what attack does it not stop?** Two or three sentences each. This is the
    question the rest of the lab answers properly.

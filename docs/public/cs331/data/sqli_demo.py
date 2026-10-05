@@ -27,11 +27,11 @@ from typing import Final, NamedTuple
 # CHANGE THESE.  These are the inputs Lab 9 asks you to experiment with.
 # ---------------------------------------------------------------------------
 
-# Step 3 of the lab: replace this with an input that logs you in as alice
+# Step 2 of the lab: the worked example. This already logs you in as alice
 # without knowing her password.
 INJECTION_ATTEMPT: Final[str] = "alice' -- "
 
-# Step 4 of the lab: this is the payload everybody tries first, and it does NOT
+# Step 3 of the lab: this is the payload everybody tries first, and it does NOT
 # work against this query.  Work out why (hint: in SQL, AND binds tighter than
 # OR), then replace it with one that returns every account in the table.
 INJECTION_RETURN_ALL: Final[str] = "' OR '1'='1"

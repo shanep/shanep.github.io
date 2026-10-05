@@ -100,6 +100,11 @@ pages = [
     "data/photoshare-system.md",
 ]
 
+# Ungraded discussions: no points, no dates, never in the gradebook. Course
+# Questions is shared by every course; in 52107 it is the shell's own board,
+# adopted by id in the manifest, so the buttons' links to it keep working.
+discussions = ["course-resources/course-questions.md"]
+
 # The lab data. The real files live in docs/public/cs331/data/, because that is
 # the only place VitePress serves them from; the entries under data/ are symlinks
 # to them, so the push finds the files inside the course directory, uploads them,
@@ -110,10 +115,6 @@ pages = [
 # "Course textbooks are distributed through Canvas, not this public repo". So it
 # sits in the course directory as a real file, this push is what delivers it to
 # students, and a fresh clone has to have it dropped back in by hand.
-# Ungraded discussions: no points, no dates, never in the gradebook. Course
-# Questions is shared by every course; in 52107 it is the shell's own board,
-# adopted by id in the manifest, so the buttons' links to it keep working.
-discussions = ["course-resources/course-questions.md"]
 files = [
     "images/cs331-banner.svg",
     "data/auth.log",

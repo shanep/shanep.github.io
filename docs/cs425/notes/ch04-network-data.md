@@ -68,7 +68,9 @@ arithmetic.
 :::
 
 **DHCP.** How a host gets an address on joining a network: discover, offer, request,
-ACK. Four messages, all broadcast at the start because the host has no address yet.
+ACK. Four messages. The client broadcasts its discover and request because it has no
+address yet, and in the book the server broadcasts its offer and ACK too (real
+servers often unicast them to the client's MAC address).
 
 **NAT.** A router rewrites the source address and port of outgoing datagrams to its
 own public address and a unique port, keeps a translation table, and reverses the
@@ -76,7 +78,7 @@ rewrite on the way back. It buys address conservation and breaks anything that
 expects a host to be reachable from outside, which is why P2P applications need
 hole punching.
 
-**IPv6.** 128 bit addresses, fixed 40 byte header, no fragmentation at routers, no
+**IPv6.** 128-bit addresses, fixed 40-byte header, no fragmentation at routers, no
 header checksum. Transition happens by **tunneling** IPv6 datagrams inside IPv4
 ones, because a flag day was never possible.
 

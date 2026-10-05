@@ -6,7 +6,7 @@
 
 ![system arch](images/system-arch.png)
 
-## Modern System (intel)
+## Modern System (Intel)
 
 ![modern arch](images/modern-arch.png)
 
@@ -52,7 +52,7 @@
 
 ## Methods Of Device Interaction
 
-- Explicit I/O instructions -These instructions specify a way for the
+- Explicit I/O instructions - These instructions specify a way for the
     OS to send data to specific device registers and thus allow the
     construction of the protocols described above.
 

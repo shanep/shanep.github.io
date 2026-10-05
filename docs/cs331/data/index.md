@@ -1,11 +1,12 @@
 # Course data files
 
-Everything the labs need, in one place. Nothing here requires a virtual machine, a server, or an
+Everything the labs need, in one place. Nothing here requires a virtual machine or a server. Apart
+from installing `cryptography` once and opening Compiler Explorer for `vuln.c`, nothing needs an
 internet connection. Download the file the lab names, run it or read it, and go.
 
 | File | Used by | What it is |
 | --- | --- | --- |
-| [SnapVault system description](photoshare-system.md) | [Lab 2](../assignments/lab-02-threat-model.md) | A written description of "SnapVault", a small photo-sharing service. You threat-model it. |
+| [SnapVault system description](photoshare-system.md) | [Lab 2](../assignments/lab-02-threat-model.md), [Lab 3](../assignments/lab-03-access-control-matrix.md) | A written description of "SnapVault", a small photo-sharing service. You threat-model it. |
 | [NORTHWIND MEADOW incident report](incident-report.md) | [Lab 7](../assignments/lab-07-malware-triage.md) | The NORTHWIND MEADOW post-incident write-up. You classify the malware and map it to MITRE ATT&CK. |
 | [password_demo.py](password_demo.py) | [Week 5 module](../notes/week-05-authentication-and-credentials.md), [D3](../discussions/d03-authentication-policy-critique.md) | Fast hashing vs. slow hashing vs. salting, with timings you can measure. |
 | [crypto_demo.py](crypto_demo.py) | [Lab 4](../assignments/lab-04-symmetric-encryption.md) | ECB vs. CTR on a picture, integrity with and without GCM, and nonce reuse. |

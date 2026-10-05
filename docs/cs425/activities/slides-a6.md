@@ -157,7 +157,7 @@ We come back to this at the end of today.
 When an AS has several ways out to a destination, a common choice is the
 **closest exit**: hand the packet to the next network as soon as possible, and
 let them carry it the rest of the way. Carrying traffic costs money, so nobody
-carries it further than they have to.
+carries it farther than they have to.
 
 Both sides do this, so the path **out** and the path **back** often differ. That
 is the `asymm` that `tracepath` printed in A4.
@@ -169,7 +169,7 @@ speed in a vacuum.
 
 So 1,000 km of fiber costs at least 5 ms each way, 10 ms round trip, before any
 router does anything. Flip it around and a round trip time puts a **ceiling** on
-how far away the other end can be. Nothing answers from further away than light
+how far away the other end can be. Nothing answers from farther away than light
 could get there and back.
 
 ## BGP believes what it is told
@@ -198,9 +198,9 @@ back.
 
 You do not need a router to see BGP:
 
-- **Route collectors** like RIPE's [RIPEstat](https://stat.ripe.net/) hold BGP
-  sessions with hundreds of routers around the world and record every route they
-  hear
+- **Route collectors** like RIPE's RIS, which you query through
+  [RIPEstat](https://stat.ripe.net/), hold BGP sessions with hundreds of routers
+  around the world and record every route they hear
 - **Team Cymru** answers "which AS owns this address" over DNS
 - **`mtr -z`** labels every hop of a trace with its AS number
 

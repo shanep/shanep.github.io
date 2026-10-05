@@ -17,7 +17,7 @@ of them must compile and run on **both** GitHub Codespaces and Onyx.
 
 ## Mini-labs
 
-Mini-labs are small, pass/fail, take home exercises done individually. They count
+Mini-labs are small, pass/fail, take-home exercises done individually. They count
 in the Projects group but do not use the starter repository or the project
 grading rubric.
 
@@ -25,7 +25,7 @@ grading rubric.
 
 ## Midterm Alternative
 
-X1 is a take home alternative to the midterm exam, done individually. It counts
+X1 is a take-home alternative to the midterm exam, done individually. It counts
 in the Midterm group, which keeps the better of the two scores.
 
 - [X1](x1-page-load.md) - Anatomy of a Page Load

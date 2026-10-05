@@ -49,7 +49,7 @@ void test_create_destroy(void)
   TEST_ASSERT_FALSE(lst->head == NULL);
   TEST_ASSERT_TRUE(lst->size == 0);
   TEST_ASSERT_TRUE(lst->head->data == NULL);
-  //Make sure the function pointers are pointing to the correct fuctions
+  //Make sure the function pointers are pointing to the correct functions
   TEST_ASSERT_TRUE(lst->destroy_data == destroy_data);
   TEST_ASSERT_TRUE(lst->compare_to == compare_to);
 
@@ -174,7 +174,7 @@ void test_removeIndex4(void)
 }
 
 
-void test_invaidIndex(void)
+void test_invalidIndex(void)
 {
   populate_list();
   void *rval = list_remove_index(lst_, 666);
@@ -207,7 +207,7 @@ void test_removeAll(void)
       free(rval);
     }
 
-  //Make sure we back to default
+  //Make sure we are back to default
   TEST_ASSERT_FALSE(lst_->head->next == NULL);
   TEST_ASSERT_FALSE(lst_->head->prev == NULL);
   TEST_ASSERT_TRUE(lst_->head->next == lst_->head->prev);
@@ -250,7 +250,7 @@ int main(void) {
   RUN_TEST(test_removeIndex0);
   RUN_TEST(test_removeIndex3);
   RUN_TEST(test_removeIndex4);
-  RUN_TEST(test_invaidIndex);
+  RUN_TEST(test_invalidIndex);
   RUN_TEST(test_removeAll);
   RUN_TEST(test_indexOf0);
   RUN_TEST(test_indexOf3);

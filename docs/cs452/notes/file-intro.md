@@ -99,7 +99,7 @@ when **both** conditions are true:
 This means a process can `open()` a file, another process can `unlink()` it, and
 the first process can keep reading/writing through its descriptor. The data
 survives until the last descriptor is closed. Tools like `lsof` can reveal files
-that have been unlinked but are still held open, which is why "deleted" files can
+that have been unlinked but are still held open, and while they are held open, "deleted" files can
 sometimes be recovered from `/proc/<pid>/fd/`.
 
 ## Symbolic Links
@@ -121,7 +121,7 @@ sometimes be recovered from `/proc/<pid>/fd/`.
 
 ## Mounting file systems
 
-Linux has a single root for its directory while windows has a multi-root
+Linux has a single root for its directory tree, while Windows has a multi-root
 approach.
 
     mount -t ext4 /dev/sda1 /home/users

@@ -83,7 +83,7 @@ Two rules for filling it in:
   interesting. Where the
   [SnapVault system description](../data/photoshare-system.md) tells you the answer, use it.
 - **Where the description does not say, mark the cell `?` and note it below the table.** An honest
-  `?` scores better than a confident guess, and finding the `?`s is a real result, an access
+  `?` scores better than a confident guess, and finding the `?`s is a real result: an access
   control policy nobody wrote down is a policy nobody can check.
 
 Below the matrix, write a short paragraph identifying the **two cells that most surprised you** and
@@ -98,7 +98,7 @@ The matrix is a table. Real systems store it sliced one way or the other.
 - A **capability list** slices it **by row**: each subject carries a list of the objects it may
   touch, and how. This is how a bearer token or a share link works.
 
-Do both, for **three objects and three subjects** of your choice:
+Do both, for **these three objects and three subjects**:
 
 1. Write the **ACL** for "a private album", "the photo storage bucket", and "the access log".
 2. Write the **capability list** for "registered user (own albums)", "support staff", and
@@ -144,7 +144,7 @@ For **each** of the three:
 2. **Write the reduced permission.** What exactly should it have instead? Be concrete enough that
    somebody could implement it.
 3. **Name the principle.** Is this least privilege, separation of privilege, or both? CyBOK §1.4.1
-   and §14.3 give you the definitions; use them precisely, because the two are often confused.
+   gives you the definitions; use them precisely, because the two are often confused.
 4. **Say what breaks.** Every reduction costs something. Name a specific thing that gets harder or
    slower for a real person once you make the change.
 

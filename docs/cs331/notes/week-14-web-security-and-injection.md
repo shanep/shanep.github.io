@@ -1,6 +1,6 @@
 # 14.01 Readings and Lecture Notes
 
-**April 19-25 · Reading: 14 pages · About 2 hrs 55 min with the worked example**
+**April 19-25 · Reading: 15 pages · About 2 hrs 55 min with the worked example**
 
 What to do this week, and when it is due, is on the [Module 14 Overview](week-14-overview.md).
 
@@ -8,7 +8,7 @@ What to do this week, and when it is due, is on the [Module 14 Overview](week-14
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §16.2.6-16.2.8 Web PKI and HTTPS, Authentication | 536-540 | 4 pp | 25 min |
+| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §16.2.6-16.2.8 Web PKI and HTTPS, Authentication, Cookies | 536-540 | 4 pp | 25 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §16.3.1 Phishing and Clickjacking | 543-545 | 3 pp | 20 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §16.4.1 Injection Vulnerabilities: SQLi, command injection, LFI, XSS, CSRF | 547-552 | 6 pp | 45 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §15.1.2 Structured Output Generation Vulnerabilities *(revisit from week 13)* | 501-503 | 2 pp | 15 min |
@@ -141,11 +141,11 @@ A common instinct: strip `'`, `-`, and `;` from all input.
 In every row, the fix is the same idea: **keep the structure and the data separate, so the data
 never gets parsed.**
 
-And placing it on §15.2's ladder from week 13: parameterized queries are **API design**: the safe
-interface exists and the unsafe one is available beside it. The level above would be a language or
-library where a query cannot be built by concatenation at all, which some ORMs and query builders
-approach. That is why "we have a coding standard about SQL" is weaker evidence than "the data
-access layer makes concatenation impossible."
+And placing it on §15.2's ladder from week 13, parameterized queries are **API design**: the safe
+interface exists, but the unsafe one is still available beside it. The level above would be a
+language or library where a query cannot be built by concatenation at all, which some ORMs and query
+builders approach. That is why "we have a coding standard about SQL" is weaker evidence than "the
+data access layer makes concatenation impossible."
 
 ### 7. Phishing is the same problem, aimed at a person
 
@@ -154,8 +154,8 @@ parses, and the attacker's goal is that the person cannot tell which parts are t
 display name says the bank; the sending domain does not. The link text says one thing; the href says
 another. `paypa1.example` and `paypal.example` differ by one glyph.
 
-The defences run down the same ladder. Prevention: phishing-resistant authenticators from week 5, 
-a FIDO2 key checks the origin itself, so the person's judgment is taken out of the loop.
+The defenses run down the same ladder. Prevention: phishing-resistant authenticators from week 5.
+A FIDO2 key checks the origin itself, so the person's judgment is taken out of the loop.
 Detection: mail filtering, and a reporting process people actually use. Mitigation: limiting what a
 compromised account can reach, which is week 6's least privilege.
 

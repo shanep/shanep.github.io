@@ -36,8 +36,8 @@ CISA advisory, sworn testimony, or detailed reporting that includes a timeline.
 
 **Check the board first and pick something nobody has taken.**
 
-This is the last discussion of the semester, and it is deliberately the one that asks you to use the
-whole course. Pick something you find genuinely interesting.
+This is the last full discussion of the semester, and it is deliberately the one that asks you to
+use the whole course. Pick something you find genuinely interesting.
 
 ## Initial Post Directions
 
@@ -61,7 +61,7 @@ If reporting does not give them, say so and say what would establish them.
 
 **What detected it, and was that detection internal or external?**
 
-A substantial fraction of breaches are discovered by somebody outside the organization, a
+A substantial fraction of breaches are discovered by somebody outside the organization: a
 customer, a researcher, a payment processor, a ransom note. If this one was found externally, say
 what that tells you about the organization's monitoring, using CyBOK §8.2 on data sources.
 
@@ -91,7 +91,7 @@ have not slept. Criticize decisions, not the fact that decisions had to be made 
 Name **two specific changes** that would have most improved the outcome, and for each:
 
 - Which **phase** it belongs to.
-- What it would have changed about the **timeline** in part 1, be concrete about which interval
+- What it would have changed about the **timeline** in part 1. Be concrete about which interval
   gets shorter.
 - What it **costs**, and whether an organization of this size would realistically have had it.
 

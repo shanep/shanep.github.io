@@ -2,7 +2,7 @@
 
 ## Instructor: Shane Panter
 
-![](./images/me.jpg)
+![Shane Panter](./images/me.jpg)
 
 **Email:** shanepanter (at) boisestate.edu
 

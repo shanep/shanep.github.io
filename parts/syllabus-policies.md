@@ -43,9 +43,10 @@ BroncoMail is the official university communication channel. Check it two to thr
 Your instructor will not respond to emails from personal accounts (Gmail, Yahoo, etc.). See
 University Policy 2280 for details.
 
-Emails are answered within 24 hours, Monday to Friday, 9:00 am to 5:00 pm (MST). Emails sent on
-weekends or outside those hours will receive a reply on the next business day. Reserve email for
-private matters such as grades, since general course questions belong in the class discussion forum.
+Emails are answered within 24 hours, Monday to Friday, 9:00 am to 5:00 pm Mountain Time. Emails
+sent on weekends or outside those hours will receive a reply on the next business day. Reserve email
+for private matters such as grades, since general course questions belong in the class discussion
+forum.
 
 ## IT Support Policy
 
@@ -84,4 +85,4 @@ students as well.
 - [Educational Access Center](https://www.boisestate.edu/eac/)
 - [Support Resources](https://www.boisestate.edu/online/support-resources/)
 - [Academic Support Services](https://www.boisestate.edu/aasc/academicsupportservices/)
-- [Accessing University Support Services](https://docs.google.com/document/d/14ZMRsHAgo356h0nHtJuStDKGwvg6LY-XOA7PxacwECw/edit#heading=h.oohv0l26wvu1) (full resource guide)
+- [University Support and Policies](https://docs.google.com/document/d/14ZMRsHAgo356h0nHtJuStDKGwvg6LY-XOA7PxacwECw/edit#heading=h.oohv0l26wvu1) (full resource guide)

@@ -1,4 +1,4 @@
-# Event Based Concurrency
+# Event-Based Concurrency
 
 <SlideView />
 
@@ -40,7 +40,7 @@ fd_set read_fds;
 FD_ZERO(&read_fds);
 FD_SET(sockfd, &read_fds);
 
-struct timeval timeout = {5, 0};   // 5 second timeout
+struct timeval timeout = {5, 0};   // 5-second timeout
 int ready = select(sockfd + 1, &read_fds, NULL, NULL, &timeout);
 if (ready > 0 && FD_ISSET(sockfd, &read_fds)) {
     // sockfd has data ready, read() will not block
@@ -121,7 +121,7 @@ or a long computation will freeze all other clients until it returns.
 Solutions:
 - Offload blocking work to a **thread pool** and post results back to
   the event loop when done (the hybrid model used by Node.js and libuv).
-- Use **asynchronous I/O** (`io_uring` on Linux) which lets the kernel
+- Use **asynchronous I/O** (`io_uring` on Linux), which lets the kernel
   queue I/O operations and notify the application on completion without
   any thread blocking at all.
 

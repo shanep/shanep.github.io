@@ -1,6 +1,6 @@
 # Module 14 Overview
 
-**April 19-25 · Reading: 14 pages · Estimated total: 7 hours**
+**April 19-25 · Reading: 15 pages · Estimated total: 6.75 hours**
 
 Last week a program copied bytes into a buffer without knowing how big it was. This week a program
 builds a *command* out of untrusted input without keeping the command and the data apart. It is the
@@ -22,7 +22,8 @@ By the end of this week, the successful student will be able to:
 - **[4.5](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures)**: 
   Perform and then remediate a SQL injection, and explain why parameterization defeats it.
 - **[5.5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)**: 
-  Recommend a prevention-first countermeasure for a class of vulnerability.
+  Recommend a prevention-first countermeasure (a language, API, or coding practice) for a class of
+  vulnerability.
 
 ## Assignments and Tasks
 
@@ -39,10 +40,10 @@ the Student Code of Conduct. There is no exercise in this course that requires i
 
 | Activity | Time |
 | --- | --- |
-| Reading (14 pages plus OWASP) | 2 hrs 10 min |
+| Reading (15 pages plus OWASP) | 2 hrs 10 min |
 | The notes page and running `sqli_demo.py` | 45 min |
 | Lab 9 | 1 hr 30 min |
 | Review and slack | 2 hrs 15 min |
-| **Total** | **~6.5-7 hrs** |
+| **Total** | **~6.75 hrs** |
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

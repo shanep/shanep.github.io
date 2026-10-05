@@ -8,6 +8,12 @@
 .cols .col > :first-child { margin-top: 0; }
 .cols .col > :last-child  { margin-bottom: 0; }
 
+/* Two columns are too narrow to read on a phone, so they stack. Slides keep
+   their own two-column rule in SlideView.vue, since reveal.js scales them. */
+@media (max-width: 640px) {
+  .cols { grid-template-columns: 1fr; }
+}
+
 /* CS331 mirrors the Boise State Online Canvas shell. The same classes are
    styled for Canvas in docs/cs331/canvas.css; these give the website the same
    pill buttons, banner, and "Select Next" bar. */

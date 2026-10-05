@@ -62,7 +62,7 @@ void check_buddy_pool_empty(struct buddy_pool *pool)
 
 /**
  * Test allocating 1 byte to make sure we split the blocks all the way down
- * to MIN_K size. Then free the block and ensure we end up with a full
+ * to SMALLEST_K size. Then free the block and ensure we end up with a full
  * memory pool again
  */
 void test_buddy_malloc_one_byte(void)
@@ -137,7 +137,7 @@ void test_buddy_init(void)
 int main(void) {
   time_t t;
   unsigned seed = (unsigned)time(&t);
-  fprintf(stderr, "Random seed:%d\n", seed);
+  fprintf(stderr, "Random seed:%u\n", seed);
   srand(seed);
   printf("Running memory tests.\n");
 

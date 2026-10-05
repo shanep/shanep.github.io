@@ -50,8 +50,8 @@ for(;;){
 ## Context Switch
 
 - Threads will context switch just like processes
-- Instead of a Process control block (PCB) we have a thread control block (TCB)
-- In a TCB the address space remains the same!
+- Instead of a process control block (PCB) we have a thread control block (TCB)
+- When switching between threads of the same process the address space remains the same!
 
 ## Memory Layout
 

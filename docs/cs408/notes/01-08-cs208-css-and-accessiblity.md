@@ -1,9 +1,9 @@
-# 01.08 CS208  CSS and Accessiblity
+# 01.08 CS208 CSS and Accessibility
 
 ## Overview
 
 Below are some links to concepts taught in CS208. Please review them to refresh your memory about
-web CSS and Accessibility.  If any of the concepts are new, please take the time to review them so
+CSS and accessibility. If any of the concepts are new, please take the time to review them so
 you can be prepared to work on your final project. I have divided the CSS topics into Basic and
 Advanced so you can target your CS208 review. CSS is incredibly complex, and you are not expected to
 memorize every aspect.
@@ -62,7 +62,7 @@ memorize every aspect.
 - [WAI-ARIA basics](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics)
 - [Accessible multimedia](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Multimedia)
 - [Mobile accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Mobile)
-- [Read](https://wave.webaim.org/) and about Wave
+- [Read about WAVE](https://wave.webaim.org/)
 
 ### Practice
 

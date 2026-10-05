@@ -99,13 +99,13 @@ copilot
 ```
 
 Once `pageload` builds, push the repository to GitHub and open a Codespace on
-it. Onyx you reach with `ssh onyx`, the key and the one word shortcut you setup in
+it. Onyx you reach with `ssh onyx`, the key and the one-word shortcut you set up in
 [A2](../activities/a2-stop-typing-your-password.md). The agent does not need to
 run on Onyx or in the Codespace, only your program does.
 
 ::: tip This is what A2 was for
 
-An agent can not type your password. Because `ssh onyx` logs in with your key and
+An agent cannot type your password. Because `ssh onyx` logs in with your key and
 no prompt, your agent can copy your code to Onyx, build it, run your measurements
 and copy the results back, all from your laptop, while you watch and approve each
 command:
@@ -119,8 +119,9 @@ scp onyx:cs425-x1/measurements-onyx.txt .
 
 The `.git` directory goes along so `git rev-parse` in `measure.sh` can print the
 commit you measured. The connection multiplexing from A2 step 4 means only the
-first of those pays for a full login, the rest reuse the open connection. If `ssh onyx` still asks for a
-password, go back and finish A2 steps 1 through 3 before you start anything else.
+first of those pays for a full login, and the rest reuse the open connection. If
+`ssh onyx` still asks for a password, go back and finish A2 steps 1 through 3
+before you start anything else.
 It takes about 15 minutes and you will save that many times over this week.
 
 :::
@@ -321,7 +322,7 @@ commit    3f9c2a1
 
 A full run takes about 5 to 10 minutes, most of it the Japan downloads. Run the
 whole thing at least once per vantage point and submit the raw output. Do not edit
-it, the commit and the timestamps in the header are how I match it to your code
+it: the commit and the timestamps in the header are how I match it to your code
 and your session log.
 
 You also need to know roughly **where** each vantage point is to work out the
@@ -464,7 +465,7 @@ address `192.168.4.42`:
 | Japan | 8,480 km | 84.8 ms | 247.2 ms | 2.9 |
 
 `Packages.gz` (13,332,733 bytes): Utah 546 ms at 195 Mbit/s, Japan 28.2 s at
-3.8 Mbit/s. The slow start estimate for question 12 is 9,132 segments, so 10 RTTs
+3.8 Mbit/s. The slow start estimate for question 12 is 9,133 segments, so 10 RTTs
 (10 x (2^10 - 1) = 10,230 segments). From Japan that is about 2.5 s at a 247 ms
 RTT, and the measured 28 s is an order of magnitude worse, which is loss and the
 receive window, not the access link (Utah over the same link ran at 195 Mbit/s).

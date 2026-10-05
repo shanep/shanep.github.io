@@ -73,7 +73,7 @@ fingerprint. SHA-256 always produces 256 bits, which is 64 hex digits.
 
 Two properties make it cryptographic and not just a checksum:
 
-- **One way.** Given the fingerprint, you can not work backwards to the input.
+- **One way.** Given the fingerprint, you cannot work backwards to the input.
 - **Collision resistant.** Nobody can find two different inputs with the same
   fingerprint.
 
@@ -103,7 +103,7 @@ between them is the whole question.
 
 ## A signature is a MAC anyone can check
 
-A MAC has one weakness: Alice and Bob hold the **same** secret, so Bob can not
+A MAC has one weakness: Alice and Bob hold the **same** secret, so Bob cannot
 prove to anyone else that Alice wrote the message. He could have made it himself.
 
 A **digital signature** fixes that. Alice hashes the message and signs the hash
@@ -216,7 +216,7 @@ it.
 2. The server sends its certificate chain, and the client runs the three checks.
 3. They agree on a shared secret and derive the session keys from it.
 4. Every record after that is encrypted and MACed, with a sequence number so it
-   can not be replayed or reordered.
+   cannot be replayed or reordered.
 
 TLS 1.3 (RFC 8446, 2018) does this in one round trip. TLS 1.0 and 1.1 were
 formally retired in 2021.

@@ -45,7 +45,7 @@ powerful, and easy-to-use virtual form of itself
 
 ## The Modern Era
 
-Hardware support and protection and well defined boundaries.
+Hardware support and protection and well-defined boundaries.
 
 ## Kernel Space
 

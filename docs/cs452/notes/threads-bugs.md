@@ -40,9 +40,9 @@ AKA: Race Conditions
 
 ![deadlock](images/deadlock.png)
 
-    Thread 1: Thread 2:
-    pthread_mutex_lock(L1); pthread_mutex_lock(L2);
-    pthread_mutex_lock(L2); pthread_mutex_lock(L1);
+    Thread 1:                   Thread 2:
+    pthread_mutex_lock(L1);     pthread_mutex_lock(L2);
+    pthread_mutex_lock(L2);     pthread_mutex_lock(L1);
 
 ## Conditions for Deadlock
 
@@ -62,4 +62,4 @@ AKA: Race Conditions
 - Circular Wait - total ordering or partial ordering
 - Hold-and-wait - global lock
 - try-lock
-- lock free data structures (HARD!)
+- lock-free data structures (HARD!)

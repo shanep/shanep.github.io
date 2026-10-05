@@ -35,7 +35,7 @@ nothing, but write it down **before** we run the command.
 
 - **Groups of 3 or 4.** One scribe owns the worksheet and puts everyone's name on
   it.
-- **Everyone logs into Onyx with `ssh onyx`**, the shortcut you setup in
+- **Everyone logs into Onyx with `ssh onyx`**, the shortcut you set up in
   [A2](./a2-stop-typing-your-password.md).
 - **Everything today runs on Onyx.** Rounds 1 and 2 ask Team Cymru's DNS service
   which AS owns an address, and round 3 asks
@@ -81,7 +81,7 @@ one big prefix instead of all of its little subnets? So who knows about the
 ## Round 2 - Map the trace onto the ASes
 
 Now the trace from A4 again, this time with `-z`, which asks for the AS of every
-hop:
+hop.
 
 **Predict:** there are 12 routers between Onyx and Salt Lake City. How many
 different ASes do they belong to?

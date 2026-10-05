@@ -40,7 +40,7 @@ software meet.
 ## An Ethernet frame
 
 Ethernet dates back to a 1973 memo by Bob Metcalfe at Xerox PARC, and the frame
-has barely changed since.
+has barely changed since the DIX standard of 1980.
 
 | Field | Bytes | What it is |
 | ----- | ----- | ---------- |
@@ -69,7 +69,7 @@ Every network adapter has a **MAC address**: 48 bits, written as 6 bytes in hex,
 like `00:1a:2b:3c:4d:5e`.
 
 - An **IP address** is handed to you by the network you join, usually by DHCP.
-  It is **hierarchical**: the prefix names a network, like A4's `/24`.
+  It is **hierarchical**: the prefix names a network, like Onyx's `/25` from A4.
 - A **MAC address** is burned into the adapter at the factory. It is **flat**:
   nothing in it says what network you are on.
 
@@ -112,7 +112,7 @@ ones.
 - Since iOS 14 and Android 10, phones can use a **different** MAC address for
   every Wi-Fi network they join, instead of the one in their hardware.
 
-Why a phone would want that is a question for Round 1.
+Why a phone would want that is a question for round 1.
 
 ## The gap between the layers
 
@@ -149,7 +149,7 @@ DHCP leases the switch has seen.
 - Electrical noise, a cheap cable, a microwave next to the access point
 - The receiving adapter checks every frame. A frame that fails is **dropped
   without a word** to anyone, not even the sender
-- Recovery, if it happens at all, is TCP's job, several layers up
+- Recovery, if it happens at all, is TCP's job, two layers up
 
 Linux counts the drops. A rising `crc` number here means a bad cable or port:
 

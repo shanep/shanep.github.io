@@ -9,7 +9,7 @@ all works.
 
 Developing remotely is optional. All of the homework can be done on the CS lab machines in the CCP
 building, or in [GitHub Codespaces](github-codespaces.md). Your professor or teaching assistant
-can not provide tech support for personal machines.
+cannot provide tech support for personal machines.
 
 ## Step 1 - Install the extension
 
@@ -32,10 +32,10 @@ when you are on campus.
 The [COEN IT VPN setup guide](https://docs.google.com/document/d/1dkMJf3NyVHfU60B-3RvWq_TBn4uyeF8g5PyjZCz2mUU/edit)
 has screenshots and instructions for installing the client on Linux.
 
-## Step 3 - Setup an SSH key
+## Step 3 - Set up an SSH key
 
 Without an SSH key you will type your Onyx password every single time VS Code connects, and VS
-Code connects more often than you think. Setup a key once and you never type it again. You only
+Code connects more often than you think. Set up a key once and you never type it again. You only
 need to do this step once per laptop.
 
 Open a terminal on your laptop (on Windows, use Git Bash) and generate a key. Press Enter to accept
@@ -137,7 +137,7 @@ you are connected and click **Install in SSH: onyx** on each extension you need,
 
 After the first time, getting back to your work is quick. You can do any of these:
 
-- Select **File > Open Recent** and pick your folder, it will show `[SSH: onyx]` next to the name
+- Select **File > Open Recent** and pick your folder (it will show `[SSH: onyx]` next to the name)
 - Open the **Remote Explorer** in the sidebar and click the folder under **onyx**
 - Open the Command Palette (`F1`), run **Remote-SSH: Connect to Host...**, and select **onyx**
 
@@ -150,7 +150,7 @@ timeout.
 :::
 
 ::: details The VPN will not connect
-Double check that the portal address is `bronco-vpn.boisestate.edu`. On a Mac, the computer name
+Double-check that the portal address is `bronco-vpn.boisestate.edu`. On a Mac, the computer name
 must only contain letters and numbers, so rename it if it has spaces or special characters, reboot,
 and try again. If it still will not connect, email COEN IT at COENITSVCS-group@boisestate.edu.
 Tell them you are trying to use the VPN to reach Onyx, which step is failing, the error message

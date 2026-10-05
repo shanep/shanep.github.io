@@ -77,11 +77,11 @@ Thread Safe!
 ## In the Kernel
 
 Many operating systems utilized a single lock when first transitioning
-to multiprocessors, including Sun OS and Linux. In the latter, this lock
-even had a name, the big kernel lock (BKL)
+to multiprocessors, including SunOS and Linux. In the latter, this lock
+even had a name, the big kernel lock (BKL).
 
 ## BKL
 
 As more and more cores were added the BKL became a bottleneck and was
-slowly replaced with more fine grained locking. The BKL was finally removed
+slowly replaced with more fine-grained locking. The BKL was finally removed
 in Linux 2.6.39 (2011).

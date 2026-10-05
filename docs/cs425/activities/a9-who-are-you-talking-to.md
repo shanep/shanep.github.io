@@ -18,7 +18,7 @@ You change one character of a message and watch its hash change completely, read
 the certificate `www.boisestate.edu` hands you and follow the chain of who vouches
 for whom, make `curl` refuse four broken certificates, and find out what TLS
 leaves in plain sight. Then you come back to the `yes` you typed the first time
-you ran `ssh onyx` in A2, and work out what you were actually trusting.
+you connected to Onyx in A2, and work out what you were actually trusting.
 
 This one is **instructor led**, like A4 and A5. I do each step on the projector,
 you run the same command on Onyx, and we do not move on until the room has caught
@@ -227,7 +227,7 @@ onyx.boisestate.edu ED25519 SHA256:VX7Yg613MmiIsSzSzRJ3hoyMiAN0thmzQ+RvutdxPyA
 ```
 
 They match. In A2 you typed `yes` when SSH asked about that fingerprint. What were
-you trusting when you did, and how is that different from the way `curl` decided
+you trusting when you did, and how is that different from the way Onyx decided
 to trust `www.boisestate.edu` in round 2?
 
 ## Worksheet

@@ -53,7 +53,7 @@ knows or guesses its URL."*
 | --- | --- | --- |
 | **S** | The thumbnail worker and the API share one access key, so nothing distinguishes them; a compromise of either is indistinguishable from the other in any log. | *"The same key is also used by the API server, because it was copied over during setup."* |
 | **T** | That key has **write** access to the whole bucket, so an attacker holding it can replace any user's photo with any content. | *"That key has read and write access to the entire bucket."* |
-| **R** | Because the key is shared, no action taken with it can be attributed to a particular component. | Same sentence. |
+| **R** | Because the key is shared, no action taken with it can be attributed to a particular component. | *"The same key is also used by the API server, because it was copied over during setup."* |
 | **I** | Any object is readable by anyone who has or guesses the URL, so a private photo is protected only by the secrecy of its filename. | *"The bucket is configured to allow public reads of any object."* |
 | **D** | Write access to the whole bucket means an attacker can delete every photo the service holds. | *"read and write access to the entire bucket"* |
 | **E** | The key is stored in a file on the worker's VM; anyone who reaches that VM gains the API's own storage privileges. | *"a long-lived access key stored in a file on its VM"* |
@@ -63,8 +63,8 @@ threat modeling from guessing, and it is what Lab 2 weights most heavily.
 
 Notice what the walk revealed: **the single most serious problem here is not the public bucket, it
 is the shared key.** The public read setting was the thing the description drew attention to, but
-walking the checklist surfaced that one credential produces threats in all six categories. That is
-the checklist earning its keep.
+walking the checklist surfaced that one credential produces threats in five of the six categories.
+That is the checklist earning its keep.
 
 ### Rating them
 

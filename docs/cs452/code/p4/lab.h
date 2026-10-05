@@ -11,7 +11,7 @@ extern "C"
 {
 #endif
   /**
-   * The default amount of memory that this memory manger will manage unless
+   * The default amount of memory that this memory manager will manage unless
    * explicitly set with buddy_init. The number of bytes is calculated as 2^DEFAULT_K
    */
 #define DEFAULT_K 30
@@ -44,7 +44,7 @@ extern "C"
    */
   struct avail
   {
-    unsigned short int tag;     /*Tag for block status BLOCK_AVAIL, BLOCK_RESERVED*/
+    unsigned short int tag;     /*Tag for block status BLOCK_AVAIL, BLOCK_RESERVED, BLOCK_UNUSED*/
     unsigned short int kval;    /*The kval of this block*/
     struct avail *next;         /*next memory block*/
     struct avail *prev;         /*prev memory block*/
@@ -92,8 +92,8 @@ extern "C"
   void *buddy_malloc(struct buddy_pool *pool, size_t size);
 
   /**
-   * A block of memory previously allocated by a call to malloc,
-   * calloc or realloc is deallocated, making it available again
+   * A block of memory previously allocated by a call to buddy_malloc
+   * or buddy_realloc is deallocated, making it available again
    * for further allocations.
    *
    * If ptr does not point to a block of memory allocated with
@@ -143,12 +143,12 @@ extern "C"
    * specifies an unreasonably small size, then the buddy system may
    * not be able to satisfy any requests.
    *
-   * NOTE: Memory pools returned by this function can not be intermingled.
+   * NOTE: Memory pools returned by this function cannot be intermingled.
    * Calling buddy_malloc with pool A and then calling buddy_free with
    * pool B will result in undefined behavior.
    *
-   * @param size The size of the pool in bytes.
    * @param pool A pointer to the pool to initialize
+   * @param size The size of the pool in bytes.
    */
   void buddy_init(struct buddy_pool *pool, size_t size);
 
@@ -161,15 +161,6 @@ extern "C"
    * @param pool The memory pool to destroy
    */
   void buddy_destroy(struct buddy_pool *pool);
-
-  /**
-   * @brief Entry to a main function for testing purposes
-   *
-   * @param argc system argc
-   * @param argv system argv
-   * @return exit status
-   */
-  int myMain(int argc, char** argv);
 
 #ifdef __cplusplus
 } //extern "C"

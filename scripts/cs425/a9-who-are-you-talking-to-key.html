@@ -164,7 +164,7 @@ onyx.boisestate.edu ED25519 SHA256:VX7Yg613MmiIsSzSzRJ3hoyMiAN0thmzQ+RvutdxPyA</
   </div>
   <div class="ans">Typing <span class="mono">yes</span> trusted that the very first connection really reached Onyx: <strong>trust on
   first use</strong>. Nobody vouched for that key, and an attacker on that first connection would have been remembered instead.
-  After that, SSH checks the saved key every time. <span class="mono">curl</span> never asks: it trusts a key because a CA it
+  After that, SSH checks the saved key every time. Onyx never asks: <span class="mono">openssl s_client</span> trusts a key because a CA it
   already trusts signed a certificate binding that key to the name. One model trusts the first contact, the other trusts
   a third party.</div>
 

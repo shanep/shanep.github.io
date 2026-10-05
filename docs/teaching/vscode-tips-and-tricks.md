@@ -1,7 +1,7 @@
 # VS Code Tips and Tricks
 
 [VS Code](https://code.visualstudio.com/) is the editor we use in all of my classes. This page
-walks you through getting it setup and then covers some cool features that will make you a lot
+walks you through getting it set up and then covers some cool features that will make you a lot
 faster once you learn them.
 
 ## Pick where your code runs
@@ -16,7 +16,7 @@ is where the Linux part lives. Pick one of these:
 - **Your own computer** - If you already run Linux you are all set. If you are on Windows, use
   [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) to run Linux right inside Windows.
 
-If you are on a Mac, VS Code works great, just use Codespaces or Onyx for your coursework.
+If you are on a Mac, VS Code works great. Just use Codespaces or Onyx for your coursework.
 
 ## Install VS Code
 
@@ -109,7 +109,7 @@ due.
 ## Use the Source Control view
 
 The Source Control view (`Ctrl+Shift+G`) shows every file you changed. Click a file to see a
-side by side diff, which is a great way to review your work before you commit. You can stage,
+side-by-side diff, which is a great way to review your work before you commit. You can stage,
 commit, and push from there too.
 
 That said, learn the git commands in the terminal as well. Some classes require them, and the

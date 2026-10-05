@@ -3,10 +3,10 @@
 *Internal post-incident write-up. You analyze this in
 [Lab 7](../assignments/lab-07-malware-triage.md).*
 
-**Organization:** Cascade Regional Health, a 900-employee hospital network
-**Prepared by:** Security operations, day 31
-**Classification:** Internal, teaching copy, all names and addresses changed
-**Status:** Contained. Eradication complete. This report is the written record.
+- **Organization:** Cascade Regional Health, a 900-employee hospital network
+- **Prepared by:** Security operations, Day 31
+- **Classification:** Internal, teaching copy, all names and addresses changed
+- **Status:** Contained. Eradication complete. This report is the written record.
 
 Everything below is what responders observed and recorded. It is deliberately written the way real
 incident write-ups are written: chronological, uneven in detail, with a few things that were never
@@ -55,8 +55,8 @@ not reviewed.
 
 ## Days 1-6
 
-The operators returned during business hours only, roughly 08:00 to 17:00 local time, and were
-inactive over the intervening weekend.
+The operators returned during business hours only, roughly 08:00 to 17:00 local time, and did no
+hands-on work over the intervening weekend.
 
 Using a credential recovered from the billing coordinator's browser store, they authenticated to an
 internal file share as a second, more privileged service account. That account's password was
@@ -75,7 +75,7 @@ From there they:
 
 Between Day 4 and Day 6 approximately 74 GB was transferred out, in chunks of roughly 400 MB, to
 the same `api-telemetry-sync[.]com` host that had been used for command and control. The transfers
-occurred between 01:00 and 04:00. The data was compressed and encrypted before it left; responders
+ran unattended between 01:00 and 04:00. The data was compressed and encrypted before it left; responders
 were never able to confirm its exact contents, but the source directories were the shares holding
 scanned patient intake forms and the billing department's working files.
 

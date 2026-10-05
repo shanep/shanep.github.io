@@ -14,7 +14,7 @@ What to do this week, and when it is due, is on the [Module 3 Overview](week-03-
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §5.3 Privacy as Transparency | 189-191 | 2 pp | 15 min |
 
 Two sections are worth knowing exist even though they are not assigned: **§3.5** (crimes against
-information systems, printed page 81) is where the offences are set out, and **§3.4** (data
+information systems, printed page 81) is where the offenses are set out, and **§3.4** (data
 protection, printed page 72) is where obligations about personal data live. D2 references them,
 so skim them if you have time.
 
@@ -52,8 +52,8 @@ D2 turns on.
 - **Privacy as control (§5.2).** The person the data is about decides what is collected and for
   what purpose. A company can hold your data perfectly securely and still violate this, by
   collecting what it does not need, or using it for something you did not agree to.
-- **Privacy as transparency (§5.3).** You can find out what happened to your data. Feedback (you
-  are told at the time) and audit (you can check afterwards).
+- **Privacy as transparency (§5.3).** You can find out what happened to your data. It comes in
+  two forms: feedback (you are told at the time) and audit (you can check afterward).
 
 The user enumeration example above is a **confidentiality** problem about a fact, who is a
 customer. A company retaining location data it has no current use for is a **control** problem, and

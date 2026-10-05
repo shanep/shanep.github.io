@@ -8,7 +8,8 @@ extern "C"
 #endif
 
   // The threshold that we will use to switch to insertion sort, make sure that
-  // you use test arrays bigger than 5 so you are testing the merge sort
+  // you use test arrays bigger than INSERTION_SORT_THRESHOLD so you are testing
+  // the merge sort
 #define INSERTION_SORT_THRESHOLD 2
 #define MAX_THREADS 32
   /**
@@ -41,13 +42,13 @@ extern "C"
    * @param n The size of the array
    * @param num_threads The number of threads to use.
    */
-  void mergesort_mt(int *A, int n, int num_thread);
+  void mergesort_mt(int *A, int n, int num_threads);
 
   /**
-   * @brief retuns the current time as milliseconds
+   * @brief returns the current time as milliseconds
    * @return the number of milliseconds
    */
-  double getMilliSeconds();
+  double getMilliSeconds(void);
 
   /**
    * @brief Represents a chunk of the array to be sorted by a thread
@@ -68,15 +69,6 @@ extern "C"
    * @return void* always NULL
    */
   void *parallel_mergesort(void *args);
-
-  /**
-   * @brief Entry point for the main function
-   *
-   * @param argc The argument count
-   * @param argv The argument array
-   * @return The exit code
-   */
-  int myMain(int argc, char **argv);
 
 #ifdef __cplusplus
 } // extern "C"

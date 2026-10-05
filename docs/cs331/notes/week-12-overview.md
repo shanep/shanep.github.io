@@ -1,6 +1,6 @@
 # Module 12 Overview
 
-**April 5-11 · Reading: 15 pages · Estimated total: 7 hours**
+**April 5-11 · Reading: 16 pages · Estimated total: 7 hours**
 
 Two questions this week, and they are different questions.
 
@@ -41,7 +41,7 @@ mapping. The last section (*"What was never established"*) matters as much as th
 
 | Activity | Time |
 | --- | --- |
-| Reading (15 pages plus browsing ATT&CK) | 2 hrs 20 min |
+| Reading (16 pages plus browsing ATT&CK) | 2 hrs 20 min |
 | The notes page and the worked example | 40 min |
 | Lab 7 | 1 hr 35 min |
 | Review and slack | 2 hrs 15 min |

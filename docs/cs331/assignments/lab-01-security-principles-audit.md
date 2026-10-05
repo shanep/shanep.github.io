@@ -1,6 +1,6 @@
 # 2.02 Lab 1: Security Principles Audit
 
-**Week 2 · 38 points · about 90 minutes · submit in Canvas**
+**Week 2 · 38 points · about 85 minutes · submit in Canvas**
 
 ## Goal
 
@@ -34,7 +34,7 @@ Read, if you have not already:
 
 - CyBOK §1.4 (printed pages 9-13), especially **§1.4.1 Saltzer and Schroeder Principles**.
 - CyBOK §4.3 **Human Error** (printed pages 158-161).
-- Saltzer and Schroeder, *The Protection of Information in Computer Systems* (1975), section I, 
+- Saltzer and Schroeder, *The Protection of Information in Computer Systems* (1975), section I,
   <https://web.mit.edu/Saltzer/www/publications/protection/>. You only need the numbered list of
   principles and the paragraph explaining each; skip the rest of the paper.
 

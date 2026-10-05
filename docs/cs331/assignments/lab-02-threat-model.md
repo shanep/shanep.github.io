@@ -1,6 +1,6 @@
 # 4.02 Lab 2: Threat Model a Small System
 
-**Week 4 · 38 points · about 90 minutes · submit in Canvas**
+**Week 4 · 38 points · about 85 minutes · submit in Canvas**
 
 ## Goal
 
@@ -44,7 +44,7 @@ being systematic instead of by happening to think of them.
 | --- | --- | --- |
 | **S** | Spoofing: pretending to be someone or something else | Authentication |
 | **T** | Tampering: modifying data in transit or at rest | Integrity |
-| **R** | Repudiation: denying having done something, with no evidence to contradict | Non-repudiation |
+| **R** | Repudiation: denying having done something, with no evidence to contradict the denial | Non-repudiation |
 | **I** | Information disclosure: exposing data to someone not entitled to it | Confidentiality |
 | **D** | Denial of service: making the system unavailable | Availability |
 | **E** | Elevation of privilege: gaining capabilities you were not granted | Authorization |
@@ -136,6 +136,6 @@ threats with no traceable source in the description.
 You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
 what for, per the [AI policy](../index.md#ai-policy).
 
-AI tools are genuinely good at generating STRIDE tables and genuinely bad at the last column, 
+AI tools are genuinely good at generating STRIDE tables and genuinely bad at the last column,
 tracing each threat to a specific sentence in a specific document. That column is worth the most
 points here.

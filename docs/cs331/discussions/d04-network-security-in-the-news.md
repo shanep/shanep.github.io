@@ -67,8 +67,8 @@ about the boundary of the evidence is a real finding.
 ### 2. What would have stopped it, or slowed it
 
 Recommend **two** network-level controls that would have prevented this or materially limited the
-damage. Draw from CyBOK §19.4: firewalling, segmentation, network security monitoring, network
-access control, zero trust, denial-of-service countermeasures.
+damage. Draw from CyBOK §19.4 and §19.3.4.5: firewalling, segmentation, network security
+monitoring, network access control, zero trust, denial-of-service countermeasures.
 
 For **each** of the two:
 
@@ -116,7 +116,7 @@ to "who reads the alert." Week 15 will show you what happens to alerts nobody re
 ## Discussion Guidelines
 
 The [discussion guidelines from D1](d01-introductions-and-security-mindset.md#discussion-guidelines)
-apply. Analyze published reporting only, do not probe, scan, or test any organization's network.
+apply. Analyze published reporting only. Do not probe, scan, or test any organization's network.
 
 ## AI disclosure
 

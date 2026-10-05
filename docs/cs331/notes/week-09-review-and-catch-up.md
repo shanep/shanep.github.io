@@ -32,7 +32,7 @@ In rough order of value:
 
 ### What not to do
 
-Do not re-read all 80 pages of assigned CyBOK. Most of what you need is already in your own labs,
+Do not re-read all 88 pages of assigned CyBOK. Most of what you need is already in your own labs,
 and re-reading the book is the slowest way to get it back.
 
 ## After this week

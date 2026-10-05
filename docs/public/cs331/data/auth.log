@@ -1,23 +1,23 @@
 Apr 21 00:48:50 vault-api-01 sshd[45681]: Failed password for jrivera from 10.12.4.44 port 55701 ssh2
-Apr 21 00:49:38 vault-api-01 sshd[53563]: Accepted publickey for jrivera from 10.12.4.44 port 49486 ssh2: RSA SHA256:9k1Tq263nZxW
+Apr 21 00:49:38 vault-api-01 sshd[53563]: Accepted publickey for jrivera from 10.12.4.44 port 49486 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 00:49:39 vault-api-01 sshd[53563]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
-Apr 21 00:51:53 vault-api-01 sshd[40107]: Accepted publickey for jrivera from 10.12.4.44 port 56733 ssh2: RSA SHA256:9k1Tq892nZxW
+Apr 21 00:51:53 vault-api-01 sshd[40107]: Accepted publickey for jrivera from 10.12.4.44 port 56733 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 00:51:54 vault-api-01 sshd[40107]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 00:59:04 vault-api-01 sshd[53563]: pam_unix(sshd:session): session closed for user jrivera
 Apr 21 01:00:19 vault-api-01 sshd[40107]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 01:11:32 vault-api-01 sshd[9986]: Accepted publickey for deploy from 10.12.9.8 port 55510 ssh2: RSA SHA256:9k1Tq620nZxW
+Apr 21 01:11:32 vault-api-01 sshd[9986]: Accepted publickey for deploy from 10.12.9.8 port 55510 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 01:11:33 vault-api-01 sshd[9986]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
-Apr 21 01:19:20 vault-api-01 sshd[40821]: Accepted publickey for spanter from 10.12.4.31 port 62524 ssh2: RSA SHA256:9k1Tq983nZxW
+Apr 21 01:19:20 vault-api-01 sshd[40821]: Accepted publickey for spanter from 10.12.4.31 port 62524 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 01:19:21 vault-api-01 sshd[40821]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 01:21:16 vault-api-01 sshd[9986]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 01:26:35 vault-api-01 sshd[43624]: Accepted publickey for jrivera from 10.12.4.44 port 56545 ssh2: RSA SHA256:9k1Tq208nZxW
+Apr 21 01:26:35 vault-api-01 sshd[43624]: Accepted publickey for jrivera from 10.12.4.44 port 56545 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 01:26:36 vault-api-01 sshd[43624]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 01:31:56 vault-api-01 sshd[40821]: pam_unix(sshd:session): session closed for user spanter
 Apr 21 01:36:37 vault-api-01 sshd[43624]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 02:29:49 vault-api-01 sshd[24438]: Accepted publickey for jrivera from 10.12.4.44 port 43692 ssh2: RSA SHA256:9k1Tq272nZxW
+Apr 21 02:29:49 vault-api-01 sshd[24438]: Accepted publickey for jrivera from 10.12.4.44 port 43692 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 02:29:50 vault-api-01 sshd[24438]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 02:33:18 vault-api-01 sshd[24438]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 02:41:31 vault-api-01 sshd[32898]: Accepted publickey for deploy from 10.12.9.8 port 49769 ssh2: RSA SHA256:9k1Tq207nZxW
+Apr 21 02:41:31 vault-api-01 sshd[32898]: Accepted publickey for deploy from 10.12.9.8 port 49769 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 02:41:32 vault-api-01 sshd[32898]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 02:49:54 vault-api-01 sshd[32898]: pam_unix(sshd:session): session closed for user deploy
 Apr 21 03:17:12 vault-api-01 sshd[42638]: Failed password for root from 203.0.113.47 port 47892 ssh2
@@ -352,197 +352,197 @@ Apr 21 03:27:28 vault-api-01 sshd[6485]: pam_unix(sshd:session): session opened 
 Apr 21 03:28:08 vault-api-01 sudo:   deploy : TTY=pts/1 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
 Apr 21 03:28:19 vault-api-01 sudo:   deploy : TTY=pts/1 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl status snapvault-api
 Apr 21 03:47:31 vault-api-01 sshd[6485]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 04:17:44 vault-api-01 sshd[18646]: Accepted publickey for jrivera from 10.12.4.44 port 41786 ssh2: RSA SHA256:9k1Tq613nZxW
+Apr 21 04:17:44 vault-api-01 sshd[18646]: Accepted publickey for jrivera from 10.12.4.44 port 41786 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 04:17:45 vault-api-01 sshd[18646]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
-Apr 21 04:26:31 vault-api-01 sshd[27671]: Accepted publickey for spanter from 10.12.4.31 port 58572 ssh2: RSA SHA256:9k1Tq675nZxW
+Apr 21 04:26:31 vault-api-01 sshd[27671]: Accepted publickey for spanter from 10.12.4.31 port 58572 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 04:26:32 vault-api-01 sshd[27671]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 04:28:54 vault-api-01 sshd[18646]: pam_unix(sshd:session): session closed for user jrivera
 Apr 21 04:34:19 vault-api-01 sshd[55917]: Failed password for deploy from 10.12.9.8 port 56388 ssh2
 Apr 21 04:35:43 vault-api-01 sshd[27671]: pam_unix(sshd:session): session closed for user spanter
-Apr 21 04:38:00 vault-api-01 sshd[11407]: Accepted publickey for deploy from 10.12.9.8 port 59676 ssh2: RSA SHA256:9k1Tq667nZxW
+Apr 21 04:38:00 vault-api-01 sshd[11407]: Accepted publickey for deploy from 10.12.9.8 port 59676 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 04:38:01 vault-api-01 sshd[11407]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 04:38:50 vault-api-01 sshd[11407]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 04:39:08 vault-api-01 sshd[7002]: Accepted publickey for jrivera from 10.12.4.44 port 48859 ssh2: RSA SHA256:9k1Tq175nZxW
+Apr 21 04:39:08 vault-api-01 sshd[7002]: Accepted publickey for jrivera from 10.12.4.44 port 48859 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 04:39:09 vault-api-01 sshd[7002]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
-Apr 21 04:42:17 vault-api-01 sshd[46737]: Accepted publickey for spanter from 10.12.4.31 port 47938 ssh2: RSA SHA256:9k1Tq137nZxW
+Apr 21 04:42:17 vault-api-01 sshd[46737]: Accepted publickey for spanter from 10.12.4.31 port 47938 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 04:42:18 vault-api-01 sshd[46737]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 04:47:39 vault-api-01 sshd[7002]: pam_unix(sshd:session): session closed for user jrivera
 Apr 21 04:55:44 vault-api-01 sshd[46737]: pam_unix(sshd:session): session closed for user spanter
-Apr 21 05:16:20 vault-api-01 sshd[49327]: Accepted publickey for spanter from 10.12.4.31 port 41189 ssh2: RSA SHA256:9k1Tq644nZxW
+Apr 21 05:16:20 vault-api-01 sshd[49327]: Accepted publickey for spanter from 10.12.4.31 port 41189 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 05:16:21 vault-api-01 sshd[49327]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 05:24:37 vault-api-01 sshd[49327]: pam_unix(sshd:session): session closed for user spanter
-Apr 21 05:32:21 vault-api-01 sshd[34062]: Accepted publickey for deploy from 10.12.9.8 port 46585 ssh2: RSA SHA256:9k1Tq146nZxW
+Apr 21 05:32:21 vault-api-01 sshd[34062]: Accepted publickey for deploy from 10.12.9.8 port 46585 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 05:32:22 vault-api-01 sshd[34062]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 05:33:25 vault-api-01 sshd[34062]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 05:43:53 vault-api-01 sshd[43559]: Accepted publickey for deploy from 10.12.9.8 port 52343 ssh2: RSA SHA256:9k1Tq792nZxW
+Apr 21 05:43:53 vault-api-01 sshd[43559]: Accepted publickey for deploy from 10.12.9.8 port 52343 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 05:43:54 vault-api-01 sshd[43559]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
-Apr 21 05:44:51 vault-api-01 sshd[21960]: Accepted publickey for jrivera from 10.12.4.44 port 40319 ssh2: RSA SHA256:9k1Tq453nZxW
+Apr 21 05:44:51 vault-api-01 sshd[21960]: Accepted publickey for jrivera from 10.12.4.44 port 40319 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 05:44:52 vault-api-01 sshd[21960]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 05:47:21 vault-api-01 sshd[21960]: pam_unix(sshd:session): session closed for user jrivera
 Apr 21 05:53:11 vault-api-01 sshd[43559]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 06:06:39 vault-api-01 sshd[21129]: Accepted publickey for jrivera from 10.12.4.44 port 51512 ssh2: RSA SHA256:9k1Tq247nZxW
+Apr 21 06:06:39 vault-api-01 sshd[21129]: Accepted publickey for jrivera from 10.12.4.44 port 51512 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 06:06:40 vault-api-01 sshd[21129]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
-Apr 21 06:07:37 vault-api-01 sshd[40490]: Accepted publickey for spanter from 10.12.4.31 port 50275 ssh2: RSA SHA256:9k1Tq741nZxW
+Apr 21 06:07:37 vault-api-01 sshd[40490]: Accepted publickey for spanter from 10.12.4.31 port 50275 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 06:07:38 vault-api-01 sshd[40490]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 06:10:25 vault-api-01 sshd[40490]: pam_unix(sshd:session): session closed for user spanter
 Apr 21 06:11:31 vault-api-01 sshd[21129]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 06:13:24 vault-api-01 sshd[28240]: Accepted publickey for deploy from 10.12.9.8 port 49631 ssh2: RSA SHA256:9k1Tq504nZxW
+Apr 21 06:13:24 vault-api-01 sshd[28240]: Accepted publickey for deploy from 10.12.9.8 port 49631 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 06:13:25 vault-api-01 sshd[28240]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 06:27:20 vault-api-01 sshd[28240]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 08:11:49 vault-api-01 sshd[40365]: Accepted publickey for jrivera from 10.12.4.44 port 54278 ssh2: RSA SHA256:9k1Tq316nZxW
+Apr 21 08:11:49 vault-api-01 sshd[40365]: Accepted publickey for jrivera from 10.12.4.44 port 54278 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 08:11:50 vault-api-01 sshd[40365]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 08:22:24 vault-api-01 sshd[40365]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 08:28:42 vault-api-01 sshd[30622]: Accepted publickey for jrivera from 10.12.4.44 port 63195 ssh2: RSA SHA256:9k1Tq985nZxW
+Apr 21 08:28:42 vault-api-01 sshd[30622]: Accepted publickey for jrivera from 10.12.4.44 port 63195 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 08:28:43 vault-api-01 sshd[30622]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 08:36:54 vault-api-01 sshd[30622]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 09:48:53 vault-api-01 sshd[20837]: Accepted publickey for deploy from 10.12.9.8 port 62701 ssh2: RSA SHA256:9k1Tq373nZxW
+Apr 21 09:48:53 vault-api-01 sshd[20837]: Accepted publickey for deploy from 10.12.9.8 port 62701 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 09:48:54 vault-api-01 sshd[20837]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
-Apr 21 09:54:51 vault-api-01 sshd[29358]: Accepted publickey for jrivera from 10.12.4.44 port 50595 ssh2: RSA SHA256:9k1Tq190nZxW
+Apr 21 09:54:51 vault-api-01 sshd[29358]: Accepted publickey for jrivera from 10.12.4.44 port 50595 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 09:54:52 vault-api-01 sshd[29358]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 10:00:42 vault-api-01 sshd[20837]: pam_unix(sshd:session): session closed for user deploy
 Apr 21 10:02:18 vault-api-01 sshd[29358]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 10:08:02 vault-api-01 sshd[39420]: Accepted publickey for deploy from 10.12.9.8 port 56564 ssh2: RSA SHA256:9k1Tq141nZxW
+Apr 21 10:08:02 vault-api-01 sshd[39420]: Accepted publickey for deploy from 10.12.9.8 port 56564 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 10:08:03 vault-api-01 sshd[39420]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 10:17:21 vault-api-01 sshd[39420]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 10:17:27 vault-api-01 sshd[10562]: Accepted publickey for deploy from 10.12.9.8 port 49616 ssh2: RSA SHA256:9k1Tq875nZxW
+Apr 21 10:17:27 vault-api-01 sshd[10562]: Accepted publickey for deploy from 10.12.9.8 port 49616 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 10:17:28 vault-api-01 sshd[10562]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 10:18:21 vault-api-01 sshd[10562]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 10:20:28 vault-api-01 sshd[36748]: Accepted publickey for spanter from 10.12.4.31 port 55846 ssh2: RSA SHA256:9k1Tq604nZxW
+Apr 21 10:20:28 vault-api-01 sshd[36748]: Accepted publickey for spanter from 10.12.4.31 port 55846 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 10:20:29 vault-api-01 sshd[36748]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 10:32:49 vault-api-01 sshd[36748]: pam_unix(sshd:session): session closed for user spanter
-Apr 21 10:36:07 vault-api-01 sshd[5376]: Accepted publickey for spanter from 10.12.4.31 port 55067 ssh2: RSA SHA256:9k1Tq351nZxW
+Apr 21 10:36:07 vault-api-01 sshd[5376]: Accepted publickey for spanter from 10.12.4.31 port 55067 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 10:36:08 vault-api-01 sshd[5376]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 10:39:54 vault-api-01 sshd[5376]: pam_unix(sshd:session): session closed for user spanter
-Apr 21 10:44:18 vault-api-01 sshd[30512]: Accepted publickey for jrivera from 10.12.4.44 port 60070 ssh2: RSA SHA256:9k1Tq707nZxW
+Apr 21 10:44:18 vault-api-01 sshd[30512]: Accepted publickey for jrivera from 10.12.4.44 port 60070 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 10:44:19 vault-api-01 sshd[30512]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 10:50:41 vault-api-01 sshd[30512]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 11:23:00 vault-api-01 sshd[5764]: Accepted publickey for spanter from 10.12.4.31 port 60084 ssh2: RSA SHA256:9k1Tq652nZxW
+Apr 21 11:23:00 vault-api-01 sshd[5764]: Accepted publickey for spanter from 10.12.4.31 port 60084 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 11:23:01 vault-api-01 sshd[5764]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
-Apr 21 11:28:10 vault-api-01 sshd[18963]: Accepted publickey for jrivera from 10.12.4.44 port 43387 ssh2: RSA SHA256:9k1Tq313nZxW
+Apr 21 11:28:10 vault-api-01 sshd[18963]: Accepted publickey for jrivera from 10.12.4.44 port 43387 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 11:28:11 vault-api-01 sshd[18963]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 11:31:36 vault-api-01 sshd[18963]: pam_unix(sshd:session): session closed for user jrivera
 Apr 21 11:32:48 vault-api-01 sshd[5764]: pam_unix(sshd:session): session closed for user spanter
-Apr 21 11:41:29 vault-api-01 sshd[17248]: Accepted publickey for spanter from 10.12.4.31 port 60705 ssh2: RSA SHA256:9k1Tq205nZxW
+Apr 21 11:41:29 vault-api-01 sshd[17248]: Accepted publickey for spanter from 10.12.4.31 port 60705 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 11:41:30 vault-api-01 sshd[17248]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 11:53:02 vault-api-01 sshd[17248]: pam_unix(sshd:session): session closed for user spanter
-Apr 21 12:01:38 vault-api-01 sshd[3339]: Accepted publickey for jrivera from 10.12.4.44 port 58628 ssh2: RSA SHA256:9k1Tq166nZxW
+Apr 21 12:01:38 vault-api-01 sshd[3339]: Accepted publickey for jrivera from 10.12.4.44 port 58628 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 12:01:39 vault-api-01 sshd[3339]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 12:05:40 vault-api-01 sshd[32119]: Failed password for spanter from 10.12.4.31 port 60468 ssh2
 Apr 21 12:08:04 vault-api-01 sshd[3339]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 12:24:58 vault-api-01 sshd[5979]: Accepted publickey for deploy from 10.12.9.8 port 60171 ssh2: RSA SHA256:9k1Tq725nZxW
+Apr 21 12:24:58 vault-api-01 sshd[5979]: Accepted publickey for deploy from 10.12.9.8 port 60171 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 12:24:59 vault-api-01 sshd[5979]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 12:26:11 vault-api-01 sshd[2939]: Failed password for jrivera from 10.12.4.44 port 43241 ssh2
 Apr 21 12:29:38 vault-api-01 sshd[5979]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 12:30:27 vault-api-01 sshd[13816]: Accepted publickey for deploy from 10.12.9.8 port 52617 ssh2: RSA SHA256:9k1Tq870nZxW
+Apr 21 12:30:27 vault-api-01 sshd[13816]: Accepted publickey for deploy from 10.12.9.8 port 52617 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 12:30:28 vault-api-01 sshd[13816]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 12:41:12 vault-api-01 sshd[13816]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 12:47:50 vault-api-01 sshd[22279]: Accepted publickey for jrivera from 10.12.4.44 port 61803 ssh2: RSA SHA256:9k1Tq336nZxW
+Apr 21 12:47:50 vault-api-01 sshd[22279]: Accepted publickey for jrivera from 10.12.4.44 port 61803 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 12:47:51 vault-api-01 sshd[22279]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
-Apr 21 12:50:32 vault-api-01 sshd[46677]: Accepted publickey for spanter from 10.12.4.31 port 46651 ssh2: RSA SHA256:9k1Tq314nZxW
+Apr 21 12:50:32 vault-api-01 sshd[46677]: Accepted publickey for spanter from 10.12.4.31 port 46651 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 12:50:33 vault-api-01 sshd[46677]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 12:58:18 vault-api-01 sshd[46677]: pam_unix(sshd:session): session closed for user spanter
 Apr 21 13:00:37 vault-api-01 sshd[22279]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 13:38:42 vault-api-01 sshd[19311]: Accepted publickey for deploy from 10.12.9.8 port 54457 ssh2: RSA SHA256:9k1Tq470nZxW
+Apr 21 13:38:42 vault-api-01 sshd[19311]: Accepted publickey for deploy from 10.12.9.8 port 54457 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 13:38:43 vault-api-01 sshd[19311]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 13:45:32 vault-api-01 sshd[19311]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 13:56:46 vault-api-01 sshd[51571]: Accepted publickey for deploy from 10.12.9.8 port 42584 ssh2: RSA SHA256:9k1Tq544nZxW
+Apr 21 13:56:46 vault-api-01 sshd[51571]: Accepted publickey for deploy from 10.12.9.8 port 42584 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 13:56:47 vault-api-01 sshd[51571]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 13:57:33 vault-api-01 sshd[8635]: Failed password for spanter from 10.12.4.31 port 55406 ssh2
-Apr 21 13:59:09 vault-api-01 sshd[37939]: Accepted publickey for spanter from 10.12.4.31 port 40934 ssh2: RSA SHA256:9k1Tq728nZxW
+Apr 21 13:59:09 vault-api-01 sshd[37939]: Accepted publickey for spanter from 10.12.4.31 port 40934 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 13:59:10 vault-api-01 sshd[37939]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 14:03:09 vault-api-01 sshd[51571]: pam_unix(sshd:session): session closed for user deploy
 Apr 21 14:12:57 vault-api-01 sshd[37939]: pam_unix(sshd:session): session closed for user spanter
-Apr 21 15:09:35 vault-api-01 sshd[54604]: Accepted publickey for deploy from 10.12.9.8 port 54158 ssh2: RSA SHA256:9k1Tq885nZxW
+Apr 21 15:09:35 vault-api-01 sshd[54604]: Accepted publickey for deploy from 10.12.9.8 port 54158 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 15:09:36 vault-api-01 sshd[54604]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 15:24:31 vault-api-01 sshd[54604]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 15:32:07 vault-api-01 sshd[23260]: Accepted publickey for jrivera from 10.12.4.44 port 63387 ssh2: RSA SHA256:9k1Tq992nZxW
+Apr 21 15:32:07 vault-api-01 sshd[23260]: Accepted publickey for jrivera from 10.12.4.44 port 63387 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 15:32:08 vault-api-01 sshd[23260]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 15:36:48 vault-api-01 sshd[23260]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 15:37:10 vault-api-01 sshd[38092]: Accepted publickey for jrivera from 10.12.4.44 port 49613 ssh2: RSA SHA256:9k1Tq973nZxW
+Apr 21 15:37:10 vault-api-01 sshd[38092]: Accepted publickey for jrivera from 10.12.4.44 port 49613 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 15:37:11 vault-api-01 sshd[38092]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 15:50:42 vault-api-01 sshd[38092]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 16:16:34 vault-api-01 sshd[53808]: Accepted publickey for spanter from 10.12.4.31 port 61614 ssh2: RSA SHA256:9k1Tq597nZxW
+Apr 21 16:16:34 vault-api-01 sshd[53808]: Accepted publickey for spanter from 10.12.4.31 port 61614 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 16:16:35 vault-api-01 sshd[53808]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
-Apr 21 16:23:18 vault-api-01 sshd[56721]: Accepted publickey for jrivera from 10.12.4.44 port 42214 ssh2: RSA SHA256:9k1Tq506nZxW
+Apr 21 16:23:18 vault-api-01 sshd[56721]: Accepted publickey for jrivera from 10.12.4.44 port 42214 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 16:23:19 vault-api-01 sshd[56721]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
-Apr 21 16:24:54 vault-api-01 sshd[3269]: Accepted publickey for spanter from 10.12.4.31 port 58513 ssh2: RSA SHA256:9k1Tq642nZxW
+Apr 21 16:24:54 vault-api-01 sshd[3269]: Accepted publickey for spanter from 10.12.4.31 port 58513 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 16:24:55 vault-api-01 sshd[3269]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 16:24:58 vault-api-01 sshd[56721]: pam_unix(sshd:session): session closed for user jrivera
 Apr 21 16:26:03 vault-api-01 sshd[53808]: pam_unix(sshd:session): session closed for user spanter
 Apr 21 16:26:23 vault-api-01 sshd[3269]: pam_unix(sshd:session): session closed for user spanter
-Apr 21 16:32:24 vault-api-01 sshd[44287]: Accepted publickey for deploy from 10.12.9.8 port 44197 ssh2: RSA SHA256:9k1Tq846nZxW
+Apr 21 16:32:24 vault-api-01 sshd[44287]: Accepted publickey for deploy from 10.12.9.8 port 44197 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 16:32:25 vault-api-01 sshd[44287]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 16:44:16 vault-api-01 sshd[44287]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 16:46:37 vault-api-01 sshd[21592]: Accepted publickey for deploy from 10.12.9.8 port 41864 ssh2: RSA SHA256:9k1Tq215nZxW
+Apr 21 16:46:37 vault-api-01 sshd[21592]: Accepted publickey for deploy from 10.12.9.8 port 41864 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 16:46:38 vault-api-01 sshd[21592]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 16:52:57 vault-api-01 sshd[21592]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 17:10:37 vault-api-01 sshd[3093]: Accepted publickey for spanter from 10.12.4.31 port 64289 ssh2: RSA SHA256:9k1Tq317nZxW
+Apr 21 17:10:37 vault-api-01 sshd[3093]: Accepted publickey for spanter from 10.12.4.31 port 64289 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 17:10:38 vault-api-01 sshd[3093]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 17:18:42 vault-api-01 sshd[3093]: pam_unix(sshd:session): session closed for user spanter
-Apr 21 17:19:18 vault-api-01 sshd[41787]: Accepted publickey for jrivera from 10.12.4.44 port 61728 ssh2: RSA SHA256:9k1Tq444nZxW
+Apr 21 17:19:18 vault-api-01 sshd[41787]: Accepted publickey for jrivera from 10.12.4.44 port 61728 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 17:19:19 vault-api-01 sshd[41787]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 17:21:32 vault-api-01 sshd[47242]: Failed password for jrivera from 10.12.4.44 port 43097 ssh2
 Apr 21 17:29:45 vault-api-01 sshd[41787]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 17:30:15 vault-api-01 sshd[33021]: Accepted publickey for spanter from 10.12.4.31 port 51928 ssh2: RSA SHA256:9k1Tq651nZxW
+Apr 21 17:30:15 vault-api-01 sshd[33021]: Accepted publickey for spanter from 10.12.4.31 port 51928 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 17:30:16 vault-api-01 sshd[33021]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 17:30:54 vault-api-01 sshd[33021]: pam_unix(sshd:session): session closed for user spanter
-Apr 21 17:32:59 vault-api-01 sshd[23016]: Accepted publickey for spanter from 10.12.4.31 port 41132 ssh2: RSA SHA256:9k1Tq682nZxW
+Apr 21 17:32:59 vault-api-01 sshd[23016]: Accepted publickey for spanter from 10.12.4.31 port 41132 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 17:33:00 vault-api-01 sshd[23016]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 17:45:06 vault-api-01 sshd[23016]: pam_unix(sshd:session): session closed for user spanter
-Apr 21 17:46:49 vault-api-01 sshd[54326]: Accepted publickey for jrivera from 10.12.4.44 port 56658 ssh2: RSA SHA256:9k1Tq534nZxW
+Apr 21 17:46:49 vault-api-01 sshd[54326]: Accepted publickey for jrivera from 10.12.4.44 port 56658 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 17:46:50 vault-api-01 sshd[54326]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 18:00:28 vault-api-01 sshd[54326]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 18:13:55 vault-api-01 sshd[10591]: Accepted publickey for spanter from 10.12.4.31 port 52128 ssh2: RSA SHA256:9k1Tq314nZxW
+Apr 21 18:13:55 vault-api-01 sshd[10591]: Accepted publickey for spanter from 10.12.4.31 port 52128 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 18:13:56 vault-api-01 sshd[10591]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
-Apr 21 18:22:14 vault-api-01 sshd[2477]: Accepted publickey for spanter from 10.12.4.31 port 61064 ssh2: RSA SHA256:9k1Tq823nZxW
+Apr 21 18:22:14 vault-api-01 sshd[2477]: Accepted publickey for spanter from 10.12.4.31 port 61064 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 18:22:15 vault-api-01 sshd[2477]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 18:27:22 vault-api-01 sshd[10591]: pam_unix(sshd:session): session closed for user spanter
 Apr 21 18:30:19 vault-api-01 sshd[2477]: pam_unix(sshd:session): session closed for user spanter
-Apr 21 19:03:11 vault-api-01 sshd[36287]: Accepted publickey for spanter from 10.12.4.31 port 61333 ssh2: RSA SHA256:9k1Tq150nZxW
+Apr 21 19:03:11 vault-api-01 sshd[36287]: Accepted publickey for spanter from 10.12.4.31 port 61333 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 19:03:12 vault-api-01 sshd[36287]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
-Apr 21 19:08:55 vault-api-01 sshd[40198]: Accepted publickey for deploy from 10.12.9.8 port 50826 ssh2: RSA SHA256:9k1Tq920nZxW
+Apr 21 19:08:55 vault-api-01 sshd[40198]: Accepted publickey for deploy from 10.12.9.8 port 50826 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 19:08:56 vault-api-01 sshd[40198]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 19:10:43 vault-api-01 sshd[36287]: pam_unix(sshd:session): session closed for user spanter
 Apr 21 19:16:22 vault-api-01 sshd[40198]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 19:17:15 vault-api-01 sshd[13454]: Accepted publickey for deploy from 10.12.9.8 port 43352 ssh2: RSA SHA256:9k1Tq416nZxW
+Apr 21 19:17:15 vault-api-01 sshd[13454]: Accepted publickey for deploy from 10.12.9.8 port 43352 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 19:17:16 vault-api-01 sshd[13454]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
-Apr 21 19:18:18 vault-api-01 sshd[46836]: Accepted publickey for deploy from 10.12.9.8 port 53116 ssh2: RSA SHA256:9k1Tq553nZxW
+Apr 21 19:18:18 vault-api-01 sshd[46836]: Accepted publickey for deploy from 10.12.9.8 port 53116 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 19:18:19 vault-api-01 sshd[46836]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 19:28:50 vault-api-01 sshd[46836]: pam_unix(sshd:session): session closed for user deploy
 Apr 21 19:29:25 vault-api-01 sshd[13454]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 19:42:26 vault-api-01 sshd[16086]: Accepted publickey for deploy from 10.12.9.8 port 64469 ssh2: RSA SHA256:9k1Tq247nZxW
+Apr 21 19:42:26 vault-api-01 sshd[16086]: Accepted publickey for deploy from 10.12.9.8 port 64469 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 19:42:27 vault-api-01 sshd[16086]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 19:48:16 vault-api-01 sshd[16086]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 19:57:53 vault-api-01 sshd[4396]: Accepted publickey for spanter from 10.12.4.31 port 43023 ssh2: RSA SHA256:9k1Tq963nZxW
+Apr 21 19:57:53 vault-api-01 sshd[4396]: Accepted publickey for spanter from 10.12.4.31 port 43023 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 19:57:54 vault-api-01 sshd[4396]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 20:08:54 vault-api-01 sshd[4396]: pam_unix(sshd:session): session closed for user spanter
-Apr 21 20:32:14 vault-api-01 sshd[33374]: Accepted publickey for deploy from 10.12.9.8 port 44567 ssh2: RSA SHA256:9k1Tq394nZxW
+Apr 21 20:32:14 vault-api-01 sshd[33374]: Accepted publickey for deploy from 10.12.9.8 port 44567 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 20:32:15 vault-api-01 sshd[33374]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 20:46:11 vault-api-01 sshd[33374]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 21:16:48 vault-api-01 sshd[55614]: Accepted publickey for jrivera from 10.12.4.44 port 47119 ssh2: RSA SHA256:9k1Tq964nZxW
+Apr 21 21:16:48 vault-api-01 sshd[55614]: Accepted publickey for jrivera from 10.12.4.44 port 47119 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 21:16:49 vault-api-01 sshd[55614]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 21:27:49 vault-api-01 sshd[55614]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 21:33:12 vault-api-01 sshd[50852]: Accepted publickey for spanter from 10.12.4.31 port 41520 ssh2: RSA SHA256:9k1Tq518nZxW
+Apr 21 21:33:12 vault-api-01 sshd[50852]: Accepted publickey for spanter from 10.12.4.31 port 41520 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 21:33:13 vault-api-01 sshd[50852]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
-Apr 21 21:42:42 vault-api-01 sshd[18690]: Accepted publickey for jrivera from 10.12.4.44 port 44485 ssh2: RSA SHA256:9k1Tq340nZxW
+Apr 21 21:42:42 vault-api-01 sshd[18690]: Accepted publickey for jrivera from 10.12.4.44 port 44485 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 21:42:43 vault-api-01 sshd[18690]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 21:46:22 vault-api-01 sshd[50852]: pam_unix(sshd:session): session closed for user spanter
 Apr 21 21:55:28 vault-api-01 sshd[18690]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 22:14:49 vault-api-01 sshd[3652]: Accepted publickey for jrivera from 10.12.4.44 port 54199 ssh2: RSA SHA256:9k1Tq656nZxW
+Apr 21 22:14:49 vault-api-01 sshd[3652]: Accepted publickey for jrivera from 10.12.4.44 port 54199 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 22:14:50 vault-api-01 sshd[3652]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 22:20:08 vault-api-01 sshd[3652]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 22:28:03 vault-api-01 sshd[29380]: Accepted publickey for deploy from 10.12.9.8 port 50947 ssh2: RSA SHA256:9k1Tq634nZxW
+Apr 21 22:28:03 vault-api-01 sshd[29380]: Accepted publickey for deploy from 10.12.9.8 port 50947 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 22:28:04 vault-api-01 sshd[29380]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
-Apr 21 22:32:32 vault-api-01 sshd[12051]: Accepted publickey for deploy from 10.12.9.8 port 42666 ssh2: RSA SHA256:9k1Tq805nZxW
+Apr 21 22:32:32 vault-api-01 sshd[12051]: Accepted publickey for deploy from 10.12.9.8 port 42666 ssh2: RSA SHA256:9LmdwxdOa8klgy2J4OytCGlC7//XJf1gu1cJussGNyQ
 Apr 21 22:32:33 vault-api-01 sshd[12051]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 22:36:01 vault-api-01 sshd[29380]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 22:39:53 vault-api-01 sshd[38081]: Accepted publickey for jrivera from 10.12.4.44 port 58723 ssh2: RSA SHA256:9k1Tq696nZxW
+Apr 21 22:39:53 vault-api-01 sshd[38081]: Accepted publickey for jrivera from 10.12.4.44 port 58723 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 22:39:54 vault-api-01 sshd[38081]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 22:41:00 vault-api-01 sshd[38081]: pam_unix(sshd:session): session closed for user jrivera
 Apr 21 22:42:58 vault-api-01 sshd[12051]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 22:49:08 vault-api-01 sshd[49123]: Accepted publickey for jrivera from 10.12.4.44 port 49066 ssh2: RSA SHA256:9k1Tq650nZxW
+Apr 21 22:49:08 vault-api-01 sshd[49123]: Accepted publickey for jrivera from 10.12.4.44 port 49066 ssh2: RSA SHA256:xTE2OKoMxI+YYhafu2D5Rv67v43krCIufLst6VcHn88
 Apr 21 22:49:09 vault-api-01 sshd[49123]: pam_unix(sshd:session): session opened for user jrivera(uid=1001) by (uid=0)
 Apr 21 22:58:20 vault-api-01 sshd[49123]: pam_unix(sshd:session): session closed for user jrivera
-Apr 21 23:40:40 vault-api-01 sshd[17459]: Accepted publickey for spanter from 10.12.4.31 port 58289 ssh2: RSA SHA256:9k1Tq301nZxW
+Apr 21 23:40:40 vault-api-01 sshd[17459]: Accepted publickey for spanter from 10.12.4.31 port 58289 ssh2: RSA SHA256:PDCQGfeL8q5sGoT5eowyThA5gqyVItnrQgGS2b28wcw
 Apr 21 23:40:41 vault-api-01 sshd[17459]: pam_unix(sshd:session): session opened for user spanter(uid=1000) by (uid=0)
 Apr 21 23:46:43 vault-api-01 sshd[17459]: pam_unix(sshd:session): session closed for user spanter

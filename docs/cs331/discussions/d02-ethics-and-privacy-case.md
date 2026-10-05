@@ -110,7 +110,7 @@ agreement with no addition is not.
 | | **Total** | **30** |
 
 **What loses points in row 1:** picking an option without engaging with the counterargument, and
-treating part 4 as rhetorical. It is not rhetorical, answer it.
+treating part 4 as rhetorical. It is not rhetorical. Answer it.
 
 ## Discussion Guidelines
 

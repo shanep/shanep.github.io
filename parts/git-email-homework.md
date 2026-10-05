@@ -1,4 +1,4 @@
-## Task 2 - Create Some commits
+## Task 2 - Create Some Commits
 
 - Create your first commit using the terminal
 

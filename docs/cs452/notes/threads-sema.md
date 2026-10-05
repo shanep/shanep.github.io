@@ -29,7 +29,7 @@ call a semaphore used as a lock a binary semaphore.
 
 - Semaphores are also useful to order events in a concurrent program.
 - One thread waits for something to happen (blocks on a semaphore)
-- Another thread making that something happen and then signaling that it has happened
+- Another thread makes that something happen and then signals that it has happened
 
 ## Reader-Writer Locks
 

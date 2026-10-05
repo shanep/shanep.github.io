@@ -46,7 +46,7 @@
 ## Semantics
 
 - When checking your condition use a while loop (Mesa Semantics)
-- Hoare semantics, is harder to build but provides a stronger
+- Hoare semantics is harder to build but provides a stronger
     guarantee that the woken thread will run immediately upon being
     woken
 - Virtually every system ever built employs Mesa semantics.

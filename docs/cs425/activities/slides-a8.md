@@ -9,7 +9,7 @@ prev: false
 
 ## A segment went missing
 
-You are on campus WiFi and one TCP segment never arrives. Maybe a router queue
+You are on campus Wi-Fi and one TCP segment never arrives. Maybe a router queue
 somewhere overflowed. Maybe a microwave in the break room drowned out one frame.
 
 TCP has no way to tell those two apart, and it reacts to both the same way.
@@ -143,7 +143,7 @@ promises. A clean fiber often runs that well. A radio cannot.
 
 ## 802.11 does not trust the air
 
-Ethernet sends a frame and hopes. 802.11 can not afford to:
+Ethernet sends a frame and hopes. 802.11 cannot afford to:
 
 - The receiver **ACKs every unicast frame** (section 7.3).
 - No ACK, and the sender transmits the frame again, up to a retry limit. The

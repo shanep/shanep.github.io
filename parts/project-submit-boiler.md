@@ -1,6 +1,6 @@
 ## Final Task - Submit your code
 
-Now that you have completed all the tasks the only thing left to do is to create a submission report
+Now that you have completed all the tasks, the only thing left to do is to create a submission report
 and upload it to Canvas so you can receive a grade for all your hard work.
 
 ### Update your README
@@ -48,8 +48,9 @@ fix the problem.
 3. Wait for the run to finish and then refresh your repository. You will now have a file named
    `submission-report.docx` that contains your README, the build output, the test results, the
    coverage report, the Address Sanitizer report, and all your code.
-4. The workflow added a commit to your repository, so run `git pull` in your Codespace before you
-   make any more changes. If you skip this your next push will be rejected.
+4. The workflow added a commit to your repository, so run `git pull` in your Codespace (or
+   wherever you cloned the repository) before you make any more changes. If you skip this, your
+   next push will be rejected.
 
 ::: danger
 
@@ -71,4 +72,4 @@ on Onyx instead. Follow the steps in `docs/onyx.md` in your repository, which in
 
 Download `submission-report.docx` from GitHub and submit it to Canvas. You can view your own
 submission in Canvas, so open it and make sure everything looks right. Your grade will be updated
-after the due date (and late window) have passed.
+after the due date (and late window) has passed.

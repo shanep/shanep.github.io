@@ -155,9 +155,10 @@ def main() -> int:
     print(f"PBKDF2 iterations: {PBKDF2_ITERATIONS:,}")
 
     fast_stored = store_accounts(use_slow_hash=False)
+    fast_result = crack(fast_stored, wordlist, use_slow_hash=False)
     report(
         "STORED WITH A FAST HASH (one pass of SHA-256):",
-        crack(fast_stored, wordlist, use_slow_hash=False),
+        fast_result,
         len(ACCOUNTS),
     )
 
@@ -176,9 +177,14 @@ def main() -> int:
     show_salt_effect()
 
     print("\n" + "=" * 72)
-    print("carol was never cracked by either run.  Her password is not in the")
-    print("wordlist.  Length and unpredictability beat storage tricks; storage")
-    print("choices decide what happens after the database leaks.")
+    # Both runs crack the same accounts, so checking one result is enough.
+    if "carol" in fast_result.cracked:
+        print("carol was cracked this time: her password is now in the wordlist.")
+        print("Storage choices decide what happens after the database leaks.")
+    else:
+        print("carol was never cracked by either run.  Her password is not in the")
+        print("wordlist.  Length and unpredictability beat storage tricks; storage")
+        print("choices decide what happens after the database leaks.")
     print("=" * 72)
     return 0
 

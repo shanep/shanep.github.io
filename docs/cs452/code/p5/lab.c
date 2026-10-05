@@ -3,7 +3,7 @@
 #include "lab.h"
 
 /**
- * @brief Standard insertion sort that is faster than merge sort for small array's
+ * @brief Standard insertion sort that is faster than merge sort for small arrays
  *
  * @param A The array to sort
  * @param p The starting index
@@ -100,7 +100,7 @@ void merge_s(int A[], int p, int q, int r)
   free(B);
 }
 
-double getMilliSeconds()
+double getMilliSeconds(void)
 {
   struct timeval now;
   gettimeofday(&now, (struct timezone *)0);

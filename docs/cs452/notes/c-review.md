@@ -2,7 +2,7 @@
 
 This is a quick start guide for C programming geared for students who have been exposed to C but
 have done the majority of their coursework in Java. In the CS curriculum at Boise State University
-you are exposed to C in CS253 and ECE230/330 which are both pre-requisites to this class, the
+you are exposed to C in CS253 and ECE230/330 which are both prerequisites to this class. The
 majority of the other required classes use Java as the preferred language. With this fact in mind
 students may not have had as many opportunities to hone their C skills to the same sharpness as
 their Java skills. The following sections highlight some important differences between C and Java,
@@ -13,7 +13,7 @@ When working with C it is very important to distinguish between the _declaration
 properties of a variable (primarily its type); a definition also causes storage to be set aside. We
 will visit the topic of _declaration_ and _definition_ throughout this document.
 
-This document is by no means an exhaustive reference for the C language, its purpose is to help
+This document is by no means an exhaustive reference for the C language. Its purpose is to help
 refresh your previous experience with C and point out common pitfalls that plague students. Several
 very thorough treatises of the C language are listed in the References section below
 for those who want to dig deeper.
@@ -30,7 +30,7 @@ x86-64 Linux but 4 bytes on 64-bit Windows). This is in stark contrast to Java
 where sizes are always the same regardless of what hardware you are running on.
 
 In C automatic type conversions can be surprising when coming from the warm embrace of Java. When an
-operator, like addition(+) encounters operands of different types, they are converted to a common
+operator, like addition (+), encounters operands of different types, they are converted to a common
 type according to a small number of rules. In general, automatic conversions widen a _narrower_
 operand into a _wider_ one, such as `int` to `double`. Watch out for two cases. Converting a large
 `int` to `float` can lose precision (any value above 2^24), and when an operator mixes a signed and
@@ -41,12 +41,12 @@ illegal and the compiler in question may only issue a warning instead of an erro
 
 ## Control flow
 
-Control flow in C is similar to java with some of the same gotchas (like switch statements falling
+Control flow in C is similar to Java with some of the same gotchas (like switch statements falling
 through without an explicit break). You have If-Else, Else-If, Switch, loops (while, for, do/while),
 break, continue and the infinitely-abusable _goto_ statement.
 
 While the _goto_ statement may have gotten a bad rap it is actually quite handy when used with
-discipline. To quote the linux kernel docs the
+discipline. To quote the Linux kernel docs the
 [rationale](https://www.kernel.org/doc/html/latest/process/coding-style.html#centralized-exiting-of-functions)
 for using the goto statement is:
 
@@ -117,7 +117,7 @@ limits the scope of that object to the rest of the source file being compiled. S
 In C you can also use the **static** declaration on internal variables (variables declared inside a
 function). Internal static variables are local to a particular function just as automatic variables
 are, but unlike automatics, they remain in existence across function calls. This means that using
-the **static** keyword on internal variables provide private, permanent storage within a single
+the **static** keyword on internal variables provides private, permanent storage within a single
 function. Be aware however that internal static variables are *NOT* thread safe and should be
 treated with the same care as global variables in a multi-threaded environment.
 
@@ -203,11 +203,11 @@ to the address. This property is very useful when implementing the memory subsys
 There is no explicit string type in C like there is in Java. In C a string is just an array of
 *chars* that are terminated with a null character ('\0'). Strings are typically represented by a
 pointer (typed to `char *`) that points to the first character in the string. In C the
-`char` type represents a character from the [ASCII table](http://www.asciitable.com/). A very
+`char` type represents a character from the [ASCII table](https://www.asciitable.com/). A very
 common mistake for beginner C programmers is to forget about the null character when dealing with
 strings. When allocating memory you must always add 1 to the size of a string to account for the
 null terminator. For example the string **_foo_** requires storage of size 4 bytes, 3 for the
-letters f,o,and o and 1 for the '\0'.
+letters f, o, and o and 1 for the '\0'.
 
 ## Structures
 
@@ -258,7 +258,7 @@ warnings as possible and should treat warnings as errors.
 
 If your program consists of one .c file and one .h file then it is possible to
 build everything by hand. However, things get very complex once you start to add
-more files into the process thus another tool must be used to drive everything.
+more files into the process, so another tool must be used to drive everything.
 There are hundreds of options available to build a C code base. For this class
 we will use [GNU make](https://www.gnu.org/software/make/manual/make.html). While
 make is not a perfect system it is installed almost everywhere and is good enough
@@ -269,7 +269,7 @@ for our purposes.
 In the brilliant paper _A Few Billion Lines of Code Later: Using Static Analysis to Find Bugs in
  the Real World_ the authors write about the challenges of parsing programming languages against a
  standard. While the C language has been standardized by
- [ISO](https://www.iso.org/standard/74528.html) compiler vendors often diverge from the standard,
+ [ISO](https://www.iso.org/standard/74528.html), compiler vendors often diverge from the standard,
  either on purpose ([gnu89](https://gcc.gnu.org/onlinedocs/gcc/C-Dialect-Options.html)), because the
  standard is vague or undefined, or because of bugs in the compiler itself.
 
@@ -282,7 +282,7 @@ In the brilliant paper _A Few Billion Lines of Code Later: Using Static Analysis
 
 The [Linux kernel](https://www.kernel.org/doc/html/latest/process/programming-language.html)
 is written in gnu11 (it moved from gnu89 to gnu11 in Linux 5.18), which looks like
-C11 but leverages gcc specific features. This dialect contains many extensions to
+C11 but leverages GCC-specific features. This dialect contains many extensions to
 the language (the GNU extensions), and many of them are used within the kernel as a
 matter of course.
 
@@ -293,7 +293,7 @@ matter of course.
 * [Using the GNU Compiler Collection](https://gcc.gnu.org/onlinedocs/gcc/)
 * [clang documentation](https://clang.llvm.org/docs/)
 * [A Few Billion Lines of Code Later: Using Static Analysis to Find Bugs in the Real World](https://cacm.acm.org/magazines/2010/2/69354-a-few-billion-lines-of-code-later/fulltext)
-  * Al Bessey, et. al, Communications of the ACM, February 2010, Vol. 53 No. 2, Pages 66-75
+  * Al Bessey et al., Communications of the ACM, February 2010, Vol. 53 No. 2, Pages 66-75
 * [OSTEP ch 14](https://pages.cs.wisc.edu/~remzi/OSTEP/vm-api.pdf)
 * [Intel® 64 and IA-32 Architectures Software Developer's Manual](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)
 * [GNU make](https://www.gnu.org/software/make/manual/html_node/index.html)

@@ -14,8 +14,8 @@ hardware support in order to accomplish its work effectively.
 
 ## Details
 
-Direct execution means the program will run fast (bare metal) compare
-this to Java or C# which run in a Virtual Machine.
+Direct execution means the program will run fast (bare metal). Compare
+this to Java or C#, which run in a Virtual Machine.
 
 ## Problem \#1 Restricted Operations
 

@@ -31,7 +31,7 @@ is overwhelmingly empty. So it gets sliced, one way or the other:
 it. `payroll.db` carries `alice: rwd, backup-service: r`. This is how file permissions work.
 
 **A capability list slices by row.** Each subject carries the list of objects it may touch. Bob
-holds `report.pdf: r`. This is how a bearer token, an API key, or a share link works, possession
+holds `report.pdf: r`. This is how a bearer token, an API key, or a share link works: possession
 of the capability *is* the authorization.
 
 Neither is better. They make different questions cheap:
@@ -121,7 +121,7 @@ account. That is not a technical difficulty: it is a decision nobody made.
 
 | Term | Short form |
 | --- | --- |
-| **Subject** | An active entity requesting access, a user, service, or program. |
+| **Subject** | An active entity requesting access: a user, service, or program. |
 | **Object** | A passive entity being protected. |
 | **Right** | What a subject may do to an object: read, write, delete, grant. |
 | **Access control matrix** | Subjects × objects, rights in the cells. The direct form of a policy. |
@@ -133,12 +133,12 @@ account. That is not a technical difficulty: it is a decision nobody made.
 | **Delegation / revocation** | Passing on a right; taking it back. Revocation is the hard one. |
 | **Accountability** | Being able to attribute an action to the actor who took it. |
 
-The reference monitor's three requirements are the *complete mediation* and *economy of mechanism*
-principles from week 2, stated as engineering criteria.
+Two of the reference monitor's three requirements are the *complete mediation* and
+*economy of mechanism* principles from week 2, stated as engineering criteria.
 
 ## Looking ahead
 
 Weeks 7 and 8 are cryptography. Week 7 is symmetric encryption, and Lab 4 will show you a picture
-that is still recognisable after it has been encrypted.
+that is still recognizable after it has been encrypted.
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

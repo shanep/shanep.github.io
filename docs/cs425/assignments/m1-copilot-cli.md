@@ -23,7 +23,7 @@ already know how to do by hand: resolve a hostname, the way `dig` did in A1.
 Then you ask it to change the program, ask it to explain part of it, and save
 the whole conversation as proof.
 
-This is a take home mini-lab: you do it on your own, outside of class, and
+This is a take-home mini-lab: you do it on your own, outside of class, and
 submit it individually. It is much smaller than a project and does not use the
 project starter repository or the project grading rubric.
 
@@ -44,7 +44,7 @@ If Copilot ever tells you that you are out of requests or asks you to upgrade,
 1. **Confirm your Copilot access.** Sign in to GitHub and open
    [github.com/settings/copilot](https://github.com/settings/copilot). It should
    show that you have Copilot through GitHub Education. If it does not, you can
-   sign up for a pro account at <https://education.github.com/pack> you will
+   sign up for a pro account at <https://education.github.com/pack>. You will
    need to use your student (edu) email address to qualify for the free stuff.
 2. **Pick a machine.** Your own laptop is the easiest place to do this. You need
    a terminal and a C compiler (`cc` or `gcc`) with `make`, the same toolchain you
@@ -63,7 +63,7 @@ machine.
 | Windows | `winget install GitHub.Copilot` |
 | Any platform with Node.js 22 or later | `npm install -g @github/copilot` |
 
-On Windows you need PowerShell 6 or later; WSL also works, using the Linux
+On Windows you need PowerShell 7 or later; WSL also works, using the Linux
 instructions.
 
 Then check that it runs and log in:
@@ -233,7 +233,7 @@ from Claude Code's `/export` is fine.
 
 **Things students hit.**
 
-- `brew install copilot-cli` without `--cask` fails; the table has it right.
+- `brew install copilot` installs the unrelated AWS Copilot CLI; the table has it right.
 - On Windows PowerShell 5 (the one that ships with Windows) the CLI refuses to
   run. They need PowerShell 7 or WSL.
 - `-6` on a network without IPv6 still prints AAAA results, because

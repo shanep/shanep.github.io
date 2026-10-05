@@ -1,17 +1,17 @@
 <!-- markdownlint-disable-next-line -->
-## Configure Github
+## Configure GitHub
 
-This document will walk you through configuring your personal github account so you can work
+This section walks you through configuring your personal GitHub account so you can work
 effectively from the command line in your future classes.
 
 ## Install the command line client
 
-You can skip this task if you are working on one of the cs lab machines.
+You can skip this task if you are working on one of the CS lab machines.
 The gh command line tool is already installed for you.
 
-Install the github command line client [cli.github.com](https://cli.github.com/).
+Install the GitHub command line client [cli.github.com](https://cli.github.com/).
 
-Windows users **MUST** reboot their machines. If you are on windows do not
+Windows users **MUST** reboot their machines. If you are on Windows, do not
 continue until you have rebooted your machine. Once the gh tool is installed you
 should be able to open a terminal and type **gh** as shown below.
 
@@ -25,10 +25,10 @@ USAGE
 ... Lots more output!
 ```
 
-## Setup Authorization
+## Set Up Authorization
 
 We want to configure our machine to use ssh keys using the command
-`gh auth login`. Other tools and some Integrated developer environments
+`gh auth login`. Other tools and some integrated development environments (IDEs)
 need ssh to work properly. This will ensure that your setup will work no
 matter how you choose to write code 😃.
 
@@ -52,13 +52,13 @@ Press Enter to open https://github.com/login/device in your browser...
 
 ## Confirm everything works
 
-We want to confirm that we have everything setup correctly. Luckily the
+We want to confirm that we have everything set up correctly. Luckily, the
 command line tool has an option to do this for us. Run the command
 `gh auth status` and you should see output similar to what is shown
 below.
 
 Your output will be slightly different depending on the OS and other
-factors. You are not required to match the output exactly, you just need
+factors. You are not required to match the output exactly. You just need
 to confirm that github.com is configured to use the ssh protocol.
 
 ```bash
@@ -71,4 +71,4 @@ github.com
   - Token scopes: 'admin:public_key', 'gist', 'read:org', 'repo'
 ```
 
-Congrats you are now configured to use github.com with the ssh protocol!
+Congrats, you are now configured to use github.com with the ssh protocol!

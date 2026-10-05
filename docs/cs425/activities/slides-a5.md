@@ -30,7 +30,7 @@ An ICMP message is carried in an ordinary IP datagram, with protocol number **1*
 in the IP header (TCP is 6, UDP is 17).
 
 So it sits just above IP, the way TCP and UDP do, but it is part of the network
-layer. Applications do not normally open ICMP connections, the network itself
+layer. Applications do not normally send ICMP themselves. The network itself
 uses it to talk about your traffic.
 
 ## Every message is a type and a code
@@ -116,7 +116,7 @@ Blocking every ICMP message breaks things you need:
 - **Fragmentation needed** (type 3, code 4) is how path MTU discovery works. Block
   it and you get the MTU black hole from A4.
 - **Time exceeded** (type 11) is how you find where a path goes wrong.
-- **IPv6** cannot work at all without ICMPv6, it uses it to find its neighbors on
+- **IPv6** cannot work at all without ICMPv6: it uses it to find its neighbors on
   the local network.
 
 So firewalls pick and choose, and echo is usually the first thing to go.
@@ -153,7 +153,7 @@ inside:
 | UDP to an unused high port, starting at 33434 | classic Unix `traceroute` |
 | TCP SYN to a real port, such as 443 | `traceroute -T`, `mtr -T` |
 
-Routers decrement all three the same way. Firewalls are another story, they make
+Routers decrement all three the same way. Firewalls are another story: they make
 their decisions on protocol and port.
 
 ## How do you know you arrived?

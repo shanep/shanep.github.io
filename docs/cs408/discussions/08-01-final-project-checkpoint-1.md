@@ -84,7 +84,7 @@ Then record your Panopto video in the same reply (Task 3).
 
 ## Task 4 - Peer reviews
 
-Review **two** classmates' checkpoint posts by **this checkpoint's due date** Post each review as a
+Review **two** classmates' checkpoint posts by **this checkpoint's due date**. Post each review as a
 **reply to their post** in this discussion.
 
 - Choose a student whose post does not already have two reviews. Count the review replies under a

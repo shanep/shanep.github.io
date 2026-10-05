@@ -15,7 +15,8 @@ Everything you need is in the provided script.
 ## Objectives assessed
 
 - **4.5**: Perform and then remediate a SQL injection, and explain why parameterization defeats it.
-- **5.5**: Recommend a prevention-first countermeasure for a class of vulnerability.
+- **5.5**: Recommend a prevention-first countermeasure (a language, API, or coding practice) for a
+  class of vulnerability.
 
 ([TLO 4](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures) ·
 [TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles))
@@ -36,7 +37,7 @@ Everything you need is in the provided script.
   SQL-Injection**.
 - CyBOK §15.1.2 (printed pages 501-503), structured output generation vulnerabilities. This is the
   general category SQL injection belongs to, and reading it will change how you see the fix.
-- OWASP Top 10 **A03: Injection**: <https://owasp.org/Top10/A03_2021-Injection/>
+- OWASP Top 10:2021 **A03: Injection**: <https://owasp.org/Top10/A03_2021-Injection/>
 - Download [data/sqli_demo.py](../data/sqli_demo.py) from Canvas Files. It uses only the Python
   standard library, no `pip install` needed.
 
@@ -52,8 +53,8 @@ It runs four cases and prints, for each, the exact SQL sent to the database. Sav
 
 Then read the source. You only need two functions:
 
-- `vulnerable_query()`, builds the SQL by pasting the user's input into the query text.
-- `login_safe()`, passes the query and the values to the database separately.
+- `vulnerable_query()`: builds the SQL by pasting the user's input into the query text.
+- `login_safe()`: passes the query and the values to the database separately.
 
 Answer:
 
@@ -81,7 +82,7 @@ Case 4 uses the input `' OR '1'='1`, which is the payload everyone has heard of.
 work here.** That is the exercise.
 
 1. **Quote the SQL that case 4 produced** and explain, precisely, why it returns nothing. The hint
-   in the script is that SQL evaluates `AND` before `OR`, work through the resulting condition and
+   in the script is that SQL evaluates `AND` before `OR`. Work through the resulting condition and
    show your reasoning.
 2. **Fix it.** Edit `INJECTION_RETURN_ALL` at the top of the script so that case 4 returns **all
    three accounts**. Run it again.
@@ -90,7 +91,7 @@ work here.** That is the exercise.
    - Paste the result line showing three rows.
 3. **Explain your payload** in two or three sentences: what does it do to the condition, and why
    does it now match every row?
-4. Try **two more inputs of your own** against the vulnerable version and record what each did, 
+4. Try **two more inputs of your own** against the vulnerable version and record what each did,
    including ones that fail. A syntax error is a result; paste it and say what it tells an attacker
    who is probing blind. (Note what the vulnerable version does with an unmatched quote, and what
    an error message like that would reveal on a real site.)

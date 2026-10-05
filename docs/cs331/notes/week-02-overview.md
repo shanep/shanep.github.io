@@ -1,6 +1,6 @@
 # Module 2 Overview
 
-**January 18-24 · MLK Day is Monday, January 18 · Reading: 14 pages · Estimated total: 7 hours**
+**January 18-24 · MLK Day is Monday, January 18 · Reading: 14 pages · Estimated total: 6.5 hours**
 
 In 1975 Jerome Saltzer and Michael Schroeder wrote down eight design principles for protecting
 information in computer systems. Fifty-two years later they are still the closest thing the field
@@ -34,7 +34,7 @@ By the end of this week, the successful student will be able to:
   (1 hr 25 min, 38 points)
 
 No discussion this week. Lab 1 is the only graded item, and it is a writing assignment, so give it
-the full ninety minutes.
+the full 85 minutes.
 
 ## Time Estimate
 

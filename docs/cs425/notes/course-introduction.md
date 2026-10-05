@@ -39,7 +39,7 @@ material it depends on.
 
 Because the interfaces you are learning about are C interfaces. The socket API is
 a C API, packet headers are C structs, and every RFC you read assumes you are
-thinking in bytes. A higher level language would hide exactly the details this
+thinking in bytes. A higher-level language would hide exactly the details this
 course is about.
 
 ## Ground rules

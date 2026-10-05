@@ -37,6 +37,6 @@ Nothing is due. No lab, no discussion.
 | Re-reading your graded labs and my comments | 1 hr |
 | Practice: threat model, access control matrix, principles | 1 hr |
 | Re-running the crypto demos | 30 min |
-| **Total** | **~2.5 hrs** |
+| **Total** | **~2.75 hrs** |
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

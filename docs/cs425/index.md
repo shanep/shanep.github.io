@@ -4,7 +4,7 @@ next: false
 
 # CS 425/525 Computer Networks
 
-## Catalogue Description
+## Catalog Description
 
 **CS 425/525 COMPUTER NETWORKS (3-0-3)(F)** Concepts and implementation of
 networking: physical, link, network, transport, and application layer protocols.

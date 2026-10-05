@@ -12,10 +12,13 @@ import { cvPdf } from './cv-pdf'
 // Excluded pages are real dead links, and ignoreDeadLinks is false on purpose,
 // so a draft that is still linked from an index page fails the build. That is
 // the intended behavior: it is the reminder to unlink it.
+//
+// The match starts at the top of the file and stops at the closing `---`, so a
+// `draft: true` line further down (after a horizontal rule, say) is just text.
 function draftPages(): string[] {
   const root = join(import.meta.dirname, '..')
   return globSync('**/*.md', { cwd: root })
-    .filter((rel) => /^---\r?\n[\s\S]*?^draft[ \t]*:[ \t]*(true|yes|on)[ \t]*$/im
+    .filter((rel) => /^---\r?\n(?:(?!---\r?\n)[^\n]*\n)*?draft[ \t]*:[ \t]*(true|yes|on)[ \t]*\r?\n/i
       .test(readFileSync(join(root, rel), 'utf-8')))
     .sort()
 }
@@ -141,7 +144,6 @@ export default defineConfig({
             }
           }
         })
-        // @ts-ignore
         md.use(footnote)
         md.use(container, 'cols', {
           render: (tokens: any[], idx: number) =>
@@ -180,8 +182,14 @@ export default defineConfig({
 
     officeHoursUrl: 'https://calendar.app.google/3NEb1xLYYwZRejY18',
 
+    // GitHub cannot edit a file through a symlinked directory, so the pages a
+    // course links in from shared/course-resources/ point at the real file.
     editLink: {
-      pattern: 'https://github.com/shanep/shanep.github.io/edit/master/docs/:path'
+      pattern: ({ filePath }) => {
+        const shared = /^[^/]+\/(course-resources\/.+)$/.exec(filePath)
+        const path = shared ? `shared/${shared[1]}` : `docs/${filePath}`
+        return `https://github.com/shanep/shanep.github.io/edit/master/${path}`
+      }
     },
 
     sidebar: {

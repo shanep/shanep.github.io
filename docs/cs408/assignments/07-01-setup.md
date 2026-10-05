@@ -15,7 +15,7 @@ needed for this class.
 
 Example app: <https://github.com/shanep/simple-full-stack>
 
-NOTE: Your AWS account should be activated by the time you start on this assignment, if it is not
+NOTE: Your AWS account should be activated by the time you start on this assignment. If it is not,
 please email me ASAP :)
 
 ## Tasks
@@ -24,8 +24,8 @@ please email me ASAP :)
 
 - Instructions for how to get your AWS account:
   <https://docs.google.com/document/d/13fxRl74VXFLauW7WmduWOadu2FO6c5JrGtohanua0wI/edit?usp=sharing>
-- You will login with your Boise State credentials to access AWS Innovation Sandbox
-- You will have to click through a few screens to log in, eventually you should see the AWS
+- You will log in with your Boise State credentials to access AWS Innovation Sandbox
+- You will have to click through a few screens to log in. Eventually you should see the AWS
   console.
 - **IMPORTANT**: In the final screenshot make sure you are in United States (Oregon) or
   **us-west-2**. Your account will NOT work in any other region!
@@ -38,7 +38,7 @@ please email me ASAP :)
 
 - Create a new EC2 instance as follows:
   - Click the big orange "Launch Instance" button shown on the EC2 dashboard
-  - Name the server as follows yourname-cs408
+  - Name the server as follows: yourname-cs408
   - Select **Ubuntu** from the Quick Start Application and OS Images, then choose **Ubuntu Server
     26.04 LTS** in the Amazon Machine Image (AMI) list. The example app's scripts are tested on it,
     and its login user is `ubuntu`, which the later assignments use. (You may choose a different
@@ -55,31 +55,31 @@ please email me ASAP :)
     - Allow SSH traffic from
     - Allow HTTPS traffic from the internet (nothing uses HTTPS yet; this is for later)
     - Allow HTTP traffic from the internet
-  - Keep all other setting as default.
+  - Keep all other settings as default.
   - Launch the instance and wait for it to come online
 - Access your EC2 server via SSH
   - In the left navigation on the AWS console click **Instances** and you should see your new
-    instance with an instance state of "Running". If it doesn't say "Running" give a few minutes to
-    fully come online.
+    instance with an instance state of "Running". If it doesn't say "Running", give it a few minutes
+    to fully come online.
 
 ![ec2 instances list showing a running instance](../images/2026-09-04_13-09-12.png)
 
-- - Click on the link in the Instance ID column
-  - Then click on the "Connect" link as show below
+- Click on the link in the Instance ID column
+  - Then click on the "Connect" link as shown below
 
 ![connect button on the instance summary page](../images/2026-09-04_13-11-25.png)
 
-- - Click on the **In SSH client** tab to get the instructions to ssh into your machine
+- Click on the **In SSH client** tab to get the instructions to ssh into your machine
 
 ![in ssh client tab with the chmod and ssh commands](../images/2026-09-04_13-14-01.png)
 
-- - Now open a terminal and go to the folder where you saved your key.
+- Now open a terminal and go to the folder where you saved your key.
   - **Lock down the key first**, or ssh refuses to use it with an "UNPROTECTED PRIVATE KEY FILE"
     error: `chmod 400 yourkey.pem` (use your key's file name). You only need to do this once. On
     Windows, run this in WSL or Git Bash.
-  - Then connect with the `ssh` command shown on the **SSH client** tab. It looks like
+  - Then connect with the `ssh` command shown on the **In SSH client** tab. It looks like
     `ssh -i yourkey.pem ubuntu@<your public DNS or IP>`.
-  - Type **yes** when it asks you if you are sure you want to connect. Don't worry it is safe!
+  - Type **yes** when it asks you if you are sure you want to connect. Don't worry, it is safe!
   - Run uname -a to confirm you are on your server!
 
 **Congrats!** If you made it this far you have your own virtual machine on AWS to run your web app

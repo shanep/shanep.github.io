@@ -3,8 +3,8 @@
 Spring 2027 · Computer Security and Information Assurance
 
 This page maps every learning objective in CS 331 to the exact lab or discussion that measures it.
-The course has no quizzes and no exams. It is the markdown counterpart of
-`docs/CS 331 Objective Alignment Sheet.xlsx` (sheet **Objectives**).
+The course has no quizzes and no exams. It is the markdown counterpart of the CS 331 Objective
+Alignment Sheet spreadsheet (sheet **Objectives**).
 
 ## Two facts that hold for every objective on this page
 
@@ -31,13 +31,12 @@ they are stated once here rather than repeated in every row.
 | H: Location in course | The `Location in course` column, as a week number and a link to the assessment |
 | I: NOTES | Notes appear beneath the table for the terminal objectives that need one |
 
-**Bloom levels** use the spreadsheet's controlled vocabulary: Create · Evaluate · Apply ·
+**Bloom levels** use the spreadsheet's controlled vocabulary: Create · Evaluate · Analyze · Apply ·
 Understand · Remember. **Knowledge types** likewise: Principle · Process · Procedure · Concept ·
 Fact.
 
-**A note on links.** The `Location in course` links are repository-relative, so they resolve on
-GitHub and in any local markdown viewer. Canvas does not resolve relative paths, when this page
-is published to Canvas, rewrite each path to the corresponding Canvas page URL.
+**A note on links.** The `Location in course` links point to the course pages, and they work both
+on this site and in Canvas.
 
 ---
 
@@ -78,7 +77,7 @@ fluent use of this vocabulary throughout. Reading support: CyBOK §1.1-1.5, §3.
 
 **Notes.** Objective 2.4 requires students to *construct* a matrix, which needs a rubric rather
 than a multiple-choice item. This is why week 6 carries a lab rather than a discussion. Reading
-support: CyBOK §2.2-2.6, §14.1-14.3, §14.6.
+support: CyBOK §2.2-2.4, §2.6.1-2.6.2, §2.6.6, §14.1-14.3, §14.6.
 
 ---
 
@@ -123,7 +122,8 @@ assigned**: this course starts at §10.3. Reading support: CyBOK §10.3-10.8, §
 it appears in real incident reporting and in MITRE ATT&CK (T1566). No lab in this course requires
 running malware, exploiting a live system, or attacking a machine you do not own; Lab 8 analyzes
 source code and compiler output, and Lab 9 attacks a local SQLite database that ships with the
-course. Reading support: CyBOK §6.1-6.4, §7.2, §15.1-15.4, §16.2-16.4, §19.1-19.4.
+course. Reading support: CyBOK §6.1-6.2, §6.4, §7.2, §15.1.1, §15.2, §15.4, §16.2.6-16.2.8,
+§16.3.1, §16.4.1, §19.1, §19.3.2-19.3.3, §19.4.
 
 ---
 
@@ -144,7 +144,7 @@ course. Reading support: CyBOK §6.1-6.4, §7.2, §15.1-15.4, §16.2-16.4, §19.
 
 **Notes.** This objective is spread deliberately: principles are introduced in week 2 (5.4),
 applied to authentication in week 5 (5.1, 5.2), to authorization in week 6 (5.3), and to code in
-weeks 13-14 (5.5). Reading support: CyBOK §1.4, §14.1-14.5, §15.2; NIST SP 800-63B-4 §3.
+weeks 13-14 (5.5). Reading support: CyBOK §1.4, §14.1-14.3, §14.5, §15.2; NIST SP 800-63B-4 §3.
 
 ---
 
@@ -166,7 +166,7 @@ weeks 13-14 (5.5). Reading support: CyBOK §1.4, §14.1-14.5, §15.2; NIST SP 80
 narrowest outcome in the course: assurance is taught in one week (13) through CyBOK §15.2, §15.4,
 and §17.4, and assessed through Lab 8's closing section (rubric row 4). If assurance
 needs more weight in a future offering, the natural place to add it is Lab 8's evidence section
-rather than an additional week, the 8-hour weekly budget has no room for a sixteenth topic.
+rather than an additional week: the 8-hour weekly budget has no room for a sixteenth topic.
 
 ---
 
