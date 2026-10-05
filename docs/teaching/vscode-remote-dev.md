@@ -73,6 +73,7 @@ chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 exit
 ```
+
 :::
 
 Last, give Onyx a short name. Add this to the file `~/.ssh/config` on your laptop (create it if
@@ -170,6 +171,7 @@ Your laptop has an old fingerprint saved for Onyx. Remove it, then connect again
 ```bash
 ssh-keygen -R onyx.boisestate.edu
 ```
+
 :::
 
 ::: details VS Code hangs or fails while connecting

@@ -35,6 +35,15 @@ jobs:
         uses: actions/configure-pages@v6
       - name: Install dependencies
         run: npm ci
+      - name: Lint Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v24
+        with:
+          globs: |
+            docs/**/*.md
+            parts/**/*.md
+            shared/**/*.md
+            #node_modules
+            #docs/.vitepress
       # The CV PDF is built from docs/cv/index.md with pandoc and Tectonic.
       # Tectonic downloads only the LaTeX packages the CV uses; caching them
       # takes the build from about a minute and a half to under a second.
@@ -43,7 +52,7 @@ jobs:
       - name: Set up pandoc
         uses: pandoc/actions/setup@v1
         with:
-          version: '3.9'
+          version: '3.12'
       - name: Cache Tectonic packages
         uses: actions/cache@v6
         with:

@@ -19,7 +19,7 @@ As you complete the document, if you would like help or advice, consider contact
 - [The Help Desk](https://www.boisestate.edu/oit/assistance/) for technical support
 - The [eCampus Center Consultation Request Form](https://www.boisestate.edu/ecampus-center/consultations/)
 
-> ### Next Steps
+> ## Next Steps
 >
 > Before making a new copy of your course, review the updates you've listed here to ensure your
 > changes are intentional and effective. Once you've applied your updates to the next course

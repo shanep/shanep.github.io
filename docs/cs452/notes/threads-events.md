@@ -119,6 +119,7 @@ the entire loop**. `read()` on a slow disk, `getaddrinfo()` for DNS,
 or a long computation will freeze all other clients until it returns.
 
 Solutions:
+
 - Offload blocking work to a **thread pool** and post results back to
   the event loop when done (the hybrid model used by Node.js and libuv).
 - Use **asynchronous I/O** (`io_uring` on Linux), which lets the kernel

@@ -47,6 +47,7 @@ for(;;){
         /*remainder*/
 }
 ```
+
 ## Context Switch
 
 - Threads will context switch just like processes

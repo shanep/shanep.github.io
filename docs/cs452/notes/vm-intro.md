@@ -42,6 +42,7 @@ snippet of code and will need to determine where the variable lives.
 
 :::: cols
 ::: col
+
 ```c
 int *A;
  void foo(int* bar, int len){
@@ -55,6 +56,7 @@ int *A;
      free(A);
  }
 ```
+
 :::
 ::: col
 Which of the following are on the heap?

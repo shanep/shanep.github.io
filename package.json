@@ -2,10 +2,9 @@
   "devDependencies": {
     "@types/markdown-it-container": "^4.0.0",
     "@types/markdown-it-footnote": "^3.0.4",
-    "@types/node": "^25.6.0",
+    "@types/node": "^24.19.1",
     "markdown-it-container": "^4.0.0",
     "markdown-it-footnote": "^4.0.0",
-    "tsx": "^4.23.15",
     "vitepress": "^1.6.4"
   },
   "scripts": {
@@ -13,12 +12,16 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "clean": "rm -rf node_modules docs/.vitepress/dist docs/.vitepress/cache",
-    "cv:pdf": "scripts/cv/build.sh"
+    "cv:pdf": "scripts/cv/build.sh",
+    "lint:md": "npx --yes markdownlint-cli2 \"docs/**/*.md\" \"parts/**/*.md\" \"shared/**/*.md\" \"#node_modules\" \"#docs/.vitepress\""
   },
   "dependencies": {
     "reveal.js": "^6.0.1"
   },
   "overrides": {
     "vite": "^6.4.3"
+  },
+  "engines": {
+    "node": ">=24"
   }
 }

@@ -1,4 +1,4 @@
-#  Course Introduction
+# Course Introduction
 
 <SlideView />
 

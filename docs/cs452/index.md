@@ -62,7 +62,6 @@ course learning outcomes.
 |     | 5.4 | Explore compiling and running code on at least 2 different systems                                                                                    | Project 1             |
 |     | 5.5 | Explore how to set up a continuous integration and testing project                                                                                    | Project 1             |
 
-
 <!--@include: ../../parts/syllabus-boiler.md-->
 
 <!--@include: ../../parts/syllabus-in-person.md-->

@@ -14,5 +14,19 @@
     // The CV repeats subheadings such as "In Preparation" under different
     // parents. A repeated heading among siblings (a second `## Rubric`) is
     // still an error.
-    "MD024": { "siblings_only": true }
+    "MD024": { "siblings_only": true },
+    // Tabs inside code blocks are real: git config and the syscall table use them.
+    "MD010": { "code_blocks": false },
+    // Numbered steps that continue across code blocks keep their own numbers on
+    // purpose, and markdownlint would restart each one at 1.
+    "MD029": false,
+    // Checkpoint templates show bare URLs that students replace, and VitePress
+    // links them anyway.
+    "MD034": false,
+    // Some code spans need their spaces, such as the SQL payload `alice' -- `.
+    "MD038": false,
+    // The CS452 notes use indented code blocks on purpose.
+    "MD046": false,
+    // Shell transcripts show a `$` prompt even when there is no output.
+    "MD014": false
 }

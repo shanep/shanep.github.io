@@ -181,23 +181,29 @@ repositories. Here are a few cases where they **do** need admin access.
 
 ## Step 5: Download student submissions
 
-- Install GitHub CLI by following the instructions
-  [here](https://cli.github.com/).
+- Install GitHub CLI by following the
+  [GitHub CLI installation instructions](https://cli.github.com/).
 - Authenticate GitHub CLI by running the following command in your terminal:
+
     ```bash
     gh auth login
     ```
+
 - Install the official GitHub Classroom CLI tool by running the following command:
+
     ```bash
     gh extension install github/gh-classroom
     ```
+
 - Navigate to the directory where you want to download student submissions.
 - The [official](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/using-github-classroom-with-github-cli) docs detail all the
   options for downloading student submissions using the CLI tool.
 - To download all submissions for a specific assignment, run the following command:
+
     ```bash
     gh classroom clone student-repos
     ```
+
 ![Downloading submissions](images/github-classroom-cli.gif)
 
 ### Renaming directories (optional)
@@ -241,6 +247,7 @@ shanepanter:classroom$ tree
 
 2 directories, 6 files
 ```
+
 - Run the rename script, passing the same assignment name that `gh classroom` used when
   downloading the repos (`p1` in this example):
 
