@@ -168,7 +168,7 @@
       },
       {
         "kind": "discussion",
-        "title": "6.01 Project Specification Peer Review",
+        "title": "06.01 Project Specification Peer Review",
         "path": "discussions/06-01-project-specification-peer-review",
         "due_at": "2026-10-02T23:59:00-06:00",
         "points": 100.0,

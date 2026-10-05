@@ -60,7 +60,7 @@ approved and this assignment earns an F, whatever the points below add up to.
 
 #### Specification (26 points)
 
-These are the same 12 criteria your peers used in 6.01.
+These are the same 12 criteria your peers used in 06.01.
 
 | \# | Item | Earns the points when | Points |
 |----|----|----|----|

@@ -1,3 +1,7 @@
+---
+draft: true
+---
+
 # 01.07 Accessibility (2 - 4 hrs)
 
 ## Overview

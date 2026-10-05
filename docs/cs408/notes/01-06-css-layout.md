@@ -1,3 +1,7 @@
+---
+draft: true
+---
+
 # 01.06 CSS Layout (1 - 2 hrs)
 
 ## Overview

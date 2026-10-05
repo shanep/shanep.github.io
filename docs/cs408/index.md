@@ -69,7 +69,6 @@ via web conferencing (e.g., Zoom).
     2. Configure and Use Continuous Integration and Testing with GitHub Actions
     3. Configure and Use Automatic Version extraction from GitHub tags
     4. Configure Continuous deployment
-    5. Configure Continuous Integration
 
 ## Course Outline
 

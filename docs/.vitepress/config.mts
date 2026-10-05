@@ -311,8 +311,6 @@ function cs408(): DefaultTheme.SidebarItem[] {
       items: [
         { text: '01.01 README - Introduction',        link: 'notes/01-01-readme-introduction' },
         { text: '01.06 AI Class Policy',              link: 'notes/01-06-ai-class-policy' },
-        { text: '01.06 CSS Layout',                   link: 'notes/01-06-css-layout' },
-        { text: '01.07 Accessibility',                link: 'notes/01-07-accessibility' },
         { text: '01.07 CS208 HTML',                   link: 'notes/01-07-cs208-html' },
         { text: '01.08 CS208 CSS and Accessibility',  link: 'notes/01-08-cs208-css-and-accessiblity' },
         { text: '02.01 CS208 JavaScript',             link: 'notes/02-01-cs208-javascript' },

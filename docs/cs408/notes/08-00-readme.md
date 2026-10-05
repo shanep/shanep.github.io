@@ -11,7 +11,8 @@ push at the end.
 ::: danger
 **Three rules apply to every checkpoint:**
 
-1. **No late submissions.** A checkpoint that is not posted by its due date cannot be made up.
+1. **Two days of grace, then no late submissions.** A checkpoint may be posted up to two days after
+    its due date with no penalty. After that it cannot be made up.
 2. **Your GitHub repository must be public.** If I cannot clone it, your own work on that
     checkpoint earns a 0, with no redo. Your peer reviews still earn their points.
 3. **Your specification must be approved.** Until 06.02 is approved, every checkpoint you miss
