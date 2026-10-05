@@ -98,5 +98,5 @@ and nobody went back to it.
 ## Out of scope for Lab 2
 
 You do not need to consider: the security of the cloud provider's own infrastructure, physical
-attacks on the data centre, or attacks that require the attacker to already be an employee with
+attacks on the data center, or attacks that require the attacker to already be an employee with
 console access.

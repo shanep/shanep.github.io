@@ -11,7 +11,7 @@ What to do this week, and when it is due, is on the [Module 8 Overview](week-08-
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §10.6 Public Key Encryption: KEM/DEM, RSA, elliptic curves | 338-341 | 3 pp | 25 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §10.7 Public Key Signatures: RSA-PSS, DSA, EC-DSA, Schnorr | 341-343 | 2 pp | 20 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §10.8 Standard Protocols: authentication and key agreement | 343-347 | 4 pp | 30 min |
-| Nakov, *Practical Cryptography for Developers* | Hash functions; RSA; ECC; digital signatures |: | skim | 30 min |
+| Nakov, *Practical Cryptography for Developers* | Hash functions; RSA; ECC; digital signatures | none | skim | 30 min |
 
 Nakov: <https://cryptobook.nakov.com/cryptographic-hash-functions> and the digital signatures
 pages. You are **not** assigned §10.9 through §10.11, special-property signatures, homomorphic
@@ -36,12 +36,12 @@ Input B: 'Transfer $900 to Bob'
 Bits that differ in the two digests: 145 out of 256
 ```
 
-That is the desired behaviour, not a flaw. If similar inputs produced similar digests you could
+That is the desired behavior, not a flaw. If similar inputs produced similar digests you could
 work backward toward the input by hill-climbing. You cannot look at two digests and learn anything
 about how similar the inputs were.
 
 A hash takes **no key**. Anyone can compute it. So a hash by itself proves nothing about who
-produced a message, anybody who changes the message can recompute the digest and it will be
+produced a message. Anybody who changes the message can recompute the digest and it will be
 perfectly valid.
 
 This is the trap in the "download the file, check the SHA-256 on the page" ritual. If the attacker
@@ -90,7 +90,7 @@ And here is what it does **not** establish:
 The second one is a gap you can attack. An attacker who can get you to accept *their* public key as
 belonging to your bank can sign anything they like, and every verification will succeed. Week 10 is
 about the machinery built to close that gap (certificates) and about the fact that it does not
-close it completely, it moves it.
+close it completely. It moves it.
 
 ### 4. Shared secret or key pair
 
@@ -98,7 +98,7 @@ Part 4 produces an HMAC tag and an Ed25519 signature over the same message. Both
 and authenticity. They differ in one structural way.
 
 **With an HMAC, both parties hold the same key.** So if Alice sends Bob a message with a valid tag
-and Bob later claims Alice authorised a payment she says she did not authorise, the tag settles
+and Bob later claims Alice authorized a payment she says she did not authorize, the tag settles
 nothing, Bob could have produced it himself. There is no way for a third party to tell them apart.
 
 **With a signature, only Alice holds the private key.** A judge holding Alice's public key can
@@ -138,8 +138,9 @@ then a symmetric authenticated mode for the actual data. That is what TLS does, 
 
 ## Looking ahead
 
-Week 9 is review and the midterm. No new reading, no lab, no discussion. The
-[midterm exam guide](../assignments/midterm-exam-guide.md) tells you exactly what is on it, read
-it this weekend rather than next.
+Week 9 is review and catch-up. No new reading, no lab, no discussion, and nothing due. If you are
+behind, that is the week to catch up, and if you are not, the
+[review page](week-09-review-and-catch-up.md) has a short list of things worth redoing before spring
+break.
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

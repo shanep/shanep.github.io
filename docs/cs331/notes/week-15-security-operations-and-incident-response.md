@@ -13,7 +13,7 @@ What to do this week, and when it is due, is on the [Module 15 Overview](week-15
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §8.3.1-8.3.3 Misuse detection, anomaly detection, blended | 264-268 | 4 pp | 30 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §8.3.6 The base-rate fallacy | 270 | 1 p | 15 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §8.7 Human factors: Incident management | 283-286 | 3 pp | 25 min |
-| NIST SP 800-61r3 | The incident response life cycle *(skim)* |: | skim | 20 min |
+| NIST SP 800-61r3 | The incident response life cycle *(skim)* | none | skim | 20 min |
 
 NIST SP 800-61r3 (April 2025):
 <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf>
@@ -53,7 +53,7 @@ grep "Accepted password" auth.log
 
 184 failed authentications over about ten minutes, cycling through `root`, `admin`, `oracle`,
 `test`, `postgres`, `ubuntu`, `git`, `jenkins`, `deploy`. That username list tells you something:
-it is a generic list, not an organisation-specific one. Nobody researched this target.
+it is a generic list, not an organization-specific one. Nobody researched this target.
 
 **And then the line that changes everything:**
 
@@ -77,7 +77,7 @@ Objective 7.1 is as much about limits as about findings.
 It **cannot** tell you what the intruder did once they had a shell: that needs process auditing or
 command logging, neither of which is here. It cannot tell you whether the credential was guessed or
 already known. And it cannot be fully trusted at all, because the intruder used `sudo` and could
-have edited it, which is why §8.2.6 emphasises shipping logs off the host as they are written.
+have edited it, which is why §8.2.6 emphasizes shipping logs off the host as they are written.
 
 `web_access.log` can tell you which paths were requested, from where, with what result and response
 size. It **cannot** tell you what was in a POST body, what the response contained, or whether an
@@ -135,7 +135,7 @@ it produces five hundred of them a day.**
 Nothing is wrong with the detector. The arithmetic is driven by the **base rate**: malicious events
 are 0.01% of the total, so even a very small false positive rate applied to an enormous benign
 population swamps the true positives. This is the base-rate fallacy, and §8.3.6 is one page on it
-because it takes one page to state and a career to internalise.
+because it takes one page to state and a career to internalize.
 
 Now go back to the [NORTHWIND MEADOW report](../data/incident-report.md): *"The endpoint agent
 flagged the PowerShell execution as suspicious and raised a medium alert at 09:26. The alert entered
@@ -201,13 +201,12 @@ Three things that separate a usable memo from a bad one:
 | **Alert fatigue** | What a queue of 500 alerts a day produces in the people who have to read it. |
 | **Dwell time** | Time between compromise and detection. |
 | **Containment / eradication / recovery** | Stop the bleeding; remove the attacker; restore service. |
-| **Indicator of compromise** | An observable artefact of an intrusion. |
+| **Indicator of compromise** | An observable artifact of an intrusion. |
 
 ## Looking ahead
 
-Finals week, May 3-7: the [final exam](../assignments/final-exam-guide.md) and
-[D6, a short reflection](../discussions/d06-final-reflection.md). Read the exam guide this weekend, 
-Part B is the assurance material from week 13, which is the part students most often under-prepare.
+Finals week, May 3-7, has one item: [D6, a short reflection](../discussions/d06-final-reflection.md).
+There is no final exam.
 
 Thank you for the semester.
 

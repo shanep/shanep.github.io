@@ -12,7 +12,7 @@ What to do this week, and when it is due, is on the [Module 2 Overview](week-02-
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §1.5 Crosscutting Themes | 13-15 | 2 pp | 10 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §4.3 Human Error | 158-161 | 3 pp | 20 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §4.4 Cybersecurity awareness and education | 161-165 | 4 pp | 25 min |
-| Saltzer & Schroeder (1975) | Section I: the numbered principles only |: | ~3 pp | 20 min |
+| Saltzer & Schroeder (1975) | Section I: the numbered principles only | none | ~3 pp | 20 min |
 
 Saltzer & Schroeder: <https://web.mit.edu/Saltzer/www/publications/protection/>. Read the list and
 the paragraph explaining each principle; skip the rest of the paper. It is worth reading the
@@ -29,7 +29,7 @@ describes existed.
 | **Open design** | Do not depend on the design being secret. | If the source code leaked tomorrow, what would break? |
 | **Separation of privilege** | Require more than one condition to grant access. | How many things must go wrong at once? |
 | **Least privilege** | Give the minimum access needed to do the job. | What could this account do that its job never requires? |
-| **Least common mechanism** | Minimise what is shared between users. | What do two users share that could become a channel? |
+| **Least common mechanism** | Minimize what is shared between users. | What do two users share that could become a channel? |
 | **Psychological acceptability** | If it is painful, people will route around it. | What is the workaround, and how obvious is it? |
 
 The two that this course grades hardest are **fail-safe defaults** and **complete mediation**,
@@ -53,7 +53,7 @@ chosen rather than accidental.**
 
 **Complete mediation.** You tap your card and the door opens. Do you tap again when you go through
 the next interior door? If the system checks once at the building entrance and then treats you as
-trusted everywhere inside, that is caching an authorisation decision, the same failure as a session
+trusted everywhere inside, that is caching an authorization decision, the same failure as a session
 token that stays valid for ninety days after your account is disabled.
 
 Note what complete mediation does *not* say: it does not say check often, it says check *every
@@ -95,6 +95,6 @@ is least privilege. Two administrators to approve a deletion is separation of pr
 
 Week 3 moves from what you *should* do to what you are *allowed* to do: the legal, regulatory, and
 ethical setting for security work. It ends with the question of what you do when you find a
-vulnerability in somebody else's system. Quiz 1 covers weeks 1 through 3.
+vulnerability in somebody else's system.
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

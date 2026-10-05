@@ -1,6 +1,6 @@
 # Module 1 Overview
 
-**January 11-17 · Reading: 7 pages · Estimated total: 5.5 hours**
+**January 11-17 · Reading: 7 pages · Estimated total: 5 hours**
 
 The first week does two things. It gets your tools working, and it gives you the vocabulary the
 rest of the semester runs on.
@@ -32,19 +32,17 @@ By the end of this week, the successful student will be able to:
 
 - Read [1.01 Readings and Lecture Notes](week-01-what-is-cyber-security.md) and work through the
   worked example (1 hr 15 min)
-- [0.02 Diagnostic Self-Check](../quizzes/quiz-00-diagnostic.md): ten questions, ungraded (20 min,
-  0 points)
 
 ### Due by Thursday at 11:59 p.m. Mountain Time
 
-- [0.04 D1: Introductions and the Security Mindset](../discussions/d01-introductions-and-security-mindset.md):
+- [0.03 D1: Introductions and the Security Mindset](../discussions/d01-introductions-and-security-mindset.md):
   initial post
 
 ### Due by Sunday at 11:59 p.m. Mountain Time
 
-- [0.06 Lab 0: Course Setup and CyBOK Navigation](../assignments/lab-00-course-setup.md) (45 min,
+- [0.05 Lab 0: Course Setup and CyBOK Navigation](../assignments/lab-00-course-setup.md) (45 min,
   20 points)
-- [0.05 D1: Introductions and the Security Mindset - Replies](../reminders/d01-replies.md):
+- [0.04 D1: Introductions and the Security Mindset - Replies](../reminders/d01-replies.md):
   one reply (45 min with the initial post, 15 points)
 
 **Do Lab 0 early.** It installs the Python package that weeks 7, 8, and 10 depend on. If something
@@ -56,11 +54,10 @@ does not work on your machine, week 1 is when to find out.
 | --- | --- |
 | Reading (7 pages) | 45 min |
 | The notes page and the worked example | 30 min |
-| Diagnostic self-check | 20 min |
 | Lab 0 | 45 min |
 | D1 post and reply | 45 min |
 | Review and slack | 2 hrs |
-| **Total** | **~5.5 hrs** |
+| **Total** | **~5 hrs** |
 
 Week 1 is deliberately light. Later weeks run closer to seven hours.
 

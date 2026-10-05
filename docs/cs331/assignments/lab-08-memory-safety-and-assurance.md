@@ -98,7 +98,7 @@ Now read the assembly.
    to `strcpy`. It will read something like `lea rdi, [rbp - 48]`. **Quote it and give the offset.**
 3. **Find where `authorized` lives.** It is the local the function writes `0` into at the start and
    reads at the end. **Quote that instruction and give its offset.**
-4. **Draw the stack frame**, as a table or a labelled sketch, from lower addresses to higher. It
+4. **Draw the stack frame**, as a table or a labeled sketch, from lower addresses to higher. It
    should contain, in order: `authorized`, `buffer`, any padding, the saved frame pointer, and the
    saved return address. Give the offset from `rbp` for each.
 5. **How many bytes must a badge ID be** before it overwrites the saved return address? Show the
@@ -117,7 +117,7 @@ attacker overwriting the return address in this function?*, and *would it stop t
 existing?*
 
 1. **Stack canaries** (`-fstack-protector`, which we turned off)
-2. **Address space layout randomisation** (ASLR)
+2. **Address space layout randomization** (ASLR)
 3. **Non-executable stack** (NX / DEP / W^X)
 
 Then, in a short paragraph: **all three can be enabled and the bug is still there.** Using CyBOK
@@ -141,10 +141,10 @@ compare the prologue. Quote what appears.
    sentence of justification for each:
    - Rewriting the module in a memory-safe language
    - Enabling stack canaries
-   - Running a static analyser over the codebase every night
+   - Running a static analyzer over the codebase every night
    - Replacing `strcpy` with a bounded copy throughout
    - Fuzzing the badge-parsing code for 48 hours
-4. **What analysis establishes.** A static analyser reports no memory-safety findings in this file.
+4. **What analysis establishes.** A static analyzer reports no memory-safety findings in this file.
    A fuzzer runs for 48 hours and finds no crash.
    - **What does each result actually establish?** Be precise.
    - **What does neither result establish?**
@@ -152,7 +152,7 @@ compare the prologue. Quote what appears.
 5. **Judge a claim.** A vendor tells you:
 
    > *"Our badge reader firmware is secure against buffer overflows. We compile with stack
-   > protection and ASLR enabled, our code passes a commercial static analyser with zero critical
+   > protection and ASLR enabled, our code passes a commercial static analyzer with zero critical
    > findings, and we have never had a reported incident."*
 
    Write about 200 words evaluating this claim. Address each of the three pieces of evidence
@@ -177,7 +177,7 @@ One Canvas submission containing your answers to all four steps, numbered to mat
 | 1 | Step 1: bug named and located; what `strcpy` is not told stated precisely; the 31-byte answer with the reason; correct CyBOK §15.1.1 category | 6 |
 | 2 | Step 2: assembly quoted, both offsets correct, stack frame diagram accurate and ordered correctly, distance-to-return-address arithmetic shown, and question 6 answered from the diagram | 10 |
 | 3 | Step 3: all three mitigations correctly described, with both "stops this exploit?" and "removes the bug?" answered separately for each, plus the closing paragraph | 10 |
-| 4 | Step 4: the fixed function analysed and the right principle named; three levels of countermeasure with costs and a defended choice; the five items correctly sorted; what static analysis and fuzzing each do and do not establish; the vendor claim evaluated with two better pieces of evidence proposed | 12 |
+| 4 | Step 4: the fixed function analyzed and the right principle named; three levels of countermeasure with costs and a defended choice; the five items correctly sorted; what static analysis and fuzzing each do and do not establish; the vendor claim evaluated with two better pieces of evidence proposed | 12 |
 | | **Total** | **38** |
 
 ## AI disclosure
@@ -200,6 +200,6 @@ the end of `buffer` into the saved frame pointer and return address without ever
 source-code decision: you have to look, not assume.
 
 **The answer row 4 question 4 is looking for:** a clean static-analysis run establishes that the
-analyser's rules did not match anything, and nothing more; a 48-hour fuzzing run with no crash
+analyzer's rules did not match anything, and nothing more; a 48-hour fuzzing run with no crash
 establishes that those particular inputs did not crash it, and nothing more. Neither establishes
 the absence of the vulnerability. Both are evidence; neither is proof.

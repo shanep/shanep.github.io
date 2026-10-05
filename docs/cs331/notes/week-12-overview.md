@@ -5,17 +5,17 @@
 Two questions this week, and they are different questions.
 
 **What is the malware?** CyBOK §6 gives you a taxonomy (standalone or host-dependent, persistent
-or transient, on disk or in memory) and a survey of how malware is analysed and detected.
+or transient, on disk or in memory) and a survey of how malware is analyzed and detected.
 
 **What did the people do?** CyBOK §7 is about operations rather than code: the elements of a
-malicious operation, how it is organised, and what motivates it. This is the more useful frame most
+malicious operation, how it is organized, and what motivates it. This is the more useful frame most
 of the time, because modern intrusions increasingly involve very little malware. The operators in
 this week's case moved between machines for six days using tools that were already installed.
 
 The shared vocabulary for the second question is **MITRE ATT&CK**, and learning to use it is the
 practical skill of the week.
 
-**You will not download, run, or analyse malware in this course.** You analyse a written record of
+**You will not download, run, or analyze malware in this course.** You analyze a written record of
 an incident, which is what most security work actually consists of.
 
 ## Learning Objectives
@@ -23,7 +23,7 @@ an incident, which is what most security work actually consists of.
 By the end of this week, the successful student will be able to:
 
 - **[4.3](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures)**: 
-  Classify malware by the CyBOK taxonomy and map an incident's observed behaviour, including
+  Classify malware by the CyBOK taxonomy and map an incident's observed behavior, including
   phishing used for initial access, to MITRE ATT&CK techniques.
 
 ## Assignments and Tasks

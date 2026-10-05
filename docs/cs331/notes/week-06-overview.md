@@ -31,7 +31,7 @@ By the end of this week, the successful student will be able to:
 - Read [6.01 Readings and Lecture Notes](week-06-authorisation-and-access-control.md) and work the worked example (2 hrs 25 min)
 - [6.02 Lab 3: Access Control Matrix and Least Privilege](../assignments/lab-03-access-control-matrix.md) (1 hr 30 min, 38 points)
 
-No quiz and no discussion. Presidents' Day is Monday, so the working week is short.
+No discussion this week. Presidents' Day is Monday, so the working week is short.
 
 ## Time Estimate
 

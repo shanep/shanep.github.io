@@ -38,7 +38,7 @@ A certificate is a small structured document containing, at minimum:
 - **Validity period**: not before, not after
 - **A signature** by the issuer over all of the above
 
-That is it. A certificate is a **signed assertion**: "the organisation named in Issuer says that
+That is it. A certificate is a **signed assertion**: "the organization named in Issuer says that
 this public key belongs to this name, until this date."
 
 ### 2. The five checks
@@ -71,7 +71,7 @@ The mathematics is unchanged. So what is the date for?
 §18.3.1 frames it as the key life-cycle. A certificate is a statement, and statements go stale:
 
 - Keys get compromised, and the owner does not always find out.
-- Organisations change hands, domains get sold, employees leave with copies.
+- Organizations change hands, domains get sold, employees leave with copies.
 - Algorithms and key sizes that were adequate in 2019 are not adequate forever.
 - **Revocation does not work well.** If a key is compromised the CA can publish a revocation, but
   checking revocation is slow, often fails open, and is skipped by many clients. A short expiry is a
@@ -103,8 +103,8 @@ That has happened. The usual answer is not "trust fewer CAs": it is to make misi
   and it breaks the site hard when the pinned key legitimately changes, which is why it has largely
   retreated to mobile apps.
 
-Neither eliminates the trust assumption. They change it from *"trust several hundred organisations
-to never make a mistake"* to *"trust several hundred organisations, but expect to find out when one
+Neither eliminates the trust assumption. They change it from *"trust several hundred organizations
+to never make a mistake"* to *"trust several hundred organizations, but expect to find out when one
 does."* That is a real improvement and it is not the same as not having to trust anybody.
 
 ### 5. What the padlock does not mean
@@ -124,7 +124,7 @@ stores what you send is untouched by TLS.
 | --- | --- |
 | **X.509 certificate** | A signed binding of a public key to a name, with a validity period. |
 | **Subject Alternative Name (SAN)** | The DNS names a certificate actually covers. What browsers check. |
-| **Certificate authority (CA)** | An organisation that signs certificates. |
+| **Certificate authority (CA)** | An organization that signs certificates. |
 | **Root of trust** | A self-signed CA certificate that is trusted because it is in the trust store. |
 | **Intermediate CA** | Signed by the root, signs end-entity certificates. Keeps the root key offline. |
 | **Chain of trust** | Leaf → intermediate → root, each signed by the next. |
@@ -137,6 +137,6 @@ stores what you send is untouched by TLS.
 ## Looking ahead
 
 Week 11 moves down the stack to the network itself: what an attacker on the path can do, at which
-layer, and what firewalling, segmentation, and monitoring each actually buy. Quiz 4 covers it.
+layer, and what firewalling, segmentation, and monitoring each actually buy.
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

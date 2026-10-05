@@ -1,6 +1,6 @@
 # Module 11 Overview
 
-**March 29 - April 4 · Reading: 15 pages · Estimated total: 7 hours**
+**March 29 - April 4 · Reading: 15 pages · Estimated total: 6.5 hours**
 
 The internet's core protocols were designed by people who were solving a different problem. They
 were building something that would keep working when links failed and routers died, among
@@ -36,7 +36,6 @@ By the end of this week, the successful student will be able to:
 
 - [11.03 D4: Network Security in the News - Replies](../reminders/d04-replies.md):
   two replies (1 hr with the initial post, 30 points)
-- [11.04 Quiz 4: Network Security](../quizzes/quiz-04-network-security.md) (15 min, 30 points)
 
 D4 asks you to find an incident nobody else has claimed. **Check the board and post early.**
 
@@ -47,8 +46,7 @@ D4 asks you to find an incident nobody else has claimed. **Check the board and p
 | Reading (15 pages) | 2 hrs |
 | The notes page and the worked example | 40 min |
 | D4 post and two replies | 1 hr |
-| Quiz 4 | 15 min |
 | Review and slack | 2 hrs 30 min |
-| **Total** | **~6.5-7 hrs** |
+| **Total** | **~6-6.5 hrs** |
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

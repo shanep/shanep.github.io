@@ -1,16 +1,17 @@
 # Module 9 Overview
 
-**March 8-14 · No new reading · Estimated total: 5 hours**
+**March 8-14 · No new reading · Nothing due**
 
-No new material this week. One graded item: the midterm.
+No new material and nothing due this week. It is a review and catch-up week, placed right before
+spring break on purpose.
 
-The week is deliberately light and deliberately placed here, immediately before spring break. Weeks
-1 through 8 introduced most of the vocabulary and all of the modelling techniques the second half
-of the course builds on, and this is the checkpoint.
+Weeks 1 through 8 introduced most of the vocabulary and all of the modeling techniques the second
+half of the course builds on. If you are behind on the reading, use this week to catch up. If you
+are not, use it to go back over the first half before the break.
 
 ## Learning Objectives
 
-The midterm assesses everything from weeks 1-8:
+Nothing new is introduced or graded this week. The review covers these objectives from weeks 1-8:
 
 | | Objectives |
 | --- | --- |
@@ -21,22 +22,21 @@ The midterm assesses everything from weeks 1-8:
 
 ## Assignments and Tasks
 
-### Due by Sunday at 11:59 p.m. Mountain Time
+Nothing is due. No lab, no discussion.
 
-- Read [9.01 Readings and Lecture Notes](week-09-review-and-midterm.md) and the [midterm exam guide](../assignments/midterm-exam-guide.md) (20 min)
-- [Midterm Exam](../assignments/midterm-exam-guide.md) (1 hr 30 min, 150 points)
-
-Nothing else is due. No lab, no quiz, no discussion.
+- Read [9.01 Readings and Lecture Notes](week-09-review-and-catch-up.md) (10 min)
+- If Lab 5 is not in yet, its two-day grace period ends Tuesday, March 9 (see the
+  [Late Work Policy](../index.md#late-work-policy))
+- Work through the review list on the notes page
 
 ## Time Estimate
 
 | Activity | Time |
 | --- | --- |
-| Reading the exam guide | 20 min |
+| Reading the notes page | 10 min |
 | Re-reading your graded labs and my comments | 1 hr |
 | Practice: threat model, access control matrix, principles | 1 hr |
-| Re-running the crypto demos and re-taking quizzes | 45 min |
-| The exam itself | 1 hr 30 min |
-| **Total** | **~4.5-5 hrs** |
+| Re-running the crypto demos | 30 min |
+| **Total** | **~2.5 hrs** |
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

@@ -8,7 +8,7 @@ Write down who can do what to which thing, in a form precise enough to argue abo
 that same policy into the three shapes real systems actually store it in, and then cut it down to
 least privilege.
 
-No code. This is a modelling lab, and the modelling is the point.
+No code. This is a modeling lab, and the modeling is the point.
 
 ## Objectives assessed
 
@@ -39,7 +39,7 @@ No code. This is a modelling lab, and the modelling is the point.
 - CyBOK §14.3.2 (printed pages 472-474), enforcing access control, reference monitors.
 - CyBOK §14.6 (printed pages 489-493), accountability.
 - The [SnapVault system description](../data/photoshare-system.md), the same system you
-  threat-modelled in Lab 2. You will use its actors and its data.
+  threat-modeled in Lab 2. You will use its actors and its data.
 
 ### Vocabulary you need
 

@@ -220,7 +220,7 @@ function cs331(): DefaultTheme.SidebarItem[] {
         { text: '6. Authorization and Access', link: 'notes/week-06-overview', collapsed: true, items: [{ text: '6.01 Readings and Notes', link: 'notes/week-06-authorisation-and-access-control' }] },
         { text: '7. Symmetric Cryptography', link: 'notes/week-07-overview', collapsed: true, items: [{ text: '7.01 Readings and Notes', link: 'notes/week-07-symmetric-cryptography' }] },
         { text: '8. Public-Key Cryptography', link: 'notes/week-08-overview', collapsed: true, items: [{ text: '8.01 Readings and Notes', link: 'notes/week-08-public-key-cryptography' }] },
-        { text: '9. Review and Midterm', link: 'notes/week-09-overview', collapsed: true, items: [{ text: '9.01 Readings and Notes', link: 'notes/week-09-review-and-midterm' }] },
+        { text: '9. Review and Catch-Up', link: 'notes/week-09-overview', collapsed: true, items: [{ text: '9.01 Readings and Notes', link: 'notes/week-09-review-and-catch-up' }] },
         { text: '10. Keys, Certificates, and PKI', link: 'notes/week-10-overview', collapsed: true, items: [{ text: '10.01 Readings and Notes', link: 'notes/week-10-keys-certificates-and-pki' }] },
         { text: '11. Network Security', link: 'notes/week-11-overview', collapsed: true, items: [{ text: '11.01 Readings and Notes', link: 'notes/week-11-network-security' }] },
         { text: '12. Malware and Adversaries', link: 'notes/week-12-overview', collapsed: true, items: [{ text: '12.01 Readings and Notes', link: 'notes/week-12-malware-and-adversarial-behaviours' }] },
@@ -244,28 +244,6 @@ function cs331(): DefaultTheme.SidebarItem[] {
         { text: 'Lab 8 - Memory Safety',             link: 'assignments/lab-08-memory-safety-and-assurance' },
         { text: 'Lab 9 - SQL Injection',             link: 'assignments/lab-09-sql-injection' },
         { text: 'Lab 10 - Log Analysis',             link: 'assignments/lab-10-log-analysis-and-incident-memo' },
-      ]
-    },
-    {
-      text: 'Exams',
-      collapsed: false,
-      items: [
-        { text: 'Midterm Exam Guide', link: 'assignments/midterm-exam-guide' },
-        { text: 'Final Exam Guide',   link: 'assignments/final-exam-guide' },
-      ]
-    },
-    {
-      // The answers are stripped from these pages by stripQuizAnswers; the quiz
-      // itself is taken in Canvas.
-      text: 'Quizzes',
-      collapsed: true,
-      items: [
-        { text: 'Diagnostic (ungraded)',     link: 'quizzes/quiz-00-diagnostic' },
-        { text: 'Quiz 1 - Foundations',      link: 'quizzes/quiz-01-foundations' },
-        { text: 'Quiz 2 - Authentication',   link: 'quizzes/quiz-02-authentication' },
-        { text: 'Quiz 3 - Cryptography',     link: 'quizzes/quiz-03-cryptography' },
-        { text: 'Quiz 4 - Network Security', link: 'quizzes/quiz-04-network-security' },
-        { text: 'Quiz 5 - Software and Web', link: 'quizzes/quiz-05-software-and-web' },
       ]
     },
     {

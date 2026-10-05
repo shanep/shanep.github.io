@@ -126,7 +126,7 @@ One Canvas submission containing:
 | --- | --- | ---: |
 | 1 | The script was run, images are attached, and the terminal output is included | 6 |
 | 2 | Step 2: ECB identified, block counts correctly interpreted, the mechanism explained in the student's own words, and the mode's responsibility separated from the cipher's | 12 |
-| 3 | Step 3: both outputs quoted, the GCM tag explained, the `$100` to `$900` question answered correctly, and all four primitives correctly labelled | 12 |
+| 3 | Step 3: both outputs quoted, the GCM tag explained, the `$100` to `$900` question answered correctly, and all four primitives correctly labeled | 12 |
 | 4 | Step 4: the XOR algebra written out correctly, the attacker's knowledge stated precisely, the modified run shown, and a realistic cause of accidental nonce reuse named | 8 |
 | | **Total** | **38** |
 

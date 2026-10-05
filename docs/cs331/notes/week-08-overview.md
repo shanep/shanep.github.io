@@ -1,6 +1,6 @@
 # Module 8 Overview
 
-**March 1-7 · Reading: 9 pages · Estimated total: 7 hours**
+**March 1-7 · Reading: 9 pages · Estimated total: 6.5 hours**
 
 Symmetric cryptography works beautifully once two parties share a key. Getting them to share one is
 the problem it cannot solve. Two people who have never met, on a network run by strangers, cannot
@@ -22,17 +22,14 @@ By the end of this week, the successful student will be able to:
 - **[3.4](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits)**: Verify a
   digital signature and explain what a verification failure does and does not prove.
 
-Quiz 3 also assesses **3.1** and **3.2** from week 7.
-
 ## Assignments and Tasks
 
 ### Due by Sunday at 11:59 p.m. Mountain Time
 
 - Read [8.01 Readings and Lecture Notes](week-08-public-key-cryptography.md) and run `sign_demo.py` (2 hrs 30 min)
 - [8.02 Lab 5: Hashing and Signatures](../assignments/lab-05-hashing-and-signatures.md) (1 hr 30 min, 38 points)
-- [8.03 Quiz 3: Cryptography](../quizzes/quiz-03-cryptography.md): covers weeks 7-8 (15 min, 30 points)
 
-Next week is the midterm and there is no new material, so this is the last week of new content
+Next week is review and catch-up with no new material, so this is the last week of new content
 before the break.
 
 ## Time Estimate
@@ -42,8 +39,7 @@ before the break.
 | Reading (9 pages plus Nakov) | 1 hr 45 min |
 | The notes page and running `sign_demo.py` | 45 min |
 | Lab 5 | 1 hr 30 min |
-| Quiz 3 | 15 min |
 | Review and slack | 2 hrs 30 min |
-| **Total** | **~7 hrs** |
+| **Total** | **~6.5 hrs** |
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

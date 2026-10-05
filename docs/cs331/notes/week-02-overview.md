@@ -33,8 +33,8 @@ By the end of this week, the successful student will be able to:
 - [2.02 Lab 1: Security Principles Audit](../assignments/lab-01-security-principles-audit.md)
   (1 hr 25 min, 38 points)
 
-No quiz and no discussion this week. Lab 1 is the only graded item, and it is a writing assignment,
-give it the full ninety minutes.
+No discussion this week. Lab 1 is the only graded item, and it is a writing assignment, so give it
+the full ninety minutes.
 
 ## Time Estimate
 

@@ -22,10 +22,10 @@ viewer's search box or the bookmarks panel. See [Readings and Resources](../reso
 ## Worked example
 
 Here is one incident broken down using the four terms from §1.3: vulnerability, threat, attack,
-and risk. This is the form D1 asks you to produce, one labelled paragraph per term. The short
+and risk. This is the form D1 asks you to produce, one labeled paragraph per term. The short
 definitions are under Key terms at the end of this page.
 
-> **The incident.** In 2023 a file transfer product used by thousands of organisations was found to
+> **The incident.** In 2023 a file transfer product used by thousands of organizations was found to
 > contain a SQL injection flaw. Attackers exploited it to steal data from hundreds of companies
 > before most of them knew the product had a problem.
 
@@ -36,7 +36,7 @@ it.
 
 **The threat.** A financially motivated criminal group with the capability to find and exploit
 software flaws at scale, and a business model (extortion) that rewards stealing data from many
-organisations at once. The threat is the *potential* cause of harm: the group, its capability, and
+organizations at once. The threat is the *potential* cause of harm: the group, its capability, and
 its motive.
 
 **The attack.** The group scanned the internet for exposed instances of the product, exploited the
@@ -48,14 +48,14 @@ bulk file transfers, so the impact of compromise was obviously high: that part w
 advance. Likelihood is harder: internet-facing software from a vendor with a history of similar
 flaws is a well-known risk category. So: high impact, moderate-to-high likelihood. A risk
 assessment that reached that conclusion would have said *do not expose this to the internet*, and
-some organisations had.
+some organizations had.
 
 Notice four things about that example:
 
 1. The vulnerability is a property of a **system**. It is never a person and never an event.
 2. The threat exists even when nothing has happened yet.
 3. The attack is a **sequence**, described in order.
-4. The risk is a judgement made **beforehand**, combining how likely with how bad, and it competes
+4. The risk is a judgment made **beforehand**, combining how likely with how bad, and it competes
    with every other risk for the same budget.
 
 ### And the three goals

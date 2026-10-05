@@ -32,7 +32,7 @@ it. `payroll.db` carries `alice: rwd, backup-service: r`. This is how file permi
 
 **A capability list slices by row.** Each subject carries the list of objects it may touch. Bob
 holds `report.pdf: r`. This is how a bearer token, an API key, or a share link works, possession
-of the capability *is* the authorisation.
+of the capability *is* the authorization.
 
 Neither is better. They make different questions cheap:
 
@@ -53,7 +53,7 @@ capability revocation and it is hard.
 **RBAC** adds a layer in between: subjects get roles, roles hold permissions. It scales
 administration enormously (a new employee gets a role rather than four hundred individual
 grants), and it loses precision. Any distinction your matrix could express that does not
-correspond to a role has to become a new role, and organisations end up with thousands of them.
+correspond to a role has to become a new role, and organizations end up with thousands of them.
 
 ## Worked example
 
@@ -126,7 +126,7 @@ account. That is not a technical difficulty: it is a decision nobody made.
 | **Right** | What a subject may do to an object: read, write, delete, grant. |
 | **Access control matrix** | Subjects × objects, rights in the cells. The direct form of a policy. |
 | **Access control list (ACL)** | The matrix sliced by object. |
-| **Capability** | The matrix sliced by subject; possession is authorisation. |
+| **Capability** | The matrix sliced by subject; possession is authorization. |
 | **RBAC** | Subjects get roles; roles hold permissions. |
 | **ABAC** | Decisions computed from attributes of subject, object, and context. |
 | **Reference monitor** | The component that mediates every access. Must be tamper-proof, always invoked, and small enough to verify. |

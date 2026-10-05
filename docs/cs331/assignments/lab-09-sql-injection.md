@@ -106,11 +106,11 @@ work here.** That is the exercise.
 2. **Filtering is not the fix.** Suppose a developer instead strips the characters `'`, `-`, and
    `;` from every input. Give **two separate reasons** this is worse than parameterization. At
    least one should be about correctness for legitimate users.
-3. **Generalise it.** CyBOK §15.1.2 calls this class *structured output generation
+3. **Generalize it.** CyBOK §15.1.2 calls this class *structured output generation
    vulnerabilities*. Name **two other vulnerabilities in the same class** (where a program
    builds a structured string out of untrusted input), and for each, name the equivalent of a
    parameterized query.
-4. **Defence in depth.** Parameterization fixes this bug. Name **three other controls** that would
+4. **Defense in depth.** Parameterization fixes this bug. Name **three other controls** that would
    limit the damage if a different injection bug slipped through somewhere else in the application,
    and say what each one limits. At least one should be an access control decision from Lab 3.
 5. **Where the fix belongs.** Using CyBOK §15.2's ordering (language and type system, then API
@@ -134,7 +134,7 @@ One Canvas submission containing:
 | 1 | Step 2: the case 3 SQL quoted and explained character by character; why the safe version rejected it; the admin-account consequence tied to a STRIDE category | 10 |
 | 2 | Step 3, question 1: the operator-precedence explanation is correct and worked through, not asserted | 8 |
 | 3 | Step 3, questions 2-5: a working payload that returns all three rows, with its SQL and result pasted; the payload explained; two further inputs recorded including what an error message leaks; the safe version confirmed to reject them | 12 |
-| 4 | Step 4: the escaping-versus-parsing distinction made correctly; two reasons filtering is worse; two other structured-output vulnerabilities with their parameterized equivalents; three defence-in-depth controls including an access control one; the §15.2 level identified with a more fundamental alternative | 8 |
+| 4 | Step 4: the escaping-versus-parsing distinction made correctly; two reasons filtering is worse; two other structured-output vulnerabilities with their parameterized equivalents; three defense-in-depth controls including an access control one; the §15.2 level identified with a more fundamental alternative | 8 |
 | | **Total** | **38** |
 
 ## AI disclosure
