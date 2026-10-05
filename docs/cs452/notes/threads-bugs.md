@@ -10,7 +10,7 @@ we fix them?
 
 ## Atomicity-Violation Bugs
 
-AKA: Memory Stomps
+A check and a use that should happen together, with another thread running in between.
 
     Thread 1::
     if (thd->proc_info) {
@@ -24,7 +24,8 @@ AKA: Memory Stomps
 
 ## Order-Violation Bugs
 
-AKA: Race Conditions
+One thread assumes another has already run, and nothing makes it wait. Both kinds of bug are
+races.
 
     Thread 1::
     void init() {
