@@ -1,18 +1,11 @@
 {
   "entries": {
-    "assignments/final-exam-guide.md": {
-      "canvas_id": "16-dot-01-final-exam-guide",
-      "extra": {},
-      "kind": "page",
-      "page_url": "16-dot-01-final-exam-guide",
-      "title": "16.01 Final Exam Guide"
-    },
     "assignments/lab-00-course-setup.md": {
       "canvas_id": "1816971",
       "extra": {},
       "kind": "assignment",
       "page_url": "",
-      "title": "0.06 Lab 0: Course Setup and CyBOK Navigation"
+      "title": "0.05 Lab 0: Course Setup and CyBOK Navigation"
     },
     "assignments/lab-01-security-principles-audit.md": {
       "canvas_id": "1816972",
@@ -84,13 +77,6 @@
       "page_url": "",
       "title": "15.04 Lab 10: Log Analysis and Incident Memo"
     },
-    "assignments/midterm-exam-guide.md": {
-      "canvas_id": "9-dot-02-midterm-exam-guide",
-      "extra": {},
-      "kind": "page",
-      "page_url": "9-dot-02-midterm-exam-guide",
-      "title": "9.02 Midterm Exam Guide"
-    },
     "communicating.md": {
       "canvas_id": "0-dot-01-communicating-with-each-other",
       "extra": {},
@@ -138,7 +124,7 @@
       "title": "auth.log"
     },
     "data/cert_inspect.py": {
-      "canvas_id": "25200016",
+      "canvas_id": "25313172",
       "extra": {
         "size": "9538"
       },
@@ -147,9 +133,9 @@
       "title": "cert_inspect.py"
     },
     "data/crypto_demo.py": {
-      "canvas_id": "25200017",
+      "canvas_id": "25313174",
       "extra": {
-        "size": "9607"
+        "size": "9604"
       },
       "kind": "file",
       "page_url": "",
@@ -204,7 +190,7 @@
       "title": "sqli_demo.py"
     },
     "data/vuln.c": {
-      "canvas_id": "25311778",
+      "canvas_id": "25313178",
       "extra": {
         "size": "2414"
       },
@@ -228,7 +214,7 @@
       },
       "kind": "discussion",
       "page_url": "",
-      "title": "0.04 D1: Introductions and the Security Mindset"
+      "title": "0.03 D1: Introductions and the Security Mindset"
     },
     "discussions/d02-ethics-and-privacy-case.md": {
       "canvas_id": "1185265",
@@ -273,7 +259,7 @@
       },
       "kind": "discussion",
       "page_url": "",
-      "title": "16.02 D6: Final Reflection"
+      "title": "16.01 D6: Final Reflection"
     },
     "docs/CyBOK_v1.1.0.pdf": {
       "canvas_id": "25200024",
@@ -694,54 +680,12 @@
       "page_url": "cs-331-objective-alignment-sheet",
       "title": "CS 331: Objective Alignment Sheet"
     },
-    "quizzes/quiz-00-diagnostic.md": {
-      "canvas_id": "394842",
-      "extra": {},
-      "kind": "quiz",
-      "page_url": "",
-      "title": "0.02 Diagnostic Self-Check"
-    },
-    "quizzes/quiz-01-foundations.md": {
-      "canvas_id": "394843",
-      "extra": {},
-      "kind": "quiz",
-      "page_url": "",
-      "title": "3.04 Quiz 1: Foundations"
-    },
-    "quizzes/quiz-02-authentication.md": {
-      "canvas_id": "394844",
-      "extra": {},
-      "kind": "quiz",
-      "page_url": "",
-      "title": "5.04 Quiz 2: Authentication"
-    },
-    "quizzes/quiz-03-cryptography.md": {
-      "canvas_id": "394845",
-      "extra": {},
-      "kind": "quiz",
-      "page_url": "",
-      "title": "8.03 Quiz 3: Cryptography"
-    },
-    "quizzes/quiz-04-network-security.md": {
-      "canvas_id": "394846",
-      "extra": {},
-      "kind": "quiz",
-      "page_url": "",
-      "title": "11.04 Quiz 4: Network Security"
-    },
-    "quizzes/quiz-05-software-and-web.md": {
-      "canvas_id": "394847",
-      "extra": {},
-      "kind": "quiz",
-      "page_url": "",
-      "title": "14.03 Quiz 5: Software and Web Security"
-    },
     "reminders/d01-replies.md": {
       "canvas_id": "1817107",
       "extra": {},
       "kind": "assignment",
       "page_url": "",
-      "title": "0.05 D1: Introductions and the Security Mindset - Replies"
+      "title": "0.04 D1: Introductions and the Security Mindset - Replies"
     },
     "reminders/d02-replies.md": {
       "canvas_id": "1817108",
