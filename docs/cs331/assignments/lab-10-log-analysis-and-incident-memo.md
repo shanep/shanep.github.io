@@ -94,7 +94,7 @@ Answer:
 2. **One source address dominates.** Name it, give the number of failed authentication attempts
    from it, and give the time window over which they occurred.
 3. **What usernames was it trying?** List them. What does that list tell you about whether the
-   attacker knew anything about this organisation?
+   attacker knew anything about this organization?
 4. **The critical finding.** Something in this log is much worse than a failed brute-force. Find it,
    quote the exact line, and state in one sentence why it changes the severity of the whole
    incident.
@@ -145,7 +145,7 @@ Answer:
 
 1. **Write a misuse detection rule** for the Step 2 activity: the data source it reads, the
    condition it fires on with specific numbers, and the response. Then say what it would miss, give
-   one attacker behaviour that defeats it.
+   one attacker behavior that defeats it.
 2. **Write an anomaly detection approach** for the same activity: what "normal" would have to be
    measured first, over what period, and what deviation would fire. Then say what it would produce
    that the misuse rule would not, in both directions, useful findings and false alarms.
@@ -173,7 +173,7 @@ Answer:
 ### Step 5: The incident memo
 
 Write a **one-page incident memo** (400 to 600 words) addressed to the IT director of the
-organisation running `vault-api-01`. Structure it around the NIST SP 800-61r3 life cycle, with
+organization running `vault-api-01`. Structure it around the NIST SP 800-61r3 life cycle, with
 these headings:
 
 1. **What happened.** A factual summary, with times. No speculation in this section.
@@ -198,7 +198,7 @@ code you used and the arithmetic in Step 4 question 4, followed by the memo from
 
 | Row | What is assessed | Points |
 | --- | --- | ---: |
-| 1 | Step 1: both data sources correctly categorised with CyBOK §8.2 section numbers; three fields and a question each; two specific unanswerable questions per file with the data source that would answer them; the single-host reliability point | 5 |
+| 1 | Step 1: both data sources correctly categorized with CyBOK §8.2 section numbers; three fields and a question each; two specific unanswerable questions per file with the data source that would answer them; the single-host reliability point | 5 |
 | 2 | Step 2: the attacking address, failure count, and window correct; the username list interpreted; **the successful authentication found and quoted**; the four session lines quoted, the two administrative commands interpreted, and the duration of access stated; both authentication methods named with the preventive configuration change and the benign-failures question answered | 8 |
 | 3 | Step 3: the scanning address, request count, window, and status distribution correct; the activity named with four paths interpreted; the user-agent question answered on both sides; **all three 200 responses found, the two harmless ones dismissed with a reason, and the third identified as data exfiltration using the response size**; a defended position on same-actor-or-not; both ATT&CK mappings correct | 8 |
 | 4 | Step 4 questions 1-3: a misuse rule with a data source, numeric condition, response, and a stated evasion; an anomaly approach with its baseline defined; a defended choice between them | 6 |

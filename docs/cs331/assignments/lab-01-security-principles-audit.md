@@ -48,7 +48,7 @@ Read, if you have not already:
 | **Open design** | Security must not depend on the design being secret. |
 | **Separation of privilege** | Require more than one condition before granting access. |
 | **Least privilege** | Every user and every program gets the minimum access needed to do its job. |
-| **Least common mechanism** | Minimise what is shared between users, because shared things become channels. |
+| **Least common mechanism** | Minimize what is shared between users, because shared things become channels. |
 | **Psychological acceptability** | If the protection is painful to use, people will route around it. |
 
 ## Steps
@@ -83,7 +83,7 @@ For **each** of the eight principles, write a short paragraph (3-5 sentences) an
 - **Does this system follow the principle, violate it, or is it impossible to tell from outside?**
   All three are acceptable answers. "Impossible to tell from outside" is a real finding, and open
   design is exactly the principle that says it should not be.
-- **What specific, observable behaviour makes you say that?** Point at something concrete: a
+- **What specific, observable behavior makes you say that?** Point at something concrete: a
   default setting, a prompt you get or do not get, a permission you were granted without asking.
 
 Two of the eight need extra care, because they are the ones this course grades hardest:
@@ -104,13 +104,13 @@ Choose the **two** principles where this system does worst. For each one, write 
    actual path.
 2. **What it would cost to fix.** Fixing a principle violation is never free; it costs money,
    engineering time, or user convenience. Say which, and say who would object.
-3. **For at least one of the two, connect it to human behaviour.** Using CyBOK §4.3, explain how a
+3. **For at least one of the two, connect it to human behavior.** Using CyBOK §4.3, explain how a
    normal person doing a reasonable thing makes this failure more likely, or how the fix would run
    into psychological acceptability and get worked around.
 
 ## What to submit
 
-One text entry or one attached document in Canvas containing Steps 1, 2, and 3, clearly labelled.
+One text entry or one attached document in Canvas containing Steps 1, 2, and 3, clearly labeled.
 Roughly 1,000-1,400 words total. Cite CyBOK by section number wherever you use it.
 
 ## Rubric
@@ -119,7 +119,7 @@ Roughly 1,000-1,400 words total. Cite CyBOK by section number wherever you use i
 | --- | --- | ---: |
 | 1 | System description names subjects, objects, and a trust boundary, with the sides identified | 6 |
 | 2 | All eight principles addressed, each with a verdict and specific observable evidence; fail-safe defaults and complete mediation addressed correctly | 16 |
-| 3 | Two failures analysed in depth with a concrete attack path, an honest cost of fixing, and at least one connected to human error or psychological acceptability | 10 |
+| 3 | Two failures analyzed in depth with a concrete attack path, an honest cost of fixing, and at least one connected to human error or psychological acceptability | 10 |
 | 4 | Writing is clear and specific rather than generic; CyBOK cited by section number | 6 |
 | | **Total** | **38** |
 

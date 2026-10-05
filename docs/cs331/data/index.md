@@ -51,7 +51,7 @@ These files were written for CS 331. They are not real data:
   in small production services, including the mistakes.
 - **NORTHWIND MEADOW** is a fictional incident at a fictional hospital network. Its shape (phishing
   to macro to fileless loader, a week of living-off-the-land lateral movement, exfiltration, then
-  ransomware) follows patterns from published incident reporting, but no real organisation, person,
+  ransomware) follows patterns from published incident reporting, but no real organization, person,
   or campaign is described. The domains in it are written with `[.]` so they cannot be clicked, and
   none of them is registered.
 - **`auth.log` and `web_access.log`** are synthetic, generated to contain specific patterns that

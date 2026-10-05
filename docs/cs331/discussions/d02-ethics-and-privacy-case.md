@@ -38,7 +38,7 @@
 > 3. Report it to the state insurance regulator or a data protection authority.
 > 4. Post the details publicly so that customers know, and so the company is forced to act.
 >
-> She has also realised something else: to demonstrate the problem convincingly to anyone, she
+> She has also realized something else: to demonstrate the problem convincingly to anyone, she
 > would need to run it against real customer email addresses. She has access to the customer
 > database as part of her job.
 
@@ -46,7 +46,7 @@
 
 **Due: Thursday of week 3. About 400-500 words.**
 
-Address all four of these, clearly labelled.
+Address all four of these, clearly labeled.
 
 ### 1. Is this a privacy problem, and of what kind?
 
@@ -78,10 +78,10 @@ coordinated-disclosure timeline does not obviously fit.
 ### 4. The last paragraph of the case
 
 Priya would need to run the technique against real customer addresses to demonstrate it. She has
-authorised access to that data for her job.
+authorized access to that data for her job.
 
-Answer directly: **may she do it?** Consider whether authorised access for one purpose is
-authorisation for this purpose, what CyBOK §3.5 says about unauthorised access, and what it would
+Answer directly: **may she do it?** Consider whether authorized access for one purpose is
+authorization for this purpose, what CyBOK §3.5 says about unauthorized access, and what it would
 mean for her position if she did. Then say what she should do instead to make the problem credible
 to someone with authority.
 
@@ -105,7 +105,7 @@ agreement with no addition is not.
 
 | Row | What is assessed | Points |
 | --- | --- | ---: |
-| 1 | Initial post: all four parts addressed; the privacy harm characterised with a concrete example; two distinct legal or regulatory questions identified; a position taken with its strongest counterargument and a stated condition for changing it; part 4 answered directly with the authorisation question addressed; CyBOK cited by section | 18 |
+| 1 | Initial post: all four parts addressed; the privacy harm characterized with a concrete example; two distinct legal or regulatory questions identified; a position taken with its strongest counterargument and a stated condition for changing it; part 4 answered directly with the authorization question addressed; CyBOK cited by section | 18 |
 | 2 | Two substantive replies, at least one to a classmate who chose a different option, each adding an argument, a consequence, or a condition rather than restating agreement | 12 |
 | | **Total** | **30** |
 

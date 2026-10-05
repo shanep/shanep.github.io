@@ -56,7 +56,7 @@ Part 1 hashed two messages that differ by one character.
 
 1. **Quote both digests** and the "Bits that differ" line.
 2. The two inputs differ by one character out of twenty. The digests differ in roughly half their
-   bits. **Why is that the desired behaviour and not a flaw?** About 100 words.
+   bits. **Why is that the desired behavior and not a flaw?** About 100 words.
 3. The script hashed the same input twice and got the same answer. **A hash takes no key.** Given
    that, explain in two or three sentences why a hash by itself cannot tell you who wrote a
    message.
@@ -93,7 +93,7 @@ Part 4 produced an HMAC tag and an Ed25519 signature over the same message.
 
 1. **Quote both**, and note the size of each in bytes.
 2. Alice and Bob share an HMAC key. Alice sends Bob a message with a valid tag. Bob later claims
-   Alice authorised a payment; Alice says she did not. **Can the tag settle the argument?** Explain
+   Alice authorized a payment; Alice says she did not. **Can the tag settle the argument?** Explain
    why or why not, then say what would change if Alice had signed with a private key instead.
 3. **Key distribution.** Fill in this table and explain each number in one sentence:
 
@@ -120,7 +120,7 @@ One Canvas submission containing your full first-run output and your numbered an
 
 | Row | What is assessed | Points |
 | --- | --- | ---: |
-| 1 | Step 2: digests quoted, avalanche behaviour correctly explained, both modified runs shown, and the download-digest question answered on both sides | 10 |
+| 1 | Step 2: digests quoted, avalanche behavior correctly explained, both modified runs shown, and the download-digest question answered on both sides | 10 |
 | 2 | Step 3, questions 1-3: outputs quoted, and why the attacker cannot forge a new signature explained correctly | 10 |
 | 3 | Step 3, questions 4-5: exactly what verification does and does not establish, with examples, and a concrete attack on the key-identity gap | 12 |
 | 4 | Step 4: repudiation question answered correctly, key-distribution table correct, hybrid rationale given, and all four tools chosen with justification | 6 |

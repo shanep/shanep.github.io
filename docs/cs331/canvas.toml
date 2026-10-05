@@ -15,9 +15,9 @@ break_after_week        = 9            # spring break, Mar 15-19 2027
 last_day_of_instruction = 2027-04-30
 finals_start            = 2027-05-03
 finals_end              = 2027-05-07
-# The Assessments table in index.md adds to exactly 1000: labs 400, quizzes 150,
-# discussions 150, midterm 150, final 150.
-total_points            = 1000
+# The Assessments table in index.md adds to exactly 550: labs 400 and
+# discussions 150. There are no quizzes or exams.
+total_points            = 550
 
 # How each kind of gradable item is scheduled inside its week. The course is
 # asynchronous and weeks run Monday through Sunday, so everything anchors on the
@@ -45,21 +45,13 @@ grace_days = 0
 due        = "sun 23:59"
 grace_days = 0
 
-# Quizzes and exams run inside the window Canvas enforces, per the Exam and Quiz
-# Policy, so an extension is granted per student rather than built into the date.
-[term.policy.quiz]
-due        = "sun 23:59"
-grace_days = 0
-
-[term.policy.exam]
-due        = "sun 23:59"
-grace_days = 0
-
 # ---------------------------------------------------------------------------
-# Canvas assignment groups, in the order the syllabus lists them. The weights
-# here are the weights in the Assessments table of index.md, and `edutools push`
-# turns on weight-by-group for the course, so these are what Canvas computes the
-# final grade from.
+# Canvas assignment groups, in the order the syllabus lists them. The course is
+# graded on straight points, 400 for labs and 150 for discussions. `edutools push`
+# turns on weight-by-group whenever a group declares a weight, so the weights are
+# 40 and 15, the same 400:150 ratio. Canvas scales weights that add to less than
+# 100 by their total, so 40 and 15 come out to exactly 400/550 and 150/550, the
+# same grade as unweighted points.
 #
 # The names have to match the groups already in Canvas character for character,
 # because a push pairs them up by name and would otherwise create a second group
@@ -72,23 +64,9 @@ weight = 40
 kinds  = ["lab"]
 
 [[group]]
-name   = "Quizzes"
-weight = 15
-kinds  = ["quiz"]
-
-[[group]]
 name   = "Discussions and Reflections"
 weight = 15
 kinds  = ["discussion", "reminder"]
-
-# The syllabus lists the midterm and the final as 15% each. A group is the unit
-# edutools can weight, and both exams are the same kind, so they share one group
-# at 30%. The arithmetic is identical: the two exams are 150 points each, so each
-# takes half of the 30% no matter which way it is declared.
-[[group]]
-name   = "Exams"
-weight = 30
-kinds  = ["exam"]
 
 # ---------------------------------------------------------------------------
 # What this repo calls its files. This directory is a VitePress site as well as a
@@ -116,9 +94,6 @@ pages = [
     "resources.md",
     "notes/*.md",
     "data/index.md",
-    # The exam guides are pages, not assignments. The default layout lists this
-    # pattern, but a [layout] pages list replaces the default, so it is repeated.
-    "assignments/*-exam-guide.md",
     # The two written scenarios the labs work from. They are pages rather than
     # files because students read them rather than download them.
     "data/incident-report.md",
@@ -152,11 +127,8 @@ files = [
     "docs/CyBOK_v1.1.0.pdf",
 ]
 
-# `*-exam-guide.md` under assignments/ is recognised as an exam without being
-# listed here, so the midterm and final guides need no pattern of their own.
 [layout.gradable]
 lab        = "assignments/lab-*.md"
-quiz       = "quizzes/quiz-*.md"
 discussion = "discussions/d*.md"
 reminder   = "reminders/d*-replies.md"
 
@@ -177,10 +149,6 @@ due = "fri 23:59"
 # was before discussions moved to Thursday.
 [override."discussions/d06-final-reflection.md"]
 due = "fri 23:59"
-
-# The diagnostic says it is due Tuesday of week 1, so Canvas does too.
-[override."quizzes/quiz-00-diagnostic.md"]
-due = "tue 23:59"
 
 # ---------------------------------------------------------------------------
 # Heading icons, as the Boise State Online shell draws them: a 45x35 image in
@@ -261,7 +229,7 @@ items = [
 # Every module but Course Resources follows the shell: its overview page, then
 # its items under "Due by" text headers, each item numbered N.0K in its title.
 # `week` puts the dates in the module's name, from the term skeleton above.
-# D1, Lab 0 and the diagnostic are week 1 work, but they are course setup, so
+# D1 and Lab 0 are week 1 work, but they are course setup, so
 # they sit in Getting Started. The Getting to Know You Survey is the shell's own
 # ungraded survey, kept by id.
 [[module]]
@@ -271,8 +239,7 @@ page  = "getting-started.md"
 items = [
     { header = "Due by Tuesday at 11:59 p.m. Mountain Time" },
     "communicating.md",
-    "quizzes/quiz-00-diagnostic.md",
-    { quiz = 393733, title = "0.03 Getting to Know You Survey" },
+    { quiz = 393733, title = "0.02 Getting to Know You Survey" },
     { header = "Due by Thursday at 11:59 p.m. Mountain Time" },
     "discussions/d01-introductions-and-security-mindset.md",
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
@@ -309,7 +276,6 @@ items = [
     "discussions/d02-ethics-and-privacy-case.md",
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "reminders/d02-replies.md",
-    "quizzes/quiz-01-foundations.md",
 ]
 
 [[module]]
@@ -332,11 +298,10 @@ items = [
     "discussions/d03-authentication-policy-critique.md",
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "reminders/d03-replies.md",
-    "quizzes/quiz-02-authentication.md",
 ]
 
 [[module]]
-title = "Module 6: Authorisation, Access Control, and Accountability"
+title = "Module 6: Authorization, Access Control, and Accountability"
 week  = 6
 page  = "notes/week-06-overview.md"
 items = [
@@ -363,19 +328,15 @@ items = [
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "notes/week-08-public-key-cryptography.md",
     "assignments/lab-05-hashing-and-signatures.md",
-    "quizzes/quiz-03-cryptography.md",
 ]
 
-# The midterm itself is a Canvas quiz built by hand. Once it exists, add it to
-# `items` as { quiz = <id>, title = "9.03 Midterm Exam" }.
+# Week 9 is review and catch-up before spring break, with nothing due.
 [[module]]
-title = "Module 9: Review and Midterm"
+title = "Module 9: Review and Catch-Up"
 week  = 9
 page  = "notes/week-09-overview.md"
 items = [
-    { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
-    "notes/week-09-review-and-midterm.md",
-    "assignments/midterm-exam-guide.md",
+    "notes/week-09-review-and-catch-up.md",
 ]
 
 [[module]]
@@ -398,11 +359,10 @@ items = [
     "discussions/d04-network-security-in-the-news.md",
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "reminders/d04-replies.md",
-    "quizzes/quiz-04-network-security.md",
 ]
 
 [[module]]
-title = "Module 12: Malware and Adversarial Behaviours"
+title = "Module 12: Malware and Adversarial Behaviors"
 week  = 12
 page  = "notes/week-12-overview.md"
 items = [
@@ -429,7 +389,6 @@ items = [
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "notes/week-14-web-security-and-injection.md",
     "assignments/lab-09-sql-injection.md",
-    "quizzes/quiz-05-software-and-web.md",
 ]
 
 [[module]]
@@ -445,14 +404,12 @@ items = [
     "assignments/lab-10-log-analysis-and-incident-memo.md",
 ]
 
-# The finals-week items carry "**Finals week · ...**" instead of a week number,
-# so edutools dates them from the finals window. The final exam quiz is hand
-# built like the midterm; add it as { quiz = <id>, title = "16.03 Final Exam" }.
+# The finals-week item carries "**Finals week · ...**" instead of a week number,
+# so edutools dates it from the finals window.
 [[module]]
 title = "Module 16: Finals Week"
 week  = "finals"
 items = [
     { header = "Due by Friday at 11:59 p.m. Mountain Time" },
-    "assignments/final-exam-guide.md",
     "discussions/d06-final-reflection.md",
 ]

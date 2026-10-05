@@ -49,6 +49,14 @@
         "due_at": null,
         "points": null,
         "canvas_id": ""
+      },
+      {
+        "kind": "discussion",
+        "title": "Course Questions",
+        "path": "course-resources/course-questions",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
       }
     ]
   },
@@ -81,15 +89,7 @@
       },
       {
         "kind": "quiz",
-        "title": "0.02 Diagnostic Self-Check",
-        "path": "quizzes/quiz-00-diagnostic",
-        "due_at": "2027-01-12T23:59:00-07:00",
-        "points": 0.0,
-        "canvas_id": ""
-      },
-      {
-        "kind": "quiz",
-        "title": "0.03 Getting to Know You Survey",
+        "title": "0.02 Getting to Know You Survey",
         "path": "",
         "due_at": null,
         "points": null,
@@ -105,7 +105,7 @@
       },
       {
         "kind": "discussion",
-        "title": "0.04 D1: Introductions and the Security Mindset",
+        "title": "0.03 D1: Introductions and the Security Mindset",
         "path": "discussions/d01-introductions-and-security-mindset",
         "due_at": "2027-01-14T23:59:00-07:00",
         "points": 15.0,
@@ -121,7 +121,7 @@
       },
       {
         "kind": "assignment",
-        "title": "0.05 D1: Introductions and the Security Mindset - Replies",
+        "title": "0.04 D1: Introductions and the Security Mindset - Replies",
         "path": "reminders/d01-replies",
         "due_at": "2027-01-17T23:59:00-07:00",
         "points": 0.0,
@@ -129,7 +129,7 @@
       },
       {
         "kind": "assignment",
-        "title": "0.06 Lab 0: Course Setup and CyBOK Navigation",
+        "title": "0.05 Lab 0: Course Setup and CyBOK Navigation",
         "path": "assignments/lab-00-course-setup",
         "due_at": "2027-01-17T23:59:00-07:00",
         "points": 20.0,
@@ -253,14 +253,6 @@
         "due_at": "2027-01-31T23:59:00-07:00",
         "points": 0.0,
         "canvas_id": ""
-      },
-      {
-        "kind": "quiz",
-        "title": "3.04 Quiz 1: Foundations",
-        "path": "quizzes/quiz-01-foundations",
-        "due_at": "2027-01-31T23:59:00-07:00",
-        "points": 30.0,
-        "canvas_id": ""
       }
     ]
   },
@@ -351,19 +343,11 @@
         "due_at": "2027-02-14T23:59:00-07:00",
         "points": 0.0,
         "canvas_id": ""
-      },
-      {
-        "kind": "quiz",
-        "title": "5.04 Quiz 2: Authentication",
-        "path": "quizzes/quiz-02-authentication",
-        "due_at": "2027-02-14T23:59:00-07:00",
-        "points": 30.0,
-        "canvas_id": ""
       }
     ]
   },
   {
-    "title": "Module 6: Authorisation, Access Control, and Accountability (February 15 - February 21)",
+    "title": "Module 6: Authorization, Access Control, and Accountability (February 15 - February 21)",
     "items": [
       {
         "kind": "page",
@@ -470,19 +454,11 @@
         "due_at": "2027-03-07T23:59:00-07:00",
         "points": 38.0,
         "canvas_id": ""
-      },
-      {
-        "kind": "quiz",
-        "title": "8.03 Quiz 3: Cryptography",
-        "path": "quizzes/quiz-03-cryptography",
-        "due_at": "2027-03-07T23:59:00-07:00",
-        "points": 30.0,
-        "canvas_id": ""
       }
     ]
   },
   {
-    "title": "Module 9: Review and Midterm (March 8 - March 14)",
+    "title": "Module 9: Review and Catch-Up (March 8 - March 14)",
     "items": [
       {
         "kind": "page",
@@ -493,27 +469,11 @@
         "canvas_id": ""
       },
       {
-        "kind": "header",
-        "title": "Due by Sunday at 11:59 p.m. Mountain Time",
-        "path": "",
-        "due_at": null,
-        "points": null,
-        "canvas_id": ""
-      },
-      {
         "kind": "page",
         "title": "9.01 Readings and Lecture Notes",
-        "path": "notes/week-09-review-and-midterm",
+        "path": "notes/week-09-review-and-catch-up",
         "due_at": null,
         "points": null,
-        "canvas_id": ""
-      },
-      {
-        "kind": "page",
-        "title": "9.02 Midterm Exam Guide",
-        "path": "assignments/midterm-exam-guide",
-        "due_at": "2027-03-14T23:59:00-06:00",
-        "points": 150.0,
         "canvas_id": ""
       }
     ]
@@ -605,19 +565,11 @@
         "due_at": "2027-04-04T23:59:00-06:00",
         "points": 0.0,
         "canvas_id": ""
-      },
-      {
-        "kind": "quiz",
-        "title": "11.04 Quiz 4: Network Security",
-        "path": "quizzes/quiz-04-network-security",
-        "due_at": "2027-04-04T23:59:00-06:00",
-        "points": 30.0,
-        "canvas_id": ""
       }
     ]
   },
   {
-    "title": "Module 12: Malware and Adversarial Behaviours (April 5 - April 11)",
+    "title": "Module 12: Malware and Adversarial Behaviors (April 5 - April 11)",
     "items": [
       {
         "kind": "page",
@@ -724,14 +676,6 @@
         "due_at": "2027-04-25T23:59:00-06:00",
         "points": 38.0,
         "canvas_id": ""
-      },
-      {
-        "kind": "quiz",
-        "title": "14.03 Quiz 5: Software and Web Security",
-        "path": "quizzes/quiz-05-software-and-web",
-        "due_at": "2027-04-25T23:59:00-06:00",
-        "points": 30.0,
-        "canvas_id": ""
       }
     ]
   },
@@ -808,16 +752,8 @@
         "canvas_id": ""
       },
       {
-        "kind": "page",
-        "title": "16.01 Final Exam Guide",
-        "path": "assignments/final-exam-guide",
-        "due_at": "2027-05-07T23:59:00-06:00",
-        "points": 150.0,
-        "canvas_id": ""
-      },
-      {
         "kind": "discussion",
-        "title": "16.02 D6: Final Reflection",
+        "title": "16.01 D6: Final Reflection",
         "path": "discussions/d06-final-reflection",
         "due_at": "2027-05-07T23:59:00-06:00",
         "points": 15.0,

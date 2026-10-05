@@ -44,11 +44,10 @@ By the end of this week, the successful student will be able to:
 **April 30 is the last day of instruction.** No lab, discussion, or extra credit from the
 instructional weeks is accepted after it, see the
 [Late Work Policy](../index.md#late-work-policy). The usual two-day grace period cannot extend
-past the end of the semester, so week 15 has no grace period at all. The
-[final exam](../assignments/final-exam-guide.md) and
-[D6, the final reflection](../discussions/d06-final-reflection.md) are the only things due after
-April 30, and they are governed by the Exam and Quiz and Class Interaction policies rather than by
-the homework late policy.
+past the end of the semester, so week 15 has no grace period at all.
+[D6, the final reflection](../discussions/d06-final-reflection.md) is the only thing due after
+April 30, and it is governed by the Class Interaction Policy rather than by the homework late
+policy.
 
 ## Time Estimate
 

@@ -32,12 +32,12 @@ played a substantive role**. That means the reporting says something about how t
 what protocol or network weakness they used, or how traffic was or was not observed.
 
 Good sources: CISA advisories (<https://www.cisa.gov/news-events/cybersecurity-advisories>), vendor
-incident reports, the organisation's own post-incident disclosure, reputable technical press.
+incident reports, the organization's own post-incident disclosure, reputable technical press.
 
 Two rules:
 
 - **You must be able to link a source with technical detail.** A three-sentence news item that says
-  "hackers breached the company" gives you nothing to analyse.
+  "hackers breached the company" gives you nothing to analyze.
 - **Check the board before you post and pick something nobody has taken.** First come, first served.
   Post early if you want a well-documented one.
 
@@ -45,11 +45,11 @@ Two rules:
 
 **Due: Thursday of week 11. About 400-500 words.**
 
-Three labelled parts.
+Three labeled parts.
 
 ### 1. What happened, at which layer
 
-Summarise the incident in about 100 words, and link your source.
+Summarize the incident in about 100 words, and link your source.
 
 Then, for the network-relevant part: **name the protocol layer and the mechanism.** Use CyBOK
 §19.3's structure (application, transport, internet, or link) and say what property of that
@@ -84,7 +84,7 @@ that one you must say who would have seen the alert and what they would have had
 
 ### 3. The honest limit
 
-One short paragraph: **would your two controls have been in place at a realistic organisation of
+One short paragraph: **would your two controls have been in place at a realistic organization of
 this size and budget?** If not, say what they would have displaced. Security recommendations that
 assume unlimited resources are the easiest kind to write and the least useful.
 
@@ -105,7 +105,7 @@ Reply to **two** classmates who chose different incidents. Do one of these:
 
 | Row | What is assessed | Points |
 | --- | --- | ---: |
-| 1 | Initial post part 1: incident summarised with a linked technical source; the correct protocol layer identified; the specific protocol property the attacker relied on named, or the evidence gap stated precisely | 10 |
+| 1 | Initial post part 1: incident summarized with a linked technical source; the correct protocol layer identified; the specific protocol property the attacker relied on named, or the evidence gap stated precisely | 10 |
 | 2 | Initial post parts 2-3: two controls, at least one detection-based, each with what it does, where it would have acted, its cost, and what it would not have stopped; the realism paragraph engages with budget and displacement | 8 |
 | 3 | Two substantive replies to classmates with different incidents, each defeating a control, correcting a layer attribution, or raising an unaccounted cost | 12 |
 | | **Total** | **30** |
@@ -116,7 +116,7 @@ to "who reads the alert." Week 15 will show you what happens to alerts nobody re
 ## Discussion Guidelines
 
 The [discussion guidelines from D1](d01-introductions-and-security-mindset.md#discussion-guidelines)
-apply. Analyse published reporting only, do not probe, scan, or test any organisation's network.
+apply. Analyze published reporting only, do not probe, scan, or test any organization's network.
 
 ## AI disclosure
 

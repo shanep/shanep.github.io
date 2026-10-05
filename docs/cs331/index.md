@@ -1,6 +1,6 @@
 # CS 331: Computer Security and Information Assurance
 
-## Catalogue Description
+## Catalog Description
 
 Fundamentals of computer security and information assurance. Topics include security goals, access control, common software and network vulnerabilities, cryptography, security policies and procedures.
 
@@ -20,7 +20,7 @@ computer science, information technology management, and others. The only assump
 have completed one introductory programming course.
 
 You will not be asked to write a program from scratch. Every lab that involves code gives you a
-working, commented Python script; your job is to run it, change a value or two, read the output,
+working, commented Python script, and your job is to run it, change a value or two, read the output,
 and explain what happened and why. There is no virtual machine to install, no Linux server to
 configure, and no version control to learn. If you can open a terminal and a web browser, you have
 everything you need.
@@ -50,7 +50,7 @@ Two things to know about it:
 
 **Finding a reading:** CyBOK section numbers (for example, §10.4) are the reliable way to
 navigate. Every page of the PDF prints its page number in the footer, which will not match your PDF
-viewer's page counter, the book has 39 pages of front matter. Use your viewer's search box or the
+viewer's page counter, because the book has 39 pages of front matter. Use your viewer's search box or the
 bookmarks panel and go by section number.
 
 A complete list of readings, supplements, and their licenses is in [Readings and Resources](resources.md).
@@ -79,18 +79,17 @@ Every week follows the same rhythm, and **nothing in this course spans more than
 2. **Work through the module** in Canvas. Its **Overview** page lists the objectives and what is
    due when; its **Readings and Lecture Notes** page includes a worked example.
 3. **Complete one graded activity**: either a lab or a discussion, never both in the same week.
-4. **Take a quiz** in five of the fifteen weeks.
 
 There is no semester-long project and no assignment that carries over from one week to the next.
 If you fall behind, you can catch up in a single week.
 
 **Everything is submitted in Canvas.** Labs are a single text entry or one attached file.
-Quizzes and exams are taken in Canvas. Discussions happen in the Canvas discussion boards.
+Discussions happen in the Canvas discussion boards. There are no quizzes and no exams.
 
 ## Weekly Time Budget
 
 This course is designed to take **8 hours per week or less, including everything**: reading,
-lecture notes, labs, discussions, quizzes, and study time. A typical week:
+lecture notes, labs, discussions, and study time. A typical week:
 
 | Activity | Time |
 | --- | --- |
@@ -98,9 +97,8 @@ lecture notes, labs, discussions, quizzes, and study time. A typical week:
 | Lecture notes and worked example | 0.5-1.0 hrs |
 | One lab (weeks with a lab) | 1.5-2.0 hrs |
 | *or* one discussion: initial post and replies (weeks with a discussion) | 1.0 hrs |
-| Quiz (five weeks only) | 0.5 hrs |
 | Review, questions, and slack | 2.0-2.5 hrs |
-| **Typical total** | **6.5-8.0 hrs** |
+| **Typical total** | **5.5-7.5 hrs** |
 
 Every lab is scoped to be finished **in one sitting of about 90 minutes**. If a lab is taking you
 much longer than that, stop and email me: that is a problem with the lab, not with you.
@@ -111,8 +109,8 @@ This course has seven terminal learning objectives. **Every objective is introdu
 course, and every objective is required**: there are no optional objectives and nothing here
 assumes you covered it somewhere else.
 
-Each terminal objective breaks down into supporting objectives that name the exact assignment,
-quiz, or exam that measures them. The complete alignment is on the
+Each terminal objective breaks down into supporting objectives that name the exact lab or
+discussion that measures them. The complete alignment is on the
 [Objective Alignment Sheet](objectives.md).
 
 | # | The student will be able to… | Bloom level |
@@ -136,49 +134,47 @@ printed page numbers shown in the PDF's footers.
 
 | Week | Dates | Topic | Reading | Graded this week |
 | ---- | ----- | ----- | ------- | ---------------- |
-| 1 | Jan 11-17 | [What is cyber security? Goals, terms, and failures](notes/week-01-what-is-cyber-security.md) | §1.1-1.3 (pp. 2-8) | [Lab 0](assignments/lab-00-course-setup.md); [D1](discussions/d01-introductions-and-security-mindset.md); [diagnostic](quizzes/quiz-00-diagnostic.md) (ungraded) |
+| 1 | Jan 11-17 | [What is cyber security? Goals, terms, and failures](notes/week-01-what-is-cyber-security.md) | §1.1-1.3 (pp. 2-8) | [Lab 0](assignments/lab-00-course-setup.md); [D1](discussions/d01-introductions-and-security-mindset.md) |
 | 2 | Jan 18-24 | [Security principles and the human factor](notes/week-02-security-principles-and-human-factors.md) | §1.4-1.5 (pp. 9-15); §4.3-4.4 (pp. 158-165) | [Lab 1](assignments/lab-01-security-principles-audit.md) |
-| 3 | Jan 25-31 | [Law, regulation, ethics, and privacy](notes/week-03-law-ethics-and-privacy.md) | §3.1 (pp. 52-58); §3.13 (pp. 122-127); §5.2-5.3 (pp. 187-191) | [D2](discussions/d02-ethics-and-privacy-case.md); [Quiz 1](quizzes/quiz-01-foundations.md) |
+| 3 | Jan 25-31 | [Law, regulation, ethics, and privacy](notes/week-03-law-ethics-and-privacy.md) | §3.1 (pp. 52-58); §3.13 (pp. 122-127); §5.2-5.3 (pp. 187-191) | [D2](discussions/d02-ethics-and-privacy-case.md) |
 | 4 | Feb 1-7 | [Risk management and threat modeling](notes/week-04-risk-and-threat-modeling.md) | §2.2-2.4 (pp. 20-26); §2.6.1-2.6.2 (pp. 31-33); §2.6.6 (pp. 43-45) | [Lab 2](assignments/lab-02-threat-model.md) |
-| 5 | Feb 8-14 | [Authentication and credentials](notes/week-05-authentication-and-credentials.md) | §14.5 (pp. 479-489) | [D3](discussions/d03-authentication-policy-critique.md); [Quiz 2](quizzes/quiz-02-authentication.md) |
-| 6 | Feb 15-21 | [Authorisation, access control, and accountability](notes/week-06-authorisation-and-access-control.md) | §14.1-14.3 (pp. 466-475); §14.6 (pp. 489-493) | [Lab 3](assignments/lab-03-access-control-matrix.md) |
+| 5 | Feb 8-14 | [Authentication and credentials](notes/week-05-authentication-and-credentials.md) | §14.5 (pp. 479-489) | [D3](discussions/d03-authentication-policy-critique.md) |
+| 6 | Feb 15-21 | [Authorization, access control, and accountability](notes/week-06-authorisation-and-access-control.md) | §14.1-14.3 (pp. 466-475); §14.6 (pp. 489-493) | [Lab 3](assignments/lab-03-access-control-matrix.md) |
 | 7 | Feb 22-28 | [Symmetric cryptography](notes/week-07-symmetric-cryptography.md) | §10.3-10.5 (pp. 329-338) | [Lab 4](assignments/lab-04-symmetric-encryption.md) |
-| 8 | Mar 1-7 | [Public-key cryptography, hashing, and signatures](notes/week-08-public-key-cryptography.md) | §10.6-10.8 (pp. 338-347) | [Lab 5](assignments/lab-05-hashing-and-signatures.md); [Quiz 3](quizzes/quiz-03-cryptography.md) |
-| 9 | Mar 8-14 | [Review and midterm](notes/week-09-review-and-midterm.md) | No new reading | **[Midterm exam](assignments/midterm-exam-guide.md)** |
-|: | **Mar 15-19** | **SPRING BREAK: no class meetings, nothing due** |: |: |
+| 8 | Mar 1-7 | [Public-key cryptography, hashing, and signatures](notes/week-08-public-key-cryptography.md) | §10.6-10.8 (pp. 338-347) | [Lab 5](assignments/lab-05-hashing-and-signatures.md) |
+| 9 | Mar 8-14 | [Review and catch-up](notes/week-09-review-and-catch-up.md) | No new reading | Nothing due |
+|  | **Mar 15-19** | **SPRING BREAK: no class meetings, nothing due** |  |  |
 | 10 | Mar 22-28 | [Keys, certificates, PKI, and TLS](notes/week-10-keys-certificates-and-pki.md) | §18.3 (pp. 625-635); §18.5.1 (pp. 639-640) | [Lab 6](assignments/lab-06-certificates-and-tls.md) |
-| 11 | Mar 29-Apr 4 | [Network security and attacks](notes/week-11-network-security.md) | §19.1 (pp. 646-648); §19.3.2-19.3.3 (pp. 656-665); §19.4 (pp. 671-677) | [D4](discussions/d04-network-security-in-the-news.md); [Quiz 4](quizzes/quiz-04-network-security.md) |
-| 12 | Apr 5-11 | [Malware and adversarial behaviours](notes/week-12-malware-and-adversarial-behaviours.md) | §6.1-6.2 (pp. 202-207); §6.4 (pp. 214-219); §7.2 (pp. 236-242) | [Lab 7](assignments/lab-07-malware-triage.md) |
+| 11 | Mar 29-Apr 4 | [Network security and attacks](notes/week-11-network-security.md) | §19.1 (pp. 646-648); §19.3.2-19.3.3 (pp. 656-665); §19.4 (pp. 671-677) | [D4](discussions/d04-network-security-in-the-news.md) |
+| 12 | Apr 5-11 | [Malware and adversarial behaviors](notes/week-12-malware-and-adversarial-behaviours.md) | §6.1-6.2 (pp. 202-207); §6.4 (pp. 214-219); §7.2 (pp. 236-242) | [Lab 7](assignments/lab-07-malware-triage.md) |
 | 13 | Apr 12-18 | [Software security, memory safety, and assurance](notes/week-13-software-security-and-assurance.md) | §15.1.1 (pp. 500-501); §15.2 (pp. 507-512); §15.4 (pp. 516-520); §17.4 (pp. 582-585) | [Lab 8](assignments/lab-08-memory-safety-and-assurance.md) |
-| 14 | Apr 19-25 | [Web security and injection](notes/week-14-web-security-and-injection.md) | §16.2.6-16.2.8 (pp. 536-540); §16.3.1 (pp. 543-545); §16.4.1 (pp. 547-552) | [Lab 9](assignments/lab-09-sql-injection.md); [Quiz 5](quizzes/quiz-05-software-and-web.md) |
+| 14 | Apr 19-25 | [Web security and injection](notes/week-14-web-security-and-injection.md) | §16.2.6-16.2.8 (pp. 536-540); §16.3.1 (pp. 543-545); §16.4.1 (pp. 547-552) | [Lab 9](assignments/lab-09-sql-injection.md) |
 | 15 | Apr 26-30 | [Security operations, detection, and incident response](notes/week-15-security-operations-and-incident-response.md) | §8.1 (pp. 253-256); §8.3.1-8.3.3 (pp. 264-268); §8.7 (pp. 283-286) | [Lab 10](assignments/lab-10-log-analysis-and-incident-memo.md); [D5](discussions/d05-current-security-failure.md) |
-| Finals | May 3-7 | Wrap-up | No new reading | **[Final exam](assignments/final-exam-guide.md)**; [D6 reflection](discussions/d06-final-reflection.md) |
+| Finals | May 3-7 | Wrap-up | No new reading | [D6 reflection](discussions/d06-final-reflection.md) |
 
 Spring break, the last day of instruction (April 30), and finals week (May 3-7) follow the
 [registrar's academic calendar](https://www.boisestate.edu/registrar/boise-state-academic-calendars/spring-2027-academic-calendar/).
 
 ## Assessments
 
-The course is worth **1000 points**. Every graded item is completed within a single week.
+The course is worth **550 points**, and your grade is the points you earn out of 550. There are no
+quizzes and no exams. Every graded item is completed within a single week.
 
-| Assessment | Weight | Points | Description |
-| ---------- | -----: | -----: | ----------- |
-| Labs | 40% | 400 | Eleven single-sitting labs: Lab 0 (20 pts) plus Labs 1-10 (38 pts each) |
-| Quizzes | 15% | 150 | Five concept checks in Canvas (30 pts each), plus an ungraded diagnostic in week 1 |
-| Discussions and reflections | 15% | 150 | Six Canvas discussions: D1 (15 pts), D2-D5 (30 pts each), D6 reflection (15 pts) |
-| Midterm exam | 15% | 150 | Individual assessment covering weeks 1-8 |
-| Final exam | 15% | 150 | Individual assessment, emphasis on weeks 10-15 |
-| **Total** | **100%** | **1000** | |
+| Assessment | Points | Share | Description |
+| ---------- | -----: | ----: | ----------- |
+| Labs | 400 | 73% | Eleven single-sitting labs: Lab 0 (20 pts) plus Labs 1-10 (38 pts each) |
+| Discussions and reflections | 150 | 27% | Six Canvas discussions: D1 (15 pts), D2-D5 (30 pts each), D6 reflection (15 pts) |
+| **Total** | **550** | **100%** | |
 
-Labs, quizzes, discussions, and exams assess different objectives; a missed discussion cannot be
-replaced by extra lab work. Exact point values and due dates are posted in Canvas. Which objective
+Labs and discussions assess different objectives, so a missed discussion cannot be replaced by
+extra lab work. Exact point values and due dates are posted in Canvas. Which objective
 each item measures is listed in the [Objective Alignment Sheet](objectives.md).
 
 ## Grading Policy
 
-Grades will be posted in Canvas and calculated using the percentages below. **Final grades will not
-be rounded.** Extra Credit opportunities are available throughout the semester to help improve your
-final grade.
+Grades will be posted in Canvas, and your final percentage maps to a letter grade using the table
+below. **Final grades will not be rounded.** Extra Credit opportunities are available throughout the
+semester to help improve your final grade.
 
 | Letter Grade | Percentage   |
 | ------------ | ------------ |
@@ -198,8 +194,8 @@ final grade.
 ## Extra Credit Opportunities
 
 Standing extra credit is always available to help students on a grading boundary. Extra credit
-earned over the semester cannot exceed **2.5% of total points offered**. This course offers 1000
-points, so the extra credit maximum is **25 points**.
+earned over the semester cannot exceed **2.5% of total points offered**. This course offers 550
+points, so the extra credit maximum is **13.75 points**.
 
 ## Homework Policy
 
@@ -233,13 +229,6 @@ must end at some point, so plan accordingly. Work submitted 1 second late is tre
 work submitted 1 day late. You can find the last day of course instruction on the
 [registrar's academic calendar](https://www.boisestate.edu/registrar/boise-state-academic-calendars/).
 
-## Exam and Quiz Policy
-
-All exams and quizzes must be completed within the time frame specified in Canvas unless prior
-arrangements have been made. Extensions are granted on a case-by-case basis for circumstances
-outside the student's control. Some assessments may require the testing center: it is the
-student's responsibility to schedule their own appointment in a timely manner.
-
 ## Class Interaction Policy
 
 Class interaction assignments must be completed within the time frame specified in
@@ -254,7 +243,6 @@ This applies to (but is not limited to):
 - Group meetings (virtual or in person)
 - Status updates
 - Asynchronous activities
-- Online quizzes and exams
 
 ## Communication Policy
 

@@ -1,9 +1,9 @@
 # Incident report: NORTHWIND MEADOW
 
-*Internal post-incident write-up. You analyse this in
+*Internal post-incident write-up. You analyze this in
 [Lab 7](../assignments/lab-07-malware-triage.md).*
 
-**Organisation:** Cascade Regional Health, a 900-employee hospital network
+**Organization:** Cascade Regional Health, a 900-employee hospital network
 **Prepared by:** Security operations, day 31
 **Classification:** Internal, teaching copy, all names and addresses changed
 **Status:** Contained. Eradication complete. This report is the written record.
@@ -20,7 +20,7 @@ At 09:14 a billing coordinator in Accounts Receivable received an email appearin
 medical-supply vendor the department uses. The message referred to an outstanding invoice by a
 plausible number and attached a file named `Invoice_44192_Cascade.xlsm`. The sender address was
 `ar@cascade-medsupply[.]com`, a domain registered eleven days earlier and not previously seen in
-the organisation's mail logs.
+the organization's mail logs.
 
 Four other staff in the same department received near-identical messages within six minutes. One
 forwarded it to a colleague asking whether it was expected.

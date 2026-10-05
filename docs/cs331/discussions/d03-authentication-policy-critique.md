@@ -32,7 +32,7 @@
 
 ## Find a real policy
 
-Find the **actual, published password and authentication policy** of a real organisation. Options,
+Find the **actual, published password and authentication policy** of a real organization. Options,
 easiest first:
 
 - **Boise State's own**: the password requirements shown when you change your BroncoID password,
@@ -53,11 +53,11 @@ record what the interface enforced: that absence is itself a finding.
 
 **Due: Thursday of week 5. About 400-500 words.**
 
-Four labelled parts.
+Four labeled parts.
 
 ### 1. The policy, as it is
 
-State the organisation (or "a regional bank" if you would rather not name it) and list its rules.
+State the organization (or "a regional bank" if you would rather not name it) and list its rules.
 A table is fine.
 
 ### 2. Against NIST SP 800-63B-4
@@ -85,11 +85,11 @@ sentences. Be precise: this is the distinction the rubric is looking for.
 
 ### 4. Factors for a threat model
 
-Pick **one** specific threat this organisation plausibly faces. Name it concretely: credential
+Pick **one** specific threat this organization plausibly faces. Name it concretely: credential
 stuffing with passwords from other breaches; targeted phishing of a finance employee; a stolen
 unlocked phone; an insider who already has network access.
 
-Then recommend **which authentication factors** this organisation should require, and justify it
+Then recommend **which authentication factors** this organization should require, and justify it
 *against that threat*, not in general. Say explicitly:
 
 - Which factor types (knowledge, possession, inherence) and which specific mechanism.
@@ -104,12 +104,12 @@ against it.
 
 **Due: Sunday of week 5. Two replies, about 150 words each.**
 
-Reply to **two** classmates who evaluated a **different organisation** than you. Do one of these:
+Reply to **two** classmates who evaluated a **different organization** than you. Do one of these:
 
 - **Challenge a NIST reading.** If you think they scored a rule wrong, say which and cite §3.
 - **Attack the recommendation.** Take their part 4 and describe a realistic attack that gets
   through it anyway. Then say whether that makes the recommendation wrong or just incomplete.
-- **Price it.** If their recommendation would cost the organisation more than they said, say what
+- **Price it.** If their recommendation would cost the organization more than they said, say what
   they left out, help desk calls for lost tokens, users locked out, staff without smartphones.
 
 ## Rubric
@@ -117,7 +117,7 @@ Reply to **two** classmates who evaluated a **different organisation** than you.
 | Row | What is assessed | Points |
 | --- | --- | ---: |
 | 1 | Initial post: a real policy quoted with its actual rules; every rule evaluated against SP 800-63B-4 §3 with a citation and a verdict count; the two demo numbers quoted from the student's own run and correctly interpreted; a specific threat named with factors recommended against it, a stated cost, and a stated limitation | 18 |
-| 2 | Two substantive replies to classmates who evaluated different organisations, each challenging a reading, attacking a recommendation, or pricing it | 12 |
+| 2 | Two substantive replies to classmates who evaluated different organizations, each challenging a reading, attacking a recommendation, or pricing it | 12 |
 | | **Total** | **30** |
 
 **What row 1 is looking for in part 3:** slow hashing does not make a weak password strong and does

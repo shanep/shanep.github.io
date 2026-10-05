@@ -6,7 +6,7 @@
 
 Take a written description of a real-shaped system and turn it into a threat model: a diagram with
 trust boundaries, a table of threats found systematically rather than by inspiration, and a
-judgement about which of them matter most.
+judgment about which of them matter most.
 
 This is the single most transferable skill in the course. It is also the one that most rewards
 being methodical rather than clever.
@@ -47,7 +47,7 @@ being systematic instead of by happening to think of them.
 | **R** | Repudiation: denying having done something, with no evidence to contradict | Non-repudiation |
 | **I** | Information disclosure: exposing data to someone not entitled to it | Confidentiality |
 | **D** | Denial of service: making the system unavailable | Availability |
-| **E** | Elevation of privilege: gaining capabilities you were not granted | Authorisation |
+| **E** | Elevation of privilege: gaining capabilities you were not granted | Authorization |
 
 ## Steps
 
@@ -57,8 +57,8 @@ Draw SnapVault as a data flow diagram. You need four kinds of thing:
 
 - **External entities** (the people and outside systems): rectangles
 - **Processes** (things that do work): circles or rounded boxes
-- **Data stores** (things that hold data): two parallel lines, or a labelled cylinder
-- **Data flows** (who sends what to whom): arrows, labelled with what flows
+- **Data stores** (things that hold data): two parallel lines, or a labeled cylinder
+- **Data flows** (who sends what to whom): arrows, labeled with what flows
 
 Then draw **trust boundaries** as dashed lines cutting across the flows. A trust boundary goes
 wherever data crosses from something you control to something you do not, or from one level of
@@ -85,7 +85,7 @@ least two of each). Columns:
 
 That last column is the one that matters most. Every threat you list must trace to something
 actually stated in the [SnapVault system description](../data/photoshare-system.md). If you cannot point at the
-sentence, you are guessing, and guesses are what threat modelling exists to replace.
+sentence, you are guessing, and guesses are what threat modeling exists to replace.
 
 Some places worth looking hard at, though this is not a complete list and you should find others:
 the object storage bucket's read permissions, the 90-day session tokens, the shared admin login,

@@ -10,8 +10,8 @@ an over-long input reaches somewhere it should not.
 
 The second half is the question that matters more. Suppose somebody tells you the bug is fixed, 
 what would convince you? That is **assurance**, and it is the only terminal objective in this course
-without a week of its own. It gets the second half of this one, and it is worth as much on the final
-exam as the buffer overflow is.
+without a week of its own. It gets the second half of this one, and Lab 8's largest rubric row is
+about it.
 
 **You will not run this program and you will not attack anything.** You read source and you read
 assembly, in a browser.

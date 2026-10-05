@@ -15,8 +15,8 @@ What to do this week, and when it is due, is on the [Module 3 Overview](week-03-
 
 Two sections are worth knowing exist even though they are not assigned: **§3.5** (crimes against
 information systems, printed page 81) is where the offences are set out, and **§3.4** (data
-protection, printed page 73) is where obligations about personal data live. Quiz 1 and D2 both
-reference them; skim if you have time.
+protection, printed page 73) is where obligations about personal data live. D2 references them,
+so skim them if you have time.
 
 ## Worked example
 
@@ -29,10 +29,10 @@ You find that a company's website returns different error messages for "no such 
 rated low severity.
 
 **Legally**, the question is not "is this a vulnerability" but "what did you do to find it, and
-were you authorised?" Noticing it while using the site normally is one thing. Writing a script that
+were you authorized?" Noticing it while using the site normally is one thing. Writing a script that
 submits ten thousand email addresses is a different thing, and in many jurisdictions it is on the
-wrong side of a line about unauthorised access or exceeding authorised access. CyBOK §3.5 sets out
-the offence categories; §3.1.3 explains why the same act can produce both criminal and civil
+wrong side of a line about unauthorized access or exceeding authorized access. CyBOK §3.5 sets out
+the offense categories; §3.1.3 explains why the same act can produce both criminal and civil
 liability, in different courts, under different standards of proof.
 
 **Ethically**, the question is what you owe to three different parties who want different things:
@@ -86,7 +86,7 @@ have a clean answer.
 | --- | --- |
 | **Jurisdiction** | Whose law applies, and who can enforce it. More than one state's law can apply at once. |
 | **Criminal vs. civil liability** | One act can produce both, in different courts, with different standards of proof. |
-| **Personal data** | Data relating to an identifiable person. Obligations can follow the data subject, not the organisation's location. |
+| **Personal data** | Data relating to an identifiable person. Obligations can follow the data subject, not the organization's location. |
 | **Coordinated disclosure** | Report to the vendor, allow a window to fix, then publish. |
 | **Full disclosure** | Publish immediately. |
 | **Privacy as confidentiality** | The data is not disclosed. |
@@ -95,7 +95,7 @@ have a clean answer.
 
 ## Looking ahead
 
-Week 4 is the first modelling week: you take a written description of a system and turn it into a
+Week 4 is the first modeling week: you take a written description of a system and turn it into a
 threat model. It is the single most transferable skill in the course, and Lab 2 is where the
 semester starts asking you to produce structured work rather than prose.
 

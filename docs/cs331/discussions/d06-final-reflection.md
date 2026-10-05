@@ -1,4 +1,4 @@
-# 16.02 D6: Final Reflection
+# 16.01 D6: Final Reflection
 
 **Finals week · 15 points · about 45 minutes · Canvas discussion board**
 
@@ -59,7 +59,7 @@ rather have it than an invented one.
 ### 3. The hardest part, and why
 
 Name the week, the lab, or the concept that was hardest, and diagnose it. Was it the reading, the
-tool, the maths, the writing, the time, or the fact that it built on something you had not
+tool, the math, the writing, the time, or the fact that it built on something you had not
 understood two weeks earlier? Be specific enough that I could act on it.
 
 ### 4. What you would tell the next section

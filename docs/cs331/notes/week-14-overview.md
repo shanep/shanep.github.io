@@ -24,16 +24,12 @@ By the end of this week, the successful student will be able to:
 - **[5.5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)**: 
   Recommend a prevention-first countermeasure for a class of vulnerability.
 
-Quiz 5 also assesses **4.4**, **6.1**, and **6.4** from week 13.
-
 ## Assignments and Tasks
 
 ### Due by Sunday at 11:59 p.m. Mountain Time
 
 - Read [14.01 Readings and Lecture Notes](week-14-web-security-and-injection.md) and run `sqli_demo.py` (2 hrs 55 min)
 - [14.02 Lab 9: SQL Injection](../assignments/lab-09-sql-injection.md) (1 hr 30 min, 38 points)
-- [14.03 Quiz 5: Software and Web Security](../quizzes/quiz-05-software-and-web.md), covers weeks 13-14
-  (15 min, 30 points)
 
 **Everything in Lab 9 runs against a database inside one Python process on your own machine.**
 Attacking a web application you do not have written permission to test is a crime and a violation of
@@ -46,8 +42,7 @@ the Student Code of Conduct. There is no exercise in this course that requires i
 | Reading (14 pages plus OWASP) | 2 hrs 10 min |
 | The notes page and running `sqli_demo.py` | 45 min |
 | Lab 9 | 1 hr 30 min |
-| Quiz 5 | 15 min |
 | Review and slack | 2 hrs 15 min |
-| **Total** | **~7 hrs** |
+| **Total** | **~6.5-7 hrs** |
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

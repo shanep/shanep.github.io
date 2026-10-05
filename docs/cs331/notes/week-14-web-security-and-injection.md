@@ -12,7 +12,7 @@ What to do this week, and when it is due, is on the [Module 14 Overview](week-14
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §16.3.1 Phishing and Clickjacking | 543-545 | 3 pp | 20 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §16.4.1 Injection Vulnerabilities: SQLi, command injection, LFI, XSS, CSRF | 547-552 | 6 pp | 45 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §15.1.2 Structured Output Generation Vulnerabilities *(revisit from week 13)* | 501-503 | 2 pp | 15 min |
-| OWASP Top 10 | A01 Broken Access Control, A03 Injection, A07 Identification and Authentication Failures |: | skim | 25 min |
+| OWASP Top 10 | A01 Broken Access Control, A03 Injection, A07 Identification and Authentication Failures | none | skim | 25 min |
 
 OWASP Top 10: <https://owasp.org/www-project-top-ten/>. Read the three named entries; they are
 short and each links real CWEs and example scenarios.
@@ -128,7 +128,7 @@ A common instinct: strip `'`, `-`, and `;` from all input.
 
 ### 6. The class, not the bug
 
-§15.1.2 groups these together, and the fix generalises:
+§15.1.2 groups these together, and the fix generalizes:
 
 | Vulnerability | The structure being built | The parameterized equivalent |
 | --- | --- | --- |
@@ -154,7 +154,7 @@ display name says the bank; the sending domain does not. The link text says one 
 another. `paypa1.example` and `paypal.example` differ by one glyph.
 
 The defences run down the same ladder. Prevention: phishing-resistant authenticators from week 5, 
-a FIDO2 key checks the origin itself, so the person's judgement is taken out of the loop.
+a FIDO2 key checks the origin itself, so the person's judgment is taken out of the loop.
 Detection: mail filtering, and a reporting process people actually use. Mitigation: limiting what a
 compromised account can reach, which is week 6's least privilege.
 
@@ -171,7 +171,7 @@ compromised account can reach, which is week 6's least privilege.
 | **Same-origin policy** | The browser's rule that content from one origin cannot read another's. |
 | **Clickjacking** | Overlaying invisible UI so a click lands somewhere the user did not intend. |
 | **Phishing** | Deceiving a person into giving up credentials or running something. |
-| **Defence in depth** | Layered controls, so one failure is not total. |
+| **Defense in depth** | Layered controls, so one failure is not total. |
 
 ## Looking ahead
 

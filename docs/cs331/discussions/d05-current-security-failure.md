@@ -22,13 +22,13 @@
 - NIST SP 800-61r3, which maps incident response onto the CSF 2.0 functions:
   <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf>
 - You will have written a memo in [Lab 10](../assignments/lab-10-log-analysis-and-incident-memo.md)
-  this week. This discussion applies the same structure to a real organisation, and you may reuse
+  this week. This discussion applies the same structure to a real organization, and you may reuse
   what you learned there.
 
 ## Find an incident
 
 Find **one** publicly reported security incident from the **last twelve months** where enough has
-been disclosed to say something about how the organisation *responded*, not only about what
+been disclosed to say something about how the organization *responded*, not only about what
 happened to them.
 
 Signals that there is enough material: a published post-incident report, regulatory filings, a
@@ -43,7 +43,7 @@ whole course. Pick something you find genuinely interesting.
 
 **Due: Thursday of week 15. About 450-550 words.**
 
-Four labelled parts.
+Four labeled parts.
 
 ### 1. The timeline
 
@@ -61,9 +61,9 @@ If reporting does not give them, say so and say what would establish them.
 
 **What detected it, and was that detection internal or external?**
 
-A substantial fraction of breaches are discovered by somebody outside the organisation, a
+A substantial fraction of breaches are discovered by somebody outside the organization, a
 customer, a researcher, a payment processor, a ransom note. If this one was found externally, say
-what that tells you about the organisation's monitoring, using CyBOK §8.2 on data sources.
+what that tells you about the organization's monitoring, using CyBOK §8.2 on data sources.
 
 If it was found internally, say **which data source** did it, and whether the alert was acted on
 promptly. If there was a missed earlier signal (as there was in the
@@ -73,7 +73,7 @@ promptly. If there was a missed earlier signal (as there was in the
 
 Take the response as reported and lay it against the four-phase life cycle from CyBOK §8.7 and
 NIST SP 800-61r2. For **each** phase, say what the
-organisation did, what it appears to have got right, and what it got wrong or you cannot tell:
+organization did, what it appears to have got right, and what it got wrong or you cannot tell:
 
 - **Preparation**: what was in place beforehand? Backups, a plan, a retainer, logging?
 - **Detection and analysis**: covered in part 2; add anything about how they scoped it.
@@ -82,7 +82,7 @@ organisation did, what it appears to have got right, and what it got wrong or yo
 - **Post-incident activity**: what did they change afterwards, and did they say so publicly?
 
 Be fair. Incident response is done under time pressure with incomplete information by people who
-have not slept. Criticise decisions, not the fact that decisions had to be made quickly.
+have not slept. Criticize decisions, not the fact that decisions had to be made quickly.
 
 ### 4. Two changes
 
@@ -91,10 +91,10 @@ Name **two specific changes** that would have most improved the outcome, and for
 - Which **phase** it belongs to.
 - What it would have changed about the **timeline** in part 1, be concrete about which interval
   gets shorter.
-- What it **costs**, and whether an organisation of this size would realistically have had it.
+- What it **costs**, and whether an organization of this size would realistically have had it.
 
 At least one of your two must be about **preparation**, because preparation is the phase that
-decides how the other three go, and it is the phase organisations skip.
+decides how the other three go, and it is the phase organizations skip.
 
 ## Reply Post Directions
 
@@ -102,19 +102,19 @@ decides how the other three go, and it is the phase organisations skip.
 
 Reply to **two** classmates who chose different incidents. Do one of these:
 
-- **Question a judgement.** If you think they were too harsh or too generous about a decision made
+- **Question a judgment.** If you think they were too harsh or too generous about a decision made
   under pressure, say so and make the case from what the responders knew at the time.
 - **Test a recommendation against the timeline.** Would their change actually have shortened the
   interval they claim? Work it through.
 - **Connect two incidents.** If their incident and yours share a root cause or a failure mode, name
-  it and say what that suggests about the class of problem rather than the individual organisation.
+  it and say what that suggests about the class of problem rather than the individual organization.
 
 ## Rubric
 
 | Row | What is assessed | Points |
 | --- | --- | ---: |
 | 1 | Initial post: timeline with dwell time and containment time or a stated evidence gap; how it was detected and what that implies about monitoring; all four life cycle phases assessed with what is known separated from what is not; two changes, at least one about preparation, each tied to a specific interval in the timeline and each with a stated cost | 18 |
-| 2 | Two substantive replies to classmates with different incidents, each questioning a judgement, testing a recommendation against the timeline, or identifying a shared root cause | 12 |
+| 2 | Two substantive replies to classmates with different incidents, each questioning a judgment, testing a recommendation against the timeline, or identifying a shared root cause | 12 |
 | | **Total** | **30** |
 
 **What loses points in row 1:** treating "they should have had better security" as a change,
@@ -124,8 +124,8 @@ not distinguish what responders knew at the time from what came out later.
 ## Discussion Guidelines
 
 The [discussion guidelines from D1](d01-introductions-and-security-mindset.md#discussion-guidelines)
-apply. In particular: analyse published reporting only, and do not name or blame individual
-employees of the organisation, even where reporting does.
+apply. In particular: analyze published reporting only, and do not name or blame individual
+employees of the organization, even where reporting does.
 
 ## AI disclosure
 

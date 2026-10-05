@@ -11,7 +11,7 @@ What to do this week, and when it is due, is on the [Module 7 Overview](week-07-
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §10.3 Information-theoretically Secure Constructions: one-time pad, secret sharing | 329-331 | 2 pp | 15 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §10.4 Symmetric Primitives: block ciphers, stream ciphers, hash functions | 331-334 | 3 pp | 25 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §10.5 Symmetric Encryption and Authentication, modes, MACs, KDFs | 334-338 | 4 pp | 35 min |
-| Nakov, *Practical Cryptography for Developers* | AES and cipher block modes |: | skim | 25 min |
+| Nakov, *Practical Cryptography for Developers* | AES and cipher block modes | none | skim | 25 min |
 
 Nakov: <https://cryptobook.nakov.com/symmetric-key-ciphers>. It is written for developers and has
 worked examples where CyBOK has definitions. Use it when CyBOK's treatment is too compressed.
@@ -44,9 +44,9 @@ Distinct 16-byte blocks after CTR:        12,288
 ```
 
 12,288 blocks in the image; only 34 of them are distinct, because the picture is mostly large areas
-of one colour. After ECB there are still exactly 34 distinct blocks, **identical input blocks
-produced identical output blocks**, so every repeated patch of colour is still a repeated patch of
-colour, just a different colour. Open `cs331_ecb.bmp` and you can still see the picture.
+of one color. After ECB there are still exactly 34 distinct blocks, **identical input blocks
+produced identical output blocks**, so every repeated patch of color is still a repeated patch of
+color, just a different color. Open `cs331_ecb.bmp` and you can still see the picture.
 
 Open `cs331_ctr.bmp` and you cannot. CTR generates a keystream that never repeats within a message
 and XORs it in, so identical plaintext blocks land on different keystream and produce different
@@ -106,7 +106,7 @@ Keep the properties separate:
 | AES-GCM | yes | yes | yes |
 
 \* A hash detects *accidental* corruption, and detects tampering only if you obtained the digest
-through a channel the attacker cannot alter. On the same web page as the file, it detects nothing, 
+through a channel the attacker cannot alter. On the same web page as the file, it detects nothing, because
 the attacker changes both.
 
 ### 3. Never reuse a nonce
@@ -165,6 +165,5 @@ a counter it did not persist.
 
 Week 8 is the other half of cryptography: key pairs, hashing, and signatures, and the question
 symmetric cryptography cannot answer, which is how two people who have never met agree on a key.
-Quiz 3 covers both weeks.
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

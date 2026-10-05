@@ -32,7 +32,7 @@ You walk it against each part of your diagram.
 | **R** | Repudiation | Non-repudiation | Can somebody deny doing this, with no evidence to contradict them? |
 | **I** | Information disclosure | Confidentiality | Can data reach somebody not entitled to it? |
 | **D** | Denial of service | Availability | Can this be made unavailable? |
-| **E** | Elevation of privilege | Authorisation | Can somebody gain capabilities they were not granted? |
+| **E** | Elevation of privilege | Authorization | Can somebody gain capabilities they were not granted? |
 
 The value of a checklist is that it finds the threats you would not have thought of. Most of the 36
 combinations of six categories against six components produce nothing, and working through the
@@ -57,7 +57,7 @@ knows or guesses its URL."*
 | **E** | The key is stored in a file on the worker's VM; anyone who reaches that VM gains the API's own storage privileges. | *"a long-lived access key stored in a file on its VM"* |
 
 Six categories, six threats, every one traced to a sentence. That last column is what separates
-threat modelling from guessing, and it is what Lab 2 weights most heavily.
+threat modeling from guessing, and it is what Lab 2 weights most heavily.
 
 Notice what the walk revealed: **the single most serious problem here is not the public bucket, it
 is the shared key.** The public read setting was the thing the description drew attention to, but
@@ -100,7 +100,7 @@ somebody who disagrees can point at the sentence they disagree with.
 ## Looking ahead
 
 Weeks 5 and 6 are the two halves of access control. Week 5 is authentication, proving who you are.
-Week 6 is authorisation, deciding what you may then do. They are different problems and systems
+Week 6 is authorization, deciding what you may then do. They are different problems and systems
 routinely confuse them.
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

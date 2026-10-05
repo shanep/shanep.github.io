@@ -1,4 +1,4 @@
-# 0.04 D1: Introductions and the Security Mindset
+# 0.03 D1: Introductions and the Security Mindset
 
 **Week 1 · 15 points · about 45 minutes · Canvas discussion board**
 
@@ -47,14 +47,14 @@ Pick **one security failure** and write about it. It can be:
 Do not pick the most famous breach you can think of. Pick one you can say something specific about.
 
 Then, using the definitions from CyBOK §1.3 and the Glossary, write **four short paragraphs**, one
-each, clearly labelled:
+each, clearly labeled:
 
 1. **The vulnerability.** What weakness made this possible? A weakness is a property of the system,
    not a person and not an event.
 2. **The threat.** Who or what had the potential to exploit it, and what did they want?
 3. **The attack.** What actually happened, the sequence of events.
 4. **The risk.** Before this happened, how likely was it and how bad would it be? Would a reasonable
-   person have prioritised fixing it, and what else would have been competing for the same money?
+   person have prioritized fixing it, and what else would have been competing for the same money?
 
 If you are not sure whether something is a vulnerability or a threat, **say so in your post and
 explain your uncertainty.** That is a better post than a confident wrong answer, and it is more
@@ -66,12 +66,12 @@ useful to the class.
 
 Reply to **one** classmate whose incident is different from yours. Do one of these:
 
-- **Push on a category.** If you think something they labelled a threat is really a vulnerability,
+- **Push on a category.** If you think something they labeled a threat is really a vulnerability,
   say so and explain why. Be specific and be kind; everybody is doing this for the first time.
 - **Add the goal.** Which of confidentiality, integrity, and availability did their incident break?
   Say which and why.
-- **Question the risk paragraph.** Would you have prioritised fixing this beforehand? What would you
-  have deprioritised to pay for it?
+- **Question the risk paragraph.** Would you have prioritized fixing this beforehand? What would you
+  have deprioritized to pay for it?
 
 "Great post, I agree" is not a reply and earns nothing.
 
@@ -79,7 +79,7 @@ Reply to **one** classmate whose incident is different from yours. Do one of the
 
 | Row | What is assessed | Points |
 | --- | --- | ---: |
-| 1 | Initial post: introduction present; a specific incident described; all four terms (vulnerability, threat, attack, risk) used in separate labelled paragraphs and used correctly, or with the uncertainty named | 10 |
+| 1 | Initial post: introduction present; a specific incident described; all four terms (vulnerability, threat, attack, risk) used in separate labeled paragraphs and used correctly, or with the uncertainty named | 10 |
 | 2 | One substantive reply to a classmate that does one of the three things above | 5 |
 | | **Total** | **15** |
 

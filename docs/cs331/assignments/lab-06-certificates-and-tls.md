@@ -96,7 +96,7 @@ contents. One of them is not.
    in yours and say how you found out. (Firefox: *Settings → Privacy & Security → View
    Certificates → Authorities*. macOS: Keychain Access → *System Roots*. Windows: run `certmgr.msc`
    → *Trusted Root Certification Authorities*. An approximate count is fine.)
-3. **Every one of those organisations can issue a certificate for any name.** Describe what happens
+3. **Every one of those organizations can issue a certificate for any name.** Describe what happens
    if one of them is compromised or coerced into issuing a certificate for
    `www.boisestate.edu`. Who would notice, and how?
 4. **Name two mechanisms that exist because of the problem in question 3.** CyBOK §18.3.8 discusses

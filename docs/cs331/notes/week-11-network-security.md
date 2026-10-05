@@ -14,12 +14,12 @@ What to do this week, and when it is due, is on the [Module 11 Overview](week-11
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §19.4 Network Security Tools | 671-677 | 6 pp | 40 min |
 
 §19.3.1 (application layer) and §19.3.4 (link layer) are not assigned, but §19.3.4.5 on network
-segmentation is referenced by Quiz 4 and is one page, worth the detour.
+segmentation is one page and worth the detour.
 
 ## Attacks by layer
 
-Attribute an attack to the layer whose protocol property it exploits. This is what Quiz 4 items 1-7
-test.
+Attribute an attack to the layer whose protocol property it exploits. This is what part 1 of D4 asks
+you to do for a real incident.
 
 | Layer | Attack | The property exploited |
 | --- | --- | --- |
@@ -40,7 +40,7 @@ Two patterns run through the whole table:
 ## Worked example
 
 Take the [NORTHWIND MEADOW incident](../data/incident-report.md) (the hospital ransomware case you
-will analyse in Lab 7 next week) and ask a purely network question about it: **where could the
+will analyze in Lab 7 next week) and ask a purely network question about it: **where could the
 network have seen this, and where could it have stopped it?**
 
 ### Where the network could have seen it
@@ -56,7 +56,7 @@ Read the report for traffic, not for malware.
   describes.
 
 - **Day 0.** The domain `api-telemetry-sync[.]com` had never been seen before in this
-  organisation's traffic. First-contact-with-a-new-domain is a weak signal on its own and a strong
+  organization's traffic. First-contact-with-a-new-domain is a weak signal on its own and a strong
   one in combination with periodicity.
 
 - **Days 4-6.** Roughly 74 GB leaves in ~400 MB chunks, between 01:00 and 04:00, to that same host.
@@ -71,13 +71,13 @@ Read the report for traffic, not for malware.
   (the phishing email still lands), but it would have made every subsequent step require crossing a
   boundary that could deny it or log it.
 
-- **Egress filtering.** The organisation allowed arbitrary outbound HTTPS from a billing
+- **Egress filtering.** The organization allowed arbitrary outbound HTTPS from a billing
   workstation to any host on the internet. Restricting outbound connections from workstation
   networks to a proxy, and alerting on volume, converts the exfiltration from invisible into an
   obvious event.
 
 Notice that **neither of these is a detection product.** They are architecture decisions. §19.4 is
-consistent about this: for most organisations, attack surface reduction and segmentation buy more
+consistent about this: for most organizations, attack surface reduction and segmentation buy more
 than an additional sensor.
 
 ### The honest limit
@@ -85,9 +85,9 @@ than an additional sensor.
 Now be honest about the cost, which is what Discussion 4 grades.
 
 Segmentation is expensive. It means knowing which systems need to talk to which, which most
-organisations do not, and it breaks things when you get it wrong. Egress filtering generates help
+organizations do not, and it breaks things when you get it wrong. Egress filtering generates help
 desk tickets from the day it is turned on. A beaconing detector needs somebody to read its output,
-and the incident report already tells you what this organisation's alert queue looked like: 400
+and the incident report already tells you what this organization's alert queue looked like: 400
 medium alerts a day, and a correct alert about this very compromise sitting unread in it since
 09:26 on Day 0.
 
@@ -108,7 +108,7 @@ is why Discussion 4 requires you to say who would have seen your alert.
 | **Segmentation** | Dividing a network so a compromise in one zone does not reach all others. |
 | **IDS / IPS** | Detection alerts; prevention sits in-path and blocks, and can cause outages. |
 | **Network security monitoring** | Using traffic metadata (who, when, how much) rather than content. |
-| **Zero trust** | Network location is not a credential; authorise every request on its merits. |
+| **Zero trust** | Network location is not a credential; authorize every request on its merits. |
 | **Egress filtering** | Controlling what may leave, not only what may enter. |
 
 ## Looking ahead

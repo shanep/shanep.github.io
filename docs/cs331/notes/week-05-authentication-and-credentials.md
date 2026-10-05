@@ -9,10 +9,10 @@ What to do this week, and when it is due, is on the [Module 5 Overview](week-05-
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §14.5.1 Identity Management | 479-480 | 1 p | 10 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §14.5.2 User Authentication: passwords, biometrics, tokens, behavioural, 2FA | 480-484 | 4 pp | 35 min |
+| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §14.5.2 User Authentication: passwords, biometrics, tokens, behavioral, 2FA | 480-484 | 4 pp | 35 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §14.5.3 Authentication in Distributed Systems, Kerberos, SAML, OAuth2/OIDC | 484-487 | 3 pp | 25 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §14.5.4 Facets of Authentication | 487-489 | 2 pp | 15 min |
-| NIST SP 800-63B-4 | §3, Authentication and Authenticator Management |: | skim | 30 min |
+| NIST SP 800-63B-4 | §3, Authentication and Authenticator Management | none | skim | 30 min |
 
 NIST SP 800-63B-4 (July 2025):
 <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf>. It is long. Read §3
@@ -33,8 +33,8 @@ factor twice.
 **Not all second factors are equal against phishing.** A code (from SMS or an authenticator
 app) can be relayed: the phishing site asks for it and replays it to the real site within the thirty
 seconds it is valid. A FIDO2 security key or passkey cannot be relayed, because the authenticator
-checks the site's origin itself and will not respond to the lookalike domain. This distinction is on
-Quiz 2 and it is the single most useful practical fact in this week.
+checks the site's origin itself and will not respond to the lookalike domain. This distinction is the
+single most useful practical fact in this week.
 
 ## Worked example
 
@@ -87,7 +87,7 @@ The salt buys **nothing** against guessing an individual password. Guessing `let
 both accounts. It costs the attacker two runs instead of one.
 
 Salts are not secret and do not need to be. They are stored in plain text alongside the hash. Their
-job is to make the attacker's work scale with the number of accounts rather than being amortised
+job is to make the attacker's work scale with the number of accounts rather than being amortized
 across all of them.
 
 ### Reading a policy against NIST
@@ -115,7 +115,7 @@ a count.
 | --- | --- |
 | **Identification** | Claiming an identity. |
 | **Authentication** | Providing evidence for the claim. |
-| **Authorisation** | Deciding what the authenticated identity may do. Week 6. |
+| **Authorization** | Deciding what the authenticated identity may do. Week 6. |
 | **Authentication factor** | Knowledge, possession, or inherence. |
 | **Multi-factor authentication** | Two or more factors of *different* types. |
 | **Phishing-resistant authenticator** | One that binds to the site's origin, so it cannot be relayed. FIDO2, passkeys. |
