@@ -141,14 +141,14 @@ it, the receiver's card checks it, and a frame that fails the check is dropped
 without a word to anyone. Today you do the card's job with a smaller generator.
 
 - Data `D = 11010011`
-- Generator `G = 1011`, so `r = 3`
+- Generator `G = 1011`
 
 **Predict:** how many bits long is the CRC `R`?
 
-**Run:** append `r` zeros to `D` and divide by `G` using modulo 2 arithmetic,
-where subtraction is XOR and nothing ever borrows. The remainder is `R`. Then
-check your work the way the receiver does: divide `D` followed by `R` by `G`. What
-should the remainder be?
+**Run:** `R` has `r` bits, one fewer than `G`, so here `r = 3`. Append `r` zeros
+to `D` and divide by `G` using modulo 2 arithmetic, where subtraction is XOR and
+nothing ever borrows. The remainder is `R`. Then check your work the way the
+receiver does: divide `D` followed by `R` by `G`. What should the remainder be?
 
 **Check:** flip the third bit of the 11 bits you sent and divide again. Did the
 receiver catch the error? (section 6.2.3)

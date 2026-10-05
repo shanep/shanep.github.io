@@ -37,9 +37,11 @@ extern "C"
     void enqueue(queue_t q, void *data);
 
     /**
-     * @brief Removes the first element in the queue.
+     * @brief Removes the first element in the queue. Blocks while the queue is empty, unless
+     * the queue has been shut down.
      *
      * @param q the queue
+     * @return the first element, or NULL once the queue is shut down and empty
      */
     void *dequeue(queue_t q);
 

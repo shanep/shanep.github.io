@@ -45,7 +45,8 @@ response.
 This is the default in HTTP/1.1.
 
 **Message format.** Request line, header lines, blank line, body. Learn the shape
-well enough to write one by hand, because you will in P1's sibling protocols.
+well enough to write one by hand, because you will write SMTP messages by hand in P1, and SMTP
+uses the same shape.
 
 **Cookies** restore state to a stateless protocol: a response header sets an ID, the
 browser stores it, and later requests carry it back.

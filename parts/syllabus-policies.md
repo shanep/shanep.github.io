@@ -31,7 +31,7 @@ Outside the classroom, communication will be through email, Canvas, and office h
 such as [carrier pigeon](https://www.iwm.org.uk/history/the-incredible-carrier-pigeons-of-the-first-world-war) 🐦
 are not supported.
 
-If you do not receive a reply within 48 hours, verify you are emailing from BroncoMail and send a
+If you do not receive a reply within two business days, verify you are emailing from BroncoMail and send a
 follow-up. You can also message through Canvas if email is not going through. Please include the
 following in all emails:
 

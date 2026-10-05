@@ -6,7 +6,8 @@ By the end of the semester you should be able to answer, in detail, what happens
 when you type a URL into a browser and press enter. That question sounds like an
 interview cliché, and it is, but answering it completely requires every layer of
 the stack: DNS, DHCP, ARP, Ethernet, IP, routing, TCP, TLS, and HTTP. We spend
-fifteen weeks building up to it, and chapter 6 ends with exactly that walkthrough.
+fifteen weeks building up to it: chapter 6 ends with that walkthrough, and chapter 8 adds the
+TLS step.
 
 ## Top-down
 
