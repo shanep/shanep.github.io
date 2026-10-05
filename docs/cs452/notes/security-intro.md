@@ -23,20 +23,20 @@ An attacker who compromises the OS can:
 
 ## TPM
 
-- Trusted Platform Module — provides assurance that you are booting
+- Trusted Platform Module, provides assurance that you are booting
   the version of the operating system you intended to, protecting you
   from attacks that try to boot compromised versions of the system.
-- Not perfect — it raises the degree of difficulty but is not a
+- Not perfect, it raises the degree of difficulty but is not a
   silver bullet.
 
 ## Goals of the OS
 
-- **Confidentiality** — If some piece of information is supposed to be
+- **Confidentiality**: If some piece of information is supposed to be
   hidden from others, don't allow them to find it out.
-- **Integrity** — If some piece of information or component of a system
+- **Integrity**: If some piece of information or component of a system
   is supposed to be in a particular state, don't allow an adversary to
   change it.
-- **Availability** — If some information or service is supposed to be
+- **Availability**: If some information or service is supposed to be
   available for your own or others' use, make sure an attacker cannot
   prevent its use (denial of service).
 
@@ -55,16 +55,21 @@ execution to arbitrary code.
 ```c
 void vulnerable(char *input) {
     char buf[64];
-    strcpy(buf, input);   // no length check — overflows if input > 64 bytes
+    strcpy(buf, input);   // no length check, overflows if input is 64 bytes or more
 }
 ```
 
-If `input` is 128 bytes, `strcpy` writes past `buf`, over the saved
+Remember that `strcpy` also copies the `'\0'`, so a 64 character string
+needs 65 bytes and already overflows `buf`. If `input` is 128 bytes, `strcpy`
+writes past `buf`, over the saved
 frame pointer, and over the return address. An attacker who controls
 `input` controls where the function returns.
 
-**Fix**: Use `strncpy`, `strlcpy`, or `snprintf` with explicit size limits.
-Better: prefer `fgets` for user input. With AddressSanitizer (`-fsanitize=address`)
+**Fix**: Use `snprintf` or `strlcpy` (glibc 2.38 and later) with the size of
+the destination, both always terminate the string with `'\0'`. Do **not** treat
+`strncpy` as the fix on its own, it does not add the `'\0'` when the source is
+too long, so you must terminate the buffer yourself. For user input prefer
+`fgets`, which also takes a size. With AddressSanitizer (`-fsanitize=address`)
 the compiler instruments every access and catches overflows at runtime.
 
 ### Format String Vulnerabilities
@@ -98,20 +103,23 @@ free(buf);
 strcpy(buf, user_input);   // use-after-free: undefined behavior / exploitable
 ```
 
-AddressSanitizer detects use-after-free bugs. In production,
-memory-safe allocators like jemalloc can make exploitation harder.
+AddressSanitizer detects use-after-free bugs. In production, hardened
+allocators like [Scudo](https://llvm.org/docs/ScudoHardenedAllocator.html)
+(the default on Android) and
+[hardened_malloc](https://github.com/GrapheneOS/hardened_malloc) can make
+exploitation harder.
 
 ### Heap Overflow
 
 Writing past the end of a heap allocation overwrites the `malloc` header
 of the next block (recall the malloc header diagram). This can corrupt
-the heap free list and lead to arbitrary write primitives — exactly
+the heap free list and lead to arbitrary write primitives, which is exactly
 the kind of corruption your buddy allocator must guard against.
 
 ## Mitigations
 
 Modern systems layer multiple defenses so that a bug alone is not
-sufficient for exploitation — an attacker must defeat several
+sufficient for exploitation, an attacker must defeat several
 independent protections.
 
 ### Stack Canaries
@@ -144,7 +152,7 @@ the stack is marked non-executable.
 
 Injected code attacks are instead replaced by **return-oriented
 programming (ROP)**, which chains together existing executable code
-gadgets — which is why ASLR is still necessary even with NX.
+gadgets, which is why ASLR is still necessary even with NX.
 
 Enable with: `gcc -z noexecstack`
 
@@ -163,7 +171,7 @@ No single mitigation is sufficient. Real systems combine:
 | Mitigation     | What it stops                                  |
 |----------------|------------------------------------------------|
 | Canaries       | Stack-based return address overwrites          |
-| ASLR + PIE     | Hardcodes addresses in exploits                |
+| ASLR + PIE     | Hardcoded addresses in exploits                |
 | NX/DEP         | Injected shellcode execution                   |
 | RELRO          | GOT overwrite attacks                          |
 | AddressSanitizer | Catches bugs in development before they ship |
@@ -173,7 +181,7 @@ expensive enough that attackers move on to easier targets.
 
 ## Secure Programming Resources
 
-- [SDL (Security Development Lifecycle)](https://www.microsoft.com/en-us/securityengineering/sdl/practices) — Microsoft's process for building secure software
-- [CVE Database](https://www.cve.org/) — catalog of known vulnerabilities
-- [Zerodium](https://zerodium.com/program.html) — market for zero-day exploits (shows real-world vulnerability value)
-- [OWASP](https://owasp.org/) — practical secure coding guidance
+- [SDL (Security Development Lifecycle)](https://www.microsoft.com/en-us/securityengineering/sdl/practices) - Microsoft's process for building secure software
+- [CVE Database](https://www.cve.org/) - catalog of known vulnerabilities
+- [Zerodium](https://zerodium.com/program.html) - market for zero-day exploits (shows real-world vulnerability value)
+- [OWASP](https://owasp.org/) - practical secure coding guidance

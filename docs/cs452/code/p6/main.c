@@ -5,7 +5,13 @@
 #include <stdbool.h>
 #include <time.h>
 #include <sys/time.h> /* for gettimeofday system call */
-#include "../src/lab.h"
+#include "lab.h"
+
+// The test build compiles this file too, so rename main to keep it from
+// clashing with the main function in tests/lab-test.c
+#ifdef TEST
+#define main main_exclude
+#endif
 
 #define UNUSED(x) (void)x
 #define MAX_C 8           /* Maximum number of consumer threads */
@@ -14,7 +20,7 @@
 
 static bool delay = false;
 
-double getMilliSeconds()
+static double getMilliSeconds(void)
 {
      struct timeval now;
      gettimeofday(&now, (struct timezone *)0);

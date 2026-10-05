@@ -15,7 +15,7 @@ concurrency with a single thread.
 Instead of blocking on I/O and letting the OS schedule another thread,
 an event-driven program uses a loop that asks the kernel: "which of my
 file descriptors are ready right now?" It then handles only the ones
-that have data — no blocking, no wasted waits.
+that have data, so there is no blocking and no wasted waits.
 
 ```c
 while (1) {
@@ -26,7 +26,7 @@ while (1) {
 ```
 
 Because only one handler runs at a time, there are **no race
-conditions** and **no locks needed** — the single-threaded model gives
+conditions** and **no locks needed**. The single-threaded model gives
 you concurrency without shared-state bugs.
 
 ## select() and poll()
@@ -43,7 +43,7 @@ FD_SET(sockfd, &read_fds);
 struct timeval timeout = {5, 0};   // 5 second timeout
 int ready = select(sockfd + 1, &read_fds, NULL, NULL, &timeout);
 if (ready > 0 && FD_ISSET(sockfd, &read_fds)) {
-    // sockfd has data ready — read() will not block
+    // sockfd has data ready, read() will not block
     read(sockfd, buf, sizeof(buf));
 }
 ```
@@ -52,14 +52,14 @@ if (ready > 0 && FD_ISSET(sockfd, &read_fds)) {
 sets, avoiding `select()`'s limit of 1024 file descriptors.
 
 **Problem with both**: the kernel scans *all* registered descriptors on
-every call — O(n) work even if only one descriptor is ready. This
+every call, which is O(n) work even if only one descriptor is ready. This
 becomes a bottleneck with thousands of connections.
 
 ## epoll (Linux)
 
 `epoll` solves the scaling problem. Rather than scanning every
 descriptor each time, the kernel maintains an internal table and notifies
-you only about descriptors that changed state — O(1) per event
+you only about descriptors that changed state, which is O(1) per event
 regardless of how many descriptors are registered.
 
 ```c
@@ -85,8 +85,8 @@ connections on a single thread with modest CPU usage.
 
 ## Non-Blocking I/O
 
-For an event loop to work, every I/O call must be **non-blocking** —
-it must return immediately whether or not data is available, never
+For an event loop to work, every I/O call must be **non-blocking**,
+so it must return immediately whether or not data is available, never
 causing the thread to sleep. Set this with `fcntl()`:
 
 ```c

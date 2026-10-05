@@ -3,7 +3,7 @@
 
 // NOTE: Due to the multi-threaded nature of this project. Unit testing for this
 // project is limited. I have provided you with a command line tester in
-// the file app/main.cp. Be aware that the examples below do not test the
+// the file src/main.c. Be aware that the examples below do not test the
 // multi-threaded nature of the queue. You will need to use the command line
 // tester to test the multi-threaded nature of your queue. Passing these tests
 // does not mean your queue is correct. It just means that it can add and remove

@@ -87,6 +87,6 @@ nature and are used to inform processes of certain events happening (man
 | `SIGPIPE` | Terminate     | Broken pipe: write to pipe with no readers       |
 | `SIGCHLD` | Ignore        | Child process stopped or terminated              |
 
-`SIGKILL` and `SIGSTOP` cannot be caught, blocked, or ignored — the kernel handles them directly.
+`SIGKILL` and `SIGSTOP` cannot be caught, blocked, or ignored. The kernel handles them directly.
 
 [Full signal list](https://man7.org/linux/man-pages/man7/signal.7.html)

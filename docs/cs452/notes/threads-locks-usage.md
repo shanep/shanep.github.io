@@ -83,4 +83,5 @@ even had a name, the big kernel lock (BKL)
 ## BKL
 
 As more and more cores were added the BKL became a bottleneck and was
-eventually replaced with more fine grained locking in recent kernels.
+slowly replaced with more fine grained locking. The BKL was finally removed
+in Linux 2.6.39 (2011).

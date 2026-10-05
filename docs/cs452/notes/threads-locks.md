@@ -62,7 +62,7 @@ Lets look at just a few examples of building a lock! 🔒
 
 - The main positive of this approach is its simplicity
 - The negatives, unfortunately, are many
-  - Any calling thread to perform a privileged operation
+  - We have to trust any calling thread to perform a privileged operation (turning interrupts off)
   - Thread can die before unlocking making the system unusable.
 - Does not work on multiprocessors
 
@@ -83,7 +83,7 @@ examples!
 
 ## Test-And-Set details
 
-- Hardware instruction to test and set a variable atomicity
+- Hardware instruction to test and set a variable atomically
 - It returns the old value pointed to by the old\_ptr, and simultaneously updates said value to new
 - Other instructions are compare\_and\_swap or compare-and-exchange
 - Typically implemented in assembly language.
@@ -91,8 +91,8 @@ examples!
 ## Dekker’s and Peterson’s Algorithms
 
 Dekker’s algorithm and Peterson’s algorithm attempted to solve the
-mutual exclusion problem using only load and store instructions —
-no special hardware atomics required. They work correctly under the
+mutual exclusion problem using only load and store instructions,
+with no special hardware atomics required. They work correctly under the
 sequential consistency memory model (the model assumed when reasoning
 about code on paper).
 
@@ -100,7 +100,7 @@ about code on paper).
 reorder memory operations for performance as long as the result looks
 correct *from a single thread’s perspective*. This is called a
 **relaxed memory model**. Under a relaxed model, a store by thread A
-may not be visible to thread B in program order — it can be buffered in
+may not be visible to thread B in program order. It can be buffered in
 a store queue, reordered by the compiler, or delayed by cache coherence
 protocols. Both algorithms rely on the assumption that a store is
 immediately visible to all other threads, which modern hardware does

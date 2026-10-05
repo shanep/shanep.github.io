@@ -9,7 +9,7 @@ provides to users. A process is a running program.
 
 - Address space
 - Registers
-  - programming counter (PC)
+  - program counter (PC)
   - OR instruction pointer (IP)
 - Stack pointer
 
@@ -33,7 +33,7 @@ provides to users. A process is a running program.
 
 A process is just a struct!
 
-[Linux Process](https://docs.huihoo.com/doxygen/linux/kernel/3.7/structtask__struct.html)
+[Linux Process (`struct task_struct`)](https://elixir.bootlin.com/linux/latest/source/include/linux/sched.h)
 
 ## Libraries
 
@@ -57,8 +57,10 @@ local functions.
 
 ## Run-time dynamic linking
 
-Functions are loaded with system calls such as LoadLibrary or
-LoadLibraryEx (WIN32)
+Functions are loaded with library functions such as `LoadLibrary` or
+`LoadLibraryEx` (Win32) or `dlopen`/`dlsym` (POSIX). These are not system
+calls, they are library code that runs in user space and makes system calls
+like `openat` and `mmap` to do the work.
 
 ## Advantages of Dynamic Linking
 
@@ -120,3 +122,8 @@ Module B. One of the functions called in Module B is actually a
 forwarded function call to Module C
 
 ![forward](images/forward-dep.png)
+
+## Linux Tools
+
+See the [Libraries](libraries.md) notes for examples of `ldd`, `nm`,
+`objdump`, `LD_PRELOAD`, and `ldconfig`.

@@ -34,11 +34,11 @@ to do so.
 
     $ strace cat foo
     ...
-    open("foo", O_RDONLY|O_LARGEFILE) = 3
-    read(3, "hello\n", 4096) = 6
+    openat(AT_FDCWD, "foo", O_RDONLY) = 3
+    read(3, "hello\n", 131072) = 6
     write(1, "hello\n", 6) = 6
     hello
-    read(3, "", 4096) = 0
+    read(3, "", 131072) = 0
     close(3) = 0
 
 ## Process Sharing
@@ -82,8 +82,12 @@ the stat() or fstat() system calls.
 
     $ strace rm foo
     ...
-    unlink("foo") = 0
+    unlinkat(AT_FDCWD, "foo", 0) = 0
     ...
+
+Modern Linux uses `openat()` and `unlinkat()`, which take a directory file
+descriptor as the first argument (`AT_FDCWD` means the current directory), but
+they work the same way as `open()` and `unlink()`.
 
 Calling `unlink()` removes the directory entry (the name-to-inode mapping) and
 decrements the file’s hard link count. The underlying data blocks are only freed
@@ -93,7 +97,7 @@ when **both** conditions are true:
 2. No process has the file open (no open file descriptors)
 
 This means a process can `open()` a file, another process can `unlink()` it, and
-the first process can keep reading/writing through its descriptor — the data
+the first process can keep reading/writing through its descriptor. The data
 survives until the last descriptor is closed. Tools like `lsof` can reveal files
 that have been unlinked but are still held open, which is why "deleted" files can
 sometimes be recovered from `/proc/<pid>/fd/`.
@@ -104,7 +108,7 @@ sometimes be recovered from `/proc/<pid>/fd/`.
     called a symbolic link or sometimes a soft link.
 - This allows you to create a link or pointer to a file
 
-# Permission Bits
+## Permission Bits
 
     $ ls -l foo.txt
     -rw-r--r-- 1 remzi wheel 0 Aug 24 16:29 foo.txt
@@ -120,4 +124,4 @@ sometimes be recovered from `/proc/<pid>/fd/`.
 Linux has a single root for its directory while windows has a multi-root
 approach.
 
-    mount -t ext3 /dev/sda1 /home/users
+    mount -t ext4 /dev/sda1 /home/users

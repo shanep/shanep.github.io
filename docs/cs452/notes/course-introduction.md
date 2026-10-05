@@ -77,10 +77,10 @@ storage without having to worry about the specific medium that a machine
 may have. For example, saving data to a hard disk drive (hdd) is the
 exact same operation as saving to a solid state drive (ssd). Under the
 hood however the hardware is very different and requires different
-drivers. The operating system allows you to treat to very different
+drivers. The operating system allows you to treat two very different
 pieces of hardware in exactly the same way!
 
-## Beyond Linux, MacOS, Linux
+## Beyond Linux, macOS, and Windows
 
 A small collection of research, hobby, and production operating systems.
 Some of these are in active development some have been abandoned years
@@ -89,9 +89,12 @@ ago.
 ### Monolithic POSIX/Unix Kernel
 
 - [Biscuit](https://www.usenix.org/system/files/osdi18-cutler.pdf) - an operating system written in the Go programming language.
-- [Arrakis](https://arrakis.cs.washington.edu/) - a nano-kernel operating system.
-- [Redox](https://www.redox-os.org/) - a Unix like kernel written in the [rust](https://www.rust-lang.org/) programming language.
-- [Barrelfish](http://www.barrelfish.org/) - a research operating system built from scratch
+
+### Microkernel and Multikernel
+
+- [Redox](https://www.redox-os.org/) - a Unix like microkernel operating system written in the [rust](https://www.rust-lang.org/) programming language.
+- [Barrelfish](http://www.barrelfish.org/) - a research multikernel that runs a separate kernel on each core and treats the machine like a network of computers.
+- [Arrakis](https://arrakis.cs.washington.edu/) - a research operating system built on Barrelfish that gives applications direct access to I/O hardware and keeps the kernel out of the data path.
 
 ### Unikernel
 
@@ -103,7 +106,7 @@ ago.
 
 ### Teaching OS
 
-- [xv6](https://pdos.csail.mit.edu/6.828/2014/xv6/book-rev8.pdf) - a clone of Unix v6
+- [xv6](https://pdos.csail.mit.edu/6.1810/2026/xv6.html) - a re-implementation of Unix v6 for RISC-V, see the [xv6 book](https://mit-pdos.github.io/xv6-riscv-book/)
 - [minix3](https://www.minix3.org/) - A micro kernel written by Andrew S. Tanenbaum et al for teaching operating systems
 
 ### Written in D

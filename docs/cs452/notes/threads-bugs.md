@@ -10,7 +10,7 @@ we fix them?
 
 ## Atomicity-Violation Bugs
 
-AKA: Memory Stops
+AKA: Memory Stomps
 
     Thread 1::
     if (thd->proc_info) {
