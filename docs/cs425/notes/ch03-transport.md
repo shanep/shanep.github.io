@@ -122,8 +122,10 @@ The sender maintains a **congestion window** (`cwnd`) and sends at roughly
 - **Slow start.** Begin at 1 MSS and double `cwnd` every RTT. Exponential, despite
   the name, and it ends at the slow start threshold `ssthresh`.
 - **Congestion avoidance.** Increase `cwnd` by 1 MSS per RTT. Linear.
-- **Fast recovery.** After three duplicate ACKs, halve `cwnd`, set `ssthresh` to the
-  new value, and continue in congestion avoidance.
+- **Fast recovery.** After three duplicate ACKs, retransmit the missing segment, set
+  `ssthresh` to half of `cwnd`, and set `cwnd` to `ssthresh` + 3 MSS. Each further
+  duplicate ACK adds 1 MSS. When a new ACK arrives, set `cwnd` to `ssthresh` and
+  continue in congestion avoidance.
 - **Timeout.** Set `ssthresh` to half of `cwnd`, drop `cwnd` to 1 MSS, and re-enter
   slow start. A timeout is treated as much worse news than duplicate ACKs, because
   it is.

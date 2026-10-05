@@ -14,7 +14,7 @@ each one a network run by a single organization, and BGP is the protocol they us
 to tell each other which addresses they can reach (sections 5.3 and 5.4). Boise
 State is one of them.
 
-Today you find Boise State's AS, map the 13 routers from A4 onto the companies
+Today you find Boise State's AS, map the 12 routers from A4 onto the companies
 that own them, and look at Boise State from the outside, through the eyes of
 about 300 BGP routers around the world. Along the way you see why the path a
 packet takes has more to do with business deals than with kilometers.
@@ -83,7 +83,7 @@ one big prefix instead of all of its little subnets? So who knows about the
 Now the trace from A4 again, this time with `-z`, which asks for the AS of every
 hop:
 
-**Predict:** there are 13 routers between Onyx and Salt Lake City. How many
+**Predict:** there are 12 routers between Onyx and Salt Lake City. How many
 different ASes do they belong to?
 
 ```bash
