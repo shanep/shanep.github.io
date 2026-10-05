@@ -149,7 +149,7 @@ undergraduate to graduate, covering a broad range of CS topics. I have been the
 course coordinator for 11 of the department's courses and originated 6 courses from
 scratch. I also have extensive experience in developing and teaching asynchronous
 online courses at the undergraduate level. Over the last five-year period, I taught
-an average of 21 credits per year across 53 undergraduate and graduate courses,
+an average of 21 credits per year across 53 undergraduate and graduate course sections,
 totaling 3,409 student-credit hours. I coordinated CS481 Senior Design from 2018 to
 2021, supervising more than 75 student teams on projects sponsored by industry,
 nonprofits, and Boise State faculty.
