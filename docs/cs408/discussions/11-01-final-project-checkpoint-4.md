@@ -1,6 +1,6 @@
 # 11.01 Final Project Checkpoint 4
 
-**Week 11 · 50 points · due Fri Nov 6, 11:59 PM**
+**Week 11 · 50 points**
 
 ## Overview
 

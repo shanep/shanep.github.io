@@ -1,6 +1,6 @@
 # 02.03  CS208 Review - Practice Quiz (5 - 6 hrs)
 
-**Week 2 · 50 points · due Fri Sep 4, 11:59 PM**
+**Week 2 · 50 points**
 
 ## Overview
 

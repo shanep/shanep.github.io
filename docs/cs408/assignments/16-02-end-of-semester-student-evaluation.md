@@ -4,7 +4,7 @@ submission: online_text_entry, online_upload
 
 # 16.02 End of Semester Student Evaluation (15 min)
 
-**Week 16 · 10 points · due Fri Dec 11, 11:59 PM**
+**Week 15 · 10 points**
 
 ## Instructions
 

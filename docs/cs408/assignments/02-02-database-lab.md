@@ -5,7 +5,7 @@ grading: pass_fail
 
 # 02.02 Database Lab (4- 8 hrs)
 
-**Week 2 · 50 points · due Fri Sep 4, 11:59 PM**
+**Week 2 · 50 points**
 
 ## Introduction
 

@@ -5,7 +5,7 @@ grading: pass_fail
 
 # 05.01 Project Specification
 
-**Week 5 · 60 points · due Fri Sep 25, 11:59 PM**
+**Week 5 · 60 points**
 
 ## Overview
 

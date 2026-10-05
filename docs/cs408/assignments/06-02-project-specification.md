@@ -5,7 +5,7 @@ grading: letter_grade
 
 # 06.02 - Project Specification (Final Draft)
 
-**Week 6 · 40 points · due Wed Oct 7, 11:59 PM**
+**Week 7 · 40 points**
 
 ## Overview
 

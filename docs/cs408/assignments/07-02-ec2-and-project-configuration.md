@@ -4,7 +4,7 @@ submission: online_url
 
 # 07.02 - EC2 and Project Configuration
 
-**Week 7 · 100 points · due Sat Oct 10, 11:59 PM**
+**Week 7 · 100 points**
 
 ## Overview
 

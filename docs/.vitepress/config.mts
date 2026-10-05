@@ -424,8 +424,8 @@ function cs408(): DefaultTheme.SidebarItem[] {
       text: 'Quizzes',
       collapsed: true,
       items: [
-        { text: '01.02 Syllabus Quiz',                link: 'quizzes/quiz-01-02-syllabus-quiz' },
-        { text: '02.03 CS208 Review Practice Quiz',   link: 'quizzes/quiz-02-03-cs208-review-practice-quiz' },
+        { text: '01.02 Syllabus Quiz',                link: 'quizzes/01-02-syllabus-quiz' },
+        { text: '02.03 CS208 Review Practice Quiz',   link: 'quizzes/02-03-cs208-review-practice-quiz' },
       ]
     }
   ]

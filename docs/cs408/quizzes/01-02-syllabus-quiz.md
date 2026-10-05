@@ -1,6 +1,6 @@
 # 01.02 Syllabus Quiz (15 - 30 min)
 
-**Week 1 · 4 points · due Wed Aug 26, 11:59 PM**
+**Week 1 · 4 points**
 
 ## Overview
 Please read the syllabus that is linked in canvas and then answers the questions below!

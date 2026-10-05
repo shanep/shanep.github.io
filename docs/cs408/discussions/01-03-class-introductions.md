@@ -1,6 +1,6 @@
 # 01.03 Class Introductions (30 min - 1 hr)
 
-**Week 1 · 10 points · due Wed Aug 26, 11:59 PM**
+**Week 1 · 10 points**
 
 Over the next few weeks we're going to be working together. Peers offer us support, constructive
 criticism, tech advice, tips and tricks, and a little humor just when we need it most!

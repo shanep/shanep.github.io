@@ -1,6 +1,6 @@
 # 14.01 Final Project Checkpoint 7
 
-**Week 14 · 50 points · due Fri Dec 4, 11:59 PM**
+**Week 14 · 50 points**
 
 ## Overview
 

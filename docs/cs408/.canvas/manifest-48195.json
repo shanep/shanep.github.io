@@ -1,0 +1,282 @@
+{
+  "entries": {
+    "assignments/01-05-personalize-your-canvas-profile.md": {
+      "canvas_id": "1661414",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "01.05 Personalize Your Canvas Profile (15 min)"
+    },
+    "assignments/02-02-database-lab.md": {
+      "canvas_id": "1661415",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "02.02 Database Lab (4- 8 hrs)"
+    },
+    "assignments/04-01-mini-lab-warmup.md": {
+      "canvas_id": "1661424",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "04.01 - Mini-Lab Warmup"
+    },
+    "assignments/05-01-project-specification.md": {
+      "canvas_id": "1661420",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "05.01 Project Specification"
+    },
+    "assignments/06-02-project-specification.md": {
+      "canvas_id": "1661421",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "06.02 - Project Specification (Final Draft)"
+    },
+    "assignments/07-01-setup.md": {
+      "canvas_id": "1661418",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "07.01 - Setup"
+    },
+    "assignments/07-02-ec2-and-project-configuration.md": {
+      "canvas_id": "1661419",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "07.02 - EC2 and Project Configuration"
+    },
+    "assignments/16-02-end-of-semester-student-evaluation.md": {
+      "canvas_id": "1661422",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "16.02 End of Semester Student Evaluation (15 min)"
+    },
+    "assignments/16-03-finding-typos-bugs-and-improvements.md": {
+      "canvas_id": "1661423",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "title": "16.03 Finding Typos, Bugs, and Improvements (15 min)"
+    },
+    "discussions/01-03-class-introductions.md": {
+      "canvas_id": "1106501",
+      "extra": {
+        "assignment_id": "1661411"
+      },
+      "kind": "discussion",
+      "page_url": "",
+      "title": "01.03 Class Introductions (30 min - 1 hr)"
+    },
+    "discussions/01-04-ai-web-development-and-job-security.md": {
+      "canvas_id": "1106502",
+      "extra": {
+        "assignment_id": "1661412"
+      },
+      "kind": "discussion",
+      "page_url": "",
+      "title": "01.04 AI, Web Development, and Job Security"
+    },
+    "discussions/03-01-tech-stack-survey.md": {
+      "canvas_id": "1106498",
+      "extra": {
+        "assignment_id": "1661408"
+      },
+      "kind": "discussion",
+      "page_url": "",
+      "title": "03.01 Tech Stack Survey"
+    },
+    "discussions/06-01-project-specification-peer-review.md": {
+      "canvas_id": "1106493",
+      "extra": {
+        "assignment_id": "1661403"
+      },
+      "kind": "discussion",
+      "page_url": "",
+      "title": "6.01 Project Specification Peer Review"
+    },
+    "discussions/08-01-final-project-checkpoint-1.md": {
+      "canvas_id": "1106500",
+      "extra": {
+        "assignment_id": "1661410"
+      },
+      "kind": "discussion",
+      "page_url": "",
+      "title": "08.01 Final Project Checkpoint 1"
+    },
+    "discussions/09-01-final-project-checkpoint-2.md": {
+      "canvas_id": "1106492",
+      "extra": {
+        "assignment_id": "1661402"
+      },
+      "kind": "discussion",
+      "page_url": "",
+      "title": "09.01 Final Project Checkpoint 2"
+    },
+    "discussions/10-01-final-project-checkpoint-3.md": {
+      "canvas_id": "1106497",
+      "extra": {
+        "assignment_id": "1661407"
+      },
+      "kind": "discussion",
+      "page_url": "",
+      "title": "10.01 Final Project Checkpoint 3"
+    },
+    "discussions/11-01-final-project-checkpoint-4.md": {
+      "canvas_id": "1106496",
+      "extra": {
+        "assignment_id": "1661406"
+      },
+      "kind": "discussion",
+      "page_url": "",
+      "title": "11.01 Final Project Checkpoint 4"
+    },
+    "discussions/12-01-final-project-checkpoint-5.md": {
+      "canvas_id": "1106495",
+      "extra": {
+        "assignment_id": "1661405"
+      },
+      "kind": "discussion",
+      "page_url": "",
+      "title": "12.01 Final Project Checkpoint 5"
+    },
+    "discussions/13-01-final-project-checkpoint-6.md": {
+      "canvas_id": "1106494",
+      "extra": {
+        "assignment_id": "1661404"
+      },
+      "kind": "discussion",
+      "page_url": "",
+      "title": "13.01 Final Project Checkpoint 6"
+    },
+    "discussions/14-01-final-project-checkpoint-7.md": {
+      "canvas_id": "1177140",
+      "extra": {
+        "assignment_id": "1810113"
+      },
+      "kind": "discussion",
+      "page_url": "",
+      "title": "14.01 Final Project Checkpoint 7"
+    },
+    "discussions/16-01-project-showcase.md": {
+      "canvas_id": "1106499",
+      "extra": {
+        "assignment_id": "1661409"
+      },
+      "kind": "discussion",
+      "page_url": "",
+      "title": "16.01 Project Showcase (4 -6 hrs)"
+    },
+    "discussions/course-questions.md": {
+      "canvas_id": "1106503",
+      "extra": {
+        "assignment_id": "1661413"
+      },
+      "kind": "discussion",
+      "page_url": "",
+      "title": "Course Questions"
+    },
+    "getting-started.md": {
+      "canvas_id": "getting-started-module-overview",
+      "extra": {},
+      "kind": "page",
+      "page_url": "getting-started-module-overview",
+      "title": "Getting Started Module Overview"
+    },
+    "home.md": {
+      "canvas_id": "home-page",
+      "extra": {},
+      "kind": "page",
+      "page_url": "home-page",
+      "title": "Home Page"
+    },
+    "index.md": {
+      "canvas_id": "48195",
+      "extra": {},
+      "kind": "syllabus",
+      "page_url": "",
+      "title": "Fa26 - CS 408 - Full Stack Web Development"
+    },
+    "instructor.md": {
+      "canvas_id": "instructor-information",
+      "extra": {},
+      "kind": "page",
+      "page_url": "instructor-information",
+      "title": "Instructor Information"
+    },
+    "notes/01-01-readme-introduction.md": {
+      "canvas_id": "01-dot-01-readme-introduction",
+      "extra": {},
+      "kind": "page",
+      "page_url": "01-dot-01-readme-introduction",
+      "title": "01.01 README - Introduction"
+    },
+    "notes/01-06-ai-class-policy.md": {
+      "canvas_id": "01-dot-06-ai-class-policy",
+      "extra": {},
+      "kind": "page",
+      "page_url": "01-dot-06-ai-class-policy",
+      "title": "01.06 AI Class Policy "
+    },
+    "notes/01-06-css-layout.md": {
+      "canvas_id": "01-dot-06-css-layout-1-2-hrs",
+      "extra": {},
+      "kind": "page",
+      "page_url": "01-dot-06-css-layout-1-2-hrs",
+      "title": "01.06 CSS Layout (1 - 2 hrs) "
+    },
+    "notes/01-07-accessibility.md": {
+      "canvas_id": "01-dot-07-accessibility-2-4-hrs",
+      "extra": {},
+      "kind": "page",
+      "page_url": "01-dot-07-accessibility-2-4-hrs",
+      "title": "01.07 Accessibility (2 - 4 hrs)"
+    },
+    "notes/01-07-cs208-html.md": {
+      "canvas_id": "01-dot-07-cs208-html",
+      "extra": {},
+      "kind": "page",
+      "page_url": "01-dot-07-cs208-html",
+      "title": "01.07 CS208 HTML"
+    },
+    "notes/01-08-cs208-css-and-accessiblity.md": {
+      "canvas_id": "01-dot-08-cs208-css-and-accessiblity",
+      "extra": {},
+      "kind": "page",
+      "page_url": "01-dot-08-cs208-css-and-accessiblity",
+      "title": "01.08 CS208  CSS and Accessiblity"
+    },
+    "notes/02-01-cs208-javascript.md": {
+      "canvas_id": "02-dot-01-cs208-javascript",
+      "extra": {},
+      "kind": "page",
+      "page_url": "02-dot-01-cs208-javascript",
+      "title": "02.01 CS208 JavaScript "
+    },
+    "notes/03-00-readme.md": {
+      "canvas_id": "03-dot-00-readme",
+      "extra": {},
+      "kind": "page",
+      "page_url": "03-dot-00-readme",
+      "title": "03.00 README"
+    },
+    "notes/08-00-readme.md": {
+      "canvas_id": "08-dot-00-readme",
+      "extra": {},
+      "kind": "page",
+      "page_url": "08-dot-00-readme",
+      "title": "08.00 README"
+    },
+    "notes/final-project-checkpoint-example-post.md": {
+      "canvas_id": "final-project-checkpoint-example-post",
+      "extra": {},
+      "kind": "page",
+      "page_url": "final-project-checkpoint-example-post",
+      "title": "Final Project Checkpoint Example Post"
+    }
+  }
+}
