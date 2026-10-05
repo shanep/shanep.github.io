@@ -136,8 +136,9 @@ A TTL that runs out tells you about a router in the middle. To know you reached
 the **end**, `tracepath` sends UDP to a port nobody is listening on, and waits for
 the destination to complain with ICMP **port unreachable** (type 3, code 3).
 
-Let's send one UDP datagram to the XMission server from A4, on the same port
-`tracepath` uses, and wait for an answer. Paste this whole block into Onyx:
+Let's send one UDP datagram to the XMission server from A4, on port 33434, where
+classic `traceroute` starts its probes, and wait for an answer. Paste this whole
+block into Onyx:
 
 ```bash
 python3 - <<EOF

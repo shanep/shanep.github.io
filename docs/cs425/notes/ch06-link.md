@@ -104,7 +104,8 @@ This is the payoff for the whole course. Work through it slowly:
 1. Laptop connects. **DHCP** discover, offer, request, ACK. Encapsulated in UDP, in
    IP, in Ethernet, broadcast. The laptop now has an IP address, a default gateway,
    and a DNS server.
-2. The laptop needs the DNS server's MAC address. **ARP** query, ARP reply.
+2. The DNS server is not on the laptop's subnet, so the frame goes to the default
+   gateway, and the laptop needs the gateway's MAC address. **ARP** query, ARP reply.
 3. **DNS** query for the web server's name, sent to the local DNS server, which
    resolves it through the hierarchy.
 4. **TCP** three-way handshake with the web server, which requires routing across

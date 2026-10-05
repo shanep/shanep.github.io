@@ -187,9 +187,11 @@ curl -sv -o /dev/null https://example.com/ 2>&1 | grep -E 'Trying|Connected to|S
 * SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
 ```
 
-Encryption starts at the third line. Everything before it went in the clear. And
-the very first TLS message, the ClientHello, names the site you want so that one
-server can host many sites:
+By the third line the handshake is done and everything you send is encrypted. The
+handshake itself is only partly hidden. TLS 1.3 encrypts everything after the
+server's first reply, the ServerHello, but the very first TLS message, the
+ClientHello, goes in the clear, and it names the site you want so that one server
+can host many sites:
 
 ```bash
 openssl s_client -trace -connect example.com:443 -servername example.com </dev/null 2>/dev/null \

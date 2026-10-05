@@ -60,8 +60,8 @@ splitting a block by lengthening the prefix.
 
 ::: tip
 
-Work subnetting in binary until it stops feeling like magic. `192.168.1.0/26` gives
-four subnets of 64 addresses each, 62 of which are usable, and you should be able
+Work subnetting in binary until it stops feeling like magic. Splitting
+`192.168.1.0/24` into `/26` blocks gives four subnets of 64 addresses each, 62 of which are usable, and you should be able
 to derive that rather than recall it. [P3](../assignments/p3.md) makes you write the
 arithmetic.
 

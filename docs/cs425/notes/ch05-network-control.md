@@ -23,7 +23,7 @@ Every router knows the **entire** topology, because every router floods its link
 state to everyone. Each then runs Dijkstra locally to compute shortest paths.
 
 - Converges quickly and predictably.
-- `O(n²)` naively, `O(n log n)` with a heap.
+- `O(n²)` naively, `O((n + E) log n)` with a heap, for `n` routers and `E` links.
 - Can oscillate when link costs depend on the traffic those costs then attract.
 
 Be able to fill in the Dijkstra table by hand for a six-node graph. It is a
@@ -42,7 +42,8 @@ Each node sends its distance vector to its neighbors, recomputes when it receive
 one, and sends again if anything changed. It converges without any node ever seeing
 the whole graph.
 
-- **Good news travels fast.** A cost decrease propagates in one round.
+- **Good news travels fast.** A cost decrease spreads one neighbor at a time and
+  settles after a few exchanges.
 - **Bad news travels slowly.** A cost increase can trigger **count-to-infinity**,
   where two routers keep pointing at each other while their estimates climb.
 - **Poisoned reverse** fixes the two-node case, but not every case.
