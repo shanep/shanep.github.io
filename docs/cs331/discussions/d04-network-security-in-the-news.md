@@ -23,6 +23,8 @@
 
 - CyBOK §19.1 (printed pages 646-648), security goals and attacker models.
 - CyBOK §19.3.2-19.3.3 (printed pages 656-665), transport and internet layer security.
+- CyBOK §19.3.1 (printed pages 652-656) and §19.3.4 (printed pages 665-671), skim: application
+  and link layer security, so you can place any incident in §19.3's four layers.
 - CyBOK §19.4 (printed pages 671-677), network security tools.
 
 ## Find an incident

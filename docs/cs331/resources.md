@@ -40,7 +40,7 @@ what is not.
 | ---: | --- | ---: | --- |
 | 1 | Introduction | 1 | **Weeks 1-2**: §1.1-1.5 |
 | 2 | Risk Management and Governance | 19 | **Week 4**: §2.2-2.4, §2.6.1-2.6.2, §2.6.6 |
-| 3 | Law & Regulation | 49 | **Week 3**: §3.1, §3.13 |
+| 3 | Law & Regulation | 49 | **Week 3**: §3.1, §3.4-3.5 (skim), §3.13 |
 | 4 | Human Factors | 145 | **Week 2**: §4.3-4.4 |
 | 5 | Privacy & Online Rights | 171 | **Week 3**: §5.2-5.3 |
 | 6 | Malware & Attack Technologies | 201 | **Week 12**: §6.1-6.2, §6.4 |

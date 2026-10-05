@@ -11,8 +11,8 @@ Read it once end to end before you start diagramming.
 
 ## What it does
 
-A user creates an account, uploads photos from a phone or a browser, and marks each photo as
-**private**, **shared with named friends**, or **public**. Public photos appear on a public page at
+A user creates an account, uploads photos from a phone or a browser into albums, and marks each album
+as **private**, **shared with named friends**, or **public**. Public albums appear on a public page at
 `snapvault.example/u/<username>`. A user can also generate a **share link**: a long random URL
 that shows one album to anybody who has the link, with no login required.
 
@@ -34,8 +34,8 @@ that shows one album to anybody who has the link, with no login required.
 
 | Actor | What they can do |
 | --- | --- |
-| **Anonymous visitor** | View public photos. Open a share link if they have the URL. |
-| **Registered user** | Everything a visitor can do, plus: upload, delete, and re-classify their own photos; manage their friend list; create and revoke share links for their own albums. |
+| **Anonymous visitor** | View public albums. Open a share link if they have the URL. |
+| **Registered user** | Everything a visitor can do, plus: upload and delete their own photos, and re-classify their own albums; manage their friend list; create and revoke share links for their own albums. |
 | **Friend of a user** | View photos that user has shared with them. |
 | **Support staff** (3 people) | Through the admin console: look up any account, reset any password, view any album including private ones, and delete accounts. All three staff share one admin login. |
 | **Thumbnail worker** | Read any newly uploaded photo; write thumbnails. |
