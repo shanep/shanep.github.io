@@ -13,7 +13,7 @@ discussion board or email me now, in week 1, rather than in week 7 when a lab is
 ## Objectives assessed
 
 - **1.1**: Define confidentiality, integrity, and availability, and identify which goal a
-  described failure violates. ([TLO 1](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation))
+  described failure violates. ([TLO 1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation))
 
 ## Time estimate
 

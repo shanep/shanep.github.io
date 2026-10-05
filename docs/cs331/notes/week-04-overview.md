@@ -19,11 +19,11 @@ the model for Part C of the midterm.
 
 By the end of this week, the successful student will be able to:
 
-- **[2.1](../objectives.md#tlo-2--modeling-subjects-objects-permissions-trust-boundaries-and-threats)**:
+- **[2.1](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats)**:
   Draw a data flow diagram for a described system and mark its trust boundaries.
-- **[2.2](../objectives.md#tlo-2--modeling-subjects-objects-permissions-trust-boundaries-and-threats)**:
+- **[2.2](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats)**:
   Enumerate threats using STRIDE and record them in a threat table.
-- **[2.3](../objectives.md#tlo-2--modeling-subjects-objects-permissions-trust-boundaries-and-threats)**:
+- **[2.3](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats)**:
   Assess the likelihood and impact of identified threats using a stated risk method.
 
 ## Assignments and Tasks

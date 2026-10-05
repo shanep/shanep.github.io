@@ -17,8 +17,8 @@ Everything you need is in the provided script.
 - **4.5**: Perform and then remediate a SQL injection, and explain why parameterization defeats it.
 - **5.5**: Recommend a prevention-first countermeasure for a class of vulnerability.
 
-([TLO 4](../objectives.md#tlo-4--analyzing-common-attacks-and-justifying-countermeasures) ·
-[TLO 5](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles))
+([TLO 4](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures) ·
+[TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles))
 
 ## Time estimate
 
@@ -137,13 +137,6 @@ One Canvas submission containing:
 | 4 | Step 4: the escaping-versus-parsing distinction made correctly; two reasons filtering is worse; two other structured-output vulnerabilities with their parameterized equivalents; three defence-in-depth controls including an access control one; the §15.2 level identified with a more fundamental alternative | 8 |
 | | **Total** | **38** |
 
-**What row 4 question 1 turns on:** parameterization works because the query text and the data
-travel to the database *separately*. The database parses the command once, with placeholders where
-the values go, and then binds the values into the already-parsed structure. The input is never part
-of the text being parsed, so there is nothing for it to escape out of. An answer that says
-"parameterization escapes the quotes for you" describes a different, weaker mechanism and does not
-earn this row.
-
 ## AI disclosure
 
 You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
@@ -152,3 +145,14 @@ what for, per the [AI policy](../index.md#ai-policy).
 An AI tool will hand you a working payload for Step 3 question 2 in about a second. It will not do
 Step 3 question 1 (explaining why the *famous* payload fails against this particular query), and
 that is deliberately worth more points.
+
+## Instructor Notes
+
+Instructor note, not shown to students.
+
+**What row 4 question 1 turns on:** parameterization works because the query text and the data
+travel to the database *separately*. The database parses the command once, with placeholders where
+the values go, and then binds the values into the already-parsed structure. The input is never part
+of the text being parsed, so there is nothing for it to escape out of. An answer that says
+"parameterization escapes the quotes for you" describes a different, weaker mechanism and does not
+earn this row.

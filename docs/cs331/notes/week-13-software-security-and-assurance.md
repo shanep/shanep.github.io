@@ -56,8 +56,8 @@ the longest badge ID handled correctly is **31 characters**.
 
 ### 2. What the compiler actually did
 
-This is why Lab 8 sends you to Compiler Explorer rather than asking you to imagine it. Compiled at
-`-O0 -fno-stack-protector` for x86-64, the function begins:
+This is why Lab 8 sends you to Compiler Explorer rather than asking you to imagine it. Compiled
+with x86-64 clang at `-O0 -fno-stack-protector`, the function begins:
 
 ```
 push    rbp
@@ -98,6 +98,10 @@ The lesson generalises: **local variable ordering is a compiler decision, not a 
 decision.** Compilers reorder locals for alignment, for register allocation, and (when stack
 protection is on) deliberately, to put arrays above scalars precisely so an overflow hits the
 canary before it hits anything useful. You have to look.
+
+Compile the same function with x86-64 gcc and `authorized` moves to `rbp-4`, above `buffer`, where
+a long enough badge ID does reach it. Same source, opposite answer, which is why Lab 8 tells you
+which compiler to use.
 
 ### 4. Mitigations do not fix bugs
 

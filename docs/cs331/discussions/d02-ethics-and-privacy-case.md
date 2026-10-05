@@ -6,7 +6,7 @@
 
 - **1.5**: Describe the legal, regulatory, and ethical constraints on security work, including
   vulnerability disclosure and privacy obligations.
-  ([TLO 1](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation))
+  ([TLO 1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation))
 
 ## Time estimate
 

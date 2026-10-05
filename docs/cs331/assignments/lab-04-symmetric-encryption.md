@@ -18,7 +18,7 @@ happened.
 - **3.2**: Distinguish confidentiality from integrity and authenticity, and name the primitive
   that supplies each.
 
-([TLO 3](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits))
+([TLO 3](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits))
 
 ## Time estimate
 
@@ -130,14 +130,18 @@ One Canvas submission containing:
 | 4 | Step 4: the XOR algebra written out correctly, the attacker's knowledge stated precisely, the modified run shown, and a realistic cause of accidental nonce reuse named | 8 |
 | | **Total** | **38** |
 
-**The question row 3 turns on:** yes, the attacker can change `$100.00` to `$900.00` under CTR
-without the key, because CTR encryption is XOR with a keystream and the attacker knows both the
-original and desired plaintext at that position. An answer that says "no, they do not have the key"
-misses the whole point of the lab.
-
 ## AI disclosure
 
 You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
 what for, per the [AI policy](../index.md#ai-policy).
 
 The output you quote must come from running the script on your own machine.
+
+## Instructor Notes
+
+Instructor note, not shown to students.
+
+**The question row 3 turns on:** yes, the attacker can change `$100.00` to `$900.00` under CTR
+without the key, because CTR encryption is XOR with a keystream and the attacker knows both the
+original and desired plaintext at that position. An answer that says "no, they do not have the key"
+misses the whole point of the lab.

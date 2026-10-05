@@ -12,7 +12,7 @@ application, transport, internet, and link layers, and network security tools.
 | 1-7 | **4.1**: Explain how common network attacks work at the protocol layer where they operate |
 | 8-15 | **4.2**: Recommend network defenses (firewalling, segmentation, and monitoring) for a described network |
 
-([TLO 4](../objectives.md#tlo-4--analyzing-common-attacks-and-justifying-countermeasures))
+([TLO 4](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures))
 
 ---
 

@@ -21,7 +21,7 @@ an ordinary day.
 - **7.4**: Explain the base-rate fallacy and its effect on alert volume in a detection system.
 - **7.5**: Recommend a defensible incident response structured according to NIST SP 800-61r3.
 
-([TLO 7](../objectives.md#tlo-7--analyzing-detection-data-and-recommending-a-response))
+([TLO 7](../objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response))
 
 ## Time estimate
 
@@ -206,11 +206,6 @@ code you used and the arithmetic in Step 4 question 4, followed by the memo from
 | 6 | Step 5: memo has all five sections, separates fact from inference, gives specific and actionable containment, states what it would not trust during recovery, and ties each post-incident recommendation to a finding | 7 |
 | | **Total** | **38** |
 
-**The numbers row 5 needs**, over 100 days and 5,000,000 events: 500 malicious, 4,999,500 benign.
-True positives = 0.99 × 500 = **495**. False positives = 0.01 × 4,999,500 ≈ **49,995**. Probability
-an alert is real = 495 ÷ (495 + 49,995) ≈ **0.98%**. Alerts per day ≈ 50,490 ÷ 100 ≈ **505**. Fewer
-than one alert in a hundred is a real intrusion, and the analyst gets about five hundred a day.
-
 ## AI disclosure
 
 You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
@@ -219,3 +214,12 @@ what for, per the [AI policy](../index.md#ai-policy).
 The findings in Steps 2 and 3 have to come out of the actual files. An AI tool that has not read
 them will invent plausible IP addresses and timestamps, and rows 2 and 3 are graded against what is
 really in the logs.
+
+## Instructor Notes
+
+Instructor note, not shown to students.
+
+**The numbers row 5 needs**, over 100 days and 5,000,000 events: 500 malicious, 4,999,500 benign.
+True positives = 0.99 × 500 = **495**. False positives = 0.01 × 4,999,500 ≈ **49,995**. Probability
+an alert is real = 495 ÷ (495 + 49,995) ≈ **0.98%**. Alerts per day ≈ 50,490 ÷ 100 ≈ **505**. Fewer
+than one alert in a hundred is a real intrusion, and the analyst gets about five hundred a day.

@@ -20,16 +20,16 @@ assembly, in a browser.
 
 By the end of this week, the successful student will be able to:
 
-- **[4.4](../objectives.md#tlo-4--analyzing-common-attacks-and-justifying-countermeasures)**: Trace
+- **[4.4](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures)**: Trace
   a buffer overflow to the stack layout that makes it exploitable, and evaluate which mitigations
   would stop it.
-- **[5.5](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles)**: 
+- **[5.5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)**: 
   Recommend a prevention-first countermeasure for a class of vulnerability.
-- **[6.1](../objectives.md#tlo-6--interpreting-assurance-arguments-and-evidence)**: Distinguish
+- **[6.1](../objectives.md#tlo-6-interpreting-assurance-arguments-and-evidence)**: Distinguish
   prevention, detection, and mitigation as classes of assurance evidence.
-- **[6.2](../objectives.md#tlo-6--interpreting-assurance-arguments-and-evidence)**: Identify what a
+- **[6.2](../objectives.md#tlo-6-interpreting-assurance-arguments-and-evidence)**: Identify what a
   static or dynamic analysis result does and does not establish.
-- **[6.3](../objectives.md#tlo-6--interpreting-assurance-arguments-and-evidence)**: Evaluate
+- **[6.3](../objectives.md#tlo-6-interpreting-assurance-arguments-and-evidence)**: Evaluate
   whether stated security claims are supported by the evidence offered.
 
 ## Assignments and Tasks

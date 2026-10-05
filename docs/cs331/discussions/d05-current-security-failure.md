@@ -5,7 +5,7 @@
 ## Objectives assessed
 
 - **7.5**: Recommend a defensible incident response structured according to NIST SP 800-61r3.
-  ([TLO 7](../objectives.md#tlo-7--analyzing-detection-data-and-recommending-a-response))
+  ([TLO 7](../objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response))
 
 ## Time estimate
 

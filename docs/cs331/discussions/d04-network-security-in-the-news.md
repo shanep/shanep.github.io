@@ -8,7 +8,7 @@
 - **4.2**: Recommend network defenses (firewalling, segmentation, and monitoring) for a described
   network.
 
-([TLO 4](../objectives.md#tlo-4--analyzing-common-attacks-and-justifying-countermeasures))
+([TLO 4](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures))
 
 ## Time estimate
 

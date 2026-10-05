@@ -9,7 +9,7 @@
  * the source and in the assembly that Compiler Explorer shows you.
  *
  * Compile in Compiler Explorer (https://godbolt.org/) with:
- *     compiler: x86-64 gcc (any recent version)
+ *     compiler: x86-64 clang (any recent version, not gcc)
  *     flags:    -O0 -fno-stack-protector
  *
  * CS 331 -- Computer Security and Information Assurance

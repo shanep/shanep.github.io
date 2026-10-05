@@ -16,8 +16,8 @@ No code. This is a reading-and-writing lab.
 - **1.4**: Explain how human error and usability failures contribute to security incidents.
 - **5.4**: Apply fail-safe defaults and complete mediation when critiquing a system design.
 
-([TLO 1](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation) ·
-[TLO 5](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles))
+([TLO 1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation) ·
+[TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles))
 
 ## Time estimate
 

@@ -15,9 +15,9 @@ vulnerabilities, prevention-first countermeasures, and assurance evidence.
 | 12-13 | **6.1**: Distinguish prevention, detection, and mitigation as classes of assurance evidence |
 | 14-15 | **6.4**: Describe how SAMM, BSIMM, or the Common Criteria supply organizational assurance evidence |
 
-([TLO 4](../objectives.md#tlo-4--analyzing-common-attacks-and-justifying-countermeasures) ·
-[TLO 5](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles) ·
-[TLO 6](../objectives.md#tlo-6--interpreting-assurance-arguments-and-evidence))
+([TLO 4](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures) ·
+[TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles) ·
+[TLO 6](../objectives.md#tlo-6-interpreting-assurance-arguments-and-evidence))
 
 ---
 

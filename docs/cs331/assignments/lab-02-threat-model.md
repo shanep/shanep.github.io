@@ -17,7 +17,7 @@ being methodical rather than clever.
 - **2.2**: Enumerate threats against a system using STRIDE and record them in a threat table.
 - **2.3**: Assess the likelihood and impact of identified threats using a stated risk method.
 
-([TLO 2](../objectives.md#tlo-2--modeling-subjects-objects-permissions-trust-boundaries-and-threats))
+([TLO 2](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats))
 
 ## Time estimate
 

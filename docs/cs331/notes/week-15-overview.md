@@ -16,15 +16,15 @@ unread in a queue, seven days before the ransomware.
 
 By the end of this week, the successful student will be able to:
 
-- **[7.1](../objectives.md#tlo-7--analyzing-detection-data-and-recommending-a-response)**: Identify
+- **[7.1](../objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response)**: Identify
   the data sources a detection capability draws on and what each can and cannot show.
-- **[7.2](../objectives.md#tlo-7--analyzing-detection-data-and-recommending-a-response)**: 
+- **[7.2](../objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response)**: 
   Distinguish misuse detection from anomaly detection and choose one for a stated scenario.
-- **[7.3](../objectives.md#tlo-7--analyzing-detection-data-and-recommending-a-response)**: Analyze
+- **[7.3](../objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response)**: Analyze
   authentication and web server logs to identify brute-force and scanning activity.
-- **[7.4](../objectives.md#tlo-7--analyzing-detection-data-and-recommending-a-response)**: Explain
+- **[7.4](../objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response)**: Explain
   the base-rate fallacy and its effect on alert volume.
-- **[7.5](../objectives.md#tlo-7--analyzing-detection-data-and-recommending-a-response)**: 
+- **[7.5](../objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response)**: 
   Recommend a defensible incident response structured according to NIST SP 800-61r3.
 
 ## Assignments and Tasks

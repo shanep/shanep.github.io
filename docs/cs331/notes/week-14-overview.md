@@ -19,9 +19,9 @@ attacker-supplied part.
 
 By the end of this week, the successful student will be able to:
 
-- **[4.5](../objectives.md#tlo-4--analyzing-common-attacks-and-justifying-countermeasures)**: 
+- **[4.5](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures)**: 
   Perform and then remediate a SQL injection, and explain why parameterization defeats it.
-- **[5.5](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles)**: 
+- **[5.5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)**: 
   Recommend a prevention-first countermeasure for a class of vulnerability.
 
 Quiz 5 also assesses **4.4**, **6.1**, and **6.4** from week 13.

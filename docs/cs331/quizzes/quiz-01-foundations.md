@@ -15,7 +15,7 @@ legal, regulatory, and ethical setting.
 | 11-12 | **1.4**: Explain how human error and usability failures contribute to security incidents |
 | 13-15 | **1.5**: Describe the legal, regulatory, and ethical constraints on security work |
 
-([TLO 1](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation))
+([TLO 1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation))
 
 ---
 

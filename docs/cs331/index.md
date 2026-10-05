@@ -115,13 +115,13 @@ quiz, or exam that measures them. The complete alignment is on the
 
 | # | The student will be able to… | Bloom level |
 | --- | --- | --- |
-| [TLO 1](objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation) | Explain core security goals, terminology, first principles, ethical obligations, and the role of privacy and regulation in security practice. | Understand |
-| [TLO 2](objectives.md#tlo-2--modeling-subjects-objects-permissions-trust-boundaries-and-threats) | Model subjects, objects, permissions, trust boundaries, and threats using access control matrices, policy descriptions, and basic threat models. | Apply |
-| [TLO 3](objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits) | Compare symmetric encryption, public-key cryptography, hashing, digital signatures, key management, and secure communication protocols, including their assumptions and limitations. | Understand |
-| [TLO 4](objectives.md#tlo-4--analyzing-common-attacks-and-justifying-countermeasures) | Analyze common attacks and vulnerabilities, including phishing, network attacks, SQL injection, and buffer overflows, and justify appropriate countermeasures. | Analyze |
-| [TLO 5](objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles) | Apply authentication, authorization, least privilege, separation of privilege, fail-safe defaults, and other secure design principles to a system design. | Apply |
-| [TLO 6](objectives.md#tlo-6--interpreting-assurance-arguments-and-evidence) | Interpret assurance arguments and evidence, and evaluate whether a system's security claims are supported by its design, implementation, and testing. | Evaluate |
-| [TLO 7](objectives.md#tlo-7--analyzing-detection-data-and-recommending-a-response) | Analyze basic intrusion-detection data and recommend a defensible response using an appropriate detection model. | Analyze |
+| [TLO 1](objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation) | Explain core security goals, terminology, first principles, ethical obligations, and the role of privacy and regulation in security practice. | Understand |
+| [TLO 2](objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats) | Model subjects, objects, permissions, trust boundaries, and threats using access control matrices, policy descriptions, and basic threat models. | Apply |
+| [TLO 3](objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits) | Compare symmetric encryption, public-key cryptography, hashing, digital signatures, key management, and secure communication protocols, including their assumptions and limitations. | Understand |
+| [TLO 4](objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures) | Analyze common attacks and vulnerabilities, including phishing, network attacks, SQL injection, and buffer overflows, and justify appropriate countermeasures. | Analyze |
+| [TLO 5](objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles) | Apply authentication, authorization, least privilege, separation of privilege, fail-safe defaults, and other secure design principles to a system design. | Apply |
+| [TLO 6](objectives.md#tlo-6-interpreting-assurance-arguments-and-evidence) | Interpret assurance arguments and evidence, and evaluate whether a system's security claims are supported by its design, implementation, and testing. | Evaluate |
+| [TLO 7](objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response) | Analyze basic intrusion-detection data and recommend a defensible response using an appropriate detection model. | Analyze |
 
 ## Schedule
 

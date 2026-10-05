@@ -14,10 +14,10 @@ The midterm assesses everything from weeks 1-8:
 
 | | Objectives |
 | --- | --- |
-| **[TLO 1](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation)** | 1.1, 1.2, 1.3, 1.4, 1.5 |
-| **[TLO 2](../objectives.md#tlo-2--modeling-subjects-objects-permissions-trust-boundaries-and-threats)** | 2.1, 2.2, 2.3, 2.4, 2.5 |
-| **[TLO 3](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits)** | 3.1, 3.2, 3.3, 3.4 |
-| **[TLO 5](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles)** | 5.1, 5.2, 5.3, 5.4 |
+| **[TLO 1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation)** | 1.1, 1.2, 1.3, 1.4, 1.5 |
+| **[TLO 2](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats)** | 2.1, 2.2, 2.3, 2.4, 2.5 |
+| **[TLO 3](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits)** | 3.1, 3.2, 3.3, 3.4 |
+| **[TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)** | 5.1, 5.2, 5.3, 5.4 |
 
 ## Assignments and Tasks
 
