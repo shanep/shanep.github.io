@@ -40,7 +40,7 @@ please email me ASAP :)
   - Click the big orange "Launch Instance" button shown on the EC2 dashboard
   - Name the server as follows yourname-cs408
   - Select **Ubuntu** from the Quick Start Application and OS Images, then choose **Ubuntu Server
-    24.04 LTS** in the Amazon Machine Image (AMI) list. The example app's scripts are tested on it,
+    26.04 LTS** in the Amazon Machine Image (AMI) list. The example app's scripts are tested on it,
     and its login user is `ubuntu`, which the later assignments use. (You may choose a different
     Linux distribution, but then you will have to adapt the scripts and the login user yourself.)
   - Keep the default Architecture, **64-bit (x86)**

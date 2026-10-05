@@ -19,7 +19,7 @@ an ordinary day.
 - **7.3**: Analyze authentication and web server logs to identify brute-force and scanning
   activity.
 - **7.4**: Explain the base-rate fallacy and its effect on alert volume in a detection system.
-- **7.5**: Recommend a defensible incident response structured according to NIST SP 800-61r3.
+- **7.5**: Recommend a defensible incident response structured by the NIST SP 800-61 incident response phases.
 
 ([TLO 7](../objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response))
 

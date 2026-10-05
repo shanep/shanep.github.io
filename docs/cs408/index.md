@@ -87,7 +87,7 @@ A rough course outline is shown below.
   - Create a GitHub repo with your project
   - Configure and launch the virtual machine (with SSH keys)!
     - Configure SSH access for your personal EC2 instance
-    - Set up your AWS Server (Look for an email from Ben Peterson for your login info)
+    - Set up your AWS Server (log in to AWS Innovation Sandbox with your Boise State credentials)
   - Ensure you can SSH into your EC2 instance
 -  Project Specification
   - Write your project specification

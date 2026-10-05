@@ -131,7 +131,7 @@ One Canvas submission containing:
 
 | Row | What is assessed | Points |
 | --- | --- | ---: |
-| 1 | Step 2: the case 3 SQL quoted and explained character by character; why the safe version rejected it; the admin-account consequence tied to a STRIDE category | 10 |
+| 1 | Steps 1 and 2: the vulnerable line quoted and the case 1 difference explained; the case 3 SQL quoted and explained character by character; why the safe version rejected it; the admin-account consequence tied to a STRIDE category | 10 |
 | 2 | Step 3, question 1: the operator-precedence explanation is correct and worked through, not asserted | 8 |
 | 3 | Step 3, questions 2-5: a working payload that returns all three rows, with its SQL and result pasted; the payload explained; two further inputs recorded including what an error message leaks; the safe version confirmed to reject them | 12 |
 | 4 | Step 4: the escaping-versus-parsing distinction made correctly; two reasons filtering is worse; two other structured-output vulnerabilities with their parameterized equivalents; three defense-in-depth controls including an access control one; the §15.2 level identified with a more fundamental alternative | 8 |
