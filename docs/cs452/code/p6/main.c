@@ -166,6 +166,8 @@ int main(int argc, char *argv[])
           default: /* ? */
                usage(argv[0]);
           }
+     if (numc < 1 || nump < 1 || numitems < 1 || queue_size < 1)
+          usage(argv[0]);
      if (numc > MAX_C)
           numc = MAX_C;
      if (nump > MAX_P)
