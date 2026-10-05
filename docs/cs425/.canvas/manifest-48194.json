@@ -88,9 +88,9 @@
       "title": "A6 - Who Carries Your Packets?"
     },
     "activities/a6-worksheet.pdf": {
-      "canvas_id": "25309995",
+      "canvas_id": "25312105",
       "extra": {
-        "size": "110810"
+        "size": "110419"
       },
       "kind": "file",
       "page_url": "",
@@ -152,7 +152,7 @@
       "title": "In Class Activities"
     },
     "activities/tcpmeter.py": {
-      "canvas_id": "25310223",
+      "canvas_id": "25311107",
       "extra": {
         "size": "4681"
       },
