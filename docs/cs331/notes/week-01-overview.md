@@ -19,10 +19,10 @@ so you can see where you are starting from.
 
 By the end of this week, the successful student will be able to:
 
-- **[1.1](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation)**:
+- **[1.1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation)**:
   Define confidentiality, integrity, and availability, and identify which goal a described failure
   violates.
-- **[1.2](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation)**:
+- **[1.2](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation)**:
   Use the terms threat, vulnerability, attack, and risk correctly in writing about a security
   incident.
 

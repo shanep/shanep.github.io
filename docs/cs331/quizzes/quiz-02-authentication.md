@@ -12,7 +12,7 @@ storage, and NIST SP 800-63B-4.
 | 1-4, 9-12 | **5.1**: Select authentication factors appropriate to a stated threat model and justify the choice |
 | 5-8, 13-15 | **5.2**: Evaluate a real password and MFA policy against NIST SP 800-63B-4 |
 
-([TLO 5](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles))
+([TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles))
 
 ---
 

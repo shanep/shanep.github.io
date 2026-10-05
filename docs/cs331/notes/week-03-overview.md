@@ -22,7 +22,7 @@ chapter runs 78 pages. You are assigned 15. Do not read the rest unless you want
 
 By the end of this week, the successful student will be able to:
 
-- **[1.5](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation)**:
+- **[1.5](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation)**:
   Describe the legal, regulatory, and ethical constraints on security work, including vulnerability
   disclosure and privacy obligations.
 

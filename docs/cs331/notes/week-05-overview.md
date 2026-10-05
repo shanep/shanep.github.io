@@ -16,9 +16,9 @@ organisations do and what the current guidance says, because NIST changed its re
 
 By the end of this week, the successful student will be able to:
 
-- **[5.1](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles)**:
+- **[5.1](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)**:
   Select authentication factors appropriate to a stated threat model and justify the choice.
-- **[5.2](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles)**:
+- **[5.2](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)**:
   Evaluate a real password and MFA policy against NIST SP 800-63B-4.
 
 ## Assignments and Tasks

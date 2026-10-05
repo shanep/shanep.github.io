@@ -17,7 +17,7 @@ browser.
 
 By the end of this week, the successful student will be able to:
 
-- **[3.5](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits)**: Interpret
+- **[3.5](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits)**: Interpret
   an X.509 certificate chain and identify the trust assumptions and failure modes of public key
   infrastructure.
 

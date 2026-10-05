@@ -9,7 +9,7 @@
 - **5.2**: Evaluate a real password and multi-factor authentication policy against
   NIST SP 800-63B-4.
 
-([TLO 5](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles))
+([TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles))
 
 ## Time estimate
 

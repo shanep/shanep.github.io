@@ -75,9 +75,8 @@ username = ''   OR   ('1'='1' AND password = 'any-password-at-all')
 The left side is false for every row. The right side requires the password to match, which it does
 not. False for every row.
 
-Adding a comment fixes it, `' OR '1'='1' -- ` truncates the password clause and leaves
-`username = '' OR '1'='1'`, which is true for every row and returns the whole table. Lab 9 asks you
-to find that yourself.
+A small change to the payload gets rid of the password clause and returns the whole table. Lab 9
+asks you to find that change yourself, so it is not written out here.
 
 The reason this is in the lab: **the famous payload is a spell, and understanding why it fails here
 is worth more than knowing it.** An attacker probing a real application does exactly this reasoning,

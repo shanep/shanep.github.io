@@ -22,7 +22,7 @@ an incident, which is what most security work actually consists of.
 
 By the end of this week, the successful student will be able to:
 
-- **[4.3](../objectives.md#tlo-4--analyzing-common-attacks-and-justifying-countermeasures)**: 
+- **[4.3](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures)**: 
   Classify malware by the CyBOK taxonomy and map an incident's observed behaviour, including
   phishing used for initial access, to MITRE ATT&CK techniques.
 

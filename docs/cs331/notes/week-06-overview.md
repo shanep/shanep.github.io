@@ -17,11 +17,11 @@ not the same as knowing what they did.
 
 By the end of this week, the successful student will be able to:
 
-- **[2.4](../objectives.md#tlo-2--modeling-subjects-objects-permissions-trust-boundaries-and-threats)**: 
+- **[2.4](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats)**: 
   Construct an access control matrix for a given set of subjects, objects, and permissions.
-- **[2.5](../objectives.md#tlo-2--modeling-subjects-objects-permissions-trust-boundaries-and-threats)**: 
+- **[2.5](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats)**: 
   Express a policy as an ACL, a capability list, and an RBAC assignment, and state the tradeoffs.
-- **[5.3](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles)**: 
+- **[5.3](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)**: 
   Apply least privilege and separation of privilege to reduce an over-broad permission assignment.
 
 ## Assignments and Tasks

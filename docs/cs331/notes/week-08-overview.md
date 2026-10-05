@@ -17,9 +17,9 @@ this week tells you the key belongs to the person you think it does.
 
 By the end of this week, the successful student will be able to:
 
-- **[3.3](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits)**: Compare
+- **[3.3](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits)**: Compare
   symmetric and public-key cryptography by key distribution, performance, and typical use.
-- **[3.4](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits)**: Verify a
+- **[3.4](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits)**: Verify a
   digital signature and explain what a verification failure does and does not prove.
 
 Quiz 3 also assesses **3.1** and **3.2** from week 7.

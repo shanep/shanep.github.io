@@ -16,7 +16,7 @@ expired, one issued for the wrong name.
 - **3.5**: Interpret an X.509 certificate chain and identify the trust assumptions and failure
   modes of public key infrastructure.
 
-([TLO 3](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits))
+([TLO 3](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits))
 
 ## Time estimate
 
@@ -125,15 +125,19 @@ One Canvas submission containing:
 | 4 | Step 4: the trust-store check identified as the non-arithmetic one, a root count found and sourced, the CA-compromise scenario reasoned through, two mechanisms named with their limits, and a defended position on the closing statement | 8 |
 | | **Total** | **38** |
 
-**A common wrong answer in row 3, question 5:** the script's hostname check is an exact string
-comparison, so `www.exarnple.edu` fails, not because the script is clever about lookalikes, but
-because it is not the same string. The real-world point is that a *human being* reading an address
-bar is far less reliable than that string comparison, and an attacker who registers the lookalike
-domain can get a perfectly valid certificate for it.
-
 ## AI disclosure
 
 You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
 what for, per the [AI policy](../index.md#ai-policy).
 
 Step 1 and Step 4 question 2 require you to look at your own browser and your own machine.
+
+## Instructor Notes
+
+Instructor note, not shown to students.
+
+**A common wrong answer in row 3, question 5:** the script's hostname check is an exact string
+comparison, so `www.exarnple.edu` fails, not because the script is clever about lookalikes, but
+because it is not the same string. The real-world point is that a *human being* reading an address
+bar is far less reliable than that string comparison, and an attacker who registers the lookalike
+domain can get a perfectly valid certificate for it.

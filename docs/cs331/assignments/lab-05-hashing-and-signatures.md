@@ -17,7 +17,7 @@ You run a provided script and change two values in it. No code to write.
 - **3.4**: Verify a digital signature and explain what a verification failure does and does not
   prove.
 
-([TLO 3](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits))
+([TLO 3](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits))
 
 ## Time estimate
 
@@ -126,12 +126,16 @@ One Canvas submission containing your full first-run output and your numbered an
 | 4 | Step 4: repudiation question answered correctly, key-distribution table correct, hybrid rationale given, and all four tools chosen with justification | 6 |
 | | **Total** | **38** |
 
-**The numbers row 4 needs:** *n* parties needing pairwise shared secrets require *n*(*n*−1)/2 of
-them (1, 45, and 499,500) against *n* key pairs: 2, 10, and 1,000.
-
 ## AI disclosure
 
 You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
 what for, per the [AI policy](../index.md#ai-policy).
 
 The hex values you quote must come from your own run.
+
+## Instructor Notes
+
+Instructor note, not shown to students.
+
+**The numbers row 4 needs:** *n* parties needing pairwise shared secrets require *n*(*n*−1)/2 of
+them (1, 45, and 499,500) against *n* key pairs: 2, 10, and 1,000.

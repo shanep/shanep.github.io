@@ -22,9 +22,9 @@ read the assembly a compiler produces from it, in a browser. That is all.
 - **6.3**: Evaluate whether stated security claims are supported by the design and testing
   evidence offered.
 
-([TLO 4](../objectives.md#tlo-4--analyzing-common-attacks-and-justifying-countermeasures) ·
-[TLO 5](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles) ·
-[TLO 6](../objectives.md#tlo-6--interpreting-assurance-arguments-and-evidence))
+([TLO 4](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures) ·
+[TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles) ·
+[TLO 6](../objectives.md#tlo-6-interpreting-assurance-arguments-and-evidence))
 
 ## Time estimate
 
@@ -83,8 +83,9 @@ int check_badge(const char *badge_id)
 }
 ```
 
-Set the compiler to **x86-64 gcc** or **x86-64 clang** (any recent version) and the compiler options
-box to:
+Set the compiler to **x86-64 clang** (any recent version) and the compiler options box to the line
+below. Use clang, not gcc: gcc lays this frame out differently, and the questions below are written
+for clang's layout.
 
 ```
 -O0 -fno-stack-protector
@@ -179,6 +180,19 @@ One Canvas submission containing your answers to all four steps, numbered to mat
 | 4 | Step 4: the fixed function analysed and the right principle named; three levels of countermeasure with costs and a defended choice; the five items correctly sorted; what static analysis and fuzzing each do and do not establish; the vendor claim evaluated with two better pieces of evidence proposed | 12 |
 | | **Total** | **38** |
 
+## AI disclosure
+
+You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
+what for, per the [AI policy](../index.md#ai-policy).
+
+The assembly you quote must come from your own Compiler Explorer session, and an AI tool will
+routinely produce a plausible stack layout that does not match what your compiler actually did.
+Row 2 is graded against the assembly you paste.
+
+## Instructor Notes
+
+Instructor note, not shown to students.
+
 **The answer row 2 question 6 is looking for:** no. `authorized` sits at a *lower* address than
 `buffer` in this layout, and an overflow writes *upward* toward higher addresses, so it runs past
 the end of `buffer` into the saved frame pointer and return address without ever touching
@@ -189,12 +203,3 @@ source-code decision: you have to look, not assume.
 analyser's rules did not match anything, and nothing more; a 48-hour fuzzing run with no crash
 establishes that those particular inputs did not crash it, and nothing more. Neither establishes
 the absence of the vulnerability. Both are evidence; neither is proof.
-
-## AI disclosure
-
-You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
-what for, per the [AI policy](../index.md#ai-policy).
-
-The assembly you quote must come from your own Compiler Explorer session, and an AI tool will
-routinely produce a plausible stack layout that does not match what your compiler actually did.
-Row 2 is graded against the assembly you paste.

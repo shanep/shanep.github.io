@@ -20,10 +20,10 @@ CyBOK's cryptography chapter opens with two heavily mathematical sections, §10.
 
 By the end of this week, the successful student will be able to:
 
-- **[3.1](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits)**: Explain
+- **[3.1](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits)**: Explain
   what a block cipher and a mode of operation each provide, and demonstrate why ECB mode leaks
   structure.
-- **[3.2](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits)**: 
+- **[3.2](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits)**: 
   Distinguish confidentiality from integrity and authenticity, and name the primitive that supplies
   each.
 

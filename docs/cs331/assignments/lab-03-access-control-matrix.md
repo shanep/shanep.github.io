@@ -19,8 +19,8 @@ No code. This is a modelling lab, and the modelling is the point.
 - **5.3**: Apply least privilege and separation of privilege to reduce an over-broad permission
   assignment.
 
-([TLO 2](../objectives.md#tlo-2--modeling-subjects-objects-permissions-trust-boundaries-and-threats) ·
-[TLO 5](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles))
+([TLO 2](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats) ·
+[TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles))
 
 ## Time estimate
 

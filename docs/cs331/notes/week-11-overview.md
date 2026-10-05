@@ -19,9 +19,9 @@ metadata rather than content, and metadata turns out to be enough for a great de
 
 By the end of this week, the successful student will be able to:
 
-- **[4.1](../objectives.md#tlo-4--analyzing-common-attacks-and-justifying-countermeasures)**: 
+- **[4.1](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures)**: 
   Explain how common network attacks work at the protocol layer where they operate.
-- **[4.2](../objectives.md#tlo-4--analyzing-common-attacks-and-justifying-countermeasures)**: 
+- **[4.2](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures)**: 
   Recommend network defenses (firewalling, segmentation, and monitoring) for a described network.
 
 ## Assignments and Tasks

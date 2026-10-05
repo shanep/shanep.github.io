@@ -5,7 +5,7 @@
 ## Objectives assessed
 
 - **1.2**: Use the terms threat, vulnerability, attack, and risk correctly in writing about a
-  security incident. ([TLO 1](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation))
+  security incident. ([TLO 1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation))
 
 ## Time estimate
 

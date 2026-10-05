@@ -17,11 +17,11 @@ comply with is a defective control.
 
 By the end of this week, the successful student will be able to:
 
-- **[1.3](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation)**:
+- **[1.3](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation)**:
   Apply the Saltzer and Schroeder design principles to critique a familiar system.
-- **[1.4](../objectives.md#tlo-1--security-goals-terminology-principles-ethics-and-regulation)**:
+- **[1.4](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation)**:
   Explain how human error and usability failures contribute to security incidents.
-- **[5.4](../objectives.md#tlo-5--applying-authentication-authorization-and-secure-design-principles)**:
+- **[5.4](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)**:
   Apply fail-safe defaults and complete mediation when critiquing a system design.
 
 ## Assignments and Tasks

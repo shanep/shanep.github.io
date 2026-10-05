@@ -13,7 +13,7 @@ and digital signatures.
 | 6-9 | **3.2**: Distinguish confidentiality from integrity and authenticity, and name the primitive that supplies each |
 | 10-15 | **3.3**: Compare symmetric and public-key cryptography by key distribution, performance, and typical use |
 
-([TLO 3](../objectives.md#tlo-3--comparing-cryptographic-mechanisms-and-their-limits))
+([TLO 3](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits))
 
 ---
 
