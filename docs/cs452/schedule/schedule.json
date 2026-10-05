@@ -41,7 +41,7 @@
         { "name": "P2", "url": "/cs452/assignments/p2", "assignedSlot": 1 }
       ],
       "readings": [
-        { "text": "OSTEP ch2 - Introduction", "url": "http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf" }
+        { "text": "OSTEP ch2 - Introduction", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf" }
       ]
     },
     {
@@ -51,8 +51,8 @@
         { "topic": "Process API", "topicUrl": "/cs452/notes/cpu-api" }
       ],
       "readings": [
-        { "text": "OSTEP ch4 - Abstraction the process", "url": "http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf" },
-        { "text": "OSTEP ch5 - Process API", "url": "http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf" }
+        { "text": "OSTEP ch4 - The Abstraction: The Process", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf" },
+        { "text": "OSTEP ch5 - Process API", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf" }
       ]
     },
     {
@@ -66,7 +66,7 @@
         { "name": "P3", "url": "/cs452/assignments/p3", "assignedSlot": 1 }
       ],
       "readings": [
-        { "text": "OSTEP ch6 - Limited Direct Execution", "url": "http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf" }
+        { "text": "OSTEP ch6 - Limited Direct Execution", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf" }
       ]
     },
     {
@@ -76,7 +76,7 @@
         { "topic": "Address Spaces", "topicUrl": "/cs452/notes/vm-intro" }
       ],
       "readings": [
-        { "text": "OSTEP ch7 - Scheduling Introduction", "url": "http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf" },
+        { "text": "OSTEP ch7 - Scheduling Introduction", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf" },
         { "text": "OSTEP ch13 - Address Spaces", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf" }
       ]
     },
@@ -91,7 +91,7 @@
         { "name": "P4", "url": "/cs452/assignments/p4", "assignedSlot": 1 }
       ],
       "readings": [
-        { "text": "OSTEP ch17 - Free Space management", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf" }
+        { "text": "OSTEP ch17 - Free-Space Management", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf" }
       ]
     },
     {

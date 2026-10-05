@@ -17,9 +17,9 @@ will have unlocked a powerful software development skill!
 
 ## Task 1 - Setup
 
-Follow the steps below to get your repository all setup and ready to use. The steps below show you
-how to use and setup GitHub Codespaces. You are not required to use Codespaces, all the steps below
-can be completed in the CS Lab or on your personal machine if you prefer.
+Follow the steps below to get your repository all set up and ready to use. The steps below show you
+how to use and set up GitHub Codespaces. You are not required to use Codespaces. All the steps
+below can be completed in the CS Lab or on your personal machine if you prefer.
 
 ### Fork the starter repository
 
@@ -35,7 +35,7 @@ can be completed in the CS Lab or on your personal machine if you prefer.
 ### Start a new Codespace
 
 We will use GitHub Codespaces to do most of our coding. Codespaces is just VS Code in the cloud. This
-makes it really easy to setup a developer environment and code from any computer that has a browser
+makes it really easy to set up a developer environment and code from any computer that has a browser
 and internet connection!
 
 ![Start Codespace](/images/start-codespace.png)
@@ -57,7 +57,7 @@ patch so you can receive a grade for all your hard work.
 ### Turn on Two-Factor
 
 Turn on [Two-factor authentication](https://support.google.com/accounts/answer/185839?hl=en&co=GENIE.Platform%3DDesktop)
-for your Boise State provided email account
+for your Boise State provided email account.
 
 ::: danger
 
@@ -74,9 +74,9 @@ have two-factor authentication turned on.
 
 ::: info
 
-If you are working in GitHub Codespaces you will need to setup SMTP in **EACH** Codespace. This is
+If you are working in GitHub Codespaces you will need to set up SMTP in **EACH** Codespace. This is
 because each Codespace is tied to a specific repository and the settings are not shared. However,
-if you are working on your own personal machine or in the CS Lab then you will only have to setup
+if you are working on your own personal machine or in the CS Lab then you will only have to set up
 SMTP once!
 
 :::
@@ -109,7 +109,7 @@ authentication. Follow these steps to resolve the issue:
 
 :::
 
-### Setup SMTP
+### Set up SMTP
 
 1. Open up a terminal in your Codespace
 
@@ -121,7 +121,7 @@ generated in the [previous step](#generate-an-app-password).
 
 
 ```text
-[User]
+[user]
 	name =  YOUR NAME
 	email = YOURNAME@u.boisestate.edu
 [sendemail]
@@ -134,7 +134,7 @@ generated in the [previous step](#generate-an-app-password).
 
 ![Edit config](/images/edit-config.png)
 
-Congrats you should be all setup to send code patches over email. Now let's create a patch!
+Congrats you should be all set up to send code patches over email. Now let's create a patch!
 
 ### Create a patch file
 
@@ -157,13 +157,13 @@ git remote add upstream https://github.com/shanep/git-send-email
 git fetch upstream
 ```
 
-2. Checkout a new branch named submit from the `upstream/master` branch.
+2. Check out a new branch named submit from the `upstream/master` branch.
 
 ```bash
 git checkout upstream/master -b submit
 ```
 
-3. Now we will do a squash merge all the commits we did onto our new submit branch.
+3. Now we will do a squash merge of all the commits we did onto our new submit branch.
 
 ```bash
 git merge --squash master
@@ -225,7 +225,7 @@ You should see results similar to what is shown below.
 
 ```bash
 $ git send-email --to youremail@u.boisestate.edu HEAD^
-/tmp/T/NWEw4f1sIj/0001-Submit-project-2.patch
+/tmp/T/NWEw4f1sIj/0001-Submit-project.patch
 
 From: youremail@u.boisestate.edu
 To:  youremail@u.boisestate.edu
@@ -254,7 +254,7 @@ RCPT TO:  youremail@u.boisestate.edu
 RCPT TO:  youremail@u.boisestate.edu
 From: youremail@u.boisestate.edu
 To:  youremail@u.boisestate.edu
-Subject: [PATCH] Submit project 2
+Subject: [PATCH] Submit project
 Date: Thu,  7 Dec 2023 20:31:55 -0700
 Message-Id: <20231208033155.83099-1-shanepanter@boisestate.edu>
 X-Mailer: git-send-email 2.39.3 (Apple Git-145)
@@ -273,7 +273,7 @@ check your **spam** folder if you don't see any mail.
 You can now get your patch from Gmail and test it to make sure that everything works and your patch
 was correct.
 
-1. Checkout a new branch named `test-patch` from the upstream/master branch
+1. Check out a new branch named `test-patch` from the upstream/master branch
 
 ```bash
 git checkout upstream/master -b test-patch
@@ -290,7 +290,7 @@ git checkout upstream/master -b test-patch
 ![download gmail](/images/gmail-original-email.png)
 
 
-4. Copy the email to your clip board
+4. Copy the email to your clipboard
 
 ![copy to clipboard](/images/gmail-copy-email.png)
 
@@ -364,5 +364,5 @@ git user!
 
 ## Submitting
 
-You do not need to submit anything to Canvas for this assignment. Your email is your submission,
-your grade will be updated after the due date (and late window) have passed.
+You do not need to submit anything to Canvas for this assignment. Your email is your submission.
+Your grade will be updated after the due date (and late window) have passed.

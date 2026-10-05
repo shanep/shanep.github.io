@@ -6,7 +6,7 @@ cloud is required, and if it is not you can skip this page.
 [GitHub Codespaces](https://github.com/features/codespaces) is just VS Code in the cloud. You get
 a full Linux machine with a terminal and an editor, and all you need is a web browser. It is the
 quickest way to start working on a project from any computer, including a Chromebook or a lab
-machine where you can not install anything.
+machine where you cannot install anything.
 
 - [Codespaces Documentation](https://docs.github.com/en/codespaces)
 - [Codespaces Billing](https://docs.github.com/en/billing/concepts/product-billing/github-codespaces)
@@ -24,8 +24,8 @@ hours. The default machine has 2 cores, so every hour you have it running uses 2
 If you are a student, sign up for [GitHub Education](https://education.github.com/pack). Verified
 students get the same Codespaces quota as GitHub Pro for free (plus a bunch of other goodies).
 
-60 hours a month is plenty for homework as long as your Codespace is not sitting there running
-while you are not using it. That is what the next step is for.
+60 hours a month (90 with GitHub Education) is plenty for homework as long as your Codespace is
+not sitting there running while you are not using it. That is what the next step is for.
 
 ## Step 1 - Set your idle timeout
 

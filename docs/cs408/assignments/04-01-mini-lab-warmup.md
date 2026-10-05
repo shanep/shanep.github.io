@@ -9,10 +9,10 @@ grading: pass_fail
 
 ## Overview
 
-Using the same framework that you selected to write your "Hello world in the previous assignment",
+Using the same framework that you selected to write your "Hello world" in the previous assignment,
 you are going to write a small app that talks to the Canvas LMS REST API and solves a real problem
 you face as a student. The goal is to give you hands-on experience with REST API consumption,
-token-based authentication, and JSON parsing.  The only hard requirements are that it calls at least
+token-based authentication, and JSON parsing. The only hard requirements are that it calls at least
 two distinct Canvas API endpoints, and it displays the results using your framework. This is a
 **mini-lab**, so you don't have to do anything super complex. You are free to use AI to help you in
 any way; in fact, using AI to generate boilerplate code to access the REST API is recommended, so
@@ -24,14 +24,14 @@ By completing this mini-lab, you will demonstrate your ability to:
 
 - Authenticate with a third-party REST API using bearer tokens.
 - Make HTTP requests from application code and handle paginated responses.
-- Parse and transform JSON payloads into a user-friendly terminal output.
+- Parse and transform JSON payloads into user-friendly HTML pages.
 - Manage secrets safely (environment variables, .env files, .gitignore).
 - Write clear developer documentation (README with setup instructions, usage examples, and a demo
   GIF).
 
 Example:
 
-- I have provided an example using the webstack that you learned in 208 for reference:
+- I have provided an example using the web stack that you learned in CS208 for reference:
   <https://github.com/shanep/full-stack-rest>
 - You can use **ANY framework** and language for this app. You don't have to use what is shown in
   the example.
@@ -45,7 +45,7 @@ Example:
     navigation sidebar, then click **Settings**.
 4. **Scroll to Approved Integrations.** On the Settings page, scroll down to the **Approved
     Integrations section**.
-5. **Generate a New Token.** Click the **+ New Access Token.** A dialog will appear with two
+5. **Generate a New Token.** Click the **+ New Access Token** button. A dialog will appear with two
     fields.
 6. **Fill in the dialog.** In the **Purpose** field, type a descriptive value, such as CS4XX
     Project. You should set an **Expiry Date** (e.g., the last day of the semester). Then click
@@ -68,12 +68,12 @@ Your app must satisfy all of the following:
 - **Calls at least two distinct Canvas API endpoints.** For example, listing courses and listing
   assignments for a chosen course. A single endpoint called twice with different parameters does not
   count.
-- **Accepts user input.** The tool must accept at least one form of user input from a form
-- **Produces formatted terminal output.** Raw JSON dumps do not count. Present data in a
+- **Accepts user input.** The tool must accept at least one form of user input from a form.
+- **Produces formatted output.** Raw JSON dumps do not count. Present data in a
   human-readable way, such as tables, colored text, indented lists, or similar using templates to
-  produce HTML
+  produce HTML.
 - **Handles errors gracefully.** If the token is missing, the network is down, or Canvas returns an
-  error status code, the app should display the error to the user
+  error status code, the app should display the error to the user.
 - **Handles pagination.** Canvas paginates most list endpoints. Your tool must follow the Link
   header to retrieve all pages, or document clearly why pagination is not applicable to your chosen
   endpoints.
@@ -84,10 +84,10 @@ Your app must satisfy all of the following:
   file with placeholder values should be included instead.
 - **Clean code.** Reasonable variable names, modular functions, and brief comments where the logic
   is not obvious.
-- **Works out of the box.**  Someone should be able to clone your repo, install dependencies, add
+- **Works out of the box.** Someone should be able to clone your repo, install dependencies, add
   their own .env, and run the tool by following your README alone.
 
-Task 3 - README
+### Task 3 - README
 
 Your README.md must include the following sections at a minimum:
 
@@ -98,8 +98,8 @@ Your README.md must include the following sections at a minimum:
   package manager before.
 - **API Endpoints Used.** A brief table or list describing which Canvas API endpoints your tool
   calls and what data it retrieves from each.
--  Two to three paragraphs reflecting on what you learned, what was challenging, and what you would
-  improve if you had more time.
+- **Reflection.** Two to three paragraphs reflecting on what you learned, what was challenging, and
+  what you would improve if you had more time.
 
 ### Ideas
 
@@ -143,7 +143,7 @@ Here are some commonly used endpoints to get you started:
 You will submit a single URL to a public GitHub repository. The repository must contain:
 
 1. **Source code** for your App
-2. **README.md** with the sections described below.
+2. **README.md** with the sections described in Task 3.
 3. **.env.example** showing required environment variables with placeholder values.
 4. **.gitignore** that excludes .env and any build artifacts or dependency directories
     (node_modules, \_\_pycache\_\_, etc.).
@@ -151,7 +151,7 @@ You will submit a single URL to a public GitHub repository. The repository must 
 #### Submission Instructions
 
 1. Push your final code to a **public GitHub repository**. Double-check that the repository is
-    public
+    public.
 2. Run a final check: clone your own repo into a fresh directory, follow your own setup
     instructions, and confirm the tool works.
 3. Submit the **URL to your GitHub repository** through the Canvas assignment submission page
@@ -159,5 +159,5 @@ You will submit a single URL to a public GitHub repository. The repository must 
 
 ### Grading
 
-This assignment is a review of 208 material and is graded as pass/fail. You must complete at least
+This assignment is a review of CS208 material and is graded as pass/fail. You must complete at least
 80% of the assignment to get a pass.

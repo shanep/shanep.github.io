@@ -1,6 +1,6 @@
 # 5.02 D3: Authentication Policy Critique
 
-**Week 5 · 30 points · about 60 minutes · Canvas discussion board**
+**Week 5 · 30 points · about 65 minutes · Canvas discussion board**
 
 ## Objectives assessed
 
@@ -24,7 +24,7 @@
 ## Before you start
 
 - CyBOK §14.5 (printed pages 479-489), authentication.
-- NIST SP 800-63B-4 §3, *Authentication and Authenticator Management*:
+- NIST SP 800-63B-4, *Authentication and Authenticator Management*, §3:
   <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf>
   It is a long document. Read §3 and skim the rest.
 - Run [data/password_demo.py](../data/password_demo.py) (the week 5 worked example) before you
@@ -110,7 +110,7 @@ Reply to **two** classmates who evaluated a **different organization** than you.
 - **Attack the recommendation.** Take their part 4 and describe a realistic attack that gets
   through it anyway. Then say whether that makes the recommendation wrong or just incomplete.
 - **Price it.** If their recommendation would cost the organization more than they said, say what
-  they left out, help desk calls for lost tokens, users locked out, staff without smartphones.
+  they left out: help desk calls for lost tokens, users locked out, staff without smartphones.
 
 ## Rubric
 

@@ -32,7 +32,7 @@ network, Tatu Ylönen at Helsinki University of Technology wrote a replacement:
 - Ylönen asked IANA for it in July 1995 and got it the next day.
 - SSH 1.0.0 was released on **July 12, 1995**.
 
-Thirty years later, SSH still listens on port 22 by default.
+More than thirty years later, SSH still listens on port 22 by default.
 
 ## SSH is just an application
 
@@ -139,13 +139,14 @@ The **round trip time** (RTT) is how long a packet takes to get there and back.
 
 A protocol that needs N back and forth exchanges before it does anything useful
 pays N × RTT, no matter how fast your link is. Light in fiber covers about
-200 km per millisecond, so more bandwidth does not help. Fewer round trips does.
+200 km per millisecond, so more bandwidth does not help. Fewer round trips do.
 
 ## Setup is the expensive part
 
 You have seen this already in chapter 2:
 
-- **Non-persistent HTTP** pays a TCP handshake for every object, 2 RTTs each.
+- **Non-persistent HTTP** pays a TCP handshake for every object: 2 RTTs each,
+  one to connect and one to fetch.
 - **Persistent HTTP** pays it once and reuses the connection.
 
 An SSH login stacks up more setup than HTTP: a TCP handshake, a version exchange,

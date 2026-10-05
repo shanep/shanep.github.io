@@ -11,8 +11,8 @@ with technology. The module is designed to do three things:
     rewarding.
 
 **By Tuesday of this week**, please plan to spend 1-2 hours reading through the introductory
-material in this module and participating in the Introduction assignment, then jump into Module 1 .
+material in this module and participating in the Introduction assignment, then jump into Module 1.
 
-**By Saturday at 11:59 p.m.**, please finish your work in Module 1.
+**By Friday at 11:59 p.m.**, please finish your work in Module 1.
 
 <p class="cs-next">Select Next to continue with the Getting Started Module.</p>

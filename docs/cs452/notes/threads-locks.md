@@ -27,7 +27,7 @@ has completed the section.
     4 balance = balance + 1;
     5 Pthread_mutex_unlock(&lock);
 
-## Building A Lock
+## Lock Requirements
 
 - To build a working lock, we will need some help from our old friend, the hardware
 - Must provide mutual exclusion
@@ -50,7 +50,7 @@ can observe or interfere with a partial result.
 
 ## Building a Lock
 
-Lets look at just a few examples of building a lock! 🔒
+Let's look at just a few examples of building a lock! 🔒
 
 ### Controlling Interrupts
 
@@ -87,7 +87,7 @@ the code examples!
 
 - Hardware instruction to test and set a variable atomically
 - It returns the old value pointed to by the old\_ptr, and simultaneously updates said value to new
-- Other instructions are compare\_and\_swap or compare-and-exchange
+- Other instructions are compare-and-swap or compare-and-exchange
 - Typically implemented in assembly language.
 
 ## Dekker’s and Peterson’s Algorithms

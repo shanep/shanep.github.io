@@ -42,7 +42,8 @@ due        = "fri 23:59"
 grace_days = 0
 
 # Extra credit is open until the last day of instruction, which is the Friday
-# of week 16, and nothing is accepted after that.
+# of calendar week 16 (week 15 of instruction, the week the extra credit meta
+# lines name), and nothing is accepted after that.
 [term.policy.extra]
 due        = "fri 23:59"
 grace_days = 0

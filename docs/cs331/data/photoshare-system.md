@@ -1,6 +1,7 @@
 # SnapVault: system description
 
-*The system you threat-model in [Lab 2](../assignments/lab-02-threat-model.md).*
+*The system you threat-model in [Lab 2](../assignments/lab-02-threat-model.md) and model access
+control for in [Lab 3](../assignments/lab-03-access-control-matrix.md).*
 
 SnapVault is a small photo-sharing service run by a three-person company. Everything below is a
 description of how it works today. It is a made-up system, but it is built the way small services
@@ -27,7 +28,7 @@ that shows one album to anybody who has the link, with no login required.
 | 6 | Photo storage | Object storage bucket at the same cloud provider | The image files themselves. The API writes here; the CDN reads from here. |
 | 7 | Thumbnail worker | A third virtual machine | Pulls newly uploaded photos from a queue, generates thumbnails, writes them back to object storage. |
 | 8 | Admin console | Browser, staff only | A separate web app on `admin.snapvault.example` used by the three employees for support. |
-| 9 | Nightly backup job | Runs on the database VM | Dumps the database to a second object storage bucket at 02:00. |
+| 9 | Nightly backup job | Runs on the thumbnail worker VM | Dumps the database to a second object storage bucket at 02:00. |
 
 ## Who uses it
 
@@ -58,7 +59,7 @@ then inserts a row in the database recording the owner and the privacy setting.
 
 **Serving photos.** The CDN serves image files directly out of the object storage bucket. The
 bucket is configured to allow public reads of any object, because that was the fastest way to make
-the CDN work. Privacy is enforced by the API deciding which URLs to put in a response, the file
+the CDN work. Privacy is enforced by the API deciding which URLs to put in a response. The file
 itself is reachable by anyone who knows or guesses its URL.
 
 **Share links.** A share link contains a 128-bit random token. The token maps to an album in the
@@ -79,8 +80,8 @@ restored to check that it works.
 
 **Network.** All three VMs sit in one flat cloud network with no segmentation between them. The
 database accepts connections from anything in that network. The API VMs and the worker VM all
-accept SSH from the internet, with password authentication disabled and staff public keys
-installed.
+accept SSH from the internet. Staff log in with public keys, but password authentication was
+never turned off.
 
 **Software updates.** The API's Python dependencies were pinned when the service launched
 fourteen months ago and have not been updated since, because upgrading broke the image library once

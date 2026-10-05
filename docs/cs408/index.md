@@ -45,7 +45,7 @@ via web conferencing (e.g., Zoom).
     2. Use advanced HTML tags in your designs
     3. Use advanced CSS to style HTML elements.
     4. Apply styles using id and class attributes.
-3. Given JavaScript in a full-stack environment, Explain Its Purpose.
+3. Given JavaScript in a full-stack environment, explain its purpose.
     1. Identify the differences between using JavaScript on the frontend vs the backend.
     2. Use async/await where appropriate
     3. Use callbacks where appropriate
@@ -67,7 +67,7 @@ via web conferencing (e.g., Zoom).
 6. Apply good software engineering practices (cross-cutting)
     1. Use Version Control for all projects
     2. Configure and Use Continuous Integration and Testing with GitHub Actions
-    3. Configure and Use Automatic Version extraction from github tags
+    3. Configure and Use Automatic Version extraction from GitHub tags
     4. Configure Continuous deployment
     5. Configure Continuous Integration
 
@@ -83,18 +83,18 @@ A rough course outline is shown below.
   - CSS
   - JavaScript
   - Database
+- Project Specification
+  - Write your project specification
+    - You must submit it for approval
+    - Create a schedule for what you will have done for the required project checkpoints.
+    - Each checkpoint needs to have a well-defined deliverable
+  - Choose your tech stack (you are free to use the default stack provided)
 - AWS - EC2
   - Create a GitHub repo with your project
   - Configure and launch the virtual machine (with SSH keys)!
     - Configure SSH access for your personal EC2 instance
     - Set up your AWS Server (log in to AWS Innovation Sandbox with your Boise State credentials)
   - Ensure you can SSH into your EC2 instance
--  Project Specification
-  - Write your project specification
-    - You must submit it for approval
-    - Create a schedule for what you will have done for the required project checkpoints.
-    - Each checkpoint needs to have a well-defined deliverable
-  - Choose your tech stack (you are free to use the default stack provided)
 - Initial Deployment
   - Get a simple "Hello World" application up and running using your tech stack on your **local
     machine.**

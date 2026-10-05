@@ -23,7 +23,7 @@ bar showing, then demonstrates trail search and the add, edit and delete hike fo
 
 **How this post would be graded:** Tag 5 and Live 5 if the cp3 tag exists and the site loads.
 Progress earns 5, not 10: two of the four deliverables are Done with evidence, which is at least
-half but not all. Partial and Not started are honest and fine, they just do not count as Done. The
+half but not all. Partial and Not started are honest and fine. They just do not count as Done. The
 video earns 10 because it shows both Done deliverables on the live site.
 
 ## An example peer review

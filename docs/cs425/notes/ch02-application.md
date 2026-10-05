@@ -50,7 +50,7 @@ well enough to write one by hand, because you will in P1's sibling protocols.
 **Cookies** restore state to a stateless protocol: a response header sets an ID, the
 browser stores it, and later requests carry it back.
 
-**Web caching** puts a proxy between the client and origin. **Conditional GET**
+**Web caching** puts a proxy between the client and the origin. **Conditional GET**
 (`If-Modified-Since`) lets the cache verify freshness without transferring the
 object again.
 

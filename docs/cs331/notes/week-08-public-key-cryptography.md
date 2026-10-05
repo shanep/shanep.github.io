@@ -14,8 +14,8 @@ What to do this week, and when it is due, is on the [Module 8 Overview](week-08-
 | Nakov, *Practical Cryptography for Developers* | Hash functions; RSA; ECC; digital signatures | none | skim | 30 min |
 
 Nakov: <https://cryptobook.nakov.com/cryptographic-hash-functions> and the digital signatures
-pages. You are **not** assigned §10.9 through §10.11, special-property signatures, homomorphic
-encryption, and implementation aspects. Skip them.
+pages. You are **not** assigned §10.9 through §10.11 (advanced protocols, encryption and signatures
+with special properties such as homomorphic encryption, and implementation aspects). Skip them.
 
 ## Worked example
 
@@ -99,7 +99,7 @@ and authenticity. They differ in one structural way.
 
 **With an HMAC, both parties hold the same key.** So if Alice sends Bob a message with a valid tag
 and Bob later claims Alice authorized a payment she says she did not authorize, the tag settles
-nothing, Bob could have produced it himself. There is no way for a third party to tell them apart.
+nothing: Bob could have produced it himself. There is no way for a third party to tell them apart.
 
 **With a signature, only Alice holds the private key.** A judge holding Alice's public key can
 verify the signature and know that Alice's key produced it. That property is **non-repudiation**,
@@ -118,7 +118,7 @@ Then there is key distribution, which is the reason public-key cryptography was 
 that is already secure, which is the problem you were trying to solve.
 
 **So why does anything still use symmetric cryptography?** Because public-key operations are orders
-of magnitude slower. Real protocols use both: public-key cryptography to agree a symmetric key,
+of magnitude slower. Real protocols use both: public-key cryptography to agree on a symmetric key,
 then a symmetric authenticated mode for the actual data. That is what TLS does, and it is why week
 10's material sits on top of this week's.
 

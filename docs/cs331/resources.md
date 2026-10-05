@@ -105,16 +105,16 @@ Two more references are used inside labs rather than as assigned reading:
 
 ## Course data files
 
-Labs use small data files that ship with the course: a system description, a
-vulnerable C program, five commented Python scripts, and two log files. See
-[Course Data Files](data/index.md) for what each one is and which lab uses it. Nothing there
+Labs use small data files that ship with the course: two written scenarios (a system description
+and an incident report), a vulnerable C program, five commented Python scripts, and two log files.
+See [Course Data Files](data/index.md) for what each one is and which lab uses it. Nothing there
 requires a virtual machine, a server, or an internet connection.
 
 ## Software
 
 | Tool | Needed for | Notes |
 | --- | --- | --- |
-| Python 3.11+ | Labs 4, 5, 6, 9, 10 and the week 5 worked example | Free from <https://www.python.org/downloads/>, and Lab 0 checks your version |
+| Python 3.11+ | Labs 4, 5, 6, and 9 (optional in Lab 10) and the week 5 worked example | Free from <https://www.python.org/downloads/>, and Lab 0 checks your version |
 | `cryptography` package | Labs 4, 5, and 6 only | `pip install cryptography`; installed step by step in Lab 0 |
 | A web browser | Labs 0, 6, 7, 8 | Any modern browser |
 
@@ -122,10 +122,7 @@ No virtual machine, no Docker, no Linux server, no git, no GitHub account.
 
 ## A note on links
 
-Links in this repository are relative, so they resolve on GitHub and in any local markdown viewer.
-**Canvas does not resolve relative paths.** When publishing these pages to Canvas, rewrite each
-relative path to the corresponding Canvas page URL, or upload the files and link to them in Canvas
-Files.
+Links between course pages work both here and in Canvas.
 
 ## Attribution and reuse
 

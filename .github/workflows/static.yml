@@ -26,12 +26,12 @@ jobs:
         uses: actions/checkout@v7
         with:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
-      - name: Setup Node
+      - name: Set up Node
         uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: npm
-      - name: Setup Pages
+      - name: Set up Pages
         uses: actions/configure-pages@v6
       - name: Install dependencies
         run: npm ci
@@ -40,7 +40,7 @@ jobs:
       # takes the build from about a minute and a half to under a second.
       # TECTONIC_CACHE_DIR pins where that cache lives, since Tectonic's default
       # location changed between releases.
-      - name: Setup pandoc
+      - name: Set up pandoc
         uses: pandoc/actions/setup@v1
         with:
           version: '3.9'
@@ -51,7 +51,7 @@ jobs:
           key: ${{ runner.os }}-tectonic-${{ hashFiles('scripts/cv/template.tex') }}
           restore-keys: |
             ${{ runner.os }}-tectonic-
-      - name: Setup Tectonic
+      - name: Set up Tectonic
         uses: wtfjoke/setup-tectonic@v4
         with:
           tectonic-version: '0.17.0'

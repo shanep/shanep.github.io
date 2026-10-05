@@ -74,7 +74,8 @@ Answer:
 
 ### Step 3: Encryption is not integrity
 
-Part 2 of the output flipped a single bit of a ciphertext and tried to decrypt it two ways.
+Part 2 of the output encrypted the same message two ways, flipped a single bit of each ciphertext,
+and tried to decrypt it.
 
 Answer:
 
@@ -102,8 +103,9 @@ Answer:
 
 1. **Quote the `C1 XOR C2` line.** Most of it is zero bytes. Explain what the zero bytes tell you
    about the two plaintexts, without decrypting anything.
-2. **Explain, in about 150 words, why XORing the two ciphertexts cancels the key out.** Write out
-   the algebra: if `C1 = P1 XOR K` and `C2 = P2 XOR K`, what is `C1 XOR C2`?
+2. **Explain, in about 150 words, why XORing the two ciphertexts cancels the keystream out.** Write
+   out the algebra: if `C1 = P1 XOR K` and `C2 = P2 XOR K`, where `K` is the keystream, what is
+   `C1 XOR C2`?
 3. The script recovered message 2 given message 1. **What did the attacker need to know, and what
    did they not need to know?**
 4. Change `MESSAGE_TWO` to a message of your own (the same length as `MESSAGE_ONE`) and run it

@@ -13,7 +13,8 @@
 # The worksheet PDF goes under docs/public, which VitePress copies verbatim onto
 # the website. The answer key never goes there; it stays beside the wrapper.
 #
-# Requires Chrome, Chromium or Edge, and python3 for the page count.
+# Requires Chrome, Chromium or Edge, and python3 for the file URL and the page
+# count.
 #
 set -euo pipefail
 
@@ -74,9 +75,13 @@ pdf_pages() {
 # render_pdf <source html> <target pdf> <expected page count>
 render_pdf() {
     local html=$1 pdf=$2 want=$3
-    local chrome profile pid size last=x i=0 count
+    local chrome url profile pid size last=x i=0 count
     [ -f "$html" ] || die "no source at $html"
     chrome=$(find_chrome)
+
+    # The path has to be percent-encoded before it is a file URL. Chrome reads
+    # a # in the checkout path as the start of a fragment and renders nothing.
+    url=$(python3 -c 'import sys, urllib.parse; print("file://" + urllib.parse.quote(sys.argv[1]))' "$html")
     info "rendering $(basename "$html") with $(basename "$chrome")"
 
     rm -f "$pdf"
@@ -93,7 +98,7 @@ render_pdf() {
         --no-pdf-header-footer \
         --user-data-dir="$profile" \
         --print-to-pdf="$pdf" \
-        "file://$html" >/dev/null 2>&1 &
+        "$url" >/dev/null 2>&1 &
     pid=$!
 
     while [ $i -lt 60 ]; do

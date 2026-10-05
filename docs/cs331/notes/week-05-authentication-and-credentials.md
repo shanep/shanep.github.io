@@ -82,8 +82,8 @@ The last section of the output shows two accounts with the same password produci
 stored hashes.
 
 The salt buys two things: an attacker cannot tell from the database that two accounts share a
-password, and one precomputed table no longer covers the whole database, the work becomes per
-account.
+password, and one precomputed table no longer covers the whole database, so the work becomes
+per account.
 
 The salt buys **nothing** against guessing an individual password. Guessing `letmein` still cracks
 both accounts. It costs the attacker two runs instead of one.
@@ -104,7 +104,7 @@ find, scored against SP 800-63B-4 §3:
 | Must be changed every 60 days | **Prohibited.** Verifiers SHALL NOT require periodic changes. Scheduled rotation produces `Spring2027!` → `Summer2027!`. Force a change on evidence of compromise. |
 | Cannot be pasted into the field | **Advised against.** It breaks password managers, which are among the few things that reliably improve real password quality. |
 | Cannot reuse the last 5 passwords | Not objectionable. |
-| Screened against breached-password lists | **Required, and this policy does not do it.** SP 800-63B-4 says verifiers SHALL check new passwords against a blocklist. |
+| *(missing)* Screening against breached-password lists | **Required, and this policy does not do it.** SP 800-63B-4 says verifiers SHALL check new passwords against a blocklist. |
 | Maximum length 16 characters | **Advised against.** Support at least 64. A low maximum often hints the password is being stored in a fixed-size field, which raises a worse question. |
 
 Two rules prohibited outright, one advised against, one rule that only holds up with MFA, one

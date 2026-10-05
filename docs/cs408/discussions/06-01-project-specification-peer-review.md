@@ -11,10 +11,10 @@ of the proposal, not the subject matter.
 
 ### Task 1: Post your Spec Doc
 
-Create a new post in this discussion form with a link to your Google document. Make sure to set the
+Create a new post in this discussion forum with a link to your Google document. Make sure to set the
 General access to "Anyone with the link (viewer)" as shown below, so other students can access it.
 
-![](../images/2026-02-26_16-43-06.png)
+![Google Docs share dialog with General access set to Anyone with the link and the role set to Viewer](../images/2026-02-26_16-43-06.png)
 
 ### Task 2: Review two other students
 
@@ -41,7 +41,7 @@ brief explanation of what’s missing.
 
 ### Written Feedback
 
-Answer each of the following questions in 2–3 sentences minimum. Be specific about exact sections,
+Answer each of the following questions in 2-3 sentences minimum. Be specific about exact sections,
 wireframes, schema fields, or checkpoints from the proposal.
 
 1. What is the strongest aspect of this proposal? Why does it stand out?
@@ -66,7 +66,7 @@ End your review with one of the following overall assessments and a one-sentence
 - ❌ Major Revision Required - Significant sections are missing or the scope/feasibility needs
   rethinking.
 
-###  Submission
+### Submission
 
 You are finished when you have done the following:
 

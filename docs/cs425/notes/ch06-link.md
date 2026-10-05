@@ -58,8 +58,8 @@ is a single point of failure.
 ## 6.4 Switched LANs
 
 **MAC addresses.** 48 bits, flat (not hierarchical), burned into the adapter, and
-administered so they are globally unique. An IP address is like a postal address, a
-MAC address is like a social security number: the first tells you where you are, the
+administered so they are globally unique. An IP address is like a postal address, and a
+MAC address is like a Social Security number: the first tells you where you are, the
 second is yours wherever you go.
 
 **ARP.** Translates an IP address into a MAC address on the **same subnet**. Broadcast

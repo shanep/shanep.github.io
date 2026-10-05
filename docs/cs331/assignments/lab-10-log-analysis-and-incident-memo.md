@@ -1,6 +1,6 @@
 # 15.04 Lab 10: Log Analysis and Incident Memo
 
-**Week 15 · 38 points · about 90 minutes · submit in Canvas**
+**Week 15 · 38 points · about 95 minutes · submit in Canvas**
 
 ## Goal
 
@@ -57,7 +57,7 @@ You need one of these, and no more:
 - **A text editor with search and a line count**, if you would rather. It is slower but it works.
 
 Nothing here requires a tool you do not already have. If a command below does not work on your
-machine, say so in your submission and use another method, the finding is what is graded, not the
+machine, say so in your submission and use another method: the finding is what is graded, not the
 technique.
 
 ## Steps
@@ -71,7 +71,7 @@ Open both files and look at a few lines of each.
 2. For **each** file, list **three specific fields** it records, and for each field, one question it
    can answer.
 3. For **each** file, name **two questions it cannot answer**, and say what data source you would
-   need instead. Be specific, "we would need more logs" is not an answer.
+   need instead. Be specific: "we would need more logs" is not an answer.
 4. Both files come from one host. **Name one thing that makes single-host logs an unreliable record
    after an intrusion**, using something from the week 12 incident report.
 
@@ -99,7 +99,7 @@ Answer:
    quote the exact line, and state in one sentence why it changes the severity of the whole
    incident.
 5. **Quote every line belonging to the intruder's session after the finding in question 4.** There
-   are four. Two of them are administrative commands and those are the ones that matter, for each,
+   are four. Two of them are administrative commands and those are the ones that matter. For each,
    say what it tells you about their intent. Then use the first and last timestamps to state how
    long the intruder had interactive access.
 6. Every **successful** staff login in this file uses a different authentication method than the
@@ -144,11 +144,11 @@ Answer:
 ### Step 4: Detection model and the base-rate problem
 
 1. **Write a misuse detection rule** for the Step 2 activity: the data source it reads, the
-   condition it fires on with specific numbers, and the response. Then say what it would miss, give
+   condition it fires on with specific numbers, and the response. Then say what it would miss: give
    one attacker behavior that defeats it.
 2. **Write an anomaly detection approach** for the same activity: what "normal" would have to be
    measured first, over what period, and what deviation would fire. Then say what it would produce
-   that the misuse rule would not, in both directions, useful findings and false alarms.
+   that the misuse rule would not, in both directions: useful findings and false alarms.
 3. **Which would you deploy on this server, and why?** CyBOK §8.3.3 describes blending them; if
    your answer is "both", say specifically how they divide the work.
 4. **The arithmetic.** Your rule watches authentication events on this server. Assume:

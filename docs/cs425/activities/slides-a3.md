@@ -123,7 +123,7 @@ TCP has to hide all of that with four tools:
 
 - **Checksums** to notice corruption
 - **Sequence numbers** to notice gaps and duplicates
-- **Acknowledgements** so the sender knows what arrived
+- **Acknowledgments** so the sender knows what arrived
 - **Timers** so the sender eventually retransmits what did not
 
 You build these yourself in P2, so today we leave the code alone and look at the
@@ -201,14 +201,14 @@ at all.
 Every network programmer meets this one. You stop a server, start it again
 immediately, and `bind` fails.
 
-The port is not really in use, a socket from the old run is still winding down.
+The port is not really in use: a socket from the old run is still winding down.
 The socket option **`SO_REUSEADDR`** tells the operating system to let a new
 server bind anyway. Keep that name in mind for Round 2.
 
 ## When the timer goes off
 
-TCP cannot use a fixed timeout. A round trip is 1 ms in the same rack and 200 ms
-across an ocean, and it changes from second to second on Wi-Fi.
+TCP cannot use a fixed timeout. A round trip is well under 1 ms in the same rack
+and 200 ms across an ocean, and it changes from second to second on Wi-Fi.
 
 ```text
 EstimatedRTT    = (1 - α) · EstimatedRTT + α · SampleRTT        α = 0.125

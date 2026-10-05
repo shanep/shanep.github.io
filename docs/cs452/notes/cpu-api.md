@@ -15,7 +15,7 @@
 - creates a child process that is a clone of the parent
 - The child is a near-exact copy of the parent. The main differences are its process id, its parent
   process id, and the value fork() returns (see `man 2 fork` for the full list)
-- The fork() is called once but it returns twice!
+- fork() is called once but it returns twice!
 
 ## Process Hierarchy
 
@@ -43,12 +43,12 @@ if ( fork () == 0) {
 
 How many new processes are created by the code snippet?
 
-## Wait🚏
+## Wait 🚏
 
 Sometimes, as it turns out, it is quite useful for a parent to wait for
 a child process to finish what it has been doing. This task is
 accomplished with the wait() system call (or its more complete sibling
-waitpid()
+waitpid()).
 
 ## Exec
 

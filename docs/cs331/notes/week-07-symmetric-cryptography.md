@@ -10,7 +10,7 @@ What to do this week, and when it is due, is on the [Module 7 Overview](week-07-
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §10.3 Information-theoretically Secure Constructions: one-time pad, secret sharing | 329-331 | 2 pp | 15 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §10.4 Symmetric Primitives: block ciphers, stream ciphers, hash functions | 331-334 | 3 pp | 25 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §10.5 Symmetric Encryption and Authentication, modes, MACs, KDFs | 334-338 | 4 pp | 35 min |
+| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §10.5 Symmetric Encryption and Authentication: modes, MACs, KDFs | 334-338 | 4 pp | 35 min |
 | Nakov, *Practical Cryptography for Developers* | AES and cipher block modes | none | skim | 25 min |
 
 Nakov: <https://cryptobook.nakov.com/symmetric-key-ciphers>. It is written for developers and has
@@ -44,7 +44,7 @@ Distinct 16-byte blocks after CTR:        12,288
 ```
 
 12,288 blocks in the image; only 34 of them are distinct, because the picture is mostly large areas
-of one color. After ECB there are still exactly 34 distinct blocks, **identical input blocks
+of one color. After ECB there are still exactly 34 distinct blocks: **identical input blocks
 produced identical output blocks**, so every repeated patch of color is still a repeated patch of
 color, just a different color. Open `cs331_ecb.bmp` and you can still see the picture.
 

@@ -2,14 +2,14 @@
 
 **Week 3 · 100 points**
 
-### Overview
+## Overview
 
- We will conduct a broad survey of languages, backend frameworks, and front-end frameworks that you
-may want to use.  You will post your results to this discussion board to the entire class can learn
-about as many tech-stacks as possible. The only restriction is that it must run on EC2 with a
-**Linux** image. You are not committing to one particular stack at this time, that will come later
-when you write your project specification, in fact if another student finds a cool webstack that you
-didn't research you are free to use that when developing your project.
+We will conduct a broad survey of languages, backend frameworks, and front-end frameworks that you
+may want to use. You will post your results to this discussion board so the entire class can learn
+about as many tech stacks as possible. The only restriction is that it must run on EC2 with a
+**Linux** image. You are not committing to one particular stack at this time. That will come later
+when you write your project specification. In fact, if another student finds a cool web stack that
+you didn't research, you are free to use that when developing your project.
 
 ## Task 1 - Research & Compare
 
@@ -25,7 +25,7 @@ Find 3 different full-stack stacks and, for each one, clearly define:
 Your stacks must be meaningfully different (don’t do “Flask vs Django vs FastAPI” as your only
 differences).
 
-### Task 2 - Implement "Hello World"
+## Task 2 - Implement "Hello World"
 
 All major frameworks have plenty of documentation on how to set up a quick "hello world"; some even
 provide project generators that will construct a new application for you. More obscure frameworks
@@ -42,26 +42,26 @@ Your app must demonstrate:
 - Uses a UI framework (e.g., Bootstrap) to style the page
 - Includes one automated test
 - Demonstrates debugging
-- example: breakpoint screenshot, debug log output, or short explanation of how you stepped through
-  a request
+  - Example: breakpoint screenshot, debug log output, or short explanation of how you stepped
+    through a request
 
 ### Tech Stack Options
 
-Below are some ideas for where to get started
+Below are some ideas for where to get started:
 
-- - [Ruby on Rails](https://rubyonrails.org/)
-  - C# and [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet)
-  - Python and [Django](https://www.djangoproject.com/)
-  - Java and [Spring](https://spring.io/)
-  - [Go](https://go.dev/doc/articles/wiki/)
-  - [x86 Assembly](https://github.com/ancat/minserv) language  - This option is for students who
-    love pain and suffering!
-  - [HTMX](https://htmx.org/)
-  - PHP with [Laravel](https://laravel.com/)
+- [Ruby on Rails](https://rubyonrails.org/)
+- C# and [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet)
+- Python and [Django](https://www.djangoproject.com/)
+- Java and [Spring](https://spring.io/)
+- [Go](https://go.dev/doc/articles/wiki/)
+- [x86 Assembly](https://github.com/ancat/minserv) language. This option is for students who love
+  pain and suffering!
+- [HTMX](https://htmx.org/)
+- PHP with [Laravel](https://laravel.com/)
 
 ### Complete Examples
 
-Here are some examples to get you started. You don't have to pick one of the 5 below they are just
+Here are some examples to get you started. You don't have to pick one of the 5 below. They are just
 there to help you if you don't know where to start.
 
 - Stack Option 1: Python / Django
@@ -100,7 +100,7 @@ there to help you if you don't know where to start.
   - Testing: PHPUnit + Laravel testing
   - Debugging: Xdebug, Laravel logs
 
-### Task 3 - Post your findings
+## Task 3 - Post your findings
 
 Use this structure in your discussion post:
 
@@ -111,14 +111,14 @@ Use this structure in your discussion post:
   - UX/UI:
   - Testing:
   - Debugging:
-  - Pros/cons (2–3 bullets):
+  - Pros/cons (2-3 bullets):
 - Stack 2:
   - (same fields)
 - Stack 3:
   - (same fields)
 - Chosen stack to do hello world:
   - I chose:
-  - Reason (3–5 sentences):
+  - Reason (3-5 sentences):
   - Hello World evidence:
   - Route/controller:
   - Template/view:

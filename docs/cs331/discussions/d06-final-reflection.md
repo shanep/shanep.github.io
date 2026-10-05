@@ -28,7 +28,7 @@ objective: it asks you to judge your own position against
 ## Before you start
 
 Open the [Objective Alignment Sheet](../objectives.md) and read the seven terminal objectives and the 34 supporting
-objectives under them. Then skim your own graded work from the semester, the labs are the fastest
+objectives under them. Then skim your own graded work from the semester. The labs are the fastest
 way to remember what you actually did.
 
 ## Post Directions
@@ -49,7 +49,7 @@ not explain to somebody what actually goes wrong if a CA is compromised."
 
 ### 2. The thing that changed how you see something
 
-Name **one** idea from this course that changed how you look at something outside the course, a
+Name **one** idea from this course that changed how you look at something outside the course: a
 product you use, a system at work, a news story, an argument you had. Say what you thought before
 and what you think now.
 

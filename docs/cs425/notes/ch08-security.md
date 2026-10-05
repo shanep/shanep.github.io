@@ -80,6 +80,11 @@ TLS sits between the application and TCP. The handshake:
 4. Records are encrypted and MACed, with sequence numbers included in the MAC to
    prevent reordering and replay.
 
+This is the book's simplified, TLS 1.2-style handshake. TLS 1.3, which curl and
+browsers negotiate today, gets the shared secret from ephemeral Diffie-Hellman and
+uses AEAD ciphers such as AES-GCM, which encrypt and authenticate in one step, so
+there are no separate MAC keys.
+
 ::: warning
 
 TLS protects the **contents** of the connection. It does not hide that you connected,

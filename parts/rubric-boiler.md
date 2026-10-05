@@ -2,7 +2,7 @@
 ## Minimum Standards
 
 All code must compile and run on Onyx, the department's Linux cluster. Onyx and the machines in the
-Kount Computer Lab (CCP 241) are the same cluster: use `onyx.boisestate.edu` when you work remotely
+Kount Learning Center (CCP 241) are the same cluster: use `onyx.boisestate.edu` when you work remotely
 and the lab machines when you are on campus. Code is compiled and tested on the command line using
 the provided scripts, and your instructor will **not** use an IDE to build or test your
 submission. You are welcome to develop in any IDE, but always verify your code compiles and runs
@@ -25,7 +25,7 @@ Solving the problem in a way that contradicts the specification can reduce your 
 Your code will be run against the provided tests and any additional tests you author. The test suite
 may include both automated and manual tests where automation is not feasible.
 
-**How many tests should you write?** At a minimum, write at least one test per **public** function
+**How many tests should you write?** At a minimum, write one test per **public** function
 or method, including any untested functions provided to you in the starter code. Always test both
 valid and invalid inputs. Your program must not crash on bad data.
 

@@ -7,7 +7,7 @@ grading: not_graded
 
 **Week 3 · 0 points · reminder · reply in the discussion**
 
-Return to the discussion, **[3.02 D2: Ethics and Privacy Case](../discussions/d02-ethics-and-privacy-case.md)**, and reply to two replies of your peers' initial
+Return to the discussion, **[3.02 D2: Ethics and Privacy Case](../discussions/d02-ethics-and-privacy-case.md)**, and reply to two of your peers' initial
 posts by Sunday at 11:59 p.m. Mountain Time.
 
 ## Note About Grading

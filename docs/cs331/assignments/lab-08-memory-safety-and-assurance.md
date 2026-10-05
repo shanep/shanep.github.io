@@ -15,12 +15,16 @@ read the assembly a compiler produces from it, in a browser. That is all.
 
 - **4.4**: Trace a buffer overflow in C source to the stack layout that makes it exploitable, and
   evaluate which mitigations would stop it.
-- **5.5**: Recommend a prevention-first countermeasure for a class of vulnerability.
+- **5.5**: Recommend a prevention-first countermeasure (a language, API, or coding practice) for a
+  class of vulnerability.
 - **6.1**: Distinguish prevention, detection, and mitigation of vulnerabilities as distinct
   classes of assurance evidence.
-- **6.2**: Identify what a static or dynamic analysis result does and does not establish.
-- **6.3**: Evaluate whether stated security claims are supported by the design and testing
-  evidence offered.
+- **6.2**: Identify what a static or dynamic analysis result does and does not establish about a
+  program.
+- **6.3**: Evaluate whether stated security claims about a system are supported by the design and
+  testing evidence offered.
+- **6.4**: Describe how a maturity model or evaluation scheme (SAMM, BSIMM, or the Common Criteria)
+  supplies organizational assurance evidence.
 
 ([TLO 4](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures) ·
 [TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles) ·
@@ -65,7 +69,7 @@ Read `check_badge()` in [vuln.c](../data/vuln.c).
 
 ### Step 2: Look at the stack
 
-Open <https://godbolt.org/>. Paste in **only** the `check_badge` function plus the two declarations
+Open <https://godbolt.org/>. Paste in **only** the `check_badge` function plus the three declarations
 it needs, like this:
 
 ```c

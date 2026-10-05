@@ -91,7 +91,7 @@ static void *consumer(void *args)
      {
           if (delay)
           {
-               /*simulate producing the item*/
+               /*simulate consuming the item*/
                s.tv_nsec = (rand_r(&seedp) % MAX_SLEEP);
                nanosleep(&s, NULL);
           }
@@ -126,7 +126,7 @@ static void *consumer(void *args)
 static void usage(char *n)
 {
      fprintf(stderr, "Usage: %s [-c num consumer] [-p num producer] [-i num items] [-s queue size] <-d introduce delay>\n", n);
-     fprintf(stderr, "-d will introduce a random delay between consumer and producer");
+     fprintf(stderr, "-d will introduce a random delay between consumer and producer\n");
      exit(EXIT_FAILURE);
 }
 
@@ -134,7 +134,7 @@ int main(int argc, char *argv[])
 {
      int nump = 1;       /*total number of producers*/
      int numc = 1;       /*total number of consumers*/
-     int numitems = 10;  /*total number of items to produce per thread*/
+     int numitems = 10;  /*total number of items, split between the producers*/
      int queue_size = 5; /*The default size of the queue*/
      int c;
 
@@ -192,18 +192,18 @@ int main(int argc, char *argv[])
           pthread_create(&consumers[i], NULL, consumer, (void *)NULL);
      }
 
-     /*Wait for all the the producer threads to finish*/
+     /*Wait for all the producer threads to finish*/
      for (int i = 0; i < nump; i++)
      {
           pthread_join(producers[i], NULL);
      }
 
      // Once all the producers are finished we set a flag so the consumer thread can finish up
-     // Once shutdown is called your queue should drain all remaining items and be read for
+     // Once shutdown is called your queue should drain all remaining items and be ready for
      // destruction!
      queue_shutdown(pc_queue);
 
-     /*Wait for all the the consumer threads to finish*/
+     /*Wait for all the consumer threads to finish*/
      for (int i = 0; i < numc; i++)
      {
           pthread_join(consumers[i], NULL);
@@ -215,8 +215,8 @@ int main(int argc, char *argv[])
           abort();
      }
      fprintf(stderr, "Queue is empty:%s\n", is_empty(pc_queue) ? "true" : "false");
-     fprintf(stderr, "Total produced:%d\n", numproduced.num);
-     fprintf(stderr, "Total consumed:%d\n", numconsumed.num);
+     fprintf(stderr, "Total produced:%u\n", numproduced.num);
+     fprintf(stderr, "Total consumed:%u\n", numconsumed.num);
 
      // Free up all the stuff we allocated
      queue_destroy(pc_queue);
@@ -224,7 +224,7 @@ int main(int argc, char *argv[])
      // End our timing
      end = getMilliSeconds();
      // Print timing to standard out to graph
-     fprintf(stdout, " %f %d \n", end - start, numproduced.num);
+     fprintf(stdout, " %f %u \n", end - start, numproduced.num);
 
      return 0;
 }

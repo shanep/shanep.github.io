@@ -22,7 +22,7 @@ extern "C"
     queue_t queue_init(int capacity);
 
     /**
-     * @brief Frees all memory and related data signals all waiting threads.
+     * @brief Frees all memory and related data and signals all waiting threads.
      *
      * @param q a queue to free
      */
@@ -52,14 +52,14 @@ extern "C"
    void queue_shutdown(queue_t q);
 
     /**
-     * @brief Returns true is the queue is empty
+     * @brief Returns true if the queue is empty
      *
      * @param q the queue
      */
     bool is_empty(queue_t q);
 
     /**
-     * @brief
+     * @brief Returns true if queue_shutdown has been called on the queue
      *
      * @param q The queue
      */

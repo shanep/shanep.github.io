@@ -27,7 +27,7 @@ classroom at scale.
 - A whole class at once (9 of 45 failed in my test), with the testing limitations noted above
 - Tool / function calling (needed for Claude Code)
 - Image input (text only)
-- Rate limit or quota not reported in the API calls. The only place that is listed is in the Web UI.
+- Rate limit or quota not reported in the API calls. The only place they are listed is the Web UI.
 
 Temperature control is also missing, but OIT cannot fix that one. Opus 5.5 does not accept
 sampling parameters on any platform, so there is no repeatable output for grading.
@@ -62,7 +62,7 @@ This is the finding that matters most for teaching. Measured, not estimated.
 
 One request at a time came back in about 4 seconds. Fifteen at once all succeeded but each took 7
 to 12 seconds, so requests sent together slow each other down rather than finishing in parallel.
-Forty-five at once ran past the 60 second mark, and at that point 9 of the 45 returned a 504 while
+Forty-five at once ran past the 60-second mark, and at that point 9 of the 45 returned a 504 while
 the rest landed right around 60 seconds. A class hitting submit in the same few minutes would see
 exactly this. I did not measure where between 15 and 45 the first failure appears.
 
@@ -73,7 +73,7 @@ Good news here. The context is large, so document-heavy assignments are not a pr
 ![Largest inputs the gateway accepted](images/boisestate-ai-context.png)
 
 Inputs up to at least 220,000 tokens were accepted and returned in about 7 seconds, so the usable
-context is at least that large. I did not find the exact ceiling: a roughly 512k token input
+context is at least that large. I did not find the exact ceiling: a roughly 512k-token input
 returned a 504 after about 60 seconds, the same point at which the load requests stopped
 returning, so I cannot separate a token limit from the time limit here.
 
@@ -89,7 +89,7 @@ returning, so I cannot separate a token limit from the time limit here.
 | **Model access**            | Unknown or unavailable models are refused. No list endpoint.                       | A made-up model id returned 403 Access denied to model.                                                                                                                                                                                                                                |
 | **Rate / quota headers**    | None present.                                                                      | Dumped the full response header set on a 200. No rate-limit, quota, or Retry-After header was returned.                                                                                                                                                                               |
 
-## Why the no-tools limit cannot be fixed on our end
+### Why the no-tools limit cannot be fixed on our end
 
 This one surprised me, so here is the plain version. Tool calling is something the model does,
 not a switch our software flips. The model only offers to call a tool if that tool is described
@@ -129,7 +129,7 @@ front of the gateway.
   that maps their format to this gateway.
 - The adapter would need to swap the auth header to `X-API-Key`, map the model name to `model_id`
   and the system text to `system_prompt`, flatten message content to plain strings, translate the
-  streaming events, and handle the 60s cutoff and the HTML error so the CLI sees a clean failure.
+  streaming events, and handle the 60s cutoff and the HTML 504 page so the CLI sees a clean failure.
 
 Even with that proxy, tool calling would still be gone (see above), so an agent like Claude Code
 could chat with it but could not read files, edit, or run commands. For agent-style coursework,

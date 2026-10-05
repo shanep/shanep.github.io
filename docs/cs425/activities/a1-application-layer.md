@@ -26,7 +26,7 @@ wrong, and that is a much more useful argument to have.
 
 ::: warning
 
-This is a paper activity. Your group turns in **one filled out worksheet, on
+This is a paper activity. Your group turns in **one filled-out worksheet, on
 paper, before you leave the room**. Copies are handed out in class.
 
 It is graded pass/fail. Both rounds attempted in good faith is a pass. Being
@@ -68,8 +68,8 @@ because that decides which switches work:
 dig -v
 ```
 
-While you are at it, check three more you will meet in A3. Just write down the
-version line; you do not need to know what they do yet.
+While you are at it, check three more you will meet in the next few activities.
+Just write down the version line; you do not need to know what they do yet.
 
 ```bash
 curl --version | head -1
@@ -135,18 +135,18 @@ changed.
 | `dig @1.1.1.1 boisestate.edu` | Ask a public resolver instead of the campus one. **This one fails.** |
 | `dig +trace boisestate.edu` | Walk the delegation chain from the root. **This one fails too.** |
 | `dig +tcp boisestate.edu` | The same query over TCP instead of UDP |
-| `dig +stats boisestate.edu` | Timing, server used, message size |
+| `dig +nostats boisestate.edu` | Drops the timing, server and message size footer (`+stats` is the default) |
 
 ### The two that fail, and why that is the interesting part
 
 `@1.1.1.1` times out with `no servers could be reached`, and `+trace` stops after
 the first step instead of walking down to the answer. Neither is broken software.
-Both need to send DNS queries **directly to a server out on the internet**, and
+Both need to send DNS queries **directly to a server out on the Internet**, and
 this network does not allow that: `/etc/resolv.conf` names two campus resolvers,
 and outbound port 53 to anything else is blocked.
 
 On the worksheet, say what those two failures have in common, and name the thing
-sitting between Onyx and the rest of the internet that causes both. You will meet
+sitting between Onyx and the rest of the Internet that causes both. You will meet
 that idea again in chapter 4, where the boxes in the middle of the network are a
 topic of their own.
 
@@ -266,9 +266,9 @@ about why the TTL did not move. Canvas has no rubric attached, so award the full
 20 or nothing.
 
 **Pacing.** Round 1 is fifteen minutes, most of it logging in. Round 2 is the
-rest of the period. If time is short, cut the `+tcp` and `+stats` rows and keep
+rest of the period. If time is short, cut the `+tcp` and `+nostats` rows and keep
 the two that fail and the `+short` trap; those are the parts that matter most.
 
 **What this sets up.** A2 (week 4, instructor led) puts SSH keys and a `probe`
-function on the box. A3 (week 5) does for `curl`, `nc` and `ping` what today did
-for `dig`.
+function on the box. A3 (week 6) watches TCP and UDP sockets at work, and A4 and
+A5 do for `ping` and `tracepath` what today did for `dig`.

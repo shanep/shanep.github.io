@@ -75,7 +75,7 @@ closest NEXT-HOP (hot potato routing), then tiebreakers.
 
 Local preference comes **first**, before path length. BGP routing is driven by
 business relationships, not by distance. A provider will route traffic the long way
-round if the short way costs it money. This is the single most important thing to
+around if the short way costs it money. This is the single most important thing to
 understand about BGP.
 
 :::
@@ -89,7 +89,7 @@ Separate the control plane out of the routers entirely:
 - **Applications** above the controller implementing routing, access control, load
   balancing.
 
-The win is that network behavior becomes a program running on a general purpose
+The win is that network behavior becomes a program running on a general-purpose
 machine rather than a distributed algorithm you cannot debug.
 
 ## 5.6 ICMP

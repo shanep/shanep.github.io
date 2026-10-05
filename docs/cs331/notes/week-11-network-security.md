@@ -1,6 +1,6 @@
 # 11.01 Readings and Lecture Notes
 
-**March 29 - April 4 · Reading: 15 pages · About 2 hrs 40 min with the worked example**
+**March 29 - April 4 · Reading: 17 pages · About 2 hrs 40 min with the worked example**
 
 What to do this week, and when it is due, is on the [Module 11 Overview](week-11-overview.md).
 
@@ -9,8 +9,8 @@ What to do this week, and when it is due, is on the [Module 11 Overview](week-11
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §19.1 Security Goals and Attacker Models | 646-648 | 2 pp | 15 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §19.3.2 Security at the Transport Layer, TLS, PKI, TCP, UDP, QUIC | 656-660 | 4 pp | 30 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §19.3.3 Security at the Internet Layer, IPv4, IPv6, routing, ICMP | 660-665 | 5 pp | 35 min |
+| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §19.3.2 Security at the Transport Layer: TLS, PKI, TCP, UDP, QUIC | 656-660 | 4 pp | 30 min |
+| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §19.3.3 Security at the Internet Layer: IPv4, IPv6, routing, ICMP | 660-665 | 5 pp | 35 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §19.4 Network Security Tools | 671-677 | 6 pp | 40 min |
 
 §19.3.1 (application layer) and §19.3.4 (link layer) are not assigned, but §19.3.4.5 on network
@@ -52,12 +52,12 @@ Read the report for traffic, not for malware.
   TLS-encrypted and the certificate is valid, so a sensor cannot read a byte of it. It does not need
   to. A workstation making a regular, precisely periodic connection to one external host, around the
   clock, for a week, is not what a human being browsing the web looks like. **Beaconing detection is
-  purely a metadata pattern** (who, to whom, how often), and this is exactly the case §19.4.3
-  describes.
+  purely a metadata pattern** (who, to whom, how often), and it is exactly the kind of flow data
+  §19.4.3 describes.
 
-- **Day 0.** The domain `api-telemetry-sync[.]com` had never been seen before in this
-  organization's traffic. First-contact-with-a-new-domain is a weak signal on its own and a strong
-  one in combination with periodicity.
+- **Day 0.** Nothing in the report suggests the organization had ever talked to
+  `api-telemetry-sync[.]com` before. First-contact-with-a-new-domain is a weak signal on its own
+  and a strong one in combination with periodicity.
 
 - **Days 4-6.** Roughly 74 GB leaves in ~400 MB chunks, between 01:00 and 04:00, to that same host.
   This is the loudest thing in the entire incident. Nobody in a hospital's billing department
@@ -76,9 +76,8 @@ Read the report for traffic, not for malware.
   networks to a proxy, and alerting on volume, converts the exfiltration from invisible into an
   obvious event.
 
-Notice that **neither of these is a detection product.** They are architecture decisions. §19.4 is
-consistent about this: for most organizations, attack surface reduction and segmentation buy more
-than an additional sensor.
+Notice that **neither of these is a detection product.** They are architecture decisions. For most
+organizations, attack surface reduction and segmentation buy more than an additional sensor.
 
 ### The honest limit
 

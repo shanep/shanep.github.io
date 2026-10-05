@@ -7,7 +7,7 @@ grading: not_graded
 
 **Week 1 · 0 points · reminder · reply in the discussion**
 
-Return to the discussion, **[0.03 D1: Introductions and the Security Mindset](../discussions/d01-introductions-and-security-mindset.md)**, and reply to one reply of your peers' initial
+Return to the discussion, **[0.03 D1: Introductions and the Security Mindset](../discussions/d01-introductions-and-security-mindset.md)**, and reply to one of your peers' initial
 posts by Sunday at 11:59 p.m. Mountain Time.
 
 ## Note About Grading

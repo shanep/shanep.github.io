@@ -2,7 +2,7 @@
 
 **Reading:** Kurose & Ross, chapter 3
 
-This is the longest chapter in the course and the one the midterm weights heaviest.
+This is the longest chapter in the course and the one the midterm weights most heavily.
 It is also the chapter [P2](../assignments/p2.md) makes you implement.
 
 ## 3.1 Transport layer services
@@ -79,12 +79,12 @@ window size, for a reason worth working through carefully.
 
 ## 3.5 Connection-oriented transport: TCP
 
-**Segment structure.** Source and destination ports, sequence number, acknowledgement
+**Segment structure.** Source and destination ports, sequence number, acknowledgment
 number, header length, flags, receive window, checksum, urgent pointer, and options.
 The options are why the header length field exists: the header runs 20 to 60 bytes.
 
 **Sequence numbers count bytes, not segments.** The sequence number of a segment is
-the byte-stream number of its first byte. The acknowledgement number is the sequence
+the byte-stream number of its first byte. The acknowledgment number is the sequence
 number of the next byte expected. TCP ACKs are **cumulative**.
 
 **Timeout estimation.** `EstimatedRTT` is an exponentially weighted moving average of

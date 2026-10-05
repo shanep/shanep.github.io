@@ -8,10 +8,9 @@ money for something else.
 
 This week has two halves. The first is CyBOK's treatment of risk: what it is, the elements a rating
 is built from, and why "eliminate the risk" is not a thing that happens. A rating is meaningless
-without a stated scale, so Lab 2 makes you state yours. The
-second is threat modeling, the systematic method for finding what could go wrong, so that you
-find threats by working through a checklist rather than by happening to think of them at the right
-moment.
+without a stated scale, so Lab 2 makes you state yours. The second is threat modeling, the
+systematic method for finding what could go wrong, so that you find threats by working through a
+checklist rather than by happening to think of them at the right moment.
 
 Lab 2 is the first assignment where you produce a structured artifact instead of prose.
 
@@ -36,8 +35,8 @@ By the end of this week, the successful student will be able to:
 - [4.02 Lab 2: Threat Model a Small System](../assignments/lab-02-threat-model.md) (1 hr 25 min,
   38 points)
 
-No discussion this week. Read the [SnapVault system description](../data/photoshare-system.md) end to end
-before you start diagramming, the whole lab depends on facts scattered through it.
+No discussion this week. Read the [SnapVault system description](../data/photoshare-system.md)
+end to end before you start diagramming: the whole lab depends on facts scattered through it.
 
 ## Time Estimate
 

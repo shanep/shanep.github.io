@@ -38,8 +38,8 @@ is completely new to you, say that too; you are the audience this course is desi
 
 Pick **one security failure** and write about it. It can be:
 
-- Something you read about, a breach, a ransomware incident, an outage.
-- Something that happened to you or someone you know, a compromised account, a phishing email that
+- Something you read about: a breach, a ransomware incident, an outage.
+- Something that happened to you or someone you know: a compromised account, a phishing email that
   almost worked, a lost device.
 - Something at a place you have worked, described in a way that does not identify the employer or
   anyone involved.

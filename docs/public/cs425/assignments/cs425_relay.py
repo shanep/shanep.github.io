@@ -2,7 +2,7 @@
 """CS425 P2 relay: pairs a sender with a receiver and damages what passes between them.
 
 The protocol is specified on the P2 assignment page. In short, each side
-registers with one plain text datagram and waits for the reply:
+registers with one plain-text datagram and waits for the reply:
 
     receiver:  HELLO <session> recv
     sender:    HELLO <session> send <loss> <corrupt> <dup>
@@ -61,7 +61,7 @@ class Rates:
 
 @dataclass
 class Counters:
-    """What happened to the datagrams travelling in one direction."""
+    """What happened to the datagrams traveling in one direction."""
 
     received: int = 0
     dropped: int = 0
@@ -369,8 +369,14 @@ def main() -> None:
     sock.setblocking(False)
     rng = random.Random(args.seed) if args.seed is not None else None
     log.info("listening on udp %s:%d, delay %g ms", args.host, args.port, args.delay)
-    Relay(sock, idle=args.idle, max_sessions=args.max_sessions, max_pps=args.max_pps,
-          delay=args.delay / 1000.0, rng=rng).serve_forever()
+    relay = Relay(sock, idle=args.idle, max_sessions=args.max_sessions,
+                  max_pps=args.max_pps, delay=args.delay / 1000.0, rng=rng)
+    try:
+        relay.serve_forever()
+    except KeyboardInterrupt:
+        # Ctrl-C still logs the summary of every session that is open.
+        for s in list(relay.sessions.values()):
+            relay._drop_session(s, "relay stopped")
 
 
 if __name__ == "__main__":

@@ -151,8 +151,8 @@ broader `208.65.152.0/22`.
 
 The announcement leaked to the rest of the Internet, and routers everywhere did
 exactly what they are built to do: the `/24` was more specific, so it won.
-YouTube was unreachable worldwide for about two hours. Nothing malfunctioned,
-the rule worked perfectly.
+YouTube was unreachable worldwide for about two hours. Nothing malfunctioned.
+The rule worked perfectly.
 
 ## Every link has a size limit
 
@@ -195,11 +195,12 @@ The fix is understanding the MTU, not rebooting the router.
 
 In 1987 Van Jacobson turned that safety feature into **traceroute**: send a packet
 with TTL 1, then 2, then 3, and each router along the way identifies itself as it
-drops one.
+drops one. On Onyx the tool is `tracepath`, which does the same thing and needs
+no root.
 
 Some routers never answer. Forwarding your packet is their job, replying with
 ICMP is not, and many rate limit or filter it. So **no reply does not mean
-broken**, the same lesson as a host that will not answer ping.
+broken**: the same lesson as a host that will not answer ping.
 
 ## Matching on more than the destination
 

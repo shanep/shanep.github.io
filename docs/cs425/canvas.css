@@ -1,4 +1,4 @@
-/* CS 425 — Canvas page styling
+/* CS 425: Canvas page styling
  *
  * ONE stylesheet for the whole course. Canvas strips <style> elements from page
  * bodies, so `edutools push` inlines this into style attributes at publish time.
@@ -17,7 +17,7 @@
  * Palette: https://www.boisestate.edu/brand/visual-identity/colors/
  *   Boise State Blue #0033A0 · Boise State Orange #D64309
  *   secondary blues #001F60 #006BA6 · neutrals #F6F7F9 #E3E7EC #D9DEE5
- * The brand allows secondary colours in small amounts (20% or less) and asks for
+ * The brand allows secondary colors in small amounts (20% or less) and asks for
  * the two primaries to dominate. Blue carries all the structure here; orange is
  * reserved for the two places a page is telling a student they will lose points.
  */
@@ -89,7 +89,7 @@ blockquote {
   border-radius: 0 3px 3px 0;
 }
 
-/* ::: danger — the portability rule, which is what students actually lose
+/* ::: danger: the portability rule, which is what students actually lose
    whole projects to. The one place orange earns being the loudest thing. */
 .cs-danger {
   border-left: 5px solid #D64309;
@@ -97,19 +97,19 @@ blockquote {
   color: #7A2705;
 }
 
-/* ::: warning — a caution worth stopping for, but not a zero. */
+/* ::: warning: a caution worth stopping for, but not a zero. */
 .cs-warning {
   border-left: 5px solid #006BA6;
   background-color: #F2F8FB;
 }
 
-/* ::: tip and ::: info — an aside; quietest of the three. */
+/* ::: tip and ::: info: an aside; quietest of the three. */
 .cs-tip, .cs-info {
   border-left: 4px solid #C7D2E8;
   background-color: #F8FAFC;
 }
 
-/* --- sections the decorator recognises --------------------------------- */
+/* --- sections the decorator recognizes --------------------------------- */
 
 /* Overview is deliberately NOT boxed. A section div runs from its h2 to the next
    one, so on these pages it contains the ::: danger callout, and boxing it would

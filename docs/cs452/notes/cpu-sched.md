@@ -5,7 +5,7 @@
 ## First In, First Out (FIFO)
 
 - Most basic algorithm
-- Also know as First Come, First Served (FCFS)
+- Also known as First Come, First Served (FCFS)
 - Simple to implement
 - Not a great performer
 
@@ -49,8 +49,8 @@ These two metrics often pull in opposite directions:
   frequently switching between jobs (favors Round Robin).
 
 Round Robin is excellent for response time but terrible for turnaround
-time, every job takes longer to finish because it keeps getting
-interrupted. There is no single "best" scheduler, the right choice
+time: every job takes longer to finish because it keeps getting
+interrupted. There is no single "best" scheduler. The right choice
 depends on the workload and what the system is optimizing for.
 
 ## Priority Inversion

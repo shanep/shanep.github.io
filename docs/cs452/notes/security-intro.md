@@ -59,15 +59,15 @@ void vulnerable(char *input) {
 }
 ```
 
-Remember that `strcpy` also copies the `'\0'`, so a 64 character string
+Remember that `strcpy` also copies the `'\0'`, so a 64-character string
 needs 65 bytes and already overflows `buf`. If `input` is 128 bytes, `strcpy`
 writes past `buf`, over the saved
 frame pointer, and over the return address. An attacker who controls
 `input` controls where the function returns.
 
 **Fix**: Use `snprintf` or `strlcpy` (glibc 2.38 and later) with the size of
-the destination, both always terminate the string with `'\0'`. Do **not** treat
-`strncpy` as the fix on its own, it does not add the `'\0'` when the source is
+the destination. Both always terminate the string with `'\0'`. Do **not** treat
+`strncpy` as the fix on its own: it does not add the `'\0'` when the source is
 too long, so you must terminate the buffer yourself. For user input prefer
 `fgets`, which also takes a size. With AddressSanitizer (`-fsanitize=address`)
 the compiler instruments every access and catches overflows at runtime.
@@ -119,7 +119,7 @@ the kind of corruption your buddy allocator must guard against.
 ## Mitigations
 
 Modern systems layer multiple defenses so that a bug alone is not
-sufficient for exploitation, an attacker must defeat several
+sufficient for exploitation: an attacker must defeat several
 independent protections.
 
 ### Stack Canaries
@@ -153,7 +153,7 @@ the stack is marked non-executable.
 
 Injected code attacks are instead replaced by **return-oriented
 programming (ROP)**, which chains together existing executable code
-gadgets, which is why ASLR is still necessary even with NX.
+gadgets. That is why ASLR is still necessary even with NX.
 
 Enable with: `gcc -z noexecstack`
 

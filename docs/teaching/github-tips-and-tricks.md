@@ -39,7 +39,7 @@ git config --global user.email "you@u.boisestate.edu"
 ```
 
 The email in `git config` **must** match one of the emails on your GitHub account. If it does
-not, your commits will not be linked to your account, and your instructor can not easily tell
+not, your commits will not be linked to your account, and your instructor cannot easily tell
 that they are yours.
 
 ## Keep your coursework private
@@ -72,10 +72,10 @@ gh repo create my-project --private --clone --template OWNER/STARTER-REPO
 
 ## Sharing a repository with your instructor
 
-Since your repository is private, your instructor can not see it until you give them access. If
+Since your repository is private, your instructor cannot see it until you give them access. If
 your class asks you to submit a link to your repository, go to **Settings > Collaborators**, click
-**Add people**, and add your instructor's GitHub username. Do this **before** the due date, a link
-your instructor can not open is the same as not submitting anything.
+**Add people**, and add your instructor's GitHub username. Do this **before** the due date. A link
+your instructor cannot open is the same as not submitting anything.
 
 ## Commit early and often
 
@@ -84,7 +84,7 @@ history is a backup, an undo button, and a record that shows how you built your 
 time. A project that shows up in one giant commit the night it is due is a lot harder to defend
 if anyone ever has questions about where the code came from.
 
-Write commit messages that say what you did, "Add input validation to parse_args" not "stuff" or
+Write commit messages that say what you did: "Add input validation to parse_args", not "stuff" or
 "asdf". Future you will thank you.
 
 ## Do not commit secrets or junk
@@ -134,7 +134,7 @@ is a good habit to build now.
 Press the `.` key while you are looking at any repository on github.com and it opens in a
 lightweight version of VS Code right in your browser. It is great for fixing a typo or editing a
 README, and it does not use any of your Codespaces hours. It does not have a terminal though, so
-you can not build or run anything.
+you cannot build or run anything.
 
 ## Fixing common mistakes
 

@@ -6,7 +6,7 @@
   - Access Canvas help articles
   - Contact the Boise State Help Desk for technical support
 - The [University Software page](https://www.boisestate.edu/oit-software/) can provide information
-  about Google Workspace, Microsoft Office, DUO, and other Boise State-supported software
+  about Google Workspace, Microsoft Office, Duo, and other Boise State-supported software
 
 ---
 

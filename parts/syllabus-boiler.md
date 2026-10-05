@@ -2,7 +2,7 @@
 ## Grading Policy
 
 Grades will be posted in Canvas and calculated using the percentages below. **Final grades will not
-be rounded.** Extra Credit opportunities are available throughout the semester to help improve your
+be rounded.** Extra credit opportunities are available throughout the semester to help improve your
 final grade.
 
 | Letter Grade | Percentage    |
@@ -22,18 +22,18 @@ final grade.
 
 ## Extra Credit Opportunities
 
-Extra credit can only be worth **2.5% of the total course**.
+Extra credit can only be worth **2.5% of the total course grade**.
 
 ## Homework Policy
 
 Unless explicitly stated otherwise, all work is individual. Group assignments will be **clearly**
-marked. The [Kount Computer Learning Center](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring)
+marked. The [Kount Learning Center](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring)
 (CCP 241) is accessible 24/7 by proxy card to all students enrolled in CS courses and has all the
 software you will need.
 
 ## AI Policy
 
-There is no restriction of AI use in this course. You may use AI tools to help
+There is no restriction on AI use in this course. You may use AI tools to help
 you with your work, but you are responsible for ensuring that your work is
 accurate and meets the requirements of the assignment. You are strongly
 encouraged to explore the use of AI tools as part of your learning process, but

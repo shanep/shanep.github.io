@@ -35,7 +35,7 @@ nothing, but write it down **before** we run the command.
 
 - **Groups of 3 or 4.** One scribe owns the worksheet and puts everyone's name on
   it.
-- **Everyone logs into Onyx with `ssh onyx`**, the shortcut you setup in
+- **Everyone logs into Onyx with `ssh onyx`**, the shortcut you set up in
   [A2](./a2-stop-typing-your-password.md).
 - **Everything today runs on Onyx**, so it is the same for every laptop in the
   room. Your home network will block different things than campus does, which is
@@ -47,7 +47,7 @@ Each round is the same three beats, and the worksheet has a box for each:
 
 1. **Predict.** I ask the question. Your group writes an answer.
 2. **Run.** We all run the command on Onyx.
-3. **Check.** Was the prediction right? Which part of chapter 5 says why?
+3. **Check.** Was the prediction right? Which section of the book says why?
 
 ## Round 1 - Is anybody out there?
 
@@ -67,7 +67,7 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 3 packets transmitted, 0 received, 100% packet loss, time 2053ms
 ```
 
-Well that is not good! Is Google down? Is Onyx off the Internet? Ask two more
+Well, that is not good! Is Google down? Is Onyx off the Internet? Ask two more
 questions before you decide:
 
 ```bash
@@ -151,7 +151,7 @@ print(s.recv(100))
 EOF
 ```
 
-**Predict:** UDP is connectionless, there is no handshake and no reply is
+**Predict:** UDP is connectionless: there is no handshake and no reply is
 promised. So what does Python print: a reply, a timeout after 3 seconds, or
 something else?
 

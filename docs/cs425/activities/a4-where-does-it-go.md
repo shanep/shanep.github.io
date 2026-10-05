@@ -34,7 +34,7 @@ nothing, but write it down **before** we run the command.
 
 - **Groups of 3 or 4.** One scribe owns the worksheet and puts everyone's name on
   it.
-- **Everyone logs into Onyx with `ssh onyx`**, the shortcut you setup in
+- **Everyone logs into Onyx with `ssh onyx`**, the shortcut you set up in
   [A2](./a2-stop-typing-your-password.md). If yours still asks for a password,
   share a screen with someone whose does not, and finish A2 steps 1 to 3 after
   class.
@@ -165,7 +165,7 @@ together? (section 4.3, fragmentation)
 
 Every IPv4 datagram carries a TTL that each router decrements by one, and a
 router that decrements it to zero drops the datagram and sends back an ICMP
-message saying so. `tracepath` uses that to find every router on the path:
+message saying so. `tracepath` uses that to find the routers on the path.
 
 **Predict:** how many routers are between Onyx and a server in Salt Lake City,
 about 475 km away?

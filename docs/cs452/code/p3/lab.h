@@ -8,7 +8,7 @@
 
 #define lab_VERSION_MAJOR 1
 #define lab_VERSION_MINOR 0
-#define UNUSED(x) (void)x;
+#define UNUSED(x) (void)(x)
 
 #ifdef __cplusplus
 extern "C"
@@ -27,29 +27,29 @@ extern "C"
 
 
   /**
-   * @brief Set the shell prompt. This function will attempt to load a prompt
+   * @brief Get the shell prompt. This function will attempt to load a prompt
    * from the requested environment variable, if the environment variable is
    * not set a default prompt of "shell>" is returned.  This function calls
    * malloc internally and the caller must free the resulting string.
    *
    * @param env The environment variable
-   * @return const char* The prompt
+   * @return char* The prompt
    */
   char *get_prompt(const char *env);
 
   /**
    * Changes the current working directory of the shell. Uses the linux system
-   * call chdir. With no arguments the users home directory is used as the
+   * call chdir. With no arguments the user's home directory is used as the
    * directory to change to.
    *
-   * @param dir The directory to change to
+   * @param dir The parsed command (dir[0] is "cd", dir[1] is the directory or NULL)
    * @return  On success, zero is returned.  On error, -1 is returned, and
    * errno is set to indicate the error.
    */
   int change_dir(char **dir);
 
   /**
-   * @brief Convert line read from the user into to format that will work with
+   * @brief Convert a line read from the user into a format that will work with
    * execvp. We limit the number of arguments to ARG_MAX loaded from sysconf.
    * This function allocates memory that must be reclaimed with the cmd_free
    * function.
@@ -61,7 +61,7 @@ extern "C"
   char **cmd_parse(char const *line);
 
   /**
-   * @brief Free the line that was constructed with parse_cmd
+   * @brief Free the line that was constructed with cmd_parse
    *
    * @param line the line to free
    */
@@ -81,14 +81,14 @@ extern "C"
 
   /**
    * @brief Takes an argument list and checks if the first argument is a
-   * built in command such as exit, cd, jobs, etc. If the command is a
-   * built in command this function will handle the command and then return
-   * true. If the first argument is NOT a built in command this function will
+   * built-in command such as exit, cd, jobs, etc. If the command is a
+   * built-in command this function will handle the command and then return
+   * true. If the first argument is NOT a built-in command this function will
    * return false.
    *
    * @param sh The shell
    * @param argv The command to check
-   * @return True if the command was a built in command
+   * @return True if the command was a built-in command
    */
   bool do_builtin(struct shell *sh, char **argv);
 
@@ -96,7 +96,7 @@ extern "C"
    * @brief Initialize the shell for use. Allocate all data structures
    * Grab control of the terminal and put the shell in its own
    * process group. NOTE: This function will block until the shell is
-   * in its own program group. Attaching a debugger will always cause
+   * in its own process group. Attaching a debugger will always cause
    * this function to fail because the debugger maintains control of
    * the subprocess it is debugging.
    *

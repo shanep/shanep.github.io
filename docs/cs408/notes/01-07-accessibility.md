@@ -21,8 +21,8 @@ understanding of accessibility basics so they can build awesome websites.
 - [WAI-ARIA basics](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics)
 - [Accessible multimedia](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Multimedia)
 - [Mobile accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Mobile)
-- [Read](https://wave.webaim.org/) and Watch about
-  [Wave](https://youtu.be/ITUDiTgAZY0?feature=shared)
+- Read about [WAVE](https://wave.webaim.org/) and watch the
+  [WAVE introduction](https://youtu.be/ITUDiTgAZY0?feature=shared)
 
 ### Practice
 

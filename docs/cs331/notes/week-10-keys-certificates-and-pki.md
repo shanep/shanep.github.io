@@ -1,6 +1,6 @@
 # 10.01 Readings and Lecture Notes
 
-**March 22-28 · Reading: 12 pages · About 2 hrs 15 min with the worked example**
+**March 22-28 · Reading: 11 pages · About 2 hrs 15 min with the worked example**
 
 What to do this week, and when it is due, is on the [Module 10 Overview](week-10-overview.md).
 
@@ -11,7 +11,7 @@ What to do this week, and when it is due, is on the [Module 10 Overview](week-10
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §18.3.1 The Key Life-cycle | 625-627 | 2 pp | 15 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §18.3.2-18.3.7 Key derivation, generation, storage, transport, refreshing | 627-632 | 5 pp | 35 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §18.3.8 Managing Public Keys and PKI | 632-635 | 3 pp | 30 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §18.5.1 Transport Layer Security | 639-640 | 2 pp | 15 min |
+| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §18.5.1 Transport Layer Security | 639-640 | 1 p | 15 min |
 
 **§18.3.8 is the core of the week.** It covers binding keys to identities via certificates, reliance
 on naming and CA operations, and certificate status information, which is where revocation, the
@@ -20,7 +20,8 @@ hardest problem in PKI, lives.
 ## Worked example
 
 Run [data/cert_inspect.py](../data/cert_inspect.py) alongside this section. It builds a root CA, an
-intermediate CA, and three server certificates in memory, then runs the checks a browser runs.
+intermediate CA, and three server certificates in memory, then runs the basic checks a browser
+runs.
 
 ```
 python3 cert_inspect.py
@@ -43,7 +44,7 @@ this public key belongs to this name, until this date."
 
 ### 2. The five checks
 
-Here is what the script prints for the good certificate:
+Here is what the script prints for the good certificate (trimmed):
 
 ```
   [PASS] validity period covers today

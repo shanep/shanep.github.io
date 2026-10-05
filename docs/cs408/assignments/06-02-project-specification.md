@@ -15,19 +15,19 @@ free to make any other adjustments you see fit and submit this assignment for fi
 ### Task 1 - Final Draft Summary
 
 Add in a NEW section at the end of your document titled: "Summary of changes". Write a short
-200-300-word paragraph summarizing all the updates you made.  If your original document was so good
+200-300-word paragraph summarizing all the updates you made. If your original document was so good
 that it caused me to shed a tear of joy while I reviewed it, and I didn't note any issues, you may
 simply write "*Level 7 - Unicorn Engineer*. No changes necessary, mic drop" in the Summary of
 changes section and then thank your past self for all the hard work!
 
 ### Submitting
 
-1. Submit the URL to your Google doc
+1. Submit the URL to your Google Doc
 2. Your project is approved when this assignment meets both **Approval Requirements** below. Your
     points set only your letter grade. This assignment is required to receive a final grade on the
     project. A grade of 0 will be applied to any missed checkpoints until your project is approved,
     so please do not procrastinate :)
-3. This assignment CAN NOT be turned in late under any circumstances. I will be reviewing your
+3. This assignment CANNOT be turned in late under any circumstances. I will be reviewing your
     submissions the DAY after they are due, so you are not delayed. PLEASE look at the **due
     date** carefully. I know you are all top students, so you likely had very few issues to fix.
     This should be a very short assignment.

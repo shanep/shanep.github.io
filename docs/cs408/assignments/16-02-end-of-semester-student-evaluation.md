@@ -8,10 +8,10 @@ submission: online_text_entry, online_upload
 
 ## Instructions
 
- Please complete the Course Evaluations.  I hope that you learned a lot in this class and enjoyed
+Please complete the course evaluations. I hope that you learned a lot in this class and enjoyed
 your time. :)
 
-![](../images/course-eval.png)
+![Course Evaluations link in the Canvas course navigation menu](../images/course-eval.png)
 
 ## Why Are We Doing This?
 
@@ -24,6 +24,6 @@ your time. :)
 ## Submission & Grading
 
 - To get credit for this assignment, you can:
-  - upload a screenshot of your evaluation receipt; OR
+  - Upload a screenshot of your evaluation receipt, or
   - Type "DONE" in the text entry box below this assignment
 - Completing this assignment will earn you 10 points.

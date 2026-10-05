@@ -106,7 +106,7 @@ who | wc -l                  <span class="dim"># how many of us are on here righ
   </table>
 
   <p class="tiny">Now find out <strong>which</strong> version of <span class="mono">dig</span> you have, because that
-  decides which switches work. The other three you will meet in A3; just write the version line down for now.</p>
+  decides which switches work. The other three you will meet in the next few activities; just write the version line down for now.</p>
 
 <pre class="setup">dig -v          curl --version | head -1          nc --version          ping -V</pre>
 
@@ -168,15 +168,15 @@ who | wc -l                  <span class="dim"># how many of us are on here righ
     <tr><td class="cmdcell">dig +trace boisestate.edu <b>&larr; fails</b></td><td class="h"></td></tr>
   </table>
   <p class="tiny">Also try <span class="mono">dig +tcp boisestate.edu</span> (same query over TCP) and
-  <span class="mono">dig +stats boisestate.edu</span> (timing, server used, message size). Note anything that surprised
+  <span class="mono">dig +nostats boisestate.edu</span> (drops the timing, server and message size footer). Note anything that surprised
   you: <span class="rule" style="width:250pt"></span></p>
 
   <div class="box">
     <h3>The two that fail, and why that is the interesting part</h3>
     <p class="tiny" style="margin-bottom:3pt"><span class="mono">@1.1.1.1</span> times out; <span class="mono">+trace</span>
     stops after one step. Neither is broken software: both need to send DNS queries <strong>directly to a server out on
-    the internet</strong>, and this network does not allow it. What do the two failures have in common, and what is
-    sitting between Onyx and the internet that causes both?</p>
+    the Internet</strong>, and this network does not allow it. What do the two failures have in common, and what is
+    sitting between Onyx and the Internet that causes both?</p>
     <div class="lines tight"><div></div><div></div></div>
   </div>
 

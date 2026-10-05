@@ -15,7 +15,7 @@
 
 - During compile time the linker stubs out calls to the .dll or .so
 - The actual implementation is not added into the image that is saved to disk
-- The library is mapped into your applications address space at run time
+- The library is mapped into your application's address space at run time
 
 ## Load-time dynamic linking
 
@@ -26,7 +26,7 @@ local functions.
 
 Functions are loaded with library functions such as `LoadLibrary` or
 `LoadLibraryEx` (Win32) or `dlopen`/`dlsym` (POSIX). These are not system
-calls, they are library code that runs in user space and makes system calls
+calls. They are library code that runs in user space and makes system calls
 like `openat` and `mmap` to do the work.
 
 ```c
@@ -42,7 +42,7 @@ dlclose(handle);
 ## Advantages of Dynamic Linking
 
 - Multiple processes that load the same DLL at the same base address will share a single copy of the DLL
-- When you update a DLL the applications that use them do not need to be recompiled
+- When you update a DLL, the applications that use it do not need to be recompiled
 - Programs written in different programming languages can call the same DLL functions
 
 ## Disadvantages of Dynamic Linking
@@ -72,7 +72,7 @@ dlclose(handle);
 
 - Your program is bigger and takes longer to load into memory
 - If there is a security flaw in your linked code you will still be using the old version
-- If library code get faster or adds support for new hardware you are stuck on the old version
+- If library code gets faster or adds support for new hardware, you are stuck on the old version
 
 ![static loading](images/static-loading.png)
 
@@ -87,7 +87,7 @@ Module A is implicitly linked with Module B at compile/link time
 ## Explicit Dependency
 
 Module A is not linked with Module B at compile/link time. At runtime,
-Module A dynamically loads Module B via a LoadLibrary type function
+Module A dynamically loads Module B via a LoadLibrary-type function (`dlopen` on Linux)
 
 ![explicit](images/explicit-dep.png)
 
@@ -150,7 +150,7 @@ LD_PRELOAD=./mymalloc.so ./my_program
 
 This is how many memory profilers and leak checkers intercept library calls
 like `malloc` without recompiling the target program. `strace` works
-differently, it uses the `ptrace` system call to stop the program every time it
+differently: it uses the `ptrace` system call to stop the program every time it
 makes a system call.
 
 ### ldconfig - rebuild the shared library cache

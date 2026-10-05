@@ -4,7 +4,7 @@ next: false
 
 # CS 452/552 Operating Systems
 
-## Catalogue Description
+## Catalog Description
 
 **CS 452/552 OPERATING SYSTEMS (3-0-3)(F,S)** Process management,
 concurrency, inter-process communication, synchronization, scheduling,
@@ -42,7 +42,7 @@ course learning outcomes.
 |     | 1.5 | Use simple shell scripts and system tools to analyze process behavior                                                                                 | Projects 5, 6         |
 | 2   |     | Describe the fundamental (core) abstractions used to implement Operating Systems                                                                      | Exam                  |
 |     | 2.1 | Demonstrate how low level memory is managed in user space                                                                                             | Project 4             |
-|     | 2.2 | Explore the system call interface                                                                                                                     | Projects 3, 4         |
+|     | 2.2 | Explore the system call interface                                                                                                                     | Projects 3, 4, 7      |
 |     | 2.3 | Show an understanding of the difference between user and kernel space                                                                                 | Project 7             |
 |     | 2.4 | Articulate common problems arising in Operating System design and implementation                                                                      | Exam                  |
 | 3   |     | Construct applications that utilize processes, threads, and synchronization primitives to solve problems requiring concurrent or parallel computation | Project 5             |
@@ -60,7 +60,7 @@ course learning outcomes.
 |     | 5.2 | Use a unit test framework                                                                                                                             | Projects 1, 2         |
 |     | 5.3 | Use a professional version control system (git)                                                                                                       | Projects 1, 2         |
 |     | 5.4 | Explore compiling and running code on at least 2 different systems                                                                                    | Project 1             |
-|     | 5.5 | Explore how to setup a continuous integration and testing project                                                                                     | Project 1             |
+|     | 5.5 | Explore how to set up a continuous integration and testing project                                                                                    | Project 1             |
 
 
 <!--@include: ../../parts/syllabus-boiler.md-->

@@ -1,6 +1,6 @@
 # Module 3 Overview
 
-**January 25-31 · Reading: 15 pages · Estimated total: 7 hours**
+**January 25-31 · Reading: 15 pages · Estimated total: 6 hours**
 
 Everything you learn in this course is dual-use. The technique that finds a vulnerability in a
 system you are paid to test is the same technique that is a crime against a system you are not.
@@ -15,8 +15,8 @@ question arise and who they run to, not the law of any particular jurisdiction.
 Second, **good intentions are not a defense.** "I was going to report it" does not convert
 unauthorized access into authorized access. This surprises people every year.
 
-Third, this is the shortest reading in the course drawn from the longest chapter, CyBOK's law
-chapter runs about 80 pages. You are assigned 15. Do not read the rest unless you want to.
+Third, this week's reading comes from the longest chapter in the book: CyBOK's law chapter runs
+about 80 pages. You are assigned 15. Do not read the rest unless you want to.
 
 ## Learning Objectives
 

@@ -4,12 +4,12 @@
 
 ## AI, Web Development, and Job Security
 
-Look at the meme below where someone proudly claims they built an "entire website with ChatGPT"—only
-to share a local file path (C:\Users\ben\Downloads\index.html) instead of a live, deployable site.
+Look at the meme below where someone proudly claims they built an "entire website with ChatGPT,"
+only to share a local file path (C:\Users\ben\Downloads\index.html) instead of a live, deployable site.
 
-![](../images/2025-09-18_14-25-51.png)
+![text message meme where someone says they made an entire website with ChatGPT and then sends the link C:\Users\ben\Downloads\index.html](../images/2025-09-18_14-25-51.png)
 
-## In the discussion forum below answer the following questions
+## In the discussion forum below, answer the following questions
 
 - Why is this meme funny?
 - Think about the difference between having a single HTML file on your computer versus actually
@@ -24,7 +24,7 @@ to share a local file path (C:\Users\ben\Downloads\index.html) instead of a live
 
 ## Submitting
 
-- Post your response (150–200 words).
+- Post your response (150-200 words).
 - Be sure to reference both the joke in the meme and the real-world differences between AI code
   generation and professional full-stack development.
 - After posting, reply to at least two classmates with thoughtful comments that extend the

@@ -70,9 +70,11 @@ example's `start.sh` shows all four steps.
 `deploy/setup-ec2.sh` prepares a fresh EC2 server. You run it **once, on the server**, not on your
 laptop:
 
-scp -i ~/keys/mykey.pem -r deploy ubuntu@\<PUBLIC-IP\>:~\
-ssh -i ~/keys/mykey.pem ubuntu@\<PUBLIC-IP\>\
+```bash
+scp -i ~/keys/mykey.pem -r deploy ubuntu@<PUBLIC-IP>:~
+ssh -i ~/keys/mykey.pem ubuntu@<PUBLIC-IP>
 sudo bash deploy/setup-ec2.sh
+```
 
 It installs your runtime and nginx, creates a directory for the app, sets nginx to forward port 80
 to your app, and installs your `deploy/<your-app>.service` file so systemd **starts the app on
@@ -83,7 +85,9 @@ point and change them for your stack.
 
 `deploy/deploy.sh` runs **on your laptop** every time you want the server to have your latest code:
 
-./deploy/deploy.sh -h \<PUBLIC-IP\> -i ~/keys/mykey.pem
+```bash
+./deploy/deploy.sh -h <PUBLIC-IP> -i ~/keys/mykey.pem
+```
 
 The example's version runs your tests, copies your code to the server with `rsync`, installs
 dependencies there, restarts the service, and then checks `http://<PUBLIC-IP>/api/health`. If your

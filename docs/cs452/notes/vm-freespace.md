@@ -8,7 +8,7 @@
     discuss the concept of paging.
 - Where free-space management becomes more difficult (and interesting)
     is when the free space you are managing consists of variable-sized
-    units;
+    units.
 
 ## Partition Strategies
 
@@ -30,10 +30,10 @@
 ## malloc Internals
 
 - All calls to malloc will incur a small amount of overhead to accommodate a header.
-- The pointer returned by malloc points at the free space not the header itself.
+- The pointer returned by malloc points at the usable memory, not the header itself.
 - When you write outside of your memory area you have the possibility
-    of stomping another memory blocks header which will eventually cause
-    a segfault.
+    of stomping another memory block's header, which will eventually cause
+    a crash (a segfault, or glibc aborting with `free(): invalid next size`).
 
 ## malloc Strategies
 
@@ -45,7 +45,7 @@ strategies for managing free space.
 The best fit strategy is quite simple: first, search through the free
 list and find chunks of free memory that are as big or bigger than the
 requested size. Then, return the one that is the smallest in that group
-of candidates; this is the so called best-fit chunk (it could be called
+of candidates; this is the so-called best-fit chunk (it could be called
 smallest fit too).
 
 ### Worst Fit

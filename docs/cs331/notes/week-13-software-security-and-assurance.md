@@ -1,6 +1,6 @@
 # 13.01 Readings and Lecture Notes
 
-**April 12-18 · Reading: 15 pages · About 2 hrs 50 min with the worked example**
+**April 12-18 · Reading: 15 pages · About 3 hrs 5 min with the worked example**
 
 What to do this week, and when it is due, is on the [Module 13 Overview](week-13-overview.md).
 
@@ -11,7 +11,7 @@ What to do this week, and when it is due, is on the [Module 13 Overview](week-13
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §15.1.1 Memory Management Vulnerabilities | 500-501 | 2 pp | 15 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §15.2 Prevention of Vulnerabilities: language design, API design, coding practices | 507-512 | 5 pp | 40 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §15.4 Mitigating Exploitation of Vulnerabilities | 516-520 | 5 pp | 35 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §17.4 Assessing the Secure Software Lifecycle, SAMM, BSIMM, Common Criteria | 582-585 | 3 pp | 25 min |
+| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §17.4 Assessing the Secure Software Lifecycle: SAMM, BSIMM, Common Criteria | 582-585 | 3 pp | 25 min |
 | Aleph One, *Smashing the Stack for Fun and Profit* | Start through the stack frame layout | none | ~4 pp | 25 min |
 
 Aleph One (Phrack 49, 1996): <http://phrack.org/issues/49/14.html>. Read until it starts
@@ -63,8 +63,10 @@ with x86-64 clang at `-O0 -fno-stack-protector`, the function begins:
 push    rbp
 mov     rbp, rsp
 sub     rsp, 64
+mov     qword ptr [rbp - 8], rdi       ; spill badge_id
 mov     dword ptr [rbp - 52], 0        ; authorized = 0
 lea     rdi, [rbp - 48]                ; &buffer  -> first argument to strcpy
+mov     rsi, qword ptr [rbp - 8]       ; badge_id -> second argument
 call    strcpy
 ```
 
@@ -110,12 +112,12 @@ which compiler to use.
 | | What it does | Stops this exploit? | Removes the bug? |
 | --- | --- | --- | --- |
 | **Stack canary** | Puts a known value between the locals and the return address; checks it before returning | Usually: it turns the exploit into a controlled crash | **No** |
-| **ASLR** | Randomizes where things are loaded, so the attacker cannot predict addresses | Makes it much harder, not impossible, leaks and brute force exist | **No** |
+| **ASLR** | Randomizes where things are loaded, so the attacker cannot predict addresses | Makes it much harder, not impossible: leaks and brute force exist | **No** |
 | **NX / DEP** | Marks the stack non-executable, so injected shellcode cannot run | Stops classic shellcode injection; return-oriented programming works around it | **No** |
 
 Enable all three and `check_badge` still has a buffer overflow. What changes is the likely outcome:
 instead of the attacker running code of their choosing, the program crashes. That is a large
-improvement and it is a denial of service.
+improvement, and it is still a denial of service.
 
 So when a manager asks whether the software is secure, "we compile with stack protection and ASLR"
 is a true statement that answers a different question. Mitigations raise the cost of exploitation.
@@ -173,9 +175,9 @@ no reported incidents"*), the job is to take each piece separately and ask what 
 reported incidents" is the weakest of all: it is equally consistent with being secure and with
 having no ability to detect anything.
 
-§17.4 covers what organization-level evidence looks like, SAMM and BSIMM assess *practices*, the
-Common Criteria evaluates *a specific product against stated claims*. Neither certifies that a
-given release is free of bugs, and conflating process maturity with product security is the most
+§17.4 covers what process- and product-level evidence looks like: SAMM and BSIMM assess *practices*,
+and the Common Criteria evaluates *a specific product against stated claims*. Neither certifies that
+a given release is free of bugs, and conflating process maturity with product security is the most
 common mistake in reading assurance claims.
 
 ## Key terms

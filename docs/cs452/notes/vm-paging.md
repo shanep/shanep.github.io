@@ -25,7 +25,7 @@ a **Page Table Entry (PTE)** and contains:
 - The physical frame number
 - A **valid bit** (is this page part of the address space at all?)
 - A **present bit** (is this page currently in physical memory, or swapped out to disk?)
-- A **protection bit** (readable? writable? executable?)
+- **Protection bits** (readable? writable? executable?)
 - A **dirty bit** (has the page been written since it was loaded?)
 - A **reference bit** (has the page been accessed recently?)
 
@@ -113,8 +113,8 @@ Used as a benchmark to evaluate real algorithms.
 
 ### FIFO (First In, First Out)
 Evict the page that has been in memory the longest. Simple but poor:
-evicts frequently-used pages if they were loaded first. Suffers from
-**Belady's anomaly**, adding more physical frames can *increase* faults.
+evicts frequently used pages if they were loaded first. Suffers from
+**Belady's anomaly**: adding more physical frames can *increase* faults.
 
 ### LRU (Least Recently Used)
 Evict the page that was used **least recently**. Works well in practice
@@ -144,4 +144,4 @@ handler:
 4. Restarts the faulting instruction
 
 From the process's perspective, the address space appears larger than
-physical RAM, this is the illusion of **virtual memory**.
+physical RAM: this is the illusion of **virtual memory**.

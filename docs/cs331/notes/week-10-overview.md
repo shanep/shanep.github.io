@@ -1,6 +1,6 @@
 # Module 10 Overview
 
-**March 22-28 · Reading: 12 pages · Estimated total: 6.5 hours**
+**March 22-28 · Reading: 11 pages · Estimated total: 6.25 hours**
 
 Welcome back. Week 8 ended with an unanswered question: a signature verifies against a public key,
 but what tells you whose key it is?
@@ -9,8 +9,8 @@ This week is the answer. A **certificate** is a signed statement binding a publi
 Somebody you already trust signs it, and their key is vouched for by somebody else, up to a root
 that your browser or operating system simply believes because it shipped with a list.
 
-That last step is worth staring at. Four of the five checks a browser runs on a certificate are
-arithmetic. The fifth is a decision somebody made on your behalf, before you ever opened the
+That last step is worth staring at. Four of the five basic checks a browser runs on a certificate
+are arithmetic. The fifth is a decision somebody made on your behalf, before you ever opened the
 browser.
 
 ## Learning Objectives
@@ -35,10 +35,10 @@ the browser part first; it takes ten minutes and makes the script output make se
 
 | Activity | Time |
 | --- | --- |
-| Reading (12 pages) | 1 hr 35 min |
+| Reading (11 pages) | 1 hr 35 min |
 | The notes page and running `cert_inspect.py` | 40 min |
 | Lab 6 | 1 hr 30 min |
 | Review and slack | 2 hrs 30 min |
-| **Total** | **~6.5 hrs** |
+| **Total** | **~6.25 hrs** |
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

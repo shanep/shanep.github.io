@@ -15,7 +15,7 @@ Fundamentals of computer security and information assurance. Topics include secu
 
 ## Who This Course Is For
 
-This is the **first security course** most students take, and it is open across departments, 
+This is the **first security course** most students take, and it is open across departments:
 computer science, information technology management, and others. The only assumption is that you
 have completed one introductory programming course.
 
@@ -45,13 +45,13 @@ Two things to know about it:
    courses. The weeks below name the exact sections you are responsible for. You are not expected
    to read anything else.
 2. **CyBOK is a reference, not a tutorial.** It is precise and compact rather than chatty. Each
-   week's lecture notes page adds a worked example that shows the idea applied once, concretely, plus a
-   plain-language supplement where one helps.
+   week's lecture notes page adds a worked example that shows the idea applied once, concretely,
+   plus a plain-language supplement where one helps.
 
 **Finding a reading:** CyBOK section numbers (for example, §10.4) are the reliable way to
 navigate. Every page of the PDF prints its page number in the footer, which may not match your PDF
-viewer's page counter, because the book has 38 pages of front matter. Use your viewer's search box or the
-bookmarks panel and go by section number.
+viewer's page counter, because the book has 38 pages of front matter. Use your viewer's search box
+or the bookmarks panel and go by section number.
 
 A complete list of readings, supplements, and their licenses is in [Readings and Resources](resources.md).
 
@@ -63,8 +63,8 @@ one the course and the grading go by.
 
 | Tool | Why | Notes |
 | --- | --- | --- |
-| A web browser | Readings, Canvas, and two labs that use browser tools | Any modern browser |
-| Python 3.11 or newer | Labs 4, 5, 6, and 9 run a provided script | Free from <https://www.python.org/downloads/>, and [Lab 0](assignments/lab-00-course-setup.md) checks your version |
+| A web browser | Readings, Canvas, and Labs 0, 6, 7, and 8 | Any modern browser |
+| Python 3.11 or newer | Labs 4, 5, 6, and 9 and the week 5 discussion run a provided script | Free from <https://www.python.org/downloads/>, and [Lab 0](assignments/lab-00-course-setup.md) checks your version |
 | The `cryptography` package | Labs 4, 5, and 6 only | One `pip install cryptography`, walked through step by step in [Lab 0](assignments/lab-00-course-setup.md) |
 
 You do **not** need a virtual machine, a Linux server, Docker, git, or a GitHub account. If your
@@ -200,13 +200,13 @@ points, so the extra credit maximum is **13.75 points**.
 ## Homework Policy
 
 Unless explicitly stated otherwise, all work is individual. Group assignments will be **clearly**
-marked. The [Kount Computer Learning Center](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring)
+marked. The [Kount Learning Center](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring)
 (CCP 241) is accessible 24/7 by proxy card to all students enrolled in CS courses and has all the
 software you will need.
 
 ## AI Policy
 
-There is no restriction of AI use in this course. You may use AI tools to help
+There is no restriction on AI use in this course. You may use AI tools to help
 you with your work, but you are responsible for ensuring that your work is
 accurate and meets the requirements of the assignment. You are strongly
 encouraged to explore the use of AI tools as part of your learning process, but
@@ -262,7 +262,7 @@ University Policy 2280 for details.
 
 Emails are answered within 24 hours, Monday-Friday, 9:00 am-5:00 pm Mountain Time. Emails sent on
 weekends or outside those hours will receive a reply on the next business day. Reserve email for
-private matters such as grades, general course questions belong in the class discussion forum.
+private matters such as grades. General course questions belong in the class discussion forum.
 
 ## IT Support Policy
 

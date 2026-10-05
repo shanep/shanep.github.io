@@ -26,7 +26,7 @@ more communicating entities, plus the actions taken on transmission or receipt.
 
 ## 1.2 The network edge
 
-- **Access networks:** DSL, cable, FTTH, ethernet, WiFi, cellular.
+- **Access networks:** DSL, cable, FTTH, Ethernet, WiFi, cellular.
 - Cable is **shared** among homes; DSL is **dedicated**. That difference shows up
   in the throughput you actually get at 8pm.
 - **Physical media:** guided (twisted pair, coax, fiber) versus unguided (radio).

@@ -60,7 +60,9 @@ tried and could not answer; REFUSED means it declined to. Both are different fro
 NXDOMAIN, which is a definite "no".
 
 **TTL.** How many seconds a DNS answer may be cached before it must be asked again.
-This is why a DNS change does not take effect everywhere at once.
+This is why a DNS change does not take effect everywhere at once. Not to be confused
+with the TTL in an IP header, a hop count that every router decrements and that
+traceroute sets on purpose.
 
 ## Addresses
 
@@ -128,7 +130,7 @@ both ends when things go wrong.
 **UDP.** The transport protocol that does not. No connection, no retransmission, no
 ordering. Useful when you would rather handle loss yourself, as DNS does.
 
-**Port.** A 16 bit number identifying *which program* on a host should get the
+**Port.** A 16-bit number identifying *which program* on a host should get the
 data. The address gets you to the machine; the port gets you to the process.
 
 **Socket.** One end of a connection, identified by the pair of address and port on
@@ -137,7 +139,7 @@ each side.
 **Listening socket.** A socket a server has opened and is waiting on. If nothing is
 listening on a port, the host has no one to hand an arriving connection to.
 
-**SYN, SYN-ACK, ACK.** The three messages of the TCP **three way handshake**. The
+**SYN, SYN-ACK, ACK.** The three messages of the TCP **three-way handshake**. The
 client sends SYN, the server answers SYN-ACK, the client replies ACK. Your
 `connect()` call returns once the SYN-ACK comes back, which is why establishing a
 connection costs **one round trip** before a single byte of your data moves.
@@ -158,7 +160,7 @@ client sends a SYN, hears silence, retransmits with **exponential backoff**
 clock. This is why a drop takes seconds while a refusal takes milliseconds. A
 timeout is the absence of information: the packet could have died anywhere.
 
-**Retransmission.** Sending something again because no acknowledgement came back.
+**Retransmission.** Sending something again because no acknowledgment came back.
 
 ## Filtering
 
@@ -188,7 +190,7 @@ can behave differently on two networks that both claim to be "the internet".
 
 ## HTTP
 
-**HTTP status code.** The three digit result at the top of a response. `200` is
+**HTTP status code.** The three-digit result at the top of a response. `200` is
 success; `4xx` means the request was wrong; `5xx` means the server broke. Note that
 a status code of any kind means the whole stack worked well enough to produce a
 reply, which is more than most failures manage.

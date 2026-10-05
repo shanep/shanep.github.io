@@ -1,6 +1,6 @@
 # 15.01 Readings and Lecture Notes
 
-**April 26-30 · Reading: 11 pages · About 2 hrs 40 min with the worked example**
+**April 26-30 · Reading: 11 pages · About 3 hrs with the worked example**
 
 What to do this week, and when it is due, is on the [Module 15 Overview](week-15-overview.md).
 
@@ -103,7 +103,7 @@ In practice you blend them (§8.3.3): misuse rules for the known and cheap, anom
 surface the unknown, and the two feeding one queue.
 
 Notice, incidentally, that the intruder's success is visible to a **third** kind of rule that is
-neither: *any successful password authentication on a host configured for publickey only.* Legitimate
+neither: *any successful password authentication on a host meant for publickey only.* Legitimate
 staff in this log all use `Accepted publickey`. That single rule would have fired on line 350 with a
 near-zero false positive rate. **The best detections usually come from knowing your own environment,
 not from a better algorithm.**
@@ -155,7 +155,7 @@ driving it from 1% to 0.1% still leaves about 5,000 false positives to 495 true 
 The moves that work change something other than accuracy:
 
 - **Raise the base rate.** Do not run the detector against everything. Run it against the population
-  where malicious events are concentrated, administrative accounts, servers, off-hours activity.
+  where malicious events are concentrated: administrative accounts, servers, off-hours activity.
   Same detector, much better ratio.
 - **Require corroboration.** Alert on failed authentications *followed by a success from the same
   source*, rather than on failures alone. Combining two weak signals into one strong one is the

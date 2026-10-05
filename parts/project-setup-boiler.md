@@ -1,8 +1,8 @@
 ## Task 1 - Setup
 
-Follow the steps below to get your repository all setup and ready to use. The steps below show you
-how to use and setup GitHub Codespaces. You are not required to use Codespaces, all the steps below
-can be completed on Onyx (the CS Lab machines) or on your personal machine if you prefer.
+Follow the steps below to get your repository all set up and ready to use. The steps below show you
+how to use and set up GitHub Codespaces. You are not required to use Codespaces. All the steps below
+can be completed on Onyx (the CS lab machines) or on your personal machine if you prefer.
 
 ### Create your repository from the template
 
@@ -14,19 +14,19 @@ The starter repository is a GitHub template, so you make your own copy of it ins
    **{{$frontmatter.project}}**.
 4. Click **Create repository**.
 
-Your new repository is not a fork, so it has no `upstream` remote. That is on purpose, everything
+Your new repository is not a fork, so it has no `upstream` remote. That is on purpose: everything
 you need is already in your copy.
 
 ### Start a new Codespace
 
 We will use GitHub Codespaces to do most of our coding. Codespaces is just VS Code in the cloud. This
-makes it really easy to setup a developer environment and code from any computer that has a browser
+makes it really easy to set up a developer environment and code from any computer that has a browser
 and internet connection! From your new repository click **Code**, then the **Codespaces** tab, then
 **Create codespace on master**.
 
 ![Start Codespace](/images/start-codespace.png)
 
-If you are asked to install recommended extensions click "install". You may not be asked to install
+If you are asked to install recommended extensions, click "install". You may not be asked to install
 extensions if you are already syncing your account.
 
 ![Codespace extensions](/images/codespace-extensions.png)
@@ -86,8 +86,8 @@ how the projects that are 100% unit tests work.
 
 ::: warning
 
-`make check`, `make leak`, `make leak-test`, and `make report` run whatever is already in `build/`,
-they do **not** recompile your code. Run `make all` after every change or you will be testing old
+`make check`, `make leak`, `make leak-test`, and `make report` run whatever is already in `build/`.
+They do **not** recompile your code. Run `make all` after every change or you will be testing old
 code. Also, `make all` prints "Builds completed" even when one of the builds failed, so scroll up
 and read the output.
 

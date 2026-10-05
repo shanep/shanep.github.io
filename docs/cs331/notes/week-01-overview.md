@@ -12,8 +12,7 @@ login system" tells an engineer nothing. "Our login system has a vulnerability t
 opportunistic attacker could exploit at low cost, and the impact would be total account takeover"
 tells them what to do on Monday.
 
-You are not expected to know any of this already. The diagnostic this week is ungraded and exists
-so you can see where you are starting from.
+You are not expected to know any of this already.
 
 ## Learning Objectives
 
@@ -40,10 +39,10 @@ By the end of this week, the successful student will be able to:
 
 ### Due by Sunday at 11:59 p.m. Mountain Time
 
-- [0.05 Lab 0: Course Setup and CyBOK Navigation](../assignments/lab-00-course-setup.md) (45 min,
-  20 points)
 - [0.04 D1: Introductions and the Security Mindset - Replies](../reminders/d01-replies.md):
   one reply (45 min with the initial post, 15 points)
+- [0.05 Lab 0: Course Setup and CyBOK Navigation](../assignments/lab-00-course-setup.md) (45 min,
+  20 points)
 
 **Do Lab 0 early.** It installs the Python package that weeks 7, 8, and 10 depend on. If something
 does not work on your machine, week 1 is when to find out.

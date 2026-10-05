@@ -26,8 +26,8 @@
 ## Virtualize Memory
 
 - The OS must virtualize the memory
-- All process can’t start at 0!
-- But all process think they do?
+- All processes can’t start at 0!
+- But all processes think they do?
 
 ## Memory Quiz
 
@@ -48,7 +48,7 @@ int *A;
      A = malloc(sizeof(int)*len);
      /*...some code*/
  }
- void main(int argc, char **argv){
+ int main(int argc, char **argv){
      int length =10; int i; int bar[length];
      foo(&bar[0], length);
      /*...some code*/
@@ -59,7 +59,7 @@ int *A;
 ::: col
 Which of the following are on the heap?
 
-- Length
+- length
 - bar (in foo)
 - bar (in main)
 - bar[0]

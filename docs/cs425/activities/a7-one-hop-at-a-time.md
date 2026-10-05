@@ -206,7 +206,7 @@ real output from that run. Rounds 3 and 4 are paper only, and their answers were
 checked by script. No testbed is needed, only Onyx and `ssh onyx`.
 
 **The ping to `8.8.8.8` gets no reply from Onyx.** The gateway answers ICMP (A4
-round 3), so it is dropped somewhere further out. It does not hurt the round,
+round 3), so it is dropped somewhere farther out. It does not hurt the round,
 since the point is the frame that leaves Onyx, but say so before someone asks.
 
 **Budget.** About 8 minutes for round 1, 10 each for rounds 2 to 4, and 2 for the

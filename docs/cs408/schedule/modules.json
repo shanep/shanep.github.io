@@ -89,7 +89,7 @@
       },
       {
         "kind": "page",
-        "title": "01.08 CS208  CSS and Accessiblity",
+        "title": "01.08 CS208 CSS and Accessibility",
         "path": "notes/01-08-cs208-css-and-accessiblity",
         "due_at": null,
         "points": null,
@@ -110,7 +110,7 @@
       },
       {
         "kind": "assignment",
-        "title": "02.02 Database Lab (4- 8 hrs)",
+        "title": "02.02 Database Lab (4-8 hrs)",
         "path": "assignments/02-02-database-lab",
         "due_at": "2026-09-04T23:59:00-06:00",
         "points": 50.0,
@@ -288,7 +288,7 @@
     "items": [
       {
         "kind": "discussion",
-        "title": "16.01 Project Showcase (4 -6 hrs)",
+        "title": "16.01 Project Showcase (4 - 6 hrs)",
         "path": "discussions/16-01-project-showcase",
         "due_at": "2026-12-11T23:59:00-07:00",
         "points": 200.0,

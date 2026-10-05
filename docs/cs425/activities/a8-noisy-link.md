@@ -37,10 +37,10 @@ nothing, but write it down **before** we run the command.
 
 - **Groups of 3 or 4.** One scribe owns the worksheet and puts everyone's name on
   it.
-- **Everyone logs into Onyx with `ssh onyx`**, the shortcut you setup in
+- **Everyone logs into Onyx with `ssh onyx`**, the shortcut you set up in
   [A2](./a2-stop-typing-your-password.md).
-- **Bring a calculator**, or use the one on your laptop. Rounds 2 to 4 each have
-  one short calculation.
+- **Bring a calculator**, or use the one on your laptop. Rounds 1 to 4 each have
+  some short arithmetic.
 
 Download the meter, **[tcpmeter.py](./tcpmeter.py)**, straight onto Onyx. It
 opens one TCP connection to itself, sends as fast as TCP allows for 10 seconds,
@@ -81,7 +81,7 @@ ping -c 3 127.0.0.1
 
 Now make it a bad link. `tc` attaches a queueing discipline to an interface, and
 `netem` is the one that emulates a network: here it holds every packet for 25 ms
-and sends no faster than 20 Mbit/s, about what a crowded WiFi network gives you.
+and sends no faster than 20 Mbit/s, about what a crowded Wi-Fi network gives you.
 
 ```bash
 tc qdisc add dev lo root netem delay 25ms rate 20mbit
@@ -194,7 +194,7 @@ from round 2. TCP lost 2% of its segments and gave up most of the link. Why?
 
 ## Round 4 - What 802.11 does about it
 
-Real WiFi is a lot noisier than 2%. Say 20% of frames are lost on the first try.
+Real Wi-Fi is a lot noisier than 2%. Say 20% of frames are lost on the first try.
 802.11 does not hand that loss to TCP: the receiver ACKs every frame, and the
 sender retransmits a frame that is not ACKed. Suppose the access point gives each
 frame up to 7 tries before it gives up. (section 7.3)
@@ -203,8 +203,8 @@ frame up to 7 tries before it gives up. (section 7.3)
 
 1. With 7 tries, what fraction of frames are still lost after the last try? That
    is the loss TCP sees.
-2. On average, how many tries does a frame take? That much of the airtime goes to
-   retries, so how many of the 20 Mbit/s are left for new data?
+2. On average, how many tries does a frame take? Every try after the first is
+   airtime spent on a retry, so how many of the 20 Mbit/s are left for new data?
 3. What throughput do you expect from TCP if the link does **not** retry, and TCP
    sees all 20%? And if it does?
 
@@ -289,8 +289,8 @@ The shape never changed.
   for a fast group.
 - Round 2's queue is bufferbloat. `netem` holds up to 1,000 packets, and
   (823 - 86) segments at 20 Mbit/s is about 0.43 s, which plus the 50 ms base is
-  the 494 ms TCP measured. A longer run eventually fills it and drops, which is
-  congestion loss and the contrast to round 3.
+  about 480 ms, close to the 494 ms TCP measured. A longer run eventually fills it
+  and drops, which is congestion loss and the contrast to round 3.
 - The formula models Reno with no timeouts. CUBIC and SACK beat it at 2% (2.7
   measured against 2.0 predicted), and at 20% timeouts dominate, so TCP does
   worse than its 0.63 prediction.

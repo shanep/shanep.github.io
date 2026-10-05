@@ -52,20 +52,20 @@ class Issued(NamedTuple):
     private_key: rsa.RSAPrivateKey
 
 
-def name(common_name: str, organisation: str) -> x509.Name:
+def name(common_name: str, organization: str) -> x509.Name:
     return x509.Name(
         [
             x509.NameAttribute(NameOID.COUNTRY_NAME, "US"),
-            x509.NameAttribute(NameOID.ORGANIZATION_NAME, organisation),
+            x509.NameAttribute(NameOID.ORGANIZATION_NAME, organization),
             x509.NameAttribute(NameOID.COMMON_NAME, common_name),
         ]
     )
 
 
-def make_ca(common_name: str, organisation: str, issuer: Issued | None) -> Issued:
+def make_ca(common_name: str, organization: str, issuer: Issued | None) -> Issued:
     """Create a CA certificate, self-signed if `issuer` is None."""
     private_key = rsa.generate_private_key(public_exponent=65537, key_size=KEY_SIZE)
-    subject = name(common_name, organisation)
+    subject = name(common_name, organization)
     issuer_name = subject if issuer is None else issuer.certificate.subject
     signing_key = private_key if issuer is None else issuer.private_key
 

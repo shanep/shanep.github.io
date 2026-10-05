@@ -18,11 +18,11 @@ instructions please give me feedback so I can improve :)
 ## Tasks
 
 1. Create a document and detail all the mistakes and typos you found.
-2. Detail why you thing you found a mistake and propose a fix.
+2. Detail why you think you found a mistake and propose a fix.
 3. If you found any assignments misleading please detail why and then propose a fix.
 
 ---
 
 ## Submission
 
-- - Submit a document (pdf) detailing all the mistakes or typos you found to get credit!
+- Submit a document (PDF) detailing all the mistakes or typos you found to get credit!

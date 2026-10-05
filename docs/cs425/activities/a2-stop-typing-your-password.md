@@ -39,9 +39,10 @@ every step is a pass.
   Two commands differ there: if `ssh-copy-id` is missing, use the by-hand steps
   in step 2, and use `ping -n 3` instead of `ping -c 3` in step 4.
 - The editor today is `vi`. It is on Onyx, on every Linux box you will ever
-  ssh into, and in Git Bash. You need five things, and they are on the board:
+  ssh into, and in Git Bash. You need six things, and they are on the board:
   `i` to start typing, `Esc` to stop, `:wq` to save and quit, `:q!` to bail out
-  without saving, and `G` to jump to the end of the file.
+  without saving, `G` to jump to the end of the file, and `o` to open a new line
+  below the cursor.
 
 ## Step 0 - Prove you can get there at all
 
@@ -52,7 +53,7 @@ works. On your **laptop**:
 ssh <username>@onyx.boisestate.edu
 ```
 
-Three things can happen, and only one of them is good:
+Three things can happen, and only the first two are good:
 
 1. It asks **`Are you sure you want to continue connecting (yes/no)?`** the
    first time. Type `yes`. That is your laptop remembering Onyx's fingerprint.
@@ -117,8 +118,8 @@ Still on your laptop:
 ssh-copy-id <username>@onyx.boisestate.edu
 ```
 
-That is the first of your last two password prompts. It appends your public key
-to `~/.ssh/authorized_keys` on Onyx.
+That is the second of today's two password prompts, and the last one. It appends
+your public key to `~/.ssh/authorized_keys` on Onyx.
 
 If `ssh-copy-id` is missing, do it by hand. Copy the `ssh-ed25519` line from step
 1, log into Onyx, and:
@@ -171,7 +172,8 @@ ssh onyx uname -n
 ```
 
 From now on, `ssh onyx` is all you type. The first four lines are the shortcut.
-The last three are the next step.
+`ServerAliveInterval` keeps an idle session from being dropped. The last three
+are the next step.
 
 **Hands up when** `ssh onyx uname -n` prints `onyx`.
 
@@ -329,7 +331,7 @@ material was rounds 3 and 7 of a seven round A1 that nobody got past round 2 of.
 Run it as a demo with pauses: do each step on the projector, say "hands up when",
 and wait. The worksheet is deliberately small so it does not compete with the
 screen. Budget: step 0 is ten minutes and can be the whole period for one
-student, steps 1 through 4 are twenty five minutes, steps 5 through 8 another
+student, steps 1 through 4 are twenty-five minutes, steps 5 through 8 another
 twenty, step 9 is whatever is left.
 
 **Say this at the start.**
@@ -364,10 +366,10 @@ cold login about 1.1 s, warm about 250 ms, round trip about 31 ms;
   cold timings. That is a fine data point: write both numbers down and note the
   OS.
 - **`vi`.** Some students have never used it, and it is deliberate: they will
-  meet it on every box they ssh into for the rest of their careers. Put the five
+  meet it on every box they ssh into for the rest of their careers. Put the six
   keys on the board before step 3 and leave them there: `i`, `Esc`, `:wq`, `:q!`,
-  `G`. The two ways it goes wrong are typing before `i` (letters vanish or do odd
-  things; `Esc` then `:q!` and start over) and pasting in insert mode with
+  `G`, `o`. The two ways it goes wrong are typing before `i` (letters vanish or do
+  odd things; `Esc` then `:q!` and start over) and pasting in insert mode with
   auto-indent (harmless here, the function still works). Nobody needs `nano`.
 - **A student who breaks their `~/.bashrc`** can lock themselves out of a usable
   shell. `ssh onyx -t 'bash --norc'` gets them back in to fix it.

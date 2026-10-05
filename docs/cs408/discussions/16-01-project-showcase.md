@@ -1,4 +1,4 @@
-# 16.01 Project Showcase (4 -6 hrs)
+# 16.01 Project Showcase (4 - 6 hrs)
 
 **Week 15 · 200 points**
 

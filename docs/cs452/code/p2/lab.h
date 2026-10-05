@@ -26,7 +26,7 @@ extern "C"
     */
     typedef struct list
     {
-        void (*destroy_data)(void *);                  /*free's any memory that data allocated*/
+        void (*destroy_data)(void *);                  /*frees any memory that data allocated*/
         int (*compare_to)(const void *, const void *); /* returns 0 if data are the same*/
         size_t size;                                   /* How many elements are in the list */
         struct node *head;                             /* sentinel node*/
@@ -34,7 +34,7 @@ extern "C"
 
     /**
     * @brief Create a new list with callbacks that know how to deal with the data that
-    * list is storing. The caller must pass the list to list_destroy when finished to
+    * the list is storing. The caller must pass the list to list_destroy when finished to
     * free any memory that was allocated.
     *
     * @param destroy_data Function that will free the memory for user supplied data
@@ -45,8 +45,8 @@ extern "C"
                                  int (*compare_to)(const void *, const void *));
 
     /**
-     * @brief Destroy the list and and all associated data. This functions will call
-     * destroy_data on each nodes data element.
+     * @brief Destroy the list and all associated data. This function will call
+     * destroy_data on each node's data element.
      *
      * @param list a pointer to the list that needs to be destroyed
      */

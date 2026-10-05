@@ -1,7 +1,7 @@
 #include "harness/unity.h"
 #include "../src/lab.h"
 
-// NOTE: Due to the multi-threaded nature of this project. Unit testing for this
+// NOTE: Due to the multi-threaded nature of this project, unit testing for this
 // project is limited. I have provided you with a command line tester in
 // the file src/main.c. Be aware that the examples below do not test the
 // multi-threaded nature of the queue. You will need to use the command line

@@ -9,7 +9,7 @@ works in order to write good code and solve hard problems.
 In this course we will explore what an operating system is and its
 purpose. In the simplest terms an operating system is just a program
 that runs other programs. The operating system provides an abstraction
-that allows programmers to think in a higher level and not have to worry
+that allows programmers to think at a higher level and not have to worry
 (as much) about how things actually get done. Instead of issuing
 commands to the hard disk to position the read head you can just call
 [fopen](https://www.cplusplus.com/reference/cstdio/fopen/) and start
@@ -20,7 +20,7 @@ reading bytes.
 - Name
   - Major - if something other than CS
 - Grad or Undergraduate
-- Share One cool thing about yourself
+- Share one cool thing about yourself
 
 ## Textbook 📔
 
@@ -37,9 +37,9 @@ Everything you have been taught is a lie!
 
 An operating system gives the illusion that you can run multiple
 processes at once. In reality you can only run one process (per core) at
-a time. The operating system and cpu switch so fast that we perceive
+a time. The operating system and CPU switch so fast that we perceive
 things happening all at once. This is similar to how a movie is really
-just a bunch of pictures shown in rapid succession, our brains perceive
+just a bunch of pictures shown in rapid succession: our brains perceive
 motion when there is none!
 
 ## Virtualizing Memory
@@ -83,7 +83,7 @@ pieces of hardware in exactly the same way!
 ## Beyond Linux, macOS, and Windows
 
 A small collection of research, hobby, and production operating systems.
-Some of these are in active development some have been abandoned years
+Some of these are in active development, and some were abandoned years
 ago.
 
 ### Monolithic POSIX/Unix Kernel
@@ -92,13 +92,13 @@ ago.
 
 ### Microkernel and Multikernel
 
-- [Redox](https://www.redox-os.org/) - a Unix like microkernel operating system written in the [rust](https://www.rust-lang.org/) programming language.
-- [Barrelfish](http://www.barrelfish.org/) - a research multikernel that runs a separate kernel on each core and treats the machine like a network of computers.
+- [Redox](https://www.redox-os.org/) - a Unix-like microkernel operating system written in the [Rust](https://www.rust-lang.org/) programming language.
+- [Barrelfish](https://barrelfish.org/) - a research multikernel that runs a separate kernel on each core and treats the machine like a network of computers.
 - [Arrakis](https://arrakis.cs.washington.edu/) - a research operating system built on Barrelfish that gives applications direct access to I/O hardware and keeps the kernel out of the data path.
 
 ### Unikernel
 
-- [Mirage OS](https://mirage.io/) - A Unikernel operating system written in the [ocaml](https://ocaml.org/) programming language.
+- [MirageOS](https://mirage.io/) - A unikernel operating system written in the [OCaml](https://ocaml.org/) programming language.
 
 ### NT (Win32)
 
@@ -107,16 +107,16 @@ ago.
 ### Teaching OS
 
 - [xv6](https://pdos.csail.mit.edu/6.1810/2026/xv6.html) - a re-implementation of Unix v6 for RISC-V, see the [xv6 book](https://mit-pdos.github.io/xv6-riscv-book/)
-- [minix3](https://www.minix3.org/) - A micro kernel written by Andrew S. Tanenbaum et al for teaching operating systems
+- [minix3](https://www.minix3.org/) - A microkernel written by Andrew S. Tanenbaum et al. for teaching operating systems
 
 ### Written in D
 
 - [PowerNex](https://github.com/PowerNex/PowerNex)
-- [Trinix](https://github.com/Rikarin/Trinix) - Micro kernel architecture
+- [Trinix](https://github.com/Rikarin/Trinix) - Microkernel architecture
 
 ### Written in x86 ASM
 
-- [MenuetOS](http://menuetos.net/)
+- [MenuetOS](https://menuetos.net/)
 
 ### Production Operating Systems
 
