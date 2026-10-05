@@ -4,7 +4,7 @@ submission: online_upload
 
 # 07.01 - Setup
 
-**Week 7 · 50 points · due Thu Oct 8, 11:59 PM**
+**Week 7 · 50 points**
 
 ## Overview
 

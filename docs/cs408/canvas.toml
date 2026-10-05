@@ -1,0 +1,222 @@
+# Canvas configuration for CS408 - Full Stack Web Development
+#
+# This file was written to match Canvas course 48195 as it stood on 2026-10-04,
+# so a push changes nothing students can see. Every date, group and module below
+# was read from that course.
+#
+#   edutools dates   docs/cs408 --show
+#   edutools push    docs/cs408 --course 48195 --dry-run
+
+[term]
+timezone                = "America/Boise"
+first_monday            = 2026-08-24   # first Monday of instruction, Fall 2026
+weeks                   = 15
+break_after_week        = 13           # Thanksgiving break, Nov 23-27 2026
+# Instruction ends Friday December 11, but the final week's work closes on
+# Sunday December 13 in Canvas, and edutools never locks anything after this
+# date. It is the Sunday so the two days of grace survive.
+last_day_of_instruction = 2026-12-13
+finals_start            = 2026-12-14
+finals_end              = 2026-12-18
+# Grades are weighted by Canvas assignment group, so there is no fixed point
+# total to check against.
+total_points            = 0
+
+# Most work is due Friday at 11:59 p.m. and closes Sunday, two days later. No
+# `unlock`, so Canvas leaves "Available from" blank and an item is visible once
+# published. The exceptions are overrides at the end of this file.
+[term.policy.project]
+due        = "fri 23:59"
+grace_days = 2
+
+[term.policy.discussion]
+due        = "fri 23:59"
+grace_days = 2
+
+# ---------------------------------------------------------------------------
+# Canvas assignment groups, in Canvas order, with the Canvas weights. A push
+# pairs groups up by name, so these must match Canvas character for character.
+# Each kind lands in one group; the files that belong elsewhere say so in an
+# override below.
+# ---------------------------------------------------------------------------
+
+[[group]]
+name   = "Assignments"
+weight = 30
+kinds  = []
+
+[[group]]
+name   = "Final Project"
+weight = 50
+kinds  = ["project"]
+
+[[group]]
+name   = "Extra Credit"
+weight = 0
+kinds  = []
+
+[[group]]
+name   = "Final Project Checkpoints"
+weight = 20
+kinds  = ["discussion"]
+
+# ---------------------------------------------------------------------------
+# What this repo calls its files. The directory is a VitePress site as well, so
+# the syllabus is index.md. The two quizzes are not here: they are Canvas
+# quizzes, listed by id in the modules, and quizzes/*.md only describe them on
+# the website. Their questions stay in Canvas.
+# ---------------------------------------------------------------------------
+
+[layout]
+syllabus = "index.md"
+pages = [
+    "home.md",
+    "getting-started.md",
+    "instructor.md",
+    "notes/*.md",
+]
+files = [
+    "images/*.png",
+    "images/*.jpg",
+]
+
+[layout.gradable]
+project    = "assignments/*.md"
+discussion = "discussions/*.md"
+
+# ---------------------------------------------------------------------------
+# Per-item exceptions, keyed by path relative to this file.
+# ---------------------------------------------------------------------------
+
+# Dates that are not Friday with two days of grace.
+[override."discussions/01-03-class-introductions.md"]
+due   = "wed 23:59"
+group = "Assignments"
+
+[override."discussions/03-01-tech-stack-survey.md"]
+grace_days = 3
+group      = "Assignments"
+
+[override."assignments/06-02-project-specification.md"]
+due        = "wed 23:59"
+grace_days = 0
+
+[override."assignments/07-01-setup.md"]
+due        = "thu 23:59"
+grace_days = 3
+
+[override."assignments/07-02-ec2-and-project-configuration.md"]
+due = "sat 23:59"
+
+# Groups other than the one the file's kind lands in.
+[override."discussions/01-04-ai-web-development-and-job-security.md"]
+group = "Assignments"
+
+[override."assignments/02-02-database-lab.md"]
+group = "Assignments"
+
+[override."assignments/04-01-mini-lab-warmup.md"]
+group = "Assignments"
+
+[override."discussions/06-01-project-specification-peer-review.md"]
+group = "Final Project"
+
+[override."discussions/13-01-final-project-checkpoint-6.md"]
+group = "Final Project"
+
+[override."discussions/14-01-final-project-checkpoint-7.md"]
+group = "Final Project"
+
+[override."discussions/16-01-project-showcase.md"]
+group = "Final Project"
+
+[override."assignments/01-05-personalize-your-canvas-profile.md"]
+group = "Extra Credit"
+
+[override."assignments/16-02-end-of-semester-student-evaluation.md"]
+group = "Extra Credit"
+
+[override."assignments/16-03-finding-typos-bugs-and-improvements.md"]
+group = "Extra Credit"
+
+[override."discussions/course-questions.md"]
+group = "Extra Credit"
+
+# ---------------------------------------------------------------------------
+# Canvas modules, in Canvas order, with the Canvas titles. A module is matched
+# to Canvas by title, so these must match character for character.
+# ---------------------------------------------------------------------------
+
+[[module]]
+title = "Course Resources"
+items = [
+    "instructor.md",
+    "discussions/course-questions.md",
+]
+
+[[module]]
+title = "Week 1 - Introduction and Overview"
+items = [
+    "notes/01-01-readme-introduction.md",
+    { quiz = 368501, title = "01.02 Syllabus Quiz (15 - 30 min)" },
+    "discussions/01-03-class-introductions.md",
+    "discussions/01-04-ai-web-development-and-job-security.md",
+    "assignments/01-05-personalize-your-canvas-profile.md",
+    "notes/01-06-ai-class-policy.md",
+    { header = "CS208 - Material" },
+    "notes/01-07-cs208-html.md",
+    "notes/01-08-cs208-css-and-accessiblity.md",
+]
+
+[[module]]
+title = "Week 2 - CS208 Database Review"
+items = [
+    "notes/02-01-cs208-javascript.md",
+    "assignments/02-02-database-lab.md",
+    { quiz = 368499, title = "02.03  CS208 Review - Practice Quiz (5 - 6 hrs)" },
+]
+
+[[module]]
+title = "Weeks 3 and 4 - Tech Stack and MiniLab"
+items = [
+    "notes/03-00-readme.md",
+    "discussions/03-01-tech-stack-survey.md",
+    "assignments/04-01-mini-lab-warmup.md",
+]
+
+[[module]]
+title = "Week 5 and 6 - Project Specification"
+items = [
+    "assignments/05-01-project-specification.md",
+    "discussions/06-01-project-specification-peer-review.md",
+    "assignments/06-02-project-specification.md",
+]
+
+[[module]]
+title = "Week 7 - AWS"
+items = [
+    "assignments/07-01-setup.md",
+    "assignments/07-02-ec2-and-project-configuration.md",
+    { url = "https://youtu.be/1WqQ2r7LHLM?si=cvB3vuCvGFZgfMqs", title = "Create EC2 VM and deploy Example App Walkthrough" },
+]
+
+[[module]]
+title = "Week 8 - 15 - Final Project implementation"
+items = [
+    "notes/08-00-readme.md",
+    "discussions/08-01-final-project-checkpoint-1.md",
+    "discussions/09-01-final-project-checkpoint-2.md",
+    "discussions/10-01-final-project-checkpoint-3.md",
+    "discussions/11-01-final-project-checkpoint-4.md",
+    "discussions/12-01-final-project-checkpoint-5.md",
+    "discussions/13-01-final-project-checkpoint-6.md",
+    "discussions/14-01-final-project-checkpoint-7.md",
+]
+
+[[module]]
+title = "Week 16 - Final Project Showcase"
+items = [
+    "discussions/16-01-project-showcase.md",
+    "assignments/16-02-end-of-semester-student-evaluation.md",
+    "assignments/16-03-finding-typos-bugs-and-improvements.md",
+]

@@ -1,6 +1,6 @@
 # 09.01 Final Project Checkpoint 2
 
-**Week 9 · 50 points · due Fri Oct 23, 11:59 PM**
+**Week 9 · 50 points**
 
 ## Overview
 

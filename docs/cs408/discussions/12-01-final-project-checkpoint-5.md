@@ -1,6 +1,6 @@
 # 12.01 Final Project Checkpoint 5
 
-**Week 12 · 50 points · due Fri Nov 13, 11:59 PM**
+**Week 12 · 50 points**
 
 ## Overview
 

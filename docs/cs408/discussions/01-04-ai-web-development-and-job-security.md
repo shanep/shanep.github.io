@@ -1,6 +1,6 @@
 # 01.04 AI, Web Development, and Job Security
 
-**Week 1 · 25 points · due Fri Aug 28, 11:59 PM**
+**Week 1 · 25 points**
 
 ## AI, Web Development, and Job Security
 

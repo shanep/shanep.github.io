@@ -1,6 +1,6 @@
 # 13.01 Final Project Checkpoint 6
 
-**Week 13 · 50 points · due Fri Nov 20, 11:59 PM**
+**Week 13 · 50 points**
 
 ## Overview
 

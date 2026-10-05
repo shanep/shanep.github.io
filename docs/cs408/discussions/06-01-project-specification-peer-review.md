@@ -1,6 +1,6 @@
 # 6.01 Project Specification Peer Review
 
-**Week 6 · 100 points · due Fri Oct 2, 11:59 PM**
+**Week 6 · 100 points**
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # 03.01 Tech Stack Survey
 
-**Week 3 · 100 points · due Fri Sep 11, 11:59 PM**
+**Week 3 · 100 points**
 
 ### Overview
 

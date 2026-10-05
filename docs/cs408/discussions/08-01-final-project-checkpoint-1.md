@@ -1,6 +1,6 @@
 # 08.01 Final Project Checkpoint 1
 
-**Week 8 · 50 points · due Fri Oct 16, 11:59 PM**
+**Week 8 · 50 points**
 
 ## Overview
 

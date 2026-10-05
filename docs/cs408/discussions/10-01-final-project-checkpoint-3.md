@@ -1,6 +1,6 @@
 # 10.01 Final Project Checkpoint 3
 
-**Week 10 · 50 points · due Fri Oct 30, 11:59 PM**
+**Week 10 · 50 points**
 
 ## Overview
 

@@ -4,7 +4,7 @@ grading: pass_fail
 
 # 01.05 Personalize Your Canvas Profile (15 min)
 
-**Week 1 · 5 points · due Fri Aug 28, 11:59 PM**
+**Week 1 · 5 points**
 
 ## Objective
 

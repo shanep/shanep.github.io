@@ -5,7 +5,7 @@ grading: pass_fail
 
 # 04.01 - Mini-Lab Warmup
 
-**Week 4 · 100 points · due Fri Sep 18, 11:59 PM**
+**Week 4 · 100 points**
 
 ## Overview
 

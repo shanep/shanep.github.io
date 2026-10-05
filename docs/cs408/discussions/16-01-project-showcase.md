@@ -1,6 +1,6 @@
 # 16.01 Project Showcase (4 -6 hrs)
 
-**Week 16 · 200 points · due Fri Dec 11, 11:59 PM**
+**Week 15 · 200 points**
 
 ## Overview
 

@@ -5,7 +5,7 @@ grading: pass_fail
 
 # 16.03 Finding Typos, Bugs, and Improvements (15 min)
 
-**Week 16 · 10 points · due Fri Dec 11, 11:59 PM**
+**Week 15 · 10 points**
 
 ## Introduction
 
