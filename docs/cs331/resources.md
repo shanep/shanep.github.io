@@ -45,7 +45,7 @@ what is not.
 | 5 | Privacy & Online Rights | 171 | **Week 3**: §5.2-5.3 |
 | 6 | Malware & Attack Technologies | 201 | **Week 12**: §6.1-6.2, §6.4 |
 | 7 | Adversarial Behaviours | 223 | **Week 12**: §7.2 |
-| 8 | Security Operations & Incident Management | 251 | **Week 15**: §8.1, §8.3.1-8.3.3, §8.7 |
+| 8 | Security Operations & Incident Management | 251 | **Week 15**: §8.1-8.2, §8.3.1-8.3.3, §8.3.6, §8.7 |
 | 9 | Forensics | 289 | Not assigned |
 | 10 | Cryptography | 321 | **Weeks 7-8**: §10.3-10.8 |
 | 11 | Operating Systems and Virtualisation | 357 | Not assigned |

@@ -112,13 +112,14 @@ command:
 
 ```bash
 ssh onyx mkdir -p cs425-x1
-scp pageload.c Makefile measure.sh onyx:cs425-x1/
+scp -r pageload.c Makefile measure.sh .git onyx:cs425-x1/
 ssh onyx 'cd cs425-x1 && make && ./measure.sh onyx'
 scp onyx:cs425-x1/measurements-onyx.txt .
 ```
 
-The connection multiplexing from A2 step 4 means only the first of those pays for
-a full login, the rest reuse the open connection. If `ssh onyx` still asks for a
+The `.git` directory goes along so `git rev-parse` in `measure.sh` can print the
+commit you measured. The connection multiplexing from A2 step 4 means only the
+first of those pays for a full login, the rest reuse the open connection. If `ssh onyx` still asks for a
 password, go back and finish A2 steps 1 through 3 before you start anything else.
 It takes about 15 minutes and you will save that many times over this week.
 

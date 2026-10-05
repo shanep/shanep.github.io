@@ -36,7 +36,7 @@ there are simpler examples that minimize the use of libraries so you can just fo
 application. Remember sometimes the simplest code is the better code. The examples below are just to
 help get you started they don't represent what I am looking for in your product.
 
-In this class I am not grading your **code **I am grading the **process **of creating an
+In this class I am not grading your **code**, I am grading the **process** of creating an
 application. This is a 400 level course, if you made it all the way here and still don't know how to
 code it is too late for me to rectify that. Once you have read the examples start working on the
 next assignment in this module.

@@ -29,7 +29,7 @@ changes section and then thank your past self for all the hard work!
     so please do not procrastinate :)
 3. This assignment CAN NOT be turned in late under any circumstances. I will be reviewing your
     submissions the DAY after they are due, so you are not delayed. PLEASE look at the **due
-    date **carefully. I know you are all top students, so you likely had very few issues to fix.
+    date** carefully. I know you are all top students, so you likely had very few issues to fix.
     This should be a very short assignment.
 
 ### Grading

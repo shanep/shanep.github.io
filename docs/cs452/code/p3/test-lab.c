@@ -35,6 +35,8 @@ void test_cmd_parse2(void)
      free(expected[0]);
      free(expected[1]);
      free(expected);
+     cmd_free(actual);
+     free(stng);
 }
 
 void test_cmd_parse(void)
@@ -169,6 +171,7 @@ int main(void) {
   RUN_TEST(test_trim_white_both_whitespace_single);
   RUN_TEST(test_trim_white_both_whitespace_double);
   RUN_TEST(test_trim_white_all_whitespace);
+  RUN_TEST(test_trim_white_mostly_whitespace);
   RUN_TEST(test_get_prompt_default);
   RUN_TEST(test_get_prompt_custom);
   RUN_TEST(test_ch_dir_home);

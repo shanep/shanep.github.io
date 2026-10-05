@@ -79,3 +79,7 @@ learning outcomes.
 |     | 7.5 | Use a professional version control system (git)                                                                                    | All Projects          |
 
 <!--@include: ../../parts/syllabus-boiler.md-->
+
+<!--@include: ../../parts/syllabus-in-person.md-->
+
+<!--@include: ../../parts/syllabus-policies.md-->

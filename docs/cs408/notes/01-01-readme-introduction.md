@@ -29,7 +29,7 @@ discussion page.
 1. Go to the **Discussion** for the assignment.
 
 2. On the right-hand side (or below the prompt, depending on your view), click **“Show
-    Rubric.” **(see the screenshot below)
+    Rubric.”** (see the screenshot below)
 
 3. Review the criteria before you start. It shows how each part of the assignment will be graded.
 

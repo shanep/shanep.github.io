@@ -13,7 +13,7 @@ You will be working on an application or design of your choice. Students are all
 project as long as the following constraints are met:
 
 1. Your project must be full-stack and use AWS EC2 on the backend.
-2. This is the **initial **draft that you must submit for approval.
+2. This is the **initial** draft that you must submit for approval.
 
 ### Banned Ideas
 
@@ -23,7 +23,7 @@ project as long as the following constraints are met:
 2. Pretty much anything Disney
 3. NO adult-oriented apps (I can't believe I have to mention this).  If you have an idea and are
     unsure whether it qualifies as "adult-oriented," **do not email me to ask**. Your instincts are
-    likely correct.** CHOOSE SOMETHING ELSE! **
+    likely correct. **CHOOSE SOMETHING ELSE!**
 
 ### Minimum Project requirements
 
@@ -49,7 +49,7 @@ Can't think of anything to build? Here are some ideas:
   unsuccessful, but because they were just not in the billions.
 - Write a web game.
 - Extend the Canvas Mini-lab to something more complex to help you as a student
-- You will be working on this app for most of the semester so it must **be substantial **in scope. A
+- You will be working on this app for most of the semester so it must **be substantial** in scope. A
   simple TODO app or other ideas that can be completed in an afternoon are not acceptable.
 
 ## Task 1: Project Specification
@@ -95,7 +95,7 @@ minimum, you should detail the following:
 - Schedule - There will be seven project checkpoints in the last 8 weeks of class. Detail out a
   rough schedule of what you will have accomplished at each checkpoint. The checkpoints need to give
   concrete deliverables that can be assessed. NOTE: The checkpoints in the example below are
-  specific to the example. Your project **should **have a customized set of checkpoints; do not just
+  specific to the example. Your project **should** have a customized set of checkpoints; do not just
   blindly copy and paste from the example.
 
 ## Submitting
