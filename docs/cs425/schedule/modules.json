@@ -1,5 +1,42 @@
 [
   {
+    "title": "Start Here",
+    "items": [
+      {
+        "kind": "page",
+        "title": "Course Introduction",
+        "path": "notes/course-introduction",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Course Objectives",
+        "path": "objectives",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Resources",
+        "path": "resources",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Glossary",
+        "path": "glossary",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
     "title": "Week 1-2: Computer Networks and the Internet",
     "items": [
       {
