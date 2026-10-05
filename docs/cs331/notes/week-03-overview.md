@@ -16,7 +16,7 @@ Second, **good intentions are not a defense.** "I was going to report it" does n
 unauthorized access into authorized access. This surprises people every year.
 
 Third, this is the shortest reading in the course drawn from the longest chapter, CyBOK's law
-chapter runs 78 pages. You are assigned 15. Do not read the rest unless you want to.
+chapter runs about 80 pages. You are assigned 15. Do not read the rest unless you want to.
 
 ## Learning Objectives
 

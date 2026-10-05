@@ -61,7 +61,7 @@ Here is what each one does:
 
 - `init.defaultBranch main` - New repositories start on `main` to match GitHub.
 - `pull.rebase true` - `git pull` replays your commits on top of the new ones instead of creating
-  a merge commit. When you are first learning git this means fewer conflicts to deal with.
+  a merge commit, which keeps your history a straight line.
 - `push.autoSetupRemote true` - The first `git push` on a new branch just works, no more
   `--set-upstream` error.
 - `fetch.prune true` - Branches deleted on GitHub get cleaned up locally.
@@ -87,8 +87,13 @@ so you never have to remember which menu something lives in.
 | `Alt+Click`      | Add another cursor                                   |
 | `Ctrl+/`         | Comment or uncomment the selected lines              |
 
-On a Mac, use `Cmd` in place of `Ctrl` and `Option` in place of `Alt`. The full list is in
-**Help > Keyboard Shortcuts Reference**.
+On some Linux desktops `Alt+Click` moves the window instead. Use `Shift+Alt+Up` or
+`Shift+Alt+Down` to add a cursor above or below, or set `editor.multiCursorModifier` to `ctrlCmd`
+and use `Ctrl+Click`.
+
+On a Mac, use `Cmd` in place of `Ctrl` and `Option` in place of `Alt`. The exceptions are
+`` Ctrl+` `` and `Ctrl+Shift+G` (Source Control, below), which keep `Ctrl` on a Mac. The full list
+is in **Help > Keyboard Shortcuts Reference**.
 
 ## Use the debugger
 

@@ -93,8 +93,8 @@ The points convert to a letter using the course grading scheme:
 | 28 to 29    | C-    |
 | 27          | D+    |
 | 26          | D     |
-| 25          | D-    |
-| 24 or fewer | F     |
+| 24 to 25    | D-    |
+| 23 or fewer | F     |
 
 ## Rubric
 

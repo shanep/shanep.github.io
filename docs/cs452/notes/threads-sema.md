@@ -34,7 +34,7 @@ call a semaphore used as a lock a binary semaphore.
 ## Reader-Writer Locks
 
 - Multiple concurrent readers at a time
-- Only one writer at a time
+- Only one writer at a time, and no readers while a writer holds the lock
 
 ## The Dining Philosophers 🍽
 
@@ -44,6 +44,10 @@ call a semaphore used as a lock a binary semaphore.
 
 Use a semaphore to limit the number of threads concurrently executing
 the piece of code in question
+
+## Implementing Semaphores
+
+A semaphore built from one lock and one condition variable (OSTEP calls it a Zemaphore):
 
     1 typedef struct __Zem_t {
     2   int value;

@@ -35,8 +35,9 @@ every step is a pass.
 
 - **Sit with your group** from A1, so the person next to you can help when your
   laptop does something mine did not.
-- You need the SSH client you used in A1. On Windows, use **Git Bash** today;
-  it has every command below.
+- You need the SSH client you used in A1. On Windows, use **Git Bash** today.
+  Two commands differ there: if `ssh-copy-id` is missing, use the by-hand steps
+  in step 2, and use `ping -n 3` instead of `ping -c 3` in step 4.
 - The editor today is `vi`. It is on Onyx, on every Linux box you will ever
   ssh into, and in Git Bash. You need five things, and they are on the board:
   `i` to start typing, `Esc` to stop, `:wq` to save and quit, `:q!` to bail out
@@ -130,7 +131,8 @@ chmod 600 ~/.ssh/authorized_keys
 ```
 
 The two `chmod` lines matter. SSH silently ignores the file if anybody else on
-the machine could read or write it, and "silently" is the important word.
+the machine could write to it (or to `~/.ssh`), and "silently" is the important
+word.
 
 Now the test, from your laptop:
 
@@ -289,9 +291,9 @@ Answer the last question on the worksheet.
 
 Onyx tests a connection from campus. To test one from the network you are
 actually on, put `probe` on your laptop too. Open `~/.bashrc` on your laptop (on
-Windows, from Git Bash), paste the same function at the bottom, open a **new**
-terminal window, and run `probe example.com 80`. If it prints a `code=200` line,
-you are done.
+Windows, from Git Bash, and on a Mac, whose shell is zsh, open `~/.zshrc`
+instead), paste the same function at the bottom, open a **new** terminal window,
+and run `probe example.com 80`. If it prints a `code=200` line, you are done.
 
 ::: tip Checkpoint
 
@@ -354,8 +356,8 @@ cold login about 1.1 s, warm about 250 ms, round trip about 31 ms;
 - **`ssh-copy-id` does not ship on Windows.** Have the manual `authorized_keys`
   procedure on the board before step 2 starts; it is in the page.
 - **Loose permissions.** Any student whose key "does not work" almost certainly
-  has a `~/.ssh` or `authorized_keys` that is group readable. `chmod 700 ~/.ssh;
-  chmod 600 ~/.ssh/authorized_keys` on Onyx fixes it. If the laptop side is the
+  has a `~/.ssh` or `authorized_keys` that is group or world writable.
+  `chmod 700 ~/.ssh; chmod 600 ~/.ssh/authorized_keys` on Onyx fixes it. If the laptop side is the
   problem, it is `chmod 600 ~/.ssh/config` or `~/.ssh/id_ed25519`.
 - **Windows and `ControlMaster`.** Multiplexing is unreliable on Windows
   builds of OpenSSH. Expect some Git Bash students to get a warning, or two

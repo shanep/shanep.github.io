@@ -188,8 +188,8 @@ void test_invaidIndex(void)
       TEST_ASSERT_TRUE(*((int *)curr->data) ==  i);
       curr = curr->next;
     }
-
-  for (int i = 0; i >= 4; i++)
+  curr = lst_->head->prev;
+  for (int i = 0; i <= 4; i++)
     {
       TEST_ASSERT_TRUE(*((int *)curr->data) == i);
       curr = curr->prev;
@@ -219,7 +219,7 @@ void test_indexOf0(void)
   populate_list();
   //List should be 4->3->2->1->0
   void *data = lst_->head->next->data;
-  size_t idx = list_indexof(lst_, data);
+  int idx = list_indexof(lst_, data);
   TEST_ASSERT_TRUE(idx == 0);
 }
 
@@ -228,7 +228,7 @@ void test_indexOf3(void)
   populate_list();
   //List should be 4->3->2->1->0
   void *data = alloc_data(1);
-  size_t idx = list_indexof(lst_, data);
+  int idx = list_indexof(lst_, data);
   TEST_ASSERT_TRUE(idx == 3);
   free(data);
 }

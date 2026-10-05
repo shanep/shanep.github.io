@@ -1,4 +1,18 @@
 {
     "MD025": false,
-    "MD013": false
+    "MD013": false,
+    // The bold `**Week N · P points**` meta line that edutools reads.
+    "MD036": false,
+    // Vue components and <script setup> blocks in the pages.
+    "MD033": false,
+    // parts/ fragments and the schedule pages do not start with an h1.
+    "MD041": false,
+    // Most unlabeled fences are program output, formulas or diagrams.
+    "MD040": false,
+    // Table pipe alignment is cosmetic.
+    "MD060": false,
+    // The CV repeats subheadings such as "In Preparation" under different
+    // parents. A repeated heading among siblings (a second `## Rubric`) is
+    // still an error.
+    "MD024": { "siblings_only": true }
 }

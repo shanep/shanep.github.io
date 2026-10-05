@@ -138,15 +138,16 @@ The OS randomizes the base addresses of the stack, heap, and shared
 libraries on every execution. An attacker who cannot predict where code
 lives cannot write a reliable exploit.
 
-Enable in Linux: `echo 2 > /proc/sys/kernel/randomize_va_space`
+Enable in Linux (2 is already the default): `sudo sysctl -w kernel.randomize_va_space=2`
 
 ASLR is most effective when combined with **PIE** (Position Independent
 Executable), which also randomizes the text segment.
 
 ### Non-Executable Memory (NX / DEP / W^X)
 
-Hardware enforces that a memory page is either **writable** or
-**executable**, never both at the same time (the W^X policy). An
+The hardware NX (no-execute) bit lets the OS mark individual pages as
+non-executable. The OS and toolchain use it to enforce the W^X policy: a
+page is either **writable** or **executable**, never both at the same time. An
 attacker who injects shellcode onto the stack cannot execute it because
 the stack is marked non-executable.
 

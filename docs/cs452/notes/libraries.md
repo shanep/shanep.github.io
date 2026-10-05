@@ -31,6 +31,7 @@ like `openat` and `mmap` to do the work.
 
 ```c
 #include <dlfcn.h>
+#include <stdio.h>
 
 void *handle = dlopen("libm.so.6", RTLD_LAZY);
 double (*cos_fn)(double) = dlsym(handle, "cos");
@@ -159,6 +160,9 @@ sudo ldconfig          # rebuild /etc/ld.so.cache
 ldconfig -p | grep ssl # search the cache
 ```
 
-When you install a new `.so` file the dynamic linker does not
-automatically find it. Running `ldconfig` rebuilds the cache that maps
-library names to file paths.
+When you install a new `.so` file into a directory such as `/usr/local/lib`,
+the dynamic linker will not find it until you run `ldconfig`. It scans the
+directories listed in `/etc/ld.so.conf`, creates the soname symlinks, and
+rebuilds the cache that maps library names to file paths. For a library in
+your own build directory, set `LD_LIBRARY_PATH` instead:
+`LD_LIBRARY_PATH=. ./my_program`.

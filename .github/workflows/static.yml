@@ -45,7 +45,7 @@ jobs:
         with:
           version: '3.9'
       - name: Cache Tectonic packages
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ${{ runner.temp }}/tectonic-cache
           key: ${{ runner.os }}-tectonic-${{ hashFiles('scripts/cv/template.tex') }}

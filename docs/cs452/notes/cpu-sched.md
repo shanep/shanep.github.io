@@ -44,7 +44,7 @@ switches to the next job in the run queue.
 These two metrics often pull in opposite directions:
 
 - **Turnaround time** = completion time - arrival time. Optimized by
-  running long jobs without interruption (favors SJF/FIFO).
+  running the shortest jobs first and letting each one finish (favors SJF/STCF).
 - **Response time** = first run time - arrival time. Optimized by
   frequently switching between jobs (favors Round Robin).
 

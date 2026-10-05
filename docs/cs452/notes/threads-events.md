@@ -51,16 +51,19 @@ if (ready > 0 && FD_ISSET(sockfd, &read_fds)) {
 `poll()` is similar but uses an array of `struct pollfd` instead of bit
 sets, avoiding `select()`'s limit of 1024 file descriptors.
 
-**Problem with both**: the kernel scans *all* registered descriptors on
-every call, which is O(n) work even if only one descriptor is ready. This
+**Problem with both**: every call passes in the full set of descriptors,
+and the kernel copies in and scans *all* of them, which is O(n) work even if
+only one descriptor is ready. This
 becomes a bottleneck with thousands of connections.
 
 ## epoll (Linux)
 
 `epoll` solves the scaling problem. Rather than scanning every
-descriptor each time, the kernel maintains an internal table and notifies
-you only about descriptors that changed state, which is O(1) per event
-regardless of how many descriptors are registered.
+descriptor each time, the kernel keeps the interest list and a ready list,
+and `epoll_wait()` returns only the descriptors that are ready, which is O(1)
+per event regardless of how many descriptors are registered. By default epoll
+is level-triggered: a descriptor is reported as long as it is ready. Use
+`EPOLLET` (edge-triggered) to be told only when its state changes.
 
 ```c
 #include <sys/epoll.h>
@@ -128,5 +131,7 @@ Solutions:
   each running its own event loop.
 - **Redis**: single-threaded event loop handles all client commands;
   no locking needed because only one command executes at a time.
-- **Node.js**: JavaScript runs in one thread on the V8 engine; I/O is
-  dispatched to a libuv thread pool and results are posted back as events.
+- **Node.js**: JavaScript runs in one thread on the V8 engine. libuv
+  watches sockets with epoll on that same thread and sends file I/O, DNS
+  lookups, and some crypto to a small thread pool, posting the results
+  back as events.

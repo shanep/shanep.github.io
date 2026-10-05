@@ -81,6 +81,9 @@ You should see a version number such as `43.0.1`. Copy that output too.
   ~/cs331-env/bin/python -c "import cryptography; print(cryptography.__version__)"
   ```
 
+  On Debian or Ubuntu, if `python3 -m venv` says "ensurepip is not available", run
+  `sudo apt install python3-venv` first and then repeat the three commands.
+
   If you take this route, use `~/cs331-env/bin/python` instead of `python3` for the rest of the
   semester. Write that down.
 
@@ -94,16 +97,17 @@ Two things to know first:
 - **Section numbers** such as §1.1 are the reliable way to navigate. Use your PDF viewer's search
   box, or open the bookmarks panel.
 - **Page numbers in the footer of each page do not match your PDF viewer's page counter.** The book
-  has 39 pages of front matter. Always go by section number.
+  has 38 pages of front matter. Always go by section number.
 
 Now find and answer:
 
-1. **Open §1.1, "Cyber Security Definition"** (printed page 2). CyBOK gives a definition of cyber
-   security in the first paragraph. Quote it, and give the printed page number you found it on.
+1. **Open §1.1, "Cyber Security Definition"** (it starts at the bottom of printed page 2). CyBOK
+   quotes a working definition of cyber security from the UK National Cyber Security Strategy.
+   Quote it, and give the printed page number you found it on.
 
-2. **Open §1.3.1, "Means and objectives of cyber security"** (printed page 6). This is where CyBOK
-   introduces confidentiality, integrity, and availability. In your own words (not quoted), write
-   one sentence for each of the three explaining what it protects against.
+2. **Stay in §1.1 and find the definition of information security** (printed page 3). This is
+   where CyBOK introduces confidentiality, integrity, and availability. In your own words (not
+   quoted), write one sentence for each of the three explaining what it protects against.
 
 3. **Open the Glossary** (printed page 951). Look up **threat** and **vulnerability**. Quote both
    definitions, then write one sentence explaining the difference in your own words.

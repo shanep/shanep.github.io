@@ -50,7 +50,7 @@ The starter gives you a Makefile with the targets every project depends on:
 ## Reference
 
 - [RFC Editor](https://www.rfc-editor.org/) — the protocol specifications themselves.
-  RFC 791 (IP), 793 (TCP), 768 (UDP), 5321 (SMTP), and 9110 (HTTP) all come up.
+  RFC 791 (IP), 9293 (TCP, which replaced 793), 768 (UDP), 5321 (SMTP), and 9110 (HTTP) all come up.
 - [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/) — the friendliest
   socket programming reference there is.
 - [Submission report README example](https://gist.github.com/shanep/4fc7962a3ac80349094d50e0fa57cf6e)

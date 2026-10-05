@@ -47,8 +47,9 @@ You run a provided script and change two values in it. No code to write.
 python3 sign_demo.py
 ```
 
-Save the full output. The key pair is generated fresh each run, so your hex values will differ from
-your classmates': that is expected, and it is itself worth noticing.
+Save the full output. The key pairs and the HMAC secret are generated fresh each run, so your
+signature and tag values will differ from your classmates'. Your Part 1 digests will not: that is
+expected, and it is itself worth noticing.
 
 ### Step 2: What a hash does
 

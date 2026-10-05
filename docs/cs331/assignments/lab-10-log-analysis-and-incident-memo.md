@@ -43,7 +43,7 @@ an ordinary day.
   detection.
 - CyBOK §8.3.6 (printed page 270), **the base-rate fallacy**. Short and important.
 - CyBOK §8.7 (printed pages 283-286), incident management: prepare, handle, follow up.
-- NIST SP 800-61r3, skim the incident response life cycle:
+- NIST SP 800-61r3, skim §2.1, the incident response life cycle model, including Table 1:
   <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf>
 - Download [data/auth.log](../data/auth.log) and [data/web_access.log](../data/web_access.log) from
   Canvas Files.
@@ -173,8 +173,9 @@ Answer:
 ### Step 5: The incident memo
 
 Write a **one-page incident memo** (400 to 600 words) addressed to the IT director of the
-organization running `vault-api-01`. Structure it around the NIST SP 800-61r3 life cycle, with
-these headings:
+organization running `vault-api-01`. Structure it around the incident response phases in the
+week 15 notes, with these headings. Headings 3 to 5 are phases from NIST SP 800-61r2, which
+SP 800-61r3 maps onto the CSF 2.0 Functions in its Table 1:
 
 1. **What happened.** A factual summary, with times. No speculation in this section.
 2. **What we know and what we do not.** Separate the two explicitly. Say what evidence would close

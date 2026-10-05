@@ -71,9 +71,11 @@ promptly. If there was a missed earlier signal (as there was in the
 
 ### 3. The response, judged against the incident response life cycle
 
-Take the response as reported and lay it against the four-phase life cycle from CyBOK §8.7 and
-NIST SP 800-61r2. For **each** phase, say what the
-organization did, what it appears to have got right, and what it got wrong or you cannot tell:
+Take the response as reported and lay it against the four phases below. They come from NIST
+SP 800-61r2. CyBOK §8.7 groups the same work into three activities (prepare, handle, follow up),
+and SP 800-61r3 maps each phase onto the CSF 2.0 Functions in its Table 1. For **each** phase, say
+what the organization did, what it appears to have gotten right, and what it got wrong or you cannot
+tell:
 
 - **Preparation**: what was in place beforehand? Backups, a plan, a retainer, logging?
 - **Detection and analysis**: covered in part 2; add anything about how they scoped it.

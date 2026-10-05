@@ -27,7 +27,7 @@ section walks the method; Lab 10 asks you to do it properly.
 
 ### 1. Start by counting, not reading
 
-569 lines of authentication log is too many to read and trivial to count. Almost every log
+548 lines of authentication log is too many to read and trivial to count. Almost every log
 investigation starts by grouping and counting:
 
 ```
@@ -35,13 +35,13 @@ grep -oE 'from [0-9.]+' auth.log | sort | uniq -c | sort -rn | head
 ```
 
 ```
- 349 from 203.0.113.47
+ 328 from 203.0.113.47
   28 from 10.12.4.44
   24 from 10.12.9.8
   24 from 10.12.4.31
 ```
 
-Three internal addresses with a couple of dozen events each, and one external address with 349.
+Three internal addresses with a couple of dozen events each, and one external address with 328.
 You have found the interesting thing in about fifteen seconds without reading a line.
 
 Now look at what that address was doing:
@@ -63,8 +63,8 @@ Apr 21 03:27:27 vault-api-01 sshd[6485]: Accepted password for deploy from 203.0
 
 One of the guesses worked. This is no longer a failed brute-force in a log full of internet
 background noise; it is an intrusion. Everything after that timestamp is the intruder, and the
-three lines that follow (`sudo cat /etc/shadow`, a service status check, and a session lasting
-twenty minutes) are what they did with it.
+four lines that follow (a session opening, `sudo cat /etc/shadow`, a service status check, and the
+session closing twenty minutes later) are what they did with it.
 
 **Method to take away: count first, then read only what the counting pointed at, then read
 everything after the moment it succeeded.**
@@ -77,7 +77,8 @@ Objective 7.1 is as much about limits as about findings.
 It **cannot** tell you what the intruder did once they had a shell: that needs process auditing or
 command logging, neither of which is here. It cannot tell you whether the credential was guessed or
 already known. And it cannot be fully trusted at all, because the intruder used `sudo` and could
-have edited it, which is why §8.2.6 emphasizes shipping logs off the host as they are written.
+have edited it. That is one reason to ship logs off the host as they are written, which Syslog
+(§8.2.6) makes routine.
 
 `web_access.log` can tell you which paths were requested, from where, with what result and response
 size. It **cannot** tell you what was in a POST body, what the response contained, or whether an
@@ -93,7 +94,7 @@ immediately. It also catches only what you thought to write down: an attacker wh
 passwords an hour from a different address each time sails past it.
 
 **Anomaly detection** encodes what normal looks like and flags deviation. You would first measure a
-baseline (this server sees authentication from three internal addresses, business hours, publickey
+baseline (this server sees authentication from three internal addresses, around the clock, publickey
 only) and then flag departures from it. It would have caught the slow attacker the misuse rule
 misses. It would also have flagged the new contractor, the changed backup schedule, and the day
 somebody worked from a hotel.
@@ -103,7 +104,7 @@ surface the unknown, and the two feeding one queue.
 
 Notice, incidentally, that the intruder's success is visible to a **third** kind of rule that is
 neither: *any successful password authentication on a host configured for publickey only.* Legitimate
-staff in this log all use `Accepted publickey`. That single rule would have fired on line 371 with a
+staff in this log all use `Accepted publickey`. That single rule would have fired on line 350 with a
 near-zero false positive rate. **The best detections usually come from knowing your own environment,
 not from a better algorithm.**
 
@@ -166,16 +167,17 @@ The moves that work change something other than accuracy:
 
 ### 6. Writing it up
 
-§8.7 and NIST SP 800-61r2 give the same four-phase shape. The current revision, r3, keeps the same
-work but files it under the CSF 2.0 functions (Govern, Identify, Protect, Detect, Respond, Recover),
-so you will not find these four headings in it:
+The four phases below come from the previous revision, NIST SP 800-61r2. §8.7 groups the same
+work into three activities (prepare, handle, follow up). The current revision, r3, files it under
+the CSF 2.0 Functions (Govern, Identify, Protect, Detect, Respond, Recover) instead. These four
+headings are no longer its life cycle, but its Table 1 maps each one onto those Functions:
 
-| Phase | The question |
-| --- | --- |
-| **Preparation** | What was in place before? Logging, backups, a plan, somebody to call. |
-| **Detection and analysis** | What happened, how do we know, and how far does it go? |
-| **Containment, eradication, and recovery** | Stop it, remove it, come back, and how do we decide the host is clean? |
-| **Post-incident activity** | What changes, so this is less likely or gets caught sooner? |
+| Phase | r3 Functions | The question |
+| --- | --- | --- |
+| **Preparation** | Govern, Identify, Protect | What was in place before? Logging, backups, a plan, somebody to call. |
+| **Detection and analysis** | Detect, Identify (Improvement) | What happened, how do we know, and how far does it go? |
+| **Containment, eradication, and recovery** | Respond, Recover, Identify (Improvement) | Stop it, remove it, come back, and how do we decide the host is clean? |
+| **Post-incident activity** | Identify (Improvement) | What changes, so this is less likely or gets caught sooner? |
 
 Three things that separate a usable memo from a bad one:
 

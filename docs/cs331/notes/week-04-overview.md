@@ -6,8 +6,9 @@ There is always more that could go wrong than you have money to fix. Risk manage
 discipline of deciding what to fix first, and defending that decision to somebody who wants the
 money for something else.
 
-This week has two halves. The first is CyBOK's treatment of risk: what it is, why ratings are
-meaningless without a stated scale, and why "eliminate the risk" is not a thing that happens. The
+This week has two halves. The first is CyBOK's treatment of risk: what it is, the elements a rating
+is built from, and why "eliminate the risk" is not a thing that happens. A rating is meaningless
+without a stated scale, so Lab 2 makes you state yours. The
 second is threat modeling, the systematic method for finding what could go wrong, so that you
 find threats by working through a checklist rather than by happening to think of them at the right
 moment.

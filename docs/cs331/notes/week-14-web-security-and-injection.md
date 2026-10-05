@@ -12,10 +12,11 @@ What to do this week, and when it is due, is on the [Module 14 Overview](week-14
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §16.3.1 Phishing and Clickjacking | 543-545 | 3 pp | 20 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §16.4.1 Injection Vulnerabilities: SQLi, command injection, LFI, XSS, CSRF | 547-552 | 6 pp | 45 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §15.1.2 Structured Output Generation Vulnerabilities *(revisit from week 13)* | 501-503 | 2 pp | 15 min |
-| OWASP Top 10 | A01 Broken Access Control, A03 Injection, A07 Identification and Authentication Failures | none | skim | 25 min |
+| OWASP Top 10:2021 | A01 Broken Access Control, A03 Injection, A07 Identification and Authentication Failures | none | skim | 25 min |
 
-OWASP Top 10: <https://owasp.org/www-project-top-ten/>. Read the three named entries; they are
-short and each links real CWEs and example scenarios.
+OWASP Top 10:2021: <https://top10.owasp.org/2021/>. Read the three named entries; they are
+short and each links real CWEs and example scenarios. The OWASP project page now leads with the 2025
+edition, which renumbers the list (Injection is A05 there), so make sure and use the 2021 link.
 
 ## Worked example
 

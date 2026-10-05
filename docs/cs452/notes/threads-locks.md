@@ -37,8 +37,9 @@ has completed the section.
 ## Hardware support
 
 Each platform architecture may provide different support to help build
-locks. The core idea in all these instructions is they are atomic.
-Meaning that they are guaranteed to complete once started.
+locks. The core idea in all these instructions is they are atomic:
+each one executes as a single indivisible step, so no other thread or CPU
+can observe or interfere with a partial result.
 
 - Interrupts
 - test-and-set
@@ -63,7 +64,7 @@ Lets look at just a few examples of building a lock! 🔒
 - The main positive of this approach is its simplicity
 - The negatives, unfortunately, are many
   - We have to trust any calling thread to perform a privileged operation (turning interrupts off)
-  - Thread can die before unlocking making the system unusable.
+  - A buggy or malicious thread can call lock() and then loop forever, and the OS never regains control.
 - Does not work on multiprocessors
 
 ## Test-And-Set
@@ -78,8 +79,9 @@ code snippet.
     5 }
 
 The example above is just for illustration purposes. A real TestAndSet
-function would need to use inline ASM to be correct. See the code
-examples!
+function must use a real atomic instruction, through inline ASM, a GCC
+builtin such as `__atomic_exchange_n()`, or C11 `atomic_exchange()`. See
+the code examples!
 
 ## Test-And-Set details
 
@@ -90,7 +92,7 @@ examples!
 
 ## Dekker’s and Peterson’s Algorithms
 
-Dekker’s algorithm and Peterson’s algorithm attempted to solve the
+Dekker’s algorithm and Peterson’s algorithm solve the
 mutual exclusion problem using only load and store instructions,
 with no special hardware atomics required. They work correctly under the
 sequential consistency memory model (the model assumed when reasoning
@@ -108,10 +110,12 @@ immediately visible to all other threads, which modern hardware does
 
 To enforce ordering on real hardware, you need explicit **memory
 barriers** (also called fences): instructions that flush store buffers
-and prevent the CPU from reordering across the fence. The hardware
-atomic primitives (test-and-set, compare-and-swap, etc.) implicitly
-include the necessary barriers, which is why they work correctly where
-Peterson’s algorithm does not.
+and prevent the CPU from reordering across the fence. On x86, locked
+atomic instructions (test-and-set, compare-and-swap, etc.) also act as
+full memory barriers. On weaker architectures such as ARM they do not, so
+a lock pairs the atomic with acquire/release ordering or an explicit
+fence. `pthread_mutex_lock()` and C11 atomics handle this for you, which
+is why they work correctly where Peterson’s algorithm does not.
 
 ## Spin Locks
 

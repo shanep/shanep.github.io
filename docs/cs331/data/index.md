@@ -13,7 +13,7 @@ internet connection. Download the file the lab names, run it or read it, and go.
 | [cert_inspect.py](cert_inspect.py) | [Lab 6](../assignments/lab-06-certificates-and-tls.md) | Builds a certificate chain and runs the checks a browser runs on three server certificates. |
 | [vuln.c](vuln.c) | [Lab 8](../assignments/lab-08-memory-safety-and-assurance.md) | A badge reader with a stack buffer overflow. You read it; you never run it. |
 | [sqli_demo.py](sqli_demo.py) | [Lab 9](../assignments/lab-09-sql-injection.md) | A login form built two ways: string concatenation and parameterized queries. |
-| [auth.log](auth.log) | [Lab 10](../assignments/lab-10-log-analysis-and-incident-memo.md) | 569 lines of SSH authentication log from a server called `vault-api-01`. |
+| [auth.log](auth.log) | [Lab 10](../assignments/lab-10-log-analysis-and-incident-memo.md) | 548 lines of SSH authentication log from a server called `vault-api-01`. |
 | [web_access.log](web_access.log) | [Lab 10](../assignments/lab-10-log-analysis-and-incident-memo.md) | 318 lines of web server access log in Apache combined format. |
 
 ## Running the Python scripts

@@ -144,8 +144,10 @@ connection costs **one round trip** before a single byte of your data moves.
 
 **RST**, reset. A TCP flag meaning "there is nothing here, stop". A host sends one
 when a connection arrives for a port with no listener. Getting a RST is
-**informative**: it proves the address is routable, the host is up, and its network
-stack is running. The problem is narrowed to one port on one machine.
+**informative**: something on the path answered for that address and port. Usually
+it is the host itself, which proves the host is up and its network stack is running,
+and narrows the problem to one port on one machine. A firewall set to REJECT can
+send the same RST on the host's behalf, though (see DROP versus REJECT below).
 
 **Connection refused.** What a client reports when it got a RST. It happens in
 about one round trip, so it is effectively instant.
@@ -197,7 +199,7 @@ reply, which is more than most failures manage.
 | ---- | ------- | ----- |
 | `dig` | Does this name resolve, and to what? | `dig +short NAME @SERVER -p PORT`. **`+short` prints only the answer records**, so a name that does not exist prints nothing at all and still exits 0. Drop `+short` and read the `status:` field to see what actually came back. |
 | `ping` | Does this host answer ICMP? | Proves reachability when it works, proves nothing when it fails. |
-| `nc -vz` | Is this TCP port open? | Names the failure clearly: `Connection refused` versus `Operation timed out`. The connect timeout is `-w` on Linux and **`-G` on macOS**, where `-w` means idle timeout instead; using the wrong one against a dropped port waits about 75 seconds with no output. |
+| `nc -vz` | Is this TCP port open? | Names the failure clearly: `Connection refused` versus a timeout (`Connection timed out` on Linux, `Operation timed out` on macOS). The connect timeout is `-w` on Linux and **`-G` on macOS**, where `-w` means idle timeout instead; using the wrong one against a dropped port waits about 75 seconds with no output. |
 | `curl -v` | Does the service actually respond? | Walks DNS, TCP and HTTP in one command and tells you where it stopped. |
 | `ss -ltn` | What is listening on this machine? | Run on the server. `netstat -an` on older systems. |
 | `tcpdump` | What packets are actually arriving? | Run on the server: `sudo tcpdump -nni any tcp port 8080`. Use `-nn` so it does not rename ports. |

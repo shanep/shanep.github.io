@@ -25,14 +25,17 @@ to the basic types there are type modifiers: signed, unsigned, short, and long. 
 types and modifiers together like `unsigned int foo = 0;` which declares a new variable foo of
 type int that is unsigned.
 
-Types such as int, float, double, etc. are hardware dependent. This is in stark contrast to Java
+The sizes of types such as int and long depend on the compiler and platform (`long` is 8 bytes on
+x86-64 Linux but 4 bytes on 64-bit Windows). This is in stark contrast to Java
 where sizes are always the same regardless of what hardware you are running on.
 
 In C automatic type conversions can be surprising when coming from the warm embrace of Java. When an
 operator, like addition(+) encounters operands of different types, they are converted to a common
-type according to a small number of rules. In general, the only automatic conversions are those that
-convert a _narrower_ operand into a _wider_ one without loss of precision. An example would be
-converting an integer to floating point. Unfortunately, expressions that might lose information,
+type according to a small number of rules. In general, automatic conversions widen a _narrower_
+operand into a _wider_ one, such as `int` to `double`. Watch out for two cases. Converting a large
+`int` to `float` can lose precision (any value above 2^24), and when an operator mixes a signed and
+an unsigned operand of the same size, the signed one is converted to unsigned, so `-1 < 1u` is
+false. Unfortunately, expressions that might lose information,
 like assigning a longer integer type to a shorter, or a floating-point type to an integer, are not
 illegal and the compiler in question may only issue a warning instead of an error.
 

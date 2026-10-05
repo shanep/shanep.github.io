@@ -21,9 +21,9 @@ Two page numbering systems are in play, and they do not agree:
 
 - **Printed page numbers** appear in the footer of every CyBOK page. All readings in this course
   are cited by printed page number.
-- **Your PDF viewer's page counter** is roughly 39 higher, because the book opens with a cover
-  block and thirty pages of front matter numbered in Roman numerals. The offset is not exactly
-  constant, 42 pages in the body (full-page figures and part dividers) carry no footer.
+- **Your PDF viewer's page counter** is 38 higher, because the book opens with an 8-page cover
+  block and thirty pages of front matter numbered in Roman numerals. Some viewers read the PDF's
+  page labels and show the printed number instead.
 
 **Navigate by section number, not page number.** Section numbers such as §10.4 are stable and
 appear in the PDF's bookmarks panel and in your viewer's search box. Page numbers are given in the
@@ -93,7 +93,7 @@ where a worked treatment helps most. All are free.
 | 7-8 | Nakov, *Practical Cryptography for Developers*, the AES, cipher modes, hashing, RSA, and ECC pages | MIT | <https://cryptobook.nakov.com/> |
 | 12 | MITRE ATT&CK: Enterprise matrix and selected technique pages | Free to use, MITRE terms | <https://attack.mitre.org/> |
 | 13 | Aleph One, *Smashing the Stack for Fun and Profit*, Phrack 49, first third only | Free to read | <http://phrack.org/issues/49/14.html> |
-| 14 | OWASP Top 10: A01 Broken Access Control, A03 Injection, A07 Identification and Authentication Failures | CC BY-SA | <https://owasp.org/www-project-top-ten/> |
+| 14 | OWASP Top 10:2021: A01 Broken Access Control, A03 Injection, A07 Identification and Authentication Failures | CC BY-SA | <https://top10.owasp.org/2021/> |
 | 15 | NIST SP 800-61r3, *Incident Response Recommendations and Considerations for Cybersecurity Risk Management* (April 2025) | Public domain (U.S. Government) | <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf> |
 
 Two more references are used inside labs rather than as assigned reading:
@@ -114,7 +114,7 @@ requires a virtual machine, a server, or an internet connection.
 
 | Tool | Needed for | Notes |
 | --- | --- | --- |
-| Python 3.11+ | Labs 4, 5, 6, 9, 10 and the week 5 worked example | Pre-installed on macOS and most Linux distributions |
+| Python 3.11+ | Labs 4, 5, 6, 9, 10 and the week 5 worked example | Free from <https://www.python.org/downloads/>, and Lab 0 checks your version |
 | `cryptography` package | Labs 4, 5, and 6 only | `pip install cryptography`; installed step by step in Lab 0 |
 | A web browser | Labs 0, 6, 7, 8 | Any modern browser |
 

@@ -47,9 +47,9 @@ via web conferencing (e.g., Zoom).
     4. Apply styles using id and class attributes.
 3. Given JavaScript in a full-stack environment, Explain Its Purpose.
     1. Identify the differences between using JavaScript on the frontend vs the backend.
-    2. Use async/wait where appropriate
+    2. Use async/await where appropriate
     3. Use callbacks where appropriate
-    4. Use AJAX to retrieve and manipulate HTML elements and properties.
+    4. Use AJAX (fetch) to retrieve data and update HTML elements and properties with the DOM.
 4. Develop an Accessible Website
     1. Understand why WAI-ARIA was created (straightforward explanation)
     2. Memorize a given list of important WAI-ARIA rules (the plain language version)

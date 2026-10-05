@@ -96,6 +96,8 @@ From section 1.4, every packet pays for:
   frame at 100 Mbit/s takes 12,000 / 100,000,000 s = **0.12 ms**.
 - **Propagation delay**: the signal crossing the distance.
 - **Queuing delay**: waiting behind other packets in a buffer.
+- **Processing delay**: the router reading the header and picking the output
+  link. Usually microseconds.
 
 The RTT is all of that, out and back. It is not a fixed property of the link.
 
@@ -135,8 +137,9 @@ ceiling.
 
 The book runs it the other way: for one TCP connection to fill a 10 Gbps path
 with a 100 ms RTT and 1,500 byte segments, the loss rate has to be about
-**2 × 10^-10**. That is one lost segment in five billion. A cable can manage
-that. A radio can not.
+**2 × 10^-10**. That is one lost segment in five billion, which takes a bit
+error rate near 10^-14, about 60 times better than the 10^-12 the Ethernet spec
+promises. A clean fiber often runs that well. A radio cannot.
 
 ## 802.11 does not trust the air
 

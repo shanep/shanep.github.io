@@ -34,20 +34,19 @@ matter how you choose to write code 😃.
 
 ```bash
 $ gh auth login
-? What account do you want to log into? GitHub.com
-? You're already logged into github.com. Do you want to re-authenticate? Yes
-? What is your preferred protocol for Git operations? SSH
+? Where do you use GitHub? GitHub.com
+? What is your preferred protocol for Git operations on this host? SSH
 ? Generate a new SSH key to add to your GitHub account? Yes
-? Enter a passphrase for your new SSH key (Optional)
-? Title for your SSH key: (GitHub CLI
+? Enter a passphrase for your new SSH key (Optional):
 ? Title for your SSH key: GitHub CLI
-? How would you like to authenticate GitHub CLI? Login with a web browse
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
 ! First copy your one-time code: XXXX-XXXX
-Press Enter to open github.com in your browser...
+Press Enter to open https://github.com/login/device in your browser...
 ✓ Authentication complete.
 - gh config set -h github.com git_protocol ssh
 ✓ Configured git protocol
-✓ Uploaded the SSH key to your GitHub account: C:\Users\shane\.ssh\id_ed25519.pub
+✓ Uploaded the SSH key to your GitHub account: /home/shane/.ssh/id_ed25519.pub
 ✓ Logged in as shanep
 ```
 
@@ -63,12 +62,13 @@ factors. You are not required to match the output exactly, you just need
 to confirm that github.com is configured to use the ssh protocol.
 
 ```bash
-gh auth status
+$ gh auth status
 github.com
-  ✓ Logged in to github.com as shanep (keyring)
-  ✓ Git operations for github.com configured to use ssh protocol.
-  ✓ Token: gho_************************************
-  ✓ Token scopes: admin:public_key, gist, read:org, repo
+  ✓ Logged in to github.com account shanep (keyring)
+  - Active account: true
+  - Git operations protocol: ssh
+  - Token: gho_************************************
+  - Token scopes: 'admin:public_key', 'gist', 'read:org', 'repo'
 ```
 
 Congrats you are now configured to use github.com with the ssh protocol!
