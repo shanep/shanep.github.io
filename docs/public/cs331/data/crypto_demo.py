@@ -58,7 +58,7 @@ GCM_NONCE: Final[bytes] = bytes(range(12))     # 12 bytes, as GCM expects
 def draw_face(size: int) -> bytearray:
     """Return `size` x `size` pixels of BGR data: a white face on black.
 
-    Large blocks of one colour are exactly what ECB mode fails to hide, which
+    Large blocks of one color are exactly what ECB mode fails to hide, which
     is the point of Part 1.
     """
     black = (0, 0, 0)
@@ -142,7 +142,7 @@ def part_one(output_directory: pathlib.Path) -> None:
     print(f"  Distinct 16-byte blocks after CTR:        {distinct_ctr:,}")
     print("\n  ECB gives exactly as many distinct blocks as the plaintext had.")
     print("  Identical input blocks became identical output blocks, so every")
-    print("  repeated patch of colour is still a repeated patch of colour.")
+    print("  repeated patch of color is still a repeated patch of color.")
 
     for name, data in (
         ("cs331_original.bmp", pixels),

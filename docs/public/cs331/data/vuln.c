@@ -1,4 +1,4 @@
-/* vuln.c -- the program you analyse in CS 331, Lab 8.
+/* vuln.c -- the program you analyze in CS 331, Lab 8.
  *
  * This is a door-badge reader.  It takes a badge ID, checks it against a
  * list, and returns whether the holder may open the door.

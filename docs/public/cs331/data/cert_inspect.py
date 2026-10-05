@@ -262,7 +262,7 @@ def main() -> int:
     print("Every check above is arithmetic on the certificate contents except")
     print("the last one. 'Root is in the trust store' is a decision somebody")
     print("made on your behalf -- your operating system or browser vendor")
-    print("shipped a list of a few hundred organisations it will believe.")
+    print("shipped a list of a few hundred organizations it will believe.")
     print("That decision is the trust assumption underneath all of TLS.")
     print("=" * 72)
     return 0
