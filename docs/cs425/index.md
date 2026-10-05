@@ -34,6 +34,10 @@ All programming projects are written in C and must compile and run on **both**
 GitHub Codespaces and Onyx. Portable code is a learning objective of this course,
 so a project that builds on only one of the two receives no credit.
 
+Anything you do on your own laptop (activities, M1, X1, and the P4 capture) can use any operating
+system the laptop supports. Linux is the ground truth: if a command or its output is different on your
+machine, the Linux behavior is the one the course and the grading go by.
+
 ## Course Learning Outcomes
 
 By the end of this course the student should have achieved the following course

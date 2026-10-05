@@ -57,13 +57,15 @@ A complete list of readings, supplements, and their licenses is in [Readings and
 
 ## Required Tools
 
-Everything below is free and works the same on macOS and Linux.
+Everything below is free. You can use any operating system your laptop supports. Linux is the
+ground truth: if a command or its output is different on your machine, the Linux behavior is the
+one the course and the grading go by.
 
 | Tool | Why | Notes |
 | --- | --- | --- |
 | A web browser | Readings, Canvas, and two labs that use browser tools | Any modern browser |
-| Python 3.11 or newer | Six labs run a provided script | Pre-installed on macOS and most Linux systems |
-| The `cryptography` package | Labs 4 and 6 only | One `pip install cryptography`, walked through step by step in [Lab 0](assignments/lab-00-course-setup.md) |
+| Python 3.11 or newer | Labs 4, 5, 6, and 9 run a provided script | Pre-installed on macOS and most Linux systems |
+| The `cryptography` package | Labs 4, 5, and 6 only | One `pip install cryptography`, walked through step by step in [Lab 0](assignments/lab-00-course-setup.md) |
 
 You do **not** need a virtual machine, a Linux server, Docker, git, or a GitHub account. If your
 own machine gives you trouble, every lab runs on the lab machines described under

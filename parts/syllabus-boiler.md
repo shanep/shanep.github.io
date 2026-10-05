@@ -22,15 +22,7 @@ final grade.
 
 ## Extra Credit Opportunities
 
-Standing extra credit is always available to help students on a grading boundary. Extra credit
-earned over the semester cannot exceed **2.5% of total points offered** (e.g., a maximum of 25
-points in a 1000-point course).
-
-- **Typos and Bugs** — If you find a typo or bug in the course materials, click the "Edit this page"
-  link at the bottom of any page, make the correction, and submit a
-  [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
-  If your pull request is merged you will receive 5 bonus points. Read carefully — there are
-  deliberately placed errors throughout the materials. 🦅
+Extra credit can only be worth **2.5% of the total course**.
 
 ## Homework Policy
 
