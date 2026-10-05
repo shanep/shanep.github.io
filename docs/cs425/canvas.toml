@@ -28,9 +28,9 @@ due        = "tue 23:59"
 grace_days = 2
 
 # In class activities are done and submitted during the class period they run in,
-# so there is no grace period. Wednesday is the second meeting of the week.
+# so there is no grace period. Thursday is the second meeting of the week.
 [term.policy.lab]
-due        = "wed 23:59"
+due        = "thu 23:59"
 grace_days = 0
 
 [term.policy.discussion]
@@ -167,35 +167,17 @@ due = "fri 23:59"
 [override."assignments/p4.md"]
 due = "fri 23:59"
 
+# A1 and A2 ran on Wednesdays, before the activities settled on Thursday. These
+# keep the dates students already saw.
+[override."activities/a1-application-layer.md"]
+due = "wed 23:59"
+
+[override."activities/a2-stop-typing-your-password.md"]
+due = "wed 23:59"
+
 # A3 moved to week 6 and is due that Tuesday, Sep 29.
 [override."activities/a3-claude-transport.md"]
 due = "tue 23:59"
-
-# A4 runs in class on Thursday of week 7, Oct 8, and is due that night.
-[override."activities/a4-where-does-it-go.md"]
-due = "thu 23:59"
-
-# A5 and A6 run in class on Thursday of weeks 9 and 10, Oct 22 and Oct 29, and
-# are due that night.
-[override."activities/a5-errors-on-purpose.md"]
-due = "thu 23:59"
-
-[override."activities/a6-who-carries-your-packets.md"]
-due = "thu 23:59"
-
-# A7 runs in class on Thursday of week 11, Nov 5, and is due that night.
-[override."activities/a7-one-hop-at-a-time.md"]
-due = "thu 23:59"
-
-# A8 runs in class on Thursday of week 13, Nov 19, and is due that night, the
-# day before P4.
-[override."activities/a8-noisy-link.md"]
-due = "thu 23:59"
-
-# A9 runs in class on Thursday of calendar week 15 (instruction week 14), Dec 3,
-# and is due that night.
-[override."activities/a9-who-are-you-talking-to.md"]
-due = "thu 23:59"
 
 # M1 is a one hour take home mini-lab, due Thursday of week 6 (Oct 1) with the
 # usual two days of grace, rather than on a project Tuesday.
@@ -220,6 +202,18 @@ group      = "Midterm"
 # `canvas` names objects that live only in Canvas, built by hand: the knowledge
 # check quizzes and the exams. A push rebuilds every module from this file, so a
 # quiz that is not listed here falls out of its module on the next push.
+# The pages that are not tied to a week. A push creates the module unpublished
+# and never publishes it without --publish, so it stays hidden this term. Publish
+# it by hand at the end of the semester.
+[[module]]
+title = "Start Here"
+items = [
+    "notes/course-introduction.md",
+    "objectives.md",
+    "resources.md",
+    "glossary.md",
+]
+
 [[module]]
 title  = "Week 1-2: Computer Networks and the Internet"
 page   = "notes/ch01-internet.md"
