@@ -312,7 +312,7 @@ function cs408(): DefaultTheme.SidebarItem[] {
         { text: '01.01 README - Introduction',        link: 'notes/01-01-readme-introduction' },
         { text: '01.06 AI Class Policy',              link: 'notes/01-06-ai-class-policy' },
         { text: '01.07 CS208 HTML',                   link: 'notes/01-07-cs208-html' },
-        { text: '01.08 CS208 CSS and Accessibility',  link: 'notes/01-08-cs208-css-and-accessiblity' },
+        { text: '01.08 CS208 CSS and Accessibility',  link: 'notes/01-08-cs208-css-and-accessibility' },
         { text: '02.01 CS208 JavaScript',             link: 'notes/02-01-cs208-javascript' },
         { text: '03.00 README',                       link: 'notes/03-00-readme' },
         { text: '08.00 README',                       link: 'notes/08-00-readme' },

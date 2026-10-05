@@ -157,6 +157,8 @@ discussion = "discussions/*.md"
 [override."assignments/p1.md"]
 due = "fri 23:59"
 
+# P2 is the transport project: students work on it in weeks 5-6, so it sits in that module,
+# and it is due Friday of week 7.
 [override."assignments/p2.md"]
 due = "fri 23:59"
 
