@@ -7,28 +7,13 @@
 
 # OS Stuff
 .DS_Store
-build
 docs/.vitepress/cache
 docs/.vitepress/dist
-node_modules# Added automatically by ‘eldev init’.
-/.eldev
-/Eldev-local
-/node_modules/
-/docs/cv/shanekpanter.aux
-/docs/cv/shanekpanter.log
-/docs/cv/shanekpanter.out
-/docs/cv/shanekpanter.bbl
-/docs/cv/shanekpanter.bcf
-/docs/cv/shanekpanter.blg
-/docs/cv/shanekpanter.fdb_latexmk
-/docs/cv/shanekpanter.fls
-/docs/cv/shanekpanter.run.xml
-docs/cv/shanekpanter.synctex.gz
-auto
+node_modules
 
 # Course textbooks are distributed through Canvas, not this public repo
 docs/*/docs/*.pdf
 
-# Built by npm run cv:pdf (locally or in the GitHub Action)
+# Built by npm run cv:pdf (locally, or by docs:build in the GitHub Action)
 docs/public/panter-cv.pdf
 docs/public/panter-cv-summaries.pdf

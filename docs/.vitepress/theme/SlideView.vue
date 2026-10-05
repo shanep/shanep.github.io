@@ -131,7 +131,7 @@ onUnmounted(() => {
 </style>
 
 <style>
-/* Unscoped — lives in Teleport outside component DOM */
+/* Unscoped, lives in Teleport outside component DOM */
 .slide-overlay {
   position: fixed;
   inset: 0;

@@ -1,7 +1,8 @@
 #!/bin/sh
 # Build the CV PDFs in docs/public from the CV page, docs/cv/index.md.
 #
-# The GitHub Action runs this before building the site, using Tectonic (a
+# The Vite plugin in docs/.vitepress/cv-pdf.ts runs this as part of docs:build,
+# so the GitHub Action gets the PDFs through the site build. CI uses Tectonic (a
 # single-binary LaTeX engine that fetches only the packages the CV needs). Run
 # it locally to preview the PDF; it uses Tectonic when it is installed and
 # falls back to pdflatex otherwise. The PDFs are build products, not committed.
