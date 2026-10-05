@@ -45,7 +45,7 @@ void mergesort_s(int A[], int p, int r)
 
 void merge_s(int A[], int p, int q, int r)
 {
-  int *B = (int *)malloc(sizeof(int) * (r - p + 1));
+  int *B = (int *)malloc(sizeof(int) * (size_t)(r - p + 1));
 
   int i = p;
   int j = q + 1;

@@ -29,7 +29,8 @@ to user-mode programs are also provided, as well as instructions that
 allow the OS to tell the hardware where the trap table resides in
 memory.
 
-[Intel Trap Instruction](https://www.intel.com/content/www/us/en/docs/programmable/683620/current/trap-instruction.html)
+On x86-64 the trap instruction is `SYSCALL` and the return-from-trap is `SYSRET`, see Volume 2 of the
+[Intel Software Developer's Manual](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html).
 
 ## Trap Table
 
@@ -56,7 +57,7 @@ memory.
 ## Saving and Restoring Context
 
 - The OS scheduler decides what to run next
-- A Context switch is what happens when on process is moved off the processor and another is moved on
+- A Context switch is what happens when one process is moved off the processor and another is moved on
 
 ## Concurrency?
 

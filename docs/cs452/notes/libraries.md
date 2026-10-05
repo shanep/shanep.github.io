@@ -24,13 +24,15 @@ local functions.
 
 ## Run-time dynamic linking
 
-Functions are loaded with system calls such as `LoadLibrary` or
-`LoadLibraryEx` (Win32) or `dlopen`/`dlsym` (POSIX).
+Functions are loaded with library functions such as `LoadLibrary` or
+`LoadLibraryEx` (Win32) or `dlopen`/`dlsym` (POSIX). These are not system
+calls, they are library code that runs in user space and makes system calls
+like `openat` and `mmap` to do the work.
 
 ```c
 #include <dlfcn.h>
 
-void *handle = dlopen("libm.so", RTLD_LAZY);
+void *handle = dlopen("libm.so.6", RTLD_LAZY);
 double (*cos_fn)(double) = dlsym(handle, "cos");
 printf("%f\n", cos_fn(3.14));
 dlclose(handle);
@@ -101,7 +103,7 @@ forwarded function call to Module C
 
 These tools help you inspect libraries and binaries on Linux.
 
-### ldd — list dynamic dependencies
+### ldd - list dynamic dependencies
 
 ```bash
 $ ldd /bin/ls
@@ -111,27 +113,30 @@ $ ldd /bin/ls
 ```
 
 `ldd` prints every shared library a binary depends on and where the
-dynamic linker found it. If a dependency is missing you see "not found" —
-this is the root cause of most "works on my machine" failures.
+dynamic linker found it. If a dependency is missing you see "not found",
+which is the root cause of most "works on my machine" failures.
 
-### nm — list symbols in an object file
+### nm - list symbols in an object file
 
 ```bash
-$ nm -D /usr/lib/libm.so | grep " cos$"
-0000000000026b50 T cos
+$ nm -D /lib/x86_64-linux-gnu/libm.so.6 | grep " cos@"
+0000000000033e10 W cos@@GLIBC_2.2.5
 ```
 
 `nm` shows the symbol table. `T` means the symbol is defined in the
-text (code) section; `U` means it is undefined (required from another library).
+text (code) section, `W` means it is a weak symbol (glibc exports `cos` as a
+weak alias), and `U` means it is undefined (required from another library).
+Use the real file `libm.so.6`, because `libm.so` on a modern glibc system is a
+small linker script that points at it.
 
-### objdump — disassemble and inspect binaries
+### objdump - disassemble and inspect binaries
 
 ```bash
 $ objdump -d my_program | head -40   # disassemble
 $ objdump -p my_program              # show dynamic section / needed libs
 ```
 
-### LD_PRELOAD — inject a library at runtime
+### LD_PRELOAD - inject a library at runtime
 
 `LD_PRELOAD` lets you load a custom shared library *before* any other,
 overriding symbols from the standard library. This is useful for
@@ -142,10 +147,12 @@ debugging and testing:
 LD_PRELOAD=./mymalloc.so ./my_program
 ```
 
-This is also how tools like `strace` and memory profilers intercept
-system calls without recompiling the target program.
+This is how many memory profilers and leak checkers intercept library calls
+like `malloc` without recompiling the target program. `strace` works
+differently, it uses the `ptrace` system call to stop the program every time it
+makes a system call.
 
-### ldconfig — rebuild the shared library cache
+### ldconfig - rebuild the shared library cache
 
 ```bash
 sudo ldconfig          # rebuild /etc/ld.so.cache

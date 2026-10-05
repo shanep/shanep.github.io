@@ -13,19 +13,25 @@
 
 ![Perfect](images/fcfs-perfect.png)
 
-$T\_{turnaround} = \frac{10+10+10}3 = 10$
+```text
+T_turnaround = (10 + 20 + 30) / 3 = 20
+```
 
 ## Bad Performance
 
 ![Bad](images/fcfs-worst.png)
 
-$T\_{turnaround} = \frac{100+110+120}3 = 110$
+```text
+T_turnaround = (100 + 110 + 120) / 3 = 110
+```
 
 ## Shortest Job First (SJF)
 
 ![SJF](images/sjf.png)
 
-$T\_{turnaround} = \frac{10+20+120}3 = 50$
+```text
+T_turnaround = (10 + 20 + 120) / 3 = 50
+```
 
 ## Round Robin
 
@@ -37,14 +43,14 @@ switches to the next job in the run queue.
 
 These two metrics often pull in opposite directions:
 
-- **Turnaround time** = completion time − arrival time. Optimized by
+- **Turnaround time** = completion time - arrival time. Optimized by
   running long jobs without interruption (favors SJF/FIFO).
-- **Response time** = first run time − arrival time. Optimized by
+- **Response time** = first run time - arrival time. Optimized by
   frequently switching between jobs (favors Round Robin).
 
 Round Robin is excellent for response time but terrible for turnaround
-time — every job takes longer to finish because it keeps getting
-interrupted. There is no single "best" scheduler; the right choice
+time, every job takes longer to finish because it keeps getting
+interrupted. There is no single "best" scheduler, the right choice
 depends on the workload and what the system is optimizing for.
 
 ## Priority Inversion
@@ -68,10 +74,15 @@ more sophisticated approaches:
   priorities and time quanta. Jobs that use their full quantum get
   demoted; short, interactive jobs stay at high priority. Approximates
   SJF without knowing job lengths in advance.
-- **Completely Fair Scheduler (CFS)**: The default Linux scheduler.
-  Tracks each process's "virtual runtime" using a red-black tree and
-  always runs the process with the least virtual runtime. Achieves
-  fairness across processes with different priorities (nice values).
+- **Completely Fair Scheduler (CFS)**: The default Linux scheduler from
+  2.6.23 (2007) until 6.6 (2023). Tracks each process's "virtual runtime"
+  using a red-black tree and always runs the process with the least virtual
+  runtime. Achieves fairness across processes with different priorities
+  (nice values).
+- **Earliest Eligible Virtual Deadline First (EEVDF)**: The default Linux
+  scheduler since 6.6. It keeps the virtual runtime idea from CFS, but it
+  also gives each task a virtual deadline, so a task that asks for short
+  time slices (like an interactive program) gets to run sooner.
 - **Multiprocessor Scheduling**: Adds the challenge of cache affinity
   (keep a thread on the same CPU to reuse warm caches) and load
   balancing across cores. Single-queue vs. per-CPU-queue designs make

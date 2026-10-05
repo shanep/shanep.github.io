@@ -8,7 +8,7 @@ students may not have had as many opportunities to hone their C skills to the sa
 their Java skills. The following sections highlight some important differences between C and Java,
 and give rough analogies to help bridge the gap between the two.
 
-When working with C it is very important to distinguish between the _declaration_ of an construct
+When working with C it is very important to distinguish between the _declaration_ of a construct
 (such as a variable, struct, function, etc.) and its _definition_. A declaration announces the
 properties of a variable (primarily its type); a definition also causes storage to be set aside. We
 will visit the topic of _declaration_ and _definition_ throughout this document.
@@ -21,7 +21,7 @@ for those who want to dig deeper.
 ## Types, Operators, and Expressions
 
 The C language provides only a few basic type specifiers: char, int, float and double. In addition
-to the basic types there are type modifies: signed, unsigned, short, and long. You use the basic
+to the basic types there are type modifiers: signed, unsigned, short, and long. You use the basic
 types and modifiers together like `unsigned int foo = 0;` which declares a new variable foo of
 type int that is unsigned.
 
@@ -44,7 +44,7 @@ break, continue and the infinitely-abusable _goto_ statement.
 
 While the _goto_ statement may have gotten a bad rap it is actually quite handy when used with
 discipline. To quote the linux kernel docs the
-[rationale](https://www.kernel.org/doc/html/v4.10/process/coding-style.html#centralized-exiting-of-functions)
+[rationale](https://www.kernel.org/doc/html/latest/process/coding-style.html#centralized-exiting-of-functions)
 for using the goto statement is:
 
 * unconditional statements are easier to understand and follow
@@ -61,7 +61,7 @@ ones. While pre-ANSI C (known as K&R C) had very strange function declarations, 
 (C89 and greater) have a similar look and feel to Java.
 
 One of the biggest differences between functions in C and methods in Java (besides the OOP
-differences) is C has function prototypes. Function prototypes allow you to [forward declare](https://en.wikipedia.org/wiki/Forward_declaration) a functions signature so you can call a
+differences) is C has function prototypes. Function prototypes allow you to [forward declare](https://en.wikipedia.org/wiki/Forward_declaration) a function's signature so you can call a
 function before it is defined.
 
 The classic example is where two functions each call each other. Without prototypes the compiler
@@ -144,9 +144,9 @@ text substitution mechanism.
 
 The C preprocessor includes such items as:
 
-* #include "foo.h" - copy's the contents of "foo.h" into the including file (foo.c)
+* #include "foo.h" - copies the contents of "foo.h" into the including file (foo.c)
 * #define **name** _replacement text_ - subsequent occurrences of the token **name** will be replaced by the _replacement text_
-* #if, #elseif, and #endif - similar to an if expressing in C
+* #if, #elif, #else, and #endif - similar to an if statement in C
 * #ifndef _symbol_ - evaluates to true if _symbol_ is not defined
 
 ## Input and Output
@@ -158,7 +158,7 @@ underlying operating system to do all the heavy lifting.
 ## Pointers and Arrays
 
 Pointers are generally the hardest thing to grasp in the C language. To quote K&R "A pointer is a
-variable that contains the address of a variable. While the definition seems recursive you can think
+variable that contains the address of a variable." While the definition seems recursive you can think
 of a pointer as actually two things, an address and a value. Pointers are similar to Java reference
 variables. Pointers and arrays are closely related with many similar rules and properties.
 
@@ -168,29 +168,29 @@ _indirection_ or _dereferencing_ operator.
 Here is an example from the K&R book regarding pointers:
 
 ```c
-int x=1, y=2, z[10]
+int x = 1, y = 2, z[10];
 int *ip; /* ip is a pointer to int */
 
-ip = &x; /* ip now pointers to x */
-y = *ip /* y is now 1 */
-*ip = 0 /* x is now 0 */
-ip = &z[0] /* ip now points to z[0]*/
+ip = &x;    /* ip now points to x */
+y = *ip;    /* y is now 1 */
+*ip = 0;    /* x is now 0 */
+ip = &z[0]; /* ip now points to z[0] */
 ```
 
 For the most part pointers and arrays have a strong relationship. Any operation that can be achieved
 by array subscripting can also be done with pointers. If we define `int a[10];` and `int
 *pa` we can make the following statements:
 
-* A pointer is a variable, so pa=a and pa{pp} are legal. But an array name is not a variable;
-constructions like a=pa and a{pp} are illegal.
+* A pointer is a variable, so `pa = a` and `pa++` are legal. But an array name is not a
+  variable, so constructions like `a = pa` and `a++` are illegal.
 * When an array name is passed to a function, what is passed is the location of the initial
 element. What this means is arrays decay to pointers when passed as a function argument.
 
 ### Address Arithmetic
 
-Given the fact that a pointer is just a variable you can preform operations on it just like other
+Given the fact that a pointer is just a variable you can perform operations on it just like other
 types. However, the results may not be what you are expecting. When adding 1 to a pointer `int
-*pa` with the increment operator `pass:c[++]` we are moving the pointer `sizeof(int)` bytes. The
+*pa` with the increment operator `++` we are moving the pointer `sizeof(int)` bytes. The
 effect is the pointer now points to the next `int` in memory. For example if we are on a machine
 where an `int` is 4 bytes (32 bits) adding 1 to a pointer of the type (int *) would add 4 bytes
 to the address. This property is very useful when implementing the memory subsystem of an OS.
@@ -219,7 +219,7 @@ struct foo bar;
 ```
 
 In C an object is represented by a struct. You can think of a struct as a Java object with
-everything declared public! You access a structures members using the dot operator (.) just like in
+everything declared public! You access a structure's members using the dot operator (.) just like in
 Java. However, if you are dealing with a pointer to a struct you need to use the arrow operator
 (\->).
 
@@ -257,63 +257,9 @@ If your program consists of one .c file and one .h file then it is possible to
 build everything by hand. However, things get very complex once you start to add
 more files into the process thus another tool must be used to drive everything.
 There are hundreds of options available to build a C code base. For this class
-we will use [cmake](https://cmake.org) . While cmake is not a perfect system it is
-generally available everywhere and is good enough for our purposes.
-
-### Cross-compiler
-
-Compiling an OS requires us to use a cross-compiler. Your system compiler is
-setup to create binaries that will run on the host OS. If we don't have a
-cross-compiler then we will likely generate binaries that will not run on bare
-metal because we will either be missing some of the required components (libc,
-headers, runtime, etc), the generated code will be for the wrong architecture
-(arm, x86_64, i386, etc.), or a multitude of other subtle issues that can trip
-us up.
-
-If we were using the [GCC compiler collection](https://gcc.gnu.org/) and we wanted
-to cross compile we would need to install the appropriate cross compiler using
-the systems package manger or build our own. On the other hand if we use the
-LLVM compiler infrastructure project we get a
-[cross-compiler](https://clang.llvm.org/docs/CrossCompilation.html) out of the
-box. Either way we will need to know what our
-[target triple](https://clang.llvm.org/docs/CrossCompilation.html#target-triple)
-is so we can make sure the compiler produces the correct object code which we
-can then pass to the linker to create our final kernel image.
-
-The format of a target triple is `<arch><sub>-<vendor>-<sys>-<abi>`. For our OS
-this will be i386-pc-none-elf. Which breaks down as follows:
-
-* `arch` = `i386` - We will target the i386 CPU
-* `sub` = not necessary for i386
-* `vendor`= `pc` - we will use the generic pc vendor
-* `sys` = `none` - we are building our own so set to none.
-* `abi` = `elf` - Use the elf abi
-
-We can browse all the different options that LLVM supports by reading the
-[docs](https://llvm.org/doxygen/Triple_8h_source.html).
-
-In addition to having a cross-compiler we will need to have a linker that is
-capable of generating a raw binary image that can be loaded into a specific
-offset into memory. When we boot up a machine the kernel needs to know where in
-memory it will be loaded so all memory addresses are correct so instructions
-like `jmp` will jump to the correct spot! The LLVM project has a linker called
-[lld](https://lld.llvm.org/) that is a drop in replacement for system linkers and
-can generate the correct raw binary image.
-
-Now that we know what we need we can get installing!
-
-```bash
-$ sudo apt update
-$ sudo apt install build-essential clang lld
-$ clang --version
-clang version 10.0.0-4ubuntu1
-Target: x86_64-pc-linux-gnu
-Thread model: posix
-InstalledDir: /usr/bin
-
-$ ld.lld --version
-LLD 10.0.0 (compatible with GNU linkers)
-```
+we will use [GNU make](https://www.gnu.org/software/make/manual/make.html). While
+make is not a perfect system it is installed almost everywhere and is good enough
+for our purposes.
 
 ## The C (un)standard
 
@@ -324,32 +270,28 @@ In the brilliant paper _A Few Billion Lines of Code Later: Using Static Analysis
  either on purpose ([gnu89](https://gcc.gnu.org/onlinedocs/gcc/C-Dialect-Options.html)), because the
  standard is vague or undefined, or because of bugs in the compiler itself.
 
-____
-The C language does not exist; neither does Java, C{pp}, and C#. While a language may exist as an
-abstract idea, and even have a pile of paper (a standard) purporting to define it, a standard is
-not a compiler. What language do people write code in? The character strings accepted by their
-compiler. Further, they equate compilation with certification. A file their compiler does not
-reject has been certified as "C code" no matter how blatantly illegal its contents may be to a
-language scholar.
-____
+> The C language does not exist; neither does Java, C++, and C#. While a language may exist as an
+> abstract idea, and even have a pile of paper (a standard) purporting to define it, a standard is
+> not a compiler. What language do people write code in? The character strings accepted by their
+> compiler. Further, they equate compilation with certification. A file their compiler does not
+> reject has been certified as "C code" no matter how blatantly illegal its contents may be to a
+> language scholar.
 
-The [linux kernel](https://www.kernel.org/doc/html/latest/process/programming-language.html)
-is written in
-[gnu89](https://www.kernel.org/doc/html/latest/process/programming-language.html)
-which looks like C but leverages gcc specific features. This dialect contains
-many extensions to the language gnu-extensions, and many of them are used within
-the kernel as a matter of course.
+The [Linux kernel](https://www.kernel.org/doc/html/latest/process/programming-language.html)
+is written in gnu11 (it moved from gnu89 to gnu11 in Linux 5.18), which looks like
+C11 but leverages gcc specific features. This dialect contains many extensions to
+the language (the GNU extensions), and many of them are used within the kernel as a
+matter of course.
 
 ## References
 
 * [The C programming language 2nd edition](https://www.oreilly.com/library/view/the-c-programming/9780133086249/)
   * Brian W. Kernighan and Dennis M. Ritchie. ISBN: 0-13-110362-8
-* [Using the GNU Compiler Collection](https://gcc.gnu.org/onlinedocs/gcc-9.2.0/gcc.pdf)
+* [Using the GNU Compiler Collection](https://gcc.gnu.org/onlinedocs/gcc/)
 * [clang documentation](https://clang.llvm.org/docs/)
 * [A Few Billion Lines of Code Later: Using Static Analysis to Find Bugs in the Real World](https://cacm.acm.org/magazines/2010/2/69354-a-few-billion-lines-of-code-later/fulltext)
   * Al Bessey, et. al, Communications of the ACM, February 2010, Vol. 53 No. 2, Pages 66-75
 * [OSTEP ch 14](https://pages.cs.wisc.edu/~remzi/OSTEP/vm-api.pdf)
-* [Intel® 64 and IA-32 Architectures Software Developer's Manual](https://software.intel.com/content/www/us/en/develop/download/intel-64-and-ia-32-architectures-sdm-combined-volumes-1-2a-2b-2c-2d-3a-3b-3c-3d-and-4.html)
-* [NASM Manual](https://www.nasm.us/xdoc/2.15.05/html/)
+* [Intel® 64 and IA-32 Architectures Software Developer's Manual](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)
 * [GNU make](https://www.gnu.org/software/make/manual/html_node/index.html)
 * [Clang command line documentation](https://clang.llvm.org/docs/ClangCommandLineReference.html)

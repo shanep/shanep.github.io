@@ -23,10 +23,16 @@ structure known as a page table. Each entry in the page table is called
 a **Page Table Entry (PTE)** and contains:
 
 - The physical frame number
-- A **valid bit** (is this page currently in physical memory?)
+- A **valid bit** (is this page part of the address space at all?)
+- A **present bit** (is this page currently in physical memory, or swapped out to disk?)
 - A **protection bit** (readable? writable? executable?)
 - A **dirty bit** (has the page been written since it was loaded?)
 - A **reference bit** (has the page been accessed recently?)
+
+If a process touches a page whose valid bit is 0, the OS treats it as an
+illegal access and kills the process (a segmentation fault on Linux). If the
+page is valid but its present bit is 0, the OS brings the page in from disk
+(see Swapping below).
 
 ## Virtual Address
 
@@ -46,7 +52,7 @@ performs: `physical_address = page_table[VPN] * page_size + offset`
 ## The Translation Lookaside Buffer (TLB)
 
 Paging introduces a problem: every memory access now requires *two*
-memory accesses — one to look up the page table, one to fetch the actual
+memory accesses, one to look up the page table and one to fetch the actual
 data. This would halve memory performance.
 
 The solution is a **TLB** (Translation Lookaside Buffer): a small,
@@ -64,7 +70,7 @@ TLBs work because programs exhibit **locality**:
 - *Temporal locality*: recently accessed pages are likely to be accessed again
 - *Spatial locality*: pages near recently accessed pages are likely to be accessed soon
 
-A 64-entry TLB with 4 KB pages covers 256 KB of address space — enough
+A 64-entry TLB with 4 KB pages covers 256 KB of address space, which is enough
 to capture most of a program's working set.
 
 **Context switch cost**: TLB entries are process-specific. On a context
@@ -106,7 +112,7 @@ Used as a benchmark to evaluate real algorithms.
 ### FIFO (First In, First Out)
 Evict the page that has been in memory the longest. Simple but poor:
 evicts frequently-used pages if they were loaded first. Suffers from
-**Belady's anomaly** — adding more physical frames can *increase* faults.
+**Belady's anomaly**, adding more physical frames can *increase* faults.
 
 ### LRU (Least Recently Used)
 Evict the page that was used **least recently**. Works well in practice
@@ -126,14 +132,14 @@ approximation with O(1) cost. Linux uses a variant of this called the
 
 ## Swapping
 
-When a process accesses a page with the valid bit set to 0 (not in
-physical memory), the CPU raises a **page fault**. The OS page fault
+When a process accesses a valid page with the present bit set to 0 (not
+in physical memory), the CPU raises a **page fault**. The OS page fault
 handler:
 
 1. Finds the page on disk (in the swap area)
 2. Reads it into a free physical frame (evicting another page if necessary)
-3. Updates the PTE and sets the valid bit
+3. Updates the PTE and sets the present bit
 4. Restarts the faulting instruction
 
 From the process's perspective, the address space appears larger than
-physical RAM — this is the illusion of **virtual memory**.
+physical RAM, this is the illusion of **virtual memory**.
