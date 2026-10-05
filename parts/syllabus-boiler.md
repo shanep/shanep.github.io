@@ -7,17 +7,17 @@ final grade.
 
 | Letter Grade | Percentage    |
 | ------------ | ------------- |
-| A            | 94% – 100%    |
-| A-           | 90% – 93.99%  |
-| B+           | 87% – 89.99%  |
-| B            | 84% – 86.99%  |
-| B-           | 80% – 83.99%  |
-| C+           | 77% – 79.99%  |
-| C            | 74% – 76.99%  |
-| C-           | 70% – 73.99%  |
-| D+           | 67% – 69.99%  |
-| D            | 64% – 66.99%  |
-| D-           | 60% – 63.99%  |
+| A            | 94% to 100%    |
+| A-           | 90% to 93.99%  |
+| B+           | 87% to 89.99%  |
+| B            | 84% to 86.99%  |
+| B-           | 80% to 83.99%  |
+| C+           | 77% to 79.99%  |
+| C            | 74% to 76.99%  |
+| C-           | 70% to 73.99%  |
+| D+           | 67% to 69.99%  |
+| D            | 64% to 66.99%  |
+| D-           | 60% to 63.99%  |
 | F            | Below 60%     |
 
 ## Extra Credit Opportunities
@@ -52,7 +52,7 @@ may lose up to 10% of their final grade for excessive tardiness after receiving 
 
 Homework assignments may be submitted up to **2 days late with no penalty.** After the grace period,
 no submissions will be accepted unless prior arrangements were made before the original due date. No
-work or extra credit will be accepted after the **last day of course instruction** — the semester
+work or extra credit will be accepted after the **last day of course instruction**: the semester
 must end at some point, so plan accordingly. Work submitted 1 second late is treated the same as
 work submitted 1 day late. You can find the last day of course instruction on the
 [registrar's academic calendar](https://www.boisestate.edu/registrar/boise-state-academic-calendars/).
@@ -70,7 +70,7 @@ for the exact date.
 
 All exams and quizzes must be completed within the time frame specified in Canvas unless prior
 arrangements have been made. Extensions are granted on a case-by-case basis for circumstances
-outside the student's control. Some assessments may require the testing center — it is the
+outside the student's control. Some assessments may require the testing center, and it is the
 student's responsibility to schedule their own appointment in a timely manner.
 
 ## Class Interaction Policy
@@ -102,15 +102,15 @@ following in all emails:
 
 - First and last name
 - Student ID
-- Course and section number (e.g., CS452 – Section 1)
+- Course and section number (e.g., CS452, Section 1)
 
 BroncoMail is the official university communication channel. Check it two to three times per week.
 Your instructor will not respond to emails from personal accounts (Gmail, Yahoo, etc.). See
 University Policy 2280 for details.
 
-Emails are answered within 24 hours, Monday–Friday, 9:00 am–5:00 pm (MST). Emails sent on
+Emails are answered within 24 hours, Monday to Friday, 9:00 am to 5:00 pm (MST). Emails sent on
 weekends or outside those hours will receive a reply on the next business day. Reserve email for
-private matters such as grades — general course questions belong in the class discussion forum.
+private matters such as grades, since general course questions belong in the class discussion forum.
 
 ## IT Support Policy
 
@@ -122,12 +122,12 @@ cannot get your personal machine configured correctly, use a lab machine to comp
 The CCP building (downtown Boise) has three labs secured by proxy card access. All lab machines are
 supported by department IT staff and are guaranteed to work.
 
-- **Kount Learning Center (CCP 241)** — Accessible 24/7 by proxy card to all CS students. See the
+- **Kount Learning Center (CCP 241)**: Accessible 24/7 by proxy card to all CS students. See the
   [Success & Tutoring page](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring/)
   for details.
-- **CS 121 Classroom Lab (CCP 242)** — Accessible 24/7 by proxy card, but not available during
+- **CS 121 Classroom Lab (CCP 242)**: Accessible 24/7 by proxy card, but not available during
   scheduled courses and labs (see the schedule posted outside the lab).
-- **Metageek Lab (CCP 240)** — Accessible 24/7 by proxy card, but not available during scheduled
+- **Metageek Lab (CCP 240)**: Accessible 24/7 by proxy card, but not available during scheduled
   CS courses and labs (see the schedule posted outside the lab).
 
 
