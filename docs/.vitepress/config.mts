@@ -11,7 +11,7 @@ import { cvPdf } from './cv-pdf'
 //
 // Excluded pages are real dead links, and ignoreDeadLinks is false on purpose,
 // so a draft that is still linked from an index page fails the build. That is
-// the intended behaviour: it is the reminder to unlink it.
+// the intended behavior: it is the reminder to unlink it.
 function draftPages(): string[] {
   const root = join(import.meta.dirname, '..')
   return globSync('**/*.md', { cwd: root })
@@ -21,7 +21,7 @@ function draftPages(): string[] {
 }
 
 // VitePress skips its dead-link check for links ending in an extension it
-// recognises as a downloadable file (pdf, png, csv and about seventy others)
+// recognizes as a downloadable file (pdf, png, csv and about seventy others)
 // and treats everything else as a page route. CS331 hands out Python scripts,
 // a C file and two log files from docs/public/cs331/data/, so without this
 // every link to one of them is reported as a dead page. VITE_EXTRA_EXTENSIONS

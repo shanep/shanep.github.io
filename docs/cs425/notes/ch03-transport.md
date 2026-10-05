@@ -28,8 +28,8 @@ The difference that matters:
 
 ## 3.3 Connectionless transport: UDP
 
-UDP adds almost nothing to IP: multiplexing, demultiplexing, and an optional
-checksum. Eight bytes of header.
+UDP adds almost nothing to IP: multiplexing, demultiplexing, and a checksum
+(optional over IPv4, mandatory over IPv6). Eight bytes of header.
 
 Why would anyone choose it?
 
@@ -80,7 +80,8 @@ window size, for a reason worth working through carefully.
 ## 3.5 Connection-oriented transport: TCP
 
 **Segment structure.** Source and destination ports, sequence number, acknowledgement
-number, header length, flags, receive window, checksum, urgent pointer.
+number, header length, flags, receive window, checksum, urgent pointer, and options.
+The options are why the header length field exists: the header runs 20 to 60 bytes.
 
 **Sequence numbers count bytes, not segments.** The sequence number of a segment is
 the byte-stream number of its first byte. The acknowledgement number is the sequence
@@ -119,8 +120,9 @@ Different problems, different mechanisms, and the exam will ask you which is whi
 The sender maintains a **congestion window** (`cwnd`) and sends at roughly
 `cwnd / RTT`. The whole algorithm is about how `cwnd` changes.
 
-- **Slow start.** Begin at 1 MSS and double `cwnd` every RTT. Exponential, despite
-  the name, and it ends at the slow start threshold `ssthresh`.
+- **Slow start.** Begin at a small window and double `cwnd` every RTT. The book
+  starts at 1 MSS, and Linux starts at 10 MSS (RFC 6928). Exponential, despite the
+  name, and it ends at the slow start threshold `ssthresh`.
 - **Congestion avoidance.** Increase `cwnd` by 1 MSS per RTT. Linear.
 - **Fast recovery.** After three duplicate ACKs, retransmit the missing segment, set
   `ssthresh` to half of `cwnd`, and set `cwnd` to `ssthresh` + 3 MSS. Each further
@@ -131,7 +133,14 @@ The sender maintains a **congestion window** (`cwnd`) and sends at roughly
   it is.
 
 This is **AIMD**: additive increase, multiplicative decrease. The sawtooth it
-produces is the shape of TCP.
+produces is the shape of TCP Reno.
+
+**TCP CUBIC.** The Linux default since 2.6.19, so it is what Onyx and your Codespace
+run. After a loss it still cuts `cwnd` multiplicatively, but it grows `cwnd` as a
+cubic function of the time since that loss: fast while far below the old maximum,
+slow near it, then faster again as it probes above it. Linux also ends slow start
+early with **HyStart**, which sets `ssthresh` as soon as it sees the RTT start to
+climb, before anything is lost.
 
 **Fairness.** AIMD converges to an equal share among connections with the same RTT
 crossing the same bottleneck. Applications that want more just open more

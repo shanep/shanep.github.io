@@ -47,8 +47,9 @@ collisions.
 - **Pure ALOHA:** no synchronization. Max efficiency 18%.
 - **CSMA:** listen before transmitting. Collisions still occur because of
   propagation delay: two nodes can both hear silence and both start.
-- **CSMA/CD:** listen *while* transmitting and abort on collision. This is Ethernet.
-  It uses **binary exponential backoff**: after `n` collisions, pick a delay
+- **CSMA/CD:** listen *while* transmitting and abort on collision. This is classic
+  shared Ethernet. Switched, full-duplex Ethernet has no collisions and does not need
+  it. CSMA/CD uses **binary exponential backoff**: after `n` collisions, pick a delay
   uniformly from `{0, 1, ..., 2ⁿ - 1}` slot times.
 
 **Taking turns.** Polling and token passing. Efficient, but the master or the token
@@ -112,5 +113,5 @@ This is the payoff for the whole course. Work through it slowly:
    several ASes, using tables built by **OSPF** and **BGP**.
 5. **HTTP** GET, response, and the page renders.
 
-Every chapter of the book appears in that sequence. If you can narrate it without
+Every chapter through this one appears in that sequence. If you can narrate it without
 notes, you are ready for the final.

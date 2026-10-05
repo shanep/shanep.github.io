@@ -39,7 +39,9 @@ Code connects more often than you think. Setup a key once and you never type it 
 need to do this step once per laptop.
 
 Open a terminal on your laptop (on Windows, use Git Bash) and generate a key. Press Enter to accept
-the default file, and pick a passphrase or leave it empty.
+the default file, and pick a passphrase or leave it empty. If you set a passphrase you will be asked
+for it every time you connect unless `ssh-agent` (or the macOS keychain) holds the key, so run
+`ssh-add` after you generate it. An empty passphrase means no prompts at all.
 
 ```bash
 ssh-keygen -t ed25519 -C "you@u.boisestate.edu"

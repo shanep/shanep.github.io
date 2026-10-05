@@ -13,7 +13,8 @@
 ## Fork 🍴
 
 - creates a child process that is a clone of the parent
-- The child process differs from the parent process only in its process id and its parent process id
+- The child is a near-exact copy of the parent. The main differences are its process id, its parent
+  process id, and the value fork() returns (see `man 2 fork` for the full list)
 - The fork() is called once but it returns twice!
 
 ## Process Hierarchy

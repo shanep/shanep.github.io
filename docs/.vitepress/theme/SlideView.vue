@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { ref, nextTick, onMounted, onUnmounted } from 'vue'
-import 'reveal.js/reveal.css'
-import 'reveal.js/theme/simple.css'
 
 const active = ref(false)
 const deckEl = ref<HTMLElement | null>(null)
@@ -40,6 +38,27 @@ function gatherSlides(): string[] {
   return result
 }
 
+// The reveal.js styles are added to the page the first time a deck opens. The
+// simple theme @imports two Google Fonts stylesheets, and VitePress bundles every
+// imported stylesheet into one site-wide CSS file (even a dynamic import), so a
+// plain import would make every page on the site fetch those fonts. The ?inline
+// imports keep the CSS out of that bundle and hand it over as a string.
+async function loadStyles(): Promise<void> {
+  if (document.getElementById('reveal-core-css')) return
+  const [core, theme] = await Promise.all([
+    import('reveal.js/reveal.css?inline'),
+    import('reveal.js/theme/simple.css?inline'),
+  ])
+  // Two elements, not one, because the theme's @import rules must come first in
+  // their stylesheet.
+  for (const [id, css] of [['reveal-core-css', core.default], ['reveal-theme-css', theme.default]]) {
+    const el = document.createElement('style')
+    el.id = id
+    el.textContent = css
+    document.head.appendChild(el)
+  }
+}
+
 async function open() {
   slides.value = gatherSlides()
   if (!slides.value.length) return
@@ -47,7 +66,10 @@ async function open() {
   await nextTick()
   if (!deckEl.value) return
 
-  const { default: Reveal } = await import('reveal.js')
+  const [{ default: Reveal }] = await Promise.all([
+    import('reveal.js'),
+    loadStyles(),
+  ])
 
   reveal = new Reveal(deckEl.value, {
     plugins: [],

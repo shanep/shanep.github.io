@@ -78,8 +78,10 @@ The mathematics is unchanged. So what is the date for?
   crude but reliable substitute: everything self-revokes on a schedule whether or not anybody
   noticed the compromise.
 
-That last point is why certificate lifetimes have gone from five years to about one year to, for
-many issuers now, ninety days. Expiry is revocation you do not have to detect.
+That last point is why certificate lifetimes keep shrinking. The maximum went from five years to
+about one year, and the CA/Browser Forum has since cut it to 200 days (March 15, 2026) and 100 days
+(March 15, 2027), with 47 days scheduled for March 15, 2029. Expiry is revocation you do not have
+to detect.
 
 ### 4. The check that is not arithmetic
 
@@ -89,9 +91,11 @@ certificates it will believe, chosen by a vendor, updated without asking you.
 
 Two consequences follow, and Lab 6 asks you about both.
 
-**Every CA in that store can issue a certificate for any name.** There is no partitioning by which
-CA is entitled to which domains. A CA that is compromised, coerced, or simply careless can issue a
-certificate for `www.boisestate.edu`, and every browser on earth would accept it.
+**Every CA in that store can issue a certificate for any name.** Your browser does not check which
+CA is entitled to which domain. A domain can publish a CAA record in DNS naming the CAs allowed to
+issue for it, but only the CA checks that record, at issuance. A CA that is compromised, coerced, or
+simply careless can still issue a certificate for `www.boisestate.edu`, and every browser on earth
+would accept it.
 
 That has happened. The usual answer is not "trust fewer CAs": it is to make misissuance
 *detectable*:

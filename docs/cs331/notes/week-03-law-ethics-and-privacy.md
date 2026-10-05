@@ -9,13 +9,13 @@ What to do this week, and when it is due, is on the [Module 3 Overview](week-03-
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §3.1 Introductory principles of law and legal research | 52-58 | 6 pp | 40 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §3.13 Ethics: including §3.13.1-3.13.3 on vulnerability testing and disclosure | 122-127 | 5 pp | 35 min |
+| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §3.13 Ethics: all of it, especially §3.13.3 on vulnerability testing and disclosure | 122-127 | 5 pp | 35 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §5.2 Privacy as Control | 187-189 | 2 pp | 15 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §5.3 Privacy as Transparency | 189-191 | 2 pp | 15 min |
 
 Two sections are worth knowing exist even though they are not assigned: **§3.5** (crimes against
 information systems, printed page 81) is where the offences are set out, and **§3.4** (data
-protection, printed page 73) is where obligations about personal data live. D2 references them,
+protection, printed page 72) is where obligations about personal data live. D2 references them,
 so skim them if you have time.
 
 ## Worked example
@@ -64,10 +64,12 @@ your record is a **transparency** problem.
 
 Suppose you decide to report it. CyBOK §3.13.3 describes the norms:
 
-- **Coordinated disclosure**: tell the vendor, give them a reasonable window, then publish.
+- **Coordinated disclosure** (CyBOK calls it responsible disclosure): tell the vendor, give them a
+  reasonable window, then publish.
 - **Full disclosure**: publish immediately, on the argument that users deserve to know and vendors
   only move under pressure.
-- **Non-disclosure**: tell the vendor and never publish.
+- **No disclosure**: tell nobody, not even the vendor. CyBOK notes this is hard to square with the
+  ACM Code's duty to report risks.
 
 Coordinated disclosure is the mainstream position, and the argument for it is that it balances the
 users' interest in a fix against their interest in not being attacked while one is being written.

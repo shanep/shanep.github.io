@@ -5,7 +5,8 @@
 Two questions this week, and they are different questions.
 
 **What is the malware?** CyBOK §6 gives you a taxonomy (standalone or host-dependent, persistent
-or transient, on disk or in memory) and a survey of how malware is analyzed and detected.
+on disk or transient in memory, user-activated or auto-spreading) and a survey of how malware is
+analyzed and detected.
 
 **What did the people do?** CyBOK §7 is about operations rather than code: the elements of a
 malicious operation, how it is organized, and what motivates it. This is the more useful frame most

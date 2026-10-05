@@ -47,7 +47,7 @@ A virtual address is split into two parts:
 ![Translation](images/vm-add-trans.png)
 
 On every memory access the hardware Memory Management Unit (MMU)
-performs: `physical_address = page_table[VPN] * page_size + offset`
+performs: `physical_address = page_table[VPN].pfn * page_size + offset`
 
 ## The Translation Lookaside Buffer (TLB)
 
@@ -56,7 +56,7 @@ memory accesses, one to look up the page table and one to fetch the actual
 data. This would halve memory performance.
 
 The solution is a **TLB** (Translation Lookaside Buffer): a small,
-fast, fully-associative hardware cache of recent VPN→PFN translations,
+fast hardware cache (often fully associative) of recent VPN→PFN translations,
 located inside the MMU.
 
 **TLB hit** (common case): the VPN is in the TLB → translation costs
@@ -80,7 +80,9 @@ processes can coexist.
 
 ## Multi-Level Page Tables
 
-A flat page table for a 64-bit address space would be enormous (terabytes).
+A flat page table for a 64-bit address space would be enormous: with 4 KB
+pages and 8-byte entries it needs 2^52 entries (32 PiB per process), and even
+x86-64's 48-bit space would need 512 GiB.
 Modern systems use **multi-level page tables** to keep page tables sparse.
 
 The virtual address is split into multiple VPN fields, each indexing a
@@ -97,7 +99,7 @@ Level-1  Level-2  Physical
 Only the portions of the address space that are actually in use need
 page table memory. A process that uses only a small fraction of a
 64-bit address space has a small page table. x86-64 uses a 4-level
-page table; ARM64 supports up to 4 levels as well.
+page table (5 levels on recent CPUs); ARM64 uses up to 4 levels with 4 KB pages.
 
 ## Page Replacement Algorithms
 
@@ -125,9 +127,9 @@ page frames in a circle:
 1. If the reference bit is 1, clear it and advance.
 2. If the reference bit is 0, evict this page.
 
-The OS clears bits as it sweeps; pages that get used set their bits
-again before the hand comes back around. This gives a good LRU
-approximation with O(1) cost. Linux uses a variant of this called the
+The OS clears bits as it sweeps; the hardware sets a page's bit again if
+it is used before the hand comes back around. This gives a good LRU
+approximation at low cost per eviction. Linux uses a variant of this called the
 **active/inactive list** approach.
 
 ## Swapping

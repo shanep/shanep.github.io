@@ -99,12 +99,14 @@ Now read the assembly.
 3. **Find where `authorized` lives.** It is the local the function writes `0` into at the start and
    reads at the end. **Quote that instruction and give its offset.**
 4. **Draw the stack frame**, as a table or a labeled sketch, from lower addresses to higher. It
-   should contain, in order: `authorized`, `buffer`, any padding, the saved frame pointer, and the
-   saved return address. Give the offset from `rbp` for each.
+   should contain, in order: `authorized`, `buffer`, any padding, the saved copy of the `badge_id`
+   argument, the saved frame pointer, and the saved return address. Give the offset from `rbp` for
+   each.
 5. **How many bytes must a badge ID be** before it overwrites the saved return address? Show the
    arithmetic. *(With the reference setup above you should find `buffer` at `[rbp-48]`, the saved
-   frame pointer at `[rbp]`, and the return address at `[rbp+8]`, so 56 bytes. If your compiler
-   version lays it out differently, use the numbers you actually see and say so.)*
+   frame pointer at `[rbp]`, and the return address at `[rbp+8]`, so 56 bytes. Count the
+   terminating zero byte `strcpy` writes, as you did in Step 1. If your compiler version lays it
+   out differently, use the numbers you actually see and say so.)*
 6. **Here is the interesting part.** Given where `authorized` sits relative to `buffer`, **can an
    overflow of `buffer` change `authorized` to 1?** Answer from your diagram, not from intuition,
    and explain why. Then say what this tells you about reasoning about stack layout in general.
@@ -124,8 +126,10 @@ Then, in a short paragraph: **all three can be enabled and the bug is still ther
 §15.4, say what that means for how you should describe these to a manager who asks whether the
 software is secure.
 
-Optional and worth doing if you have time: remove `-fno-stack-protector` in Compiler Explorer and
-compare the prologue. Quote what appears.
+Optional and worth doing if you have time: replace `-fno-stack-protector` with
+`-fstack-protector-strong` in Compiler Explorer and compare the prologue. Quote what appears, and
+note which offsets moved. (Removing the flag is not enough: clang does not turn the stack protector
+on by default for this target.)
 
 ### Step 4: Prevention, and what would count as evidence
 
@@ -195,9 +199,9 @@ Instructor note, not shown to students.
 
 **The answer row 2 question 6 is looking for:** no. `authorized` sits at a *lower* address than
 `buffer` in this layout, and an overflow writes *upward* toward higher addresses, so it runs past
-the end of `buffer` into the saved frame pointer and return address without ever touching
-`authorized`. The general lesson is that local variable ordering is a compiler decision, not a
-source-code decision: you have to look, not assume.
+the end of `buffer` into the saved `badge_id`, the saved frame pointer, and the return address
+without ever touching `authorized`. The general lesson is that local variable ordering is a
+compiler decision, not a source-code decision: you have to look, not assume.
 
 **The answer row 4 question 4 is looking for:** a clean static-analysis run establishes that the
 analyzer's rules did not match anything, and nothing more; a 48-hour fuzzing run with no crash

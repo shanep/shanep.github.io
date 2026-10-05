@@ -54,8 +54,9 @@ browser stores it, and later requests carry it back.
 (`If-Modified-Since`) lets the cache verify freshness without transferring the
 object again.
 
-**HTTP/2** adds framing and multiplexing to fix head-of-line blocking within a
-connection.
+**HTTP/2** adds framing and multiplexing, so one large object no longer blocks the
+small ones behind it. It still runs over one TCP connection, so a single lost segment
+stalls every stream. HTTP/3 over QUIC removes that last bit of head-of-line blocking.
 
 ## 2.3 Electronic mail
 

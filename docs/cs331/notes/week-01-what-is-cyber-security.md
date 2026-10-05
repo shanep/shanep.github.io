@@ -13,7 +13,7 @@ What to do this week, and when it is due, is on the [Module 1 Overview](week-01-
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §1.3 Deploying CyBOK knowledge: especially §1.3.1-1.3.3 | 6-8 | 2 pp | 20 min |
 
 **Navigating the PDF:** go by section number, not page number. The printed page numbers in the
-footer do not match your PDF viewer's counter, the book has 39 pages of front matter. Use your
+footer may not match your PDF viewer's counter, because the book has 38 pages of front matter. Use your
 viewer's search box or the bookmarks panel. See [Readings and Resources](../resources.md) for more.
 
 §1.2 is a map of the whole book. Skim it. You will not read most of what it lists, and
@@ -26,8 +26,8 @@ and risk. This is the form D1 asks you to produce, one labeled paragraph per ter
 definitions are under Key terms at the end of this page.
 
 > **The incident.** In 2023 a file transfer product used by thousands of organizations was found to
-> contain a SQL injection flaw. Attackers exploited it to steal data from hundreds of companies
-> before most of them knew the product had a problem.
+> contain a SQL injection flaw. Attackers exploited it to steal data from more than two thousand
+> organizations before most of them knew the product had a problem.
 
 **The vulnerability.** A SQL injection flaw in the product's web interface: user-supplied input was
 built into a database query as text, so input could become command. This is a property of the
@@ -62,9 +62,11 @@ Notice four things about that example:
 
 Which of confidentiality, integrity, and availability did that incident break?
 
-**Confidentiality**, clearly: data went to people not entitled to it. **Integrity**? The reporting
-does not say the attackers altered anything, so no, and resist the urge to add it. **Availability**?
-The files were copied, not deleted; the victims still had them. So: confidentiality only.
+**Confidentiality**, clearly: data went to people not entitled to it. **Integrity**? Of the stolen
+files, no: the reporting does not say the attackers altered them, so resist the urge to add it. Of
+the server, yes: installing a web shell is an unauthorized change to the system. **Availability**?
+The files were copied, not deleted, and the victims still had them. So: confidentiality, plus the
+integrity of the server but not of the data.
 
 Being able to say "no, that one was not violated, and here is why" is as much of the skill as
 naming the one that was.

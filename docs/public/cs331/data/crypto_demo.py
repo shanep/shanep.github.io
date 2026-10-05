@@ -64,13 +64,14 @@ def draw_face(size: int) -> bytearray:
     black = (0, 0, 0)
     white = (255, 255, 255)
     pixels = bytearray()
-    centre = size // 2
+    center = size // 2
     face_radius = int(size * 0.36)
     eye_radius = int(size * 0.05)
 
-    for y in range(size):
+    # BMP stores rows bottom to top, so generate the bottom row first.
+    for y in range(size - 1, -1, -1):
         for x in range(size):
-            dx, dy = x - centre, y - centre
+            dx, dy = x - center, y - center
             inside_face = dx * dx + dy * dy <= face_radius * face_radius
 
             eye_dx = abs(dx) - int(size * 0.14)
@@ -82,8 +83,8 @@ def draw_face(size: int) -> bytearray:
                 and abs(dx) <= int(size * 0.18)
             )
 
-            colour = white if inside_face and not (inside_eye or inside_mouth) else black
-            pixels.extend(colour)
+            color = white if inside_face and not (inside_eye or inside_mouth) else black
+            pixels.extend(color)
 
     return pixels
 

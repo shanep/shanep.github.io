@@ -131,7 +131,7 @@ C1 XOR C2 = (P1 XOR K) XOR (P2 XOR K) = P1 XOR P2
 
 The keystream cancels. **No key was used to compute that line.** The zero bytes are the positions
 where the two plaintexts are identical, which is why you can see at a glance that both messages
-start with the same twelve characters.
+start with the same ten characters (`TRANSFER $`).
 
 And an attacker who knows one plaintext gets the other for free:
 
@@ -155,7 +155,7 @@ a counter it did not persist.
 | **Mode of operation** | The scheme that turns a block cipher into a message encryption scheme. |
 | **ECB** | Each block encrypted independently. Leaks which blocks are equal. Do not use. |
 | **CTR** | Encrypts a counter to make a keystream, XORs it in. Confidentiality only. |
-| **Nonce / IV** | A value that must be unique per encryption under a key. Need not be secret. |
+| **Nonce / IV** | A value that must be unique per encryption under a key (and, for CBC, unpredictable). Need not be secret. |
 | **MAC** | Message authentication code. Integrity and authenticity, no confidentiality. HMAC. |
 | **AEAD** | Authenticated encryption with associated data. Confidentiality *and* integrity. AES-GCM. |
 | **KDF** | Derives keys from a password or another key. PBKDF2, HKDF, Argon2. |

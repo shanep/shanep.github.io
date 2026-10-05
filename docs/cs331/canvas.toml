@@ -134,7 +134,7 @@ reminder   = "reminders/d*-replies.md"
 
 # Per-item exceptions to the policy above, keyed by path relative to this file.
 
-# Week 15 is a four-day week: instruction ends Friday April 30, so its Sunday
+# Week 15 is a five-day week: instruction ends Friday April 30, so its Sunday
 # falls outside the term. The lab and the D5 replies move to that Friday, with no
 # grace, because the Late Work Policy accepts nothing after the last day of
 # instruction. The D5 initial post keeps the Thursday every discussion has.

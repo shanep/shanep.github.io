@@ -26,9 +26,11 @@ classroom at scale.
 
 - A whole class at once (9 of 45 failed in my test), with the testing limitations noted above
 - Tool / function calling (needed for Claude Code)
-- Temperature control (no repeatable output for grading)
 - Image input (text only)
 - Rate limit or quota not reported in the API calls. The only place that is listed is in the Web UI.
+
+Temperature control is also missing, but OIT cannot fix that one. Opus 5.5 does not accept
+sampling parameters on any platform, so there is no repeatable output for grading.
 
 ## 1. How I tested it
 
@@ -81,7 +83,7 @@ returning, so I cannot separate a token limit from the time limit here.
 | :-------------------------- | :--------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Tool / function calling** | Not available. Tool definitions are silently ignored.                              | Sent a weather tool in both the Anthropic `tools` and Bedrock `toolConfig` shapes with a prompt to use it. The model said it had no such tool, `stop_reason` stayed `end_turn`, and input tokens were identical (32) with or without the tool, so the definition never reached the model. |
 | **Image input**             | Not accepted. Text only.                                                           | A message with an image content block returned 422.                                                                                                                                                                                                                                    |
-| **Sampling controls**       | `temperature` and `top_p` not accepted.                                            | Sent each at several values (0.0, 0.7, 1.5, 0.9). Every one returned 400, even though the API Keys page documents `temperature` and `top_p` (0.0 to 1.0) as supported. The docs and the live endpoint disagree on Opus 5.5.                                                            |
+| **Sampling controls**       | `temperature` and `top_p` not accepted.                                            | Sent each at several values (0.0, 0.7, 1.5, 0.9). Every one returned 400, even though the API Keys page documents `temperature` and `top_p` (0.0 to 1.0) as supported. This matches Anthropic's own API, where Opus 5.5 rejects sampling parameters outright, so the gateway's docs are out of date, not the endpoint. |
 | **System prompt field**     | Only `system_prompt` works. A top-level `system` is ignored and a system role is rejected. | Top-level `system` left the reply and token count unchanged. A system message returned 400, and `system_prompt` changed both.                                                                                                                                                  |
 | **Conversation state**      | Stateless: history is resent each call.                                            | No conversation id appears in any response, and multi-turn only worked when I resent the full history.                                                                                                                                                                                 |
 | **Model access**            | Unknown or unavailable models are refused. No list endpoint.                       | A made-up model id returned 403 Access denied to model.                                                                                                                                                                                                                                |
@@ -145,7 +147,7 @@ model quality. The model here is Anthropic's Opus.
 | **Auth**                       | `X-API-Key` (confirmed)           | `x-api-key` + version  | Bearer token      | API key           |
 | **Streaming**                  | Yes (confirmed)                   | Yes                    | Yes               | Yes               |
 | **System prompt**              | `system_prompt` only (confirmed)  | Yes                    | Yes               | Yes               |
-| **Temperature / top_p**        | No (documented but refused)       | Yes                    | Yes               | Yes               |
+| **Temperature / top_p**        | No (matches the model)            | No on Opus 5.5         | Yes               | Yes               |
 | **Image input**                | No (confirmed refused)            | Yes                    | Yes               | Yes               |
 | **Tool / function calling**    | No (confirmed ignored)            | Yes                    | Yes               | Yes               |
 | **Context window**             | ≥220k tokens (confirmed)          | Documented, large      | Documented, large | Documented, large |
@@ -176,8 +178,8 @@ that uses an agent like Claude Code, I would want these from OIT:
 
 ## 10. Appendix: the prompt and sample responses
 
-The exact request I used and the real responses it returned, trimmed for length. The key is shown
-as `YOUR_API_KEY`.
+The load-test request I used and sample responses from my tests, trimmed for length. The key is
+shown as `YOUR_API_KEY`.
 
 **The request (load test):**
 

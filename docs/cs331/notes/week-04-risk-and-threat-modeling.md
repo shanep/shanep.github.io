@@ -15,8 +15,10 @@ What to do this week, and when it is due, is on the [Module 4 Overview](week-04-
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §2.6.2 Elements of Risk | 32-33 | 1 p | 15 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §2.6.6 Security Metrics | 43-45 | 3 pp | 20 min |
 
-**§2.6.2 is the one to read carefully.** It is the section that says a likelihood or impact rating
-means nothing unless you state the scale you are using, and Lab 2 grades you on stating yours.
+**§2.6.2 is the one to read carefully.** It defines the four elements a risk rating is built from,
+and notes that likelihood can be qualitative (low, medium, high) or quantitative (1-10, a
+percentage). Because either is allowed, a rating means nothing until you say which scale you are
+using, and Lab 2 grades you on stating yours.
 
 You are **not** assigned §2.6.3, which surveys a dozen named risk assessment methodologies. Skip it.
 

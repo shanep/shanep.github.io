@@ -20,8 +20,7 @@ Apr 21 02:33:18 vault-api-01 sshd[24438]: pam_unix(sshd:session): session closed
 Apr 21 02:41:31 vault-api-01 sshd[32898]: Accepted publickey for deploy from 10.12.9.8 port 49769 ssh2: RSA SHA256:9k1Tq207nZxW
 Apr 21 02:41:32 vault-api-01 sshd[32898]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
 Apr 21 02:49:54 vault-api-01 sshd[32898]: pam_unix(sshd:session): session closed for user deploy
-Apr 21 03:17:12 vault-api-01 sshd[42638]: Invalid user root from 203.0.113.47 port 47892
-Apr 21 03:17:12 vault-api-01 sshd[42638]: Failed password for invalid user root from 203.0.113.47 port 47892 ssh2
+Apr 21 03:17:12 vault-api-01 sshd[42638]: Failed password for root from 203.0.113.47 port 47892 ssh2
 Apr 21 03:17:14 vault-api-01 sshd[39250]: Invalid user admin from 203.0.113.47 port 40227
 Apr 21 03:17:14 vault-api-01 sshd[39250]: Failed password for invalid user admin from 203.0.113.47 port 40227 ssh2
 Apr 21 03:17:17 vault-api-01 sshd[14479]: Invalid user oracle from 203.0.113.47 port 50090
@@ -37,8 +36,7 @@ Apr 21 03:17:35 vault-api-01 sshd[1293]: Failed password for invalid user git fr
 Apr 21 03:17:39 vault-api-01 sshd[13110]: Invalid user jenkins from 203.0.113.47 port 40337
 Apr 21 03:17:39 vault-api-01 sshd[13110]: Failed password for invalid user jenkins from 203.0.113.47 port 40337 ssh2
 Apr 21 03:17:42 vault-api-01 sshd[51758]: Failed password for deploy from 203.0.113.47 port 43500 ssh2
-Apr 21 03:17:45 vault-api-01 sshd[59795]: Invalid user root from 203.0.113.47 port 45676
-Apr 21 03:17:45 vault-api-01 sshd[59795]: Failed password for invalid user root from 203.0.113.47 port 45676 ssh2
+Apr 21 03:17:45 vault-api-01 sshd[59795]: Failed password for root from 203.0.113.47 port 45676 ssh2
 Apr 21 03:17:48 vault-api-01 sshd[38399]: Invalid user admin from 203.0.113.47 port 59441
 Apr 21 03:17:48 vault-api-01 sshd[38399]: Failed password for invalid user admin from 203.0.113.47 port 59441 ssh2
 Apr 21 03:17:51 vault-api-01 sshd[38633]: Invalid user oracle from 203.0.113.47 port 61565
@@ -54,8 +52,7 @@ Apr 21 03:18:02 vault-api-01 sshd[30656]: Failed password for invalid user git f
 Apr 21 03:18:06 vault-api-01 sshd[36747]: Invalid user jenkins from 203.0.113.47 port 59799
 Apr 21 03:18:06 vault-api-01 sshd[36747]: Failed password for invalid user jenkins from 203.0.113.47 port 59799 ssh2
 Apr 21 03:18:09 vault-api-01 sshd[52863]: Failed password for deploy from 203.0.113.47 port 53099 ssh2
-Apr 21 03:18:13 vault-api-01 sshd[40149]: Invalid user root from 203.0.113.47 port 57822
-Apr 21 03:18:13 vault-api-01 sshd[40149]: Failed password for invalid user root from 203.0.113.47 port 57822 ssh2
+Apr 21 03:18:13 vault-api-01 sshd[40149]: Failed password for root from 203.0.113.47 port 57822 ssh2
 Apr 21 03:18:17 vault-api-01 sshd[23196]: Invalid user admin from 203.0.113.47 port 52883
 Apr 21 03:18:17 vault-api-01 sshd[23196]: Failed password for invalid user admin from 203.0.113.47 port 52883 ssh2
 Apr 21 03:18:22 vault-api-01 sshd[40460]: Invalid user oracle from 203.0.113.47 port 40911
@@ -71,8 +68,7 @@ Apr 21 03:18:38 vault-api-01 sshd[48604]: Failed password for invalid user git f
 Apr 21 03:18:40 vault-api-01 sshd[31675]: Invalid user jenkins from 203.0.113.47 port 63834
 Apr 21 03:18:40 vault-api-01 sshd[31675]: Failed password for invalid user jenkins from 203.0.113.47 port 63834 ssh2
 Apr 21 03:18:42 vault-api-01 sshd[42984]: Failed password for deploy from 203.0.113.47 port 55939 ssh2
-Apr 21 03:18:47 vault-api-01 sshd[32253]: Invalid user root from 203.0.113.47 port 49024
-Apr 21 03:18:47 vault-api-01 sshd[32253]: Failed password for invalid user root from 203.0.113.47 port 49024 ssh2
+Apr 21 03:18:47 vault-api-01 sshd[32253]: Failed password for root from 203.0.113.47 port 49024 ssh2
 Apr 21 03:18:52 vault-api-01 sshd[8771]: Invalid user admin from 203.0.113.47 port 44411
 Apr 21 03:18:52 vault-api-01 sshd[8771]: Failed password for invalid user admin from 203.0.113.47 port 44411 ssh2
 Apr 21 03:18:54 vault-api-01 sshd[51078]: Invalid user oracle from 203.0.113.47 port 55038
@@ -88,8 +84,7 @@ Apr 21 03:19:07 vault-api-01 sshd[37680]: Failed password for invalid user git f
 Apr 21 03:19:10 vault-api-01 sshd[20465]: Invalid user jenkins from 203.0.113.47 port 57830
 Apr 21 03:19:10 vault-api-01 sshd[20465]: Failed password for invalid user jenkins from 203.0.113.47 port 57830 ssh2
 Apr 21 03:19:13 vault-api-01 sshd[5312]: Failed password for deploy from 203.0.113.47 port 41302 ssh2
-Apr 21 03:19:16 vault-api-01 sshd[20856]: Invalid user root from 203.0.113.47 port 43472
-Apr 21 03:19:16 vault-api-01 sshd[20856]: Failed password for invalid user root from 203.0.113.47 port 43472 ssh2
+Apr 21 03:19:16 vault-api-01 sshd[20856]: Failed password for root from 203.0.113.47 port 43472 ssh2
 Apr 21 03:19:20 vault-api-01 sshd[32638]: Invalid user admin from 203.0.113.47 port 43855
 Apr 21 03:19:20 vault-api-01 sshd[32638]: Failed password for invalid user admin from 203.0.113.47 port 43855 ssh2
 Apr 21 03:19:24 vault-api-01 sshd[38692]: Invalid user oracle from 203.0.113.47 port 56708
@@ -105,8 +100,7 @@ Apr 21 03:19:39 vault-api-01 sshd[3245]: Failed password for invalid user git fr
 Apr 21 03:19:41 vault-api-01 sshd[26194]: Invalid user jenkins from 203.0.113.47 port 56940
 Apr 21 03:19:41 vault-api-01 sshd[26194]: Failed password for invalid user jenkins from 203.0.113.47 port 56940 ssh2
 Apr 21 03:19:45 vault-api-01 sshd[10946]: Failed password for deploy from 203.0.113.47 port 40540 ssh2
-Apr 21 03:19:50 vault-api-01 sshd[45099]: Invalid user root from 203.0.113.47 port 53496
-Apr 21 03:19:50 vault-api-01 sshd[45099]: Failed password for invalid user root from 203.0.113.47 port 53496 ssh2
+Apr 21 03:19:50 vault-api-01 sshd[45099]: Failed password for root from 203.0.113.47 port 53496 ssh2
 Apr 21 03:19:52 vault-api-01 sshd[26403]: Invalid user admin from 203.0.113.47 port 40168
 Apr 21 03:19:52 vault-api-01 sshd[26403]: Failed password for invalid user admin from 203.0.113.47 port 40168 ssh2
 Apr 21 03:19:57 vault-api-01 sshd[32875]: Invalid user oracle from 203.0.113.47 port 63572
@@ -122,8 +116,7 @@ Apr 21 03:20:07 vault-api-01 sshd[45167]: Failed password for invalid user git f
 Apr 21 03:20:11 vault-api-01 sshd[46067]: Invalid user jenkins from 203.0.113.47 port 45275
 Apr 21 03:20:11 vault-api-01 sshd[46067]: Failed password for invalid user jenkins from 203.0.113.47 port 45275 ssh2
 Apr 21 03:20:15 vault-api-01 sshd[49345]: Failed password for deploy from 203.0.113.47 port 57086 ssh2
-Apr 21 03:20:20 vault-api-01 sshd[19751]: Invalid user root from 203.0.113.47 port 50154
-Apr 21 03:20:20 vault-api-01 sshd[19751]: Failed password for invalid user root from 203.0.113.47 port 50154 ssh2
+Apr 21 03:20:20 vault-api-01 sshd[19751]: Failed password for root from 203.0.113.47 port 50154 ssh2
 Apr 21 03:20:25 vault-api-01 sshd[59744]: Invalid user admin from 203.0.113.47 port 51413
 Apr 21 03:20:25 vault-api-01 sshd[59744]: Failed password for invalid user admin from 203.0.113.47 port 51413 ssh2
 Apr 21 03:20:29 vault-api-01 sshd[42845]: Invalid user oracle from 203.0.113.47 port 49936
@@ -139,8 +132,7 @@ Apr 21 03:20:44 vault-api-01 sshd[43882]: Failed password for invalid user git f
 Apr 21 03:20:48 vault-api-01 sshd[37031]: Invalid user jenkins from 203.0.113.47 port 63479
 Apr 21 03:20:48 vault-api-01 sshd[37031]: Failed password for invalid user jenkins from 203.0.113.47 port 63479 ssh2
 Apr 21 03:20:50 vault-api-01 sshd[59153]: Failed password for deploy from 203.0.113.47 port 59208 ssh2
-Apr 21 03:20:54 vault-api-01 sshd[50723]: Invalid user root from 203.0.113.47 port 59558
-Apr 21 03:20:54 vault-api-01 sshd[50723]: Failed password for invalid user root from 203.0.113.47 port 59558 ssh2
+Apr 21 03:20:54 vault-api-01 sshd[50723]: Failed password for root from 203.0.113.47 port 59558 ssh2
 Apr 21 03:20:59 vault-api-01 sshd[2899]: Invalid user admin from 203.0.113.47 port 60969
 Apr 21 03:20:59 vault-api-01 sshd[2899]: Failed password for invalid user admin from 203.0.113.47 port 60969 ssh2
 Apr 21 03:21:04 vault-api-01 sshd[37066]: Invalid user oracle from 203.0.113.47 port 48861
@@ -156,8 +148,7 @@ Apr 21 03:21:17 vault-api-01 sshd[56679]: Failed password for invalid user git f
 Apr 21 03:21:20 vault-api-01 sshd[52731]: Invalid user jenkins from 203.0.113.47 port 51799
 Apr 21 03:21:20 vault-api-01 sshd[52731]: Failed password for invalid user jenkins from 203.0.113.47 port 51799 ssh2
 Apr 21 03:21:22 vault-api-01 sshd[54416]: Failed password for deploy from 203.0.113.47 port 58200 ssh2
-Apr 21 03:21:26 vault-api-01 sshd[24631]: Invalid user root from 203.0.113.47 port 44676
-Apr 21 03:21:26 vault-api-01 sshd[24631]: Failed password for invalid user root from 203.0.113.47 port 44676 ssh2
+Apr 21 03:21:26 vault-api-01 sshd[24631]: Failed password for root from 203.0.113.47 port 44676 ssh2
 Apr 21 03:21:30 vault-api-01 sshd[52545]: Invalid user admin from 203.0.113.47 port 47316
 Apr 21 03:21:30 vault-api-01 sshd[52545]: Failed password for invalid user admin from 203.0.113.47 port 47316 ssh2
 Apr 21 03:21:32 vault-api-01 sshd[18917]: Invalid user oracle from 203.0.113.47 port 52768
@@ -173,8 +164,7 @@ Apr 21 03:21:47 vault-api-01 sshd[4981]: Failed password for invalid user git fr
 Apr 21 03:21:50 vault-api-01 sshd[20456]: Invalid user jenkins from 203.0.113.47 port 56804
 Apr 21 03:21:50 vault-api-01 sshd[20456]: Failed password for invalid user jenkins from 203.0.113.47 port 56804 ssh2
 Apr 21 03:21:55 vault-api-01 sshd[4982]: Failed password for deploy from 203.0.113.47 port 58051 ssh2
-Apr 21 03:21:58 vault-api-01 sshd[4948]: Invalid user root from 203.0.113.47 port 50733
-Apr 21 03:21:58 vault-api-01 sshd[4948]: Failed password for invalid user root from 203.0.113.47 port 50733 ssh2
+Apr 21 03:21:58 vault-api-01 sshd[4948]: Failed password for root from 203.0.113.47 port 50733 ssh2
 Apr 21 03:22:02 vault-api-01 sshd[56628]: Invalid user admin from 203.0.113.47 port 48745
 Apr 21 03:22:02 vault-api-01 sshd[56628]: Failed password for invalid user admin from 203.0.113.47 port 48745 ssh2
 Apr 21 03:22:06 vault-api-01 sshd[24389]: Invalid user oracle from 203.0.113.47 port 40258
@@ -190,8 +180,7 @@ Apr 21 03:22:18 vault-api-01 sshd[2200]: Failed password for invalid user git fr
 Apr 21 03:22:22 vault-api-01 sshd[53926]: Invalid user jenkins from 203.0.113.47 port 64954
 Apr 21 03:22:22 vault-api-01 sshd[53926]: Failed password for invalid user jenkins from 203.0.113.47 port 64954 ssh2
 Apr 21 03:22:26 vault-api-01 sshd[15743]: Failed password for deploy from 203.0.113.47 port 51250 ssh2
-Apr 21 03:22:30 vault-api-01 sshd[45718]: Invalid user root from 203.0.113.47 port 51247
-Apr 21 03:22:30 vault-api-01 sshd[45718]: Failed password for invalid user root from 203.0.113.47 port 51247 ssh2
+Apr 21 03:22:30 vault-api-01 sshd[45718]: Failed password for root from 203.0.113.47 port 51247 ssh2
 Apr 21 03:22:33 vault-api-01 sshd[12390]: Invalid user admin from 203.0.113.47 port 49047
 Apr 21 03:22:33 vault-api-01 sshd[12390]: Failed password for invalid user admin from 203.0.113.47 port 49047 ssh2
 Apr 21 03:22:35 vault-api-01 sshd[13123]: Invalid user oracle from 203.0.113.47 port 47038
@@ -207,8 +196,7 @@ Apr 21 03:22:49 vault-api-01 sshd[17059]: Failed password for invalid user git f
 Apr 21 03:22:53 vault-api-01 sshd[31314]: Invalid user jenkins from 203.0.113.47 port 54124
 Apr 21 03:22:53 vault-api-01 sshd[31314]: Failed password for invalid user jenkins from 203.0.113.47 port 54124 ssh2
 Apr 21 03:22:58 vault-api-01 sshd[46242]: Failed password for deploy from 203.0.113.47 port 53377 ssh2
-Apr 21 03:23:00 vault-api-01 sshd[30154]: Invalid user root from 203.0.113.47 port 58231
-Apr 21 03:23:00 vault-api-01 sshd[30154]: Failed password for invalid user root from 203.0.113.47 port 58231 ssh2
+Apr 21 03:23:00 vault-api-01 sshd[30154]: Failed password for root from 203.0.113.47 port 58231 ssh2
 Apr 21 03:23:02 vault-api-01 sshd[50549]: Invalid user admin from 203.0.113.47 port 60653
 Apr 21 03:23:02 vault-api-01 sshd[50549]: Failed password for invalid user admin from 203.0.113.47 port 60653 ssh2
 Apr 21 03:23:04 vault-api-01 sshd[44212]: Invalid user oracle from 203.0.113.47 port 52060
@@ -224,8 +212,7 @@ Apr 21 03:23:15 vault-api-01 sshd[11072]: Failed password for invalid user git f
 Apr 21 03:23:18 vault-api-01 sshd[55741]: Invalid user jenkins from 203.0.113.47 port 62277
 Apr 21 03:23:18 vault-api-01 sshd[55741]: Failed password for invalid user jenkins from 203.0.113.47 port 62277 ssh2
 Apr 21 03:23:21 vault-api-01 sshd[28186]: Failed password for deploy from 203.0.113.47 port 44614 ssh2
-Apr 21 03:23:23 vault-api-01 sshd[31153]: Invalid user root from 203.0.113.47 port 56593
-Apr 21 03:23:23 vault-api-01 sshd[31153]: Failed password for invalid user root from 203.0.113.47 port 56593 ssh2
+Apr 21 03:23:23 vault-api-01 sshd[31153]: Failed password for root from 203.0.113.47 port 56593 ssh2
 Apr 21 03:23:26 vault-api-01 sshd[35192]: Invalid user admin from 203.0.113.47 port 41773
 Apr 21 03:23:26 vault-api-01 sshd[35192]: Failed password for invalid user admin from 203.0.113.47 port 41773 ssh2
 Apr 21 03:23:28 vault-api-01 sshd[15849]: Invalid user oracle from 203.0.113.47 port 54466
@@ -241,8 +228,7 @@ Apr 21 03:23:42 vault-api-01 sshd[44633]: Failed password for invalid user git f
 Apr 21 03:23:44 vault-api-01 sshd[24510]: Invalid user jenkins from 203.0.113.47 port 44690
 Apr 21 03:23:44 vault-api-01 sshd[24510]: Failed password for invalid user jenkins from 203.0.113.47 port 44690 ssh2
 Apr 21 03:23:48 vault-api-01 sshd[59940]: Failed password for deploy from 203.0.113.47 port 53769 ssh2
-Apr 21 03:23:53 vault-api-01 sshd[54161]: Invalid user root from 203.0.113.47 port 53278
-Apr 21 03:23:53 vault-api-01 sshd[54161]: Failed password for invalid user root from 203.0.113.47 port 53278 ssh2
+Apr 21 03:23:53 vault-api-01 sshd[54161]: Failed password for root from 203.0.113.47 port 53278 ssh2
 Apr 21 03:23:55 vault-api-01 sshd[44632]: Invalid user admin from 203.0.113.47 port 56625
 Apr 21 03:23:55 vault-api-01 sshd[44632]: Failed password for invalid user admin from 203.0.113.47 port 56625 ssh2
 Apr 21 03:23:57 vault-api-01 sshd[11635]: Invalid user oracle from 203.0.113.47 port 60419
@@ -258,8 +244,7 @@ Apr 21 03:24:05 vault-api-01 sshd[47402]: Failed password for invalid user git f
 Apr 21 03:24:07 vault-api-01 sshd[22754]: Invalid user jenkins from 203.0.113.47 port 54687
 Apr 21 03:24:07 vault-api-01 sshd[22754]: Failed password for invalid user jenkins from 203.0.113.47 port 54687 ssh2
 Apr 21 03:24:12 vault-api-01 sshd[38378]: Failed password for deploy from 203.0.113.47 port 64585 ssh2
-Apr 21 03:24:14 vault-api-01 sshd[39595]: Invalid user root from 203.0.113.47 port 53200
-Apr 21 03:24:14 vault-api-01 sshd[39595]: Failed password for invalid user root from 203.0.113.47 port 53200 ssh2
+Apr 21 03:24:14 vault-api-01 sshd[39595]: Failed password for root from 203.0.113.47 port 53200 ssh2
 Apr 21 03:24:19 vault-api-01 sshd[42751]: Invalid user admin from 203.0.113.47 port 48954
 Apr 21 03:24:19 vault-api-01 sshd[42751]: Failed password for invalid user admin from 203.0.113.47 port 48954 ssh2
 Apr 21 03:24:24 vault-api-01 sshd[53252]: Invalid user oracle from 203.0.113.47 port 57621
@@ -275,8 +260,7 @@ Apr 21 03:24:37 vault-api-01 sshd[21876]: Failed password for invalid user git f
 Apr 21 03:24:39 vault-api-01 sshd[9552]: Invalid user jenkins from 203.0.113.47 port 53754
 Apr 21 03:24:39 vault-api-01 sshd[9552]: Failed password for invalid user jenkins from 203.0.113.47 port 53754 ssh2
 Apr 21 03:24:42 vault-api-01 sshd[21992]: Failed password for deploy from 203.0.113.47 port 63874 ssh2
-Apr 21 03:24:45 vault-api-01 sshd[26188]: Invalid user root from 203.0.113.47 port 53670
-Apr 21 03:24:45 vault-api-01 sshd[26188]: Failed password for invalid user root from 203.0.113.47 port 53670 ssh2
+Apr 21 03:24:45 vault-api-01 sshd[26188]: Failed password for root from 203.0.113.47 port 53670 ssh2
 Apr 21 03:24:47 vault-api-01 sshd[4440]: Invalid user admin from 203.0.113.47 port 51462
 Apr 21 03:24:47 vault-api-01 sshd[4440]: Failed password for invalid user admin from 203.0.113.47 port 51462 ssh2
 Apr 21 03:24:51 vault-api-01 sshd[41895]: Invalid user oracle from 203.0.113.47 port 41455
@@ -292,8 +276,7 @@ Apr 21 03:25:07 vault-api-01 sshd[24004]: Failed password for invalid user git f
 Apr 21 03:25:10 vault-api-01 sshd[1496]: Invalid user jenkins from 203.0.113.47 port 42019
 Apr 21 03:25:10 vault-api-01 sshd[1496]: Failed password for invalid user jenkins from 203.0.113.47 port 42019 ssh2
 Apr 21 03:25:13 vault-api-01 sshd[7661]: Failed password for deploy from 203.0.113.47 port 58366 ssh2
-Apr 21 03:25:16 vault-api-01 sshd[6731]: Invalid user root from 203.0.113.47 port 47145
-Apr 21 03:25:16 vault-api-01 sshd[6731]: Failed password for invalid user root from 203.0.113.47 port 47145 ssh2
+Apr 21 03:25:16 vault-api-01 sshd[6731]: Failed password for root from 203.0.113.47 port 47145 ssh2
 Apr 21 03:25:18 vault-api-01 sshd[57584]: Invalid user admin from 203.0.113.47 port 52948
 Apr 21 03:25:18 vault-api-01 sshd[57584]: Failed password for invalid user admin from 203.0.113.47 port 52948 ssh2
 Apr 21 03:25:23 vault-api-01 sshd[6726]: Invalid user oracle from 203.0.113.47 port 53924
@@ -309,8 +292,7 @@ Apr 21 03:25:35 vault-api-01 sshd[16478]: Failed password for invalid user git f
 Apr 21 03:25:39 vault-api-01 sshd[57257]: Invalid user jenkins from 203.0.113.47 port 56843
 Apr 21 03:25:39 vault-api-01 sshd[57257]: Failed password for invalid user jenkins from 203.0.113.47 port 56843 ssh2
 Apr 21 03:25:43 vault-api-01 sshd[41437]: Failed password for deploy from 203.0.113.47 port 43314 ssh2
-Apr 21 03:25:46 vault-api-01 sshd[32170]: Invalid user root from 203.0.113.47 port 60362
-Apr 21 03:25:46 vault-api-01 sshd[32170]: Failed password for invalid user root from 203.0.113.47 port 60362 ssh2
+Apr 21 03:25:46 vault-api-01 sshd[32170]: Failed password for root from 203.0.113.47 port 60362 ssh2
 Apr 21 03:25:51 vault-api-01 sshd[28328]: Invalid user admin from 203.0.113.47 port 47701
 Apr 21 03:25:51 vault-api-01 sshd[28328]: Failed password for invalid user admin from 203.0.113.47 port 47701 ssh2
 Apr 21 03:25:56 vault-api-01 sshd[21680]: Invalid user oracle from 203.0.113.47 port 42514
@@ -326,8 +308,7 @@ Apr 21 03:26:08 vault-api-01 sshd[57625]: Failed password for invalid user git f
 Apr 21 03:26:10 vault-api-01 sshd[53693]: Invalid user jenkins from 203.0.113.47 port 42369
 Apr 21 03:26:10 vault-api-01 sshd[53693]: Failed password for invalid user jenkins from 203.0.113.47 port 42369 ssh2
 Apr 21 03:26:14 vault-api-01 sshd[7708]: Failed password for deploy from 203.0.113.47 port 49333 ssh2
-Apr 21 03:26:18 vault-api-01 sshd[10601]: Invalid user root from 203.0.113.47 port 42768
-Apr 21 03:26:18 vault-api-01 sshd[10601]: Failed password for invalid user root from 203.0.113.47 port 42768 ssh2
+Apr 21 03:26:18 vault-api-01 sshd[10601]: Failed password for root from 203.0.113.47 port 42768 ssh2
 Apr 21 03:26:21 vault-api-01 sshd[8337]: Invalid user admin from 203.0.113.47 port 41473
 Apr 21 03:26:21 vault-api-01 sshd[8337]: Failed password for invalid user admin from 203.0.113.47 port 41473 ssh2
 Apr 21 03:26:24 vault-api-01 sshd[27082]: Invalid user oracle from 203.0.113.47 port 40318
@@ -343,8 +324,7 @@ Apr 21 03:26:38 vault-api-01 sshd[23387]: Failed password for invalid user git f
 Apr 21 03:26:42 vault-api-01 sshd[1898]: Invalid user jenkins from 203.0.113.47 port 60004
 Apr 21 03:26:42 vault-api-01 sshd[1898]: Failed password for invalid user jenkins from 203.0.113.47 port 60004 ssh2
 Apr 21 03:26:44 vault-api-01 sshd[48701]: Failed password for deploy from 203.0.113.47 port 47331 ssh2
-Apr 21 03:26:47 vault-api-01 sshd[49107]: Invalid user root from 203.0.113.47 port 41465
-Apr 21 03:26:47 vault-api-01 sshd[49107]: Failed password for invalid user root from 203.0.113.47 port 41465 ssh2
+Apr 21 03:26:47 vault-api-01 sshd[49107]: Failed password for root from 203.0.113.47 port 41465 ssh2
 Apr 21 03:26:49 vault-api-01 sshd[1000]: Invalid user admin from 203.0.113.47 port 62128
 Apr 21 03:26:49 vault-api-01 sshd[1000]: Failed password for invalid user admin from 203.0.113.47 port 62128 ssh2
 Apr 21 03:26:52 vault-api-01 sshd[29200]: Invalid user oracle from 203.0.113.47 port 49222
@@ -360,8 +340,7 @@ Apr 21 03:27:03 vault-api-01 sshd[4314]: Failed password for invalid user git fr
 Apr 21 03:27:06 vault-api-01 sshd[38181]: Invalid user jenkins from 203.0.113.47 port 50081
 Apr 21 03:27:06 vault-api-01 sshd[38181]: Failed password for invalid user jenkins from 203.0.113.47 port 50081 ssh2
 Apr 21 03:27:09 vault-api-01 sshd[1470]: Failed password for deploy from 203.0.113.47 port 55184 ssh2
-Apr 21 03:27:12 vault-api-01 sshd[1421]: Invalid user root from 203.0.113.47 port 48947
-Apr 21 03:27:12 vault-api-01 sshd[1421]: Failed password for invalid user root from 203.0.113.47 port 48947 ssh2
+Apr 21 03:27:12 vault-api-01 sshd[1421]: Failed password for root from 203.0.113.47 port 48947 ssh2
 Apr 21 03:27:17 vault-api-01 sshd[58094]: Invalid user admin from 203.0.113.47 port 62473
 Apr 21 03:27:17 vault-api-01 sshd[58094]: Failed password for invalid user admin from 203.0.113.47 port 62473 ssh2
 Apr 21 03:27:19 vault-api-01 sshd[48232]: Invalid user oracle from 203.0.113.47 port 42005

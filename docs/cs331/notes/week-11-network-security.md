@@ -47,7 +47,7 @@ network have seen this, and where could it have stopped it?**
 
 Read the report for traffic, not for malware.
 
-- **Day 0, minutes 20 onward.** One internal workstation begins connecting to
+- **Day 0, from the first hour onward.** One internal workstation begins connecting to
   `api-telemetry-sync[.]com` **every 47 seconds**, and keeps doing it for seven days. The content is
   TLS-encrypted and the certificate is valid, so a sensor cannot read a byte of it. It does not need
   to. A workstation making a regular, precisely periodic connection to one external host, around the

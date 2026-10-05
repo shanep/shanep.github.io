@@ -34,7 +34,7 @@ please email me ASAP :)
 
 - In the Search bar shown below in the console screenshot, search for EC2
 
-![](../images/2026-09-04_12-52-33.png)
+![aws console search bar with ec2 typed in](../images/2026-09-04_12-52-33.png)
 
 - Create a new EC2 instance as follows:
   - Click the big orange "Launch Instance" button shown on the EC2 dashboard
@@ -62,16 +62,16 @@ please email me ASAP :)
     instance with an instance state of "Running". If it doesn't say "Running" give a few minutes to
     fully come online.
 
-![](../images/2026-09-04_13-09-12.png)
+![ec2 instances list showing a running instance](../images/2026-09-04_13-09-12.png)
 
 - - Click on the link in the Instance ID column
   - Then click on the "Connect" link as show below
 
-![2026-09-04_13-11-25.png](../images/2026-09-04_13-11-25.png)
+![connect button on the instance summary page](../images/2026-09-04_13-11-25.png)
 
 - - Click on the **In SSH client** tab to get the instructions to ssh into your machine
 
-![](../images/2026-09-04_13-14-01.png)
+![in ssh client tab with the chmod and ssh commands](../images/2026-09-04_13-14-01.png)
 
 - - Now open a terminal and go to the folder where you saved your key.
   - **Lock down the key first**, or ssh refuses to use it with an "UNPROTECTED PRIVATE KEY FILE"
@@ -86,7 +86,7 @@ please email me ASAP :)
 on. Your terminal should look like the screenshot below: the `ubuntu@ip-...` prompt and the output
 of `uname -a`. **Take this screenshot now; it is what you submit.**
 
-![2026-09-04_13-19-10.png](../images/2026-09-04_13-19-10.png)
+![terminal showing the ubuntu@ip prompt and uname -a output](../images/2026-09-04_13-19-10.png)
 
 **Stopping your instance changes its public IP address**; rebooting does not. If you stop it (for
 example to save credits) and start it again, your site moves to a new address, so update the

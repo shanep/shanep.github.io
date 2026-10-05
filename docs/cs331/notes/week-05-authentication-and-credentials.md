@@ -12,12 +12,13 @@ What to do this week, and when it is due, is on the [Module 5 Overview](week-05-
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §14.5.2 User Authentication: passwords, biometrics, tokens, behavioral, 2FA | 480-484 | 4 pp | 35 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §14.5.3 Authentication in Distributed Systems, Kerberos, SAML, OAuth2/OIDC | 484-487 | 3 pp | 25 min |
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §14.5.4 Facets of Authentication | 487-489 | 2 pp | 15 min |
-| NIST SP 800-63B-4 | §3, Authentication and Authenticator Management | none | skim | 30 min |
+| NIST SP 800-63B-4 | §3, Authenticator and Verifier Requirements | none | skim | 30 min |
 
 NIST SP 800-63B-4 (July 2025):
 <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf>. It is long. Read §3
-and skim the rest; you are looking for what it *requires*, what it *recommends against*, and (most
-usefully) what it has stopped recommending since the versions most policies were written against.
+and skim the rest. You are looking for what it *requires*, what it *forbids*, what it *recommends
+against*, and (most usefully) what it has stopped recommending since the versions most policies were
+written against.
 
 ## The three factor types
 
@@ -31,10 +32,11 @@ usefully) what it has stopped recommending since the versions most policies were
 factor twice.
 
 **Not all second factors are equal against phishing.** A code (from SMS or an authenticator
-app) can be relayed: the phishing site asks for it and replays it to the real site within the thirty
-seconds it is valid. A FIDO2 security key or passkey cannot be relayed, because the authenticator
-checks the site's origin itself and will not respond to the lookalike domain. This distinction is the
-single most useful practical fact in this week.
+app) can be relayed: the phishing site asks for it and replays it to the real site while it is
+still valid (thirty seconds for an authenticator app, often minutes for SMS). A FIDO2 security key
+or passkey cannot be relayed, because the browser tells the authenticator which site is really
+asking, and the credential is bound to the real domain, so the authenticator has nothing to give
+the lookalike. This distinction is the single most useful practical fact in this week.
 
 ## Worked example
 
@@ -98,16 +100,16 @@ find, scored against SP 800-63B-4 §3:
 | Rule | Verdict |
 | --- | --- |
 | Minimum 8 characters | **Only acceptable with MFA.** 8 is the floor for a password used as one factor of MFA. A password used on its own needs at least 15. |
-| Must contain upper case, digit, and symbol | **Advised against.** Composition rules produce `Password1!` and add little real entropy. |
-| Must be changed every 60 days | **Advised against.** Scheduled rotation produces `Spring2027!` → `Summer2027!`. Force a change on evidence of compromise. |
+| Must contain upper case, digit, and symbol | **Prohibited.** SP 800-63B-4 says verifiers SHALL NOT impose composition rules. They produce `Password1!` and add little real entropy. |
+| Must be changed every 60 days | **Prohibited.** Verifiers SHALL NOT require periodic changes. Scheduled rotation produces `Spring2027!` → `Summer2027!`. Force a change on evidence of compromise. |
 | Cannot be pasted into the field | **Advised against.** It breaks password managers, which are among the few things that reliably improve real password quality. |
 | Cannot reuse the last 5 passwords | Not objectionable. |
 | Screened against breached-password lists | **Required, and this policy does not do it.** SP 800-63B-4 says verifiers SHALL check new passwords against a blocklist. |
 | Maximum length 16 characters | **Advised against.** Support at least 64. A low maximum often hints the password is being stored in a fixed-size field, which raises a worse question. |
 
-Three rules advised against, one rule that only holds up with MFA, one required practice missing,
-and one rule that is a clue about something else. That is what a policy critique looks like: rule by rule, with a citation, ending in
-a count.
+Two rules prohibited outright, one advised against, one rule that only holds up with MFA, one
+required practice missing, and one rule that is a clue about something else. That is what a policy
+critique looks like: rule by rule, with a citation, ending in a count.
 
 ## Key terms
 
@@ -120,7 +122,7 @@ a count.
 | **Multi-factor authentication** | Two or more factors of *different* types. |
 | **Phishing-resistant authenticator** | One that binds to the site's origin, so it cannot be relayed. FIDO2, passkeys. |
 | **Salt** | Per-user random value stored with the hash; defeats precomputation and cross-account correlation. |
-| **Key derivation function** | A deliberately slow hash: PBKDF2, bcrypt, scrypt, Argon2. |
+| **Password hashing function** | A deliberately slow, salted hash built for passwords: PBKDF2, bcrypt, scrypt, Argon2. |
 | **Credential stuffing** | Replaying username/password pairs from other breaches. |
 | **Federated identity** | A separate identity provider authenticates on the application's behalf. SAML, OIDC. |
 

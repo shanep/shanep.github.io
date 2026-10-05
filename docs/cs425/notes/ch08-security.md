@@ -9,7 +9,7 @@ Four properties, and you should be able to name the mechanism that provides each
 | Property | Means | Provided by |
 | -------- | ----- | ----------- |
 | Confidentiality | only sender and receiver understand the message | encryption |
-| Message integrity | the message was not altered in transit | cryptographic hash, MAC |
+| Message integrity | the message was not altered in transit | MAC, signatures |
 | Authentication | each party is who it claims to be | signatures, certificates, nonces |
 | Availability | the service is reachable | rate limiting, filtering, redundancy |
 

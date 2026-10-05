@@ -134,9 +134,9 @@ example.com.		<b>241</b>	IN	A	172.66.147.243     <span class="dim">&larr; it wen
 <span class="dim">(nothing at all, and it exits 0)</span></pre>
     <div class="say"><b>Say:</b> the first two fail for <b>the same reason</b>: both need to send a query directly to a
       DNS server out on the internet, and outbound port 53 is blocked. That is a middlebox making a policy decision, and
-      in A4 they meet one that answers <em>wrongly</em> instead of not at all, which is worse.
+      chapter 4 comes back to those boxes as a topic of their own.
       <br><b>Then the trap:</b> <span class="mono">+short</span> prints an empty line for a name that does not exist. The
-      empty line is a real answer, badly displayed. This is A4 station 4, exactly.</div>
+      empty line is a real answer, badly displayed.</div>
   </div>
 
   <div class="box fill">
@@ -161,7 +161,7 @@ example.com.		<b>241</b>	IN	A	172.66.147.243     <span class="dim">&larr; it wen
         four things the sheet asks for. Finding them again is the group's job.</li>
       <li><b>Round 1 is fifteen minutes</b>, most of it passwords. Nobody has keys yet; that is A2.</li>
       <li><b>If time is short</b>, cut <span class="mono">+tcp</span> and <span class="mono">+stats</span>. Keep the two
-        that fail and the <span class="mono">+short</span> trap; A4 depends on both.</li>
+        that fail and the <span class="mono">+short</span> trap.</li>
       <li><b>The copy tell.</b> A group that wrote "asks Cloudflare" for <span class="mono">@1.1.1.1</span> instead of
         "timed out" did not run it.</li>
     </ul>

@@ -16,7 +16,7 @@ before it shows you anything:
 - Is this server **who it claims to be**?
 - Can anyone else **read** it?
 
-The padlock in the address bar is a yes, yes and no. Chapter 8 is the machinery
+The padlock in the address bar is a no, yes and no. Chapter 8 is the machinery
 behind that padlock, and today is about watching each piece of it work.
 
 ## Alice, Bob and Trudy
@@ -28,7 +28,7 @@ just knock it over.
 | Property | Means | Provided by |
 | -------- | ----- | ----------- |
 | Confidentiality | only Alice and Bob understand it | encryption |
-| Message integrity | nobody changed it on the way | hash, MAC |
+| Message integrity | nobody changed it on the way | MAC, signatures |
 | Authentication | each side is who it claims to be | signatures, certificates |
 | Availability | the service is reachable | filtering, redundancy |
 
@@ -162,8 +162,9 @@ whoever decides which CAs make the list.
 fraudulent certificates, including one for `*.google.com`.
 
 That certificate was used to read Gmail traffic from roughly 300,000 IP addresses,
-nearly all of them in Iran. Every browser that trusted DigiNotar's root accepted
-it without a warning, because it was signed correctly.
+nearly all of them in Iran. Almost every browser that trusted DigiNotar's root
+accepted it without a warning, because it was signed correctly. Chrome's pinned
+keys for Google's own sites are what caught it.
 
 Browsers pulled DigiNotar from their root stores, and the company was bankrupt
 within weeks. One bad CA undermines every site on the Internet, not just its own
