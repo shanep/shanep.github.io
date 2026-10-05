@@ -62,7 +62,7 @@ your record is a **transparency** problem.
 
 ### The disclosure question
 
-Suppose you decide to report it. CyBOK §3.13.2 describes the norms:
+Suppose you decide to report it. CyBOK §3.13.3 describes the norms:
 
 - **Coordinated disclosure**: tell the vendor, give them a reasonable window, then publish.
 - **Full disclosure**: publish immediately, on the argument that users deserve to know and vendors

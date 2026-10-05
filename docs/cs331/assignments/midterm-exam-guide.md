@@ -98,7 +98,8 @@ Then, in order of usefulness:
    list them without looking, and can give one example of a violation of each.
 4. **Re-run [crypto_demo.py](../data/crypto_demo.py) and [sign_demo.py](../data/sign_demo.py)**
    and make sure you can explain each section's output to somebody else.
-5. **Re-take Quizzes 1 and 2.** Canvas will let you review them.
+5. **Review your results on Quizzes 1 and 2.** Each quiz is one attempt, but Canvas will let you
+   review it.
 6. **Skim, do not re-read, the CyBOK sections.** Know where things are rather than memorising them.
 
 ## Practice questions

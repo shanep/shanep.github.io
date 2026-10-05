@@ -97,16 +97,16 @@ find, scored against SP 800-63B-4 §3:
 
 | Rule | Verdict |
 | --- | --- |
-| Minimum 8 characters | **Acceptable as a floor.** Longer is better; 8 is the documented minimum. |
+| Minimum 8 characters | **Only acceptable with MFA.** 8 is the floor for a password used as one factor of MFA. A password used on its own needs at least 15. |
 | Must contain upper case, digit, and symbol | **Advised against.** Composition rules produce `Password1!` and add little real entropy. |
 | Must be changed every 60 days | **Advised against.** Scheduled rotation produces `Spring2027!` → `Summer2027!`. Force a change on evidence of compromise. |
 | Cannot be pasted into the field | **Advised against.** It breaks password managers, which are among the few things that reliably improve real password quality. |
 | Cannot reuse the last 5 passwords | Not objectionable. |
-| Screened against breached-password lists | **Recommended: and this policy does not do it.** |
+| Screened against breached-password lists | **Required, and this policy does not do it.** SP 800-63B-4 says verifiers SHALL check new passwords against a blocklist. |
 | Maximum length 16 characters | **Advised against.** Support at least 64. A low maximum often hints the password is being stored in a fixed-size field, which raises a worse question. |
 
-Three rules advised against, one recommended practice missing, and one rule that is a clue about
-something else. That is what a policy critique looks like: rule by rule, with a citation, ending in
+Three rules advised against, one rule that only holds up with MFA, one required practice missing,
+and one rule that is a clue about something else. That is what a policy critique looks like: rule by rule, with a citation, ending in
 a count.
 
 ## Key terms

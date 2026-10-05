@@ -33,7 +33,7 @@ In rough order of value:
 4. **Re-run [`crypto_demo.py`](../data/crypto_demo.py) and [`sign_demo.py`](../data/sign_demo.py)**
    and explain each section's output out loud to somebody, or to yourself. If you cannot explain the
    nonce-reuse algebra without looking, that is the thing to work on.
-5. **Re-take Quizzes 1 and 2.** Canvas will let you review them with the rationales.
+5. **Review your results on Quizzes 1 and 2.** Canvas will let you review them with the rationales.
 6. **Skim, do not re-read, the CyBOK sections.** Know where things are.
 
 ### What not to do
