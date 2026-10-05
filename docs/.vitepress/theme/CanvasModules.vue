@@ -49,11 +49,15 @@ function href(item: Item): string | undefined {
   return base + item.path
 }
 
+// The site is built in UTC by CI, so without a fixed zone the static HTML shows
+// a 23:59 Mountain deadline as 5:59 am the next day, and hydration then disagrees.
+const TZ = 'America/Boise'
+
 function due(item: Item): string {
   if (!item.due_at) return ''
   const d = new Date(item.due_at)
-  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
-    + ' at ' + d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }).toLowerCase()
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: TZ })
+    + ' at ' + d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: TZ }).toLowerCase()
 }
 
 function points(item: Item): string {
