@@ -45,22 +45,26 @@ if (drafts.length > 0) {
 // never the answers, so a student can see what a quiz covers while the key stays
 // in Canvas.
 //
-// An answer is a paragraph opening with `*Answer:*`, and its rationale wraps over
-// as many lines as it needs, so the rule drops from that line to the blank line
-// that ends the paragraph. The `## Canvas import notes` section, which says which
-// items are multiple-answer, is already removed by INSTRUCTOR_MARKER below.
+// An answer is a paragraph opening with `*Answer:*`, `*Accepted answers:*` or
+// `*Accepted answer:*` (the last two list the alternatives a short-answer item
+// takes). The rationale wraps over as many lines as it needs, so the rule drops
+// from that line to the blank line that ends the paragraph. The
+// `## Canvas import notes` section, which says which items are multiple-answer,
+// is already removed by INSTRUCTOR_MARKER below.
 //
 // Marking the files `draft: true` instead would also keep them out of Canvas,
 // which is the one place they have to reach.
+const ANSWER_OPENERS = ['*Answer:*', '*Accepted answers:*', '*Accepted answer:*']
+
 function stripQuizAnswers(src: string): string {
-  if (!src.includes('*Answer:*')) return src
+  if (!ANSWER_OPENERS.some((opener) => src.includes(opener))) return src
   const kept: string[] = []
   let inAnswer = false
   for (const line of src.split('\n')) {
     if (inAnswer) {
       if (line.trim() !== '') continue
       inAnswer = false
-    } else if (line.startsWith('*Answer:*')) {
+    } else if (ANSWER_OPENERS.some((opener) => line.startsWith(opener))) {
       inAnswer = true
       continue
     }
@@ -74,7 +78,7 @@ function stripQuizAnswers(src: string): string {
 // without the same rule here they stayed on the public website, which is the
 // one place they must not be.
 //
-// Deliberately the same rule as edutools/publish.py strip_instructor_sections:
+// Deliberately the same rule as `stripInstructorSections` in edutools (packages/core/src/publish.ts):
 // split the file into `## ` sections and drop any whose body carries the marker
 // line, so the heading can be called anything and one marker hides a section in
 // both places. Keep the two in step if either changes.
@@ -127,6 +131,10 @@ export default defineConfig({
   cleanUrls: true,
   vite: {
     plugins: [cvPdf()],
+    build: {
+      // The 1.6 MB chunk is the local search index, which loads only when someone opens search.
+      chunkSizeWarningLimit: 2000,
+    },
   },
 
   themeConfig: {
@@ -152,11 +160,7 @@ export default defineConfig({
     },
 
     sidebar: {
-      '/cs117/': { base: '/cs117/', items: cs117() },
-      '/cs155/': { base: '/cs155/', items: cs155() },
-      '/cs208/': { base: '/cs208/', items: cs208() },
       '/cs331/': { base: '/cs331/', items: cs331() },
-      '/cs333/': { base: '/cs333/', items: cs333() },
       '/cs408/': { base: '/cs408/', items: cs408() },
       '/cs425/': { base: '/cs425/', items: cs425() },
       '/cs452/': { base: '/cs452/', items: cs452() },
@@ -172,68 +176,6 @@ export default defineConfig({
   }
 });
 
-function cs117(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: 'CS117',
-      items: [
-        { text: 'Syllabus', link: 'index'},
-        { text: 'Grading Rubric', link: 'grading-rubric' },
-      ]
-    }
-  ]
-}
-function cs155(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: 'CS155',
-      items: [
-        { text: 'Syllabus', link: 'index'}
-      ]
-    },
-    {
-      text: 'Homework',
-      items: [
-      { text: 'Configure GitHub', link: 'hw/hw1'},
-      { text: 'Submit a Patch', link: 'hw/hw2'},
-      { text: 'Create a GitHub Page', link: 'hw/hw3'}
-      ]
-    },
-    {
-      text: 'Course materials',
-      items: [
-        { text: 'Course Introduction', link: 'course-introduction' },
-        { text: 'Git Introduction', link: 'git-introduction' },
-        { text: 'Git Basics', link: 'git-basics' },
-        { text: 'Git Branching and Merging', link: 'git-branching-and-merging' },
-     	{ text: 'Github', link: 'github' },
-      ]
-    }
-  ]
-}
-function cs208(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: 'CS208',
-      items: [
-        { text: 'Syllabus', link: 'index'},
-        { text: 'Grading Rubric', link: 'grading-rubric' },
-      ]
-    },
-    {
-      text: 'Course materials',
-      collapsed: false,
-      items: [
-        { text: 'Course Introduction', link: 'course-introduction' },
-        { text: 'HTML and CSS Introduction', link: 'html-css-introduction' },
-        { text: 'JavaScript Introduction', link: 'javascript-introduction' },
-        { text: 'Full Stack Introduction', link: 'fullstack-introduction' },
-        { text: 'Relational Databases and SQL', link: 'relational-databases-and-sql' },
-        { text: 'Agile Development', link: 'agile-development' },
-      ]
-    }
-  ]
-}
 function cs331(): DefaultTheme.SidebarItem[] {
   return [
     {
@@ -275,7 +217,7 @@ function cs331(): DefaultTheme.SidebarItem[] {
         { text: '3. Law, Ethics, and Privacy', link: 'notes/week-03-overview', collapsed: true, items: [{ text: '3.01 Readings and Notes', link: 'notes/week-03-law-ethics-and-privacy' }] },
         { text: '4. Risk and Threat Modeling', link: 'notes/week-04-overview', collapsed: true, items: [{ text: '4.01 Readings and Notes', link: 'notes/week-04-risk-and-threat-modeling' }] },
         { text: '5. Authentication and Credentials', link: 'notes/week-05-overview', collapsed: true, items: [{ text: '5.01 Readings and Notes', link: 'notes/week-05-authentication-and-credentials' }] },
-        { text: '6. Authorisation and Access', link: 'notes/week-06-overview', collapsed: true, items: [{ text: '6.01 Readings and Notes', link: 'notes/week-06-authorisation-and-access-control' }] },
+        { text: '6. Authorization and Access', link: 'notes/week-06-overview', collapsed: true, items: [{ text: '6.01 Readings and Notes', link: 'notes/week-06-authorisation-and-access-control' }] },
         { text: '7. Symmetric Cryptography', link: 'notes/week-07-overview', collapsed: true, items: [{ text: '7.01 Readings and Notes', link: 'notes/week-07-symmetric-cryptography' }] },
         { text: '8. Public-Key Cryptography', link: 'notes/week-08-overview', collapsed: true, items: [{ text: '8.01 Readings and Notes', link: 'notes/week-08-public-key-cryptography' }] },
         { text: '9. Review and Midterm', link: 'notes/week-09-overview', collapsed: true, items: [{ text: '9.01 Readings and Notes', link: 'notes/week-09-review-and-midterm' }] },
@@ -336,24 +278,6 @@ function cs331(): DefaultTheme.SidebarItem[] {
         { text: 'D4 - Security in the News', link: 'discussions/d04-network-security-in-the-news' },
         { text: 'D5 - A Current Failure',    link: 'discussions/d05-current-security-failure' },
         { text: 'D6 - Final Reflection',     link: 'discussions/d06-final-reflection' },
-      ]
-    }
-  ]
-}
-function cs333(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: 'CS333',
-      items: [
-        { text: 'Syllabus', link: 'index'},
-      ]
-    },
-    {
-      text: 'Course materials',
-      collapsed: false,
-      items: [
-        { text: 'Research Paper', link: 'research-paper'},
-        { text: 'Presentation', link: 'presentation'},
       ]
     }
   ]
