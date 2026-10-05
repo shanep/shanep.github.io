@@ -8,9 +8,9 @@
       "title": "A1 - Speaking the Application Layer"
     },
     "activities/a1-worksheet.pdf": {
-      "canvas_id": "25109507",
+      "canvas_id": "25324573",
       "extra": {
-        "size": "157542"
+        "size": "156307"
       },
       "kind": "file",
       "page_url": "",
@@ -24,9 +24,9 @@
       "title": "A2 - Stop Typing Your Password"
     },
     "activities/a2-worksheet.pdf": {
-      "canvas_id": "25109510",
+      "canvas_id": "25324574",
       "extra": {
-        "size": "112818"
+        "size": "112884"
       },
       "kind": "file",
       "page_url": "",
@@ -40,7 +40,7 @@
       "title": "A3 - Interrogating the Transport Layer with Claude Code"
     },
     "activities/a3-worksheet.pdf": {
-      "canvas_id": "25241135",
+      "canvas_id": "25324575",
       "extra": {
         "size": "152074"
       },
@@ -136,9 +136,9 @@
       "title": "A9 - Who Are You Really Talking To?"
     },
     "activities/a9-worksheet.pdf": {
-      "canvas_id": "25309745",
+      "canvas_id": "25324576",
       "extra": {
-        "size": "117225"
+        "size": "116929"
       },
       "kind": "file",
       "page_url": "",
@@ -161,9 +161,9 @@
       "title": "tcpmeter.py"
     },
     "assignments/cs425_relay.py": {
-      "canvas_id": "25207225",
+      "canvas_id": "25324577",
       "extra": {
-        "size": "14058"
+        "size": "14297"
       },
       "kind": "file",
       "page_url": "",
