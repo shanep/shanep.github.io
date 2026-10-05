@@ -1,11 +1,13 @@
 <!-- markdownlint-disable-next-line -->
 ## Minimum Standards
 
-All code must compile and run on the department computers in the Kount Computer Lab (CCP 241).
-Code is compiled and tested on the command line using the provided scripts — your instructor will
-**not** use an IDE to build or test your submission. You are welcome to develop in any IDE, but
-always verify your code compiles and runs cleanly from the terminal before submitting to avoid
-accidentally introducing IDE-specific dependencies.
+All code must compile and run on Onyx, the department's Linux cluster. Onyx and the machines in the
+Kount Computer Lab (CCP 241) are the same cluster: use `onyx.boisestate.edu` when you work remotely
+and the lab machines when you are on campus. Code is compiled and tested on the command line using
+the provided scripts, and your instructor will **not** use an IDE to build or test your
+submission. You are welcome to develop in any IDE, but always verify your code compiles and runs
+cleanly from the terminal before submitting to avoid accidentally introducing IDE-specific
+dependencies.
 
 Projects are designed to satisfy specific learning objectives, so you are required to solve the
 problem as described in the specification. For example, if the spec asks for a linked list but you
@@ -24,7 +26,7 @@ Your code will be run against the provided tests and any additional tests you au
 may include both automated and manual tests where automation is not feasible.
 
 **How many tests should you write?** At a minimum, write at least one test per **public** function
-or method — including any untested functions provided to you in the starter code. Always test both
+or method, including any untested functions provided to you in the starter code. Always test both
 valid and invalid inputs. Your program must not crash on bad data.
 
 ::: warning
@@ -35,19 +37,19 @@ verify the provided tests pass will lose points.
 :::
 
 For UI components or other areas where automated testing is not practical, you will be given a pass
-on automated testing — but you must document your manual test cases in comments in the source code.
+on automated testing, but you must document your manual test cases in comments in the source code.
 
 You are **not** allowed to modify the instructor-provided tests. If you believe a provided test
 contains a bug, bring it to office hours. You must pass the tests as written.
 
 Testing includes but is not limited to:
 
-- **User input validation** — bad input must not crash the program
-- **Function argument validation** — handle `NULL`, undefined, negative, or out-of-range values
-- **Return value checking** — verify functions return the expected values
-- **Loop invariants** — define [loop invariants](https://en.wikipedia.org/wiki/Loop_invariant) where appropriate
-- **Header file conformance** — implement headers exactly as defined
-- **API compliance** — use the specific API calls listed in the specification
+- **User input validation**: bad input must not crash the program
+- **Function argument validation**: handle `NULL`, undefined, negative, or out-of-range values
+- **Return value checking**: verify functions return the expected values
+- **Loop invariants**: define [loop invariants](https://en.wikipedia.org/wiki/Loop_invariant) where appropriate
+- **Header file conformance**: implement headers exactly as defined
+- **API compliance**: use the specific API calls listed in the specification
 
 ### Code Coverage
 
@@ -66,7 +68,7 @@ will result in a **0%** for the testing section of the rubric.
 ## General Coding Guidelines
 
 The following guidelines apply to all projects. Your submission will be **spot checked**, and you
-will lose **5 points per violation** found. Not every issue will be caught in every project — but
+will lose **5 points per violation** found. Not every issue will be caught in every project, but
 do not assume a clean score on one project means these rules will be overlooked on future ones.
 
 ### Global Variables
@@ -75,7 +77,7 @@ Public global variables are **banned**. Private, protected, or stack-local varia
 you genuinely believe a global variable is the only solution, you must document clearly why in a
 comment.
 
-Exceptions exist when dealing with legacy APIs, device drivers, or poorly designed SDKs — these
+Exceptions exist when dealing with legacy APIs, device drivers, or poorly designed SDKs. These
 cases will be explicitly called out in the project spec.
 
 Global state makes concurrent and asynchronous code much harder to write correctly. Even if your
@@ -89,12 +91,12 @@ consistent. There is no excuse for poorly formatted code when your editor
 [can do it for you](https://stackoverflow.com/questions/29973357/how-do-you-format-code-in-visual-studio-code-vscode).
 
 As [Purdue's Writing Lab](https://owl.purdue.edu/owl/general_writing/academic_writing/paragraphs_and_paragraphing/index.html)
-notes, good structure greatly aids comprehension. The same applies to source code — just because
+notes, good structure greatly aids comprehension. The same applies to source code. Just because
 the compiler ignores whitespace doesn't mean your reader does.
 
 ### Spelling and Grammar
 
-Code comments and documentation should be readable. Spell-check your work — a
+Code comments and documentation should be readable. Spell-check your work. A
 [spell checker extension](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 for VS Code even handles camelCase identifiers. The bar is clarity: if a reader cannot understand
 what you are trying to say, points will be deducted.
@@ -114,7 +116,7 @@ Two things are required for documentation credit:
 
 1. Every public function, method, or class must have a doc-comment describing what it does, what
    each parameter means, and what it returns.
-2. Inline comments inside a function are only needed for non-obvious logic — explain **why**, not
+2. Inline comments inside a function are only needed for non-obvious logic. Explain **why**, not
    what the code does.
 
 Use the appropriate tool for the language:
@@ -169,8 +171,8 @@ function updateMouseLocation(x, y) {
 All warnings from the compiler, interpreter, or static analysis tools must be fixed. Warnings are
 never acceptable in submitted code.
 
-In the rare case that a warning truly cannot be resolved — due to assignment constraints or an
-external dependency — your instructor will explicitly call this out and provide instructions for
+In the rare case that a warning truly cannot be resolved, due to assignment constraints or an
+external dependency, your instructor will explicitly call this out and provide instructions for
 suppressing it. You may **not** disable warnings without that explicit permission.
 
 ::: warning
