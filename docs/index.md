@@ -13,13 +13,13 @@ hero:
       text: CV
       link: /cv/
     - theme: alt
-      text: research
-      link: /research/index
+      text: Research
+      link: /research/
     - theme: alt
-      text: teaching
-      link: /teaching/index
+      text: Teaching
+      link: /teaching/
   image:
-    src: /images/shane_panter.jpeg
+    src: /images/shane_panter_small.jpeg
     alt: Shane K. Panter
 ---
 

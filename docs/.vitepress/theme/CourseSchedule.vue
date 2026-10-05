@@ -64,7 +64,7 @@ function weekRange(w: Week): string {
   if (w.days && w.days.length > 0) {
     const first = fmt(weekDate(w.week, 0))
     const last  = fmt(weekDate(w.week, w.days.length - 1))
-    return first === last ? first : `${first} – ${last}`
+    return first === last ? first : `${first} to ${last}`
   }
   const base = new Date(props.startDate + 'T12:00:00')
   const weekStart = new Date(base)
