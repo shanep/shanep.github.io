@@ -21,5 +21,5 @@
 
 ---
 
-> Need additional support in Canvas? Select **Help** in the navigation menu to access a menu of
+> Need additional support in Canvas? Select **Info & Resources** in the navigation menu to access a menu of
 > support resources. You can also [contact the Help Desk](https://www.boisestate.edu/oit/assistance/).
