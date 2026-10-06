@@ -5,7 +5,7 @@ prev: false
 
 # A4 - Where Does This Datagram Go?
 
-**Week 7 · 20 points · pass/fail · one paper worksheet per group, turned in before you leave**
+**Week 7 · 20 points · pass/fail · one page of handwritten notes each, turned in at the end of class Thursday**
 
 ## Why you are doing this
 
@@ -22,30 +22,34 @@ This one is **instructor led**, like A2. I do each step on the projector, you ru
 the same command on Onyx, and we do not move on until the room has caught up. It
 takes about 40 minutes.
 
+You work on your own today, not in a group. The worksheet is a single page for
+your own handwritten notes: what you expected, what you saw, and why. The point
+is to leave with notes on chapter 4 written in your own hand, not to finish a set
+of questions.
+
 ::: warning
 
-One paper worksheet per group, turned in before you leave. Graded pass/fail, and
-every round attempted in good faith is a pass. A wrong prediction costs you
-nothing, but write it down **before** we run the command.
+Everyone turns in their own page of notes at the end of class on Thursday.
+Graded pass/fail: notes in good faith for every round is a pass. A wrong
+prediction costs you nothing, but write it down **before** we run the command.
 
 :::
 
 ## Before you start
 
-- **Groups of 3 or 4.** One scribe owns the worksheet and puts everyone's name on
-  it.
+- **Grab a notes sheet** and put your name on it.
 - **Everyone logs into Onyx with `ssh onyx`**, the shortcut you set up in
   [A2](./a2-stop-typing-your-password.md). If yours still asks for a password,
-  share a screen with someone whose does not, and finish A2 steps 1 to 3 after
-  class.
+  follow along on a neighbor's screen, and finish A2 steps 1 to 3 after class.
 - **Everything today runs on Onyx**, so it is the same for every laptop in the
   room.
 
 ## How every round works
 
-Each round is the same three beats, and the worksheet has a box for each:
+Each round is the same three beats, and your notes for each round should cover
+all three:
 
-1. **Predict.** I ask the question. Your group writes an answer.
+1. **Predict.** I ask the question. You write down your guess.
 2. **Run.** We all run the command on Onyx.
 3. **Check.** Was the prediction right? Which part of chapter 4 says why?
 
@@ -68,7 +72,7 @@ eno12399np0      UP             132.178.227.11/25
 **Predict:** how many addresses are in Onyx's subnet, and how many of them can be
 given to hosts?
 
-**Check:** work it out in binary on the worksheet. A `/25` means the first 25 bits
+**Check:** work it out in binary in your notes. A `/25` means the first 25 bits
 are the network and the last 7 identify the interface. Write the last octet of
 `132.178.227.11` in binary, draw the line after the first bit, and find the
 network address, the broadcast address, the usable range, and the host count.
@@ -207,14 +211,18 @@ could match on, and what it might do with a match. (sections 4.4 and 4.5)
 
 **Download: [a4-worksheet.pdf](./a4-worksheet.pdf)**
 
-The printed worksheet is one page: a box per round for the prediction, the
-result, and the check questions, plus the exit question.
+The printed worksheet is one page of ruled boxes, one per round plus the exit
+question. Each box names the command and gives a one line cue for what is worth
+writing down. There are no questions to answer on it; the questions on this page
+are what we talk through as a room.
 
 ## Instructor Notes
 
 Instructor note, not shown to students.
 
-**Print the worksheet, and the key for yourself.**
+**Print the worksheet, and the key for yourself.** The worksheet is a one page
+notes sheet, one per student. The key still answers every check question on this
+page, so it is the reference for the discussion, not for grading.
 
 ```bash
 ./scripts/cs425/a4-where-does-it-go.sh handout
