@@ -13,7 +13,7 @@ ROOT=$(cd "$HERE/../.." && pwd)
 
 export HANDOUT_HTML="$HERE/a4-where-does-it-go.html"
 export HANDOUT_PDF="$ROOT/docs/public/cs425/activities/a4-worksheet.pdf"
-export HANDOUT_PAGES=2
+export HANDOUT_PAGES=1
 
 # The key stays out of docs/public, which is copied verbatim onto the website.
 export KEY_HTML="$HERE/a4-where-does-it-go-key.html"

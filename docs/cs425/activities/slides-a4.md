@@ -224,4 +224,4 @@ forwarding table, its MTU, and the path to Salt Lake City.
 ssh onyx
 ```
 
-Grab a worksheet. We predict first, then we look.
+Grab a notes sheet: it is yours, not your group's. We predict first, then we look.
