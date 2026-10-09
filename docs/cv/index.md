@@ -89,8 +89,8 @@ Computer Science department at Boise State and at external universities.
 <div class="summary">
 
 I have been Co-PI on two funded NSA grants totaling $645,890 that bring cybersecurity
-education to K-12 teachers and classrooms. I am preparing an NSF proposal as PI, with
-Nasir Eisty as Co-PI, that extends my dissertation work on technical lag and software
+education to K-12 teachers and classrooms. I am preparing an NSF proposal as Co-PI, with
+Nasir Eisty as PI, that extends my dissertation work on technical lag and software
 abandonment.
 
 </div>
@@ -102,7 +102,7 @@ abandonment.
 
 ### In Preparation
 
-- **Abandonment-Aware Update Management in Heterogeneous System Software Stacks**, NSF. PI (Co-PI: Nasir Eisty, University of Tennessee, Knoxville). Planned submission February 2027.
+- **System Software for Detecting, Resolving, and Containing Terminal Technical Lag**, NSF CSR. Co-PI (PI: Nasir Eisty, University of Tennessee, Knoxville). Planned submission October 2026.
 
 ### Submitted
 
@@ -180,7 +180,7 @@ nonprofits, and Boise State faculty.
 - **CS401** Introduction to Web Development, course coordinator, Spring 2020 - Fall 2024
 - **CS408** Full Stack Web Development, course coordinator, Fall 2024 - present
 - **CS425** Computer Networks
-- **CS452** Operating Systems, course coordinator, Fall 2019 - present
+- **CS452 (453)** Operating Systems, taught Fall 2014 - present, course coordinator Fall 2019 - present
 - **CS471** Software Engineering
 - **CS481** Senior Design, course coordinator, Spring 2018 - Spring 2021
 - **CS516** Introduction to Web Development, course coordinator, Spring 2020 - Spring 2022
