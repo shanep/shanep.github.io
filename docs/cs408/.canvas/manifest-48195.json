@@ -5,6 +5,16 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "9226fbd7892d6364",
+          "settings": "3bf972c719b6cf1b"
+        },
+        "repo": {
+          "settings": "3bf972c719b6cf1b"
+        }
+      },
       "title": "01.05 Personalize Your Canvas Profile (15 min)"
     },
     "assignments/02-02-database-lab.md": {
@@ -12,6 +22,14 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "ffc8659595c56b8c",
+          "settings": "3c20f5bcb12cbe00"
+        },
+        "repo": {}
+      },
       "title": "02.02 Database Lab (4- 8 hrs)"
     },
     "assignments/04-01-mini-lab-warmup.md": {
@@ -19,6 +37,16 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "05cf91fc719c829f",
+          "settings": "6ee6a7eec4fa5478"
+        },
+        "repo": {
+          "settings": "6ee6a7eec4fa5478"
+        }
+      },
       "title": "04.01 - Mini-Lab Warmup"
     },
     "assignments/05-01-project-specification.md": {
@@ -26,6 +54,16 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "ddd5309de0b6e845",
+          "settings": "96862555233e9658"
+        },
+        "repo": {
+          "settings": "96862555233e9658"
+        }
+      },
       "title": "05.01 Project Specification"
     },
     "assignments/06-02-project-specification.md": {
@@ -33,6 +71,17 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "62d1970af258e8c7",
+          "rubric": "8ef738278f6411e8",
+          "settings": "bea9d685c523e78f"
+        },
+        "repo": {
+          "settings": "bea9d685c523e78f"
+        }
+      },
       "title": "06.02 - Project Specification (Final Draft)"
     },
     "assignments/07-01-setup.md": {
@@ -40,6 +89,18 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "15b74880780eda5f",
+          "rubric": "ec7586d0852645e5",
+          "settings": "d9d361bbc1f0a113"
+        },
+        "repo": {
+          "rubric": "ec7586d0852645e5",
+          "settings": "d9d361bbc1f0a113"
+        }
+      },
       "title": "07.01 - Setup"
     },
     "assignments/07-02-ec2-and-project-configuration.md": {
@@ -47,6 +108,17 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "5fdfc6c4fcb553fd",
+          "rubric": "7afbd1e877858072",
+          "settings": "477ced5d76c64090"
+        },
+        "repo": {
+          "settings": "477ced5d76c64090"
+        }
+      },
       "title": "07.02 - EC2 and Project Configuration"
     },
     "assignments/16-02-end-of-semester-student-evaluation.md": {
@@ -54,6 +126,16 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "78d769603889e390",
+          "settings": "964fd3d02a555050"
+        },
+        "repo": {
+          "settings": "964fd3d02a555050"
+        }
+      },
       "title": "16.02 End of Semester Student Evaluation (15 min)"
     },
     "assignments/16-03-finding-typos-bugs-and-improvements.md": {
@@ -61,6 +143,16 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "e828cffd4a9773db",
+          "settings": "6b5f29424b7b87c2"
+        },
+        "repo": {
+          "settings": "6b5f29424b7b87c2"
+        }
+      },
       "title": "16.03 Finding Typos, Bugs, and Improvements (15 min)"
     },
     "discussions/01-03-class-introductions.md": {
@@ -70,6 +162,16 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "b51fc961d4cf0879",
+          "settings": "d988505206c57746"
+        },
+        "repo": {
+          "settings": "d988505206c57746"
+        }
+      },
       "title": "01.03 Class Introductions (30 min - 1 hr)"
     },
     "discussions/01-04-ai-web-development-and-job-security.md": {
@@ -79,6 +181,16 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "d34137351df08be0",
+          "settings": "3488c1e3a43a73e9"
+        },
+        "repo": {
+          "settings": "3488c1e3a43a73e9"
+        }
+      },
       "title": "01.04 AI, Web Development, and Job Security"
     },
     "discussions/03-01-tech-stack-survey.md": {
@@ -88,6 +200,18 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "3b266c2f7bd92553",
+          "rubric": "52fa7554aef866b0",
+          "settings": "7c164fa40d08bc5e"
+        },
+        "repo": {
+          "rubric": "52fa7554aef866b0",
+          "settings": "7c164fa40d08bc5e"
+        }
+      },
       "title": "03.01 Tech Stack Survey"
     },
     "discussions/06-01-project-specification-peer-review.md": {
@@ -97,6 +221,17 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "a8dbef8d4b2c86fb",
+          "rubric": "68e7bd6a5eeed4a6",
+          "settings": "a91b0476f8e318dd"
+        },
+        "repo": {
+          "rubric": "68e7bd6a5eeed4a6"
+        }
+      },
       "title": "6.01 Project Specification Peer Review"
     },
     "discussions/08-01-final-project-checkpoint-1.md": {
@@ -106,6 +241,17 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "0d02ec46ebd6ecdd",
+          "rubric": "6c2bd0877a08ae8e",
+          "settings": "4b4b24272d821af2"
+        },
+        "repo": {
+          "settings": "4b4b24272d821af2"
+        }
+      },
       "title": "08.01 Final Project Checkpoint 1"
     },
     "discussions/09-01-final-project-checkpoint-2.md": {
@@ -115,6 +261,17 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "12f782885467724e",
+          "rubric": "6c2bd0877a08ae8e",
+          "settings": "46adc7a8bc640e03"
+        },
+        "repo": {
+          "settings": "46adc7a8bc640e03"
+        }
+      },
       "title": "09.01 Final Project Checkpoint 2"
     },
     "discussions/10-01-final-project-checkpoint-3.md": {
@@ -124,6 +281,17 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "ad280fed3605f2bd",
+          "rubric": "6c2bd0877a08ae8e",
+          "settings": "af13148f7b9cdad0"
+        },
+        "repo": {
+          "settings": "af13148f7b9cdad0"
+        }
+      },
       "title": "10.01 Final Project Checkpoint 3"
     },
     "discussions/11-01-final-project-checkpoint-4.md": {
@@ -133,6 +301,17 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "02e11cbb24b4b235",
+          "rubric": "6c2bd0877a08ae8e",
+          "settings": "881e333e42f792ed"
+        },
+        "repo": {
+          "settings": "881e333e42f792ed"
+        }
+      },
       "title": "11.01 Final Project Checkpoint 4"
     },
     "discussions/12-01-final-project-checkpoint-5.md": {
@@ -142,6 +321,17 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "8c7dec4af591b810",
+          "rubric": "6c2bd0877a08ae8e",
+          "settings": "af65af97969f9661"
+        },
+        "repo": {
+          "settings": "af65af97969f9661"
+        }
+      },
       "title": "12.01 Final Project Checkpoint 5"
     },
     "discussions/13-01-final-project-checkpoint-6.md": {
@@ -151,6 +341,17 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "99183b7262886246",
+          "rubric": "6c2bd0877a08ae8e",
+          "settings": "01caa60bb383b44d"
+        },
+        "repo": {
+          "settings": "01caa60bb383b44d"
+        }
+      },
       "title": "13.01 Final Project Checkpoint 6"
     },
     "discussions/14-01-final-project-checkpoint-7.md": {
@@ -160,6 +361,17 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "67c10768081d903e",
+          "rubric": "6c2bd0877a08ae8e",
+          "settings": "10842adc29517fae"
+        },
+        "repo": {
+          "settings": "10842adc29517fae"
+        }
+      },
       "title": "14.01 Final Project Checkpoint 7"
     },
     "discussions/16-01-project-showcase.md": {
@@ -169,6 +381,15 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "d819f71f9bcc3838",
+          "rubric": "45c498515991a2ac",
+          "settings": "078dc87ec57ed667"
+        },
+        "repo": {}
+      },
       "title": "16.01 Project Showcase (4 -6 hrs)"
     },
     "discussions/course-questions.md": {
@@ -178,6 +399,16 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "930581faf55f1657",
+          "settings": "ffed19d9948aa472"
+        },
+        "repo": {
+          "settings": "ffed19d9948aa472"
+        }
+      },
       "title": "Course Questions"
     },
     "getting-started.md": {
@@ -185,6 +416,16 @@
       "extra": {},
       "kind": "page",
       "page_url": "getting-started-module-overview",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "d778b0c22623d9bc",
+          "settings": "8f75ee589274da19"
+        },
+        "repo": {
+          "settings": "8f75ee589274da19"
+        }
+      },
       "title": "Getting Started Module Overview"
     },
     "home.md": {
@@ -192,6 +433,16 @@
       "extra": {},
       "kind": "page",
       "page_url": "home-page",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "71adea99fbed4ed5",
+          "settings": "64abfcf21e62e83a"
+        },
+        "repo": {
+          "settings": "64abfcf21e62e83a"
+        }
+      },
       "title": "Home Page"
     },
     "images/2026-09-04_12-52-33.png": {
@@ -201,6 +452,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "17dea58e142e567f"
+        },
+        "repo": {
+          "body": "8f15cd4ced1d4b1c"
+        }
+      },
       "title": "2026-09-04_12-52-33.png"
     },
     "images/2026-09-04_13-09-12.png": {
@@ -210,6 +470,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "f0ae9e914262bab1"
+        },
+        "repo": {
+          "body": "929e8eb88fb6b64d"
+        }
+      },
       "title": "2026-09-04_13-09-12.png"
     },
     "images/2026-09-04_13-11-25.png": {
@@ -219,6 +488,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "04396afebe210b41"
+        },
+        "repo": {
+          "body": "c1cb787da80b2814"
+        }
+      },
       "title": "2026-09-04_13-11-25.png"
     },
     "images/2026-09-04_13-14-01.png": {
@@ -228,6 +506,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "7a7fc3ac1b01b928"
+        },
+        "repo": {
+          "body": "d4d3ece60eb31599"
+        }
+      },
       "title": "2026-09-04_13-14-01.png"
     },
     "images/2026-09-04_13-19-10.png": {
@@ -237,6 +524,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "3dfdafd9b64deb5e"
+        },
+        "repo": {
+          "body": "834f6650de800e8c"
+        }
+      },
       "title": "2026-09-04_13-19-10.png"
     },
     "index.md": {
@@ -244,6 +540,13 @@
       "extra": {},
       "kind": "syllabus",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "06fec7d26d020dbc"
+        },
+        "repo": {}
+      },
       "title": "Fa26 - CS 408 - Full Stack Web Development"
     },
     "instructor.md": {
@@ -251,6 +554,16 @@
       "extra": {},
       "kind": "page",
       "page_url": "instructor-information",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "9d0dece214d03578",
+          "settings": "f1dc88d9be758be9"
+        },
+        "repo": {
+          "settings": "f1dc88d9be758be9"
+        }
+      },
       "title": "Instructor Information"
     },
     "notes/01-01-readme-introduction.md": {
@@ -258,6 +571,16 @@
       "extra": {},
       "kind": "page",
       "page_url": "01-dot-01-readme-introduction",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "f52f1078038133e6",
+          "settings": "64156eb6e9e4dd64"
+        },
+        "repo": {
+          "settings": "64156eb6e9e4dd64"
+        }
+      },
       "title": "01.01 README - Introduction"
     },
     "notes/01-06-ai-class-policy.md": {
@@ -265,6 +588,14 @@
       "extra": {},
       "kind": "page",
       "page_url": "01-dot-06-ai-class-policy",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "84ee83c235d84c16",
+          "settings": "2eb4c843dcca42c8"
+        },
+        "repo": {}
+      },
       "title": "01.06 AI Class Policy "
     },
     "notes/01-06-css-layout.md": {
@@ -286,6 +617,16 @@
       "extra": {},
       "kind": "page",
       "page_url": "01-dot-07-cs208-html",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "99a767f6333b3d25",
+          "settings": "5f9c379346a91f26"
+        },
+        "repo": {
+          "settings": "5f9c379346a91f26"
+        }
+      },
       "title": "01.07 CS208 HTML"
     },
     "notes/01-08-cs208-css-and-accessibility.md": {
@@ -293,6 +634,14 @@
       "extra": {},
       "kind": "page",
       "page_url": "01-dot-08-cs208-css-and-accessiblity",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "7be7d1bc64ebbc50",
+          "settings": "0ee6b2dcdb7a7c54"
+        },
+        "repo": {}
+      },
       "title": "01.08 CS208  CSS and Accessiblity"
     },
     "notes/02-01-cs208-javascript.md": {
@@ -300,6 +649,14 @@
       "extra": {},
       "kind": "page",
       "page_url": "02-dot-01-cs208-javascript",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "46cd9600021520e5",
+          "settings": "900c0f0ba6f34c1f"
+        },
+        "repo": {}
+      },
       "title": "02.01 CS208 JavaScript "
     },
     "notes/03-00-readme.md": {
@@ -307,6 +664,16 @@
       "extra": {},
       "kind": "page",
       "page_url": "03-dot-00-readme",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "f35d1cd06cad1e5d",
+          "settings": "507c40630ccae74d"
+        },
+        "repo": {
+          "settings": "507c40630ccae74d"
+        }
+      },
       "title": "03.00 README"
     },
     "notes/08-00-readme.md": {
@@ -314,6 +681,16 @@
       "extra": {},
       "kind": "page",
       "page_url": "08-dot-00-readme",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "be7d07f46bcdd67f",
+          "settings": "fb73355953b7950d"
+        },
+        "repo": {
+          "settings": "fb73355953b7950d"
+        }
+      },
       "title": "08.00 README"
     },
     "notes/final-project-checkpoint-example-post.md": {
@@ -321,7 +698,91 @@
       "extra": {},
       "kind": "page",
       "page_url": "final-project-checkpoint-example-post",
+      "synced": {
+        "at": "2026-10-13T20:25:38.345Z",
+        "canvas": {
+          "body": "93d461ef7edec565",
+          "settings": "67da0716ba9470a8"
+        },
+        "repo": {
+          "settings": "67da0716ba9470a8"
+        }
+      },
       "title": "Final Project Checkpoint Example Post"
+    }
+  },
+  "modules": {
+    "[[module]] Course Resources": {
+      "at": "2026-10-13T20:25:38.345Z",
+      "canvas": {
+        "items": "273c3a34499562e4"
+      },
+      "repo": {
+        "items": "273c3a34499562e4"
+      }
+    },
+    "[[module]] Week 1 - Introduction and Overview": {
+      "at": "2026-10-13T20:25:38.345Z",
+      "canvas": {
+        "items": "441a2dc10f65a8aa"
+      },
+      "repo": {
+        "items": "441a2dc10f65a8aa"
+      }
+    },
+    "[[module]] Week 16 - Final Project Showcase": {
+      "at": "2026-10-13T20:25:38.345Z",
+      "canvas": {
+        "items": "1d17bbaaf5896054"
+      },
+      "repo": {
+        "items": "1d17bbaaf5896054"
+      }
+    },
+    "[[module]] Week 2 - CS208 Database Review": {
+      "at": "2026-10-13T20:25:38.345Z",
+      "canvas": {
+        "items": "abed4708937dc417"
+      },
+      "repo": {
+        "items": "f6a57e5a8aaaee58"
+      }
+    },
+    "[[module]] Week 5 and 6 - Project Specification": {
+      "at": "2026-10-13T20:25:38.345Z",
+      "canvas": {
+        "items": "dceaa461fa478aae"
+      },
+      "repo": {
+        "items": "dceaa461fa478aae"
+      }
+    },
+    "[[module]] Week 7 - AWS": {
+      "at": "2026-10-13T20:25:38.345Z",
+      "canvas": {
+        "items": "103734a834682849"
+      },
+      "repo": {
+        "items": "103734a834682849"
+      }
+    },
+    "[[module]] Week 8 - 15 - Final Project implementation": {
+      "at": "2026-10-13T20:25:38.345Z",
+      "canvas": {
+        "items": "80072ce30d6015f1"
+      },
+      "repo": {
+        "items": "80072ce30d6015f1"
+      }
+    },
+    "[[module]] Weeks 3 and 4 - Tech Stack and MiniLab": {
+      "at": "2026-10-13T20:25:38.345Z",
+      "canvas": {
+        "items": "ea71d94837f58c2b"
+      },
+      "repo": {
+        "items": "ea71d94837f58c2b"
+      }
     }
   }
 }
