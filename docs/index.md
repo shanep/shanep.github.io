@@ -44,6 +44,20 @@ hero:
   }
 }
 
+.dr-boom-image {
+  display: inline-block;
+  isolation: isolate;
+  background-color: var(--vp-c-bg);
+}
+
+html:not(.dark) .dr-boom-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  filter: contrast(1.1);
+  mix-blend-mode: multiply;
+}
+
 .VPHero .text {
   font-size: 1.5rem !important;
   line-height: 1.4 !important;
@@ -55,6 +69,8 @@ hero:
   }
 }
 </style>
+
+<div class="dr-boom-image"><img src="/images/dr_boom.png" alt="Dr. BOOM"></div>
 
 ## Bio
 
