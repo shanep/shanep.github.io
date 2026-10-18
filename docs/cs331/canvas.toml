@@ -111,10 +111,9 @@ discussions = ["course-resources/course-questions.md"]
 # and rewrites each page's relative link to the Canvas file.
 #
 # The textbook is here too, and it is the one entry that is not a symlink. The
-# 21 MB PDF stays out of git, under the .gitignore rule for docs/*/docs/*.pdf:
-# "Course textbooks are distributed through Canvas, not this public repo". So it
-# sits in the course directory as a real file, this push is what delivers it to
-# students, and a fresh clone has to have it dropped back in by hand.
+# 21 MB PDF is committed with the course (.gitignore makes an exception for it
+# from the docs/*/docs/*.pdf rule), and this push is what delivers it to
+# students in Canvas.
 files = [
     "images/cs331-banner.svg",
     "data/auth.log",

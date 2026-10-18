@@ -11,8 +11,10 @@ docs/.vitepress/cache
 docs/.vitepress/dist
 node_modules
 
-# Course textbooks are distributed through Canvas, not this public repo
+# Course textbooks are distributed through Canvas, not this public repo. The
+# CS331 CyBOK PDF is the exception: it is part of the course and lives here.
 docs/*/docs/*.pdf
+!docs/cs331/docs/CyBOK_v1.1.0.pdf
 
 # Built by npm run cv:pdf (locally, or by docs:build in the GitHub Action)
 docs/public/panter-cv.pdf

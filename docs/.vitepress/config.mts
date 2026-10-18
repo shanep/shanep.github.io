@@ -95,11 +95,11 @@ function stripInstructorSections(src: string): string {
     .join('')
 }
 
-// Course textbooks sit in docs/<course>/docs/ and reach students through Canvas,
-// because .gitignore keeps them out of this public repo. On the website a link
-// to one is a 404 that the dead-link check never sees (VitePress skips .pdf
-// links), so it points at the publisher's free copy instead. Canvas still gets
-// the uploaded file: edutools reads the markdown, not this config.
+// Course textbooks sit in docs/<course>/docs/ and reach students through Canvas.
+// The site only serves files from docs/public/, so on the website a link to one
+// is a 404 that the dead-link check never sees (VitePress skips .pdf links), and
+// it points at the publisher's free copy instead. Canvas still gets the uploaded
+// file: edutools reads the markdown, not this config.
 const TEXTBOOK_URLS: Record<string, string> = {
   'CyBOK_v1.1.0.pdf': 'https://www.cybok.org/media/downloads/CyBOK_v1.1.0.pdf',
 }
