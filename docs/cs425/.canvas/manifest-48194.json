@@ -101,6 +101,17 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-18T04:08:40.812Z",
+        "canvas": {
+          "body": "389fedfe5667955d",
+          "settings": "f7abc6890460635d"
+        },
+        "repo": {
+          "body": "661dfbfad256dd2a",
+          "settings": "f7abc6890460635d"
+        }
+      },
       "title": "A7 - One Hop at a Time"
     },
     "activities/a7-worksheet.pdf": {
