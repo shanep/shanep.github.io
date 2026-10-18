@@ -35,15 +35,9 @@ jobs:
         uses: actions/configure-pages@v6
       - name: Install dependencies
         run: npm ci
+      # The same pinned markdownlint-cli2 the git hooks run.
       - name: Lint Markdown
-        uses: DavidAnson/markdownlint-cli2-action@v24
-        with:
-          globs: |
-            docs/**/*.md
-            parts/**/*.md
-            shared/**/*.md
-            #node_modules
-            #docs/.vitepress
+        run: npm run lint:md
       # The CV PDF is built from docs/cv/index.md with pandoc and Tectonic.
       # Tectonic downloads only the LaTeX packages the CV uses; caching them
       # takes the build from about a minute and a half to under a second.
@@ -57,7 +51,7 @@ jobs:
         uses: actions/cache@v6
         with:
           path: ${{ runner.temp }}/tectonic-cache
-          key: ${{ runner.os }}-tectonic-${{ hashFiles('scripts/cv/template.tex') }}
+          key: ${{ runner.os }}-tectonic-${{ hashFiles('scripts/cv/template.tex', 'scripts/cv/cv.lua', 'docs/cv/index.md') }}
           restore-keys: |
             ${{ runner.os }}-tectonic-
       - name: Set up Tectonic
