@@ -94,5 +94,6 @@ npm run docs:build   # must pass before pushing; dead links fail the build
 ```
 
 `package.json` forces `vite` to `^6.4.3` through `overrides`, although VitePress 1.6.4 asks
-for vite 5. The override came in with 6fc1be7 to clear the Dependabot alerts on vite 5.
+for vite 5. The override came in on 2026-10-04 ("Update dependencies to clear the Dependabot
+alerts") to clear the alerts on vite 5.
 Drop it once VitePress 2 is stable and depends on a patched vite itself.
