@@ -112,6 +112,14 @@ A rough course outline is shown below.
     - Project checkpoint 7 - Finalization
   - Final Project Demo
 
+## Assessments
+
+| Group                     | Weight |
+| ------------------------- | ------ |
+| Assignments               | 30%    |
+| Final Project             | 50%    |
+| Final Project Checkpoints | 20%    |
+
 <!--@include: ../../parts/syllabus-boiler.md-->
 
 ## Attendance Policy

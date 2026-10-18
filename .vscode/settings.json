@@ -46,7 +46,5 @@
         "yunowork"
     ],
 
-    "livePreview.serverRoot": "./build",
-    "livePreview.defaultPreviewPath": "./build",
     "C_Cpp.intelliSenseEngineFallback": "enabled",
 }

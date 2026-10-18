@@ -158,6 +158,13 @@ export default defineConfig({
   cleanUrls: true,
   vite: {
     plugins: [cvPdf()],
+    resolve: {
+      // A course links shared/course-resources/ in with a symlink. Vite follows
+      // symlinks to the real file by default, which gives those pages a path
+      // outside the course (../shared/...), so they lose the course sidebar
+      // and the edit link pattern below never matches them.
+      preserveSymlinks: true,
+    },
     build: {
       // The 1.6 MB chunk is the local search index, which loads only when someone opens search.
       chunkSizeWarningLimit: 2000,
@@ -299,6 +306,7 @@ function cs408(): DefaultTheme.SidebarItem[] {
     {
       text: 'CS408',
       items: [
+        { text: 'Home',                   link: 'home' },
         { text: 'Syllabus',               link: 'index' },
         { text: 'Schedule',               link: 'schedule/index' },
         { text: 'Getting Started',        link: 'getting-started' },

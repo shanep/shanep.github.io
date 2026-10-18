@@ -184,5 +184,4 @@ expensive enough that attackers move on to easier targets.
 
 - [SDL (Security Development Lifecycle)](https://www.microsoft.com/en-us/securityengineering/sdl/practices) - Microsoft's process for building secure software
 - [CVE Database](https://www.cve.org/) - catalog of known vulnerabilities
-- [Zerodium](https://zerodium.com/program.html) - market for zero-day exploits (shows real-world vulnerability value)
 - [OWASP](https://owasp.org/) - practical secure coding guidance

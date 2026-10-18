@@ -36,9 +36,9 @@ longevity of published research.
   - Impact factor - 6.5 (2023)
 - [ACM Transactions on Software Engineering and Methodology (TOSEM)](https://dl.acm.org/journal/tosem)[^1]
   - Impact factor - 6.6 (2023)
-- [Journal of Systems and Software (JSS)](https://www.journals.elsevier.com/journal-of-systems-and-software)[^1]
+- [Journal of Systems and Software (JSS)](https://www.sciencedirect.com/journal/journal-of-systems-and-software)[^1]
   - Impact factor - 3.7 (2023)
-- [Information and Software Technology](https://www.journals.elsevier.com/information-and-software-technology)[^1]
+- [Information and Software Technology](https://www.sciencedirect.com/journal/information-and-software-technology)[^1]
   - Impact factor - 3.8 (2023)
 - [Empirical Software Engineering](https://www.springer.com/journal/10664)[^1]
   - Impact factor - 3.5 (2023)
