@@ -2,9 +2,17 @@
 
 ## Workflow
 
-- **Work directly on `main`/`master`. No worktrees, no pull requests.** This repo is a
-  single-author site; commit straight to the checked-out branch and push. This overrides
-  the global "every session works in its own git worktree" and "open a pull request" rules.
+- **Each session works in its own worktree and lands on `master`. No pull requests.**
+  Commit on the session's branch, rebase onto `origin/master`, and push with
+  `git push origin HEAD:master`. If another session landed first, fetch, rebase and push
+  again.
+- **The git hooks are the checks.** `.githooks/pre-commit` lints the staged Markdown and
+  `.githooks/pre-push` runs `npm run lint:md` and `npm run docs:build`, the same checks CI
+  runs before it deploys. `npm install` turns them on (the `prepare` script sets
+  `core.hooksPath`), so do not run the build by hand just before pushing.
+- **`.worktreeinclude` lists the ignored files a new worktree needs** (`.env`, the local
+  Claude settings, the course textbook PDFs that `edutools push` uploads). Add to it when a
+  new ignored file is needed to build or push a course.
 
 ## Course content
 

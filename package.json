@@ -11,7 +11,8 @@
     "docs:dev": "vitepress dev docs --port 3000",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "clean": "rm -rf node_modules docs/.vitepress/dist docs/.vitepress/cache",
+    "prepare": "git config core.hooksPath .githooks",
+    "clean":"rm -rf node_modules docs/.vitepress/dist docs/.vitepress/cache",
     "cv:pdf": "scripts/cv/build.sh",
     "lint:md": "npx --yes markdownlint-cli2 \"docs/**/*.md\" \"parts/**/*.md\" \"shared/**/*.md\" \"#node_modules\" \"#docs/.vitepress\""
   },

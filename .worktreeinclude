@@ -1,0 +1,5 @@
+# Ignored files that Overlord copies into each new worktree.
+.env
+.claude/settings.local.json
+# Course textbooks, uploaded to Canvas by edutools push but kept out of git.
+docs/*/docs/*.pdf

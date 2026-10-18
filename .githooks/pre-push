@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Runs the checks CI runs before it deploys: the Markdown lint and the site
+# build, which fails on dead links and on CV PDFs that do not build.
+set -euo pipefail
+
+npm run --silent lint:md
+npm run --silent docs:build
