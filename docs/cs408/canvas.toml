@@ -121,12 +121,6 @@ group = "Assignments"
 [override."discussions/06-01-project-specification-peer-review.md"]
 group = "Final Project"
 
-[override."discussions/13-01-final-project-checkpoint-6.md"]
-group = "Final Project"
-
-[override."discussions/14-01-final-project-checkpoint-7.md"]
-group = "Final Project"
-
 [override."discussions/16-01-project-showcase.md"]
 group = "Final Project"
 
