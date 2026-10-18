@@ -3,6 +3,17 @@
 # build, which fails on dead links and on CV PDFs that do not build.
 set -euo pipefail
 
+# Git lists each ref being pushed on stdin as "<local ref> <local sha> <remote
+# ref> <remote sha>". A deleted branch has a local sha of all zeros, and a push
+# that only deletes branches sends nothing to check.
+checks=no
+while read -r _ local_sha _ _; do
+  case "$local_sha" in
+    *[!0]*) checks=yes ;;
+  esac
+done
+[ "$checks" = no ] && exit 0
+
 # Git hands hooks GIT_DIR without GIT_WORK_TREE, so the git log that VitePress
 # runs from each page's directory resolves paths against the wrong root and
 # every page loses its "Updated at" date.
