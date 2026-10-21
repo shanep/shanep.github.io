@@ -243,6 +243,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "canvas-resources-2",
+      "synced": {
+        "at": "2026-10-21T22:49:26.847Z",
+        "canvas": {
+          "body": "59571283e8003e15",
+          "settings": "76a1d6bf77b30fd6"
+        },
+        "repo": {
+          "body": "fc5e30f0e73b60c8",
+          "settings": "76a1d6bf77b30fd6"
+        }
+      },
       "title": "Canvas Resources"
     },
     "course-resources/course-questions.md": {
@@ -266,6 +277,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "technology-support-2",
+      "synced": {
+        "at": "2026-10-21T22:49:26.847Z",
+        "canvas": {
+          "body": "84f25045fd201eec",
+          "settings": "5567e1d2cbe8c8ec"
+        },
+        "repo": {
+          "body": "a6ea563747b8ca14",
+          "settings": "5567e1d2cbe8c8ec"
+        }
+      },
       "title": "Technology Support"
     },
     "data/auth.log": {
