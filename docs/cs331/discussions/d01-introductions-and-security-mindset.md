@@ -15,7 +15,7 @@
 | One reply | 15 min |
 | **Total** | **45 min** |
 
-## Why this one exists
+## Why are we doing this?
 
 Two reasons. The first is that this is an asynchronous course with students from several
 departments, and it helps everyone (me included) to know who is in the room. The second is that
@@ -45,7 +45,10 @@ Pick **one security failure** and write about it. It can be:
 - Something at a place you have worked, described in a way that does not identify the employer or
   anyone involved.
 
-Do not pick the most famous breach you can think of. Pick one you can say something specific about.
+Do not pick the most famous breach you can think of. Pick one you know well enough to name the
+actual weakness, who or what took advantage of it, and what happened in order, because that is
+what the four paragraphs below ask for. A phishing email you saw up close makes a better post than
+a headline breach you can only sum up in one sentence.
 
 Then, using the definitions from CyBOK §1.3 and the Glossary, write **four short paragraphs**, one
 each, clearly labeled:
