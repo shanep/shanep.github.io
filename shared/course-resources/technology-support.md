@@ -2,7 +2,7 @@
 
 ## Boise State Learning Technology Support
 
-- Use the **Info & Resources** button in the main Canvas navigation menu to:
+- Use the **Help** button in the main Canvas navigation menu to:
   - Access Canvas help articles
   - Contact the Boise State Help Desk for technical support
 - The [University Software page](https://www.boisestate.edu/oit-software/) can provide information
