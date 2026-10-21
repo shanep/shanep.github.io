@@ -12,7 +12,7 @@ OS command injection, and path traversal are the same error against four differe
 they have the same fix: never let untrusted input be parsed as part of the structure.
 
 The week also covers phishing, which sits oddly in a technical chapter until you notice it is the
-same idea again, a person parsing a message and being unable to tell the trustworthy part from the
+same idea again: a person parsing a message and being unable to tell the trustworthy part from the
 attacker-supplied part.
 
 ## Learning Objectives

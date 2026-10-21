@@ -183,6 +183,7 @@ compromised account can reach, which is week 6's least privilege.
 
 Week 15 is the last week of instruction, and it is about what happens after something has already
 gone wrong: what your logs can and cannot tell you, how detection actually gets built, why
-mathematically excellent detectors produce unusable alert queues, and how to write the memo.
+mathematically excellent detectors produce unusable alert queues, and how to write an incident memo,
+the short report Lab 10 asks you to write for the person who has to decide what to do next.
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

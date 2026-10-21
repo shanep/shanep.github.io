@@ -43,7 +43,7 @@ use the whole course. Pick something you find genuinely interesting.
 
 **Due: Thursday of week 15. About 450-550 words.**
 
-Four labeled parts.
+Include four labeled parts in your discussion post.
 
 ### 1. The timeline
 

@@ -59,7 +59,7 @@ record what the interface enforced: that absence is itself a finding.
 
 **Due: Thursday of week 5. About 400-500 words.**
 
-Four labeled parts.
+Include four labeled parts in your discussion post.
 
 ### 1. The policy, as it is
 

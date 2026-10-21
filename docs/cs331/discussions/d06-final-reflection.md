@@ -7,9 +7,10 @@
 A short, honest look back at the seven objectives this course set out to teach. It is graded on
 thoughtfulness and specificity, not on how well you say you did. Saying "I still do not really
 understand X" is worth full credit if you can say *what* about X and *where* you lost the thread.
-That is genuinely useful to me for the next offering.
+That is genuinely useful to me for the next offering, and I am always happy when a student finds a
+way to make the course better.
 
-There is no right answer here and no reason to perform confidence.
+There is no right answer here, and no reason to fake confidence you do not have.
 
 ## Objectives assessed
 

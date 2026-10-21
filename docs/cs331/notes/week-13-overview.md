@@ -8,8 +8,8 @@ The first is a single C function with a bug in it that has been producing securi
 1988. You will read it, look at the assembly a compiler produces from it, and work out precisely why
 an over-long input reaches somewhere it should not.
 
-The second half is the question that matters more. Suppose somebody tells you the bug is fixed:
-what would convince you? That is **assurance**, and it is the only terminal objective in this course
+The second half is the question that matters more. Suppose somebody tells you the bug is fixed.
+What would convince you? That is **assurance**, and it is the only terminal objective in this course
 without a week of its own. It gets the second half of this one, and Lab 8's largest rubric row is
 about it.
 

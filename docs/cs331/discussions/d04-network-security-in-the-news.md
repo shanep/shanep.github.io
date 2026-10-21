@@ -46,7 +46,7 @@ Two rules:
 
 **Due: Thursday of week 11. About 400-500 words.**
 
-Three labeled parts.
+Include three labeled parts in your discussion post.
 
 ### 1. What happened, at which layer
 
