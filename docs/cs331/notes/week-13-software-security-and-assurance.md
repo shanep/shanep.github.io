@@ -4,6 +4,24 @@
 
 What to do this week, and when it is due, is on the [Module 13 Overview](week-13-overview.md).
 
+## Key terms
+
+| Term | Short form |
+| --- | --- |
+| **Buffer overflow** | Writing past the end of an allocated region. |
+| **Stack frame** | The region a function uses for locals, saved registers, and the return address. |
+| **Saved return address** | Where the function jumps when it returns. The classic overwrite target. |
+| **Memory safety** | The property that a program cannot access memory outside what it legitimately owns. |
+| **Stack canary** | A known value checked before return; turns many exploits into crashes. |
+| **ASLR** | Randomized load addresses. |
+| **NX / DEP** | Non-executable data pages. |
+| **Return-oriented programming** | Chaining existing code fragments to work around NX. |
+| **Static analysis** | Examining code without running it. |
+| **Dynamic analysis / fuzzing** | Running the code on many inputs and watching for failures. |
+| **Assurance** | Grounds for confidence that a system meets its security claims. |
+| **SAMM / BSIMM** | Maturity models assessing an organization's software security *practices*. |
+| **Common Criteria** | Evaluation of a *specific product* against stated claims, at a stated rigor. |
+
 ## Readings
 
 | Source | Sections | Printed pages | Length | Time |
@@ -179,24 +197,6 @@ having no ability to detect anything.
 and the Common Criteria evaluates *a specific product against stated claims*. Neither certifies that
 a given release is free of bugs, and conflating process maturity with product security is the most
 common mistake in reading assurance claims.
-
-## Key terms
-
-| Term | Short form |
-| --- | --- |
-| **Buffer overflow** | Writing past the end of an allocated region. |
-| **Stack frame** | The region a function uses for locals, saved registers, and the return address. |
-| **Saved return address** | Where the function jumps when it returns. The classic overwrite target. |
-| **Memory safety** | The property that a program cannot access memory outside what it legitimately owns. |
-| **Stack canary** | A known value checked before return; turns many exploits into crashes. |
-| **ASLR** | Randomized load addresses. |
-| **NX / DEP** | Non-executable data pages. |
-| **Return-oriented programming** | Chaining existing code fragments to work around NX. |
-| **Static analysis** | Examining code without running it. |
-| **Dynamic analysis / fuzzing** | Running the code on many inputs and watching for failures. |
-| **Assurance** | Grounds for confidence that a system meets its security claims. |
-| **SAMM / BSIMM** | Maturity models assessing an organization's software security *practices*. |
-| **Common Criteria** | Evaluation of a *specific product* against stated claims, at a stated rigor. |
 
 ## Looking ahead
 

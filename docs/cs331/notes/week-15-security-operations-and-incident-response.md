@@ -4,6 +4,22 @@
 
 What to do this week, and when it is due, is on the [Module 15 Overview](week-15-overview.md).
 
+## Key terms
+
+| Term | Short form |
+| --- | --- |
+| **Security operations** | The ongoing work of monitoring, detecting, and responding. |
+| **Data source** | What detection draws on: network traffic, flow records, application logs, system and kernel logs, syslog. |
+| **Misuse detection** | Encodes what bad looks like. Precise; catches only what was written down. |
+| **Anomaly detection** | Encodes what normal looks like and flags deviation. Catches the unknown; noisier. |
+| **True / false positive rate** | Fraction of malicious events detected / benign events flagged. |
+| **Base-rate fallacy** | Ignoring how rare the thing is, and so overestimating what an alert means. |
+| **SIEM** | Collects, correlates, and presents events from many sources. |
+| **Alert fatigue** | What a queue of 500 alerts a day produces in the people who have to read it. |
+| **Dwell time** | Time between compromise and detection. |
+| **Containment / eradication / recovery** | Stop the bleeding; remove the attacker; restore service. |
+| **Indicator of compromise** | An observable artifact of an intrusion. |
+
 ## Readings
 
 | Source | Sections | Printed pages | Length | Time |
@@ -188,22 +204,6 @@ Three things that separate a usable memo from a bad one:
   package manifest are no longer evidence. Recovery from a known-good image beats cleaning.
 - **Say what your recommendation costs.** Containment is disruptive by definition. Say what it
   disrupts, so the person approving it knows what they are approving.
-
-## Key terms
-
-| Term | Short form |
-| --- | --- |
-| **Security operations** | The ongoing work of monitoring, detecting, and responding. |
-| **Data source** | What detection draws on: network traffic, flow records, application logs, system and kernel logs, syslog. |
-| **Misuse detection** | Encodes what bad looks like. Precise; catches only what was written down. |
-| **Anomaly detection** | Encodes what normal looks like and flags deviation. Catches the unknown; noisier. |
-| **True / false positive rate** | Fraction of malicious events detected / benign events flagged. |
-| **Base-rate fallacy** | Ignoring how rare the thing is, and so overestimating what an alert means. |
-| **SIEM** | Collects, correlates, and presents events from many sources. |
-| **Alert fatigue** | What a queue of 500 alerts a day produces in the people who have to read it. |
-| **Dwell time** | Time between compromise and detection. |
-| **Containment / eradication / recovery** | Stop the bleeding; remove the attacker; restore service. |
-| **Indicator of compromise** | An observable artifact of an intrusion. |
 
 ## Looking ahead
 

@@ -4,6 +4,22 @@
 
 What to do this week, and when it is due, is on the [Module 10 Overview](week-10-overview.md).
 
+## Key terms
+
+| Term | Short form |
+| --- | --- |
+| **X.509 certificate** | A signed binding of a public key to a name, with a validity period. |
+| **Subject Alternative Name (SAN)** | The DNS names a certificate actually covers. What browsers check. |
+| **Certificate authority (CA)** | An organization that signs certificates. |
+| **Root of trust** | A self-signed CA certificate that is trusted because it is in the trust store. |
+| **Intermediate CA** | Signed by the root, signs end-entity certificates. Keeps the root key offline. |
+| **Chain of trust** | Leaf → intermediate → root, each signed by the next. |
+| **Trust store** | The list of roots your OS or browser believes. Chosen by a vendor. |
+| **Revocation** | Declaring a certificate invalid before it expires. CRLs, OCSP. Works poorly in practice. |
+| **Certificate Transparency** | Public append-only logs of issued certificates. Detection, not prevention. |
+| **Pinning** | A client requiring a specific key or CA for a specific site. |
+| **Forward secrecy** | Session keys not recoverable from the long-term key later. |
+
 ## Readings
 
 | Source | Sections | Printed pages | Length | Time |
@@ -122,22 +138,6 @@ certificate for it, free, in minutes. `paypa1-security.example` can have a perfe
 
 It also does not protect data once it arrives. Everything from week 4 onward about how the server
 stores what you send is untouched by TLS.
-
-## Key terms
-
-| Term | Short form |
-| --- | --- |
-| **X.509 certificate** | A signed binding of a public key to a name, with a validity period. |
-| **Subject Alternative Name (SAN)** | The DNS names a certificate actually covers. What browsers check. |
-| **Certificate authority (CA)** | An organization that signs certificates. |
-| **Root of trust** | A self-signed CA certificate that is trusted because it is in the trust store. |
-| **Intermediate CA** | Signed by the root, signs end-entity certificates. Keeps the root key offline. |
-| **Chain of trust** | Leaf → intermediate → root, each signed by the next. |
-| **Trust store** | The list of roots your OS or browser believes. Chosen by a vendor. |
-| **Revocation** | Declaring a certificate invalid before it expires. CRLs, OCSP. Works poorly in practice. |
-| **Certificate Transparency** | Public append-only logs of issued certificates. Detection, not prevention. |
-| **Pinning** | A client requiring a specific key or CA for a specific site. |
-| **Forward secrecy** | Session keys not recoverable from the long-term key later. |
 
 ## Looking ahead
 

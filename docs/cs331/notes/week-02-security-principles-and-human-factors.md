@@ -4,6 +4,22 @@
 
 What to do this week, and when it is due, is on the [Module 2 Overview](week-02-overview.md).
 
+## Key terms
+
+| Term | Short form |
+| --- | --- |
+| **Fail-safe defaults** | The default decision is denial; access is granted by explicit permission. |
+| **Complete mediation** | Every access to every object is checked every time, with no cached decisions. |
+| **Least privilege** | Minimum access required for the job. One condition, narrowly scoped. |
+| **Separation of privilege** | More than one condition must be satisfied. Two or more conditions. |
+| **Open design** | Security rests on the key, not on the secrecy of the design. |
+| **Psychological acceptability** | A control people cannot comply with will be worked around. |
+| **Human error** | Ordinary people doing reasonable things under constraints, not misconduct. |
+
+**Least privilege and separation of privilege get confused constantly.** Least privilege is about
+*how much* access; separation of privilege is about *how many conditions*. Read-only backup access
+is least privilege. Two administrators to approve a deletion is separation of privilege.
+
 ## Readings
 
 | Source | Sections | Printed pages | Length | Time |
@@ -74,22 +90,6 @@ mediated.
 
 That is the pattern to look for all semester: **a control, a legitimate task it obstructs, and the
 predictable workaround.** When you find it, the workaround is evidence about the control.
-
-## Key terms
-
-| Term | Short form |
-| --- | --- |
-| **Fail-safe defaults** | The default decision is denial; access is granted by explicit permission. |
-| **Complete mediation** | Every access to every object is checked every time, with no cached decisions. |
-| **Least privilege** | Minimum access required for the job. One condition, narrowly scoped. |
-| **Separation of privilege** | More than one condition must be satisfied. Two or more conditions. |
-| **Open design** | Security rests on the key, not on the secrecy of the design. |
-| **Psychological acceptability** | A control people cannot comply with will be worked around. |
-| **Human error** | Ordinary people doing reasonable things under constraints, not misconduct. |
-
-**Least privilege and separation of privilege get confused constantly.** Least privilege is about
-*how much* access; separation of privilege is about *how many conditions*. Read-only backup access
-is least privilege. Two administrators to approve a deletion is separation of privilege.
 
 ## Looking ahead
 

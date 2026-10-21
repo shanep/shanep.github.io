@@ -4,6 +4,20 @@
 
 What to do this week, and when it is due, is on the [Module 8 Overview](week-08-overview.md).
 
+## Key terms
+
+| Term | Short form |
+| --- | --- |
+| **Hash function** | Fixed-size digest of any input. No key. Deterministic. |
+| **Collision resistance** | Infeasible to find two inputs with the same digest. |
+| **Public / private key pair** | Mathematically related; one half can be published. |
+| **Digital signature** | Produced with the private key, verified with the public key. Gives integrity, authenticity, and non-repudiation. |
+| **Non-repudiation** | The signer cannot credibly deny having signed. A MAC cannot provide it. |
+| **KEM/DEM** | Use public-key cryptography to transport a symmetric key, then symmetric cryptography for the data. |
+| **Diffie-Hellman key agreement** | Two parties derive a shared secret over a public channel. |
+| **Forward secrecy** | Compromising a long-term key later does not expose past sessions. |
+| **Hybrid encryption** | Public-key for key establishment, symmetric for bulk data. What everything real does. |
+
 ## Readings
 
 | Source | Sections | Printed pages | Length | Time |
@@ -121,20 +135,6 @@ that is already secure, which is the problem you were trying to solve.
 of magnitude slower. Real protocols use both: public-key cryptography to agree on a symmetric key,
 then a symmetric authenticated mode for the actual data. That is what TLS does, and it is why week
 10's material sits on top of this week's.
-
-## Key terms
-
-| Term | Short form |
-| --- | --- |
-| **Hash function** | Fixed-size digest of any input. No key. Deterministic. |
-| **Collision resistance** | Infeasible to find two inputs with the same digest. |
-| **Public / private key pair** | Mathematically related; one half can be published. |
-| **Digital signature** | Produced with the private key, verified with the public key. Gives integrity, authenticity, and non-repudiation. |
-| **Non-repudiation** | The signer cannot credibly deny having signed. A MAC cannot provide it. |
-| **KEM/DEM** | Use public-key cryptography to transport a symmetric key, then symmetric cryptography for the data. |
-| **Diffie-Hellman key agreement** | Two parties derive a shared secret over a public channel. |
-| **Forward secrecy** | Compromising a long-term key later does not expose past sessions. |
-| **Hybrid encryption** | Public-key for key establishment, symmetric for bulk data. What everything real does. |
 
 ## Looking ahead
 

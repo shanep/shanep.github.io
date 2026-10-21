@@ -4,6 +4,19 @@
 
 What to do this week, and when it is due, is on the [Module 4 Overview](week-04-overview.md).
 
+## Key terms
+
+| Term | Short form |
+| --- | --- |
+| **Asset** | Something of value worth protecting. |
+| **Trust boundary** | Where data crosses between things controlled by different parties, or between levels of privilege. |
+| **Data flow diagram** | External entities, processes, data stores, and the flows between them. |
+| **STRIDE** | Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege. |
+| **Likelihood** | How probable an unwanted incident is. Meaningless without a stated scale. |
+| **Impact** | How much harm it would do. Same caveat. |
+| **Residual risk** | What is left after controls are applied. Never zero. |
+| **Component vs. systems perspective** | Assessing parts in isolation vs. assessing what emerges when they are connected. |
+
 ## Readings
 
 | Source | Sections | Printed pages | Length | Time |
@@ -85,19 +98,6 @@ private photo in the service and the exposure is not something you can undo afte
 
 That paragraph is what a justification looks like. It names what makes the rating what it is, and
 somebody who disagrees can point at the sentence they disagree with.
-
-## Key terms
-
-| Term | Short form |
-| --- | --- |
-| **Asset** | Something of value worth protecting. |
-| **Trust boundary** | Where data crosses between things controlled by different parties, or between levels of privilege. |
-| **Data flow diagram** | External entities, processes, data stores, and the flows between them. |
-| **STRIDE** | Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege. |
-| **Likelihood** | How probable an unwanted incident is. Meaningless without a stated scale. |
-| **Impact** | How much harm it would do. Same caveat. |
-| **Residual risk** | What is left after controls are applied. Never zero. |
-| **Component vs. systems perspective** | Assessing parts in isolation vs. assessing what emerges when they are connected. |
 
 ## Looking ahead
 

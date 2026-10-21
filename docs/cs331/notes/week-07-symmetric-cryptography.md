@@ -4,6 +4,21 @@
 
 What to do this week, and when it is due, is on the [Module 7 Overview](week-07-overview.md).
 
+## Key terms
+
+| Term | Short form |
+| --- | --- |
+| **Block cipher** | Reversibly transforms one fixed-size block under a key. AES. |
+| **Stream cipher** | Generates a keystream to XOR with the data. ChaCha20. |
+| **Mode of operation** | The scheme that turns a block cipher into a message encryption scheme. |
+| **ECB** | Each block encrypted independently. Leaks which blocks are equal. Do not use. |
+| **CTR** | Encrypts a counter to make a keystream, XORs it in. Confidentiality only. |
+| **Nonce / IV** | A value that must be unique per encryption under a key (and, for CBC, unpredictable). Need not be secret. |
+| **MAC** | Message authentication code. Integrity and authenticity, no confidentiality. HMAC. |
+| **AEAD** | Authenticated encryption with associated data. Confidentiality *and* integrity. AES-GCM. |
+| **KDF** | Derives keys from a password or another key. PBKDF2, HKDF, Argon2. |
+| **One-time pad** | Information-theoretically secure, and impractical: the key is as long as the message and must never be reused. Nonce reuse in CTR is this failure in miniature. |
+
 ## Readings
 
 | Source | Sections | Printed pages | Length | Time |
@@ -145,21 +160,6 @@ A nonce does not have to be secret: it is usually sent in the clear next to the 
 to be **unique**. In real code this breaks when someone stores a key and a nonce together in a
 config file, or reuses an object across messages, or restarts a service that generates nonces from
 a counter it did not persist.
-
-## Key terms
-
-| Term | Short form |
-| --- | --- |
-| **Block cipher** | Reversibly transforms one fixed-size block under a key. AES. |
-| **Stream cipher** | Generates a keystream to XOR with the data. ChaCha20. |
-| **Mode of operation** | The scheme that turns a block cipher into a message encryption scheme. |
-| **ECB** | Each block encrypted independently. Leaks which blocks are equal. Do not use. |
-| **CTR** | Encrypts a counter to make a keystream, XORs it in. Confidentiality only. |
-| **Nonce / IV** | A value that must be unique per encryption under a key (and, for CBC, unpredictable). Need not be secret. |
-| **MAC** | Message authentication code. Integrity and authenticity, no confidentiality. HMAC. |
-| **AEAD** | Authenticated encryption with associated data. Confidentiality *and* integrity. AES-GCM. |
-| **KDF** | Derives keys from a password or another key. PBKDF2, HKDF, Argon2. |
-| **One-time pad** | Information-theoretically secure, and impractical: the key is as long as the message and must never be reused. Nonce reuse in CTR is this failure in miniature. |
 
 ## Looking ahead
 

@@ -4,6 +4,19 @@
 
 What to do this week, and when it is due, is on the [Module 3 Overview](week-03-overview.md).
 
+## Key terms
+
+| Term | Short form |
+| --- | --- |
+| **Jurisdiction** | Whose law applies, and who can enforce it. More than one state's law can apply at once. |
+| **Criminal vs. civil liability** | One act can produce both, in different courts, with different standards of proof. |
+| **Personal data** | Data relating to an identifiable person. Obligations can follow the data subject, not the organization's location. |
+| **Coordinated disclosure** | Report to the vendor, allow a window to fix, then publish. |
+| **Full disclosure** | Publish immediately. |
+| **Privacy as confidentiality** | The data is not disclosed. |
+| **Privacy as control** | The subject decides what is collected and why. |
+| **Privacy as transparency** | The subject can find out what happened to their data. |
+
 ## Readings
 
 | Source | Sections | Printed pages | Length | Time |
@@ -82,19 +95,6 @@ framework assumes an external researcher and a vendor who can be given a deadlin
 deadline when you work there? Who is the vendor? What is your leverage, and what does using it cost
 you? That is the situation in [D2](../discussions/d02-ethics-and-privacy-case.md), and it does not
 have a clean answer.
-
-## Key terms
-
-| Term | Short form |
-| --- | --- |
-| **Jurisdiction** | Whose law applies, and who can enforce it. More than one state's law can apply at once. |
-| **Criminal vs. civil liability** | One act can produce both, in different courts, with different standards of proof. |
-| **Personal data** | Data relating to an identifiable person. Obligations can follow the data subject, not the organization's location. |
-| **Coordinated disclosure** | Report to the vendor, allow a window to fix, then publish. |
-| **Full disclosure** | Publish immediately. |
-| **Privacy as confidentiality** | The data is not disclosed. |
-| **Privacy as control** | The subject decides what is collected and why. |
-| **Privacy as transparency** | The subject can find out what happened to their data. |
 
 ## Looking ahead
 

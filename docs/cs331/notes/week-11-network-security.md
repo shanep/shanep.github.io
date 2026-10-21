@@ -4,6 +4,23 @@
 
 What to do this week, and when it is due, is on the [Module 11 Overview](week-11-overview.md).
 
+## Key terms
+
+| Term | Short form |
+| --- | --- |
+| **On-path attacker** | Positioned to read, modify, drop, or inject traffic between two parties. |
+| **ARP spoofing** | Forged link-layer replies to redirect traffic on a local segment. |
+| **DNS cache poisoning** | Forged answers accepted and cached by a resolver. |
+| **DNSSEC** | Signs DNS records so forgery is detectable. |
+| **BGP hijacking** | Announcing routes for address space you do not hold. |
+| **Reflection / amplification** | Small spoofed requests producing large replies aimed at a victim. |
+| **Stateful firewall** | Tracks connections so return traffic can be allowed without opening the whole range. |
+| **Segmentation** | Dividing a network so a compromise in one zone does not reach all others. |
+| **IDS / IPS** | Detection alerts; prevention sits in-path and blocks, and can cause outages. |
+| **Network security monitoring** | Using traffic metadata (who, when, how much) rather than content. |
+| **Zero trust** | Network location is not a credential; authorize every request on its merits. |
+| **Egress filtering** | Controlling what may leave, not only what may enter. |
+
 ## Readings
 
 | Source | Sections | Printed pages | Length | Time |
@@ -92,23 +109,6 @@ medium alerts a day, and a correct alert about this very compromise sitting unre
 
 **A detection control with nobody to read it is not a control.** That is week 15's subject, and it
 is why Discussion 4 requires you to say who would have seen your alert.
-
-## Key terms
-
-| Term | Short form |
-| --- | --- |
-| **On-path attacker** | Positioned to read, modify, drop, or inject traffic between two parties. |
-| **ARP spoofing** | Forged link-layer replies to redirect traffic on a local segment. |
-| **DNS cache poisoning** | Forged answers accepted and cached by a resolver. |
-| **DNSSEC** | Signs DNS records so forgery is detectable. |
-| **BGP hijacking** | Announcing routes for address space you do not hold. |
-| **Reflection / amplification** | Small spoofed requests producing large replies aimed at a victim. |
-| **Stateful firewall** | Tracks connections so return traffic can be allowed without opening the whole range. |
-| **Segmentation** | Dividing a network so a compromise in one zone does not reach all others. |
-| **IDS / IPS** | Detection alerts; prevention sits in-path and blocks, and can cause outages. |
-| **Network security monitoring** | Using traffic metadata (who, when, how much) rather than content. |
-| **Zero trust** | Network location is not a credential; authorize every request on its merits. |
-| **Egress filtering** | Controlling what may leave, not only what may enter. |
 
 ## Looking ahead
 

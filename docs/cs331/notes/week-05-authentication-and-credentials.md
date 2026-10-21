@@ -4,6 +4,21 @@
 
 What to do this week, and when it is due, is on the [Module 5 Overview](week-05-overview.md).
 
+## Key terms
+
+| Term | Short form |
+| --- | --- |
+| **Identification** | Claiming an identity. |
+| **Authentication** | Providing evidence for the claim. |
+| **Authorization** | Deciding what the authenticated identity may do. Week 6. |
+| **Authentication factor** | Knowledge, possession, or inherence. |
+| **Multi-factor authentication** | Two or more factors of *different* types. |
+| **Phishing-resistant authenticator** | One that binds to the site's origin, so it cannot be relayed. FIDO2, passkeys. |
+| **Salt** | Per-user random value stored with the hash; defeats precomputation and cross-account correlation. |
+| **Password hashing function** | A deliberately slow, salted hash built for passwords: PBKDF2, bcrypt, scrypt, Argon2. |
+| **Credential stuffing** | Replaying username/password pairs from other breaches. |
+| **Federated identity** | A separate identity provider authenticates on the application's behalf. SAML, OIDC. |
+
 ## Readings
 
 | Source | Sections | Printed pages | Length | Time |
@@ -110,21 +125,6 @@ find, scored against SP 800-63B-4 §3:
 Two rules prohibited outright, one advised against, one rule that only holds up with MFA, one
 required practice missing, and one rule that is a clue about something else. That is what a policy
 critique looks like: rule by rule, with a citation, ending in a count.
-
-## Key terms
-
-| Term | Short form |
-| --- | --- |
-| **Identification** | Claiming an identity. |
-| **Authentication** | Providing evidence for the claim. |
-| **Authorization** | Deciding what the authenticated identity may do. Week 6. |
-| **Authentication factor** | Knowledge, possession, or inherence. |
-| **Multi-factor authentication** | Two or more factors of *different* types. |
-| **Phishing-resistant authenticator** | One that binds to the site's origin, so it cannot be relayed. FIDO2, passkeys. |
-| **Salt** | Per-user random value stored with the hash; defeats precomputation and cross-account correlation. |
-| **Password hashing function** | A deliberately slow, salted hash built for passwords: PBKDF2, bcrypt, scrypt, Argon2. |
-| **Credential stuffing** | Replaying username/password pairs from other breaches. |
-| **Federated identity** | A separate identity provider authenticates on the application's behalf. SAML, OIDC. |
 
 ## Looking ahead
 

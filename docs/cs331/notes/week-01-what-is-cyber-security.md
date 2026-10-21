@@ -4,6 +4,21 @@
 
 What to do this week, and when it is due, is on the [Module 1 Overview](week-01-overview.md).
 
+## Key terms
+
+Adapted from the [CyBOK Glossary](../docs/CyBOK_v1.1.0.pdf) (printed page 951) and §1.3:
+
+| Term | Short form |
+| --- | --- |
+| **Confidentiality** | Information is not disclosed to those not entitled to it. |
+| **Integrity** | Information is not altered except by those entitled to alter it, and alteration is detectable. |
+| **Availability** | Information and services are reachable by those entitled to them, when they need them. |
+| **Vulnerability** | A weakness in a system that could be exploited. A property of the system. |
+| **Threat** | A potential cause of an unwanted incident. |
+| **Attack** | A threat carried out: an actual sequence of events. |
+| **Risk** | The combination of how likely an unwanted incident is with how much harm it would do. |
+| **Asset** | Something of value that is worth protecting. |
+
 ## Readings
 
 | Source | Sections | Printed pages | Length | Time |
@@ -70,21 +85,6 @@ integrity of the server but not of the data.
 
 Being able to say "no, that one was not violated, and here is why" is as much of the skill as
 naming the one that was.
-
-## Key terms
-
-Adapted from the [CyBOK Glossary](../docs/CyBOK_v1.1.0.pdf) (printed page 951) and §1.3:
-
-| Term | Short form |
-| --- | --- |
-| **Confidentiality** | Information is not disclosed to those not entitled to it. |
-| **Integrity** | Information is not altered except by those entitled to alter it, and alteration is detectable. |
-| **Availability** | Information and services are reachable by those entitled to them, when they need them. |
-| **Vulnerability** | A weakness in a system that could be exploited. A property of the system. |
-| **Threat** | A potential cause of an unwanted incident. |
-| **Attack** | A threat carried out: an actual sequence of events. |
-| **Risk** | The combination of how likely an unwanted incident is with how much harm it would do. |
-| **Asset** | Something of value that is worth protecting. |
 
 ## Looking ahead
 

@@ -4,6 +4,21 @@
 
 What to do this week, and when it is due, is on the [Module 14 Overview](week-14-overview.md).
 
+## Key terms
+
+| Term | Short form |
+| --- | --- |
+| **Injection** | Untrusted input becomes part of a command rather than staying data. |
+| **Structured output generation vulnerability** | CyBOK's name for the class: SQLi, XSS, command injection, path traversal. |
+| **Parameterized query** | Query text and values sent separately; values bound after parsing. |
+| **Escaping** | Neutering dangerous characters in input that is still concatenated. Weaker. |
+| **Cross-site scripting (XSS)** | Attacker-supplied content executed as script in another user's browser. |
+| **Cross-site request forgery (CSRF)** | A user's browser induced to make an authenticated request they did not intend. |
+| **Same-origin policy** | The browser's rule that content from one origin cannot read another's. |
+| **Clickjacking** | Overlaying invisible UI so a click lands somewhere the user did not intend. |
+| **Phishing** | Deceiving a person into giving up credentials or running something. |
+| **Defense in depth** | Layered controls, so one failure is not total. |
+
 ## Readings
 
 | Source | Sections | Printed pages | Length | Time |
@@ -158,21 +173,6 @@ The defenses run down the same ladder. Prevention: phishing-resistant authentica
 A FIDO2 key checks the origin itself, so the person's judgment is taken out of the loop.
 Detection: mail filtering, and a reporting process people actually use. Mitigation: limiting what a
 compromised account can reach, which is week 6's least privilege.
-
-## Key terms
-
-| Term | Short form |
-| --- | --- |
-| **Injection** | Untrusted input becomes part of a command rather than staying data. |
-| **Structured output generation vulnerability** | CyBOK's name for the class: SQLi, XSS, command injection, path traversal. |
-| **Parameterized query** | Query text and values sent separately; values bound after parsing. |
-| **Escaping** | Neutering dangerous characters in input that is still concatenated. Weaker. |
-| **Cross-site scripting (XSS)** | Attacker-supplied content executed as script in another user's browser. |
-| **Cross-site request forgery (CSRF)** | A user's browser induced to make an authenticated request they did not intend. |
-| **Same-origin policy** | The browser's rule that content from one origin cannot read another's. |
-| **Clickjacking** | Overlaying invisible UI so a click lands somewhere the user did not intend. |
-| **Phishing** | Deceiving a person into giving up credentials or running something. |
-| **Defense in depth** | Layered controls, so one failure is not total. |
 
 ## Looking ahead
 

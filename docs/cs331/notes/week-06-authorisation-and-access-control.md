@@ -4,6 +4,25 @@
 
 What to do this week, and when it is due, is on the [Module 6 Overview](week-06-overview.md).
 
+## Key terms
+
+| Term | Short form |
+| --- | --- |
+| **Subject** | An active entity requesting access: a user, service, or program. |
+| **Object** | A passive entity being protected. |
+| **Right** | What a subject may do to an object: read, write, delete, grant. |
+| **Access control matrix** | Subjects × objects, rights in the cells. The direct form of a policy. |
+| **Access control list (ACL)** | The matrix sliced by object. |
+| **Capability** | The matrix sliced by subject; possession is authorization. |
+| **RBAC** | Subjects get roles; roles hold permissions. |
+| **ABAC** | Decisions computed from attributes of subject, object, and context. |
+| **Reference monitor** | The component that mediates every access. Must be tamper-proof, always invoked, and small enough to verify. |
+| **Delegation / revocation** | Passing on a right; taking it back. Revocation is the hard one. |
+| **Accountability** | Being able to attribute an action to the actor who took it. |
+
+Two of the reference monitor's three requirements are the *complete mediation* and
+*economy of mechanism* principles from week 2, stated as engineering criteria.
+
 ## Readings
 
 | Source | Sections | Printed pages | Length | Time |
@@ -117,25 +136,6 @@ and cannot distinguish a staff member from an attacker who obtained the shared p
 
 One change fixes most of it: individual accounts with individual credentials, and logging the acting
 account. That is not a technical difficulty: it is a decision nobody made.
-
-## Key terms
-
-| Term | Short form |
-| --- | --- |
-| **Subject** | An active entity requesting access: a user, service, or program. |
-| **Object** | A passive entity being protected. |
-| **Right** | What a subject may do to an object: read, write, delete, grant. |
-| **Access control matrix** | Subjects × objects, rights in the cells. The direct form of a policy. |
-| **Access control list (ACL)** | The matrix sliced by object. |
-| **Capability** | The matrix sliced by subject; possession is authorization. |
-| **RBAC** | Subjects get roles; roles hold permissions. |
-| **ABAC** | Decisions computed from attributes of subject, object, and context. |
-| **Reference monitor** | The component that mediates every access. Must be tamper-proof, always invoked, and small enough to verify. |
-| **Delegation / revocation** | Passing on a right; taking it back. Revocation is the hard one. |
-| **Accountability** | Being able to attribute an action to the actor who took it. |
-
-Two of the reference monitor's three requirements are the *complete mediation* and
-*economy of mechanism* principles from week 2, stated as engineering criteria.
 
 ## Looking ahead
 
