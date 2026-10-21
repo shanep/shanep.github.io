@@ -4,12 +4,12 @@
 
 ## Goal
 
-Read a small C program with a textbook bug in it, work out what that bug does to the stack, and
-decide which of the standard mitigations would actually stop it. Then answer the question that
-matters more: what evidence would let you claim the program is now fixed?
+You will read a small C program with a textbook bug in it, work out what that bug does to the stack, and
+decide which of the standard mitigations would actually stop it. Then you will answer the question
+that matters more: what evidence would let you claim the program is now fixed?
 
-**You will not run this program and you will not attack anything.** You read source code and you
-read the assembly a compiler produces from it, in a browser. That is all.
+**You will not run this program and you will not attack anything.** You will read source code and
+the assembly a compiler produces from it, in a browser. That is all.
 
 ## Objectives assessed
 

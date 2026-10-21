@@ -4,12 +4,12 @@
 
 ## Goal
 
-Run one script and look hard at what it prints. By the end you will have seen, rather than been
+You will run one script and look hard at what it prints. By the end you will have seen, rather than been
 told, three things: that a cipher alone is not enough, that encryption is not integrity, and that
 reusing a nonce hands the plaintext back.
 
-You do not write any code. You run a provided program, change two values in it, and explain what
-happened.
+You will not write any code. You will run a provided program, change two values in it, and explain
+what happened.
 
 ## Objectives assessed
 

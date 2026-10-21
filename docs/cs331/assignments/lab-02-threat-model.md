@@ -4,7 +4,7 @@
 
 ## Goal
 
-Take a written description of a real-shaped system and turn it into a threat model: a diagram with
+You will take a written description of a real-shaped system and turn it into a threat model: a diagram with
 trust boundaries, a table of threats found systematically rather than by inspiration, and a
 judgment about which of them matter most.
 

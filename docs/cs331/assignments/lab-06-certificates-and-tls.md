@@ -5,9 +5,9 @@
 ## Goal
 
 Lab 5 ended with an unanswered question: a signature verifies against a public key, but what tells
-you whose key it is? This lab is the answer, and its limits.
+you whose key it is? This lab answers it, and shows the limits of that answer.
 
-You inspect a real certificate chain in your browser, then run a script that builds a chain from
+You will inspect a real certificate chain in your browser, then run a script that builds a chain from
 scratch and runs the checks a browser runs against three server certificates, one good, one
 expired, one issued for the wrong name.
 

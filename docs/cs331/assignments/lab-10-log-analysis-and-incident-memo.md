@@ -4,7 +4,7 @@
 
 ## Goal
 
-Two log files from one server on one night. Find what happened, decide what kind of detection would
+You will get two log files from one server on one night. You will find what happened, decide what kind of detection would
 have caught it, do the arithmetic that explains why nobody did catch it, and write the memo.
 
 This is the closest thing in the course to what a first job in security operations looks like on

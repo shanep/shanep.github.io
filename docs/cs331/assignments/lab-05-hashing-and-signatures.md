@@ -4,11 +4,11 @@
 
 ## Goal
 
-Work out what a hash proves, what a signature proves, and (the part people get wrong) what
-neither of them proves. Then compare a shared-secret MAC with a public-key signature and say when
+You will work out what a hash proves, what a signature proves, and (the part people get wrong)
+what neither of them proves. Then you will compare a shared-secret MAC with a public-key signature and say when
 you would reach for each.
 
-You run a provided script and change two values in it. No code to write.
+You will run a provided script and change two values in it. There is no code to write.
 
 ## Objectives assessed
 

@@ -4,9 +4,9 @@
 
 ## Goal
 
-Write down who can do what to which thing, in a form precise enough to argue about. Then convert
-that same policy into the three shapes real systems actually store it in, and then cut it down to
-least privilege.
+You will write down who can do what to which thing, in a form precise enough to argue about. Then
+you will convert that same policy into the three shapes real systems actually store it in, and cut
+it down to least privilege.
 
 No code. This is a modeling lab, and the modeling is the point.
 

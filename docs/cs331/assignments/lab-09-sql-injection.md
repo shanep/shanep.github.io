@@ -4,7 +4,7 @@
 
 ## Goal
 
-Break a login form, then fix it, then explain why the fix works. The whole thing runs on a database
+You will break a login form, then fix it, then explain why the fix works. The whole thing runs on a database
 that lives inside one Python process on your own machine and disappears when the program exits.
 
 **Nothing in this lab touches a system you do not own.** Attacking a web application you do not have

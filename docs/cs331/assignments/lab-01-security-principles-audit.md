@@ -4,7 +4,7 @@
 
 ## Goal
 
-Take a system you use all the time, and hold it up against the eight design principles Saltzer and
+You will take a system you use all the time and hold it up against the eight design principles Saltzer and
 Schroeder wrote down in 1975. Those principles are still the closest thing security has to a set of
 rules of thumb, and this course will keep coming back to them.
 
