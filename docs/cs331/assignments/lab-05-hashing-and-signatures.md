@@ -33,7 +33,7 @@ You will run a provided script and change two values in it. There is no code to 
 
 - Make sure you have done the [week 8 readings](../notes/week-08-public-key-cryptography.md).
 - Download [data/sign_demo.py](../data/sign_demo.py) from Canvas Files.
-- Needs the `cryptography` package from [Lab 0](lab-00-course-setup.md).
+- Check that you have the `cryptography` package from [Lab 0](lab-00-course-setup.md).
 
 ## Steps
 

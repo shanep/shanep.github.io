@@ -35,7 +35,7 @@ No code. This is a modeling lab, and the modeling is the point.
 ## Before you start
 
 - Make sure you have done the [week 6 readings](../notes/week-06-authorisation-and-access-control.md).
-- The [SnapVault system description](../data/photoshare-system.md), the same system you
+- Open the [SnapVault system description](../data/photoshare-system.md), the same system you
   threat-modeled in Lab 2. You will use its actors and its data.
 
 ### Vocabulary you need

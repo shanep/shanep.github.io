@@ -32,7 +32,7 @@ expired, one issued for the wrong name.
 
 - Make sure you have done the [week 10 readings](../notes/week-10-keys-certificates-and-pki.md).
 - Download [data/cert_inspect.py](../data/cert_inspect.py) from Canvas Files.
-- Needs the `cryptography` package from [Lab 0](lab-00-course-setup.md).
+- Check that you have the `cryptography` package from [Lab 0](lab-00-course-setup.md).
 
 ## Steps
 

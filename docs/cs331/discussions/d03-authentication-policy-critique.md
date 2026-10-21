@@ -24,8 +24,8 @@
 ## Before you start
 
 - Make sure you have done the [week 5 readings](../notes/week-05-authentication-and-credentials.md).
-- Run [data/password_demo.py](../data/password_demo.py) (the week 5 worked example) before you
-  post. You will cite its output.
+- Run [data/password_demo.py](../data/password_demo.py), the week 5 worked example, and save its
+  output. You will cite it in your post.
 
 ## Find a real policy
 

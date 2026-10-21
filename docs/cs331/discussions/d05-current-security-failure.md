@@ -19,9 +19,11 @@
 ## Before you start
 
 - Make sure you have done the [week 15 readings](../notes/week-15-security-operations-and-incident-response.md).
-- You will have written a memo in [Lab 10](../assignments/lab-10-log-analysis-and-incident-memo.md)
-  this week. This discussion applies the same structure to a real organization, and you may reuse
-  what you learned there.
+  The last section of the notes, "Writing it up", lays out the four incident response phases this
+  post asks you to use.
+- Read Step 5 of [Lab 10](../assignments/lab-10-log-analysis-and-incident-memo.md). Its memo walks a
+  made-up incident through the same four phases, and this post does it for a real organization.
+  Whichever you do first, reuse what you learn in the other.
 
 ## Find an incident
 

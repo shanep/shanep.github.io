@@ -24,20 +24,23 @@ what happened.
 
 | Step | Time |
 | --- | --- |
-| Step 1: run it, look at the images | 20 min |
-| Step 2: modes of operation | 25 min |
-| Step 3: integrity | 20 min |
-| Step 4: nonce reuse | 25 min |
+| Step 1: Run it, look at the images | 20 min |
+| Step 2: Compare the modes of operation | 25 min |
+| Step 3: Test integrity | 20 min |
+| Step 4: Reuse a nonce | 25 min |
 | **Total** | **90 min** |
 
 ## Before you start
 
 - Make sure you have done the [week 7 readings](../notes/week-07-symmetric-cryptography.md).
 - Download [data/crypto_demo.py](../data/crypto_demo.py) from Canvas Files.
-- You need the `cryptography` package from [Lab 0](lab-00-course-setup.md). Check it with
-  `python3 -c "import cryptography; print('ok')"` before you start.
+- Check that you have the `cryptography` package from [Lab 0](lab-00-course-setup.md) by running
+  `python3 -c "import cryptography; print('ok')"`.
 
 ## Steps
+
+Write your answers in one document, numbered to match the questions (2.3 is Step 2 question 3).
+You submit it at the end along with your images and terminal output.
 
 ### Step 1: Run it
 
@@ -52,12 +55,12 @@ It prints three sections and writes three image files (`cs331_original.bmp`, `cs
 
 **Save the whole terminal output.** You will quote parts of it below.
 
-### Step 2: Modes of operation
+### Step 2: Compare the modes of operation
 
 The script encrypted the same picture twice with the **same cipher (AES) and the same key**. The
 only difference was the mode of operation.
 
-Answer:
+Answer these in your document:
 
 1. **Which of the two encrypted images still shows you the picture?** Name the file.
 2. **Quote the three "Distinct 16-byte blocks" numbers** the script printed. Explain what those
@@ -69,12 +72,12 @@ Answer:
    operation actually responsible for?** One paragraph, citing CyBOK §10.5.
 5. Set `IMAGE_SIZE` to `128` and run it again. **What happens to the three block counts, and why?**
 
-### Step 3: Encryption is not integrity
+### Step 3: Show that encryption is not integrity
 
 Part 2 of the output encrypted the same message two ways, flipped a single bit of each ciphertext,
 and tried to decrypt it.
 
-Answer:
+Answer these in your document:
 
 1. **Quote what AES-CTR decrypted to** after the bit flip. The original message was
    `Balance: $100.00`. What did the receiver get, and did anything warn them?
@@ -92,11 +95,11 @@ Answer:
    - SHA-256 by itself
    - HMAC-SHA256
 
-### Step 4: Nonce reuse
+### Step 4: Reuse a nonce
 
 Part 3 encrypted two different messages under the **same key and the same counter start**.
 
-Answer:
+Answer these in your document:
 
 1. **Quote the `C1 XOR C2` line.** Most of it is zero bytes. Explain what the zero bytes tell you
    about the two plaintexts, without decrypting anything.
@@ -117,7 +120,7 @@ One Canvas submission containing:
 
 1. The three `.bmp` files, or one image showing all three side by side.
 2. Your complete terminal output from the first run.
-3. Your answers to Steps 2, 3, and 4, numbered to match.
+3. Your document with your answers to Steps 2, 3, and 4, numbered to match.
 
 ## Rubric
 
