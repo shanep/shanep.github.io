@@ -2,8 +2,6 @@
 
 **April 12-18 · Reading: 14 pages · About 3 hrs 5 min with the worked example**
 
-What to do this week, and when it is due, is on the [Module 13 Overview](week-13-overview.md).
-
 ## Key terms
 
 | Term | Short form |
@@ -24,23 +22,30 @@ What to do this week, and when it is due, is on the [Module 13 Overview](week-13
 
 ## Readings
 
+### CyBOK
+
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.1.1 Memory Management Vulnerabilities | 498-499 | 1 p | 15 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.2 Prevention of Vulnerabilities: language design, API design, coding practices | 506-511 | 5 pp | 40 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.4 Mitigating Exploitation of Vulnerabilities | 516-520 | 4 pp | 35 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §17.7 Assessment of the Secure Software Lifecycle: SAMM, BSIMM, Common Criteria | 604-608 | 4 pp | 25 min |
+
+::: info §15.3 for Lab 8
+§15.3 (detection of vulnerabilities, static and dynamic analysis) is not assigned as reading, but
+Lab 8 asks about it. Look at pages 511-516 when you get to that question.
+:::
+
+### Additional readings
+
+| Source | Sections | Printed pages | Length | Time |
+| --- | --- | --- | --- | --- |
 | Aleph One, *Smashing the Stack for Fun and Profit* | Start through the stack frame layout | none | ~4 pp | 25 min |
 
 Read [Aleph One's article](http://phrack.org/issues/49/14.html) (Phrack 49, 1996) until it starts
 constructing shellcode, then stop. It is thirty years old and still the clearest explanation of
 what the stack looks like during a function call. Also worth noticing: the bug it describes is
 still, three decades later, one of the most common classes in the CVE database.
-
-::: info §15.3 for Lab 8
-§15.3 (detection of vulnerabilities, static and dynamic analysis) is not assigned as reading, but
-Lab 8 asks about it. Look at pages 511-516 when you get to that question.
-:::
 
 ## Worked example
 

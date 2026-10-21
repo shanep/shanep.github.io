@@ -2,8 +2,6 @@
 
 **April 26-30 · Reading: 11 pages · About 3 hrs with the worked example**
 
-What to do this week, and when it is due, is on the [Module 15 Overview](week-15-overview.md).
-
 ## Key terms
 
 | Term | Short form |
@@ -22,6 +20,8 @@ What to do this week, and when it is due, is on the [Module 15 Overview](week-15
 
 ## Readings
 
+### CyBOK
+
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.1 Fundamental concepts: workflows and vocabulary | 251-254 | 3 pp | 20 min |
@@ -29,11 +29,16 @@ What to do this week, and when it is due, is on the [Module 15 Overview](week-15
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.3.1-8.3.3 Misuse detection, anomaly detection, blended | 262-266 | 4 pp | 30 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.3.6 The base-rate fallacy | 268 | 1 p | 15 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.7 Human factors: Incident management | 281-284 | 3 pp | 25 min |
+
+**§8.3.6 is one page and it is the most important page of the week.**
+
+### Additional readings
+
+| Source | Sections | Printed pages | Length | Time |
+| --- | --- | --- | --- | --- |
 | NIST SP 800-61r3 | The incident response life cycle *(skim)* | none | skim | 20 min |
 
 [NIST SP 800-61r3](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf) (April 2025) is free to download.
-
-**§8.3.6 is one page and it is the most important page of the week.**
 
 ## Worked example
 

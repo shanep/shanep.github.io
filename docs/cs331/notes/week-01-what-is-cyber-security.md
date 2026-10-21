@@ -2,8 +2,6 @@
 
 **January 11-17 · Reading: 7 pages · About 1 hr 15 min with the worked example**
 
-What to do this week, and when it is due, is on the [Module 1 Overview](week-01-overview.md).
-
 ## Key terms
 
 Adapted from the [CyBOK Glossary](../docs/CyBOK_v1.2.0.pdf) (printed page 989) and §1.3:
@@ -20,6 +18,8 @@ Adapted from the [CyBOK Glossary](../docs/CyBOK_v1.2.0.pdf) (printed page 989) a
 | **Asset** | Something of value that is worth protecting. |
 
 ## Readings
+
+### CyBOK
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |

@@ -2,8 +2,6 @@
 
 **February 15-21 · Presidents' Day is Monday, February 15 · Reading: 13 pages · About 2 hrs 25 min with the worked example**
 
-What to do this week, and when it is due, is on the [Module 6 Overview](week-06-overview.md).
-
 ## Key terms
 
 | Term | Short form |
@@ -24,6 +22,8 @@ Two of the reference monitor's three requirements are the *complete mediation* a
 *economy of mechanism* principles from week 2, stated as engineering criteria.
 
 ## Readings
+
+### CyBOK
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |

@@ -2,8 +2,6 @@
 
 **March 29 - April 4 · Reading: 17 pages · About 2 hrs 40 min with the worked example**
 
-What to do this week, and when it is due, is on the [Module 11 Overview](week-11-overview.md).
-
 ## Key terms
 
 | Term | Short form |
@@ -22,6 +20,8 @@ What to do this week, and when it is due, is on the [Module 11 Overview](week-11
 | **Egress filtering** | Controlling what may leave, not only what may enter. |
 
 ## Readings
+
+### CyBOK
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |

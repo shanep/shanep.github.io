@@ -2,8 +2,6 @@
 
 **March 1-7 · Reading: 9 pages · About 2 hrs 30 min with the worked example**
 
-What to do this week, and when it is due, is on the [Module 8 Overview](week-08-overview.md).
-
 ## Key terms
 
 | Term | Short form |
@@ -20,16 +18,25 @@ What to do this week, and when it is due, is on the [Module 8 Overview](week-08-
 
 ## Readings
 
+### CyBOK
+
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.6 Public Key Encryption: KEM/DEM, RSA, elliptic curves | 336-339 | 3 pp | 25 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.7 Public Key Signatures: RSA-PSS, DSA, EC-DSA, Schnorr | 339-341 | 2 pp | 20 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.8 Standard Protocols: authentication and key agreement | 341-345 | 4 pp | 30 min |
+
+You are **not** assigned §10.9 through §10.11 (advanced protocols, encryption and signatures with
+special properties such as homomorphic encryption, and implementation aspects). Skip them.
+
+### Additional readings
+
+| Source | Sections | Printed pages | Length | Time |
+| --- | --- | --- | --- | --- |
 | Nakov, *Practical Cryptography for Developers* | Hash functions; RSA; ECC; digital signatures | none | skim | 30 min |
 
 Start Nakov at the [hash functions chapter](https://cryptobook.nakov.com/cryptographic-hash-functions) and continue through
-the digital signatures pages. You are **not** assigned §10.9 through §10.11 (advanced protocols, encryption and signatures
-with special properties such as homomorphic encryption, and implementation aspects). Skip them.
+the digital signatures pages.
 
 ## Worked example
 

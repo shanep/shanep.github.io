@@ -2,8 +2,6 @@
 
 **February 1-7 · Reading: 11 pages · About 2 hrs 5 min with the worked example**
 
-What to do this week, and when it is due, is on the [Module 4 Overview](week-04-overview.md).
-
 ## Key terms
 
 | Term | Short form |
@@ -18,6 +16,8 @@ What to do this week, and when it is due, is on the [Module 4 Overview](week-04-
 | **Component vs. systems perspective** | Assessing parts in isolation vs. assessing what emerges when they are connected. |
 
 ## Readings
+
+### CyBOK
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |

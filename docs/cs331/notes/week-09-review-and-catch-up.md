@@ -2,8 +2,6 @@
 
 **March 8-14 · No new reading**
 
-What to do this week is on the [Module 9 Overview](week-09-overview.md). Nothing is due.
-
 ## Readings
 
 Nothing new. If you want to re-read anything from CyBOK, the highest-value sections are §1.4 (the

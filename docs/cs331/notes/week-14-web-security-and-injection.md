@@ -2,8 +2,6 @@
 
 **April 19-25 · Reading: 15 pages · About 2 hrs 55 min with the worked example**
 
-What to do this week, and when it is due, is on the [Module 14 Overview](week-14-overview.md).
-
 ## Key terms
 
 | Term | Short form |
@@ -21,12 +19,19 @@ What to do this week, and when it is due, is on the [Module 14 Overview](week-14
 
 ## Readings
 
+### CyBOK
+
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §16.2.6-16.2.8 Web PKI and HTTPS, Authentication, Cookies | 536-540 | 4 pp | 25 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §16.3.1 Phishing and Clickjacking | 543-545 | 3 pp | 20 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §16.4.1 Injection Vulnerabilities: SQLi, command injection, LFI, XSS, CSRF | 547-552 | 6 pp | 45 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.1.2 Structured Output Generation Vulnerabilities *(revisit from week 13)* | 499-501 | 2 pp | 15 min |
+
+### Additional readings
+
+| Source | Sections | Printed pages | Length | Time |
+| --- | --- | --- | --- | --- |
 | OWASP Top 10:2021 | A01 Broken Access Control, A03 Injection, A07 Identification and Authentication Failures | none | skim | 25 min |
 
 In the [OWASP Top 10:2021](https://top10.owasp.org/2021/), read the three named entries; they are

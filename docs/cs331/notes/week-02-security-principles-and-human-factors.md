@@ -2,8 +2,6 @@
 
 **January 18-24 · MLK Day is Monday, January 18 · Reading: 14 pages · About 2 hrs 30 min with the worked example**
 
-What to do this week, and when it is due, is on the [Module 2 Overview](week-02-overview.md).
-
 ## Key terms
 
 | Term | Short form |
@@ -22,12 +20,19 @@ is least privilege. Two administrators to approve a deletion is separation of pr
 
 ## Readings
 
+### CyBOK
+
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §1.4 Principles: especially §1.4.1 Saltzer and Schroeder | 9-13 | 5 pp | 35 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §1.5 Crosscutting Themes | 13-15 | 2 pp | 10 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §4.3 Human Error | 157-160 | 3 pp | 20 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §4.4 Cybersecurity awareness and education | 160-164 | 4 pp | 25 min |
+
+### Additional readings
+
+| Source | Sections | Printed pages | Length | Time |
+| --- | --- | --- | --- | --- |
 | Saltzer & Schroeder (1975) | Section I: the numbered principles only | none | ~3 pp | 20 min |
 
 [Saltzer & Schroeder's paper](https://web.mit.edu/Saltzer/www/publications/protection/) is free online. Read the list and

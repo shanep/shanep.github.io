@@ -2,8 +2,6 @@
 
 **January 25-31 · Reading: 15 pages, plus 14 to skim · About 2 hrs 55 min with the worked example**
 
-What to do this week, and when it is due, is on the [Module 3 Overview](week-03-overview.md).
-
 ## Key terms
 
 | Term | Short form |
@@ -18,6 +16,8 @@ What to do this week, and when it is due, is on the [Module 3 Overview](week-03-
 | **Privacy as transparency** | The subject can find out what happened to their data. |
 
 ## Readings
+
+### CyBOK
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |

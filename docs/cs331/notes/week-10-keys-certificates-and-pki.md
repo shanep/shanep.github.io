@@ -2,8 +2,6 @@
 
 **March 22-28 · Reading: 11 pages · About 2 hrs 15 min with the worked example**
 
-What to do this week, and when it is due, is on the [Module 10 Overview](week-10-overview.md).
-
 ## Key terms
 
 | Term | Short form |
@@ -21,6 +19,8 @@ What to do this week, and when it is due, is on the [Module 10 Overview](week-10
 | **Forward secrecy** | Session keys not recoverable from the long-term key later. |
 
 ## Readings
+
+### CyBOK
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
