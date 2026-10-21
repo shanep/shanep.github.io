@@ -14,7 +14,7 @@ Alignment Sheet spreadsheet (sheet **Objectives**).
 2. **Required.** There are no optional objectives. Every objective below is attached to a
    mandatory, graded assignment.
 
-Because these two columns from the spreadsheet are constant across all 34 supporting objectives,
+Because these two columns from the spreadsheet are constant across all 35 supporting objectives,
 they are stated once here rather than repeated in every row.
 
 ## How this page maps to the spreadsheet
@@ -94,10 +94,11 @@ support: CyBOK §2.2-2.4, §2.6.1-2.6.2, §2.6.6, §14.1-14.3, §14.6.
 | 3.1 | Explain what a block cipher and a mode of operation each provide, and demonstrate why ECB mode leaks structure. | Understand | Process | Lab 4 rubric row 2 | Week 7: [7.02 Lab 4: Symmetric Encryption in Practice](assignments/lab-04-symmetric-encryption.md) |
 | 3.2 | Distinguish confidentiality from integrity and authenticity, and name the primitive that supplies each. | Understand | Concept | Lab 4 rubric rows 3-4 | Week 7: [7.02 Lab 4: Symmetric Encryption in Practice](assignments/lab-04-symmetric-encryption.md) |
 | 3.3 | Compare symmetric and public-key cryptography by key distribution, performance, and typical use. | Understand | Concept | Lab 5 rubric row 4 | Week 8: [8.02 Lab 5: Hashing and Signatures](assignments/lab-05-hashing-and-signatures.md) |
-| 3.4 | Verify a digital signature and explain what a verification failure does and does not prove. | Apply | Procedure | Lab 5 rubric rows 2-3 | Week 8: [8.02 Lab 5: Hashing and Signatures](assignments/lab-05-hashing-and-signatures.md) |
-| 3.5 | Interpret an X.509 certificate chain and identify the trust assumptions and failure modes of public key infrastructure. | Analyze | Process | Lab 6 rubric rows 1-4 | Week 10: [10.02 Lab 6: Certificates and TLS](assignments/lab-06-certificates-and-tls.md) |
+| 3.4 | Verify a digital signature. | Apply | Procedure | Lab 5 rubric row 2 | Week 8: [8.02 Lab 5: Hashing and Signatures](assignments/lab-05-hashing-and-signatures.md) |
+| 3.5 | Explain what a failed signature verification does and does not prove. | Understand | Concept | Lab 5 rubric row 3 | Week 8: [8.02 Lab 5: Hashing and Signatures](assignments/lab-05-hashing-and-signatures.md) |
+| 3.6 | Interpret an X.509 certificate chain and identify the trust assumptions and failure modes of public key infrastructure. | Analyze | Process | Lab 6 rubric rows 1-4 | Week 10: [10.02 Lab 6: Certificates and TLS](assignments/lab-06-certificates-and-tls.md) |
 
-**Notes.** Objectives 3.1-3.4 fall before spring break and 3.5 falls after it, with Lab 6. CyBOK's cryptography chapter opens with two heavily
+**Notes.** Objectives 3.1-3.5 fall before spring break and 3.6 falls after it, with Lab 6. CyBOK's cryptography chapter opens with two heavily
 mathematical sections (§10.1 Mathematics, §10.2 Cryptographic Security Models) that are **not
 assigned**: this course starts at §10.3. Reading support: CyBOK §10.3-10.8, §18.3, §18.5.1.
 
@@ -207,8 +208,8 @@ objectives it measures and its point value.
 | 5 | [5.02 D3: Authentication Policy Critique](discussions/d03-authentication-policy-critique.md) | 30 | 5.1, 5.2 |
 | 6 | [6.02 Lab 3: Access Control Matrix and Least Privilege](assignments/lab-03-access-control-matrix.md) | 38 | 2.4, 2.5, 5.3 |
 | 7 | [7.02 Lab 4: Symmetric Encryption in Practice](assignments/lab-04-symmetric-encryption.md) | 38 | 3.1, 3.2 |
-| 8 | [8.02 Lab 5: Hashing and Signatures](assignments/lab-05-hashing-and-signatures.md) | 38 | 3.3, 3.4 |
-| 10 | [10.02 Lab 6: Certificates and TLS](assignments/lab-06-certificates-and-tls.md) | 38 | 3.5 |
+| 8 | [8.02 Lab 5: Hashing and Signatures](assignments/lab-05-hashing-and-signatures.md) | 38 | 3.3, 3.4, 3.5 |
+| 10 | [10.02 Lab 6: Certificates and TLS](assignments/lab-06-certificates-and-tls.md) | 38 | 3.6 |
 | 11 | [11.02 D4: Network Security in the News](discussions/d04-network-security-in-the-news.md) | 30 | 4.1, 4.2 |
 | 12 | [12.02 Lab 7: Malware Triage Without Malware](assignments/lab-07-malware-triage.md) | 38 | 4.3 |
 | 13 | [13.02 Lab 8: Memory Safety and Assurance Evidence](assignments/lab-08-memory-safety-and-assurance.md) | 38 | 4.4, 5.5, 6.1, 6.2, 6.3, 6.4 |
@@ -220,7 +221,7 @@ objectives it measures and its point value.
 
 ## Coverage check
 
-Every one of the 34 supporting objectives is measured by **at least one graded rubric row** in a
+Every one of the 35 supporting objectives is measured by **at least one graded rubric row** in a
 lab or discussion. The table below is the count per objective.
 
 | TLO | Supporting objective | Measured by | Count |
@@ -239,7 +240,8 @@ lab or discussion. The table below is the count per objective.
 | 3 | 3.2 | Lab 4 | 1 |
 | 3 | 3.3 | Lab 5 | 1 |
 | 3 | 3.4 | Lab 5 | 1 |
-| 3 | 3.5 | Lab 6 | 1 |
+| 3 | 3.5 | Lab 5 | 1 |
+| 3 | 3.6 | Lab 6 | 1 |
 | 4 | 4.1 | D4 | 1 |
 | 4 | 4.2 | D4 | 1 |
 | 4 | 4.3 | Lab 7 | 1 |

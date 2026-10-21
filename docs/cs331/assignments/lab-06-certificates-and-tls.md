@@ -13,7 +13,7 @@ expired, one issued for the wrong name.
 
 ## Objectives assessed
 
-- **3.5**: Interpret an X.509 certificate chain and identify the trust assumptions and failure
+- **3.6**: Interpret an X.509 certificate chain and identify the trust assumptions and failure
   modes of public key infrastructure.
 
 ([TLO 3](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits))

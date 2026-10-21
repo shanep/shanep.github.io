@@ -14,8 +14,8 @@ You will run a provided script and change two values in it. There is no code to 
 
 - **3.3**: Compare symmetric and public-key cryptography by key distribution, performance, and
   typical use.
-- **3.4**: Verify a digital signature and explain what a verification failure does and does not
-  prove.
+- **3.4**: Verify a digital signature.
+- **3.5**: Explain what a failed signature verification does and does not prove.
 
 ([TLO 3](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits))
 

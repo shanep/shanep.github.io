@@ -43,8 +43,8 @@ Name **the terminal objective you are most confident about** and **the one you a
 about**. For each, name a **specific supporting objective** (by number) and say what you can or
 cannot do.
 
-Not: "I understand cryptography." Instead: "I can do 3.4 (I can explain what a failed signature
-verification does and does not prove), but 3.5 is shaky; I can read a certificate chain but I could
+Not: "I understand cryptography." Instead: "I can do 3.5 (I can explain what a failed signature
+verification does and does not prove), but 3.6 is shaky; I can read a certificate chain but I could
 not explain to somebody what actually goes wrong if a CA is compromised."
 
 ### 2. The thing that changed how you see something
