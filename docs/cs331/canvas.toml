@@ -116,6 +116,7 @@ discussions = ["course-resources/course-questions.md"]
 # students in Canvas.
 files = [
     "images/cs331-banner.svg",
+    "images/me.jpg",
     "data/auth.log",
     "data/cert_inspect.py",
     "data/crypto_demo.py",

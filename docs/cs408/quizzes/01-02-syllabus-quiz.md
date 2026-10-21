@@ -19,7 +19,7 @@ Please read the syllabus that is linked in Canvas and then answer the questions 
 
 If you have any technical issues, please contact the Boise State Help Desk.
 
-Please contact me (shanepanter (at) boisestate.edu) if you have questions or concerns about any of the
+Please contact me ([shanepanter@boisestate.edu](mailto:shanepanter@boisestate.edu)) if you have questions or concerns about any of the
 quiz questions.
 
 ## Questions

@@ -6,7 +6,7 @@ Fundamentals of computer security and information assurance. Topics include secu
 
 ## Course Logistics
 
-- **Email:** shanepanter (at) boisestate.edu
+- **Email:** [shanepanter@boisestate.edu](mailto:shanepanter@boisestate.edu)
 - **Office Hours:** Appointments are available by request
 - **Classroom:** Online (Asynchronous)
 - **Semester:** Spring 2027

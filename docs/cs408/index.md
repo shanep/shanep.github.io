@@ -27,7 +27,7 @@ via web conferencing (e.g., Zoom).
 
 ### Instructor Contact
 
-- **Email:** shanepanter (at) boisestate.edu
+- **Email:** [shanepanter@boisestate.edu](mailto:shanepanter@boisestate.edu)
 - **Office Hours:** [Instructor Information](./instructor.md)
 
 ## Learning Objectives

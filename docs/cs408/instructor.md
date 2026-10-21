@@ -4,7 +4,7 @@
 
 ![Shane Panter](./images/me.jpg)
 
-**Email:** shanepanter (at) boisestate.edu
+**Email:** [shanepanter@boisestate.edu](mailto:shanepanter@boisestate.edu)
 
 - **Office Hours:** by appointment, [book a time](https://calendar.app.google/6vYqreHcqvpu6D8MA)
 - Office Hours

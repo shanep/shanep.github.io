@@ -2,7 +2,9 @@
 
 ## Instructor: Shane Panter
 
-- **Email:** shanepanter (at) boisestate.edu
+![Shane Panter](./images/me.jpg)
+
+- **Email:** [shanepanter@boisestate.edu](mailto:shanepanter@boisestate.edu)
 - **Office Hours:** by appointment,
   [book a time](https://calendar.app.google/3NEb1xLYYwZRejY18)
 - **Classroom:** Online (Asynchronous)
