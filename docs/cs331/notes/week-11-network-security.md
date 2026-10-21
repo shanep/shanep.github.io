@@ -35,8 +35,8 @@ segmentation is one page and worth the detour.
 
 ## Attacks by layer
 
-Attribute an attack to the layer whose protocol property it exploits. This is what part 1 of D4 asks
-you to do for a real incident.
+For each attack, name the network layer whose protocol has the weakness the attacker relies on. Part 1
+of D4 asks you to do the same for a real incident.
 
 | Layer | Attack | The property exploited |
 | --- | --- | --- |
@@ -56,8 +56,9 @@ Two patterns run through the whole table:
 
 ## Worked example
 
-Take the [NORTHWIND MEADOW incident](../data/incident-report.md) (the hospital ransomware case you
-will analyze in Lab 7 next week) and ask a purely network question about it: **where could the
+Read the [NORTHWIND MEADOW incident report](../data/incident-report.md) before you go further. It is
+the hospital ransomware case you will analyze in Lab 7 next week, so the time carries over. Then ask a
+purely network question about it: **where could the
 network have seen this, and where could it have stopped it?**
 
 ### Where the network could have seen it

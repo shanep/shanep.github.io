@@ -36,8 +36,8 @@ hardest problem in PKI, lives.
 ## Worked example
 
 Run [data/cert_inspect.py](../data/cert_inspect.py) alongside this section. It builds a root CA, an
-intermediate CA, and three server certificates in memory, then runs the basic checks a browser
-runs.
+intermediate CA, and three server certificates in memory, named `good`, `expired`, and
+`wrong-name`, then runs the basic checks a browser runs on each one.
 
 ```
 python3 cert_inspect.py
@@ -47,7 +47,9 @@ python3 cert_inspect.py
 
 A certificate is a small structured document containing, at minimum:
 
-- **Subject**: the name this certificate is about (`CN=www.example.edu`)
+- **Subject**: who this certificate is about. For a website that is its hostname, written as a
+  common name: `CN=www.example.edu`. It is a hostname, not a URL, so there is no `https://` and no
+  path.
 - **Subject Alternative Name**: the list of DNS names it actually covers; this is what browsers
   check, not the subject common name
 - **Public key**: the key being bound to that name
@@ -60,7 +62,7 @@ this public key belongs to this name, until this date."
 
 ### 2. The five checks
 
-Here is what the script prints for the good certificate (trimmed):
+Here is what `cert_inspect.py` prints for the `good` certificate (trimmed):
 
 ```
   [PASS] validity period covers today

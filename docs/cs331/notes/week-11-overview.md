@@ -6,10 +6,19 @@ The internet's core protocols were designed by people who were solving a differe
 were building something that would keep working when links failed and routers died, among
 institutions that broadly trusted each other. Almost none of it authenticates anything.
 
-That inheritance explains most of this week. ARP believes any reply. DNS believed any answer until
-DNSSEC. BGP largely believes any route announcement. TCP's sequence numbers give you robustness
-against faults, not against an adversary. Every one of those is a design that was correct for its
-requirements and became a vulnerability when the requirements changed.
+That inheritance explains most of this week:
+
+- **ARP** (Address Resolution Protocol), which finds the hardware address that goes with an IP
+  address on a local network, believes any reply.
+- **DNS** (Domain Name System), which turns names like `boisestate.edu` into addresses, believed
+  any answer until **DNSSEC** (DNS Security Extensions) added signatures.
+- **BGP** (Border Gateway Protocol), which networks use to tell each other how to reach addresses,
+  largely believes any route announcement.
+- **TCP** (Transmission Control Protocol) uses sequence numbers to keep data in order, which gives
+  robustness against faults, not against an adversary.
+
+Every one of those is a design that was correct for its requirements and became a vulnerability
+when the requirements changed.
 
 The second half of the week is what defenders do about it: firewalling, segmentation, monitoring,
 and the observation that in a world where nearly all traffic is encrypted, a network sensor sees

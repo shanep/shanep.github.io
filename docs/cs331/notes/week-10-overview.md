@@ -6,8 +6,9 @@ Welcome back. Week 8 ended with an unanswered question: a signature verifies aga
 but what tells you whose key it is?
 
 This week is the answer. A **certificate** is a signed statement binding a public key to a name.
-Somebody you already trust signs it, and their key is vouched for by somebody else, up to a root
-that your browser or operating system simply believes because it shipped with a list.
+Somebody you already trust signs it, and their key is vouched for by somebody else, up a chain to a
+root certificate. Your browser or operating system believes the root simply because it shipped with
+a list of them.
 
 That last step is worth staring at. Four of the five basic checks a browser runs on a certificate
 are arithmetic. The fifth is a decision somebody made on your behalf, before you ever opened the

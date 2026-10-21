@@ -81,7 +81,8 @@ For **each** of the two:
 - **What it would not have stopped**, in this same incident.
 
 At least one of your two must be a **detection** control rather than a prevention control, and for
-that one you must say who would have seen the alert and what they would have had to do.
+that one you must say who would have seen the alert and what they would have had to do. Week 15
+will show you what happens to alerts nobody reads.
 
 ### 3. The honest limit
 
@@ -107,12 +108,9 @@ Reply to **two** classmates who chose different incidents. Do one of these:
 | Row | What is assessed | Points |
 | --- | --- | ---: |
 | 1 | Initial post part 1: incident summarized with a linked technical source; the correct protocol layer identified; the specific protocol property the attacker relied on named, or the evidence gap stated precisely | 10 |
-| 2 | Initial post parts 2-3: two controls, at least one detection-based, each with what it does, where it would have acted, its cost, and what it would not have stopped; the realism paragraph engages with budget and displacement | 8 |
+| 2 | Initial post parts 2-3: two controls, at least one detection-based, each with what it does, where it would have acted, its cost, and what it would not have stopped; the realism paragraph engages with budget and displacement. Points come off for a control with no stated cost, or a detection control with no answer to "who reads the alert" | 8 |
 | 3 | Two substantive replies to classmates with different incidents, each defeating a control, correcting a layer attribution, or raising an unaccounted cost | 12 |
 | | **Total** | **30** |
-
-**What loses points in row 2:** controls with no stated cost, and detection controls with no answer
-to "who reads the alert." Week 15 will show you what happens to alerts nobody reads.
 
 ## Discussion Guidelines
 

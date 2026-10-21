@@ -33,6 +33,7 @@ expired, one issued for the wrong name.
 - Make sure you have done the [week 10 readings](../notes/week-10-keys-certificates-and-pki.md).
 - Download [data/cert_inspect.py](../data/cert_inspect.py) from Canvas Files.
 - Check that you have the `cryptography` package from [Lab 0](lab-00-course-setup.md).
+- Use your own browser and your own machine. Step 1 and Step 4 question 2 ask what they show you.
 
 ## Steps
 
@@ -40,7 +41,7 @@ expired, one issued for the wrong name.
 
 Visit the [Boise State home page](https://www.boisestate.edu) and open the certificate your browser received.
 
-- **Chrome / Edge:** click the icon left of the address bar → *Connection is secure* → *Certificate
+- **Chrome / Edge / Opera:** click the icon left of the address bar → *Connection is secure* → *Certificate
   is valid*.
 - **Firefox:** click the padlock → *Connection secure* → *More information* → *View Certificate*.
 - **Safari:** click the padlock → *Show Certificate*.
@@ -127,8 +128,6 @@ One Canvas submission containing:
 
 You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
 what for, per the [AI policy](../index.md#ai-policy).
-
-Step 1 and Step 4 question 2 require you to look at your own browser and your own machine.
 
 ## Instructor Notes
 

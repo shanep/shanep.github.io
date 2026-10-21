@@ -2,13 +2,14 @@
 
 **April 5-11 · Reading: 16 pages · Due: Lab 7 · Estimated total: 7 hours**
 
-Two questions this week, and they are different questions.
+Two questions this week, and they are different questions. Ask both of any intrusion, including the
+hospital ransomware case you work through in Lab 7.
 
-**What is the malware?** CyBOK §6 gives you a taxonomy (standalone or host-dependent, persistent
+**What malicious software did the attackers use?** CyBOK §6 gives you a taxonomy (standalone or host-dependent, persistent
 on disk or transient in memory, user-activated or auto-spreading) and a survey of how malware is
 analyzed and detected.
 
-**What did the people do?** CyBOK §7 is about operations rather than code: the elements of a
+**What did the attackers do?** CyBOK §7 is about operations rather than code: the elements of a
 malicious operation, how it is organized, and what motivates it. This is the more useful frame most
 of the time, because modern intrusions increasingly involve very little malware. The operators in
 this week's case moved between machines for six days using tools that were already installed.
