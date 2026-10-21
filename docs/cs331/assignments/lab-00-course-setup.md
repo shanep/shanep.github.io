@@ -22,8 +22,8 @@ discussion board or email me now, in week 1, rather than in week 7 when a lab is
 | Step | Time |
 | --- | --- |
 | Steps 1-2: Python and `cryptography` | 15 min |
-| Step 3: find three things in CyBOK | 20 min |
-| Step 4: look up a CVE | 10 min |
+| Step 3: Find three things in CyBOK | 20 min |
+| Step 4: Look up a CVE | 10 min |
 | **Total** | **45 min** |
 
 ## Before you start

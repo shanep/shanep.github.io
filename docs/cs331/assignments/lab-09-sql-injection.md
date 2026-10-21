@@ -25,10 +25,10 @@ Everything you need is in the provided script.
 
 | Step | Time |
 | --- | --- |
-| Step 1: run it, read the code | 20 min |
-| Step 2: the worked injection | 20 min |
-| Step 3: your own injection | 25 min |
-| Step 4: the fix, and why it works | 25 min |
+| Step 1: Run it, read the code | 20 min |
+| Step 2: The worked injection | 20 min |
+| Step 3: Your own injection | 25 min |
+| Step 4: The fix, and why it works | 25 min |
 | **Total** | **90 min** |
 
 ## Before you start

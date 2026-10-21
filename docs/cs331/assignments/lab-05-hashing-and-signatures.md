@@ -23,9 +23,9 @@ You will run a provided script and change two values in it. There is no code to 
 
 | Step | Time |
 | --- | --- |
-| Step 1: run it | 10 min |
-| Step 2: hashing | 25 min |
-| Step 3: signing and tampering | 30 min |
+| Step 1: Run it | 10 min |
+| Step 2: Hashing | 25 min |
+| Step 3: Signing and tampering | 30 min |
 | Step 4: MAC vs. signature | 25 min |
 | **Total** | **90 min** |
 

@@ -23,9 +23,9 @@ No code. This is a reading-and-writing lab.
 
 | Step | Time |
 | --- | --- |
-| Step 1: pick a system and describe it | 15 min |
-| Step 2: work through the eight principles | 45 min |
-| Step 3: pick two failures and go deeper | 25 min |
+| Step 1: Pick a system and describe it | 15 min |
+| Step 2: Work through the eight principles | 45 min |
+| Step 3: Pick two failures and go deeper | 25 min |
 | **Total** | **85 min** |
 
 ## Before you start

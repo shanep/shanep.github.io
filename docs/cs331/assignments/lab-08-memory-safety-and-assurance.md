@@ -34,10 +34,10 @@ the assembly a compiler produces from it, in a browser. That is all.
 
 | Step | Time |
 | --- | --- |
-| Step 1: read the code | 15 min |
-| Step 2: the stack, in Compiler Explorer | 30 min |
-| Step 3: mitigations | 20 min |
-| Step 4: prevention and evidence | 25 min |
+| Step 1: Read the code | 15 min |
+| Step 2: The stack, in Compiler Explorer | 30 min |
+| Step 3: Mitigations | 20 min |
+| Step 4: Prevention and evidence | 25 min |
 | **Total** | **90 min** |
 
 ## Before you start

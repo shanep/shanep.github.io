@@ -22,10 +22,10 @@ expired, one issued for the wrong name.
 
 | Step | Time |
 | --- | --- |
-| Step 1: inspect a real chain | 25 min |
-| Step 2: run the script | 10 min |
-| Step 3: the three certificates | 30 min |
-| Step 4: trust assumptions | 25 min |
+| Step 1: Inspect a real chain | 25 min |
+| Step 2: Run the script | 10 min |
+| Step 3: The three certificates | 30 min |
+| Step 4: Trust assumptions | 25 min |
 | **Total** | **90 min** |
 
 ## Before you start

@@ -26,10 +26,10 @@ No code. This is a modeling lab, and the modeling is the point.
 
 | Step | Time |
 | --- | --- |
-| Step 1: build the matrix | 25 min |
+| Step 1: Build the matrix | 25 min |
 | Step 2: ACL and capability list | 20 min |
 | Step 3: RBAC | 20 min |
-| Step 4: cut to least privilege | 25 min |
+| Step 4: Cut to least privilege | 25 min |
 | **Total** | **90 min** |
 
 ## Before you start

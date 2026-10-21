@@ -27,11 +27,11 @@ an ordinary day.
 
 | Step | Time |
 | --- | --- |
-| Step 1: what the logs are | 10 min |
-| Step 2: the authentication log | 25 min |
-| Step 3: the web log | 20 min |
-| Step 4: detection model and base rate | 20 min |
-| Step 5: the memo | 20 min |
+| Step 1: What the logs are | 10 min |
+| Step 2: The authentication log | 25 min |
+| Step 3: The web log | 20 min |
+| Step 4: Detection model and base rate | 20 min |
+| Step 5: The memo | 20 min |
 | **Total** | **95 min** |
 
 ## Before you start

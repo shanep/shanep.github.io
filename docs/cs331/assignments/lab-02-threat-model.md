@@ -24,9 +24,9 @@ being methodical rather than clever.
 | Step | Time |
 | --- | --- |
 | Read the system description | 15 min |
-| Step 1: data flow diagram | 20 min |
+| Step 1: Data flow diagram | 20 min |
 | Step 2: STRIDE table | 35 min |
-| Step 3: likelihood and impact | 15 min |
+| Step 3: Likelihood and impact | 15 min |
 | **Total** | **85 min** |
 
 ## Before you start
