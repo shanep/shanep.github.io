@@ -33,10 +33,20 @@ special properties such as homomorphic encryption, and implementation aspects). 
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
-| Nakov, *Practical Cryptography for Developers* | Hash functions; RSA; ECC; digital signatures | none | skim | 30 min |
+| Nakov, *Practical Cryptography for Developers* | Hash functions; RSA; digital signatures | none | skim | 30 min |
 
-Start Nakov at the [hash functions chapter](https://cryptobook.nakov.com/cryptographic-hash-functions) and continue through
-the digital signatures pages.
+### A note on the Nakov reading
+
+Nakov is required, like last week. Read these five pages and skip the rest of each chapter:
+
+- [Hash Functions](https://cryptobook.nakov.com/cryptographic-hash-functions) and
+  [Crypto Hashes and Collisions](https://cryptobook.nakov.com/cryptographic-hash-functions/crypto-hashes-and-collisions)
+- [The RSA Cryptosystem - Concepts](https://cryptobook.nakov.com/asymmetric-key-ciphers/the-rsa-cryptosystem-concepts)
+- [Digital Signatures](https://cryptobook.nakov.com/digital-signatures) and
+  [EdDSA and Ed25519](https://cryptobook.nakov.com/digital-signatures/eddsa-and-ed25519)
+
+CyBOK says what each of these guarantees, and Nakov shows how they work. EdDSA is on the list
+because Ed25519 is the signature scheme in the worked example below.
 
 ## Worked example
 

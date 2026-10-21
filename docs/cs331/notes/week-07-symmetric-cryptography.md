@@ -33,8 +33,18 @@
 | --- | --- | --- | --- | --- |
 | Nakov, *Practical Cryptography for Developers* | AES and cipher block modes | none | skim | 25 min |
 
-[Nakov's AES and cipher modes pages](https://cryptobook.nakov.com/symmetric-key-ciphers) are written for developers and have
-worked examples where CyBOK has definitions. Use it when CyBOK's treatment is too compressed.
+### A note on the Nakov reading
+
+Nakov is required, not optional. Read these three pages and skip the examples and exercises pages
+after them:
+
+- [Symmetric Key Ciphers](https://cryptobook.nakov.com/symmetric-key-ciphers), the opening page of the chapter
+- [Cipher Block Modes](https://cryptobook.nakov.com/symmetric-key-ciphers/cipher-block-modes)
+- [The AES Cipher - Concepts](https://cryptobook.nakov.com/symmetric-key-ciphers/aes-cipher-concepts)
+
+CyBOK gives you the definitions, and Nakov shows the same ideas with worked examples. Cipher
+Block Modes matters most, because Lab 4 has you compare modes and reuse a nonce, and that page
+walks through CTR, GCM and the IV.
 
 ## Worked example
 

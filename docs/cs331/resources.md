@@ -89,7 +89,7 @@ where a worked treatment helps most. All are free.
 | ---: | --- | --- |
 | 2 | Saltzer and Schroeder, [*The Protection of Information in Computer Systems*](https://web.mit.edu/Saltzer/www/publications/protection/) (1975), the eight design principles in §I only | Free to read |
 | 5 | NIST SP 800-63B-4, [*Digital Identity Guidelines: Authentication and Authenticator Management*](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf) (July 2025), §3 | Public domain (U.S. Government) |
-| 7-8 | Nakov, [*Practical Cryptography for Developers*](https://cryptobook.nakov.com/), the AES, cipher modes, hashing, RSA, and ECC pages | MIT |
+| 7-8 | Nakov, [*Practical Cryptography for Developers*](https://cryptobook.nakov.com/), the AES, cipher modes, hashing, RSA, and signature pages | MIT |
 | 12 | [MITRE ATT&CK](https://attack.mitre.org/): Enterprise matrix and selected technique pages | Free to use, MITRE terms |
 | 13 | Aleph One, [*Smashing the Stack for Fun and Profit*](http://phrack.org/issues/49/14.html), Phrack 49, first third only | Free to read |
 | 14 | [OWASP Top 10:2021](https://top10.owasp.org/2021/): A01 Broken Access Control, A03 Injection, A07 Identification and Authentication Failures | CC BY-SA |
