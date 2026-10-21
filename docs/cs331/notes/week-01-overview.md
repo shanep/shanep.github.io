@@ -1,6 +1,11 @@
 # Module 1 Overview
 
-**January 11-17 · Reading: 7 pages · Estimated total: 5 hours**
+**January 11-17 · Reading: 7 pages · Due: D1 and Lab 0 · Estimated total: 5 hours**
+
+::: info Start with Getting Started
+Work through the [Getting Started](../getting-started.md) module first. D1 and Lab 0 are in it and
+due this week, which is why this module is light.
+:::
 
 The first week does two things. It gets your tools working, and it gives you the vocabulary the
 rest of the semester runs on.

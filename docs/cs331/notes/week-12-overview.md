@@ -1,6 +1,6 @@
 # Module 12 Overview
 
-**April 5-11 · Reading: 16 pages · Estimated total: 7 hours**
+**April 5-11 · Reading: 16 pages · Due: Lab 7 · Estimated total: 7 hours**
 
 Two questions this week, and they are different questions.
 

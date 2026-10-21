@@ -1,6 +1,6 @@
 # Module 6 Overview
 
-**February 15-21 · Presidents' Day is Monday, February 15 · Reading: 13 pages · Estimated total: 6.5 hours**
+**February 15-21 · Presidents' Day is Monday, February 15 · Reading: 13 pages · Due: Lab 3 · Estimated total: 6.5 hours**
 
 Last week the system worked out who you are. This week it decides what you may do about it.
 

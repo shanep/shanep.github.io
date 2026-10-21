@@ -1,6 +1,6 @@
 # Module 10 Overview
 
-**March 22-28 · Reading: 11 pages · Estimated total: 6.25 hours**
+**March 22-28 · Reading: 11 pages · Due: Lab 6 · Estimated total: 6.25 hours**
 
 Welcome back. Week 8 ended with an unanswered question: a signature verifies against a public key,
 but what tells you whose key it is?

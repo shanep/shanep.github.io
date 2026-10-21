@@ -1,6 +1,6 @@
 # Module 8 Overview
 
-**March 1-7 · Reading: 9 pages · Estimated total: 6.5 hours**
+**March 1-7 · Reading: 9 pages · Due: Lab 5 · Estimated total: 6.5 hours**
 
 Symmetric cryptography works beautifully once two parties share a key. Getting them to share one is
 the problem it cannot solve. Two people who have never met, on a network run by strangers, cannot

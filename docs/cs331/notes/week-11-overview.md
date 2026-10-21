@@ -1,6 +1,6 @@
 # Module 11 Overview
 
-**March 29 - April 4 · Reading: 17 pages · Estimated total: 6 hours**
+**March 29 - April 4 · Reading: 17 pages · Due: D4 · Estimated total: 6 hours**
 
 The internet's core protocols were designed by people who were solving a different problem. They
 were building something that would keep working when links failed and routers died, among

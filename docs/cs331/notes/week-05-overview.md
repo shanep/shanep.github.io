@@ -1,6 +1,6 @@
 # Module 5 Overview
 
-**February 8-14 · Reading: 10 pages plus NIST §3 · Estimated total: 6 hours**
+**February 8-14 · Reading: 10 pages plus NIST §3 · Due: D3 · Estimated total: 6 hours**
 
 Three words get used as if they mean the same thing:
 

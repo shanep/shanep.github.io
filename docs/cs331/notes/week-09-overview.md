@@ -1,6 +1,6 @@
 # Module 9 Overview
 
-**March 8-14 · No new reading · Nothing due**
+**March 8-14 · Review and catch-up week · No new reading · Nothing due**
 
 No new material and nothing due this week. It is a review and catch-up week, placed right before
 spring break on purpose.

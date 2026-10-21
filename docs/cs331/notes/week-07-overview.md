@@ -1,6 +1,6 @@
 # Module 7 Overview
 
-**February 22-28 · Reading: 9 pages · Estimated total: 6.5 hours**
+**February 22-28 · Reading: 9 pages · Due: Lab 4 · Estimated total: 6.5 hours**
 
 Cryptography is the part of this course students most expect to be mathematics, and the part where
 the mathematics matters least to you. You are not going to design a cipher. You are going to use

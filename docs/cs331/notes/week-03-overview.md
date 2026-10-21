@@ -1,6 +1,6 @@
 # Module 3 Overview
 
-**January 25-31 · Reading: 15 pages, plus 14 to skim · Estimated total: 6 hours**
+**January 25-31 · Reading: 15 pages, plus 14 to skim · Due: D2 · Estimated total: 6 hours**
 
 Everything you learn in this course is dual-use. The technique that finds a vulnerability in a
 system you are paid to test is the same technique that is a crime against a system you are not.

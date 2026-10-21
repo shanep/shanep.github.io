@@ -1,6 +1,6 @@
 # Module 13 Overview
 
-**April 12-18 · Reading: 13 pages · Estimated total: 7 hours**
+**April 12-18 · Reading: 13 pages · Due: Lab 8 · Estimated total: 7 hours**
 
 This week has two halves that belong together.
 

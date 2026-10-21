@@ -37,8 +37,10 @@ constructing shellcode, then stop. It is thirty years old and still the clearest
 what the stack looks like during a function call. Also worth noticing: the bug it describes is
 still, three decades later, one of the most common classes in the CVE database.
 
+::: info §15.3 for Lab 8
 §15.3 (detection of vulnerabilities, static and dynamic analysis) is not assigned as reading, but
-Lab 8 asks about it and you should look at pages 512-516 when you get to that question.
+Lab 8 asks about it. Look at pages 512-516 when you get to that question.
+:::
 
 ## Worked example
 

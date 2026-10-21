@@ -1,6 +1,6 @@
 # Module 14 Overview
 
-**April 19-25 · Reading: 15 pages · Estimated total: 6.75 hours**
+**April 19-25 · Reading: 15 pages · Due: Lab 9 · Estimated total: 6.75 hours**
 
 Last week a program copied bytes into a buffer without knowing how big it was. This week a program
 builds a *command* out of untrusted input without keeping the command and the data apart. It is the

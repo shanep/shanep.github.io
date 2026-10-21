@@ -1,6 +1,6 @@
 # Module 15 Overview
 
-**April 26-30 · Reading: 11 pages · Estimated total: 7 hours**
+**April 26-30 · Reading: 11 pages · Due: D5 and Lab 10 · Estimated total: 7 hours**
 
 Last week of instruction, and the one that ties the semester together.
 
@@ -41,13 +41,15 @@ By the end of this week, the successful student will be able to:
 - [15.04 Lab 10: Log Analysis and Incident Memo](../assignments/lab-10-log-analysis-and-incident-memo.md)
   (1 hr 35 min, 38 points)
 
-**April 30 is the last day of instruction.** No lab, discussion, or extra credit from the
+::: warning April 30 is the last day of instruction
+No lab, discussion, or extra credit from the
 instructional weeks is accepted after it (see the
 [Late Work Policy](../index.md#late-work-policy)). The usual two-day grace period cannot extend
 past the end of the semester, so week 15 has no grace period at all.
 [D6, the final reflection](../discussions/d06-final-reflection.md) is the only thing due after
 April 30, and it is governed by the Class Interaction Policy rather than by the homework late
 policy.
+:::
 
 ## Time Estimate
 

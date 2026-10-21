@@ -1,6 +1,6 @@
 # Module 4 Overview
 
-**February 1-7 · Reading: 11 pages · Estimated total: 6.5 hours**
+**February 1-7 · Reading: 11 pages · Due: Lab 2 · Estimated total: 6.5 hours**
 
 There is always more that could go wrong than you have money to fix. Risk management is the
 discipline of deciding what to fix first, and defending that decision to somebody who wants the
