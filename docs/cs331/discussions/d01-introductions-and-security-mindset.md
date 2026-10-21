@@ -30,7 +30,8 @@ Post one message with two parts.
 
 ### Part 1: Who you are
 
-Two or three sentences: your major, your year, and one sentence on why you are taking this course.
+Write two or three sentences telling us your major, your year, and one sentence on why you are
+taking this course.
 If you already work in IT or have any security experience, say so: it helps me calibrate. If this
 is completely new to you, say that too; you are the audience this course is designed for.
 

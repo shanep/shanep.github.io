@@ -34,7 +34,7 @@ it. `payroll.db` carries `alice: rwd, backup-service: r`. This is how file permi
 holds `report.pdf: r`. This is how a bearer token, an API key, or a share link works: possession
 of the capability *is* the authorization.
 
-Neither is better. They make different questions cheap:
+Neither is better. They make different questions cheap. See the following table.
 
 | Question | ACL | Capability list |
 | --- | --- | --- |
@@ -57,7 +57,8 @@ correspond to a role has to become a new role, and organizations end up with tho
 
 ## Worked example
 
-Take three subjects and three objects from SnapVault, using facts from the description:
+Let's take three subjects and three objects from SnapVault, using facts from the description. See
+the table below.
 
 |  | Private album | Photo storage bucket | Access log |
 | --- | --- | --- | --- |

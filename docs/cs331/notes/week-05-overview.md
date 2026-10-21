@@ -2,7 +2,7 @@
 
 **February 8-14 · Reading: 10 pages plus NIST §3 · Estimated total: 6 hours**
 
-Three words get used as if they meant the same thing:
+Three words get used as if they mean the same thing:
 
 - **Identification**: you claim to be somebody. Typing a username.
 - **Authentication**: you provide evidence for the claim. Typing the password.

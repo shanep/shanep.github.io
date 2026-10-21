@@ -4,8 +4,10 @@
 
 ## Goal
 
-Get the two tools this course uses working on whatever machine you plan to use, and learn to find
-things in the textbook. Everything else in the semester assumes you finished this.
+1. Get the two tools this course uses working on whatever machine you plan to use.
+2. Learn to find things in the textbook.
+
+Everything else in the semester assumes you already completed these goals.
 
 If something here does not work, that is exactly what this lab is for. Post in the course
 discussion board or email me now, in week 1, rather than in week 7 when a lab is due.
