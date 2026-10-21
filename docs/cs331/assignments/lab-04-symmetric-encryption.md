@@ -32,10 +32,7 @@ happened.
 
 ## Before you start
 
-- CyBOK §10.4 (printed pages 331-334), block ciphers, stream ciphers, hash functions.
-- CyBOK §10.5 (printed pages 334-338), modes of operation and message authentication codes.
-- Nakov, *Practical Cryptography for Developers*, the **AES** and **cipher block modes** pages:
-  <https://cryptobook.nakov.com/symmetric-key-ciphers>
+- Make sure you have done the [week 7 readings](../notes/week-07-symmetric-cryptography.md).
 - Download [data/crypto_demo.py](../data/crypto_demo.py) from Canvas Files.
 - You need the `cryptography` package from [Lab 0](lab-00-course-setup.md). Check it with
   `python3 -c "import cryptography; print('ok')"` before you start.

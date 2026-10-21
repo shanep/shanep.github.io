@@ -31,11 +31,7 @@ You run a provided script and change two values in it. No code to write.
 
 ## Before you start
 
-- CyBOK §10.4.3 (printed pages 332-334), hash functions.
-- CyBOK §10.6 (printed pages 338-341), public key encryption.
-- CyBOK §10.7 (printed pages 341-343), public key signatures.
-- Nakov, *Practical Cryptography for Developers*, the **hash functions** and **digital
-  signatures** pages: <https://cryptobook.nakov.com/cryptographic-hash-functions>
+- Make sure you have done the [week 8 readings](../notes/week-08-public-key-cryptography.md).
 - Download [data/sign_demo.py](../data/sign_demo.py) from Canvas Files.
 - Needs the `cryptography` package from [Lab 0](lab-00-course-setup.md).
 

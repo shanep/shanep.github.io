@@ -31,9 +31,8 @@ being methodical rather than clever.
 
 ## Before you start
 
+- Make sure you have done the [week 4 readings](../notes/week-04-risk-and-threat-modeling.md).
 - Read the [SnapVault system description](../data/photoshare-system.md) all the way through, once, before you start diagramming.
-- CyBOK §2.2-2.4 (printed pages 20-26) for what risk is and why it is assessed.
-- CyBOK §2.6.1-2.6.2 (printed pages 31-33) for components versus systems, and the elements of risk.
 
 ### STRIDE, for reference
 

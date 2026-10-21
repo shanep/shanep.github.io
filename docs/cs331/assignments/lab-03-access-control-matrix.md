@@ -34,10 +34,7 @@ No code. This is a modeling lab, and the modeling is the point.
 
 ## Before you start
 
-- CyBOK §14.3.1 (printed pages 467-472), core concepts, security policies, role-based and
-  attribute-based access control.
-- CyBOK §14.3.2 (printed pages 472-474), enforcing access control, reference monitors.
-- CyBOK §14.6 (printed pages 489-493), accountability.
+- Make sure you have done the [week 6 readings](../notes/week-06-authorisation-and-access-control.md).
 - The [SnapVault system description](../data/photoshare-system.md), the same system you
   threat-modeled in Lab 2. You will use its actors and its data.
 

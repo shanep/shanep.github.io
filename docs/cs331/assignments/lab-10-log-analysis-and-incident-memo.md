@@ -36,15 +36,7 @@ an ordinary day.
 
 ## Before you start
 
-- CyBOK §8.1 (printed pages 253-256), fundamental concepts, workflows and vocabulary.
-- CyBOK §8.2 (printed pages 256-263), **monitor: data sources**. Skim; you will come back to it in
-  Step 1.
-- CyBOK §8.3.1-8.3.3 (printed pages 264-268), misuse detection, anomaly detection, and blended
-  detection.
-- CyBOK §8.3.6 (printed page 270), **the base-rate fallacy**. Short and important.
-- CyBOK §8.7 (printed pages 283-286), incident management: prepare, handle, follow up.
-- NIST SP 800-61r3, skim §2.1, the incident response life cycle model, including Table 1:
-  <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf>
+- Make sure you have done the [week 15 readings](../notes/week-15-security-operations-and-incident-response.md).
 - Download [data/auth.log](../data/auth.log) and [data/web_access.log](../data/web_access.log) from
   Canvas Files.
 

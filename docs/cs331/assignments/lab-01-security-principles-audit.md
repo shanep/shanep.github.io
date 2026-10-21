@@ -30,13 +30,7 @@ No code. This is a reading-and-writing lab.
 
 ## Before you start
 
-Read, if you have not already:
-
-- CyBOK §1.4 (printed pages 9-13), especially **§1.4.1 Saltzer and Schroeder Principles**.
-- CyBOK §4.3 **Human Error** (printed pages 158-161).
-- Saltzer and Schroeder, *The Protection of Information in Computer Systems* (1975), section I,
-  <https://web.mit.edu/Saltzer/www/publications/protection/>. You only need the numbered list of
-  principles and the paragraph explaining each; skip the rest of the paper.
+- Make sure you have done the [week 2 readings](../notes/week-02-security-principles-and-human-factors.md).
 
 ### The eight principles, for reference
 

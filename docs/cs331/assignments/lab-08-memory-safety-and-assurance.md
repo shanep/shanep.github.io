@@ -42,14 +42,7 @@ read the assembly a compiler produces from it, in a browser. That is all.
 
 ## Before you start
 
-- CyBOK §15.1.1 (printed pages 500-501), memory management vulnerabilities.
-- CyBOK §15.2 (printed pages 507-512), prevention of vulnerabilities: language design, API design,
-  coding practices.
-- CyBOK §15.4 (printed pages 516-520), mitigating exploitation of vulnerabilities.
-- CyBOK §17.4 (printed pages 582-585), SAMM, BSIMM, and the Common Criteria.
-- Aleph One, *Smashing the Stack for Fun and Profit*, Phrack 49, read from the start through the
-  section that lays out the stack frame; stop when it starts writing shellcode.
-  <http://phrack.org/issues/49/14.html>
+- Make sure you have done the [week 13 readings](../notes/week-13-software-security-and-assurance.md).
 - Open [data/vuln.c](../data/vuln.c). You need it in front of you for the whole lab.
 
 ## Steps

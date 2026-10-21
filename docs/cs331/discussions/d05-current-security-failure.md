@@ -18,9 +18,7 @@
 
 ## Before you start
 
-- CyBOK §8.7 (printed pages 283-286), incident management: prepare, handle, follow up.
-- NIST SP 800-61r3, which maps incident response onto the CSF 2.0 functions:
-  <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf>
+- Make sure you have done the [week 15 readings](../notes/week-15-security-operations-and-incident-response.md).
 - You will have written a memo in [Lab 10](../assignments/lab-10-log-analysis-and-incident-memo.md)
   this week. This discussion applies the same structure to a real organization, and you may reuse
   what you learned there.

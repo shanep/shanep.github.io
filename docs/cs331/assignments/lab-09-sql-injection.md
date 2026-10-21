@@ -33,11 +33,7 @@ Everything you need is in the provided script.
 
 ## Before you start
 
-- CyBOK §16.4.1 (printed pages 547-552), injection vulnerabilities, especially **§16.4.1.1
-  SQL-Injection**.
-- CyBOK §15.1.2 (printed pages 501-503), structured output generation vulnerabilities. This is the
-  general category SQL injection belongs to, and reading it will change how you see the fix.
-- OWASP Top 10:2021 **A03: Injection**: <https://owasp.org/Top10/A03_2021-Injection/>
+- Make sure you have done the [week 14 readings](../notes/week-14-web-security-and-injection.md).
 - Download [data/sqli_demo.py](../data/sqli_demo.py) from Canvas Files. It uses only the Python
   standard library, no `pip install` needed.
 

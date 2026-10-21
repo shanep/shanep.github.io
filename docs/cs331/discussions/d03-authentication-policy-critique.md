@@ -23,10 +23,7 @@
 
 ## Before you start
 
-- CyBOK §14.5 (printed pages 479-489), authentication.
-- NIST SP 800-63B-4, *Authentication and Authenticator Management*, §3:
-  <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf>
-  It is a long document. Read §3 and skim the rest.
+- Make sure you have done the [week 5 readings](../notes/week-05-authentication-and-credentials.md).
 - Run [data/password_demo.py](../data/password_demo.py) (the week 5 worked example) before you
   post. You will cite its output.
 

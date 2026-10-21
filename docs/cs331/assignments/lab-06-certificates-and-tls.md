@@ -30,9 +30,7 @@ expired, one issued for the wrong name.
 
 ## Before you start
 
-- CyBOK §18.3 (printed pages 625-635), key management, especially **§18.3.8, managing public keys
-  and public key infrastructure** (printed pages 632-635).
-- CyBOK §18.5.1 (printed pages 639-640), Transport Layer Security.
+- Make sure you have done the [week 10 readings](../notes/week-10-keys-certificates-and-pki.md).
 - Download [data/cert_inspect.py](../data/cert_inspect.py) from Canvas Files.
 - Needs the `cryptography` package from [Lab 0](lab-00-course-setup.md).
 
