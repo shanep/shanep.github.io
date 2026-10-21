@@ -32,7 +32,7 @@ Find **one** publicly reported security incident, from the last three years, in 
 played a substantive role**. That means the reporting says something about how the attacker moved,
 what protocol or network weakness they used, or how traffic was or was not observed.
 
-Good sources: CISA advisories (<https://www.cisa.gov/news-events/cybersecurity-advisories>), vendor
+Good sources: [CISA cybersecurity advisories](https://www.cisa.gov/news-events/cybersecurity-advisories), vendor
 incident reports, the organization's own post-incident disclosure, reputable technical press.
 
 Two rules:

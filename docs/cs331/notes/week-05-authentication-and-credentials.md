@@ -29,8 +29,7 @@ What to do this week, and when it is due, is on the [Module 5 Overview](week-05-
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §14.5.4 Facets of Authentication | 487-489 | 2 pp | 15 min |
 | NIST SP 800-63B-4 | §3, Authenticator and Verifier Requirements | none | skim | 30 min |
 
-NIST SP 800-63B-4 (July 2025):
-<https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf>. It is long. Read §3
+[NIST SP 800-63B-4](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf) (July 2025) is long. Read §3
 and skim the rest. You are looking for what it *requires*, what it *forbids*, what it *recommends
 against*, and (most usefully) what it has stopped recommending since the versions most policies were
 written against.

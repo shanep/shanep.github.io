@@ -32,7 +32,7 @@ everything you need.
 > The Cyber Security Body of Knowledge, version 1.1.0. Awais Rashid, Howard Chivers,
 > Emil Lupu, Andrew Martin, and Steve Schneider (eds.), July 2021.
 > © Crown Copyright, The National Cyber Security Centre 2021, licensed under the
-> Open Government Licence v3.0: <http://www.nationalarchives.gov.uk/doc/open-government-licence/>
+> [Open Government Licence v3.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/).
 
 CyBOK is a free, openly licensed reference written by the people who work in each area. The
 complete PDF is in this course at [docs/CyBOK_v1.1.0.pdf](docs/CyBOK_v1.1.0.pdf) and in Canvas
@@ -64,7 +64,7 @@ one the course and the grading go by.
 | Tool | Why | Notes |
 | --- | --- | --- |
 | A web browser | Readings, Canvas, and Labs 0, 6, 7, and 8 | Any modern browser |
-| Python 3.11 or newer | Labs 4, 5, 6, and 9 and the week 5 discussion run a provided script | Free from <https://www.python.org/downloads/>, and [Lab 0](assignments/lab-00-course-setup.md) checks your version |
+| Python 3.11 or newer | Labs 4, 5, 6, and 9 and the week 5 discussion run a provided script | Free from the [Python downloads page](https://www.python.org/downloads/), and [Lab 0](assignments/lab-00-course-setup.md) checks your version |
 | The `cryptography` package | Labs 4, 5, and 6 only | One `pip install cryptography`, walked through step by step in [Lab 0](assignments/lab-00-course-setup.md) |
 
 You do **not** need a virtual machine, a Linux server, Docker, git, or a GitHub account. If your

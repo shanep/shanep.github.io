@@ -62,7 +62,7 @@ Read `check_badge()` in [vuln.c](../data/vuln.c).
 
 ### Step 2: Look at the stack
 
-Open <https://godbolt.org/>. Paste in **only** the `check_badge` function plus the three declarations
+Open [Compiler Explorer](https://godbolt.org/). Paste in **only** the `check_badge` function plus the three declarations
 it needs, like this:
 
 ```c

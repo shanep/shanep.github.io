@@ -30,7 +30,7 @@ is least privilege. Two administrators to approve a deletion is separation of pr
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §4.4 Cybersecurity awareness and education | 161-165 | 4 pp | 25 min |
 | Saltzer & Schroeder (1975) | Section I: the numbered principles only | none | ~3 pp | 20 min |
 
-Saltzer & Schroeder: <https://web.mit.edu/Saltzer/www/publications/protection/>. Read the list and
+[Saltzer & Schroeder's paper](https://web.mit.edu/Saltzer/www/publications/protection/) is free online. Read the list and
 the paragraph explaining each principle; skip the rest of the paper. It is worth reading the
 original once: it is unusually clear, and it was written before most of the technology it
 describes existed.

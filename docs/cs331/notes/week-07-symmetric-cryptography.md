@@ -28,7 +28,7 @@ What to do this week, and when it is due, is on the [Module 7 Overview](week-07-
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §10.5 Symmetric Encryption and Authentication: modes, MACs, KDFs | 334-338 | 4 pp | 35 min |
 | Nakov, *Practical Cryptography for Developers* | AES and cipher block modes | none | skim | 25 min |
 
-Nakov: <https://cryptobook.nakov.com/symmetric-key-ciphers>. It is written for developers and has
+[Nakov's AES and cipher modes pages](https://cryptobook.nakov.com/symmetric-key-ciphers) are written for developers and have
 worked examples where CyBOK has definitions. Use it when CyBOK's treatment is too compressed.
 
 ## Worked example

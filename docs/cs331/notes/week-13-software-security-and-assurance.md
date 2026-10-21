@@ -32,7 +32,7 @@ What to do this week, and when it is due, is on the [Module 13 Overview](week-13
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §17.4 Assessing the Secure Software Lifecycle: SAMM, BSIMM, Common Criteria | 582-585 | 3 pp | 25 min |
 | Aleph One, *Smashing the Stack for Fun and Profit* | Start through the stack frame layout | none | ~4 pp | 25 min |
 
-Aleph One (Phrack 49, 1996): <http://phrack.org/issues/49/14.html>. Read until it starts
+Read [Aleph One's article](http://phrack.org/issues/49/14.html) (Phrack 49, 1996) until it starts
 constructing shellcode, then stop. It is thirty years old and still the clearest explanation of
 what the stack looks like during a function call. Also worth noticing: the bug it describes is
 still, three decades later, one of the most common classes in the CVE database.

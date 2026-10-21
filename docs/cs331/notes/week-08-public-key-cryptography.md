@@ -27,8 +27,8 @@ What to do this week, and when it is due, is on the [Module 8 Overview](week-08-
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §10.8 Standard Protocols: authentication and key agreement | 343-347 | 4 pp | 30 min |
 | Nakov, *Practical Cryptography for Developers* | Hash functions; RSA; ECC; digital signatures | none | skim | 30 min |
 
-Nakov: <https://cryptobook.nakov.com/cryptographic-hash-functions> and the digital signatures
-pages. You are **not** assigned §10.9 through §10.11 (advanced protocols, encryption and signatures
+Start Nakov at the [hash functions chapter](https://cryptobook.nakov.com/cryptographic-hash-functions) and continue through
+the digital signatures pages. You are **not** assigned §10.9 through §10.11 (advanced protocols, encryption and signatures
 with special properties such as homomorphic encryption, and implementation aspects). Skip them.
 
 ## Worked example

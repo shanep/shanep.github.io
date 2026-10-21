@@ -131,7 +131,7 @@ Answer:
    position using the evidence available: the timing, the target, the technique. Say explicitly
    what would settle the question and whether these logs contain it.
 6. **Map both findings to MITRE ATT&CK.** Give the tactic and technique ID for the Step 2 activity
-   and for the Step 3 activity. (You did this in Lab 7; use <https://attack.mitre.org/>.)
+   and for the Step 3 activity. (You did this in Lab 7; use [MITRE ATT&CK](https://attack.mitre.org/).)
 
 ### Step 4: Detection model and the base-rate problem
 

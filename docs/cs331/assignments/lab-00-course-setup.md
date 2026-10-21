@@ -50,8 +50,8 @@ python3 --version
 
 You should see something like `Python 3.12.4`. Any version 3.11 or newer is fine.
 
-- **If you see `Python 3.10` or older**, install a newer version from
-  <https://www.python.org/downloads/> and run the command again.
+- **If you see `Python 3.10` or older**, install a newer version from the
+  [Python downloads page](https://www.python.org/downloads/) and run the command again.
 - **If you see "command not found"**, try `python --version` instead. On Windows PowerShell the
   command is usually `python`, not `python3`. Whichever one works, use it everywhere below.
 
@@ -116,7 +116,7 @@ Now find and answer:
 
 ### Step 4: Look up a real vulnerability
 
-Go to <https://www.cve.org/> and search for **CVE-2021-44228**.
+Go to the [CVE Program website](https://www.cve.org/) and search for **CVE-2021-44228**.
 
 Read the description. Then answer:
 

@@ -38,7 +38,7 @@ expired, one issued for the wrong name.
 
 ### Step 1: Inspect a real certificate chain
 
-Visit <https://www.boisestate.edu> and open the certificate your browser received.
+Visit the [Boise State home page](https://www.boisestate.edu) and open the certificate your browser received.
 
 - **Chrome / Edge:** click the icon left of the address bar → *Connection is secure* → *Certificate
   is valid*.

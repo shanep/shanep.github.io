@@ -31,8 +31,7 @@ What to do this week, and when it is due, is on the [Module 15 Overview](week-15
 | [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §8.7 Human factors: Incident management | 283-286 | 3 pp | 25 min |
 | NIST SP 800-61r3 | The incident response life cycle *(skim)* | none | skim | 20 min |
 
-NIST SP 800-61r3 (April 2025):
-<https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf>
+[NIST SP 800-61r3](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf) (April 2025) is free to download.
 
 **§8.3.6 is one page and it is the most important page of the week.**
 

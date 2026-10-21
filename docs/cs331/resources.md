@@ -7,9 +7,8 @@ Every reading in this course is free and openly licensed. There is nothing to bu
 > **The Cyber Security Body of Knowledge, version 1.1.0.**
 > Awais Rashid, Howard Chivers, Emil Lupu, Andrew Martin, and Steve Schneider (eds.), July 2021.
 > © Crown Copyright, The National Cyber Security Centre 2021. Licensed under the
-> Open Government Licence v3.0.
-> <http://www.nationalarchives.gov.uk/doc/open-government-licence/>
-> Project home: <https://www.cybok.org/>
+> [Open Government Licence v3.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/).
+> Project home: [The Cyber Security Body of Knowledge](https://www.cybok.org/)
 
 The complete PDF is in this course at [docs/CyBOK_v1.1.0.pdf](docs/CyBOK_v1.1.0.pdf) and in Canvas
 Files. The Open Government Licence permits redistribution with attribution, which is why the book
@@ -86,22 +85,22 @@ This is a design decision, not an oversight. A future instructor should know the
 CyBOK is a reference, not a tutorial. One accessible supplement is paired with it in the weeks
 where a worked treatment helps most. All are free.
 
-| Week | Supplement | License | Link |
-| ---: | --- | --- | --- |
-| 2 | Saltzer and Schroeder, *The Protection of Information in Computer Systems* (1975), the eight design principles in §I only | Free to read | <https://web.mit.edu/Saltzer/www/publications/protection/> |
-| 5 | NIST SP 800-63B-4, *Digital Identity Guidelines: Authentication and Authenticator Management* (July 2025), §3 | Public domain (U.S. Government) | <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf> |
-| 7-8 | Nakov, *Practical Cryptography for Developers*, the AES, cipher modes, hashing, RSA, and ECC pages | MIT | <https://cryptobook.nakov.com/> |
-| 12 | MITRE ATT&CK: Enterprise matrix and selected technique pages | Free to use, MITRE terms | <https://attack.mitre.org/> |
-| 13 | Aleph One, *Smashing the Stack for Fun and Profit*, Phrack 49, first third only | Free to read | <http://phrack.org/issues/49/14.html> |
-| 14 | OWASP Top 10:2021: A01 Broken Access Control, A03 Injection, A07 Identification and Authentication Failures | CC BY-SA | <https://top10.owasp.org/2021/> |
-| 15 | NIST SP 800-61r3, *Incident Response Recommendations and Considerations for Cybersecurity Risk Management* (April 2025) | Public domain (U.S. Government) | <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf> |
+| Week | Supplement | License |
+| ---: | --- | --- |
+| 2 | Saltzer and Schroeder, [*The Protection of Information in Computer Systems*](https://web.mit.edu/Saltzer/www/publications/protection/) (1975), the eight design principles in §I only | Free to read |
+| 5 | NIST SP 800-63B-4, [*Digital Identity Guidelines: Authentication and Authenticator Management*](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf) (July 2025), §3 | Public domain (U.S. Government) |
+| 7-8 | Nakov, [*Practical Cryptography for Developers*](https://cryptobook.nakov.com/), the AES, cipher modes, hashing, RSA, and ECC pages | MIT |
+| 12 | [MITRE ATT&CK](https://attack.mitre.org/): Enterprise matrix and selected technique pages | Free to use, MITRE terms |
+| 13 | Aleph One, [*Smashing the Stack for Fun and Profit*](http://phrack.org/issues/49/14.html), Phrack 49, first third only | Free to read |
+| 14 | [OWASP Top 10:2021](https://top10.owasp.org/2021/): A01 Broken Access Control, A03 Injection, A07 Identification and Authentication Failures | CC BY-SA |
+| 15 | NIST SP 800-61r3, [*Incident Response Recommendations and Considerations for Cybersecurity Risk Management*](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf) (April 2025) | Public domain (U.S. Government) |
 
 Two more references are used inside labs rather than as assigned reading:
 
-| Used in | Resource | Link |
-| --- | --- | --- |
-| Lab 0 | CVE Program: look up one published vulnerability | <https://www.cve.org/> |
-| Lab 8 | Compiler Explorer: inspect the assembly a C function compiles to, in the browser | <https://godbolt.org/> |
+| Used in | Resource |
+| --- | --- |
+| Lab 0 | [CVE Program](https://www.cve.org/): look up one published vulnerability |
+| Lab 8 | [Compiler Explorer](https://godbolt.org/): inspect the assembly a C function compiles to, in the browser |
 
 ## Course data files
 
@@ -114,7 +113,7 @@ requires a virtual machine, a server, or an internet connection.
 
 | Tool | Needed for | Notes |
 | --- | --- | --- |
-| Python 3.11+ | Labs 4, 5, 6, and 9 (optional in Lab 10) and the week 5 worked example | Free from <https://www.python.org/downloads/>, and Lab 0 checks your version |
+| Python 3.11+ | Labs 4, 5, 6, and 9 (optional in Lab 10) and the week 5 worked example | Free from the [Python downloads page](https://www.python.org/downloads/), and Lab 0 checks your version |
 | `cryptography` package | Labs 4, 5, and 6 only | `pip install cryptography`; installed step by step in Lab 0 |
 | A web browser | Labs 0, 6, 7, 8 | Any modern browser |
 
