@@ -5,6 +5,19 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "99d8a0987a40e0b7",
+          "rubric": "d0a57f214f6f06a1",
+          "settings": "8a46562d6778b69f"
+        },
+        "repo": {
+          "body": "c5df3803aaa06222",
+          "rubric": "d0a57f214f6f06a1",
+          "settings": "8a46562d6778b69f"
+        }
+      },
       "title": "0.05 Lab 0: Course Setup and CyBOK Navigation"
     },
     "assignments/lab-01-security-principles-audit.md": {
@@ -12,6 +25,19 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "fdabdb5a4770b842",
+          "rubric": "97f7f7ecd93f64ff",
+          "settings": "62c07e1422cc8520"
+        },
+        "repo": {
+          "body": "0bf5ad51c98fa46f",
+          "rubric": "97f7f7ecd93f64ff",
+          "settings": "62c07e1422cc8520"
+        }
+      },
       "title": "2.02 Lab 1: Security Principles Audit"
     },
     "assignments/lab-02-threat-model.md": {
@@ -19,6 +45,19 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "b9799062062ba533",
+          "rubric": "1b6ea8f16cdee2c8",
+          "settings": "7b54b7870627ce41"
+        },
+        "repo": {
+          "body": "201a06e50628c141",
+          "rubric": "1b6ea8f16cdee2c8",
+          "settings": "7b54b7870627ce41"
+        }
+      },
       "title": "4.02 Lab 2: Threat Model a Small System"
     },
     "assignments/lab-03-access-control-matrix.md": {
@@ -26,6 +65,19 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "823d38087b316a7c",
+          "rubric": "28312ed2416b49db",
+          "settings": "20969dbf34061873"
+        },
+        "repo": {
+          "body": "e511d9d2343a8a4f",
+          "rubric": "28312ed2416b49db",
+          "settings": "20969dbf34061873"
+        }
+      },
       "title": "6.02 Lab 3: Access Control Matrix and Least Privilege"
     },
     "assignments/lab-04-symmetric-encryption.md": {
@@ -33,6 +85,19 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "7454abf3053a87a6",
+          "rubric": "f1b878a54477a042",
+          "settings": "03f40fb52fec86e4"
+        },
+        "repo": {
+          "body": "c3c2a8ec85d79f4b",
+          "rubric": "f1b878a54477a042",
+          "settings": "03f40fb52fec86e4"
+        }
+      },
       "title": "7.02 Lab 4: Symmetric Encryption in Practice"
     },
     "assignments/lab-05-hashing-and-signatures.md": {
@@ -40,6 +105,19 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "6a860c865b3c8e76",
+          "rubric": "6ffcd698393d1e9b",
+          "settings": "b34a7047e9f8b159"
+        },
+        "repo": {
+          "body": "42d09b32ccaa87a6",
+          "rubric": "6ffcd698393d1e9b",
+          "settings": "b34a7047e9f8b159"
+        }
+      },
       "title": "8.02 Lab 5: Hashing and Signatures"
     },
     "assignments/lab-06-certificates-and-tls.md": {
@@ -47,6 +125,19 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "be0d85336f821894",
+          "rubric": "311aedd2799d5684",
+          "settings": "e7bb4578fac54203"
+        },
+        "repo": {
+          "body": "b970b8deb7c07c63",
+          "rubric": "311aedd2799d5684",
+          "settings": "e7bb4578fac54203"
+        }
+      },
       "title": "10.02 Lab 6: Certificates and TLS"
     },
     "assignments/lab-07-malware-triage.md": {
@@ -54,6 +145,19 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "51d384faee10667c",
+          "rubric": "430668d9bbc53c87",
+          "settings": "cd9e87cea0d826da"
+        },
+        "repo": {
+          "body": "f434dc28a1c52034",
+          "rubric": "430668d9bbc53c87",
+          "settings": "cd9e87cea0d826da"
+        }
+      },
       "title": "12.02 Lab 7: Malware Triage Without Malware"
     },
     "assignments/lab-08-memory-safety-and-assurance.md": {
@@ -61,6 +165,19 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "fefb673fd491440d",
+          "rubric": "932263dfcd21c511",
+          "settings": "df7fc77ccb7d9427"
+        },
+        "repo": {
+          "body": "dea2daa6e4a63a32",
+          "rubric": "932263dfcd21c511",
+          "settings": "df7fc77ccb7d9427"
+        }
+      },
       "title": "13.02 Lab 8: Memory Safety and Assurance Evidence"
     },
     "assignments/lab-09-sql-injection.md": {
@@ -68,6 +185,19 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "f9a030c7bb55b480",
+          "rubric": "8e0e5603b9588578",
+          "settings": "f2537fa0dda2a4e4"
+        },
+        "repo": {
+          "body": "f769c77d8805411a",
+          "rubric": "8e0e5603b9588578",
+          "settings": "f2537fa0dda2a4e4"
+        }
+      },
       "title": "14.02 Lab 9: SQL Injection"
     },
     "assignments/lab-10-log-analysis-and-incident-memo.md": {
@@ -75,6 +205,19 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "3adf470b88e4b0a7",
+          "rubric": "f23e4badf3b9cfe5",
+          "settings": "94c38b34b023e8e8"
+        },
+        "repo": {
+          "body": "35936c46582c814b",
+          "rubric": "f23e4badf3b9cfe5",
+          "settings": "94c38b34b023e8e8"
+        }
+      },
       "title": "15.04 Lab 10: Log Analysis and Incident Memo"
     },
     "communicating.md": {
@@ -82,6 +225,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "0-dot-01-communicating-with-each-other",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "256d29f536c34209",
+          "settings": "2e4170da7f59c3ae"
+        },
+        "repo": {
+          "body": "b8e3806409f1a569",
+          "settings": "2e4170da7f59c3ae"
+        }
+      },
       "title": "0.01 Communicating with Each Other"
     },
     "course-resources/canvas-resources.md": {
@@ -115,30 +269,57 @@
       "title": "Technology Support"
     },
     "data/auth.log": {
-      "canvas_id": "25200015",
+      "canvas_id": "25497268",
       "extra": {
-        "size": "61094"
+        "size": "61125"
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "ca551ae8aafbc2f3"
+        },
+        "repo": {
+          "body": "3b3259345e8ac59b"
+        }
+      },
       "title": "auth.log"
     },
     "data/cert_inspect.py": {
-      "canvas_id": "25313172",
+      "canvas_id": "25497269",
       "extra": {
         "size": "9538"
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "656163e20fdadb5a"
+        },
+        "repo": {
+          "body": "fde302c68c30c704"
+        }
+      },
       "title": "cert_inspect.py"
     },
     "data/crypto_demo.py": {
-      "canvas_id": "25313174",
+      "canvas_id": "25497271",
       "extra": {
-        "size": "9604"
+        "size": "9685"
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "be6864a5f8e9116f"
+        },
+        "repo": {
+          "body": "28a56ab5767a8d8a"
+        }
+      },
       "title": "crypto_demo.py"
     },
     "data/incident-report.md": {
@@ -146,6 +327,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "incident-report-northwind-meadow",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "53333626cf710b08",
+          "settings": "dce9f7ae00607141"
+        },
+        "repo": {
+          "body": "09acbcd503e59fce",
+          "settings": "dce9f7ae00607141"
+        }
+      },
       "title": "Incident report: NORTHWIND MEADOW"
     },
     "data/index.md": {
@@ -153,15 +345,35 @@
       "extra": {},
       "kind": "page",
       "page_url": "course-data-files",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "0b56cdd1efb7f0e5",
+          "settings": "ff0d56587ab49395"
+        },
+        "repo": {
+          "body": "ae97e84a7125a94a",
+          "settings": "ff0d56587ab49395"
+        }
+      },
       "title": "Course data files"
     },
     "data/password_demo.py": {
-      "canvas_id": "25200018",
+      "canvas_id": "25497272",
       "extra": {
-        "size": "6905"
+        "size": "7233"
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "8c84ce55541bc351"
+        },
+        "repo": {
+          "body": "1aa6b06f35d5660d"
+        }
+      },
       "title": "password_demo.py"
     },
     "data/photoshare-system.md": {
@@ -169,6 +381,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "snapvault-system-description",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "5db4a2f4f62bca67",
+          "settings": "41feda2d4df3825d"
+        },
+        "repo": {
+          "body": "8334283e47ff9f65",
+          "settings": "41feda2d4df3825d"
+        }
+      },
       "title": "SnapVault: system description"
     },
     "data/sign_demo.py": {
@@ -178,15 +401,33 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "fac276431357cca2"
+        },
+        "repo": {
+          "body": "8ffa71ca659b8c8f"
+        }
+      },
       "title": "sign_demo.py"
     },
     "data/sqli_demo.py": {
-      "canvas_id": "25200021",
+      "canvas_id": "25497273",
       "extra": {
-        "size": "6950"
+        "size": "6951"
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "018d401be80ff174"
+        },
+        "repo": {
+          "body": "d41f830cf83a6b30"
+        }
+      },
       "title": "sqli_demo.py"
     },
     "data/vuln.c": {
@@ -196,15 +437,33 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "1f88a41392195c22"
+        },
+        "repo": {
+          "body": "dfb3ee250fa6bdbc"
+        }
+      },
       "title": "vuln.c"
     },
     "data/web_access.log": {
-      "canvas_id": "25200023",
+      "canvas_id": "25497275",
       "extra": {
-        "size": "70294"
+        "size": "70283"
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "f2eadd84aefbe982"
+        },
+        "repo": {
+          "body": "313a344f07198923"
+        }
+      },
       "title": "web_access.log"
     },
     "discussions/d01-introductions-and-security-mindset.md": {
@@ -214,6 +473,19 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "da9a4d95f231ae1d",
+          "rubric": "e4dfdf1dd7e88140",
+          "settings": "b1abddc73fd1399c"
+        },
+        "repo": {
+          "body": "328fdc5a760c9ed7",
+          "rubric": "e4dfdf1dd7e88140",
+          "settings": "b1abddc73fd1399c"
+        }
+      },
       "title": "0.03 D1: Introductions and the Security Mindset"
     },
     "discussions/d02-ethics-and-privacy-case.md": {
@@ -223,6 +495,19 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "285afa1ae99f5e01",
+          "rubric": "4a860df9ac30e576",
+          "settings": "d3e9576964db3673"
+        },
+        "repo": {
+          "body": "69823fd276e74a18",
+          "rubric": "4a860df9ac30e576",
+          "settings": "d3e9576964db3673"
+        }
+      },
       "title": "3.02 D2: Ethics and Privacy Case"
     },
     "discussions/d03-authentication-policy-critique.md": {
@@ -232,6 +517,19 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "d4719aad6a116177",
+          "rubric": "53002b64469442a1",
+          "settings": "e504494f5d8f7e2a"
+        },
+        "repo": {
+          "body": "ab496dfacbd78397",
+          "rubric": "53002b64469442a1",
+          "settings": "e504494f5d8f7e2a"
+        }
+      },
       "title": "5.02 D3: Authentication Policy Critique"
     },
     "discussions/d04-network-security-in-the-news.md": {
@@ -241,6 +539,19 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "1d80bed95d09dd81",
+          "rubric": "91d000d3792a97f2",
+          "settings": "9908403052987ebe"
+        },
+        "repo": {
+          "body": "fca92ed8cd6eb4b7",
+          "rubric": "91d000d3792a97f2",
+          "settings": "9908403052987ebe"
+        }
+      },
       "title": "11.02 D4: Network Security in the News"
     },
     "discussions/d05-current-security-failure.md": {
@@ -250,6 +561,19 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "5751d4e7b6b76ba8",
+          "rubric": "c951570acb19bf78",
+          "settings": "93ca84314b5c4968"
+        },
+        "repo": {
+          "body": "136048eb20b2bbac",
+          "rubric": "c951570acb19bf78",
+          "settings": "93ca84314b5c4968"
+        }
+      },
       "title": "15.02 D5: A Current Security Failure"
     },
     "discussions/d06-final-reflection.md": {
@@ -259,6 +583,19 @@
       },
       "kind": "discussion",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:41:40.960Z",
+        "canvas": {
+          "body": "b79a26b5392cfea2",
+          "rubric": "48766f52503a6da3",
+          "settings": "ef9450bf6259c053"
+        },
+        "repo": {
+          "body": "1f82a6ab26eeada0",
+          "rubric": "48766f52503a6da3",
+          "settings": "ef9450bf6259c053"
+        }
+      },
       "title": "16.01 D6: Final Reflection"
     },
     "docs/CyBOK_v1.1.0.pdf": {
@@ -270,11 +607,40 @@
       "page_url": "",
       "title": "CyBOK_v1.1.0.pdf"
     },
+    "docs/CyBOK_v1.2.0.pdf": {
+      "canvas_id": "25497278",
+      "extra": {
+        "size": "7135646"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "6bc56ab7da996124"
+        },
+        "repo": {
+          "body": "4fac5cd0ada7e9b1"
+        }
+      },
+      "title": "CyBOK_v1.2.0.pdf"
+    },
     "getting-started.md": {
       "canvas_id": "getting-started-overview-2",
       "extra": {},
       "kind": "page",
       "page_url": "getting-started-overview-2",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "63d7ea6f48ea4a05",
+          "settings": "d8a5b909afd44eca"
+        },
+        "repo": {
+          "body": "bf8e1ca781d4ba97",
+          "settings": "d8a5b909afd44eca"
+        }
+      },
       "title": "Getting Started Overview"
     },
     "home.md": {
@@ -291,6 +657,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "e184e5dd645ee5e4"
+        },
+        "repo": {
+          "body": "a0fc985d4b7ebbd3"
+        }
+      },
       "title": "ai-allowed.svg"
     },
     "icons/attention.svg": {
@@ -300,6 +675,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "844932e75f64537c"
+        },
+        "repo": {
+          "body": "5818f76a72c343fa"
+        }
+      },
       "title": "attention.svg"
     },
     "icons/clock.svg": {
@@ -309,6 +693,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "b8c98df0fa20213a"
+        },
+        "repo": {
+          "body": "07eeb1a39a4b333e"
+        }
+      },
       "title": "clock.svg"
     },
     "icons/discussion.svg": {
@@ -318,6 +711,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "650325f38c29ac34"
+        },
+        "repo": {
+          "body": "06c4c6cb6952f044"
+        }
+      },
       "title": "discussion.svg"
     },
     "icons/document.svg": {
@@ -327,6 +729,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "6330500b6ef80ae9"
+        },
+        "repo": {
+          "body": "5ec26ba54991cda5"
+        }
+      },
       "title": "document.svg"
     },
     "icons/email.svg": {
@@ -336,6 +747,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "38f7a0503f811878"
+        },
+        "repo": {
+          "body": "43e9dbc1d3cf550f"
+        }
+      },
       "title": "email.svg"
     },
     "icons/finish-line.svg": {
@@ -345,6 +765,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "5c01a652f05b8e8b"
+        },
+        "repo": {
+          "body": "6bcd4dc26e651cd5"
+        }
+      },
       "title": "finish-line.svg"
     },
     "icons/list.svg": {
@@ -354,6 +783,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "f8506cc54120ef32"
+        },
+        "repo": {
+          "body": "9a1d75a02c10a911"
+        }
+      },
       "title": "list.svg"
     },
     "icons/looking-ahead.svg": {
@@ -363,6 +801,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "ef58e139da2b835c"
+        },
+        "repo": {
+          "body": "d3e9f8a228ed054a"
+        }
+      },
       "title": "looking-ahead.svg"
     },
     "icons/policies.svg": {
@@ -372,6 +819,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "e46daa55bfd373a9"
+        },
+        "repo": {
+          "body": "be563848704251a5"
+        }
+      },
       "title": "policies.svg"
     },
     "icons/profile.svg": {
@@ -381,6 +837,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "205c933dcfc30359"
+        },
+        "repo": {
+          "body": "3dc40638149bf383"
+        }
+      },
       "title": "profile.svg"
     },
     "icons/reading.svg": {
@@ -390,6 +855,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "5e5d6adda001b3f2"
+        },
+        "repo": {
+          "body": "10c800726674f9fa"
+        }
+      },
       "title": "reading.svg"
     },
     "icons/task.svg": {
@@ -399,6 +873,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "c7be52812765bd13"
+        },
+        "repo": {
+          "body": "825c4ddf45b7c938"
+        }
+      },
       "title": "task.svg"
     },
     "icons/upload.svg": {
@@ -408,6 +891,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "ec4ca63fda1e7c8a"
+        },
+        "repo": {
+          "body": "e2ad0654c9d701fd"
+        }
+      },
       "title": "upload.svg"
     },
     "icons/work.svg": {
@@ -417,6 +909,15 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "437e5ede7264b25c"
+        },
+        "repo": {
+          "body": "dfcca0eb50bf8e76"
+        }
+      },
       "title": "work.svg"
     },
     "images/cs331-banner.svg": {
@@ -426,13 +927,49 @@
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "49b295aab161da48"
+        },
+        "repo": {
+          "body": "ecb7ada1cb484c7f"
+        }
+      },
       "title": "cs331-banner.svg"
+    },
+    "images/me.jpg": {
+      "canvas_id": "25497267",
+      "extra": {
+        "size": "9712"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "6198e59c31171ba3"
+        },
+        "repo": {
+          "body": "cbceb1634c53084c"
+        }
+      },
+      "title": "me.jpg"
     },
     "index.md": {
       "canvas_id": "52107",
       "extra": {},
       "kind": "syllabus",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "4bb33a0dc9982d9b"
+        },
+        "repo": {
+          "body": "d63504a9f6f382ae"
+        }
+      },
       "title": "CS 331: Computer Security and Information Assurance"
     },
     "instructor-resources/course-suggestions.md": {
@@ -440,6 +977,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "course-suggestions-document",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "ec73638064b32fff",
+          "settings": "e8f95aca3dc6c452"
+        },
+        "repo": {
+          "body": "66fbd1573dc58b08",
+          "settings": "e8f95aca3dc6c452"
+        }
+      },
       "title": "Course Suggestions Document"
     },
     "instructor-resources/instructor-guide.md": {
@@ -447,6 +995,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "instructor-guide-start-here-for-course-setup",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "00bf30c9b381626e",
+          "settings": "81662473aa234c97"
+        },
+        "repo": {
+          "body": "b3b635c91c781f09",
+          "settings": "81662473aa234c97"
+        }
+      },
       "title": "Instructor Guide: Start Here for Course Setup"
     },
     "instructor-resources/learning-opportunities.md": {
@@ -454,6 +1013,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "learning-opportunities-for-online-instructors-2",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "f07349b4c5e0fc25",
+          "settings": "84a9df50eb7e44be"
+        },
+        "repo": {
+          "body": "0a99e46a003f202b",
+          "settings": "84a9df50eb7e44be"
+        }
+      },
       "title": "Learning Opportunities for Online Instructors"
     },
     "instructor.md": {
@@ -461,6 +1031,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "instructor-information-2",
+      "synced": {
+        "at": "2026-10-21T20:42:39.817Z",
+        "canvas": {
+          "body": "bd2b4e549eb18b86",
+          "settings": "f1dc88d9be758be9"
+        },
+        "repo": {
+          "body": "46863aaa7ecaaf6b",
+          "settings": "f1dc88d9be758be9"
+        }
+      },
       "title": "Instructor Information"
     },
     "notes/week-01-overview.md": {
@@ -468,6 +1049,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "module-1-overview-2",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "c6132044da8741bd",
+          "settings": "a563f73f65eb0583"
+        },
+        "repo": {
+          "body": "a0562e9d282f2f82",
+          "settings": "a563f73f65eb0583"
+        }
+      },
       "title": "Module 1 Overview"
     },
     "notes/week-01-what-is-cyber-security.md": {
@@ -475,6 +1067,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "1-dot-01-readings-and-lecture-notes",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "30db1690acaf13be",
+          "settings": "4356d0fa8391aa85"
+        },
+        "repo": {
+          "body": "9715884cfd066ee9",
+          "settings": "4356d0fa8391aa85"
+        }
+      },
       "title": "1.01 Readings and Lecture Notes"
     },
     "notes/week-02-overview.md": {
@@ -482,6 +1085,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "module-2-overview",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "57582704422018e4",
+          "settings": "9e4e11cbd0fb5c1d"
+        },
+        "repo": {
+          "body": "245cfdde76d7dff4",
+          "settings": "9e4e11cbd0fb5c1d"
+        }
+      },
       "title": "Module 2 Overview"
     },
     "notes/week-02-security-principles-and-human-factors.md": {
@@ -489,6 +1103,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "2-dot-01-readings-and-lecture-notes",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "032ebd1a3adbea40",
+          "settings": "d55939e8797d05f3"
+        },
+        "repo": {
+          "body": "6f708c3231c026a3",
+          "settings": "d55939e8797d05f3"
+        }
+      },
       "title": "2.01 Readings and Lecture Notes"
     },
     "notes/week-03-law-ethics-and-privacy.md": {
@@ -496,6 +1121,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "3-dot-01-readings-and-lecture-notes",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "bdf9aabb3836a9c4",
+          "settings": "5d557b9423830530"
+        },
+        "repo": {
+          "body": "d81b402a53c831e4",
+          "settings": "5d557b9423830530"
+        }
+      },
       "title": "3.01 Readings and Lecture Notes"
     },
     "notes/week-03-overview.md": {
@@ -503,6 +1139,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "module-3-overview",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "5c1b7ae20b6c2003",
+          "settings": "0b08fcc278ddffdf"
+        },
+        "repo": {
+          "body": "040936663f2c20cc",
+          "settings": "0b08fcc278ddffdf"
+        }
+      },
       "title": "Module 3 Overview"
     },
     "notes/week-04-overview.md": {
@@ -510,6 +1157,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "module-4-overview",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "cfb766273db60651",
+          "settings": "20b2d5599e090243"
+        },
+        "repo": {
+          "body": "532f1907fb8e9864",
+          "settings": "20b2d5599e090243"
+        }
+      },
       "title": "Module 4 Overview"
     },
     "notes/week-04-risk-and-threat-modeling.md": {
@@ -517,6 +1175,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "4-dot-01-readings-and-lecture-notes",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "1e731fcf34b36b3c",
+          "settings": "7ad390a9d790b140"
+        },
+        "repo": {
+          "body": "f4aae15716f87fd2",
+          "settings": "7ad390a9d790b140"
+        }
+      },
       "title": "4.01 Readings and Lecture Notes"
     },
     "notes/week-05-authentication-and-credentials.md": {
@@ -524,6 +1193,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "5-dot-01-readings-and-lecture-notes",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "a677bad5f54a7f16",
+          "settings": "ecdfd1b1a7c399e4"
+        },
+        "repo": {
+          "body": "996f8b4d63cdc72e",
+          "settings": "ecdfd1b1a7c399e4"
+        }
+      },
       "title": "5.01 Readings and Lecture Notes"
     },
     "notes/week-05-overview.md": {
@@ -531,6 +1211,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "module-5-overview",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "00be849cb06b4622",
+          "settings": "daca6b9c2b2ac9f4"
+        },
+        "repo": {
+          "body": "5e037214fa32ff89",
+          "settings": "daca6b9c2b2ac9f4"
+        }
+      },
       "title": "Module 5 Overview"
     },
     "notes/week-06-authorisation-and-access-control.md": {
@@ -538,6 +1229,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "6-dot-01-readings-and-lecture-notes",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "cb323564817bf3f9",
+          "settings": "79faf8ceb712773c"
+        },
+        "repo": {
+          "body": "ffc49c7a65cd370c",
+          "settings": "79faf8ceb712773c"
+        }
+      },
       "title": "6.01 Readings and Lecture Notes"
     },
     "notes/week-06-overview.md": {
@@ -545,6 +1247,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "module-6-overview",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "8a0e2b35ad0953da",
+          "settings": "3d8cc00ec9af0fee"
+        },
+        "repo": {
+          "body": "ae8b21e831361a65",
+          "settings": "3d8cc00ec9af0fee"
+        }
+      },
       "title": "Module 6 Overview"
     },
     "notes/week-07-overview.md": {
@@ -552,6 +1265,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "module-7-overview",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "37e2cec7523850c2",
+          "settings": "9fba7390ec89c965"
+        },
+        "repo": {
+          "body": "96d1dabdd8e7365b",
+          "settings": "9fba7390ec89c965"
+        }
+      },
       "title": "Module 7 Overview"
     },
     "notes/week-07-symmetric-cryptography.md": {
@@ -559,6 +1283,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "7-dot-01-readings-and-lecture-notes",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "a7665b3c9bdfd752",
+          "settings": "1e1d3289eeacc110"
+        },
+        "repo": {
+          "body": "d26f6293f99014f9",
+          "settings": "1e1d3289eeacc110"
+        }
+      },
       "title": "7.01 Readings and Lecture Notes"
     },
     "notes/week-08-overview.md": {
@@ -566,6 +1301,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "module-8-overview",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "81264be0d76d3955",
+          "settings": "86d94354397cb36e"
+        },
+        "repo": {
+          "body": "1be0ca5b2d6f496c",
+          "settings": "86d94354397cb36e"
+        }
+      },
       "title": "Module 8 Overview"
     },
     "notes/week-08-public-key-cryptography.md": {
@@ -573,6 +1319,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "8-dot-01-readings-and-lecture-notes",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "16022ac94adeb593",
+          "settings": "993586020cb4f656"
+        },
+        "repo": {
+          "body": "ef2aeafe0bd57e05",
+          "settings": "993586020cb4f656"
+        }
+      },
       "title": "8.01 Readings and Lecture Notes"
     },
     "notes/week-09-overview.md": {
@@ -580,6 +1337,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "module-9-overview",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "f6ebb82fcb1b5a7d",
+          "settings": "8b71ae9d52df30e9"
+        },
+        "repo": {
+          "body": "8d7ab4fd7a20d4df",
+          "settings": "8b71ae9d52df30e9"
+        }
+      },
       "title": "Module 9 Overview"
     },
     "notes/week-09-review-and-catch-up.md": {
@@ -587,6 +1355,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "9-dot-01-readings-and-lecture-notes",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "7de26408cb8b9686",
+          "settings": "cb3ba5662be6ef19"
+        },
+        "repo": {
+          "body": "667530ef4fd0e36c",
+          "settings": "cb3ba5662be6ef19"
+        }
+      },
       "title": "9.01 Readings and Lecture Notes"
     },
     "notes/week-10-keys-certificates-and-pki.md": {
@@ -594,6 +1373,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "10-dot-01-readings-and-lecture-notes",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "5adac5a1dadebd1d",
+          "settings": "645c74485e91f436"
+        },
+        "repo": {
+          "body": "27d4d73a30718c21",
+          "settings": "645c74485e91f436"
+        }
+      },
       "title": "10.01 Readings and Lecture Notes"
     },
     "notes/week-10-overview.md": {
@@ -601,6 +1391,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "module-10-overview",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "7f280e2451ab8cce",
+          "settings": "11d6f49be043a2e3"
+        },
+        "repo": {
+          "body": "04750b73ad96ca90",
+          "settings": "11d6f49be043a2e3"
+        }
+      },
       "title": "Module 10 Overview"
     },
     "notes/week-11-network-security.md": {
@@ -608,6 +1409,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "11-dot-01-readings-and-lecture-notes",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "77f3123d063604ec",
+          "settings": "11c9771e7a4d43a1"
+        },
+        "repo": {
+          "body": "d8b7ef1082d58e11",
+          "settings": "11c9771e7a4d43a1"
+        }
+      },
       "title": "11.01 Readings and Lecture Notes"
     },
     "notes/week-11-overview.md": {
@@ -615,6 +1427,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "module-11-overview",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "cf4d42cdf92082fd",
+          "settings": "bb3bccb39b83d786"
+        },
+        "repo": {
+          "body": "4e5a233e782a33c3",
+          "settings": "bb3bccb39b83d786"
+        }
+      },
       "title": "Module 11 Overview"
     },
     "notes/week-12-malware-and-adversarial-behaviours.md": {
@@ -622,6 +1445,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "12-dot-01-readings-and-lecture-notes",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "5274520bf7d37c00",
+          "settings": "127e977e723b5333"
+        },
+        "repo": {
+          "body": "76601cd6da6a613f",
+          "settings": "127e977e723b5333"
+        }
+      },
       "title": "12.01 Readings and Lecture Notes"
     },
     "notes/week-12-overview.md": {
@@ -629,6 +1463,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "module-12-overview",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "6f81c82986695bc9",
+          "settings": "70dd20239161e6d9"
+        },
+        "repo": {
+          "body": "2ec1c3106945b9d1",
+          "settings": "70dd20239161e6d9"
+        }
+      },
       "title": "Module 12 Overview"
     },
     "notes/week-13-overview.md": {
@@ -636,6 +1481,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "module-13-overview",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "c68e237704191d18",
+          "settings": "864bedb8a5f4244a"
+        },
+        "repo": {
+          "body": "3a2f4e4c56673e37",
+          "settings": "864bedb8a5f4244a"
+        }
+      },
       "title": "Module 13 Overview"
     },
     "notes/week-13-software-security-and-assurance.md": {
@@ -643,6 +1499,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "13-dot-01-readings-and-lecture-notes",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "e1f053a6835b1fea",
+          "settings": "30a18856428d6543"
+        },
+        "repo": {
+          "body": "cc04174ce7fefa4e",
+          "settings": "30a18856428d6543"
+        }
+      },
       "title": "13.01 Readings and Lecture Notes"
     },
     "notes/week-14-overview.md": {
@@ -650,6 +1517,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "module-14-overview",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "0e07a0f79f16ee52",
+          "settings": "74d8497d23ef2fa6"
+        },
+        "repo": {
+          "body": "0cd4ce93ac05b352",
+          "settings": "74d8497d23ef2fa6"
+        }
+      },
       "title": "Module 14 Overview"
     },
     "notes/week-14-web-security-and-injection.md": {
@@ -657,6 +1535,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "14-dot-01-readings-and-lecture-notes",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "08e04d17834ed0bf",
+          "settings": "e30fa5c3bab4bf6e"
+        },
+        "repo": {
+          "body": "0da8d72e650d2a91",
+          "settings": "e30fa5c3bab4bf6e"
+        }
+      },
       "title": "14.01 Readings and Lecture Notes"
     },
     "notes/week-15-overview.md": {
@@ -664,6 +1553,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "module-15-overview",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "f5884adf2e8c477e",
+          "settings": "5b8374695b1ff3fe"
+        },
+        "repo": {
+          "body": "a85532782d6d1b41",
+          "settings": "5b8374695b1ff3fe"
+        }
+      },
       "title": "Module 15 Overview"
     },
     "notes/week-15-security-operations-and-incident-response.md": {
@@ -671,6 +1571,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "15-dot-01-readings-and-lecture-notes",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "b646456be5c5d6b8",
+          "settings": "c57a7e0b20715cec"
+        },
+        "repo": {
+          "body": "e6031b1c2595e4b2",
+          "settings": "c57a7e0b20715cec"
+        }
+      },
       "title": "15.01 Readings and Lecture Notes"
     },
     "objectives.md": {
@@ -678,6 +1589,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "cs-331-objective-alignment-sheet",
+      "synced": {
+        "at": "2026-10-21T20:42:39.817Z",
+        "canvas": {
+          "body": "e141081874c49d9c",
+          "settings": "9324a5132326a1fd"
+        },
+        "repo": {
+          "body": "1a5ed67f4ca4c11f",
+          "settings": "9324a5132326a1fd"
+        }
+      },
       "title": "CS 331: Objective Alignment Sheet"
     },
     "reminders/d01-replies.md": {
@@ -685,6 +1607,17 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "02dcaaf521ca3a8a",
+          "settings": "dbf3072665c903b3"
+        },
+        "repo": {
+          "body": "cc8eb2d957670521",
+          "settings": "dbf3072665c903b3"
+        }
+      },
       "title": "0.04 D1: Introductions and the Security Mindset - Replies"
     },
     "reminders/d02-replies.md": {
@@ -692,6 +1625,17 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "d5b3d791c63debb9",
+          "settings": "fca8023a9e7a837d"
+        },
+        "repo": {
+          "body": "b44c5b45db536cc0",
+          "settings": "fca8023a9e7a837d"
+        }
+      },
       "title": "3.03 D2: Ethics and Privacy Case - Replies"
     },
     "reminders/d03-replies.md": {
@@ -699,6 +1643,17 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "45deccd5d407c6dc",
+          "settings": "884c108de2f215e7"
+        },
+        "repo": {
+          "body": "2cd17c66b278b511",
+          "settings": "884c108de2f215e7"
+        }
+      },
       "title": "5.03 D3: Authentication Policy Critique - Replies"
     },
     "reminders/d04-replies.md": {
@@ -706,6 +1661,17 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "5efc400b78cad89f",
+          "settings": "ce5209d9b15551c5"
+        },
+        "repo": {
+          "body": "623edab0cf528e1b",
+          "settings": "ce5209d9b15551c5"
+        }
+      },
       "title": "11.03 D4: Network Security in the News - Replies"
     },
     "reminders/d05-replies.md": {
@@ -713,6 +1679,17 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T20:39:36.388Z",
+        "canvas": {
+          "body": "2572753faafb1046",
+          "settings": "13d897f6132b827d"
+        },
+        "repo": {
+          "body": "ecadc37b5f2fa5b0",
+          "settings": "13d897f6132b827d"
+        }
+      },
       "title": "15.03 D5: A Current Security Failure - Replies"
     },
     "resources.md": {
@@ -720,7 +1697,182 @@
       "extra": {},
       "kind": "page",
       "page_url": "cs-331-readings-and-resources",
+      "synced": {
+        "at": "2026-10-21T20:42:39.817Z",
+        "canvas": {
+          "body": "9dc935dc90ec0e76",
+          "settings": "bc6050918a06fe5d"
+        },
+        "repo": {
+          "body": "90edca4c1eaa53e3",
+          "settings": "bc6050918a06fe5d"
+        }
+      },
       "title": "CS 331: Readings and Resources"
+    }
+  },
+  "modules": {
+    "[[module]] Getting Started (January 11 - January 17)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "801435964cea3d13"
+      },
+      "repo": {
+        "items": "801435964cea3d13"
+      }
+    },
+    "[[module]] Instructor Resources (leave unpublished)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "9f81ca7af4bea590"
+      },
+      "repo": {
+        "items": "9f81ca7af4bea590"
+      }
+    },
+    "[[module]] Module 10: Keys, Certificates, PKI, and TLS (March 22 - March 28)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "42749f111bb31d2b"
+      },
+      "repo": {
+        "items": "42749f111bb31d2b"
+      }
+    },
+    "[[module]] Module 11: Network Security and Attacks (March 29 - April 4)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "b692f703f0c1d884"
+      },
+      "repo": {
+        "items": "b692f703f0c1d884"
+      }
+    },
+    "[[module]] Module 12: Malware and Adversarial Behaviors (April 5 - April 11)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "29dc082c902c2300"
+      },
+      "repo": {
+        "items": "29dc082c902c2300"
+      }
+    },
+    "[[module]] Module 13: Software Security, Memory Safety, and Assurance (April 12 - April 18)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "4cd6124898735ab2"
+      },
+      "repo": {
+        "items": "4cd6124898735ab2"
+      }
+    },
+    "[[module]] Module 14: Web Security and Injection (April 19 - April 25)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "34571087a49845e6"
+      },
+      "repo": {
+        "items": "34571087a49845e6"
+      }
+    },
+    "[[module]] Module 15: Security Operations, Detection, and Incident Response (April 26 - April 30)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "5214881a2fded4ea"
+      },
+      "repo": {
+        "items": "5214881a2fded4ea"
+      }
+    },
+    "[[module]] Module 16: Finals Week (May 3 - May 7)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "501ba95b2ff80732"
+      },
+      "repo": {
+        "items": "501ba95b2ff80732"
+      }
+    },
+    "[[module]] Module 1: What Is Cyber Security? (January 11 - January 17)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "963d0655d29930ff"
+      },
+      "repo": {
+        "items": "963d0655d29930ff"
+      }
+    },
+    "[[module]] Module 2: Security Principles and the Human Factor (January 18 - January 24)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "947b587087ec3e04"
+      },
+      "repo": {
+        "items": "947b587087ec3e04"
+      }
+    },
+    "[[module]] Module 3: Law, Regulation, Ethics, and Privacy (January 25 - January 31)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "a6561079f545e0ff"
+      },
+      "repo": {
+        "items": "a6561079f545e0ff"
+      }
+    },
+    "[[module]] Module 4: Risk Management and Threat Modeling (February 1 - February 7)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "d14e26154c6d1cc9"
+      },
+      "repo": {
+        "items": "d14e26154c6d1cc9"
+      }
+    },
+    "[[module]] Module 5: Authentication and Credentials (February 8 - February 14)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "3330e1e273af5355"
+      },
+      "repo": {
+        "items": "3330e1e273af5355"
+      }
+    },
+    "[[module]] Module 6: Authorization, Access Control, and Accountability (February 15 - February 21)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "6883ef6950b39378"
+      },
+      "repo": {
+        "items": "6883ef6950b39378"
+      }
+    },
+    "[[module]] Module 7: Symmetric Cryptography (February 22 - February 28)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "92dc5b5432e59e52"
+      },
+      "repo": {
+        "items": "92dc5b5432e59e52"
+      }
+    },
+    "[[module]] Module 8: Public-Key Cryptography, Hashing, and Signatures (March 1 - March 7)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "7f9eefe9399e1a77"
+      },
+      "repo": {
+        "items": "7f9eefe9399e1a77"
+      }
+    },
+    "[[module]] Module 9: Review and Catch-Up (March 8 - March 14)": {
+      "at": "2026-10-21T20:39:36.388Z",
+      "canvas": {
+        "items": "85604514c70d192c"
+      },
+      "repo": {
+        "items": "85604514c70d192c"
+      }
     }
   }
 }
