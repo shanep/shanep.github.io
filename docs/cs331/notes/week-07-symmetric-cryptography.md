@@ -21,7 +21,7 @@
 
 ### CyBOK
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.3 Information-theoretically Secure Constructions: one-time pad, secret sharing | 327-329 | 2 pp | 15 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.4 Symmetric Primitives: block ciphers, stream ciphers, hash functions | 329-332 | 3 pp | 25 min |
@@ -29,7 +29,7 @@
 
 ### Additional readings
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | Nakov, *Practical Cryptography for Developers* | AES and cipher block modes | none | skim | 25 min |
 

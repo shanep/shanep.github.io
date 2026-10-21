@@ -23,7 +23,7 @@
 
 ### CyBOK
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §19.1 Security Goals and Attacker Models | 672-674 | 2 pp | 15 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §19.3.2 Security at the Transport Layer: TLS, PKI, TCP, UDP, QUIC | 682-686 | 4 pp | 30 min |

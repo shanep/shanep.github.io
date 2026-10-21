@@ -24,7 +24,7 @@
 
 ### CyBOK
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.1.1 Memory Management Vulnerabilities | 498-499 | 1 p | 15 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.2 Prevention of Vulnerabilities: language design, API design, coding practices | 506-511 | 5 pp | 40 min |
@@ -38,7 +38,7 @@ Lab 8 asks about it. Look at pages 511-516 when you get to that question.
 
 ### Additional readings
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | Aleph One, *Smashing the Stack for Fun and Profit* | Start through the stack frame layout | none | ~4 pp | 25 min |
 

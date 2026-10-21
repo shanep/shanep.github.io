@@ -21,7 +21,7 @@
 
 ### CyBOK
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §16.2.6-16.2.8 Web PKI and HTTPS, Authentication, Cookies | 536-540 | 4 pp | 25 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §16.3.1 Phishing and Clickjacking | 543-545 | 3 pp | 20 min |
@@ -30,7 +30,7 @@
 
 ### Additional readings
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | OWASP Top 10:2021 | A01 Broken Access Control, A03 Injection, A07 Identification and Authentication Failures | none | skim | 25 min |
 

@@ -21,7 +21,7 @@ Adapted from the [CyBOK Glossary](../docs/CyBOK_v1.2.0.pdf) (printed page 989) a
 
 ### CyBOK
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §1.1 Cyber Security Definition | 2-4 | 3 pp | 15 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §1.2 CyBOK Knowledge Areas | 4-6 | 2 pp | 10 min |
@@ -38,7 +38,7 @@ your viewer's search box or the bookmarks panel. See [Readings and Resources](..
 
 Here is one incident broken down using the four terms from §1.3: vulnerability, threat, attack,
 and risk. This is the form D1 asks you to produce, one labeled paragraph per term. The short
-definitions are under Key terms at the end of this page.
+definitions are under Key terms at the top of this page.
 
 > **The incident.** In 2023 a file transfer product used by thousands of organizations was found to
 > contain a SQL injection flaw. Attackers exploited it to steal data from more than two thousand
@@ -58,12 +58,13 @@ its motive.
 flaw against the ones it found, installed a web shell to keep access, and copied out the data
 those instances held. This is what actually happened: a sequence of events in time.
 
-**The risk.** Before this happened, what would a reasonable person have said? The product handled
-bulk file transfers, so the impact of compromise was obviously high: that part was knowable in
-advance. Likelihood is harder: internet-facing software from a vendor with a history of similar
-flaws is a well-known risk category. So: high impact, moderate-to-high likelihood. A risk
-assessment that reached that conclusion would have said *do not expose this to the internet*, and
-some organizations had.
+**The risk.** Risk is judged before anything happens, so ask what a careful person could have said
+the day before the attack. Start with impact. The product moved bulk files for thousands of
+organizations, so a compromise would clearly do a lot of harm. Then likelihood. Nobody knew about
+this flaw yet, but internet-facing software from a vendor with a history of similar flaws is a
+well-known warning sign. That makes the risk high impact with a moderate to high likelihood. A risk
+assessment that reached that conclusion would have said "do not expose this to the internet", and
+some organizations had already followed that advice.
 
 Notice four things about that example:
 

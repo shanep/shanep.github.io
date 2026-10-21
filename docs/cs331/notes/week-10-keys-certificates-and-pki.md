@@ -22,7 +22,7 @@
 
 ### CyBOK
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §18.3.1 The Key Life-cycle | 651-653 | 2 pp | 15 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §18.3.2-18.3.7 Key derivation, generation, storage, transport, refreshing | 653-658 | 5 pp | 35 min |

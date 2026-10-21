@@ -22,7 +22,7 @@
 
 ### CyBOK
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.1 Fundamental concepts: workflows and vocabulary | 251-254 | 3 pp | 20 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.2 Monitor: data sources *(skim)* | 254-261 | 7 pp | 20 min |
@@ -34,7 +34,7 @@
 
 ### Additional readings
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | NIST SP 800-61r3 | The incident response life cycle *(skim)* | none | skim | 20 min |
 

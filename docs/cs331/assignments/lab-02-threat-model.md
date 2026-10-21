@@ -63,7 +63,9 @@ Then draw **trust boundaries** as dashed lines cutting across the flows. A trust
 wherever data crosses from something you control to something you do not, or from one level of
 privilege to another. In SnapVault there are at least four; find them.
 
-**How to draw it.** Any of these is fine and none scores higher than another:
+#### How to draw it
+
+Any of these is fine and none scores higher than another:
 
 - Draw it on paper, photograph it, attach the photo.
 - Use any diagramming tool you like and export an image.

@@ -21,7 +21,7 @@
 
 ### CyBOK
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.5.1 Identity Management | 477-478 | 1 p | 10 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.5.2 User Authentication: passwords, biometrics, tokens, behavioral, 2FA | 478-482 | 4 pp | 35 min |
@@ -30,7 +30,7 @@
 
 ### Additional readings
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | NIST SP 800-63B-4 | §3, Authenticator and Verifier Requirements | none | skim | 30 min |
 

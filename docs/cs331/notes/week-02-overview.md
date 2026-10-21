@@ -7,11 +7,11 @@ information in computer systems. Fifty-two years later they are still the closes
 has to rules of thumb, and every serious breach you will read about this semester violates at least
 one of them.
 
-This week you learn the eight, and then you learn why knowing them is not enough. The second half of
-the reading is about human factors, and it makes an uncomfortable point: most security controls
-that fail in practice fail because people route around them. When that happens, the usual response
-is to blame the people. CyBOK's position (and this course's) is that a control people cannot
-comply with is a defective control.
+This week you learn the eight principles, and then why knowing them is not enough. The second half
+of the reading is about human factors, and it makes an uncomfortable point: when a security control
+fails in practice, it is usually because people work around it. The usual response is to blame the
+people. CyBOK's position (and this course's) is that a control people cannot follow is a defective
+control.
 
 ## Learning Objectives
 
@@ -33,8 +33,7 @@ By the end of this week, the successful student will be able to:
 - [2.02 Lab 1: Security Principles Audit](../assignments/lab-01-security-principles-audit.md)
   (1 hr 25 min, 38 points)
 
-No discussion this week. Lab 1 is the only graded item, and it is a writing assignment, so give it
-the full 85 minutes.
+No discussion this week.
 
 ## Time Estimate
 
@@ -46,6 +45,7 @@ the full 85 minutes.
 | Review and slack | 2 hrs 30 min |
 | **Total** | **~6.5 hrs** |
 
-MLK Day falls on Monday, so the working week is short. Lab 1 is not due until Sunday.
+MLK Day falls on Monday, so the working week is short. Lab 1 is not due until Sunday, and it is a
+writing assignment, so give it the full 85 minutes.
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

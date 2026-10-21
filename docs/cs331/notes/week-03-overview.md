@@ -2,9 +2,10 @@
 
 **January 25-31 · Reading: 15 pages, plus 14 to skim · Due: D2 · Estimated total: 6 hours**
 
-Everything you learn in this course is dual-use. The technique that finds a vulnerability in a
-system you are paid to test is the same technique that is a crime against a system you are not.
-The line between the two is not technical, and it is not obvious. This week is about where it sits.
+Everything you learn in this course is dual-use: it can protect a system or attack one. Probing a
+system you are paid to test is a job. The same probe against a system nobody asked you to test can
+be a crime. What separates the two is permission, not technique, and where the line falls is not
+always obvious. This week is about where it sits.
 
 Three warnings before you start.
 

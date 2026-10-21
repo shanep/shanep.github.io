@@ -25,7 +25,7 @@ Two of the reference monitor's three requirements are the *complete mediation* a
 
 ### CyBOK
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.1-14.2 Introduction and Content | 464-465 | 1 p | 5 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.3.1 Access Control: core concepts, policies, RBAC, ABAC | 465-470 | 5 pp | 40 min |

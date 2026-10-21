@@ -19,7 +19,7 @@
 
 ### CyBOK
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §2.2 What is risk? | 20-21 | 1 p | 10 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §2.3 Why is risk assessment and management important? | 21-25 | 4 pp | 25 min |

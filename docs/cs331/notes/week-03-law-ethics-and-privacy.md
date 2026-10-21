@@ -19,7 +19,7 @@
 
 ### CyBOK
 
-| Source | Sections | Printed pages | Length | Time |
+| Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §3.1 Introductory principles of law and legal research | 52-58 | 6 pp | 40 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §3.4 Data protection *(skim, for D2)* | 72-81 | 9 pp | 25 min |
@@ -39,7 +39,8 @@ them for the structure, not the detail.
 You find that a company's website returns different error messages for "no such account" and
 "wrong password", which lets anyone confirm whether an email address has an account there.
 
-**Technically**, this is a user enumeration weakness. It is real, it is common, and it is usually
+**Technically**, this is a user enumeration weakness: it lets an outsider enumerate (list, one
+guess at a time) which email addresses have accounts. It is real, it is common, and it is usually
 rated low severity.
 
 **Legally**, the question is not "is this a vulnerability" but "what did you do to find it, and
@@ -98,8 +99,8 @@ have a clean answer.
 
 ## Looking ahead
 
-Week 4 is the first modeling week: you take a written description of a system and turn it into a
-threat model. It is the single most transferable skill in the course, and Lab 2 is where the
-semester starts asking you to produce structured work rather than prose.
+Week 4 is the first modeling week. You will take a written description of a system and turn it
+into a threat model, which is the skill from this course you are most likely to use on the job. Lab
+2 is also the first assignment that asks for a diagram and a table rather than paragraphs.
 
 <!--@include: ../../../parts/cs331-questions-button.md-->
