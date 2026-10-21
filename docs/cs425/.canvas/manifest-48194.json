@@ -312,6 +312,15 @@
       "extra": {},
       "kind": "syllabus",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-21T03:51:24.915Z",
+        "canvas": {
+          "body": "93058e0070ae7a90"
+        },
+        "repo": {
+          "body": "07ef0783133556cf"
+        }
+      },
       "title": "CS 425/525 Computer Networks"
     },
     "notes/ch01-internet.md": {

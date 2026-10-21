@@ -14,7 +14,7 @@ taken once for credit.
 ## Course Logistics
 
 - **Email:** shanepanter (at) boisestate.edu
-- **Office Hours:** <OfficeHoursLink />
+- **Office Hours:** [Book an appointment](https://calendar.app.google/3NEb1xLYYwZRejY18)
 - **Semester:** Fall 2026
 - **Canvas:** [CS425/525, ECE434/534](https://boisestatecanvas.instructure.com/courses/48194)
 - **Textbook:** *Computer Networking: A Top-Down Approach*, 9th edition, by James
