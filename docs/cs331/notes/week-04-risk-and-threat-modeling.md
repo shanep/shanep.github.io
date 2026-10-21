@@ -21,12 +21,12 @@ What to do this week, and when it is due, is on the [Module 4 Overview](week-04-
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §2.2 What is risk? | 20-21 | 1 p | 10 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §2.3 Why is risk assessment and management important? | 21-25 | 4 pp | 25 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §2.4 What is cyber risk assessment and management? | 25-26 | 1 p | 10 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §2.6.1 Component vs. Systems Perspectives | 31-32 | 1 p | 10 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §2.6.2 Elements of Risk | 32-33 | 1 p | 15 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §2.6.6 Security Metrics | 43-45 | 3 pp | 20 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §2.2 What is risk? | 20-21 | 1 p | 10 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §2.3 Why is risk assessment and management important? | 21-25 | 4 pp | 25 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §2.4 What is cyber risk assessment and management? | 25-26 | 1 p | 10 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §2.6.1 Component vs. Systems Perspectives | 31-32 | 1 p | 10 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §2.6.2 Elements of Risk | 32-33 | 1 p | 15 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §2.6.6 Security Metrics | 43-45 | 3 pp | 20 min |
 
 **§2.6.2 is the one to read carefully.** It defines the four elements a risk rating is built from,
 and notes that likelihood can be qualitative (low, medium, high) or quantitative (1-10, a

@@ -4,13 +4,13 @@ Every reading in this course is free and openly licensed. There is nothing to bu
 
 ## Required text
 
-> **The Cyber Security Body of Knowledge, version 1.1.0.**
-> Awais Rashid, Howard Chivers, Emil Lupu, Andrew Martin, and Steve Schneider (eds.), July 2021.
-> © Crown Copyright, The National Cyber Security Centre 2021. Licensed under the
+> **The Cyber Security Body of Knowledge, version 1.2.0.**
+> Awais Rashid, Yulia Cherdantseva, Andrew Martin, and Steve Schneider (eds.), September 2026.
+> © Crown Copyright, The National Cyber Security Centre 2026. Licensed under the
 > [Open Government Licence v3.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/).
 > Project home: [The Cyber Security Body of Knowledge](https://www.cybok.org/)
 
-The complete PDF is in this course at [docs/CyBOK_v1.1.0.pdf](docs/CyBOK_v1.1.0.pdf) and in Canvas
+The complete PDF is in this course at [docs/CyBOK_v1.2.0.pdf](docs/CyBOK_v1.2.0.pdf) and in Canvas
 Files. The Open Government Licence permits redistribution with attribution, which is why the book
 can live inside the course instead of behind a link.
 
@@ -20,8 +20,8 @@ Two page numbering systems are in play, and they do not agree:
 
 - **Printed page numbers** appear in the footer of every CyBOK page. All readings in this course
   are cited by printed page number.
-- **Your PDF viewer's page counter** is 38 higher, because the book opens with an 8-page cover
-  block and thirty pages of front matter numbered in Roman numerals. Some viewers read the PDF's
+- **Your PDF viewer's page counter** is 46 higher, because the book opens with a 2-page cover
+  block and 44 pages of front matter numbered in Roman numerals. Some viewers read the PDF's
   page labels and show the printed number instead.
 
 **Navigate by section number, not page number.** Section numbers such as §10.4 are stable and
@@ -38,29 +38,29 @@ what is not.
 | Ch | Knowledge Area | Printed p. | Used in CS 331 |
 | ---: | --- | ---: | --- |
 | 1 | Introduction | 1 | **Weeks 1-2**: §1.1-1.5 |
-| 2 | Risk Management and Governance | 19 | **Week 4**: §2.2-2.4, §2.6.1-2.6.2, §2.6.6 |
+| 2 | Risk Management & Governance | 19 | **Week 4**: §2.2-2.4, §2.6.1-2.6.2, §2.6.6 |
 | 3 | Law & Regulation | 49 | **Week 3**: §3.1, §3.4-3.5 (skim), §3.13 |
 | 4 | Human Factors | 145 | **Week 2**: §4.3-4.4 |
-| 5 | Privacy & Online Rights | 171 | **Week 3**: §5.2-5.3 |
-| 6 | Malware & Attack Technologies | 201 | **Week 12**: §6.1-6.2, §6.4 |
-| 7 | Adversarial Behaviours | 223 | **Week 12**: §7.2 |
-| 8 | Security Operations & Incident Management | 251 | **Week 15**: §8.1-8.2, §8.3.1-8.3.3, §8.3.6, §8.7 |
-| 9 | Forensics | 289 | Not assigned |
-| 10 | Cryptography | 321 | **Weeks 7-8**: §10.3-10.8 |
-| 11 | Operating Systems and Virtualisation | 357 | Not assigned |
-| 12 | Distributed Systems Security | 393 | Not assigned |
-| 13 | Formal Methods for Security | 425 | Not assigned |
-| 14 | Authentication, Authorisation & Accountability | 465 | **Weeks 5-6**: §14.1-14.3, §14.5, §14.6 |
-| 15 | Software Security | 497 | **Week 13**: §15.1.1, §15.2, §15.4 |
+| 5 | Privacy & Online Rights | 169 | **Week 3**: §5.2-5.3 |
+| 6 | Malware & Attack Technologies | 199 | **Week 12**: §6.1-6.2, §6.4 |
+| 7 | Adversarial Behaviours | 221 | **Week 12**: §7.2 |
+| 8 | Security Operations & Incident Management | 249 | **Week 15**: §8.1-8.2, §8.3.1-8.3.3, §8.3.6, §8.7 |
+| 9 | Forensics | 287 | Not assigned |
+| 10 | Cryptography | 319 | **Weeks 7-8**: §10.3-10.8 |
+| 11 | Operating Systems & Virtualisation Security | 355 | Not assigned |
+| 12 | Distributed Systems Security | 391 | Not assigned |
+| 13 | Formal Methods for Security | 423 | Not assigned |
+| 14 | Authentication, Authorisation & Accountability | 463 | **Weeks 5-6**: §14.1-14.3, §14.5, §14.6 |
+| 15 | Software Security | 495 | **Week 13**: §15.1.1, §15.2, §15.4 |
 | 16 | Web & Mobile Security | 523 | **Week 14**: §16.2.6-16.2.8, §16.3.1, §16.4.1 |
-| 17 | Secure Software Lifecycle | 557 | **Week 13**: §17.4 only |
-| 18 | Applied Cryptography | 593 | **Week 10**: §18.3, §18.5.1 |
-| 19 | Network Security | 645 | **Week 11**: §19.1, §19.3.2-19.3.3, §19.4 |
-| 20 | Hardware Security | 681 | Not assigned |
-| 21 | Cyber-Physical Systems Security | 707 | Not assigned |
-| 22 | Physical Layer & Telecommunications Security | 741 | Not assigned |
+| 17 | Secure Software Lifecycle | 557 | **Week 13**: §17.7 only |
+| 18 | Applied Cryptography | 619 | **Week 10**: §18.3, §18.5.1 |
+| 19 | Network Security | 671 | **Week 11**: §19.1, §19.3.2-19.3.3, §19.4 |
+| 20 | Hardware Security | 707 | Not assigned |
+| 21 | Cyber-Physical Systems Security | 733 | Not assigned |
+| 22 | Physical Layer & Telecommunications Security | 767 | Not assigned |
 
-Reference sections: Bibliography p. 773 · Acronyms p. 929 · **Glossary p. 951** · Index p. 963.
+Reference sections: Bibliography p. 797 · Acronyms p. 965 · **Glossary p. 989** · Index p. 1001.
 The glossary is the source for the *Key terms* list on every lecture notes page: it is worth
 bookmarking.
 
@@ -71,10 +71,10 @@ This is a design decision, not an oversight. A future instructor should know the
 | Not assigned | Why |
 | --- | --- |
 | 9 Forensics | Legal-process heavy (the Daubert standard, chain of custody); belongs in a dedicated digital forensics course. |
-| 11 Operating Systems and Virtualisation | Assumes an operating systems course; our prerequisite floor is one programming course. |
+| 11 Operating Systems & Virtualisation Security | Assumes an operating systems course; our prerequisite floor is one programming course. |
 | 12 Distributed Systems Security | Assumes distributed systems background. |
 | 13 Formal Methods for Security | Requires logic and proof techniques well past this audience. |
-| 17 Secure Software Lifecycle (except §17.4) | Assumes professional software engineering experience; §17.4 is kept because it is the course's only source on organizational assurance evidence. |
+| 17 Secure Software Lifecycle (except §17.7) | Assumes professional software engineering experience; §17.7 is kept because it is the course's only source on organizational assurance evidence. |
 | 20 Hardware Security | Requires digital design and computer architecture. |
 | 21 Cyber-Physical Systems Security | Domain-specific; better as a follow-on elective. |
 | 22 Physical Layer & Telecommunications Security | Requires signals and communications theory. |
@@ -126,8 +126,8 @@ Links between course pages work both here and in Canvas.
 ## Attribution and reuse
 
 CyBOK material reproduced or paraphrased in course pages is used under the Open Government Licence
-v3.0 and is attributed as: *"Adapted from The Cyber Security Body of Knowledge v1.1.0,
-© Crown Copyright, The National Cyber Security Centre 2021, licensed under the Open Government
+v3.0 and is attributed as: *"Adapted from The Cyber Security Body of Knowledge v1.2.0,
+© Crown Copyright, The National Cyber Security Centre 2026, licensed under the Open Government
 Licence v3.0."*
 
 Course materials in this repository are released under the MIT License, like the rest of the

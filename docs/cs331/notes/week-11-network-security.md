@@ -25,10 +25,10 @@ What to do this week, and when it is due, is on the [Module 11 Overview](week-11
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §19.1 Security Goals and Attacker Models | 646-648 | 2 pp | 15 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §19.3.2 Security at the Transport Layer: TLS, PKI, TCP, UDP, QUIC | 656-660 | 4 pp | 30 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §19.3.3 Security at the Internet Layer: IPv4, IPv6, routing, ICMP | 660-665 | 5 pp | 35 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §19.4 Network Security Tools | 671-677 | 6 pp | 40 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §19.1 Security Goals and Attacker Models | 672-674 | 2 pp | 15 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §19.3.2 Security at the Transport Layer: TLS, PKI, TCP, UDP, QUIC | 682-686 | 4 pp | 30 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §19.3.3 Security at the Internet Layer: IPv4, IPv6, routing, ICMP | 686-691 | 5 pp | 35 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §19.4 Network Security Tools | 697-703 | 6 pp | 40 min |
 
 §19.3.1 (application layer) and §19.3.4 (link layer) are not assigned, but §19.3.4.5 on network
 segmentation is one page and worth the detour.

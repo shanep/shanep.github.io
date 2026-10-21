@@ -1,6 +1,6 @@
 # Module 13 Overview
 
-**April 12-18 · Reading: 13 pages · Due: Lab 8 · Estimated total: 7 hours**
+**April 12-18 · Reading: 14 pages · Due: Lab 8 · Estimated total: 7 hours**
 
 This week has two halves that belong together.
 
@@ -49,7 +49,7 @@ By the end of this week, the successful student will be able to:
 
 | Activity | Time |
 | --- | --- |
-| Reading (13 pages plus Aleph One) | 2 hrs 20 min |
+| Reading (14 pages plus Aleph One) | 2 hrs 20 min |
 | The notes page and the worked example | 45 min |
 | Lab 8 | 1 hr 30 min |
 | Review and slack | 2 hrs 30 min |

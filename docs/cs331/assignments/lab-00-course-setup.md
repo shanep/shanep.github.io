@@ -32,7 +32,7 @@ discussion board or email me now, in week 1, rather than in week 7 when a lab is
   you like. If you have never opened one, that is fine: every command you need is written out
   below.
 - A web browser.
-- Download [docs/CyBOK_v1.1.0.pdf](../docs/CyBOK_v1.1.0.pdf) from Canvas Files, or open it in the
+- Download [docs/CyBOK_v1.2.0.pdf](../docs/CyBOK_v1.2.0.pdf) from Canvas Files, or open it in the
   browser. It is a large file (about 21 MB); download it once and keep it.
 
 If you cannot get your own machine working, every step here works on the lab machines in CCP 240,
@@ -99,7 +99,7 @@ Two things to know first:
 - **Section numbers** such as §1.1 are the reliable way to navigate. Use your PDF viewer's search
   box, or open the bookmarks panel.
 - **Page numbers in the footer of each page do not match your PDF viewer's page counter.** The book
-  has 38 pages of front matter. Always go by section number.
+  has 46 pages of front matter. Always go by section number.
 
 Now find and answer:
 
@@ -111,7 +111,7 @@ Now find and answer:
    where CyBOK introduces confidentiality, integrity, and availability. In your own words (not
    quoted), write one sentence for each of the three explaining what it protects against.
 
-3. **Open the Glossary** (printed page 951). Look up **threat** and **vulnerability**. Quote both
+3. **Open the Glossary** (printed page 989). Look up **threat** and **vulnerability**. Quote both
    definitions, then write one sentence explaining the difference in your own words.
 
 ### Step 4: Look up a real vulnerability

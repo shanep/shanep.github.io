@@ -27,11 +27,11 @@ Two of the reference monitor's three requirements are the *complete mediation* a
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §14.1-14.2 Introduction and Content | 466-467 | 1 p | 5 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §14.3.1 Access Control: core concepts, policies, RBAC, ABAC | 467-472 | 5 pp | 40 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §14.3.2 Enforcing Access Control: delegation, revocation, reference monitors | 472-474 | 2 pp | 20 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §14.3.3 Theory: security models, enforceable policies | 474-475 | 1 p | 10 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §14.6 Accountability | 489-493 | 4 pp | 30 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.1-14.2 Introduction and Content | 464-465 | 1 p | 5 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.3.1 Access Control: core concepts, policies, RBAC, ABAC | 465-470 | 5 pp | 40 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.3.2 Enforcing Access Control: delegation, revocation, reference monitors | 470-472 | 2 pp | 20 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.3.3 Theory: security models, enforceable policies | 472-473 | 1 p | 10 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.6 Accountability | 487-491 | 4 pp | 30 min |
 
 ## The three shapes
 

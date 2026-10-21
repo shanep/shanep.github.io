@@ -22,9 +22,9 @@ What to do this week, and when it is due, is on the [Module 8 Overview](week-08-
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §10.6 Public Key Encryption: KEM/DEM, RSA, elliptic curves | 338-341 | 3 pp | 25 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §10.7 Public Key Signatures: RSA-PSS, DSA, EC-DSA, Schnorr | 341-343 | 2 pp | 20 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §10.8 Standard Protocols: authentication and key agreement | 343-347 | 4 pp | 30 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.6 Public Key Encryption: KEM/DEM, RSA, elliptic curves | 336-339 | 3 pp | 25 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.7 Public Key Signatures: RSA-PSS, DSA, EC-DSA, Schnorr | 339-341 | 2 pp | 20 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.8 Standard Protocols: authentication and key agreement | 341-345 | 4 pp | 30 min |
 | Nakov, *Practical Cryptography for Developers* | Hash functions; RSA; ECC; digital signatures | none | skim | 30 min |
 
 Start Nakov at the [hash functions chapter](https://cryptobook.nakov.com/cryptographic-hash-functions) and continue through

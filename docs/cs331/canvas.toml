@@ -124,7 +124,7 @@ files = [
     "data/sqli_demo.py",
     "data/vuln.c",
     "data/web_access.log",
-    "docs/CyBOK_v1.1.0.pdf",
+    "docs/CyBOK_v1.2.0.pdf",
 ]
 
 [layout.gradable]

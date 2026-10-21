@@ -1,6 +1,6 @@
 # 13.01 Readings and Lecture Notes
 
-**April 12-18 · Reading: 13 pages · About 3 hrs 5 min with the worked example**
+**April 12-18 · Reading: 14 pages · About 3 hrs 5 min with the worked example**
 
 What to do this week, and when it is due, is on the [Module 13 Overview](week-13-overview.md).
 
@@ -26,10 +26,10 @@ What to do this week, and when it is due, is on the [Module 13 Overview](week-13
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §15.1.1 Memory Management Vulnerabilities | 500-501 | 1 p | 15 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §15.2 Prevention of Vulnerabilities: language design, API design, coding practices | 507-512 | 5 pp | 40 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §15.4 Mitigating Exploitation of Vulnerabilities | 516-520 | 4 pp | 35 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §17.4 Assessing the Secure Software Lifecycle: SAMM, BSIMM, Common Criteria | 582-585 | 3 pp | 25 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.1.1 Memory Management Vulnerabilities | 498-499 | 1 p | 15 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.2 Prevention of Vulnerabilities: language design, API design, coding practices | 506-511 | 5 pp | 40 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.4 Mitigating Exploitation of Vulnerabilities | 516-520 | 4 pp | 35 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §17.7 Assessment of the Secure Software Lifecycle: SAMM, BSIMM, Common Criteria | 604-608 | 4 pp | 25 min |
 | Aleph One, *Smashing the Stack for Fun and Profit* | Start through the stack frame layout | none | ~4 pp | 25 min |
 
 Read [Aleph One's article](http://phrack.org/issues/49/14.html) (Phrack 49, 1996) until it starts
@@ -39,7 +39,7 @@ still, three decades later, one of the most common classes in the CVE database.
 
 ::: info §15.3 for Lab 8
 §15.3 (detection of vulnerabilities, static and dynamic analysis) is not assigned as reading, but
-Lab 8 asks about it. Look at pages 512-516 when you get to that question.
+Lab 8 asks about it. Look at pages 511-516 when you get to that question.
 :::
 
 ## Worked example
@@ -195,7 +195,7 @@ no reported incidents"*), the job is to take each piece separately and ask what 
 reported incidents" is the weakest of all: it is equally consistent with being secure and with
 having no ability to detect anything.
 
-§17.4 covers what process- and product-level evidence looks like: SAMM and BSIMM assess *practices*,
+§17.7 covers what process- and product-level evidence looks like: SAMM and BSIMM assess *practices*,
 and the Common Criteria evaluates *a specific product against stated claims*. Neither certifies that
 a given release is free of bugs, and conflating process maturity with product security is the most
 common mistake in reading assurance claims.

@@ -159,7 +159,7 @@ on by default for this target.)
    Write about 200 words evaluating this claim. Address each of the three pieces of evidence
    separately: what does it support, and what does it not? Then say **what you would ask for
    instead**: name two specific pieces of evidence that would actually support the claim, and say
-   what makes them better. CyBOK §17.4 on maturity models and evaluation schemes is relevant to
+   what makes them better. CyBOK §17.7 on maturity models and evaluation schemes is relevant to
    your answer.
 
 ## What to submit

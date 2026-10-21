@@ -22,7 +22,7 @@
 ## Before you start
 
 - Make sure you have done the [week 11 readings](../notes/week-11-network-security.md).
-- Skim CyBOK §19.3.1 (printed pages 652-656) and §19.3.4 (printed pages 665-671), application and
+- Skim CyBOK §19.3.1 (printed pages 678-682) and §19.3.4 (printed pages 691-697), application and
   link layer security, so you can place any incident in §19.3's four layers. They are not on the
   week 11 page.
 

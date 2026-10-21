@@ -164,7 +164,7 @@ weeks 13-14 (5.5). Reading support: CyBOK §1.4, §14.1-14.3, §14.5, §15.2; NI
 
 **Notes.** This terminal objective has four supporting objectives rather than five. It is the
 narrowest outcome in the course: assurance is taught in one week (13) through CyBOK §15.2, §15.4,
-and §17.4, and assessed through Lab 8's closing section (rubric row 4). If assurance
+and §17.7, and assessed through Lab 8's closing section (rubric row 4). If assurance
 needs more weight in a future offering, the natural place to add it is Lab 8's evidence section
 rather than an additional week: the 8-hour weekly budget has no room for a sixteenth topic.
 

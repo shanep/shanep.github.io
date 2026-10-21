@@ -21,12 +21,12 @@ What to do this week, and when it is due, is on the [Module 3 Overview](week-03-
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §3.1 Introductory principles of law and legal research | 52-58 | 6 pp | 40 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §3.4 Data protection *(skim, for D2)* | 72-81 | 9 pp | 25 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §3.5 Computer crime *(skim, for D2)* | 81-86 | 5 pp | 15 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §3.13 Ethics: all of it, especially §3.13.3 on vulnerability testing and disclosure | 122-127 | 5 pp | 35 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §5.2 Privacy as Control | 187-189 | 2 pp | 15 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §5.3 Privacy as Transparency | 189-191 | 2 pp | 15 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §3.1 Introductory principles of law and legal research | 52-58 | 6 pp | 40 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §3.4 Data protection *(skim, for D2)* | 72-81 | 9 pp | 25 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §3.5 Computer crime *(skim, for D2)* | 81-86 | 5 pp | 15 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §3.13 Ethics: all of it, especially §3.13.3 on vulnerability testing and disclosure | 122-127 | 5 pp | 35 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §5.2 Privacy as Control | 185-187 | 2 pp | 15 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §5.3 Privacy as Transparency | 187-189 | 2 pp | 15 min |
 
 **§3.4** and **§3.5** are skims because D2 asks you to use them. §3.4 is where obligations about
 personal data live, and §3.5 is where the offenses against information systems are set out. Read

@@ -101,7 +101,7 @@ function stripInstructorSections(src: string): string {
 // it points at the publisher's free copy instead. Canvas still gets the uploaded
 // file: edutools reads the markdown, not this config.
 const TEXTBOOK_URLS: Record<string, string> = {
-  'CyBOK_v1.1.0.pdf': 'https://www.cybok.org/media/downloads/CyBOK_v1.1.0.pdf',
+  'CyBOK_v1.2.0.pdf': 'https://www.cybok.org/wp-content/uploads/CyBOK_v1.2.0.pdf',
 }
 
 function publicTextbookUrl(href: string): string | undefined {

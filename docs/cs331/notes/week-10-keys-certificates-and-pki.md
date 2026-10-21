@@ -24,10 +24,10 @@ What to do this week, and when it is due, is on the [Module 10 Overview](week-10
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §18.3.1 The Key Life-cycle | 625-627 | 2 pp | 15 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §18.3.2-18.3.7 Key derivation, generation, storage, transport, refreshing | 627-632 | 5 pp | 35 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §18.3.8 Managing Public Keys and PKI | 632-635 | 3 pp | 30 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §18.5.1 Transport Layer Security | 639-640 | 1 p | 15 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §18.3.1 The Key Life-cycle | 651-653 | 2 pp | 15 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §18.3.2-18.3.7 Key derivation, generation, storage, transport, refreshing | 653-658 | 5 pp | 35 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §18.3.8 Managing Public Keys and PKI | 658-661 | 3 pp | 30 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §18.5.1 Transport Layer Security | 664-665 | 1 p | 15 min |
 
 **§18.3.8 is the core of the week.** It covers binding keys to identities via certificates, reliance
 on naming and CA operations, and certificate status information, which is where revocation, the

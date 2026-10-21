@@ -29,13 +29,13 @@ everything you need.
 
 **No textbook purchase is required.** The required text is:
 
-> The Cyber Security Body of Knowledge, version 1.1.0. Awais Rashid, Howard Chivers,
-> Emil Lupu, Andrew Martin, and Steve Schneider (eds.), July 2021.
-> © Crown Copyright, The National Cyber Security Centre 2021, licensed under the
+> The Cyber Security Body of Knowledge, version 1.2.0. Awais Rashid, Yulia Cherdantseva,
+> Andrew Martin, and Steve Schneider (eds.), September 2026.
+> © Crown Copyright, The National Cyber Security Centre 2026, licensed under the
 > [Open Government Licence v3.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/).
 
 CyBOK is a free, openly licensed reference written by the people who work in each area. The
-complete PDF is in this course at [docs/CyBOK_v1.1.0.pdf](docs/CyBOK_v1.1.0.pdf) and in Canvas
+complete PDF is in this course at [docs/CyBOK_v1.2.0.pdf](docs/CyBOK_v1.2.0.pdf) and in Canvas
 Files. You never have to go anywhere else to get a reading.
 
 Two things to know about it:
@@ -130,27 +130,27 @@ The schedule may be adjusted due to factors such as instructor availability, stu
 current events. Weeks run Monday through Sunday. Because the course is asynchronous, dates are
 release and due anchors rather than meeting times. Exact due dates are posted in Canvas.
 
-All readings marked § refer to [CyBOK v1.1.0](docs/CyBOK_v1.1.0.pdf); page numbers are the
+All readings marked § refer to [CyBOK v1.2.0](docs/CyBOK_v1.2.0.pdf); page numbers are the
 printed page numbers shown in the PDF's footers.
 
 | Week | Dates | Topic | Reading | Graded this week |
 | ---- | ----- | ----- | ------- | ---------------- |
 | 1 | Jan 11-17 | [What is cyber security? Goals, terms, and failures](notes/week-01-what-is-cyber-security.md) | §1.1-1.3 (pp. 2-8) | [Lab 0](assignments/lab-00-course-setup.md); [D1](discussions/d01-introductions-and-security-mindset.md) |
-| 2 | Jan 18-24 | [Security principles and the human factor](notes/week-02-security-principles-and-human-factors.md) | §1.4-1.5 (pp. 9-15); §4.3-4.4 (pp. 158-165) | [Lab 1](assignments/lab-01-security-principles-audit.md) |
-| 3 | Jan 25-31 | [Law, regulation, ethics, and privacy](notes/week-03-law-ethics-and-privacy.md) | §3.1 (pp. 52-58); §3.4-3.5, skim (pp. 72-86); §3.13 (pp. 122-127); §5.2-5.3 (pp. 187-191) | [D2](discussions/d02-ethics-and-privacy-case.md) |
+| 2 | Jan 18-24 | [Security principles and the human factor](notes/week-02-security-principles-and-human-factors.md) | §1.4-1.5 (pp. 9-15); §4.3-4.4 (pp. 157-164) | [Lab 1](assignments/lab-01-security-principles-audit.md) |
+| 3 | Jan 25-31 | [Law, regulation, ethics, and privacy](notes/week-03-law-ethics-and-privacy.md) | §3.1 (pp. 52-58); §3.4-3.5, skim (pp. 72-86); §3.13 (pp. 122-127); §5.2-5.3 (pp. 185-189) | [D2](discussions/d02-ethics-and-privacy-case.md) |
 | 4 | Feb 1-7 | [Risk management and threat modeling](notes/week-04-risk-and-threat-modeling.md) | §2.2-2.4 (pp. 20-26); §2.6.1-2.6.2 (pp. 31-33); §2.6.6 (pp. 43-45) | [Lab 2](assignments/lab-02-threat-model.md) |
-| 5 | Feb 8-14 | [Authentication and credentials](notes/week-05-authentication-and-credentials.md) | §14.5 (pp. 479-489) | [D3](discussions/d03-authentication-policy-critique.md) |
-| 6 | Feb 15-21 | [Authorization, access control, and accountability](notes/week-06-authorisation-and-access-control.md) | §14.1-14.3 (pp. 466-475); §14.6 (pp. 489-493) | [Lab 3](assignments/lab-03-access-control-matrix.md) |
-| 7 | Feb 22-28 | [Symmetric cryptography](notes/week-07-symmetric-cryptography.md) | §10.3-10.5 (pp. 329-338) | [Lab 4](assignments/lab-04-symmetric-encryption.md) |
-| 8 | Mar 1-7 | [Public-key cryptography, hashing, and signatures](notes/week-08-public-key-cryptography.md) | §10.6-10.8 (pp. 338-347) | [Lab 5](assignments/lab-05-hashing-and-signatures.md) |
+| 5 | Feb 8-14 | [Authentication and credentials](notes/week-05-authentication-and-credentials.md) | §14.5 (pp. 477-487) | [D3](discussions/d03-authentication-policy-critique.md) |
+| 6 | Feb 15-21 | [Authorization, access control, and accountability](notes/week-06-authorisation-and-access-control.md) | §14.1-14.3 (pp. 464-473); §14.6 (pp. 487-491) | [Lab 3](assignments/lab-03-access-control-matrix.md) |
+| 7 | Feb 22-28 | [Symmetric cryptography](notes/week-07-symmetric-cryptography.md) | §10.3-10.5 (pp. 327-336) | [Lab 4](assignments/lab-04-symmetric-encryption.md) |
+| 8 | Mar 1-7 | [Public-key cryptography, hashing, and signatures](notes/week-08-public-key-cryptography.md) | §10.6-10.8 (pp. 336-345) | [Lab 5](assignments/lab-05-hashing-and-signatures.md) |
 | 9 | Mar 8-14 | [Review and catch-up](notes/week-09-review-and-catch-up.md) | No new reading | Nothing due |
 |  | **Mar 15-19** | **SPRING BREAK: no class meetings, nothing due** |  |  |
-| 10 | Mar 22-28 | [Keys, certificates, PKI, and TLS](notes/week-10-keys-certificates-and-pki.md) | §18.3 (pp. 625-635); §18.5.1 (pp. 639-640) | [Lab 6](assignments/lab-06-certificates-and-tls.md) |
-| 11 | Mar 29-Apr 4 | [Network security and attacks](notes/week-11-network-security.md) | §19.1 (pp. 646-648); §19.3.2-19.3.3 (pp. 656-665); §19.4 (pp. 671-677) | [D4](discussions/d04-network-security-in-the-news.md) |
-| 12 | Apr 5-11 | [Malware and adversarial behaviors](notes/week-12-malware-and-adversarial-behaviours.md) | §6.1-6.2 (pp. 202-207); §6.4 (pp. 214-219); §7.2 (pp. 236-242) | [Lab 7](assignments/lab-07-malware-triage.md) |
-| 13 | Apr 12-18 | [Software security, memory safety, and assurance](notes/week-13-software-security-and-assurance.md) | §15.1.1 (pp. 500-501); §15.2 (pp. 507-512); §15.4 (pp. 516-520); §17.4 (pp. 582-585) | [Lab 8](assignments/lab-08-memory-safety-and-assurance.md) |
+| 10 | Mar 22-28 | [Keys, certificates, PKI, and TLS](notes/week-10-keys-certificates-and-pki.md) | §18.3 (pp. 651-661); §18.5.1 (pp. 664-665) | [Lab 6](assignments/lab-06-certificates-and-tls.md) |
+| 11 | Mar 29-Apr 4 | [Network security and attacks](notes/week-11-network-security.md) | §19.1 (pp. 672-674); §19.3.2-19.3.3 (pp. 682-691); §19.4 (pp. 697-703) | [D4](discussions/d04-network-security-in-the-news.md) |
+| 12 | Apr 5-11 | [Malware and adversarial behaviors](notes/week-12-malware-and-adversarial-behaviours.md) | §6.1-6.2 (pp. 200-205); §6.4 (pp. 212-217); §7.2 (pp. 234-240) | [Lab 7](assignments/lab-07-malware-triage.md) |
+| 13 | Apr 12-18 | [Software security, memory safety, and assurance](notes/week-13-software-security-and-assurance.md) | §15.1.1 (pp. 498-499); §15.2 (pp. 506-511); §15.4 (pp. 516-520); §17.7 (pp. 604-608) | [Lab 8](assignments/lab-08-memory-safety-and-assurance.md) |
 | 14 | Apr 19-25 | [Web security and injection](notes/week-14-web-security-and-injection.md) | §16.2.6-16.2.8 (pp. 536-540); §16.3.1 (pp. 543-545); §16.4.1 (pp. 547-552) | [Lab 9](assignments/lab-09-sql-injection.md) |
-| 15 | Apr 26-30 | [Security operations, detection, and incident response](notes/week-15-security-operations-and-incident-response.md) | §8.1 (pp. 253-256); §8.2, skim (pp. 256-263); §8.3.1-8.3.3 (pp. 264-268); §8.3.6 (p. 270); §8.7 (pp. 283-286) | [Lab 10](assignments/lab-10-log-analysis-and-incident-memo.md); [D5](discussions/d05-current-security-failure.md) |
+| 15 | Apr 26-30 | [Security operations, detection, and incident response](notes/week-15-security-operations-and-incident-response.md) | §8.1 (pp. 251-254); §8.2, skim (pp. 254-261); §8.3.1-8.3.3 (pp. 262-266); §8.3.6 (p. 268); §8.7 (pp. 281-284) | [Lab 10](assignments/lab-10-log-analysis-and-incident-memo.md); [D5](discussions/d05-current-security-failure.md) |
 | Finals | May 3-7 | Wrap-up | No new reading | [D6 reflection](discussions/d06-final-reflection.md) |
 
 Spring break, the last day of instruction (April 30), and finals week (May 3-7) follow the

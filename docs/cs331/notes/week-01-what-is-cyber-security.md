@@ -6,7 +6,7 @@ What to do this week, and when it is due, is on the [Module 1 Overview](week-01-
 
 ## Key terms
 
-Adapted from the [CyBOK Glossary](../docs/CyBOK_v1.1.0.pdf) (printed page 951) and §1.3:
+Adapted from the [CyBOK Glossary](../docs/CyBOK_v1.2.0.pdf) (printed page 989) and §1.3:
 
 | Term | Short form |
 | --- | --- |
@@ -23,12 +23,12 @@ Adapted from the [CyBOK Glossary](../docs/CyBOK_v1.1.0.pdf) (printed page 951) a
 
 | Source | Sections | Printed pages | Length | Time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §1.1 Cyber Security Definition | 2-4 | 3 pp | 15 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §1.2 CyBOK Knowledge Areas | 4-6 | 2 pp | 10 min |
-| [CyBOK v1.1.0](../docs/CyBOK_v1.1.0.pdf) | §1.3 Deploying CyBOK knowledge: especially §1.3.1-1.3.3 | 6-8 | 2 pp | 20 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §1.1 Cyber Security Definition | 2-4 | 3 pp | 15 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §1.2 CyBOK Knowledge Areas | 4-6 | 2 pp | 10 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §1.3 Deploying CyBOK knowledge: especially §1.3.1-1.3.3 | 6-8 | 2 pp | 20 min |
 
 **Navigating the PDF:** go by section number, not page number. The printed page numbers in the
-footer may not match your PDF viewer's counter, because the book has 38 pages of front matter. Use
+footer may not match your PDF viewer's counter, because the book has 46 pages of front matter. Use
 your viewer's search box or the bookmarks panel. See [Readings and Resources](../resources.md) for more.
 
 §1.2 is a map of the whole book. Skim it. You will not read most of what it lists, and
