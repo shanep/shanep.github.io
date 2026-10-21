@@ -34,8 +34,7 @@ By the end of this week, the successful student will be able to:
 - Read the [SnapVault system description](../data/photoshare-system.md) (15 min)
   - Read it end to end before you start diagramming: the whole lab depends on facts scattered
     through it.
-- [4.02 Lab 2: Threat Model a Small System](../assignments/lab-02-threat-model.md) (1 hr 25 min,
-  38 points)
+- Complete [4.02 Lab 2: Threat Model a Small System](../assignments/lab-02-threat-model.md) (1 hr 25 min, 38 points)
 
 No discussion this week.
 

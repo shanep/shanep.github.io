@@ -51,7 +51,7 @@ No code. This is a reading-and-writing lab.
 
 Pick **one** system you personally use and understand from the outside. Good choices:
 
-- Boise State's single sign-on and the Duo prompt attached to it
+- Boise State's single sign-on and the multi-factor prompt attached to it
 - The lock screen and app permissions on your phone
 - A banking or payment app you use
 - A smart doorbell, thermostat, or camera in your home

@@ -29,14 +29,12 @@ By the end of this week, the successful student will be able to:
 ### Due by Thursday at 11:59 p.m. Mountain Time
 
 - Read [11.01 Readings and Lecture Notes](week-11-network-security.md) and work through the worked example (2 hrs 40 min)
-- [11.02 D4: Network Security in the News](../discussions/d04-network-security-in-the-news.md):
-  initial post
+- Write your initial post in [11.02 D4: Network Security in the News](../discussions/d04-network-security-in-the-news.md)
   - D4 asks you to find an incident nobody else has claimed. **Check the board and post early.**
 
 ### Due by Sunday at 11:59 p.m. Mountain Time
 
-- [11.03 D4: Network Security in the News - Replies](../reminders/d04-replies.md):
-  two replies (1 hr with the initial post, 30 points)
+- Write two replies in [11.03 D4: Network Security in the News - Replies](../reminders/d04-replies.md) (1 hr with the initial post, 30 points)
 
 ## Time Estimate
 

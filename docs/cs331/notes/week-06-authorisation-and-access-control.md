@@ -1,6 +1,6 @@
 # 6.01 Readings and Lecture Notes
 
-**February 15-21 · Presidents' Day is Monday, February 15 · Reading: 13 pages · About 2 hrs 25 min with the worked example**
+**February 15-21 · Presidents' Day is Monday · Reading: 13 pages · About 2 hrs 25 min with the worked example**
 
 ## Key terms
 
@@ -44,7 +44,7 @@ Start with a matrix: subjects down the side, objects across the top, rights in t
 | **backup-service** | r | r | r |
 
 Nobody stores this. A real system has millions of objects and thousands of subjects, and the matrix
-is overwhelmingly empty. So it gets sliced, one way or the other:
+is overwhelmingly empty. So it gets sliced, one way or the other.
 
 **An access control list slices by column.** Each object carries the list of subjects who may touch
 it. `payroll.db` carries `alice: rwd, backup-service: r`. This is how file permissions work.
@@ -96,7 +96,10 @@ because *an access control policy nobody wrote down is a policy nobody can check
 thumbnail, write the thumbnail back. That job needs read on new uploads and write on thumbnails.
 It has read *and write* on **every object in the bucket**, forever.
 
-### Reducing it
+### Reducing the worker's access
+
+Fixing an over-privileged subject takes four moves, in this order. Step 4 of Lab 3 asks you to make
+the same four moves for three of SnapVault's arrangements.
 
 **State the excess precisely.** The worker can read every photo any user has ever uploaded,
 including private ones, and can overwrite or delete any of them. Its job requires reading one

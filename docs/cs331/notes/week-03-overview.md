@@ -33,12 +33,11 @@ By the end of this week, the successful student will be able to:
 
 - Read [3.01 Readings and Lecture Notes](week-03-law-ethics-and-privacy.md) and work through the
   worked example (2 hrs 55 min)
-- [3.02 D2: Ethics and Privacy Case](../discussions/d02-ethics-and-privacy-case.md): initial post
+- Write your initial post in [3.02 D2: Ethics and Privacy Case](../discussions/d02-ethics-and-privacy-case.md)
 
 ### Due by Sunday at 11:59 p.m. Mountain Time
 
-- [3.03 D2: Ethics and Privacy Case - Replies](../reminders/d02-replies.md): two replies
-  (1 hr with the initial post, 30 points)
+- Write two replies in [3.03 D2: Ethics and Privacy Case - Replies](../reminders/d02-replies.md) (1 hr with the initial post, 30 points)
 
 ## Time Estimate
 

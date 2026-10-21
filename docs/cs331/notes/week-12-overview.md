@@ -32,7 +32,7 @@ By the end of this week, the successful student will be able to:
 ### Due by Sunday at 11:59 p.m. Mountain Time
 
 - Read [12.01 Readings and Lecture Notes](week-12-malware-and-adversarial-behaviours.md) and work through the worked example (3 hrs)
-- [12.02 Lab 7: Malware Triage Without Malware](../assignments/lab-07-malware-triage.md) (1 hr 35 min, 38 points)
+- Complete [12.02 Lab 7: Malware Triage Without Malware](../assignments/lab-07-malware-triage.md) (1 hr 35 min, 38 points)
   - Read the [incident report](../data/incident-report.md) all the way through once before you
     start mapping. The last section (*"What was never established"*) matters as much as the rest.
 

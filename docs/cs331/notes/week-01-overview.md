@@ -39,15 +39,12 @@ By the end of this week, the successful student will be able to:
 
 ### Due by Thursday at 11:59 p.m. Mountain Time
 
-- [0.03 D1: Introductions and the Security Mindset](../discussions/d01-introductions-and-security-mindset.md):
-  initial post
+- Write your initial post in [0.03 D1: Introductions and the Security Mindset](../discussions/d01-introductions-and-security-mindset.md)
 
 ### Due by Sunday at 11:59 p.m. Mountain Time
 
-- [0.04 D1: Introductions and the Security Mindset - Replies](../reminders/d01-replies.md):
-  one reply (45 min with the initial post, 15 points)
-- [0.05 Lab 0: Course Setup and CyBOK Navigation](../assignments/lab-00-course-setup.md) (45 min,
-  20 points)
+- Write one reply in [0.04 D1: Introductions and the Security Mindset - Replies](../reminders/d01-replies.md) (45 min with the initial post, 15 points)
+- Complete [0.05 Lab 0: Course Setup and CyBOK Navigation](../assignments/lab-00-course-setup.md) (45 min, 20 points)
   - **Do Lab 0 early.** It installs the Python package that weeks 7, 8, and 10 depend on. If
     something does not work on your machine, week 1 is when to find out.
 

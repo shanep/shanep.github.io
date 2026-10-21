@@ -43,7 +43,11 @@ You will run a provided script and change two values in it. There is no code to 
 python3 sign_demo.py
 ```
 
-Save the full output. The key pairs and the HMAC secret are generated fresh each run, so your
+Save the full output. The script prints four sections, headed PART 1 to PART 4, and the steps
+below refer to them as Part 1 to Part 4. The part numbers do not match the step numbers: Step 2
+uses Part 1, Step 3 uses Parts 2 and 3, and Step 4 uses Part 4.
+
+The key pairs and the HMAC secret are generated fresh each run, so your
 signature and tag values will differ from your classmates'. Your Part 1 digests will not: that is
 expected, and it is itself worth noticing.
 

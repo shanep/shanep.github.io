@@ -1,8 +1,9 @@
 # Module 6 Overview
 
-**February 15-21 · Presidents' Day is Monday, February 15 · Reading: 13 pages · Due: Lab 3 · Estimated total: 6.5 hours**
+**February 15-21 · Presidents' Day is Monday · Reading: 13 pages · Due: Lab 3 · Estimated total: 6.5 hours**
 
-Last week the system worked out who you are. This week it decides what you may do about it.
+Last week was about how a system works out who you are (authentication). This week is about how it
+decides what you may do (authorization).
 
 The core idea is old and simple: write down, for every subject and every object, what that subject
 may do to that object. That is an access control matrix, and it is the most direct way to express
@@ -30,7 +31,7 @@ By the end of this week, the successful student will be able to:
 ### Due by Sunday at 11:59 p.m. Mountain Time
 
 - Read [6.01 Readings and Lecture Notes](week-06-authorisation-and-access-control.md) and work through the worked example (2 hrs 25 min)
-- [6.02 Lab 3: Access Control Matrix and Least Privilege](../assignments/lab-03-access-control-matrix.md) (1 hr 30 min, 38 points)
+- Complete [6.02 Lab 3: Access Control Matrix and Least Privilege](../assignments/lab-03-access-control-matrix.md) (1 hr 30 min, 38 points)
 
 No discussion this week. Presidents' Day is Monday, so the working week is short.
 

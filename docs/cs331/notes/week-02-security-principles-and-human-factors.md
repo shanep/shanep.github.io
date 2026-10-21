@@ -1,6 +1,6 @@
 # 2.01 Readings and Lecture Notes
 
-**January 18-24 · MLK Day is Monday, January 18 · Reading: 14 pages · About 2 hrs 30 min with the worked example**
+**January 18-24 · MLK Day is Monday · Reading: 14 pages · About 2 hrs 30 min with the worked example**
 
 ## Key terms
 

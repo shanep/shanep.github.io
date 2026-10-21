@@ -32,14 +32,12 @@ By the end of this week, the successful student will be able to:
 ### Due by Thursday at 11:59 p.m. Mountain Time
 
 - Read [15.01 Readings and Lecture Notes](week-15-security-operations-and-incident-response.md) and work through the worked example (3 hrs)
-- [15.02 D5: A Current Security Failure](../discussions/d05-current-security-failure.md): initial post
+- Write your initial post in [15.02 D5: A Current Security Failure](../discussions/d05-current-security-failure.md)
 
 ### Due by Friday, April 30 at 11:59 p.m. Mountain Time
 
-- [15.03 D5: A Current Security Failure - Replies](../reminders/d05-replies.md): two
-  replies (1 hr with the initial post, 30 points)
-- [15.04 Lab 10: Log Analysis and Incident Memo](../assignments/lab-10-log-analysis-and-incident-memo.md)
-  (1 hr 35 min, 38 points)
+- Write two replies in [15.03 D5: A Current Security Failure - Replies](../reminders/d05-replies.md) (1 hr with the initial post, 30 points)
+- Complete [15.04 Lab 10: Log Analysis and Incident Memo](../assignments/lab-10-log-analysis-and-incident-memo.md) (1 hr 35 min, 38 points)
 
 ::: warning April 30 is the last day of instruction
 No lab, discussion, or extra credit from the

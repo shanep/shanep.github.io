@@ -1,6 +1,6 @@
 # Module 2 Overview
 
-**January 18-24 · MLK Day is Monday, January 18 · Reading: 14 pages · Due: Lab 1 · Estimated total: 6.5 hours**
+**January 18-24 · MLK Day is Monday · Reading: 14 pages · Due: Lab 1 · Estimated total: 6.5 hours**
 
 In 1975 Jerome Saltzer and Michael Schroeder wrote down eight design principles for protecting
 information in computer systems. Fifty-two years later they are still the closest thing the field
@@ -30,8 +30,7 @@ By the end of this week, the successful student will be able to:
 
 - Read [2.01 Readings and Lecture Notes](week-02-security-principles-and-human-factors.md) and
   work through the worked example (2 hrs 30 min)
-- [2.02 Lab 1: Security Principles Audit](../assignments/lab-01-security-principles-audit.md)
-  (1 hr 25 min, 38 points)
+- Complete [2.02 Lab 1: Security Principles Audit](../assignments/lab-01-security-principles-audit.md) (1 hr 25 min, 38 points)
 
 No discussion this week.
 

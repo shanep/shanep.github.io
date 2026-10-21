@@ -29,19 +29,28 @@
 
 ## Find a real policy
 
-Find the **actual, published password and authentication policy** of a real organization. Options,
-easiest first:
+Find the **actual, published password and authentication policy** of a real organization. Whichever
+organization you pick, look for the same rules:
 
-- **Boise State's own**: the password requirements shown when you change your BroncoID password,
-  plus what Duo does and does not cover.
-- **Your bank, your employer, or a service you use.** Most publish requirements on the
-  password-change screen even when there is no formal policy document.
+- minimum and maximum length
+- composition requirements (uppercase, digits, symbols)
+- expiry, and reuse rules
+- whether paste is allowed
+- which second factors are offered, and whether a second factor is required or optional
+
+Options, easiest first:
+
+- **Boise State's own.** Read OIT's [Password management](https://www.boisestate.edu/oit/password-management/)
+  page for the passphrase rules. For the second factor, look at the multi-factor authentication
+  methods your own account offers through Microsoft Entra. Note which of the rules above the page
+  states and which it leaves out.
+- **Your bank, your employer, or a service you use.** Search its help pages for "password
+  requirements", or open its password-change screen, which usually lists the rules even when there
+  is no formal policy document. Its account security settings show which second factors it offers.
 - **A policy you can see by trying to create an account**: sign up for something and record what
   it demanded and what it allowed.
 
-Record the actual rules: minimum and maximum length, composition requirements, expiry, reuse rules,
-whether paste is allowed, what second factors are offered, and whether the second factor is required
-or optional. **Quote or screenshot the rules.** If you cannot find a documented policy, say so and
+**Quote or screenshot the rules.** If you cannot find a documented policy, say so and
 record what the interface enforced: that absence is itself a finding.
 
 **Do not post credentials, and do not post anything that identifies your own account.**

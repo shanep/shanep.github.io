@@ -32,7 +32,7 @@ By the end of this week, the successful student will be able to:
 ### Due by Sunday at 11:59 p.m. Mountain Time
 
 - Read [7.01 Readings and Lecture Notes](week-07-symmetric-cryptography.md) and work through the worked example (2 hrs 25 min)
-- [7.02 Lab 4: Symmetric Encryption in Practice](../assignments/lab-04-symmetric-encryption.md) (1 hr 30 min, 38 points)
+- Complete [7.02 Lab 4: Symmetric Encryption in Practice](../assignments/lab-04-symmetric-encryption.md) (1 hr 30 min, 38 points)
   - Check that `cryptography` still imports before you start:
     `python3 -c "import cryptography; print('ok')"`.
 

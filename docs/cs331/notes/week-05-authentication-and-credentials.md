@@ -97,8 +97,9 @@ problems, and neither substitutes for the other.
 
 ### What the salt does, and does not
 
-The last section of the output shows two accounts with the same password producing different
-stored hashes.
+A salt is a random value, different for every account, that the system mixes into the password
+before hashing it and stores next to the hash. The last section of the output shows two accounts
+with the same password producing different stored hashes, because each one got its own salt.
 
 The salt buys two things: an attacker cannot tell from the database that two accounts share a
 password, and one precomputed table no longer covers the whole database, so the work becomes
