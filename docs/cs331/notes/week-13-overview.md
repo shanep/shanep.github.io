@@ -41,10 +41,9 @@ By the end of this week, the successful student will be able to:
 - Read [13.01 Readings and Lecture Notes](week-13-software-security-and-assurance.md) and work through the worked example (3 hrs 5 min)
 - [13.02 Lab 8: Memory Safety and Assurance Evidence](../assignments/lab-08-memory-safety-and-assurance.md)
   (1 hr 30 min, 38 points)
-
-Lab 8's Step 2 asks you to paste assembly from your own Compiler Explorer session. If your compiler
-version lays the frame out differently from the numbers in the notes page's worked example, use
-what you actually see and say so: that is the correct answer, not a problem.
+  - Step 2 asks you to paste assembly from your own Compiler Explorer session. If your compiler
+    version lays the frame out differently from the numbers in the worked example, use what you
+    actually see and say so: that is the correct answer, not a problem.
 
 ## Time Estimate
 

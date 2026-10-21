@@ -29,7 +29,7 @@ By the end of this week, the successful student will be able to:
 
 ### Due by Sunday at 11:59 p.m. Mountain Time
 
-- Read [6.01 Readings and Lecture Notes](week-06-authorisation-and-access-control.md) and work the worked example (2 hrs 25 min)
+- Read [6.01 Readings and Lecture Notes](week-06-authorisation-and-access-control.md) and work through the worked example (2 hrs 25 min)
 - [6.02 Lab 3: Access Control Matrix and Least Privilege](../assignments/lab-03-access-control-matrix.md) (1 hr 30 min, 38 points)
 
 No discussion this week. Presidents' Day is Monday, so the working week is short.

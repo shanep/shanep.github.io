@@ -43,9 +43,8 @@ By the end of this week, the successful student will be able to:
   one reply (45 min with the initial post, 15 points)
 - [0.05 Lab 0: Course Setup and CyBOK Navigation](../assignments/lab-00-course-setup.md) (45 min,
   20 points)
-
-**Do Lab 0 early.** It installs the Python package that weeks 7, 8, and 10 depend on. If something
-does not work on your machine, week 1 is when to find out.
+  - **Do Lab 0 early.** It installs the Python package that weeks 7, 8, and 10 depend on. If
+    something does not work on your machine, week 1 is when to find out.
 
 ## Time Estimate
 

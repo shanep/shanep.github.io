@@ -25,11 +25,10 @@ By the end of this week, the successful student will be able to:
 
 ### Due by Sunday at 11:59 p.m. Mountain Time
 
-- Read [10.01 Readings and Lecture Notes](week-10-keys-certificates-and-pki.md) and run `cert_inspect.py` (2 hrs 15 min)
+- Read [10.01 Readings and Lecture Notes](week-10-keys-certificates-and-pki.md) and work through the worked example (2 hrs 15 min)
 - [10.02 Lab 6: Certificates and TLS](../assignments/lab-06-certificates-and-tls.md) (1 hr 30 min, 38 points)
-
-Lab 6 asks you to inspect a real certificate chain in your browser as well as run the script. Do
-the browser part first; it takes ten minutes and makes the script output make sense.
+  - Do the browser part (Step 1) before you run the script. It takes ten minutes and makes the
+    script output make sense.
 
 ## Time Estimate
 

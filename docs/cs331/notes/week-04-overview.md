@@ -32,11 +32,12 @@ By the end of this week, the successful student will be able to:
 - Read [4.01 Readings and Lecture Notes](week-04-risk-and-threat-modeling.md) and work through the
   worked example (2 hrs 5 min)
 - Read the [SnapVault system description](../data/photoshare-system.md) (15 min)
+  - Read it end to end before you start diagramming: the whole lab depends on facts scattered
+    through it.
 - [4.02 Lab 2: Threat Model a Small System](../assignments/lab-02-threat-model.md) (1 hr 25 min,
   38 points)
 
-No discussion this week. Read the [SnapVault system description](../data/photoshare-system.md)
-end to end before you start diagramming: the whole lab depends on facts scattered through it.
+No discussion this week.
 
 ## Time Estimate
 

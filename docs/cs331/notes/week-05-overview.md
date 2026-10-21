@@ -25,18 +25,17 @@ By the end of this week, the successful student will be able to:
 
 ### Due by Thursday at 11:59 p.m. Mountain Time
 
-- Read [5.01 Readings and Lecture Notes](week-05-authentication-and-credentials.md) and run
-  `password_demo.py` (2 hrs 35 min)
+- Read [5.01 Readings and Lecture Notes](week-05-authentication-and-credentials.md) and work
+  through the worked example (2 hrs 35 min)
 - [5.02 D3: Authentication Policy Critique](../discussions/d03-authentication-policy-critique.md):
   initial post (45 min)
+  - Run `password_demo.py` from the worked example before you post: part 3 asks you to quote two
+    numbers from your own run.
 
 ### Due by Sunday at 11:59 p.m. Mountain Time
 
 - [5.03 D3: Authentication Policy Critique - Replies](../reminders/d03-replies.md):
   two replies (20 min, 30 points with the initial post)
-
-Run `password_demo.py` before posting to D3: part 3 asks you to quote two numbers from your own
-run.
 
 ## Time Estimate
 

@@ -29,7 +29,7 @@ By the end of this week, the successful student will be able to:
 
 ### Due by Sunday at 11:59 p.m. Mountain Time
 
-- Read [14.01 Readings and Lecture Notes](week-14-web-security-and-injection.md) and run `sqli_demo.py` (2 hrs 55 min)
+- Read [14.01 Readings and Lecture Notes](week-14-web-security-and-injection.md) and work through the worked example (2 hrs 55 min)
 - [14.02 Lab 9: SQL Injection](../assignments/lab-09-sql-injection.md) (1 hr 30 min, 38 points)
 
 **Everything in Lab 9 runs against a database inside one Python process on your own machine.**

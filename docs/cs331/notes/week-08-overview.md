@@ -26,7 +26,7 @@ By the end of this week, the successful student will be able to:
 
 ### Due by Sunday at 11:59 p.m. Mountain Time
 
-- Read [8.01 Readings and Lecture Notes](week-08-public-key-cryptography.md) and run `sign_demo.py` (2 hrs 30 min)
+- Read [8.01 Readings and Lecture Notes](week-08-public-key-cryptography.md) and work through the worked example (2 hrs 30 min)
 - [8.02 Lab 5: Hashing and Signatures](../assignments/lab-05-hashing-and-signatures.md) (1 hr 30 min, 38 points)
 
 Next week is review and catch-up with no new material, so this is the last week of new content
