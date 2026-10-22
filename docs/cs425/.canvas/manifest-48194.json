@@ -404,6 +404,24 @@
       "page_url": "",
       "title": "General Extra Credit"
     },
+    "extra-credit/ec-krascha.md": {
+      "canvas_id": "1834573",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-22T03:09:08.502Z",
+        "canvas": {
+          "body": "080d9a1d0bb8f4b6",
+          "settings": "062e7e63d4c7c154"
+        },
+        "repo": {
+          "body": "f2b31503b7115b47",
+          "settings": "062e7e63d4c7c154"
+        }
+      },
+      "title": "Krascha's Verdict (15 min)"
+    },
     "extra-credit/ec-typos.md": {
       "canvas_id": "1810606",
       "extra": {},

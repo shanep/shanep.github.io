@@ -455,6 +455,14 @@
       },
       {
         "kind": "assignment",
+        "title": "Krascha's Verdict (15 min)",
+        "path": "extra-credit/ec-krascha",
+        "due_at": "2026-12-11T23:59:00-07:00",
+        "points": 10.0,
+        "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
         "title": "General Extra Credit",
         "path": "extra-credit/ec-general",
         "due_at": "2026-12-11T23:59:00-07:00",

@@ -504,6 +504,7 @@ function cs425(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Course Evaluation',      link: 'extra-credit/ec-evaluation' },
         { text: 'Typos and Bugs',         link: 'extra-credit/ec-typos' },
+        { text: "Krascha's Verdict",      link: 'extra-credit/ec-krascha' },
         { text: 'General Extra Credit',   link: 'extra-credit/ec-general' },
       ]
     }
