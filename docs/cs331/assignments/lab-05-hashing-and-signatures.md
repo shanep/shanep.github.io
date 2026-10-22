@@ -5,7 +5,7 @@
 ## Goal
 
 You will work out what a hash proves, what a signature proves, and (the part people get wrong)
-what neither of them proves. Then you will compare a shared-secret MAC with a public-key signature and say when
+what neither of them proves. Then you will compare a shared-secret MAC (message authentication code) with a public-key signature and say when
 you would reach for each.
 
 You will run a provided script and change two values in it. There is no code to write.
@@ -17,7 +17,7 @@ You will run a provided script and change two values in it. There is no code to 
 - **3.4**: Verify a digital signature.
 - **3.5**: Explain what a failed signature verification does and does not prove.
 
-([TLO 3](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits))
+Terminal learning objective (TLO): [TLO 3](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits)
 
 ## Time estimate
 
@@ -47,7 +47,7 @@ Save the full output. The script prints four sections, headed PART 1 to PART 4, 
 below refer to them as Part 1 to Part 4. The part numbers do not match the step numbers: Step 2
 uses Part 1, Step 3 uses Parts 2 and 3, and Step 4 uses Part 4.
 
-The key pairs and the HMAC secret are generated fresh each run, so your
+The key pairs and the HMAC (hash-based message authentication code) secret are generated fresh each run, so your
 signature and tag values will differ from your classmates'. Your Part 1 digests will not: that is
 expected, and it is itself worth noticing.
 
@@ -64,7 +64,7 @@ Part 1 hashed two messages that differ by one character.
 4. Change `HASH_INPUT_B` so it differs from `HASH_INPUT_A` by **one different character** (for
    example, `Transfer $100 to Rob`), run again, and paste the new "Bits that differ" number. Then
    change it to something completely different and paste that number too. **What do you notice?**
-5. Suppose a download page publishes a file and its SHA-256 digest next to it. **What attack does
+5. Suppose a download page publishes a file and its SHA-256 (Secure Hash Algorithm, 256-bit) digest next to it. **What attack does
    that digest stop, and what attack does it not stop?** Two or three sentences each. This is the
    question the rest of the lab answers properly.
 
@@ -105,7 +105,7 @@ Part 4 produced an HMAC tag and an Ed25519 signature over the same message.
    | 1,000 | | |
 
 4. Public-key operations are far more expensive than symmetric ones. **Given the table above, why
-   does nearly every real protocol use both?** Two or three sentences, citing CyBOK §10.6 or §10.8.
+   does nearly every real protocol use both?** Two or three sentences, citing CyBOK (Cyber Security Body of Knowledge) §10.6 or §10.8.
 5. **Pick the right tool** for each of these and give one sentence of justification:
    - A phone app checking that a firmware update really came from the manufacturer.
    - Two servers inside one company verifying messages on a private link between them.
@@ -129,7 +129,7 @@ One Canvas submission containing your full first-run output and your numbered an
 
 ## AI disclosure
 
-You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
+You may use AI (artificial intelligence) tools on this assignment. If you do, add one or two sentences saying which tool and
 what for, per the [AI policy](../index.md#ai-policy).
 
 The hex values you quote must come from your own run.

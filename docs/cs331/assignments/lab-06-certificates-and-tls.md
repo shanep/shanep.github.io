@@ -5,7 +5,9 @@
 ## Goal
 
 Lab 5 ended with an unanswered question: a signature verifies against a public key, but what tells
-you whose key it is? This lab answers it, and shows the limits of that answer.
+you whose key it is? This lab answers it, and shows the limits of that answer. Certificates are how
+TLS (Transport Layer Security), the protocol behind every secure website, tells your browser whose
+key a server holds.
 
 You will inspect a real certificate chain in your browser, then run a script that builds a chain from
 scratch and runs the checks a browser runs against three server certificates, one good, one
@@ -16,7 +18,7 @@ expired, one issued for the wrong name.
 - **3.6**: Interpret an X.509 certificate chain and identify the trust assumptions and failure
   modes of public key infrastructure.
 
-([TLO 3](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits))
+Terminal learning objective (TLO): [TLO 3](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits)
 
 ## Time estimate
 
@@ -59,7 +61,7 @@ Record:
 3. The **signature algorithm** and the **public key algorithm and size**.
 4. Take a screenshot of the chain view.
 
-Then answer: **the leaf certificate's SAN list probably contains more than one name.** Why does one
+Then answer: **the leaf certificate's SAN (Subject Alternative Name) list probably contains more than one name.** Why does one
 certificate cover several names, and what would go wrong if you visited a name that is not in that
 list?
 
@@ -69,7 +71,7 @@ list?
 python3 cert_inspect.py
 ```
 
-It takes a few seconds: it is generating RSA keys. It builds a root CA, an intermediate CA, and
+It takes a few seconds: it is generating RSA (Rivest-Shamir-Adleman) keys. It builds a root CA (certificate authority), an intermediate CA, and
 three server certificates, then runs five checks against each. Save the full output.
 
 ### Step 3: The three certificates
@@ -80,7 +82,7 @@ three server certificates, then runs five checks against each. Save the full out
    rather than as a warning it can proceed past.
 3. The `expired` certificate is still **correctly signed by a CA the browser trusts**. Its
    cryptography is fine. **So what is the expiry date actually for?** Two or three sentences,
-   citing CyBOK §18.3.1 (the key life-cycle) or §18.3.7.
+   citing CyBOK (Cyber Security Body of Knowledge) §18.3.1 (the key life-cycle) or §18.3.7.
 4. Change `HOSTNAME_BEING_VISITED` to `"shop.example.edu"` and run it again. **Paste the three new
    verdicts.** Which certificate is acceptable now, which is not, and why did the picture flip?
 5. Change it to `"www.exarnple.edu"`: that is an *r* and an *n*, not an *m*. **What does the script
@@ -104,7 +106,7 @@ contents. One of them is not.
    certificate status information and other approaches to managing public keys; Certificate
    Transparency and certificate pinning are two more you can look up. For each, one or two
    sentences: what it does, and what it still cannot fix.
-5. Pull the whole thread together in one paragraph: **PKI does not eliminate the need to trust
+5. Pull the whole thread together in one paragraph: **PKI (public key infrastructure) does not eliminate the need to trust
    somebody. What it does is change who you have to trust, and how many of them.** Argue for or
    against that statement using something specific from this lab.
 
@@ -128,7 +130,7 @@ One Canvas submission containing:
 
 ## AI disclosure
 
-You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
+You may use AI (artificial intelligence) tools on this assignment. If you do, add one or two sentences saying which tool and
 what for, per the [AI policy](../index.md#ai-policy).
 
 ## Instructor Notes

@@ -13,7 +13,7 @@ are not, use it to go back over the first half before the break.
 
 Nothing new is introduced or graded this week. The review covers these objectives from weeks 1-8:
 
-| TLO | Objectives |
+| TLO (terminal learning objective) | Objectives |
 | --- | --- |
 | **[TLO 1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation)** | 1.1, 1.2, 1.3, 1.4, 1.5 |
 | **[TLO 2](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats)** | 2.1, 2.2, 2.3, 2.4, 2.5 |

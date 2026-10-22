@@ -25,7 +25,7 @@ By the end of this week, the successful student will be able to:
 - **[7.4](../objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response)**: Explain
   the base-rate fallacy and its effect on alert volume.
 - **[7.5](../objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response)**:
-  Recommend a defensible incident response structured by the NIST SP 800-61 incident response phases.
+  Recommend a defensible incident response structured by the NIST (National Institute of Standards and Technology) SP (Special Publication) 800-61 incident response phases.
 
 ## Assignments and Tasks
 

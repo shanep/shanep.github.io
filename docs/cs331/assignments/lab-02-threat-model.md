@@ -14,10 +14,10 @@ being methodical rather than clever.
 ## Objectives assessed
 
 - **2.1**: Draw a data flow diagram for a described system and mark its trust boundaries.
-- **2.2**: Enumerate threats against a system using STRIDE and record them in a threat table.
+- **2.2**: Enumerate threats against a system using STRIDE (spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege) and record them in a threat table.
 - **2.3**: Assess the likelihood and impact of identified threats using a stated risk method.
 
-([TLO 2](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats))
+Terminal learning objective (TLO): [TLO 2](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats)
 
 ## Time estimate
 
@@ -69,7 +69,7 @@ Any of these is fine and none scores higher than another:
 
 - Draw it on paper, photograph it, attach the photo.
 - Use any diagramming tool you like and export an image.
-- Draw it in plain text or ASCII inside your submission.
+- Draw it in plain text or ASCII (American Standard Code for Information Interchange) inside your submission.
 
 Legibility is graded. Artistry is not.
 
@@ -90,7 +90,7 @@ sentence, you are guessing, and guesses are what threat modeling exists to repla
 
 Some places worth looking hard at, though this is not a complete list and you should find others:
 the object storage bucket's read permissions, the 90-day session tokens, the shared admin login,
-the access key that the thumbnail worker and the API both use, the share-link tokens, the photo
+the access key that the thumbnail worker and the API (application programming interface) both use, the share-link tokens, the photo
 metadata, and the fourteen-month-old dependencies.
 
 ### Step 3: Likelihood and impact
@@ -103,7 +103,7 @@ Take the **six** threats you judge most serious. For each, assign:
 
 State the method you used before the table, one or two sentences on what "High likelihood" means
 to you here (an attacker needs no special access? no special skill? it has already happened to
-similar services?). CyBOK §2.6.2 is deliberately clear that these ratings are only meaningful if
+similar services?). CyBOK (Cyber Security Body of Knowledge) §2.6.2 is deliberately clear that these ratings are only meaningful if
 the scale is stated, so state yours.
 
 Then answer one question in a short paragraph: **which of these six would you fix first, and why?**
@@ -134,7 +134,7 @@ threats with no traceable source in the description.
 
 ## AI disclosure
 
-You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
+You may use AI (artificial intelligence) tools on this assignment. If you do, add one or two sentences saying which tool and
 what for, per the [AI policy](../index.md#ai-policy).
 
 AI tools are genuinely good at generating STRIDE tables and genuinely bad at the last column,

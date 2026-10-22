@@ -19,9 +19,9 @@ an ordinary day.
 - **7.3**: Analyze authentication and web server logs to identify brute-force and scanning
   activity.
 - **7.4**: Explain the base-rate fallacy and its effect on alert volume in a detection system.
-- **7.5**: Recommend a defensible incident response structured by the NIST SP 800-61 incident response phases.
+- **7.5**: Recommend a defensible incident response structured by the NIST (National Institute of Standards and Technology) SP (Special Publication) 800-61 incident response phases.
 
-([TLO 7](../objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response))
+Terminal learning objective (TLO): [TLO 7](../objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response)
 
 ## Time estimate
 
@@ -58,7 +58,7 @@ technique.
 
 Open both files and look at a few lines of each.
 
-1. **Name the data source category** each file belongs to, using CyBOK §8.2's list. Give the
+1. **Name the data source category** each file belongs to, using CyBOK (Cyber Security Body of Knowledge) §8.2's list. Give the
    section number.
 2. For **each** file, list **three specific fields** it records, and for each field, one question it
    can answer.
@@ -82,7 +82,7 @@ grep "Accepted password" auth.log
 
 Answer:
 
-1. **How many lines are in the file**, and **how many distinct source IP addresses** appear?
+1. **How many lines are in the file**, and **how many distinct source IP (Internet Protocol) addresses** appear?
 2. **One source address dominates.** Name it, give the number of failed authentication attempts
    from it, and give the time window over which they occurred.
 3. **What usernames was it trying?** List them. What does that list tell you about whether the
@@ -118,7 +118,7 @@ grep -oE '" [0-9]{3} ' web_access.log | sort | uniq -c | sort -rn
 Answer:
 
 1. **One source address behaves differently from all the others.** Name it. Give the number of
-   requests, the time window, and the distribution of HTTP status codes it received.
+   requests, the time window, and the distribution of HTTP (Hypertext Transfer Protocol) status codes it received.
 2. **What is it doing?** Name the activity, and give **four specific request paths** that make it
    obvious. Say what the attacker was hoping to find with each.
 3. **The user-agent string is a giveaway.** Quote it. Then answer: would a competent attacker leave
@@ -130,7 +130,7 @@ Answer:
 5. **Is this the same actor as in Step 2?** The two source addresses are different. Argue a
    position using the evidence available: the timing, the target, the technique. Say explicitly
    what would settle the question and whether these logs contain it.
-6. **Map both findings to MITRE ATT&CK.** Give the tactic and technique ID for the Step 2 activity
+6. **Map both findings to MITRE ATT&CK.** Give the tactic and technique ID (identifier) for the Step 2 activity
    and for the Step 3 activity. (You did this in Lab 7; use [MITRE ATT&CK](https://attack.mitre.org/).)
 
 ### Step 4: Detection model and the base-rate problem
@@ -164,10 +164,10 @@ Answer:
 
 ### Step 5: The incident memo
 
-Write a **one-page incident memo** (400 to 600 words) addressed to the IT director of the
+Write a **one-page incident memo** (400 to 600 words) addressed to the IT (information technology) director of the
 organization running `vault-api-01`. Structure it around the incident response phases in the
 week 15 notes, with these headings. Headings 3 to 5 are phases from NIST SP 800-61r2, which
-SP 800-61r3 maps onto the CSF 2.0 Functions in its Table 1:
+SP 800-61r3 maps onto the CSF (Cybersecurity Framework) 2.0 Functions in its Table 1:
 
 1. **What happened.** A factual summary, with times. No speculation in this section.
 2. **What we know and what we do not.** Separate the two explicitly. Say what evidence would close
@@ -201,7 +201,7 @@ code you used and the arithmetic in Step 4 question 4, followed by the memo from
 
 ## AI disclosure
 
-You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
+You may use AI (artificial intelligence) tools on this assignment. If you do, add one or two sentences saying which tool and
 what for, per the [AI policy](../index.md#ai-policy).
 
 The findings in Steps 2 and 3 have to come out of the actual files. An AI tool that has not read

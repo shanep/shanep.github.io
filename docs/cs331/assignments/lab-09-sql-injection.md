@@ -14,12 +14,12 @@ Everything you need is in the provided script.
 
 ## Objectives assessed
 
-- **4.5**: Perform and then remediate a SQL injection, and explain why parameterization defeats it.
-- **5.5**: Recommend a prevention-first countermeasure (a language, API, or coding practice) for a
+- **4.5**: Perform and then remediate a SQL (Structured Query Language) injection, and explain why parameterization defeats it.
+- **5.5**: Recommend a prevention-first countermeasure (a language, API [application programming interface], or coding practice) for a
   class of vulnerability.
 
-([TLO 4](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures) ·
-[TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles))
+Terminal learning objectives (TLOs): [TLO 4](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures) ·
+[TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)
 
 ## Time estimate
 
@@ -70,7 +70,7 @@ Case 3 used the input `alice' -- ` as a username and logged in as alice without 
 3. **Why did the safe version reject it?** Quote what it sent and explain in two or three sentences
    what the database did with the string `alice' -- ` instead of executing it.
 4. Alice is flagged `admin` in this database. **Name what an attacker gains** beyond access to one
-   account, and connect it to a STRIDE category from Lab 2.
+   account, and connect it to a STRIDE (spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege) category from Lab 2.
 
 ### Step 3: Your own injection
 
@@ -103,7 +103,7 @@ work here.** That is the exercise.
 2. **Filtering is not the fix.** Suppose a developer instead strips the characters `'`, `-`, and
    `;` from every input. Give **two separate reasons** this is worse than parameterization. At
    least one should be about correctness for legitimate users.
-3. **Generalize it.** CyBOK §15.1.2 calls this class *structured output generation
+3. **Generalize it.** CyBOK (Cyber Security Body of Knowledge) §15.1.2 calls this class *structured output generation
    vulnerabilities*. Name **two other vulnerabilities in the same class** (where a program
    builds a structured string out of untrusted input), and for each, name the equivalent of a
    parameterized query.
@@ -136,7 +136,7 @@ One Canvas submission containing:
 
 ## AI disclosure
 
-You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
+You may use AI (artificial intelligence) tools on this assignment. If you do, add one or two sentences saying which tool and
 what for, per the [AI policy](../index.md#ai-policy).
 
 An AI tool will hand you a working payload for Step 3 question 2 in about a second. It will not do

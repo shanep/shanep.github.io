@@ -8,7 +8,7 @@
 - **4.2**: Recommend network defenses (firewalling, segmentation, and monitoring) for a described
   network.
 
-([TLO 4](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures))
+Terminal learning objective (TLO): [TLO 4](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures)
 
 ## Time estimate
 
@@ -22,7 +22,7 @@
 ## Before you start
 
 - Make sure you have done the [week 11 readings](../notes/week-11-network-security.md).
-- Skim CyBOK §19.3.1 (printed pages 678-682) and §19.3.4 (printed pages 691-697), application and
+- Skim CyBOK (Cyber Security Body of Knowledge) §19.3.1 (printed pages 678-682) and §19.3.4 (printed pages 691-697), application and
   link layer security, so you can place any incident in §19.3's four layers. They are not on the
   week 11 page.
 
@@ -32,7 +32,7 @@ Find **one** publicly reported security incident, from the last three years, in 
 played a substantive role**. That means the reporting says something about how the attacker moved,
 what protocol or network weakness they used, or how traffic was or was not observed.
 
-Good sources: [CISA cybersecurity advisories](https://www.cisa.gov/news-events/cybersecurity-advisories), vendor
+Good sources: [CISA (Cybersecurity and Infrastructure Security Agency) cybersecurity advisories](https://www.cisa.gov/news-events/cybersecurity-advisories), vendor
 incident reports, the organization's own post-incident disclosure, reputable technical press.
 
 Two rules:
@@ -57,9 +57,9 @@ Then, for the network-relevant part: **name the protocol layer and the mechanism
 protocol the attacker relied on.
 
 Be specific about the mechanism. "They got in through the network" is not an answer. Examples of
-answers that are: *unauthenticated ARP replies let the attacker place themselves in the path*;
-*a VPN appliance's management interface was reachable from the internet*; *lateral movement over
-SMB was possible because the internal network was unsegmented*; *exfiltration was invisible because
+answers that are: *unauthenticated ARP (Address Resolution Protocol) replies let the attacker place themselves in the path*;
+*a VPN (virtual private network) appliance's management interface was reachable from the internet*; *lateral movement over
+SMB (Server Message Block) was possible because the internal network was unsegmented*; *exfiltration was invisible because
 egress traffic was neither filtered nor logged*.
 
 If the reporting does not say, **say what is missing** and what you would need to know. Being clear
@@ -119,7 +119,7 @@ apply. Analyze published reporting only. Do not probe, scan, or test any organiz
 
 ## AI disclosure
 
-You may use AI tools. If you do, add a sentence saying which and what for, per the
+You may use AI (artificial intelligence) tools. If you do, add a sentence saying which and what for, per the
 [AI policy](../index.md#ai-policy).
 
 One caution: AI tools invent incidents and invent details of real ones. **Every factual claim in

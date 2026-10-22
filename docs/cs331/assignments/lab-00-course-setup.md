@@ -15,15 +15,15 @@ discussion board or email me now, in week 1, rather than in week 7 when a lab is
 ## Objectives assessed
 
 - **1.1**: Define confidentiality, integrity, and availability, and identify which goal a
-  described failure violates. ([TLO 1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation))
+  described failure violates. Terminal learning objective (TLO): [TLO 1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation)
 
 ## Time estimate
 
 | Step | Time |
 | --- | --- |
 | Steps 1-2: Python and `cryptography` | 15 min |
-| Step 3: Find three things in CyBOK | 20 min |
-| Step 4: Look up a CVE | 10 min |
+| Step 3: Find three things in CyBOK (Cyber Security Body of Knowledge) | 20 min |
+| Step 4: Look up a CVE (Common Vulnerabilities and Exposures) | 10 min |
 | **Total** | **45 min** |
 
 ## Before you start
@@ -33,9 +33,9 @@ discussion board or email me now, in week 1, rather than in week 7 when a lab is
   below.
 - A web browser.
 - Download [docs/CyBOK_v1.2.0.pdf](../docs/CyBOK_v1.2.0.pdf) from Canvas Files, or open it in the
-  browser. It is a large file (about 21 MB); download it once and keep it.
+  browser. It is a large file (about 21 megabytes); download it once and keep it.
 
-If you cannot get your own machine working, every step here works on the lab machines in CCP 240,
+If you cannot get your own machine working, every step here works on the lab machines in CCP (City Center Plaza) 240,
 241, and 242.
 
 ## Steps
@@ -96,7 +96,7 @@ ability to find a section quickly.
 
 Two things to know first:
 
-- **Section numbers** such as §1.1 are the reliable way to navigate. Use your PDF viewer's search
+- **Section numbers** such as §1.1 are the reliable way to navigate. Use your PDF (Portable Document Format) viewer's search
   box, or open the bookmarks panel.
 - **Page numbers in the footer of each page do not match your PDF viewer's page counter.** The book
   has 46 pages of front matter. Always go by section number.
@@ -104,7 +104,7 @@ Two things to know first:
 Now find and answer:
 
 1. **Open §1.1, "Cyber Security Definition"** (it starts at the bottom of printed page 2). CyBOK
-   quotes a working definition of cyber security from the UK National Cyber Security Strategy.
+   quotes a working definition of cyber security from the UK (United Kingdom) National Cyber Security Strategy.
    Quote it, and give the printed page number you found it on.
 
 2. **Stay in §1.1 and find the definition of information security** (printed page 3). This is
@@ -146,13 +146,13 @@ Plain text is fine. No formatting required.
 | --- | --- | ---: |
 | 1 | Python 3.11+ is installed and the version output is shown | 5 |
 | 2 | `cryptography` imports successfully and the version output is shown | 5 |
-| 3 | All three CyBOK lookups are answered, with the CIA definitions correctly stated in the student's own words | 5 |
+| 3 | All three CyBOK lookups are answered, with the confidentiality, integrity, and availability (CIA) definitions correctly stated in the student's own words | 5 |
 | 4 | CVE-2021-44228 is correctly described, and the CIA goals it threatens are named with reasons | 5 |
 | | **Total** | **20** |
 
 ## AI disclosure
 
-You may use AI tools on this assignment. If you do, add one or two sentences at the end of your
+You may use AI (artificial intelligence) tools on this assignment. If you do, add one or two sentences at the end of your
 submission saying which tool you used and what you used it for, per the AI policy in the
 [syllabus](../index.md#ai-policy).
 

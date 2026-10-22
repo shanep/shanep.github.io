@@ -14,11 +14,11 @@ what happened.
 ## Objectives assessed
 
 - **3.1**: Explain what a block cipher and a mode of operation each provide, and demonstrate why
-  ECB mode leaks structure.
+  ECB (electronic codebook) mode leaks structure.
 - **3.2**: Distinguish confidentiality from integrity and authenticity, and name the primitive
   that supplies each.
 
-([TLO 3](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits))
+Terminal learning objective (TLO): [TLO 3](../objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits)
 
 ## Time estimate
 
@@ -69,7 +69,7 @@ Answer these in your document:
    16-byte block independently leave the picture visible? Use the words *block*, *deterministic*,
    and *identical plaintext blocks*.
 4. AES is not broken here: it is doing exactly what a block cipher does. **So what is the mode of
-   operation actually responsible for?** One paragraph, citing CyBOK §10.5.
+   operation actually responsible for?** One paragraph, citing CyBOK (Cyber Security Body of Knowledge) §10.5.
 5. Set `IMAGE_SIZE` to `128` and run it again. **What happens to the three block counts, and why?**
 
 ### Step 3: Show that encryption is not integrity
@@ -79,9 +79,9 @@ and tried to decrypt it.
 
 Answer these in your document:
 
-1. **Quote what AES-CTR decrypted to** after the bit flip. The original message was
+1. **Quote what AES-CTR (AES in counter mode) decrypted to** after the bit flip. The original message was
    `Balance: $100.00`. What did the receiver get, and did anything warn them?
-2. **Quote what AES-GCM did** with the same tampering.
+2. **Quote what AES-GCM (AES in Galois/Counter Mode) did** with the same tampering.
 3. **Explain the difference.** What does GCM carry that CTR does not, and what does it let the
    receiver check? About 100 words, citing CyBOK §10.5.2.
 4. In the CTR case, the attacker flipped one bit and changed exactly one character. **Suppose the
@@ -92,8 +92,8 @@ Answer these in your document:
    confidentiality, integrity, authenticity, or some combination.
    - AES-CTR
    - AES-GCM
-   - SHA-256 by itself
-   - HMAC-SHA256
+   - SHA-256 (Secure Hash Algorithm, 256-bit) by itself
+   - HMAC-SHA256 (hash-based message authentication code with Secure Hash Algorithm, 256-bit)
 
 ### Step 4: Reuse a nonce
 
@@ -101,7 +101,7 @@ Part 3 encrypted two different messages under the **same key and the same counte
 
 Answer these in your document:
 
-1. **Quote the `C1 XOR C2` line.** Most of it is zero bytes. Explain what the zero bytes tell you
+1. **Quote the `C1 XOR C2` line** (XOR is exclusive or). Most of it is zero bytes. Explain what the zero bytes tell you
    about the two plaintexts, without decrypting anything.
 2. **Explain, in about 150 words, why XORing the two ciphertexts cancels the keystream out.** Write
    out the algebra: if `C1 = P1 XOR K` and `C2 = P2 XOR K`, where `K` is the keystream, what is
@@ -134,7 +134,7 @@ One Canvas submission containing:
 
 ## AI disclosure
 
-You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
+You may use AI (artificial intelligence) tools on this assignment. If you do, add one or two sentences saying which tool and
 what for, per the [AI policy](../index.md#ai-policy).
 
 The output you quote must come from running the script on your own machine.

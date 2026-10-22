@@ -10,7 +10,7 @@
 | **Collision resistance** | Infeasible to find two inputs with the same digest. |
 | **Public / private key pair** | Mathematically related; one half can be published. |
 | **Digital signature** | Produced with the private key, verified with the public key. Gives integrity, authenticity, and non-repudiation. |
-| **Non-repudiation** | The signer cannot credibly deny having signed. A MAC cannot provide it. |
+| **Non-repudiation** | The signer cannot credibly deny having signed. A MAC (message authentication code) cannot provide it. |
 | **KEM/DEM** | Use public-key cryptography to transport a symmetric key, then symmetric cryptography for the data. |
 | **Diffie-Hellman key agreement** | Two parties derive a shared secret over a public channel. |
 | **Forward secrecy** | Compromising a long-term key later does not expose past sessions. |
@@ -22,8 +22,8 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.6 Public Key Encryption: KEM/DEM, RSA, elliptic curves | 336-339 | 3 pp | 25 min |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.7 Public Key Signatures: RSA-PSS, DSA, EC-DSA, Schnorr | 339-341 | 2 pp | 20 min |
+| [CyBOK (Cyber Security Body of Knowledge) v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.6 Public Key Encryption: KEM/DEM, RSA (Rivest-Shamir-Adleman), elliptic curves | 336-339 | 3 pp | 25 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.7 Public Key Signatures: RSA-PSS (RSA Probabilistic Signature Scheme), DSA (Digital Signature Algorithm), EC-DSA (elliptic curve DSA), Schnorr | 339-341 | 2 pp | 20 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.8 Standard Protocols: authentication and key agreement | 341-345 | 4 pp | 30 min |
 
 You are **not** assigned §10.9 through §10.11 (advanced protocols, encryption and signatures with
@@ -43,7 +43,7 @@ Nakov is required, like last week. Read these five pages and skip the rest of ea
   [Crypto Hashes and Collisions](https://cryptobook.nakov.com/cryptographic-hash-functions/crypto-hashes-and-collisions)
 - [The RSA Cryptosystem - Concepts](https://cryptobook.nakov.com/asymmetric-key-ciphers/the-rsa-cryptosystem-concepts)
 - [Digital Signatures](https://cryptobook.nakov.com/digital-signatures) and
-  [EdDSA and Ed25519](https://cryptobook.nakov.com/digital-signatures/eddsa-and-ed25519)
+  [EdDSA (Edwards-curve Digital Signature Algorithm) and Ed25519](https://cryptobook.nakov.com/digital-signatures/eddsa-and-ed25519)
 
 CyBOK says what each of these guarantees, and Nakov shows how they work. EdDSA is on the list
 because Ed25519 is the signature scheme in the worked example below.
@@ -75,7 +75,7 @@ A hash takes **no key**. Anyone can compute it. So a hash by itself proves nothi
 produced a message. Anybody who changes the message can recompute the digest and it will be
 perfectly valid.
 
-This is the trap in the "download the file, check the SHA-256 on the page" ritual. If the attacker
+This is the trap in the "download the file, check the SHA-256 (Secure Hash Algorithm, 256-bit) on the page" ritual. If the attacker
 can change the file on that page, they can change the digest too. The digest catches accidental
 corruption and catches an attacker who can alter the file but not the page. Against an attacker who
 controls both, it does nothing.
@@ -125,7 +125,7 @@ close it completely. It moves it.
 
 ### 4. Shared secret or key pair
 
-Part 4 produces an HMAC tag and an Ed25519 signature over the same message. Both establish integrity
+Part 4 produces an HMAC (hash-based message authentication code) tag and an Ed25519 signature over the same message. Both establish integrity
 and authenticity. They differ in one structural way.
 
 **With an HMAC, both parties hold the same key.** So if Alice sends Bob a message with a valid tag
@@ -150,7 +150,7 @@ that is already secure, which is the problem you were trying to solve.
 
 **So why does anything still use symmetric cryptography?** Because public-key operations are orders
 of magnitude slower. Real protocols use both: public-key cryptography to agree on a symmetric key,
-then a symmetric authenticated mode for the actual data. That is what TLS does, and it is why week
+then a symmetric authenticated mode for the actual data. That is what TLS (Transport Layer Security) does, and it is why week
 10's material sits on top of this week's.
 
 ## Looking ahead

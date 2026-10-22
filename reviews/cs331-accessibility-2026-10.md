@@ -8,9 +8,9 @@ date: October 21, 2026
 ## Summary
 
 CS331 meets WCAG 2.2 Level AA, which includes every WCAG 2.1 AA criterion, on
-the course website and in the Canvas master shell. It also meets 24 of the 31
-Level AAA criteria. Of the other 7, 5 do not apply because the course has no
-video or audio, and the 2 that are not met are listed under
+the course website and in the Canvas master shell. It also meets 25 of the 31
+Level AAA criteria. Of the other 6, 5 do not apply because the course has no
+video or audio, and the 1 that is not met is listed under
 [Level AAA](#level-aaa) with the reason.
 
 The first pass found AA failures on every website page and on 4 Canvas pages,
@@ -161,7 +161,7 @@ criterion.
 | 2.5.5 Target Size (Enhanced) | Met | Every control outside a block of text is at least 44 by 44 px |
 | 2.5.6 Concurrent Input Mechanisms | Met | Nothing limits the input device |
 | 3.1.3 Unusual Words | Met | Every notes page has a Key Terms section that defines the terms it uses |
-| 3.1.4 Abbreviations | **Not met** | See below |
+| 3.1.4 Abbreviations | Met | Every abbreviation is spelled out on its first use on each page (see below) |
 | 3.1.5 Reading Level | **Not met** | See below |
 | 3.1.6 Pronunciation | Met | No word's meaning depends on how it is said |
 | 3.2.5 Change on Request | Met | Links open in the same tab, and the two theme links that open a new tab say so |
@@ -170,10 +170,12 @@ criterion.
 | 3.3.9 Accessible Authentication (Enhanced) | Met | The website has no sign-in |
 
 **3.1.4 Abbreviations.** A security course is thick with abbreviations (TLS,
-RBAC, HMAC, STRIDE and about 100 more). A scan found 111 that are never spelled
-out anywhere in the course. Meeting 3.1.4 means expanding each one on first use
-or adding a course glossary. That is a content change across most notes pages,
-so it is a follow-up, not part of this pass.
+RBAC, HMAC, STRIDE and about 90 more). A scan found 98 real ones, used 311 times
+across the course's pages, and most were never spelled out. Each Canvas page is
+its own page, so each abbreviation is now spelled out the first time it appears
+on every page that uses it, as in "TLS (Transport Layer Security)". That changed
+54 pages. Words in capitals that are not abbreviations (SPRING BREAK, SHALL NOT),
+course and room codes, and names like MITRE ATT&CK are left alone.
 
 **3.1.5 Reading Level.** The criterion asks for text a lower secondary student
 can read, or a simpler version next to it. CS331 is an upper-division course,
@@ -216,6 +218,7 @@ page is not practical.
 | Lab 6 told students to click "the icon" or "the padlock", which depends on seeing it | 1.3.3 | Lab 6 Step 1 | Name the control by its accessible name ("the *View site information* button at the left end of the address bar") |
 | The home page banner drew the course title as a picture | 1.4.9 | home page | Take the title out of the banner, keep the circuit art as decoration, and let the heading below it carry the title |
 | Canvas draws inline code red on gray at 5.21:1 | 1.4.6 | 34 Canvas bodies with code | Set inline code to the page text color in the course stylesheet |
+| Abbreviations were never spelled out | 3.1.4 | 54 pages | Spell out each one on its first use on each page |
 
 Earlier this month I also fixed the raw URLs Greg Snow flagged in his review of
 the shell. Every one now sits behind descriptive link text.

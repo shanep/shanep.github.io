@@ -21,7 +21,7 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §2.2 What is risk? | 20-21 | 1 p | 10 min |
+| [CyBOK (Cyber Security Body of Knowledge) v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §2.2 What is risk? | 20-21 | 1 p | 10 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §2.3 Why is risk assessment and management important? | 21-25 | 4 pp | 25 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §2.4 What is cyber risk assessment and management? | 25-26 | 1 p | 10 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §2.6.1 Component vs. Systems Perspectives | 31-32 | 1 p | 10 min |
@@ -57,9 +57,9 @@ empty ones is what makes you confident about the ones that are not empty.
 
 Take one component out of [SnapVault](../data/photoshare-system.md) (the photo storage bucket) and walk STRIDE against it.
 
-The relevant facts from the description: *"The CDN serves image files directly out of the object
+The relevant facts from the description: *"The CDN (content delivery network) serves image files directly out of the object
 storage bucket. The bucket is configured to allow public reads of any object... Privacy is enforced
-by the API deciding which URLs to put in a response, the file itself is reachable by anyone who
+by the API (application programming interface) deciding which URLs (Uniform Resource Locators) to put in a response, the file itself is reachable by anyone who
 knows or guesses its URL."*
 
 | STRIDE | Threat | Traced to |
@@ -69,7 +69,7 @@ knows or guesses its URL."*
 | **R** | Because the key is shared, no action taken with it can be attributed to a particular component. | *"The same key is also used by the API server, because it was copied over during setup."* |
 | **I** | Any object is readable by anyone who has or guesses the URL, so a private photo is protected only by the secrecy of its filename. | *"The bucket is configured to allow public reads of any object."* |
 | **D** | Write access to the whole bucket means an attacker can delete every photo the service holds. | *"read and write access to the entire bucket"* |
-| **E** | The key is stored in a file on the worker's VM; anyone who reaches that VM gains the API's own storage privileges. | *"a long-lived access key stored in a file on its VM"* |
+| **E** | The key is stored in a file on the worker's VM (virtual machine); anyone who reaches that VM gains the API's own storage privileges. | *"a long-lived access key stored in a file on its VM"* |
 
 Six categories, six threats, every one traced to a sentence. That last column is what separates
 threat modeling from guessing, and it is what Lab 2 weights most heavily.

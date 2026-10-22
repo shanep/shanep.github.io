@@ -12,7 +12,7 @@
 | **Anomaly detection** | Encodes what normal looks like and flags deviation. Catches the unknown; noisier. |
 | **True / false positive rate** | Fraction of malicious events detected / benign events flagged. |
 | **Base-rate fallacy** | Ignoring how rare the thing is, and so overestimating what an alert means. |
-| **SIEM** | Collects, correlates, and presents events from many sources. |
+| **SIEM (security information and event management)** | Collects, correlates, and presents events from many sources. |
 | **Alert fatigue** | What a queue of 500 alerts a day produces in the people who have to read it. |
 | **Dwell time** | Time between compromise and detection. |
 | **Containment / eradication / recovery** | Stop the bleeding; remove the attacker; restore service. |
@@ -24,7 +24,7 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.1 Fundamental concepts: workflows and vocabulary | 251-254 | 3 pp | 20 min |
+| [CyBOK (Cyber Security Body of Knowledge) v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.1 Fundamental concepts: workflows and vocabulary | 251-254 | 3 pp | 20 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.2 Monitor: data sources *(skim)* | 254-261 | 7 pp | 20 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.3.1-8.3.3 Misuse detection, anomaly detection, blended | 262-266 | 4 pp | 30 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.3.6 The base-rate fallacy | 268 | 1 p | 15 min |
@@ -36,7 +36,7 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| NIST SP 800-61r3 | The incident response life cycle *(skim)* | none | skim | 20 min |
+| NIST (National Institute of Standards and Technology) SP (Special Publication) 800-61r3 | The incident response life cycle *(skim)* | none | skim | 20 min |
 
 [NIST SP 800-61r3](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf) (April 2025) is free to download.
 
@@ -189,7 +189,7 @@ The moves that work change something other than accuracy:
 
 The four phases below come from the previous revision, NIST SP 800-61r2. §8.7 groups the same
 work into three activities (prepare, handle, follow up). The current revision, r3, files it under
-the CSF 2.0 Functions (Govern, Identify, Protect, Detect, Respond, Recover) instead. These four
+the CSF (Cybersecurity Framework) 2.0 Functions (Govern, Identify, Protect, Detect, Respond, Recover) instead. These four
 headings are no longer its life cycle, but its Table 1 maps each one onto those Functions:
 
 | Phase | r3 Functions | The question |

@@ -15,7 +15,7 @@ the assembly a compiler produces from it, in a browser. That is all.
 
 - **4.4**: Trace a buffer overflow in C source to the stack layout that makes it exploitable, and
   evaluate which mitigations would stop it.
-- **5.5**: Recommend a prevention-first countermeasure (a language, API, or coding practice) for a
+- **5.5**: Recommend a prevention-first countermeasure (a language, API [application programming interface], or coding practice) for a
   class of vulnerability.
 - **6.1**: Distinguish prevention, detection, and mitigation of vulnerabilities as distinct
   classes of assurance evidence.
@@ -23,12 +23,12 @@ the assembly a compiler produces from it, in a browser. That is all.
   program.
 - **6.3**: Evaluate whether stated security claims about a system are supported by the design and
   testing evidence offered.
-- **6.4**: Describe how a maturity model or evaluation scheme (SAMM, BSIMM, or the Common Criteria)
+- **6.4**: Describe how a maturity model or evaluation scheme (SAMM [Software Assurance Maturity Model], BSIMM [Building Security In Maturity Model], or the Common Criteria)
   supplies organizational assurance evidence.
 
-([TLO 4](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures) ·
+Terminal learning objectives (TLOs): [TLO 4](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures) ·
 [TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles) ·
-[TLO 6](../objectives.md#tlo-6-interpreting-assurance-arguments-and-evidence))
+[TLO 6](../objectives.md#tlo-6-interpreting-assurance-arguments-and-evidence)
 
 ## Time estimate
 
@@ -55,9 +55,9 @@ Read `check_badge()` in [vuln.c](../data/vuln.c).
 2. `strcpy` is not a broken function: it does exactly what it documents. **State precisely what
    information `strcpy` is never given**, and why that makes this call unsafe here but would not
    make every call to it unsafe.
-3. `buffer` holds 32 bytes. **What is the longest badge ID this function handles correctly**, and
+3. `buffer` holds 32 bytes. **What is the longest badge ID (identifier) this function handles correctly**, and
    why is it not 32?
-4. Using CyBOK §15.1.1, **name the category** this vulnerability belongs to, and name one other
+4. Using CyBOK (Cyber Security Body of Knowledge) §15.1.1, **name the category** this vulnerability belongs to, and name one other
    vulnerability in the same category.
 
 ### Step 2: Look at the stack
@@ -117,7 +117,7 @@ existing?*
 
 1. **Stack canaries** (`-fstack-protector`, which we turned off)
 2. **Address space layout randomization** (ASLR)
-3. **Non-executable stack** (NX / DEP / W^X)
+3. **Non-executable stack** (NX [no-execute] / DEP [data execution prevention] / W^X [write or execute, never both])
 
 Then, in a short paragraph: **all three can be enabled and the bug is still there.** Using CyBOK
 §15.4, say what that means for how you should describe these to a manager who asks whether the
@@ -183,7 +183,7 @@ One Canvas submission containing your answers to all four steps, numbered to mat
 
 ## AI disclosure
 
-You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
+You may use AI (artificial intelligence) tools on this assignment. If you do, add one or two sentences saying which tool and
 what for, per the [AI policy](../index.md#ai-policy).
 
 The assembly you quote must come from your own Compiler Explorer session, and an AI tool will

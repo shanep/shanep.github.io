@@ -4,8 +4,8 @@
 
 ## Objectives assessed
 
-- **7.5**: Recommend a defensible incident response structured by the NIST SP 800-61 incident response phases.
-  ([TLO 7](../objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response))
+- **7.5**: Recommend a defensible incident response structured by the NIST (National Institute of Standards and Technology) SP (Special Publication) 800-61 incident response phases.
+  Terminal learning objective (TLO): [TLO 7](../objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response)
 
 ## Time estimate
 
@@ -32,7 +32,7 @@ been disclosed to say something about how the organization *responded*, not only
 happened to them.
 
 Signals that there is enough material: a published post-incident report, regulatory filings, a
-CISA advisory, sworn testimony, or detailed reporting that includes a timeline.
+CISA (Cybersecurity and Infrastructure Security Agency) advisory, sworn testimony, or detailed reporting that includes a timeline.
 
 **Check the board first and pick something nobody has taken.**
 
@@ -63,7 +63,7 @@ If reporting does not give them, say so and say what would establish them.
 
 A substantial fraction of breaches are discovered by somebody outside the organization: a
 customer, a researcher, a payment processor, a ransom note. If this one was found externally, say
-what that tells you about the organization's monitoring, using CyBOK §8.2 on data sources.
+what that tells you about the organization's monitoring, using CyBOK (Cyber Security Body of Knowledge) §8.2 on data sources.
 
 If it was found internally, say **which data source** did it, and whether the alert was acted on
 promptly. If there was a missed earlier signal (as there was in the
@@ -73,7 +73,7 @@ promptly. If there was a missed earlier signal (as there was in the
 
 Take the response as reported and lay it against the four phases below. They come from NIST
 SP 800-61r2. CyBOK §8.7 groups the same work into three activities (prepare, handle, follow up),
-and SP 800-61r3 maps each phase onto the CSF 2.0 Functions in its Table 1. For **each** phase, say
+and SP 800-61r3 maps each phase onto the CSF (Cybersecurity Framework) 2.0 Functions in its Table 1. For **each** phase, say
 what the organization did, what it appears to have gotten right, and what it got wrong or you cannot
 tell:
 
@@ -131,7 +131,7 @@ employees of the organization, even where reporting does.
 
 ## AI disclosure
 
-You may use AI tools. If you do, add a sentence saying which and what for, per the
+You may use AI (artificial intelligence) tools. If you do, add a sentence saying which and what for, per the
 [AI policy](../index.md#ai-policy).
 
 The same caution as D4: AI tools invent timelines and invent details. Every factual claim in parts

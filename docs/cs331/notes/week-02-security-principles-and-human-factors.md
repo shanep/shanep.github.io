@@ -1,6 +1,6 @@
 # 2.01 Readings and Lecture Notes
 
-**January 18-24 · MLK Day is Monday · Reading: 14 pages · About 2 hrs 30 min with the worked example**
+**January 18-24 · Martin Luther King Jr. Day is Monday · Reading: 14 pages · About 2 hrs 30 min with the worked example**
 
 ## Key terms
 
@@ -24,7 +24,7 @@ is least privilege. Two administrators to approve a deletion is separation of pr
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §1.4 Principles: especially §1.4.1 Saltzer and Schroeder | 9-13 | 5 pp | 35 min |
+| [CyBOK (Cyber Security Body of Knowledge) v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §1.4 Principles: especially §1.4.1 Saltzer and Schroeder | 9-13 | 5 pp | 35 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §1.5 Crosscutting Themes | 13-15 | 2 pp | 10 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §4.3 Human Error | 157-160 | 3 pp | 20 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §4.4 Cybersecurity awareness and education | 160-164 | 4 pp | 25 min |

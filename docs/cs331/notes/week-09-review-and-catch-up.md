@@ -4,7 +4,7 @@
 
 ## Readings
 
-Nothing new. If you want to re-read anything from CyBOK, the highest-value sections are §1.4 (the
+Nothing new. If you want to re-read anything from CyBOK (Cyber Security Body of Knowledge), the highest-value sections are §1.4 (the
 eight principles) and §14.3.1 (access control core concepts). Everything else is better reviewed
 through your own graded work.
 
@@ -19,7 +19,7 @@ In rough order of value:
 1. **Redo a threat model from scratch, on something else**: your bank's app, the campus print
    service, a smart speaker. Twenty minutes, timed. The only way to get fast at it is to have done
    it more than once.
-2. **Redo an access control matrix** for three subjects and three objects, then write the ACL and
+2. **Redo an access control matrix** for three subjects and three objects, then write the ACL (access control list) and
    capability list versions. Ten minutes.
 3. **Recite the eight principles** until you can list them without looking, with one example of a
    violation of each.

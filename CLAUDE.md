@@ -92,7 +92,7 @@ Two modules from the shell are shared the same way, from `shared/` at the repo r
 goal. Write new pages, notes, assignments and quizzes to AAA from the start: 7:1 contrast, 44 px
 targets, abbreviations spelled out on first use on each page, decorative images with both `alt=""`
 and `role="presentation"` (Canvas drops a bare empty alt), and no images of text. When a criterion
-cannot be met, say why in the course's report. CS331 meets 24 of 31, and its report lists the rest.
+cannot be met, say why in the course's report. CS331 meets 25 of 31, and its report lists the rest.
 Run `npm run a11y -- --course <id> --level aaa` after changing a course.
 
 `npm run a11y` checks one course against WCAG 2.2 A and AA: axe-core on every page in light and dark mode, contrast axe cannot decide, link text, reflow at 320 px and

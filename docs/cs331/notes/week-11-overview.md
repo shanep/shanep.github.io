@@ -8,13 +8,13 @@ institutions that broadly trusted each other. Almost none of it authenticates an
 
 That inheritance explains most of this week:
 
-- **ARP** (Address Resolution Protocol), which finds the hardware address that goes with an IP
+- **ARP (Address Resolution Protocol)** (Address Resolution Protocol), which finds the hardware address that goes with an IP (Internet Protocol)
   address on a local network, believes any reply.
-- **DNS** (Domain Name System), which turns names like `boisestate.edu` into addresses, believed
-  any answer until **DNSSEC** (DNS Security Extensions) added signatures.
-- **BGP** (Border Gateway Protocol), which networks use to tell each other how to reach addresses,
+- **DNS (Domain Name System)** (Domain Name System), which turns names like `boisestate.edu` into addresses, believed
+  any answer until **DNSSEC (Domain Name System Security Extensions)** (DNS Security Extensions) added signatures.
+- **BGP (Border Gateway Protocol)** (Border Gateway Protocol), which networks use to tell each other how to reach addresses,
   largely believes any route announcement.
-- **TCP** (Transmission Control Protocol) uses sequence numbers to keep data in order, which gives
+- **TCP (Transmission Control Protocol)** (Transmission Control Protocol) uses sequence numbers to keep data in order, which gives
   robustness against faults, not against an adversary.
 
 Every one of those is a design that was correct for its requirements and became a vulnerability

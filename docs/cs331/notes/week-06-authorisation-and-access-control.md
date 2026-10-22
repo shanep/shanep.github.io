@@ -12,8 +12,8 @@
 | **Access control matrix** | Subjects × objects, rights in the cells. The direct form of a policy. |
 | **Access control list (ACL)** | The matrix sliced by object. |
 | **Capability** | The matrix sliced by subject; possession is authorization. |
-| **RBAC** | Subjects get roles; roles hold permissions. |
-| **ABAC** | Decisions computed from attributes of subject, object, and context. |
+| **RBAC (role-based access control)** | Subjects get roles; roles hold permissions. |
+| **ABAC (attribute-based access control)** | Decisions computed from attributes of subject, object, and context. |
 | **Reference monitor** | The component that mediates every access. Must be tamper-proof, always invoked, and small enough to verify. |
 | **Delegation / revocation** | Passing on a right; taking it back. Revocation is the hard one. |
 | **Accountability** | Being able to attribute an action to the actor who took it. |
@@ -27,7 +27,7 @@ Two of the reference monitor's three requirements are the *complete mediation* a
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.1-14.2 Introduction and Content | 464-465 | 1 p | 5 min |
+| [CyBOK (Cyber Security Body of Knowledge) v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.1-14.2 Introduction and Content | 464-465 | 1 p | 5 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.3.1 Access Control: core concepts, policies, RBAC, ABAC | 465-470 | 5 pp | 40 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.3.2 Enforcing Access Control: delegation, revocation, reference monitors | 470-472 | 2 pp | 20 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.3.3 Theory: security models, enforceable policies | 472-473 | 1 p | 10 min |
@@ -50,7 +50,7 @@ is overwhelmingly empty. So it gets sliced, one way or the other.
 it. `payroll.db` carries `alice: rwd, backup-service: r`. This is how file permissions work.
 
 **A capability list slices by row.** Each subject carries the list of objects it may touch. Bob
-holds `report.pdf: r`. This is how a bearer token, an API key, or a share link works: possession
+holds `report.pdf: r`. This is how a bearer token, an API (application programming interface) key, or a share link works: possession
 of the capability *is* the authorization.
 
 Neither is better. They make different questions cheap. See the following table.

@@ -7,13 +7,13 @@
 | Term | Short form |
 | --- | --- |
 | **X.509 certificate** | A signed binding of a public key to a name, with a validity period. |
-| **Subject Alternative Name (SAN)** | The DNS names a certificate actually covers. What browsers check. |
+| **Subject Alternative Name (SAN)** | The DNS (Domain Name System) names a certificate actually covers. What browsers check. |
 | **Certificate authority (CA)** | An organization that signs certificates. |
 | **Root of trust** | A self-signed CA certificate that is trusted because it is in the trust store. |
 | **Intermediate CA** | Signed by the root, signs end-entity certificates. Keeps the root key offline. |
 | **Chain of trust** | Leaf → intermediate → root, each signed by the next. |
-| **Trust store** | The list of roots your OS or browser believes. Chosen by a vendor. |
-| **Revocation** | Declaring a certificate invalid before it expires. CRLs, OCSP. Works poorly in practice. |
+| **Trust store** | The list of roots your OS (operating system) or browser believes. Chosen by a vendor. |
+| **Revocation** | Declaring a certificate invalid before it expires. CRLs (certificate revocation lists), OCSP (Online Certificate Status Protocol). Works poorly in practice. |
 | **Certificate Transparency** | Public append-only logs of issued certificates. Detection, not prevention. |
 | **Pinning** | A client requiring a specific key or CA for a specific site. |
 | **Forward secrecy** | Session keys not recoverable from the long-term key later. |
@@ -24,9 +24,9 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §18.3.1 The Key Life-cycle | 651-653 | 2 pp | 15 min |
+| [CyBOK (Cyber Security Body of Knowledge) v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §18.3.1 The Key Life-cycle | 651-653 | 2 pp | 15 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §18.3.2-18.3.7 Key derivation, generation, storage, transport, refreshing | 653-658 | 5 pp | 35 min |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §18.3.8 Managing Public Keys and PKI | 658-661 | 3 pp | 30 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §18.3.8 Managing Public Keys and PKI (public key infrastructure) | 658-661 | 3 pp | 30 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §18.5.1 Transport Layer Security | 664-665 | 1 p | 15 min |
 
 **§18.3.8 is the core of the week.** It covers binding keys to identities via certificates, reliance
@@ -48,7 +48,7 @@ python3 cert_inspect.py
 A certificate is a small structured document containing, at minimum:
 
 - **Subject**: who this certificate is about. For a website that is its hostname, written as a
-  common name: `CN=www.example.edu`. It is a hostname, not a URL, so there is no `https://` and no
+  common name: `CN=www.example.edu`. It is a hostname, not a URL (Uniform Resource Locator), so there is no `https://` and no
   path.
 - **Subject Alternative Name**: the list of DNS names it actually covers; this is what browsers
   check, not the subject common name
@@ -111,7 +111,7 @@ certificates it will believe, chosen by a vendor, updated without asking you.
 Two consequences follow, and Lab 6 asks you about both.
 
 **Every CA in that store can issue a certificate for any name.** Your browser does not check which
-CA is entitled to which domain. A domain can publish a CAA record in DNS naming the CAs allowed to
+CA is entitled to which domain. A domain can publish a CAA (Certification Authority Authorization) record in DNS naming the CAs allowed to
 issue for it, but only the CA checks that record, at issuance. A CA that is compromised, coerced, or
 simply careless can still issue a certificate for `www.boisestate.edu`, and every browser on earth
 would accept it.
@@ -132,7 +132,7 @@ does."* That is a real improvement and it is not the same as not having to trust
 
 ### 5. What the padlock does not mean
 
-TLS gives you a confidential, integrity-protected channel to *the entity that presented a
+TLS (Transport Layer Security) gives you a confidential, integrity-protected channel to *the entity that presented a
 certificate your browser accepted for the name you typed*.
 
 It does not tell you the operator is honest. Anybody who controls a domain can get a valid

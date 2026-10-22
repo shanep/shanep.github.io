@@ -9,7 +9,7 @@ always obvious. This week is about where it sits.
 
 Three warnings before you start.
 
-First, **I am not a lawyer and this is not legal advice.** CyBOK's Law & Regulation chapter is
+First, **I am not a lawyer and this is not legal advice.** CyBOK's (Cyber Security Body of Knowledge) Law & Regulation chapter is
 written by one, and it is careful to say the same thing. What you are learning is which *kinds* of
 question arise and who they run to, not the law of any particular jurisdiction.
 

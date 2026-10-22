@@ -5,7 +5,7 @@
 ## Objectives assessed
 
 - **1.2**: Use the terms threat, vulnerability, attack, and risk correctly in writing about a
-  security incident. ([TLO 1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation))
+  security incident. Terminal learning objective (TLO): [TLO 1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation)
 
 ## Time estimate
 
@@ -32,7 +32,7 @@ Post one message with two parts.
 
 Write two or three sentences telling us your major, your year, and one sentence on why you are
 taking this course.
-If you already work in IT or have any security experience, say so: it helps me calibrate. If this
+If you already work in IT (information technology) or have any security experience, say so: it helps me calibrate. If this
 is completely new to you, say that too; you are the audience this course is designed for.
 
 ### Part 2: Something that failed
@@ -50,7 +50,7 @@ actual weakness, who or what took advantage of it, and what happened in order, b
 what the four paragraphs below ask for. A phishing email you saw up close makes a better post than
 a headline breach you can only sum up in one sentence.
 
-Then, using the definitions from CyBOK §1.3 and the Glossary, write **four short paragraphs**, one
+Then, using the definitions from CyBOK (Cyber Security Body of Knowledge) §1.3 and the Glossary, write **four short paragraphs**, one
 each, clearly labeled:
 
 1. **The vulnerability.** What weakness made this possible? A weakness is a property of the system,
@@ -98,6 +98,6 @@ Reply to **one** classmate whose incident is different from yours. Do one of the
 
 ## AI disclosure
 
-You may use AI tools. If you do, add a sentence saying which and what for, per the
+You may use AI (artificial intelligence) tools. If you do, add a sentence saying which and what for, per the
 [AI policy](../index.md#ai-policy). Part 1 asks who *you* are, and Part 2 works best from
 something you actually know about.

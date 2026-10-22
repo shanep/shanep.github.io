@@ -6,15 +6,15 @@
 
 | Term | Short form |
 | --- | --- |
-| **Block cipher** | Reversibly transforms one fixed-size block under a key. AES. |
-| **Stream cipher** | Generates a keystream to XOR with the data. ChaCha20. |
+| **Block cipher** | Reversibly transforms one fixed-size block under a key. AES (Advanced Encryption Standard). |
+| **Stream cipher** | Generates a keystream to XOR (exclusive or) with the data. ChaCha20. |
 | **Mode of operation** | The scheme that turns a block cipher into a message encryption scheme. |
-| **ECB** | Each block encrypted independently. Leaks which blocks are equal. Do not use. |
-| **CTR** | Encrypts a counter to make a keystream, XORs it in. Confidentiality only. |
-| **Nonce / IV** | A value that must be unique per encryption under a key (and, for CBC, unpredictable). Need not be secret. |
-| **MAC** | Message authentication code. Integrity and authenticity, no confidentiality. HMAC. |
-| **AEAD** | Authenticated encryption with associated data. Confidentiality *and* integrity. AES-GCM. |
-| **KDF** | Derives keys from a password or another key. PBKDF2, HKDF, Argon2. |
+| **ECB (electronic codebook)** | Each block encrypted independently. Leaks which blocks are equal. Do not use. |
+| **CTR (counter mode)** | Encrypts a counter to make a keystream, XORs it in. Confidentiality only. |
+| **Nonce / IV (initialization vector)** | A value that must be unique per encryption under a key (and, for CBC [cipher block chaining], unpredictable). Need not be secret. |
+| **MAC** | Message authentication code. Integrity and authenticity, no confidentiality. HMAC (hash-based message authentication code). |
+| **AEAD** | Authenticated encryption with associated data. Confidentiality *and* integrity. AES-GCM (AES in Galois/Counter Mode). |
+| **KDF (key derivation function)** | Derives keys from a password or another key. PBKDF2 (Password-Based Key Derivation Function 2), HKDF (HMAC-based key derivation function), Argon2. |
 | **One-time pad** | Information-theoretically secure, and impractical: the key is as long as the message and must never be reused. Nonce reuse in CTR is this failure in miniature. |
 
 ## Readings
@@ -23,7 +23,7 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.3 Information-theoretically Secure Constructions: one-time pad, secret sharing | 327-329 | 2 pp | 15 min |
+| [CyBOK (Cyber Security Body of Knowledge) v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.3 Information-theoretically Secure Constructions: one-time pad, secret sharing | 327-329 | 2 pp | 15 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.4 Symmetric Primitives: block ciphers, stream ciphers, hash functions | 329-332 | 3 pp | 25 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.5 Symmetric Encryption and Authentication: modes, MACs, KDFs | 332-336 | 4 pp | 35 min |
 
@@ -131,8 +131,8 @@ Keep the properties separate:
 | Primitive | Confidentiality | Integrity | Authenticity |
 | --- | :---: | :---: | :---: |
 | AES-CTR, AES-CBC | yes | no | no |
-| SHA-256 alone | no | no* | no |
-| HMAC-SHA256 | no | yes | yes |
+| SHA-256 (Secure Hash Algorithm, 256-bit) alone | no | no* | no |
+| HMAC-SHA256 (HMAC with Secure Hash Algorithm, 256-bit) | no | yes | yes |
 | AES-GCM | yes | yes | yes |
 
 \* A hash detects *accidental* corruption, and detects tampering only if you obtained the digest

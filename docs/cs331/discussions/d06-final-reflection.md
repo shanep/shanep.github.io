@@ -46,7 +46,7 @@ cannot do.
 
 Not: "I understand cryptography." Instead: "I can do 3.5 (I can explain what a failed signature
 verification does and does not prove), but 3.6 is shaky; I can read a certificate chain but I could
-not explain to somebody what actually goes wrong if a CA is compromised."
+not explain to somebody what actually goes wrong if a CA (certificate authority) is compromised."
 
 ### 2. The thing that changed how you see something
 
@@ -81,7 +81,7 @@ not.
 
 ## AI disclosure
 
-You may use AI tools. If you do, add a sentence saying which and what for, per the
+You may use AI (artificial intelligence) tools. If you do, add a sentence saying which and what for, per the
 [AI policy](../index.md#ai-policy).
 
 This one is genuinely about you. An AI tool does not know which lab you found hardest or what you

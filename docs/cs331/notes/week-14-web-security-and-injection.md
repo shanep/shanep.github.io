@@ -7,13 +7,13 @@
 | Term | Short form |
 | --- | --- |
 | **Injection** | Untrusted input becomes part of a command rather than staying data. |
-| **Structured output generation vulnerability** | CyBOK's name for the class: SQLi, XSS, command injection, path traversal. |
+| **Structured output generation vulnerability** | CyBOK's (Cyber Security Body of Knowledge) name for the class: SQLi (SQL injection), XSS, command injection, path traversal. |
 | **Parameterized query** | Query text and values sent separately; values bound after parsing. |
 | **Escaping** | Neutering dangerous characters in input that is still concatenated. Weaker. |
 | **Cross-site scripting (XSS)** | Attacker-supplied content executed as script in another user's browser. |
 | **Cross-site request forgery (CSRF)** | A user's browser induced to make an authenticated request they did not intend. |
 | **Same-origin policy** | The browser's rule that content from one origin cannot read another's. |
-| **Clickjacking** | Overlaying invisible UI so a click lands somewhere the user did not intend. |
+| **Clickjacking** | Overlaying invisible UI (user interface) so a click lands somewhere the user did not intend. |
 | **Phishing** | Deceiving a person into giving up credentials or running something. |
 | **Defense in depth** | Layered controls, so one failure is not total. |
 
@@ -23,19 +23,19 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §16.2.6-16.2.8 Web PKI and HTTPS, Authentication, Cookies | 536-540 | 4 pp | 25 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §16.2.6-16.2.8 Web PKI (public key infrastructure) and HTTPS (Hypertext Transfer Protocol Secure), Authentication, Cookies | 536-540 | 4 pp | 25 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §16.3.1 Phishing and Clickjacking | 543-545 | 3 pp | 20 min |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §16.4.1 Injection Vulnerabilities: SQLi, command injection, LFI, XSS, CSRF | 547-552 | 6 pp | 45 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §16.4.1 Injection Vulnerabilities: SQLi, command injection, LFI (local file inclusion), XSS, CSRF | 547-552 | 6 pp | 45 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.1.2 Structured Output Generation Vulnerabilities *(revisit from week 13)* | 499-501 | 2 pp | 15 min |
 
 ### Additional readings
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| OWASP Top 10:2021 | A01 Broken Access Control, A03 Injection, A07 Identification and Authentication Failures | none | skim | 25 min |
+| OWASP (Open Worldwide Application Security Project) Top 10:2021 | A01 Broken Access Control, A03 Injection, A07 Identification and Authentication Failures | none | skim | 25 min |
 
 In the [OWASP Top 10:2021](https://top10.owasp.org/2021/), read the three named entries; they are
-short and each links real CWEs and example scenarios. The OWASP project page now leads with the 2025
+short and each links real CWEs (Common Weakness Enumeration entries) and example scenarios. The OWASP project page now leads with the 2025
 edition, which renumbers the list (Injection is A05 there), so make sure and use the 2021 link.
 
 ## Worked example
@@ -56,7 +56,7 @@ return (
 ```
 
 The user's input is pasted into the text of a command. Whatever they type becomes part of the
-command, so a user who types SQL gets to run SQL. Nothing is broken in the database: it faithfully
+command, so a user who types SQL (Structured Query Language) gets to run SQL. Nothing is broken in the database: it faithfully
 executes what the application handed it.
 
 ### 2. The worked injection
@@ -154,16 +154,16 @@ A common instinct: strip `'`, `-`, and `;` from all input.
 | Vulnerability | The structure being built | The parameterized equivalent |
 | --- | --- | --- |
 | SQL injection | A SQL statement | Prepared statements with bound parameters |
-| Cross-site scripting | An HTML document | Context-aware templating that escapes on output by default |
-| OS command injection | A shell command line | Pass an argument array to the process, never a shell string |
+| Cross-site scripting | An HTML (HyperText Markup Language) document | Context-aware templating that escapes on output by default |
+| OS (operating system) command injection | A shell command line | Pass an argument array to the process, never a shell string |
 | Path traversal | A filesystem path | Resolve and verify the path is inside the permitted directory |
 
 In every row, the fix is the same idea: **keep the structure and the data separate, so the data
 never gets parsed.**
 
-And placing it on §15.2's ladder from week 13, parameterized queries are **API design**: the safe
+And placing it on §15.2's ladder from week 13, parameterized queries are **API (application programming interface) design**: the safe
 interface exists, but the unsafe one is still available beside it. The level above would be a
-language or library where a query cannot be built by concatenation at all, which some ORMs and query
+language or library where a query cannot be built by concatenation at all, which some ORMs (object-relational mappers) and query
 builders approach. That is why "we have a coding standard about SQL" is weaker evidence than "the
 data access layer makes concatenation impossible."
 
@@ -175,7 +175,7 @@ display name says the bank; the sending domain does not. The link text says one 
 another. `paypa1.example` and `paypal.example` differ by one glyph.
 
 The defenses run down the same ladder. Prevention: phishing-resistant authenticators from week 5.
-A FIDO2 key checks the origin itself, so the person's judgment is taken out of the loop.
+A FIDO2 (Fast Identity Online 2) key checks the origin itself, so the person's judgment is taken out of the loop.
 Detection: mail filtering, and a reporting process people actually use. Mitigation: limiting what a
 compromised account can reach, which is week 6's least privilege.
 

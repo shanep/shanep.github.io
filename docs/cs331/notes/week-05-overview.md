@@ -9,7 +9,7 @@ Three words get used as if they mean the same thing:
 - **Authorization**: the system decides what that identity may do. That is next week.
 
 This week is about the second of the three, authentication. It is also the week with the largest gap between what most
-organizations do and what the current guidance says, because NIST changed its recommendations in
+organizations do and what the current guidance says, because NIST (National Institute of Standards and Technology) changed its recommendations in
 2017 and again in 2025, and a great many password policies have not caught up.
 
 ## Learning Objectives
@@ -19,7 +19,7 @@ By the end of this week, the successful student will be able to:
 - **[5.1](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)**:
   Select authentication factors appropriate to a stated threat model and justify the choice.
 - **[5.2](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)**:
-  Evaluate a real password and MFA policy against NIST SP 800-63B-4.
+  Evaluate a real password and MFA (multi-factor authentication) policy against NIST SP (Special Publication) 800-63B-4.
 
 ## Assignments and Tasks
 

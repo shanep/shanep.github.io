@@ -34,8 +34,8 @@ everything you need.
 > © Crown Copyright, The National Cyber Security Centre 2026, licensed under the
 > [Open Government Licence v3.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/).
 
-CyBOK is a free, openly licensed reference written by the people who work in each area. The
-complete PDF is in this course at [docs/CyBOK_v1.2.0.pdf](docs/CyBOK_v1.2.0.pdf) and in Canvas
+CyBOK (Cyber Security Body of Knowledge) is a free, openly licensed reference written by the people who work in each area. The
+complete PDF (Portable Document Format) is in this course at [docs/CyBOK_v1.2.0.pdf](docs/CyBOK_v1.2.0.pdf) and in Canvas
 Files. You never have to go anywhere else to get a reading.
 
 Two things to know about it:
@@ -69,7 +69,7 @@ one the course and the grading go by.
 
 You do **not** need a virtual machine, a Linux server, Docker, git, or a GitHub account. If your
 own machine gives you trouble, every lab runs on the lab machines described under
-[IT Support Policy](#it-support-policy).
+[IT (information technology) Support Policy](#it-support-policy).
 
 ## Course Workflow
 
@@ -116,10 +116,10 @@ discussion that measures them. The complete alignment is on the
 
 | # | The student will be able to… | Bloom level |
 | --- | --- | --- |
-| [TLO 1](objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation) | Explain core security goals, terminology, first principles, ethical obligations, and the role of privacy and regulation in security practice. | Understand |
+| [TLO (terminal learning objective) 1](objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation) | Explain core security goals, terminology, first principles, ethical obligations, and the role of privacy and regulation in security practice. | Understand |
 | [TLO 2](objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats) | Model subjects, objects, permissions, trust boundaries, and threats using access control matrices, policy descriptions, and basic threat models. | Apply |
 | [TLO 3](objectives.md#tlo-3-comparing-cryptographic-mechanisms-and-their-limits) | Compare symmetric encryption, public-key cryptography, hashing, digital signatures, key management, and secure communication protocols, including their assumptions and limitations. | Understand |
-| [TLO 4](objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures) | Analyze common attacks and vulnerabilities, including phishing, network attacks, SQL injection, and buffer overflows, and justify appropriate countermeasures. | Analyze |
+| [TLO 4](objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures) | Analyze common attacks and vulnerabilities, including phishing, network attacks, SQL (Structured Query Language) injection, and buffer overflows, and justify appropriate countermeasures. | Analyze |
 | [TLO 5](objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles) | Apply authentication, authorization, least privilege, separation of privilege, fail-safe defaults, and other secure design principles to a system design. | Apply |
 | [TLO 6](objectives.md#tlo-6-interpreting-assurance-arguments-and-evidence) | Interpret assurance arguments and evidence, and evaluate whether a system's security claims are supported by its design, implementation, and testing. | Evaluate |
 | [TLO 7](objectives.md#tlo-7-analyzing-detection-data-and-recommending-a-response) | Analyze basic intrusion-detection data and recommend a defensible response using an appropriate detection model. | Analyze |
@@ -145,7 +145,7 @@ printed page numbers shown in the PDF's footers.
 | 8 | Mar 1-7 | [Public-key cryptography, hashing, and signatures](notes/week-08-public-key-cryptography.md) | §10.6-10.8 (pp. 336-345) | [Lab 5](assignments/lab-05-hashing-and-signatures.md) |
 | 9 | Mar 8-14 | [Review and catch-up](notes/week-09-review-and-catch-up.md) | No new reading | Nothing due |
 |  | **Mar 15-19** | **SPRING BREAK: no class meetings, nothing due** |  |  |
-| 10 | Mar 22-28 | [Keys, certificates, PKI, and TLS](notes/week-10-keys-certificates-and-pki.md) | §18.3 (pp. 651-661); §18.5.1 (pp. 664-665) | [Lab 6](assignments/lab-06-certificates-and-tls.md) |
+| 10 | Mar 22-28 | [Keys, certificates, PKI (public key infrastructure), and TLS (Transport Layer Security)](notes/week-10-keys-certificates-and-pki.md) | §18.3 (pp. 651-661); §18.5.1 (pp. 664-665) | [Lab 6](assignments/lab-06-certificates-and-tls.md) |
 | 11 | Mar 29-Apr 4 | [Network security and attacks](notes/week-11-network-security.md) | §19.1 (pp. 672-674); §19.3.2-19.3.3 (pp. 682-691); §19.4 (pp. 697-703) | [D4](discussions/d04-network-security-in-the-news.md) |
 | 12 | Apr 5-11 | [Malware and adversarial behaviors](notes/week-12-malware-and-adversarial-behaviours.md) | §6.1-6.2 (pp. 200-205); §6.4 (pp. 212-217); §7.2 (pp. 234-240) | [Lab 7](assignments/lab-07-malware-triage.md) |
 | 13 | Apr 12-18 | [Software security, memory safety, and assurance](notes/week-13-software-security-and-assurance.md) | §15.1.1 (pp. 498-499); §15.2 (pp. 506-511); §15.4 (pp. 516-520); §17.7 (pp. 604-608) | [Lab 8](assignments/lab-08-memory-safety-and-assurance.md) |
@@ -202,12 +202,12 @@ points, so the extra credit maximum is **13.75 points**.
 
 Unless explicitly stated otherwise, all work is individual. Group assignments will be **clearly**
 marked. The [Kount Learning Center](https://www.boisestate.edu/coen-cs/currentstudents/success-tutoring)
-(CCP 241) is accessible 24/7 by proxy card to all students enrolled in CS courses and has all the
+(CCP [City Center Plaza] 241) is accessible 24/7 by proxy card to all students enrolled in CS courses and has all the
 software you will need.
 
 ## AI Policy
 
-There is no restriction on AI use in this course. You may use AI tools to help
+There is no restriction on AI (artificial intelligence) use in this course. You may use AI tools to help
 you with your work, but you are responsible for ensuring that your work is
 accurate and meets the requirements of the assignment. You are strongly
 encouraged to explore the use of AI tools as part of your learning process, but
@@ -254,7 +254,7 @@ follow-up. You can also message through Canvas if email is not going through. Pl
 following in all emails:
 
 - First and last name
-- Student ID
+- Student ID (identifier)
 - Course and section number (e.g., CS123-01)
 
 BroncoMail is the official university communication channel. Check it two to three times per week.

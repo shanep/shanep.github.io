@@ -11,13 +11,13 @@
 | **Saved return address** | Where the function jumps when it returns. The classic overwrite target. |
 | **Memory safety** | The property that a program cannot access memory outside what it legitimately owns. |
 | **Stack canary** | A known value checked before return; turns many exploits into crashes. |
-| **ASLR** | Randomized load addresses. |
-| **NX / DEP** | Non-executable data pages. |
+| **ASLR (address space layout randomization)** | Randomized load addresses. |
+| **NX (no-execute) / DEP (data execution prevention)** | Non-executable data pages. |
 | **Return-oriented programming** | Chaining existing code fragments to work around NX. |
 | **Static analysis** | Examining code without running it. |
 | **Dynamic analysis / fuzzing** | Running the code on many inputs and watching for failures. |
 | **Assurance** | Grounds for confidence that a system meets its security claims. |
-| **SAMM / BSIMM** | Maturity models assessing an organization's software security *practices*. |
+| **SAMM (Software Assurance Maturity Model) / BSIMM (Building Security In Maturity Model)** | Maturity models assessing an organization's software security *practices*. |
 | **Common Criteria** | Evaluation of a *specific product* against stated claims, at a stated rigor. |
 
 ## Readings
@@ -26,8 +26,8 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.1.1 Memory Management Vulnerabilities | 498-499 | 1 p | 15 min |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.2 Prevention of Vulnerabilities: language design, API design, coding practices | 506-511 | 5 pp | 40 min |
+| [CyBOK (Cyber Security Body of Knowledge) v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.1.1 Memory Management Vulnerabilities | 498-499 | 1 p | 15 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.2 Prevention of Vulnerabilities: language design, API (application programming interface) design, coding practices | 506-511 | 5 pp | 40 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.4 Mitigating Exploitation of Vulnerabilities | 516-520 | 4 pp | 35 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §17.7 Assessment of the Secure Software Lifecycle: SAMM, BSIMM, Common Criteria | 604-608 | 4 pp | 25 min |
 
@@ -45,7 +45,7 @@ Lab 8 asks about it. Look at pages 511-516 when you get to that question.
 Read [Aleph One's article](http://phrack.org/issues/49/14.html) (Phrack 49, 1996) until it starts
 constructing shellcode, then stop. It is thirty years old and still the clearest explanation of
 what the stack looks like during a function call. Also worth noticing: the bug it describes is
-still, three decades later, one of the most common classes in the CVE database.
+still, three decades later, one of the most common classes in the CVE (Common Vulnerabilities and Exposures) database.
 
 ## Worked example
 
@@ -77,7 +77,7 @@ find out. So the safety of any `strcpy` call depends entirely on the caller havi
 established that the source fits, and here, `badge_id` comes from outside and nobody checked.
 
 Note the off-by-one: `buffer` holds 32 bytes, and `strcpy` writes the terminating zero as well, so
-the longest badge ID handled correctly is **31 characters**.
+the longest badge ID (identifier) handled correctly is **31 characters**.
 
 ### 2. What the compiler actually did
 

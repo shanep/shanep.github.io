@@ -5,7 +5,7 @@
 Two questions this week, and they are different questions. Ask both of any intrusion, including the
 hospital ransomware case you work through in Lab 7.
 
-**What malicious software did the attackers use?** CyBOK §6 gives you a taxonomy (standalone or host-dependent, persistent
+**What malicious software did the attackers use?** CyBOK (Cyber Security Body of Knowledge) §6 gives you a taxonomy (standalone or host-dependent, persistent
 on disk or transient in memory, user-activated or auto-spreading) and a survey of how malware is
 analyzed and detected.
 

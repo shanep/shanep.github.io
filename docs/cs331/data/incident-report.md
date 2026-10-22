@@ -35,13 +35,13 @@ did not write that payload to disk.
 
 ## Day 0: the first hour
 
-The downloaded component established an outbound HTTPS connection to
-`hxxps://api-telemetry-sync[.]com` and began polling it every 47 seconds. Traffic was TLS-encrypted
-and used a valid certificate for that domain. Total volume in the first hour was under 40 KB.
+The downloaded component established an outbound HTTPS (Hypertext Transfer Protocol Secure) connection to
+`hxxps://api-telemetry-sync[.]com` and began polling it every 47 seconds. Traffic was TLS-encrypted (encrypted with Transport Layer Security)
+and used a valid certificate for that domain. Total volume in the first hour was under 40 KB (kilobytes).
 
 Within twenty minutes the component:
 
-- Enumerated the local machine: hostname, domain, logged-on user, OS version, installed antivirus,
+- Enumerated the local machine: hostname, domain, logged-on user, OS (operating system) version, installed antivirus,
   and the list of running processes.
 - Enumerated the domain: it queried Active Directory for the list of domain administrators, the
   list of file servers, and the membership of several groups.
@@ -73,7 +73,7 @@ From there they:
   which product was installed during the Day 0 enumeration.
 - Deleted the Windows Security event log on that server after the agent was stopped.
 
-Between Day 4 and Day 6 approximately 74 GB was transferred out, in chunks of roughly 400 MB, to
+Between Day 4 and Day 6 approximately 74 GB (gigabytes) was transferred out, in chunks of roughly 400 MB (megabytes), to
 the same `api-telemetry-sync[.]com` host that had been used for command and control. The transfers
 ran unattended between 01:00 and 04:00. The data was compressed and encrypted before it left; responders
 were never able to confirm its exact contents, but the source directories were the shares holding
@@ -107,7 +107,7 @@ No payment was made. The exfiltrated data was published on a leak site on Day 19
 | Type | Value |
 | --- | --- |
 | Sender domain | `cascade-medsupply[.]com`, registered Day −11 |
-| Attachment | `Invoice_44192_Cascade.xlsm`, SHA-256 `4f1a…` (macro-enabled workbook) |
+| Attachment | `Invoice_44192_Cascade.xlsm`, SHA-256 (Secure Hash Algorithm, 256-bit) `4f1a…` (macro-enabled workbook) |
 | Stage-two host | `cdn-assets-delivery[.]net` |
 | Command and control | `api-telemetry-sync[.]com`, polled every 47 s |
 | Persistence | Scheduled task `MicrosoftEdgeUpdateTaskMachineUA` |

@@ -7,14 +7,14 @@
 | Term | Short form |
 | --- | --- |
 | **On-path attacker** | Positioned to read, modify, drop, or inject traffic between two parties. |
-| **ARP spoofing** | Forged link-layer replies to redirect traffic on a local segment. |
-| **DNS cache poisoning** | Forged answers accepted and cached by a resolver. |
-| **DNSSEC** | Signs DNS records so forgery is detectable. |
-| **BGP hijacking** | Announcing routes for address space you do not hold. |
+| **ARP (Address Resolution Protocol) spoofing** | Forged link-layer replies to redirect traffic on a local segment. |
+| **DNS (Domain Name System) cache poisoning** | Forged answers accepted and cached by a resolver. |
+| **DNSSEC (Domain Name System Security Extensions)** | Signs DNS records so forgery is detectable. |
+| **BGP (Border Gateway Protocol) hijacking** | Announcing routes for address space you do not hold. |
 | **Reflection / amplification** | Small spoofed requests producing large replies aimed at a victim. |
 | **Stateful firewall** | Tracks connections so return traffic can be allowed without opening the whole range. |
 | **Segmentation** | Dividing a network so a compromise in one zone does not reach all others. |
-| **IDS / IPS** | Detection alerts; prevention sits in-path and blocks, and can cause outages. |
+| **IDS (intrusion detection system) / IPS (intrusion prevention system)** | Detection alerts; prevention sits in-path and blocks, and can cause outages. |
 | **Network security monitoring** | Using traffic metadata (who, when, how much) rather than content. |
 | **Zero trust** | Network location is not a credential; authorize every request on its merits. |
 | **Egress filtering** | Controlling what may leave, not only what may enter. |
@@ -25,9 +25,9 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §19.1 Security Goals and Attacker Models | 672-674 | 2 pp | 15 min |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §19.3.2 Security at the Transport Layer: TLS, PKI, TCP, UDP, QUIC | 682-686 | 4 pp | 30 min |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §19.3.3 Security at the Internet Layer: IPv4, IPv6, routing, ICMP | 686-691 | 5 pp | 35 min |
+| [CyBOK (Cyber Security Body of Knowledge) v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §19.1 Security Goals and Attacker Models | 672-674 | 2 pp | 15 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §19.3.2 Security at the Transport Layer: TLS (Transport Layer Security), PKI (public key infrastructure), TCP (Transmission Control Protocol), UDP (User Datagram Protocol), QUIC | 682-686 | 4 pp | 30 min |
+| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §19.3.3 Security at the Internet Layer: IPv4, IPv6, routing, ICMP (Internet Control Message Protocol) | 686-691 | 5 pp | 35 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §19.4 Network Security Tools | 697-703 | 6 pp | 40 min |
 
 §19.3.1 (application layer) and §19.3.4 (link layer) are not assigned, but §19.3.4.5 on network
@@ -41,9 +41,9 @@ of D4 asks you to do the same for a real incident.
 | Layer | Attack | The property exploited |
 | --- | --- | --- |
 | **Link** | ARP spoofing | ARP has no authentication; any host on the segment can claim any address |
-| **Internet** | IP source spoofing | The source address in a packet is not verified by default |
+| **Internet** | IP (Internet Protocol) source spoofing | The source address in a packet is not verified by default |
 | **Internet** | BGP route hijacking | Route announcements are accepted largely on trust |
-| **Internet** | Reflection and amplification DoS | UDP services reply to unverified source addresses, with replies larger than requests |
+| **Internet** | Reflection and amplification DoS (denial of service) | UDP services reply to unverified source addresses, with replies larger than requests |
 | **Transport** | TCP injection or reset | Sequence numbers provide ordering, not authentication |
 | **Application** | DNS spoofing / cache poisoning | Classic DNS responses are unauthenticated UDP |
 | **Application** | TLS downgrade / stripping | Negotiation can be manipulated if the client will accept a weaker option |
@@ -77,7 +77,7 @@ Read the report for traffic, not for malware.
   `api-telemetry-sync[.]com` before. First-contact-with-a-new-domain is a weak signal on its own
   and a strong one in combination with periodicity.
 
-- **Days 4-6.** Roughly 74 GB leaves in ~400 MB chunks, between 01:00 and 04:00, to that same host.
+- **Days 4-6.** Roughly 74 GB (gigabytes) leaves in ~400 MB (megabytes) chunks, between 01:00 and 04:00, to that same host.
   This is the loudest thing in the entire incident. Nobody in a hospital's billing department
   uploads 74 GB at two in the morning. Again: no content needed, just direction and volume.
 
@@ -89,7 +89,7 @@ Read the report for traffic, not for malware.
   (the phishing email still lands), but it would have made every subsequent step require crossing a
   boundary that could deny it or log it.
 
-- **Egress filtering.** The organization allowed arbitrary outbound HTTPS from a billing
+- **Egress filtering.** The organization allowed arbitrary outbound HTTPS (Hypertext Transfer Protocol Secure) from a billing
   workstation to any host on the internet. Restricting outbound connections from workstation
   networks to a proxy, and alerting on volume, converts the exfiltration from invisible into an
   obvious event.

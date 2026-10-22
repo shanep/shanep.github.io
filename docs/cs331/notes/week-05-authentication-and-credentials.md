@@ -11,11 +11,11 @@
 | **Authorization** | Deciding what the authenticated identity may do. Week 6. |
 | **Authentication factor** | Knowledge, possession, or inherence. |
 | **Multi-factor authentication** | Two or more factors of *different* types. |
-| **Phishing-resistant authenticator** | One that binds to the site's origin, so it cannot be relayed. FIDO2, passkeys. |
+| **Phishing-resistant authenticator** | One that binds to the site's origin, so it cannot be relayed. FIDO2 (Fast Identity Online 2), passkeys. |
 | **Salt** | Per-user random value stored with the hash; defeats precomputation and cross-account correlation. |
-| **Password hashing function** | A deliberately slow, salted hash built for passwords: PBKDF2, bcrypt, scrypt, Argon2. |
+| **Password hashing function** | A deliberately slow, salted hash built for passwords: PBKDF2 (Password-Based Key Derivation Function 2), bcrypt, scrypt, Argon2. |
 | **Credential stuffing** | Replaying username/password pairs from other breaches. |
-| **Federated identity** | A separate identity provider authenticates on the application's behalf. SAML, OIDC. |
+| **Federated identity** | A separate identity provider authenticates on the application's behalf. SAML (Security Assertion Markup Language), OIDC (OpenID Connect). |
 
 ## Readings
 
@@ -23,7 +23,7 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.5.1 Identity Management | 477-478 | 1 p | 10 min |
+| [CyBOK (Cyber Security Body of Knowledge) v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.5.1 Identity Management | 477-478 | 1 p | 10 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.5.2 User Authentication: passwords, biometrics, tokens, behavioral, 2FA | 478-482 | 4 pp | 35 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.5.3 Authentication in Distributed Systems, Kerberos, SAML, OAuth2/OIDC | 482-485 | 3 pp | 25 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §14.5.4 Facets of Authentication | 485-487 | 2 pp | 15 min |
@@ -32,7 +32,7 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| NIST SP 800-63B-4 | §3, Authenticator and Verifier Requirements | none | skim | 30 min |
+| NIST (National Institute of Standards and Technology) SP (Special Publication) 800-63B-4 | §3, Authenticator and Verifier Requirements | none | skim | 30 min |
 
 [NIST SP 800-63B-4](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf) (July 2025) is long. Read §3
 and skim the rest. You are looking for what it *requires*, what it *forbids*, what it *recommends
@@ -43,8 +43,8 @@ written against.
 
 | Type | What it is | Examples | Main weakness |
 | --- | --- | --- | --- |
-| **Knowledge** | Something you know | Password, PIN, security question | Can be phished, guessed, reused, or shared |
-| **Possession** | Something you have | Security key, authenticator app, SMS code, smart card | Can be lost, stolen, or (for codes) relayed |
+| **Knowledge** | Something you know | Password, PIN (personal identification number), security question | Can be phished, guessed, reused, or shared |
+| **Possession** | Something you have | Security key, authenticator app, SMS (Short Message Service) code, smart card | Can be lost, stolen, or (for codes) relayed |
 | **Inherence** | Something you are | Fingerprint, face, voice | Cannot be revoked and reissued; not secret |
 
 "Multi-factor" means factors of **different types**. A password plus a security question is one
@@ -119,7 +119,7 @@ find, scored against SP 800-63B-4 §3:
 
 | Rule | Verdict |
 | --- | --- |
-| Minimum 8 characters | **Only acceptable with MFA.** 8 is the floor for a password used as one factor of MFA. A password used on its own needs at least 15. |
+| Minimum 8 characters | **Only acceptable with MFA (multi-factor authentication).** 8 is the floor for a password used as one factor of MFA. A password used on its own needs at least 15. |
 | Must contain upper case, digit, and symbol | **Prohibited.** SP 800-63B-4 says verifiers SHALL NOT impose composition rules. They produce `Password1!` and add little real entropy. |
 | Must be changed every 60 days | **Prohibited.** Verifiers SHALL NOT require periodic changes. Scheduled rotation produces `Spring2027!` → `Summer2027!`. Force a change on evidence of compromise. |
 | Cannot be pasted into the field | **Advised against.** It breaks password managers, which are among the few things that reliably improve real password quality. |

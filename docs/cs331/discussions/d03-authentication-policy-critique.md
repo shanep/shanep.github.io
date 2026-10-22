@@ -7,9 +7,9 @@
 - **5.1**: Select authentication factors appropriate to a stated threat model and justify the
   choice.
 - **5.2**: Evaluate a real password and multi-factor authentication policy against
-  NIST SP 800-63B-4.
+  NIST (National Institute of Standards and Technology) SP (Special Publication) 800-63B-4.
 
-([TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles))
+Terminal learning objective (TLO): [TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)
 
 ## Time estimate
 
@@ -40,7 +40,7 @@ organization you pick, look for the same rules:
 
 Options, easiest first:
 
-- **Boise State's own.** Read OIT's [Password management](https://www.boisestate.edu/oit/password-management/)
+- **Boise State's own.** Read OIT's (Office of Information Technology) [Password management](https://www.boisestate.edu/oit/password-management/)
   page for the passphrase rules. For the second factor, look at the multi-factor authentication
   methods your own account offers through Microsoft Entra. Note which of the rules above the page
   states and which it leaves out.
@@ -83,7 +83,7 @@ Then state a verdict: **how many of this policy's rules would NIST advise agains
 ### 3. What the demonstration showed
 
 Run [password_demo.py](../data/password_demo.py) and quote **two numbers** from your own run:
-the guesses-per-second under the fast hash and under PBKDF2.
+the guesses-per-second under the fast hash and under PBKDF2 (Password-Based Key Derivation Function 2).
 
 Then answer: the same two accounts were cracked either way, and `carol` was cracked by neither.
 **Given that, what does the storage choice actually buy, and what does it not?** Three or four
@@ -140,6 +140,6 @@ you are entitled to create.
 
 ## AI disclosure
 
-You may use AI tools. If you do, add a sentence saying which and what for, per the
+You may use AI (artificial intelligence) tools. If you do, add a sentence saying which and what for, per the
 [AI policy](../index.md#ai-policy). Parts 1 and 3 require a policy you actually looked at and
 numbers from a script you actually ran.

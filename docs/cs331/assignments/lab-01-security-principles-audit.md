@@ -16,8 +16,8 @@ No code. This is a reading-and-writing lab.
 - **1.4**: Explain how human error and usability failures contribute to security incidents.
 - **5.4**: Apply fail-safe defaults and complete mediation when critiquing a system design.
 
-([TLO 1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation) ·
-[TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles))
+Terminal learning objectives (TLOs): [TLO 1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation) ·
+[TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)
 
 ## Time estimate
 
@@ -98,7 +98,7 @@ Choose the **two** principles where this system does worst. For each one, write 
    actual path.
 2. **What it would cost to fix.** Fixing a principle violation is never free; it costs money,
    engineering time, or user convenience. Say which, and say who would object.
-3. **For at least one of the two, connect it to human behavior.** Using CyBOK §4.3, explain how a
+3. **For at least one of the two, connect it to human behavior.** Using CyBOK (Cyber Security Body of Knowledge) §4.3, explain how a
    normal person doing a reasonable thing makes this failure more likely, or how the fix would run
    into psychological acceptability and get worked around.
 
@@ -122,7 +122,7 @@ be true of any system ("they should use encryption"). The evidence has to be abo
 
 ## AI disclosure
 
-You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
+You may use AI (artificial intelligence) tools on this assignment. If you do, add one or two sentences saying which tool and
 what for, per the [AI policy](../index.md#ai-policy).
 
 A caution specific to this lab: an AI tool does not know what happens when *you* log into *your*

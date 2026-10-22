@@ -1,6 +1,6 @@
 # Module 2 Overview
 
-**January 18-24 · MLK Day is Monday · Reading: 14 pages · Due: Lab 1 · Estimated total: 6.5 hours**
+**January 18-24 · Martin Luther King Jr. Day is Monday · Reading: 14 pages · Due: Lab 1 · Estimated total: 6.5 hours**
 
 In 1975 Jerome Saltzer and Michael Schroeder wrote down eight design principles for protecting
 information in computer systems. Fifty-two years later they are still the closest thing the field
@@ -10,7 +10,7 @@ one of them.
 This week you learn the eight principles, and then why knowing them is not enough. The second half
 of the reading is about human factors, and it makes an uncomfortable point: when a security control
 fails in practice, it is usually because people work around it. The usual response is to blame the
-people. CyBOK's position (and this course's) is that a control people cannot follow is a defective
+people. CyBOK's (Cyber Security Body of Knowledge) position (and this course's) is that a control people cannot follow is a defective
 control.
 
 ## Learning Objectives
@@ -44,7 +44,7 @@ No discussion this week.
 | Review and slack | 2 hrs 30 min |
 | **Total** | **~6.5 hrs** |
 
-MLK Day falls on Monday, so the working week is short. Lab 1 is not due until Sunday, and it is a
+Martin Luther King Jr. Day falls on Monday, so the working week is short. Lab 1 is not due until Sunday, and it is a
 writing assignment, so give it the full 85 minutes.
 
 <!--@include: ../../../parts/cs331-questions-button.md-->

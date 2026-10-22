@@ -14,13 +14,13 @@ No code. This is a modeling lab, and the modeling is the point.
 
 - **2.4**: Construct an access control matrix for a given set of subjects, objects, and
   permissions.
-- **2.5**: Express an access control policy as an ACL, a capability list, and an RBAC assignment,
+- **2.5**: Express an access control policy as an ACL (access control list), a capability list, and an RBAC (role-based access control) assignment,
   and state the tradeoffs among them.
 - **5.3**: Apply least privilege and separation of privilege to reduce an over-broad permission
   assignment.
 
-([TLO 2](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats) ·
-[TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles))
+Terminal learning objectives (TLOs): [TLO 2](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats) ·
+[TLO 5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)
 
 ## Time estimate
 
@@ -41,7 +41,7 @@ No code. This is a modeling lab, and the modeling is the point.
 ### Vocabulary you need
 
 - **Subject**: an active thing that requests access. A user, a service, a running program.
-- **Object**: a passive thing being protected. A file, a record, an album, an API endpoint.
+- **Object**: a passive thing being protected. A file, a record, an album, an API (application programming interface) endpoint.
 - **Right**: what a subject may do to an object: read, write, delete, grant, and so on.
 - **Access control matrix**: a table with one row per subject and one column per object; the cell
   holds the rights that subject has over that object. It is the most direct way to write a policy
@@ -132,7 +132,7 @@ description:
   storage bucket, and the API server uses that same key.
 - **All three support staff share one admin login** that can read any album and reset any password.
 - **The storage bucket allows public reads of any object**, with privacy enforced only by which
-  URLs the API hands out.
+  URLs (Uniform Resource Locators) the API hands out.
 
 For **each** of the three:
 
@@ -140,7 +140,7 @@ For **each** of the three:
    in terms of specific cells in your Step 1 matrix.
 2. **Write the reduced permission.** What exactly should it have instead? Be concrete enough that
    somebody could implement it.
-3. **Name the principle.** Is this least privilege, separation of privilege, or both? CyBOK §1.4.1
+3. **Name the principle.** Is this least privilege, separation of privilege, or both? CyBOK (Cyber Security Body of Knowledge) §1.4.1
    gives you the definitions; use them precisely, because the two are often confused.
 4. **Say what breaks.** Every reduction costs something. Name a specific thing that gets harder or
    slower for a real person once you make the change.
@@ -176,5 +176,5 @@ recommending fixes with no stated cost.
 
 ## AI disclosure
 
-You may use AI tools on this assignment. If you do, add one or two sentences saying which tool and
+You may use AI (artificial intelligence) tools on this assignment. If you do, add one or two sentences saying which tool and
 what for, per the [AI policy](../index.md#ai-policy).

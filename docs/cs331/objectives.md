@@ -49,7 +49,7 @@ on this site and in Canvas.
 
 | # | The student will be able to… | Bloom | Knowledge type | How it will be assessed | Location in course |
 | --- | --- | --- | --- | --- | --- |
-| 1.1 | Define confidentiality, integrity, and availability, and identify which goal a described failure violates. | Remember | Fact | Lab 0 rubric row 3 | Week 1: [0.05 Lab 0: Course Setup and CyBOK Navigation](assignments/lab-00-course-setup.md) |
+| 1.1 | Define confidentiality, integrity, and availability, and identify which goal a described failure violates. | Remember | Fact | Lab 0 rubric row 3 | Week 1: [0.05 Lab 0: Course Setup and CyBOK (Cyber Security Body of Knowledge) Navigation](assignments/lab-00-course-setup.md) |
 | 1.2 | Use the terms threat, vulnerability, attack, and risk correctly in writing about a security incident. | Understand | Concept | D1 rubric row 1 | Week 1: [0.03 D1: Introductions and the Security Mindset](discussions/d01-introductions-and-security-mindset.md) |
 | 1.3 | Apply the Saltzer and Schroeder design principles to critique a familiar system. | Apply | Principle | Lab 1 rubric rows 2-3 | Week 2: [2.02 Lab 1: Security Principles Audit](assignments/lab-01-security-principles-audit.md) |
 | 1.4 | Explain how human error and usability failures contribute to security incidents. | Understand | Concept | Lab 1 rubric row 3 | Week 2: [2.02 Lab 1: Security Principles Audit](assignments/lab-01-security-principles-audit.md) |
@@ -70,10 +70,10 @@ fluent use of this vocabulary throughout. Reading support: CyBOK §1.1-1.5, §3.
 | # | The student will be able to… | Bloom | Knowledge type | How it will be assessed | Location in course |
 | --- | --- | --- | --- | --- | --- |
 | 2.1 | Draw a data flow diagram for a described system and mark its trust boundaries. | Apply | Procedure | Lab 2 rubric row 1 | Week 4: [4.02 Lab 2: Threat Model a Small System](assignments/lab-02-threat-model.md) |
-| 2.2 | Enumerate threats against a system using STRIDE and record them in a threat table. | Apply | Procedure | Lab 2 rubric row 2 | Week 4: [4.02 Lab 2: Threat Model a Small System](assignments/lab-02-threat-model.md) |
+| 2.2 | Enumerate threats against a system using STRIDE (spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege) and record them in a threat table. | Apply | Procedure | Lab 2 rubric row 2 | Week 4: [4.02 Lab 2: Threat Model a Small System](assignments/lab-02-threat-model.md) |
 | 2.3 | Assess the likelihood and impact of identified threats using a stated risk method. | Apply | Process | Lab 2 rubric row 3 | Week 4: [4.02 Lab 2: Threat Model a Small System](assignments/lab-02-threat-model.md) |
 | 2.4 | Construct an access control matrix for a given set of subjects, objects, and permissions. | Apply | Procedure | Lab 3 rubric row 1 | Week 6: [6.02 Lab 3: Access Control Matrix and Least Privilege](assignments/lab-03-access-control-matrix.md) |
-| 2.5 | Express an access control policy as an ACL, a capability list, and an RBAC assignment, and state the tradeoffs among them. | Apply | Concept | Lab 3 rubric rows 2-3 | Week 6: [6.02 Lab 3: Access Control Matrix and Least Privilege](assignments/lab-03-access-control-matrix.md) |
+| 2.5 | Express an access control policy as an ACL (access control list), a capability list, and an RBAC (role-based access control) assignment, and state the tradeoffs among them. | Apply | Concept | Lab 3 rubric rows 2-3 | Week 6: [6.02 Lab 3: Access Control Matrix and Least Privilege](assignments/lab-03-access-control-matrix.md) |
 
 **Notes.** Objective 2.4 requires students to *construct* a matrix, which needs a rubric rather
 than a multiple-choice item. This is why week 6 carries a lab rather than a discussion. Reading
@@ -91,12 +91,12 @@ support: CyBOK §2.2-2.4, §2.6.1-2.6.2, §2.6.6, §14.1-14.3, §14.6.
 
 | # | The student will be able to… | Bloom | Knowledge type | How it will be assessed | Location in course |
 | --- | --- | --- | --- | --- | --- |
-| 3.1 | Explain what a block cipher and a mode of operation each provide, and demonstrate why ECB mode leaks structure. | Understand | Process | Lab 4 rubric row 2 | Week 7: [7.02 Lab 4: Symmetric Encryption in Practice](assignments/lab-04-symmetric-encryption.md) |
+| 3.1 | Explain what a block cipher and a mode of operation each provide, and demonstrate why ECB (electronic codebook) mode leaks structure. | Understand | Process | Lab 4 rubric row 2 | Week 7: [7.02 Lab 4: Symmetric Encryption in Practice](assignments/lab-04-symmetric-encryption.md) |
 | 3.2 | Distinguish confidentiality from integrity and authenticity, and name the primitive that supplies each. | Understand | Concept | Lab 4 rubric rows 3-4 | Week 7: [7.02 Lab 4: Symmetric Encryption in Practice](assignments/lab-04-symmetric-encryption.md) |
 | 3.3 | Compare symmetric and public-key cryptography by key distribution, performance, and typical use. | Understand | Concept | Lab 5 rubric row 4 | Week 8: [8.02 Lab 5: Hashing and Signatures](assignments/lab-05-hashing-and-signatures.md) |
 | 3.4 | Verify a digital signature. | Apply | Procedure | Lab 5 rubric row 2 | Week 8: [8.02 Lab 5: Hashing and Signatures](assignments/lab-05-hashing-and-signatures.md) |
 | 3.5 | Explain what a failed signature verification does and does not prove. | Understand | Concept | Lab 5 rubric row 3 | Week 8: [8.02 Lab 5: Hashing and Signatures](assignments/lab-05-hashing-and-signatures.md) |
-| 3.6 | Interpret an X.509 certificate chain and identify the trust assumptions and failure modes of public key infrastructure. | Analyze | Process | Lab 6 rubric rows 1-4 | Week 10: [10.02 Lab 6: Certificates and TLS](assignments/lab-06-certificates-and-tls.md) |
+| 3.6 | Interpret an X.509 certificate chain and identify the trust assumptions and failure modes of public key infrastructure. | Analyze | Process | Lab 6 rubric rows 1-4 | Week 10: [10.02 Lab 6: Certificates and TLS (Transport Layer Security)](assignments/lab-06-certificates-and-tls.md) |
 
 **Notes.** Objectives 3.1-3.5 fall before spring break and 3.6 falls after it, with Lab 6. CyBOK's cryptography chapter opens with two heavily
 mathematical sections (§10.1 Mathematics, §10.2 Cryptographic Security Models) that are **not
@@ -107,7 +107,7 @@ assigned**: this course starts at §10.3. Reading support: CyBOK §10.3-10.8, §
 ## TLO 4: Analyzing common attacks and justifying countermeasures
 
 > **The student will be able to** analyze common attacks and vulnerabilities, including phishing,
-> network attacks, SQL injection, and buffer overflows, and justify appropriate countermeasures.
+> network attacks, SQL (Structured Query Language) injection, and buffer overflows, and justify appropriate countermeasures.
 
 *Introduced in this course · Required · Bloom: Analyze · Knowledge type: Process*
 
@@ -138,10 +138,10 @@ course. Reading support: CyBOK §6.1-6.2, §6.4, §7.2, §15.1.1, §15.2, §15.4
 | # | The student will be able to… | Bloom | Knowledge type | How it will be assessed | Location in course |
 | --- | --- | --- | --- | --- | --- |
 | 5.1 | Select authentication factors appropriate to a stated threat model and justify the choice. | Apply | Principle | D3 rubric row 1 | Week 5: [5.02 D3: Authentication Policy Critique](discussions/d03-authentication-policy-critique.md) |
-| 5.2 | Evaluate a real password and multi-factor authentication policy against NIST SP 800-63B-4. | Evaluate | Principle | D3 rubric rows 1-2 | Week 5: [5.02 D3: Authentication Policy Critique](discussions/d03-authentication-policy-critique.md) |
+| 5.2 | Evaluate a real password and multi-factor authentication policy against NIST (National Institute of Standards and Technology) SP (Special Publication) 800-63B-4. | Evaluate | Principle | D3 rubric rows 1-2 | Week 5: [5.02 D3: Authentication Policy Critique](discussions/d03-authentication-policy-critique.md) |
 | 5.3 | Apply least privilege and separation of privilege to reduce an over-broad permission assignment. | Apply | Principle | Lab 3 rubric row 4 | Week 6: [6.02 Lab 3: Access Control Matrix and Least Privilege](assignments/lab-03-access-control-matrix.md) |
 | 5.4 | Apply fail-safe defaults and complete mediation when critiquing a system design. | Apply | Principle | Lab 1 rubric row 2 | Week 2: [2.02 Lab 1: Security Principles Audit](assignments/lab-01-security-principles-audit.md) |
-| 5.5 | Recommend a prevention-first countermeasure (a language, API, or coding practice) for a class of vulnerability. | Apply | Principle | Lab 8 rubric row 4; Lab 9 rubric row 4 | Week 13: [13.02 Lab 8: Memory Safety and Assurance Evidence](assignments/lab-08-memory-safety-and-assurance.md) · Week 14: [14.02 Lab 9: SQL Injection](assignments/lab-09-sql-injection.md) |
+| 5.5 | Recommend a prevention-first countermeasure (a language, API [application programming interface], or coding practice) for a class of vulnerability. | Apply | Principle | Lab 8 rubric row 4; Lab 9 rubric row 4 | Week 13: [13.02 Lab 8: Memory Safety and Assurance Evidence](assignments/lab-08-memory-safety-and-assurance.md) · Week 14: [14.02 Lab 9: SQL Injection](assignments/lab-09-sql-injection.md) |
 
 **Notes.** This objective is spread deliberately: principles are introduced in week 2 (5.4),
 applied to authentication in week 5 (5.1, 5.2), to authorization in week 6 (5.3), and to code in
@@ -161,7 +161,7 @@ weeks 13-14 (5.5). Reading support: CyBOK §1.4, §14.1-14.3, §14.5, §15.2; NI
 | 6.1 | Distinguish prevention, detection, and mitigation of vulnerabilities as distinct classes of assurance evidence. | Understand | Concept | Lab 8 rubric row 4 | Week 13: [13.02 Lab 8: Memory Safety and Assurance Evidence](assignments/lab-08-memory-safety-and-assurance.md) |
 | 6.2 | Identify what a static or dynamic analysis result does and does not establish about a program. | Analyze | Concept | Lab 8 rubric row 4 | Week 13: [13.02 Lab 8: Memory Safety and Assurance Evidence](assignments/lab-08-memory-safety-and-assurance.md) |
 | 6.3 | Evaluate whether stated security claims about a system are supported by the design and testing evidence offered. | Evaluate | Principle | Lab 8 rubric row 4 | Week 13: [13.02 Lab 8: Memory Safety and Assurance Evidence](assignments/lab-08-memory-safety-and-assurance.md) |
-| 6.4 | Describe how a maturity model or evaluation scheme (SAMM, BSIMM, or the Common Criteria) supplies organizational assurance evidence. | Understand | Process | Lab 8 rubric row 4 | Week 13: [13.02 Lab 8: Memory Safety and Assurance Evidence](assignments/lab-08-memory-safety-and-assurance.md) |
+| 6.4 | Describe how a maturity model or evaluation scheme (SAMM [Software Assurance Maturity Model], BSIMM [Building Security In Maturity Model], or the Common Criteria) supplies organizational assurance evidence. | Understand | Process | Lab 8 rubric row 4 | Week 13: [13.02 Lab 8: Memory Safety and Assurance Evidence](assignments/lab-08-memory-safety-and-assurance.md) |
 
 **Notes.** This terminal objective has four supporting objectives rather than five. It is the
 narrowest outcome in the course: assurance is taught in one week (13) through CyBOK §15.2, §15.4,
@@ -216,7 +216,7 @@ objectives it measures and its point value.
 | 14 | [14.02 Lab 9: SQL Injection](assignments/lab-09-sql-injection.md) | 38 | 4.5, 5.5 |
 | 15 | [15.04 Lab 10: Log Analysis and Incident Memo](assignments/lab-10-log-analysis-and-incident-memo.md) | 38 | 7.1, 7.2, 7.3, 7.4, 7.5 |
 | 15 | [15.02 D5: A Current Security Failure](discussions/d05-current-security-failure.md) | 30 | 7.5 |
-| Finals | [16.01 D6: Final Reflection](discussions/d06-final-reflection.md) | 15 | Self-assessment against TLO 1-7; no single objective scored |
+| Finals | [16.01 D6: Final Reflection](discussions/d06-final-reflection.md) | 15 | Self-assessment against TLO (terminal learning objective) 1-7; no single objective scored |
 | | **Total** | **550** | |
 
 ## Coverage check

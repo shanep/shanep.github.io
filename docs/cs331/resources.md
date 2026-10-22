@@ -4,13 +4,13 @@ Every reading in this course is free and openly licensed. There is nothing to bu
 
 ## Required text
 
-> **The Cyber Security Body of Knowledge, version 1.2.0.**
+> **The Cyber Security Body of Knowledge (CyBOK), version 1.2.0.**
 > Awais Rashid, Yulia Cherdantseva, Andrew Martin, and Steve Schneider (eds.), September 2026.
 > © Crown Copyright, The National Cyber Security Centre 2026. Licensed under the
 > [Open Government Licence v3.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/).
 > Project home: [The Cyber Security Body of Knowledge](https://www.cybok.org/)
 
-The complete PDF is in this course at [docs/CyBOK_v1.2.0.pdf](docs/CyBOK_v1.2.0.pdf) and in Canvas
+The complete PDF (Portable Document Format) is in this course at [docs/CyBOK_v1.2.0.pdf](docs/CyBOK_v1.2.0.pdf) and in Canvas
 Files. The Open Government Licence permits redistribution with attribution, which is why the book
 can live inside the course instead of behind a link.
 
@@ -88,18 +88,18 @@ where a worked treatment helps most. All are free.
 | Week | Supplement | License |
 | ---: | --- | --- |
 | 2 | Saltzer and Schroeder, [*The Protection of Information in Computer Systems*](https://web.mit.edu/Saltzer/www/publications/protection/) (1975), the eight design principles in §I only | Free to read |
-| 5 | NIST SP 800-63B-4, [*Digital Identity Guidelines: Authentication and Authenticator Management*](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf) (July 2025), §3 | Public domain (U.S. Government) |
-| 7-8 | Nakov, [*Practical Cryptography for Developers*](https://cryptobook.nakov.com/), the AES, cipher modes, hashing, RSA, and signature pages | MIT |
+| 5 | NIST (National Institute of Standards and Technology) SP (Special Publication) 800-63B-4, [*Digital Identity Guidelines: Authentication and Authenticator Management*](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf) (July 2025), §3 | Public domain (U.S. Government) |
+| 7-8 | Nakov, [*Practical Cryptography for Developers*](https://cryptobook.nakov.com/), the AES (Advanced Encryption Standard), cipher modes, hashing, RSA (Rivest-Shamir-Adleman), and signature pages | MIT |
 | 12 | [MITRE ATT&CK](https://attack.mitre.org/): Enterprise matrix and selected technique pages | Free to use, MITRE terms |
 | 13 | Aleph One, [*Smashing the Stack for Fun and Profit*](http://phrack.org/issues/49/14.html), Phrack 49, first third only | Free to read |
-| 14 | [OWASP Top 10:2021](https://top10.owasp.org/2021/): A01 Broken Access Control, A03 Injection, A07 Identification and Authentication Failures | CC BY-SA |
+| 14 | [OWASP (Open Worldwide Application Security Project) Top 10:2021](https://top10.owasp.org/2021/): A01 Broken Access Control, A03 Injection, A07 Identification and Authentication Failures | CC BY-SA |
 | 15 | NIST SP 800-61r3, [*Incident Response Recommendations and Considerations for Cybersecurity Risk Management*](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf) (April 2025) | Public domain (U.S. Government) |
 
 Two more references are used inside labs rather than as assigned reading:
 
 | Used in | Resource |
 | --- | --- |
-| Lab 0 | [CVE Program](https://www.cve.org/): look up one published vulnerability |
+| Lab 0 | [CVE (Common Vulnerabilities and Exposures) Program](https://www.cve.org/): look up one published vulnerability |
 | Lab 8 | [Compiler Explorer](https://godbolt.org/): inspect the assembly a C function compiles to, in the browser |
 
 ## Course data files

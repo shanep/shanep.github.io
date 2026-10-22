@@ -4,11 +4,11 @@
 
 Last week a program copied bytes into a buffer without knowing how big it was. This week a program
 builds a *command* out of untrusted input without keeping the command and the data apart. It is the
-same shape of mistake one layer up, and CyBOK groups them accordingly: §15.1.2 calls this class
+same shape of mistake one layer up, and CyBOK (Cyber Security Body of Knowledge) groups them accordingly: §15.1.2 calls this class
 **structured output generation vulnerabilities**.
 
-Seeing the class rather than the individual bug is the point. SQL injection, cross-site scripting,
-OS command injection, and path traversal are the same error against four different grammars, and
+Seeing the class rather than the individual bug is the point. SQL (Structured Query Language) injection, cross-site scripting,
+OS (operating system) command injection, and path traversal are the same error against four different grammars, and
 they have the same fix: never let untrusted input be parsed as part of the structure.
 
 The week also covers phishing, which sits oddly in a technical chapter until you notice it is the
@@ -22,7 +22,7 @@ By the end of this week, the successful student will be able to:
 - **[4.5](../objectives.md#tlo-4-analyzing-common-attacks-and-justifying-countermeasures)**:
   Perform and then remediate a SQL injection, and explain why parameterization defeats it.
 - **[5.5](../objectives.md#tlo-5-applying-authentication-authorization-and-secure-design-principles)**:
-  Recommend a prevention-first countermeasure (a language, API, or coding practice) for a class of
+  Recommend a prevention-first countermeasure (a language, API [application programming interface], or coding practice) for a class of
   vulnerability.
 
 ## Assignments and Tasks
@@ -40,7 +40,7 @@ the Student Code of Conduct. There is no exercise in this course that requires i
 
 | Activity | Time |
 | --- | --- |
-| Reading (15 pages plus OWASP) | 2 hrs 10 min |
+| Reading (15 pages plus OWASP [Open Worldwide Application Security Project]) | 2 hrs 10 min |
 | The notes page and running `sqli_demo.py` | 45 min |
 | Lab 9 | 1 hr 30 min |
 | Review and slack | 2 hrs 15 min |

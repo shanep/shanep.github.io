@@ -6,13 +6,13 @@
 
 - **1.5**: Describe the legal, regulatory, and ethical constraints on security work, including
   vulnerability disclosure and privacy obligations.
-  ([TLO 1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation))
+  Terminal learning objective (TLO): [TLO 1](../objectives.md#tlo-1-security-goals-terminology-principles-ethics-and-regulation)
 
 ## Time estimate
 
 | Activity | Time |
 | --- | --- |
-| Read the case and the CyBOK sections | 15 min |
+| Read the case and the CyBOK (Cyber Security Body of Knowledge) sections | 15 min |
 | Initial post | 30 min |
 | Two replies | 15 min |
 | **Total** | **60 min** |
@@ -120,6 +120,6 @@ details enough that it is not identifiable.
 
 ## AI disclosure
 
-You may use AI tools. If you do, add a sentence saying which and what for, per the
+You may use AI (artificial intelligence) tools. If you do, add a sentence saying which and what for, per the
 [AI policy](../index.md#ai-policy). Part 3's "what would change your mind" is the hardest thing
 in this assignment to outsource and the most valuable thing in it to do yourself.

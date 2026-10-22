@@ -6,7 +6,7 @@ There is always more that could go wrong than you have money to fix. Risk manage
 discipline of deciding what to fix first, and defending that decision to somebody who wants the
 money for something else.
 
-This week has two halves. The first is CyBOK's treatment of risk: what it is, the elements a rating
+This week has two halves. The first is CyBOK's (Cyber Security Body of Knowledge) treatment of risk: what it is, the elements a rating
 is built from, and why "eliminate the risk" is not a thing that happens. A rating is meaningless
 without a stated scale, so Lab 2 makes you state yours. The second is threat modeling, the
 systematic method for finding what could go wrong, so that you find threats by working through a
@@ -21,7 +21,7 @@ By the end of this week, the successful student will be able to:
 - **[2.1](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats)**:
   Draw a data flow diagram for a described system and mark its trust boundaries.
 - **[2.2](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats)**:
-  Enumerate threats using STRIDE and record them in a threat table.
+  Enumerate threats using STRIDE (spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege) and record them in a threat table.
 - **[2.3](../objectives.md#tlo-2-modeling-subjects-objects-permissions-trust-boundaries-and-threats)**:
   Assess the likelihood and impact of identified threats using a stated risk method.
 

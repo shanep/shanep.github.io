@@ -21,7 +21,7 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §3.1 Introductory principles of law and legal research | 52-58 | 6 pp | 40 min |
+| [CyBOK (Cyber Security Body of Knowledge) v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §3.1 Introductory principles of law and legal research | 52-58 | 6 pp | 40 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §3.4 Data protection *(skim, for D2)* | 72-81 | 9 pp | 25 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §3.5 Computer crime *(skim, for D2)* | 81-86 | 5 pp | 15 min |
 | [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §3.13 Ethics: all of it, especially §3.13.3 on vulnerability testing and disclosure | 122-127 | 5 pp | 35 min |
@@ -84,7 +84,7 @@ Suppose you decide to report it. CyBOK §3.13.3 describes the norms:
 - **Full disclosure**: publish immediately, on the argument that users deserve to know and vendors
   only move under pressure.
 - **No disclosure**: tell nobody, not even the vendor. CyBOK notes this is hard to square with the
-  ACM Code's duty to report risks.
+  ACM (Association for Computing Machinery) Code's duty to report risks.
 
 Coordinated disclosure is the mainstream position, and the argument for it is that it balances the
 users' interest in a fix against their interest in not being attacked while one is being written.

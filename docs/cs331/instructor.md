@@ -9,6 +9,6 @@
   [book a time](https://calendar.app.google/3NEb1xLYYwZRejY18)
 - **Classroom:** Online (Asynchronous)
 
-Email from your BroncoMail account and include your name, student ID, and course and section
+Email from your BroncoMail account and include your name, student ID (identifier), and course and section
 number. Emails are answered within 24 hours, Monday-Friday, 9:00 am-5:00 pm Mountain Time; the
 [Communication Policy](index.md#communication-policy) has the details.
