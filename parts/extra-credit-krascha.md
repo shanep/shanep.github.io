@@ -5,8 +5,11 @@ reads how you talk to your AI and decides who the machines hunt first and who
 gets kept as a pet. Say please and he warms up to you. Call Copilot an idiot and
 he writes it down. Krascha remembers.
 
-He works as a plugin for both Claude Code and GitHub Copilot CLI. If you did the
-Copilot CLI mini-lab you already have everything you need.
+He works as a plugin for both Claude Code and GitHub Copilot CLI, so you need
+one of the two. If you have neither, GitHub Copilot is free for students through
+[GitHub Education](https://education.github.com/pack), and
+`npm install -g @github/copilot` installs Copilot CLI on any platform with
+Node.js 22 or later.
 
 ## Tasks
 

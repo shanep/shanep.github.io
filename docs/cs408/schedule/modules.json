@@ -309,6 +309,14 @@
         "due_at": "2026-12-11T23:59:00-07:00",
         "points": 10.0,
         "canvas_id": ""
+      },
+      {
+        "kind": "assignment",
+        "title": "16.04 Krascha's Verdict (15 min)",
+        "path": "assignments/16-04-krascha",
+        "due_at": "2026-12-11T23:59:00-07:00",
+        "points": 10.0,
+        "canvas_id": ""
       }
     ]
   }

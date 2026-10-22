@@ -155,6 +155,24 @@
       },
       "title": "16.03 Finding Typos, Bugs, and Improvements (15 min)"
     },
+    "assignments/16-04-krascha.md": {
+      "canvas_id": "1834578",
+      "extra": {},
+      "kind": "assignment",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-22T03:26:14.864Z",
+        "canvas": {
+          "body": "6729f320828a1e7e",
+          "settings": "416ba8daa1fe2be2"
+        },
+        "repo": {
+          "body": "bf73dfa3296240c3",
+          "settings": "416ba8daa1fe2be2"
+        }
+      },
+      "title": "16.04 Krascha's Verdict (15 min)"
+    },
     "discussions/01-03-class-introductions.md": {
       "canvas_id": "1106501",
       "extra": {
@@ -598,20 +616,6 @@
       },
       "title": "01.06 AI Class Policy "
     },
-    "notes/01-06-css-layout.md": {
-      "canvas_id": "01-dot-06-css-layout-1-2-hrs",
-      "extra": {},
-      "kind": "page",
-      "page_url": "01-dot-06-css-layout-1-2-hrs",
-      "title": "01.06 CSS Layout (1 - 2 hrs) "
-    },
-    "notes/01-07-accessibility.md": {
-      "canvas_id": "01-dot-07-accessibility-2-4-hrs",
-      "extra": {},
-      "kind": "page",
-      "page_url": "01-dot-07-accessibility-2-4-hrs",
-      "title": "01.07 Accessibility (2 - 4 hrs)"
-    },
     "notes/01-07-cs208-html.md": {
       "canvas_id": "01-dot-07-cs208-html",
       "extra": {},
@@ -731,12 +735,12 @@
       }
     },
     "[[module]] Week 16 - Final Project Showcase": {
-      "at": "2026-10-13T20:25:38.345Z",
+      "at": "2026-10-22T03:26:37.307Z",
       "canvas": {
-        "items": "1d17bbaaf5896054"
+        "items": "8686f29c88c0292c"
       },
       "repo": {
-        "items": "1d17bbaaf5896054"
+        "items": "8686f29c88c0292c"
       }
     },
     "[[module]] Week 2 - CS208 Database Review": {

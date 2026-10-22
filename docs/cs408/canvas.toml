@@ -133,6 +133,9 @@ group = "Extra Credit"
 [override."assignments/16-03-finding-typos-bugs-and-improvements.md"]
 group = "Extra Credit"
 
+[override."assignments/16-04-krascha.md"]
+group = "Extra Credit"
+
 [override."discussions/course-questions.md"]
 group = "Extra Credit"
 
@@ -215,4 +218,5 @@ items = [
     "discussions/16-01-project-showcase.md",
     "assignments/16-02-end-of-semester-student-evaluation.md",
     "assignments/16-03-finding-typos-bugs-and-improvements.md",
+    "assignments/16-04-krascha.md",
 ]

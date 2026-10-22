@@ -400,6 +400,7 @@ function cs408(): DefaultTheme.SidebarItem[] {
         { text: '07.02 EC2 and Project Configuration', link: 'assignments/07-02-ec2-and-project-configuration' },
         { text: '16.02 Student Evaluation',           link: 'assignments/16-02-end-of-semester-student-evaluation' },
         { text: '16.03 Typos, Bugs, and Improvements', link: 'assignments/16-03-finding-typos-bugs-and-improvements' },
+        { text: "16.04 Krascha's Verdict",           link: 'assignments/16-04-krascha' },
       ]
     },
     {
