@@ -111,7 +111,9 @@ I also checked by hand what a script cannot judge:
 
 - **Images**: the 215 module icons have empty alt text, because they repeat the
   heading next to them. The home page banner is now decoration only (see
-  below), and the instructor photo has real alt text.
+  below), and the instructor photo has real alt text. Canvas drops an empty
+  alt when it draws a page unless the image also has `role="presentation"`, so
+  every decorative image carries both, and the check now flags one that does not.
 - **Instructions** (1.3.3): no step depends on shape, color, or position alone.
 - **Diagrams**: the course has no images of text and no ASCII diagrams. Lab 2
   asks students for a threat model diagram and accepts a plain-text one, so

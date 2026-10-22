@@ -301,6 +301,9 @@ if (args.canvas) {
     await page.setContent(`<!doctype html><html lang="en"><head><meta charset="utf-8"><title>${esc(title)}</title></head>
 <body style="font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #2d3b45; background: #fff; font-size: 16px">
 <main><h1>${esc(title)}</h1><div class="user_content">${readFileSync(join(snap, rel), 'utf-8')}</div></main></body></html>`, { waitUntil: 'load' })
+    // Canvas stores alt="" but drops it when it draws the page, unless the image also has
+    // role="presentation". Drop it here too, so axe reports the missing alt.
+    await page.evaluate(() => { for (const img of document.querySelectorAll('img[alt=""]:not([role])')) img.removeAttribute('alt') })
     const r = await new AxeBuilder({ page }).withTags(TAGS).analyze()
     for (const v of r.violations) found.canvas.push({ page: rel, title, id: v.id, help: v.help, nodes: nodes(v) })
     for (const l of await page.evaluate(linkProblems, ['.user_content', AAA])) found.canvas.push({ page: rel, title, id: 'link-text', help: l.problem, nodes: [{ target: l.href, html: l.text }] })
