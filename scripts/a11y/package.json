@@ -1,0 +1,10 @@
+{
+  "name": "a11y-check",
+  "private": true,
+  "type": "module",
+  "description": "Accessibility check for the course site and Canvas snapshots; run it with npm run a11y",
+  "dependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "playwright": "1.57.0"
+  }
+}

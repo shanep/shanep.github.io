@@ -86,6 +86,27 @@ Two modules from the shell are shared the same way, from `shared/` at the repo r
   the same way, adds `"course-resources/*.md"`, and declares the module with `publish = true`
   so every push publishes it, alongside its own Instructor Information page.
 
+## Accessibility
+
+The courses target WCAG 2.1 AA. `npm run a11y` checks one course against WCAG 2.2 A and AA:
+axe-core on every page in light and dark mode, contrast axe cannot decide, link text, reflow at
+320 px and visible focus, plus every body in a Canvas snapshot with `--canvas`. It exits 1 on any
+failure. The tools live in `scripts/a11y/`, their own package, so the build and CI never install
+them.
+
+```bash
+edutools pull 52107 --out /tmp/cs331-canvas
+npm run a11y -- --course cs331 --canvas /tmp/cs331-canvas
+npm run a11y:pdf -- reviews/cs331-accessibility-2026-10.md   # tagged PDF to email
+```
+
+The report for each course lives in `reviews/`, with its PDF committed next to it. Rerun the check
+and update the report after a big change to a course or the theme.
+
+`docs/.vitepress/theme/components/` overrides two VitePress components (the sidebar item and the
+search button) to fix accessibility failures upstream. Check them against VitePress when it
+updates, and drop them once upstream is fixed.
+
 ## Building the site
 
 ```bash
