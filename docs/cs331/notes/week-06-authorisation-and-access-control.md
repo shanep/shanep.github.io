@@ -37,7 +37,7 @@ Two of the reference monitor's three requirements are the *complete mediation* a
 
 Start with a matrix: subjects down the side, objects across the top, rights in the cells.
 
-|  | `report.pdf` | `payroll.db` | `/var/log/app.log` |
+| Subject | `report.pdf` | `payroll.db` | `/var/log/app.log` |
 | --- | --- | --- | --- |
 | **alice** | r w | r w d | r |
 | **bob** | r | - | - |
@@ -79,7 +79,7 @@ correspond to a role has to become a new role, and organizations end up with tho
 Let's take three subjects and three objects from SnapVault, using facts from the description. See
 the table below.
 
-|  | Private album | Photo storage bucket | Access log |
+| Subject | Private album | Photo storage bucket | Access log |
 | --- | --- | --- | --- |
 | **Registered user (own albums)** | r w d g | - *(no direct access; only through the API)* | - |
 | **Support staff (shared admin login)** | r w d | ? | ? |

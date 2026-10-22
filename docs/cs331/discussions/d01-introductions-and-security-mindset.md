@@ -9,7 +9,7 @@
 
 ## Time estimate
 
-| | |
+| Activity | Time |
 | --- | --- |
 | Initial post | 30 min |
 | One reply | 15 min |

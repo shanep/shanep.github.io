@@ -134,7 +134,7 @@ which compiler to use.
 
 §15.4 covers three things commonly cited as making memory-safety bugs a solved problem:
 
-| | What it does | Stops this exploit? | Removes the bug? |
+| Defense | What it does | Stops this exploit? | Removes the bug? |
 | --- | --- | --- | --- |
 | **Stack canary** | Puts a known value between the locals and the return address; checks it before returning | Usually: it turns the exploit into a controlled crash | **No** |
 | **ASLR** | Randomizes where things are loaded, so the attacker cannot predict addresses | Makes it much harder, not impossible: leaks and brute force exist | **No** |

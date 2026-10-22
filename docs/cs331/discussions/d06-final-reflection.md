@@ -20,7 +20,7 @@ objective: it asks you to judge your own position against
 
 ## Time estimate
 
-| | |
+| Activity | Time |
 | --- | --- |
 | Re-read the objectives and your own work | 20 min |
 | Post | 25 min |

@@ -12,7 +12,7 @@
 
 ## Time estimate
 
-| | |
+| Activity | Time |
 | --- | --- |
 | Find and read a source | 15 min |
 | Initial post | 30 min |

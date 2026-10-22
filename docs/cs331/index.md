@@ -154,7 +154,7 @@ printed page numbers shown in the PDF's footers.
 | Finals | May 3-7 | Wrap-up | No new reading | [D6 reflection](discussions/d06-final-reflection.md) |
 
 Spring break, the last day of instruction (April 30), and finals week (May 3-7) follow the
-[registrar's academic calendar](https://www.boisestate.edu/registrar/boise-state-academic-calendars/spring-2027-academic-calendar/).
+[registrar's Spring 2027 academic calendar](https://www.boisestate.edu/registrar/boise-state-academic-calendars/spring-2027-academic-calendar/).
 
 ## Assessments
 

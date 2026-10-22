@@ -13,7 +13,7 @@
 
 ## Time estimate
 
-| | |
+| Activity | Time |
 | --- | --- |
 | Find a policy and read NIST §3 | 15 min |
 | Run `password_demo.py` | 10 min |

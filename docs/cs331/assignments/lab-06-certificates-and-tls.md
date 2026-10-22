@@ -41,10 +41,12 @@ expired, one issued for the wrong name.
 
 Visit the [Boise State home page](https://www.boisestate.edu) and open the certificate your browser received.
 
-- **Chrome / Edge / Opera:** click the icon left of the address bar → *Connection is secure* → *Certificate
-  is valid*.
-- **Firefox:** click the padlock → *Connection secure* → *More information* → *View Certificate*.
-- **Safari:** click the padlock → *Show Certificate*.
+- **Chrome / Edge / Opera:** click the *View site information* button at the left end of the
+  address bar → *Connection is secure* → *Certificate is valid*.
+- **Firefox:** click the site information button (the padlock) at the left end of the address bar
+  → *Connection secure* → *More information* → *View Certificate*.
+- **Safari:** click the site information button (the padlock) in the address field → *Show
+  Certificate*.
 
 Find the **Details** or **certificate chain** view, which shows all the certificates from the
 server's own certificate up to the root.

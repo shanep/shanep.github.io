@@ -70,8 +70,8 @@ function points(item: Item): string {
   <div class="modules">
     <section v-for="m in modules" :key="m.title" class="module">
       <header class="module-header">
-        <span class="module-caret">▾</span>
-        <span class="module-title">{{ m.title }}</span>
+        <span class="module-caret" aria-hidden="true">▾</span>
+        <h2 class="module-title">{{ m.title }}</h2>
       </header>
       <ul class="module-items">
         <template v-for="(item, i) in m.items" :key="i">
@@ -79,6 +79,7 @@ function points(item: Item): string {
         <li v-else class="module-item">
           <span class="item-icon" :title="LABELS[item.kind]" aria-hidden="true">{{ ICONS[item.kind] }}</span>
           <span class="item-body">
+            <span class="visually-hidden">{{ LABELS[item.kind] }}: </span>
             <a v-if="href(item)" :href="href(item)" class="item-title">{{ item.title }}</a>
             <span v-else class="item-title item-title--native">{{ item.title }}</span>
             <span v-if="due(item) || points(item)" class="item-meta">
@@ -120,13 +121,21 @@ function points(item: Item): string {
 }
 
 .module-caret {
-  color: var(--vp-c-text-3);
+  /* text-3 is 2.87:1 on the header, under the 3:1 WCAG 1.4.11 asks of icons. */
+  color: var(--vp-c-text-2);
   font-size: 0.85rem;
 }
 
+/* An h2, so a screen reader can jump from module to module, but styled as
+   the row label it was. .vp-doc h2 adds a rule, margins and a larger size. */
 .module-title {
+  margin: 0;
+  padding: 0;
+  border: 0;
   font-weight: 700;
   font-size: 0.95rem;
+  line-height: inherit;
+  letter-spacing: normal;
   color: var(--vp-c-text-1);
 }
 

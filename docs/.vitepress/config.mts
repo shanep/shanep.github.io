@@ -3,6 +3,7 @@ import footnote from 'markdown-it-footnote'
 import container from 'markdown-it-container'
 import { globSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { cvPdf } from './cv-pdf'
 
 // Course files carry `draft: true` in their frontmatter while they are being
@@ -128,7 +129,10 @@ export default defineConfig({
   // through a symlink in each course directory. They go to Canvas, never to the site.
   srcExclude: [...drafts, '**/instructor-resources/**'],
   markdown: {
-    theme: { light: 'github-light', dark: 'github-dark' },
+    // github-light and github-dark put some keywords, names and comments under
+    // 4.5:1 against the code block background (WCAG 1.4.3). Their high-contrast
+    // versions clear it.
+    theme: { light: 'github-light-high-contrast', dark: 'github-dark-high-contrast' },
     config: (md) => {
         // Runs on the raw markdown, before anything is parsed, so the section
         // never reaches the page, the outline, or the search index.
@@ -164,6 +168,18 @@ export default defineConfig({
       // outside the course (../shared/...), so they lose the course sidebar
       // and the edit link pattern below never matches them.
       preserveSymlinks: true,
+      // Two default theme components replaced with fixed copies for WCAG 2.1 AA.
+      // Each file says what it changes and when it can go.
+      alias: [
+        {
+          find: /^.*\/VPSidebarItem\.vue$/,
+          replacement: fileURLToPath(new URL('./theme/components/VPSidebarItem.vue', import.meta.url)),
+        },
+        {
+          find: /^.*\/VPNavBarSearchButton\.vue$/,
+          replacement: fileURLToPath(new URL('./theme/components/VPNavBarSearchButton.vue', import.meta.url)),
+        },
+      ],
     },
     build: {
       // The 1.6 MB chunk is the local search index, which loads only when someone opens search.

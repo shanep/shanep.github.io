@@ -106,3 +106,10 @@
     margin: 0 !important;
   }
 }
+
+/* The language label in the corner of a code block is --vp-c-text-3 by
+   default, 2.9:1 against the block in light mode. WCAG 1.4.3 asks for 4.5:1,
+   and --vp-c-text-2 clears it in both modes. */
+:root {
+  --vp-code-lang-color: var(--vp-c-text-2);
+}

@@ -10,7 +10,7 @@
 
 ## Time estimate
 
-| | |
+| Activity | Time |
 | --- | --- |
 | Read the case and the CyBOK sections | 15 min |
 | Initial post | 30 min |
