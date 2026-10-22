@@ -562,5 +562,16 @@
       "page_url": "resources",
       "title": "Resources"
     }
+  },
+  "modules": {
+    "[[module]] Week 15-16: Security in Computer Networks": {
+      "at": "2026-10-22T03:12:10.090Z",
+      "canvas": {
+        "items": "f3399ed10b98d2f0"
+      },
+      "repo": {
+        "items": "f3399ed10b98d2f0"
+      }
+    }
   }
 }
