@@ -59,7 +59,9 @@ pre {
   line-height: 1.5;
 }
 
-code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+/* Canvas draws inline code red on gray at 5.21:1. The page text color is 14:1,
+   which clears the 7:1 WCAG AAA 1.4.6 asks for. */
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: #22252A; }
 
 /* --- section icons, inserted from the [icons] table in canvas.toml ------ */
 

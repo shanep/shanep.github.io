@@ -1,6 +1,6 @@
 # Home
 
-<img class="cs-banner" src="./images/cs331-banner.svg" alt="CS 331: Computer Security and Information Assurance">
+<img class="cs-banner" src="./images/cs331-banner.svg" alt="">
 
 ## Welcome to CS 331: Computer Security and Information Assurance
 
