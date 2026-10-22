@@ -93,7 +93,8 @@ const translate = createSearchTranslate(defaultTranslations)
     border-radius: 8px;
     padding: 0 10px 0 12px;
     width: 100%;
-    height: 40px;
+    /* VitePress uses 40 px, under the 44 px WCAG AAA 2.5.5 asks for. */
+    height: 44px;
     background-color: var(--vp-c-bg-alt);
   }
 

@@ -1,8 +1,8 @@
 // Accessibility check for one course, against WCAG 2.2 A and AA (which
-// includes 2.1 AA). Run it through check.sh, which installs the tools and
-// builds the site first.
+// includes 2.1 AA), or AAA with --level aaa. Run it through check.sh, which
+// installs the tools and builds the site first.
 //
-// usage: node check.mjs --course cs331 [--canvas <snapshot dir>] [--out results.json]
+// usage: node check.mjs --course cs331 [--level aa|aaa] [--canvas <snapshot dir>] [--out results.json]
 //
 // On every built page of the course, in light and in dark mode:
 //   - axe-core with the wcag2a, wcag2aa, wcag21a, wcag21aa, wcag22aa and
@@ -17,6 +17,19 @@
 // With --canvas, axe and the link checks also run over every body in an
 // `edutools pull` snapshot, framed the way Canvas shows it.
 //
+// --level aaa adds axe's wcag2aaa rules, raises the hand contrast check to
+// 7:1 (4.5:1 for large text), and checks what axe does not:
+//   - 2.4.12 and 2.4.13: the focused element is not under the sticky nav bar,
+//     and its focus ring is at least 2 px with 3:1 contrast
+//   - 2.5.5: every target outside a sentence is at least 44 by 44 px
+//   - 3.2.5: a link that opens a new tab says so in its name
+//   - 1.4.8: body text has line spacing of at least 1.5, paragraph spacing of
+//     at least 1.5 line heights, and is not justified
+//   - 1.4.9: no image whose alt text reads like a title (an image of text)
+//     outside the site's own logo
+// Some AAA criteria need a person (reading level, abbreviations, unusual
+// words), so a clean AAA run is necessary but not enough.
+//
 // Prints a summary and exits 1 if anything fails.
 import { chromium } from 'playwright'
 import AxeBuilder from '@axe-core/playwright'
@@ -26,8 +39,9 @@ import { extname, join, resolve } from 'node:path'
 import { parseArgs } from 'node:util'
 
 const { values: args } = parseArgs({
-  options: { course: { type: 'string' }, canvas: { type: 'string' }, out: { type: 'string' } },
+  options: { course: { type: 'string' }, level: { type: 'string', default: 'aa' }, canvas: { type: 'string' }, out: { type: 'string' } },
 })
+const AAA = args.level === 'aaa'
 if (!args.course) {
   console.error('usage: node check.mjs --course <id> [--canvas <snapshot dir>] [--out <file>]')
   process.exit(2)
@@ -35,6 +49,7 @@ if (!args.course) {
 const root = resolve(import.meta.dirname, '../..')
 const dist = join(root, 'docs/.vitepress/dist')
 const TAGS = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'best-practice']
+if (AAA) TAGS.push('wcag2aaa')
 
 // The site uses clean URLs, so /cs331/objectives is objectives.html on disk.
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml',
@@ -57,13 +72,13 @@ if (!pages.length) {
   process.exit(2)
 }
 
-const found = { axe: [], review: [], contrast: [], links: [], reflow: [], focus: [], canvas: [] }
+const found = { axe: [], review: [], contrast: [], links: [], reflow: [], focus: [], canvas: [], targets: [], text: [] }
 const nodes = (v) => v.nodes.map((n) => ({ target: n.target.join(' '), html: n.html.slice(0, 200), summary: n.failureSummary }))
 
 // Contrast of every text node inside each selector, against the first opaque
 // background up the ancestor chain. Large text (24 px, or 18.66 px bold) needs
 // 3:1, the rest 4.5:1. Glyphs hidden from assistive tech are icons and need 3:1.
-function contrastOf(selectors) {
+function contrastOf([selectors, aaa]) {
   const parse = (c) => { const m = c.match(/[\d.]+/g).map(Number); return { r: m[0], g: m[1], b: m[2], a: m[3] ?? 1 } }
   const lum = ({ r, g, b }) => {
     const f = (v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4 }
@@ -85,32 +100,100 @@ function contrastOf(selectors) {
       const ratio = (hi + 0.05) / (lo + 0.05)
       const size = parseFloat(s.fontSize)
       const large = size >= 24 || (size >= 18.66 && Number(s.fontWeight) >= 700)
-      const need = large || t.closest('[aria-hidden="true"]') ? 3 : 4.5
+      const need = t.closest('[aria-hidden="true"]') ? 3 : aaa ? (large ? 4.5 : 7) : (large ? 3 : 4.5)
       if (ratio < need) out.push({ target: sel, text: t.textContent.trim().slice(0, 40), color: s.color, ratio: +ratio.toFixed(2), need })
     }
   }
   return out
 }
 
-// Link text problems inside one container.
-function linkProblems(scope) {
-  const GENERIC = /^(click here|here|this|link|more|read more|this link|this page|page|website|download)$/i
+// Link text problems inside one container. With aaa, links anywhere on the
+// page must also say when they open a new tab.
+function linkProblems([scope, aaa]) {
   const out = []
+  if (aaa) for (const a of document.querySelectorAll('a[target="_blank"]')) {
+    const text = (a.innerText || a.getAttribute('aria-label') || '').trim().replace(/\s+/g, ' ')
+    if (!/new (tab|window)/i.test(text)) out.push({ problem: 'opens a new tab without saying so', text, href: a.getAttribute('href') })
+  }
+  const GENERIC = /^(click here|here|this|link|more|read more|this link|this page|page|website|download)$/i
   const targets = new Map()
   for (const a of document.querySelectorAll(`${scope} a[href]`)) {
     if (a.classList.contains('header-anchor')) continue
     const text = (a.innerText || a.getAttribute('aria-label') || [...a.querySelectorAll('img')].map((i) => i.alt).join(' ')).trim().replace(/\s+/g, ' ')
     const href = a.getAttribute('href')
+    // Compare where links go, not how they are written: ./../ and /cs331/index are the same page.
+    const dest = a.href.replace(/[?#].*/, '').replace(/(\/index)?(\.html)?$/, '').replace(/\/$/, '')
     if (GENERIC.test(text)) out.push({ problem: 'says nothing', text, href })
     if (/^(https?:\/\/|www\.)/.test(text)) out.push({ problem: 'raw URL', text, href })
     if (text && !href.startsWith('#')) {
       const key = text.toLowerCase()
       const set = targets.get(key) ?? new Set()
-      set.add(href.replace(/[?#].*/, '').replace(/\.html$/, ''))
+      set.add(dest)
       targets.set(key, set)
     }
   }
   for (const [text, set] of targets) if (set.size > 1) out.push({ problem: 'same text, different targets', text, href: [...set].join(' ') })
+  return out
+}
+
+// 2.5.5: targets under 44 by 44 px. The criterion exempts a target "in a
+// sentence or block of text", which here means an inline link in a paragraph,
+// list item or table cell of the page body. The size is what takes a click,
+// so a small element passes when the clickable area through its center is
+// 44 px each way (a pseudo-element can widen it without changing the look). An
+// element hidden until focused, like the skip link, is measured focused.
+function smallTargets() {
+  const out = []
+  // Walk out from the center in each direction until a point no longer
+  // lands on the element, and measure the clickable width and height.
+  const hits = (e) => {
+    const r = e.getBoundingClientRect()
+    const [x, y] = [r.left + r.width / 2, r.top + r.height / 2]
+    const on = (px, py) => { const h = document.elementFromPoint(px, py); return h && (h === e || e.contains(h)) }
+    const reach = (dx, dy) => { let d = 0; while (d < 60 && on(x + dx * (d + 1), y + dy * (d + 1))) d++; return d }
+    return reach(-1, 0) + reach(1, 0) + 1 >= 44 && reach(0, -1) + reach(0, 1) + 1 >= 44
+  }
+  for (const e of document.querySelectorAll('a[href], button, [role="button"], input, select, summary, [tabindex="0"]')) {
+    const s = getComputedStyle(e)
+    if (s.visibility === 'hidden' || e.closest('[aria-hidden="true"], [inert]')) continue
+    const hidden = s.clip !== 'auto' || s.clipPath !== 'none'
+    if (hidden) e.focus()
+    let r = e.getBoundingClientRect()
+    if (!r.width || !r.height) { if (hidden) e.blur(); continue }
+    if (s.display === 'inline' && e.closest('.vp-doc p, .vp-doc li, .vp-doc td, .vp-doc th, .vp-doc dd, .vp-doc blockquote')) continue
+    let ok = r.width >= 44 && r.height >= 44
+    if (!ok) {
+      e.scrollIntoView({ block: 'center', inline: 'center', behavior: 'instant' })
+      r = e.getBoundingClientRect()
+      ok = hits(e)
+    }
+    if (hidden) e.blur()
+    if (ok) continue
+    const text = (e.innerText || e.getAttribute('aria-label') || '').trim().slice(0, 40)
+    out.push({ element: `${e.tagName.toLowerCase()}.${(typeof e.className === 'string' ? e.className : '').trim().split(/\s+/)[0]}`, text, size: `${Math.round(r.width)}x${Math.round(r.height)}` })
+  }
+  return out
+}
+
+// 1.4.8 and 1.4.9: spacing and alignment of body text, and images of text.
+function textSpacing() {
+  const out = []
+  for (const p of document.querySelectorAll('.vp-doc p')) {
+    if (!p.textContent.trim()) continue
+    const s = getComputedStyle(p)
+    const size = parseFloat(s.fontSize)
+    const line = s.lineHeight === 'normal' ? size * 1.2 : parseFloat(s.lineHeight)
+    if (line / size < 1.5) out.push({ problem: 'line spacing under 1.5', text: p.textContent.trim().slice(0, 40), value: +(line / size).toFixed(2) })
+    if (s.textAlign === 'justify') out.push({ problem: 'justified text', text: p.textContent.trim().slice(0, 40) })
+    const next = p.nextElementSibling
+    if (next?.tagName === 'P') {
+      const gap = next.getBoundingClientRect().top - p.getBoundingClientRect().bottom
+      if (line + gap < 1.5 * line - 0.5) out.push({ problem: 'paragraph spacing under 1.5 lines', text: p.textContent.trim().slice(0, 40), value: +((line + gap) / line).toFixed(2) })
+    }
+  }
+  for (const img of document.querySelectorAll('.vp-doc img[alt]')) {
+    if (img.alt && /^[A-Z0-9 :&-]{12,}$|^CS ?\d+:/.test(img.alt)) out.push({ problem: 'image of text', text: img.alt })
+  }
   return out
 }
 
@@ -127,10 +210,16 @@ for (const scheme of ['light', 'dark']) {
     for (const v of r.violations) found.axe.push({ page: rel, scheme, id: v.id, help: v.help, nodes: nodes(v) })
     for (const v of r.incomplete) {
       found.review.push({ page: rel, scheme, id: v.id, help: v.help, nodes: nodes(v) })
-      if (v.id !== 'color-contrast') continue
-      for (const c of await page.evaluate(contrastOf, v.nodes.map((n) => n.target.join(' ')))) found.contrast.push({ page: rel, scheme, ...c })
+      if (v.id !== 'color-contrast' && v.id !== 'color-contrast-enhanced') continue
+      for (const c of await page.evaluate(contrastOf, [v.nodes.map((n) => n.target.join(' ')), AAA])) found.contrast.push({ page: rel, scheme, ...c })
     }
-    if (scheme === 'light') for (const l of await page.evaluate(linkProblems, '.vp-doc')) found.links.push({ page: rel, ...l })
+    if (scheme === 'light') {
+      for (const l of await page.evaluate(linkProblems, ['.vp-doc', AAA])) found.links.push({ page: rel, ...l })
+      if (AAA) {
+        for (const t of await page.evaluate(smallTargets)) found.targets.push({ page: rel, ...t })
+        for (const t of await page.evaluate(textSpacing)) found.text.push({ page: rel, ...t })
+      }
+    }
   }
   await ctx.close()
 }
@@ -148,6 +237,8 @@ for (const rel of pages) {
     return { scrollWidth: document.documentElement.scrollWidth, width: w, wide }
   })
   if (r.scrollWidth > r.width + 1 || r.wide.length) found.reflow.push({ page: rel, ...r })
+  // Narrow screens swap in their own controls (the menu buttons), so measure targets here too.
+  if (AAA) for (const t of await narrow.evaluate(smallTargets)) found.targets.push({ page: rel, width: 320, ...t })
 }
 
 // Tab through each page until focus comes back around, and flag any stop with
@@ -164,15 +255,32 @@ for (const rel of pages) {
       const s = getComputedStyle(e)
       const path = []
       for (let n = e; n && n !== document.body; n = n.parentElement) path.unshift(n.tagName.toLowerCase() + (typeof n.className === 'string' && n.className.trim() ? '.' + n.className.trim().split(/\s+/)[0] : ''))
+      // 2.4.13: a ring at least 2 px wide, at 3:1 against the page.
+      const parse = (c) => { const m = c.match(/[\d.]+/g).map(Number); return [m[0], m[1], m[2]] }
+      const lum = (c) => { const [r, g, b] = c.map((v) => (v /= 255) <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4); return 0.2126 * r + 0.7152 * g + 0.0722 * b }
+      const [hi, lo] = [lum(parse(s.outlineColor)), lum(parse(getComputedStyle(document.body).backgroundColor))].sort((x, y) => y - x)
+      const ring = s.outlineStyle !== 'none' && parseFloat(s.outlineWidth) >= 2 && (hi + 0.05) / (lo + 0.05) >= 3
+      // 2.4.12: no part of it under a fixed or sticky bar it is not inside.
+      // Something drawn above the bar, like the skip link, is not covered,
+      // so this asks what is on top at the element's corners and center.
+      const r = e.getBoundingClientRect()
+      const bars = [...document.querySelectorAll('.VPNav, .VPLocalNav')].filter((bar) => !bar.contains(e))
+      // The corner points sit 8 px in, past a rounded corner.
+      const covered = r.width > 0 && [[r.left + 8, r.top + 8], [r.right - 8, r.top + 8], [r.left + r.width / 2, r.top + r.height / 2]]
+        .filter(([, y]) => y >= 0 && y < innerHeight)
+        .some(([x, y]) => { const h = document.elementFromPoint(x, y); return h && !e.contains(h) && bars.some((bar) => bar.contains(h)) })
       return {
         key: path.join('>'),
         text: (e.textContent || e.getAttribute('aria-label') || '').trim().slice(0, 50),
         shown: (s.outlineStyle !== 'none' && parseFloat(s.outlineWidth) > 0) || s.boxShadow !== 'none',
+        ring, covered,
       }
     })
     if (!f || seen.has(f.key + f.text)) break
     seen.add(f.key + f.text)
-    if (!f.shown) found.focus.push({ page: rel, element: f.key, text: f.text })
+    if (!f.shown) found.focus.push({ page: rel, problem: 'no visible focus', element: f.key, text: f.text })
+    else if (AAA && !f.ring) found.focus.push({ page: rel, problem: 'focus ring under 2 px or 3:1', element: f.key, text: f.text })
+    if (AAA && f.covered) found.focus.push({ page: rel, problem: 'focused element under the nav bar', element: f.key, text: f.text })
   }
 }
 
@@ -195,7 +303,7 @@ if (args.canvas) {
 <main><h1>${esc(title)}</h1><div class="user_content">${readFileSync(join(snap, rel), 'utf-8')}</div></main></body></html>`, { waitUntil: 'load' })
     const r = await new AxeBuilder({ page }).withTags(TAGS).analyze()
     for (const v of r.violations) found.canvas.push({ page: rel, title, id: v.id, help: v.help, nodes: nodes(v) })
-    for (const l of await page.evaluate(linkProblems, '.user_content')) found.canvas.push({ page: rel, title, id: 'link-text', help: l.problem, nodes: [{ target: l.href, html: l.text }] })
+    for (const l of await page.evaluate(linkProblems, ['.user_content', AAA])) found.canvas.push({ page: rel, title, id: 'link-text', help: l.problem, nodes: [{ target: l.href, html: l.text }] })
   }
 }
 
@@ -207,15 +315,16 @@ const failures = {
   'contrast under the minimum, worked out by hand': found.contrast.length,
   'link text problems (site)': found.links.length,
   'pages that do not reflow at 320 px': found.reflow.length,
-  'tab stops with no visible focus': found.focus.length,
+  [AAA ? 'tab stops with a focus problem' : 'tab stops with no visible focus']: found.focus.length,
+  ...(AAA ? { 'targets under 44 by 44 px': found.targets.length, 'text spacing and images of text': found.text.length } : {}),
   ...(args.canvas ? { 'axe violations and link text problems (Canvas)': found.canvas.length } : {}),
 }
-console.log(`${args.course}: ${pages.length} site pages in light and dark mode${args.canvas ? `, ${bodies.length} Canvas bodies` : ''}`)
+console.log(`${args.course} (WCAG 2.2 ${AAA ? 'AAA' : 'AA'}): ${pages.length} site pages in light and dark mode${args.canvas ? `, ${bodies.length} Canvas bodies` : ''}`)
 for (const [what, n] of Object.entries(failures)) console.log(`  ${String(n).padStart(4)}  ${what}`)
 const reviewIds = [...new Set(found.review.map((r) => r.id))].join(', ')
 console.log(`  ${String(found.review.length).padStart(4)}  needs-review groups from axe (${reviewIds || 'none'}); contrast ones are checked above`)
-for (const list of [found.axe, found.contrast, found.links, found.reflow, found.focus, found.canvas]) {
+for (const list of [found.axe, found.contrast, found.links, found.reflow, found.focus, found.canvas, found.targets, found.text]) {
   for (const f of list.slice(0, 20)) console.log('  -', JSON.stringify(f).slice(0, 240))
 }
-if (args.out) writeFileSync(args.out, JSON.stringify({ course: args.course, pages: pages.length, canvasBodies: bodies.length, ...found }, null, 1) + '\n')
+if (args.out) writeFileSync(args.out, JSON.stringify({ course: args.course, level: args.level, pages: pages.length, canvasBodies: bodies.length, ...found }, null, 1) + '\n')
 process.exit(Object.values(failures).some((n) => n > 0) ? 1 : 0)

@@ -88,17 +88,23 @@ Two modules from the shell are shared the same way, from `shared/` at the repo r
 
 ## Accessibility
 
-The courses target WCAG 2.1 AA. `npm run a11y` checks one course against WCAG 2.2 A and AA:
-axe-core on every page in light and dark mode, contrast axe cannot decide, link text, reflow at
-320 px and visible focus, plus every body in a Canvas snapshot with `--canvas`. It exits 1 on any
-failure. The tools live in `scripts/a11y/`, their own package, so the build and CI never install
-them.
+The courses target WCAG 2.2 AA plus the AAA criteria that can apply (CS331 meets 24 of 31, and the
+report lists the rest). `npm run a11y` checks one course against WCAG 2.2 A and AA: axe-core on
+every page in light and dark mode, contrast axe cannot decide, link text, reflow at 320 px and
+visible focus, plus every body in a Canvas snapshot with `--canvas`. `--level aaa` adds axe's AAA
+rules, 7:1 contrast, 44 px targets at 1280 and 320 px, the focus ring and sticky-bar checks,
+new-tab links, paragraph spacing and images of text. It exits 1 on any failure. The tools live in
+`scripts/a11y/`, their own package, so the build and CI never install them.
 
 ```bash
 edutools pull 52107 --out /tmp/cs331-canvas
-npm run a11y -- --course cs331 --canvas /tmp/cs331-canvas
+npm run a11y -- --course cs331 --level aaa --canvas /tmp/cs331-canvas
 npm run a11y:pdf -- reviews/cs331-accessibility-2026-10.md   # tagged PDF to email
 ```
+
+The AAA theme work lives in `docs/.vitepress/theme/style.css` (palette, focus ring, scroll
+padding, 44 px targets, paragraph spacing) and `config.mts` (code themes built to 7:1 at load
+time, external links in the same tab). Keep new theme colors at 7:1 and new controls at 44 px.
 
 The report for each course lives in `reviews/`, with its PDF committed next to it. Rerun the check
 and update the report after a big change to a course or the theme.

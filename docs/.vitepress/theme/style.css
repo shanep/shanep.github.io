@@ -113,3 +113,109 @@
 :root {
   --vp-code-lang-color: var(--vp-c-text-2);
 }
+
+/* WCAG AAA (1.4.6) asks for 7:1 text contrast. The VitePress palette is built
+   for AA: muted text is 5.2:1 and links 6.2:1 in light mode. These keep the
+   same hues, darkened (light mode) or lightened (dark mode) until they clear
+   7:1 on every background they sit on, including inline code and the tinted
+   custom blocks. */
+:root {
+  --vp-c-text-2: #4b4b4f;
+  --vp-c-indigo-1: #273d86;
+  --vp-c-purple-1: #51308d;
+  --vp-c-green-1: #104f33;
+  --vp-c-yellow-1: #653e21;
+  --vp-c-red-1: #7f1b1e;
+}
+
+.dark {
+  --vp-c-text-2: #bbbbc0;
+  --vp-c-indigo-1: #c2c8ff;
+  --vp-c-purple-1: #dac7fc;
+  --vp-c-green-1: #86e5b7;
+  --vp-c-yellow-1: #fbd294;
+  --vp-c-red-1: #fbb8c1;
+}
+
+/* WCAG AAA 2.4.13 (Focus Appearance) wants a focus indicator at least 2 px
+   thick with 3:1 contrast. The browser default is thinner on links, so every
+   focusable element gets the same solid ring in the link color. */
+:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+/* WCAG AAA 2.4.12 (Focus Not Obscured) does not allow the sticky nav bar to
+   cover any part of the focused element. The padding makes the browser
+   scroll a focused element below the nav bar, and below the local nav that
+   holds the menu button on narrow screens. */
+html {
+  scroll-padding-top: calc(var(--vp-nav-height) + 16px);
+}
+
+@media (max-width: 959px) {
+  html {
+    scroll-padding-top: calc(var(--vp-nav-height) + 48px + 16px);
+  }
+}
+
+/* WCAG AAA 2.5.5 (Target Size) wants every control outside a block of text to
+   be at least 44 by 44 px. The sidebar and the search button are fixed in
+   their own components. Outline rows grow to 44 px, which moves the marker
+   beside the active row down by half the difference. */
+.VPDocOutlineItem .outline-link {
+  line-height: 44px;
+}
+
+.VPDocAsideOutline .outline-marker {
+  margin-top: 6px;
+}
+
+.VPSocialLinks .VPSocialLink,
+.vp-doc [class*='language-'] > button.copy {
+  width: 44px;
+  height: 44px;
+}
+
+/* The appearance switch, the heading anchors and the narrow-screen "On this
+   page" button keep their look, and an empty pseudo-element around each one
+   makes the part that takes a click 44 px. The anchor's area starts at its
+   left edge and reaches over the heading, so it stays on screen at 320 px. */
+.VPSwitch::after,
+.vp-doc .header-anchor::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 44px;
+  height: 44px;
+  transform: translate(-50%, -50%);
+}
+
+.vp-doc .header-anchor::after {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.VPLocalNavOutlineDropdown > button::after {
+  content: '';
+  position: absolute;
+  inset: -10px 0;
+}
+
+.VPSkipLink:focus {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+/* WCAG AAA 1.4.8 (Visual Presentation) wants the space between paragraphs to
+   be at least 1.5 times the line spacing. VitePress puts no space between
+   paragraphs in a quote and 8 px between those in a tip box. */
+.vp-doc blockquote > p + p {
+  margin-top: 16px;
+}
+
+.vp-doc .custom-block p + p {
+  margin-top: 12px;
+}

@@ -149,7 +149,11 @@ function points(item: Item): string {
   display: flex;
   align-items: flex-start;
   gap: 0.8rem;
-  padding: 0.6rem 1rem 0.6rem 2rem;
+  /* 0.65rem keeps a one-line row 44 px tall, and the link's ::after below
+     covers the whole row, so each link takes a click across a 44 px target
+     (WCAG AAA 2.5.5). */
+  position: relative;
+  padding: 0.65rem 1rem 0.65rem 2rem;
   border-bottom: 1px solid var(--vp-c-divider);
   font-size: 0.9rem;
 }
@@ -188,6 +192,12 @@ function points(item: Item): string {
   color: var(--vp-c-brand-1);
   text-decoration: none;
   font-weight: 500;
+}
+
+.item-title::after {
+  content: '';
+  position: absolute;
+  inset: 0;
 }
 
 .item-title:hover {

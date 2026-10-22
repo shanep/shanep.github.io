@@ -4,7 +4,46 @@ import container from 'markdown-it-container'
 import { globSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { bundledThemes, type ThemeRegistration } from 'shiki'
 import { cvPdf } from './cv-pdf'
+
+// WCAG AAA (1.4.6) asks for 7:1 text contrast, and even GitHub's
+// high-contrast code themes put some tokens under it (light comments are
+// 4.7:1). This takes a bundled theme and moves each token color toward black
+// (light) or white (dark), in small steps, until it clears 7:1 against the
+// code block and a highlighted line in it. Colors already past 7:1 stay as
+// they are.
+type RGB = [number, number, number]
+const hex = (h: string): RGB => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)) as RGB
+const luminance = (c: RGB): number => {
+  const [r, g, b] = c.map((v) => (v /= 255) <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4)
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b
+}
+const contrast = (a: RGB, b: RGB): number => {
+  const [hi, lo] = [luminance(a), luminance(b)].sort((x, y) => y - x)
+  return (hi + 0.05) / (lo + 0.05)
+}
+async function aaaTheme(name: 'github-light-high-contrast' | 'github-dark-high-contrast', backgrounds: string[]): Promise<ThemeRegistration> {
+  const theme = structuredClone((await bundledThemes[name]()).default) as ThemeRegistration
+  const toward: RGB = theme.type === 'dark' ? [255, 255, 255] : [0, 0, 0]
+  const bgs = backgrounds.map(hex)
+  const fix = (color: string): string => {
+    if (!/^#[0-9a-f]{6}$/i.test(color)) return color
+    let c = hex(color)
+    for (let k = 0.02; bgs.some((b) => contrast(c, b) < 7.05) && k <= 1; k += 0.02) {
+      c = hex(color).map((v, i) => Math.round(v + (toward[i] - v) * k)) as RGB
+    }
+    return '#' + c.map((v) => v.toString(16).padStart(2, '0')).join('')
+  }
+  for (const rule of theme.tokenColors ?? []) {
+    if (rule.settings?.foreground) rule.settings.foreground = fix(rule.settings.foreground)
+  }
+  if (theme.colors?.['editor.foreground']) theme.colors['editor.foreground'] = fix(theme.colors['editor.foreground'])
+  return theme
+}
+// The code block background (--vp-c-bg-alt) and a highlighted line on it.
+const codeLight = await aaaTheme('github-light-high-contrast', ['#f6f6f7', '#e7e9ec'])
+const codeDark = await aaaTheme('github-dark-high-contrast', ['#161618', '#232529'])
 
 // Course files carry `draft: true` in their frontmatter while they are being
 // written. `edutools` reads the same flag to keep them out of Canvas; here it
@@ -129,10 +168,12 @@ export default defineConfig({
   // through a symlink in each course directory. They go to Canvas, never to the site.
   srcExclude: [...drafts, '**/instructor-resources/**'],
   markdown: {
-    // github-light and github-dark put some keywords, names and comments under
-    // 4.5:1 against the code block background (WCAG 1.4.3). Their high-contrast
-    // versions clear it.
-    theme: { light: 'github-light-high-contrast', dark: 'github-dark-high-contrast' },
+    // GitHub's high-contrast themes, adjusted to 7:1 by aaaTheme above.
+    theme: { light: codeLight, dark: codeDark },
+    // External links open in the same tab. A new tab is a change of context the
+    // reader did not ask for (WCAG AAA 3.2.5), and the back button stops
+    // working.
+    externalLinks: { target: '_self', rel: 'noreferrer' },
     config: (md) => {
         // Runs on the raw markdown, before anything is parsed, so the section
         // never reaches the page, the outline, or the search index.
@@ -212,7 +253,10 @@ export default defineConfig({
         const shared = /^[^/]+\/(course-resources\/.+)$/.exec(filePath)
         const path = shared ? `shared/${shared[1]}` : `docs/${filePath}`
         return `https://github.com/shanep/shanep.github.io/edit/master/${path}`
-      }
+      },
+      // The theme always opens this link in a new tab, so it says so up front
+      // (WCAG AAA 3.2.5). The GitHub icon below does the same in its name.
+      text: 'Edit this page on GitHub (opens in a new tab)'
     },
 
     sidebar: {
@@ -223,7 +267,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/shanep' }
+      { icon: 'github', link: 'https://github.com/shanep', ariaLabel: 'GitHub (opens in a new tab)' }
     ],
     footer: {
       message: 'Released under the MIT License.',
@@ -237,7 +281,7 @@ function cs331(): DefaultTheme.SidebarItem[] {
     {
       text: 'CS331',
       items: [
-        { text: 'Home',                   link: 'home' },
+        { text: 'Course Home',            link: 'home' },
         { text: 'Syllabus',               link: 'index' },
         { text: 'Schedule',               link: 'schedule/index' },
         { text: 'Instructor Information', link: 'instructor' },
@@ -322,7 +366,7 @@ function cs408(): DefaultTheme.SidebarItem[] {
     {
       text: 'CS408',
       items: [
-        { text: 'Home',                   link: 'home' },
+        { text: 'Course Home',            link: 'home' },
         { text: 'Syllabus',               link: 'index' },
         { text: 'Schedule',               link: 'schedule/index' },
         { text: 'Getting Started',        link: 'getting-started' },

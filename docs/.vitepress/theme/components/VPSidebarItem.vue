@@ -179,9 +179,11 @@ function onCaretClick() {
   flex-grow: 1;
 }
 
+/* 10 px of padding (VitePress uses 4) and the 44 px caret below make every
+   row at least 44 px tall, the target size WCAG AAA 2.5.5 asks for. */
 .text {
   flex-grow: 1;
-  padding: 4px 0;
+  padding: 10px 0;
   line-height: 24px;
   font-size: 14px;
   transition: color 0.25s;
@@ -238,9 +240,9 @@ function onCaretClick() {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -7px;
-  width: 32px;
-  height: 32px;
+  margin-right: -13px;
+  width: 44px;
+  height: 44px;
   color: var(--vp-c-text-3);
   cursor: pointer;
   transition: color 0.25s;
