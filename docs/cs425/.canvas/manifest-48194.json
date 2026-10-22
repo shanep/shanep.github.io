@@ -53,6 +53,16 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-22T02:52:12.166Z",
+        "canvas": {
+          "body": "b52d91f13389f445",
+          "settings": "664027aca3facec7"
+        },
+        "repo": {
+          "body": "7e33c79ee91084fc"
+        }
+      },
       "title": "A4 - Where Does This Datagram Go?"
     },
     "activities/a4-worksheet.pdf": {
@@ -102,25 +112,34 @@
       "kind": "assignment",
       "page_url": "",
       "synced": {
-        "at": "2026-10-18T04:08:40.812Z",
+        "at": "2026-10-22T02:54:09.039Z",
         "canvas": {
-          "body": "389fedfe5667955d",
+          "body": "b3a1a6d161bbeb68",
           "settings": "f7abc6890460635d"
         },
         "repo": {
-          "body": "661dfbfad256dd2a",
+          "body": "14d91a6773b08c76",
           "settings": "f7abc6890460635d"
         }
       },
       "title": "A7 - One Hop at a Time"
     },
     "activities/a7-worksheet.pdf": {
-      "canvas_id": "25309868",
+      "canvas_id": "25501348",
       "extra": {
-        "size": "119521"
+        "size": "119513"
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-22T02:53:11.076Z",
+        "canvas": {
+          "body": "4dea3d97d97db7e9"
+        },
+        "repo": {
+          "body": "c7158986af6778bd"
+        }
+      },
       "title": "a7-worksheet.pdf"
     },
     "activities/a8-noisy-link.md": {
@@ -128,15 +147,35 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-22T02:53:11.076Z",
+        "canvas": {
+          "body": "54a9924800ec9fce",
+          "settings": "783f7be7599a3271"
+        },
+        "repo": {
+          "body": "7b8c73dd85f63623",
+          "settings": "783f7be7599a3271"
+        }
+      },
       "title": "A8 - TCP on a Noisy Link"
     },
     "activities/a8-worksheet.pdf": {
-      "canvas_id": "25310222",
+      "canvas_id": "25501349",
       "extra": {
-        "size": "121954"
+        "size": "121840"
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-22T02:53:11.076Z",
+        "canvas": {
+          "body": "adcbcac63cf2e415"
+        },
+        "repo": {
+          "body": "3fc57f306f59258a"
+        }
+      },
       "title": "a8-worksheet.pdf"
     },
     "activities/a9-who-are-you-talking-to.md": {
@@ -144,6 +183,17 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-22T02:53:11.076Z",
+        "canvas": {
+          "body": "b0184732c89ed2c3",
+          "settings": "66f7312752bed473"
+        },
+        "repo": {
+          "body": "4b0c7972285c4603",
+          "settings": "66f7312752bed473"
+        }
+      },
       "title": "A9 - Who Are You Really Talking To?"
     },
     "activities/a9-worksheet.pdf": {
@@ -160,6 +210,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "in-class-activities",
+      "synced": {
+        "at": "2026-10-22T02:53:11.076Z",
+        "canvas": {
+          "body": "e64dd5d361cc9c2e",
+          "settings": "cd39202085886102"
+        },
+        "repo": {
+          "body": "d6d89b867a4c67cf",
+          "settings": "cd39202085886102"
+        }
+      },
       "title": "In Class Activities"
     },
     "activities/tcpmeter.py": {
@@ -199,6 +260,17 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-22T02:53:11.076Z",
+        "canvas": {
+          "body": "8ecd4b557f9cf2dc",
+          "settings": "f47e17a1dc65a8e8"
+        },
+        "repo": {
+          "body": "0123c32cf0ee6df8",
+          "settings": "f47e17a1dc65a8e8"
+        }
+      },
       "title": "M1 - Mini-Lab: GitHub Copilot CLI"
     },
     "assignments/p0.md": {
@@ -213,6 +285,19 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-22T02:53:11.076Z",
+        "canvas": {
+          "body": "3c169060a89c46ba",
+          "rubric": "1f195438aa36efc8",
+          "settings": "36e53a5729f3bd48"
+        },
+        "repo": {
+          "body": "da6efac21938f347",
+          "rubric": "1f195438aa36efc8",
+          "settings": "36e53a5729f3bd48"
+        }
+      },
       "title": "P1 - Simple Mail Client"
     },
     "assignments/p2-gbn-timeline.svg": {
@@ -247,6 +332,19 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-22T02:53:11.076Z",
+        "canvas": {
+          "body": "69836e2be01996b7",
+          "rubric": "55125b36fb1d6198",
+          "settings": "4e124de4a5c7f7e3"
+        },
+        "repo": {
+          "body": "80cba0369a901123",
+          "rubric": "55125b36fb1d6198",
+          "settings": "4e124de4a5c7f7e3"
+        }
+      },
       "title": "P2 - Reliable Data Transfer"
     },
     "assignments/p3.md": {
@@ -277,6 +375,19 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-22T02:53:11.076Z",
+        "canvas": {
+          "body": "d511c92c59ffe60a",
+          "rubric": "8ad3a2b365eabb85",
+          "settings": "bde4fd613f8887b7"
+        },
+        "repo": {
+          "body": "48a76c21d032032e",
+          "rubric": "8ad3a2b365eabb85",
+          "settings": "bde4fd613f8887b7"
+        }
+      },
       "title": "X1 - Midterm Alternative: Anatomy of a Page Load"
     },
     "extra-credit/ec-evaluation.md": {
@@ -313,12 +424,12 @@
       "kind": "syllabus",
       "page_url": "",
       "synced": {
-        "at": "2026-10-21T03:51:24.915Z",
+        "at": "2026-10-22T02:53:11.076Z",
         "canvas": {
-          "body": "93058e0070ae7a90"
+          "body": "f9fb092ea3259fe0"
         },
         "repo": {
-          "body": "07ef0783133556cf"
+          "body": "4a11f07cbf16a776"
         }
       },
       "title": "CS 425/525 Computer Networks"
@@ -335,6 +446,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "chapter-2-the-application-layer",
+      "synced": {
+        "at": "2026-10-22T02:53:11.076Z",
+        "canvas": {
+          "body": "dc5f6d921fe7adcf",
+          "settings": "7a0d40b71e393be1"
+        },
+        "repo": {
+          "body": "7e9a161f66b6b1cc",
+          "settings": "7a0d40b71e393be1"
+        }
+      },
       "title": "Chapter 2 - The Application Layer"
     },
     "notes/ch03-transport.md": {
@@ -370,6 +492,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "chapter-7-wireless-and-mobile-networks",
+      "synced": {
+        "at": "2026-10-22T02:53:11.076Z",
+        "canvas": {
+          "body": "f09d815756c26059",
+          "settings": "7d3f3757b3b80506"
+        },
+        "repo": {
+          "body": "dca69850a83ec8df",
+          "settings": "7d3f3757b3b80506"
+        }
+      },
       "title": "Chapter 7 - Wireless and Mobile Networks"
     },
     "notes/ch08-security.md": {
@@ -384,6 +517,17 @@
       "extra": {},
       "kind": "page",
       "page_url": "course-introduction",
+      "synced": {
+        "at": "2026-10-22T02:53:11.076Z",
+        "canvas": {
+          "body": "86b5271ea114aa67",
+          "settings": "cf5968c98226312c"
+        },
+        "repo": {
+          "body": "a50a40a9a734812f",
+          "settings": "cf5968c98226312c"
+        }
+      },
       "title": "Course Introduction"
     },
     "objectives.md": {
