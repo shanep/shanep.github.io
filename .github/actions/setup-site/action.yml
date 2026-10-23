@@ -1,0 +1,41 @@
+# Everything docs:build needs: Node, the npm packages (npm ci also turns on
+# the git hooks), and pandoc and Tectonic for the CV PDFs. The deploy and the
+# agent both use it, so they build the site the same way.
+
+name: Set up the site build
+description: Install Node, the npm packages, pandoc and Tectonic.
+
+runs:
+  using: composite
+  steps:
+    - name: Set up Node
+      uses: actions/setup-node@v7
+      with:
+        node-version: 24
+        cache: npm
+    - name: Install dependencies
+      shell: bash
+      run: npm ci
+    # The CV PDF is built from docs/cv/index.md with pandoc and Tectonic.
+    # Tectonic downloads only the LaTeX packages the CV uses; caching them
+    # takes the build from about a minute and a half to under a second.
+    # TECTONIC_CACHE_DIR pins where that cache lives, since Tectonic's default
+    # location changed between releases.
+    - name: Set up pandoc
+      uses: pandoc/actions/setup@v1
+      with:
+        version: '3.12'
+    - name: Point Tectonic at its cache
+      shell: bash
+      run: echo "TECTONIC_CACHE_DIR=$RUNNER_TEMP/tectonic-cache" >> "$GITHUB_ENV"
+    - name: Cache Tectonic packages
+      uses: actions/cache@v6
+      with:
+        path: ${{ runner.temp }}/tectonic-cache
+        key: ${{ runner.os }}-tectonic-${{ hashFiles('scripts/cv/template.tex', 'scripts/cv/cv.lua', 'docs/cv/index.md') }}
+        restore-keys: |
+          ${{ runner.os }}-tectonic-
+    - name: Set up Tectonic
+      uses: wtfjoke/setup-tectonic@v4
+      with:
+        tectonic-version: '0.17.0'

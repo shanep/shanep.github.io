@@ -1,0 +1,62 @@
+# Starts an unattended Claude session (shanep/claude-plugins/agent) when the
+# deploy fails on master, when I label an issue "agent", and once a week to
+# update the npm packages. The session's change lands only after a second
+# session reviews it and the site builds.
+
+name: agent
+
+on:
+  workflow_run:
+    workflows: [Deploy VitePress site to Pages]
+    types: [completed]
+    branches: [master]
+  issues:
+    types: [labeled]
+  schedule:
+    - cron: '0 15 * * 1'
+  workflow_dispatch:
+
+# One agent at a time, so two never race to land.
+concurrency:
+  group: agent
+  cancel-in-progress: false
+
+permissions:
+  actions: write
+  contents: write
+  issues: write
+
+jobs:
+  agent:
+    if: >-
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.conclusion == 'failure') ||
+      (github.event_name == 'issues' &&
+       github.event.label.name == 'agent' &&
+       github.actor == github.repository_owner) ||
+      github.event_name == 'schedule' ||
+      github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: ./.github/actions/setup-site
+      - uses: shanep/claude-plugins/agent@main
+        with:
+          mode: >-
+            ${{ github.event_name == 'workflow_run' && 'ci-fix' ||
+                github.event_name == 'issues' && 'issue' || 'task' }}
+          claude-oauth-token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          check: npm run lint:md && npm run docs:build
+          ci-workflows: static.yml
+          task: |
+            Update the npm packages. Run npm outdated and npm audit, then
+            npm update to move each package to the newest version its range in
+            package.json allows. Move a package to a new major version only when
+            npm audit needs it to clear an alert. Read the note on the vite
+            override in CLAUDE.md first and keep it unless VitePress no longer
+            needs it. Commit package.json and package-lock.json. If nothing is
+            outdated or vulnerable, make no commit.
