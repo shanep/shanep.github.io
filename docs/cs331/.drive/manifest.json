@@ -1,8 +1,12 @@
 {
+  "parent": {
+    "id": "1cuNzFubeI4CIkYFN4pL3Dy8VVmk4rBFx",
+    "name": "CS 331 - Shane Panter - 15w"
+  },
   "root": {
     "id": "1nt-ZafvmbpE3W2-RQiw8S6GMg1mGHDY9",
     "name": "CS331",
-    "parent": "",
+    "parent": "1cuNzFubeI4CIkYFN4pL3Dy8VVmk4rBFx",
     "sent": "",
     "modified": "2026-10-23T19:42:18.606Z"
   },

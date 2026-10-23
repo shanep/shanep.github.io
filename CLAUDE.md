@@ -97,7 +97,14 @@ in Drive. The command never changes permissions.
 edutools drive status docs/cs331             # which side changed since the last push
 edutools drive push   docs/cs331 --dry-run   # what would change, writes nothing
 edutools drive push   docs/cs331             # update the same Docs in place
+edutools drive folder docs/cs331             # pick the folder the course folder goes in
 ```
+
+The CS331 folder lives inside the eCampus folder "CS 331 - Shane Panter - 15w"
+(`1cuNzFubeI4CIkYFN4pL3Dy8VVmk4rBFx`), so everyone that folder is shared with can read it. The
+manifest's `parent` records it, and each push moves the course folder back there if it gets
+moved. `drive folder` opens Google's folder picker, because edutools can only reach a folder
+it made or one picked there.
 
 `docs/<course>/.drive/manifest.json` records every Drive id. Commit it after each push, or the
 next push from another checkout builds a second copy. A Doc someone edited in Drive shows as
