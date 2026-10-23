@@ -112,11 +112,11 @@ const loop: Diagram = {
 
 const triggers: Diagram = {
   title: 'Who starts the work',
-  caption: 'Four things can start an agent. Dotted ones are new and have not had a real run yet.',
+  caption: 'Four things can start an agent. The dotted one is new and has not had a real run yet.',
   desc:
     'Four triggers start a background Claude session: a prompt from me, CI failing on main, an ' +
-    'issue labeled for an agent, and a schedule. The prompt and the CI failure work today. The ' +
-    'issue and schedule triggers are built but have not had a real run yet, so they are drawn ' +
+    'issue labeled for an agent, and a schedule. The prompt, the CI failure and the schedule ' +
+    'work today. The issue trigger is built but has not had a real run yet, so it is drawn ' +
     'dotted. Each session runs in its own git worktree or on a fresh CI runner, then goes around ' +
     'the same loop as everything else: test, review and land.',
   wide: {
@@ -126,7 +126,7 @@ const triggers: Diagram = {
       { id: 'me', x: 110, y: 45, w: 180, h: 52, kind: 'user', lines: ['A prompt from me'] },
       { id: 'ci', x: 110, y: 120, w: 180, h: 52, kind: 'step', lines: ['CI fails on main'] },
       { id: 'issue', x: 110, y: 195, w: 180, h: 52, kind: 'planned', lines: ['A labeled issue'] },
-      { id: 'cron', x: 110, y: 270, w: 180, h: 52, kind: 'planned', lines: ['A schedule'] },
+      { id: 'cron', x: 110, y: 270, w: 180, h: 52, kind: 'step', lines: ['A schedule'] },
       { id: 'session', x: 390, y: 157, w: 180, h: 82, lines: ['Agent session', 'its own worktree', 'or CI runner'] },
       { id: 'loop', x: 605, y: 157, w: 150, h: 70, kind: 'check', lines: ['The loop', 'test, review, land'] },
       { id: 'legend', x: 20, y: 328, kind: 'note', align: 'start', lines: ['dotted border: not run for real yet'] },
@@ -146,7 +146,7 @@ const triggers: Diagram = {
       { id: 'me', x: 150, y: 30, w: 220, h: 44, kind: 'user', lines: ['A prompt from me'] },
       { id: 'ci', x: 150, y: 85, w: 220, h: 44, kind: 'step', lines: ['CI fails on main'] },
       { id: 'issue', x: 150, y: 140, w: 220, h: 44, kind: 'planned', lines: ['A labeled issue'] },
-      { id: 'cron', x: 150, y: 195, w: 220, h: 44, kind: 'planned', lines: ['A schedule'] },
+      { id: 'cron', x: 150, y: 195, w: 220, h: 44, kind: 'step', lines: ['A schedule'] },
       { id: 'session', x: 150, y: 305, w: 220, h: 64, lines: ['Agent session', 'worktree or CI runner'] },
       { id: 'loop', x: 150, y: 400, w: 220, h: 64, kind: 'check', lines: ['The loop', 'test, review, land'] },
       { id: 'legend', x: 150, y: 458, kind: 'note', lines: ['dotted border: not run for real yet'] },

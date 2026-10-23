@@ -139,7 +139,8 @@ own commit when it breaks CI, since that is how you get a loop. That one gets an
 The first real run fixed a shellcheck warning that only showed up on Linux, in the script that
 links my Claude config. The new CI job in my dotfiles repo failed, an agent fixed the line, the
 reviewer passed it, and the fix landed and passed CI in about a minute. I found out from the
-commit.
+commit. The first scheduled run updated this site's npm packages, and the site rebuilt and
+deployed in about 4 minutes, also without me.
 
 ## 5. Every agent gets its own worktree
 
@@ -237,8 +238,8 @@ Then run `/tune` in any session.
 | Autoupdate for my plugins | In place |
 | Background agents in their own worktrees | In place, started by hand |
 | A second agent reviewing before landing | In place |
-| Agents started by a CI failure | In place, in 3 repos |
-| Agents started by a labeled issue or a schedule | Built, no real run yet |
+| Agents started by a CI failure or a schedule | In place |
+| Agents started by a labeled issue | Built, no real run yet |
 | claude-tune as the source of truth for model and effort | Prototype |
 
 None of these rules works alone. Autoupdate means a push reaches everyone, so the tests have to
