@@ -3,7 +3,9 @@
 // text and every color is a theme variable, so the diagrams keep the site's
 // 7:1 contrast in light and dark mode. Each diagram has a wide layout and a
 // narrow one, and a container query shows the one that fits, since a wide
-// diagram scaled down to a phone makes its text too small to read.
+// diagram scaled down to a phone makes its text too small to read. Labeled
+// regions show where each step runs, and boxes are otherwise all drawn the
+// same, so no color stands for something the reader has to guess.
 import { computed } from 'vue'
 import { diagrams, type Layout, type Node, type Edge, type Point } from './diagrams'
 
@@ -130,7 +132,7 @@ function draw(layout: Layout) {
     }))
     return { ...n, text }
   })
-  return { width: layout.width, height: layout.height, edges, nodes }
+  return { width: layout.width, height: layout.height, regions: layout.regions ?? [], edges, nodes }
 }
 
 const views = computed(() => [
@@ -166,11 +168,15 @@ const id = computed(() => `wf-${props.name}`)
           <path d="M0 0 L10 5 L0 10 z" class="wf-head" />
         </marker>
       </defs>
+      <g v-for="(r, i) in v.regions" :key="`r${i}`">
+        <rect :x="r.x" :y="r.y" :width="r.w" :height="r.h" rx="14" class="wf-region" />
+        <text :x="r.x + 12" :y="r.y + 22" class="wf-region-label">{{ r.label }}</text>
+      </g>
       <path
         v-for="(e, i) in v.edges"
         :key="`e${i}`"
         :d="e.d"
-        :class="['wf-edge', { 'wf-dashed': e.dashed, 'wf-heavy': e.heavy }]"
+        :class="['wf-edge', { 'wf-heavy': e.heavy }]"
         :marker-end="e.arrow === false ? undefined : `url(#${id}-${v.key}-arrow)`"
       />
       <g v-for="n in v.nodes" :key="n.id" :class="`wf-${n.kind ?? 'step'}`">
@@ -246,36 +252,30 @@ figcaption {
   text-align: center;
 }
 
-.wf-box {
+.wf-region {
   fill: var(--vp-c-bg-soft);
+  stroke: var(--vp-c-text-2);
+  stroke-width: 1;
+}
+
+.wf-region-label {
+  fill: var(--vp-c-text-1);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.wf-box {
+  fill: var(--vp-c-bg);
   stroke: var(--vp-c-text-2);
   stroke-width: 1.5;
 }
 
-/* Each kind of stage has its own border, and its name says what it is, so
-   the color is never the only cue. */
-.wf-check .wf-box {
-  stroke: var(--vp-c-green-1);
-  stroke-width: 2.5;
-}
-
-.wf-human .wf-box {
-  stroke: var(--vp-c-yellow-1);
-  stroke-width: 2.5;
-  stroke-dasharray: 7 5;
-}
-
-/* Dotted, not just a different color, so it reads in any color scheme. */
+/* Built but not run for real yet. A diagram that uses it has a legend. */
 .wf-planned .wf-box {
   stroke: var(--vp-c-text-2);
   stroke-width: 2.5;
   stroke-dasharray: 1 5;
   stroke-linecap: round;
-}
-
-.wf-user .wf-box {
-  stroke: var(--vp-c-indigo-1);
-  stroke-width: 2.5;
 }
 
 .wf-label {
@@ -300,10 +300,6 @@ figcaption {
   stroke-width: 1.75;
 }
 
-.wf-dashed {
-  stroke-dasharray: 6 5;
-}
-
 .wf-heavy {
   stroke: var(--vp-c-text-1);
   stroke-width: 4;
@@ -322,17 +318,15 @@ figcaption {
   font-size: 13px;
 }
 
-.wf-dot .wf-dot {
-  fill: var(--vp-c-indigo-1);
-}
-
+.wf-dot .wf-dot,
 .wf-branch .wf-dot {
-  fill: var(--vp-c-purple-1);
+  fill: var(--vp-c-text-2);
 }
 
+/* A hollow ring, labeled, where a branch landed. */
 .wf-landed .wf-dot {
   fill: var(--vp-c-bg);
-  stroke: var(--vp-c-green-1);
+  stroke: var(--vp-c-text-1);
   stroke-width: 4;
 }
 </style>
