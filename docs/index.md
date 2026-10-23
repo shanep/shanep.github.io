@@ -20,7 +20,7 @@ hero:
       link: /teaching/
     - theme: alt
       text: AI
-      link: /ai/claude/
+      link: /ai/
   image:
     src: /images/shane_panter_small.jpeg
     alt: Shane K. Panter

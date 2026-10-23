@@ -147,8 +147,8 @@ The one piece I kept was the session tuning, which I pulled out into its own plu
 and suggests settings changes based on how you actually work. To install it:
 
 ```bash
-claude plugin marketplace add shanep/claude-tune
-claude plugin install tune@claude-tune
+claude plugin marketplace add shanep/claude-plugins
+claude plugin install tune@shanep
 ```
 
 Then run `/tune` in any session.
@@ -190,10 +190,13 @@ The whole `/handoff` skill is about 40 lines, so you do not need much to get som
 
 ## Habits I ask Claude to follow
 
-My global `CLAUDE.md` is mostly rules about how work gets done. The ones that matter most:
+My global `CLAUDE.md` is mostly rules about how work gets done. The whole workflow, and the
+reasons behind it, is on [An Agentic Software Workflow](/ai/workflow/). The ones that
+matter most:
 
-- Every session works in its own git worktree. Parallel sessions never share uncommitted
-  changes, checkouts or build output, so they can not step on each other.
+- A session I am in works in the main checkout, on the default branch. Background sessions each
+  get their own git worktree, so parallel sessions never share uncommitted changes, checkouts or
+  build output, and cannot step on each other.
 - Finished work lands straight on the default branch, with no pull requests. Claude rebases onto
   the latest `origin`, lets the checks run and pushes. I am the only developer on most of these
   repos, so a pull request would just be me approving my own work.
