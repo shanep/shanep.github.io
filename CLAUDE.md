@@ -106,6 +106,12 @@ manifest's `parent` records it, and each push moves the course folder back there
 moved. `drive folder` opens Google's folder picker, because edutools can only reach a folder
 it made or one picked there.
 
+The push also builds the "Objective Alignment Sheet" eCampus asks for, a Google Sheet at the
+top of the course folder, from `docs/<course>/objectives.md`. It needs the page's TLO shape
+(a `## TLO n` section with the quote, the facets line, the table and **Notes.**), so keep that
+shape when editing objectives, and edit the page rather than the Sheet. The older blank eCampus
+template sheet (`1pMqQWTXqwFJ9j5G6VucX9rWwpvneh75dUS5uFXWRz_k`) is no longer used.
+
 `docs/<course>/.drive/manifest.json` records every Drive id. Commit it after each push, or the
 next push from another checkout builds a second copy. A Doc someone edited in Drive shows as
 `drive` in status and the push skips it. Copy the edit into the repo rather than reaching for
