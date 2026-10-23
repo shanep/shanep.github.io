@@ -86,6 +86,25 @@ Two modules from the shell are shared the same way, from `shared/` at the repo r
   the same way, adds `"course-resources/*.md"`, and declares the module with `publish = true`
   so every push publishes it, alongside its own Instructor Information page.
 
+## Google Drive
+
+`edutools drive` copies a course to the Boise State Google Drive as Google Docs, one folder per
+Canvas module, for colleagues and eCampus. Unlike Canvas, the copy keeps the Instructor Notes
+and the Instructor Resources module, so never share it with students. Sharing is done by hand
+in Drive. The command never changes permissions.
+
+```bash
+edutools drive status docs/cs331             # which side changed since the last push
+edutools drive push   docs/cs331 --dry-run   # what would change, writes nothing
+edutools drive push   docs/cs331             # update the same Docs in place
+```
+
+`docs/<course>/.drive/manifest.json` records every Drive id. Commit it after each push, or the
+next push from another checkout builds a second copy. A Doc someone edited in Drive shows as
+`drive` in status and the push skips it. Copy the edit into the repo rather than reaching for
+`--force`. CS331 is the only course in Drive so far. The OAuth client is the `edutools`
+project in Google Cloud (`edutools-512519`), and `edutools drive login` signs in again.
+
 ## Accessibility
 
 **All course content targets WCAG 2.2 AAA, or as close as it can get.** AA is the floor, not the
