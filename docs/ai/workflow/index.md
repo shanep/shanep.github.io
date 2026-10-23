@@ -8,8 +8,8 @@ work. Now an agent writes the code in minutes. The slow parts are knowing the co
 getting it to the people who use it, and me, when every change has to wait for me to start it.
 
 This page is that workflow: 9 rules, and the first 3 matter the most. I am about halfway there.
-Agents already write, test, review and land the code. What is still missing is agents starting
-work on their own, so section 4 covers what I am building now. For how my Claude setup works
+Agents already write, test, review and land the code. The newest part is agents starting work on
+their own, which section 4 covers. For how my Claude setup works
 (syncing config across machines, handing work to a new session), see
 [My Claude Code Setup](/ai/claude/).
 
@@ -110,31 +110,43 @@ Autoupdate brings a few other things with it on day 1:
 
 ## 4. Agents start the work, not just me
 
-This is the part I am building now. Today every change starts with me typing a prompt, which
-makes me the slowest step in the loop. A failing build waits until I notice it, and a bug report
-waits until I read it. The goal is for the common triggers to start an agent on their own.
+Until now every change started with me typing a prompt, which made me the slowest step in the
+loop. A failing build waited until I noticed it, and a bug report waited until I read it. So now
+the common triggers start an agent on their own.
 
 <WorkflowDiagram name="triggers" />
 
-There are 3 triggers I am adding:
+There are 3 triggers, each a GitHub Actions workflow in the repo:
 
-- When CI fails on main, an agent starts in its own worktree, reads the failing log, fixes the
-  cause and lands the fix through the same checks as any other change.
-- When a user reports a bug and I label the issue for an agent, a session starts with the issue
-  as its brief and lands the fix the same way.
-- Recurring jobs run on a schedule, like a weekly dependency update or a weekly `/tune` report
-  (section 9).
+- When CI fails on main, an agent reads the failing log, fixes the cause and lands the fix
+  through the same checks as any other change.
+- When a user reports a bug and I label the issue `agent`, a session starts with the issue as
+  its brief, lands the fix the same way and closes the issue.
+- Recurring jobs run on a schedule. This site updates its npm packages every Monday.
+
+All three use one
+[shared agent action](https://github.com/shanep/claude-plugins/tree/main/agent), which lives in
+my plugin marketplace repo, so my repos run the same code. One Claude session makes the change and commits it. A second session reviews the
+commits, and then the repo's checks run. Neither session gets a GitHub token, so neither one can
+push. The script pushes after the review and the checks pass, and then it runs CI and waits for
+the result.
 
 The rules for these agents are the same as for one I start by hand, plus a few more since nobody
-is watching. They land only through the tests and the review. They never tag a release. If a fix
-does not pass after a couple of tries, the agent stops and leaves a note on the issue instead of
-trying forever, and I find out the next time I look.
+is watching. They never tag a release. They get 2 tries, and then the agent stops and leaves a
+note on the issue (or opens an issue) instead of trying forever. An agent never tries to fix its
+own commit when it breaks CI, since that is how you get a loop. That one gets an issue for me.
+
+The first real run fixed a shellcheck warning that only showed up on Linux, in the script that
+links my Claude config. The new CI job in my dotfiles repo failed, an agent fixed the line, the
+reviewer passed it, and the fix landed and passed CI in about a minute. I found out from the
+commit.
 
 ## 5. Every agent gets its own worktree
 
-The live session I am talking to works on main. Every other agent (one I hand work to, or one a
-trigger starts) gets its own git worktree on a `worktree-<name>` branch, so parallel sessions
-never share uncommitted changes, checkouts or build output, and cannot step on each other.
+The live session I am talking to works on main. Every other agent I start gets its own git
+worktree on a `worktree-<name>` branch, so parallel sessions never share uncommitted changes,
+checkouts or build output, and cannot step on each other. An agent a trigger starts gets a fresh
+CI runner instead, which keeps it apart the same way.
 
 <WorkflowDiagram name="trunk" />
 
@@ -225,11 +237,12 @@ Then run `/tune` in any session.
 | Autoupdate for my plugins | In place |
 | Background agents in their own worktrees | In place, started by hand |
 | A second agent reviewing before landing | In place |
-| Agents started by a CI failure, an issue or a schedule | Being built |
+| Agents started by a CI failure | In place, in 3 repos |
+| Agents started by a labeled issue or a schedule | Built, no real run yet |
 | claude-tune as the source of truth for model and effort | Prototype |
 
 None of these rules works alone. Autoupdate means a push reaches everyone, so the tests have to
 catch problems before the push. The tests are what make it safe to live at head without pull
 requests, and to let an agent land a change while I am not watching. Worktrees and the review
-are what make it safe to run several agents at once. The triggers are the last step: once they
-are in place, the loop in the first figure runs without waiting on me.
+are what make it safe to run several agents at once. The triggers are the last step, and with
+them the loop in the first figure runs without waiting on me.
