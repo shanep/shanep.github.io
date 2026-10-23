@@ -137,6 +137,12 @@
   --vp-c-red-1: #fbb8c1;
 }
 
+/* Inline code in a warning box sits on two layers of the yellow tint, which
+   puts the dark-mode yellow at 6.3:1. A lighter tint on the code clears 7:1. */
+.dark {
+  --vp-custom-block-warning-code-bg: rgba(234, 179, 8, 0.08);
+}
+
 /* WCAG AAA 2.4.13 (Focus Appearance) wants a focus indicator at least 2 px
    thick with 3:1 contrast. The browser default is thinner on links, so every
    focusable element gets the same solid ring in the link color. */
@@ -164,6 +170,10 @@ html {
    their own components. Outline rows grow to 44 px, which moves the marker
    beside the active row down by half the difference. */
 .VPDocOutlineItem .outline-link {
+  line-height: 44px;
+}
+
+.VPDocFooter .edit-link-button {
   line-height: 44px;
 }
 

@@ -114,9 +114,10 @@ time, external links in the same tab). Keep new theme colors at 7:1 and new cont
 The report for each course lives in `reviews/`, with its PDF committed next to it. Rerun the check
 and update the report after a big change to a course or the theme.
 
-`docs/.vitepress/theme/components/` overrides two VitePress components (the sidebar item and the
-search button) to fix accessibility failures upstream. Check them against VitePress when it
-updates, and drop them once upstream is fixed.
+`docs/.vitepress/theme/components/` overrides three VitePress components (the sidebar item, the
+doc footer and the search button) to fix accessibility failures upstream. Check them against
+VitePress when it updates, and drop them once upstream is fixed. It also holds the inline SVG
+diagrams in `workflow/`, which are the site's own.
 
 ## Building the site
 

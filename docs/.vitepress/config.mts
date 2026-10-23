@@ -209,7 +209,7 @@ export default defineConfig({
       // outside the course (../shared/...), so they lose the course sidebar
       // and the edit link pattern below never matches them.
       preserveSymlinks: true,
-      // Two default theme components replaced with fixed copies for WCAG 2.1 AA.
+      // Three default theme components replaced with fixed copies for WCAG 2.2.
       // Each file says what it changes and when it can go.
       alias: [
         {
@@ -219,6 +219,10 @@ export default defineConfig({
         {
           find: /^.*\/VPNavBarSearchButton\.vue$/,
           replacement: fileURLToPath(new URL('./theme/components/VPNavBarSearchButton.vue', import.meta.url)),
+        },
+        {
+          find: /^.*\/VPDocFooter\.vue$/,
+          replacement: fileURLToPath(new URL('./theme/components/VPDocFooter.vue', import.meta.url)),
         },
       ],
     },
