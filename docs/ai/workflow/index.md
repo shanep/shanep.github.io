@@ -131,6 +131,17 @@ commits, and then the repo's checks run. Neither session gets a GitHub token, so
 push. The script pushes after the review and the checks pass, and then it runs CI and waits for
 the result.
 
+None of this runs on my own machines. Each agent is a GitHub Actions job on a fresh Ubuntu
+virtual machine that GitHub starts for the job and throws away when it ends. The job checks out
+the repo, installs Claude Code, runs both sessions and the checks, and pushes. My laptop can be
+asleep the whole time. I find out from the commit, or from an issue if the agent gave up, and
+the run's log and summary are in the repo's Actions tab.
+
+The sessions log in with a token from `claude setup-token`, saved as a secret in each repo, so
+they count against my Claude subscription the same as a session I start by hand. The runner
+minutes are free on a public repo. A private repo uses the minutes that come with the GitHub
+plan, which is why my dotfiles repo runs its CI once a day instead of on every push.
+
 The rules for these agents are the same as for one I start by hand, plus a few more since nobody
 is watching. They never tag a release. They get 2 tries, and then the agent stops and leaves a
 note on the issue (or opens an issue) instead of trying forever. An agent never tries to fix its
