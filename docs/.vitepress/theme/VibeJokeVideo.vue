@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue'
 import { useData } from 'vitepress'
 
-// Plays the home page joke as a video once the page has loaded. The still
+// Plays the AI page joke as a video once the page has loaded. The still
 // images stay in the page for the first paint, and anyone who asks for reduced
 // motion keeps them. The video has controls, because it runs longer than the
 // 5 seconds WCAG 2.2.2 allows without a way to pause it.
