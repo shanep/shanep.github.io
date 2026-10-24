@@ -1,4 +1,38 @@
-# Software Engineering Research
+---
+layout: home
+
+title: Research
+
+hero:
+  name: Research
+  tagline: Empirical software engineering and software supply chain security
+  actions:
+    - theme: brand
+      text: Google Scholar
+      link: https://scholar.google.com/citations?user=0B7MuswAAAAJ&hl=en
+    - theme: alt
+      text: ORCID
+      link: https://orcid.org/0009-0009-1852-3655
+    - theme: alt
+      text: CV
+      link: /cv/
+
+papers:
+  - title: "MALTA: Maintenance-Aware Technical Lag Estimation to Address Software Abandonment"
+    details: Revision in preparation for FSE. <a href="https://arxiv.org/pdf/2603.10265">arXiv</a>
+  - title: "Technical Lag as Latent Technical Debt: A Rapid Review"
+    details: 2026. <a href="https://doi.org/10.1145/3794915.3795784">ACM</a>, <a href="https://doi.org/10.48550/arXiv.2601.11693">arXiv</a>, <a href="/papers/26_techdebt.pdf">PDF</a>
+  - title: "PVAC: Package Version Activity Categorizer, Leveraging Semantic Versioning in a Heterogeneous System"
+    details: 2025. <a href="https://rdcu.be/eoUim">Springer</a>, <a href="https://arxiv.org/abs/2409.04588">arXiv</a>, <a href="/papers/25_pvac.pdf">PDF</a>
+  - title: "Rusty Linux: Advances in Rust for Linux Kernel Development"
+    details: 2024. <a href="https://doi.org/10.1145/3674805.3690756">ACM</a>, <a href="https://arxiv.org/abs/2407.18431">arXiv</a>, <a href="/papers/24_rusty_linux.pdf">PDF</a>
+  - title: Evaluating the Benefits of Team-Based Learning in a Systems Programming Class
+    details: 2020. <a href="https://doi.org/10.1109/FIE44824.2020.9274183">IEEE</a>, <a href="/papers/20_tbl.pdf">PDF</a>
+---
+
+<script setup>
+import { VPFeatures } from 'vitepress/theme'
+</script>
 
 ## Research Interests
 
@@ -7,13 +41,11 @@
 - Technical Lag and Software Abandonment
 - Systems Programming and Security
 
-## Research Links
+## Papers
 
-- MALTA: Maintenance-Aware Technical Lag Estimation to Address Software Abandonment (Revision in preparation for FSE) [arXiv](https://arxiv.org/pdf/2603.10265)
-- Technical Lag as Latent Technical Debt: A Rapid Review (2026) [ACM](https://doi.org/10.1145/3794915.3795784), [arXiv](https://doi.org/10.48550/arXiv.2601.11693), [pdf](/papers/26_techdebt.pdf)
-- PVAC: Package Version Activity Categorizer, Leveraging Semantic Versioning in a Heterogeneous System (2025) [Springer](https://rdcu.be/eoUim), [arXiv](https://arxiv.org/abs/2409.04588), [pdf](/papers/25_pvac.pdf)
-- Rusty Linux: Advances in Rust for Linux Kernel Development (2024) [ACM](https://doi.org/10.1145/3674805.3690756), [arXiv](https://arxiv.org/abs/2407.18431), [pdf](/papers/24_rusty_linux.pdf)
-- Evaluating the Benefits of Team-Based Learning in a Systems Programming Class (2020) [IEEE](https://doi.org/10.1109/FIE44824.2020.9274183), [pdf](/papers/20_tbl.pdf)
+<div class="vp-raw papers">
+<VPFeatures :features="$frontmatter.papers" />
+</div>
 
 ## Conferences
 

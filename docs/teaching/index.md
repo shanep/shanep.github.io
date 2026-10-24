@@ -1,22 +1,70 @@
-# Teaching Resources
+---
+layout: home
 
-## Courses
+title: Teaching
 
-- [CS331: Computer Security and Information Assurance](../cs331/index.md)
-- [CS408: Full Stack Web Development](../cs408/index.md)
-- [CS425: Computer Networks](../cs425/index.md)
-- [CS452: Operating Systems](../cs452/index.md)
+hero:
+  name: Teaching
+  tagline: Courses and guides for my students at Boise State
+
+features:
+  - title: "CS331: Computer Security and Information Assurance"
+    details: Security goals, access control, common software and network vulnerabilities, cryptography, and security policy.
+    link: /cs331/
+    linkText: Course page
+  - title: "CS408: Full Stack Web Development"
+    details: Client-side and server-side web development with HTML, CSS, JavaScript and Node.js, from templating to serverless deployment.
+    link: /cs408/
+    linkText: Course page
+  - title: "CS425: Computer Networks"
+    details: Networking from the physical layer up to the application layer, plus wireless networking and security basics.
+    link: /cs425/
+    linkText: Course page
+  - title: "CS452: Operating Systems"
+    details: Processes, concurrency, synchronization, scheduling, memory management, file systems and security.
+    link: /cs452/
+    linkText: Course page
+
+guides:
+  - title: GitHub Tips and Tricks
+    details: The setup you need once, the habits that will save you the night a project is due, and features most students never find.
+    link: /teaching/github-tips-and-tricks
+    linkText: Read the guide
+  - title: GitHub Codespaces
+    details: VS Code in the cloud. A full Linux machine with a terminal and an editor, and all you need is a web browser.
+    link: /teaching/github-codespaces
+    linkText: Read the guide
+  - title: VS Code Tips and Tricks
+    details: Getting the editor we use in all of my classes set up, and the features that make you a lot faster.
+    link: /teaching/vscode-tips-and-tricks
+    linkText: Read the guide
+  - title: VS Code Remote Development
+    details: Connect VS Code on your computer to Onyx, the CS department's Linux server, without installing Linux yourself.
+    link: /teaching/vscode-remote-dev
+    linkText: Read the guide
+
+instructors:
+  - title: boisestate.ai Capabilities
+    details: What the campus AI gateway can and cannot do for a class, from my load test of 45 requests at the same time.
+    link: /teaching/boisestate-ai
+    linkText: Read the review
+---
+
+<script setup>
+import { VPFeatures } from 'vitepress/theme'
+</script>
 
 ## Student Guides
 
-- [GitHub Tips and Tricks](github-tips-and-tricks.md)
-- [GitHub Codespaces](github-codespaces.md)
-- [VS Code Tips and Tricks](vscode-tips-and-tricks.md)
-- [VS Code Remote Development](vscode-remote-dev.md)
+<div class="vp-raw">
+<VPFeatures :features="$frontmatter.guides" />
+</div>
 
 ## For Instructors
 
-- [boisestate.ai Capabilities](boisestate-ai.md)
+<div class="vp-raw">
+<VPFeatures :features="$frontmatter.instructors" />
+</div>
 
 ## Archive
 

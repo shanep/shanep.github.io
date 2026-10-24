@@ -380,3 +380,43 @@ html {
 .vp-doc .custom-block p + p {
   margin-top: 12px;
 }
+
+/* The Research and Teaching landing pages put VitePress's feature cards in the
+   page body. The body already has the page's side padding, so the grid drops
+   its own, and the cards undo the article styles for headings, paragraphs and
+   links so they look the same as the cards at the top of a page. */
+.vp-doc .vp-raw .VPFeatures {
+  padding: 0;
+  margin-top: 16px;
+}
+
+.Layout .vp-doc .VPFeature .title {
+  margin: 0;
+  padding-top: 0;
+  border-top: 0;
+  letter-spacing: normal;
+  font-family: var(--vp-font-family-base);
+  color: var(--vp-c-text-1);
+}
+
+.vp-doc .VPFeature p {
+  margin: 0;
+}
+
+.vp-doc a.VPFeature,
+.vp-doc a.VPFeature * {
+  text-decoration: none;
+}
+
+/* A card without a link can hold links in its text (the papers on Research). */
+.VPFeature .details a {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
+}
+
+/* Five papers fill a 3-column grid better than a 4-column one. */
+@media (min-width: 960px) {
+  .vp-doc .papers .VPFeatures .item {
+    width: calc(100% / 3);
+  }
+}
