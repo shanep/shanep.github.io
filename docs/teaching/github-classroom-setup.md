@@ -204,7 +204,14 @@ repositories. Here are a few cases where they **do** need admin access.
     gh classroom clone student-repos
     ```
 
-![Downloading submissions](images/github-classroom-cli.gif)
+<figure>
+<video controls muted playsinline preload="none" width="922" height="476"
+  poster="./images/github-classroom-cli-poster.webp" style="max-width: 100%; height: auto;"
+  aria-label="Terminal recording of gh classroom clone student-repos: pick demo-classroom, then
+  Test Assignment, and it clones 1 repo into test-assignment-submissions.">
+  <source src="./images/github-classroom-cli.mp4" type="video/mp4">
+</video>
+</figure>
 
 ### Renaming directories (optional)
 
@@ -216,8 +223,8 @@ submissions.
 ![Downloading roster](images/github-classroom-roster.png)
 
 The GitHub CLI names the directories with the assignment name followed by the
-student's GitHub username. For easier scripting you can use
-[this](https://gist.github.com/shanep/5226245d533f436a364b7c8a2267018a) script
+student's GitHub username. For easier scripting you can use my
+[rename script](https://gist.github.com/shanep/5226245d533f436a364b7c8a2267018a)
 to rename all the directories to be their university email.
 
 - Get the student submissions:

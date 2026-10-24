@@ -53,7 +53,7 @@ Below are some ideas for where to get started:
 - C# and [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet)
 - Python and [Django](https://www.djangoproject.com/)
 - Java and [Spring](https://spring.io/)
-- [Go](https://go.dev/doc/articles/wiki/)
+- Go, starting with the [Writing Web Applications](https://go.dev/doc/articles/wiki/) tutorial
 - [x86 Assembly](https://github.com/ancat/minserv) language. This option is for students who love
   pain and suffering!
 - [HTMX](https://htmx.org/)
