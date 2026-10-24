@@ -85,16 +85,3 @@ hero:
 <img class="dark-only" src="/images/vibe-coding-joke-dark-1400.webp" srcset="/images/vibe-coding-joke-dark-1400.webp 1400w, /images/vibe-coding-joke-dark-2800.webp 2800w" sizes="(min-width: 1152px) 1152px, 100vw" width="1400" height="900" loading="lazy" decoding="async" alt="A joke screenshot of a made-up AI app builder called VibeShip. The user tells the AI it is a senior software engineer who writes super secure code and never makes mistakes, then asks for an AI-powered Bitcoin mining operation on the Moon, with an AI that decides when to sell and rovers anyone on Discord can drive. The AI ships LunaMine AI with the wallet seed phrase engraved on the landing pad, a telnet link to Earth, and the oxygen rerouted to the GPUs. When the user asks if there are any security issues, it says it found 0 issues within 384,400 km because an attacker would need a rocket, admits the AI sold the Moon and a Discord user is doing donuts in the solar farm, and offers to tweet the seed phrase as a backup.">
 <VibeJokeVideo />
 </div>
-
-## Bio
-
-Shane Panter is an Assistant Clinical Professor of Computer Science at Boise
-State University, where he has taught since 2013. He teaches Operating Systems,
-Computer Networks, Computer Security, and Full Stack Web Development, and he
-holds a Ph.D. in Computing and an M.S. in Computer Science. Before joining
-academia, he spent a decade in industry working in IT and networking,
-enterprise software development, and embedded firmware. His research is in
-empirical software engineering and software security, with a focus on the
-software supply chain. His recent work looks at what happens to software when
-the open source packages it depends on fall behind or are abandoned. He is also
-Co-PI on two NSA-funded cybersecurity education grants.

@@ -24,6 +24,19 @@ Boise State University, Boise, Idaho 83725<br>
 
 </div>
 
+## Bio
+
+Shane Panter is an Assistant Clinical Professor of Computer Science at Boise
+State University, where he has taught since 2013. He teaches Operating Systems,
+Computer Networks, Computer Security, and Full Stack Web Development, and he
+holds a Ph.D. in Computing and an M.S. in Computer Science. Before joining
+academia, he spent a decade in industry working in IT and networking,
+enterprise software development, and embedded firmware. His research is in
+empirical software engineering and software security, with a focus on the
+software supply chain. His recent work looks at what happens to software when
+the open source packages it depends on fall behind or are abandoned. He is also
+Co-PI on two NSA-funded cybersecurity education grants.
+
 ## Research Interests
 
 Empirical software engineering, software security, software supply chain security,
