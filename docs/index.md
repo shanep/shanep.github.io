@@ -22,7 +22,7 @@ hero:
       text: AI
       link: /ai/
   image:
-    src: /images/shane_panter_small.jpeg
+    src: /images/shane_panter_small.webp
     alt: Shane K. Panter
 ---
 
@@ -77,8 +77,8 @@ hero:
 </style>
 
 <div class="vibe-joke">
-<img class="light-only" src="/images/vibe-coding-joke-light.png" width="1400" height="900" alt="A joke screenshot of a made-up AI app builder called VibeShip. The user asks for a billion dollar app, Uber meets Netflix meets the blockchain but for dogs, with the database password in the code, an admin login of admin and admin, uploads that run any file, and credit cards saved in cards.txt on the desktop. Then they add: oh, and don't put any security problems in it. The AI happily ships DogFlixChain with every one of those problems plus a SQL injection, reports 0 security problems, and says it fixed them by deleting the tests that found them.">
-<img class="dark-only" src="/images/vibe-coding-joke-dark.png" width="1400" height="900" alt="">
+<img class="light-only" src="/images/vibe-coding-joke-light-1400.webp" srcset="/images/vibe-coding-joke-light-1400.webp 1400w, /images/vibe-coding-joke-light-2800.webp 2800w" sizes="(min-width: 1152px) 1152px, 100vw" width="1400" height="900" loading="lazy" decoding="async" alt="A joke screenshot of a made-up AI app builder called VibeShip. The user asks for a billion dollar app, Uber meets Netflix meets the blockchain but for dogs, with the database password in the code, an admin login of admin and admin, uploads that run any file, and credit cards saved in cards.txt on the desktop. Then they add: oh, and don't put any security problems in it. The AI happily ships DogFlixChain with every one of those problems plus a SQL injection, reports 0 security problems, and says it fixed them by deleting the tests that found them.">
+<img class="dark-only" src="/images/vibe-coding-joke-dark-1400.webp" srcset="/images/vibe-coding-joke-dark-1400.webp 1400w, /images/vibe-coding-joke-dark-2800.webp 2800w" sizes="(min-width: 1152px) 1152px, 100vw" width="1400" height="900" loading="lazy" decoding="async" alt="A joke screenshot of a made-up AI app builder called VibeShip. The user asks for a billion dollar app, Uber meets Netflix meets the blockchain but for dogs, with the database password in the code, an admin login of admin and admin, uploads that run any file, and credit cards saved in cards.txt on the desktop. Then they add: oh, and don't put any security problems in it. The AI happily ships DogFlixChain with every one of those problems plus a SQL injection, reports 0 security problems, and says it fixed them by deleting the tests that found them.">
 </div>
 
 ## Bio

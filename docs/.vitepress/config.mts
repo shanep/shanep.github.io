@@ -201,6 +201,10 @@ export default defineConfig({
     }
   },
   cleanUrls: true,
+  // Lets search engines, and site-wide audits like Unlighthouse, find every page.
+  sitemap: { hostname: 'https://shanepanter.com' },
+  // Without an icon link, browsers ask for /favicon.ico, which does not exist.
+  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]],
   vite: {
     plugins: [cvPdf()],
     resolve: {

@@ -4,7 +4,9 @@
 // Upstream names it with aria-label="Search", but its visible text also holds
 // the Ctrl K hint, and a name that does not contain the visible text fails WCAG
 // 2.5.3 (Label in Name). Without the aria-label the name is the placeholder,
-// "Search", and the hint stays hidden from screen readers.
+// "Search", and the hint stays hidden from screen readers. Below 768 px
+// upstream hides the placeholder with display: none, which would leave the
+// button with no name at all, so there it is hidden visually instead.
 import { createSearchTranslate } from 'vitepress/dist/client/theme-default/support/translation.js'
 
 // Button-Translations
@@ -133,7 +135,7 @@ const translate = createSearchTranslate(defaultTranslations)
 }
 
 .DocSearch-Button .DocSearch-Button-Placeholder {
-  display: none;
+  display: inline-block;
   margin-top: 2px;
   padding: 0 16px 0 0;
   font-size: 13px;
@@ -146,9 +148,16 @@ const translate = createSearchTranslate(defaultTranslations)
   color: var(--vp-c-text-1);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .DocSearch-Button .DocSearch-Button-Placeholder {
-    display: inline-block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
 }
 
