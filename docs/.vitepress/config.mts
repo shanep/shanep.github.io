@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url'
 import { bundledThemes, type ThemeRegistration } from 'shiki'
 import { cvPdf } from './cv-pdf'
 import { inlineCriticalCss } from './critical'
+import { checkFrontmatterLinks, collectFrontmatterLinks } from './frontmatter-links'
 import { imageDimensions, optimizeImages } from './images'
 
 // WCAG AAA (1.4.6) asks for 7:1 text contrast, and even GitHub's
@@ -207,7 +208,11 @@ export default defineConfig({
     }
   },
   cleanUrls: true,
+  transformPageData: (pageData) => {
+    collectFrontmatterLinks(pageData.relativePath, pageData.frontmatter)
+  },
   buildEnd: async (site) => {
+    checkFrontmatterLinks(site.outDir)
     await optimizeImages(site.outDir)
     await inlineCriticalCss(site.outDir)
   },

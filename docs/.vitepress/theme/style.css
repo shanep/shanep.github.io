@@ -416,7 +416,7 @@ html {
 
 /* Five papers fill a 3-column grid better than a 4-column one. */
 @media (min-width: 960px) {
-  .vp-doc .papers .VPFeatures .item {
+  .research-page .VPHomeFeatures.VPFeatures .item {
     width: calc(100% / 3);
   }
 }

@@ -17,7 +17,9 @@ hero:
       text: CV
       link: /cv/
 
-papers:
+pageClass: research-page
+
+features:
   - title: "MALTA: Maintenance-Aware Technical Lag Estimation to Address Software Abandonment"
     details: Revision in preparation for FSE. <a href="https://arxiv.org/pdf/2603.10265">arXiv</a>
   - title: "Technical Lag as Latent Technical Debt: A Rapid Review"
@@ -30,22 +32,12 @@ papers:
     details: 2020. <a href="https://doi.org/10.1109/FIE44824.2020.9274183">IEEE</a>, <a href="/papers/20_tbl.pdf">PDF</a>
 ---
 
-<script setup>
-import { VPFeatures } from 'vitepress/theme'
-</script>
-
 ## Research Interests
 
 - Empirical Software Engineering
 - Software Supply Chain Security
 - Technical Lag and Software Abandonment
 - Systems Programming and Security
-
-## Papers
-
-<div class="vp-raw papers">
-<VPFeatures :features="$frontmatter.papers" />
-</div>
 
 ## Conferences
 
