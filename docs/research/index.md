@@ -18,81 +18,83 @@ hero:
       link: https://orcid.org/0009-0009-1852-3655
 
 conferences:
-  - title: ESEM
-    details: <span class="card-tags"><span>CORE A</span></span> Empirical Software Engineering and Measurement
+  - short: ESEM
+    name: Empirical Software Engineering and Measurement
+    rank: "A"
     link: https://conf.researchr.org/series/esem
-    linkText: Website
-  - title: ICSE
-    details: <span class="card-tags"><span>CORE A*</span></span> International Conference on Software Engineering
+  - short: ICSE
+    name: International Conference on Software Engineering
+    rank: "A*"
     link: https://www.icse-conferences.org/
-    linkText: Website
-  - title: FSE
-    details: <span class="card-tags"><span>CORE A*</span></span> Foundations of Software Engineering
+  - short: FSE
+    name: Foundations of Software Engineering
+    rank: "A*"
     link: https://www.esec-fse.org/index
-    linkText: Website
-  - title: ASE
-    details: <span class="card-tags"><span>CORE A*</span></span> Automated Software Engineering
+  - short: ASE
+    name: Automated Software Engineering
+    rank: "A*"
     link: https://ase-conferences.org/
-    linkText: Website
-  - title: ISSTA
-    details: <span class="card-tags"><span>CORE A</span></span> International Symposium on Software Testing and Analysis
+  - short: ISSTA
+    name: International Symposium on Software Testing and Analysis
+    rank: "A"
     link: https://www.issta.org/
-    linkText: Website
-  - title: ICPC
-    details: <span class="card-tags"><span>CORE A</span></span> International Conference on Program Comprehension
+  - short: ICPC
+    name: International Conference on Program Comprehension
+    rank: "A"
     link: https://conf.researchr.org/series/icpc
-    linkText: Website
-  - title: MSR
-    details: <span class="card-tags"><span>CORE A</span></span> Mining Software Repositories
+  - short: MSR
+    name: Mining Software Repositories
+    rank: "A"
     link: https://conf.researchr.org/series/msr
-    linkText: Website
-  - title: EASE
-    details: <span class="card-tags"><span>CORE A</span></span> Evaluation and Assessment in Software Engineering
+  - short: EASE
+    name: Evaluation and Assessment in Software Engineering
+    rank: "A"
     link: https://conf.researchr.org/series/ease
-    linkText: Website
-  - title: TechDebt
-    details: <span class="card-tags"><span>CORE B</span></span> International Conference on Technical Debt
+  - short: TechDebt
+    name: International Conference on Technical Debt
+    rank: "B"
     link: https://conf.researchr.org/series/TechDebt
-    linkText: Website
-  - title: ICCIT
-    details: <span class="card-tags"><span>Unranked</span></span> International Conference on Computer and Information Technology
+  - short: ICCIT
+    name: International Conference on Computer and Information Technology
+    rank: "Unranked"
     link: https://iccit.org.bd/
-    linkText: Website
 
 journals:
-  - title: IEEE Transactions on Software Engineering (TSE)
-    details: <span class="card-tags"><span>Impact factor 6.5 (2023)</span><span>ICSE journal-first</span></span>
+  - name: IEEE Transactions on Software Engineering (TSE)
+    impact: "6.5"
+    year: "2023"
+    track: ICSE
     link: https://www.computer.org/csdl/journal/ts
-    linkText: Website
-  - title: ACM Transactions on Software Engineering and Methodology (TOSEM)
-    details: <span class="card-tags"><span>Impact factor 6.6 (2023)</span><span>ESEM journal-first</span></span>
+  - name: ACM Transactions on Software Engineering and Methodology (TOSEM)
+    impact: "6.6"
+    year: "2023"
+    track: ESEM
     link: https://dl.acm.org/journal/tosem
-    linkText: Website
-  - title: Journal of Systems and Software (JSS)
-    details: <span class="card-tags"><span>Impact factor 3.7 (2023)</span><span>ESEM journal-first</span></span>
+  - name: Journal of Systems and Software (JSS)
+    impact: "3.7"
+    year: "2023"
+    track: ESEM
     link: https://www.sciencedirect.com/journal/journal-of-systems-and-software
-    linkText: Website
-  - title: Information and Software Technology
-    details: <span class="card-tags"><span>Impact factor 3.8 (2023)</span><span>ESEM journal-first</span></span>
+  - name: Information and Software Technology
+    impact: "3.8"
+    year: "2023"
+    track: ESEM
     link: https://www.sciencedirect.com/journal/information-and-software-technology
-    linkText: Website
-  - title: Empirical Software Engineering
-    details: <span class="card-tags"><span>Impact factor 3.5 (2023)</span><span>ESEM journal-first</span></span>
+  - name: Empirical Software Engineering
+    impact: "3.5"
+    year: "2023"
+    track: ESEM
     link: https://www.springer.com/journal/10664
-    linkText: Website
-  - title: IEEE Software
-    details: <span class="card-tags"><span>Impact factor 3.3 (2023)</span><span>ESEM journal-first</span></span>
+  - name: IEEE Software
+    impact: "3.3"
+    year: "2023"
+    track: ESEM
     link: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=52
-    linkText: Website
-  - title: IEEE Access
-    details: <span class="card-tags"><span>Impact factor 3.6 (2024)</span></span>
+  - name: IEEE Access
+    impact: "3.6"
+    year: "2024"
     link: https://ieeeaccess.ieee.org
-    linkText: Website
 ---
-
-<script setup>
-import { VPFeatures } from 'vitepress/theme'
-</script>
 
 ## Conferences
 
@@ -105,7 +107,7 @@ called [conf.researchr.org](https://conf.researchr.org/) that a lot of conferenc
 use to manage their conferences.
 
 <div class="vp-raw">
-<VPFeatures :features="$frontmatter.conferences" />
+<VenueGrid :conferences="$frontmatter.conferences" />
 </div>
 
 ## Journals
@@ -122,5 +124,5 @@ longevity of published research.
 A journal-first tag means the journal is partnered with that conference's journal-first track.
 
 <div class="vp-raw">
-<VPFeatures :features="$frontmatter.journals" />
+<VenueGrid :journals="$frontmatter.journals" />
 </div>

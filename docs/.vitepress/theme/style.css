@@ -443,7 +443,7 @@ html {
   background-color: transparent;
 }
 
-/* Short tags at the top of a card, like a venue's ranking on Research. */
+/* Short tags on a card, like a journal's journal-first track on Research. */
 .card-tags {
   display: flex;
   flex-wrap: wrap;

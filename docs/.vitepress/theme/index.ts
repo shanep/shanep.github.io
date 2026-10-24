@@ -10,6 +10,7 @@ import CourseSchedule from './CourseSchedule.vue'
 import CanvasModules from './CanvasModules.vue'
 import SlideView from './SlideView.vue'
 import VibeJokeVideo from './VibeJokeVideo.vue'
+import VenueGrid from './VenueGrid.vue'
 import WorkflowDiagram from './components/workflow/WorkflowDiagram.vue'
 import type { Theme } from 'vitepress'
 
@@ -21,6 +22,7 @@ export default {
     app.component('CanvasModules', CanvasModules)
     app.component('SlideView', SlideView)
     app.component('VibeJokeVideo', VibeJokeVideo)
+    app.component('VenueGrid', VenueGrid)
     app.component('WorkflowDiagram', WorkflowDiagram)
   }
 } satisfies Theme
