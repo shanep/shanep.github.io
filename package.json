@@ -20,6 +20,8 @@
     "cv:pdf": "scripts/cv/build.sh",
     "lint:md": "npx --yes markdownlint-cli2@0.23.3 \"docs/**/*.md\" \"parts/**/*.md\" \"shared/**/*.md\" \"#node_modules\" \"#docs/.vitepress\"",
     "a11y": "scripts/a11y/check.sh",
+    "diagrams": "scripts/a11y/check.sh --diagrams",
+    "diagrams:export": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/a11y/diagrams.mjs --export",
     "lighthouse": "npx --yes @lhci/cli@0.15.1 autorun",
     "a11y:pdf": "node scripts/a11y/pdf.mjs"
   },

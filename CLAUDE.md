@@ -153,8 +153,30 @@ and update the report after a big change to a course or the theme.
 
 `docs/.vitepress/theme/components/` overrides three VitePress components (the sidebar item, the
 doc footer and the search button) to fix accessibility failures upstream. Check them against
-VitePress when it updates, and drop them once upstream is fixed. It also holds the inline SVG
-diagrams in `workflow/`, which are the site's own.
+VitePress when it updates, and drop them once upstream is fixed. It also holds the diagram
+renderer in `workflow/`, which is the site's own (see Diagrams below).
+
+## Diagrams
+
+**Every diagram in the repo is a spec drawn by one renderer**, so they all look the same. Don't
+hand-draw an SVG or paste in a picture of a diagram.
+
+- `docs/.vitepress/theme/components/workflow/render.ts` turns a spec into SVG, and
+  `diagram.css` next to it holds every color, in light and dark, at 7:1 for text.
+- Site diagrams live in `workflow/diagrams.ts` and go on a page with
+  `<WorkflowDiagram name="..." />`. Give each one a wide layout (700 across) and a narrow one
+  (340 across) for phones.
+- Course diagrams live in a `diagrams.ts` in the course (see `docs/cs425/assignments/`), whose
+  `files` maps each `.svg` to its spec. `npm run diagrams:export` writes the files, which
+  Canvas and the site both show as images, so they are light only. Commit the spec and the
+  `.svg` together.
+- **Color means one thing.** A box takes the hue of the region it runs in, and the region's
+  label is the legend. Anything else colored (a tone on a node, an edge or a text) needs a
+  `key` node that says what it means, or the renderer throws.
+- **Run `npm run diagrams` after changing one.** It fails on a stale `.svg` and on layout
+  faults (text that doesn't fit, lines through text or boxes, labels on borders). Add
+  `-- --shots <dir>` to get a picture of each one at desktop and phone width in light and dark,
+  and look at them before calling it done. `npm run a11y` runs it too.
 
 ## Building the site
 

@@ -1,66 +1,9 @@
-// The diagrams on /ai/workflow/, drawn by WorkflowDiagram.vue. Each one has a
-// wide layout (about 700 units across, so the text stays near full size on a
-// desktop) and a narrow one for phones. Coordinates are node centers.
+// The diagrams on /ai/workflow/, drawn by render.ts through WorkflowDiagram.vue.
+// Each one has a wide layout (about 700 units across, so the text stays near
+// full size on a desktop) and a narrow one for phones. Coordinates are node
+// centers.
 
-export type Point = [number, number]
-
-export interface Node {
-  id: string
-  x: number
-  y: number
-  w?: number
-  h?: number
-  // The first line of a box is its name, the rest are details.
-  lines?: string[]
-  // step, planned (not built or not run for real yet, drawn dotted, and the
-  // diagram has a legend that says so), note (text only), dot (a commit on
-  // main), branch (a commit on a worktree branch), landed (a commit that landed
-  // from a branch), point (an invisible end).
-  kind?: 'step' | 'planned' | 'note' | 'dot' | 'branch' | 'landed' | 'point'
-  labelAt?: 'above' | 'below' | 'left' | 'right'
-  align?: 'start' | 'middle' | 'end'
-}
-
-export interface Edge {
-  from: string
-  to: string
-  label?: string
-  labelAt?: Point
-  via?: Point[]
-  heavy?: boolean
-  arrow?: boolean
-}
-
-export type Place = 'mac' | 'github' | 'cloud' | 'users' | 'canvas'
-
-// A labeled area for the machine or service a step runs on. Boxes sit inside
-// the region they run in, which is how the diagrams show where things happen.
-export interface Region {
-  label: string
-  // Sets the region's color, which every box inside it shares. The region's
-  // label is the legend for it.
-  place: Place
-  x: number
-  y: number
-  w: number
-  h: number
-}
-
-export interface Layout {
-  width: number
-  height: number
-  regions?: Region[]
-  nodes: Node[]
-  edges: Edge[]
-}
-
-export interface Diagram {
-  title: string
-  caption: string
-  desc: string
-  wide: Layout
-  narrow: Layout
-}
+import type { Diagram } from './render'
 
 const loop: Diagram = {
   title: 'The loop',
