@@ -6,6 +6,7 @@ import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { bundledThemes, type ThemeRegistration } from 'shiki'
 import { cvPdf } from './cv-pdf'
+import { inlineCriticalCss } from './critical'
 import { imageDimensions, optimizeImages } from './images'
 
 // WCAG AAA (1.4.6) asks for 7:1 text contrast, and even GitHub's
@@ -206,11 +207,23 @@ export default defineConfig({
     }
   },
   cleanUrls: true,
-  buildEnd: (site) => optimizeImages(site.outDir),
+  buildEnd: async (site) => {
+    await optimizeImages(site.outDir)
+    await inlineCriticalCss(site.outDir)
+  },
   // Lets search engines, and site-wide audits like Unlighthouse, find every page.
   sitemap: { hostname: 'https://shanepanter.com' },
   // Without an icon link, browsers ask for /favicon.ico, which does not exist.
-  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]],
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    // The fallback for Inter that style.css names. It is here rather than in
+    // style.css because the page paints before that sheet loads (critical.ts).
+    // Bold Arial is closer to Inter's semibold than regular Arial is to Inter,
+    // so it gets its own face and scale. At 102.1% the home page buttons wrap
+    // the same way in both fonts.
+    ['style', {}, "@font-face{font-family:'Inter fallback';src:local('Arial'),local('Arimo'),local('Liberation Sans');size-adjust:105.7%}"
+      + "@font-face{font-family:'Inter fallback';src:local('Arial Bold'),local('Arial-BoldMT'),local('Arimo Bold'),local('Liberation Sans Bold');font-weight:600 900;size-adjust:102.1%}"],
+  ],
   vite: {
     plugins: [cvPdf()],
     resolve: {

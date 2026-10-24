@@ -3,6 +3,7 @@
     "@types/markdown-it-container": "^4.0.0",
     "@types/markdown-it-footnote": "^3.0.4",
     "@types/node": "^24.19.1",
+    "beasties": "^0.5.5",
     "image-size": "^2.0.4",
     "markdown-it-container": "^4.0.0",
     "markdown-it-footnote": "^4.0.0",

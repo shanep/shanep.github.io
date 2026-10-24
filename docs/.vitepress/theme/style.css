@@ -221,6 +221,16 @@
   letter-spacing: -0.01em;
 }
 
+/* The page paints before Inter arrives, and Arial sets the same text about
+   5.7% narrower, so lines wrapped again and the page jumped when Inter came
+   in. Arial scaled to Inter's width keeps the lines where they are. Arimo and
+   Liberation Sans have Arial's metrics, for Linux and ChromeOS. The
+   @font-face for it is inline in the page head (head in config.mts). */
+:root {
+  --vp-font-family-base: 'Inter', 'Inter fallback', ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
 /* A thin accent line along the top of the nav bar, like a console's status
    strip. It is drawn over the bar rather than added to it, because the rest
    of the layout is offset by the bar's height. */
@@ -276,6 +286,17 @@ html {
 @media (max-width: 959px) {
   html {
     scroll-padding-top: calc(var(--vp-nav-height) + 48px + 16px);
+  }
+}
+
+/* On a page with no sidebar, VitePress builds the "On this page" bar empty
+   and out of the flow, then fills it in once the scripts find the headings.
+   The page then jumps down by the bar's height, which Lighthouse counts as a
+   layout shift. This holds the space from the start on any page that will
+   get the bar. The CV turns its outline off, so it never does. */
+@media (max-width: 1279px) {
+  .Layout:not(.cv-page) .VPLocalNav.empty.fixed ~ .VPContent:has(.vp-doc h2[id]) {
+    margin-top: 48px;
   }
 }
 
