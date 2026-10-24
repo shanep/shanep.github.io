@@ -161,7 +161,12 @@ diagrams in `workflow/`, which are the site's own.
 ```bash
 npm run docs:dev     # live reload on :3000
 npm run docs:build   # must pass before pushing; dead links fail the build
+npm run lighthouse   # score the built site against lighthouserc.json
 ```
+
+CI runs `npm run lighthouse` after the build and fails the deploy when a page in
+`lighthouserc.json` falls under its budget (performance 90, accessibility 100, best
+practices and SEO 95, the best of 3 runs). Add a page there when it is worth guarding.
 
 `package.json` forces `vite` to `^6.4.3` through `overrides`, although VitePress 1.6.4 asks
 for vite 5. The override came in on 2026-10-04 ("Update dependencies to clear the Dependabot

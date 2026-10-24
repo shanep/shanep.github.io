@@ -19,6 +19,7 @@
     "cv:pdf": "scripts/cv/build.sh",
     "lint:md": "npx --yes markdownlint-cli2@0.23.3 \"docs/**/*.md\" \"parts/**/*.md\" \"shared/**/*.md\" \"#node_modules\" \"#docs/.vitepress\"",
     "a11y": "scripts/a11y/check.sh",
+    "lighthouse": "npx --yes @lhci/cli@0.15.1 autorun",
     "a11y:pdf": "node scripts/a11y/pdf.mjs"
   },
   "dependencies": {

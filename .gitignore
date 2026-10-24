@@ -9,6 +9,7 @@
 .DS_Store
 docs/.vitepress/cache
 docs/.vitepress/dist
+.lighthouseci
 node_modules
 
 # Course textbooks are distributed through Canvas, not this public repo. The

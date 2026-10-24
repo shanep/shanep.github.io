@@ -36,6 +36,10 @@ jobs:
       # docs:build also builds the CV PDFs (docs/.vitepress/cv-pdf.ts).
       - name: Build with VitePress
         run: npm run docs:build
+      # Fails the deploy when a page in lighthouserc.json drops below its
+      # score budget, so a big screenshot or a contrast slip never ships.
+      - name: Check Lighthouse scores
+        run: npm run lighthouse
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:

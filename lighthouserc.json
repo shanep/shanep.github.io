@@ -1,0 +1,35 @@
+{
+  "ci": {
+    "collect": {
+      "startServerCommand": "npx vitepress preview docs --port 4173",
+      "startServerReadyPattern": "served at",
+      "numberOfRuns": 3,
+      "url": [
+        "http://localhost:4173/",
+        "http://localhost:4173/research/",
+        "http://localhost:4173/teaching/",
+        "http://localhost:4173/cv/",
+        "http://localhost:4173/teaching/github-classroom-setup",
+        "http://localhost:4173/cs408/assignments/07-01-setup",
+        "http://localhost:4173/cs408/discussions/01-04-ai-web-development-and-job-security",
+        "http://localhost:4173/cs331/",
+        "http://localhost:4173/cs425/"
+      ],
+      "settings": {
+        "chromeFlags": "--headless=new --no-sandbox"
+      }
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": ["error", { "minScore": 0.9 }],
+        "categories:accessibility": ["error", { "minScore": 1 }],
+        "categories:best-practices": ["error", { "minScore": 0.95 }],
+        "categories:seo": ["error", { "minScore": 0.95 }]
+      }
+    },
+    "upload": {
+      "target": "filesystem",
+      "outputDir": ".lighthouseci"
+    }
+  }
+}

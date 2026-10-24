@@ -326,6 +326,17 @@ html {
   transform: translateY(-50%);
 }
 
+/* A footnote reference is a text-sized superscript, so the link itself grows
+   to the 24 px Lighthouse asks for. axe measures the link's own box and
+   ignores a pseudo-element here. */
+.vp-doc .footnote-ref a {
+  display: inline-block;
+  min-width: 24px;
+  min-height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
 .VPLocalNavOutlineDropdown > button::after {
   content: '';
   position: absolute;
