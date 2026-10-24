@@ -51,13 +51,6 @@ guides:
     icon: { src: /card-icons/remote.svg, width: 48, height: 48, role: presentation }
     linkText: Read the guide
 
-instructors:
-  - title: boisestate.ai Capabilities
-    details: What the campus AI gateway can and cannot do for a class, from my load test of 45 requests at the same time.
-    link: /teaching/boisestate-ai
-    icon: { src: /card-icons/sparkle.svg, width: 48, height: 48, role: presentation }
-    linkText: Read the review
-
 ai:
   - title: An Agentic Software Workflow
     details: The workflow I am moving to after 3 months of building with Claude Code, where agents do the work and the tests decide when it is done.
@@ -69,6 +62,11 @@ ai:
     link: /teaching/claude-code-setup
     icon: { src: /card-icons/setup.svg, width: 48, height: 48, role: presentation }
     linkText: Read the setup
+  - title: boisestate.ai Capabilities
+    details: What the campus AI gateway can and cannot do for a class, from my load test of 45 requests at the same time.
+    link: /teaching/boisestate-ai
+    icon: { src: /card-icons/sparkle.svg, width: 48, height: 48, role: presentation }
+    linkText: Read the review
 ---
 
 <script setup>
@@ -81,15 +79,9 @@ import { VPFeatures } from 'vitepress/theme'
 <VPFeatures :features="$frontmatter.guides" />
 </div>
 
-## For Instructors
-
-<div class="vp-raw">
-<VPFeatures :features="$frontmatter.instructors" />
-</div>
-
 ## AI
 
-Notes on how I use AI tools, mostly Claude Code.
+Notes on how I use AI tools, mostly Claude Code, and what the campus AI gateway can do for a class.
 
 <div class="vp-raw">
 <VPFeatures :features="$frontmatter.ai" />
