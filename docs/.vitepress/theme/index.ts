@@ -4,6 +4,7 @@ import DefaultTheme from 'vitepress/theme'
 // the editor flags this line without the ignore.
 // @ts-ignore
 import './style.css'
+import '@fontsource-variable/jetbrains-mono'
 import OfficeHoursLink from './OfficeHoursLink.vue'
 import CourseSchedule from './CourseSchedule.vue'
 import CanvasModules from './CanvasModules.vue'

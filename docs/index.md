@@ -29,10 +29,14 @@ hero:
 <style>
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #0a4f8a 30%, #0b5a4a);
 
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #2b7fc4 50%, #1fb89a 50%);
   --vp-home-hero-image-filter: blur(44px);
+}
+
+.dark {
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #9ad2ff 30%, #5ee0c0);
 }
 
 @media (min-width: 640px) {

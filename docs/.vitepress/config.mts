@@ -43,8 +43,8 @@ async function aaaTheme(name: 'github-light-high-contrast' | 'github-dark-high-c
   return theme
 }
 // The code block background (--vp-c-bg-alt) and a highlighted line on it.
-const codeLight = await aaaTheme('github-light-high-contrast', ['#f6f6f7', '#e7e9ec'])
-const codeDark = await aaaTheme('github-dark-high-contrast', ['#161618', '#232529'])
+const codeLight = await aaaTheme('github-light-high-contrast', ['#edf1f6', '#dae1ea'])
+const codeDark = await aaaTheme('github-dark-high-contrast', ['#0a111a', '#1a2532'])
 
 // Course files carry `draft: true` in their frontmatter while they are being
 // written. `edutools` reads the same flag to keep them out of Canvas; here it
