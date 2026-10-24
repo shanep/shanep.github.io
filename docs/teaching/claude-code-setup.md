@@ -138,7 +138,7 @@ In most of mine, `npm install` does it through the `prepare` script.
 
 My dotfiles have no git hooks. Their checks run in CI once a day. The GitHub Actions jobs that
 start an agent when CI fails or on a schedule are not hooks, and they are covered in
-[section 3 of the workflow](/ai/workflow/#_3-agents-start-the-work-not-just-me).
+[section 3 of the workflow](/teaching/agentic-workflow#_3-agents-start-the-work-not-just-me).
 
 ## Why not something else?
 
@@ -176,7 +176,7 @@ worktree lands at `<repo>/.claude/worktrees/<slug>` on a branch named `worktree-
 
 `/handoff` starts one session for one task. For a bigger job, one controller session per repo
 starts a worker for each task in a plan, which is
-[section 4 of the workflow](/ai/workflow/#_4-one-controller-per-repo-every-worker-in-its-own-worktree).
+[section 4 of the workflow](/teaching/agentic-workflow#_4-one-controller-per-repo-every-worker-in-its-own-worktree).
 
 These are the commands for keeping track of background sessions:
 
@@ -254,7 +254,7 @@ The whole `/handoff` skill is about 40 lines, so you do not need much to get som
 ## Habits I ask Claude to follow
 
 My global `CLAUDE.md` is mostly rules about how work gets done. The whole workflow, and the
-reasons behind it, is on [An Agentic Software Workflow](/ai/workflow/). The ones that
+reasons behind it, is on [An Agentic Software Workflow](/teaching/agentic-workflow). The ones that
 matter most:
 
 - The session I am in is the controller. It works in the main checkout, on the default branch.

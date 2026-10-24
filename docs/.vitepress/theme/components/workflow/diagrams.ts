@@ -1,4 +1,4 @@
-// The diagrams on /ai/workflow/, drawn by render.ts through WorkflowDiagram.vue.
+// The diagrams on /teaching/agentic-workflow, drawn by render.ts through WorkflowDiagram.vue.
 // Each one has a wide layout (about 700 units across, so the text stays near
 // full size on a desktop) and a narrow one for phones. Coordinates are node
 // centers.

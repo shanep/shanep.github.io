@@ -9,7 +9,7 @@ people who use it, and any change that has to wait for a person to start it.
 The workflow is 8 rules, and the first 2 matter the most. It is a living document, and
 [Where this stands](#where-this-stands) lists which parts are in place and which are planned.
 For the Claude setup underneath it (syncing config across machines, hooks, handing work to a new
-session), see [My Claude Code Setup](/ai/claude/).
+session), see [My Claude Code Setup](/teaching/claude-code-setup).
 
 <WorkflowDiagram name="loop" />
 
@@ -41,7 +41,7 @@ that keeps checking it after I stop looking.
 
 The checks run on their own. Every repo has git hooks: pre-commit runs the fast checks and
 pre-push runs the full suite, and CI runs the same things again on a clean machine. The
-[setup page](/ai/claude/#hooks) lists every hook, where it comes from and how it gets turned on. Done means
+[setup page](/teaching/claude-code-setup#hooks) lists every hook, where it comes from and how it gets turned on. Done means
 the hooks and CI pass, not that an agent says it is done.
 
 The tests have to check the thing users actually do. My plugin marketplace,
@@ -203,7 +203,7 @@ checks once. Then it removes the worktree and deletes the branch with `git branc
 
 The branches only live for an hour or two, so main is never far behind the work. `/dispatch`
 starts a worker for each ready row in the plan. `/handoff`, on the
-[setup page](/ai/claude/#handing-work-to-a-new-session-with-handoff), starts a single worker
+[setup page](/teaching/claude-code-setup#handing-work-to-a-new-session-with-handoff), starts a single worker
 without a plan.
 
 ## 5. A second agent reviews before anything lands
@@ -249,7 +249,7 @@ My `CLAUDE.md`, skills and hooks live in a git repo and get committed, synced an
 any other code. That config is how I tell an agent what to do when I am not there to tell it, so
 it gets the same care as the code. A rule that only exists in one session's context is gone when
 the session ends, and a rule in a file on one machine is not on the others. The
-[setup page](/ai/claude/) covers how the syncing works.
+[setup page](/teaching/claude-code-setup) covers how the syncing works.
 
 The same goes for the repos themselves: every file is either committed or listed in
 `.gitignore`. A file git does not know about is one `git clean` away from being lost.
