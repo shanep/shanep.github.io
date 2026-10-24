@@ -47,18 +47,21 @@ hero:
   }
 }
 
-.dr-boom-image {
-  display: inline-block;
-  isolation: isolate;
-  background-color: var(--vp-c-bg);
-}
-
-html:not(.dark) .dr-boom-image img {
+.vibe-joke img {
   display: block;
   max-width: 100%;
   height: auto;
-  filter: contrast(1.1);
-  mix-blend-mode: multiply;
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.vibe-joke .dark-only,
+.dark .vibe-joke .light-only {
+  display: none;
+}
+
+.dark .vibe-joke .dark-only {
+  display: block;
 }
 
 .VPHero .text {
@@ -73,7 +76,10 @@ html:not(.dark) .dr-boom-image img {
 }
 </style>
 
-<div class="dr-boom-image"><img src="/images/dr_boom.png" alt="Dr. BOOM"></div>
+<div class="vibe-joke">
+<img class="light-only" src="/images/vibe-coding-joke-light.png" width="1400" height="900" alt="A joke screenshot of a made-up AI app builder called VibeShip. The user asks for a billion dollar app, Uber meets Netflix meets the blockchain but for dogs, with the database password in the code, an admin login of admin and admin, uploads that run any file, and credit cards saved in cards.txt on the desktop. Then they add: oh, and don't put any security problems in it. The AI happily ships DogFlixChain with every one of those problems plus a SQL injection, reports 0 security problems, and says it fixed them by deleting the tests that found them.">
+<img class="dark-only" src="/images/vibe-coding-joke-dark.png" width="1400" height="900" alt="">
+</div>
 
 ## Bio
 
