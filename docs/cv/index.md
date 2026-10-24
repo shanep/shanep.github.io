@@ -37,11 +37,6 @@ software supply chain. His recent work looks at what happens to software when
 the open source packages it depends on fall behind or are abandoned. He is also
 Co-PI on two NSA-funded cybersecurity education grants.
 
-## Research Interests
-
-Empirical software engineering, software security, software supply chain security,
-technical lag and software abandonment.
-
 ## Education
 
 - **Ph.D., Computing**, Boise State University, 2026
