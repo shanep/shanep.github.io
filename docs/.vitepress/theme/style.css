@@ -442,3 +442,22 @@ html {
 .VPFeature .icon {
   background-color: transparent;
 }
+
+/* Short tags at the top of a card, like a venue's ranking on Research. */
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.card-tags span {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg);
+}
