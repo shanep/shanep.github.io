@@ -10,6 +10,8 @@
   `.githooks/pre-push` runs `npm run lint:md` and `npm run docs:build`, the same checks CI
   runs before it deploys. `npm install` turns them on (the `prepare` script sets
   `core.hooksPath`), so do not run the build by hand just before pushing.
+  `npm run check` runs everything CI runs (the lint, the build and Lighthouse), for when you
+  want the full set without pushing.
 - **`.worktreeinclude` lists the ignored files a new worktree needs** (`.env`, the local
   Claude settings, the course textbook PDFs that `edutools push` uploads). Add to it when a
   new ignored file is needed to build or push a course.

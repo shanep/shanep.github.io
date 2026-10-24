@@ -23,7 +23,8 @@
     "diagrams": "scripts/a11y/check.sh --diagrams",
     "diagrams:export": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/a11y/diagrams.mjs --export",
     "lighthouse": "npx --yes @lhci/cli@0.15.1 autorun",
-    "a11y:pdf": "node scripts/a11y/pdf.mjs"
+    "a11y:pdf": "node scripts/a11y/pdf.mjs",
+    "check": "npm run lint:md && npm run docs:build && npm run lighthouse"
   },
   "dependencies": {
     "@fontsource-variable/jetbrains-mono": "^5.3.0",
