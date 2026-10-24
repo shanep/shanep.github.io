@@ -1,9 +1,10 @@
-# My Claude Code Setup (as of 10/20/26)
+# My Claude Code Setup
 
 I use [Claude Code](https://code.claude.com/docs) on a few different machines, and I want the
 same Claude on every one of them: the same instructions, settings, skills and plugins. This page
-covers how I keep them in sync, how I hand work off to a new session, and the habits I ask Claude
-to follow. None of it is fancy. It is a git repo, some symlinks and two shell scripts.
+covers how I keep them in sync, every hook that runs and where it comes from, how I hand work off
+to a new session, and the habits I ask Claude to follow. None of it is fancy. It is a git repo,
+some symlinks and a few shell scripts.
 
 ## Same Claude everywhere
 
@@ -46,9 +47,9 @@ I never commit or pull my Claude config by hand. Two hooks in `settings.json` ru
 ```json
 "hooks": {
   "SessionStart": [{ "hooks": [{ "type": "command", "timeout": 5,
-    "command": "sh \"$HOME/.claude/hooks/dotfiles-sync.sh\" -b" }] }],
+    "command": "f=\"$HOME/.claude/hooks/dotfiles-sync.sh\"; [ ! -f \"$f\" ] || sh \"$f\" -b" }] }],
   "SessionEnd": [{ "hooks": [{ "type": "command", "timeout": 60,
-    "command": "sh \"$HOME/.claude/hooks/dotfiles-sync.sh\"" }] }]
+    "command": "f=\"$HOME/.claude/hooks/dotfiles-sync.sh\"; [ ! -f \"$f\" ] || sh \"$f\"" }] }]
 }
 ```
 
@@ -78,7 +79,66 @@ failed push) the script writes the reason to `~/.cache/dotfiles-sync/problem`. T
 start prints that file, which puts it in front of Claude, and Claude tells me about it. So a
 broken sync gets noticed the next time I open a session instead of a month later.
 
+The `[ ! -f "$f" ] ||` in front skips the hook on a machine where `link.sh` has not run yet,
+instead of failing every session start.
+
+The sync also checks that `~/.claude/settings.json` is still a link into the repo. A tool that
+rewrites the file in place replaces the link with a plain file, and after that nothing gets
+synced, so the script writes a problem file that says so.
+
 Everything is POSIX `sh` and `getopts`, so the same scripts run on macOS and Linux.
+
+## Hooks
+
+A hook is a command that runs on its own when something happens: a Claude Code session starts
+or ends, or git is about to commit or push. Mine come from three places.
+
+### Claude Code hooks in my settings
+
+These are in `settings.json` in my dotfiles, and the scripts are in its `claude/hooks/` folder.
+`link.sh` links both into `~/.claude`, so they run in every session on every machine.
+
+| Event | Script | How it runs | What it does |
+| :--- | :--- | :--- | :--- |
+| SessionStart | `dotfiles-sync.sh -b` | 5 second timeout, does its work in the background at most every 5 minutes | Commits, rebases and pushes my Claude config, then reruns `link.sh` ([Auto sync](#auto-sync)) |
+| SessionStart | `untracked-files.sh` | 5 second timeout | Lists the files git neither tracks nor ignores, so the session commits or ignores them before a reset or clean can lose them |
+| SessionStart, on a new or resumed session | `repo-health.sh` | Async, so a fetch or a test run never slows startup | Checks for a half-done rebase or merge, main behind or ahead of origin, a branch with work that never landed, and CI green on head. A repo without CI runs its own check at origin's head instead. A healthy repo prints nothing |
+| SessionEnd | `dotfiles-sync.sh` | 60 second timeout | Pushes whatever the session changed, and skips the network when there is nothing to push |
+
+### Plugin and project hooks
+
+A plugin can bring its own hooks. `install.sh` installs every plugin listed under
+`enabledPlugins`, so these come along with it:
+
+- `boisestate` has a Stop hook that prints notices about my boisestate.ai quota.
+- `tune`, `pyright-lsp` and `clangd-lsp` have no hooks.
+
+A repo can also have hooks in its own `.claude/settings.json`, which run for anyone who opens a
+session in it. [claude-plugins](https://github.com/shanep/claude-plugins) has a SessionStart hook
+that runs `git config core.hooksPath .githooks`, which turns on its git hooks below.
+
+### Git hooks in each repo
+
+Each repo keeps its git hooks in a tracked `.githooks/` folder, so they are versioned like any
+other code. Git only runs them once `core.hooksPath` points at that folder, and that setting
+lives in `.git/config`, which is never committed. So every repo needs something that sets it.
+In most of mine, `npm install` does it through the `prepare` script.
+
+| Repo | Hook | What it runs | Turned on by |
+| :--- | :--- | :--- | :--- |
+| [shanep.github.io](https://github.com/shanep/shanep.github.io) | pre-commit | markdownlint on the staged Markdown | `npm install` |
+| | pre-push | `npm run lint:md` and `npm run docs:build` (dead links fail the build) | `npm install` |
+| [boisestate.ai](https://github.com/shanep/boisestate.ai) | pre-commit | `npm run validate` and `npm run check` | `npm install` |
+| [claude-tune](https://github.com/shanep/claude-tune) | pre-commit | `scripts/validate.mjs` and `npm run check` | `npm install` |
+| [krascha](https://github.com/shanep/krascha) | pre-commit | `claude plugin validate .` and `npm run check` | `npm install` |
+| [claude-plugins](https://github.com/shanep/claude-plugins) | pre-commit | `scripts/check.sh` | its Claude SessionStart hook |
+| | pre-push | `scripts/check.sh` and `scripts/test-install.sh` | its Claude SessionStart hook |
+| [edutools](https://github.com/shanep/edutools) | pre-commit | lint, typecheck and the tests related to the staged TypeScript | `git config core.hooksPath .githooks`, by hand once per clone |
+| | pre-push | `npm run check` | the same |
+
+My dotfiles have no git hooks. Their checks run in CI once a day. The GitHub Actions jobs that
+start an agent when CI fails or on a schedule are not hooks, and they are covered in
+[section 3 of the workflow](/ai/workflow/#_3-agents-start-the-work-not-just-me).
 
 ## Why not something else?
 
@@ -114,6 +174,10 @@ claude --bg -w <slug> -n <slug> "<brief>"
 `--bg` runs it in the background, `-w` gives it a new git worktree, and `-n` names it. The
 worktree lands at `<repo>/.claude/worktrees/<slug>` on a branch named `worktree-<slug>`.
 
+`/handoff` starts one session for one task. For a bigger job, one controller session per repo
+starts a worker for each task in a plan, which is
+[section 4 of the workflow](/ai/workflow/#_4-one-controller-per-repo-every-worker-in-its-own-worktree).
+
 These are the commands for keeping track of background sessions:
 
 | Command | What it does |
@@ -137,14 +201,13 @@ tells the new session to merge that branch before doing anything else. You can a
 
 ## Small over heavy
 
-I used to run Overlord, a much heavier session manager I built: 15 hooks, telemetry and a set of
-command shims. Once Claude Code got background sessions built in, most of it was doing work
-Claude Code already does, so I retired it. Background sessions plus `/handoff` cover what I
-actually used.
+Claude Code has background sessions, worktrees and messaging between sessions built in, so the
+setup leans on those instead of a custom session manager. What it adds is small: a few skills
+like `/handoff`, the hooks above, and plugins for the pieces that are worth sharing.
 
-The one piece I kept was the session tuning, which I pulled out into its own plugin,
-[claude-tune](https://github.com/shanep/claude-tune). It reads your local session transcripts
-and suggests settings changes based on how you actually work. To install it:
+Session tuning is one of those plugins, [claude-tune](https://github.com/shanep/claude-tune). It
+reads your local session transcripts and suggests settings changes based on how you actually
+work. To install it:
 
 ```bash
 claude plugin marketplace add shanep/claude-plugins
@@ -194,12 +257,13 @@ My global `CLAUDE.md` is mostly rules about how work gets done. The whole workfl
 reasons behind it, is on [An Agentic Software Workflow](/ai/workflow/). The ones that
 matter most:
 
-- A session I am in works in the main checkout, on the default branch. Background sessions each
-  get their own git worktree, so parallel sessions never share uncommitted changes, checkouts or
-  build output, and cannot step on each other.
-- Finished work lands straight on the default branch, with no pull requests. Claude rebases onto
-  the latest `origin`, lets the checks run and pushes. I am the only developer on most of these
-  repos, so a pull request would just be me approving my own work.
+- The session I am in is the controller. It works in the main checkout, on the default branch.
+  Background sessions are workers, and each one gets its own git worktree, so parallel sessions
+  never share uncommitted changes, checkouts or build output, and cannot step on each other.
+- Finished work lands straight on the default branch, with no pull requests. The controller
+  lands each worker's branch: it rebases onto the latest `origin`, lets the checks run and
+  pushes. I am the only developer on most of these repos, so a pull request would just be me
+  approving my own work.
 - Releases always need my go-ahead. Tagging a release is never automatic.
 - The repo's git hooks and CI are the checks. If a pre-push hook already runs the build and the
   tests, Claude does not also run them by hand first.

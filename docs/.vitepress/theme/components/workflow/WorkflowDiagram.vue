@@ -4,10 +4,11 @@
 // 7:1 contrast in light and dark mode. Each diagram has a wide layout and a
 // narrow one, and a container query shows the one that fits, since a wide
 // diagram scaled down to a phone makes its text too small to read. Labeled
-// regions show where each step runs, and boxes are otherwise all drawn the
-// same, so no color stands for something the reader has to guess.
+// regions show where each step runs. Color means only that: each place has
+// one hue, every box takes the hue of the region it sits in, and the region's
+// label is the legend.
 import { computed } from 'vue'
-import { diagrams, type Layout, type Node, type Edge, type Point } from './diagrams'
+import { diagrams, type Layout, type Node, type Edge, type Point, type Place, type Region } from './diagrams'
 
 const props = defineProps<{ name: string }>()
 
@@ -17,9 +18,9 @@ const spec = computed(() => {
   return found
 })
 
-const LABEL = 16
-const SUB = 13
-const EDGE = 13
+const LABEL = 17
+const SUB = 14
+const EDGE = 14
 
 function isDot(n: Node): boolean {
   return n.kind === 'dot' || n.kind === 'branch' || n.kind === 'landed' || n.kind === 'point'
@@ -96,6 +97,26 @@ function textWidth(text: string, size: number): number {
   return text.length * size * 0.56
 }
 
+// A 16 unit icon for each place, drawn in the region's tab next to its name.
+const ICONS: Record<Place, string> = {
+  mac: 'M2 3.5h12v8H2z M0 13.5h16',
+  github: 'M4 2v12 M4 10c0-3 8-2 8-6 M12 2.5a1.5 1.5 0 1 0 0 .01 M4 14a1.5 1.5 0 1 0 0 .01',
+  cloud: 'M4.5 13h7.5a3 3 0 0 0 .3-6 4.5 4.5 0 0 0-8.6 1.2A2.5 2.5 0 0 0 4.5 13z',
+  users: 'M5.5 7a2.5 2.5 0 1 0 0-.01 M1 14c0-3 2-4.5 4.5-4.5S10 11 10 14 M11 4.5a2 2 0 1 1 0 4 M12 9.8c2 .4 3 1.8 3 4.2',
+  canvas: 'M1 4l7-3 7 3-7 3z M4 5.5v5c0 1.5 8 1.5 8 0v-5 M15 4v5',
+}
+
+const TAB = 15
+
+function tab(r: Region) {
+  const width = 38 + r.label.length * TAB * 0.6
+  return { x: r.x + 8, y: r.y + 8, w: Math.min(width, r.w - 16), h: 28, icon: ICONS[r.place] }
+}
+
+function placeOf(regions: Region[], n: Node): Place | undefined {
+  return regions.find((r) => n.x >= r.x && n.x <= r.x + r.w && n.y >= r.y && n.y <= r.y + r.h)?.place
+}
+
 function draw(layout: Layout) {
   const edges = layout.edges.map((e) => {
     const points = route(layout, e)
@@ -114,10 +135,10 @@ function draw(layout: Layout) {
         right: [n.x + off, n.y + 5, 'start'],
       }
       const [x, y, align] = pos[side]
-      return { ...n, text: lines.map((t, i) => ({ t, x, y: y + i * (SUB + 3), cls: 'wf-sub', align })) }
+      return { ...n, place: undefined, text: lines.map((t, i) => ({ t, x, y: y + i * (SUB + 3), cls: 'wf-sub', align })) }
     }
     if (n.kind === 'note') {
-      return { ...n, text: lines.map((t, i) => ({ t, x: n.x, y: n.y + i * (SUB + 4), cls: 'wf-note', align: n.align ?? 'middle' })) }
+      return { ...n, place: undefined, text: lines.map((t, i) => ({ t, x: n.x, y: n.y + i * (SUB + 4), cls: 'wf-note', align: n.align ?? 'middle' })) }
     }
     // A bold name on the first line, smaller detail lines under it, the whole
     // block centered in the box.
@@ -130,9 +151,10 @@ function draw(layout: Layout) {
       cls: i === 0 ? 'wf-label' : 'wf-sub',
       align: 'middle',
     }))
-    return { ...n, text }
+    return { ...n, place: placeOf(layout.regions ?? [], n), text }
   })
-  return { width: layout.width, height: layout.height, regions: layout.regions ?? [], edges, nodes }
+  const regions = (layout.regions ?? []).map((r) => ({ ...r, tab: tab(r) }))
+  return { width: layout.width, height: layout.height, regions, edges, nodes }
 }
 
 const views = computed(() => [
@@ -167,10 +189,15 @@ const id = computed(() => `wf-${props.name}`)
         >
           <path d="M0 0 L10 5 L0 10 z" class="wf-head" />
         </marker>
+        <filter :id="`${id}-${v.key}-shadow`" x="-10%" y="-10%" width="120%" height="140%">
+          <feDropShadow dx="0" dy="2" stdDeviation="2.5" class="wf-shadow" />
+        </filter>
       </defs>
-      <g v-for="(r, i) in v.regions" :key="`r${i}`">
+      <g v-for="(r, i) in v.regions" :key="`r${i}`" :class="`wf-place-${r.place}`">
         <rect :x="r.x" :y="r.y" :width="r.w" :height="r.h" rx="14" class="wf-region" />
-        <text :x="r.x + 12" :y="r.y + 22" class="wf-region-label">{{ r.label }}</text>
+        <rect :x="r.tab.x" :y="r.tab.y" :width="r.tab.w" :height="r.tab.h" rx="14" class="wf-tab" />
+        <path :d="r.tab.icon" :transform="`translate(${r.tab.x + 12} ${r.tab.y + 6})`" class="wf-icon" />
+        <text :x="r.tab.x + 34" :y="r.y + 27" class="wf-region-label">{{ r.label }}</text>
       </g>
       <path
         v-for="(e, i) in v.edges"
@@ -179,7 +206,7 @@ const id = computed(() => `wf-${props.name}`)
         :class="['wf-edge', { 'wf-heavy': e.heavy }]"
         :marker-end="e.arrow === false ? undefined : `url(#${id}-${v.key}-arrow)`"
       />
-      <g v-for="n in v.nodes" :key="n.id" :class="`wf-${n.kind ?? 'step'}`">
+      <g v-for="n in v.nodes" :key="n.id" :class="[`wf-${n.kind ?? 'step'}`, n.place && `wf-place-${n.place}`]">
         <rect
           v-if="!isDot(n) && n.kind !== 'note'"
           :x="n.x - (n.w ?? 0) / 2"
@@ -188,6 +215,7 @@ const id = computed(() => `wf-${props.name}`)
           :height="n.h"
           rx="10"
           class="wf-box"
+          :filter="`url(#${id}-${v.key}-shadow)`"
         />
         <circle v-if="isDot(n) && n.kind !== 'point'" :cx="n.x" :cy="n.y" :r="radius(n)" class="wf-dot" />
         <text
@@ -206,7 +234,7 @@ const id = computed(() => `wf-${props.name}`)
             :y="e.label.at[1] - EDGE / 2 - 4"
             :width="textWidth(e.label.text, EDGE) + 8"
             :height="EDGE + 8"
-            rx="4"
+            :rx="(EDGE + 8) / 2"
             class="wf-label-bg"
           />
           <text :x="e.label.at[0]" :y="e.label.at[1] + EDGE / 2 - 2" text-anchor="middle" class="wf-edge-label">{{
@@ -252,27 +280,120 @@ figcaption {
   text-align: center;
 }
 
+/* One hue per place. --wf-ink is text on --wf-tab and on --wf-fill, at 7:1 or
+   better; --wf-line is the border of the region and of each box in it. */
+.wf-place-mac {
+  --wf-fill: #eef4ff;
+  --wf-tab: #d6e4ff;
+  --wf-line: #2f62d6;
+  --wf-ink: #1b3a86;
+}
+
+.wf-place-github {
+  --wf-fill: #f5f1ff;
+  --wf-tab: #e6dcff;
+  --wf-line: #7444d8;
+  --wf-ink: #47208f;
+}
+
+.wf-place-cloud {
+  --wf-fill: #fff3ea;
+  --wf-tab: #ffe0c9;
+  --wf-line: #c4520f;
+  --wf-ink: #77290c;
+}
+
+.wf-place-users {
+  --wf-fill: #edf9f1;
+  --wf-tab: #d2f0dc;
+  --wf-line: #1d8146;
+  --wf-ink: #0f3d22;
+}
+
+.wf-place-canvas {
+  --wf-fill: #fff0f0;
+  --wf-tab: #ffdada;
+  --wf-line: #c02626;
+  --wf-ink: #761818;
+}
+
+html.dark .wf-place-mac {
+  --wf-fill: #111c33;
+  --wf-tab: #1d3160;
+  --wf-line: #6b9af5;
+  --wf-ink: #cfe0ff;
+}
+
+html.dark .wf-place-github {
+  --wf-fill: #1a1430;
+  --wf-tab: #30245a;
+  --wf-line: #a283f4;
+  --wf-ink: #e4d9ff;
+}
+
+html.dark .wf-place-cloud {
+  --wf-fill: #26170d;
+  --wf-tab: #4a2a12;
+  --wf-line: #f0904f;
+  --wf-ink: #ffdcc4;
+}
+
+html.dark .wf-place-users {
+  --wf-fill: #0e2317;
+  --wf-tab: #17402a;
+  --wf-line: #4cc47a;
+  --wf-ink: #c8f5d8;
+}
+
+html.dark .wf-place-canvas {
+  --wf-fill: #2a1111;
+  --wf-tab: #4f1c1c;
+  --wf-line: #f27474;
+  --wf-ink: #ffd6d6;
+}
+
 .wf-region {
-  fill: var(--vp-c-bg-soft);
-  stroke: var(--vp-c-text-2);
-  stroke-width: 1;
+  fill: var(--wf-fill, var(--vp-c-bg-soft));
+  stroke: var(--wf-line, var(--vp-c-text-2));
+  stroke-width: 1.5;
+}
+
+.wf-tab {
+  fill: var(--wf-tab);
+}
+
+.wf-icon {
+  fill: none;
+  stroke: var(--wf-ink);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .wf-region-label {
-  fill: var(--vp-c-text-1);
-  font-size: 14px;
+  fill: var(--wf-ink, var(--vp-c-text-1));
+  font-size: 15px;
   font-weight: 700;
+}
+
+.wf-shadow {
+  flood-color: #0b1530;
+  flood-opacity: 0.16;
+}
+
+html.dark .wf-shadow {
+  flood-color: #000;
+  flood-opacity: 0.55;
 }
 
 .wf-box {
   fill: var(--vp-c-bg);
-  stroke: var(--vp-c-text-2);
-  stroke-width: 1.5;
+  stroke: var(--wf-line, var(--vp-c-text-2));
+  stroke-width: 2;
 }
 
 /* Built but not run for real yet. A diagram that uses it has a legend. */
 .wf-planned .wf-box {
-  stroke: var(--vp-c-text-2);
   stroke-width: 2.5;
   stroke-dasharray: 1 5;
   stroke-linecap: round;
@@ -280,14 +401,14 @@ figcaption {
 
 .wf-label {
   fill: var(--vp-c-text-1);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
 }
 
 .wf-sub,
 .wf-note {
   fill: var(--vp-c-text-2);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .wf-note {
@@ -311,11 +432,13 @@ figcaption {
 
 .wf-label-bg {
   fill: var(--vp-c-bg);
+  stroke: var(--vp-c-divider);
+  stroke-width: 1;
 }
 
 .wf-edge-label {
   fill: var(--vp-c-text-1);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .wf-dot .wf-dot,

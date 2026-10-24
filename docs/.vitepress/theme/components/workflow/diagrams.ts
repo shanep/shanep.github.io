@@ -12,7 +12,7 @@ export interface Node {
   h?: number
   // The first line of a box is its name, the rest are details.
   lines?: string[]
-  // step, planned (built but not run for real yet, drawn dotted, and the
+  // step, planned (not built or not run for real yet, drawn dotted, and the
   // diagram has a legend that says so), note (text only), dot (a commit on
   // main), branch (a commit on a worktree branch), landed (a commit that landed
   // from a branch), point (an invisible end).
@@ -31,10 +31,15 @@ export interface Edge {
   arrow?: boolean
 }
 
+export type Place = 'mac' | 'github' | 'cloud' | 'users' | 'canvas'
+
 // A labeled area for the machine or service a step runs on. Boxes sit inside
 // the region they run in, which is how the diagrams show where things happen.
 export interface Region {
   label: string
+  // Sets the region's color, which every box inside it shares. The region's
+  // label is the legend for it.
+  place: Place
   x: number
   y: number
   w: number
@@ -70,66 +75,70 @@ const loop: Diagram = {
     'new version on the next start, and a bug a user reports goes back to GitHub as an issue.',
   wide: {
     width: 700,
-    height: 480,
+    height: 560,
     regions: [
-      { label: 'Where the agent works: my Mac, or a GitHub Actions runner', x: 8, y: 8, w: 684, h: 160 },
-      { label: 'GitHub', x: 8, y: 188, w: 684, h: 140 },
-      { label: "Users' machines", x: 8, y: 348, w: 684, h: 124 },
+      { label: 'Where the agent works: my Mac, or a GitHub Actions runner', place: 'mac', x: 8, y: 8, w: 684, h: 182 },
+      { label: 'GitHub', place: 'github', x: 8, y: 214, w: 684, h: 162 },
+      { label: "Users' machines", place: 'users', x: 8, y: 400, w: 684, h: 152 },
     ],
     nodes: [
-      { id: 'edit', x: 90, y: 112, w: 148, h: 76, lines: ['Edit', 'from my prompt', 'or a trigger'] },
-      { id: 'test', x: 260, y: 112, w: 148, h: 76, lines: ['Test', 'pre-commit hook', 'runs the tests'] },
-      { id: 'review', x: 430, y: 112, w: 148, h: 76, lines: ['Review', 'a second agent', 'reads the diff'] },
-      { id: 'land', x: 600, y: 112, w: 148, h: 76, lines: ['Land', 'rebase, pre-push', 'checks, push'] },
-      { id: 'triggers', x: 90, y: 268, w: 148, h: 76, lines: ['Triggers', 'an issue, failing', 'CI, a schedule'] },
-      { id: 'release', x: 430, y: 268, w: 148, h: 64, lines: ['Release', 'only with my OK'] },
-      { id: 'ci', x: 600, y: 268, w: 148, h: 64, lines: ['CI on main', 'Ubuntu and macOS'] },
-      { id: 'users', x: 90, y: 420, w: 148, h: 76, lines: ['Users', 'students and', 'colleagues'] },
-      { id: 'update', x: 600, y: 420, w: 148, h: 64, lines: ['Autoupdate', 'on the next start'] },
+      { id: 'edit', x: 98, y: 96, w: 132, h: 80, lines: ['Edit', 'from my prompt', 'or a trigger'] },
+      { id: 'test', x: 266, y: 96, w: 132, h: 80, lines: ['Test', 'pre-commit hook', 'runs the tests'] },
+      { id: 'review', x: 434, y: 96, w: 132, h: 80, lines: ['Review', 'a second agent', 'reads the diff'] },
+      { id: 'land', x: 602, y: 96, w: 132, h: 80, lines: ['Land', 'rebase, run the', 'checks, push'] },
+      { id: 'triggers', x: 266, y: 298, w: 132, h: 80, lines: ['Triggers', 'an issue, failing', 'CI, a schedule'] },
+      { id: 'release', x: 434, y: 298, w: 132, h: 64, lines: ['Release', 'only with my OK'] },
+      { id: 'ci', x: 602, y: 298, w: 132, h: 64, lines: ['CI on main', 'Ubuntu, macOS'] },
+      { id: 'users', x: 266, y: 482, w: 132, h: 80, lines: ['Users', 'students and', 'colleagues'] },
+      { id: 'update', x: 602, y: 482, w: 132, h: 64, lines: ['Autoupdate', 'on the next start'] },
+      { id: 'reviewOut', x: 434, y: 136, kind: 'point' },
+      { id: 'editBack', x: 150, y: 136, kind: 'point' },
+      { id: 'editStart', x: 124, y: 136, kind: 'point' },
     ],
     edges: [
       { from: 'edit', to: 'test' },
       { from: 'test', to: 'review' },
       { from: 'review', to: 'land' },
-      { from: 'review', to: 'edit', via: [[430, 50], [90, 50]], label: 'a failure or a finding goes back' },
-      { from: 'land', to: 'ci', label: 'push', labelAt: [600, 178] },
+      { from: 'reviewOut', to: 'editBack', via: [[434, 166], [150, 166]], label: 'a failure or a finding goes back', labelAt: [287, 166] },
+      { from: 'land', to: 'ci', label: 'push', labelAt: [630, 236] },
       { from: 'ci', to: 'release' },
-      { from: 'ci', to: 'update', label: 'pass', labelAt: [600, 338] },
+      { from: 'ci', to: 'update', label: 'pass', labelAt: [630, 356] },
       { from: 'update', to: 'users', label: 'new version' },
-      { from: 'users', to: 'triggers', label: 'report a bug', labelAt: [90, 338] },
-      { from: 'triggers', to: 'edit', label: 'start an agent', labelAt: [90, 178] },
+      { from: 'users', to: 'triggers', label: 'report a bug', labelAt: [331, 356] },
+      { from: 'triggers', to: 'editStart', via: [[124, 298]], label: 'start an agent', labelAt: [192, 236] },
     ],
   },
   narrow: {
     width: 340,
-    height: 870,
+    height: 836,
     regions: [
-      { label: 'My Mac, or an Actions runner', x: 6, y: 6, w: 328, h: 362 },
-      { label: 'GitHub', x: 6, y: 388, w: 328, h: 266 },
-      { label: "Users' machines", x: 6, y: 674, w: 328, h: 186 },
+      { label: 'My Mac, or an Actions runner', place: 'mac', x: 6, y: 6, w: 328, h: 350 },
+      { label: 'GitHub', place: 'github', x: 6, y: 380, w: 328, h: 212 },
+      { label: 'Users', place: 'users', x: 6, y: 616, w: 328, h: 212 },
     ],
     nodes: [
-      { id: 'edit', x: 170, y: 80, w: 190, h: 56, lines: ['Edit', 'Claude writes code'] },
-      { id: 'test', x: 170, y: 160, w: 190, h: 56, lines: ['Test', 'pre-commit hook'] },
-      { id: 'review', x: 170, y: 240, w: 190, h: 56, lines: ['Review', 'a second agent'] },
-      { id: 'land', x: 170, y: 320, w: 190, h: 56, lines: ['Land', 'rebase, check, push'] },
-      { id: 'ci', x: 170, y: 460, w: 190, h: 56, lines: ['CI on main', 'Ubuntu and macOS'] },
-      { id: 'release', x: 170, y: 535, w: 190, h: 56, lines: ['Release', 'only with my OK'] },
-      { id: 'triggers', x: 170, y: 610, w: 190, h: 56, lines: ['Triggers', 'issue, CI, schedule'] },
-      { id: 'users', x: 170, y: 740, w: 190, h: 56, lines: ['Users', 'students, colleagues'] },
-      { id: 'update', x: 170, y: 820, w: 190, h: 56, lines: ['Autoupdate', 'on the next start'] },
+      { id: 'edit', x: 170, y: 80, w: 220, h: 56, lines: ['Edit', 'from a prompt or trigger'] },
+      { id: 'test', x: 170, y: 156, w: 220, h: 56, lines: ['Test', 'pre-commit hook'] },
+      { id: 'review', x: 170, y: 232, w: 220, h: 56, lines: ['Review', 'a second agent'] },
+      { id: 'land', x: 170, y: 308, w: 220, h: 56, lines: ['Land', 'rebase, check, push'] },
+      { id: 'ci', x: 170, y: 452, w: 200, h: 56, lines: ['CI on main', 'Ubuntu and macOS'] },
+      { id: 'release', x: 95, y: 540, w: 110, h: 56, lines: ['Release', 'with my OK'] },
+      { id: 'triggers', x: 245, y: 540, w: 110, h: 56, lines: ['Triggers', 'start agents'] },
+      { id: 'update', x: 170, y: 688, w: 200, h: 56, lines: ['Autoupdate', 'on the next start'] },
+      { id: 'users', x: 170, y: 776, w: 200, h: 56, lines: ['Users', 'students, colleagues'] },
+      { id: 'ciLeft', x: 95, y: 480, kind: 'point' },
+      { id: 'ciDown', x: 170, y: 480, kind: 'point' },
     ],
     edges: [
       { from: 'edit', to: 'test' },
       { from: 'test', to: 'review' },
       { from: 'review', to: 'land' },
-      { from: 'review', to: 'edit', via: [[300, 240], [300, 80]], label: 'fail', labelAt: [300, 160] },
-      { from: 'land', to: 'ci', label: 'push', labelAt: [170, 378] },
-      { from: 'ci', to: 'release' },
-      { from: 'ci', to: 'update', via: [[316, 460], [316, 820]] },
+      { from: 'review', to: 'edit', via: [[34, 232], [34, 80]], label: 'fail', labelAt: [34, 156] },
+      { from: 'land', to: 'ci', label: 'push', labelAt: [205, 402] },
+      { from: 'ciLeft', to: 'release' },
+      { from: 'ciDown', to: 'update' },
       { from: 'update', to: 'users' },
-      { from: 'users', to: 'triggers', label: 'report a bug', labelAt: [170, 664] },
-      { from: 'triggers', to: 'edit', via: [[12, 610], [12, 80]] },
+      { from: 'users', to: 'triggers', via: [[320, 776], [320, 540]] },
     ],
   },
 }
@@ -145,20 +154,20 @@ const triggers: Diagram = {
     'session test, review and land their change on main.',
   wide: {
     width: 700,
-    height: 470,
+    height: 452,
     regions: [
-      { label: 'My Mac', x: 8, y: 8, w: 684, h: 112 },
-      { label: 'GitHub', x: 8, y: 140, w: 684, h: 290 },
+      { label: 'My Mac', place: 'mac', x: 8, y: 8, w: 684, h: 136 },
+      { label: 'GitHub', place: 'github', x: 8, y: 168, w: 684, h: 248 },
     ],
     nodes: [
-      { id: 'me', x: 125, y: 72, w: 180, h: 50, lines: ['A prompt from me'] },
-      { id: 'local', x: 390, y: 72, w: 200, h: 56, lines: ['Agent session', 'live, or in a worktree'] },
-      { id: 'ci', x: 125, y: 215, w: 180, h: 48, lines: ['CI fails on main'] },
-      { id: 'issue', x: 125, y: 285, w: 180, h: 48, kind: 'planned', lines: ['A labeled issue'] },
-      { id: 'cron', x: 125, y: 355, w: 180, h: 48, lines: ['A schedule'] },
-      { id: 'runner', x: 390, y: 285, w: 200, h: 56, lines: ['Agent session', 'on a fresh runner'] },
-      { id: 'main', x: 600, y: 285, w: 150, h: 56, lines: ['main', 'where work lands'] },
-      { id: 'legend', x: 20, y: 455, kind: 'note', align: 'start', lines: ['dotted border: built, not run for real yet'] },
+      { id: 'me', x: 130, y: 92, w: 180, h: 52, lines: ['A prompt from me'] },
+      { id: 'local', x: 400, y: 92, w: 200, h: 60, lines: ['Agent session', 'live, or in a worktree'] },
+      { id: 'ci', x: 130, y: 240, w: 180, h: 48, lines: ['CI fails on main'] },
+      { id: 'issue', x: 130, y: 304, w: 180, h: 48, kind: 'planned', lines: ['A labeled issue'] },
+      { id: 'cron', x: 130, y: 368, w: 180, h: 48, lines: ['A schedule'] },
+      { id: 'runner', x: 400, y: 304, w: 200, h: 60, lines: ['Agent session', 'on a fresh runner'] },
+      { id: 'main', x: 600, y: 304, w: 140, h: 60, lines: ['main', 'where work lands'] },
+      { id: 'legend', x: 20, y: 440, kind: 'note', align: 'start', lines: ['dotted border: built, not run for real yet'] },
     ],
     edges: [
       { from: 'me', to: 'local' },
@@ -166,45 +175,123 @@ const triggers: Diagram = {
       { from: 'issue', to: 'runner' },
       { from: 'cron', to: 'runner' },
       { from: 'runner', to: 'main' },
-      { from: 'local', to: 'main', via: [[600, 72]], label: 'push', labelAt: [600, 130] },
+      { from: 'local', to: 'main', via: [[600, 92]], label: 'push', labelAt: [628, 190] },
     ],
   },
   narrow: {
     width: 340,
-    height: 610,
+    height: 664,
     regions: [
-      { label: 'My Mac', x: 6, y: 6, w: 328, h: 150 },
-      { label: 'GitHub', x: 6, y: 176, w: 328, h: 394 },
+      { label: 'My Mac', place: 'mac', x: 6, y: 6, w: 328, h: 192 },
+      { label: 'GitHub', place: 'github', x: 6, y: 222, w: 328, h: 400 },
     ],
     nodes: [
-      { id: 'me', x: 170, y: 62, w: 220, h: 40, lines: ['A prompt from me'] },
-      { id: 'local', x: 170, y: 118, w: 220, h: 50, lines: ['Agent session', 'live, or in a worktree'] },
-      { id: 'ci', x: 170, y: 236, w: 220, h: 40, lines: ['CI fails on main'] },
-      { id: 'issue', x: 170, y: 288, w: 220, h: 40, kind: 'planned', lines: ['A labeled issue'] },
-      { id: 'cron', x: 170, y: 340, w: 220, h: 40, lines: ['A schedule'] },
-      { id: 'runner', x: 170, y: 425, w: 220, h: 50, lines: ['Agent session', 'on a fresh runner'] },
-      { id: 'main', x: 170, y: 515, w: 220, h: 50, lines: ['main', 'where work lands'] },
-      { id: 'legend', x: 170, y: 595, kind: 'note', lines: ['dotted border: built, not run for real yet'] },
+      { id: 'me', x: 160, y: 76, w: 200, h: 40, lines: ['A prompt from me'] },
+      { id: 'local', x: 160, y: 148, w: 200, h: 52, lines: ['Agent session', 'live, or in a worktree'] },
+      { id: 'ci', x: 160, y: 290, w: 200, h: 40, lines: ['CI fails on main'] },
+      { id: 'issue', x: 160, y: 346, w: 200, h: 40, kind: 'planned', lines: ['A labeled issue'] },
+      { id: 'cron', x: 160, y: 402, w: 200, h: 40, lines: ['A schedule'] },
+      { id: 'runner', x: 160, y: 486, w: 200, h: 52, lines: ['Agent session', 'on a fresh runner'] },
+      { id: 'main', x: 160, y: 572, w: 200, h: 52, lines: ['main', 'where work lands'] },
+      { id: 'legend', x: 170, y: 650, kind: 'note', lines: ['dotted border: built, not run for real yet'] },
     ],
     edges: [
       { from: 'me', to: 'local' },
-      { from: 'ci', to: 'runner', via: [[305, 236], [305, 385], [170, 385]] },
-      { from: 'issue', to: 'runner', via: [[305, 288], [305, 385], [170, 385]] },
-      { from: 'cron', to: 'runner', via: [[305, 340], [305, 385], [170, 385]] },
+      { from: 'ci', to: 'runner', via: [[290, 290], [290, 486]] },
+      { from: 'issue', to: 'runner', via: [[290, 346], [290, 486]] },
+      { from: 'cron', to: 'runner', via: [[290, 402], [290, 486]] },
       { from: 'runner', to: 'main' },
-      { from: 'local', to: 'main', via: [[12, 118], [12, 515]] },
+      { from: 'local', to: 'main', via: [[316, 148], [316, 572]] },
+    ],
+  },
+}
+
+const controller: Diagram = {
+  title: 'One controller per repo',
+  caption: 'I talk to the controller. It briefs the workers, answers them and lands their work.',
+  desc:
+    'Three areas show where each session runs. On my Mac: I talk to the controller, the live ' +
+    'session in the main checkout on main. It plans, answers and lands. It sends a brief to each ' +
+    'local worker, a background session in its own worktree, and the workers report back with ' +
+    'SendMessage. In Anthropic\'s cloud: the controller can send a brief to a cloud worker, which ' +
+    'gets a fresh clone and none of my Mac\'s files, and cannot message back yet. Cloud workers ' +
+    'are planned, so that box is drawn dotted. On GitHub: the cloud worker pushes a branch to ' +
+    'origin, and the controller pushes main there, which runs CI.',
+  wide: {
+    width: 700,
+    height: 418,
+    regions: [
+      { label: 'My Mac', place: 'mac', x: 8, y: 8, w: 684, h: 192 },
+      { label: 'Anthropic cloud', place: 'cloud', x: 8, y: 224, w: 352, h: 158 },
+      { label: 'GitHub', place: 'github', x: 384, y: 224, w: 308, h: 158 },
+    ],
+    nodes: [
+      { id: 'me', x: 90, y: 120, w: 100, h: 52, lines: ['Me'] },
+      { id: 'controller', x: 280, y: 120, w: 190, h: 96, lines: ['Controller', 'main checkout', 'plans, answers, lands'] },
+      { id: 'workers', x: 598, y: 120, w: 160, h: 96, lines: ['Local workers', 'one worktree each'] },
+      { id: 'cloud', x: 196, y: 316, w: 236, h: 84, kind: 'planned', lines: ['Cloud worker', 'fresh clone, no Mac files', "can't message back yet"] },
+      { id: 'origin', x: 560, y: 316, w: 200, h: 84, lines: ['origin', 'main, worker branches', 'and CI'] },
+      // Ends on the box sides, so the two lines between a pair of boxes do not
+      // sit on top of each other.
+      { id: 'briefOut', x: 375, y: 98, kind: 'point' },
+      { id: 'briefIn', x: 518, y: 98, kind: 'point' },
+      { id: 'replyOut', x: 518, y: 142, kind: 'point' },
+      { id: 'replyIn', x: 375, y: 142, kind: 'point' },
+      { id: 'cloudOut', x: 260, y: 168, kind: 'point' },
+      { id: 'cloudIn', x: 260, y: 274, kind: 'point' },
+      { id: 'pushOut', x: 350, y: 168, kind: 'point' },
+      { id: 'legend', x: 20, y: 406, kind: 'note', align: 'start', lines: ['dotted border: planned, not built yet'] },
+    ],
+    edges: [
+      { from: 'me', to: 'controller' },
+      { from: 'briefOut', to: 'briefIn', label: 'brief' },
+      { from: 'replyOut', to: 'replyIn', label: 'SendMessage' },
+      { from: 'cloudOut', to: 'cloudIn', label: 'brief', labelAt: [295, 184] },
+      { from: 'pushOut', to: 'origin', via: [[350, 212], [560, 212]], label: 'push main', labelAt: [612, 246] },
+      { from: 'cloud', to: 'origin', label: 'branch', labelAt: [422, 316] },
+    ],
+  },
+  narrow: {
+    width: 340,
+    height: 720,
+    regions: [
+      { label: 'My Mac', place: 'mac', x: 6, y: 6, w: 328, h: 350 },
+      { label: 'Anthropic cloud', place: 'cloud', x: 6, y: 380, w: 328, h: 141 },
+      { label: 'GitHub', place: 'github', x: 6, y: 545, w: 328, h: 135 },
+    ],
+    nodes: [
+      { id: 'me', x: 170, y: 74, w: 200, h: 40, lines: ['Me'] },
+      { id: 'controller', x: 170, y: 160, w: 240, h: 80, lines: ['Controller', 'main checkout on main', 'plans, answers, lands'] },
+      { id: 'workers', x: 170, y: 300, w: 240, h: 64, lines: ['Local workers', 'one worktree each'] },
+      { id: 'cloud', x: 170, y: 462, w: 240, h: 70, kind: 'planned', lines: ['Cloud worker', 'fresh clone, no Mac files'] },
+      { id: 'origin', x: 170, y: 624, w: 240, h: 64, lines: ['origin', 'main, branches and CI'] },
+      { id: 'briefOut', x: 110, y: 200, kind: 'point' },
+      { id: 'briefIn', x: 110, y: 268, kind: 'point' },
+      { id: 'replyOut', x: 230, y: 268, kind: 'point' },
+      { id: 'replyIn', x: 230, y: 200, kind: 'point' },
+      { id: 'pushOut', x: 290, y: 136, kind: 'point' },
+      { id: 'cloudOut', x: 290, y: 176, kind: 'point' },
+      { id: 'legend', x: 170, y: 706, kind: 'note', lines: ['dotted border: planned, not built yet'] },
+    ],
+    edges: [
+      { from: 'me', to: 'controller' },
+      { from: 'briefOut', to: 'briefIn', label: 'brief' },
+      { from: 'replyOut', to: 'replyIn', label: 'SendMessage' },
+      { from: 'cloudOut', to: 'cloud', via: [[306, 176], [306, 462]] },
+      { from: 'cloud', to: 'origin', label: 'branch', labelAt: [210, 567] },
+      { from: 'pushOut', to: 'origin', via: [[320, 136], [320, 624]] },
     ],
   },
 }
 
 const trunk: Diagram = {
-  title: 'Living at head with parallel sessions',
-  caption: 'One trunk, with background sessions landing onto it one at a time.',
+  title: 'Parallel workers landing on main',
+  caption: 'One trunk, with the controller landing each worker\'s branch one at a time.',
   desc:
-    'A timeline of the main branch running left to right. The live session commits straight to ' +
-    'main. Worktree B, a background session, branches off main and makes three commits. Worktree ' +
-    'A branches off a little later, makes two commits, then rebases and lands them on main. B ' +
-    'rebases and lands after A. Landing takes a lock, so only one session lands at a time.',
+    'A timeline of the main branch running left to right. Worktree B, a worker, branches off ' +
+    'main and makes three commits. Worktree A branches off a little later and makes two. The ' +
+    'controller rebases A and lands it on main, then rebases B and lands it after A. Only the ' +
+    'controller lands, so two branches never land at the same time.',
   wide: {
     width: 700,
     height: 260,
@@ -222,9 +309,9 @@ const trunk: Diagram = {
       { id: 'b1', x: 200, y: 215, kind: 'branch' },
       { id: 'b2', x: 340, y: 215, kind: 'branch' },
       { id: 'b3', x: 480, y: 215, kind: 'branch' },
-      { id: 'mainNote', x: 20, y: 40, kind: 'note', align: 'start', lines: ['main: the live session commits here'] },
+      { id: 'mainNote', x: 20, y: 40, kind: 'note', align: 'start', lines: ['main: only the controller lands here'] },
       { id: 'aNote', x: 275, y: 180, kind: 'note', align: 'start', lines: ['worktree A'] },
-      { id: 'bNote', x: 185, y: 245, kind: 'note', align: 'start', lines: ['worktree B, another background session'] },
+      { id: 'bNote', x: 185, y: 245, kind: 'note', align: 'start', lines: ['worktree B, another worker'] },
     ],
     edges: [
       { from: 'm0', to: 'm9', heavy: true },
@@ -280,21 +367,21 @@ const fanout: Diagram = {
     'its next start.',
   wide: {
     width: 700,
-    height: 346,
+    height: 312,
     regions: [
-      { label: 'Mac or runner', x: 8, y: 8, w: 170, h: 330 },
-      { label: 'GitHub', x: 196, y: 8, w: 310, h: 330 },
-      { label: "Users' machines", x: 524, y: 8, w: 168, h: 330 },
+      { label: 'Mac or runner', place: 'mac', x: 8, y: 8, w: 180, h: 296 },
+      { label: 'GitHub', place: 'github', x: 212, y: 8, w: 292, h: 296 },
+      { label: 'Users', place: 'users', x: 528, y: 8, w: 164, h: 296 },
     ],
     nodes: [
-      { id: 'push', x: 93, y: 173, w: 150, h: 100, lines: ['git push', 'pre-push runs', 'check.sh and', 'test-install.sh'] },
-      { id: 'ci', x: 275, y: 173, w: 120, h: 82, lines: ['CI', 'Ubuntu and', 'macOS'] },
-      { id: 'market', x: 430, y: 173, w: 130, h: 82, lines: ['Marketplace', 'claude-plugins', 'repo'] },
-      { id: 'mine', x: 608, y: 90, w: 140, h: 50, lines: ['My machines'] },
-      { id: 'students', x: 608, y: 173, w: 140, h: 50, lines: ['Students'] },
-      { id: 'others', x: 608, y: 256, w: 140, h: 50, lines: ['Colleagues'] },
-      { id: 'stop', x: 275, y: 245, kind: 'note', lines: ['a failure', 'stops it here'] },
-      { id: 'start', x: 608, y: 305, kind: 'note', lines: ['each updates on', 'its next start'] },
+      { id: 'push', x: 98, y: 160, w: 148, h: 100, lines: ['git push', 'pre-push runs', 'check.sh and', 'test-install.sh'] },
+      { id: 'ci', x: 290, y: 160, w: 124, h: 84, lines: ['CI', 'Ubuntu and', 'macOS'] },
+      { id: 'market', x: 430, y: 160, w: 120, h: 84, lines: ['Marketplace', 'claude-plugins', 'repo'] },
+      { id: 'mine', x: 610, y: 100, w: 132, h: 44, lines: ['My machines'] },
+      { id: 'students', x: 610, y: 160, w: 132, h: 44, lines: ['Students'] },
+      { id: 'others', x: 610, y: 220, w: 132, h: 44, lines: ['Colleagues'] },
+      { id: 'stop', x: 290, y: 228, kind: 'note', lines: ['a failure', 'stops it here'] },
+      { id: 'start', x: 610, y: 270, kind: 'note', lines: ['each updates on', 'its next start'] },
     ],
     edges: [
       { from: 'push', to: 'ci' },
@@ -306,28 +393,27 @@ const fanout: Diagram = {
   },
   narrow: {
     width: 340,
-    height: 534,
+    height: 666,
     regions: [
-      { label: 'Mac or runner', x: 6, y: 6, w: 328, h: 130 },
-      { label: 'GitHub', x: 6, y: 156, w: 328, h: 200 },
-      { label: "Users' machines", x: 6, y: 376, w: 328, h: 150 },
+      { label: 'Mac or runner', place: 'mac', x: 6, y: 6, w: 328, h: 144 },
+      { label: 'GitHub', place: 'github', x: 6, y: 174, w: 328, h: 220 },
+      { label: "Users' machines", place: 'users', x: 6, y: 418, w: 328, h: 240 },
     ],
     nodes: [
-      { id: 'push', x: 170, y: 80, w: 200, h: 72, lines: ['git push', 'pre-push runs', 'check.sh, test-install.sh'] },
-      { id: 'ci', x: 170, y: 222, w: 200, h: 56, lines: ['CI', 'Ubuntu and macOS'] },
-      { id: 'market', x: 170, y: 310, w: 200, h: 56, lines: ['Marketplace', 'claude-plugins'] },
-      { id: 'mine', x: 60, y: 457, w: 96, h: 50, lines: ['Me'] },
-      { id: 'students', x: 170, y: 457, w: 100, h: 50, lines: ['Students'] },
-      { id: 'others', x: 278, y: 457, w: 104, h: 50, lines: ['Colleagues'] },
-      { id: 'start', x: 170, y: 507, kind: 'note', lines: ['each updates on its next start'] },
+      { id: 'push', x: 170, y: 92, w: 220, h: 72, lines: ['git push', 'pre-push runs', 'check.sh, test-install.sh'] },
+      { id: 'ci', x: 170, y: 246, w: 220, h: 56, lines: ['CI', 'Ubuntu and macOS'] },
+      { id: 'market', x: 170, y: 342, w: 220, h: 56, lines: ['Marketplace', 'claude-plugins'] },
+      { id: 'mine', x: 170, y: 482, w: 200, h: 40, lines: ['My machines'] },
+      { id: 'students', x: 170, y: 538, w: 200, h: 40, lines: ['Students'] },
+      { id: 'others', x: 170, y: 594, w: 200, h: 40, lines: ['Colleagues'] },
+      { id: 'start', x: 170, y: 640, kind: 'note', lines: ['each updates on its next start'] },
     ],
     edges: [
       { from: 'push', to: 'ci' },
       { from: 'ci', to: 'market', label: 'pass' },
-      // The bus runs under the region label, not through it.
-      { from: 'market', to: 'mine', via: [[170, 412], [60, 412]] },
-      { from: 'market', to: 'students' },
-      { from: 'market', to: 'others', via: [[170, 412], [278, 412]] },
+      { from: 'market', to: 'mine', via: [[304, 342], [304, 482]] },
+      { from: 'market', to: 'students', via: [[304, 342], [304, 538]] },
+      { from: 'market', to: 'others', via: [[304, 342], [304, 594]] },
     ],
   },
 }
@@ -343,43 +429,45 @@ const source: Diagram = {
     'pages, assignments, quizzes, modules, rubrics and due dates.',
   wide: {
     width: 700,
-    height: 400,
+    height: 432,
     regions: [
-      { label: 'GitHub', x: 8, y: 8, w: 684, h: 112 },
-      { label: 'My Mac', x: 8, y: 140, w: 684, h: 122 },
-      { label: 'Canvas, at Boise State', x: 8, y: 282, w: 684, h: 110 },
+      { label: 'GitHub', place: 'github', x: 8, y: 8, w: 684, h: 120 },
+      { label: 'My Mac', place: 'mac', x: 8, y: 152, w: 684, h: 120 },
+      { label: 'Canvas, at Boise State', place: 'canvas', x: 8, y: 296, w: 684, h: 128 },
     ],
     nodes: [
-      { id: 'vite', x: 380, y: 64, w: 180, h: 64, lines: ['VitePress build', 'on every push'] },
-      { id: 'site', x: 600, y: 64, w: 170, h: 64, lines: ['Course website', 'GitHub Pages'] },
-      { id: 'src', x: 125, y: 206, w: 190, h: 64, lines: ['docs/cs425/', 'markdown, canvas.toml'] },
-      { id: 'edu', x: 380, y: 206, w: 180, h: 64, lines: ['edutools push', 'due dates, rubrics'] },
-      { id: 'canvas', x: 590, y: 342, w: 190, h: 64, lines: ['Canvas course', 'pages, quizzes, modules'] },
+      { id: 'vite', x: 380, y: 84, w: 180, h: 56, lines: ['VitePress build', 'on every push'] },
+      { id: 'site', x: 590, y: 84, w: 170, h: 56, lines: ['Course website', 'GitHub Pages'] },
+      { id: 'src', x: 140, y: 228, w: 200, h: 56, lines: ['docs/cs425/', 'markdown, canvas.toml'] },
+      { id: 'edu', x: 380, y: 228, w: 180, h: 56, lines: ['edutools push', 'due dates, rubrics'] },
+      { id: 'canvas', x: 590, y: 372, w: 170, h: 70, lines: ['Canvas course', 'pages, quizzes', 'and modules'] },
     ],
     edges: [
-      { from: 'src', to: 'vite', via: [[125, 64]], label: 'git push', labelAt: [125, 130] },
+      { from: 'src', to: 'vite', via: [[140, 84]], label: 'git push', labelAt: [183, 174] },
       { from: 'src', to: 'edu' },
       { from: 'vite', to: 'site' },
-      { from: 'edu', to: 'canvas', via: [[590, 206]], label: 'Canvas API', labelAt: [590, 272] },
+      { from: 'edu', to: 'canvas', via: [[590, 228]], label: 'Canvas API', labelAt: [643, 318] },
     ],
   },
   narrow: {
     width: 340,
-    height: 378,
+    height: 422,
     regions: [
-      { label: 'GitHub', x: 6, y: 6, w: 328, h: 110 },
-      { label: 'My Mac', x: 6, y: 136, w: 328, h: 110 },
-      { label: 'Canvas', x: 6, y: 266, w: 328, h: 104 },
+      { label: 'GitHub', place: 'github', x: 6, y: 6, w: 328, h: 120 },
+      { label: 'My Mac', place: 'mac', x: 6, y: 150, w: 328, h: 120 },
+      { label: 'Canvas', place: 'canvas', x: 6, y: 294, w: 328, h: 120 },
     ],
     nodes: [
-      { id: 'vite', x: 85, y: 70, w: 140, h: 56, lines: ['VitePress', 'every push'] },
-      { id: 'site', x: 255, y: 70, w: 140, h: 56, lines: ['Website', 'GitHub Pages'] },
-      { id: 'src', x: 85, y: 200, w: 140, h: 56, lines: ['docs/cs425/', 'markdown'] },
-      { id: 'edu', x: 255, y: 200, w: 140, h: 56, lines: ['edutools push', 'due dates'] },
-      { id: 'canvas', x: 255, y: 330, w: 140, h: 56, lines: ['Canvas course', 'pages, quizzes'] },
+      { id: 'vite', x: 90, y: 84, w: 136, h: 56, lines: ['VitePress', 'every push'] },
+      { id: 'site', x: 250, y: 84, w: 136, h: 56, lines: ['Website', 'GitHub Pages'] },
+      { id: 'src', x: 90, y: 228, w: 136, h: 56, lines: ['docs/cs425/', 'markdown'] },
+      { id: 'edu', x: 250, y: 228, w: 136, h: 56, lines: ['edutools', 'push, due dates'] },
+      { id: 'canvas', x: 250, y: 372, w: 136, h: 56, lines: ['Canvas', 'pages, quizzes'] },
+      { id: 'srcUp', x: 140, y: 200, kind: 'point' },
+      { id: 'viteDown', x: 140, y: 112, kind: 'point' },
     ],
     edges: [
-      { from: 'src', to: 'vite', label: 'git push', labelAt: [85, 126] },
+      { from: 'srcUp', to: 'viteDown', label: 'git push', labelAt: [192, 172] },
       { from: 'src', to: 'edu' },
       { from: 'vite', to: 'site' },
       { from: 'edu', to: 'canvas' },
@@ -399,7 +487,7 @@ const tune: Diagram = {
   wide: {
     width: 700,
     height: 330,
-    regions: [{ label: 'My Mac', x: 8, y: 8, w: 684, h: 314 }],
+    regions: [{ label: 'My Mac', place: 'mac', x: 8, y: 8, w: 684, h: 314 }],
     nodes: [
       { id: 'sessions', x: 110, y: 95, w: 170, h: 70, lines: ['Sessions', 'Claude Code at work'] },
       { id: 'transcripts', x: 590, y: 95, w: 170, h: 70, lines: ['Transcripts', '~/.claude/projects'] },
@@ -418,7 +506,7 @@ const tune: Diagram = {
   narrow: {
     width: 340,
     height: 620,
-    regions: [{ label: 'My Mac', x: 6, y: 6, w: 328, h: 606 }],
+    regions: [{ label: 'My Mac', place: 'mac', x: 6, y: 6, w: 328, h: 606 }],
     nodes: [
       { id: 'sessions', x: 175, y: 80, w: 190, h: 64, lines: ['Sessions'] },
       { id: 'transcripts', x: 175, y: 195, w: 190, h: 70, lines: ['Transcripts', '~/.claude/projects'] },
@@ -436,4 +524,4 @@ const tune: Diagram = {
   },
 }
 
-export const diagrams: Record<string, Diagram> = { loop, triggers, trunk, fanout, source, tune }
+export const diagrams: Record<string, Diagram> = { loop, triggers, controller, trunk, fanout, source, tune }
