@@ -22,7 +22,7 @@ hero:
       text: AI
       link: /ai/
   image:
-    src: /images/shane_panter_small.webp
+    src: /images/shane_panter_cutout.webp
     alt: Shane K. Panter
 ---
 
@@ -49,6 +49,14 @@ hero:
   :root {
     --vp-home-hero-image-filter: blur(68px);
   }
+}
+
+/* The photo is cut out of its grey backdrop (macOS Vision's subject lift on
+   shane_panter.jpeg), so the hero glow shows around it. The bottom fades out
+   so the hoodie does not end in a hard line. */
+.VPHero .image-src {
+  -webkit-mask-image: linear-gradient(to bottom, #000 78%, transparent);
+  mask-image: linear-gradient(to bottom, #000 78%, transparent);
 }
 
 .vibe-joke img,
