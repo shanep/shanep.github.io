@@ -98,9 +98,3 @@ empirical software engineering and software security, with a focus on the
 software supply chain. His recent work looks at what happens to software when
 the open source packages it depends on fall behind or are abandoned. He is also
 Co-PI on two NSA-funded cybersecurity education grants.
-
-## Links
-
-- LinkedIn: [Shane Panter](https://www.linkedin.com/in/shanepanter)
-- ORCID ID: [0009-0009-1852-3655](https://orcid.org/0009-0009-1852-3655)
-- Google Scholar: [Shane Panter](https://scholar.google.com/citations?user=0B7MuswAAAAJ&hl=en)
