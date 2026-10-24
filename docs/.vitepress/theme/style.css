@@ -420,3 +420,51 @@ html {
     width: calc(100% / 3);
   }
 }
+
+/* Every landing page (home, AI, Research, Teaching) writes its hero title in
+   the same blue-to-green gradient. */
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #0a4f8a 30%, #0b5a4a);
+}
+
+.dark {
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #9ad2ff 30%, #5ee0c0);
+}
+
+/* A linked card rises a little and lights its accent border when pointed at or
+   focused. It stays still for anyone whose system asks for less motion. */
+.VPFeature.link:focus-visible {
+  border-color: var(--vp-c-brand-1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .VPFeature.link {
+    transition: border-color 0.25s, background-color 0.25s, transform 0.25s, box-shadow 0.25s;
+  }
+
+  .VPFeature.link:hover,
+  .VPFeature.link:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: var(--vp-shadow-3);
+  }
+}
+
+/* The venue and status tags on the Research paper cards. */
+.paper-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.paper-tags span {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg);
+}

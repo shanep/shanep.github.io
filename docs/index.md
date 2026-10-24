@@ -27,15 +27,6 @@ hero:
 ---
 
 <style>
-:root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #0a4f8a 30%, #0b5a4a);
-}
-
-.dark {
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #9ad2ff 30%, #5ee0c0);
-}
-
 /* The photo is cut out of its grey backdrop (macOS Vision's subject lift on
    shane_panter.jpeg), so the page background shows around it. The bottom
    fades out so the hoodie does not end in a hard line. */
