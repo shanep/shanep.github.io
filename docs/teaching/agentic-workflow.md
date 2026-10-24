@@ -136,7 +136,7 @@ own commit when it breaks CI, since that is how you get a loop. That one gets an
 ## 4. One controller per repo, every worker in its own worktree
 
 Each repo gets one live session, the one I am talking to, called the controller. It runs
-in the main checkout on main and does very little editing itself. Its job is to turn what I want
+in the main checkout on main and edits only small fixes itself. Its job is to turn what I want
 into a plan, start a worker for each piece, answer the workers' questions, review what they did
 and land it. Every worker is a background session in its own git worktree on a
 `worktree-<name>` branch, so parallel sessions never share uncommitted changes, checkouts or
@@ -145,6 +145,36 @@ instead, which keeps it apart the same way.
 Only the controller ever touches the main checkout.
 
 <WorkflowDiagram name="controller" />
+
+### Two sizes of work
+
+Not every change needs a plan and a worker. Writing a brief, starting a worker and landing its
+branch takes longer than fixing a typo, so there are two workflows, and the controller picks one
+before it starts.
+
+| | Small fix | Feature or large change |
+| :--- | :--- | :--- |
+| Examples | A bug with a known cause, a typo, a dead link, a setting, a one-file change | A new feature, a redesign, a change across many files, anything with a decision to make |
+| Who does it | The controller, in the main checkout | Workers, each in its own worktree |
+| Plan file | None | One, committed in the repo |
+| Landing | The controller commits on main and lands it | The controller lands each branch in plan order |
+
+A small fix is one I can describe in one sentence and check with the tests that already exist,
+plus at most one new test. The controller does it itself:
+
+1. If it is a bug, write a test that fails first. The fix then has something to prove, and the
+   bug cannot quietly come back.
+2. Make the fix and commit it on main.
+3. Land it. The pre-push checks run, and the review in section 5 runs on any change of 30 lines
+   or more.
+
+A fix stops being small when it touches more than a few files, needs a decision from me, or fails
+its checks twice. Then the controller stops, writes a plan and switches to the feature workflow.
+Starting small and switching is cheaper than planning every change.
+
+The trigger agents in section 3 run the small-fix workflow, on a CI runner instead of the main
+checkout. A failing build or a labeled issue is almost always a small fix. When one turns out not
+to be, the agent stops after its 2 tries and leaves a note on the issue, and I turn it into a plan.
 
 ### Where each one runs
 
@@ -213,7 +243,7 @@ worker's branch before it lands it. In the repos that have it, `npm run land` ru
 the change before it pushes, and a blocking finding stops the landing. Then there are two
 choices: fix the finding and land again, or decide the finding is wrong and land with
 `-- --accept-review`. Either way it is a decision someone made, not something that slipped
-through.
+through. A change under 30 lines skips the review and relies on the checks.
 
 ## 6. Automate every step
 
@@ -296,6 +326,7 @@ Then run `/tune` in any session.
 | :--- | :--- |
 | Tests in git hooks and CI | In place |
 | Autoupdate for my plugins | In place |
+| Small fixes by the controller, without a plan | In place |
 | Background agents in their own worktrees | In place, started by hand |
 | Controller dispatching from a plan file | Plan files in use, written by hand. `/dispatch` is planned |
 | Cloud workers | Planned |
