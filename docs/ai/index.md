@@ -11,12 +11,12 @@ features:
   - title: An Agentic Software Workflow
     details: The workflow I am moving to after 3 months of building with Claude Code, where agents do the work and the tests decide when it is done.
     link: /ai/workflow/
-    icon: { src: /icons/task.svg, width: 45, height: 35, role: presentation }
+    icon: { src: /card-icons/workflow.svg, width: 48, height: 48, role: presentation }
     linkText: Read the workflow
   - title: My Claude Code Setup
     details: How I keep the same Claude config on every machine, and how I hand work off to a new session.
     link: /ai/claude/
-    icon: { src: /icons/settings.svg, width: 45, height: 35, role: presentation }
+    icon: { src: /card-icons/setup.svg, width: 48, height: 48, role: presentation }
     linkText: Read the setup
 ---
 

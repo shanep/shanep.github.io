@@ -468,3 +468,9 @@ html {
   color: var(--vp-c-text-1);
   background: var(--vp-c-bg);
 }
+
+/* The card icons are gradient tiles of their own, so the box VitePress
+   draws behind an icon goes. */
+.VPFeature .icon {
+  background-color: transparent;
+}
