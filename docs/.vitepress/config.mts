@@ -162,6 +162,8 @@ declare module 'vitepress' {
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Shane K. Panter",
+  // Open in dark mode, the theme's home look. The switch still offers light.
+  appearance: 'dark',
   description: "Shane's Personal Site",
   ignoreDeadLinks: false,
   // Instructor-only pages, shared by every course from shared/instructor-resources/
