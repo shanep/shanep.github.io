@@ -8,36 +8,15 @@ hero:
   tagline: Empirical software engineering and software supply chain security
   actions:
     - theme: brand
+      text: Publications
+      link: /cv/#publications
+    - theme: alt
       text: Google Scholar
       link: https://scholar.google.com/citations?user=0B7MuswAAAAJ&hl=en
     - theme: alt
       text: ORCID
       link: https://orcid.org/0009-0009-1852-3655
-    - theme: alt
-      text: CV
-      link: /cv/
-
-pageClass: research-page
-
-features:
-  - title: "MALTA: Maintenance-Aware Technical Lag Estimation to Address Software Abandonment"
-    details: <span class="paper-tags"><span>FSE</span><span>Revision in preparation</span></span> Preprint, 2026. <a href="https://arxiv.org/pdf/2603.10265">arXiv</a>
-  - title: "Technical Lag as Latent Technical Debt: A Rapid Review"
-    details: <span class="paper-tags"><span>TechDebt</span><span>CORE B</span></span> 2026. <a href="https://doi.org/10.1145/3794915.3795784">ACM</a>, <a href="https://doi.org/10.48550/arXiv.2601.11693">arXiv</a>, <a href="/papers/26_techdebt.pdf">PDF</a>
-  - title: "PVAC: Package Version Activity Categorizer, Leveraging Semantic Versioning in a Heterogeneous System"
-    details: <span class="paper-tags"><span>Empirical Software Engineering journal</span></span> 2025. <a href="https://rdcu.be/eoUim">Springer</a>, <a href="https://arxiv.org/abs/2409.04588">arXiv</a>, <a href="/papers/25_pvac.pdf">PDF</a>
-  - title: "Rusty Linux: Advances in Rust for Linux Kernel Development"
-    details: <span class="paper-tags"><span>ESEM</span><span>CORE A</span></span> 2024. <a href="https://doi.org/10.1145/3674805.3690756">ACM</a>, <a href="https://arxiv.org/abs/2407.18431">arXiv</a>, <a href="/papers/24_rusty_linux.pdf">PDF</a>
-  - title: Evaluating the Benefits of Team-Based Learning in a Systems Programming Class
-    details: <span class="paper-tags"><span>FIE</span></span> 2020. <a href="https://doi.org/10.1109/FIE44824.2020.9274183">IEEE</a>, <a href="/papers/20_tbl.pdf">PDF</a>
 ---
-
-## Research Interests
-
-- Empirical Software Engineering
-- Software Supply Chain Security
-- Technical Lag and Software Abandonment
-- Systems Programming and Security
 
 ## Conferences
 

@@ -408,19 +408,6 @@ html {
   text-decoration: none;
 }
 
-/* A card without a link can hold links in its text (the papers on Research). */
-.VPFeature .details a {
-  color: var(--vp-c-brand-1);
-  text-decoration: underline;
-}
-
-/* Five papers fill a 3-column grid better than a 4-column one. */
-@media (min-width: 960px) {
-  .research-page .VPHomeFeatures.VPFeatures .item {
-    width: calc(100% / 3);
-  }
-}
-
 /* Every landing page (home, AI, Research, Teaching) writes its hero title in
    the same blue-to-green gradient. */
 :root {
@@ -448,25 +435,6 @@ html {
     transform: translateY(-3px);
     box-shadow: var(--vp-shadow-3);
   }
-}
-
-/* The venue and status tags on the Research paper cards. */
-.paper-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 8px;
-}
-
-.paper-tags span {
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 999px;
-  padding: 0 10px;
-  font-size: 12px;
-  line-height: 22px;
-  font-weight: 600;
-  color: var(--vp-c-text-1);
-  background: var(--vp-c-bg);
 }
 
 /* The card icons are gradient tiles of their own, so the box VitePress
