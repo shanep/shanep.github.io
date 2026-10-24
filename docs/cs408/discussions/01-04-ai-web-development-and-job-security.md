@@ -7,7 +7,7 @@
 Look at the meme below where someone proudly claims they built an "entire website with ChatGPT,"
 only to share a local file path (C:\Users\ben\Downloads\index.html) instead of a live, deployable site.
 
-![text message meme where someone says they made an entire website with ChatGPT and then sends the link C:\Users\ben\Downloads\index.html](../images/2025-09-18_14-25-51.png)
+![text message meme where someone says they made an entire website with ChatGPT and then sends the link C:\Users\ben\Downloads\index.html](../images/2025-09-18_14-25-51.jpg)
 
 ## In the discussion forum below, answer the following questions
 
