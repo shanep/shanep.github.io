@@ -297,11 +297,12 @@ Then run `/tune` in any session.
 | Tests in git hooks and CI | In place |
 | Autoupdate for my plugins | In place |
 | Background agents in their own worktrees | In place, started by hand |
-| Controller dispatching from a plan file | Planned |
+| Controller dispatching from a plan file | Plan files in use, written by hand. `/dispatch` is planned |
 | Cloud workers | Planned |
 | Workflow skills and agents packaged as one plugin | Planned |
 | A second agent reviewing before landing | In place |
-| Agents started by a CI failure or a schedule | In place |
+| Agents started by a CI failure | Built, run once by hand. CI has not failed on main since |
+| Agents started by a schedule | Built, first run on Monday, October 26 |
 | Agents started by a labeled issue | Built, no real run yet |
 | claude-tune as the source of truth for model and effort | Prototype |
 
