@@ -30,30 +30,15 @@ hero:
 :root {
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #0a4f8a 30%, #0b5a4a);
-
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #2b7fc4 50%, #1fb89a 50%);
-  --vp-home-hero-image-filter: blur(44px);
 }
 
 .dark {
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #9ad2ff 30%, #5ee0c0);
 }
 
-@media (min-width: 640px) {
-  :root {
-    --vp-home-hero-image-filter: blur(56px);
-  }
-}
-
-@media (min-width: 960px) {
-  :root {
-    --vp-home-hero-image-filter: blur(68px);
-  }
-}
-
 /* The photo is cut out of its grey backdrop (macOS Vision's subject lift on
-   shane_panter.jpeg), so the hero glow shows around it. The bottom fades out
-   so the hoodie does not end in a hard line. */
+   shane_panter.jpeg), so the page background shows around it. The bottom
+   fades out so the hoodie does not end in a hard line. */
 .VPHero .image-src {
   -webkit-mask-image: linear-gradient(to bottom, #000 78%, transparent);
   mask-image: linear-gradient(to bottom, #000 78%, transparent);
