@@ -6,6 +6,7 @@ import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { bundledThemes, type ThemeRegistration } from 'shiki'
 import { cvPdf } from './cv-pdf'
+import { imageDimensions, optimizeImages } from './images'
 
 // WCAG AAA (1.4.6) asks for 7:1 text contrast, and even GitHub's
 // high-contrast code themes put some tokens under it (light comments are
@@ -176,6 +177,7 @@ export default defineConfig({
     // reader did not ask for (WCAG AAA 3.2.5), and the back button stops
     // working.
     externalLinks: { target: '_self', rel: 'noreferrer' },
+    image: { lazyLoading: true },
     config: (md) => {
         // Runs on the raw markdown, before anything is parsed, so the section
         // never reaches the page, the outline, or the search index.
@@ -192,6 +194,7 @@ export default defineConfig({
           }
         })
         md.use(footnote)
+        md.use(imageDimensions)
         md.use(container, 'cols', {
           render: (tokens: any[], idx: number) =>
             tokens[idx].nesting === 1 ? '<div class="cols">\n' : '</div>\n'
@@ -203,6 +206,7 @@ export default defineConfig({
     }
   },
   cleanUrls: true,
+  buildEnd: (site) => optimizeImages(site.outDir),
   // Lets search engines, and site-wide audits like Unlighthouse, find every page.
   sitemap: { hostname: 'https://shanepanter.com' },
   // Without an icon link, browsers ask for /favicon.ico, which does not exist.

@@ -3,8 +3,10 @@
     "@types/markdown-it-container": "^4.0.0",
     "@types/markdown-it-footnote": "^3.0.4",
     "@types/node": "^24.19.1",
+    "image-size": "^2.0.4",
     "markdown-it-container": "^4.0.0",
     "markdown-it-footnote": "^4.0.0",
+    "sharp": "^0.35.5",
     "shiki": "^2.5.0",
     "vitepress": "^1.6.4"
   },
