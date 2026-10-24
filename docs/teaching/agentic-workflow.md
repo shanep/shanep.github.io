@@ -152,6 +152,8 @@ Not every change needs a plan and a worker. Writing a brief, starting a worker a
 branch takes longer than fixing a typo, so there are two workflows, and the controller picks one
 before it starts.
 
+<WorkflowDiagram name="sizes" />
+
 | | Small fix | Feature or large change |
 | :--- | :--- | :--- |
 | Examples | A bug with a known cause, a typo, a dead link, a setting, a one-file change | A new feature, a redesign, a change across many files, anything with a decision to make |

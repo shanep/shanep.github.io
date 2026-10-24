@@ -227,6 +227,67 @@ const controller: Diagram = {
   },
 }
 
+const sizes: Diagram = {
+  title: 'Two sizes of work',
+  caption: 'The controller fixes small things itself and plans the rest. Both land the same way.',
+  desc:
+    'Two areas show where each step runs. On my Mac: I give the controller a change, and it ' +
+    'picks the size. A small fix the controller does itself: a test, the fix and a commit on ' +
+    'main. A large change becomes feature work: a plan file and workers in their own worktrees. ' +
+    'A small fix that grows switches to feature work. Both end in land, which runs the checks ' +
+    'and the review. On GitHub: land pushes main to origin, which runs CI.',
+  wide: {
+    width: 700,
+    height: 300,
+    regions: [
+      { label: 'My Mac', place: 'mac', x: 8, y: 8, w: 540, h: 284 },
+      { label: 'GitHub', place: 'github', x: 572, y: 8, w: 120, h: 284 },
+    ],
+    nodes: [
+      { id: 'me', x: 60, y: 158, w: 64, h: 44, lines: ['Me'] },
+      { id: 'controller', x: 180, y: 158, w: 120, h: 70, lines: ['Controller', 'picks the size'] },
+      { id: 'small', x: 360, y: 88, w: 140, h: 70, lines: ['Small fix', 'test, fix, commit', 'on main'] },
+      { id: 'feature', x: 360, y: 228, w: 140, h: 70, lines: ['Feature work', 'plan file, workers', 'in worktrees'] },
+      { id: 'land', x: 490, y: 158, w: 76, h: 70, lines: ['land', 'checks,', 'review'] },
+      { id: 'origin', x: 632, y: 158, w: 80, h: 70, lines: ['origin', 'main, CI'] },
+    ],
+    edges: [
+      { from: 'me', to: 'controller' },
+      { from: 'controller', to: 'small', via: [[180, 88]], label: 'small', labelAt: [240, 76] },
+      { from: 'controller', to: 'feature', via: [[180, 228]], label: 'large', labelAt: [240, 216] },
+      { from: 'small', to: 'feature', label: 'grew', labelAt: [386, 158] },
+      { from: 'small', to: 'land', via: [[490, 88]] },
+      { from: 'feature', to: 'land', via: [[490, 228]] },
+      { from: 'land', to: 'origin' },
+    ],
+  },
+  narrow: {
+    width: 340,
+    height: 640,
+    regions: [
+      { label: 'My Mac', place: 'mac', x: 6, y: 6, w: 328, h: 470 },
+      { label: 'GitHub', place: 'github', x: 6, y: 500, w: 328, h: 124 },
+    ],
+    nodes: [
+      { id: 'me', x: 170, y: 74, w: 200, h: 40, lines: ['Me'] },
+      { id: 'controller', x: 170, y: 154, w: 240, h: 56, lines: ['Controller', 'picks the size'] },
+      { id: 'small', x: 84, y: 290, w: 120, h: 80, lines: ['Small fix', 'test, fix,', 'commit on main'] },
+      { id: 'feature', x: 256, y: 290, w: 120, h: 80, lines: ['Feature work', 'plan file,', 'workers'] },
+      { id: 'land', x: 170, y: 430, w: 240, h: 56, lines: ['land', 'checks, review'] },
+      { id: 'origin', x: 170, y: 572, w: 240, h: 56, lines: ['origin', 'main and CI'] },
+    ],
+    edges: [
+      { from: 'me', to: 'controller' },
+      { from: 'controller', to: 'small', label: 'small' },
+      { from: 'controller', to: 'feature', label: 'large' },
+      { from: 'small', to: 'feature', label: 'grew', labelAt: [170, 274] },
+      { from: 'small', to: 'land' },
+      { from: 'feature', to: 'land' },
+      { from: 'land', to: 'origin' },
+    ],
+  },
+}
+
 const trunk: Diagram = {
   title: 'Parallel workers landing on main',
   caption: 'One trunk, with the controller landing each worker\'s branch one at a time.',
@@ -467,4 +528,4 @@ const tune: Diagram = {
   },
 }
 
-export const diagrams: Record<string, Diagram> = { loop, triggers, controller, trunk, fanout, source, tune }
+export const diagrams: Record<string, Diagram> = { loop, triggers, controller, sizes, trunk, fanout, source, tune }
