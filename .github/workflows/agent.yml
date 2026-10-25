@@ -14,6 +14,7 @@ on:
     types: [labeled]
   schedule:
     - cron: '0 15 * * 1'
+    # The docs task. The task expression below matches this string, so change both.
     - cron: '0 15 * * 4'
   workflow_dispatch:
     inputs:
