@@ -13,7 +13,7 @@ plugin. The workflow page gets written and approved before any plugin code.
 | T4 | Push the site                              | opus  | medium | local | T1-T3  | done                      |
 | T5 | Push the P2 diagrams to Canvas 48194       | opus  | medium | local | T4     | blocked: "not now"        |
 | T6 | Phase B: the workflow plugin               | -     | -      | -     | T4     | blocked: its own plan     |
-| T7 | Docs drift agent on the workflow page      | opus  | medium | local | T3     | next                      |
+| T7 | Docs drift agent on the workflow page      | opus  | medium | local | T3     | page landed, job next     |
 
 T1 to T3 are on `origin/master` and the site is live. Commit with `git commit -- <paths>`, because other sessions
 stage files in this checkout.
@@ -84,4 +84,11 @@ the code and repo state, and finds what is stale or contradicts itself, since th
 agents go wrong. This plan was an example: it still said T1 and T2 were unpushed and named the old
 page path. It goes on the workflow page first, like every other rule. A cloud worker gets a fresh
 clone and none of my Mac's files, so it cannot see `~/.claude/projects/*/memory/` until memory
-sync to dot-files (T6) lands. Still open: which repos, report or fix, and how often.
+sync to dot-files (T6) lands.
+
+Decided: a weekly scheduled job on the shared agent action in GitHub Actions (Claude Code, not
+Copilot), staggered from the Monday npm update. It reads each repo's own docs, the global config
+in dot-files and, after T6, memory. It fixes and lands clear-cut drift, and opens an issue for
+anything that needs a judgment call. The page text (rule 3, rule 7, Where this stands) has
+landed. The job itself is next: a second schedule in `agent.yml` with its own task, plus read
+access to the private dot-files repo for the global config.
