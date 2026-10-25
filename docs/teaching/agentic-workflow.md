@@ -287,13 +287,13 @@ the session ends, and a rule in a file on one machine is not on the others. The
 Config drifts like any other code, except nothing fails when it does. A `CLAUDE.md` that names a
 renamed file, a plan that still says a landed task is unpushed, or a memory about a flag that no
 longer exists does not break a build. It just sends the next agent the wrong way, and the agent
-follows it with confidence. So once a week a scheduled agent reads the docs agents act on (each
-repo's `CLAUDE.md`, skills and plan files, my global config in the dotfiles repo, and my
-auto-memory) and checks each claim against the code and the repo. When the fix is clear, like a
+follows it with confidence. So once a week a scheduled agent reads the docs agents act on (the
+repo's `CLAUDE.md`, README and plan files) and checks each claim against the code and the repo. When the fix is clear, like a
 stale path, a status or a flag, it fixes it and lands it through the same review and checks as
 any other change. When it takes a judgment call, like two rules that disagree, it opens an issue
-for me instead. A cloud runner gets a fresh clone and none of my Mac's files, so the memory check
-waits until memory syncs to the dotfiles repo.
+for me instead. My global config in the dotfiles repo and my auto-memory come next. A cloud runner
+gets a fresh clone and none of my Mac's files, so the dotfiles repo needs a read-only key for the
+job, and memory has to sync there first.
 
 The same goes for the repos themselves: every file is either committed or listed in
 `.gitignore`. A file git does not know about is one `git clean` away from being lost.
@@ -349,7 +349,7 @@ Then run `/tune` in any session.
 | Agents started by a CI failure | Built, run once by hand. CI has not failed on main since |
 | Agents started by a schedule | Built, first run on Monday, October 26 |
 | Agents started by a labeled issue | Built, no real run yet |
-| A weekly agent that checks the agent docs for drift | Planned |
+| A weekly agent that checks the agent docs for drift | Built for this repo's docs, first run on Thursday, October 29 |
 | claude-tune as the source of truth for model and effort | Prototype |
 
 None of these rules works alone. Autoupdate means a push reaches everyone, so the tests have to

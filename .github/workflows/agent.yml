@@ -1,6 +1,6 @@
 # Starts an unattended Claude session (shanep/claude-plugins/agent) when the
-# deploy fails on master, when I label an issue "agent", and once a week to
-# update the npm packages. The session's change lands only after a second
+# deploy fails on master, when I label an issue "agent", on Mondays to update
+# the npm packages, and on Thursdays to check the agent docs for drift. The session's change lands only after a second
 # session reviews it and the site builds.
 
 name: agent
@@ -14,7 +14,14 @@ on:
     types: [labeled]
   schedule:
     - cron: '0 15 * * 1'
+    - cron: '0 15 * * 4'
   workflow_dispatch:
+    inputs:
+      job:
+        description: Which scheduled task to run
+        type: choice
+        options: [npm, docs]
+        default: npm
 
 # One agent at a time, so two never race to land.
 concurrency:
@@ -38,6 +45,26 @@ jobs:
       github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    env:
+      NPM_TASK: |
+        Update the npm packages. Run npm outdated and npm audit, then
+        npm update to move each package to the newest version its range in
+        package.json allows. Move a package to a new major version only when
+        npm audit needs it to clear an alert. Read the note on the vite
+        override in CLAUDE.md first and keep it unless VitePress no longer
+        needs it. Commit package.json and package-lock.json. If nothing is
+        outdated or vulnerable, make no commit.
+      DOCS_TASK: |
+        Check the agent docs for drift. Read CLAUDE.md, README.md and every
+        file in .claude/, and check each thing they say against the repo as
+        it is now: paths and file names, npm scripts and their flags, commands
+        and the files they write, the status of each task in a plan, and what
+        the git log says has landed. A stale fact sends the next agent the
+        wrong way, so fix each one that is clearly wrong and commit the fix,
+        one commit per file, keeping the author's wording everywhere else.
+        Do not change a rule or a decision, only facts that no longer match
+        the repo. When two docs disagree, or you cannot tell which side is
+        right, leave it for a person. If nothing is stale, make no commit.
     steps:
       - uses: actions/checkout@v7
         with:
@@ -52,11 +79,6 @@ jobs:
           claude-oauth-token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           check: npm run lint:md && npm run docs:build
           ci-workflows: static.yml
-          task: |
-            Update the npm packages. Run npm outdated and npm audit, then
-            npm update to move each package to the newest version its range in
-            package.json allows. Move a package to a new major version only when
-            npm audit needs it to clear an alert. Read the note on the vite
-            override in CLAUDE.md first and keep it unless VitePress no longer
-            needs it. Commit package.json and package-lock.json. If nothing is
-            outdated or vulnerable, make no commit.
+          task: >-
+            ${{ (github.event.schedule == '0 15 * * 4' || inputs.job == 'docs')
+                && env.DOCS_TASK || env.NPM_TASK }}

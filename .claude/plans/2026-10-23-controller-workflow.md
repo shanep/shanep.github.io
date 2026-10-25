@@ -13,7 +13,7 @@ plugin. The workflow page gets written and approved before any plugin code.
 | T4 | Push the site                              | opus  | medium | local | T1-T3  | done                      |
 | T5 | Push the P2 diagrams to Canvas 48194       | opus  | medium | local | T4     | blocked: "not now"        |
 | T6 | Phase B: the workflow plugin               | -     | -      | -     | T4     | blocked: its own plan     |
-| T7 | Docs drift agent on the workflow page      | opus  | medium | local | T3     | page landed, job next     |
+| T7 | Docs drift agent on the workflow page      | opus  | medium | local | T3     | landed, repo docs only    |
 
 T1 to T3 are on `origin/master` and the site is live. Commit with `git commit -- <paths>`, because other sessions
 stage files in this checkout.
@@ -90,5 +90,8 @@ Decided: a weekly scheduled job on the shared agent action in GitHub Actions (Cl
 Copilot), staggered from the Monday npm update. It reads each repo's own docs, the global config
 in dot-files and, after T6, memory. It fixes and lands clear-cut drift, and opens an issue for
 anything that needs a judgment call. The page text (rule 3, rule 7, Where this stands) has
-landed. The job itself is next: a second schedule in `agent.yml` with its own task, plus read
-access to the private dot-files repo for the global config.
+landed, and so has the job: a Thursday schedule in `agent.yml` (`workflow_dispatch` with
+`job: docs` runs it by hand) that reads this repo's CLAUDE.md, README and `.claude/`. For the
+judgment calls, the shared action now lets a session write `questions.md`, which `run.sh` posts as
+an issue labeled `agent-question` (claude-plugins e5d8f68). Still to come: the global config,
+which needs a read-only deploy key for dot-files saved as a secret, and memory, after T6.
