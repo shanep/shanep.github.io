@@ -169,9 +169,10 @@ hand-draw an SVG or paste in a picture of a diagram.
   `<WorkflowDiagram name="..." />`. Give each one a wide layout (700 across) and a narrow one
   (340 across) for phones.
 - Course diagrams live in a `diagrams.ts` in the course (see `docs/cs425/assignments/`), whose
-  `files` maps each `.svg` to its spec. `npm run diagrams:export` writes the files, which
-  Canvas and the site both show as images, so they are light only. Commit the spec and the
-  `.svg` together.
+  `files` maps each `.svg` to its spec. `npm run diagrams:export` writes the files, light
+  only, and Canvas shows them as images. The page links the `.svg` as a plain image, and the
+  site draws it inline from the spec instead (`course_diagrams` in `config.mts`), so it
+  follows the dark mode toggle. Commit the spec and the `.svg` together.
 - **Color means one thing.** A box takes the hue of the region it runs in, and the region's
   label is the legend. Anything else colored (a tone on a node, an edge or a text) needs a
   `key` node that says what it means, or the renderer throws.

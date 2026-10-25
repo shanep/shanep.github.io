@@ -7,15 +7,15 @@ plugin. The workflow page gets written and approved before any plugin code.
 | id | task                                       | model | effort | where | after  | status                    |
 |----|--------------------------------------------|-------|--------|-------|--------|---------------------------|
 | T0 | Fix the dot-files config sync              | opus  | medium | local | -      | landed 03fe77d (dot-files) |
-| T1 | Workflow page and setup page hooks section | opus  | medium | local | T0     | review f85ab0e (unpushed) |
-| T2 | One diagram renderer, `npm run diagrams`   | opus  | medium | local | T1     | review 7d32d9e (unpushed) |
-| T3 | P2 diagrams in dark mode on the site       | opus  | medium | local | T2     | blocked: needs a decision |
-| T4 | Push the site                              | opus  | medium | local | T1-T3  | blocked: my go-ahead      |
+| T1 | Workflow page and setup page hooks section | opus  | medium | local | T0     | landed f85ab0e            |
+| T2 | One diagram renderer, `npm run diagrams`   | opus  | medium | local | T1     | landed 7d32d9e            |
+| T3 | P2 diagrams in dark mode on the site       | opus  | medium | local | T2     | landed                    |
+| T4 | Push the site                              | opus  | medium | local | T1-T3  | done                      |
 | T5 | Push the P2 diagrams to Canvas 48194       | opus  | medium | local | T4     | blocked: "not now"        |
 | T6 | Phase B: the workflow plugin               | -     | -      | -     | T4     | blocked: its own plan     |
+| T7 | Docs drift agent on the workflow page      | opus  | medium | local | T3     | next                      |
 
-Both commits sit on local `master`, ahead of origin. Don't push them until I say the pages are
-done, since the site is public. Commit with `git commit -- <paths>`, because other sessions
+T1 to T3 are on `origin/master` and the site is live. Commit with `git commit -- <paths>`, because other sessions
 stage files in this checkout.
 
 ## Decisions so far
@@ -31,18 +31,17 @@ stage files in this checkout.
 
 ## T1: the workflow and setup pages
 
-Done and committed. `docs/ai/workflow/index.md` reads as a living white paper, not a narrative:
+Landed. `docs/teaching/agentic-workflow.md` (it was `docs/ai/workflow/index.md`) reads as a living white paper, not a narrative:
 "Live at head" is gone, the sections are renumbered (8 rules), section 4 is "One controller per
 repo, every worker in its own worktree" with the where-it-runs table, the plan file format and
 landing, and section 8 has the model and effort defaults. `docs/ai/claude/index.md` has the
 Hooks section (Claude Code hooks, plugin and project hooks, git hooks per repo). The
 "Small over heavy" install note waits until phase B lands.
 
-Done when I read both pages on the dev server (`npm run docs:dev`) and say they are good.
 
 ## T2: the diagram renderer
 
-Done and committed. Every diagram is a spec drawn by
+Landed. Every diagram is a spec drawn by
 `docs/.vitepress/theme/components/workflow/render.ts`, styled by `diagram.css` (light and dark,
 7:1 text). Region tones: mac blue, github purple, cloud orange, users green, canvas red. Any
 other color needs a `key` node, or the renderer throws. Course diagrams live in a course's
@@ -56,20 +55,14 @@ older problems that have nothing to do with P2 or the diagrams.
 
 ## T3: P2 diagrams in dark mode
 
-On the dark site the P2 diagrams show as white cards, because the page loads them as `.svg`
-images, which can't see the site's toggle. Two ways to fix it:
-
-- Draw them on the page with the component the workflow diagrams use, so they follow the toggle,
-  and keep the light `.svg` files for Canvas. This is my pick.
-- Put a `prefers-color-scheme` dark theme inside the `.svg`. It follows the computer's setting,
-  not the site's toggle, and Canvas would get it too.
-
-I was asking a question about this when we stopped. Start there.
+Landed. I picked drawing them on the page. `p2.md` still links the `.svg` files, which Canvas
+shows. On the site, the `course_diagrams` rule in `config.mts` swaps a paragraph holding only a
+renderer-made `.svg` (it has `data-diagram`) for `<WorkflowDiagram file="...">`, which draws the
+spec from the course's `diagrams.ts`, so it follows the toggle.
 
 ## T4: push the site
 
-`git pull --rebase`, then `git push origin HEAD:master`. The pre-push hook runs `lint:md` and
-the build, and CI runs Lighthouse. Watch CI with the `ci-watch` agent.
+Done. T1 and T2 went out with the later page work.
 
 ## T5: Canvas
 
@@ -83,3 +76,12 @@ Gets its own plan, written from the approved workflow page. The outline is in
 `dev-server`, `scout`, `ci-watch` and a rewritten `onboard`. Then memory sync to dot-files, the
 CLAUDE.md cleanups, and retiring `~/.overlord-config`. Check `claude --cloud --help` for
 `--model` and `--effort` first.
+
+## T7: the docs drift agent
+
+A cloud agent that reads the docs agents act on (CLAUDE.md files, skills, plans, memory) against
+the code and repo state, and finds what is stale or contradicts itself, since that is what makes
+agents go wrong. This plan was an example: it still said T1 and T2 were unpushed and named the old
+page path. It goes on the workflow page first, like every other rule. A cloud worker gets a fresh
+clone and none of my Mac's files, so it cannot see `~/.claude/projects/*/memory/` until memory
+sync to dot-files (T6) lands. Still open: which repos, report or fix, and how often.

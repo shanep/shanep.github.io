@@ -1,8 +1,8 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
 import footnote from 'markdown-it-footnote'
 import container from 'markdown-it-container'
-import { globSync, readFileSync } from 'node:fs'
-import { join } from 'node:path'
+import { existsSync, globSync, readFileSync, realpathSync } from 'node:fs'
+import { dirname, join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { bundledThemes, type ThemeRegistration } from 'shiki'
 import { cvPdf } from './cv-pdf'
@@ -154,6 +154,24 @@ function publicTextbookUrl(href: string): string | undefined {
   return url === undefined ? undefined : url + (match[2] ?? '')
 }
 
+// A course diagram is a .svg that `npm run diagrams:export` draws from a spec,
+// light only, because Canvas shows it as an image. On the site an image can't
+// see the dark mode toggle, so a paragraph holding only such an image is drawn
+// inline instead, from the same spec, by WorkflowDiagram. The renderer marks
+// every svg it writes with data-diagram, and the key is the file's path from the
+// repo root, the same key as the `files` map in the course's diagrams.ts.
+// Canvas still gets the .svg: edutools reads the markdown, not this config.
+const repoRoot = join(import.meta.dirname, '../..')
+
+function courseDiagramKey(pagePath: string, src: string): string | undefined {
+  if (!src.endsWith('.svg') || /^[a-z]+:|^\//i.test(src)) return undefined
+  const file = join(dirname(pagePath), src)
+  if (!existsSync(file)) return undefined
+  const real = realpathSync(file)
+  if (!readFileSync(real, 'utf-8').includes('data-diagram=')) return undefined
+  return relative(repoRoot, real)
+}
+
 declare module 'vitepress' {
   namespace DefaultTheme {
     interface Config {
@@ -193,6 +211,18 @@ export default defineConfig({
               const url = publicTextbookUrl(token.attrGet('href') ?? '')
               if (url) token.attrSet('href', url)
             }
+          }
+        })
+        md.core.ruler.after('inline', 'course_diagrams', (state: any) => {
+          const tokens = state.tokens
+          for (let i = 1; i < tokens.length - 1; i++) {
+            const children = tokens[i].children ?? []
+            if (tokens[i - 1].type !== 'paragraph_open' || children.length !== 1 || children[0].type !== 'image') continue
+            const key = courseDiagramKey(state.env.path, children[0].attrGet('src') ?? '')
+            if (!key) continue
+            const block = new state.Token('html_block', '', 0)
+            block.content = `<WorkflowDiagram file="${key}" />\n`
+            tokens.splice(i - 1, 3, block)
           }
         })
         md.use(footnote)
