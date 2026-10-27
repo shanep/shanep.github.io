@@ -79,15 +79,35 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-27T14:42:05.052Z",
+        "canvas": {
+          "body": "add0385265880608",
+          "settings": "24cb0dfe223cd58b"
+        },
+        "repo": {
+          "body": "71d034d7e2c9981a",
+          "settings": "24cb0dfe223cd58b"
+        }
+      },
       "title": "A5 - Errors on Purpose"
     },
     "activities/a5-worksheet.pdf": {
-      "canvas_id": "25309993",
+      "canvas_id": "25563264",
       "extra": {
-        "size": "110859"
+        "size": "110425"
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-27T14:42:05.052Z",
+        "canvas": {
+          "body": "9b3702b6aeeaac19"
+        },
+        "repo": {
+          "body": "3f675ef54dc7c313"
+        }
+      },
       "title": "a5-worksheet.pdf"
     },
     "activities/a6-who-carries-your-packets.md": {
