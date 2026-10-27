@@ -115,15 +115,35 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-27T14:45:10.655Z",
+        "canvas": {
+          "body": "3f880ddc904fe8ee",
+          "settings": "84ae77970c79303a"
+        },
+        "repo": {
+          "body": "d3d57740e51c71d0",
+          "settings": "84ae77970c79303a"
+        }
+      },
       "title": "A6 - Who Carries Your Packets?"
     },
     "activities/a6-worksheet.pdf": {
-      "canvas_id": "25312105",
+      "canvas_id": "25563283",
       "extra": {
-        "size": "110419"
+        "size": "109987"
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-27T14:45:10.655Z",
+        "canvas": {
+          "body": "074e6b4d132a1543"
+        },
+        "repo": {
+          "body": "e01872c53e6d6698"
+        }
+      },
       "title": "a6-worksheet.pdf"
     },
     "activities/a7-one-hop-at-a-time.md": {

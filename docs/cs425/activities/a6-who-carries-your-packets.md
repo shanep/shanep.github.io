@@ -5,7 +5,7 @@ prev: false
 
 # A6 - Who Carries Your Packets?
 
-**Week 10 · 20 points · pass/fail · one paper worksheet per group, turned in before you leave**
+**Week 10 · 20 points · pass/fail · one paper worksheet each, turned in before you leave**
 
 ## Why you are doing this
 
@@ -23,18 +23,19 @@ This one is **instructor led**, like A4 and A5. I do each step on the projector,
 you run the same command on Onyx, and we do not move on until the room has caught
 up. It takes about 40 minutes.
 
+You work on your own today, not in a group.
+
 ::: warning
 
-One paper worksheet per group, turned in before you leave. Graded pass/fail, and
-every round attempted in good faith is a pass. A wrong prediction costs you
+Everyone turns in their own paper worksheet before they leave. Graded pass/fail,
+and every round attempted in good faith is a pass. A wrong prediction costs you
 nothing, but write it down **before** we run the command.
 
 :::
 
 ## Before you start
 
-- **Groups of 3 or 4.** One scribe owns the worksheet and puts everyone's name on
-  it.
+- **Grab a worksheet** and put your name on it.
 - **Everyone logs into Onyx with `ssh onyx`**, the shortcut you set up in
   [A2](./a2-stop-typing-your-password.md).
 - **Everything today runs on Onyx.** Rounds 1 and 2 ask Team Cymru's DNS service
@@ -46,7 +47,7 @@ nothing, but write it down **before** we run the command.
 
 Each round is the same three beats, and the worksheet has a box for each:
 
-1. **Predict.** I ask the question. Your group writes an answer.
+1. **Predict.** I ask the question. You write an answer.
 2. **Run.** We all run the command on Onyx.
 3. **Check.** Was the prediction right? Which part of chapter 5 says why?
 
