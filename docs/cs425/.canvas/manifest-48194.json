@@ -301,30 +301,57 @@
       "title": "P1 - Simple Mail Client"
     },
     "assignments/p2-gbn-timeline.svg": {
-      "canvas_id": "25206889",
+      "canvas_id": "25563235",
       "extra": {
-        "size": "7894"
+        "size": "11661"
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-27T14:32:29.573Z",
+        "canvas": {
+          "body": "d25a59e6fd1f8e34"
+        },
+        "repo": {
+          "body": "7c00bc5097409ef6"
+        }
+      },
       "title": "p2-gbn-timeline.svg"
     },
     "assignments/p2-setup.svg": {
-      "canvas_id": "25207224",
+      "canvas_id": "25563233",
       "extra": {
-        "size": "5147"
+        "size": "8516"
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-27T14:32:29.573Z",
+        "canvas": {
+          "body": "12d8b50d15e164cf"
+        },
+        "repo": {
+          "body": "358d71f9fa18eef0"
+        }
+      },
       "title": "p2-setup.svg"
     },
     "assignments/p2-window.svg": {
-      "canvas_id": "25206887",
+      "canvas_id": "25563234",
       "extra": {
-        "size": "4245"
+        "size": "8011"
       },
       "kind": "file",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-27T14:32:29.573Z",
+        "canvas": {
+          "body": "cd6168cc2d6314dd"
+        },
+        "repo": {
+          "body": "378259a175e18136"
+        }
+      },
       "title": "p2-window.svg"
     },
     "assignments/p2.md": {
@@ -352,6 +379,18 @@
       "extra": {},
       "kind": "assignment",
       "page_url": "",
+      "synced": {
+        "at": "2026-10-27T14:32:55.707Z",
+        "canvas": {
+          "body": "e5cbd23a0adf8679",
+          "rubric": "79b574e1804ecfb4",
+          "settings": "24f34dc0b0a7b76d"
+        },
+        "repo": {
+          "rubric": "79b574e1804ecfb4",
+          "settings": "24f34dc0b0a7b76d"
+        }
+      },
       "title": "P3 - Subnetting and Forwarding"
     },
     "assignments/p4-captures.zip": {
