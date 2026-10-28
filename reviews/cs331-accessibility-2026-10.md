@@ -2,7 +2,7 @@
 title: CS331 Accessibility Report
 subtitle: Computer Security and Information Assurance, Spring 2027
 author: Shane K. Panter
-date: October 21, 2026
+date: October 28, 2026
 ---
 
 ## Summary
@@ -15,7 +15,8 @@ video or audio, and the 1 that is not met is listed under
 
 The first pass found AA failures on every website page and on 4 Canvas pages,
 and a second pass at AAA found more. All of them are fixed, and the same checks
-now find none. Three items are outside what I can fix in the course itself.
+now find none. I reran them on October 28, after the site's theme was
+restyled, and they still find none. Three items are outside what I can fix in the course itself.
 They are listed under [Known limitations](#known-limitations) with how a student
 gets an accessible version.
 
@@ -86,7 +87,7 @@ It builds the site, then runs:
    `edutools pull` of course 52107, framed the way Canvas shows it (the item
    title as the page heading, Canvas's text color on white).
 
-The last run, on October 21, 2026, printed:
+The last run, on October 28, 2026, printed:
 
 ```text
 cs331 (WCAG 2.2 AAA): 67 site pages in light and dark mode, 77 Canvas bodies
@@ -98,7 +99,7 @@ cs331 (WCAG 2.2 AAA): 67 site pages in light and dark mode, 77 Canvas bodies
      0  targets under 44 by 44 px
      0  text spacing and images of text
      0  axe violations and link text problems (Canvas)
-   150  needs-review groups from axe (color-contrast, identical-links-same-purpose, th-has-data-cells, color-contrast-enhanced); contrast ones are checked above
+   282  needs-review groups from axe (color-contrast-enhanced, color-contrast, identical-links-same-purpose, th-has-data-cells); contrast ones are checked above
 ```
 
 The Canvas check reads each body without Canvas's own stylesheet, so I also
@@ -244,9 +245,11 @@ the shell. Every one now sits behind descriptive link text.
 axe leaves four kinds of item for a person to judge, and I judged all of them
 fine:
 
-- **Contrast it cannot compute** (136 groups), where text sits over a layered
-  background like the sidebar or a code block. The by-hand check above covers
-  every one of them at the AAA thresholds.
+- **Contrast it cannot compute** (268 groups), where text sits over a layered
+  background like the sidebar or a code block. Since the theme was restyled,
+  axe's AA and AAA contrast rules both flag the same 134 spots, which is why
+  the count roughly doubled. The by-hand check above covers every one of them
+  at the AAA thresholds.
 - **Links with the same name** (10 groups), where a sidebar or outline link and
   a link in the page share a name and go to the same page.
 - **Tables with no data** (4 groups) in Labs 2 and 7. These are blank templates
