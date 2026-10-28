@@ -34,19 +34,19 @@ import pymupdf
 
 # Chapters CS331 assigns readings from: (number, slug, first PDF page, last PDF page).
 CHAPTERS: list[tuple[int, str, int, int]] = [
-    (1, "introduction", 47, 60),
+    (1, "introduction", 47, 61),
     (2, "risk-management-and-governance", 65, 94),
     (3, "law-and-regulation", 95, 190),
     (4, "human-factors", 191, 214),
-    (5, "privacy-and-online-rights", 215, 241),
+    (5, "privacy-and-online-rights", 215, 242),
     (6, "malware-and-attack-technologies", 245, 266),
     (7, "adversarial-behaviours", 267, 294),
     (8, "security-operations-and-incident-management", 295, 332),
     (10, "cryptography", 365, 400),
-    (14, "authentication-authorisation-and-accountability", 509, 537),
+    (14, "authentication-authorisation-and-accountability", 509, 538),
     (15, "software-security", 541, 568),
     (16, "web-and-mobile-security", 569, 602),
-    (17, "secure-software-lifecycle", 603, 661),
+    (17, "secure-software-lifecycle", 603, 662),
     (18, "applied-cryptography", 665, 716),
     (19, "network-security", 717, 752),
 ]

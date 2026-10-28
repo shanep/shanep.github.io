@@ -470,7 +470,26 @@ At the end of the process, one usually has a distribution describing the probabi
 
 Protecting privacy, as we have described in this knowledge area, is not limited to guaranteeing the Confidentiality of information. It also requires means to help users understand the extent to which their information is available online, and mechanisms to enable users to exercise control over this information. We have described techniques to realise these three privacy conceptions, emphasising the adversarial model in which they operate, as well as providing guidelines to combine these techniques in order to build end-to-end privacy-preserving systems.
 
-Preserving privacy and online rights is not only important for individuals, it is essential to support democratic societies. The deployment of privacy technologies is key to allow users free access to content, and freedom of speech. Of equal importance is to avoid that any entity
+Preserving privacy and online rights is not only important for individuals, it is essential to support democratic societies. The deployment of privacy technologies is key to allow users free access to content, and freedom of speech. Of equal importance is to avoid that any entity gaining a disproportionate amount of information about individuals or groups, in order to prevent manipulation and abuse that could damage democratic values.
+
+## Cross-reference of Topics vs Reference Material
+
+| Topic | Cite |
+| --- | --- |
+| 5.1 Privacy as Confidentiality | |
+| 5.1.1 Data Confidentiality | \[<a href="#ref-424" aria-label="References 424–428">424–428</a>\] |
+| 5.1.2 Metadata Confidentiality | \[<a href="#ref-423" aria-label="Reference 423">423</a>, <a href="#ref-429" aria-label="Reference 429">429</a>, <a href="#ref-430" aria-label="Reference 430">430</a>\] |
+| 5.2 Privacy as Control | |
+| 5.2.1 Support for privacy settings configuration | \[<a href="#ref-528" aria-label="Reference 528">528</a>\] |
+| 5.2.2 Support for privacy policy negotiation | \[<a href="#ref-529" aria-label="Reference 529">529</a>\] |
+| 5.2.3 Support for privacy policy interpretability | \[<a href="#ref-530" aria-label="Reference 530">530</a>\] |
+| 5.3 Privacy as Transparency | |
+| 5.3.1 Feedback-based transparency | \[<a href="#ref-539" aria-label="References 539–541">539–541</a>\] |
+| 5.3.2 Audit-based transparency | \[<a href="#ref-543" aria-label="Reference 543">543</a>\] |
+| 5.4 Privacy Technologies and Democratic Values | |
+| 5.4.1 Privacy technologies as support for democratic political systems | \[<a href="#ref-545" aria-label="Reference 545">545</a>, <a href="#ref-547" aria-label="Reference 547">547</a>\] |
+| 5.4.2 Censorship resistance and freedom of speech | \[<a href="#ref-546" aria-label="Reference 546">546</a>\] |
+| 5.5 Privacy Engineering | \[<a href="#ref-578" aria-label="Reference 578">578</a>, <a href="#ref-579" aria-label="Reference 579">579</a>\] |
 
 [^5-1]: [Off-the-Record Messaging](https://otr.cypherpunks.ca/)
 

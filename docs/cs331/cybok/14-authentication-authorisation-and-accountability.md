@@ -630,6 +630,33 @@ Similar disconnects between application experts and infrastructure experts exist
 
 Access control has kept adapting to the changing applications of IT systems. Access control was originally conceived for the protection of sensitive data in multi-user and multi-level secure systems. Access control without user identities was literally unthinkable. Applications have since changed and some require new modes of access control. One could then reserve ‘access control’ for the original setting and invent new terms for each new flavour of access control. DRM may serve as an example. This KA has not taken this route but applied ‘access control’, ‘authentication’, and ‘authorisation’ more generally while staying true to the generic meanings of these terms. User identities have lost their prominence along this way. Code (apps) and web domains have taken their place.
 
+Authentication originally stood for the service that links external entities like human users to internal actions in the IT system; today, it may also denote the service that verifies evidence associated with access requests that are submitted for evaluation by a decision algorithm. Design and analysis of cryptographic authentication protocols for distributed systems is a mature knowledge area. Cryptographic solutions for other aspects of access control are often more of academic than of practical interest.
+
+Accountability services build on tamper resistant records of events. The evidence collected may serve as input for technical investigations that try to establish how an attack was conducted and to identify its effects. The evidence collected may also be used in disciplinary processes that deal with situations where rules were broken at the level of the persons implicated. Privacy rules may put limits on the events that are recorded, and the nature of the events recorded may reduce privacy in ways not anticipated.
+
+## Cross-reference of Topics vs Reference Material
+
+| Section | Cites |
+| --- | --- |
+| 14.3 Authorisation | \[<a href="#ref-1368" aria-label="References 1368–1372">1368–1372</a>\] |
+| 14.3.1 Access Control | \[<a href="#ref-1368" aria-label="Reference 1368">1368</a>, <a href="#ref-1370" aria-label="Reference 1370">1370</a>, <a href="#ref-1371" aria-label="Reference 1371">1371</a>\] |
+| 14.3.2 Enforcing Access Control | \[<a href="#ref-1369" aria-label="Reference 1369">1369</a>\] |
+| 14.3.3 Theory | \[<a href="#ref-1372" aria-label="Reference 1372">1372</a>\] |
+| 14.4 Access Control in Distributed Systems | \[<a href="#ref-1398" aria-label="References 1398–1401">1398–1401</a>\] |
+| 14.4.1 Core Concepts | |
+| 14.4.2 Origin-based Policies | \[<a href="#ref-1400" aria-label="Reference 1400">1400</a>\] |
+| 14.4.3 Federated Access Control | \[<a href="#ref-1398" aria-label="Reference 1398">1398</a>, <a href="#ref-1399" aria-label="Reference 1399">1399</a>\] |
+| 14.4.4 Cryptography and Access Control | \[<a href="#ref-1401" aria-label="Reference 1401">1401</a>\] |
+| 14.5 Authentication | \[<a href="#ref-1209" aria-label="Reference 1209">1209</a>, <a href="#ref-1410" aria-label="References 1410–1414">1410–1414</a>\] |
+| 14.5.1 Identity Management | \[<a href="#ref-1414" aria-label="Reference 1414">1414</a>\] |
+| 14.5.3 Authentication in Distributed Systems | \[<a href="#ref-1410" aria-label="References 1410–1413">1410–1413</a>\] |
+| 14.5.4 Facets of Authentication | \[<a href="#ref-1209" aria-label="Reference 1209">1209</a>\] |
+| 14.6 Accountability | \[<a href="#ref-1430" aria-label="Reference 1430">1430</a>, ch. 24\], \[<a href="#ref-1431" aria-label="Reference 1431">1431</a>, ch. 18\] |
+| 14.6.1 Technical Aspects | \[<a href="#ref-1430" aria-label="Reference 1430">1430</a>, ch. 24\], \[<a href="#ref-1431" aria-label="Reference 1431">1431</a>, ch. 18\] |
+| 14.6.2 Privacy and Accountability | |
+| 14.6.3 Distributed Logs | |
+| 14.6.4 Related Concepts | |
+
 [^14-1]: The title of this KA, ‘Authentication, Authorisation & Accountability’ is abbreviated as AAA in CyBOK \[Cyber Security Body of Knowledge\] related documents and past versions of this KA. Please note that the acronym ‘AAA’ is also frequently used in other contexts to refer to ‘Authentication, Authorisation, and Accounting’, for example in connection with network access protocols such as Diameter.
 
 ## References

@@ -975,6 +975,15 @@ Government and standards organisations have provided security controls to be int
    - (b) Secure development and deployment guidance[^17-62]: more recommendations for the secure development, procurement, and deployment of generic and platform-specific applications.
    - (c) The leaky pipe of secure coding[^17-63]: a discussion of how security can be woven more seamlessly into the development process, particularly by developers who are not security experts.
 
+### Training materials
+
+Training materials are freely-available on the Internet. Some sites include:
+
+1. The Trustworthy Software Foundation provides a resource library[^17-64] of awareness materials and guidance targeted for those who teach trustworthy software principles, those who seek to learn about Trustworthy Software and those who want to ensure that the software they use is trustworthy. The resources available include a mixture of documents, videos, animations and case studies.
+2. The US National Institute of Standards and Technology (NIST) has created the NICE \[National Institute for Cybersecurity Education\] Cyber security Workforce Framework \[<a href="#ref-1649" aria-label="Reference 1649">1649</a>\]. This Framework provides resources on cybersecurity Knowledge, Skills and Abilities (KSA) and tasks for a number of work roles.
+3. The Software Engineering Institute (SEI) has collaborated with professional organisations, industry partners and institutions of higher learning to develop freely-available curricula and educational materials. Included in these materials are resources for a software assurance program[^17-65] to train professionals to build security and correct functionality into software and systems.
+4. SAFECode offers free software security training courses delivered via on-demand webcasts[^17-66].
+
 [^17-1]: [Meltdown and Spectre](https://meltdownattack.com/) Meltdown lets hackers get around a barrier between applications and computer memory to steal sensitive data.
 
 [^17-2]: [CyberScoop on the Meltdown patches for Windows 7](https://www.cyberscoop.com/microsoft-meltdown-patches-windows-7-memory-management/)
@@ -1101,6 +1110,12 @@ Government and standards organisations have provided security controls to be int
 
 [^17-63]: [NCSC: Leaky Pipe of Secure Coding](https://www.ncsc.gov.uk/blog-post/leaky-pipe-secure-coding)
 
+[^17-64]: [the Trustworthy Software Foundation resource library](https://tsfdn.org/resource-library/)
+
+[^17-65]: [the SEI Software Assurance Curricula](https://www.sei.cmu.edu/education-outreach/curricula/software-assurance/index.cfm)
+
+[^17-66]: [SAFECode training](https://safecode.org/training/)
+
 ## References
 
 - <span id="ref-11">\[11\]</span> J. H. Saltzer and M. D. Schroeder, “[The protection of information in computer systems](https://doi.org/10.1109/PROC.1975.9939),” *Proceedings of the IEEE*, vol. 63, no. 9, pp. 1278–1308, 1975.
@@ -1193,3 +1208,4 @@ Government and standards organisations have provided security controls to be int
 - <span id="ref-1643">\[1643\]</span> G. A. Moore, *Crossing the Chasm: Marketing and Selling Disruptive Products to Mainstream Customers*. Harper Collins, 2002.
 - <span id="ref-1644">\[1644\]</span> R. J. Anderson, “[Why information security is hard-an economic perspective](https://doi.org/10.1109/ACSAC.2001.991552),” in *17th Annual Computer Security Applications Conference (ACSAC 2001), 11-14 December 2001, New Orleans, Louisiana, USA*. IEEE Computer Society, 2001, pp. 358–365.
 - <span id="ref-1648">\[1648\]</span> R. Ross, V. Pillitteri, R. Graubart, D. Bodeau, and R. McQuaid, “[Developing cyber resilient systems: a systems security engineering approach](https://csrc.nist.gov/publications/detail/sp/800-160/vol-2/draft),” National Institute of Standards and Technology, Tech. Rep. Draft (FPD) SP 800-160 Volume 2, 2019.
+- <span id="ref-1649">\[1649\]</span> W. Newhouse, S. Keith, B. Scribner, and G. Witte, “[National Initiative for Cybersecurity Education (NICE) cybersecurity workforce framework](https://www.nist.gov/itl/applied-cybersecurity/nice/resources/nice-cybersecurity-workforce-framework),” National Institute of Standards and Technology, Tech. Rep. Special Publication 800-181, 2017.
