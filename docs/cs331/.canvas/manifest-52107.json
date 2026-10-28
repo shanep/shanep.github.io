@@ -1017,12 +1017,12 @@
       "kind": "syllabus",
       "page_url": "",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "5ca40d141d465853"
+          "body": "b232498c8cb7e85d"
         },
         "repo": {
-          "body": "16989881d1263ab3"
+          "body": "895e4dab7b7e4c19"
         }
       },
       "title": "CS 331: Computer Security and Information Assurance"
@@ -1123,13 +1123,13 @@
       "kind": "page",
       "page_url": "1-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "239b9a45eeb8911e",
+          "body": "3ae842f6d303c3e8",
           "settings": "4356d0fa8391aa85"
         },
         "repo": {
-          "body": "73102e0c5b38cbb7",
+          "body": "a140d30338e7065c",
           "settings": "4356d0fa8391aa85"
         }
       },
@@ -1159,13 +1159,13 @@
       "kind": "page",
       "page_url": "2-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "2dfe9b7edd9313a1",
+          "body": "db61f80f8004ac82",
           "settings": "d55939e8797d05f3"
         },
         "repo": {
-          "body": "595594425900ffc6",
+          "body": "d87cc1a15b85604a",
           "settings": "d55939e8797d05f3"
         }
       },
@@ -1177,13 +1177,13 @@
       "kind": "page",
       "page_url": "3-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "f2e0f44d588fc72c",
+          "body": "3bab1f1a1b7ecf66",
           "settings": "5d557b9423830530"
         },
         "repo": {
-          "body": "30caa5b98f1e48f0",
+          "body": "c8ec6fcc322cab55",
           "settings": "5d557b9423830530"
         }
       },
@@ -1231,13 +1231,13 @@
       "kind": "page",
       "page_url": "4-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "6cfba4726681bfbb",
+          "body": "d3e418028c67d639",
           "settings": "7ad390a9d790b140"
         },
         "repo": {
-          "body": "08d94c2559d0cf64",
+          "body": "b3e02ffd576ef8bb",
           "settings": "7ad390a9d790b140"
         }
       },
@@ -1249,13 +1249,13 @@
       "kind": "page",
       "page_url": "5-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "3ceaa7865ef64f6c",
+          "body": "b1e38de5510cae04",
           "settings": "ecdfd1b1a7c399e4"
         },
         "repo": {
-          "body": "e417b6cf2b653d2b",
+          "body": "6b8f6f124685cdd3",
           "settings": "ecdfd1b1a7c399e4"
         }
       },
@@ -1285,13 +1285,13 @@
       "kind": "page",
       "page_url": "6-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "5f198f506582ccf9",
+          "body": "572d62091658d76f",
           "settings": "79faf8ceb712773c"
         },
         "repo": {
-          "body": "3024decb5e3acd5c",
+          "body": "8ba3f40a8a2075a6",
           "settings": "79faf8ceb712773c"
         }
       },
@@ -1339,13 +1339,13 @@
       "kind": "page",
       "page_url": "7-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "32e5e0bff2b7044a",
+          "body": "2bb3f33fc0fdfaf5",
           "settings": "1e1d3289eeacc110"
         },
         "repo": {
-          "body": "054ee6efdc82c645",
+          "body": "b59bb0ce19950f35",
           "settings": "1e1d3289eeacc110"
         }
       },
@@ -1375,13 +1375,13 @@
       "kind": "page",
       "page_url": "8-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "e97fe882f7ef6664",
+          "body": "e31304fcee105ae2",
           "settings": "993586020cb4f656"
         },
         "repo": {
-          "body": "81d34904bce7ca2a",
+          "body": "5243d82812a41ca4",
           "settings": "993586020cb4f656"
         }
       },
@@ -1429,13 +1429,13 @@
       "kind": "page",
       "page_url": "10-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "8029e5289ea600c2",
+          "body": "8f7ca23195f080cc",
           "settings": "645c74485e91f436"
         },
         "repo": {
-          "body": "5c5bec63c782ed9b",
+          "body": "8337e0a14b1a882e",
           "settings": "645c74485e91f436"
         }
       },
@@ -1465,13 +1465,13 @@
       "kind": "page",
       "page_url": "11-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "f7524064504a78c9",
+          "body": "90c10ea8a76a2129",
           "settings": "11c9771e7a4d43a1"
         },
         "repo": {
-          "body": "6f74295e6f0ad3f1",
+          "body": "cabb1b49047ec768",
           "settings": "11c9771e7a4d43a1"
         }
       },
@@ -1501,13 +1501,13 @@
       "kind": "page",
       "page_url": "12-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "8179700cfb84f93d",
+          "body": "ad2103b7fe5ef08b",
           "settings": "127e977e723b5333"
         },
         "repo": {
-          "body": "a882686a10e250de",
+          "body": "a24c841ec92a53ea",
           "settings": "127e977e723b5333"
         }
       },
@@ -1555,13 +1555,13 @@
       "kind": "page",
       "page_url": "13-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "6c1c3d843598faad",
+          "body": "691bed88f362fa53",
           "settings": "30a18856428d6543"
         },
         "repo": {
-          "body": "f1f8146a07bf18b6",
+          "body": "7af271f3973431f2",
           "settings": "30a18856428d6543"
         }
       },
@@ -1591,13 +1591,13 @@
       "kind": "page",
       "page_url": "14-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "384f1bbef1be65b6",
+          "body": "28bf585eb02cb993",
           "settings": "e30fa5c3bab4bf6e"
         },
         "repo": {
-          "body": "2a5f8703170d4a62",
+          "body": "09ffad4f54eaeb8e",
           "settings": "e30fa5c3bab4bf6e"
         }
       },
@@ -1627,13 +1627,13 @@
       "kind": "page",
       "page_url": "15-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "2126ed7a421b86ce",
+          "body": "e5ff5a3ead508350",
           "settings": "c57a7e0b20715cec"
         },
         "repo": {
-          "body": "1a942a8c7e50de0b",
+          "body": "a4dde2945efed6df",
           "settings": "c57a7e0b20715cec"
         }
       },
@@ -1753,13 +1753,13 @@
       "kind": "page",
       "page_url": "cs-331-readings-and-resources",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-28T23:52:52.527Z",
         "canvas": {
-          "body": "a6d52eab2cab6c2b",
+          "body": "3b43e93578468320",
           "settings": "bc6050918a06fe5d"
         },
         "repo": {
-          "body": "816523ee580a5c4f",
+          "body": "a7bd9030eadc240b",
           "settings": "bc6050918a06fe5d"
         }
       },
