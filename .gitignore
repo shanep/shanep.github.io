@@ -20,3 +20,6 @@ docs/*/docs/*.pdf
 # Built by npm run cv:pdf (locally, or by docs:build in the GitHub Action)
 docs/public/panter-cv.pdf
 docs/public/panter-cv-summaries.pdf
+
+# Session worktrees
+.claude/worktrees/
