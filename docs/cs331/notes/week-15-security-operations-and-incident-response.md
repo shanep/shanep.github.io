@@ -24,11 +24,11 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK (Cyber Security Body of Knowledge) v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.1 Fundamental concepts: workflows and vocabulary | 251-254 | 3 pp | 20 min |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.2 Monitor: data sources *(skim)* | 254-261 | 7 pp | 20 min |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.3.1-8.3.3 Misuse detection, anomaly detection, blended | 262-266 | 4 pp | 30 min |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.3.6 The base-rate fallacy | 268 | 1 p | 15 min |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §8.7 Human factors: Incident management | 281-284 | 3 pp | 25 min |
+| [CyBOK §8.1](https://shanepanter.com/cs331/cybok/08-security-operations-and-incident-management#_8-1-fundamental-concepts) | §8.1 Fundamental concepts: workflows and vocabulary | 251-254 | 3 pp | 20 min |
+| [CyBOK §8.2](https://shanepanter.com/cs331/cybok/08-security-operations-and-incident-management#_8-2-monitor-data-sources) | §8.2 Monitor: data sources *(skim)* | 254-261 | 7 pp | 20 min |
+| [CyBOK §8.3.1](https://shanepanter.com/cs331/cybok/08-security-operations-and-incident-management#_8-3-1-misuse-detection) | §8.3.1-8.3.3 Misuse detection, anomaly detection, blended | 262-266 | 4 pp | 30 min |
+| [CyBOK §8.3.6](https://shanepanter.com/cs331/cybok/08-security-operations-and-incident-management#_8-3-6-the-base-rate-fallacy) | §8.3.6 The base-rate fallacy | 268 | 1 p | 15 min |
+| [CyBOK §8.7](https://shanepanter.com/cs331/cybok/08-security-operations-and-incident-management#_8-7-human-factors-incident-management) | §8.7 Human factors: Incident management | 281-284 | 3 pp | 25 min |
 
 **§8.3.6 is one page and it is the most important page of the week.**
 

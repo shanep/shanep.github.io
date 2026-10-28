@@ -23,3 +23,6 @@ docs/public/panter-cv-summaries.pdf
 
 # Session worktrees
 .claude/worktrees/
+
+# Python bytecode from scripts/cybok.
+__pycache__/

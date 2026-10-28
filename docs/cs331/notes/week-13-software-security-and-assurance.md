@@ -26,10 +26,10 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK (Cyber Security Body of Knowledge) v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.1.1 Memory Management Vulnerabilities | 498-499 | 1 p | 15 min |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.2 Prevention of Vulnerabilities: language design, API (application programming interface) design, coding practices | 506-511 | 5 pp | 40 min |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §15.4 Mitigating Exploitation of Vulnerabilities | 516-520 | 4 pp | 35 min |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §17.7 Assessment of the Secure Software Lifecycle: SAMM, BSIMM, Common Criteria | 604-608 | 4 pp | 25 min |
+| [CyBOK §15.1.1](https://shanepanter.com/cs331/cybok/15-software-security#_15-1-1-memory-management-vulnerabilities) | §15.1.1 Memory Management Vulnerabilities | 498-499 | 1 p | 15 min |
+| [CyBOK §15.2](https://shanepanter.com/cs331/cybok/15-software-security#_15-2-prevention-of-vulnerabilities) | §15.2 Prevention of Vulnerabilities: language design, API (application programming interface) design, coding practices | 506-511 | 5 pp | 40 min |
+| [CyBOK §15.4](https://shanepanter.com/cs331/cybok/15-software-security#_15-4-mitigating-exploitation-of-vulnerabilities) | §15.4 Mitigating Exploitation of Vulnerabilities | 516-520 | 4 pp | 35 min |
+| [CyBOK §17.7](https://shanepanter.com/cs331/cybok/17-secure-software-lifecycle#_17-7-assessment-of-the-secure-software-lifecycle) | §17.7 Assessment of the Secure Software Lifecycle: SAMM, BSIMM, Common Criteria | 604-608 | 4 pp | 25 min |
 
 ::: info §15.3 for Lab 8
 §15.3 (detection of vulnerabilities, static and dynamic analysis) is not assigned as reading, but

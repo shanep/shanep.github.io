@@ -1,0 +1,3 @@
+alt: Four slices of cheese with holes, in a row, pierced by a single arrow that stands for a threat passing through every layer to cause an incident.
+---
+A drawing of four slices of Swiss cheese standing in a row, each with several holes. They are the defence layers of the model. A thick black arrow runs through one hole in each slice in turn. The arrow starts at the back right, labelled "THREAT", passes through all four slices, and ends with its head at the front left, labelled "INCIDENT". The holes are the latent and active failures named in the caption. The threat succeeds only when it finds a hole in every successive layer.

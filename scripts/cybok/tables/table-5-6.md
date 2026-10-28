@@ -1,0 +1,9 @@
+| Name | Age | Gender | ZIP | Salary |
+| --- | --- | --- | --- | --- |
+| Alice | 21 | Female | 21345 | 51345 |
+| Bob | 32 | Male | 25669 | 67863 |
+| Carla | 25 | Female | 18934 | 51053 |
+| Diana | 64 | Female | 21223 | 60302 |
+| Eve | 34 | Female | 18022 | 74558 |
+| Frank | 37 | Male | 25321 | 55005 |
+| Gerald | 19 | Female | 18235 | 69425 |

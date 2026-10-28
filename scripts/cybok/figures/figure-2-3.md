@@ -1,0 +1,4 @@
+| Method type | Good For |
+| --- | --- |
+| Component-driven methods | • Analysing the risks faced by individual technical components.<br>• Deconstructing less complex systems, with well-understood connections between component parts.<br>• Working at levels of abstraction where a system’s physical function has already been agreed amongst stakeholders. |
+| System-driven methods | • Exploring security breaches which emerge out of the complex interaction of many parts of your system.<br>• Establishing system security requirements before you have decided on the system’s exact physical design.<br>• Bringing together multiple stakeholders’ views of what a system should and should not do (e.g., safety, security, legal views).<br>• Analysing security breaches which cannot be tracked back to a single point of failure. |

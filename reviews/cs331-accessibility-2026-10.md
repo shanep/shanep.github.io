@@ -16,8 +16,11 @@ video or audio, and the 1 that is not met is listed under
 The first pass found AA failures on every website page and on 4 Canvas pages,
 and a second pass at AAA found more. All of them are fixed, and the same checks
 now find none. I reran them on October 28, after the site's theme was
-restyled, and they still find none. Three items are outside what I can fix in the course itself.
-They are listed under [Known limitations](#known-limitations) with how a student
+restyled, and they still find none. The textbook PDF (Portable Document Format)
+was the biggest gap, so every chapter the course assigns is now a web page on the
+course site that passes the same AAA checks (see
+[CyBOK textbook](#cybok-textbook)). Three items are outside what I can fix in the
+course itself. They are listed under [Known limitations](#known-limitations) with how a student
 gets an accessible version.
 
 | Check | Level | Before | After |
@@ -33,13 +36,14 @@ gets an accessible version.
 | External links that open a new tab without saying so | AAA | every external link | 0 |
 | Paragraphs closer than 1.5 lines apart | AAA | 7 | 0 |
 | Images of text | AAA | 1 (the home page banner) | 0 |
+| Assigned CyBOK chapters readable without the untagged PDF | AAA | 0 of 15 | 15 of 15 |
 
 ## Scope
 
-- **Website**: all 67 pages under <https://shanep.github.io/cs331/>. That is the
+- **Website**: all 83 pages under <https://shanep.github.io/cs331/>. That is the
   syllabus and the other top-level pages, the schedule, 30 module overview and
-  notes pages, 11 labs, 6 discussions, and the Course Resources, reminder and
-  data pages. The site theme fixes below apply to every course on the site,
+  notes pages, 11 labs, 6 discussions, the Course Resources, reminder and
+  data pages, and 16 CyBOK pages (the 15 assigned chapters and their index). The site theme fixes below apply to every course on the site,
   not only CS331.
 - **Canvas**: all 77 bodies in the CS331 master shell (Canvas course 52107):
   pages, assignments, discussions, the survey, and the syllabus. Canvas's own
@@ -71,15 +75,16 @@ It builds the site, then runs:
    link text, no text that points to two different places on one page, and no
    link that opens a new tab without saying so in its name (3.2.5).
 4. **Reflow** (1.4.10): every page at 320 CSS px wide, the width of a 1280 px
-   screen at 400% zoom. A page fails if it scrolls sideways. Tables and code
-   blocks may scroll inside their own box, which WCAG allows.
+   screen at 400% zoom. A page fails if it scrolls sideways. Tables, code
+   blocks and display math may scroll inside their own box, which WCAG allows.
 5. **Focus** (2.4.7, 2.4.12, 2.4.13): tab through every page and flag any stop
    with no focus ring, a ring thinner than 2 px or under 3:1, or any part
    hidden under the sticky navigation bar.
 6. **Target size** (2.5.5): every control at 1280 px and at 320 px, measured by
    where a click actually lands, must take a click across at least 44 by 44 px.
    Links inside a paragraph, list item or table cell are exempt, as the
-   criterion allows for targets in a block of text.
+   criterion allows for targets in a block of text. Footnote links count as
+   part of their sentence.
 7. **Text spacing and images of text** (1.4.8, 1.4.9): line spacing of at least
    1.5, paragraphs at least 1.5 lines apart, no justified text, and no image
    whose alt text is a title.
@@ -87,10 +92,12 @@ It builds the site, then runs:
    `edutools pull` of course 52107, framed the way Canvas shows it (the item
    title as the page heading, Canvas's text color on white).
 
-The last run, on October 28, 2026, printed:
+The last run, on October 28, 2026, printed the lines below. It added the 16
+CyBOK pages to the website check. The Canvas line is from the run before it,
+since the CyBOK pages live only on the website.
 
 ```text
-cs331 (WCAG 2.2 AAA): 67 site pages in light and dark mode, 77 Canvas bodies
+cs331 (WCAG 2.2 AAA): 83 site pages in light and dark mode, 77 Canvas bodies
      0  axe violations (site)
      0  contrast under the minimum, worked out by hand
      0  link text problems (site)
@@ -99,7 +106,7 @@ cs331 (WCAG 2.2 AAA): 67 site pages in light and dark mode, 77 Canvas bodies
      0  targets under 44 by 44 px
      0  text spacing and images of text
      0  axe violations and link text problems (Canvas)
-   282  needs-review groups from axe (color-contrast-enhanced, color-contrast, identical-links-same-purpose, th-has-data-cells); contrast ones are checked above
+   346  needs-review groups from axe (color-contrast-enhanced, color-contrast, identical-links-same-purpose, th-has-data-cells); contrast ones are checked above
 ```
 
 The Canvas check reads each body without Canvas's own stylesheet, so I also
@@ -178,6 +185,12 @@ on every page that uses it, as in "TLS (Transport Layer Security)". That changed
 54 pages. Words in capitals that are not abbreviations (SPRING BREAK, SHALL NOT),
 course and room codes, and names like MITRE ATT&CK are left alone.
 
+On the CyBOK pages the book's own wording is kept, so a meaning is added after an
+abbreviation in brackets, as in "MAC \[Message Authentication Code\]". The
+converter picks the meaning per chapter, because the book uses MAC, CSP, TTP and
+a few others for different things in different chapters, and a note at the top of
+each page says the bracketed meanings are mine, not the book's.
+
 **3.1.5 Reading Level.** The criterion asks for text a lower secondary student
 can read, or a simpler version next to it. CS331 is an upper-division course,
 and its readings are the CyBOK knowledge areas. The notes and labs are written
@@ -221,17 +234,42 @@ page is not practical.
 | Canvas draws inline code red on gray at 5.21:1 | 1.4.6 | 34 Canvas bodies with code | Set inline code to the page text color in the course stylesheet |
 | Abbreviations were never spelled out | 3.1.4 | 54 pages | Spell out each one on its first use on each page |
 
+### CyBOK textbook
+
+The CyBOK v1.2.0 PDF is 1,115 pages with no tags, so a screen reader gets no
+headings, tables or reading order. The course assigns parts of 15 of its 22
+chapters, so those 15 chapters are now web pages under
+<https://shanepanter.com/cs331/cybok/>, and the reading links in every week's
+notes go straight to the section on them. The PDF stays in Canvas as the original.
+
+A script in the repository (`scripts/cybok/convert.py`) builds the pages from the
+PDF, so they can be rebuilt when CyBOK puts out a new version.
+
+| Problem in the PDF | WCAG | Fix on the web pages |
+| --- | --- | --- |
+| No tagged headings, lists or tables | 1.3.1 | Real headings for every section, real lists, and 351 footnotes that link both ways |
+| Math drawn as glyphs a screen reader cannot read | 1.1.1, 1.3.1 | MathJax, which draws each formula and hands screen readers a MathML copy |
+| 38 figures with no alt text | 1.1.1 | Alt text for each one, plus a "Text description" that lists everything the figure shows |
+| Diagrams and tables drawn as pictures | 1.4.9 | Rebuilt as real tables where the content is a table |
+| About 1,200 links whose text is a bare web address | 2.4.9 | Reference links carry the title of the work, and the other 138 addresses get a name from a list in the repository. Made-up addresses in the book's examples are shown as code, not links |
+| Abbreviations never spelled out on most pages | 3.1.4 | A meaning in brackets on each one's first use on each page |
+
+The theme also gained styles for what these pages added: 44 px tall "Text
+description" toggles and display math, footnote return links of at least 24 px,
+and inline math that shrinks to fit a phone instead of making the page scroll.
+
 Earlier this month I also fixed the raw URLs Greg Snow flagged in his review of
 the shell. Every one now sits behind descriptive link text.
 
 ## Known limitations
 
-- **The CyBOK v1.2.0 PDF is not tagged.** It is the course textbook,
-  published by the CyBOK project, not by me. It has real, selectable text and a
-  full bookmark outline, so a screen reader can read it and jump between
-  chapters, but it has no tag structure for headings and tables. A student who
-  needs a tagged or alternate format can get one through the Educational Access
-  Center, and I will help with any section they need sooner.
+- **The CyBOK v1.2.0 PDF is still not tagged.** It is published by the CyBOK
+  project, not by me, so I left the file as it is. Every chapter the course
+  assigns is now an accessible web page (see [CyBOK textbook](#cybok-textbook)).
+  The 7 chapters the course does not assign are only in the PDF, which has real,
+  selectable text and a full bookmark outline. The figure descriptions on the web
+  pages are my reading of each figure, and a few small labels in the book's
+  figures are too small to read with certainty.
 - **Two labs use visual tools.** Lab 6 has students open a certificate in their
   own browser, and Lab 8 has students read assembly in Compiler Explorer
   (godbolt.org). Both are third-party tools I did not build and did not audit.
@@ -245,9 +283,9 @@ the shell. Every one now sits behind descriptive link text.
 axe leaves four kinds of item for a person to judge, and I judged all of them
 fine:
 
-- **Contrast it cannot compute** (268 groups), where text sits over a layered
+- **Contrast it cannot compute** (332 groups), where text sits over a layered
   background like the sidebar or a code block. Since the theme was restyled,
-  axe's AA and AAA contrast rules both flag the same 134 spots, which is why
+  axe's AA and AAA contrast rules both flag the same 166 spots, which is why
   the count roughly doubled. The by-hand check above covers every one of them
   at the AAA thresholds.
 - **Links with the same name** (10 groups), where a sidebar or outline link and

@@ -23,9 +23,9 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK (Cyber Security Body of Knowledge) v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.3 Information-theoretically Secure Constructions: one-time pad, secret sharing | 327-329 | 2 pp | 15 min |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.4 Symmetric Primitives: block ciphers, stream ciphers, hash functions | 329-332 | 3 pp | 25 min |
-| [CyBOK v1.2.0](../docs/CyBOK_v1.2.0.pdf) | §10.5 Symmetric Encryption and Authentication: modes, MACs, KDFs | 332-336 | 4 pp | 35 min |
+| [CyBOK §10.3](https://shanepanter.com/cs331/cybok/10-cryptography#_10-3-information-theoretically-secure-constructions) | §10.3 Information-theoretically Secure Constructions: one-time pad, secret sharing | 327-329 | 2 pp | 15 min |
+| [CyBOK §10.4](https://shanepanter.com/cs331/cybok/10-cryptography#_10-4-symmetric-primitives) | §10.4 Symmetric Primitives: block ciphers, stream ciphers, hash functions | 329-332 | 3 pp | 25 min |
+| [CyBOK §10.5](https://shanepanter.com/cs331/cybok/10-cryptography#_10-5-symmetric-encryption-and-authentication) | §10.5 Symmetric Encryption and Authentication: modes, MACs, KDFs | 332-336 | 4 pp | 35 min |
 
 ### Additional readings
 

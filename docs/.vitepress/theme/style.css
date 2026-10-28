@@ -461,3 +461,41 @@ html {
   color: var(--vp-c-text-1);
   background: var(--vp-c-bg);
 }
+
+/* The "Text description" toggle under each CyBOK figure is a control, so it
+   gets the 44 px height AAA asks for. */
+.vp-doc details.custom-block > summary {
+  min-height: 44px;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+/* The footnote back-link sits at the end of the note's text, so it only needs
+   the 24 px AA asks for, like the footnote reference above. */
+.vp-doc .footnote-backref {
+  display: inline-block;
+  min-width: 24px;
+  min-height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* Inline math can't wrap, so a long formula shrinks to the column at 320 px
+   instead of making the page scroll sideways (WCAG 1.4.10). */
+.vp-doc mjx-container:not([display]) > svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* MathJax's hidden MathML copy for screen readers is clipped but still as wide
+   as the formula, so it can push the page wider than a phone. */
+.vp-doc mjx-assistive-mml {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* A display formula takes focus so it can scroll, which makes it a control. */
+.vp-doc mjx-container[display="true"] {
+  min-height: 44px;
+  line-height: 44px;
+}

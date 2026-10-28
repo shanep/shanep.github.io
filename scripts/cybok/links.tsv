@@ -1,0 +1,138 @@
+# Names for the links the book prints as a bare web address, since a URL is no name for a
+# link (WCAG 2.4.9). One per line: the URL, a tab, then the link text, which has to read
+# well where the URL sat ("See <name>.") and be unique on its page. convert.py warns about
+# any bare URL left without a name. A name of "-" marks a made-up address in an example,
+# which is shown as code instead of a link.
+https://www.cybok.org	cybok.org
+https://www.owasp.org	the OWASP website
+https://www.owasp.org/	the OWASP website
+https://behaviormodel.org	the Fogg Behavior Model website
+https://www.ncsc.gov.uk/information/secure-default	NCSC: Secure by Default
+https://www.trespass-project.eu/	the TREsPASS project website
+https://otr.cypherpunks.ca/	Off-the-Record Messaging
+https://www.torproject.org/	the Tor Project
+https://katzenpost.mixnetworks.org/	the Katzenpost mix network
+https://amiunique.org/	Am I Unique?
+https://panopticlick.eff.org/	EFF Panopticlick
+https://pribot.org/polisis	Polisis, a privacy policy analyser
+https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=celex%3A32002L0058	Directive 2002/58/EC on privacy and electronic communications
+https://en.wikipedia.org/wiki/Privacy_and_Electronic_Communications_(EC_Directive)_Regulations_2003	Privacy and Electronic Communications (EC Directive) Regulations 2003 on Wikipedia
+https://en.wikipedia.org/wiki/CAN-SPAM_Act_of_2003	CAN-SPAM Act of 2003 on Wikipedia
+https://www.iacr.org/authors/tikz/	TikZ for Cryptographers
+https://developer.mozilla.org	the MDN Web Docs
+https://developer.android.com	the Android Developers website
+https://www.chromium.org/developers/design-documents/idn-in-google-chrome	IDN in Google Chrome
+https://meltdownattack.com/	Meltdown and Spectre
+https://www.cyberscoop.com/microsoft-meltdown-patches-windows-7-memory-management/	CyberScoop on the Meltdown patches for Windows 7
+https://www.pcisecuritystandards.org/	the PCI Security Standards Council
+https://iswlegal.com/	ISW Legal
+https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act	the EU Cyber Resilience Act
+https://www.first.org/cvss/	the Common Vulnerability Scoring System
+https://www.usenix.org/conference/3gse14/summit-program/presentation/shostack	Shostack, Elevation of Privilege (3GSE 2014)
+https://owasp.org/www-project-cornucopia/	OWASP Cornucopia
+https://w2.eff.org/Privacy/Crypto/Crypto_misc/DESCracker/HTML/19980716_eff_des_faq.html	the EFF DES Cracker FAQ
+https://cwe.mitre.org/	Common Weakness Enumeration
+https://owasp.org/www-project-top-ten/	the OWASP Top 10
+http://nvd.nist.gov	the National Vulnerability Database
+https://safecode.org/	SAFECode
+https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html	the OWASP Logging Cheat Sheet
+https://www.owasp.org/images/e/e0/OWASP_Logging_Guide.pdf	the OWASP Logging Guide
+https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf	the OWASP Secure Coding Practices Quick Reference Guide
+https://www.oracle.com/technetwork/java/seccodeguide-139067.html	Oracle's Secure Coding Guidelines for Java SE
+https://cmu-sei.github.io/secure-coding-standards/	the SEI CERT Secure Coding Standards
+https://www.iso.org/standard/72311.html	ISO catalogue entry 72311
+https://www.iso.org/standard/45170.html	ISO catalogue entry 45170
+https://www.iso.org/standard/53231.html	ISO catalogue entry 53231
+https://owasp.org/www-project-samm/	OWASP SAMM
+https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project	the OWASP Top Ten Project (old wiki)
+https://www.blackduck.com/	Black Duck
+https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/secure-application-lifecycle---part-1---using-credscan/1986960	Microsoft: Using CredScan
+https://openssf.org/community/sigstore/	Sigstore
+https://in-toto.io/community/	in-toto
+https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/	the OWASP Top 10 for LLM Applications 2025
+https://owasp.org/www-project-mobile-app-security/	the OWASP Mobile Application Security project
+https://mas.owasp.org/MASVS/	OWASP MASVS
+https://github.com/OWASP/mastg/releases	OWASP MASTG releases
+https://mas.owasp.org/checklists/	the OWASP MAS checklists
+https://mas.owasp.org/MASWE	OWASP MASWE
+https://aws.amazon.com/compliance/shared-responsibility-model/	the AWS Shared Responsibility Model
+https://www.rfc-editor.org/info/rfc8520/	RFC 8520
+https://datatracker.ietf.org/doc/draft-ietf-suit-architecture/12/	the IETF SUIT architecture draft
+https://www.gov.uk/government/publications/code-of-practice-for-consumer-iot-security/code-of-practice-for-consumer-iot-security	the UK Code of Practice for Consumer IoT Security
+https://www.legislation.gov.uk/ukpga/2022/46	the Product Security and Telecommunications Infrastructure Act 2022
+https://www.wired.com/2015/07/hackers-remotely-kill-jeep-highway/	Wired: Hackers Remotely Kill a Jeep on the Highway
+https://www.nhtsa.gov/crash-avoidance/automotive-cybersecurity#automotive-cybersecurity-overview	NHTSA: Automotive Cybersecurity
+https://www.iso.org/	the ISO website
+https://www.iso.org/standard/70918.html	ISO/SAE 21434
+https://automotiveisac.com/best-practice-guides	Auto-ISAC Best Practice Guides
+https://unece.org/transport/documents/2021/03/standards/un-regulation-no-155-cyber-security-and-cyber-security	UN Regulation No. 155
+https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update	UN Regulation No. 156
+https://owasp.org/API-Security/editions/2023/en/0x11-t10/	the OWASP API Security Top 10 2023
+https://owaspsamm.org/assessment/	the SAMM assessment
+https://owaspsamm.org/model/	the SAMM model
+https://owaspsamm.org/resources/assessment-tools/	the SAMM assessment tools
+https://www.commoncriteriaportal.org/ccra/index.cfm	the Common Criteria Recognition Arrangement
+https://www.ncsc.gov.uk/information/common-criteria-0	NCSC: Common Criteria
+https://www.fda.gov/regulatory-information/laws-enforced-fda/federal-food-drug-and-cosmetic-act-fdc-act	the Federal Food, Drug, and Cosmetic Act
+https://www.iso.org/standard/27001	ISO/IEC 27001
+https://www.hackerone.com	HackerOne
+https://www.cisco.com/c/en/us/about/trust-center/technology-built-in-security.html#~stickynav=2	Cisco: Built-in Security
+https://blogs.msdn.microsoft.com/microsoft_press/2016/04/19/free-ebook-the-security-development-lifecycle/	Microsoft Press: The Security Development Lifecycle (free ebook)
+https://tsfdn.org	the Trustworthy Software Foundation
+https://tsfdn.org/ts-framework/	the Trustworthy Software Framework
+https://www.sei.cmu.edu/education-outreach/curricula/software-assurance/index.cfm	the SEI Software Assurance Curricula
+https://www.ncsc.gov.uk/	the NCSC website
+https://www.ncsc.gov.uk/collection/application-development	NCSC: Application Development
+https://www.ncsc.gov.uk/collection/developers-collection	NCSC: Developers Collection
+https://www.ncsc.gov.uk/blog-post/leaky-pipe-secure-coding	NCSC: Leaky Pipe of Secure Coding
+https://competitions.cr.yp.to/caesar-submissions.html	the CAESAR submissions
+https://www.keylength.com/en/	keylength.com
+https://apps.nsa.gov/iad/programs/iad-initiatives/cnsa-suite.cfm	the NSA CNSA Suite
+https://www.irtf.org/cfrg.html	the IRTF Crypto Forum Research Group
+https://csrc.nist.gov/projects/post-quantum-cryptography	the NIST Post-Quantum Cryptography project
+https://blog.cloudflare.com/the-tls-post-quantum-experiment	Cloudflare: The TLS Post-Quantum Experiment
+https://blog.filippo.io/the-ecb-penguin/	The ECB Penguin
+https://cr.yp.to/antiforgery/cachetiming-20050414.pdf	Bernstein, Cache-timing attacks on AES
+https://z.cash/	Zcash
+https://www.bearssl.org/constanttime.html	BearSSL: Constant-Time Crypto
+https://cr.yp.to/chacha.html	the ChaCha family of stream ciphers
+https://www.password-hashing.net/	the Password Hashing Competition
+https://github.com/cfrg/pake-selection	the CFRG PAKE selection
+https://www.debian.org/security/2008/dsa-1571	Debian Security Advisory DSA-1571
+https://cabforum.org/	the CA/Browser Forum
+https://en.wikipedia.org/wiki/DigiNotar	DigiNotar on Wikipedia
+https://securelist.com/turktrust-ca-problems-21/34893/	Securelist: TURKTRUST CA Problems
+https://techcrunch.com/2015/04/01/google-cnnic/	TechCrunch: Google drops CNNIC
+https://certificate.transparency.dev/	the Certificate Transparency website
+https://blog.mozilla.org/security/2020/01/09/crlite-part-1-all-web-pki-revocations-compressed/	Mozilla: CRLite
+https://dwheeler.com/essays/apple-goto-fail.html	Wheeler, The Apple goto fail vulnerability
+https://web.interhack.com/publications/snake-oil-faq	the Snake Oil FAQ
+https://aws.amazon.com/cloudhsm/	AWS CloudHSM
+https://www.entrust.com/digital-security/certificate-solutions/products/pki/managed-services/entrust-cryptography-as-a-service	Entrust Cryptography as a Service
+https://badssl.com/	badssl.com
+http://example.com	example.com
+https://transparencyreport.google.com/https/overview?hl=en	the Google Transparency Report on HTTPS
+https://signal.org/docs/specifications/doubleratchet/	the Signal Double Ratchet specification
+https://telegram.org/	Telegram
+https://www.google.com/covid19/exposurenotifications/	Google: Exposure Notifications
+https://covid19.apple.com/contacttracing	Apple: Exposure Notifications
+https://docs.mongodb.com/manual/core/security-client-side-encryption/	MongoDB: Client-Side Field Level Encryption
+https://blog.mozilla.org/security/2019/06/06/next-steps-in-privacy-preserving-telemetry-with-prio/	Mozilla: Privacy-Preserving Telemetry with Prio
+https://www.ncsc.gov.uk/information/people-strongest-link	NCSC: People are the strongest link
+https://www.ncsc.gov.uk/guidance/password-guidance-simplifying-your-approach	NCSC: Password Guidance
+https://www.theguardian.com/world/2013/oct/24/former-spy-chief-overheard-acela-twitter	The Guardian: Former spy chief overheard on Acela
+https://takefive-stopfraud.org.uk/	Take Five to Stop Fraud
+https://d0x3d.com/	d0x3d!
+https://www.microsoft.com/en-us/SDL/adopt/eop.aspx	Microsoft: Elevation of Privilege card game
+https://www.nationalcrimeagency.gov.uk/what-we-do/crime-threats/kidnap-and-extortion/sextortion	National Crime Agency: Sextortion
+https://www.secureworks.com/research/cryptowall-ransomware	Secureworks: CryptoWall Ransomware
+https://en.wikipedia.org/wiki/Kill_chain	Kill chain on Wikipedia
+https://en.wikipedia.org/wiki/Vault_7	Vault 7 on Wikipedia
+https://example.com	-
+https://addons.mozilla.org	-
+https://paymentorganization.secure.server.com	-
+https://paypal.com	-
+https://myonlinebank.et/transaction?to=attacker&value=50	-
+https://www.openssl.org/	OpenSSL
+https://www.bouncycastle.org/	Bouncy Castle
+https://github.com/DP-3T/documents	the DP-3T documents on GitHub

@@ -160,7 +160,9 @@ function smallTargets() {
     if (hidden) e.focus()
     let r = e.getBoundingClientRect()
     if (!r.width || !r.height) { if (hidden) e.blur(); continue }
-    if (s.display === 'inline' && e.closest('.vp-doc p, .vp-doc li, .vp-doc td, .vp-doc th, .vp-doc dd, .vp-doc blockquote')) continue
+    // Footnote links are inline-block (see style.css) but still sit in a sentence.
+    const inline = s.display === 'inline' || e.closest('.footnote-ref, .footnote-backref')
+    if (inline && e.closest('.vp-doc p,.vp-doc li, .vp-doc td, .vp-doc th, .vp-doc dd, .vp-doc blockquote')) continue
     let ok = r.width >= 44 && r.height >= 44
     if (!ok) {
       e.scrollIntoView({ block: 'center', inline: 'center', behavior: 'instant' })
@@ -224,15 +226,17 @@ for (const scheme of ['light', 'dark']) {
   await ctx.close()
 }
 
-// Tables and code blocks may scroll inside their own box (WCAG exempts content
-// that needs two dimensions), so only a page that scrolls sideways fails.
+// Tables, code blocks and display math may scroll inside their own box (WCAG
+// exempts content that needs two dimensions), so only a page that scrolls
+// sideways fails. MathJax's copy of each formula for screen readers is
+// clipped out of sight, so it never makes anyone scroll.
 const narrow = await (await browser.newContext({ viewport: { width: 320, height: 800 } })).newPage()
 for (const rel of pages) {
   await narrow.goto(`${base}/${rel}`, { waitUntil: 'networkidle' })
   const r = await narrow.evaluate(() => {
     const w = document.documentElement.clientWidth
     const wide = [...document.querySelectorAll('.vp-doc *')]
-      .filter((e) => e.getBoundingClientRect().right > w + 1 && !e.closest('pre, table, div[class*="language-"]'))
+      .filter((e) => e.getBoundingClientRect().right > w + 1 && !e.closest('pre, table, div[class*="language-"], mjx-container[display], mjx-assistive-mml'))
       .slice(0, 3).map((e) => `${e.tagName.toLowerCase()} ${(e.textContent || '').trim().slice(0, 60)}`)
     return { scrollWidth: document.documentElement.scrollWidth, width: w, wide }
   })

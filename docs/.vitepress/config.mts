@@ -198,6 +198,9 @@ export default defineConfig({
     // working.
     externalLinks: { target: '_self', rel: 'noreferrer' },
     image: { lazyLoading: true },
+    // TeX in $...$ and $$...$$, drawn by MathJax as SVG at build time. The CyBOK
+    // chapters need it.
+    math: true,
     config: (md) => {
         // Runs on the raw markdown, before anything is parsed, so the section
         // never reaches the page, the outline, or the search index.
@@ -368,6 +371,28 @@ function cs331(): DefaultTheme.SidebarItem[] {
         { text: 'Online Success Resources',   link: 'course-resources/online-success-resources' },
         { text: 'Technology Support',         link: 'course-resources/technology-support' },
         { text: 'Course Questions',           link: 'course-resources/course-questions' },
+      ]
+    },
+    {
+      text: 'CyBOK Textbook',
+      collapsed: true,
+      items: [
+        { text: 'About These Chapters', link: 'cybok/index' },
+        { text: '1. Introduction', link: 'cybok/01-introduction' },
+        { text: '2. Risk Management & Governance', link: 'cybok/02-risk-management-and-governance' },
+        { text: '3. Law & Regulation', link: 'cybok/03-law-and-regulation' },
+        { text: '4. Human Factors', link: 'cybok/04-human-factors' },
+        { text: '5. Privacy & Online Rights', link: 'cybok/05-privacy-and-online-rights' },
+        { text: '6. Malware & Attack Technologies', link: 'cybok/06-malware-and-attack-technologies' },
+        { text: '7. Adversarial Behaviours', link: 'cybok/07-adversarial-behaviours' },
+        { text: '8. Security Operations & Incident Management', link: 'cybok/08-security-operations-and-incident-management' },
+        { text: '10. Cryptography', link: 'cybok/10-cryptography' },
+        { text: '14. Authentication, Authorisation & Accountability', link: 'cybok/14-authentication-authorisation-and-accountability' },
+        { text: '15. Software Security', link: 'cybok/15-software-security' },
+        { text: '16. Web & Mobile Security', link: 'cybok/16-web-and-mobile-security' },
+        { text: '17. Secure Software Lifecycle', link: 'cybok/17-secure-software-lifecycle' },
+        { text: '18. Applied Cryptography', link: 'cybok/18-applied-cryptography' },
+        { text: '19. Network Security', link: 'cybok/19-network-security' },
       ]
     },
     {
