@@ -246,7 +246,7 @@ where the output is $h_{t}$ and $h_{0}$ is some initial value, which can be thou
 
 The above methodology requires a method to pad the initial input block to encode the length, and it suffers from a number of practical issues. For example, there are obvious length extension attacks (namely a hash on a message $m$ can be extended to a hash on $m\parallel m^{'}$ without knowing the whole of $m$) which render the use of such hash functions problematic in some applications. For example, in HMAC (see Section 10.5.2), one requires two applications of the hash function to prevent such attacks.
 
-**10.4.3.2 Sponge Constructions**
+#### 10.4.3.2 Sponge Constructions
 
 A more modern approach to hash function design is to create a so-called sponge construction. This is the design philosophy behind SHA-3 (a.k.a. ). A sponge is a function which operates in two phases. In the first phase, one enters data into the sponge state and, in the second phase, one squeezes data out from the sponge.
 
@@ -268,7 +268,7 @@ $$
 
 Further details on sponge constructions, and the further objects one can construct from them, and the SHA-3 design in particular can be found at the Keccak web page \[<a href="#ref-967" aria-label="Reference 967">967</a>\].
 
-**10.4.3.3 Random Oracle Model**
+#### 10.4.3.3 Random Oracle Model
 
 Many cryptographic constructions are only secure if one assumes that the hash function used in the construction behaves ‘like a random oracle’. Such constructions are believed to be secure in the real world, but theoretically, they are less pleasing. One can think of a proof of security in the random oracle model as a proof in which we allow the attacker to have their usual powers; however, when they (or any of the partners they are attacking) call the underlying hash function the call is made to an external party via an oracle call. This external party then simply plays back a random value, i.e. it does not use any algorithm to generate the random values. All that is required is that if the input is given to the oracle twice, then the same output is always returned.
 
@@ -652,7 +652,7 @@ Cryptographic protocols are interactive operations conducted between two or more
 
 In an authentication protocol, one entity (the Prover) convinces the other entity (the Verifier) that they are who they claim to be, and that they are ‘online’; where ‘online’ means that the verifying party is assured that the proving party is actually responding and it is not a replay. There are three basic types of protocol: Encryption based, Message Authentication based and Zero-Knowledge based.
 
-**10.8.1.1 Encryption-Based Protocols**
+#### 10.8.1.1 Encryption-Based Protocols
 
 These can operate in the symmetric or public key setting. In the symmetric key setting, both the prover and the verifier hold the same secret key, whilst in the public key setting, the prover holds the private key and the verifier holds the public key. In both settings, the verifier first encrypts a random nonce to the prover, the prover then decrypts this and returns it to the verifier, the verifier checks that the random nonce and the returned value are equivalent.
 
@@ -678,7 +678,7 @@ $$
 
 The encryption scheme needs to be IND-CCA secure for the above protocol to be secure against active attacks. The nonce $N$ is used to prevent replay attacks.
 
-**10.8.1.2 Message Authentication-Based Protocols**
+#### 10.8.1.2 Message Authentication-Based Protocols
 
 These also operate in the public key or the symmetric setting. In these protocols, the verifier sends a nonce in the clear to the prover, the prover then produces a digital signature (or a MAC in the symmetric key setting) on this nonce and passes it back to the verifier. The verifier then verifies the digital signature (or verifies the MAC). In the following diagram we give the public key/digital signature based variant.
 
@@ -698,7 +698,7 @@ $$
 \mathsf{Verify}(N, σ,\mathfrak{pk}) =\mathsf{true}
 $$
 
-**10.8.1.3 Zero-Knowledge-Based**
+#### 10.8.1.3 Zero-Knowledge-Based
 
 Zero-knowledge-based authentication protocols are the simplest examples of zero-knowledge protocols (see Section 10.9.3) available. The basic protocol is a so-called $Σ$\- (or Sigma-) protocol consisting of three message flows; a commitment, a challenge and a response. The simplest example is the Schnorr identification protocol, based on the hardness of computing discrete logarithms. In this protocol, the Prover is assumed to have a long-term secret $x$ and an associated public key $Q = [x]\cdot P$. One should note the similarity of this protocol to the Schnorr signature scheme above.
 
@@ -743,7 +743,7 @@ Kerberos is an example of a (usually) symmetric key-based key agreement system. 
 
 Variations on the theme of key agreement protocols include group key agreement, which enables a group of users to agree on a key, or password based key agreement, in which two parties only agree on a (high entropy) key if they also agree on a shared password.
 
-**10.8.2.1 Key Transport**
+#### 10.8.2.1 Key Transport
 
 The most basic form of key agreement protocol is a form of key transport in which the parties use public key encryption to exchange a random key. In the case of a one-way authenticated protocol, this was the traditional method of TLS operation (up until TLS version 1.2) between a server and a client
 
@@ -769,7 +769,7 @@ This protocol produced the pre-master secret in older versions of TLS (pre-TLS 1
 
 A more basic issue with the above protocol is that it is not forward-secure. Any adversary who records a session now, and in the future manages to obtain the server’s long-term secret $\mathfrak{sk}$, can obtain the pre-master secret, and hence decrypt the entire session.
 
-**10.8.2.2 Diffie–Hellman Key Agreement**
+#### 10.8.2.2 Diffie–Hellman Key Agreement
 
 To avoid the issues with forward secrecy of RSA-based key transport, modern protocols make use of Diffie–Hellman key exchange. This allows two parties to agree on a uniformly random key, which is indistinguishable from random assuming the Decision Diffie–Hellman problem is hard
 
@@ -795,7 +795,7 @@ This protocol provides forward secrecy, but provides no form of authentication. 
 
 The one-way authenticated version of Diffie–Hellman key agreement is the preferred method of key agreement in modern TLS deployments, and is the only method of key agreement supported by TLS 1.3. In TLS, the FINISHED message, which hashes the entire transcript, prevents the above unknown-key-share attack. However, it also prevents the protocol from producing keys which are indistinguishable from random, as mentioned above.
 
-**10.8.2.3 Station-to-Station Protocol**
+#### 10.8.2.3 Station-to-Station Protocol
 
 The Station-to-Station (STS) protocol can be used to prevent unknown-key-share attacks on signed Diffie–Hellman and maintain key indistinguishability. In this protocol, the Diffie– Hellman derived key is used to encrypt the signatures, thus ensuring the signatures cannot be stripped off the messages. In addition, the signatures are applied to the transcript so as to convince both receiving parties that the other party is ‘alive’.
 

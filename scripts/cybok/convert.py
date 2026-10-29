@@ -986,6 +986,9 @@ def chapter(doc: pymupdf.Document, number: int, slug: str, first: int, last: int
         body = joined
     while (joined := re.sub(r"(^> .*)\n\n(?=> )", r"\1\n>\n", body, flags=re.M)) != body:
         body = joined
+    # A fourth-level section (16.2.2.1) is set in body-sized bold, too small for
+    # is_heading, so it comes out as a bold line. Make it the heading it is.
+    body = re.sub(r"^\*\*(\d+\.\d+\.\d+\.\d+ [^*\n]+)\*\*$", r"#### \1", body, flags=re.M)
     # Chapter 3 sets its notes as endnotes under a NOTES heading rather than at
     # the foot of each page. Make them footnotes like everyone else's.
     body = re.sub(r"^## Notes\n\n(.*?)(?=^## |\Z)", lambda m: endnotes(m.group(1), number), body, flags=re.M | re.S)

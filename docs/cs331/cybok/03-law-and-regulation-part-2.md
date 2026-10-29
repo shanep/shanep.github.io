@@ -44,7 +44,7 @@ This section will describe some of the intellectual property rights most likely 
 
 In many circumstances, contract rights (especially licensing agreements) supplement intellectual property rights and may be treated informally as a type of intellectual property. To make matters more confusing, persons in business often use the phrase ‘intellectual property’ in an expansive and colloquial fashion to refer to any work product or process that is the result of intellectual effort - whether or not it incorporates legally recognised and enforceable intellectual property rights. This section deals only with legal rights, as such.
 
-**3.8.2.1 Copyright**
+#### 3.8.2.1 Copyright
 
 Copyright[^3-143] is an unregistered right[^3-144] that springs into existence on the creation of a sufficiently original work. Copyright subject matter includes literary works, which for this purpose includes software code (both source and executable code). This makes copyright especially important for the developers and users of security products embodied in software.
 
@@ -58,7 +58,7 @@ Liability for copyright infringement can sometimes be avoided through various �
 
 The scope of copyright protection was expanded at the turn of the twenty-first century to encompass the right to take legal action against persons who interfere with the technological measures used to protect copyright works \[<a href="#ref-207" aria-label="Reference 207">207</a>\] at Art 11.[^3-146] This was intended to provide additional legal rights of action against those who circumvent technologies such as digital rights management systems (see the discussion in Section 3.8.4.) \[<a href="#ref-208" aria-label="Reference 208">208</a>\].
 
-**3.8.2.2 Patents**
+#### 3.8.2.2 Patents
 
 A patent is a registered intellectual property right, granted on a state-by-state[^3-147] basis following application and examination. Patents are meant to protect an invention that is novel and that also includes an additional distinguishing characteristic variously described by states as an ‘inventive step’, a ‘non-obvious’ character, or something similar. This inventive step requirement is a policy device used to limit patent protection to inventions that are significant in some fashion, rather than trivial.[^3-148] Novel inventions that would have been obvious to a person skilled in the relevant technical art are normally denied patent protection.
 
@@ -76,7 +76,7 @@ The term of a patent is normally 20 years from the date of application. Patents 
 
 Infringement of a patent normally consists of acts such as manufacturing, distributing, importing, exporting or selling a product or service that embodies the claimed invention. Proving infringement involves a forensic comparison of the accused device or service with the invention as claimed in the granted patent. There is no need for a right holder to prove that the invention was copied from the patent or from any product. Many people who infringe ICT-related patents do so initially without any awareness of third-party products or patent rights.[^3-153]
 
-**3.8.2.3 Trademarks**
+#### 3.8.2.3 Trademarks
 
 Trademarks are usually registered[^3-154] intellectual property rights, granted on a state-by-state basis following application.[^3-155]
 
@@ -92,7 +92,7 @@ Certification marks are a type of trademark that is used to demonstrate conformi
 
 A collective mark is a trademark that is used to identify the members of an association, such as a professional society. Having registered the relevant collective mark, the society can take action against those who use it without authorisation, and revoke authorisation from those whose membership has ceased.
 
-**3.8.2.4 Trade secrets**
+#### 3.8.2.4 Trade secrets
 
 Trade secrets were traditionally protected under general tort law, giving persons who attempted to keep their secrets the right to take legal action against those who inappropriately obtained, used or disclosed these secrets. As the twentieth century progressed, a trend emerged to increase the legal protection of trade secrets. The position of individual US states has been significantly harmonised since the 1980s, and the US federal government adopted the Economic Espionage Act 1996 as a national trade secret law to deter trade secret theft \[<a href="#ref-213" aria-label="Reference 213">213</a>, <a href="#ref-214" aria-label="Reference 214">214</a>\]. The European Union significantly harmonised its approach to trade secrets with effect from 2018 \[<a href="#ref-215" aria-label="Reference 215">215</a>\].
 
@@ -106,7 +106,7 @@ Owners of trade secret rights can normally take legal action against persons who
 
 Consideration of the impact of intellectual property law is incomplete without also considering remedies available to a successful litigant. (See Section 3.1.5.)
 
-**3.8.3.1 Criminal liability**
+#### 3.8.3.1 Criminal liability
 
 In certain egregious circumstances, infringement of intellectual property – especially copyright and trademark – can be prosecuted as a crime. These prosecutions usually require proof that the infringing party was aware of the infringement and are often based on a pattern or practice of infringing these rights, *en masse*.
 
@@ -114,7 +114,7 @@ Those who violate legal prohibitions against anti-circumvention technologies for
 
 Some states classify the knowing misappropriation of a trade secret as a crime. The US adopted a national trade secret criminal law in 1996 \[<a href="#ref-214" aria-label="Reference 214">214</a>\]. These laws can serve as a basis (not necessarily the only one) for the criminal prosecution of industrial espionage activity. Some states do not define misappropriation of trade secrets as a crime.[^3-164]
 
-**3.8.3.2 Civil liability**
+#### 3.8.3.2 Civil liability
 
 A rights owner is normally able to take legal action against a person for infringement of intellectual property. Remedies for infringement normally include monetary damages, which may be calculated by reference to a so-called reasonable royalty, a statutory tariff or a demand that the infringer make an account of any profits – a demand to pay to the rights owner the economic benefit gained from the infringement.
 
@@ -136,13 +136,13 @@ Most difficulties arise in the context of reverse engineering software products.
 
 Pamela Samuelson has produced a useful comparative summary of this confusing landscape \[<a href="#ref-224" aria-label="Reference 224">224</a>\].
 
-**3.8.4.1 Circumventing copyright technological protection measures**
+#### 3.8.4.1 Circumventing copyright technological protection measures
 
 Following the expansion of copyright law to prohibit the circumvention of technological protection measures, those who wish to meddle with these measures do so at their peril. The implementation of these laws provides some exceptions to liability for research in specified circumstances, although the precise circumstances vary. Each exception relied upon must be examined with care.
 
 British copyright law, for example, includes a specific exemption to liability for circumventing protection measures in copyright works *other than a computer program*, for persons conducting research into cryptography, ‘unless in so doing, or in issuing information derived from that research, he affects prejudicially the rights of the copyright owner’ (CPDA \[Copyright, Designs and Patents Act\] s.296ZA(2)). In other words, one of these researchers might face peril under the law if they were to publish details that made it possible for others to circumvent the protection measures. There is no such general exception in British law for cryptography research involving the circumvention of measures on computer programs (CPDA s.296).
 
-**3.8.4.2 Testing a proprietary cryptographic algorithm**
+#### 3.8.4.2 Testing a proprietary cryptographic algorithm
 
 Security researchers hoping to test the strength of a cryptographic system normally require access to the relevant algorithm. This arises naturally from Kerckhoffs’s Principle and is well-known to cryptographers. A person who wishes to test the security capabilities of an algorithm encounters practical difficulties when the manufacturer of the product employs a proprietary algorithm protected by trade secret and does not wish to disclose it for testing.
 
@@ -430,7 +430,7 @@ By historical standards, cyber security presents a relatively new set of methods
 
 The process of searching for, finding, disclosing, and acting in response to, security vulnerabilities causes recurring ethical (and legal) issues \[<a href="#ref-267" aria-label="Reference 267">267</a>, <a href="#ref-268" aria-label="Reference 268">268</a>\].
 
-**3.13.3.1 Testing for vulnerabilities**
+#### 3.13.3.1 Testing for vulnerabilities
 
 Practitioners who test for security vulnerabilities should consider carefully the nature of their activities. The mere act of studying and analysing objects such as tangible hardware products, locally resident licensed software, or published cryptographic primitives and communication protocols, is normally uncontroversial. It is difficult to draw a line of causation from the mere act of analysis to public harm.
 
@@ -440,7 +440,7 @@ When vulnerability testing is conducted remotely, the testing methods can raise 
 
 Practitioners should also consider the potential impact of their testing methods on the stability of public or private infrastructures, including those that are the target of testing as well as intermediary and third-party systems.
 
-**3.13.3.2 Disclosure of vulnerabilities**
+#### 3.13.3.2 Disclosure of vulnerabilities
 
 Those who find security vulnerabilities face a choice of what to do with their new-found knowledge. Choices exist on a spectrum from making no disclosure, to publishing every detail immediately to the world at large. In between these two extremes lie an array of possibilities.
 
@@ -472,7 +472,7 @@ Various efforts to obtain financial benefits from disclosing a vulnerability als
 
 Practitioners who find vulnerabilities during the course of their work as security researchers must further consider the extent to which they may be accountable to their employer or funder for any financial benefits obtained.
 
-**3.13.3.3 Facilitating and acting on vulnerability disclosures**
+#### 3.13.3.3 Facilitating and acting on vulnerability disclosures
 
 Product and service vendors should consider how they can facilitate and then act upon vulnerability disclosures in a manner that minimises harm to customers and third persons.[^3-202]
 

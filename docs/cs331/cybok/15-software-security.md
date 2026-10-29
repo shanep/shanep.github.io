@@ -153,7 +153,7 @@ Side-channels, and in particular software-based side-channels, are most commonly
 
 ### 15.1.6 Discussion
 
-**15.1.6.1 Better connection with overall security objectives needs more complex specifications**
+#### 15.1.6.1 Better connection with overall security objectives needs more complex specifications
 
 We have categorised implementation vulnerabilities as violations of specific partial specifications of software components. However, the connection to the security objective of the overall software system is weak. It is perfectly possible that a software system has an implementation vulnerability, but that it is not exploitable to break a security objective of the system, for instance, because there are redundant countermeasures elsewhere in the system. Even more so, if a software system does not have any of the implementation vulnerabilities we discussed, it may still fail its security objective.
 
@@ -165,11 +165,11 @@ There are, however, software security objectives that cannot be expressed as pro
 
 But an information flow specification is more complex than the specifications we considered in previous sections because one needs *two* executions to show a violation of the specification. *Information leak vulnerabilities* are violations of a (confidentiality-oriented) information flow policy. They can also be understood as violations of a specification, but this is now a specification that talks about multiple executions of the software system. This has profound consequences for the development of countermeasures to address these vulnerabilities \[<a href="#ref-1372" aria-label="Reference 1372">1372</a>\].
 
-**15.1.6.2 Side channel vulnerabilities are different**
+#### 15.1.6.2 Side channel vulnerabilities are different
 
 Side channel vulnerabilities are by definition not violations of a specification at the abstraction level of the software source code: they intrinsically use effects from which the source code abstracts. However, if one develops a model of the execution infrastructure of the software that is detailed enough to model side channel attacks, then side channel vulnerabilities can again be understood as violations of a partial specification. One can choose to locate the vulnerability in the execution infrastructure by providing a specification for the execution infrastructure that says that it should not introduce additional communication mechanisms. This is essentially what the theory of full abstraction \[<a href="#ref-1446" aria-label="Reference 1446">1446</a>\] requires. Alternatively, one can refine the model of the source code language to expose the effects used in particular side channel attacks, thus making it possible to express side-channel vulnerabilities at the source code level. Dealing with general software side-channel vulnerabilities is not yet well understood, and no generally applicable realistic countermeasures are known. One can, of course, isolate the execution, i.e., prevent concurrent executions on the same hardware, but that then contradicts other goals such as optimised hardware utilisation.
 
-**15.1.6.3 Vulnerabilities as faults**
+#### 15.1.6.3 Vulnerabilities as faults
 
 The classification of vulnerabilities by means of the specification they violate is useful for understanding relevant classes of vulnerabilities, but is not intended as a complete taxonomy: there are a very large number of partial specifications of software systems that contribute to achieving some security objective. Vulnerabilities can, however, be seen as an instance of the concept of *faults*, studied in the field of dependable computing, and a good taxonomy of faults has been developed in that field \[<a href="#ref-1067" aria-label="Reference 1067">1067</a>\].
 
@@ -194,7 +194,7 @@ A programming language can prevent categories of implementation vulnerabilities 
 
 For instance, strong type systems in languages like Java or Rust express constraints on how variables can be used (e.g., what fields can be accessed, or what the size of an array is), and the language definition specifies that these constraints must always be checked, either statically or dynamically. In contrast, the C language definition allows for implementations that do not check these constraints, thus leaving the possibility for memory management vulnerabilities with the corresponding security implications.
 
-**15.2.1.1 Memory management vulnerabilities**
+#### 15.2.1.1 Memory management vulnerabilities
 
 A programming language definition inherently includes a specification of all the memory allocation, access and deallocation features provided by that language. Hence, the specification of the memory management sub-component is always available. A programming language is called *memory-safe* if the language definition implies that there can be no untrapped memory management errors. Languages like C or C++ are not memory-safe because the language definition allows for implementations of the language that can have untrapped memory management errors, but even for such languages one can build specific *implementations* that are memory-safe (usually at the cost of performance).
 
@@ -212,7 +212,7 @@ Programming languages vary widely in how they combine features, dynamic and stat
 
 While avoiding spatial vulnerabilities with a combination of static and dynamic checks is relatively straightforward, avoiding temporal vulnerabilities is more challenging. Garbage collection is a widely used approach, but comes with significant costs. Innovative languages like SPARK (a subset of Ada) \[<a href="#ref-1451" aria-label="Reference 1451">1451</a>\] and Rust achieve temporal memory safety without relying on garbage collection. Rust, for instance, introduces a rich ownership model, and checks compliance with that model through the type system. This allows the compiler to insert code to safely free memory at the point where the owner of that memory goes out of scope. Enforcing an ownership model allows for temporal safety without garbage collection, but comes at the expense of some decreased flexibility when it comes to structuring program code.
 
-**15.2.1.2 Structured output generation vulnerabilities**
+#### 15.2.1.2 Structured output generation vulnerabilities
 
 An important cause for structured output generation vulnerabilities is that the programmer leaves the intended structure of the output implicit, and computes the structured output by string manipulation. A programming language can help prevent such vulnerabilities by providing language features that allow the programmer to make the intended structure explicit, thus providing a specification. The language implementation can then ensure that no untrapped errors with respect to that specification are possible.
 
@@ -220,13 +220,13 @@ A first approach is to provide a type system that supports the description of st
 
 A second approach is to provide primitive language features for some of the common use cases of structured output generation. Language Integrated Query (LINQ) is an extension of the C# language with syntax for writing query expressions. By writing the query as an expression (as opposed to building a SQL query by concatenating strings), the intended structure of the query is explicit, and the LINQ provider that compiles the query to SQL can provide strong guarantees that the generated query has the intended structure.
 
-**15.2.1.3 Race condition vulnerabilities**
+#### 15.2.1.3 Race condition vulnerabilities
 
 Race condition vulnerabilities on heap allocated memory are often enabled by *aliasing*, the existence of multiple pointers to the same memory cell. If two concurrent threads both hold an alias to the same cell, there is the potential of a race condition on that cell. The existence of aliasing also leads to temporal memory-management vulnerabilities, when memory is deallocated through one alias but then accessed through another alias. The notion of *ownership* helps mitigate the complications that arise because of aliasing. The essence of the idea is that, while multiple aliases to a resource can exist, only one of these aliases is the *owner* of the resource, and some operations can only be performed through the owner. An *ownership model* puts constraints on how aliases can be created, and what operations are allowed through these aliases. By doing so, an ownership model can prevent race condition vulnerabilities, or it can support automatic memory management without a garbage collector. For instance, a simple ownership model for heap allocated memory cells might impose the constraints that: (1) aliases can only be created if they are guaranteed to go out of scope before the owner does, (2) aliases can only be used for reading, and (3) the owner can write to a cell only if no aliases currently exist. This simple model avoids data races: there can never be a concurrent read and write on the same cell. It also supports automatic memory management without garbage collection: a heap cell can be deallocated as soon as the owner goes out of scope. Of course, this simple model is still quite restrictive, and a significant body of research exists on designing less restrictive ownership models that can still provide useful guarantees.
 
 An ownership model can be enforced by the programming language by means of a type system, and several research languages have done this with the objective of preventing data races or memory management vulnerabilities. The Rust programming language, a recent systems programming language, is the first mainstream language to incorporate an ownership type system.
 
-**15.2.1.4 Other vulnerabilities**
+#### 15.2.1.4 Other vulnerabilities
 
 Many other categories of vulnerabilities can, in principle, be addressed by means of programming language design and static type checking. There is, for instance, a wide body of research on language-based approaches to enforce information flow security \[<a href="#ref-1289" aria-label="Reference 1289">1289</a>\]. These approaches have until now mainly been integrated in research prototype languages. SPARK is an example of a real-world language that has implemented information flow analysis in the compiler. Language-based information flow security techniques have also had a profound influence on the static detection techniques for vulnerabilities (Section 15.3).
 
@@ -305,7 +305,7 @@ Another important approach to detection of vulnerabilities is to perform manual 
 
 Static detection techniques analyse program code (either source code or binary code) to find vulnerabilities. Opposed to dynamic techniques, the static ones have the advantage that they can operate on incomplete code that is not (yet) executable, and that in a single analysis run they attempt to cover all possible program executions. Roughly speaking, one can distinguish two important classes of techniques, that differ in their main objective.
 
-**15.3.1.1 Heuristic static detection**
+#### 15.3.1.1 Heuristic static detection
 
 First, there are static analysis techniques that detect violations of rules that are formal encodings of secure programming-practice heuristics. The static analysis technique builds a semantic model of the program, including, for instance, an abstract syntax tree , and abstractions of the data flow and control flow in the program. Based on this model, the technique can flag violations of simple syntactic rules such as, do not use this dangerous API function, or only use this API function with a constant string as first parameter. These techniques are commonly referred to as *Static Application Security Testing* (SAST) in industry.
 
@@ -319,7 +319,7 @@ An important challenge is that taint analyses must be configured with the right 
 
 While taint analysis can detect vulnerabilities that are related to data flow, some classes of vulnerabilities are characterized by violating an intended order of operations. For instance, temporal memory management vulnerabilities are caused by a violation of the intended order of allocation, access and deallocation of memory. *Typestate analysis* \[<a href="#ref-1457" aria-label="Reference 1457">1457</a>\] is an analysis technique that tracks the state of a resource (e.g., a memory cell or a file handle) and checks whether the program respects the intended order of operations on that resource. For instance, for memory management, typestate analysis can check whether there is any execution where a memory cell is accessed after it was deallocated. Other vulnerabilities that can be detected by typestate analysis include, for instance, use of uninitialised variables, authentication bypasses or API misuse.
 
-**15.3.1.2 Sound static verification**
+#### 15.3.1.2 Sound static verification
 
 Second, there are static analysis techniques that aim to be sound for well-defined categories of vulnerabilities (but usually in practice still make compromises and give up soundness to some extent). For categories of vulnerabilities that can be understood as specification or contract violations, the main challenge is to express this underlying specification formally. Once this is done, the large body of knowledge on static analysis and program verification developed in other areas of computer science can be used to check compliance with the specification. The three main relevant techniques are program verification, abstract interpretation and model checking.
 
@@ -337,7 +337,7 @@ Dynamic detection techniques execute a program and monitor the execution to dete
 
 Purely dynamic techniques where the monitor only observes outputs of the application are often referred to as *Dynamic Application Security Testing* (DAST) in industry.
 
-**15.3.2.1 Monitoring**
+#### 15.3.2.1 Monitoring
 
 A monitor must determine whether a given execution has reached a vulnerability. This problem is called the *oracle problem*: the oracle informs the monitor that a vulnerability has been found.
 
@@ -351,7 +351,7 @@ Assertions, pre-conditions and post-conditions as supported by the design-by-con
 
 Monitoring for race conditions is hard, but some approaches for monitoring data races on shared memory cells exist, for instance, by monitoring whether all shared memory accesses follow a consistent locking discipline.
 
-**15.3.2.2 Generating relevant executions**
+#### 15.3.2.2 Generating relevant executions
 
 An important challenge for dynamic detection techniques is to generate executions of the program along paths that will lead to the discovery of new vulnerabilities. This problem is an instance of the general problem in software testing of systematically selecting appropriate inputs for a program under test \[<a href="#ref-1450" aria-label="Reference 1450">1450</a>, c4\]. These techniques are often described by the umbrella term *fuzz testing* or *fuzzing*, and can be classified as:
 
@@ -438,7 +438,7 @@ Table 15.1: Summary overview
 
 </figure>
 
-**Acknowledgments**
+## Acknowledgments
 
 The insightful and constructive comments and feedback from the reviewers and editor on earlier drafts have been extremely valuable, and have significantly improved the structure and contents of this chapter, as have the comments received during public review.
 

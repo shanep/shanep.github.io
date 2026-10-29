@@ -104,7 +104,7 @@ Practitioners increasingly ask questions concerning the application of law to ar
 
 ### 3.1.3 Distinguishing criminal and civil law
 
-**3.1.3.1 Criminal law**
+#### 3.1.3.1 Criminal law
 
 Criminal law is the body of law that prohibits behaviour generally abhorred by society. Criminal law is normally enforced by an agency of the state. Examples include prohibitions against bank fraud and computer hacking. Depending upon the society in question, the purposes of criminal law are usually described as some combination of:
 
@@ -120,7 +120,7 @@ Punishments available in criminal law include custodial prison sentences, crimin
 
 There is often no requirement for an accused to have understood that their actions were defined as criminal, although states normally must prove that the accused intended to take those actions. Some crimes are defined in a fashion that guilt only attaches if the state can prove that the accused was aware that they were doing something ‘wrong’.[^3-29] An accused, therefore, may not be able to escape criminal liability by suggesting, or even proving, that an act was undertaken with good intentions or otherwise ‘in the public interest’.[^3-30]
 
-**3.1.3.2 Civil (non-criminal) law**
+#### 3.1.3.2 Civil (non-criminal) law
 
 Civil law[^3-31] is the area of law that regulates private relationships among and between persons. Examples include the laws of contract and negligence. A person injured as a result of breach of civil law can normally bring legal action against the responsible party.
 
@@ -133,7 +133,7 @@ Remedies available under civil law (depending on the circumstances) may include 
 
 The principles of civil law are often crafted in an effort to redress negative externalities of behaviour in a modern economy. This makes civil law especially interesting in cyber security, as poor security in the development of ICT \[Information and Communication Technologies\] products and services is a sadly recurring negative externality that often falls short of criminal behaviour \[<a href="#ref-83" aria-label="Reference 83">83</a>\]. Policy makers hope that people who become aware that certain types of risk-taking carry an associated liability for resulting harm will alter their behaviour for the better.
 
-**3.1.3.3 One act: two types of liability & two courts**
+#### 3.1.3.3 One act: two types of liability & two courts
 
 A single act or series of connected acts can create liability simultaneously under both criminal and civil law. Consider the act of Alice making unauthorised access to Bob’s computer. Her actions in turn cause Bob’s LAN \[Local Area Network\] and related infrastructure to fail. Alice’s single hacking spree results in two types of liability. The state can prosecute Alice for the relevant crime (i.e., unauthorised access, see Section 3.5) and Bob can bring a civil legal action (i.e., negligence, see Section 3.7.1) against Alice.
 
@@ -233,19 +233,19 @@ States also claim prescriptive jurisdiction over some actions taken by their own
 
 Instances where more than one state claims jurisdiction over a single act or occurrence are not uncommon. Claims of prescriptive jurisdiction tend to be founded on notions of protecting the interests of a state and its residents. Some of the rules of jurisdiction have been adopted with a view to reducing instances where persons might face irreconcilable conflict between the mandates of two states. Although such irreconcilable conflicts are less common than some might believe, they still arise from time to time. In cases where a person faces an irreconcilable conflict of mandates imposed by two states, the person is required to make hard choices. For businesses, these choices often involve changing business processes, structure or governance to avoid or limit the potential for such conflicts.
 
-**3.2.2.1 Prescriptive jurisdiction over online content**
+#### 3.2.2.1 Prescriptive jurisdiction over online content
 
 Numerous court decisions around the world have confirmed the willingness of states to assert prescriptive jurisdiction over actions where criminal or tortious content originates from outside of the state’s territory, is transferred via the internet, and displayed within the state’s territory. Examples of laws that have been enforced on this basis include copyright, defamation, gaming/gambling services, and state-specific subject matter prohibitions such as the prohibition against displaying or offering for sale Nazi memorabilia within France \[<a href="#ref-73" aria-label="Reference 73">73</a>, <a href="#ref-85" aria-label="Reference 85">85</a>, <a href="#ref-86" aria-label="Reference 86">86</a>, <a href="#ref-97" aria-label="Reference 97">97</a>\].
 
 These exercises of jurisdiction do not necessarily rest on the more attenuated ‘effects doctrine’ used in competition law. Courts seem willing to interpret domestic law in a fashion which asserts prescriptive jurisdiction, and then to assert their own juridical jurisdiction on the basis that content is visible to persons within the state irrespective of the location of the server from which it originates. In this fashion, the offending act (e.g., copying, publishing, transmitting, displaying, offering for sale) is said to take place within the state asserting jurisdiction.
 
-**3.2.2.2 Prescriptive jurisdiction over computer crime**
+#### 3.2.2.2 Prescriptive jurisdiction over computer crime
 
 States adopting computer crime laws often legislate to include cross-border acts. As a result, it is common for a state with such laws on their books to exercise prescriptive jurisdiction over persons – no matter where they are located – who take actions directed to computer equipment located within the state. Similarly, persons who act while physically located within the state’s territory are often caught within the scope of the criminal law when conducting offensive operations against computers resident in foreign states \[<a href="#ref-87" aria-label="References 87–89">87–89</a>, <a href="#ref-98" aria-label="Reference 98">98</a>, <a href="#ref-99" aria-label="Reference 99">99</a>\]. Public international law recognises such exercises of prescriptive jurisdiction as a function of territorial sovereignty (\[<a href="#ref-82" aria-label="Reference 82">82</a>\] at R.1-4, R.10).
 
 When a hacker who is physically present in one state directs offensive activity to a computer in another state, that hacker may violate the criminal law of both states. If the relevant hacking activity does not constitute a crime in the first state for whatever reason,[^3-43] it may still constitute a crime under the law of the second state where the target computer is located \[<a href="#ref-98" aria-label="Reference 98">98</a>, <a href="#ref-99" aria-label="Reference 99">99</a>\].
 
-**3.2.2.3 Prescriptive jurisdiction and data protection (GDPR)**
+#### 3.2.2.3 Prescriptive jurisdiction and data protection (GDPR)
 
 GDPR brought about a significant change in the territorial prescriptive jurisdiction of European data protection law \[<a href="#ref-100" aria-label="Reference 100">100</a>\].
 
@@ -267,17 +267,17 @@ As a general proposition, one state has no right under public international law 
 
 This section considers some of the more common enforcement mechanisms used by states in a cyber security context. Enforcing the law tends to turn on three different mechanisms of state power: power over persons (*in personum* jurisdiction), power over property (*in rem* jurisdiction), and requests or demands for international assistance.
 
-**3.2.3.1 Asset seizure and forfeiture generally**
+#### 3.2.3.1 Asset seizure and forfeiture generally
 
 It is common to assert *in rem* jurisdiction over the property or other legal rights that are present within a state’s territory and amenable to that state’s police powers. The state might seize such property in an effort to compel attendance at court proceedings, or eventually sell the property to meet the financial obligations of an absent person. Examples of objects seized for this purpose include immovable property such as office buildings or factories, movable property such as plant and equipment, trucks, maritime vessels, or merchandise in transit, and intangibles such as intellectual property rights or rights to withdraw funds on deposit with a bank.
 
-**3.2.3.2 Seizure and forfeiture of servers, domain names, and registries**
+#### 3.2.3.2 Seizure and forfeiture of servers, domain names, and registries
 
 When a server located in a state is used to conduct activity that constitutes a crime in that state, seizing the server as an enforcement mechanism might be considered. Moving beyond the server, however, US law enforcement authorities have also used *in rem* jurisdiction for seizure and forfeiture of domain names where the domain TLD \[Top-level Domain\] registry is maintained in the US. Actions for infringement of trademark rights have used similar *in rem* powers for domain name seizure and forfeiture. This is a potentially interesting enforcement tool in the US, especially as TLD registries administered and maintained from within the territory of the US include ‘.com’, ‘.org’ and ‘.net’ \[<a href="#ref-103" aria-label="Reference 103">103</a>, <a href="#ref-104" aria-label="Reference 104">104</a>\].
 
 Similar *in rem* powers have been asserted by various states to regulate the administration of the ccTLD registry associated with their state, or to forcibly transfer the administration and operation of the ccTLD to a different in-state administrator \[<a href="#ref-105" aria-label="Reference 105">105</a>\].[^3-45]
 
-**3.2.3.3 Territorial location of the right to demand repayment of bank deposits**
+#### 3.2.3.3 Territorial location of the right to demand repayment of bank deposits
 
 Efforts to enforce laws that freeze or otherwise restrict depositor access to funds on deposit have raised difficult questions about the territorial scope of state enforcement authority. Asset freeze orders directed to enemy states or their citizens are not unusual, especially at times of international conflict.
 
@@ -287,19 +287,19 @@ The Libyan Arab Foreign Bank (a state-owned Libyan bank) took legal action again
 
 In other words, a bank account may be conceptualised as being situated within the territory of the state in which the branch to which the deposit is made is located. This analysis continues to apply if the relationship is carried out entirely through online interactions, and indeed even if the depositor remains offshore and never attends the branch in person.
 
-**3.2.3.4 Foreign recognition and enforcement of civil judgments**
+#### 3.2.3.4 Foreign recognition and enforcement of civil judgments
 
 A civil judgment issued by the court of one state may under certain circumstances be enforced by the courts of a friendly second state. This is normally achieved when the prevailing party transmits the judgment to the courts of the second state where the adverse party has assets, requesting enforcement of the judgment against those assets. Foreign recognition and enforcement of civil judgments is often granted under the principle of *comity*: a doctrine which can be expressed in this context as, ‘We will enforce your civil judgments because, as a friendly state, we anticipate you will enforce ours.’[^3-47]
 
 A foreign court’s willingness to enforce such civil judgments is not universal. Requests for civil enforcement are sometimes rejected for policy reasons. Nonetheless, this remains a relatively common mechanism in the context of judgments for money damages arising from many contract and tort disputes.
 
-**3.2.3.5 The arrest of natural persons in state territory**
+#### 3.2.3.5 The arrest of natural persons in state territory
 
 It is normally straightforward for police officers to arrest persons present within their state’s territory. When a criminal suspect is outside the state’s territory, officials are sometimes able to arrest that suspect when they subsequently appear in state – whether or not it was an intended destination. Law enforcement officers can normally arrest the accused upon their arrival in state territory.[^3-48]
 
 State authorities can normally exercise the power of arrest on any seagoing vessel within the state’s territorial waters, as well as vessels registered under the flag of the arresting state when in international waters. Additional maritime enforcement scenarios are possible \[<a href="#ref-108" aria-label="Reference 108">108</a>\].
 
-**3.2.3.6 Extradition of natural persons**
+#### 3.2.3.6 Extradition of natural persons
 
 If an accused criminal is not present within the state, a traditional method of obtaining custody is to request extradition from another state \[<a href="#ref-87" aria-label="Reference 87">87</a>, <a href="#ref-89" aria-label="Reference 89">89</a>\]. Extradition is normally governed by bilateral extradition treaties, and is normally only allowed when the alleged criminal act constitutes a crime in both states (the requirement of dual criminality).
 
@@ -307,7 +307,7 @@ If two states that are contracting parties to the Budapest convention (see Secti
 
 Extradition has a troubled history in cyber security. Extradition requests for accused cyber criminals might be denied by another state for a number of reasons: lack of an extradition treaty between the two states, lack of dual criminality, public policy concerns over the severity of punishment to be imposed by the requesting state, and concerns for the health or welfare of the accused, are all reasons that have been cited for refusal to grant the extradition of persons accused of cybercrime \[<a href="#ref-85" aria-label="Reference 85">85</a>\].
 
-**3.2.3.7 Technological content filtering**
+#### 3.2.3.7 Technological content filtering
 
 Technological intervention can be adopted as a practical expression of state power – either by a state directly ordering such intervention, or by other persons adopting a technical intervention to avoid or limit liability.
 
@@ -319,7 +319,7 @@ If an out-of-state person who originates or hosts offending online content from 
 
 Filtering efforts are also initiated in the absence of specific state enforcement activity. Persons create and impose their own filters at point of origin to limit content transfers to states where filtered content might result in liability.[^3-50] Filtering efforts can be conducted collaboratively between private and public sector actors.[^3-51]
 
-**3.2.3.8 Orders to in-state persons directing production of data under their control whether held on domestic or foreign IT \[information technology\] systems**
+#### 3.2.3.8 Orders to in-state persons directing production of data under their control whether held on domestic or foreign IT \[information technology\] systems
 
 States may also order state-resident persons to produce data under their control, irrespective of the territorial location of data storage.
 
@@ -333,7 +333,7 @@ Another well-known example involved a request made by an unknown agency of the U
 
 After multiple skirmishes in the District court, the US Court of Appeals (2nd Circuit) eventually quashed the order against Microsoft on the extremely narrow basis that the Stored Communications Act (adopted in 1986) did not expressly and unambiguously claim prescriptive jurisdiction over data stored on equipment located outside the territorial United States \[<a href="#ref-111" aria-label="References 111–113">111–113</a>\].[^3-52] This decision was appealed to the US supreme court where it was fully briefed and argued. Following argument but before judgment, the US Congress in 2018 adopted the CLOUD Act. This legislation amended the Stored Communications Act to bring data stored on foreign servers expressly into the prescriptive jurisdiction of that Act, and the US government immediately requested a replacement warrant under the revised law. The supreme court then dismissed the pending appeal without issuing a substantive judgment, as the new law had resolved any dispute about the scope of prescriptive jurisdiction claimed by the US Congress \[<a href="#ref-114" aria-label="Reference 114">114</a>\].[^3-53]
 
-**3.2.3.9 International legal assistance**
+#### 3.2.3.9 International legal assistance
 
 States can make requests for assistance from persons outside of their territory to gather evidence in support of criminal investigation. Traditionally, such requests are made pursuant to a mutual legal assistance treaty and are transmitted by the authorities of a first state to the designated authority of a second state for consideration and possible action. Such requests can also be made in the absence of a treaty, although the second state retains discretion over how it chooses to respond in the absence of international legal obligation.
 
@@ -463,7 +463,7 @@ to be imposed by member states in domestic law in the context of investigation o
 
 The overriding purpose of EU data protection law is to protect the interests of *data subjects* (GDPR at article 1; Recital 1, 2, 4, 75, 78, et al.).[^3-76] Data protection law accomplishes this by regulating acts of *controllers* and *processors* when *processing* data that incorporates *personal data*. Any such processing activity activates the application of data protection law. Each of these terms is considered in this section.
 
-**3.4.1.1 Data subject, personal data (and PII \[Personally Identifiable Information\])**
+#### 3.4.1.1 Data subject, personal data (and PII \[Personally Identifiable Information\])
 
 In data protection law, the terms ’personal data’ and ’data subject’ are defined concurrently:
 
@@ -485,7 +485,7 @@ Complicating matters further, the phrase ‘personally identifiable information�
 
 Irrespective of how one defines PII, European data protection law contains a clear and broad definition of ‘personal data’. It is this definition of personal data, not PII, that triggers the application of European data protection law.[^3-80]
 
-**3.4.1.2 Processing**
+#### 3.4.1.2 Processing
 
 In data protection law, the term *processing* is defined as:
 
@@ -493,7 +493,7 @@ any operation or set of operations which is performed on personal data or on set
 
 Processing therefore incorporates almost any action one can imagine taking with respect to personal data.
 
-**3.4.1.3 Controller and processor**
+#### 3.4.1.3 Controller and processor
 
 In data protection law, the term *controller* is defined as:
 
@@ -554,7 +554,7 @@ If a new personal data processing activity presents significant risk of harm to 
 
 European data protection law imposes a general prohibition on the transfer of personal data to any state outside the European Economic Area or to any international governmental organisation (GDPR, Art 44). Such transfers remain commonplace, however, when enabled by an appropriate export compliance mechanism.
 
-**3.4.6.1 Adequacy determinations and Privacy Shield**
+#### 3.4.6.1 Adequacy determinations and Privacy Shield
 
 Transfers of personal data can be made to territories in accordance with an adequacy decision: a finding by the European Commission that the receiving territory (or IGO \[International Governmental Organisation\]) has established adequate legal protections concerning personal data (GDPR, Art 45). The process of obtaining an adequacy decision is instigated at the request of the proposed receiving state and often requires years of technical evaluation and diplomatic negotiation \[<a href="#ref-150" aria-label="Reference 150">150</a>\].
 
@@ -562,7 +562,7 @@ Adequacy determinations fall into two categories: decisions that a receiving ter
 
 The US adequacy determination has a difficult history. The US has nothing like the EU’s generalised legal protections concerning processing personal data. To enable transfers of data, the US and the EU have negotiated specific agreements to support an adequacy finding. This agreement enables most US businesses, if they wish, to opt in to a regulatory system that provides adequacy. This regulatory system is then enforced by agencies of the US state against opted-in US businesses. The original system, Safe Harbour, was invalidated by the European Court of Justice in October 2015 in the Schrems case \[<a href="#ref-165" aria-label="Reference 165">165</a>\]. It was quickly replaced by the EU-US Privacy Shield regime in 2016, which operates in a fashion similar to Safe Harbour with enhanced protections for data subjects.
 
-**3.4.6.2 Transfers subject to safeguards**
+#### 3.4.6.2 Transfers subject to safeguards
 
 Transfers are also allowed when appropriate safeguards are put into place (GDPR, Art 46). The most common safeguards normally encountered are binding corporate rules, and approved data protection clauses in contracts between exporters and importers.
 
@@ -570,11 +570,11 @@ Binding corporate rules are governance procedures normally adopted by multinatio
 
 Approved contract clauses are simply contract obligations between a data exporter and importer that serve to protect the interests of data subjects. They can be either standard clauses approved for use by the Commission, or special clauses submitted to the relevant authorities for prior approval (GDPR, Art 46(2)(c)-(d) & 46(3)(a)). Although the Commission-approved clauses are standardised, to be effective the parties to the relevant contract are required to incorporate a significant amount of operational detail about the nature of the personal data to be transferred, the purposes of the data processing to be undertaken, etc.
 
-**3.4.6.3 Transfers pursuant to international mutual legal assistance treaty**
+#### 3.4.6.3 Transfers pursuant to international mutual legal assistance treaty
 
 Transfers of personal data that are otherwise prohibited by GDPR can be made in circumstances such as requests for assistance by a foreign state police agency pursuant to the terms of a mutual legal assistance treaty (GDPR, Art 48). (See also Section 3.2.3.9.) Such transfers are addressed specifically in Directive 2016/680, GDPR, Art 35-40.
 
-**3.4.6.4 Derogations allowing transfers**
+#### 3.4.6.4 Derogations allowing transfers
 
 In the absence of any other mechanism allowing a transfer, exports from the EEA are still allowed under certain limited circumstances such as:
 
@@ -640,27 +640,27 @@ In 2013, the European Union adopted Directive 2013/40. This mandates that member
 
 This introductory section on crimes against information systems is influenced by the taxonomy adopted by the Budapest convention and further reflected in Directive 2013/40. Although these two international legal instruments are cited repeatedly, practitioners should keep in mind that they are instruments of public international law and relevant crimes are defined by, and prosecuted under, the domestic law of individual states.[^3-91]
 
-**3.5.1.1 Improper access to a system**
+#### 3.5.1.1 Improper access to a system
 
 Improper system access laws criminalise the act of accessing a computer system (in whole or in part) without the right to do so, colloquially known as hacking.[^3-92] (Budapest convention at Art. 2; Directive 2013/40 at Art 3.) The UK Computer Misuse Act 1990 at s.1, for example, defines as criminal an action by a person which causes a computer to perform an act with the intent to secure unauthorised access to any program or data \[<a href="#ref-172" aria-label="Reference 172">172</a>\]. Thus, the mere act of entering a password into a system without authorisation in an effort to access that system constitutes a crime under the UK statute whether or not access is successfully achieved.
 
 Some debate persists concerning how to distinguish rightful from wrongful action in cases where an otherwise-authorised person exceeds the scope of permission granted to them. Critics argue that an overly-broad interpretation of statutory terms like ‘unauthorised access’ can produce criminal prosecution based only on breaching an acceptable use policy or website terms and conditions. This might serve to re-define as a crime what otherwise could be a civil breach of contract claim \[<a href="#ref-176" aria-label="Reference 176">176</a>\]. The issue remains open to argument in some circumstances \[<a href="#ref-89" aria-label="Reference 89">89</a>, <a href="#ref-177" aria-label="References 177–179">177–179</a>\].
 
-**3.5.1.2 Improper interference with data**
+#### 3.5.1.2 Improper interference with data
 
 Improper system interference with data laws criminalise the act of inappropriately ‘deleting, damaging, deteriorating, altering or suppressing’ data. (Budapest convention at Art. 4; Directive 2013/40 at Art 5.) These laws can be used to prosecute actions such as release or installation of malware, including ransomware.
 
-**3.5.1.3 Improper interference with systems**
+#### 3.5.1.3 Improper interference with systems
 
 Early computer crime laws tended to focus on the act of intrusion into a computer system, or improperly modifying the contents of those systems. With the emergence of DoS \[Denial of Service\] and DDoS \[Distributed Denial of Service\] attacks, some of these early criminal laws were found to be inadequate to address this new threatening behaviour.
 
 These laws now more commonly include a prohibition against acts that cause a material degradation in the performance of an information system. (Budapest convention at Art. 5; Directive 2013/40 at Art 4; Computer Misuse Act 1990 at s.3, as amended in 2007-08.)
 
-**3.5.1.4 Improper interception of communication**
+#### 3.5.1.4 Improper interception of communication
 
 Often as a corollary to various rights of privacy, many legal systems define the act of wrongfully intercepting electronic communications as a crime. (Budapest convention at Art. 3; Directive 2013/40 at Art 6.) The rules and penalties tend to be most restrictive in the context of intercepting communications during the course of their conveyance on public networks. This subject is discussed in Section 3.3.
 
-**3.5.1.5 Producing hacking tools with improper intentions**
+#### 3.5.1.5 Producing hacking tools with improper intentions
 
 Many states also define as crimes the production or distribution of tools with the intention that they are used to facilitate other crimes against information systems. (Budapest convention at Art. 6; Directive 2013/40, Art 7; Computer Misuse Act 1990, s.3A.) These laws can create challenges for those who produce or distribute security testing tools, as discussed in Section 3.5.5.
 
@@ -721,13 +721,13 @@ Public policy is generally suspicious of self-help mechanisms, as they involve n
 
 These actions come with the risk of potentially violating criminal law. Persons pursuing these strategies should also remain aware of potential tort liability (see Section 3.7).
 
-**3.5.6.1 Undisclosed software locks**
+#### 3.5.6.1 Undisclosed software locks
 
 Various technologies serve to limit the use of software. Implementing a system that clearly discloses to a user that operation requires the prior entry of a unique activation key is normally non-contentious, and is actively encouraged by certain aspects of copyright law (see Section 3.8.2.1). Similarly, SaaS providers usually do not face any sanctions when suspending access to a customer who terminates the service relationship or fails to pay their service fees.[^3-102]
 
 Problems arise when a supplier (for whatever reason, including non-payment of promised license or maintenance fees) installs a lock mechanism into a software product after the fact without customer agreement. Also problematic are instances where software sold as a product contains an undisclosed time-lock device which later suspends functionality (in the event of non-payment or otherwise). These types of undisclosed or *post-facto* interventions have a history of being prosecuted as crimes against information systems and are otherwise criticised as being against public policy, whether or not the vendor in question held a legitimate right of action against the end user for non-payment of licence fees \[<a href="#ref-181" aria-label="Reference 181">181</a>, <a href="#ref-182" aria-label="Reference 182">182</a>\].
 
-**3.5.6.2 Hack-back**
+#### 3.5.6.2 Hack-back
 
 Hack-back is a term used to describe some form of counter-attack launched against cyberspace infrastructure from which an attack appears to have originated. This strategy is often considered in the context of an attack which appears to originate from a foreign state, and cooperation from the foreign state is deemed unlikely or untimely. Hack-back actions might consist of a DoS attack, efforts to intrude into and disable the originating infrastructure, etc.
 
@@ -772,7 +772,7 @@ Differences in approach are worthy of investigation depending on the relative va
 
 Contracts can serve as a mechanism to encourage the implementation of security standards. This can arise in a wide variety of contractual relationships.
 
-**3.6.2.1 Supply chain**
+#### 3.6.2.1 Supply chain
 
 A common contract technique is to incorporate terms within a procurement agreement that attempt to mandate some form of compliance by a supply chain partner with specified security standards: whether published standards such as ISO 27001, or *sui generis* standards adopted by the contracting parties. Although these contract terms can take many different legal forms (e.g., warranty, representation, undertaking, condition, mandate to produce evidence of third-party certification, access and audit rights etc.) the general principle is that these contract terms have become a common mechanism that is used in an attempt to influence the security behaviour of supply chain partners.
 
@@ -780,7 +780,7 @@ The value of these clauses in managing supply chain behaviour, however, is worth
 
 A sometimes-overlooked value of these contractual clauses arises well before the agreement is made. The process of inserting and then negotiating these clauses can operate as a due diligence technique. A negotiating party obtains information about the maturity and operational capability of the proposed supply chain partner during negotiations.
 
-**3.6.2.2 Closed trading and payment systems**
+#### 3.6.2.2 Closed trading and payment systems
 
 Many high-value or high-volume electronic trading or payment platforms[^3-109] require persons to enter into participation contracts prior to using the platform. These systems may be generally referred to as ‘closed’ systems: they constitute a club that must be joined contractually to enable members to trade with one another. These membership contracts typically adopt comprehensive rules concerning forms of communication, connected equipment, and the timing for finality of transactions. They also typically specify the adoption of certain security standards, authentication protocols, etc. The membership contract is thus a private law mechanism that is used to enforce certain security standards among the members. (See also Section 3.10.2.)
 
@@ -788,7 +788,7 @@ Breaching the terms of the membership contract might jeopardise the subject matt
 
 Perhaps the most well-known example of a widespread standard implemented using contract is PCI DSS \[Data Security Standard\] adopted by the payment card industry. Failure to comply with this standard puts at risk a party’s ability to receive payment. While there is some debate about the degree to which this standard has been effective, it is difficult to deny that it has had some impact on raising the standard of security practices employed by many merchants when handling card transaction data – especially those that previously seemed to approach the subject with a cavalier attitude.
 
-**3.6.2.3 Freedom of contract and its limitations**
+#### 3.6.2.3 Freedom of contract and its limitations
 
 When considering using a contract as a means of regulating security behaviour, one must consider that the law can and does interfere with or otherwise limit the enforceability of some contract terms.
 
@@ -878,7 +878,7 @@ This section will address a few of the more common tort doctrines that should be
 
 Most legal systems recognise the idea that persons in society owe a certain duty to others in the conduct of their activities. If a person fails to fulfil this duty, and the failure causes harm to a victim, the victim is often given a right to take legal action against the tortfeasor for financial compensation.
 
-**3.7.1.1 Duty of care: how far does it extend**
+#### 3.7.1.1 Duty of care: how far does it extend
 
 Legal systems implicitly acknowledge that a person is not always responsible to everyone all of the time. Some limitation on the scope of responsibility is normal. The courts of England, for example, have said that one person (Alice) owes a duty of care to another (Bob) in respect of a given activity if three conditions are fulfilled:
 
@@ -915,7 +915,7 @@ Table 3.2: Illustration of potential duty of care relationships
 
 </figure>
 
-**3.7.1.2 Breach of duty: measuring reasonableness**
+#### 3.7.1.2 Breach of duty: measuring reasonableness
 
 If a person (Alice) owes a duty of care to another person (Bob) in the conduct of a given activity, the question arises whether or not Alice has breached (failed to fulfil) her duty to Bob. The formulation of these two elements together – ‘breach of a duty of care’ – is normally synonymous with ‘negligence’.
 
@@ -937,7 +937,7 @@ Doctrines similar to negligence *per se* and *res ipsa loquitur* might be define
 
 Although they are not normally considered under the rubric of negligence law, other laws which influence cyber security practice define ‘reasonable’ conduct within their sphere of competence. An example is found in the law of funds transfer expressed in article 4A §202(c) of the Uniform Commercial Code as adopted by US states \[<a href="#ref-190" aria-label="Reference 190">190</a>\].
 
-**3.7.1.3 The interpretation of ‘fault’ differs by place and changes over time**
+#### 3.7.1.3 The interpretation of ‘fault’ differs by place and changes over time
 
 Although the framework presented above for defining ‘fault’ is generally well-received by legal systems in most developed economies, this should not be mistaken for agreement on how to interpret or apply these standards.
 
@@ -993,7 +993,7 @@ Some jurisdictions, notably member states of the United States, are prepared to 
 
 This section discusses a few miscellaneous legal doctrines that are important to consider when attempting to assess risks of tort liability.
 
-**3.7.5.1 Vicarious liability**
+#### 3.7.5.1 Vicarious liability
 
 There are circumstances when the liability of a tortfeasor can be attributed to a second person. The situation commonly encountered in cyber security is liability for the tortious act of an employee attributed to their employer. This type of vicarious liability applies when the tort is committed during the course of an employment relationship.
 
@@ -1003,13 +1003,13 @@ The Court of Appeal in England in 2018 affirmed a vicarious liability claim brou
 
 The only reliable method to avoid vicarious liability is to encourage employee behaviour that limits or avoids tortious activity. This is worthy of consideration by those who develop and enforce acceptable use policies, staff security standards, employment policies, etc.
 
-**3.7.5.2 Joint and several liability**
+#### 3.7.5.2 Joint and several liability
 
 In cases where more than one tortfeasor can be said to have caused harm to a single victim, tort law often imposes joint and several liability. The doctrine is simple: any jointly responsible tortfeasor could be required to pay 100% of the damages awarded to a victim. Although the tortfeasor satisfying the victim’s financial claim may have the right to pursue compensation (a.k.a. ‘contribution’) from other tortfeasors, this becomes problematic when the joint tortfeasors have no financial resources or are resident in foreign states where there is no effective method of enforcing such rights.
 
 Practitioners may wish to consider the impact of this rule when working with supply chain partners or joint venturers that are small, do not have much capital, or are resident in a foreign state where enforcement of domestic judgments may be problematic.
 
-**3.7.5.3 Affirmative defences**
+#### 3.7.5.3 Affirmative defences
 
 Tortfeasors are sometimes able to take advantage of certain affirmative defences to tort claims. A tortfeasor who is able to prove the relevant elements of these defences can reduce, or sometimes eliminate, their liability.
 

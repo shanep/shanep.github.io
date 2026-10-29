@@ -136,7 +136,7 @@ An Authenticated Encryption (AE) scheme \[<a href="#ref-1662" aria-label="Refere
 
 An AE scheme consists of three algorithms: `KeyGen`, `Enc` and `Dec`. The first of these is responsible for key generation. It is randomised and usually consists of selecting a key $K$ at random from the set of bit-strings of some fixed length $k$. Algorithm `Enc` performs encryption. It takes as input a key $K$ and a plaintext $M$ to be encrypted. Practical AE schemes allow $M$ to be a bit-string of variable length. In the *nonce-based* setting, `Enc` has an additional input called the *nonce*, denoted $N$, and usually selected from a set of bit-strings of some fixed size $n$. In this setting, `Enc` is deterministic (i.e. it needs no internal randomness). In the *randomised* setting, `Enc` is a randomised algorithm and does not take a nonce input. The third algorithm in an AE scheme is the decryption algorithm, `Dec`. It takes as input a key $K$, a ciphertext string $C$ and, in the nonce-based setting, a nonce $N$. It returns either a plaintext $M$ or an error message indicating that decryption failed. Correctness of a nonce-based AE scheme demands that, for all keys $K$, all plaintexts $M$ and all nonces $N$, if running `Enc` on input $(K, M, N)$ results in ciphertext $C$, then running `Dec` on input $(K, C, N)$ results in plaintext $M$. Informally, correctness means that, for a given key, decryption “undoes” encryption.
 
-**18.1.6.1 AE Security**
+#### 18.1.6.1 AE Security
 
 Security for nonce-based AE is defined in terms of the combination of a confidentiality property and an integrity property.
 
@@ -148,15 +148,15 @@ Similar security notions can be developed for the randomised setting.
 
 An AE scheme is said to be secure (or AE secure) if it is both IND-CPA and INT-CTXT secure. This combination of security properties is very strong. It implies, for example, IND-CCA security, a traditional security notion which extends IND-CPA security by also equipping the adversary with a decryption capability, capturing the capabilities that a practical attacker may have. It also implies a weaker “integrity of plaintexts” notion, which roughly states that it should be hard for the adversary to create a ciphertext that encrypts a new plaintext.
 
-**18.1.6.2 Nonces in AE**
+#### 18.1.6.2 Nonces in AE
 
 It is a requirement in the IND-CPA security definition that the nonces used by the adversary be *unique* across all calls to its LoR encryption oracle. Such an adversary is called a *nonce respecting adversary*. In practice, it is usually the responsibility of the application using an AE scheme to ensure that this condition is met across all invocations of the `Enc` algorithm for a given key $K$. Note that the nonces do not need to be random. Indeed choosing them randomly may result in nonce collisions, depending on the quality of the random bit source used, the size of the nonce space and the number of encryptions performed. For example, the nonces could be invoked using a stateful counter. The core motivation behind the nonce-based setting for AE is that it is easier for a cryptographic implementation to maintain state across all uses of a single key than it is to securely generate the random bits needed to ensure security in the randomised setting. This is debatable and nonce repetitions have been observed in practice \[<a href="#ref-1663" aria-label="Reference 1663">1663</a>\]. For some AE schemes such as the widely deployed AES-GCM scheme, the security consequences of accidental nonce repetition are severe, e.g. total loss of integrity and/or partial loss of confidentiality. For this reason, misuse-resistant AE schemes have been developed. These are designed to fail more gracefully under nonce repetitions, revealing less information in this situation than a standard AE scheme might. They are generally more computationally expensive than standard AE schemes. AES-GCM-SIV \[<a href="#ref-1664" aria-label="Reference 1664">1664</a>\] is an example of such a scheme.
 
-**18.1.6.3 AE Variants**
+#### 18.1.6.3 AE Variants
 
 Many variants of the basic AE formulation and corresponding security notions have been developed. As an important example, Authenticated Encryption with Associated Data (AEAD) \[<a href="#ref-1665" aria-label="Reference 1665">1665</a>\] refers to an AE extension in which an additional data field, the Associated Data (AD), is cryptographically bound to the ciphertext and is integrity protected (but not made confidential). This reflects common use cases. For example, we have a packet header that we wish to integrity protect but which is needed in the clear to deliver data, and a packet body that we wish to both integrity protect and make confidential. Even the basic AE security notion can be strengthened by requiring that ciphertexts be indistinguishable from random bits or by considering security in the multi-user setting, where the adversary interacts with multiple AE instantiations under different, random keys and tries to break any one of them. The latter notion is important when considering large-scale deployments of AE schemes. The two separate notions, IND-CPA and INT-CTXT, can also be combined into a single notion \[<a href="#ref-1666" aria-label="Reference 1666">1666</a>\].
 
-**18.1.6.4 Constructing AE Schemes**
+#### 18.1.6.4 Constructing AE Schemes
 
 Secure AE (and AEAD) schemes can be constructed *generically* from simpler encryption schemes offering only IND-CPA security and SUF-CMA secure MAC schemes. There are three basic approaches: Encrypt-then-MAC (EtM), Encrypt-and-MAC (E&M) and MAC-then-Encrypt (MtE). Of these, the security of EtM is the easiest to analyse and provides the most robust combination, because it runs into fewest problems in implementations. Both MtE and E&M have been heavily used in widely-deployed secure communications protocols such as SSL/TLS and Secure Shell (SSH) with occasionally disastrous consequences \[<a href="#ref-1667" aria-label="References 1667–1669">1667–1669</a>\]. Broad discussions of generic composition can be found in \[<a href="#ref-1670" aria-label="Reference 1670">1670</a>\] (in the randomised setting) and \[<a href="#ref-1671" aria-label="Reference 1671">1671</a>\] (more generally).
 
@@ -166,7 +166,7 @@ This generic approach then leaves the question of how to obtain an encryption sc
 
 A Public Key Encryption (PKE) scheme consists of three algorithms: `KeyGen`, `Enc` and `Dec`. The first of these is responsible for key generation. It is randomised and outputs key pairs $(sk, pk)$ where $sk$ denotes a private key (often called the secret key) and $pk$ denotes a public key. The algorithm `Enc` performs encryption. It takes as input the public key $pk$ and a plaintext $M$ to be encrypted and returns a ciphertext $C$. In order to attain desirable security notions (introduced shortly), `Enc` is usually randomised. The plaintext $M$ comes from some set of possible plaintexts that the scheme can handle. Usually this set is limited and dictated by the mathematics from which the PKE scheme is constructed. This limitation is circumvented using *hybrid encryption*, which combines PKE and symmetric encryption to allow a more flexible set of plaintexts. The third algorithm in a PKE scheme is the decryption algorithm, `Dec`. It takes as input the private key $sk$ and a ciphertext $C$. It returns either a plaintext $M$ or an error message indicating that decryption failed. Correctness of a PKE scheme requires that, for all key pairs $(sk, pk)$ and all plaintexts $M$, if running `Enc` on input $(pk, M)$ results in ciphertext $C$, then running `Dec` on input $(sk, C)$ results in plaintext $M$. Informally, correctness means that, for a given key, decryption “undoes” encryption. Notice here the fundamental asymmetry in the use of keys in a PKE scheme: $pk$ is used during encryption and $sk$ during decryption.
 
-**18.1.7.1 PKE Security**
+#### 18.1.7.1 PKE Security
 
 There are many flavours of security for PKE. We focus on just one, which is sufficient for many applications, and provide a brief discussion of some others.
 
@@ -180,13 +180,13 @@ We do not generally consider integrity notions for PKE schemes. This is because,
 
 In some applications, such as anonymous communications or anonymous cryptocurrencies, anonymity of PKE plays a role. Roughly speaking, this says that a PKE ciphertext should not leak anything about the public key $pk$ that was used to create it. This is an orthogonal property to IND-CPA/IND-CCA security. A related concept is robustness for PKE, which informally says that a ciphertext generated under one public key $pk$ should not decrypt correctly under the private key $sk^{'}$ corresponding to a second public key $pk^{'}$. Such a property, and stronger variants of it, are needed to ensure that *trial decryption* of anonymous ciphertexts does not produce unexpected results \[<a href="#ref-1673" aria-label="Reference 1673">1673</a>\].
 
-**18.1.7.2 Key Encapsulation Mechanisms**
+#### 18.1.7.2 Key Encapsulation Mechanisms
 
 A Key Encapsulation Mechanism (KEM) is a cryptographic scheme that simplifies the design and use of PKE. Whereas a PKE scheme can encrypt arbitrary messages, a KEM is limited to encrypting symmetric keys. One can then build a PKE scheme from a KEM and an AE scheme (called a Data Encapsulation Mechanism, DEM, in this context): first use the KEM to encrypt a symmetric key $K$, then use $K$ in the AE scheme to encrypt the desired message; ciphertexts now consist of two components: the encrypted key and the encrypted message.
 
 We can define IND-CPA and IND-CCA security notions for KEMs. These are simpler to work with than the corresponding notions for PKE and this simplifies security analysis (i.e. generating and checking formal proofs). Moreover, there is a *composition theorem* for KEMs which says that if one takes an IND-CCA secure KEM and combines it with an AE-secure DEM (AE scheme) as above, then one gets an IND-CCA secure PKE scheme. As well as simplifying design and analysis, this KEM-DEM or hybrid viewpoint on PKE reflects how PKE is used in practice. Because PKE has generally slow algorithms and has large ciphertext overhead (compared to symmetric alternatives like AE), we do not use it directly to encrypt messages. Instead, we use a KEM to encrypt a short symmetric key and then use that key to encrypt our bulk messages.
 
-**18.1.7.3 Some common PKE schemes and KEMs**
+#### 18.1.7.3 Some common PKE schemes and KEMs
 
 Perhaps the most famous PKE scheme is the RSA \[Rivest-Shamir-Adleman\] scheme. In its *textbook* form, the public key consists of a pair $(e, N)$ where $N$ is a product $p\cdot q$ of two large primes and the private key consists of a value $d$ such that $de = 1\mathrm{mod} (p- 1)(q- 1)$. Encryption of a message $M$, seen as a large integer modulo $N$, sets $C = M ^{e }\mathrm{mod} N$. On account of the mathematical relationship between $d$ and $e$, it can be shown that then $M = C^{d }\mathrm{mod} N$. So encryption is done by “raising to the power of $e$ mod $N$" and decryption is done by “raising to the power of $d$ mod $N$". These operations can be carried out efficiently using the square-and-multiply algorithm and its variants. Decryption can be accelerated by working separately modulo $p$ and $q$ and then combining the results using the Chinese Remainder Theorem (CRT).
 
@@ -214,7 +214,7 @@ The raw DHKE protocol as described directly above is rarely used in practice, be
 
 It is important also for Alice and Bob to use trusted parameters, or to verify the cryptographic strength of the parameters that they receive, in DHKE. This can be a complex undertaking even in the traditional setting, since a robust primality test is needed \[<a href="#ref-1680" aria-label="Reference 1680">1680</a>, <a href="#ref-1681" aria-label="Reference 1681">1681</a>\]. In the elliptic curve setting, it is not reasonable to expect the verification to be done by protocol participants and we use one of a small number of standardised curves. It is also important for the respective parties to check that the received values $g^{y}$ and $g^{x}$ do lie in the expected group, otherwise the protocol may be subject to attacks such as the small sub-group attack. These checks may be computationally costly.
 
-**18.1.8.1 From Diffie-Hellman to ElGamal**
+#### 18.1.8.1 From Diffie-Hellman to ElGamal
 
 It is easy to build a KEM from the DHKE primitive. We simply set the `KeyGen` algorithm to output a key pair $(sk, pk) = (y, g^{y})$ (where $y$ is generated as in DHKE), while `Encrypt` selects $x$ as in DHKE and then simply outputs the group element $g^{x}$ as the ciphertext. Finally, `Decrypt` takes as input a group element $h$ and outputs `KDF`$(h^{y})$ where `KDF`$(\cdot )$ denotes a suitable key derivation function (as covered in Section 18.3.2). So the symmetric key encapsulated by group element $g^{x}$ is `KDF`$(g^{xy})$.
 
@@ -383,35 +383,35 @@ Having discussed libraries and their APIs, we now turn to challenges arising in 
 
 The main problem is to translate a purely mathematical or pseudo-code description of a scheme (the typical unit of analysis in formal security proofs arising in research papers) into running code on a real computer in such a way that the abstraction level involved in the security analysis is still properly respected by the running code. Put another way, the challenge is to ensure there are no mechanisms through which sensitive information can leak that are not already anticipated and eliminated by the security analysis. There are multiple ways in which such leakage can arise. We consider a representative selection here.
 
-**18.2.3.1 Length Side Channels**
+#### 18.2.3.1 Length Side Channels
 
 As we noted in Section 18.1.6, the usual security goal of an AEAD scheme does not guarantee that the length of plaintexts will be hidden. Indeed, AEAD schemes like AES-GCM make it trivial to read off the plaintext length from the ciphertext length. However, it is clear that length leakage can be fatal to security. Consider a simplistic secure trading system where a user issues only two commands, “BUY” or “SELL”, with these commands being encoded in simple ASCII \[American Standard Code for Information Interchange\] and sent over a network under the protection of AES-GCM encryption. An adversary sitting on the network who can intercept the encrypted communications can trivially infer what commands a user is issuing, just by looking at ciphertext lengths (the ciphertexts for “SELL” will be one byte longer than those for “BUY”). More generally, attacks based on *traffic analysis* and on the analysis of metadata associated with encrypted data can result in significant information leaking to an adversary.
 
-**18.2.3.2 Timing Side Channels**
+#### 18.2.3.2 Timing Side Channels
 
 The amount of time that it takes to execute the cryptographic code may leak information about the internal processing steps of the algorithm. This may in turn leak sensitive information, e.g. information about keys. The first public demonstration of this problem was made by Kocher \[<a href="#ref-1444" aria-label="Reference 1444">1444</a>\] with the attacker having direct access to timing information. Later it was shown that such attacks were even feasible remotely, i.e. could be carried out by an attacker located at a different network location from the target, with timing information being polluted by network noise \[<a href="#ref-1705" aria-label="Reference 1705">1705</a>\].
 
 Consider for example a naive elliptic curve scalar multiplication routine which is optimised to ignore leading zeros in the most significant bits of the scalar. Here we imagine the scalar multiplication performing doubling and adding operations on points, with the operations being determined by the bits of the scalar from most significant to least significant. If the adversary can somehow time the execution of the scalar multiplication routine, it can detect cases where the code finishes early and infer which scalars have some number of most significant bits equal to zero. Depending on how the routine is used, this may provide enough side channel information to enable a key to be recovered. This is the case, for example, for the ECDSA scheme, where even partial leakage of random values can be exploited. Recent systematic studies in this specific setting \[<a href="#ref-1706" aria-label="Reference 1706">1706</a>, <a href="#ref-1707" aria-label="Reference 1707">1707</a>\] show that timing attacks are still pertinent today.
 
-**18.2.3.3 Error Side Channels**
+#### 18.2.3.3 Error Side Channels
 
 Errors arising during cryptographic processing can also leak information about internal processing steps. Padding oracle attacks on CBC mode encryption, originally introduced in \[<a href="#ref-1667" aria-label="Reference 1667">1667</a>\], provide a classic and persistent example of this phenomenon. CBC mode uses a block cipher to encrypt plaintext data that is a multiple of the block cipher’s block length. But in applications, we typically want to encrypt data of arbitrary length. This implies that data needs to be padded to a block boundary of the block cipher before it can be encrypted by CBC mode. Vaudenay observed that, during decryption, this padding needs to be removed, but the padding may be invalidly formatted and the decryption code may produce an error message in this case. If the adversary can somehow observe the error message, then it can infer something about the padding’s validity. By carefully constructing ciphertexts and observing errors arising during their decryption, an adversary can mount a plaintext recovery attack via this error side channel.
 
 In practice, the error messages may themselves be encrypted, but then revealed via a secondary side channel, e.g. a timing side channel (since an implementation might abort further processing once a padding error is encountered). For examples of this in the context of SSL/TLS and which illustrate the difficulty of removing this class of side channel, see \[<a href="#ref-1668" aria-label="Reference 1668">1668</a>, <a href="#ref-1708" aria-label="Reference 1708">1708</a>\].
 
-**18.2.3.4 Attacks Arising from Shared Resources**
+#### 18.2.3.4 Attacks Arising from Shared Resources
 
 The cryptographic code may not be running in perfect isolation from potential adversaries. In particular, in modern CPUs), there is a memory cache hierarchy in which the same fast memory is shared between different processes, with each process potentially overwriting portions of the cache used by other processes. For example, in a cloud computing scenario, many different users’ processes may be running in parallel on the same underlying hardware, even if they are separated by security techniques like virtualisation. So an attacker, running in a separate process in the CPU, could selectively flush portions of the cache and then, after the victim process has run some critical code, observe by timing its own cache accesses, whether that part of the cache has been accessed by the victim process or not. If the victim process has a pattern of memory access that is key-dependent, then this may indirectly leak information about the victim’s key. This particular attack is known as a Flush$+$Reload attack and was introduced in \[<a href="#ref-1709" aria-label="Reference 1709">1709</a>\]; several other forms of cache-based attack are known. The possibility of such attacks was first introduced in \[<a href="#ref-1710" aria-label="Reference 1710">1710</a>\]; later such attacks were shown to be problematic for AES in particular \[<a href="#ref-1711" aria-label="Reference 1711">1711</a>\].[^18-18] In the last few years, researchers have had a field day developing cache-based and related micro-architectural attacks against cryptographic implementations. These attacks arise in general from designers of modern CPUs making architectural compromises in search of speed.
 
-**18.2.3.5 Implementation Weaknesses**
+#### 18.2.3.5 Implementation Weaknesses
 
 More prosaically, cryptographic keys may be improperly deleted after use, or accidentally written to backup media. Plaintext may be improperly released to a calling application before its integrity has been verified. This can occur in certain constructions where MAC verification is done after decryption and also in streaming applications where only a limited-size buffer is available for holding decrypted data.
 
-**18.2.3.6 Attacks Arising from Composition**
+#### 18.2.3.6 Attacks Arising from Composition
 
 A system making use of multiple cryptographic components may inadvertently leak sensitive information through incorrect composition of those components. So we have leakage at a system level rather than directly from the individual cryptographic components. Consider the case of Zcash,[^18-19] an anonymous cryptocurrency. Zcash uses a combination of zero-knowledge proofs, a PKE scheme and a commitment scheme in its transaction format. The PKE scheme is used as an outer layer and is anonymous, so the identity of the intended recipient is shielded. How then should a Zcash client decide if a transaction is intended for it? It has to perform a trial decryption using its private key; if this fails, no further processing is carried out. Otherwise, if decryption succeeds, then further cryptographic processing is done (e.g. the commitment is checked). This creates a potentially observable difference in behaviour that breaks the intended anonymity properties of Zcash \[<a href="#ref-1712" aria-label="Reference 1712">1712</a>\]. The PKE scheme used may be IND-CCA secure and anonymous, but these atomic security properties do not suffice if the overall system’s behaviour leaks the critical information.
 
-**18.2.3.7 Hardware Side Channels**
+#### 18.2.3.7 Hardware Side Channels
 
 Cryptography is often implemented directly in hardware. For example, hardware acceleration of cryptographic functions was once common, both in low-cost environments such as payment cards and in higher-end applications, such as server-side SSL/TLS operations. Today, Internet-of-Things (IoT) deployments may use hardware components to implement expensive cryptographic functions. Hardware-based cryptography can also be found in Trusted Platform Modules (TPMs) as specified by the Trusted Computing Group and in systems like Intel Software Guard eXtensions (SGX) and ARM Trustzone. As noted in Section 18.1.3, modern CPUs) have instructions to enable high performance implementation of important cryptographic algorithms like AES.
 
@@ -419,7 +419,7 @@ There are additional sources of leakage in hardware implementations of cryptogra
 
 For a fuller discussion of hardware side channels, we refer the reader to Hardware Security Knowledge Area (Chapter 20).
 
-**18.2.3.8 Fault Attacks**
+#### 18.2.3.8 Fault Attacks
 
 Hardware implementations may also be vulnerable to fault or glitch attacks, where an error is introduced into cryptographic computations at a precise moment resulting in leakage of sensitive data (typically keys) via the output of the computation. The first such attack focused on implementations of RSA using the CRT \[<a href="#ref-1714" aria-label="Reference 1714">1714</a>\]. A more recent incarnation of this form of attack called Rowhammer targets the induction of faults in memory locations where keys are stored by repeatedly writing to adjacent locations \[<a href="#ref-982" aria-label="Reference 982">982</a>\].
 
@@ -545,7 +545,7 @@ A second requirement is that parties who rely on the soundness of the binding be
 
 These two requirements have many implications. Meeting them leads to the introduction of additional infrastructure and management functions. Conventionally, this collection of components is called a *Public Key Infrastructure (PKI)*.
 
-**18.3.8.1 Binding Public Keys and Identities via Certificates**
+#### 18.3.8.1 Binding Public Keys and Identities via Certificates
 
 A suitable mechanism to bind public keys and identities — and possibly other information — is needed. In early proposals for deploying Public Key Cryptography, it was proposed that this could take the form of a trusted bulletin board, where all the public keys and corresponding identities are simply listed. But this of course requires trust in the provider of the bulletin board service.
 
@@ -557,7 +557,7 @@ The use of certificates moves the problem of verifying the binding implied by th
 
 As an important and visible example of a PKI, consider the *Web PKI*. Web browser vendors embed a list of the public keys of a few hundred different root CAs in their software and update the list from time to time via their software update mechanisms, which in turn may rely for its security on a separate PKI. Website owners pay to obtain certificates binding their sites’ URLs \[Uniform Resource Locator\] to their public keys from subordinate CAs. Then, when running the TLS protocol for secure communications between a web browser and a website, the website’s server sends a certificate chain to the web browser client. The chain provides the web browser with a copy of the server’s public key (in the lowest certificate from the chain, the leaf or end-entity certificate) as well as a means of verifying the binding between the web site name in the form of its URL, and that public key. The operations and conventions of the Web PKI are managed by the CA/Browser Forum.[^18-28]
 
-**18.3.8.2 Reliance on Naming, CA Operations and Time**
+#### 18.3.8.2 Reliance on Naming, CA Operations and Time
 
 In addition to needing a suitable binding mechanism, there must be a stable, controlled naming mechanism for parties. Moreover, parties need to have means of proving to CAs that they own a specific identity and CAs need to check such assertions. Equally, CAs need to be trusted to only issue certificates to the correct parties. This aspect of PKI intersects heavily with legal and regulatory aspects of Information Security and is covered in more detail in Law & Regulation Knowledge Area (Section 3.10.3).
 
@@ -565,19 +565,19 @@ For the Web PKI, there have been numerous incidents where CAs were found to have
 
 Relying parties (i.e. parties verifying certificates and then using the embedded public keys) need access to reliable time sources to be sure that the certificate’s lifetime, as encoded in the certificate, is still valid. Otherwise, an attacker could send an expired certificate for which it has compromised the corresponding private key to a relying party and get the relying party to use the certificate’s public key. This requirement can be difficult to fulfill in low-cost or constrained environments, e.g. IoT applications.
 
-**18.3.8.3 Reliance on Certificate Status Information**
+#### 18.3.8.3 Reliance on Certificate Status Information
 
 Relying parties verifying certificates also need access to reliable, timely sources of information about the status of certificates — whether the certificate is still valid or has been revoked for some security or operational reason. This can be done by regularly sending lists of revoked certificates to relying parties (known as Certificate Revocation Lists, CRLs), or having the relying parties perform a real-time status check with the issuing CA before using the public key using the Online Certificate Status Protocol, OCSP \[<a href="#ref-1733" aria-label="Reference 1733">1733</a>\]. The former approach is more private for relying parties, since the check can be done locally, but implies the existence of a window of exposure for relying parties between the time of revocation and the time of CRL distribution. The latter approach provides more timely information but implies that large CAs issuing many certificates need to provide significant bandwidth and computation to serve the online requests.
 
 In the web context, OCSP has become the dominant method for checking revocation status of certificates. OCSP’s bandwidth issue is ameliorated by the practice of *OCSP stapling*, wherein a web server providing a certificate regularly performs its own OCSP check and includes the certified response from its CA along with its certificate. In an effort to further improve user privacy, in 2020, Mozilla experimentally deployed[^18-33] an approach called CRLite developed in \[<a href="#ref-1734" aria-label="Reference 1734">1734</a>\] in their Firefox browser. CRLite uses CT logs and other sources of information to create timely and compact CRLs for regular distribution to web browsers.
 
-**18.3.8.4 Reliance on Correct Software and Unbroken Cryptography**
+#### 18.3.8.4 Reliance on Correct Software and Unbroken Cryptography
 
 The software at a relying party that validates certificate chains needs to work properly. This is non-trivial, given the complexity of the X.509 data structures involved, the use of complex encoding languages and the need to accurately translate security policy into running code. There have been numerous failures. A prominent and entirely avoidable example is Apple’s “goto fail” from 2014. Here a repeated line of code[^18-34] for error handling in Apple’s certificate verification code in its SSL/TLS implementation caused all certificate checking to be bypassed. This made it trivial to spoof a web server’s public key in a fake certificate to clients running Apple’s code. This resulted in a total bypass of the server authentication in Apple’s SSL/TLS implementation, undermining all security guarantees of the protocol.[^18-35]
 
 The certificate industry has been slow to react to advances in the cryptanalysis of algorithms and slow to add support for new signature schemes. The story of SHA-1 and its gradual removal from the Web PKI is a prime example. This relates to the discussion of cryptographic agility in Section 18.1.14. The first cracks in SHA-1 appeared in 2005 \[<a href="#ref-1735" aria-label="Reference 1735">1735</a>\]. Already at this point, cryptographers taking their standard conservative approach, recommended that SHA-1 be deprecated in applications requiring collision resistance. From 2005 onwards, the cryptanalysis of SHA-1 was refined and improved. Finally in 2017, the first public collisions for SHA-1 were exhibited \[<a href="#ref-1736" aria-label="Reference 1736">1736</a>\]. This was followed in 2019 by a chosen-prefix collision attack that directly threatened the application of SHA-1 in certificates \[<a href="#ref-1737" aria-label="Reference 1737">1737</a>\]. However, despite the direction of travel having been clear for more than a decade, it took until 2017 before the major web browsers finally stopped accepting SHA-1 in Web PKI certificates. Today, SHA-1 certificates are still to be found in payment systems and elsewhere. The organisations running these systems are inherently change-averse because they have to manage complex systems that must continue to work across algorithm and technology changes. In short, these organisations are not cryptographically agile, as discussed in Section 18.1.14.
 
-**18.3.8.5 Other Approaches to Managing Public Keys**
+#### 18.3.8.5 Other Approaches to Managing Public Keys
 
 The *web of trust* is an alternative to hierarchical PKIs in which the users in a system vouch for the authenticity of one another’s public keys by essentially cross-certifying each other’s keys. It was once popular in the PGP \[Pretty Good Privacy\] community but did not catch on elsewhere. Such a system poses significant usability challenges for ordinary users \[<a href="#ref-341" aria-label="Reference 341">341</a>\].
 
@@ -645,11 +645,11 @@ On the surface, secure messaging seems to have a very similar set of requirement
 
 We discuss three different secure messaging systems: Apple’s iMessage, Signal (used in WhatsApp) and Telegram. We focus on the two-party case for brevity.
 
-**18.5.2.1 Apple iMessage**
+#### 18.5.2.1 Apple iMessage
 
 Apple’s iMessage system historically used an *ad hoc* signcryption scheme that was shown to have significant vulnerabilities in \[<a href="#ref-1749" aria-label="Reference 1749">1749</a>\]. This was despite signcryption being a well-known primitive with well-established models, generic constructions from PKE and digital signatures and security proofs in the academic literature. Conjecturally, the designers of Apple’s scheme were constrained by the functions available in their cryptographic library. The Apple system relied fully on trust in Apple’s servers to distribute authentic copies of users’ public keys — a PKI by fiat. The system was designed to be end-to-end secure, meaning that without active impersonation via key substitution, Apple could not read users’ messages. It did not enjoy any forward-security properties, however: once a user’s private decryption key was known, all messages intended for that user could be read. Note that Apple’s iMessage implementation is not open source; the above description is based on the reverse engineering carried out in \[<a href="#ref-1749" aria-label="Reference 1749">1749</a>\] and so may no longer be accurate.
 
-**18.5.2.2 Signal**
+#### 18.5.2.2 Signal
 
 The Signal design, which is used in both Signal and WhatsApp, takes a slightly different approach in the two-party case. It uses a kind of asynchronous DHKE approach called *ratcheting*. At a high level, every time Alice sends user Bob a new message, she also includes a Diffie-Hellman (DH) value and updates her symmetric key to one derived from that DH value and the DH value she most recently received from Bob. On receipt, Bob combines the incoming DH value with the one he previously sent to make a new symmetric key on his side. This key is called a chaining key.
 
@@ -661,7 +661,7 @@ Authentication in Signal is ultimately the same as in iMessage: it depends on tr
 
 A formal security analysis of the double ratcheting process used by Signal can be found in \[<a href="#ref-437" aria-label="Reference 437">437</a>\]. Note that, in order to tame complexity, this analysis does not treat the composition of the double ratchet with the symmetric encryption component. The Signal design has spurred a spate of recent research into the question of what is the best possible security one can achieve in two-party messaging protocols and how that security interacts with the synchronisation issues.
 
-**18.5.2.3 Telegram**
+#### 18.5.2.3 Telegram
 
 A third design is that used by Telegram.[^18-41] It is notable for the way it combines various cryptographic primitives (RSA, finite field DHKE, a hash-based key derivation function, a hash-based MAC and a non-standard encryption mode called IGE \[Infinite Garble Extension\]). Moreover, it does not have proper key separation: keys used to protect messages from Alice to Bob share many overlapping bits with keys used in the opposite direction; moreover those key bits are taken directly from “raw” DHKE values. These features present significant barriers to formal analysis and violate cryptographic best practices. Furthermore, Telegram does not universally feature end-to-end encryption; rather it has two modes, one of which is end-to-end secure, the other of which provides secure communications only from each client to the server. The latter seems to be much more commonly used in practice, but is of course subject to interception. This is concerning, given that Telegram is frequently used by higher-risk users in undemocratic countries.
 

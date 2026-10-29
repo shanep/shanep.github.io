@@ -111,7 +111,7 @@ Modern web and mobile platforms gave rise to another phenomenon. Many of the app
 
 This section gives a brief introduction to the most essential technologies needed to explain vulnerabilities and mitigations later in the KA \[Knowledge Area\]. We include Uniform Resource Locators (URLs), the Hypertext Transfer Protocol (HTTP), the Hypertext Markup Language (HTML), Cascading Style Sheets (CSS) and the JavaScript programming language. For more detailed information, we suggest reading \[<a href="#ref-1477" aria-label="Reference 1477">1477</a>\].
 
-**16.2.2.1 Uniform Resource Locators**
+#### 16.2.2.1 Uniform Resource Locators
 
 Uniform Resource Locators (URLs) \[<a href="#ref-1469" aria-label="Reference 1469">1469</a>\] are a core concept in the web. A URL is a well-formed and fully qualified text string that addresses and identifies a resource on a server. Address bars in modern browser User Interfaces (UIs) use the URLs to illustrate the remote address of a rendered document. A fully qualified absolute URL string consists of several segments and contains all the required information to access a particular resource. The syntax of an absolute URL is: `scheme://credentials@host:port/resourcepath?query_parameters#fragments`. Each segment has a particular meaning (cf. [Table 16.1](#table-16-1)).
 
@@ -136,7 +136,7 @@ Table 16.1: URL segments.
 
 </figure>
 
-**16.2.2.2 Hypertext Transfer Protocol**
+#### 16.2.2.2 Hypertext Transfer Protocol
 
 The Hypertext Transfer Protocol (HTTP) is the most widely used mechanism to exchange documents between servers and clients on the web. While HTTP is mostly used to transfer HTML documents, it can be used for any data. Although HTTP/2.0 \[<a href="#ref-1478" aria-label="Reference 1478">1478</a>\] is the newest protocol revision, the most widely supported protocol version is HTTP/1.1 \[<a href="#ref-1467" aria-label="Reference 1467">1467</a>\]. HTTP is a text-based protocol using TCP/IP. An HTTP client initiates a session by sending an HTTP request to an HTTP server. The server returns an HTTP response with the requested file.
 
@@ -146,17 +146,17 @@ Although **cookies** were not part of the original HTTP RFC \[Request For Commen
 
 HTTP is request-response based and neatly fits unidirectional data transfer use cases. However, for better latency and more effective use of bandwidth, bidirectional network connections are needed. Bidirectional connections not only allow clients to pull data from the server, but also the server to push data to the client at any time. Therefore, the **WebSocket** protocol \[<a href="#ref-1479" aria-label="Reference 1479">1479</a>\] provides a mechanism on top of HTTP. WebSocket connections start with a regular HTTP request that includes an `Upgrade: WebSocket` header. After the WebSocket handshake is completed, both parties can send data at any time without having to run a new handshake.
 
-**16.2.2.3 Hypertext Markup Language**
+#### 16.2.2.3 Hypertext Markup Language
 
 The Hypertext Markup Language (HTML) \[<a href="#ref-1470" aria-label="Reference 1470">1470</a>\] is the most widely used method to produce and consume documents on the web. The most recent version is HTML5 \[HyperText Markup Language 5\]. The HTML syntax is fairly straightforward: a hierarchical tree structure of tags, *name=value* tag parameters and text nodes form an HTML document. The Document Object Model (DOM) defines the logical structure of an HTML document and rules how it is accessed and manipulated. However, competing web browser vendors introduced all sorts of custom features and modified the HTML language to their wishes. The many different and divergent browser implementations resulted in only a small portion of the websites on the Internet adhering to the HTML standard’s syntax. Hence, implementations of HTML parsing modes and error recovery vary greatly between different browsers.
 
 The HTML syntax comes with some constraints on what may be included in a parameter value or inside a text node. Some characters (e. g., angle brackets, single and double quotes and ampersands) make the blocks of the HTML markup. Whenever they are used for a different purpose, such as parts of substrings of a text, they need to be escaped. To avoid undesirable side effects, HTML provides an entity encoding scheme. However, the failure to properly apply the encoding to reserved characters when displaying user-controlled information may lead to severe web security flaws such as cross-site scripting (cf. Section 16.4).
 
-**16.2.2.4 Cascading Style Sheets**
+#### 16.2.2.4 Cascading Style Sheets
 
 Cascading Style Sheets (CSS) \[<a href="#ref-1480" aria-label="Reference 1480">1480</a>\] are a consistent and flexible mechanism to manipulate the appearance of HTML documents. The primary goal of CSS was to provide a straightforward and simple text-based description language to supersede the many vendor-specific HTML tag parameters that lead to many inconsistencies. However, similar to divergent HTML parsing implementations, different browsers also implement different CSS parsing behavior. CSS allows HTML tags to be scaled, positioned or decorated without being limited by the original HTML markup constraints. Similar to HTML tag values, values inside CSS can be user-controlled or provided externally, which makes CSS crucial for web security.
 
-**16.2.2.5 JavaScript**
+#### 16.2.2.5 JavaScript
 
 JavaScript \[<a href="#ref-1471" aria-label="Reference 1471">1471</a>\] is a simple yet powerful object-oriented programming language for the web. It runs both client-side in web browsers and server-side as part of web applications. The language is meant to be interpreted at runtime and has a C-inspired syntax. JavaScript supports a classless object model, provides automatic garbage collection and weak and dynamic typing. Client-side JavaScript does not support I/O mechanisms out of the box. Instead, some limited predefined interfaces are provided by native code inside the browser. Server-side JavaScript (e. g., Node.js \[<a href="#ref-1481" aria-label="Reference 1481">1481</a>\]) supports a wide variety of I/O mechanisms, e. g., network and file access. The following discussion will focus on client JavaScript in web browsers. Every HTML document in a browser is given its JavaScript execution context. All scripts in a document context share the same sandbox (cf. Section 16.2.4). Inter-context communication between scripts is supported through browser-specific APIs. However, execution contexts are strictly isolated from each other in general. All JavaScript blocks in a context are executed individually and in a well-defined order. Script processing consists of three phases:
 
@@ -168,11 +168,11 @@ JavaScript \[<a href="#ref-1471" aria-label="Reference 1471">1471</a>\] is a sim
 
 While JavaScript is a very powerful and elegant scripting language, it brings up new challenges and security issues such as Cross-Site Scripting vulnerabilities (cf. Section 16.4.1).
 
-**16.2.2.6 WebAssembly**
+#### 16.2.2.6 WebAssembly
 
 WebAssembly (Wasm) \[<a href="#ref-1482" aria-label="Reference 1482">1482</a>\] is an efficient and fast binary instruction format and is supported by most modern browser vendors. It is a stack-based virtual machine language and mainly aims to execute at native speed on client machines. Code written in WebAssembly is memory safe and benefits from all security features provided by regular code associated with a website. WebAssembly code is sandboxed, enforces the same origin policy (cf. Section 16.2.4) and is limited to the resources provided by the corresponding website’s permissions. Additionally, WebAssembly code can access JavaScript code running in the same origin container and provide its functionality to JavaScript code from the same origin.
 
-**16.2.2.7 WebViews**
+#### 16.2.2.7 WebViews
 
 WebViews are a further trend in webification and mobile apps. They allow the easy integration of web content into mobile apps \[<a href="#ref-1483" aria-label="Reference 1483">1483</a>\]. Developers can integrate apps with HTML and JavaScript and benefit from portability advantages. WebViews run in the context of regular mobile apps and allow a rich two-way interaction with the hosted web content. Mobile apps can invoke JavaScript from within the web content, and monitor and intercept events in the web content. At the same time, specific JavaScript APIs allow WebView apps to interact with content and sensors outside the WebView context. The interaction of web content with native app content raises new security concerns and enables both *app-to-web* and *web-to-app* attacks \[<a href="#ref-1484" aria-label="References 1484–1486">1484–1486</a>\]. App-to-web attacks, allow malicious apps to inject JavaScript into hosted WebViews with the goal to exfiltrate sensitive information or trick WebViews into navigating to and presenting users with untrusted and potentially malicious websites. Web-to-app attacks inject untrusted web content into an app and leverage an app’s JavaScript bridge to the underlying host app. The goal of a web-to-app attack is privilege escalation to the level of its hosting app’s process.
 
@@ -190,11 +190,11 @@ Most of the software available in ecosystems that have application stores is dis
 
 Both modern mobile and browser platforms make use of different sandboxing techniques to isolate applications and websites and their content from each other (cf. Operating Systems & Virtualisation Security Knowledge Area (Chapter 11)) \[<a href="#ref-1491" aria-label="Reference 1491">1491</a>, <a href="#ref-1492" aria-label="Reference 1492">1492</a>\]. This also aims to protect the platform against malicious applications and sites. Major web browsers (e.g. Google Chrome \[<a href="#ref-1493" aria-label="Reference 1493">1493</a>\]) and mobile platforms (e.g. Android \[<a href="#ref-1494" aria-label="Reference 1494">1494</a>\]) implement isolation at an operating system process level. Each application or website runs in its own process [^16-2]. By default, isolated processes cannot interact with each other and cannot share resources. In browsers, site isolation serves as a second line of defence as an extension to the *same-origin-policy* (cf. Section 16.2.4.2).
 
-**16.2.4.1 Application Isolation**
+#### 16.2.4.1 Application Isolation
 
 Modern mobile platforms provide each application with their sandbox running in a dedicated process and their own file-system storage. Mobile platforms take advantage of underlying operating system process protection mechanisms for application resource identification and isolation. For example, application sandboxes in Android \[<a href="#ref-1494" aria-label="Reference 1494">1494</a>\] are set-up at kernel-level. Security is enforced through standard operating system facilities, including user and group IDs \[identifier\] as well as security contexts. By default, sandboxing prevents applications from accessing each other and only allows limited access to operating system resources. To access protected app and operating system resources inter-app communication through controlled interfaces is required.
 
-**16.2.4.2 Content Isolation**
+#### 16.2.4.2 Content Isolation
 
 Content isolation is one of the major security assurances in modern browsers. The main idea is to isolate documents based on their origin so that they cannot interfere with each other. The *Same-Origin Policy (SOP)* \[<a href="#ref-1495" aria-label="Reference 1495">1495</a>\] was introduced in 1995 and affects JavaScript and its interaction with a document’s DOM, network requests and local storage (e. g., cookies). The core idea behind SOP is that two separate JavaScript execution contexts are only allowed to manipulate a document’s DOM if there is an exact match between the document host and the protocol, DNS name and port numbers[^16-3]. Cross-origin manipulation requests are not allowed. [Table 16.2](#table-16-2) illustrates sample SOP validation results. Similar to JavaScript-DOM-interaction, the SOP limits the JavaScript `XMLHttpRequest` capabilities to only issue HTTP requests to the origin of the host document.
 
@@ -234,23 +234,23 @@ Permission systems in modern mobile and web platforms enable protection of the p
 
 Modern mobile and web platforms deviate from conventional computer systems in multiple ways:
 
-**16.2.5.1 The Security Principals**
+#### 16.2.5.1 The Security Principals
 
 Traditional computer systems are primarily multi-user systems with human users and processes running on their behalf. Modern mobile and web platforms extend conventional multi-user systems to also consider all involved developers that have their applications installed on the system as security principals.
 
-**16.2.5.2 The Reference Monitor**
+#### 16.2.5.2 The Reference Monitor
 
 Typically, conventional computer systems implement access control as part of the Operating System (OS), e.g., the file system and network stack. User-level processes can then extend this OS functionality and implement their own access control mechanisms.
 
 Like conventional computer systems, modern mobile and web platforms build on top of OS low-level access control mechanisms. Additionally, the extensive frameworks on top of which applications are developed and deployed, provide extended interfaces. Modern web and mobile platforms use Inter-Process Communication (IPC) for privilege separation and compartmentalisation between apps and between apps and the operating system instead of allowing direct access to resources. Access control mechanisms on calling processes are used to protect IPC interfaces.
 
-**16.2.5.3 The Security Policy**
+#### 16.2.5.3 The Security Policy
 
 In conventional computer systems, a process can have different privilege levels. It can run as the superuser, as a system service, with user-level privileges or with guest privileges[^16-4]. All processes that share the same privilege level have the same set of permissions and can access the same resources.
 
 Modern mobile and web platforms make a clear distinction between system and third-party applications: access to security- and privacy-critical resources is only granted to designated processes and third-party applications have, by default, no access to critical resources. If such access is required, application developers must request permissions from a set commonly available to all third-party applications. Most permissions allow developers to use designated system processes as deputies to access protected sensitive resources. Those system processes serve as reference monitors and enforce access control policies.
 
-**16.2.5.4 Different Permission Approaches**
+#### 16.2.5.4 Different Permission Approaches
 
 Mobile and web platforms implement distinct permission approaches. First, platforms distinguish different privilege levels. A common distinction is two levels (e.g., as implemented on Android): normal (e.g., access to the Internet) and dangerous permissions (e.g., access to the camera or microphone). While application developers have to request both normal and dangerous permissions to grant their applications access to the respective resources, the levels differ for application users. Normal permissions are granted silently without any application user interaction. However, whenever applications require dangerous permissions, the underlying mobile or web platform presents users with permission dialogues. While earlier Android versions showed users a list of all the necessary permissions of an application at install time, modern mobile platforms and browsers present permission dialogues at run-time. A permission dialog usually is shown the first time an application requests access to the corresponding resource. Application users can then either grant or deny the application access to the resource. Modern permission-based access control systems allow greater flexibility and control for both developers and users.
 
@@ -363,7 +363,7 @@ Using HTTPS does protect the content against attackers but does not preserve met
 
 Authentication in the web and on mobile platforms is an important security mechanism designed to enable human users to assert their identity to web applications, mobile devices or mobile apps. Authentication goes hand in hand with authorisation which describes the specification of access privileges to resources. The specified access privileges are later on used to grant or deny access to resources for authenticated users. This section will not give a detailed overview of authentication and authorisation concepts (cf. the Authentication, Authorisation & Accountability Knowledge Area (Chapter 14)) but will focus on authentication mechanisms and technologies relevant for web and mobile platforms.
 
-**16.2.7.1 HTTP Authentication**
+#### 16.2.7.1 HTTP Authentication
 
 <figure id="figure-16-5">
 
@@ -395,7 +395,7 @@ Basic HTTP authentication \[<a href="#ref-1504" aria-label="Reference 1504">1504
 
 Form-based HTTP authentication in which websites use a form to collect login credentials is a widely prevalent form of authentication in modern web and mobile applications. For this scheme, an unauthenticated client trying to access restricted content is shown an HTML-based web form that prompts for their credentials. The client then submits the entered credentials to the sever (e. g., in a POST request). The server validates the form data and authenticates the client on successful validation. Similar to Basic authentication, Form-based authentication exposes user credentials in plain text if not protected by HTTPS.
 
-**16.2.7.2 Mobile Device Authentication**
+#### 16.2.7.2 Mobile Device Authentication
 
 Mobile devices deploy a variety of authentication mechanisms to unlock devices, grant users access, and protect their data from illegitimate access. The most common mechanisms for mobile device authentication are passwords, PINs \[Personal Identification Number\], patterns and biometric features.
 
@@ -442,11 +442,11 @@ Passwords are the most widely deployed mechanism to let users authenticate to we
 
 Online service providers deploy various countermeasures to address security issues with weak passwords and password re-use:
 
-**16.2.9.1 Password Policies**
+#### 16.2.9.1 Password Policies
 
 Password policies are rule sets to encourage users to choose stronger passwords. Some password policies also address the memorability issue. To support stronger passwords, most rules address password length and composition, blacklists and the validity period of a password \[<a href="#ref-1511" aria-label="Reference 1511">1511</a>, <a href="#ref-1512" aria-label="Reference 1512">1512</a>\].
 
-**16.2.9.2 Password Strength Meters**
+#### 16.2.9.2 Password Strength Meters
 
 Password Strength Meters (PSMs) pursue the same goal as password policies and aim to encourage the choice of stronger passwords. PSMs typically provide visual feedback or assign passwords scores to express password strength (see [Figure 16.7](#figure-16-7)) \[<a href="#ref-1513" aria-label="Reference 1513">1513</a>\].
 
@@ -474,19 +474,19 @@ A screenshot of a password field with a strength meter below it.
 
 However, addressing weak passwords and password re-use by deploying restrictive policies or PSMs has only a limited effect on overall password security \[<a href="#ref-1514" aria-label="Reference 1514">1514</a>\]. Hence, service providers can use extensions to simple passwords to increase authentication security.
 
-**16.2.9.3 Password Managers**
+#### 16.2.9.3 Password Managers
 
 Password managers can help users generate, store and retrieve strong passwords. Strong passwords are generated and stored using secure random number generators and secure encryption. They come as locally installable applications, online services or local hardware devices. While they can help users use more diverse and stronger passwords, their effect on overall password security is limited due to usability issues \[<a href="#ref-1515" aria-label="Reference 1515">1515</a>\]. For a more detailed discussion please refer to the Human Factors Knowledge Area (Chapter 4).
 
-**16.2.9.4 Multi-Factor Authentication**
+#### 16.2.9.4 Multi-Factor Authentication
 
 Instead of requiring only one factor (e. g., a password), multi-factor authentication systems require users to present multiple factors during the authentication process \[<a href="#ref-1516" aria-label="Reference 1516">1516</a>\]. Website passwords are often complemented with a second factor for two-factor authentication (2FA). Most commonly, the second factor typically makes use of a mobile device. So in addition to a password, users need to have their device at hand to receive a one-time token to authenticate successfully. The European Payment Services Directive 2 (PSD2) requires 2FA for all online payment services in web and mobile environments (cf. the Authentication, Authorisation & Accountability Knowledge Area (Chapter 14)).
 
-**16.2.9.5 WebAuthn**
+#### 16.2.9.5 WebAuthn
 
 The WebAuthn (Web Authentication) \[<a href="#ref-1517" aria-label="Reference 1517">1517</a>\] web standard is a core component of the FIDO2 \[Fast IDentity Online 2\] project (cf. the Authentication, Authorisation & Accountability Knowledge Area (Chapter 14)) and aims to provide a standardised interface for user authentication for web-based applications using public-key cryptography. WebAuthn is supported by most modern web-browsers and mobile operating systems. It can be used in single-factor or multi-factor authentication mode. In multi-factor authentication mode PINs, passcodes, swipe-patterns or biometrics are supported.
 
-**16.2.9.6 OAuth**
+#### 16.2.9.6 OAuth
 
 While not an authentication mechanism itself (cf. the Authentication, Authorisation & Accountability Knowledge Area (Chapter 14)), Open Authorisation (OAuth) \[<a href="#ref-1413" aria-label="Reference 1413">1413</a>\] can be used for privacy-friendly authentication and authorisation for users against third-party web applications. OAuth uses secure tokens instead of requiring users to provide login credentials such as usernames and passwords. On behalf of their users, OAuth service providers provide access tokens that authorise specific account information to be shared with third-party applications. More recent successors of the OAuth protocol including OAuth 2 \[<a href="#ref-1413" aria-label="Reference 1413">1413</a>\] or OpenID Connect \[<a href="#ref-1518" aria-label="Reference 1518">1518</a>\] support federations (cf. the Authentication, Authorisation & Accountability Knowledge Area (Chapter 14)). Large providers of online services such as Google or Facebook can act as identity providers to authenticate users, thus helping users to reduce the number of login credentials and accounts. While such protocols aim to provide improved security, the correct and secure implementation of such complex protocols was shown to be error-prone and might allow malicious users to run impersonation attacks \[<a href="#ref-1519" aria-label="Reference 1519">1519</a>\].
 
@@ -512,7 +512,7 @@ This section covers attacks and their countermeasures with a focus on the client
 
 This section presents two prevalent issues that exploit user interface weaknesses of both web and mobile clients. Phishing and clickjacking rely on issues humans have with properly verifying URLs and the dynamic content of rendered HTML documents.
 
-**16.3.1.1 Phishing**
+#### 16.3.1.1 Phishing
 
 Phishing attacks are fraudulent attacks that aim to steal sensitive information, including login credentials and credit card numbers from victims \[<a href="#ref-1524" aria-label="Reference 1524">1524</a>\]. Common types of phishing attacks use email, websites or mobile devices to deceive victims. Attackers disguise themselves as trustworthy parties and send fake emails, show fake websites or send fake SMS or instant messages. Fake websites may look authentic. Attackers can use successfully stolen login credentials or credit card numbers to impersonate victims and access important online accounts. Successful phishing attacks may result in identity theft or loss of money.
 
@@ -528,7 +528,7 @@ Therefore, common countermeasures are anti-phishing training and public awarenes
 
 **Drive-by-download Attacks** Drive-by-download attacks happen when users visit a website, click on a link or on an attachment in a phishing email or on a malicious popup window. While being a general problem in the web, drive-by-downloads play a particular role in phishing attacks. Instead of visiting a benign website, drive-by-download attacks download and install malware (cf. the Malware & Attack Technologies Knowledge Area (Chapter 6)) on a user’s computer. Attackers need to fingerprint victim clients and exploit vulnerable software components on the client’s computer to plant the malware. Detecting such attacks is an active research area and includes approaches such as anomaly or signature based malware detection \[<a href="#ref-792" aria-label="Reference 792">792</a>\].
 
-**16.3.1.2 Clickjacking**
+#### 16.3.1.2 Clickjacking
 
 In a clickjacking attack, attackers manipulate the visual appearance of a website to trick users into clicking on a fake link, button, or image. Clickjacking is also known as a *user interface redress attack* and belongs to the class of confused deputy attacks \[<a href="#ref-1525" aria-label="Reference 1525">1525</a>\]. Attackers fool their victims using transparent or opaque layers over original websites. While victims believe they have clicked on the overlay element, the original website element is clicked on. Attackers can thus make their victims trigger arbitrary actions on the original website. The attack website uses an iFrame to load the target website and can make use of the absolute positioning features of iFrames for correct visual alignment. Thus, it is hard for victims to detect the attack elements over the original website. Clickjacking attacks are particularly dangerous when victims have already logged in to an online account and visit their account settings website. In those cases, an attacker can trick the victim into performing actions on a trusted site when the victim is already logged in. One of the most prominent clickjacking attacks hit the Adobe Flash plugin settings page \[<a href="#ref-1526" aria-label="Reference 1526">1526</a>\]. Attackers used invisible iFrames to trick their victims into changing the plugin’s security settings and permitting the attackers to access the microphone and camera of their victims’ machines.
 
@@ -544,7 +544,7 @@ Clickjacking attacks affect both desktop and mobile web browsers.
 
 Client-side storage refers to areas that a browser or operating system provides to websites or mobile applications to read and write information. Storage is local to the client and does not require server-side resources or an active Internet connection. At the same time, malicious users may manipulate stored information. Hence, client-side storage areas need to be protected from malicious access. This section describes common client-side storage areas and their protection mechanisms.
 
-**16.3.2.1 Client Side Storage in the Browser**
+#### 16.3.2.1 Client Side Storage in the Browser
 
 Historically, client-side browser storage was only used to store cookie information (see Section 16.2.8). However, due to their simple design and limited capacity, cookies cannot be used to store large or complex amounts of information. With the rise of HTML5, more powerful and feature-rich alternatives for client-side storage in the browser exist. These include WebStorage \[<a href="#ref-1529" aria-label="Reference 1529">1529</a>\], which is similar to cookies and stores key-value pairs, and IndexedDB \[<a href="#ref-1530" aria-label="Reference 1530">1530</a>\], which serves as a database in the vein of noSQL databases and can be used to store documents, other files and binary blobs.
 
@@ -552,7 +552,7 @@ As mentioned, the primary security issue with client-side storage mechanisms is 
 
 In addition to information integrity, a second important aspect of WebStorage and IndexedDB storage is that stored information is not automatically cleared after users leave a website. To store information in a session-like fashion, web application developers are advised to rely on the `sessionStorage` object of the WebStorage API \[<a href="#ref-1532" aria-label="Reference 1532">1532</a>\].
 
-**16.3.2.2 Client Side Storage in Mobile Applications**
+#### 16.3.2.2 Client Side Storage in Mobile Applications
 
 In mobile applications, handling client-side storage security also depends on the type of information and storage mechanism, e. g., private storage of an application or public storage such as an SD \[Secure Digital\] card. Most importantly, data should be digitally signed and verified (cf. the Cryptography Knowledge Area (Chapter 10)) for both browser and mobile client storage purposes. It is recommended that developers sign and encrypt sensitive information and apply proper user input sanitisation. This is particularly relevant for shared storage such as SD-cards that do not use secure access control mechanisms. Instead, proper access administration mechanisms are provided for storage areas that are private to an application.
 
@@ -562,11 +562,11 @@ In mobile applications, handling client-side storage security also depends on th
 
 Instead of attacking web or mobile applications’ code, physical attacks aim to exploit bugs and weak points that result from using a device. We focus on two representative examples below.
 
-**16.3.3.1 Smudge attacks**
+#### 16.3.3.1 Smudge attacks
 
 In a smudge attack, an attacker tries to learn passwords, PINs or unlock patterns entered on a touchscreen device. The main problem with entering sensitive unlock information through a touchscreen is the oily smudges that users’ fingers leave behind when unlocking a device. Using inexpensive cameras and image processing software, an attacker can recover the grease trails and infer unlock patterns, passwords, and PINs \[<a href="#ref-1533" aria-label="Reference 1533">1533</a>\]. To perform a smudge attack, an attacker needs a clear view of the target display.
 
-**16.3.3.2 Shoulder Surfing**
+#### 16.3.3.2 Shoulder Surfing
 
 Shoulder surfing is a physical attack where an attacker tries to obtain sensitive information such as passwords, PINs, unlock patterns, or credit card numbers \[<a href="#ref-1534" aria-label="Reference 1534">1534</a>\]. For a shoulder surfing attack, an attacker needs a clear view of the target display. The attacker can mount a shoulder surfing attack either directly by looking over the victim’s shoulder or from a longer range by using dedicated tools such as cameras or telescopes. Shoulder surfing attacks are particularly dangerous for mobile device users when authenticating to the device or online services in public spaces such as trains, railways, and airports.
 
@@ -582,7 +582,7 @@ Injection attacks occur whenever applications suffer from insufficient user inpu
 
 Injection vulnerabilities can be addressed by adequately sanitising attacker-controlled information and deploying proper access control policies. The goal of input sanitisation is to filter invalid and dangerous input. Additionally, strict access control policies can be implemented to prevent injected code from accessing or manipulating information \[<a href="#ref-1540" aria-label="Reference 1540">1540</a>\].
 
-**16.4.1.1 SQL-Injection**
+#### 16.4.1.1 SQL-Injection
 
 SQL-injection attacks refer to code injections into database queries issued to relational databases using the Structured Query Language (SQL). Many web and mobile applications allow users to enter information through forms or URL parameters. SQL injection occurs if such user input is not filtered correctly for escape characters and then used to build SQL statements. Enabling attackers to modify SQL statements can result in malicious access or manipulation of information stored in the database.
 
@@ -604,7 +604,7 @@ The consequences of the above SQL injection vulnerability might be directly visi
 
 One way to mitigate SQL injection attacks is with the use of prepared statements \[<a href="#ref-1542" aria-label="Reference 1542">1542</a>, <a href="#ref-1543" aria-label="Reference 1543">1543</a>\]. Instead of embedding user input into raw SQL statements (see above), prepared statements use placeholder [^16-8] variables to process user input. Placeholder variables are limited to store values of a given type and prohibit the input of arbitrary SQL code fragments. SQL injections attacks would result in invalid parameter values in most cases and not work as intended by an attacker. Also, prepared statements are supported by many web application development frameworks at the coding level using Object Relational Mapping (ORM) interfaces. ORMs do not require developers to write SQL queries themselves but generate database statements from code. While prepared statements are an effective mitigation mechanism, a further straightforward way is to escape characters in user input that have a special meaning in SQL statements. However, this approach is error-prone, and many applications that apply some form of SQL escaping are still vulnerable to SQL injection attacks. The reasons for the mistakes are often incomplete lists of characters that require escaping. When escaping is used, developers should rely on functions provided by web application development frameworks (e. g. the `mysqli_real_escape_string()` function in PHP) instead of implementing their own escaping functionality.
 
-**16.4.1.2 Command Injections**
+#### 16.4.1.2 Command Injections
 
 This type of injection attack affects vulnerable applications that can be exploited to execute arbitrary commands on the host operating system of a web application \[<a href="#ref-1550" aria-label="Reference 1550">1550</a>\]. Similar to SQL injection attacks, command injections are mostly possible due to insufficient user input validation. Vulnerable commands usually run with the same privileges as the host application.
 
@@ -612,7 +612,7 @@ An example of a command injection attack is a web application that converts user
 
 A mitigation for command injection attacks is to construct the command strings, including all parameters in a safe way that does not allow attackers to exploit malicious string input. In addition to proper input validation due to escaping, following the principle of least-privilege and restricting the privileges of system commands and the calling application is recommended. The number of callable system commands should be limited by using string literals instead of raw user-supplied strings. In order to further increase security, regular code reviews are recommended, and vulnerability databases (e. g., the CVE \[Common Vulnerabilities and Exposures\] \[<a href="#ref-1544" aria-label="Reference 1544">1544</a>\] database) should be monitored for new vulnerabilities. Finally, if possible, executing system commands should be avoided altogether. Instead, the use of API calls in the respective development framework is recommended.
 
-**16.4.1.3 User Uploaded Files**
+#### 16.4.1.3 User Uploaded Files
 
 Files provided by users such as images or PDFs \[Portable Document Format\] have to be handled with care. Malicious files trigger unwanted command execution on the host operating system of the server, overload the host system, trigger client-side attacks, or deface vulnerable applications \[<a href="#ref-1477" aria-label="Reference 1477">1477</a>\].
 
@@ -622,13 +622,13 @@ To prevent attacks through user-uploaded files, both meta-data including file na
 
 Files that are only available for download and should not be displayed inline in the browser, can be tagged with a `Content-Disposition` HTTP response header \[<a href="#ref-1545" aria-label="Reference 1545">1545</a>\]. Another successful mitigation for the above issue is to serve files from a different domain. If the domain is not a subdomain of the original domain, the SOP 16.2.4.2 prevents cookies and other critical information from being accessible to the malicious file. Additionally, JavaScript and HTML files are protected by the SOP as well.
 
-**16.4.1.4 Local File Inclusion**
+#### 16.4.1.4 Local File Inclusion
 
 This type of vulnerability is a particular form of the above command injection or user-uploaded files vulnerabilities \[<a href="#ref-1477" aria-label="Reference 1477">1477</a>\]. For example, attackers can exploit a command injection, use a malformed path in a database or a manipulated filename. The file path resulting from one of these vulnerabilities can be crafted to point to a local file on the server, e. g., a `.htaccess` or the `/etc/shadow` file. A vulnerable web application might then access the maliciously crafted file path and instead of loading a benign file, read and send the content of the attacker-chosen file and e. g. leak login credentials in the `/etc/shadow` file.
 
 In addition to sanitisation of file path parameters such as leading `/` and `..` in user input, the application of the least privilege principle is recommended. A web application should be executed with minimal privileges and so that it cannot access sensitive files.
 
-**16.4.1.5 Cross-Site Scripting (XSS)**
+#### 16.4.1.5 Cross-Site Scripting (XSS)
 
 Cross-Site Scripting (XSS) \[<a href="#ref-1546" aria-label="Reference 1546">1546</a>\] attacks are injection vulnerabilities that allow attackers to inject malicious scripts (e. g., JavaScript) into benign websites. They can occur whenever malicious website users are able to submit client scripts to web applications that redistribute the malicious code to other end-users. Common examples of websites that are vulnerable to XSS attacks are message forums that receive user content and show it to other users. The primary root cause for XSS vulnerabilities is web applications that do not deploy effective input validation mechanisms. Untrusted and non-validated user-provided data might contain client-side scripts. Without proper user input validation, a malicious JavaScript previously provided by one user, might be distributed to other users and manipulate the website they are visiting or steal sensitive information. In an XSS attack, the client browser cannot detect the malicious code, since it is sent from the original remote host, i. e. *same-origin-policy* based security measures are ineffective. We distinguish two types of XSS attacks:
 
@@ -640,7 +640,7 @@ Preventing both types of XSS attacks requires rigorous user input validation and
 
 Since eliminating XSS vulnerabilities entirely due to user input sanitization is hard, different approaches are discussed in the literature. A promising approach is the randomisation of HTML tags and attributes. Web applications randomise their order so clients can distinguish between benign and trusted content and potentially untrusted malicious content. As long as an attacker does not know the randomisation mapping, clients can successfully distinguish trusted from untrusted scripts \[<a href="#ref-1551" aria-label="Reference 1551">1551</a>\].
 
-**16.4.1.6 Cross-Site Request Forgery**
+#### 16.4.1.6 Cross-Site Request Forgery
 
 Cross Site Request Forgery (CSRF) \[<a href="#ref-1547" aria-label="Reference 1547">1547</a>\] attacks mislead victims into submitting malicious HTTP requests to remote servers. The malicious request is executed on behalf of the user and inherits their identity and permissions. CSRF attacks are so dangerous because most requests to remote servers include credentials and session information associated with a user’s identity, including session cookies. Authenticated users are particularly attractive victims for attackers since it can be hard for remote servers to distinguish between benign and malicious requests as long as they are submitted from the victim’s machine. CSRF attacks do not easily allow attackers to access the server response for the malicious request. Therefore, the main goal of a CSRF attack is to trick victims into submitting state-changing requests to remote servers. Attractive targets are requests that change the victim’s credentials or purchase something.
 
@@ -658,11 +658,11 @@ A single insecure component is often enough to allow an attacker access to the w
 
 As previously discussed, the principle of least privilege can reduce a web application’s attack surface tremendously. Proper firewall and load balancer configurations serve as examples:
 
-**16.4.2.1 Firewall**
+#### 16.4.2.1 Firewall
 
 To protect a webserver, a firewall should be configured to only allow access from outside where access is needed. Access should be limited to ports like 80 and 443 for HTTP requests via the Internet and restricting system configuration ports for SSH \[Secure Shell\] and alike to the internal network (cf. the Network Security Knowledge Area (Chapter 19)).
 
-**16.4.2.2 Load Balancers**
+#### 16.4.2.2 Load Balancers
 
 A load balancer is a widely deployed component in many web applications. Load balancers control HTTP traffic between servers and clients and provide additional access control for web application resources. They can be used to direct requests and responses to different web servers or ports, balance traffic load between multiple web servers and protect areas of a website with additional access control mechanisms. The most common approach for controlling access is the use of `.htaccess` files. They can restrict access to content on the original web server and instruct load balancers to require additional authentication.
 
@@ -672,7 +672,7 @@ Additionally, load balancers can be used to provide secure TLS connections for w
 
 **HTTPS Misconfigurations** One cornerstone of web and mobile security is the correct and secure configuration of HTTPS on web servers. However, Holz et al. \[<a href="#ref-1552" aria-label="Reference 1552">1552</a>\] found that a significant number of popular websites deploy invalid certificates with incomplete certificate chains, issued for the wrong hostname or expired lifetime. In a similar study Fahl et al. \[<a href="#ref-1553" aria-label="Reference 1553">1553</a>\] confirmed these findings and also asked website operators for the reasons for deploying invalid certificates. Most operators were not aware of using an invalid certificate or used one on purpose because they did not trust the web PKI. Krombholz et al. \[<a href="#ref-1554" aria-label="Reference 1554">1554</a>, <a href="#ref-1555" aria-label="Reference 1555">1555</a>\] conducted a set of studies and found that operators have difficulties with correctly configuring HTTPS, or they harbour misconceptions about the security features of HTTPS.
 
-**16.4.2.3 Databases**
+#### 16.4.2.3 Databases
 
 Similar to load balancers and firewalls, many web applications include databases to store user information permanently. Often, databases are operated as an additional service that is hosted on another server. The application server interacts with the database through libraries and APIs. It is important to prevent injection vulnerabilities on the server. Additionally, errors in the implementation of database libraries or coarse permissions required by the application can lead to vulnerabilities.
 

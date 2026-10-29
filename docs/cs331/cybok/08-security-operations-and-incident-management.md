@@ -238,7 +238,7 @@ Originally, to limit the CPU performance impact, operators often deploy Netflow 
 
 The networking infrastructure relies on many protocols for proper communication. Two of its main components, the naming and the routing infrastructure, are also of significant interest for both attacks and detection. Reporting on routing or naming operations requires direct access to a view of the infrastructure. Operators who participate in routing and naming usually rely on syslog to collect information.
 
-**8.2.3.1 Naming**
+#### 8.2.3.1 Naming
 
 The *Domain Name System* (DNS) is one of the most crucial services on the Internet. It resolves domain names, meaningful bits of text, to IP addresses required for network communications but which are difficult to remember. In addition, naming is required for the *Transport Layer Security* (TLS, RFC 8446) protocol and certain HTTP \[Hypertext Transfer Protocol\] mechanisms such as virtual hosting.
 
@@ -250,7 +250,7 @@ Another issue related to DNS is the detection of botnet activity. Once a malware
 
 Note that DNS is not the only protocol to be prone to DDoS amplification attacks. NTP \[Network Time Protocol\] is also a frequent culprit \[<a href="#ref-844" aria-label="Reference 844">844</a>\]. More information about DDoS attacks can be found in \[<a href="#ref-845" aria-label="Reference 845">845</a>\].
 
-**8.2.3.2 Routing**
+#### 8.2.3.2 Routing
 
 Another related source of information for attacks is routing information. Incidents in the border gateway protocol routing infrastructure have been studied for some time \[<a href="#ref-846" aria-label="Reference 846">846</a>, <a href="#ref-847" aria-label="Reference 847">847</a>\], but many of the recorded incidents are due to human error. There are recorded instances of malicious BGP hijacks \[<a href="#ref-848" aria-label="Reference 848">848</a>, <a href="#ref-849" aria-label="Reference 849">849</a>\], but the effort required by attackers to carry out these attacks seems, at this point in time, not be worth the gain.
 
@@ -260,13 +260,13 @@ Higher up the computing stack, application logs provide an event stream that doc
 
 Applications can share log files through the syslog infrastructure (section 8.2.6). For example, the *auth.log* log file will store user connection information regardless of the mechanism used (pam, ssh, etc.).
 
-**8.2.4.1 Web server logs**
+#### 8.2.4.1 Web server logs
 
 A frequent source of information is provided by web server and proxy logs, known as the *Common Log Format* (CLF) and *Extended Common Log Format* (ECLF). This format is a de-facto standard provided by the Apache web server and others. While it is very similar to Syslog, there are no standards documents normalising the format. At this stage, the W3C \[World Wide Web Consortium\] standard for logging remains a draft document. This format is extremely simple and easy to read. It provides information about the request (the resource that the client is trying to obtain) and the response of the server, as a code. Thus, it has been widely used in Intrusion Detection Systems over the years. The main issue with the format is the lack of information about the server, since the log file is local to the machine generating the log.
 
 As server logs are written once the request has been served by the server, the attack has already occurred when the sensor receives the log information. Thus, this information source does not satisfy the requirements of *Intrusion Detection and Prevention System*s (IDPS), which need to be hooked as interceptors to act on the data stream (packet stream, instruction stream), to block the request or modify its content.
 
-**8.2.4.2 Files and documents**
+#### 8.2.4.2 Files and documents
 
 Another source of application-level information that is particularly interesting and can be found both in transit (in networks) or at rest (in systems) comprises the documents produced by some of these applications. The introduction of rich document formats such as PDF \[Portable Document Format\], Flash or office suites, not to mention the rich HTML \[Hypertext Markup Language\] format used in mail exchanges today, has created a wealth of opportunity for attackers to include malware. Exchanged over the web or via email, they constitute another trace of exchange that can reveal malicious code embedded in these documents, such as macros or javascript.
 
@@ -371,7 +371,7 @@ However, pure statistical methods highlight anomalies that are hard to understan
 
 Anomaly detection was included in Denning’s model \[<a href="#ref-829" aria-label="Reference 829">829</a>\] from the start, and has consistently been developed over the years \[<a href="#ref-850" aria-label="Reference 850">850</a>, <a href="#ref-856" aria-label="Reference 856">856</a>, <a href="#ref-857" aria-label="Reference 857">857</a>\]. As the difficulty of creating attack signatures became more significant, IDPS vendors also included these models in their products.
 
-**8.3.2.1 Models**
+#### 8.3.2.1 Models
 
 Anomaly detection relies on the definition of a model against which the current observations of the trace are evaluated. Very early researchers proposed behaviour models to detect deviations from the norm. However, the statistical models developed in early IDS prototypes such as Haystack and NIDES were not accurate enough to detect skilled attackers. Therefore, more complex models have been developed over the years.
 
@@ -383,7 +383,7 @@ Graph-based models represent the structure of the network and of the communicati
 
 The choice of an anomaly model is extremely important. In fact, many publications related to anomaly detection are made in thematic venues such as statistics, signal processing or information fusion, outside of the cybersecurity domain. This field of study is thus extremely rich and fundamentally multi-disciplinary.
 
-**8.3.2.2 Specification versus learning**
+#### 8.3.2.2 Specification versus learning
 
 A prevalent form of anomaly detection is specification-based detection. An attack is considered to be a breach of the specification of a system. The key issue in this approach is to obtain a specification that can be reliably recognised in the traces. This approach was initially developed for network-based IDPS, such as Bro \[<a href="#ref-643" aria-label="Reference 643">643</a>\], which was developed at around the same time as Snort, but follows a radically different approach. Bro is built up as a stack of protocol analysers, checking at each layer the coherence of the captured information with the standards, in this case the RFCs.
 
@@ -391,7 +391,7 @@ Further development of specification-based detection is expected in industrial c
 
 Alternatively, supervised learning is used to create models when ground truth is available, or unsupervised learning to let models self organise. In both cases, it is frequently necessary to select a threshold that will separate data points considered normal from those considered outside of the model. The application of machine learning techniques for detection is further developed in section 8.3.4.
 
-**8.3.2.3 Adherence to use cases**
+#### 8.3.2.3 Adherence to use cases
 
 An important point on anomaly detection is its adherence to a use case, possibly even a specific deployment. Network anomaly detection has been broadly applied to TCP/IP networks initially, and has over the years focused on new applications, covering ad-hoc networks, sensor networks and, more recently, industrial control systems \[<a href="#ref-858" aria-label="Reference 858">858</a>\]. Malware anomaly detection has also evolved from personal computers to web malware to Android malware today \[<a href="#ref-859" aria-label="Reference 859">859</a>\].
 

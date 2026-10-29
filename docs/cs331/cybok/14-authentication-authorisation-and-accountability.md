@@ -18,7 +18,7 @@ ours, not the book's. So are the names of links the book prints as a bare web ad
 (Portable Document Format) is the original, so if the two disagree, the PDF wins.
 :::
 
-**Abstract**
+## Abstract
 
 Access control builds on authorisation and authentication. This KA \[Knowledge Area\][^14-1] will present the general foundations of access control and some significant instantiations that have emerged as IT \[information technology\] kept spreading into new application areas. It will survey modes of user authentication and the way they are currently deployed, authentication protocols for the web, noting how new use cases have led to a shift from authentication to authorisation protocols, and the formalisation of authentication properties as used in today’s protocol analysis tools. On accountability, the focus is on the management and protection of audit logs. The surveillance of logs to detect attacks or inappropriate behaviour is described in the Security Operations & Incident Management Knowledge Area (Chapter 8) while the examination of evidence following a breach of policy or attack is covered in the Forensics Knowledge Area (Chapter 9). Throughout the KA, we will flag technical terms that appear in more than one meaning in the academic and the trade literature.
 
@@ -70,7 +70,7 @@ Other systems, such as Windows, make a distinction between access rights and pri
 
 The *reference monitor* (more details in Section 14.3.2.2) is the component that decides on access requests according to the given policy.
 
-**14.3.1.2 Security Policies**
+#### 14.3.1.2 Security Policies
 
 Automated *security policies* are a collection of rules. The rules specify the access rights a principal has on an object. Conceptually, a policy could then be expressed as an *Access Control Matrix* with rows indexed by principals and columns indexed by objects \[<a href="#ref-1113" aria-label="Reference 1113">1113</a>\]. *Access Control Lists (ACLs)* stored with the objects correspond to the columns of this matrix; *capabilities* stored with principals correspond to the rows of this matrix (also see the Operating Systems & Virtualisation Security Knowledge Area (Chapter 11)).
 
@@ -78,7 +78,7 @@ Automated *security policies* are a collection of rules. The rules specify the a
 
 Mandatory access control policies label subjects and objects with *security levels*. The set of security levels is partially ordered, with a least upper bound and a greatest lower bound operator. The security levels thus form a *lattice*. In the literature, MAC may generically refer to policies mandated by the system as, e.g., in Security-Enhanced Linux (SELinux) \[<a href="#ref-1376" aria-label="Reference 1376">1376</a>, <a href="#ref-1377" aria-label="Reference 1377">1377</a>\] and in Security-Enhanced (SE) Android \[<a href="#ref-1378" aria-label="Reference 1378">1378</a>\], or to policies based on security levels as in past products such as Trusted Xenix or Trusted Oracle. Policies of the latter type are also known as *multi-level security policies* and as *lattice-based policies*.
 
-**14.3.1.3 Role-based Access Control**
+#### 14.3.1.3 Role-based Access Control
 
 In *Role-Based Access Control (RBAC)*, *roles* are an intermediate layer between users and the permissions to execute certain operations. Operations can be well-formed transactions with built-in integrity checks that mediate the access to objects. Users are assigned roles and are authorised to execute the operations linked to their active role. *Separation of Duties (SoD)* refers to policies that stop single users from becoming too powerful. Examples for SoD are rules stating that more than one user must be involved to complete some transaction, rules stating that a user permitted to perform one set of transactions is not permitted to perform some other set of transactions, the separation between front office and back office in financial trading firms is an example, or rules stating that policy administrators may not assign permissions to themselves. Static SoD rules are considered during user-role assignment, dynamic SoD must be enforced when a role is activated. The NIST \[National Institute of Standards and Technology\] RBAC model \[<a href="#ref-1371" aria-label="Reference 1371">1371</a>\] distinguishes between:
 
@@ -89,25 +89,25 @@ In *Role-Based Access Control (RBAC)*, *roles* are an intermediate layer between
 
 Many commercial systems support some flavour of role-based access control, without necessarily adhering to the formal specifications of RBAC published in the research literature. RBAC is an elegant and intuitive concept, but may become quite messy in deployment as suggested by comments in an empirical study on the use of RBAC \[<a href="#ref-1379" aria-label="Reference 1379">1379</a>\]. Practitioners note that RBAC works as long as every user has only one role, or that “the enormous effort required for designing the role structure and populating role data” constitutes an inhibitor for RBAC.
 
-**14.3.1.4 Attribute-based Access Control**
+#### 14.3.1.4 Attribute-based Access Control
 
 *Attribute-Based Access Control (ABAC)* is defined in \[<a href="#ref-1380" aria-label="Reference 1380">1380</a>\] as a *“logical access control methodology where authorisation to perform a set of operations is determined by evaluating attributes associated with the subject, object, requested operations, and, in some cases, environment conditions against policy, rules, or relationships that describe the allowable operations for a given set of attributes”*. This is a generic definition of access control that no longer reserves a special place to the user or to the user’s role, reflecting how the use of IT systems has changed over time.
 
 Access control may be performed in an application or in the infrastructure supporting the application. Access control in an infrastructure uses generic attributes and operations. The Linux access control system may serve as an example. Access control in an application uses application-specific attributes and operations. In this distinction, ABAC can be viewed as a synonym for application-level access control.
 
-**14.3.1.5 Code-based Access Control**
+#### 14.3.1.5 Code-based Access Control
 
 *Code-Based Access Control (CBAC)* assigns access rights to executables. Policies may refer to code origin, to code identity (e.g., the hash of an executable), or to other properties of the executable, rather than to the identity of the user who had launched the executable. Origin can subsume the domain the code was obtained from, the identity of the code signer, a specific name space (.NET had experimented with *strong names*, i.e. bare public keys serving as names for name spaces), and more. CBAC can be found in the Java security model \[<a href="#ref-1381" aria-label="Reference 1381">1381</a>\] and in Microsoft’s .NET architecture \[<a href="#ref-1382" aria-label="Reference 1382">1382</a>\].
 
 The reference monitor in CBAC typically performs a *stack walk* to check that all callers have been granted the required access rights. The stack walk addresses the *confused deputy problem* \[<a href="#ref-1383" aria-label="Reference 1383">1383</a>\], where an unprivileged attacker manipulates a system via calls to privileged code (the confused deputy). Controlled invocation is implemented through *assert* statements; a stack walk for an access right will stop at a caller that asserts this right.
 
-**14.3.1.6 Mobile Security**
+#### 14.3.1.6 Mobile Security
 
 Smartphones typically have a single owner, hold private user data, offer communication functions ranging from cell phone to NFC \[Near-Field Communication\], can observe their surroundings via camera and microphone, and can determine their location, e.g., via GPS \[Global Positioning System\]. On smartphones, apps are the principals for access control. The objects of access control are the sensitive data stored on a phone and the sensitive device functions on a phone.
 
 Access control on a smartphone addresses the privacy requirements of the owner and the integrity requirements of the platform. Android, for example, divides permission groups into normal, dangerous, and signature permissions. Normal permissions do not raise privacy or platform integrity concerns; apps do not need approval when asserting such permissions. Dangerous permissions can impact privacy and need user approval. Up to Android 6.0, users had to decide whether to authorise a requested permission when installing an app. User studies showed that permissions were authorised too freely due to a general lack of understanding and risk awareness, see e.g. \[<a href="#ref-1384" aria-label="Reference 1384">1384</a>\]. Since Android 6.0, users are asked to authorise a permission when it is first needed. Signature permissions have an impact on platform integrity and can only be used by apps authorised by the platform provider; app and permission have to be signed by the same private key. For further details see the Web & Mobile Security Knowledge Area (Chapter 16).
 
-**14.3.1.7 Digital Rights Management**
+#### 14.3.1.7 Digital Rights Management
 
 *Digital Rights Management (DRM)* has its origin in the entertainment sector. Uncontrolled copying of digital content such as games, movies or music would seriously impair the business models of content producers and distributors. These parties hence have an interest in controlling how their content can be accessed and used on their customers’ devices. Policies can regulate the number of times content can be accessed, how long content can be sampled for free, the number of devices it can be accessed from, or the pricing of content access.
 
@@ -119,7 +119,7 @@ The level of tamper resistance required depends on the anticipated threats. Trus
 
 For a brief period, it was fashionable to use Digital Rights Management as the generic term subsuming ‘traditional’ access control as a special case.
 
-**14.3.1.8 Usage Control**
+#### 14.3.1.8 Usage Control
 
 *Usage Control (UCON)* was proposed as a framework encompassing authorisations based on the attributes of subject and object, *obligations*, and *conditions* \[<a href="#ref-1370" aria-label="Reference 1370">1370</a>\]. In \[<a href="#ref-1370" aria-label="Reference 1370">1370</a>\], obligations are additional actions a user has to perform to be granted access, e.g., clicking on a link to agree to the terms of use. In today’s use of the term, obligations may also be actions the system has to perform, e.g., logging an access request. Such actions may have to be performed before, during or after an access happens. Conditions are aspects independent of subject and object, e.g., time of day when a policy permits access only during office hours or the location of the machine access is requested from. Examples for the latter are policies permitting certain requests only when issued from the system console, giving access only from machines in the local network, or policies that consider the country attributed to the IP \[Internet Protocol\] address a request comes from. Many concepts from UCON have been adopted in the XACML \[eXtensible Access Control Markup Language\] 3.0 standard \[<a href="#ref-1389" aria-label="Reference 1389">1389</a>\].
 
@@ -134,7 +134,7 @@ To enforce a security policy, this policy first has to be set. For a given reque
 - Policy Information Points that can be queried for further inputs to the decision algorithm,
 - Policy Enforcement Points that execute the decision.
 
-**14.3.2.1 Delegation and Revocation**
+#### 14.3.2.1 Delegation and Revocation
 
 *Delegation* and *granting* of access rights both refer to situations where a principal, or a subject, gets an access right from someone else. The research literature does not have firm definitions for those terms, and the trade literature even less so. Granting tends to be used in a generic sense; *granted access rights* often refer to the current access rights of a subject that delivers a request to a reference monitor. Delegation is sometimes, but not always, used more narrowly for granting short-lived access rights during the execution of a process. For example, XACML distinguishes between *policy administration* and *dynamic delegation* that *“permits some users to create policies of limited duration to delegate certain capabilities to others”* \[<a href="#ref-1390" aria-label="Reference 1390">1390</a>\].
 
@@ -142,7 +142,7 @@ A second possible distinction lets delegation refer only to the granting of acce
 
 Rights may not always be granted in perpetuity. The grantor may set an expiry date on the delegation, a right may be valid only for the current session, or there may be a *revocation* mechanism such as the Online Certificate Status Protocol (OCSP) for X.509 certificates (see Section 14.4.1). OCSP is supported by all major browsers. Revocation lists are suitable when online checks are not feasible and when it is known in advance where a granted right may be consumed.
 
-**14.3.2.2 Reference Monitor**
+#### 14.3.2.2 Reference Monitor
 
 <figure id="figure-14-1">
 
@@ -175,7 +175,7 @@ However, *authorisation* also stands for the process of setting a security polic
 
 The *decision algorithm* executed by the reference monitor has to identify the applicable policies and rules, and try to collect the evidence those rules refer to from *Policy Information Points*. For situations where more than one rule is applicable for a given request, *rule combining algorithms* specify the final decision.
 
-**14.3.2.3 Types of Reference Monitors**
+#### 14.3.2.3 Types of Reference Monitors
 
 Schneider describes three types of reference monitors \[<a href="#ref-1372" aria-label="Reference 1372">1372</a>\]:
 
@@ -185,7 +185,7 @@ Schneider describes three types of reference monitors \[<a href="#ref-1372" aria
 
 ### 14.3.3 Theory {#_14-3-3-theory}
 
-**14.3.3.1 Security Models**
+#### 14.3.3.1 Security Models
 
 Security models are high-level specifications of systems intended to enforce certain security policies. Such models can be used in a formal security analysis to show that a lower-level specification faithfully implements the model.
 
@@ -197,11 +197,11 @@ The Clark-Wilson model \[<a href="#ref-1393" aria-label="Reference 1393">1393</a
 
 The Harrison, Ruzzo, and Ullman model (HRU) \[<a href="#ref-1395" aria-label="Reference 1395">1395</a>\] provides a context for examining a core question in policy management: is it possible to decide whether an access right may *leak* to a subject through some sequence of commands? This problem is undecidable in general, but may be decidable under certain restrictions.
 
-**14.3.3.2 Enforceable Policies**
+#### 14.3.3.2 Enforceable Policies
 
 Schneider has examined the relationship between different kinds of and different kinds of reference monitors \[<a href="#ref-1372" aria-label="Reference 1372">1372</a>\]. Security policies are defined as predicates over execution traces, taking a broader view than Section 14.3.1.2 where rules applied to individual access operations. Policies that only consider the given execution trace are called *properties*. Information flow policies that require an execution trace to be indistinguishable from some benign execution trace are thus not properties. It is shown that only *safety properties* can be enforced by execution monitors (see Section 14.3.2.3).
 
-**14.3.3.3 Access Control Logics**
+#### 14.3.3.3 Access Control Logics
 
 Access control and delegation logics \[<a href="#ref-1396" aria-label="Reference 1396">1396</a>\] specify calculi for reasoning about composite principals in distributed systems. The calculus for in distributed systems \[<a href="#ref-1397" aria-label="Reference 1397">1397</a>\] was developed as a formal specification for parts of the Digital Distributed Systems Security Architecture. In such an architecture, cryptographically secured sessions can be established between parties. For example, when a session is established with a principal on some other machine, the session key can be treated as a subject for access control that *speaks for* that principal.
 
@@ -233,13 +233,13 @@ The prototype policy for web applications is the *Same-Origin Policy (SOP)*, sta
 
 Sender Policy Framework (SPF) \[<a href="#ref-1403" aria-label="Reference 1403">1403</a>\] implements origin-based access control in the email system as a measure against spoofing the sending domain of an email. Domain owners publish SPF policies in their DNS \[Domain Name System\] zone. An SMTP \[Simple Mail Transfer Protocol\] server can then use the domain part of the MAIL FROM identity to look up the policy and consult this policy to check whether the IP address of the SMTP client is authorised to send mail from that domain.
 
-**14.4.2.1 Cross-site Scripting**
+#### 14.4.2.1 Cross-site Scripting
 
 Cross-site scripting attacks on web applications can be treated as cases of failed authentication in access control. The browser lets all scripts that arrive in a web page speak for the origin of that page. A browser would then run a script injected by the attacker in the context of an origin other than the attacker’s. Content Security Policy (CSP) refines SOP-based access control. The web server conveys a policy to the browser that characterises the scripts authorised to speak for that server \[<a href="#ref-1400" aria-label="Reference 1400">1400</a>\]. Typically, this is done by specifying a directory path on the web server where authorised scripts (and other web elements) will be placed.
 
 The use of CSP in practice has been examined in \[<a href="#ref-1404" aria-label="Reference 1404">1404</a>\], observing that the `unsafe-inline` directive disabling CSP for all pages from a given domain was widely used. This is a familiar policy management issue. A new security mechanism is deployed but quickly disabled because it interferes too much with established practices. Moreover, CSP had an inherent vulnerability related to *callbacks*. Callbacks are names of scripts passed as arguments to other (authorised) scripts, but arguments are not covered by CSP. In *strict* CSP policies, the server declares a nonce in the CSP policy it sends to the client as the script source. The server also includes this nonce as an attribute in all scripts fetched by the client. The client’s browser only accepts scripts that contain this nonce as an attribute. Nonces must only be used once and must be unpredictable.
 
-**14.4.2.2 Cross-origin Resource Sharing**
+#### 14.4.2.2 Cross-origin Resource Sharing
 
 When *mashups* of web applications became popular, this exposed another limitation of the same origin policy: there was no built-in mechanism for specifying exceptions to the SOP. Mashup designers initially had to find ways of circumventing the SOP enforced by the browsers. The Cross-Origin Resource Sharing (CORS) protocol was then introduced to support policies for sharing resources cross-origin \[<a href="#ref-1405" aria-label="Reference 1405">1405</a>\]. When a script requests a connection to a target other than its own origin, the browser asks the target to authorise the connection request. The decision at the target considers evidence supplied by the browser, such as the origin of the script or user credentials associated with the request.
 
@@ -257,7 +257,7 @@ When organisations join to form a federated security domain, the import of ident
 
 Access control mechanisms in an operating system implement a logical defence. Access requests passed via the reference monitor will be policed. This includes requests for direct memory access. However, data are stored in the clear and a party with physical access to the storage medium can retrieve the data and thus bypass logical access control. When solutions for the protection of unclassified but sensitive data were evaluated in the U.S. in the 1970s, it was decided that encrypting the data was the best way forward. Access control would then be applied to the keys needed to unlock the data.
 
-**14.4.4.1 Attribute-Based Encryption**
+#### 14.4.4.1 Attribute-Based Encryption
 
 Cloud computing has raised the interest in access control on encrypted data over the past decade. Storing data in encrypted form protects their confidentiality but creates a key management challenge. *Attribute-Based Encryption (ABE)* addresses this challenge by constructing encryption schemes that enforce attribute-based decryption policies. Policies are logical predicates over attributes, represented as access structures. The Key Generator is a Trusted Third Party that generates private keys and has to check a user’s policy / attributes before issuing a private key. The Key Generator is thus in a position to recreate private keys.
 
@@ -265,7 +265,7 @@ Key-Policy Attribute-Based Encryption (KP-ABE) works with policies that define a
 
 A study of the feasibility of ABE in realistic dynamic settings had concluded that the overheads incurred by those schemes were still prohibitive \[<a href="#ref-1407" aria-label="Reference 1407">1407</a>\]. Efficient encryption and decryption do not necessarily imply an efficient access control system.
 
-**14.4.4.2 Key-centric Access Control**
+#### 14.4.4.2 Key-centric Access Control
 
 In distributed systems, access requests may be digitally signed. Access rights could then be granted directly to the public verification key without the need to bind the public key to some other principal. SPKI/SDSI uses authorisation certificates for implementing key centric access control, where (names of) public keys are bound to access rights \[<a href="#ref-1408" aria-label="Reference 1408">1408</a>\]. The right to further delegate an access right is controlled by a delegation flag.
 
@@ -299,7 +299,7 @@ User authentication can also support accountability, as further elaborated in Se
 
 There are access control systems where the security attributes of a subject persist throughout the lifetime of that subject. Many operating systems adopt this approach. Policy changes do not affect active processes, but the lifetime of subjects is limited, which limits the period when the new policy is not applied consistently. Alternatively, the attributes of a subject are checked each time it issues a request. For example, a user already logged in to a banking application is authenticated again when requesting a funds transfer. When the focus moves from the subject to individual requests, authentication can be viewed as the service that checks the validity of the security attributes submitted with the request to the decision algorithm.
 
-**14.5.2.1 Passwords**
+#### 14.5.2.1 Passwords
 
 When passwords are employed for user authentication, protective measures at the system side include the storing of hashed (Unix, Linux) or encrypted (Windows) passwords, the salting of passwords, and shadow password files that move sensitive data out of world-readable password files. Protective measures at the user side include guidance on the proper choice and handling of passwords, and security awareness programs that try to instil behaviour that assures the link between a person and a principal. Recommendations in this area are changing. The Digital Identity Guidelines published by NIST build on assessments of the observed effectiveness of previous password rules and reflect the fact that users today have to manage passwords for multiple accounts \[<a href="#ref-1414" aria-label="Reference 1414">1414</a>\]. The new recommendations advise
 
@@ -310,7 +310,7 @@ When passwords are employed for user authentication, protective measures at the 
 
 Password-based protocols for remote authentication are RADIUS \[Remote Authentication Dial-In User Service\], DIAMETER (both covered in the Network Security Knowledge Area (Chapter 19)), HTTP Digest Authentication, and to some extent Kerberos (Section 14.5.3.2). Password guidance is further discussed in the Human Factors Knowledge Area (Chapter 4).
 
-**14.5.2.2 Biometrics for Authentication**
+#### 14.5.2.2 Biometrics for Authentication
 
 Numerous well-rehearsed arguments explain why passwords work poorly in practice. Biometrics are an alternative that avoids the cognitive load attached to password-based authentication. Fingerprint and face recognition are the two main methods deployed for biometric user authentication, known as *verification* in that domain.
 
@@ -330,7 +330,7 @@ User authentication, known as *verification* in biometrics, starts from a *templ
 
 Biometric authentication based on face recognition or fingerprints is used increasingly at automated border control gates \[<a href="#ref-1417" aria-label="Reference 1417">1417</a>\]. It has also become a feature on mobile devices, see e.g. \[<a href="#ref-1418" aria-label="Reference 1418">1418</a>\]. A survey of the current state-of-the-art approaches to biometric authentication is given in \[<a href="#ref-1419" aria-label="Reference 1419">1419</a>\].
 
-**14.5.2.3 Authentication Tokens**
+#### 14.5.2.3 Authentication Tokens
 
 Authentication by password relies on “something you know”. Biometric authentication builds on “who you are”. In a further alternative, users are issued with a device (a.k.a. *token* or *security key*, not to be confused with a cryptographic key) that computes a OTP \[One-Time Password\] synchronised with the authenticator, or a response to a challenge set by the authenticator. Possession of the device is then necessary for successful authentication, which is thus based on “something you have”.
 
@@ -342,7 +342,7 @@ In some applications, possession of the token is sufficient for user authenticat
 
 Apps on smartphones can provide the same functionality as authentication tokens, but smartphones are not dedicated security devices. User authentication may then be compromised via attacks on the smartphone. This may become even easier when smartphones come with a secondary authentication mechanism for use when a device is partially locked, with a less onerous but also less secure authentication ceremony. This creates a conflict between the interests of smartphone manufacturers who value ease-of-use of a communications device, and the interests of the providers of sensitive applications searching for a security token.
 
-**14.5.2.4 Behavioural Authentication**
+#### 14.5.2.4 Behavioural Authentication
 
 Behavioural authentication analyses “what you do”, lending itself naturally to *continuous authentication*. Keystroke dynamics \[<a href="#ref-1420" aria-label="Reference 1420">1420</a>, <a href="#ref-1421" aria-label="Reference 1421">1421</a>\] can be captured without dedicated equipment. Characteristic features of hand writing are writing speed and pen pressure \[<a href="#ref-1422" aria-label="Reference 1422">1422</a>\]. Here, special pens or writing pads need to be deployed. Voice recognition needs a microphone. Smartphones come with various sensors such as touch screens and microphones that are being utilised for behavioural authentication today. The requirements on behavioural authentication are the same as those listed in Section 14.5.2.2:
 
@@ -353,7 +353,7 @@ Behavioural authentication analyses “what you do”, lending itself naturally 
 
 Advocates of continuous authentication promise *minimum friction, maximum security*. Behavioural authentication does not inconvenience the user with authentication ceremonies, but variations in user behaviour may cause false rejects. For example, how will a severe cold affect voice recognition? There needs to be a smooth fall-back when behavioural authentication fails. Security depends on the strength of liveness detection. For example, will voice recognition detect synthesised speech or a very proficient human voice imitator? Without a precise threat model, behavioural authentication can only offer uncertain security guarantees. There is a growing research literature on different modes of behavioural authentication. Criteria for assessing the actual contributions of this research include sample size and composition, whether longitudinal studies have been performed, the existence of an explicit threat model and resistance to targeted impersonation attempts.
 
-**14.5.2.5 Two-factor Authentication 2FA**
+#### 14.5.2.5 Two-factor Authentication 2FA
 
 Multi-factor authentication combines several user authentication methods for increased security. The European Payment Services Directive 2 (PSD2, Directive (EU) 2015/2366), written for the regulation of financial service providers, prescribes 2FA for online payments (with a few exceptions). PSD2 thus is a case study on rolling out large scale 2FA solutions.
 
@@ -367,11 +367,11 @@ In contrast to the European Trust Services and Electronic identification regulat
 
 When methods for user authentication in distributed systems were first designed, an authenticated *session* took the place of a process speaking for the user. Authenticated sessions were constructed on the basis of cryptographic keys. In the terminology of Section 14.3.1, those session keys became the subjects of access control, and *key establishment* became a core feature of the user authentication process.
 
-**14.5.3.1 Needham-Schroeder Protocol**
+#### 14.5.3.1 Needham-Schroeder Protocol
 
 The Needham-Schroeder protocol is a key establishment protocol that employs an authentication server as an intermediary between a client and a server \[<a href="#ref-1410" aria-label="Reference 1410">1410</a>\]. Client and server share secret keys with the authentication server respectively. Nonces, values that are used only once, are used as a defence against replay attacks. The client does not have to share individual long term secrets with all servers it wants to access, it needs just one shared secret with the authentication server. The authentication server issues a session key to client and server, and has to be trusted to properly authenticate the client and the server.
 
-**14.5.3.2 Kerberos**
+#### 14.5.3.2 Kerberos
 
 The Kerberos protocol \[<a href="#ref-1411" aria-label="Reference 1411">1411</a>\] adapted the Needham-Schroeder protocol for user authentication at the MIT campus. Most major operating systems have since adopted (variations of) Kerberos for user authentication.
 
@@ -403,7 +403,7 @@ Messages, in order:
 
 :::
 
-**14.5.3.3 SAML**
+#### 14.5.3.3 SAML
 
 The Security Assertion Markup Language (SAML) v2.0 defines meta-protocols for authentication in web services \[<a href="#ref-1412" aria-label="Reference 1412">1412</a>\]. Meta-protocols specify high-level message flows that can be bound to various underlying protocols such as Kerberos. Applications that use SAML for authentication then need not be aware of the underlying protocol used. Many cloud service providers, e.g., AWS \[Amazon Web Services\], Azure, IBM, are using SAML for user authentication via a browser.
 
@@ -467,7 +467,7 @@ SAML was introduced as a meta-protocol to isolate web services from underlying a
 
 In the practical deployment of SAML, parsing XML documents – the price to be paid for employing a meta-protocol – can create non-trivial overheads and can introduce security vulnerabilities. Furthermore, the advent of smartphones has made it easier to access the internet from mobile user devices, removing one of the reasons for introducing a meta-protocol between web services and the underlying IT systems.
 
-**14.5.3.4 OAuth 2 – OpenID Connect**
+#### 14.5.3.4 OAuth 2 – OpenID Connect
 
 Newer protocols such as OAuth 2.0 \[<a href="#ref-1413" aria-label="Reference 1413">1413</a>\] and OpenID Connect \[<a href="#ref-1423" aria-label="Reference 1423">1423</a>\] run directly over HTTP and provide authentication and authorisation. The parties involved include a user who owns resources, the resource owner, a resource server that stores the user’s resources, a so-called client application that wants to be granted access to those resources, and an Authorisation Server (AS) that can authenticate users and client applications.
 
@@ -519,13 +519,13 @@ User authentication, whether relating to a local system or to a remote system, e
 
 To differentiate between these aspects, the term *key establishment* was introduced in communication security towards the end of the 1980s for the first aspect. *Entity authentication* stood for what was left. Quoting ISO/IEC 9798, *“entity authentication mechanisms allow the verification, of an entity’s claimed identity, by another entity. The authenticity of the entity can be ascertained only for the instance of the authentication exchange”*. This property is related to *dead peer detection* and to the *heartbeat extension* in RFC \[Request For Comments\] 6250 \[<a href="#ref-1426" aria-label="Reference 1426">1426</a>\]. Note that this definition does not distinguish between internal and external entities.
 
-**14.5.4.1 Patterns for Entity Authentication**
+#### 14.5.4.1 Patterns for Entity Authentication
 
 Entity authentication according to the definition in ISO/IEC 9798 can be implemented with challenge response-mechanisms. When *prover* and *verifier* share a secret, the verifier sends an unpredictable challenge to the prover who constructs its response as a function of the challenge and the shared secret. For example, HTTP digest authentication uses the hash of the challenge, a password, and further data that binds authentication to a particular HTTP request.
 
 When public key cryptography is used, the verifier needs the prover’s public key. With a digital signature scheme, the verifier could send the challenge in the clear and the prover could respond with the signed challenge. With a public key encryption scheme, the verifier could encrypt the challenge under the prover’s public key; a response constructed from the decrypted challenge would authenticate the prover. The latter mechanism is used with Trusted Platform Modules (TPMs) where successful decryption of data encrypted under the public endorsement key of a TPM authenticates the TPM. In both cases, the verifier needs an authentic copy of the prover’s public verification key. When users are identified by arbitrary public keys, no Public Key Infrastructure is required and the public key could be set directly in a registration phase.
 
-**14.5.4.2 Correspondence Properties**
+#### 14.5.4.2 Correspondence Properties
 
 The Public-Key Needham-Schroeder protocol uses public key encryption with its challenge-response mechanism \[<a href="#ref-1410" aria-label="Reference 1410">1410</a>\]. In this protocol, a malicious prover could decrypt a challenge and reuse it in a protocol run with a third party pretending to be the original verifier; the third party would then respond to the verifier although the verifier is not engaged in a protocol run with the third party \[<a href="#ref-1209" aria-label="Reference 1209">1209</a>\]. This scenario would amount to an attack if the mismatch in the assumptions about a protocol run is security relevant. The attack would be detected if the identities of prover and verifier are included in all messages. Note that in this ‘attack’ the verifier still correctly concludes that the prover is alive.
 
@@ -540,7 +540,7 @@ In the vulnerable Redirect/POST Binding in Google Applications there is no agree
 
 Correspondence properties are *intensional* properties well suited for protocol analysis using model checking. This line of research had reversed the earlier decision to separate pure entity authentication from agreeing on session keys and again added agreement on certain data items to authentication. TAMARIN \[<a href="#ref-1238" aria-label="Reference 1238">1238</a>\] and ProVerif \[<a href="#ref-1428" aria-label="Reference 1428">1428</a>\] are examples for tools that support the automated analysis of authentication protocols.
 
-**14.5.4.3 Authentication as Verified Association**
+#### 14.5.4.3 Authentication as Verified Association
 
 Returning to a holistic view on authentication, one could use this as a general term for mechanisms that create a new subject and associate it with evidence relevant for access decisions. If this route is taken, verifying the identity of a user becomes just a special case of authentication.
 
@@ -548,7 +548,7 @@ There would, furthermore, be merit in distinguishing between association with in
 
 For example, access control in distributed systems may make use of public key cryptography (Section 14.4.4.2). Public keys can then be interpreted as subjects for the purpose of access control. The checks performed by a certificate authority before it issues a certificate would then amount to authentication of an external entity.
 
-**14.5.4.4 Authentication for Credit or for Responsibility**
+#### 14.5.4.4 Authentication for Credit or for Responsibility
 
 Authentication may serve the purpose of giving *credit* to an entity for actions it has performed, or of establishing which entity is *responsible* for an action \[<a href="#ref-1429" aria-label="Reference 1429">1429</a>\]. In the first case, an attack amounts to earning undeserved credits and authentication is broken if the attacker succeeds in making a victim perform actions under the attacker’s identity. In the second case, an attack amounts to deflecting responsibility to someone else and authentication is broken if the attacker succeeds in performing actions under the victim’s identity.
 
@@ -568,11 +568,11 @@ Accountability supports processes that are launched after events have occurred. 
 
 The aforementioned processes make use of logs of events. Such logs may be kept by the operating system, by networking devices, or by applications (Section 14.6.2 will give an example). The nature of the events depends on the activity that is being monitored.
 
-**14.6.1.1 Audit Policies**
+#### 14.6.1.1 Audit Policies
 
 Accountability is only as strong as the quality of evidence collected during operations. System administrators may set audit policies that define which events will be logged. Examples for such events are successful and failed authentication attempts, and decisions on sensitive access requests. Operating systems and audit tools provide menus to guide administrators through this task. Access control policies that specify as obligations that certain requests must be logged also influence which evidence is collected.
 
-**14.6.1.2 Preserving the Evidence**
+#### 14.6.1.2 Preserving the Evidence
 
 Accountability is only as strong as the protection of the evidence collected during operations. Attackers could try to hide their traces by deleting incriminating log entries once they have acquired sufficient privileges. They could then modify audit policies so that future actions are not recorded, but should not be able to tamper with the evidence already collected.
 
@@ -580,11 +580,11 @@ Tamper resistance could rely on physical measures like printing the log on an en
 
 Audit policies have to address situations where logging is disrupted, e.g., because the log file has run out of space. Is it then acceptable to overwrite old entries or should the system be stopped until proper auditing is again enabled? This conflict between availability and accountability has to be resolved.
 
-**14.6.1.3 Analysing the Evidence**
+#### 14.6.1.3 Analysing the Evidence
 
 Audit logs can create large volumes of data and many entries are not security relevant so that automated processing is required. Known attack patterns can be detected by their signatures. Machine learning techniques can help to detect anomalies. Lessons learned when applying this approach to network intrusion detection are discussed in \[<a href="#ref-1434" aria-label="Reference 1434">1434</a>\]. Visualisation techniques try to draw the administrators’ attention to the most relevant events.
 
-**14.6.1.4 Assessing the Evidence**
+#### 14.6.1.4 Assessing the Evidence
 
 Accountability is only as strong as the method of user authentication when legal or disciplinary actions are to be supported. This relates to technical aspects of the authentication mechanism and also to user resilience to phishing and social engineering attacks. Telling users not to fall for obvious phishing attacks is easy, but a well-designed spear phishing attack will not be obvious.
 

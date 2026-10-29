@@ -104,7 +104,7 @@ From a practical point of view, making security tasks fit or usable means establ
 
 We now examine each of these in turn, and how they apply to designing a usable security mechanism.
 
-**4.2.1.1 General human capabilities and limitations**
+#### 4.2.1.1 General human capabilities and limitations
 
 There are general capabilities and limitations – physical and mental – that apply to most humans. Giving humans a task that exceeds their capabilities means we set them up to fail. When the demand they face is borderline, most humans make an effort to meet it. But this will come at a significant cost, which may ultimately prove to be unsustainable.
 
@@ -140,7 +140,7 @@ We have, so far, discussed the capabilities and limitations that apply to most p
 
 ***CAPTCHAs*** Some work on Completely Automated Public Turing test to tell Computers and Humans Aparts (CAPTCHAs) has investigated supporting users with sensory impairments, e.g., \[<a href="#ref-366" aria-label="Reference 366">366</a>\]. However, one needs to bear in mind that CAPTCHAs add more effort for the legitimate user, impeding the achievement of the intended goal, i.e., access. The usability limitations of these mechanisms that aim to ‘verify’ legitimate human users – and their contribution to security fatigue – must be considered \[<a href="#ref-367" aria-label="Reference 367">367</a>, <a href="#ref-368" aria-label="Reference 368">368</a>\].
 
-**4.2.1.2 Goals and tasks**
+#### 4.2.1.2 Goals and tasks
 
 Human behaviour is essentially goal-driven. People perform tasks to achieve goals, at work: ‘I want to get this quotation to our customer today’, or in their personal life: ‘I want to get the best utility deal for us’. To achieve these goals, people complete a series of tasks. To prepare a quotation, these would include working out the materials required and their cost, the person-hours required and their cost, the relevant fees, taxes etc. If a task has several steps or units, it can be decomposed into sub-tasks. For instance, working out the person-hours required on a job can be broken down into the following tasks:
 
@@ -185,7 +185,7 @@ As we have already discussed, people are hardwired to protect their productivity
 
 Security is not the only enabling task employees face. Others include: safety, sustainability, diversity training, various regulatory regimes and so on, leading to *Compliance Fatigue*. Beautement et al. \[<a href="#ref-370" aria-label="Reference 370">370</a>\], recommend that security specialists have an open and honest discussion with line managers and business leaders about the time and budget available for enabling activities, and how much of it is available for security versus other enabling functions. Once that is known, the workload of the security tasks can be calculated and priorities identified – which security behaviours really matter for the key risks a particular group of employees face – and security tasks streamlined. Making security mechanisms smarter and less ‘all or nothing’ can also help reduce compliance fatigue. For instance, allowing authentication with an old password, or having ‘break the glass’ policies that allow but flag access by users who do not have permission reduces the likelihood of task disruption. And if users know they have access to efficient security recovery and support services, it will reduce the need for workarounds.
 
-**4.2.1.3 Interaction Context**
+#### 4.2.1.3 Interaction Context
 
 **Contextual Inquiry** In modern work organisations, staff can work in many parts of the world, and in many different physical and social environments. It can be quite a challenge for a security expert to identify all the factors that could impact security and usability. Many usability professionals follow an approach called Contextual Inquiry \[<a href="#ref-372" aria-label="Reference 372">372</a>\]:
 
@@ -206,7 +206,7 @@ The social context in which people find themselves strongly influences behaviour
 
 Other aspects need to be considered in order to understand how security beliefs, norms and coping strategies are shaped. For instance, users often get their knowledge from their wider social networks and these are also a source of support and help when they face usability challenges \[<a href="#ref-375" aria-label="Reference 375">375</a>, <a href="#ref-376" aria-label="Reference 376">376</a>\].
 
-**4.2.1.4 Capabilities and limitations of the device**
+#### 4.2.1.4 Capabilities and limitations of the device
 
 We have already discussed that the physical characteristics of a device may make interaction with security mechanisms difficult in certain circumstances. Some characteristics of the device can result in security mechanisms becoming difficult to use in any circumstance. Entering long and complex passwords on soft keyboards on a mobile phone takes far longer and is more error-prone than on a regular keyboard \[<a href="#ref-377" aria-label="Reference 377">377</a>\]. And while with frequent use on a keyboard, most people can become quite proficient at entering a complex password, performance does not improve when humans hit a basic limitation. What is particularly worrying from a security point of view is that (without colluding) a user population starts to converge on a small number of passwords that are easiest to enter with the minimum amount of toggles, which makes guessing a valid password easier for attackers \[<a href="#ref-378" aria-label="Reference 378">378</a>\].
 

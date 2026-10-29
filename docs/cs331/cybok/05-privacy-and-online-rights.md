@@ -52,7 +52,7 @@ In a technical re-interpretation of the ‘right to be let alone’ \[<a href="#
 
 We now describe two approaches to minimise the amount of exposed information. We first present methods that provably prevent unauthorised access to information, typically based on the use of advanced cryptographic primitives to ensure that no data can be inferred. Second, we present disclosure control methods, which relax the Confidentiality definition to ensure that the information leaked to the adversary is limited to a certain amount, or is not linkable to an individual person.
 
-**5.1.1.1 Cryptography-based access control**
+#### 5.1.1.1 Cryptography-based access control
 
 A first flavour of Confidentiality-oriented privacy technologies focus on protecting the *data* through the use of cryptography. These technologies mainly consider two adversary models: one where the recipient is considered trusted and the data have to be protected while in transit, and one in which the recipient is not trusted and the data must be kept private even when it is processed.
 
@@ -98,7 +98,7 @@ There exist several implementations of ABCs \[<a href="#ref-474" aria-label="Ref
 
 More recent privacy-preserving payment schemes, like the blockchain-based Zerocash \[<a href="#ref-476" aria-label="Reference 476">476</a>, <a href="#ref-477" aria-label="Reference 477">477</a>\] system, include more information in the transactions to provide better guarantees. In each transaction, the user proves, in zero knowledge, that she owns the e-coins input to the transaction; that each one of the input e-coins was either recently mined (minted in Zerocash terms) or was the output of a previous transaction; and that the input and output values of the transaction are the same, i.e., no money would be lost. For the sake of efficiency, Zerocash relies on particularly efficient zero-knowledge proofs called zero-knowledge Succinct Non-interactive ARguments of Knowledge (ZK-SNARK) systems \[<a href="#ref-478" aria-label="Reference 478">478</a>\]. These proofs are shorter (in the order of hundreds of bytes) and relatively fast to verify.
 
-**5.1.1.2 Obfuscation-based inference control**
+#### 5.1.1.2 Obfuscation-based inference control
 
 The protocols discussed in the previous section provide strong (cryptographic) guarantees regarding the Confidentiality of data. Such strong protection, however, comes at the cost of efficiency and flexibility. On one hand, privacy-preserving cryptographic primitives require significant resources in terms of computation and/or bandwidth. On the other hand, they narrow down the type of processing that can be done on data. This is inherent to cryptographic constructions that fix inputs and outputs, and strictly define what information will be available after the protocol is executed.
 
