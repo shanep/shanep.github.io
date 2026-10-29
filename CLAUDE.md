@@ -85,8 +85,8 @@ Two modules from the shell are shared the same way, from `shared/` at the repo r
   `never_publish = true`, which keeps it and its pages unpublished on every push, whatever the
   flags. The site excludes `**/instructor-resources/**`, so it never reaches the website.
 - `shared/course-resources/` holds the student pages of Course Resources. A course links it
-  the same way, adds `"course-resources/*.md"`, and declares the module with `publish = true`
-  so every push publishes it, alongside its own Instructor Information page.
+  the same way, adds `"course-resources/*.md"`, and lists them in its Course Resources module
+  alongside its own Instructor Information page.
 
 ## Google Drive
 
