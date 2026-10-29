@@ -17,6 +17,18 @@
 // With --canvas, axe and the link checks also run over every body in an
 // `edutools pull` snapshot, framed the way Canvas shows it.
 //
+// Every link in the page body, on the site and in Canvas, must also work:
+//   - a link to another page of the site or the course lands on a page that
+//     exists, and its #anchor names an id on that page
+//   - an outside URL answers when fetched (each one once, a few at a time per
+//     host). A 404, a 410 or a host that does not exist fails. A 403, a 5xx or
+//     a timeout is only listed, because many sites turn away scripts.
+//
+// Every page body, on the site and in Canvas, also gets the checks UDOIT (the
+// checker in Boise State's Canvas) runs: all-bold paragraphs, two links in a
+// row to one place, alt text over 150 characters, color with no font style,
+// and iframes. A page over 3000 words is listed but does not fail.
+//
 // --level aaa adds axe's wcag2aaa rules, raises the hand contrast check to
 // 7:1 (4.5:1 for large text), and checks what axe does not:
 //   - 2.4.12 and 2.4.13: the focused element is not under the sticky nav bar,
@@ -54,11 +66,11 @@ if (AAA) TAGS.push('wcag2aaa')
 // The site uses clean URLs, so /cs331/objectives is objectives.html on disk.
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml',
   '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2', '.json': 'application/json' }
+const distFile = (path) => [path, path + '.html', join(path, 'index.html')]
+  .map((p) => join(dist, p))
+  .find((f) => f.startsWith(dist) && existsSync(f) && statSync(f).isFile())
 const server = createServer((req, res) => {
-  const path = decodeURIComponent(new URL(req.url, 'http://x').pathname)
-  const file = [path, path + '.html', join(path, 'index.html')]
-    .map((p) => join(dist, p))
-    .find((f) => f.startsWith(dist) && existsSync(f) && statSync(f).isFile())
+  const file = distFile(decodeURIComponent(new URL(req.url, 'http://x').pathname))
   if (!file) { res.writeHead(404).end(); return }
   res.writeHead(200, { 'content-type': TYPES[extname(file)] ?? 'application/octet-stream' })
   res.end(readFileSync(file))
@@ -72,7 +84,7 @@ if (!pages.length) {
   process.exit(2)
 }
 
-const found = { axe: [], review: [], contrast: [], links: [], reflow: [], focus: [], canvas: [], targets: [], text: [] }
+const found = { axe: [], review: [], contrast: [], links: [], reflow: [], focus: [], canvas: [], targets: [], text: [], broken: [], brokenCanvas: [], unreachable: [], udoit: [], long: [] }
 const nodes = (v) => v.nodes.map((n) => ({ target: n.target.join(' '), html: n.html.slice(0, 200), summary: n.failureSummary }))
 
 // Contrast of every text node inside each selector, against the first opaque
@@ -199,6 +211,168 @@ function textSpacing() {
   return out
 }
 
+// What UDOIT, the accessibility checker in Boise State's Canvas, reports on one
+// container, written to match its rules (phpAlly plus Canvas's own):
+//   - a paragraph whose whole text is one bold, underlined or font run reads as
+//     a heading made of style ("Styles might be used instead of semantic markup")
+//   - two links in a row to the same place, with only text between ("Adjacent links")
+//   - alt text over 150 characters
+//   - inline color or background color on a p, div, span or font whose text sets no
+//     font style or weight and is not wrapped in emphasis ("color alone")
+//   - an iframe, which UDOIT cannot look inside
+//   - more than 3000 words, which UDOIT only suggests splitting, so it is a warning
+function udoitProblems(scope) {
+  const root = document.querySelector(scope)
+  if (!root) return { problems: [], words: 0 }
+  const out = []
+  const snip = (e) => e.outerHTML.slice(0, 160)
+  // The bold meta line at the top ("Week 7 · 38 points") stays bold on the site,
+  // and edutools unbolds it on the way to Canvas, so it is not a problem here.
+  const meta = root.querySelector('p')
+  for (const p of root.querySelectorAll('p')) {
+    if (['TD', 'TH'].includes(p.parentElement?.tagName)) continue
+    if (p === meta && /^(Week|Finals week|January|February|March|April|May)\b/.test(p.textContent.trim())) continue
+    const c = p.firstChild
+    const text = p.textContent.trim()
+    if (text && c?.nodeType === 1 && ['STRONG', 'B', 'U', 'FONT'].includes(c.tagName) && c.textContent.trim() === text) out.push({ id: 'bold-paragraph', help: 'a paragraph that is all bold reads as a heading made of style', html: snip(p) })
+    else if (text && /font-weight\s*:\s*(bold|[6-9]00)/.test(p.getAttribute('style') ?? '')) out.push({ id: 'bold-paragraph', help: 'a paragraph that is all bold reads as a heading made of style', html: snip(p) })
+  }
+  for (const a of root.querySelectorAll('a[href]')) {
+    const n = a.nextElementSibling
+    if (n?.tagName === 'A' && n.getAttribute('href') === a.getAttribute('href')) out.push({ id: 'adjacent-links', help: 'two links in a row go to the same place', html: snip(a) + snip(n) })
+  }
+  for (const img of root.querySelectorAll('img[alt]')) {
+    if (img.alt.length > 150) out.push({ id: 'alt-too-long', help: `alt text is ${img.alt.length} characters, over 150`, html: img.alt.slice(0, 160) })
+  }
+  const emphasis = ['B', 'STRONG', 'EM', 'I', 'SMALL', 'SUP', 'SUB', 'A']
+  for (const e of root.querySelectorAll('p, div, span, font')) {
+    const style = e.getAttribute('style') ?? ''
+    const text = e.textContent.trim()
+    if (!text || !/(^|;)\s*(background-)?color\s*:/.test(style) || /font-(weight|style)\s*:/.test(style)) continue
+    const only = e.children.length === 1 && e.children[0].textContent.trim() === text ? e.children[0] : null
+    if (only && emphasis.includes(only.tagName)) continue
+    out.push({ id: 'color-alone', help: 'colored text with no font style of its own reads as color carrying meaning', html: snip(e) })
+  }
+  for (const f of root.querySelectorAll('iframe')) out.push({ id: 'iframe', help: 'an embedded frame the checker cannot look inside', html: snip(f) })
+  return { problems: out, words: (root.textContent.match(/[A-Za-z'-]+/g) ?? []).length }
+}
+
+// Every link inside one container, as written and as the browser resolves it.
+function bodyLinks(scope) {
+  return [...document.querySelectorAll(`${scope} a[href]`)].map((a) => ({ raw: a.getAttribute('href'), href: a.href }))
+}
+
+// The ids a fragment can land on, read from the HTML as served.
+const ENTITIES = { amp: '&', quot: '"', apos: "'", lt: '<', gt: '>', '#39': "'" }
+const idsOf = (html) => new Set([...html.matchAll(/\s(?:id|name)="([^"]*)"/g)]
+  .map((m) => m[1].replace(/&(amp|quot|apos|lt|gt|#39);/g, (_, e) => ENTITIES[e])))
+const fragment = (href) => {
+  const hash = href.split('#')[1]
+  if (!hash) return ''
+  try { return decodeURIComponent(hash) } catch { return hash }
+}
+
+// Outside URLs, each with the site pages and Canvas bodies that link to it, to
+// fetch once at the end.
+const external = new Map()
+const linkOut = (url, rel, canvas = false) => {
+  const from = external.get(url) ?? { site: new Set(), canvas: new Set() }
+  from[canvas ? 'canvas' : 'site'].add(rel)
+  external.set(url, from)
+}
+
+const siteIds = new Map()
+function checkSiteLink(rel, { raw, href }) {
+  if (href.startsWith(base)) {
+    const url = new URL(href)
+    const file = distFile(decodeURIComponent(url.pathname))
+    if (!file) { found.broken.push({ page: rel, problem: 'no such page', href: raw }); return }
+    const id = fragment(href)
+    if (!id || !file.endsWith('.html')) return
+    if (!siteIds.has(file)) siteIds.set(file, idsOf(readFileSync(file, 'utf-8')))
+    if (!siteIds.get(file).has(id)) found.broken.push({ page: rel, problem: 'no such anchor', href: raw })
+  } else if (/^https?:/.test(href) && !/^https?:\/\/[^/]*instructure/.test(href)) linkOut(href.split('#')[0], rel)
+}
+
+// A link inside the course must land on a body in the snapshot, or a file it
+// lists, and its #anchor on an id in that body. Links to other courses and the
+// rest of Canvas need a session, so they are not checked.
+const SNAPSHOT_DIRS = { assignments: 'assignments', discussion_topics: 'discussions', quizzes: 'quizzes' }
+function checkCanvasLinks(snap, links) {
+  const course = String(JSON.parse(readFileSync(join(snap, 'course.json'), 'utf-8')).id)
+  const fileIds = new Set(JSON.parse(readFileSync(join(snap, 'files.json'), 'utf-8')).map((f) => String(f.id)))
+  const ids = new Map()
+  const idsIn = (rel) => {
+    if (!ids.has(rel)) ids.set(rel, idsOf(readFileSync(join(snap, rel), 'utf-8')))
+    return ids.get(rel)
+  }
+  const bodyFor = (kind, key) => {
+    if (kind === 'pages') return existsSync(join(snap, 'pages', `${key}.html`)) ? `pages/${key}.html` : null
+    if (kind === 'assignments' && key === 'syllabus') return 'syllabus.html'
+    return globSync(`${SNAPSHOT_DIRS[kind]}/${key}-*.html`, { cwd: snap })[0] ?? null
+  }
+  for (const { rel, raw } of links) {
+    const id = fragment(raw)
+    if (raw.startsWith('#')) {
+      if (id && !idsIn(rel).has(id)) found.brokenCanvas.push({ page: rel, problem: 'no such anchor', href: raw })
+      continue
+    }
+    const m = raw.match(/^(?:https?:\/\/[^/]+)?\/courses\/(\d+)\/([a-z_]+)\/([^/?#]+)/)
+    if (m) {
+      const [, inCourse, kind, key] = m
+      if (inCourse !== course) continue
+      if (kind === 'files') {
+        if (!fileIds.has(key)) found.brokenCanvas.push({ page: rel, problem: 'no such file', href: raw })
+        continue
+      }
+      if (kind !== 'pages' && !SNAPSHOT_DIRS[kind]) continue
+      const body = bodyFor(kind, decodeURIComponent(key))
+      if (!body) found.brokenCanvas.push({ page: rel, problem: 'no such Canvas object', href: raw })
+      else if (id && !idsIn(body).has(id)) found.brokenCanvas.push({ page: rel, problem: 'no such anchor', href: raw })
+    } else if (/^https?:/.test(raw) && !/^https?:\/\/[^/]*instructure/.test(raw)) linkOut(raw.split('#')[0], rel, true)
+  }
+}
+
+// Fetch each outside URL, a few at a time per host so no one site gets a
+// burst. GET, because many servers answer HEAD wrong.
+async function fetchExternal() {
+  const byHost = new Map()
+  for (const url of external.keys()) {
+    const host = new URL(url).host
+    byHost.set(host, [...(byHost.get(host) ?? []), url])
+  }
+  const status = async (url) => {
+    try {
+      const res = await fetch(url, {
+        redirect: 'follow', signal: AbortSignal.timeout(20000),
+        headers: { 'user-agent': 'Mozilla/5.0 (link check for shanepanter.com)', accept: 'text/html,*/*' },
+      })
+      await res.body?.cancel()
+      return { code: res.status }
+    } catch (e) {
+      const code = e.cause?.code ?? e.name
+      return { code, dead: ['ENOTFOUND', 'ECONNREFUSED', 'CERT_HAS_EXPIRED', 'ERR_TLS_CERT_ALTNAME_INVALID'].includes(code) }
+    }
+  }
+  const hosts = [...byHost.values()]
+  const worker = async () => {
+    for (let urls = hosts.shift(); urls; urls = hosts.shift()) {
+      for (let i = 0; i < urls.length; i += 4) {
+        await Promise.all(urls.slice(i, i + 4).map(async (url) => {
+          const r = await status(url)
+          if (typeof r.code === 'number' && r.code < 400) return
+          const from = external.get(url)
+          if (r.dead || r.code === 404 || r.code === 410) {
+            for (const page of from.site) found.broken.push({ page, problem: `outside link answers ${r.code}`, href: url })
+            for (const page of from.canvas) found.brokenCanvas.push({ page, problem: `outside link answers ${r.code}`, href: url })
+          } else found.unreachable.push({ url, status: r.code, pages: [...from.site, ...from.canvas].slice(0, 3) })
+        }))
+      }
+    }
+  }
+  await Promise.all(Array.from({ length: 16 }, worker))
+}
+
 const browser = await chromium.launch()
 
 for (const scheme of ['light', 'dark']) {
@@ -217,6 +391,10 @@ for (const scheme of ['light', 'dark']) {
     }
     if (scheme === 'light') {
       for (const l of await page.evaluate(linkProblems, ['.vp-doc', AAA])) found.links.push({ page: rel, ...l })
+      for (const l of await page.evaluate(bodyLinks, '.vp-doc')) checkSiteLink(rel, l)
+      const u = await page.evaluate(udoitProblems, '.vp-doc')
+      for (const p of u.problems) found.udoit.push({ page: rel, ...p })
+      if (u.words > 3000) found.long.push({ page: rel, words: u.words })
       if (AAA) {
         for (const t of await page.evaluate(smallTargets)) found.targets.push({ page: rel, ...t })
         for (const t of await page.evaluate(textSpacing)) found.text.push({ page: rel, ...t })
@@ -294,6 +472,7 @@ if (args.canvas) {
   bodies = globSync('{pages,assignments,discussions,quizzes}/*.html', { cwd: snap }).sort()
   if (existsSync(join(snap, 'syllabus.html'))) bodies.push('syllabus.html')
   const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;')
+  const canvasLinks = []
   const page = await (await browser.newContext()).newPage()
   // Canvas file URLs need a session. axe reads alt text whether or not the image loads.
   await page.route(/^https?:\/\//, (route) => route.abort())
@@ -311,8 +490,15 @@ if (args.canvas) {
     const r = await new AxeBuilder({ page }).withTags(TAGS).analyze()
     for (const v of r.violations) found.canvas.push({ page: rel, title, id: v.id, help: v.help, nodes: nodes(v) })
     for (const l of await page.evaluate(linkProblems, ['.user_content', AAA])) found.canvas.push({ page: rel, title, id: 'link-text', help: l.problem, nodes: [{ target: l.href, html: l.text }] })
+    for (const l of await page.evaluate(bodyLinks, '.user_content')) canvasLinks.push({ rel, ...l })
+    const u = await page.evaluate(udoitProblems, '.user_content')
+    for (const p of u.problems) found.canvas.push({ page: rel, title, id: p.id, help: p.help, nodes: [{ target: p.id, html: p.html }] })
+    if (u.words > 3000) found.long.push({ page: rel, canvas: true, words: u.words })
   }
+  checkCanvasLinks(snap, canvasLinks)
 }
+
+await fetchExternal()
 
 await browser.close()
 server.close()
@@ -321,16 +507,20 @@ const failures = {
   'axe violations (site)': found.axe.length,
   'contrast under the minimum, worked out by hand': found.contrast.length,
   'link text problems (site)': found.links.length,
+  'UDOIT problems (site)': found.udoit.length,
+  'broken links (site)': found.broken.length,
   'pages that do not reflow at 320 px': found.reflow.length,
   [AAA ? 'tab stops with a focus problem' : 'tab stops with no visible focus']: found.focus.length,
   ...(AAA ? { 'targets under 44 by 44 px': found.targets.length, 'text spacing and images of text': found.text.length } : {}),
-  ...(args.canvas ? { 'axe violations and link text problems (Canvas)': found.canvas.length } : {}),
+  ...(args.canvas ? { 'axe, UDOIT and link text problems (Canvas)': found.canvas.length, 'broken links (Canvas)': found.brokenCanvas.length } : {}),
 }
 console.log(`${args.course} (WCAG 2.2 ${AAA ? 'AAA' : 'AA'}): ${pages.length} site pages in light and dark mode${args.canvas ? `, ${bodies.length} Canvas bodies` : ''}`)
 for (const [what, n] of Object.entries(failures)) console.log(`  ${String(n).padStart(4)}  ${what}`)
 const reviewIds = [...new Set(found.review.map((r) => r.id))].join(', ')
 console.log(`  ${String(found.review.length).padStart(4)}  needs-review groups from axe (${reviewIds || 'none'}); contrast ones are checked above`)
-for (const list of [found.axe, found.contrast, found.links, found.reflow, found.focus, found.canvas, found.targets, found.text]) {
+console.log(`  ${String(found.long.length).padStart(4)}  pages over 3000 words, which UDOIT suggests splitting`)
+console.log(`  ${String(found.unreachable.length).padStart(4)}  of ${external.size} outside links turned the check away or timed out; open them by hand`)
+for (const list of [found.axe, found.contrast, found.links, found.udoit, found.broken, found.reflow, found.focus, found.canvas, found.brokenCanvas, found.targets, found.text, found.long, found.unreachable]) {
   for (const f of list.slice(0, 20)) console.log('  -', JSON.stringify(f).slice(0, 240))
 }
 if (args.out) writeFileSync(args.out, JSON.stringify({ course: args.course, level: args.level, pages: pages.length, canvasBodies: bodies.length, ...found }, null, 1) + '\n')

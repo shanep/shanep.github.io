@@ -1,7 +1,7 @@
 #!/bin/sh
-# Check one course against WCAG 2.2 AA. See check.mjs for what it checks. Every
-# run also checks the diagrams (see diagrams.mjs), and --diagrams checks only
-# them.
+# Check one course against WCAG 2.2 AA and the rules UDOIT runs in Canvas, and
+# that its links work. See check.mjs for what it checks. Every run also checks
+# the diagrams (see diagrams.mjs), and --diagrams checks only them.
 #
 # usage: npm run a11y -- --course cs331 [--canvas <snapshot dir>] [--out <file>]
 #        npm run diagrams [-- --shots <dir>]
