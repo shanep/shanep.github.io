@@ -30,7 +30,7 @@ numbers match the PDF, so a reading like §10.4 is the same section here.
 | 18 | [Applied Cryptography](18-applied-cryptography.md) |
 | 19 | [Network Security](19-network-security.md) |
 
-The rest of the book is in the [complete PDF](../docs/CyBOK_v1.2.0.pdf). If something here
+The rest of the book is in the [complete PDF](https://www.cybok.org/wp-content/uploads/CyBOK_v1.2.0.pdf). If something here
 doesn't match the PDF, the PDF wins, so let me know and I will fix the page.
 
 ## Where it comes from

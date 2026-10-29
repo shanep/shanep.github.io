@@ -35,8 +35,8 @@ everything you need.
 > [Open Government Licence v3.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/).
 
 CyBOK (Cyber Security Body of Knowledge) is a free, openly licensed reference written by the people who work in each area. The
-complete PDF (Portable Document Format) is in this course as [CyBOK v1.2.0 (PDF)](docs/CyBOK_v1.2.0.pdf) and in Canvas
-Files. You never have to go anywhere else to get a reading. Every chapter we use is also a web
+complete PDF (Portable Document Format) is free from the CyBOK website as [CyBOK v1.2.0 (PDF)](https://www.cybok.org/wp-content/uploads/CyBOK_v1.2.0.pdf).
+Every chapter we use is also a web
 page at [CyBOK Chapters](cybok/index.md), which works with a screen reader
 and reads better on a phone.
 
@@ -132,7 +132,7 @@ The schedule may be adjusted due to factors such as instructor availability, stu
 current events. Weeks run Monday through Sunday. Because the course is asynchronous, dates are
 release and due anchors rather than meeting times. Exact due dates are posted in Canvas.
 
-All readings marked § refer to [CyBOK v1.2.0](docs/CyBOK_v1.2.0.pdf); page numbers are the
+All readings marked § refer to [CyBOK v1.2.0](https://www.cybok.org/wp-content/uploads/CyBOK_v1.2.0.pdf); page numbers are the
 printed page numbers shown in the PDF's footers.
 
 | Week | Dates | Topic | Reading | Graded this week |

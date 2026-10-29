@@ -32,7 +32,7 @@ discussion board or email me now, in week 1, rather than in week 7 when a lab is
   you like. If you have never opened one, that is fine: every command you need is written out
   below.
 - A web browser.
-- Download [CyBOK v1.2.0 (PDF)](../docs/CyBOK_v1.2.0.pdf) from Canvas Files, or open it in the
+- Download [CyBOK v1.2.0 (PDF)](https://www.cybok.org/wp-content/uploads/CyBOK_v1.2.0.pdf) from the CyBOK website, or open it in the
   browser. It is a large file (about 21 megabytes); download it once and keep it.
 
 If you cannot get your own machine working, every step here works on the lab machines in CCP (City Center Plaza) 240,

@@ -6,14 +6,14 @@
       "kind": "assignment",
       "page_url": "",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T03:15:50.334Z",
         "canvas": {
-          "body": "06ba1793d26b072c",
+          "body": "5f388825c50c2ee7",
           "rubric": "af18394b1f17de08",
           "settings": "8a46562d6778b69f"
         },
         "repo": {
-          "body": "1430efd69df69def",
+          "body": "5bfbe5e4e21554a0",
           "rubric": "af18394b1f17de08",
           "settings": "8a46562d6778b69f"
         }
@@ -1290,13 +1290,13 @@
       "kind": "page",
       "page_url": "cybok-chapters",
       "synced": {
-        "at": "2026-10-29T01:26:29.025Z",
+        "at": "2026-10-29T03:15:50.334Z",
         "canvas": {
-          "body": "78885b3f7eb7aa7e",
+          "body": "4793b3d17364065e",
           "settings": "f5abd7b3e1072b83"
         },
         "repo": {
-          "body": "a6bac8e546afca50",
+          "body": "8e8edafcb926932c",
           "settings": "f5abd7b3e1072b83"
         }
       },
@@ -2007,12 +2007,12 @@
       "kind": "syllabus",
       "page_url": "",
       "synced": {
-        "at": "2026-10-29T00:34:33.278Z",
+        "at": "2026-10-29T03:15:50.334Z",
         "canvas": {
-          "body": "1d29fa6e245693e9"
+          "body": "7b9e1788756f6c86"
         },
         "repo": {
-          "body": "aee802db2e108d8f"
+          "body": "0caa2b590761aaea"
         }
       },
       "title": "CS 331: Computer Security and Information Assurance"
@@ -2113,13 +2113,13 @@
       "kind": "page",
       "page_url": "1-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T03:15:50.334Z",
         "canvas": {
-          "body": "d3bbf1ebcbaac758",
+          "body": "a83c2618e29cdd00",
           "settings": "4356d0fa8391aa85"
         },
         "repo": {
-          "body": "cec2bd66de4dfea7",
+          "body": "96c53beb4a4a379d",
           "settings": "4356d0fa8391aa85"
         }
       },
@@ -2743,13 +2743,13 @@
       "kind": "page",
       "page_url": "cs-331-readings-and-resources",
       "synced": {
-        "at": "2026-10-29T00:34:33.278Z",
+        "at": "2026-10-29T03:15:50.334Z",
         "canvas": {
-          "body": "3e57c3af70726d8f",
+          "body": "e6b0e32a3ac8288f",
           "settings": "bc6050918a06fe5d"
         },
         "repo": {
-          "body": "45e66d0fd768e924",
+          "body": "df307415c6d1d5a8",
           "settings": "bc6050918a06fe5d"
         }
       },

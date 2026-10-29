@@ -112,11 +112,6 @@ discussions = ["course-resources/course-questions.md"]
 # the only place VitePress serves them from; the entries under data/ are symlinks
 # to them, so the push finds the files inside the course directory, uploads them,
 # and rewrites each page's relative link to the Canvas file.
-#
-# The textbook is here too, and it is the one entry that is not a symlink. The
-# 21 MB PDF is committed with the course (.gitignore makes an exception for it
-# from the docs/*/docs/*.pdf rule), and this push is what delivers it to
-# students in Canvas.
 files = [
     "images/cs331-banner.svg",
     "images/me.jpg",
@@ -128,7 +123,6 @@ files = [
     "data/sqli_demo.py",
     "data/vuln.c",
     "data/web_access.log",
-    "docs/CyBOK_v1.2.0.pdf",
     "cybok/images/*",
 ]
 

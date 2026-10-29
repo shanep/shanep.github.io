@@ -4,7 +4,7 @@
 
 ## Key terms
 
-Adapted from the [CyBOK (Cyber Security Body of Knowledge) Glossary](../docs/CyBOK_v1.2.0.pdf) (printed page 989) and §1.3:
+Adapted from the [CyBOK (Cyber Security Body of Knowledge) Glossary](https://www.cybok.org/wp-content/uploads/CyBOK_v1.2.0.pdf) (printed page 989) and §1.3:
 
 | Term | Short form |
 | --- | --- |
