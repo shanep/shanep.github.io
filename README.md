@@ -39,8 +39,11 @@ docs/
 parts/                        # Markdown snippets included by many pages (syllabus policies, rubrics)
 shared/                       # Canvas modules shared by every course, linked in with symlinks
 scripts/
+├── a11y/                     # Accessibility and diagram checks (its own package)
+├── cs331/                    # Draws the CS331 banner
+├── cs425/                    # Renders the CS425 worksheets and answer keys to PDF
 ├── cv/                       # Builds the CV PDFs
-└── cs425/                    # Renders the CS425 worksheets and answer keys to PDF
+└── cybok/                    # Converts the CyBOK chapters to course pages
 ```
 
 ## Courses
