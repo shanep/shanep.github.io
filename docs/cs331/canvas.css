@@ -98,12 +98,10 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; co
 }
 
 /* "Select Next to continue", the bar that ends a Getting Started page. */
-/* A colored box of text reads to UDOIT as color carrying meaning unless the text
-   sets its own style. The color here is decoration, so say the style outright. */
+/* UDOIT reads colored text that is not bold or italic as color carrying meaning,
+   so the bar is a rule above plain text rather than a filled box. */
 .cs-next {
-  font-style: normal;
-  background-color: #0033A0;
-  color: #FFFFFF;
+  border-top: 3px solid #0033A0;
   padding: 8px 12px;
   text-align: right;
 }
@@ -128,15 +126,11 @@ td { border-bottom: 1px solid #E3E7EC; padding: 8px 12px; vertical-align: top; }
 
 /* --- the meta line: "February 8-14 · Estimated total: 6.5 hours" -------- */
 
-/* A colored box of text reads to UDOIT as color carrying meaning unless the text
-   sets its own style. The color here is decoration, so say the style outright. */
+/* No fill or text color, for the same UDOIT rule as .cs-next. The border marks it. */
 .cs-meta {
-  font-style: normal;
-  background-color: #F6F7F9;
   border-left: 5px solid #0033A0;
   padding: 10px 16px;
   margin-bottom: 24px;
-  color: #001F60;
 }
 
 /* --- callouts, from the ::: containers in the markdown ----------------- */

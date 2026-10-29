@@ -36,7 +36,8 @@ gets an accessible version.
 | External links that open a new tab without saying so | AAA | every external link | 0 |
 | Paragraphs closer than 1.5 lines apart | AAA | 7 | 0 |
 | Images of text | AAA | 1 (the home page banner) | 0 |
-| Problems UDOIT reports in Canvas (errors and suggestions) | | 398 | 0, plus the long CyBOK chapters (see below) |
+| Problems UDOIT reports in Canvas (errors and suggestions) | | 398, then 55 more | 0, plus the long CyBOK chapters (see below) |
+| Problems Ally reports in Canvas | | 20 | 0, plus 17 CyBOK figures (see below) |
 | Links that go nowhere (a missing page, anchor or a 404) | AA | 46 | 0 |
 | Assigned CyBOK chapters readable without the untagged PDF | AAA | 0 of 15 | 15 of 15 |
 
@@ -93,18 +94,24 @@ It builds the site, then runs:
 8. **Canvas**: the same axe rules and link checks on every body in a fresh
    `edutools pull` of course 52107, framed the way Canvas shows it (the item
    title as the page heading, Canvas's text color on white).
-9. **UDOIT**: Boise State's UDOIT tool in Canvas, scanned on October 28 with
+9. **UDOIT**: Boise State's UDOIT tool in Canvas, scanned on October 28 and 29 with
    its default filters off, so unpublished items count too. The check now runs
    the same rules on every website page and Canvas body, so a new problem fails
    the check before UDOIT ever sees it: a paragraph that is all bold, two links
-   in a row to the same place, alt text over 150 characters, colored text with
-   no font style of its own, and embedded frames.
+   in a row to the same place, alt text over 150 characters, colored text that
+   is not bold or italic, and embedded frames.
 10. **Links**: every link in a page body, on the website and in Canvas, has to
     land somewhere. A link inside the course has to reach a page that exists and
     an anchor on it, and an outside link fails on a 404 or a 410. An outside
     site that turns the check away, times out or does not resolve is listed to
     open by hand, since many sites refuse scripts and my network's DNS filter
     blocks a few live ones (petsymposium.org, suricata-ids.org, tsfdn.org).
+    A Canvas link into another course fails too, since Ally checks links without
+    a login.
+11. **Ally**: the Accessibility Report in Canvas, read on October 29. The check
+    now fails on the two kinds of Ally problem it can see: a link into another
+    course, and an SVG file that hides itself from screen readers. Ally's image
+    contrast rule reads the pixels of each image, which the check cannot copy.
 
 The last run, on October 29, 2026, printed the lines below. It covers the
 CyBOK pages on the website and in Canvas.
@@ -115,6 +122,7 @@ cs331 (WCAG 2.2 AAA): 84 site pages in light and dark mode, 94 Canvas bodies
      0  contrast under the minimum, worked out by hand
      0  link text problems (site)
      0  UDOIT problems (site)
+     0  SVG files Ally reads as having no description
      0  broken links (site)
      0  pages that do not reflow at 320 px
      0  tab stops with a focus problem
@@ -124,7 +132,7 @@ cs331 (WCAG 2.2 AAA): 84 site pages in light and dark mode, 94 Canvas bodies
      0  broken links (Canvas)
    350  needs-review groups from axe (color-contrast-enhanced, color-contrast, identical-links-same-purpose, th-has-data-cells); contrast ones are checked above
     32  pages over 3000 words, which UDOIT suggests splitting
-   294  of 1235 outside links turned the check away, timed out or did not resolve; open them by hand
+   303  of 1236 outside links turned the check away, timed out or did not resolve; open them by hand
 ```
 
 The Canvas check reads each body without Canvas's own stylesheet, so I also
@@ -284,6 +292,9 @@ the shell. Every one now sits behind descriptive link text.
 
 ## Known limitations
 
+- **Ally flags 17 CyBOK figures for image contrast.** The text in them is black
+  on light gray and easy to read, so I kept the book's figures as they are.
+
 - **The CyBOK v1.2.0 PDF is still not tagged.** It is published by the CyBOK
   project, not by me, so I left the file as it is. Every chapter the course
   assigns is now an accessible web page (see [CyBOK textbook](#cybok-textbook)).
@@ -322,8 +333,23 @@ CyBOK pages in Canvas. They are all fixed except the long chapters:
 | Adjacent links | 34 | A citation that repeats the one right before it is plain text |
 | Content too long | 16 | Not fixed, see below |
 | Alt text too long | 9 | Cut to 125 characters or fewer, with the full description still under "Text description" |
-| Color alone | 2 | The "Select Next to continue" bar and the meta line set their own font style |
+| Color alone | 2, then 55 | The "Select Next to continue" bar and the meta line have no fill or text color now, just a blue rule. My first fix set `font-style: normal` on them, and UDOIT's next scan flagged them on 55 items, since it only counts bold or italic as a style |
 | External content | 1 | The Google Doc on the instructor-only Learning Opportunities page is a link now |
+
+Ally's report on October 29 found 20 problems:
+
+| Ally issue | Count | Fix |
+| --- | --- | --- |
+| Broken links | 2 | The "How do I use the Dashboard?" guide moved, so Canvas Resources links to its new home. The instructor-only Learning Opportunities page linked a file in an eCampus course that only its members can open, so it links to the eCampus Faculty Development site instead |
+| Image with no description | 1 | The home page banner SVG hid itself from screen readers. It has a title now |
+| Image contrast | 17 | Not fixed, see below |
+
+The Dashboard link had moved for a while before Ally caught it. The Instructure
+Community turns away scripts, so the link check could only list it to open by
+hand.
+
+The 17 images Ally flags for contrast are CyBOK's own figures, black text on
+light gray fills, at about 13:1. I left them as the book publishes them.
 
 The 16 CyBOK chapters run from 7,000 to 37,000 words, and UDOIT suggests
 splitting any page over 3,000. I kept each chapter whole, because each one is a

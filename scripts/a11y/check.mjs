@@ -24,11 +24,15 @@
 //     host). A 404, a 410 or an expired certificate fails. A 403, a 5xx, a
 //     timeout or a host that does not resolve is only listed, because many sites
 //     turn away scripts and a network's DNS filter can block a live host.
+//   - a Canvas link stays in its own course, since Ally (the other checker in
+//     Boise State's Canvas) checks links without a login
 //
 // Every page body, on the site and in Canvas, also gets the checks UDOIT (the
 // checker in Boise State's Canvas) runs: all-bold paragraphs, two links in a
-// row to one place, alt text over 150 characters, color with no font style,
-// and iframes. A page over 3000 words is listed but does not fail.
+// row to one place, alt text over 150 characters, color that is not bold or
+// italic, and iframes. A page over 3000 words is listed but does not fail. An
+// SVG file of the course must not hide its root from screen readers, which Ally
+// reports as an image with no description.
 //
 // --level aaa adds axe's wcag2aaa rules, raises the hand contrast check to
 // 7:1 (4.5:1 for large text), and checks what axe does not:
@@ -85,7 +89,7 @@ if (!pages.length) {
   process.exit(2)
 }
 
-const found = { axe: [], review: [], contrast: [], links: [], reflow: [], focus: [], canvas: [], targets: [], text: [], broken: [], brokenCanvas: [], unreachable: [], udoit: [], long: [] }
+const found = { axe: [], review: [], contrast: [], links: [], reflow: [], focus: [], canvas: [], targets: [], text: [], broken: [], brokenCanvas: [], unreachable: [], udoit: [], long: [], svg: [] }
 const nodes = (v) => v.nodes.map((n) => ({ target: n.target.join(' '), html: n.html.slice(0, 200), summary: n.failureSummary }))
 
 // Contrast of every text node inside each selector, against the first opaque
@@ -250,7 +254,8 @@ function udoitProblems(scope) {
   for (const e of root.querySelectorAll('p, div, span, font')) {
     const style = e.getAttribute('style') ?? ''
     const text = e.textContent.trim()
-    if (!text || !/(^|;)\s*(background-)?color\s*:/.test(style) || /font-(weight|style)\s*:/.test(style)) continue
+    // UDOIT wants bold or italic. "font-style: normal" says nothing and still fails.
+    if (!text || !/(^|;)\s*(background-)?color\s*:/.test(style) || /font-weight\s*:\s*(bold|[6-9]00)|font-style\s*:\s*(italic|oblique)/.test(style)) continue
     const only = e.children.length === 1 && e.children[0].textContent.trim() === text ? e.children[0] : null
     if (only && emphasis.includes(only.tagName)) continue
     out.push({ id: 'color-alone', help: 'colored text with no font style of its own reads as color carrying meaning', html: snip(e) })
@@ -298,7 +303,8 @@ function checkSiteLink(rel, { raw, href }) {
 
 // A link inside the course must land on a body in the snapshot, or a file it
 // lists, and its #anchor on an id in that body. Links to other courses and the
-// rest of Canvas need a session, so they are not checked.
+// rest of Canvas need a session, so they are not checked. A link into another
+// course fails, because Ally checks links without a login and reports it broken.
 const SNAPSHOT_DIRS = { assignments: 'assignments', discussion_topics: 'discussions', quizzes: 'quizzes' }
 function checkCanvasLinks(snap, links) {
   const course = String(JSON.parse(readFileSync(join(snap, 'course.json'), 'utf-8')).id)
@@ -322,7 +328,10 @@ function checkCanvasLinks(snap, links) {
     const m = raw.match(/^(?:https?:\/\/[^/]+)?\/courses\/(\d+)\/([a-z_]+)\/([^/?#]+)/)
     if (m) {
       const [, inCourse, kind, key] = m
-      if (inCourse !== course) continue
+      if (inCourse !== course) {
+        found.brokenCanvas.push({ page: rel, problem: 'a link into another course, which Ally reports broken since only its members can open it', href: raw })
+        continue
+      }
       if (kind === 'files') {
         if (!fileIds.has(key)) found.brokenCanvas.push({ page: rel, problem: 'no such file', href: raw })
         continue
@@ -502,6 +511,14 @@ if (args.canvas) {
   checkCanvasLinks(snap, canvasLinks)
 }
 
+// Ally checks each uploaded image file on its own. An SVG whose root is hidden from
+// screen readers reads to it as an image with no description, wherever the page
+// marks it decorative, so give it a <title> instead.
+for (const rel of globSync(`${args.course}/**/*.svg`, { cwd: dist }).sort()) {
+  const tag = readFileSync(join(dist, rel), 'utf-8').match(/<svg\b[^>]*>/)?.[0] ?? ''
+  if (/aria-hidden\s*=\s*"true"/.test(tag)) found.svg.push({ page: rel, problem: 'aria-hidden on the root and no <title>' })
+}
+
 await fetchExternal()
 
 await browser.close()
@@ -512,6 +529,7 @@ const failures = {
   'contrast under the minimum, worked out by hand': found.contrast.length,
   'link text problems (site)': found.links.length,
   'UDOIT problems (site)': found.udoit.length,
+  'SVG files Ally reads as having no description': found.svg.length,
   'broken links (site)': found.broken.length,
   'pages that do not reflow at 320 px': found.reflow.length,
   [AAA ? 'tab stops with a focus problem' : 'tab stops with no visible focus']: found.focus.length,
@@ -524,7 +542,7 @@ const reviewIds = [...new Set(found.review.map((r) => r.id))].join(', ')
 console.log(`  ${String(found.review.length).padStart(4)}  needs-review groups from axe (${reviewIds || 'none'}); contrast ones are checked above`)
 console.log(`  ${String(found.long.length).padStart(4)}  pages over 3000 words, which UDOIT suggests splitting`)
 console.log(`  ${String(found.unreachable.length).padStart(4)}  of ${external.size} outside links turned the check away, timed out or did not resolve; open them by hand`)
-for (const list of [found.axe, found.contrast, found.links, found.udoit, found.broken, found.reflow, found.focus, found.canvas, found.brokenCanvas, found.targets, found.text, found.long, found.unreachable]) {
+for (const list of [found.axe, found.contrast, found.links, found.udoit, found.svg, found.broken, found.reflow, found.focus, found.canvas, found.brokenCanvas, found.targets, found.text, found.long, found.unreachable]) {
   for (const f of list.slice(0, 20)) console.log('  -', JSON.stringify(f).slice(0, 240))
 }
 if (args.out) writeFileSync(args.out, JSON.stringify({ course: args.course, level: args.level, pages: pages.length, canvasBodies: bodies.length, ...found }, null, 1) + '\n')
