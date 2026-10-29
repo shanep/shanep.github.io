@@ -318,13 +318,13 @@
       "kind": "page",
       "page_url": "chapter-1-introduction",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
-          "body": "be5b5f49e362f0d7",
+          "body": "5e223cba133b28f3",
           "settings": "b6c29009aca8456f"
         },
         "repo": {
-          "body": "db164b574f850125",
+          "body": "884dafcc1bd25987",
           "settings": "b6c29009aca8456f"
         }
       },
@@ -336,7 +336,7 @@
       "kind": "page",
       "page_url": "chapter-2-risk-management-and-governance",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
           "body": "59bb7df6d559b37a",
           "settings": "641f299d3a0566e5"
@@ -354,13 +354,13 @@
       "kind": "page",
       "page_url": "chapter-3-law-and-regulation-part-2",
       "synced": {
-        "at": "2026-10-29T00:34:33.278Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
-          "body": "3000aa2429e591a1",
+          "body": "0e484ef23bb78c9c",
           "settings": "eead6d1618362bc5"
         },
         "repo": {
-          "body": "245f5dd016834e79",
+          "body": "41921e20c90189a9",
           "settings": "eead6d1618362bc5"
         }
       },
@@ -372,13 +372,13 @@
       "kind": "page",
       "page_url": "chapter-3-law-and-regulation-part-1",
       "synced": {
-        "at": "2026-10-29T00:34:33.278Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
-          "body": "cff1143a1384ddac",
+          "body": "1b6d85b84dc96758",
           "settings": "fe2a247bb0703d10"
         },
         "repo": {
-          "body": "c12cfb51af920ceb",
+          "body": "566f73f88dddc3c8",
           "settings": "fe2a247bb0703d10"
         }
       },
@@ -390,13 +390,13 @@
       "kind": "page",
       "page_url": "chapter-4-human-factors",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
-          "body": "101a8d73a7cdc046",
+          "body": "1c2cabbb78d93de6",
           "settings": "b4b7839dbb47ad1a"
         },
         "repo": {
-          "body": "b666c38408924c3d",
+          "body": "2edc2b45554af295",
           "settings": "b4b7839dbb47ad1a"
         }
       },
@@ -408,13 +408,13 @@
       "kind": "page",
       "page_url": "chapter-5-privacy-and-online-rights",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
-          "body": "14ffe6bf3668aa0e",
+          "body": "a358bebd4feec71d",
           "settings": "4c9746b4b6343f0d"
         },
         "repo": {
-          "body": "5f0eb2e273b5c4ee",
+          "body": "a5de1a5758690a54",
           "settings": "4c9746b4b6343f0d"
         }
       },
@@ -426,7 +426,7 @@
       "kind": "page",
       "page_url": "chapter-6-malware-and-attack-technologies",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
           "body": "a70b2aed0782c467",
           "settings": "9a2a73c43c1d06ae"
@@ -444,13 +444,13 @@
       "kind": "page",
       "page_url": "chapter-7-adversarial-behaviours",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
-          "body": "ed3f6af311d1b328",
+          "body": "6c7fb4613edb2619",
           "settings": "88860f196a5136f6"
         },
         "repo": {
-          "body": "9bf9bf8fd4aebcca",
+          "body": "d058b611d640c153",
           "settings": "88860f196a5136f6"
         }
       },
@@ -462,7 +462,7 @@
       "kind": "page",
       "page_url": "chapter-8-security-operations-and-incident-management",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
           "body": "f867a2e7741fa215",
           "settings": "4e729eca7a52a621"
@@ -480,7 +480,7 @@
       "kind": "page",
       "page_url": "chapter-10-cryptography",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
           "body": "64b3236912bb9ff5",
           "settings": "1fa7050b2b2280a1"
@@ -498,13 +498,13 @@
       "kind": "page",
       "page_url": "chapter-14-authentication-authorisation-and-accountability",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
-          "body": "7968e0b396c95be2",
+          "body": "403cd5bdf1c1a90c",
           "settings": "2dd8e4db235af9c5"
         },
         "repo": {
-          "body": "b4a38b2243f16cf9",
+          "body": "84515fa748cb3adc",
           "settings": "2dd8e4db235af9c5"
         }
       },
@@ -516,13 +516,13 @@
       "kind": "page",
       "page_url": "chapter-15-software-security",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
-          "body": "f14de117d8445284",
+          "body": "c0492bd6cdde9152",
           "settings": "f5a8eeb0476e5357"
         },
         "repo": {
-          "body": "b853af063f4ddfc9",
+          "body": "e85ea8c14535faa1",
           "settings": "f5a8eeb0476e5357"
         }
       },
@@ -534,13 +534,13 @@
       "kind": "page",
       "page_url": "chapter-16-web-and-mobile-security",
       "synced": {
-        "at": "2026-10-29T00:34:33.278Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
-          "body": "9dfd3911e37a28e2",
+          "body": "15d46d5c0e49d7b3",
           "settings": "3576a1654dd1b73f"
         },
         "repo": {
-          "body": "dd1ada2fe4e4905d",
+          "body": "ab861a62a8e7e17d",
           "settings": "3576a1654dd1b73f"
         }
       },
@@ -552,13 +552,13 @@
       "kind": "page",
       "page_url": "chapter-17-secure-software-lifecycle",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
-          "body": "e6a86424fd03bec4",
+          "body": "3de2303a4c024c52",
           "settings": "5ebc7af9d5de5a35"
         },
         "repo": {
-          "body": "006e0ca5442b66fb",
+          "body": "f8689bc2291f3c05",
           "settings": "5ebc7af9d5de5a35"
         }
       },
@@ -570,13 +570,13 @@
       "kind": "page",
       "page_url": "chapter-18-applied-cryptography",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
-          "body": "0b58befdd9bd7a92",
+          "body": "d0613f33b0d95e17",
           "settings": "cbe46f0e799837f1"
         },
         "repo": {
-          "body": "98cae58e22b4dff0",
+          "body": "b09d1cdee04c49bf",
           "settings": "cbe46f0e799837f1"
         }
       },
@@ -588,7 +588,7 @@
       "kind": "page",
       "page_url": "chapter-19-network-security",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
           "body": "b7d3ebb38ccaff2a",
           "settings": "0543e7d7b6d6b436"
@@ -1290,7 +1290,7 @@
       "kind": "page",
       "page_url": "cybok-chapters",
       "synced": {
-        "at": "2026-10-29T00:34:33.278Z",
+        "at": "2026-10-29T01:26:29.025Z",
         "canvas": {
           "body": "78885b3f7eb7aa7e",
           "settings": "f5abd7b3e1072b83"

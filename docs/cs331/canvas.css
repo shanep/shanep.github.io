@@ -63,6 +63,18 @@ pre {
    which clears the 7:1 WCAG AAA 1.4.6 asks for. */
 code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: #22252A; }
 
+/* --- footnotes in the CyBOK chapters ----------------------------------- */
+
+/* A footnote link is a superscript or one arrow, so the link itself grows to
+   the 24 px WCAG 2.5.8 asks for, as it does on the website. */
+.footnote-ref, .footnote-back {
+  display: inline-block;
+  min-width: 24px;
+  min-height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
 /* --- section icons, inserted from the [icons] table in canvas.toml ------ */
 
 .cs-icon { vertical-align: middle; margin: 0 10px 4px 0; }

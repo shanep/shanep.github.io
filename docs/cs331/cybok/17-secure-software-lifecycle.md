@@ -1064,7 +1064,7 @@ Training materials are freely-available on the Internet. Some sites include:
 
 [^17-40]: [the ISO website](https://www.iso.org/)
 
-[^17-41]: **www.sae.org**
+[^17-41]: [the SAE International website](https://www.sae.org/)
 
 [^17-42]: [ISO/SAE 21434](https://www.iso.org/standard/70918.html)
 
