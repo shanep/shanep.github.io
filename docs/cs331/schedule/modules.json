@@ -61,6 +61,147 @@
     ]
   },
   {
+    "title": "CyBOK Chapters",
+    "items": [
+      {
+        "kind": "page",
+        "title": "CyBOK Chapters",
+        "path": "cybok/index",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 1: Introduction",
+        "path": "cybok/01-introduction",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 2: Risk Management & Governance",
+        "path": "cybok/02-risk-management-and-governance",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 3: Law & Regulation, Part 1",
+        "path": "cybok/03-law-and-regulation",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 3: Law & Regulation, Part 2",
+        "path": "cybok/03-law-and-regulation-part-2",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 4: Human Factors",
+        "path": "cybok/04-human-factors",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 5: Privacy & Online Rights",
+        "path": "cybok/05-privacy-and-online-rights",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 6: Malware & Attack Technologies",
+        "path": "cybok/06-malware-and-attack-technologies",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 7: Adversarial Behaviours",
+        "path": "cybok/07-adversarial-behaviours",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 8: Security Operations & Incident Management",
+        "path": "cybok/08-security-operations-and-incident-management",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 10: Cryptography",
+        "path": "cybok/10-cryptography",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 14: Authentication, Authorisation & Accountability",
+        "path": "cybok/14-authentication-authorisation-and-accountability",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 15: Software Security",
+        "path": "cybok/15-software-security",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 16: Web & Mobile Security",
+        "path": "cybok/16-web-and-mobile-security",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 17: Secure Software Lifecycle",
+        "path": "cybok/17-secure-software-lifecycle",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 18: Applied Cryptography",
+        "path": "cybok/18-applied-cryptography",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      },
+      {
+        "kind": "page",
+        "title": "Chapter 19: Network Security",
+        "path": "cybok/19-network-security",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
     "title": "Getting Started (January 11 - January 17)",
     "items": [
       {

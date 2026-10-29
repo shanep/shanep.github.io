@@ -348,6 +348,42 @@
       },
       "title": "Chapter 2: Risk Management & Governance"
     },
+    "cybok/03-law-and-regulation-part-2.md": {
+      "canvas_id": "chapter-3-law-and-regulation-part-2",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-3-law-and-regulation-part-2",
+      "synced": {
+        "at": "2026-10-29T00:34:33.278Z",
+        "canvas": {
+          "body": "3000aa2429e591a1",
+          "settings": "eead6d1618362bc5"
+        },
+        "repo": {
+          "body": "245f5dd016834e79",
+          "settings": "eead6d1618362bc5"
+        }
+      },
+      "title": "Chapter 3: Law & Regulation, Part 2"
+    },
+    "cybok/03-law-and-regulation.md": {
+      "canvas_id": "chapter-3-law-and-regulation-part-1",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-3-law-and-regulation-part-1",
+      "synced": {
+        "at": "2026-10-29T00:34:33.278Z",
+        "canvas": {
+          "body": "cff1143a1384ddac",
+          "settings": "fe2a247bb0703d10"
+        },
+        "repo": {
+          "body": "c12cfb51af920ceb",
+          "settings": "fe2a247bb0703d10"
+        }
+      },
+      "title": "Chapter 3: Law & Regulation, Part 1"
+    },
     "cybok/04-human-factors.md": {
       "canvas_id": "chapter-4-human-factors",
       "extra": {},
@@ -498,13 +534,13 @@
       "kind": "page",
       "page_url": "chapter-16-web-and-mobile-security",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T00:34:33.278Z",
         "canvas": {
-          "body": "49261d2653a9380f",
+          "body": "9dfd3911e37a28e2",
           "settings": "3576a1654dd1b73f"
         },
         "repo": {
-          "body": "b0d2b05eeea8083c",
+          "body": "dd1ada2fe4e4905d",
           "settings": "3576a1654dd1b73f"
         }
       },
@@ -1254,13 +1290,13 @@
       "kind": "page",
       "page_url": "cybok-chapters",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T00:34:33.278Z",
         "canvas": {
-          "body": "061a3c04c65d1c30",
+          "body": "78885b3f7eb7aa7e",
           "settings": "f5abd7b3e1072b83"
         },
         "repo": {
-          "body": "ec59a2a398060198",
+          "body": "a6bac8e546afca50",
           "settings": "f5abd7b3e1072b83"
         }
       },
@@ -1971,12 +2007,12 @@
       "kind": "syllabus",
       "page_url": "",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:34:33.278Z",
         "canvas": {
-          "body": "b232498c8cb7e85d"
+          "body": "1d29fa6e245693e9"
         },
         "repo": {
-          "body": "895e4dab7b7e4c19"
+          "body": "aee802db2e108d8f"
         }
       },
       "title": "CS 331: Computer Security and Information Assurance"
@@ -2131,13 +2167,13 @@
       "kind": "page",
       "page_url": "3-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-29T00:24:31.326Z",
+        "at": "2026-10-29T00:34:33.278Z",
         "canvas": {
-          "body": "006ac1dfba13c61e",
+          "body": "a18502b0b320550a",
           "settings": "5d557b9423830530"
         },
         "repo": {
-          "body": "8a46fb34a51c39cf",
+          "body": "d0575f75e4921260",
           "settings": "5d557b9423830530"
         }
       },
@@ -2707,13 +2743,13 @@
       "kind": "page",
       "page_url": "cs-331-readings-and-resources",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:34:33.278Z",
         "canvas": {
-          "body": "2b69fd227f82e281",
+          "body": "3e57c3af70726d8f",
           "settings": "bc6050918a06fe5d"
         },
         "repo": {
-          "body": "a7bd9030eadc240b",
+          "body": "45e66d0fd768e924",
           "settings": "bc6050918a06fe5d"
         }
       },
@@ -2728,6 +2764,15 @@
       },
       "repo": {
         "items": "88bf924abd0ced1c"
+      }
+    },
+    "[[module]] CyBOK Chapters": {
+      "at": "2026-10-29T00:35:40.005Z",
+      "canvas": {
+        "items": "72a4138487fbe2ec"
+      },
+      "repo": {
+        "items": "72a4138487fbe2ec"
       }
     },
     "[[module]] Getting Started (January 11 - January 17)": {
