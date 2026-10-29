@@ -1,4 +1,4 @@
-alt: Diagram of the Extensible Authentication Protocol: a protocol stack above a network of a RADIUS server, an authenticator, a wired LAN and a wireless supplicant.
+alt: Diagram of the Extensible Authentication Protocol: its protocol stack above a RADIUS server, authenticator and supplicant.
 ---
 A diagram in two parts.
 

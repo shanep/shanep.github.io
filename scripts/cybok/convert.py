@@ -611,6 +611,7 @@ def link(label: str, uri: str) -> str:
 # "c4-7" (chapters 4 to 7) or "p. 12", separated by commas.
 CITE_NUMBER = r"\d+(?:\s?[–-]\s?\d+)?"
 CITATION = re.compile(rf"(?<![\\!])\[({CITE_NUMBER}(?:,\s?(?:{CITE_NUMBER}|[A-Za-z][^,\]\[]{{0,24}}))*)\](?!\()")
+UNCITE = re.compile(r'<a href="#ref-[^"]+" aria-label="References? [^"]+">([^<]+)</a>')
 CITED = re.compile(r'aria-label="References? (\d+)(?:–(\d+))?"')
 
 
@@ -631,6 +632,35 @@ def cite(m: re.Match[str]) -> str:
 def link_citations(md: str) -> str:
     """The Markdown with every citation outside math linked to the reference list."""
     return "".join(part if part.startswith("$") else CITATION.sub(cite, part) for part in re.split(r"(\$[^$]+\$)", md))
+
+
+LINKED = re.compile(r'<a href="(#[^"]+)"[^>]*>([^<]*)</a>|\[([^\]]+)\]\((#[^)]+)\)')
+
+
+def unlink_repeats(md: str) -> str:
+    """The Markdown with a link dropped when the one before it goes to the same place.
+
+    "[[82]] at R.4 ... [[82]] at R.66" puts two links to one target side by side,
+    with only text between them, and checkers (UDOIT, Canvas) flag them as
+    adjacent links. The first link is enough, so the second becomes plain text.
+    Markup between the two (emphasis, code, footnotes) keeps both. Inline math
+    does not, because Canvas shows it as plain text.
+    """
+    def paragraph(text: str) -> str:
+        out: list[str] = []
+        last = 0
+        prev: str | None = None
+        for m in LINKED.finditer(text):
+            target = m.group(1) or m.group(4)
+            between = text[last:m.start()]
+            if prev == target and not re.search(r"[<*`_]|\[\^|\]\(", between):
+                out.append(between + (m.group(2) if m.group(1) else m.group(3)))
+            else:
+                out.append(between + m.group(0))
+            prev = target
+            last = m.end()
+        return "".join(out) + text[last:]
+    return "\n\n".join(paragraph(p) for p in md.split("\n\n"))
 
 
 def cited_numbers(md: str) -> list[str]:
@@ -989,6 +1019,7 @@ def chapter(doc: pymupdf.Document, number: int, slug: str, first: int, last: int
     # A fourth-level section (16.2.2.1) is set in body-sized bold, too small for
     # is_heading, so it comes out as a bold line. Make it the heading it is.
     body = re.sub(r"^\*\*(\d+\.\d+\.\d+\.\d+ [^*\n]+)\*\*$", r"#### \1", body, flags=re.M)
+    body = unlink_repeats(body)
     # Chapter 3 sets its notes as endnotes under a NOTES heading rather than at
     # the foot of each page. Make them footnotes like everyone else's.
     body = re.sub(r"^## Notes\n\n(.*?)(?=^## |\Z)", lambda m: endnotes(m.group(1), number), body, flags=re.M | re.S)
@@ -1036,7 +1067,9 @@ def chapter(doc: pymupdf.Document, number: int, slug: str, first: int, last: int
     for c in cited:
         if c not in seen:
             seen.append(c)
-    ref_lines = [f'- <span id="ref-{c}">\\[{c}\\]</span> {refs.get(c, "(missing from the bibliography)")}'
+    # An entry's own brackets are not citations: "[2013] EWHC 1832" is the year of a
+    # law report, and there is no reference 2013 to link to.
+    ref_lines = [f'- <span id="ref-{c}">\\[{c}\\]</span> {UNCITE.sub(r"\1", refs.get(c, "(missing from the bibliography)"))}'
                  for c in sorted(seen, key=int)]
     body = spell_out(body + ("\n\n" + "\n\n".join(fn_lines) if fn_lines else ""), number, ABBREVIATIONS_FOUND)
     body = name_urls(body, number)

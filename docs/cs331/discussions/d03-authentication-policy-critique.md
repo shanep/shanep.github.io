@@ -53,11 +53,11 @@ Options, easiest first:
 **Quote or screenshot the rules.** If you cannot find a documented policy, say so and
 record what the interface enforced: that absence is itself a finding.
 
-**Do not post credentials, and do not post anything that identifies your own account.**
+**Do not post credentials**, and do not post anything that identifies your own account.
 
 ## Initial Post Directions
 
-**Due: Thursday of week 5. About 400-500 words.**
+**Due:** Thursday of week 5. About 400-500 words.
 
 Include four labeled parts in your discussion post.
 
@@ -108,7 +108,7 @@ against it.
 
 ## Reply Post Directions
 
-**Due: Sunday of week 5. Two replies, about 150 words each.**
+**Due:** Sunday of week 5. Two replies, about 150 words each.
 
 Reply to **two** classmates who evaluated a **different organization** than you. Do one of these:
 

@@ -32,7 +32,7 @@ By the end of this week, the successful student will be able to:
 - Read [14.01 Readings and Lecture Notes](week-14-web-security-and-injection.md) and work through the worked example (2 hrs 55 min)
 - Complete [14.02 Lab 9: SQL Injection](../assignments/lab-09-sql-injection.md) (1 hr 30 min, 38 points)
 
-**Everything in Lab 9 runs against a database inside one Python process on your own machine.**
+**Everything in Lab 9 runs against a database inside one Python process** on your own machine.
 Attacking a web application you do not have written permission to test is a crime and a violation of
 the Student Code of Conduct. There is no exercise in this course that requires it.
 

@@ -24,7 +24,7 @@ course, and the fastest way to learn the difference is to try to use them and ge
 
 ## Initial Post Directions
 
-**Due: Thursday of week 1. About 250-350 words.**
+**Due:** Thursday of week 1. About 250-350 words.
 
 Post one message with two parts.
 
@@ -66,7 +66,7 @@ useful to the class.
 
 ## Reply Post Directions
 
-**Due: Sunday of week 1. One reply, about 100-150 words.**
+**Due:** Sunday of week 1. One reply, about 100-150 words.
 
 Reply to **one** classmate whose incident is different from yours. Do one of these:
 

@@ -1,4 +1,4 @@
-alt: Diagram of the four-layer Internet protocol stack on a client and a server, with two network devices between them and the logical and physical data paths.
+alt: Diagram of the four-layer Internet protocol stack on a client and a server, with two network devices between them.
 ---
 A layered diagram. A laptop labelled "Client" is at top left and a tower server labelled "Server" is at top right, joined by a line through a cloud labelled "Communication Network".
 

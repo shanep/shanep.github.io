@@ -36,8 +36,8 @@ https://owasp.org/www-project-top-ten/	the OWASP Top 10
 http://nvd.nist.gov	the National Vulnerability Database
 https://safecode.org/	SAFECode
 https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html	the OWASP Logging Cheat Sheet
-https://www.owasp.org/images/e/e0/OWASP_Logging_Guide.pdf	the OWASP Logging Guide
-https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf	the OWASP Secure Coding Practices Quick Reference Guide
+https://web.archive.org/web/20191105152729/https://www.owasp.org/images/e/e0/OWASP_Logging_Guide.pdf	the OWASP Logging Guide
+https://web.archive.org/web/20200330203615/https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf	the OWASP Secure Coding Practices Quick Reference Guide
 https://www.oracle.com/technetwork/java/seccodeguide-139067.html	Oracle's Secure Coding Guidelines for Java SE
 https://cmu-sei.github.io/secure-coding-standards/	the SEI CERT Secure Coding Standards
 https://www.iso.org/standard/72311.html	ISO catalogue entry 72311
@@ -50,7 +50,7 @@ https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/secur
 https://openssf.org/community/sigstore/	Sigstore
 https://in-toto.io/community/	in-toto
 https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/	the OWASP Top 10 for LLM Applications 2025
-https://owasp.org/www-project-mobile-app-security/	the OWASP Mobile Application Security project
+https://mas.owasp.org/	the OWASP Mobile Application Security project
 https://mas.owasp.org/MASVS/	OWASP MASVS
 https://github.com/OWASP/mastg/releases	OWASP MASTG releases
 https://mas.owasp.org/checklists/	the OWASP MAS checklists
@@ -86,7 +86,7 @@ https://www.ncsc.gov.uk/collection/application-development	NCSC: Application Dev
 https://www.ncsc.gov.uk/collection/developers-collection	NCSC: Developers Collection
 https://www.ncsc.gov.uk/blog-post/leaky-pipe-secure-coding	NCSC: Leaky Pipe of Secure Coding
 https://competitions.cr.yp.to/caesar-submissions.html	the CAESAR submissions
-https://www.keylength.com/en/	keylength.com
+https://www.keylength.com/	keylength.com
 https://apps.nsa.gov/iad/programs/iad-initiatives/cnsa-suite.cfm	the NSA CNSA Suite
 https://www.irtf.org/cfrg.html	the IRTF Crypto Forum Research Group
 https://csrc.nist.gov/projects/post-quantum-cryptography	the NIST Post-Quantum Cryptography project

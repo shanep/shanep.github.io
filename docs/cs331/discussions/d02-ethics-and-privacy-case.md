@@ -44,7 +44,7 @@
 
 ## Initial Post Directions
 
-**Due: Thursday of week 3. About 400-500 words.**
+**Due:** Thursday of week 3. About 400-500 words.
 
 Address all four of these, clearly labeled.
 
@@ -87,7 +87,7 @@ to someone with authority.
 
 ## Reply Post Directions
 
-**Due: Sunday of week 3. Two replies, about 150 words each.**
+**Due:** Sunday of week 3. Two replies, about 150 words each.
 
 Reply to **two** classmates, at least one of whom chose a **different option in part 3** than you
 did.

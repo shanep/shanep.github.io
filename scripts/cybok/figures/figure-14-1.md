@@ -1,4 +1,4 @@
-alt: Diagram of access control as authentication plus authorisation: a principal's request passes a reference monitor that checks an ACL before reaching an object.
+alt: Diagram of access control: a principal's request passes a reference monitor that checks an ACL before reaching an object.
 ---
 A flow diagram read left to right. A drawing of a person labelled "principal" has an arrow to a dashed box "request". An arrow leads from "request" to a box "reference monitor", and another arrow leads from "reference monitor" to a box "object". A small box "ACL" (access control list) sits on top of "object", with an arrow from "ACL" to "reference monitor".
 

@@ -12,7 +12,7 @@
 ## Navigation and Dashboard
 
 - [How do I use the Global Navigation Menu?](https://community.instructure.com/en/kb/articles/662861-how-do-i-use-the-global-navigation-menu)
-- [How do I use the Dashboard?](https://community.canvaslms.com/t5/Student-Guide/How-do-I-use-the-Dashboard-as-a-student/ta-p/512)
+- [How do I use the Dashboard?](https://community.instructure.com/en/kb/articles/662812-how-do-i-use-the-dashboard-as-a-student)
 
 ## Profile and User Settings
 

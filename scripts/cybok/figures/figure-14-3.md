@@ -1,4 +1,4 @@
-alt: Message flow diagram of the SAML POST profile between a client, an identity provider (IdP) and a service provider (SP), in numbered steps from -1 to 3.
+alt: Message flow diagram of the SAML POST profile between a client, an identity provider and a service provider.
 ---
 A message flow diagram with a user above and three boxes below. A figure labelled "user" has an arrow down to the box "client", which sits in the middle. The box "IdP" is on the left and the box "SP" is on the right. The abbreviations IdP (identity provider) and SP (service provider) are as printed in the figure.
 

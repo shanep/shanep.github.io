@@ -34,7 +34,7 @@ way to remember what you actually did.
 
 ## Post Directions
 
-**Due: the last day of finals week. About 400-500 words. No replies required.**
+**Due:** the last day of finals week. About 400-500 words. No replies required.
 
 Four parts.
 

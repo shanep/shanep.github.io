@@ -1,8 +1,8 @@
-alt: Tree diagram of data sources for security monitoring, split into network and host sources, with the formats (PCAP, Netflow, Syslog and others) they produce.
+alt: Tree diagram of data sources for security monitoring, split into network and host sources and the formats they produce.
 ---
 A tree diagram. Solid arrows run from parents to children. Dashed arrows run from a source to the data format it produces. Dash-dotted arrows lead into Syslog.
 
-**Solid tree:**
+The **solid tree**, from parent to child:
 
 - Data sources
   - Network

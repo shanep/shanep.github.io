@@ -1,4 +1,4 @@
-alt: Graph of the Fogg Behavior Model, plotting motivation against ability with a curved action line that separates where prompts succeed from where they fail.
+alt: Graph of the Fogg Behavior Model: motivation against ability, with an action line between where prompts succeed and fail.
 ---
 A line graph titled "Fogg Behavior Model" (BehaviorModel.org), with the formula "B=MAP" and the note "at the same moment" beneath it. The vertical axis is labelled "Motivation" and runs from "Low" at the bottom to "High" at the top. The horizontal axis is labelled "Ability" and runs from "Hard to Do" on the left to "Easy to Do" on the right.
 

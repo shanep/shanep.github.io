@@ -34,14 +34,14 @@ happened to them.
 Signals that there is enough material: a published post-incident report, regulatory filings, a
 CISA (Cybersecurity and Infrastructure Security Agency) advisory, sworn testimony, or detailed reporting that includes a timeline.
 
-**Check the board first and pick something nobody has taken.**
+**Check the board first** and pick something nobody has taken.
 
 This is the last full discussion of the semester, and it is deliberately the one that asks you to
 use the whole course. Pick something you find genuinely interesting.
 
 ## Initial Post Directions
 
-**Due: Thursday of week 15. About 450-550 words.**
+**Due:** Thursday of week 15. About 450-550 words.
 
 Include four labeled parts in your discussion post.
 
@@ -59,10 +59,9 @@ If reporting does not give them, say so and say what would establish them.
 
 ### 2. How it was found
 
-**What detected it, and was that detection internal or external?**
-
-A substantial fraction of breaches are discovered by somebody outside the organization: a
-customer, a researcher, a payment processor, a ransom note. If this one was found externally, say
+**What detected it, and was that detection internal or external?** A substantial fraction of
+breaches are discovered by somebody outside the organization: a customer, a researcher, a payment
+processor, a ransom note. If this one was found externally, say
 what that tells you about the organization's monitoring, using CyBOK (Cyber Security Body of Knowledge) §8.2 on data sources.
 
 If it was found internally, say **which data source** did it, and whether the alert was acted on
@@ -100,7 +99,7 @@ decides how the other three go, and it is the phase organizations skip.
 
 ## Reply Post Directions
 
-**Due: Friday of week 15. Two replies, about 150 words each.**
+**Due:** Friday of week 15. Two replies, about 150 words each.
 
 Reply to **two** classmates who chose different incidents. Do one of these:
 

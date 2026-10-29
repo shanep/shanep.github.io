@@ -421,7 +421,7 @@ State regulations concerning lawful interception tend to impose a combination of
 
 Some states impose additional legal obligations to maintain secrecy over the existence, nature, or frequency, of lawful interception requests, the location or operation of interception facilities, etc. Communication service providers that wish to report publicly about the nature and frequency of state interception requests (a.k.a. transparency reports) must be careful to conduct this reporting in compliance with applicable law.[^3-69]
 
-As easy-to-use cryptographic technologies have become ubiquitous, and larger volumes of message traffic are transmitted as ciphertext, states conducting lawful access activity face increasing difficulty obtaining access to plaintext messages \[<a href="#ref-139" aria-label="Reference 139">139</a>\]. States have attempted to recover plaintext by using a variety of creative legal mechanisms including warrants for the physical search and seizure of end point devices and requests for technical assistance from device manufacturers or third-party analysts. These procedures are of variable effectiveness and remain subject to much debate \[<a href="#ref-139" aria-label="Reference 139">139</a>\]. Efforts to compel an end user to decrypt ciphertext or to disclose relevant passwords or keys also face a variety of legal challenges \[<a href="#ref-143" aria-label="Reference 143">143</a>, <a href="#ref-144" aria-label="Reference 144">144</a>\].[^3-70] Some states have adopted laws that specifically address compelled disclosure of plaintext or keys that enable decipherment.[^3-71]
+As easy-to-use cryptographic technologies have become ubiquitous, and larger volumes of message traffic are transmitted as ciphertext, states conducting lawful access activity face increasing difficulty obtaining access to plaintext messages \[<a href="#ref-139" aria-label="Reference 139">139</a>\]. States have attempted to recover plaintext by using a variety of creative legal mechanisms including warrants for the physical search and seizure of end point devices and requests for technical assistance from device manufacturers or third-party analysts. These procedures are of variable effectiveness and remain subject to much debate \[139\]. Efforts to compel an end user to decrypt ciphertext or to disclose relevant passwords or keys also face a variety of legal challenges \[<a href="#ref-143" aria-label="Reference 143">143</a>, <a href="#ref-144" aria-label="Reference 144">144</a>\].[^3-70] Some states have adopted laws that specifically address compelled disclosure of plaintext or keys that enable decipherment.[^3-71]
 
 The emergence of virtual communication service providers (i.e., those that provide communication services via third-party infrastructure – or ‘over the top’ service providers) have created challenges for both states and service providers. These service providers remain subject to the jurisdiction of states in which their service is supplied, as states show a clear sovereign interest in services provided to persons within their territory.[^3-72] States have, however, taken different approaches when choosing how and when to exercise jurisdiction over these providers. Enforcement actions by states against such persons have included orders to facilitate in-territory lawful interception at the risk of a variety of sanctions including: prohibiting the service provider from entering into business relationships with in-state residents, or ordering third-party state-resident service providers to block or filter such services at the PSTN or IP \[Internet Protocol\] layer, thus making it inaccessible to (many or most) in-state residents. Changes in enforcement practices are likely as this subject continues to develop.
 
@@ -890,7 +890,7 @@ Although this three-pronged rule is not presented as a multinational norm, it il
 
 ‘Foreseeability’ of harm is used routinely as a mechanism to limit the scope of liability in negligence law.[^3-119] Foreseeability is normally measured by reference to whether or not an objectively reasonable person would have foreseen harm. A tortfeasor is not excused from liability due to failure of imagination, failure to plan, or an affirmative effort to avoid considering potential victims.[^3-120]
 
-This raises a number of related questions about possible duties of care in the context of cyber security, some of which are set out in [Table 3.2](#table-3-2). The purpose of [Table 3.2](#table-3-2) is merely to consider some of the types of relationship that might create a duty of care under existing law.
+This raises a number of related questions about possible duties of care in the context of cyber security, some of which are set out in [Table 3.2](#table-3-2). The purpose of Table 3.2 is merely to consider some of the types of relationship that might create a duty of care under existing law.
 
 Negligence laws are tremendously flexible. As harm caused by cyber security failure becomes increasingly foreseeable, it seems likely that courts will increasingly interpret the concept of duty of care to encompass various cyber-security related obligations owed to a broader group of victims \[<a href="#ref-193" aria-label="Reference 193">193</a>\].
 
@@ -1345,10 +1345,10 @@ The above rules provide a reasonable indicator of the risk that cyber security f
 - <span id="ref-103">\[103\]</span> K. Kopel, “Operation Seizing Our Sites: How the Federal Government is Taking Domain Names Without Prior Notice,” *Berkeley Technology Law Journal*, vol. 28, pp. 859–900, 2013.
 - <span id="ref-104">\[104\]</span> J. Mellyn, “Reach out and Touch Someone: The Growing Use of Domain Name Seizure as a Vehicle for the Extraterritorial Enforcement of U.S. Law,” *Georgetown Journal of International Law*, vol. 42, pp. 1241–1264, 2011.
 - <span id="ref-105">\[105\]</span> A. M. Froomkin, “When We Say US(tm), We Mean It!” *Houston Law Review*, vol. 41, no. 3, pp. 839–884, 2004.
-- <span id="ref-106">\[106\]</span> “Libyan Arab Foreign Bank v. Bankers Trust Co,” \[<a href="#ref-1989" aria-label="Reference 1989">1989</a>\] QB 728, 1989.
+- <span id="ref-106">\[106\]</span> “Libyan Arab Foreign Bank v. Bankers Trust Co,” \[1989\] QB 728, 1989.
 - <span id="ref-107">\[107\]</span> R. Cranston, E. Avgouleas, K. Van Zwieten, and T. Van Sante, *Principles of Banking Law*, 3rd ed. Oxford: Oxford University Press, 2018.
 - <span id="ref-108">\[108\]</span> R. McLaughlin, “Authorizations for maritime law enforcement operations,” *International Review of the Red Cross*, vol. 98, no. 2, pp. 465–490, 2016.
-- <span id="ref-109">\[109\]</span> “Twentieth Century Fox and others v. British Telecommunications plc,” \[<a href="#ref-2011" aria-label="Reference 2011">2011</a>\] EWHC 1981, 2011.
+- <span id="ref-109">\[109\]</span> “Twentieth Century Fox and others v. British Telecommunications plc,” \[2011\] EWHC 1981, 2011.
 - <span id="ref-110">\[110\]</span> P. M. Connorton, “Tracking terrorist financing through SWIFT: when US subpoenas and foreign privacy law collide,” *Fordham Law Review*, vol. 76, pp. 283–322, 2007.
 - <span id="ref-111">\[111\]</span> “In the Matter of a Warrant to Search a Certain E-Mail Account Controlled and Maintained by Microsoft Corporation,” 829 F.3d 197, 2d Cir, 2016.
 - <span id="ref-112">\[112\]</span> “Stored Communications Act,” *codified at* 18 U.S.C 2701 et seq, 1986.
@@ -1367,7 +1367,7 @@ The above rules provide a reasonable indicator of the risk that cyber security f
 - <span id="ref-130">\[130\]</span> “US Constitution, Amendment IV,” 1791.
 - <span id="ref-131">\[131\]</span> “Olmstead v. United States,” 277 U.S. 438 (US S.Ct), 1928.
 - <span id="ref-132">\[132\]</span> “Katz v. United States,” 389 U.S. 347 (US S.Ct), 1967.
-- <span id="ref-133">\[133\]</span> “Halford v. The United Kingdom,” (20605/92) (\[<a href="#ref-1997" aria-label="Reference 1997">1997</a>\] 24 EHRR 523, 1997.
+- <span id="ref-133">\[133\]</span> “Halford v. The United Kingdom,” (20605/92) (\[1997\] 24 EHRR 523, 1997.
 - <span id="ref-134">\[134\]</span> (2019) Guide to International Law and Surveillance (2.0). Privacy International. [Online]. Available: [online copy of reference 134](https://privacyinternational.org/sites/default/files/2019-04/Guide%20to%20International%20Law%20and%20Surveillance%202.0.pdf)
 - <span id="ref-135">\[135\]</span> Special Representative of the Secretary-General on the issue of human rights and transnational corporations and other business enterprises, “Guiding Principles on Business and Human Rights: Implementing the United Nations "Protect, Respect and Remedy" Framework,” United Nations, 2011.
 - <span id="ref-136">\[136\]</span> “Smith v. Maryland,” 442 U.S. 735 (US S.Ct), 1979.
@@ -1395,14 +1395,14 @@ The above rules provide a reasonable indicator of the risk that cyber security f
 - <span id="ref-158">\[158\]</span> P. M. Schwartz and D. J. Solove, “Reconciling Personal Information in the United States and European Union,” *California Law Review*, vol. 102, no. 4, pp. 877–916, 2014.
 - <span id="ref-159">\[159\]</span> M. J. Wiebe, “Applying the Video Privacy Protection Act to Modern Technology [Ellis v. Cartoon Network, Inc., 803 F. 3d 1251 (11th Cir. 2015)],” *Washburn Law Journal*, vol. 57, pp. 169–202, 2018.
 - <span id="ref-162">\[162\]</span> (2019) Guide to Data Protection. Information Commissioner’s Office (UK). [Online]. Available: [online copy of reference 162](https://ico.org.uk/for-organisations/guide-to-data-protection)
-- <span id="ref-163">\[163\]</span> The INFORM Project. [Online]. Available: [online copy of reference 163](http://informproject.eu)
+- <span id="ref-163">\[163\]</span> The INFORM Project. [Online]. Available: [online copy of reference 163](https://web.archive.org/web/20240926235737/https://informproject.eu/)
 - <span id="ref-164">\[164\]</span> “[UK Data Protection Act 2018](https://www.legislation.gov.uk/ukpga/2018/12/contents),” United Kingdom, 2018.
 - <span id="ref-165">\[165\]</span> “Schrems v. Data Protection Commissioner,” Case C 362/14, ECLI:EU:C:2015:650, 2015.
 - <span id="ref-166">\[166\]</span> “Guidelines 2/2018 on derogations of Article 49 under Regulation 2016/679,” European Data Protection Board, 2018.
 - <span id="ref-167">\[167\]</span> E. Preston and P. Turner, “The Global Rise of a Duty to Disclose Information Security Breaches,” *The John Marshall Journal of Information Technology & Privacy Law*, vol. 22, pp. 457–492, 2004.
 - <span id="ref-168">\[168\]</span> N. Robinson, V. Horvath, J. Cave, A. P. Roosendaal, and M. Klaver, “Data and security breaches and cyber-security strategies in the EU and its international counterparts,” European Union, 2013.
 - <span id="ref-169">\[169\]</span> A. Daly, “[The introduction of data breach notification legislation in australia: A comparative view](https://doi.org/10.1016/j.clsr.2018.01.005),” *Comput. Law Secur. Rev.*, vol. 34, no. 3, pp. 477–495, 2018.
-- <span id="ref-170">\[170\]</span> “Wm Morrison Supermarkets PLC v. Various Claimants,” \[<a href="#ref-2018" aria-label="Reference 2018">2018</a>\] EWCA Civ 2339, 2018.
+- <span id="ref-170">\[170\]</span> “Wm Morrison Supermarkets PLC v. Various Claimants,” \[2018\] EWCA Civ 2339, 2018.
 - <span id="ref-171">\[171\]</span> R. Broadhurst, “[Cybercrime: the human factor](https://ssrn.com/abstract=3384499),” R. Leukfeldt and T. Holt, Eds. Routledge, forthcoming, 2019, ch. Child Sex Abuse Images and Exploitation Materials.
 - <span id="ref-172">\[172\]</span> (1990) Computer Misuse Act 1990. [Online]. Available: [online copy of reference 172](https://www.legislation.gov.uk/ukpga/1990/18/contents)
 - <span id="ref-173">\[173\]</span> “Computer Fraud and Abuse Act,” *codified at* 18 U.S.C §1030 et seq.
@@ -1429,10 +1429,10 @@ The above rules provide a reasonable indicator of the risk that cyber security f
 - <span id="ref-199">\[199\]</span> “Council Directive of 25 July 1985 on the approximation of the laws, regulations and administrative provisions of the Member States concerning liability for defective products (85/374/EEC),” *Official Journal of the European Communities*, vol. L 210, pp. 29–33, 1985.
 - <span id="ref-200">\[200\]</span> “Evaluation of Council Directive 85/374/EEC of 25 July 1985 on the approximation of the liability for defective products,” European Commission, 2018.
 - <span id="ref-201">\[201\]</span> “Liability for emerging digital technologies,” SWD(2018) 137, European Commission, 2018.
-- <span id="ref-202">\[202\]</span> “Barnett v. Chelsea & Kensington Hospital \[<a href="#ref-1969" aria-label="Reference 1969">1969</a>\],” 1 QB 428, 1969.
+- <span id="ref-202">\[202\]</span> “Barnett v. Chelsea & Kensington Hospital \[1969\],” 1 QB 428, 1969.
 - <span id="ref-203">\[203\]</span> “Dillon v. Twin State Gas & Elec. Co.” 85 N.H. 449, New Hampshire, 1932.
-- <span id="ref-204">\[204\]</span> “Wagon Mound (No. 1) \[<a href="#ref-1961" aria-label="Reference 1961">1961</a>\] UKPC 2 ,” Privy Council, 1961.
-- <span id="ref-205">\[205\]</span> “Hedley Byrne & Co Ltd v. Heller & Partners Ltd,” \[<a href="#ref-1964" aria-label="Reference 1964">1964</a>\] AC 465, 1963.
+- <span id="ref-204">\[204\]</span> “Wagon Mound (No. 1) \[1961\] UKPC 2 ,” Privy Council, 1961.
+- <span id="ref-205">\[205\]</span> “Hedley Byrne & Co Ltd v. Heller & Partners Ltd,” \[1964\] AC 465, 1963.
 - <span id="ref-206">\[206\]</span> “Regulation (EC) No 864/2007 of the European Parliament and of the Council of 11 July 2007 on the law applicable to non-contractual obligations (Rome II),” *Official Journal of the European Union*, vol. L 199, pp. 40–49, 2007.
 - <span id="ref-280">\[280\]</span> D. Feldman, “The Nature of Legal Scholarship,” *Modern Law Review*, vol. 52, pp. 498–517, 1989.
 - <span id="ref-281">\[281\]</span> G. A. Spann, “Baby M and the Cassandra Problem,” *Georgetown Law Journal*, vol. 76, pp. 1719–1739, 1987.
@@ -1459,7 +1459,7 @@ The above rules provide a reasonable indicator of the risk that cyber security f
 - <span id="ref-302">\[302\]</span> M. Mourby, E. Mackey, M. J. Elliot, H. Gowans, S. E. Wallace, J. Bell, H. Smith, S. Aidinlis, and J. Kaye, “[Are ’pseudonymised’ data always personal data? implications of the GDPR for administrative data research in the UK](https://doi.org/10.1016/j.clsr.2018.01.002),” *Comput. Law Secur. Rev.*, vol. 34, no. 2, pp. 222–233, 2018.
 - <span id="ref-303">\[303\]</span> L. Rocher, J. M. Hendrickx, and Y.-A. de Montjoye, “[Estimating the success of re-identifications in incomplete datasets using generative models](https://doi.org/10.1038/s41467-019-10933-3),” *Nature Communications*, vol. 10, no. 3069, 2019.
 - <span id="ref-304">\[304\]</span> J. Joerling, “Data Breach Notification Laws: An Argument for a Comprehensive Federal Law to Protect Consumer Data,” *Washington University Journal of Law & Policy*, vol. 32, pp. 467–488, 2010.
-- <span id="ref-305">\[305\]</span> “R v. Gold and Schifreen,” \[<a href="#ref-1988" aria-label="Reference 1988">1988</a>\] AC 1063, \[<a href="#ref-1988" aria-label="Reference 1988">1988</a>\] Crim LR 437 (HL), 1988.
+- <span id="ref-305">\[305\]</span> “R v. Gold and Schifreen,” \[1988\] AC 1063, \[1988\] Crim LR 437 (HL), 1988.
 - <span id="ref-306">\[306\]</span> B. Sterling, *[The Hacker Crackdown: Law and Disorder on the Electronic Frontier](https://github.com/bdesham/the-hacker-crackdown)*. Bantam Books, 1992.
 - <span id="ref-307">\[307\]</span> C. Stoll, *The Cuckoo’s Egg: Tracking a Spy Through the Maze of Computer Espionage*. Doubleday, 1989.
 - <span id="ref-308">\[308\]</span> “[Computer Crime Statutes](http://www.ncsl.org/research/telecommunications-and-information-technology/computer-hacking-and-unauthorized-access-laws.aspx),” National Conference of State Legislatures.

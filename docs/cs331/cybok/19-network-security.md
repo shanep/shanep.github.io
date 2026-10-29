@@ -100,7 +100,7 @@ We will revisit SDN by discussing the following questions: How can SDN help in n
 
 <figure id="figure-19-1">
 
-![Diagram of the four-layer Internet protocol stack on a client and a server, with two network devices between them and the logical and physical data paths.](./images/figure-19-1.png){width=659 height=381}
+![Diagram of the four-layer Internet protocol stack on a client and a server, with two network devices between them.](./images/figure-19-1.png){width=659 height=381}
 
 <figcaption>
 
@@ -177,7 +177,7 @@ The Network Time Protocol (NTP) is used to synchronise devices (hosts, server, r
 
 There are two main threats to DHTs: (i) *Eclipse* and (ii) *Sybil* attacks. An Eclipse attacker aims to poison routing tables to isolate target nodes from other, benign overlay peers. Redundancy helps best against Eclipse attacks. For example, systems like Kademlia foresee storage and routing redundancy, which mitigate some low-profile attacks against DHTs. In the extreme, DHT implementations can use dedicated routing tables with verified entries \[<a href="#ref-1769" aria-label="Reference 1769">1769</a>\]. Central authorities—which lower the degree of distribution of DHTs, though—can solve the underlying root problem and assign stable node identifiers \[<a href="#ref-1081" aria-label="Reference 1081">1081</a>\].
 
-In a Sybil attack, an adversary introduces malicious nodes with self-chosen identifiers to subvert DHT protocol redundancy \[<a href="#ref-1077" aria-label="Reference 1077">1077</a>\]. To prevent such Sybils, one can limit the number of nodes per entity, e.g., based on IP addresses \[<a href="#ref-1769" aria-label="Reference 1769">1769</a>\]—yet causing collateral damage to nodes sharing this entity (e.g., multiple peers behind a NAT \[Network Address Translation\] gateway). Others suggested to use peer location as identifier validation mechanisms, which, however, prevents that nodes can relocate \[<a href="#ref-1770" aria-label="Reference 1770">1770</a>\]. Computational puzzles can slow down the pace at which attackers can inject malicious peers \[<a href="#ref-1771" aria-label="Reference 1771">1771</a>\], but are ineffective against distributed botnet attacks. Finally, reputation systems enable peers to learn trust profiles of their neighbors \[<a href="#ref-1772" aria-label="Reference 1772">1772</a>\], which ideally discredit malicious nodes \[<a href="#ref-1772" aria-label="Reference 1772">1772</a>\].
+In a Sybil attack, an adversary introduces malicious nodes with self-chosen identifiers to subvert DHT protocol redundancy \[<a href="#ref-1077" aria-label="Reference 1077">1077</a>\]. To prevent such Sybils, one can limit the number of nodes per entity, e.g., based on IP addresses \[<a href="#ref-1769" aria-label="Reference 1769">1769</a>\]—yet causing collateral damage to nodes sharing this entity (e.g., multiple peers behind a NAT \[Network Address Translation\] gateway). Others suggested to use peer location as identifier validation mechanisms, which, however, prevents that nodes can relocate \[<a href="#ref-1770" aria-label="Reference 1770">1770</a>\]. Computational puzzles can slow down the pace at which attackers can inject malicious peers \[<a href="#ref-1771" aria-label="Reference 1771">1771</a>\], but are ineffective against distributed botnet attacks. Finally, reputation systems enable peers to learn trust profiles of their neighbors \[<a href="#ref-1772" aria-label="Reference 1772">1772</a>\], which ideally discredit malicious nodes \[1772\].
 
 Unfortunately, all these countermeasures either restrict the generality of DHTs, or introduce a centralized component. Therefore, most defenses have not fully evolved from academia into practice. A more complete treatment of DHT security is provided by Urdaneta and van Steen \[<a href="#ref-1081" aria-label="Reference 1081">1081</a>\] and in the Distributed Systems Security Knowledge Area (Chapter 12).
 
@@ -207,7 +207,7 @@ Application-layer protocols rely on the transport layer to provide confidentiali
 
 We discuss the most recent and popular TLS versions 1.2 and 1.3, with a particular focus on their handshakes. Irrespective of the TLS version, the handshake takes care of cryptographic details that application-layer protocols otherwise would have to deal with themselves: authenticating each other, agreeing on cryptographic cipher suites, and deriving key material.
 
-The handshakes differ between the two TLS versions, as shown in [Figure 19.2](#figure-19-2). We start discussing TLS 1.2, as shown on the left-hand side of the figure. First, client and server negotiate which TLS version and cipher suites to use in order to guarantee compatibility even among heterogeneous communication partners. Second, server and client exchange certificates to authenticate each other, whereas client authentication is optional (and for brevity, omitted in [Figure 19.2](#figure-19-2)). Certificates contain communication partner identifiers such as domain names for web servers, and include their vetted public keys (see Section 19.3.2.2 for details). Third, the communication partners derive a symmetric key that can be used to secure the data transfer. To derive a key, the client can encrypt a freshly generated symmetric key under the server’s public (e.g., RSA \[Rivest-Shamir-Adleman\]) key. Alternatively, the partners can derive a key using a Diffie-Hellman Key Exchange (DHKE). The DHKE provides TLS with perfect forward secrecy that prevents attackers from decrypting communication even if the server’s private key leaks.
+The handshakes differ between the two TLS versions, as shown in [Figure 19.2](#figure-19-2). We start discussing TLS 1.2, as shown on the left-hand side of the figure. First, client and server negotiate which TLS version and cipher suites to use in order to guarantee compatibility even among heterogeneous communication partners. Second, server and client exchange certificates to authenticate each other, whereas client authentication is optional (and for brevity, omitted in Figure 19.2). Certificates contain communication partner identifiers such as domain names for web servers, and include their vetted public keys (see Section 19.3.2.2 for details). Third, the communication partners derive a symmetric key that can be used to secure the data transfer. To derive a key, the client can encrypt a freshly generated symmetric key under the server’s public (e.g., RSA \[Rivest-Shamir-Adleman\]) key. Alternatively, the partners can derive a key using a Diffie-Hellman Key Exchange (DHKE). The DHKE provides TLS with perfect forward secrecy that prevents attackers from decrypting communication even if the server’s private key leaks.
 
 <figure id="figure-19-2">
 
@@ -226,14 +226,14 @@ A sequence diagram with three columns. In the middle is a "Server" (tower icon).
 
 Both sides start with a wide double-headed arrow between client and server labelled "TCP 3-way Handshake". A dashed horizontal line follows. The area below it, down to a second dashed line, is marked on the far left "TLS Handshake" (a vertical double-headed arrow). The area below the second dashed line is marked "Secure Channel".
 
-**TLS 1.2 (left), messages in order:**
+**TLS 1.2** (left), messages in order:
 
 1. Client to Server: "Client Hello"
 2. Server to Client: "Server Hello, Certificate" and "Server Hello Done"
 3. Client to Server: "ClientKeyExchange, ChangeCipherSpec, Fin."
 4. Server to Client: "ChangeCipherSpec, Finished"
 
-**TLS 1.3 (right), messages in order:**
+**TLS 1.3** (right), messages in order:
 
 1. Client to Server: "Client Hello, Key Share"
 2. Server to Client: "Server Hello, Certificate, Key Share, CertificateVerify, Finished"
@@ -286,7 +286,7 @@ Although application-layer and transport-layer security help to provide end-to-e
 
 #### 19.3.3.1 IPv4 Security
 
-**IP Spoofing**: IP spoofing, as discussed for UDP and DNS (sections 19.3.2.4 and 19.3.1.3, respectively), finds its root in the Internet Protocol (IP) and affects both IPv4 and IPv6. In principle, malicious clients can freely choose to send traffic with any arbitrary IP address. Thankfully, most providers perform egress filtering and discard traffic from IP addresses outside of their domain \[<a href="#ref-1778" aria-label="Reference 1778">1778</a>\]. Furthermore, Unicast Reverse Path Forwarding (uRPF) enables on-path routers to drop traffic from IP addresses that they would have expected entering on other interfaces \[<a href="#ref-1778" aria-label="Reference 1778">1778</a>\].
+**IP Spoofing**: IP spoofing, as discussed for UDP and DNS (sections 19.3.2.4 and 19.3.1.3, respectively), finds its root in the Internet Protocol (IP) and affects both IPv4 and IPv6. In principle, malicious clients can freely choose to send traffic with any arbitrary IP address. Thankfully, most providers perform egress filtering and discard traffic from IP addresses outside of their domain \[<a href="#ref-1778" aria-label="Reference 1778">1778</a>\]. Furthermore, Unicast Reverse Path Forwarding (uRPF) enables on-path routers to drop traffic from IP addresses that they would have expected entering on other interfaces \[1778\].
 
 **Fragmentation Attacks**: IPv4 has to fragment packets that do not fit the network’s Maximum Transmission Unit (MTU). While fragmentation is trivial, defragmentation is not so, and has led to severe security problems in the past. For example, a Teardrop attack abuses the fact that operating systems may try to retain huge amounts of payload when trying to reassemble highly-overlapping fragments of a synthetic TCP segment. Fragmentation also eases DNS cache poisoning attacks in that attackers need to bruteforce a reduced search space by attacking only the non-starting fragments \[<a href="#ref-1779" aria-label="Reference 1779">1779</a>\]. Finally, fragmentation may assist attackers in evading simple payload matches by scattering payload over multiple fragments.
 
@@ -311,13 +311,13 @@ Figure 19.3: Comparison between IPsec transport mode and tunnel mode. All parts 
 
 Two diagrams of packet layouts, each showing an original packet above and the packet as sent in IPsec below. Gray-shaded fields are the parts of the original packet that the mode protects.
 
-**Transport Mode**
+**Transport Mode** shows:
 
 - Original: two fields, "IP header" and "IP data".
 - in IPsec: three fields, "IP header", "IPsec hdr" and "IP data". The "IP data" field is shaded gray.
 - Arrows: the original "IP header" points to the "IP header" in the IPsec packet, and the original "IP data" points to the "IP data" in the IPsec packet.
 
-**Tunnel Mode**
+**Tunnel Mode** shows:
 
 - Original: two fields, "IP header" and "IP payload".
 - in IPsec: four fields, "new IP hdr", "IPsec hdr", "IP header" and "IP payload". The "IP header" and "IP payload" fields are both shaded gray.
@@ -402,7 +402,7 @@ The IEEE 802.1X is a port-based authentication for securing both wired and wirel
 
 <figure id="figure-19-5">
 
-![Diagram of the Extensible Authentication Protocol: a protocol stack above a network of a RADIUS server, an authenticator, a wired LAN and a wireless supplicant.](./images/figure-19-5.png){width=659 height=394}
+![Diagram of the Extensible Authentication Protocol: its protocol stack above a RADIUS server, authenticator and supplicant.](./images/figure-19-5.png){width=659 height=394}
 
 <figcaption>
 
@@ -654,7 +654,7 @@ Network security is too broad to be fully captured at reasonable detail within a
 - <span id="ref-1763">\[1763\]</span> I. Society, “Dnssec deployment maps,” [online copy of reference 1763](https://www.internetsociety.org/deploy360/dnssec/maps/), accessed: 2021-02-19.
 - <span id="ref-1764">\[1764\]</span> S. Singanamalla, S. Chunhapanya, J. Hoyland, M. Vavruša, T. Verma, P. Wu, M. Fayed, K. Heimerl, N. Sullivan, and C. Wood, “Oblivious dns over https (odoh): A practical privacy enhancement to dns,” in *DNS Privacy Workshop, NDSS 2021*, 2021.
 - <span id="ref-1765">\[1765\]</span> S. T. Zargar, J. Joshi, and D. Tipper, “[A survey of defense mechanisms against distributed denial of service (ddos) flooding attacks](https://doi.org/10.1109/SURV.2013.031413.00127),” *IEEE Commun. Surv. Tutorials*, vol. 15, no. 4, pp. 2046–2069, 2013.
-- <span id="ref-1766">\[1766\]</span> A. Malhotra, I. E. Cohen, E. Brakke, and S. Goldberg, “[Attacking the network time protocol](http://eprint.iacr.org/2015/1020),” *IACR Cryptol. ePrint Arch.*, vol. 2015, p. 1020, 2015.
+- <span id="ref-1766">\[1766\]</span> A. Malhotra, I. E. Cohen, E. Brakke, and S. Goldberg, “[Attacking the network time protocol](https://eprint.iacr.org/2015/1020),” *IACR Cryptol. ePrint Arch.*, vol. 2015, p. 1020, 2015.
 - <span id="ref-1767">\[1767\]</span> T. Rytilahti, D. Tatang, J. Kopper, and T. Holz, “[Masters of time: An overview of the NTP ecosystem](https://doi.org/10.1109/EuroSP.2018.00017),” in *2018 IEEE European Symposium on Security and Privacy, EuroS&P 2018, London, United Kingdom, April 24-26, 2018*. IEEE, 2018, pp. 122–136.
 - <span id="ref-1768">\[1768\]</span> O. Deutsch, N. R. Schiff, D. Dolev, and M. Schapira, “Preventing (network) time travel with chronos,” in *25th Annual Network and Distributed System Security Symposium, NDSS 2018, San Diego, California, USA, February 18-21, 2018*. The Internet Society, 2018.
 - <span id="ref-1769">\[1769\]</span> M. Castro and B. Liskov, “[Practical byzantine fault tolerance](https://dl.acm.org/citation.cfm?id=296824),” in *Proceedings of the Third USENIX Symposium on Operating Systems Design and Implementation (OSDI), New Orleans, Louisiana, USA, February 22-25, 1999*, M. I. Seltzer and P. J. Leach, Eds. USENIX Association, 1999, pp. 173–186.

@@ -1,4 +1,4 @@
-alt: Diagram of the web and mobile ecosystem: developers, app store, mobile devices, users, web browsers and web server, split into server side and client side.
+alt: Diagram of the web and mobile ecosystem: developers, app store, devices, users, browsers and web server, by side.
 ---
 A block diagram with icons and labelled arrows. A dashed horizontal line separates the upper part, labelled "Server Side" (top right corner), from the lower part, labelled "Client Side" (bottom right corner). The App Store and the Web Server sit on the dashed line's upper side; the Mobile Device and the Web Browser sit below it.
 

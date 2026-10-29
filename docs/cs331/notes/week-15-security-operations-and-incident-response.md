@@ -30,7 +30,7 @@
 | [CyBOK §8.3.6](../cybok/08-security-operations-and-incident-management.md#_8-3-6-the-base-rate-fallacy) | §8.3.6 The base-rate fallacy | 268 | 1 p | 15 min |
 | [CyBOK §8.7](../cybok/08-security-operations-and-incident-management.md#_8-7-human-factors-incident-management) | §8.7 Human factors: Incident management | 281-284 | 3 pp | 25 min |
 
-**§8.3.6 is one page and it is the most important page of the week.**
+**§8.3.6 is one page** and it is the most important page of the week.
 
 ### Additional readings
 
@@ -75,7 +75,7 @@ grep "Accepted password" auth.log
 `test`, `postgres`, `ubuntu`, `git`, `jenkins`, `deploy`. That username list tells you something:
 it is a generic list, not an organization-specific one. Nobody researched this target.
 
-**And then the line that changes everything:**
+And then the line that changes everything:
 
 ```
 Apr 21 03:27:27 vault-api-01 sshd[6485]: Accepted password for deploy from 203.0.113.47 port 51884 ssh2
@@ -86,8 +86,8 @@ background noise; it is an intrusion. Everything after that timestamp is the int
 four lines that follow (a session opening, `sudo cat /etc/shadow`, a service status check, and the
 session closing twenty minutes later) are what they did with it.
 
-**Method to take away: count first, then read only what the counting pointed at, then read
-everything after the moment it succeeded.**
+**Method to take away:** count first, then read only what the counting pointed at, then read
+everything after the moment it succeeded.
 
 ### 2. What the logs cannot tell you
 
@@ -150,8 +150,8 @@ Probability an alert is real = 495 / 50,490 = 0.98%
 Alerts per day               = 50,490 / 100 ≈ 505
 ```
 
-**A 99% accurate detector produces a queue in which fewer than one alert in a hundred is real, and
-it produces five hundred of them a day.**
+**A 99% accurate detector produces a queue in which fewer than one alert in a hundred is real**, and
+it produces five hundred of them a day.
 
 Nothing is wrong with the detector. The arithmetic is driven by the **base rate**: malicious events
 are 0.01% of the total, so even a very small false positive rate applied to an enormous benign

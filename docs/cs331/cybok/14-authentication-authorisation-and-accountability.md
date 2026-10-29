@@ -121,7 +121,7 @@ For a brief period, it was fashionable to use Digital Rights Management as the g
 
 #### 14.3.1.8 Usage Control
 
-*Usage Control (UCON)* was proposed as a framework encompassing authorisations based on the attributes of subject and object, *obligations*, and *conditions* \[<a href="#ref-1370" aria-label="Reference 1370">1370</a>\]. In \[<a href="#ref-1370" aria-label="Reference 1370">1370</a>\], obligations are additional actions a user has to perform to be granted access, e.g., clicking on a link to agree to the terms of use. In today’s use of the term, obligations may also be actions the system has to perform, e.g., logging an access request. Such actions may have to be performed before, during or after an access happens. Conditions are aspects independent of subject and object, e.g., time of day when a policy permits access only during office hours or the location of the machine access is requested from. Examples for the latter are policies permitting certain requests only when issued from the system console, giving access only from machines in the local network, or policies that consider the country attributed to the IP \[Internet Protocol\] address a request comes from. Many concepts from UCON have been adopted in the XACML \[eXtensible Access Control Markup Language\] 3.0 standard \[<a href="#ref-1389" aria-label="Reference 1389">1389</a>\].
+*Usage Control (UCON)* was proposed as a framework encompassing authorisations based on the attributes of subject and object, *obligations*, and *conditions* \[<a href="#ref-1370" aria-label="Reference 1370">1370</a>\]. In \[1370\], obligations are additional actions a user has to perform to be granted access, e.g., clicking on a link to agree to the terms of use. In today’s use of the term, obligations may also be actions the system has to perform, e.g., logging an access request. Such actions may have to be performed before, during or after an access happens. Conditions are aspects independent of subject and object, e.g., time of day when a policy permits access only during office hours or the location of the machine access is requested from. Examples for the latter are policies permitting certain requests only when issued from the system console, giving access only from machines in the local network, or policies that consider the country attributed to the IP \[Internet Protocol\] address a request comes from. Many concepts from UCON have been adopted in the XACML \[eXtensible Access Control Markup Language\] 3.0 standard \[<a href="#ref-1389" aria-label="Reference 1389">1389</a>\].
 
 Usage control may also include provisions for what happens after an object is accessed, e.g., that a document can be read but its content cannot be copied or adjustment of attributes after an access has been performed, e.g., decrementing the counter of free articles a visitor may access. In another interpretation, ‘traditional’ access control deals with the elementary access operations found at an infrastructure level while usage control addresses entire work flows at the application level. In telecom services, usage control may put limits on traffic volume.
 
@@ -146,7 +146,7 @@ Rights may not always be granted in perpetuity. The grantor may set an expiry da
 
 <figure id="figure-14-1">
 
-![Diagram of access control as authentication plus authorisation: a principal's request passes a reference monitor that checks an ACL before reaching an object.](./images/figure-14-1.png){width=659 height=119}
+![Diagram of access control: a principal's request passes a reference monitor that checks an ACL before reaching an object.](./images/figure-14-1.png){width=659 height=119}
 
 <figcaption>
 
@@ -415,7 +415,7 @@ The specification of SAML Redirect/POST Bindings includes the Service Provider�
 
 <figure id="figure-14-3">
 
-![Message flow diagram of the SAML POST profile between a client, an identity provider (IdP) and a service provider (SP), in numbered steps from -1 to 3.](./images/figure-14-3.png){width=659 height=169}
+![Message flow diagram of the SAML POST profile between a client, an identity provider and a service provider.](./images/figure-14-3.png){width=659 height=169}
 
 <figcaption>
 
@@ -639,7 +639,7 @@ Accountability services build on tamper resistant records of events. The evidenc
 | Section | Cites |
 | --- | --- |
 | 14.3 Authorisation | \[<a href="#ref-1368" aria-label="References 1368–1372">1368–1372</a>\] |
-| 14.3.1 Access Control | \[<a href="#ref-1368" aria-label="Reference 1368">1368</a>, <a href="#ref-1370" aria-label="Reference 1370">1370</a>, <a href="#ref-1371" aria-label="Reference 1371">1371</a>\] |
+| 14.3.1 Access Control | \[1368, <a href="#ref-1370" aria-label="Reference 1370">1370</a>, <a href="#ref-1371" aria-label="Reference 1371">1371</a>\] |
 | 14.3.2 Enforcing Access Control | \[<a href="#ref-1369" aria-label="Reference 1369">1369</a>\] |
 | 14.3.3 Theory | \[<a href="#ref-1372" aria-label="Reference 1372">1372</a>\] |
 | 14.4 Access Control in Distributed Systems | \[<a href="#ref-1398" aria-label="References 1398–1401">1398–1401</a>\] |

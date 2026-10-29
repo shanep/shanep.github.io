@@ -144,7 +144,7 @@ The detection issue is relatively simple; from a continuous stream of data, the 
 
 <figure id="figure-8-3">
 
-![Tree diagram of data sources for security monitoring, split into network and host sources, with the formats (PCAP, Netflow, Syslog and others) they produce.](./images/figure-8-3.png){width=659 height=303}
+![Tree diagram of data sources for security monitoring, split into network and host sources and the formats they produce.](./images/figure-8-3.png){width=659 height=303}
 
 <figcaption>
 
@@ -157,7 +157,7 @@ Figure 8.3: Data sources landscape
 
 A tree diagram. Solid arrows run from parents to children. Dashed arrows run from a source to the data format it produces. Dash-dotted arrows lead into Syslog.
 
-**Solid tree:**
+The **solid tree**, from parent to child:
 
 - Data sources
   - Network

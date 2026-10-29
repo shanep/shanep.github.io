@@ -69,7 +69,10 @@ td { border-bottom: 1px solid #E3E7EC; padding: 8px 12px; vertical-align: top; }
 
 /* --- the meta line: "Week 2 · 50 points · about 3 hours" --------------- */
 
+/* A colored box of text reads to UDOIT as color carrying meaning unless the text
+   sets its own style. The color here is decoration, so say the style outright. */
 .cs-meta {
+  font-style: normal;
   background-color: #F6F7F9;
   border-left: 5px solid #0033A0;
   padding: 10px 16px;

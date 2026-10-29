@@ -318,7 +318,7 @@ The Software Assurance Forum for Excellence in Code (SAFECode)[^17-13] is a non-
 
 In 2009, De Win et al. \[<a href="#ref-1592" aria-label="Reference 1592">1592</a>\] compared CLASP \[Comprehensive, Lightweight Application Security Process\], Microsoft’s originally-documented SDL \[<a href="#ref-1562" aria-label="Reference 1562">1562</a>\], and Touchpoints (see Section 17.2.1.2) to provide guidance on their commonalities and the specificity of the approach, and suggest for improvements. The authors mapped the 153 possible activities of each lifecycle model into six software development phases: education and awareness; project inception; analysis and requirements; architectural and detailed design; implementation and testing; and release, deployment and support. The activities took the practices in Sections 17.2.1.1–17.2.1.3 into much finer granularity. The authors indicated whether each model includes each of the 153 activities and provided guidance on the strengths and weaknesses of each model. The authors found no clear comprehensive ’winner’ among the models, so practitioners could consider using guidelines for the desired fine-grained practices from all the models.
 
-[Table 17.1](#table-17-1) places the practices of Sections 17.2.1.1–17.2.1.3 into the six software development phases used by De Win et al. \[<a href="#ref-1592" aria-label="Reference 1592">1592</a>\]. Similar to prior work \[<a href="#ref-1592" aria-label="Reference 1592">1592</a>\], the three processes demonstrate strengths and weaknesses in their guidance across the six software development phases. Microsoft SDL was first published in 2006. The 13 practices shown in [Table 17.1](#table-17-1) are based upon Version 5.2 formally released in July 2024. However, Microsoft has moved away from formal versioned updates toward a continuously evolving model. The seven Touchpoints were authored in 2006, and the SAFECode model was authored in 2018. As such, the Microsoft SDL reflects modern development practices, though all three models provide a foundational and timeless view of practices that should be integrated into a secure software lifecycle.
+[Table 17.1](#table-17-1) places the practices of Sections 17.2.1.1–17.2.1.3 into the six software development phases used by De Win et al. \[<a href="#ref-1592" aria-label="Reference 1592">1592</a>\]. Similar to prior work \[1592\], the three processes demonstrate strengths and weaknesses in their guidance across the six software development phases. Microsoft SDL was first published in 2006. The 13 practices shown in [Table 17.1](#table-17-1) are based upon Version 5.2 formally released in July 2024. However, Microsoft has moved away from formal versioned updates toward a continuously evolving model. The seven Touchpoints were authored in 2006, and the SAFECode model was authored in 2018. As such, the Microsoft SDL reflects modern development practices, though all three models provide a foundational and timeless view of practices that should be integrated into a secure software lifecycle.
 
 Microsoft SDL contains more practices related to education and awareness and project inception phases. The Touchpoints begin in the product development stage of analysis and requirements. The Microsoft SDL has more practices in the release, deployment, and support phase, likely due to attackers using the environment and development/deployment pipeline as an attack vector.
 
@@ -1010,9 +1010,9 @@ Training materials are freely-available on the Internet. Some sites include:
 
 [^17-14]: [the OWASP Logging Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html)
 
-[^17-15]: [the OWASP Logging Guide](https://www.owasp.org/images/e/e0/OWASP_Logging_Guide.pdf)
+[^17-15]: [the OWASP Logging Guide](https://web.archive.org/web/20191105152729/https://www.owasp.org/images/e/e0/OWASP_Logging_Guide.pdf)
 
-[^17-16]: [the OWASP Secure Coding Practices Quick Reference Guide](https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
+[^17-16]: [the OWASP Secure Coding Practices Quick Reference Guide](https://web.archive.org/web/20200330203615/https://www.owasp.org/images/0/08/OWASP_SCP_Quick_Reference_Guide_v2.pdf)
 
 [^17-17]: [Oracle's Secure Coding Guidelines for Java SE](https://www.oracle.com/technetwork/java/seccodeguide-139067.html)
 
@@ -1036,7 +1036,7 @@ Training materials are freely-available on the Internet. Some sites include:
 
 [^17-27]: [the OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/)
 
-[^17-28]: [the OWASP Mobile Application Security project](https://owasp.org/www-project-mobile-app-security/)
+[^17-28]: [the OWASP Mobile Application Security project](https://mas.owasp.org/)
 
 [^17-29]: [OWASP MASVS](https://mas.owasp.org/MASVS/)
 
@@ -1123,7 +1123,7 @@ Training materials are freely-available on the Internet. Some sites include:
 - <span id="ref-1462">\[1462\]</span> J. Viega and G. McGraw, *Building Secure Software: How to Avoid Security Problems the Right Way*. Addison-Wesley Professional, 2002.
 - <span id="ref-1561">\[1561\]</span> B. Gates, “Trustworthy Computing,” [online copy of reference 1561](https://www.wired.com/2002/01/bill-gates-trustworthy-computing/), 2002.
 - <span id="ref-1562">\[1562\]</span> M. Howard and S. Lipner, *The Security Development Lifecycle*. Redmond, WA, USA: Microsoft Press, 2006.
-- <span id="ref-1563">\[1563\]</span> IBM, “[Cost of a data breach 2025](https://www.bakerdonelson.com/webfiles/Publications/20250822_Cost-of-a-Data-Breach-Report-2025.pdf/),” 2025, online.
+- <span id="ref-1563">\[1563\]</span> IBM, “[Cost of a data breach 2025](https://www.bakerdonelson.com/webfiles/Publications/20250822_Cost-of-a-Data-Breach-Report-2025.pdf),” 2025, online.
 - <span id="ref-1564">\[1564\]</span> G. McGraw, “Testing for security during development: why we should scrap penetrate-and-patch,” *IEEE Aerospace and Electronic Systems Magazine*, vol. 13, no. 4, pp. 13–15, April 1998.
 - <span id="ref-1565">\[1565\]</span> Sonatype, “[2026 state of the software supply chain](https://www.sonatype.com/state-of-the-software-supply-chain/introduction),” 2026, online.
 - <span id="ref-1566">\[1566\]</span> M. Howard and D. E. Leblanc, *Writing Secure Code*, 2nd ed. Redmond, WA, USA: Microsoft Press, 2003.
@@ -1184,7 +1184,7 @@ Training materials are freely-available on the Internet. Some sites include:
 - <span id="ref-1621">\[1621\]</span> K. Thompson, “[Reflections on trusting trust](https://doi.org/10.1145/358198.358210),” *Commun. ACM*, vol. 27, no. 8, pp. 761–763, 1984.
 - <span id="ref-1622">\[1622\]</span> OpenSSF, “Supply chain Levels for Software Artifacts (SLSA),” *[online copy of reference 1622](https://slsa.dev/)*, 2022.
 - <span id="ref-1623">\[1623\]</span> SolarWinds, “SolarWinds Security Advisory,” [online copy of reference 1623](https://www.solarwinds.com/sa-overview/securityadvisory), 2021.
-- <span id="ref-1624">\[1624\]</span> S. D. Young, “M-22-18 enhancing the security of the software supply chain through secure software development practices,” *[online copy of reference 1624](https://www.whitehouse.gov/wp-content/uploads/2022/09/M-22-18.pdf)*, 2022.
+- <span id="ref-1624">\[1624\]</span> S. D. Young, “M-22-18 enhancing the security of the software supply chain through secure software development practices,” *[online copy of reference 1624](https://web.archive.org/web/20260119095057/https://www.whitehouse.gov/wp-content/uploads/2022/09/M-22-18.pdf)*, 2022.
 - <span id="ref-1625">\[1625\]</span> Cloud Native Computing Foundation, “Software supply chain best practices v2,” *[online copy of reference 1625](https://tag-security.cncf.io/blog/software-supply-chain-security-best-practices-v2/)*, 2024.
 - <span id="ref-1626">\[1626\]</span> L. LWilliams, S. Migues, J. Boote, and B. Hutchison, “Proactive Software Supply Chain Risk Management Framework (P-SSCRM),” *[online copy of reference 1626](https://p-sscrm.github.io/)*, 2026.
 - <span id="ref-1627">\[1627\]</span> US Cybersecurity and Infrastructure Security Agency (CISA), “A shared vision of software bill of materials (sbom) for cybersecurity,” [online copy of reference 1627](https://www.cisa.gov/sites/default/files/2025-09/joint-guidance-a-shared-vision-of-software-bill-of-materials-for-cybersecurity_508c.pdf), September 3, 2025.

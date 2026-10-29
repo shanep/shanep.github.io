@@ -89,7 +89,7 @@ Now take the **I** row and rate it. Before rating anything, state the scale:
 > **Impact.** High = affects all users or the data cannot be recovered. Medium = affects many users
 > or is expensive to recover from. Low = affects few users and is recoverable.
 
-**Information disclosure via guessable object URLs: likelihood Medium, impact High.**
+**Information disclosure via guessable object URLs:** likelihood Medium, impact High.
 
 Likelihood is Medium rather than High because the file names are random, so an attacker cannot
 simply enumerate them, but URLs leak constantly through referrer headers, browser history, shared

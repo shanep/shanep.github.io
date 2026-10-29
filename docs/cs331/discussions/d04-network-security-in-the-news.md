@@ -44,7 +44,7 @@ Two rules:
 
 ## Initial Post Directions
 
-**Due: Thursday of week 11. About 400-500 words.**
+**Due:** Thursday of week 11. About 400-500 words.
 
 Include three labeled parts in your discussion post.
 
@@ -92,7 +92,7 @@ assume unlimited resources are the easiest kind to write and the least useful.
 
 ## Reply Post Directions
 
-**Due: Sunday of week 11. Two replies, about 150 words each.**
+**Due:** Sunday of week 11. Two replies, about 150 words each.
 
 Reply to **two** classmates who chose different incidents. Do one of these:
 
