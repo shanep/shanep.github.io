@@ -213,13 +213,10 @@ items = [
     "instructor-resources/learning-opportunities.md",
 ]
 
-# Course Resources is for students from day one. publish: every push publishes
-# this module and everything in it, with or without --publish. Instructor
-# Information, the readings page and the objectives are this course's own; the
-# other three are shared by every course from shared/course-resources/.
+# Instructor Information, the readings page and the objectives are this course's
+# own; the other three are shared by every course from shared/course-resources/.
 [[module]]
 title = "Course Resources"
-publish = true
 items = [
     "instructor.md",
     "course-resources/canvas-resources.md",
@@ -232,7 +229,6 @@ items = [
 
 [[module]]
 title = "CyBOK Chapters"
-publish = true
 items = [
     "cybok/index.md",
     "cybok/01-introduction.md",
