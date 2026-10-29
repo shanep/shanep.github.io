@@ -693,13 +693,13 @@
       "kind": "page",
       "page_url": "home",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:15:03.392Z",
         "canvas": {
-          "body": "f99ec7784e8e7914",
+          "body": "4756eee575e0ebd5",
           "settings": "7553ce26f7babd39"
         },
         "repo": {
-          "body": "ffea60e4a688e8eb",
+          "body": "de3e8e8d6626a71a",
           "settings": "7553ce26f7babd39"
         }
       },
@@ -976,19 +976,19 @@
       "title": "work.svg"
     },
     "images/cs331-banner.svg": {
-      "canvas_id": "25501088",
+      "canvas_id": "25583339",
       "extra": {
-        "size": "55738"
+        "size": "16080"
       },
       "kind": "file",
       "page_url": "",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:15:03.392Z",
         "canvas": {
-          "body": "2dd291c7bd5fba0b"
+          "body": "8cc7c2adf40a9b23"
         },
         "repo": {
-          "body": "c4a32e89fbf38ed9"
+          "body": "5e7acca00960f849"
         }
       },
       "title": "cs331-banner.svg"
