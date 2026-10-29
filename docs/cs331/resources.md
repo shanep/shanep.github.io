@@ -10,7 +10,7 @@ Every reading in this course is free and openly licensed. There is nothing to bu
 > [Open Government Licence v3.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/).
 > Project home: [The Cyber Security Body of Knowledge](https://www.cybok.org/)
 
-The complete PDF (Portable Document Format) is in this course at [docs/CyBOK_v1.2.0.pdf](docs/CyBOK_v1.2.0.pdf) and in Canvas
+The complete PDF (Portable Document Format) is in this course as [CyBOK v1.2.0 (PDF)](docs/CyBOK_v1.2.0.pdf) and in Canvas
 Files. The Open Government Licence permits redistribution with attribution, which is why the book
 can live inside the course instead of behind a link.
 

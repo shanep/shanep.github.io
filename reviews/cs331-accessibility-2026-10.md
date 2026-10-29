@@ -91,6 +91,8 @@ It builds the site, then runs:
 8. **Canvas**: the same axe rules and link checks on every body in a fresh
    `edutools pull` of course 52107, framed the way Canvas shows it (the item
    title as the page heading, Canvas's text color on white).
+9. **UDOIT**: Boise State's UDOIT tool in Canvas, scanned on October 28 with
+   its default filters off, so unpublished items count too.
 
 The last run, on October 28, 2026, printed the lines below. It added the 16
 CyBOK pages to the website check. The Canvas line is from the run before it,
@@ -233,6 +235,7 @@ page is not practical.
 | The home page banner drew the course title as a picture | 1.4.9 | home page | Take the title out of the banner, keep the circuit art as decoration, and let the heading below it carry the title |
 | Canvas draws inline code red on gray at 5.21:1 | 1.4.6 | 34 Canvas bodies with code | Set inline code to the page text color in the course stylesheet |
 | Abbreviations were never spelled out | 3.1.4 | 54 pages | Spell out each one on its first use on each page |
+| Three links read "docs/CyBOK_v1.2.0.pdf", the file's path | 2.4.4 | syllabus, Readings and Resources, Lab 0 | Name them "CyBOK v1.2.0 (PDF)" |
 
 ### CyBOK textbook
 
@@ -293,3 +296,17 @@ fine:
 - **Tables with no data** (4 groups) in Labs 2 and 7. These are blank templates
   students copy and fill in, so the empty cells are on purpose. Every column
   has a header.
+
+UDOIT found 62 issues: 2 errors and 60 suggestions. The 3 file name links are
+fixed (see above), and I judged the other 59 fine:
+
+- **Color alone** (the 2 errors), on the "Select **Next** to continue" bar at
+  the bottom of Getting Started Overview and 0.01. The word "Next" is bold, so
+  the color is not the only cue.
+- **Styles used instead of headings** (56 suggestions), on the bold meta line
+  at the top of every item ("Week 1 · 15 points · about 45 minutes"). It is a
+  summary of the item, not a heading, so making it one would break the
+  heading order.
+- **External content** (1 suggestion), the Google Doc embedded in the
+  instructor-only Learning Opportunities page. UDOIT cannot look inside it, and
+  students never see that page.
