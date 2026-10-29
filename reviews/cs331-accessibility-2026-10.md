@@ -2,7 +2,7 @@
 title: CS331 Accessibility Report
 subtitle: Computer Security and Information Assurance, Spring 2027
 author: Shane K. Panter
-date: October 28, 2026
+date: October 29, 2026
 ---
 
 ## Summary
@@ -36,6 +36,8 @@ gets an accessible version.
 | External links that open a new tab without saying so | AAA | every external link | 0 |
 | Paragraphs closer than 1.5 lines apart | AAA | 7 | 0 |
 | Images of text | AAA | 1 (the home page banner) | 0 |
+| Problems UDOIT reports in Canvas (errors and suggestions) | | 398 | 0, plus the long CyBOK chapters (see below) |
+| Links that go nowhere (a missing page, anchor or a 404) | AA | 46 | 0 |
 | Assigned CyBOK chapters readable without the untagged PDF | AAA | 0 of 15 | 15 of 15 |
 
 ## Scope
@@ -92,23 +94,37 @@ It builds the site, then runs:
    `edutools pull` of course 52107, framed the way Canvas shows it (the item
    title as the page heading, Canvas's text color on white).
 9. **UDOIT**: Boise State's UDOIT tool in Canvas, scanned on October 28 with
-   its default filters off, so unpublished items count too.
+   its default filters off, so unpublished items count too. The check now runs
+   the same rules on every website page and Canvas body, so a new problem fails
+   the check before UDOIT ever sees it: a paragraph that is all bold, two links
+   in a row to the same place, alt text over 150 characters, colored text with
+   no font style of its own, and embedded frames.
+10. **Links**: every link in a page body, on the website and in Canvas, has to
+    land somewhere. A link inside the course has to reach a page that exists and
+    an anchor on it, and an outside link fails on a 404 or a 410. An outside
+    site that turns the check away, times out or does not resolve is listed to
+    open by hand, since many sites refuse scripts and my network's DNS filter
+    blocks a few live ones (petsymposium.org, suricata-ids.org, tsfdn.org).
 
-The last run, on October 28, 2026, printed the lines below. It added the 16
-CyBOK pages to the website check. The Canvas line is from the run before it,
-since the CyBOK pages live only on the website.
+The last run, on October 29, 2026, printed the lines below. It covers the
+CyBOK pages on the website and in Canvas.
 
 ```text
-cs331 (WCAG 2.2 AAA): 83 site pages in light and dark mode, 77 Canvas bodies
+cs331 (WCAG 2.2 AAA): 84 site pages in light and dark mode, 94 Canvas bodies
      0  axe violations (site)
      0  contrast under the minimum, worked out by hand
      0  link text problems (site)
+     0  UDOIT problems (site)
+     0  broken links (site)
      0  pages that do not reflow at 320 px
      0  tab stops with a focus problem
      0  targets under 44 by 44 px
      0  text spacing and images of text
-     0  axe violations and link text problems (Canvas)
-   346  needs-review groups from axe (color-contrast-enhanced, color-contrast, identical-links-same-purpose, th-has-data-cells); contrast ones are checked above
+     0  axe, UDOIT and link text problems (Canvas)
+     0  broken links (Canvas)
+   350  needs-review groups from axe (color-contrast-enhanced, color-contrast, identical-links-same-purpose, th-has-data-cells); contrast ones are checked above
+    32  pages over 3000 words, which UDOIT suggests splitting
+   294  of 1235 outside links turned the check away, timed out or did not resolve; open them by hand
 ```
 
 The Canvas check reads each body without Canvas's own stylesheet, so I also
@@ -243,7 +259,9 @@ The CyBOK v1.2.0 PDF is 1,115 pages with no tags, so a screen reader gets no
 headings, tables or reading order. The course assigns parts of 15 of its 22
 chapters, so those 15 chapters are now web pages under
 <https://shanepanter.com/cs331/cybok/>, and the reading links in every week's
-notes go straight to the section on them. The PDF stays in Canvas as the original.
+notes go straight to the section on them. The same pages are also Canvas pages,
+in the CyBOK module, and they link to each other inside Canvas rather than back to
+the website. The PDF is linked at cybok.org instead of kept as a copy in Canvas.
 
 A script in the repository (`scripts/cybok/convert.py`) builds the pages from the
 PDF, so they can be rebuilt when CyBOK puts out a new version.
@@ -278,8 +296,6 @@ the shell. Every one now sits behind descriptive link text.
   (godbolt.org). Both are third-party tools I did not build and did not audit.
   A student who cannot use either one gets an accommodation through the
   Educational Access Center.
-- **The old CyBOK v1.1.0 PDF is still in Canvas files.** No page links to it
-  any more. I left it in place because deleting a Canvas file cannot be undone.
 
 ## Remaining "needs review" items
 
@@ -297,16 +313,20 @@ fine:
   students copy and fill in, so the empty cells are on purpose. Every column
   has a header.
 
-UDOIT found 62 issues: 2 errors and 60 suggestions. The 3 file name links are
-fixed (see above), and I judged the other 59 fine:
+UDOIT's scan on October 28 found 398 issues, nearly all of them on the new
+CyBOK pages in Canvas. They are all fixed except the long chapters:
 
-- **Color alone** (the 2 errors), on the "Select **Next** to continue" bar at
-  the bottom of Getting Started Overview and 0.01. The word "Next" is bold, so
-  the color is not the only cue.
-- **Styles used instead of headings** (56 suggestions), on the bold meta line
-  at the top of every item ("Week 1 · 15 points · about 45 minutes"). It is a
-  summary of the item, not a heading, so making it one would break the
-  heading order.
-- **External content** (1 suggestion), the Google Doc embedded in the
-  instructor-only Learning Opportunities page. UDOIT cannot look inside it, and
-  students never see that page.
+| UDOIT issue | Count | Fix |
+| --- | --- | --- |
+| Styles used instead of headings | 336 | The CyBOK chapters' fourth-level sections are real headings, bold labels run into their sentence, and the meta line at the top of each item and the title of each callout are no longer bold paragraphs |
+| Adjacent links | 34 | A citation that repeats the one right before it is plain text |
+| Content too long | 16 | Not fixed, see below |
+| Alt text too long | 9 | Cut to 125 characters or fewer, with the full description still under "Text description" |
+| Color alone | 2 | The "Select Next to continue" bar and the meta line set their own font style |
+| External content | 1 | The Google Doc on the instructor-only Learning Opportunities page is a link now |
+
+The 16 CyBOK chapters run from 7,000 to 37,000 words, and UDOIT suggests
+splitting any page over 3,000. I kept each chapter whole, because each one is a
+chapter of the book with its own headings and table of contents, and splitting it
+would break its footnotes and cross references. The check lists every page over
+3,000 words but does not fail on them.
