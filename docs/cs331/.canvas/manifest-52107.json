@@ -6,14 +6,14 @@
       "kind": "assignment",
       "page_url": "",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
-          "body": "d6f876bfcfcf7127",
+          "body": "06ba1793d26b072c",
           "rubric": "af18394b1f17de08",
           "settings": "8a46562d6778b69f"
         },
         "repo": {
-          "body": "b6689fb26d6c19c6",
+          "body": "1430efd69df69def",
           "rubric": "af18394b1f17de08",
           "settings": "8a46562d6778b69f"
         }
@@ -311,6 +311,960 @@
         }
       },
       "title": "Technology Support"
+    },
+    "cybok/01-introduction.md": {
+      "canvas_id": "chapter-1-introduction",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-1-introduction",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "be5b5f49e362f0d7",
+          "settings": "b6c29009aca8456f"
+        },
+        "repo": {
+          "body": "db164b574f850125",
+          "settings": "b6c29009aca8456f"
+        }
+      },
+      "title": "Chapter 1: Introduction"
+    },
+    "cybok/02-risk-management-and-governance.md": {
+      "canvas_id": "chapter-2-risk-management-and-governance",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-2-risk-management-and-governance",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "59bb7df6d559b37a",
+          "settings": "641f299d3a0566e5"
+        },
+        "repo": {
+          "body": "7869918ba920694a",
+          "settings": "641f299d3a0566e5"
+        }
+      },
+      "title": "Chapter 2: Risk Management & Governance"
+    },
+    "cybok/04-human-factors.md": {
+      "canvas_id": "chapter-4-human-factors",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-4-human-factors",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "101a8d73a7cdc046",
+          "settings": "b4b7839dbb47ad1a"
+        },
+        "repo": {
+          "body": "b666c38408924c3d",
+          "settings": "b4b7839dbb47ad1a"
+        }
+      },
+      "title": "Chapter 4: Human Factors"
+    },
+    "cybok/05-privacy-and-online-rights.md": {
+      "canvas_id": "chapter-5-privacy-and-online-rights",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-5-privacy-and-online-rights",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "14ffe6bf3668aa0e",
+          "settings": "4c9746b4b6343f0d"
+        },
+        "repo": {
+          "body": "5f0eb2e273b5c4ee",
+          "settings": "4c9746b4b6343f0d"
+        }
+      },
+      "title": "Chapter 5: Privacy & Online Rights"
+    },
+    "cybok/06-malware-and-attack-technologies.md": {
+      "canvas_id": "chapter-6-malware-and-attack-technologies",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-6-malware-and-attack-technologies",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "a70b2aed0782c467",
+          "settings": "9a2a73c43c1d06ae"
+        },
+        "repo": {
+          "body": "966fb44d7b2e2ff1",
+          "settings": "9a2a73c43c1d06ae"
+        }
+      },
+      "title": "Chapter 6: Malware & Attack Technologies"
+    },
+    "cybok/07-adversarial-behaviours.md": {
+      "canvas_id": "chapter-7-adversarial-behaviours",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-7-adversarial-behaviours",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "ed3f6af311d1b328",
+          "settings": "88860f196a5136f6"
+        },
+        "repo": {
+          "body": "9bf9bf8fd4aebcca",
+          "settings": "88860f196a5136f6"
+        }
+      },
+      "title": "Chapter 7: Adversarial Behaviours"
+    },
+    "cybok/08-security-operations-and-incident-management.md": {
+      "canvas_id": "chapter-8-security-operations-and-incident-management",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-8-security-operations-and-incident-management",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "f867a2e7741fa215",
+          "settings": "4e729eca7a52a621"
+        },
+        "repo": {
+          "body": "3cb2c40f7f917a56",
+          "settings": "4e729eca7a52a621"
+        }
+      },
+      "title": "Chapter 8: Security Operations & Incident Management"
+    },
+    "cybok/10-cryptography.md": {
+      "canvas_id": "chapter-10-cryptography",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-10-cryptography",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "64b3236912bb9ff5",
+          "settings": "1fa7050b2b2280a1"
+        },
+        "repo": {
+          "body": "844781ba9a587bf9",
+          "settings": "1fa7050b2b2280a1"
+        }
+      },
+      "title": "Chapter 10: Cryptography"
+    },
+    "cybok/14-authentication-authorisation-and-accountability.md": {
+      "canvas_id": "chapter-14-authentication-authorisation-and-accountability",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-14-authentication-authorisation-and-accountability",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "7968e0b396c95be2",
+          "settings": "2dd8e4db235af9c5"
+        },
+        "repo": {
+          "body": "b4a38b2243f16cf9",
+          "settings": "2dd8e4db235af9c5"
+        }
+      },
+      "title": "Chapter 14: Authentication, Authorisation & Accountability"
+    },
+    "cybok/15-software-security.md": {
+      "canvas_id": "chapter-15-software-security",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-15-software-security",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "f14de117d8445284",
+          "settings": "f5a8eeb0476e5357"
+        },
+        "repo": {
+          "body": "b853af063f4ddfc9",
+          "settings": "f5a8eeb0476e5357"
+        }
+      },
+      "title": "Chapter 15: Software Security"
+    },
+    "cybok/16-web-and-mobile-security.md": {
+      "canvas_id": "chapter-16-web-and-mobile-security",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-16-web-and-mobile-security",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "49261d2653a9380f",
+          "settings": "3576a1654dd1b73f"
+        },
+        "repo": {
+          "body": "b0d2b05eeea8083c",
+          "settings": "3576a1654dd1b73f"
+        }
+      },
+      "title": "Chapter 16: Web & Mobile Security"
+    },
+    "cybok/17-secure-software-lifecycle.md": {
+      "canvas_id": "chapter-17-secure-software-lifecycle",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-17-secure-software-lifecycle",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "e6a86424fd03bec4",
+          "settings": "5ebc7af9d5de5a35"
+        },
+        "repo": {
+          "body": "006e0ca5442b66fb",
+          "settings": "5ebc7af9d5de5a35"
+        }
+      },
+      "title": "Chapter 17: Secure Software Lifecycle"
+    },
+    "cybok/18-applied-cryptography.md": {
+      "canvas_id": "chapter-18-applied-cryptography",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-18-applied-cryptography",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "0b58befdd9bd7a92",
+          "settings": "cbe46f0e799837f1"
+        },
+        "repo": {
+          "body": "98cae58e22b4dff0",
+          "settings": "cbe46f0e799837f1"
+        }
+      },
+      "title": "Chapter 18: Applied Cryptography"
+    },
+    "cybok/19-network-security.md": {
+      "canvas_id": "chapter-19-network-security",
+      "extra": {},
+      "kind": "page",
+      "page_url": "chapter-19-network-security",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "b7d3ebb38ccaff2a",
+          "settings": "0543e7d7b6d6b436"
+        },
+        "repo": {
+          "body": "867feae252b5edca",
+          "settings": "0543e7d7b6d6b436"
+        }
+      },
+      "title": "Chapter 19: Network Security"
+    },
+    "cybok/images/figure-1-1.png": {
+      "canvas_id": "25583429",
+      "extra": {
+        "size": "194726"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "34b2442658864f6a"
+        },
+        "repo": {
+          "body": "325811d61ebfbdae"
+        }
+      },
+      "title": "figure-1-1.png"
+    },
+    "cybok/images/figure-10-2.png": {
+      "canvas_id": "25583430",
+      "extra": {
+        "size": "21415"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "ec78dea057f1ba2a"
+        },
+        "repo": {
+          "body": "c0118e29a3c5acbd"
+        }
+      },
+      "title": "figure-10-2.png"
+    },
+    "cybok/images/figure-10-3.png": {
+      "canvas_id": "25583431",
+      "extra": {
+        "size": "19653"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "dcbf1cab3eac7569"
+        },
+        "repo": {
+          "body": "97fc5ed620031798"
+        }
+      },
+      "title": "figure-10-3.png"
+    },
+    "cybok/images/figure-10-4.png": {
+      "canvas_id": "25583432",
+      "extra": {
+        "size": "65283"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "a6578c06c6cfe409"
+        },
+        "repo": {
+          "body": "386202cf37eb5f93"
+        }
+      },
+      "title": "figure-10-4.png"
+    },
+    "cybok/images/figure-14-1.png": {
+      "canvas_id": "25583433",
+      "extra": {
+        "size": "23139"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "79e6b905e4aa4fad"
+        },
+        "repo": {
+          "body": "2bfd2820c4b80c73"
+        }
+      },
+      "title": "figure-14-1.png"
+    },
+    "cybok/images/figure-14-2.png": {
+      "canvas_id": "25583434",
+      "extra": {
+        "size": "22602"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "8fa41a7c0bebcde4"
+        },
+        "repo": {
+          "body": "3a0e1bfa103260ca"
+        }
+      },
+      "title": "figure-14-2.png"
+    },
+    "cybok/images/figure-14-3.png": {
+      "canvas_id": "25583435",
+      "extra": {
+        "size": "28758"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "6dcd17e72eaaf899"
+        },
+        "repo": {
+          "body": "642e071256be4ee1"
+        }
+      },
+      "title": "figure-14-3.png"
+    },
+    "cybok/images/figure-14-4.png": {
+      "canvas_id": "25583436",
+      "extra": {
+        "size": "22932"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "1ac72a0b190d5398"
+        },
+        "repo": {
+          "body": "814b6d84bf83e3b1"
+        }
+      },
+      "title": "figure-14-4.png"
+    },
+    "cybok/images/figure-14-5.png": {
+      "canvas_id": "25583437",
+      "extra": {
+        "size": "35479"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "89c728e3c5812e26"
+        },
+        "repo": {
+          "body": "c93e88e045ff20d4"
+        }
+      },
+      "title": "figure-14-5.png"
+    },
+    "cybok/images/figure-16-1.png": {
+      "canvas_id": "25583438",
+      "extra": {
+        "size": "110006"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "5eb50dc8c2773522"
+        },
+        "repo": {
+          "body": "b5e17272996eddd4"
+        }
+      },
+      "title": "figure-16-1.png"
+    },
+    "cybok/images/figure-16-2.png": {
+      "canvas_id": "25583439",
+      "extra": {
+        "size": "104677"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "f3cebd4c5fed5b30"
+        },
+        "repo": {
+          "body": "908c2b08c2d990f7"
+        }
+      },
+      "title": "figure-16-2.png"
+    },
+    "cybok/images/figure-16-3.png": {
+      "canvas_id": "25583440",
+      "extra": {
+        "size": "173197"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "25b2901c30d57e8e"
+        },
+        "repo": {
+          "body": "7ce9a820629cb12d"
+        }
+      },
+      "title": "figure-16-3.png"
+    },
+    "cybok/images/figure-16-4.png": {
+      "canvas_id": "25583441",
+      "extra": {
+        "size": "96345"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "da6919c653a84d1a"
+        },
+        "repo": {
+          "body": "798dfde7490fdbaf"
+        }
+      },
+      "title": "figure-16-4.png"
+    },
+    "cybok/images/figure-16-5.png": {
+      "canvas_id": "25583442",
+      "extra": {
+        "size": "73690"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "4ab9e8ce1be7919c"
+        },
+        "repo": {
+          "body": "b7208100eb2683e8"
+        }
+      },
+      "title": "figure-16-5.png"
+    },
+    "cybok/images/figure-16-6.png": {
+      "canvas_id": "25583443",
+      "extra": {
+        "size": "196363"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "10daad873927bbc9"
+        },
+        "repo": {
+          "body": "5f6ab8d146db32c6"
+        }
+      },
+      "title": "figure-16-6.png"
+    },
+    "cybok/images/figure-16-7.png": {
+      "canvas_id": "25583444",
+      "extra": {
+        "size": "59957"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "1152a6c503c91a7f"
+        },
+        "repo": {
+          "body": "dbf489a3f19880cc"
+        }
+      },
+      "title": "figure-16-7.png"
+    },
+    "cybok/images/figure-17-1.png": {
+      "canvas_id": "25583445",
+      "extra": {
+        "size": "36172"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "7db29b68b2dc2b48"
+        },
+        "repo": {
+          "body": "a005a903744a78e4"
+        }
+      },
+      "title": "figure-17-1.png"
+    },
+    "cybok/images/figure-17-2.png": {
+      "canvas_id": "25583446",
+      "extra": {
+        "size": "107577"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "4fb240363bc66029"
+        },
+        "repo": {
+          "body": "b8db55aecbfb4863"
+        }
+      },
+      "title": "figure-17-2.png"
+    },
+    "cybok/images/figure-19-1.png": {
+      "canvas_id": "25583448",
+      "extra": {
+        "size": "93525"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "49e5e2226ce9c29a"
+        },
+        "repo": {
+          "body": "74a11b385a397594"
+        }
+      },
+      "title": "figure-19-1.png"
+    },
+    "cybok/images/figure-19-2.png": {
+      "canvas_id": "25583449",
+      "extra": {
+        "size": "96934"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "e1b77ddea1cef323"
+        },
+        "repo": {
+          "body": "9b906bc2f878b557"
+        }
+      },
+      "title": "figure-19-2.png"
+    },
+    "cybok/images/figure-19-3.png": {
+      "canvas_id": "25583450",
+      "extra": {
+        "size": "24998"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "5e9850e0ff864b50"
+        },
+        "repo": {
+          "body": "5be70b4aca68b46d"
+        }
+      },
+      "title": "figure-19-3.png"
+    },
+    "cybok/images/figure-19-4.png": {
+      "canvas_id": "25583451",
+      "extra": {
+        "size": "91415"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "e1ee1e5bc4ec3226"
+        },
+        "repo": {
+          "body": "b99e8425fd3bbd2f"
+        }
+      },
+      "title": "figure-19-4.png"
+    },
+    "cybok/images/figure-19-5.png": {
+      "canvas_id": "25583452",
+      "extra": {
+        "size": "58219"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "cd2b4f2e0902ebfc"
+        },
+        "repo": {
+          "body": "059ac02d0785ee5c"
+        }
+      },
+      "title": "figure-19-5.png"
+    },
+    "cybok/images/figure-2-1.png": {
+      "canvas_id": "25583453",
+      "extra": {
+        "size": "511179"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "f636b00868debbd7"
+        },
+        "repo": {
+          "body": "1c90a71a8a58c056"
+        }
+      },
+      "title": "figure-2-1.png"
+    },
+    "cybok/images/figure-2-2.png": {
+      "canvas_id": "25583454",
+      "extra": {
+        "size": "142694"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "145eecc38de88335"
+        },
+        "repo": {
+          "body": "b59f63500df67617"
+        }
+      },
+      "title": "figure-2-2.png"
+    },
+    "cybok/images/figure-2-4.png": {
+      "canvas_id": "25583455",
+      "extra": {
+        "size": "218126"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "e90dd543c0515566"
+        },
+        "repo": {
+          "body": "4a3d8a632633f386"
+        }
+      },
+      "title": "figure-2-4.png"
+    },
+    "cybok/images/figure-2-5.png": {
+      "canvas_id": "25583456",
+      "extra": {
+        "size": "313564"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "27f3331fc3bc22dd"
+        },
+        "repo": {
+          "body": "6657e8591eaee526"
+        }
+      },
+      "title": "figure-2-5.png"
+    },
+    "cybok/images/figure-2-6.png": {
+      "canvas_id": "25583457",
+      "extra": {
+        "size": "133697"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "d5145f979c8f9bf0"
+        },
+        "repo": {
+          "body": "0663618ad8c3be3d"
+        }
+      },
+      "title": "figure-2-6.png"
+    },
+    "cybok/images/figure-4-1.png": {
+      "canvas_id": "25583458",
+      "extra": {
+        "size": "199547"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "8b032ed019c221fd"
+        },
+        "repo": {
+          "body": "a28c14a0457786e9"
+        }
+      },
+      "title": "figure-4-1.png"
+    },
+    "cybok/images/figure-4-2.png": {
+      "canvas_id": "25583459",
+      "extra": {
+        "size": "171845"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "e531a6209fae2939"
+        },
+        "repo": {
+          "body": "904b53fb861e4f5f"
+        }
+      },
+      "title": "figure-4-2.png"
+    },
+    "cybok/images/figure-4-3.png": {
+      "canvas_id": "25583461",
+      "extra": {
+        "size": "201984"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "e533b87236454ab2"
+        },
+        "repo": {
+          "body": "34620964f6b62454"
+        }
+      },
+      "title": "figure-4-3.png"
+    },
+    "cybok/images/figure-4-4.png": {
+      "canvas_id": "25583462",
+      "extra": {
+        "size": "209571"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "47ecd0d1f05fd612"
+        },
+        "repo": {
+          "body": "9deaafe1535981c6"
+        }
+      },
+      "title": "figure-4-4.png"
+    },
+    "cybok/images/figure-7-1.png": {
+      "canvas_id": "25583463",
+      "extra": {
+        "size": "27843"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "d72977dc7a4f1407"
+        },
+        "repo": {
+          "body": "82b33320f9e66e2a"
+        }
+      },
+      "title": "figure-7-1.png"
+    },
+    "cybok/images/figure-8-1.png": {
+      "canvas_id": "25583464",
+      "extra": {
+        "size": "397716"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "f71cf31f7586bea3"
+        },
+        "repo": {
+          "body": "61fad7c4f7064b6d"
+        }
+      },
+      "title": "figure-8-1.png"
+    },
+    "cybok/images/figure-8-2.png": {
+      "canvas_id": "25583465",
+      "extra": {
+        "size": "710084"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "0aa0ae122e5e3491"
+        },
+        "repo": {
+          "body": "64548ce0148b8367"
+        }
+      },
+      "title": "figure-8-2.png"
+    },
+    "cybok/images/figure-8-3.png": {
+      "canvas_id": "25583467",
+      "extra": {
+        "size": "316366"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "92c2428c5b299401"
+        },
+        "repo": {
+          "body": "54c37ad76626fbea"
+        }
+      },
+      "title": "figure-8-3.png"
+    },
+    "cybok/images/figure-8-4.png": {
+      "canvas_id": "25583468",
+      "extra": {
+        "size": "280202"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "21a68b0603f31520"
+        },
+        "repo": {
+          "body": "3e8d730f27382c2a"
+        }
+      },
+      "title": "figure-8-4.png"
+    },
+    "cybok/images/figure-8-5.png": {
+      "canvas_id": "25583469",
+      "extra": {
+        "size": "169321"
+      },
+      "kind": "file",
+      "page_url": "",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "71bf04ce25153718"
+        },
+        "repo": {
+          "body": "e73199cd793dcbda"
+        }
+      },
+      "title": "figure-8-5.png"
+    },
+    "cybok/index.md": {
+      "canvas_id": "cybok-chapters",
+      "extra": {},
+      "kind": "page",
+      "page_url": "cybok-chapters",
+      "synced": {
+        "at": "2026-10-29T00:24:31.326Z",
+        "canvas": {
+          "body": "061a3c04c65d1c30",
+          "settings": "f5abd7b3e1072b83"
+        },
+        "repo": {
+          "body": "ec59a2a398060198",
+          "settings": "f5abd7b3e1072b83"
+        }
+      },
+      "title": "CyBOK Chapters"
     },
     "data/auth.log": {
       "canvas_id": "25497268",
@@ -1105,7 +2059,7 @@
       "kind": "page",
       "page_url": "module-1-overview-2",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "34d9941e1eb5585c",
           "settings": "a563f73f65eb0583"
@@ -1123,13 +2077,13 @@
       "kind": "page",
       "page_url": "1-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
-          "body": "ab4077830bcf366e",
+          "body": "d3bbf1ebcbaac758",
           "settings": "4356d0fa8391aa85"
         },
         "repo": {
-          "body": "a140d30338e7065c",
+          "body": "cec2bd66de4dfea7",
           "settings": "4356d0fa8391aa85"
         }
       },
@@ -1141,7 +2095,7 @@
       "kind": "page",
       "page_url": "module-2-overview",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "e61ba48f95106bff",
           "settings": "9e4e11cbd0fb5c1d"
@@ -1159,13 +2113,13 @@
       "kind": "page",
       "page_url": "2-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
-          "body": "4bc6303612f93bfe",
+          "body": "0b9b58b1303768cc",
           "settings": "d55939e8797d05f3"
         },
         "repo": {
-          "body": "d87cc1a15b85604a",
+          "body": "6e367f39690a0b2d",
           "settings": "d55939e8797d05f3"
         }
       },
@@ -1177,13 +2131,13 @@
       "kind": "page",
       "page_url": "3-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
-          "body": "bdee3ad346dc212e",
+          "body": "006ac1dfba13c61e",
           "settings": "5d557b9423830530"
         },
         "repo": {
-          "body": "c8ec6fcc322cab55",
+          "body": "8a46fb34a51c39cf",
           "settings": "5d557b9423830530"
         }
       },
@@ -1195,7 +2149,7 @@
       "kind": "page",
       "page_url": "module-3-overview",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "86e0837c8d328061",
           "settings": "0b08fcc278ddffdf"
@@ -1213,7 +2167,7 @@
       "kind": "page",
       "page_url": "module-4-overview",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "8cdd2889a832c009",
           "settings": "20b2d5599e090243"
@@ -1231,13 +2185,13 @@
       "kind": "page",
       "page_url": "4-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
-          "body": "4a3d334b79405100",
+          "body": "cccce02e0f7fba5a",
           "settings": "7ad390a9d790b140"
         },
         "repo": {
-          "body": "b3e02ffd576ef8bb",
+          "body": "39a39ceb9fde7782",
           "settings": "7ad390a9d790b140"
         }
       },
@@ -1249,13 +2203,13 @@
       "kind": "page",
       "page_url": "5-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
-          "body": "598eb4f7a61e8e6f",
+          "body": "a4a1160bcc759e44",
           "settings": "ecdfd1b1a7c399e4"
         },
         "repo": {
-          "body": "6b8f6f124685cdd3",
+          "body": "07a63fcb04aaa438",
           "settings": "ecdfd1b1a7c399e4"
         }
       },
@@ -1267,7 +2221,7 @@
       "kind": "page",
       "page_url": "module-5-overview",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "d3a2c31d17f4473e",
           "settings": "daca6b9c2b2ac9f4"
@@ -1285,13 +2239,13 @@
       "kind": "page",
       "page_url": "6-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
-          "body": "019eeb702325fdba",
+          "body": "aebcebe8616a0729",
           "settings": "79faf8ceb712773c"
         },
         "repo": {
-          "body": "8ba3f40a8a2075a6",
+          "body": "43eaa00e1ac8807e",
           "settings": "79faf8ceb712773c"
         }
       },
@@ -1303,7 +2257,7 @@
       "kind": "page",
       "page_url": "module-6-overview",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "3253916cdbb35f5c",
           "settings": "3d8cc00ec9af0fee"
@@ -1321,7 +2275,7 @@
       "kind": "page",
       "page_url": "module-7-overview",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "4785c3b4a4e405bb",
           "settings": "9fba7390ec89c965"
@@ -1339,13 +2293,13 @@
       "kind": "page",
       "page_url": "7-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
-          "body": "e54abdc5a08349cf",
+          "body": "98b51833c4686bd4",
           "settings": "1e1d3289eeacc110"
         },
         "repo": {
-          "body": "b59bb0ce19950f35",
+          "body": "f2df71b7db8f8467",
           "settings": "1e1d3289eeacc110"
         }
       },
@@ -1357,7 +2311,7 @@
       "kind": "page",
       "page_url": "module-8-overview",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "5c863b9d91458a71",
           "settings": "86d94354397cb36e"
@@ -1375,13 +2329,13 @@
       "kind": "page",
       "page_url": "8-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
-          "body": "61d62271aebcc437",
+          "body": "a9fb63e100f92397",
           "settings": "993586020cb4f656"
         },
         "repo": {
-          "body": "5243d82812a41ca4",
+          "body": "1b9fc2f598150fd8",
           "settings": "993586020cb4f656"
         }
       },
@@ -1393,7 +2347,7 @@
       "kind": "page",
       "page_url": "module-9-overview",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "22429f7aa9d65af4",
           "settings": "8b71ae9d52df30e9"
@@ -1411,7 +2365,7 @@
       "kind": "page",
       "page_url": "9-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "6d15a8503b011f8b",
           "settings": "cb3ba5662be6ef19"
@@ -1429,13 +2383,13 @@
       "kind": "page",
       "page_url": "10-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
-          "body": "b16e5a387b8b6ad1",
+          "body": "505656f3566129b7",
           "settings": "645c74485e91f436"
         },
         "repo": {
-          "body": "8337e0a14b1a882e",
+          "body": "048b1d2a86d0f5d9",
           "settings": "645c74485e91f436"
         }
       },
@@ -1447,7 +2401,7 @@
       "kind": "page",
       "page_url": "module-10-overview",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "162366f047f6c1b9",
           "settings": "11d6f49be043a2e3"
@@ -1465,13 +2419,13 @@
       "kind": "page",
       "page_url": "11-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
-          "body": "6e0412537c7b3aba",
+          "body": "ec7dbdc7b6ba77d7",
           "settings": "11c9771e7a4d43a1"
         },
         "repo": {
-          "body": "cabb1b49047ec768",
+          "body": "87a76e5588ab1488",
           "settings": "11c9771e7a4d43a1"
         }
       },
@@ -1483,7 +2437,7 @@
       "kind": "page",
       "page_url": "module-11-overview",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "a6fad90cb67c2441",
           "settings": "bb3bccb39b83d786"
@@ -1501,13 +2455,13 @@
       "kind": "page",
       "page_url": "12-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
-          "body": "ab2d4e5aae4ff6b9",
+          "body": "e9da9bc9c1840880",
           "settings": "127e977e723b5333"
         },
         "repo": {
-          "body": "a24c841ec92a53ea",
+          "body": "1f225eade042eb42",
           "settings": "127e977e723b5333"
         }
       },
@@ -1519,7 +2473,7 @@
       "kind": "page",
       "page_url": "module-12-overview",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "0d06096f78b38d25",
           "settings": "70dd20239161e6d9"
@@ -1537,7 +2491,7 @@
       "kind": "page",
       "page_url": "module-13-overview",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "7395ef31af8f075f",
           "settings": "864bedb8a5f4244a"
@@ -1555,13 +2509,13 @@
       "kind": "page",
       "page_url": "13-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
-          "body": "1766a152805a97f2",
+          "body": "236b25ab74fa84df",
           "settings": "30a18856428d6543"
         },
         "repo": {
-          "body": "7af271f3973431f2",
+          "body": "50755f0f79a0c75a",
           "settings": "30a18856428d6543"
         }
       },
@@ -1573,7 +2527,7 @@
       "kind": "page",
       "page_url": "module-14-overview",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "d08b406228b93201",
           "settings": "74d8497d23ef2fa6"
@@ -1591,13 +2545,13 @@
       "kind": "page",
       "page_url": "14-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
-          "body": "6c41aa68754b9c69",
+          "body": "587f76cc9bfbe674",
           "settings": "e30fa5c3bab4bf6e"
         },
         "repo": {
-          "body": "09ffad4f54eaeb8e",
+          "body": "d1a6357175113c04",
           "settings": "e30fa5c3bab4bf6e"
         }
       },
@@ -1609,7 +2563,7 @@
       "kind": "page",
       "page_url": "module-15-overview",
       "synced": {
-        "at": "2026-10-28T16:18:37.050Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
           "body": "e979c5f4bcf17b3d",
           "settings": "5b8374695b1ff3fe"
@@ -1627,13 +2581,13 @@
       "kind": "page",
       "page_url": "15-dot-01-readings-and-lecture-notes",
       "synced": {
-        "at": "2026-10-28T23:52:52.527Z",
+        "at": "2026-10-29T00:24:31.326Z",
         "canvas": {
-          "body": "15d95e463596642a",
+          "body": "243387817fc24521",
           "settings": "c57a7e0b20715cec"
         },
         "repo": {
-          "body": "a4dde2945efed6df",
+          "body": "1499b3c0cdaed33f",
           "settings": "c57a7e0b20715cec"
         }
       },

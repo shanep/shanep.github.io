@@ -16,7 +16,7 @@ numbers match the PDF, so a reading like §10.4 is the same section here.
 | --- | --- |
 | 1 | [Introduction](01-introduction.md) |
 | 2 | [Risk Management & Governance](02-risk-management-and-governance.md) |
-| 3 | [Law & Regulation](03-law-and-regulation.md) |
+| 3 | [Law & Regulation, Part 1](03-law-and-regulation.md) (§3.1-3.7) and [Part 2](03-law-and-regulation-part-2.md) (§3.8-3.14) |
 | 4 | [Human Factors](04-human-factors.md) |
 | 5 | [Privacy & Online Rights](05-privacy-and-online-rights.md) |
 | 6 | [Malware & Attack Technologies](06-malware-and-attack-technologies.md) |

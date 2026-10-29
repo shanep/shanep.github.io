@@ -24,7 +24,7 @@
 | [CyBOK §3.1](../cybok/03-law-and-regulation.md#_3-1-introductory-principles-of-law-and-legal-research) | §3.1 Introductory principles of law and legal research | 52-58 | 6 pp | 40 min |
 | [CyBOK §3.4](../cybok/03-law-and-regulation.md#_3-4-data-protection) | §3.4 Data protection *(skim, for D2)* | 72-81 | 9 pp | 25 min |
 | [CyBOK §3.5](../cybok/03-law-and-regulation.md#_3-5-computer-crime) | §3.5 Computer crime *(skim, for D2)* | 81-86 | 5 pp | 15 min |
-| [CyBOK §3.13](../cybok/03-law-and-regulation.md#_3-13-ethics) | §3.13 Ethics: all of it, especially §3.13.3 on vulnerability testing and disclosure | 122-127 | 5 pp | 35 min |
+| [CyBOK §3.13](../cybok/03-law-and-regulation-part-2.md#_3-13-ethics) | §3.13 Ethics: all of it, especially §3.13.3 on vulnerability testing and disclosure | 122-127 | 5 pp | 35 min |
 | [CyBOK §5.2](../cybok/05-privacy-and-online-rights.md#_5-2-privacy-as-control) | §5.2 Privacy as Control | 185-187 | 2 pp | 15 min |
 | [CyBOK §5.3](../cybok/05-privacy-and-online-rights.md#_5-3-privacy-as-transparency) | §5.3 Privacy as Transparency | 187-189 | 2 pp | 15 min |
 

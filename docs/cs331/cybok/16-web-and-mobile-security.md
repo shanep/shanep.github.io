@@ -113,7 +113,7 @@ This section gives a brief introduction to the most essential technologies neede
 
 **16.2.2.1 Uniform Resource Locators**
 
-Uniform Resource Locators (URLs) \[<a href="#ref-1469" aria-label="Reference 1469">1469</a>\] are a core concept in the web. A URL is a well-formed and fully qualified text string that addresses and identifies a resource on a server. Address bars in modern browser User Interfaces (UIs) use the URLs to illustrate the remote address of a rendered document. A fully qualified absolute URL string consists of several segments and contains all the required information to access a particular resource. The syntax of an absolute URL is: [scheme://credentials@host:port/resourcepath?query\_parameters#fragments](scheme://credentials@host:port/resourcepath?query_parameters#fragments). Each segment has a particular meaning (cf. [Table 16.1](#table-16-1)).
+Uniform Resource Locators (URLs) \[<a href="#ref-1469" aria-label="Reference 1469">1469</a>\] are a core concept in the web. A URL is a well-formed and fully qualified text string that addresses and identifies a resource on a server. Address bars in modern browser User Interfaces (UIs) use the URLs to illustrate the remote address of a rendered document. A fully qualified absolute URL string consists of several segments and contains all the required information to access a particular resource. The syntax of an absolute URL is: `scheme://credentials@host:port/resourcepath?query_parameters#fragments`. Each segment has a particular meaning (cf. [Table 16.1](#table-16-1)).
 
 <figure id="table-16-1">
 
