@@ -22,7 +22,7 @@ ours, not the book's. So are the names of links the book prints as a bare web ad
 
 Access control builds on authorisation and authentication. This KA \[Knowledge Area\][^14-1] will present the general foundations of access control and some significant instantiations that have emerged as IT \[information technology\] kept spreading into new application areas. It will survey modes of user authentication and the way they are currently deployed, authentication protocols for the web, noting how new use cases have led to a shift from authentication to authorisation protocols, and the formalisation of authentication properties as used in today’s protocol analysis tools. On accountability, the focus is on the management and protection of audit logs. The surveillance of logs to detect attacks or inappropriate behaviour is described in the Security Operations & Incident Management Knowledge Area (Chapter 8) while the examination of evidence following a breach of policy or attack is covered in the Forensics Knowledge Area (Chapter 9). Throughout the KA, we will flag technical terms that appear in more than one meaning in the academic and the trade literature.
 
-## 14.1 Introduction
+## 14.1 Introduction {#_14-1-introduction}
 
 > “All science is either physics or stamp collecting.” [Ernest Rutherford]
 
@@ -42,7 +42,7 @@ This KA first addresses authorisation in the context of access control and prese
 
 In their seminal paper \[<a href="#ref-1369" aria-label="Reference 1369">1369</a>\], Lampson et al. postulate *access control = authentication + authorisation*. We will follow this lead and present authorisation in the context of access control, starting with an introduction to the concepts fundamental for this domain, followed by an overview of different policy types. Libicki’s dictum, “connotation, not denotation, is the problem” \[<a href="#ref-1373" aria-label="Reference 1373">1373</a>\] also applies here, so we will pay particular attention to the attributes used when setting access rules, and to the nature of the entities governed by those rules. Code-based access control, mobile security, and Digital Rights Management will introduce new paradigms to access control, without changing its substance. We will then present design options for policy enforcement and discuss delegation and some important theoretical foundations of access control.
 
-### 14.3.1 Access Control
+### 14.3.1 Access Control {#_14-3-1-access-control}
 
 Access control is “the process of granting or denying specific requests ...” \[<a href="#ref-1374" aria-label="Reference 1374">1374</a>\]. This process needs the following inputs
 
@@ -125,7 +125,7 @@ For a brief period, it was fashionable to use Digital Rights Management as the g
 
 Usage control may also include provisions for what happens after an object is accessed, e.g., that a document can be read but its content cannot be copied or adjustment of attributes after an access has been performed, e.g., decrementing the counter of free articles a visitor may access. In another interpretation, ‘traditional’ access control deals with the elementary access operations found at an infrastructure level while usage control addresses entire work flows at the application level. In telecom services, usage control may put limits on traffic volume.
 
-### 14.3.2 Enforcing Access Control
+### 14.3.2 Enforcing Access Control {#_14-3-2-enforcing-access-control}
 
 To enforce a security policy, this policy first has to be set. For a given request, a decision has to be made about whether the request complies with the policy, which may need additional information from other sources. Finally, the decision has to be conveyed to the component that manages the resource requested. In the terminology of XACML, this involves
 
@@ -183,7 +183,7 @@ Schneider describes three types of reference monitors \[<a href="#ref-1372" aria
 - Reference monitors that can see the entire program and analyse its future behaviour before making an access control decision.
 - Instructions guarding all security relevant operations are in-lined into the program; in all other respects the in-lined program should behave as before. This type of reference monitor, called *in-line reference monitor* in \[<a href="#ref-1372" aria-label="Reference 1372">1372</a>\], is mostly used to deal with software security issues, see e.g. \[<a href="#ref-1181" aria-label="Reference 1181">1181</a>\].
 
-### 14.3.3 Theory
+### 14.3.3 Theory {#_14-3-3-theory}
 
 **14.3.3.1 Security Models**
 
@@ -279,7 +279,7 @@ Authentication in a narrow sense verifies the identity of a user logging in – 
 
 We will give a brief overview of identity management before moving to password-based and biometric user authentication. We then cover authentication protocols from the Needham-Schroeder protocol via Kerberos and SAML to OAuth 2.0, observing that OAuth 2.0 is more of an authorisation protocol than an authentication protocol. We conclude with an overview of formalisations of authentication properties that serve as the basis for a formal analysis of authentication protocols.
 
-### 14.5.1 Identity Management
+### 14.5.1 Identity Management {#_14-5-1-identity-management}
 
 Following NIST, *“identity management systems are responsible for the creation, use, and termination of electronic identities”*. This includes operational aspects when creating and deleting electronic identities. On creation, one question is how strongly electronic identities must be linked to persons. In some sensitive areas, strong links have to be established and documented. For example, money laundering rules may demand a thorough verification of an account holder’s identity. In other areas, electronic identities need not to be tied to a person. *Privacy by design* implies that such applications should use electronic identities that cannot be linked to persons. Identity management may also link access rights to an electronic identity, either directly or via some layer of indirection such as a role. Electronic identities should be terminated when they are no longer required, e.g. when a person leaves an organisation. Care has to be taken that this is done on all systems where this identity had been registered.
 
@@ -291,7 +291,7 @@ Web applications often use email addresses as electronic identities. This is con
 
 Identity management can also be viewed from a person’s perspective. A person using different identities with different organisations may want to manage how identities are revealed to other parties.
 
-### 14.5.2 User Authentication
+### 14.5.2 User Authentication {#_14-5-2-user-authentication}
 
 Access requests are issued by subjects. Subjects can be associated with security attributes when they are created or during their lifetime. Authentication can then be viewed as the service that validates the security attributes of a subject when it is created. When subjects are created due to some user action, and when their security attributes depend on the corresponding user identity, *user authentication* has to give a reasonable degree of assurance that the user identity linked to the subject belongs to the user who had triggered the creation of the subject. The degree of assurance (strength of authentication) should be commensurate with the severity of the risk one wants to mitigate. The term *risk-based authentication* thus states the obvious.
 
@@ -363,7 +363,7 @@ The token could be a smartphone registered with the service; customers could the
 
 In contrast to the European Trust Services and Electronic identification regulation (eID Directive - Regulation (EU) No 910/2014) that specifies requirements on secure signature creation devices, PSD2 does not impose security requirements on the devices used for user authentication but wants “to allow for the use of all common types of devices (such as computers, tablets and mobile phones) for carrying out different payment services”. PSD2 and the eID Directive thus strike different balances between ease-of-use and security, a trade-off notoriously difficult to get right.
 
-### 14.5.3 Authentication in Distributed Systems
+### 14.5.3 Authentication in Distributed Systems {#_14-5-3-authentication-in-distributed-systems}
 
 When methods for user authentication in distributed systems were first designed, an authenticated *session* took the place of a process speaking for the user. Authenticated sessions were constructed on the basis of cryptographic keys. In the terminology of Section 14.3.1, those session keys became the subjects of access control, and *key establishment* became a core feature of the user authentication process.
 
@@ -507,7 +507,7 @@ There is a fundamental switch in focus compared to SSO \[Single Sign-On\] protoc
 
 OpenID Connect puts user authentication back into the OAuth 2.0 message flow. The client application now doubles as a relying party, and the authorisation server becomes an authentication & authorisation server that issues digitally signed *id tokens* (authentication assertions in SAML diction). An id token contains the name of the issuer, the name of the authenticated user (called *subject*), the intended relying party (called *audience*), the nonce that had been sent with the authentication request, an indicator of authentication strength, and other fields.
 
-### 14.5.4 Facets of Authentication
+### 14.5.4 Facets of Authentication {#_14-5-4-facets-of-authentication}
 
 We have sketched how user authentication in distributed systems first integrated session and key establishment with the process of verifying a user’s identity, and later established authorisation practices to access a user’s resources. In communication security, *peer entity authentication* refers to the process of verifying the identity of the peer in a *connection* and *data origin authentication* to the process of verifying the origin of individual data items.
 
@@ -552,7 +552,7 @@ For example, access control in distributed systems may make use of public key cr
 
 Authentication may serve the purpose of giving *credit* to an entity for actions it has performed, or of establishing which entity is *responsible* for an action \[<a href="#ref-1429" aria-label="Reference 1429">1429</a>\]. In the first case, an attack amounts to earning undeserved credits and authentication is broken if the attacker succeeds in making a victim perform actions under the attacker’s identity. In the second case, an attack amounts to deflecting responsibility to someone else and authentication is broken if the attacker succeeds in performing actions under the victim’s identity.
 
-## 14.6 Accountability
+## 14.6 Accountability {#_14-6-accountability}
 
 > \[<a href="#ref-1430" aria-label="Reference 1430">1430</a>, ch. 24\], \[<a href="#ref-1431" aria-label="Reference 1431">1431</a>, ch. 18\]
 

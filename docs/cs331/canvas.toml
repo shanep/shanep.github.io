@@ -98,6 +98,9 @@ pages = [
     # files because students read them rather than download them.
     "data/incident-report.md",
     "data/photoshare-system.md",
+    # The CyBOK chapters the course assigns, as pages, so the readings in the
+    # notes link to them inside Canvas rather than out to the website.
+    "cybok/*.md",
 ]
 
 # Ungraded discussions: no points, no dates, never in the gradebook. Course
@@ -126,7 +129,13 @@ files = [
     "data/vuln.c",
     "data/web_access.log",
     "docs/CyBOK_v1.2.0.pdf",
+    "cybok/images/*",
 ]
+
+# TeX in $...$ and $$...$$, as the website's markdown.math. The CyBOK
+# cryptography chapter needs it, and Canvas draws it with MathJax.
+[markdown]
+math = true
 
 [layout.gradable]
 lab        = "assignments/lab-*.md"
@@ -225,6 +234,28 @@ items = [
     "resources.md",
     "objectives.md",
     "course-resources/course-questions.md",
+]
+
+[[module]]
+title = "CyBOK Chapters"
+publish = true
+items = [
+    "cybok/index.md",
+    "cybok/01-introduction.md",
+    "cybok/02-risk-management-and-governance.md",
+    "cybok/03-law-and-regulation.md",
+    "cybok/04-human-factors.md",
+    "cybok/05-privacy-and-online-rights.md",
+    "cybok/06-malware-and-attack-technologies.md",
+    "cybok/07-adversarial-behaviours.md",
+    "cybok/08-security-operations-and-incident-management.md",
+    "cybok/10-cryptography.md",
+    "cybok/14-authentication-authorisation-and-accountability.md",
+    "cybok/15-software-security.md",
+    "cybok/16-web-and-mobile-security.md",
+    "cybok/17-secure-software-lifecycle.md",
+    "cybok/18-applied-cryptography.md",
+    "cybok/19-network-security.md",
 ]
 
 # Every module but Course Resources follows the shell: its overview page, then

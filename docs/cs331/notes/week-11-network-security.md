@@ -25,10 +25,10 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK §19.1](https://shanepanter.com/cs331/cybok/19-network-security#_19-1-security-goals-and-attacker-models) | §19.1 Security Goals and Attacker Models | 672-674 | 2 pp | 15 min |
-| [CyBOK §19.3.2](https://shanepanter.com/cs331/cybok/19-network-security#_19-3-2-security-at-the-transport-layer) | §19.3.2 Security at the Transport Layer: TLS (Transport Layer Security), PKI (public key infrastructure), TCP (Transmission Control Protocol), UDP (User Datagram Protocol), QUIC | 682-686 | 4 pp | 30 min |
-| [CyBOK §19.3.3](https://shanepanter.com/cs331/cybok/19-network-security#_19-3-3-security-at-the-internet-layer) | §19.3.3 Security at the Internet Layer: IPv4, IPv6, routing, ICMP (Internet Control Message Protocol) | 686-691 | 5 pp | 35 min |
-| [CyBOK §19.4](https://shanepanter.com/cs331/cybok/19-network-security#_19-4-network-security-tools) | §19.4 Network Security Tools | 697-703 | 6 pp | 40 min |
+| [CyBOK §19.1](../cybok/19-network-security.md#_19-1-security-goals-and-attacker-models) | §19.1 Security Goals and Attacker Models | 672-674 | 2 pp | 15 min |
+| [CyBOK §19.3.2](../cybok/19-network-security.md#_19-3-2-security-at-the-transport-layer) | §19.3.2 Security at the Transport Layer: TLS (Transport Layer Security), PKI (public key infrastructure), TCP (Transmission Control Protocol), UDP (User Datagram Protocol), QUIC | 682-686 | 4 pp | 30 min |
+| [CyBOK §19.3.3](../cybok/19-network-security.md#_19-3-3-security-at-the-internet-layer) | §19.3.3 Security at the Internet Layer: IPv4, IPv6, routing, ICMP (Internet Control Message Protocol) | 686-691 | 5 pp | 35 min |
+| [CyBOK §19.4](../cybok/19-network-security.md#_19-4-network-security-tools) | §19.4 Network Security Tools | 697-703 | 6 pp | 40 min |
 
 §19.3.1 (application layer) and §19.3.4 (link layer) are not assigned, but §19.3.4.5 on network
 segmentation is one page and worth the detour.

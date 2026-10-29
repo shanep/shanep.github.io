@@ -165,7 +165,7 @@ Sabotage is not always linked to state actors. Major incidents have been caused 
 
 **Disinformation.** In the past two years evidence has emerged that state-sponsored actors have been involved in spreading disinformation on social media \[<a href="#ref-697" aria-label="Reference 697">697</a>, <a href="#ref-778" aria-label="References 778–780">778–780</a>\]. This has been done through *troll* accounts that acted to polarise online discussion on sensitive topics \[<a href="#ref-781" aria-label="Reference 781">781</a>\]. While social networks such as Twitter have made data about accounts related to state-sponsored disinformation publicly available \[<a href="#ref-697" aria-label="Reference 697">697</a>, <a href="#ref-778" aria-label="Reference 778">778</a>\], rigorous evidence is still missing on how these operations are carried out on the backend. For example, the extent in which the accounts involved in disinformation are controlled by human operators as opposed to bots is not clear.
 
-## 7.2 The Elements of a Malicious Operation
+## 7.2 The Elements of a Malicious Operation {#_7-2-the-elements-of-a-malicious-operation}
 
 \[<a href="#ref-782" aria-label="Reference 782">782</a>\]\[<a href="#ref-783" aria-label="Reference 783">783</a>\]\[<a href="#ref-784" aria-label="Reference 784">784</a>\]\[<a href="#ref-785" aria-label="Reference 785">785</a>, <a href="#ref-786" aria-label="Reference 786">786</a>\]\[<a href="#ref-700" aria-label="Reference 700">700</a>\]\[<a href="#ref-787" aria-label="Reference 787">787</a>, <a href="#ref-788" aria-label="Reference 788">788</a>\]
 

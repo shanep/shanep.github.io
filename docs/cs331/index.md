@@ -37,7 +37,7 @@ everything you need.
 CyBOK (Cyber Security Body of Knowledge) is a free, openly licensed reference written by the people who work in each area. The
 complete PDF (Portable Document Format) is in this course as [CyBOK v1.2.0 (PDF)](docs/CyBOK_v1.2.0.pdf) and in Canvas
 Files. You never have to go anywhere else to get a reading. Every chapter we use is also a web
-page at [CyBOK Chapters](https://shanepanter.com/cs331/cybok/), which works with a screen reader
+page at [CyBOK Chapters](cybok/index.md), which works with a screen reader
 and reads better on a phone.
 
 Two things to know about it:

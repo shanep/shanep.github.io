@@ -24,10 +24,10 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK §18.3.1](https://shanepanter.com/cs331/cybok/18-applied-cryptography#_18-3-1-the-key-life-cycle) | §18.3.1 The Key Life-cycle | 651-653 | 2 pp | 15 min |
-| [CyBOK §18.3.2](https://shanepanter.com/cs331/cybok/18-applied-cryptography#_18-3-2-key-derivation) | §18.3.2-18.3.7 Key derivation, generation, storage, transport, refreshing | 653-658 | 5 pp | 35 min |
-| [CyBOK §18.3.8](https://shanepanter.com/cs331/cybok/18-applied-cryptography#_18-3-8-managing-public-keys-and-public-key-infrastructure) | §18.3.8 Managing Public Keys and PKI (public key infrastructure) | 658-661 | 3 pp | 30 min |
-| [CyBOK §18.5.1](https://shanepanter.com/cs331/cybok/18-applied-cryptography#_18-5-1-transport-layer-security) | §18.5.1 Transport Layer Security | 664-665 | 1 p | 15 min |
+| [CyBOK §18.3.1](../cybok/18-applied-cryptography.md#_18-3-1-the-key-life-cycle) | §18.3.1 The Key Life-cycle | 651-653 | 2 pp | 15 min |
+| [CyBOK §18.3.2](../cybok/18-applied-cryptography.md#_18-3-2-key-derivation) | §18.3.2-18.3.7 Key derivation, generation, storage, transport, refreshing | 653-658 | 5 pp | 35 min |
+| [CyBOK §18.3.8](../cybok/18-applied-cryptography.md#_18-3-8-managing-public-keys-and-public-key-infrastructure) | §18.3.8 Managing Public Keys and PKI (public key infrastructure) | 658-661 | 3 pp | 30 min |
+| [CyBOK §18.5.1](../cybok/18-applied-cryptography.md#_18-5-1-transport-layer-security) | §18.5.1 Transport Layer Security | 664-665 | 1 p | 15 min |
 
 **§18.3.8 is the core of the week.** It covers binding keys to identities via certificates, reliance
 on naming and CA operations, and certificate status information, which is where revocation, the

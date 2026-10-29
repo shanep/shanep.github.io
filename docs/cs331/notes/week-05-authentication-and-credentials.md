@@ -23,10 +23,10 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK §14.5.1](https://shanepanter.com/cs331/cybok/14-authentication-authorisation-and-accountability#_14-5-1-identity-management) | §14.5.1 Identity Management | 477-478 | 1 p | 10 min |
-| [CyBOK §14.5.2](https://shanepanter.com/cs331/cybok/14-authentication-authorisation-and-accountability#_14-5-2-user-authentication) | §14.5.2 User Authentication: passwords, biometrics, tokens, behavioral, 2FA | 478-482 | 4 pp | 35 min |
-| [CyBOK §14.5.3](https://shanepanter.com/cs331/cybok/14-authentication-authorisation-and-accountability#_14-5-3-authentication-in-distributed-systems) | §14.5.3 Authentication in Distributed Systems, Kerberos, SAML, OAuth2/OIDC | 482-485 | 3 pp | 25 min |
-| [CyBOK §14.5.4](https://shanepanter.com/cs331/cybok/14-authentication-authorisation-and-accountability#_14-5-4-facets-of-authentication) | §14.5.4 Facets of Authentication | 485-487 | 2 pp | 15 min |
+| [CyBOK §14.5.1](../cybok/14-authentication-authorisation-and-accountability.md#_14-5-1-identity-management) | §14.5.1 Identity Management | 477-478 | 1 p | 10 min |
+| [CyBOK §14.5.2](../cybok/14-authentication-authorisation-and-accountability.md#_14-5-2-user-authentication) | §14.5.2 User Authentication: passwords, biometrics, tokens, behavioral, 2FA | 478-482 | 4 pp | 35 min |
+| [CyBOK §14.5.3](../cybok/14-authentication-authorisation-and-accountability.md#_14-5-3-authentication-in-distributed-systems) | §14.5.3 Authentication in Distributed Systems, Kerberos, SAML, OAuth2/OIDC | 482-485 | 3 pp | 25 min |
+| [CyBOK §14.5.4](../cybok/14-authentication-authorisation-and-accountability.md#_14-5-4-facets-of-authentication) | §14.5.4 Facets of Authentication | 485-487 | 2 pp | 15 min |
 
 ### Additional readings
 

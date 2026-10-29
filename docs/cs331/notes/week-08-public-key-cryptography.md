@@ -22,9 +22,9 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK §10.6](https://shanepanter.com/cs331/cybok/10-cryptography#_10-6-public-key-encryption) | §10.6 Public Key Encryption: KEM/DEM, RSA (Rivest-Shamir-Adleman), elliptic curves | 336-339 | 3 pp | 25 min |
-| [CyBOK §10.7](https://shanepanter.com/cs331/cybok/10-cryptography#_10-7-public-key-signatures) | §10.7 Public Key Signatures: RSA-PSS (RSA Probabilistic Signature Scheme), DSA (Digital Signature Algorithm), EC-DSA (elliptic curve DSA), Schnorr | 339-341 | 2 pp | 20 min |
-| [CyBOK §10.8](https://shanepanter.com/cs331/cybok/10-cryptography#_10-8-standard-protocols) | §10.8 Standard Protocols: authentication and key agreement | 341-345 | 4 pp | 30 min |
+| [CyBOK §10.6](../cybok/10-cryptography.md#_10-6-public-key-encryption) | §10.6 Public Key Encryption: KEM/DEM, RSA (Rivest-Shamir-Adleman), elliptic curves | 336-339 | 3 pp | 25 min |
+| [CyBOK §10.7](../cybok/10-cryptography.md#_10-7-public-key-signatures) | §10.7 Public Key Signatures: RSA-PSS (RSA Probabilistic Signature Scheme), DSA (Digital Signature Algorithm), EC-DSA (elliptic curve DSA), Schnorr | 339-341 | 2 pp | 20 min |
+| [CyBOK §10.8](../cybok/10-cryptography.md#_10-8-standard-protocols) | §10.8 Standard Protocols: authentication and key agreement | 341-345 | 4 pp | 30 min |
 
 You are **not** assigned §10.9 through §10.11 (advanced protocols, encryption and signatures with
 special properties such as homomorphic encryption, and implementation aspects). Skip them.

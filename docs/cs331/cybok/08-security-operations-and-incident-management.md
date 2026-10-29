@@ -30,7 +30,7 @@ The Security Operations and Incident Management knowledge area description start
 
 ## Content
 
-## 8.1 Fundamental concepts
+## 8.1 Fundamental concepts {#_8-1-fundamental-concepts}
 
 \[<a href="#ref-829" aria-label="Reference 829">829</a>, <a href="#ref-831" aria-label="Reference 831">831</a>\]
 
@@ -136,7 +136,7 @@ The SOIM domain also implies processes, which are defined by the Chief Informati
 
 The Security Orchestration, Automation and Response components are included through the *Cyber-Threat Intelligence* (CTI, red) and *Information Sharing and Analysis Center* (ISAC, green) disks, representing the added benefit for the management platform to obtain information from external, relevant sources and to leverage this information to increase their detection efficiency (section 8.3) and impact assessment (section 8.5). While both interfaces provide information to a SOC, this information is of a fundamentally different nature. CERT and ISAC entities are trusted organisations, sometimes enabling sectoral information exchange, often established and governed by regulations. CTI is a much more fuzzy area, including open source intelligence as well as dedicated information feeds provided by commercial companies.
 
-## 8.2 Monitor: data sources
+## 8.2 Monitor: data sources {#_8-2-monitor-data-sources}
 
 \[<a href="#ref-829" aria-label="Reference 829">829</a>, <a href="#ref-833" aria-label="Reference 833">833</a>\]
 
@@ -347,7 +347,7 @@ A flow diagram in two parts.
 
 :::
 
-### 8.3.1 Misuse detection
+### 8.3.1 Misuse detection {#_8-3-1-misuse-detection}
 
 Misuse detection leverages the vast body of knowledge characterising malicious code and the vulnerabilities that this malicious code exploits. Software vulnerabilities, particularly in the Common Vulnerabilities and Exposures (CVE) nomenclature, are particularly relevant for this approach, but misuse detection has a broader reach. A misuse Intrusion Detection System seeks evidence of known malicious events in the trace, and alerts when they are found, informing the analyst about the specifics of the vulnerability exploited and its impact.
 
@@ -441,7 +441,7 @@ Depending on the detector and definition, the actual values computed during the 
 
 Another issue is the operational qualification of the IDS. Albin \[<a href="#ref-855" aria-label="Reference 855">855</a>\] compares Snort and Suricata, both on synthetic and on real traffic. Synthetic traffic provides the evaluator with access to the ground truth, thus enabling him to effectively compute $FN$ and $FP$. When testing on real traffic, the evaluator may be able to approximate the $FP$ better because real traffic artefacts are always likely to trigger cases that the IDS has not encountered during validation. This process, however, does not support evaluating $FN$. As evaluation is the basis for certification, it is no surprise that Intrusion Detection Systems are generally not certified at any security level.
 
-### 8.3.6 The base-rate fallacy
+### 8.3.6 The base-rate fallacy {#_8-3-6-the-base-rate-fallacy}
 
 One of the fundamental problems of intrusion detection is the *base-rate fallacy* formalised by Axelsson \[<a href="#ref-831" aria-label="Reference 831">831</a>\]. The problem stems from the fact that there is a large asymmetry between the number of malicious events and the number of benign events in the trace.
 
@@ -663,7 +663,7 @@ Beyond technology \[<a href="#ref-907" aria-label="Reference 907">907</a>\], cyb
 
 The SIEM world is undergoing profound changes through regulation and the impact of cyberattacks. From a regulation perspective, critical infrastructure operators are required to embed detection and mitigation capabilities. This represents the instantiation of the European NIS directive in national law. ENISA \[European Union Agency for Cybersecurity\] regularly provides information about cyber-incidents, particularly procedures for detection and management. The most recent report on a cyber-incident simulation in June 2017 indicated that progress is still required in CyberSA, but that cooperation is increasing and that information sharing is of the utmost importance for appropriate decision-making.
 
-## 8.7 Human factors: Incident management
+## 8.7 Human factors: Incident management {#_8-7-human-factors-incident-management}
 
 \[<a href="#ref-885" aria-label="Reference 885">885</a>\]
 

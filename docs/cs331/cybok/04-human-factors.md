@@ -214,7 +214,7 @@ Whilst 2FA has security benefits and reduces the need for strong passwords, not 
 
 With increasing numbers of new devices appearing, from smart watches to home devices, and even smaller screen sizes and implicit interactions between users and devices through a variety of sensors and actuators, considering the ergonomics of security interactions \[<a href="#ref-380" aria-label="Reference 380">380</a>\] is ever more important. The risks arising from Bring Your Own Device (BYOD) cultures are discussed in the Risk Management & Governance Knowledge Area (Chapter 2).
 
-## 4.3 Human Error
+## 4.3 Human Error {#_4-3-human-error}
 
 \[<a href="#ref-14" aria-label="Reference 14">14</a>, <a href="#ref-381" aria-label="Reference 381">381</a>\]
 
@@ -278,7 +278,7 @@ Task and work environment factors are clearly the responsibility of the organisa
 
 ‘amateur’ security solutions may not be entirely effective from a security perspective, but since they are ‘workable’, asking ‘how could we make that secure’ is a good starting point for finding an effective solution that fits in with how people work.
 
-## 4.4 Cyber security awareness and education
+## 4.4 Cyber security awareness and education {#_4-4-cyber-security-awareness-and-education}
 
 \[<a href="#ref-386" aria-label="Reference 386">386</a>, <a href="#ref-387" aria-label="Reference 387">387</a>\]
 

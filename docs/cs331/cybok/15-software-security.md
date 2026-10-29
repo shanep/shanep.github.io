@@ -63,7 +63,7 @@ These classifications are useful as a baseline for vulnerability identification,
 
 Specific categories of implementation vulnerabilities can often be described as violations of a (formal or informal) specification of some sub-component of the software system. Such a specification takes the form of a contract that makes explicit what the sub-component expects of, and provides to its clients. On violation of such a contract, the software system enters an error-state, and the further behaviour of the software system is typically behaviour that has not been considered by the system developers and is dependent on system implementation details. Attackers of the system can study the implementation details and exploit them to make the system behave in a way that is desirable for the attacker.
 
-### 15.1.1 Memory Management Vulnerabilities
+### 15.1.1 Memory Management Vulnerabilities {#_15-1-1-memory-management-vulnerabilities}
 
 Imperative programming languages support mutable state, i.e., these languages have constructs for allocating memory cells that can subsequently be assigned to, or read from by the program, and then deallocated again. The programming language definition specifies how to use these constructs correctly: for instance, allocation of $n$ memory cells will return a reference to an array of cells that can then be accessed with indices 0 to $n- 1$ until the reference is deallocated (freed) again. This specification can be seen as a contract for the memory management sub-component. Some programming languages implement this contract defensively, and will throw an exception if a client program accesses memory incorrectly. Other programming languages (most notably, C and C++) leave the responsibility for correctly allocating, accessing and deallocating memory in the hands of the programmer, and say that the behaviour of programs that access or manage memory incorrectly is *undefined*. Such languages are sometimes called *memory unsafe* languages, and bugs related to memory management (*memory management vulnerabilities*) are a notorious source of security bugs in these languages.
 
@@ -81,7 +81,7 @@ An attack consists of providing input to the program to trigger the vulnerabilit
 
 Because of the practical importance of these classes of attacks, mitigation techniques have been developed that counter specific attack techniques, and we discuss these in Section 15.4.
 
-### 15.1.2 Structured Output Generation Vulnerabilities
+### 15.1.2 Structured Output Generation Vulnerabilities {#_15-1-2-structured-output-generation-vulnerabilities}
 
 Programs often have to dynamically construct structured output that will then be consumed by another program. Examples include: the construction of SQL \[Structured Query Language\] queries to be consumed by a database, or the construction of HTML \[Hypertext Markup Language\] pages to be consumed by a web browser. One can think of the code that generates the structured output as a sub-component. The intended structure of the output, and how input to the sub-component should be used within the output, can be thought of as a contract to which that sub-component should adhere. For instance, when provided with a name and password as input, the intended output is a SQL query that selects the user with the given name and password from the users database table.
 
@@ -173,7 +173,7 @@ Side channel vulnerabilities are by definition not violations of a specification
 
 The classification of vulnerabilities by means of the specification they violate is useful for understanding relevant classes of vulnerabilities, but is not intended as a complete taxonomy: there are a very large number of partial specifications of software systems that contribute to achieving some security objective. Vulnerabilities can, however, be seen as an instance of the concept of *faults*, studied in the field of dependable computing, and a good taxonomy of faults has been developed in that field \[<a href="#ref-1067" aria-label="Reference 1067">1067</a>\].
 
-## 15.2 Prevention of Vulnerabilities
+## 15.2 Prevention of Vulnerabilities {#_15-2-prevention-of-vulnerabilities}
 
 \[<a href="#ref-1447" aria-label="References 1447–1449">1447–1449</a>\] \[<a href="#ref-1450" aria-label="Reference 1450">1450</a>, c3\]
 
@@ -368,7 +368,7 @@ In practice, static and dynamic detection techniques are combined to achieve bet
 - Dynamic validation of static analysis results, where a static analysis technique is used to find potential vulnerabilities, and then a dynamic analysis technique is used to check whether these potential vulnerabilities are actual vulnerabilities by generating concrete inputs that trigger them. This can reduce the number of false positives.
 - Interactive Application Security Testing (IAST), where an application is tested using dynamic techniques, but the application server or runtime is instrumented to also provide information about the structure of the code.
 
-## 15.4 Mitigating Exploitation of Vulnerabilities
+## 15.4 Mitigating Exploitation of Vulnerabilities {#_15-4-mitigating-exploitation-of-vulnerabilities}
 
 \[<a href="#ref-1437" aria-label="Reference 1437">1437</a>, <a href="#ref-1459" aria-label="Reference 1459">1459</a>\]
 

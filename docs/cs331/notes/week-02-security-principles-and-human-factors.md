@@ -24,10 +24,10 @@ is least privilege. Two administrators to approve a deletion is separation of pr
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK §1.4](https://shanepanter.com/cs331/cybok/01-introduction#_1-4-principles) | §1.4 Principles: especially §1.4.1 Saltzer and Schroeder | 9-13 | 5 pp | 35 min |
-| [CyBOK §1.5](https://shanepanter.com/cs331/cybok/01-introduction#_1-5-crosscutting-themes) | §1.5 Crosscutting Themes | 13-15 | 2 pp | 10 min |
-| [CyBOK §4.3](https://shanepanter.com/cs331/cybok/04-human-factors#_4-3-human-error) | §4.3 Human Error | 157-160 | 3 pp | 20 min |
-| [CyBOK §4.4](https://shanepanter.com/cs331/cybok/04-human-factors#_4-4-cyber-security-awareness-and-education) | §4.4 Cybersecurity awareness and education | 160-164 | 4 pp | 25 min |
+| [CyBOK §1.4](../cybok/01-introduction.md#_1-4-principles) | §1.4 Principles: especially §1.4.1 Saltzer and Schroeder | 9-13 | 5 pp | 35 min |
+| [CyBOK §1.5](../cybok/01-introduction.md#_1-5-crosscutting-themes) | §1.5 Crosscutting Themes | 13-15 | 2 pp | 10 min |
+| [CyBOK §4.3](../cybok/04-human-factors.md#_4-3-human-error) | §4.3 Human Error | 157-160 | 3 pp | 20 min |
+| [CyBOK §4.4](../cybok/04-human-factors.md#_4-4-cyber-security-awareness-and-education) | §4.4 Cybersecurity awareness and education | 160-164 | 4 pp | 25 min |
 
 ### Additional readings
 

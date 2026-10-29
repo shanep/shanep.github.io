@@ -14,8 +14,8 @@ The complete PDF (Portable Document Format) is in this course as [CyBOK v1.2.0 (
 Files. The Open Government Licence permits redistribution with attribution, which is why the book
 can live inside the course instead of behind a link.
 
-Every chapter the course assigns is also on the course website as a web page, at
-[CyBOK Chapters](https://shanepanter.com/cs331/cybok/). The web pages work with a screen reader
+Every chapter the course assigns is also a web page in this course, at
+[CyBOK Chapters](cybok/index.md). The web pages work with a screen reader
 and read better on a phone than the PDF, and the reading links in each week's notes go straight to
 the section on them.
 

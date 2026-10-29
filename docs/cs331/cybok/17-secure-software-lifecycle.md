@@ -762,7 +762,7 @@ Incorporating API security into a secure software development lifecycle requires
 
 During *implementation*, schema validation should be enforced at the gateway or middleware layer, and API specifications should be treated as security contracts rather than mere documentation. In *testing*, conventional dynamic analysis must be supplemented with API-specific techniques: fuzz testing against schema boundaries, negative testing for broken object-level authorisation, and automated discovery scans to surface shadow APIs that have been introduced outside the formal development process. *Release* and *deployment* gates should verify that every published endpoint is registered in the organisation’s API catalogue and that deprecated versions carry explicit sunset dates enforced at the gateway level, directly addressing the zombie API risk that arises when retired endpoints remain reachable after a product or version is decommissioned. Finally, monitoring and incident response must account for API-specific attack patterns such as credential stuffing, excessive rate consumption, and enumeration attacks. These attacks may not trigger conventional intrusion-detection signatures, but they can often be detected through API gateway telemetry once normal usage baselines have been established.
 
-## 17.7 Assessment of the Secure Software Lifecycle
+## 17.7 Assessment of the Secure Software Lifecycle {#_17-7-assessment-of-the-secure-software-lifecycle}
 
 \[<a href="#ref-1638" aria-label="Reference 1638">1638</a>, <a href="#ref-1639" aria-label="Reference 1639">1639</a>\]
 

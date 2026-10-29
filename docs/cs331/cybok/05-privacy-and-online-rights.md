@@ -310,7 +310,7 @@ Clustering techniques to find groups of nearby points where the user spends not 
 
 There are two kinds of defence for protecting location Metadata in the literature. The first relies on cryptographic techniques to process location-based services’ queries (see Section 5.1.1.1). For instance, users can privately learn whether a friend is nearby. This service can be realised by Homomorphic encryption encryption \[<a href="#ref-521" aria-label="Reference 521">521</a>\], private equality testing \[<a href="#ref-522" aria-label="Reference 522">522</a>\] or private threshold set intersection \[<a href="#ref-523" aria-label="Reference 523">523</a>\]. The second kind of defence is based on the obfuscation techniques described in Section 5.1.1.2 in order to control the inferences that an adversary draws from the location data. For instance, user’s location can be hidden \[<a href="#ref-524" aria-label="Reference 524">524</a>\], i.e., not reported to the provider; perturbed \[<a href="#ref-525" aria-label="Reference 525">525</a>\], i.e., reporting a location different from the user’s actual position; generalised \[<a href="#ref-526" aria-label="Reference 526">526</a>\], i.e., reported with less precision; or accompanied by dummy locations so that the user’s real movement patterns cannot be identified \[<a href="#ref-527" aria-label="Reference 527">527</a>\].
 
-## 5.2 Privacy as Control
+## 5.2 Privacy as Control {#_5-2-privacy-as-control}
 
 \[<a href="#ref-528" aria-label="Reference 528">528</a>\]\[<a href="#ref-529" aria-label="Reference 529">529</a>\]\[<a href="#ref-530" aria-label="Reference 530">530</a>\]
 
@@ -342,7 +342,7 @@ In order to configure the privacy settings according to their expectations of ho
 
 Currently, there exist two approaches to improve users’ understanding of privacy policies. One is to trust experts to label, analyse and provide reasons for existing privacy policies \[<a href="#ref-538" aria-label="Reference 538">538</a>\]. Another avenue is to completely automate the interpretation process. Polisis[^5-5] \[<a href="#ref-530" aria-label="Reference 530">530</a>\] is a machine-learning-based framework that enables users to ask questions about natural language privacy policies. This tool offers a visual representation of the policy specifying the types of data collected, the purpose of this collection, and the sharing practices, among others.
 
-## 5.3 Privacy as Transparency
+## 5.3 Privacy as Transparency {#_5-3-privacy-as-transparency}
 
 \[<a href="#ref-539" aria-label="Reference 539">539</a>\]\[<a href="#ref-540" aria-label="Reference 540">540</a>\]\[<a href="#ref-541" aria-label="Reference 541">541</a>\]
 

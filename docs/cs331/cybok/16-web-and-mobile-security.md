@@ -312,7 +312,7 @@ Two screenshots of Android dialogues, side by side.
 
 **Permission Dialogues: Attention, Comprehension and Behaviour** While permission dialogues theoretically allow for greater flexibility and control, in practice they tend to have serious limitations. Porter Felt et al. found that Android applications developers tend to request more permissions for their applications than needed \[<a href="#ref-1472" aria-label="Reference 1472">1472</a>\]. Hence, applications request access to more resources than strictly necessary, which violates the least-privilege principle. Similarly to developers, end-users struggle with permission dialogues. Porter Felt et al. \[<a href="#ref-1384" aria-label="Reference 1384">1384</a>\] found that they often do not correctly understand permission dialogues and ignore them due to habituation (cf. the Human Factors Knowledge Area (Chapter 4)).
 
-### 16.2.6 Web PKI and HTTPS
+### 16.2.6 Web PKI and HTTPS {#_16-2-6-web-pki-and-https}
 
 The web PKI and the HTTPS \[<a href="#ref-432" aria-label="Reference 432">432</a>, <a href="#ref-1473" aria-label="Reference 1473">1473</a>\] protocol play a central role in modern mobile and web platforms, both of which are based on client-server architectures. In the web, web servers or applications exchange information with browsers. On mobile platforms, apps exchange information with backend (web) servers. In both cases, HTTPS should always be used for secure network connections between clients and servers. To establish secure network connections, the web public key infrastructure is used. Using the web PKI and X.509 certificates, clients and servers can authenticate each other and exchange cryptographic key material for further encrypted information transport. This KA will not provide further details on how the authentication process and the key exchange procedures work in detail (cf. the Network Security Knowledge Area (Chapter 19)). Rather, it gives an overview of aspects specific to web and mobile platforms.
 
@@ -426,7 +426,7 @@ Five screenshots of the Android lock screen, in a row, each on a dark red backgr
 
 :::
 
-**Android Unlock Patterns** Similar to passwords (see Section 16.2.9) device unlock patterns suffer from multiple weaknesses. Uellenbeck et al. \[<a href="#ref-361" aria-label="Reference 361">361</a>\] conducted a study to investigate users’ choices of 3$\times$3 unlock patterns. They found empirical evidence that users tend to choose biased patterns, e. g., users typically started in the upper left corner and selected three-point long straight lines. Hence, similar to regular passwords (cf. the Human Factors Knowledge Area (Chapter 4)) the entropy of unlock patterns is rather low. In addition to users choosing weak unlock patterns, the mechanism is vulnerable to shoulder surfing attacks (see Section 16.3.3). As a countermeasure, De Luca et al. \[<a href="#ref-1506" aria-label="Reference 1506">1506</a>\] propose to use the back of a device to authenticate users.
+**Android Unlock Patterns** Similar to passwords (see Section 16.2.9) device unlock patterns suffer from multiple weaknesses. Uellenbeck et al. \[<a href="#ref-361" aria-label="Reference 361">361</a>\] conducted a study to investigate users’ choices of $3\times3$ unlock patterns. They found empirical evidence that users tend to choose biased patterns, e. g., users typically started in the upper left corner and selected three-point long straight lines. Hence, similar to regular passwords (cf. the Human Factors Knowledge Area (Chapter 4)) the entropy of unlock patterns is rather low. In addition to users choosing weak unlock patterns, the mechanism is vulnerable to shoulder surfing attacks (see Section 16.3.3). As a countermeasure, De Luca et al. \[<a href="#ref-1506" aria-label="Reference 1506">1506</a>\] propose to use the back of a device to authenticate users.
 
 ### 16.2.8 Cookies
 
@@ -508,7 +508,7 @@ Overall, modern web and mobile platforms recognised the disadvantages of non-aut
 
 This section covers attacks and their countermeasures with a focus on the client. It discusses issues in both modern web browsers and mobile devices. The illustrated security issues highlight aspects that have dominated security discussions in recent years. We focus on attacks that exploit weaknesses in the interaction between users and web browsers and mobile apps. We then discuss challenges resulting from the trend of storing more and more information on the client instead of the server. Finally, we discuss physical attacks that do not focus on exploiting software or human vulnerabilities, but exploit weak points in mobile devices.
 
-### 16.3.1 Phishing & Clickjacking
+### 16.3.1 Phishing & Clickjacking {#_16-3-1-phishing-clickjacking}
 
 This section presents two prevalent issues that exploit user interface weaknesses of both web and mobile clients. Phishing and clickjacking rely on issues humans have with properly verifying URLs and the dynamic content of rendered HTML documents.
 
@@ -576,7 +576,7 @@ Shoulder surfing is a physical attack where an attacker tries to obtain sensitiv
 
 This section discusses server-side security. It provides details for common aspects of server security, including well-known vulnerabilities and mitigations. The section discusses root causes, illustrates examples, and explains mitigations. The aspects discussed below are central for the web and mobile environments and dominated many of the security discussions in this area in the past.
 
-### 16.4.1 Injection Vulnerabilities
+### 16.4.1 Injection Vulnerabilities {#_16-4-1-injection-vulnerabilities}
 
 Injection attacks occur whenever applications suffer from insufficient user input validation so that attackers can insert code into the control flow of the application (cf. the Software Security Knowledge Area (Chapter 15)). Prevalent injection vulnerabilities for web and mobile applications are SQL and Shell injections \[<a href="#ref-1477" aria-label="Reference 1477">1477</a>\]. Due to inadequate sanitisation of user input, requests to a database or shell commands can be manipulated by an attacker. Such attacks can leak or modify information stored in the database or issue commands on a system in ways developers or operators have not intended. The main goal of injection attacks is to circumvent authentication and expose sensitive information such as login credentials, personally identifiable information, or valuable intellectual property of enterprises.
 

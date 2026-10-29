@@ -23,9 +23,9 @@ Adapted from the [CyBOK (Cyber Security Body of Knowledge) Glossary](../docs/CyB
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK §1.1](https://shanepanter.com/cs331/cybok/01-introduction#_1-1-cyber-security-definition) | §1.1 Cyber Security Definition | 2-4 | 3 pp | 15 min |
-| [CyBOK §1.2](https://shanepanter.com/cs331/cybok/01-introduction#_1-2-cybok-knowledge-areas) | §1.2 CyBOK Knowledge Areas | 4-6 | 2 pp | 10 min |
-| [CyBOK §1.3](https://shanepanter.com/cs331/cybok/01-introduction#_1-3-deploying-cybok-knowledge-to-address-security-issues) | §1.3 Deploying CyBOK knowledge: especially §1.3.1-1.3.3 | 6-8 | 2 pp | 20 min |
+| [CyBOK §1.1](../cybok/01-introduction.md#_1-1-cyber-security-definition) | §1.1 Cyber Security Definition | 2-4 | 3 pp | 15 min |
+| [CyBOK §1.2](../cybok/01-introduction.md#_1-2-cybok-knowledge-areas) | §1.2 CyBOK Knowledge Areas | 4-6 | 2 pp | 10 min |
+| [CyBOK §1.3](../cybok/01-introduction.md#_1-3-deploying-cybok-knowledge-to-address-security-issues) | §1.3 Deploying CyBOK knowledge: especially §1.3.1-1.3.3 | 6-8 | 2 pp | 20 min |
 
 **Navigating the PDF (Portable Document Format):** go by section number, not page number. The printed page numbers in the
 footer may not match your PDF viewer's counter, because the book has 46 pages of front matter. Use

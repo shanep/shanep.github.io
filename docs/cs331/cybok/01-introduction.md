@@ -26,7 +26,7 @@ This introduction sets out to place the 21 Knowledge Areas (KAs) of the CyBOK in
 
 Although we have necessarily divided the CyBOK into a number of discrete Knowledge Areas (KAs), it is clear that there are many inter-relationships among them. Those with professional responsibility for one area must typically have at least a moderate grasp of the adjacent topics; someone responsible for architecting a secure system must understand many. There are a number of *unifying principles* and crosscutting themes that underpin the development of systems that satisfy particular security properties. We conclude the introduction by discussing some of these.
 
-## 1.1 Cyber Security Definition
+## 1.1 Cyber Security Definition {#_1-1-cyber-security-definition}
 
 The CyBOK Knowledge Areas assume a common vocabulary and core understanding of a number of topics central to the field. Whilst this *Body of Knowledge* is *descriptive* of existing knowledge (rather than seeking to innovate, or constrain), it is evident that use of widely-shared terminology in an established concept map is crucial to the development of the discipline as a whole. Since our main aim is to provide a *guide* to the Body of Knowledge, we will provide references to other definitions, rather than introducing our own.
 
@@ -111,7 +111,7 @@ The five categories contain 4, 4, 5, 5 and 3 Knowledge Areas, which makes 21 in 
 
 :::
 
-## 1.2 CyBOK Knowledge Areas
+## 1.2 CyBOK Knowledge Areas {#_1-2-cybok-knowledge-areas}
 
 The CyBOK is divided into 21 top-level Knowledge Areas (KAs), grouped into five broad categories, as shown in [Figure 1.1](#figure-1-1). Clearly, other possible categorisations of these KAs may be equally valid, and ultimately some of the structure is relatively arbitrary. The CyBOK Preface describes the process by which these KAs were identified and chosen.
 
@@ -151,7 +151,7 @@ Figure 1.2: Short descriptions of CyBOK Knowledge Areas
 
 </figure>
 
-## 1.3 Deploying CyBOK knowledge to address security issues
+## 1.3 Deploying CyBOK knowledge to address security issues {#_1-3-deploying-cybok-knowledge-to-address-security-issues}
 
 ### 1.3.1 Means and objectives of cyber security
 
@@ -203,7 +203,7 @@ Information system management includes access management (see the Authentication
 
 Incident management functions (see the Security Operations & Incident Management Knowledge Area (Chapter 8)) are specific to cyber security and include security monitoring, incident detection and response.
 
-## 1.4 Principles
+## 1.4 Principles {#_1-4-principles}
 
 Sound thinking and good practice in security has been codified by a number of authors. The principles they describe touch many different KAs, and taken together help to develop a holistic approach to the design, development, and deployment of secure systems.
 
@@ -253,7 +253,7 @@ As more and more cyber-physical systems are connected to other systems and the I
 
 As the participatory data economy leads to a range of innovative products and services, there are also growing concerns about privacy and potential misuse of data as has been highlighted by recent cases of interference in democratic processes. As such the *Precautionary Principle* — reflecting on the potential harmful effect of design choices before technological innovations are put into large-scale deployment — also becomes relevant. Designers must consider the security and privacy implications of their choices from conception, through to modelling, implementation, maintenance, evolution and also decommissioning of large-scale connected systems and infrastructures on which society increasingly relies. *Function creep* as the system evolves over its lifetime and its impact on the society-at-large must also be considered \[<a href="#ref-15" aria-label="Reference 15">15</a>\].
 
-## 1.5 Crosscutting Themes
+## 1.5 Crosscutting Themes {#_1-5-crosscutting-themes}
 
 A number of topics and themes recur across various KAs — implicitly or explicitly — and provide a context or unification of ideas across those KAs which cuts across the structure chosen for the CyBOK. These are an important part of the body of knowledge, and so we document here the most substantial of them.
 

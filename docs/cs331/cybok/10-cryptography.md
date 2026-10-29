@@ -170,7 +170,7 @@ The above definitions of security make extensive use of the notion of indistingu
 
 A problem with both the game/advantage-based definitions defined earlier and the simulation definitions is that they only apply to stand-alone executions, i.e. executions of one instance of the protocol in one environment. To cope with arbitrarily complex executions and composition of cryptographic protocols an extension to the simulation paradigm exists called the Universal Composability (UC) framework.
 
-## 10.3 Information-theoretically Secure Constructions
+## 10.3 Information-theoretically Secure Constructions {#_10-3-information-theoretically-secure-constructions}
 
 \[<a href="#ref-955" aria-label="Reference 955">955</a>, c2\]\[<a href="#ref-956" aria-label="Reference 956">956</a>, c19\]
 
@@ -202,7 +202,7 @@ one can share a secret $s$ by writing it as $s = s_{1} +s_{2 }= s^{'}_{2 }+s_{3}
 
 Of importance in applications of secret sharing, especially to Secure Multi-Party Computation (see Section 10.9.4) is whether the adversary structure is $Q_{2}$ or $Q_{3}$. An adversary structure is said to be $Q_{i}$ if no set of $i$ unqualified sets have union the full set of players. Shamir’s secret sharing scheme is $Q_{2}$ if $t < n/2$ and $Q_{3}$ when $t < n/3$. The error detection (resp. correction) properties of Shamir’s secret sharing scheme mentioned above follow through to any $Q_{2}$ (resp. $Q_{3}$) adversary structure.
 
-## 10.4 Symmetric Primitives
+## 10.4 Symmetric Primitives {#_10-4-symmetric-primitives}
 
 \[<a href="#ref-955" aria-label="Reference 955">955</a>, c3–c6\]\[<a href="#ref-956" aria-label="Reference 956">956</a>, c11–c14\]
 
@@ -274,7 +274,7 @@ Many cryptographic constructions are only secure if one assumes that the hash fu
 
 This clearly does not capture attacks in which the adversary makes clever use of exactly how the hash function is defined etc, and how this definition interacts with other aspects of the scheme/protocol under analysis. However, this modelling methodology has proved remarkably good in enabling cryptographers to design schemes which are secure in the real world.
 
-## 10.5 Symmetric Encryption and Authentication
+## 10.5 Symmetric Encryption and Authentication {#_10-5-symmetric-encryption-and-authentication}
 
 \[<a href="#ref-955" aria-label="Reference 955">955</a>, c3–c4\]\[<a href="#ref-956" aria-label="Reference 956">956</a>, c13–c14\]
 
@@ -434,7 +434,7 @@ An application of cryptographic hash functions which has recently come to promin
 
 A blockchain is a similar structure, but now the data items are aligned in a chain, and each node hashes both the data item and a link to the previous item in the chain. Blockchains are used in cryptocurrencies such as *Bitcoin*, but they have wider application. The key property a blockchain provides is that (assuming the current head of the chain is authenticated and trusted) the data provides an open distributed ledger in which previous data items are immutable, and the ordering of data items is preserved.
 
-## 10.6 Public Key Encryption
+## 10.6 Public Key Encryption {#_10-6-public-key-encryption}
 
 \[<a href="#ref-955" aria-label="Reference 955">955</a>, c11\]\[<a href="#ref-956" aria-label="Reference 956">956</a>, c15–c17\]
 
@@ -532,7 +532,7 @@ A major problem with both RSA and ECC primitives is that they are not secure aga
 
 The most prominent of these so-called post-quantum schemes are those based on hard problems on lattices. In particular, the NTRU schemes and a variety of schemes based on the Learning With Errors (LWE) problem, and its generalisation to polynomial rings, known as the Ring-LWE problem. There are other proposals based on hard probles in coding theory, on the difficulty of computing isogenies between elliptic curves and other constructs. NIST is currently conducting a program to select potential post-quantum replacements.
 
-## 10.7 Public Key Signatures
+## 10.7 Public Key Signatures {#_10-7-public-key-signatures}
 
 \[<a href="#ref-955" aria-label="Reference 955">955</a>, c12\]\[<a href="#ref-956" aria-label="Reference 956">956</a>, c16\]
 
@@ -642,7 +642,7 @@ in the case of Schnorr. The key difference in the two algorithms is not the sign
 
 A key aspect of both EC-DSA and Schnorr signatures is that they are very brittle to exposure of the per-message random nonce $k$. If only a small number of bits of $k$ leak to the attacker with every signing operation, then the attacker can easily recover the secret key.
 
-## 10.8 Standard Protocols
+## 10.8 Standard Protocols {#_10-8-standard-protocols}
 
 \[<a href="#ref-956" aria-label="Reference 956">956</a>, c18\]
 

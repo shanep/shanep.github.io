@@ -23,10 +23,10 @@
 
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
-| [CyBOK §16.2.6](https://shanepanter.com/cs331/cybok/16-web-and-mobile-security#_16-2-6-web-pki-and-https) | §16.2.6-16.2.8 Web PKI (public key infrastructure) and HTTPS (Hypertext Transfer Protocol Secure), Authentication, Cookies | 536-540 | 4 pp | 25 min |
-| [CyBOK §16.3.1](https://shanepanter.com/cs331/cybok/16-web-and-mobile-security#_16-3-1-phishing-clickjacking) | §16.3.1 Phishing and Clickjacking | 543-545 | 3 pp | 20 min |
-| [CyBOK §16.4.1](https://shanepanter.com/cs331/cybok/16-web-and-mobile-security#_16-4-1-injection-vulnerabilities) | §16.4.1 Injection Vulnerabilities: SQLi, command injection, LFI (local file inclusion), XSS, CSRF | 547-552 | 6 pp | 45 min |
-| [CyBOK §15.1.2](https://shanepanter.com/cs331/cybok/15-software-security#_15-1-2-structured-output-generation-vulnerabilities) | §15.1.2 Structured Output Generation Vulnerabilities *(revisit from week 13)* | 499-501 | 2 pp | 15 min |
+| [CyBOK §16.2.6](../cybok/16-web-and-mobile-security.md#_16-2-6-web-pki-and-https) | §16.2.6-16.2.8 Web PKI (public key infrastructure) and HTTPS (Hypertext Transfer Protocol Secure), Authentication, Cookies | 536-540 | 4 pp | 25 min |
+| [CyBOK §16.3.1](../cybok/16-web-and-mobile-security.md#_16-3-1-phishing-clickjacking) | §16.3.1 Phishing and Clickjacking | 543-545 | 3 pp | 20 min |
+| [CyBOK §16.4.1](../cybok/16-web-and-mobile-security.md#_16-4-1-injection-vulnerabilities) | §16.4.1 Injection Vulnerabilities: SQLi, command injection, LFI (local file inclusion), XSS, CSRF | 547-552 | 6 pp | 45 min |
+| [CyBOK §15.1.2](../cybok/15-software-security.md#_15-1-2-structured-output-generation-vulnerabilities) | §15.1.2 Structured Output Generation Vulnerabilities *(revisit from week 13)* | 499-501 | 2 pp | 15 min |
 
 ### Additional readings
 

@@ -24,7 +24,7 @@ This Knowledge Area will explain the fundamental principles of cyber risk assess
 
 Security metrics are an ongoing topic of debate in the risk assessment and management domain: which system features to measure for risk, how to measure risk, and why measure risk at all? These questions are framed in the context of existing literature on this topic. This links into risk governance, which explains why effective governance is important to uphold cyber security and some of the social and cultural factors that are essential to consider when developing governance frameworks. Almost all systems still include a human element of control, which must be considered from the outset. Finally, even with well defined and executed risk assessment and management plans, it is still possible that a risk will turn into reality. In such cases, incident response is required. We discuss the importance of incident response and its link to the risk governance process.
 
-## 2.2 What is risk?
+## 2.2 What is risk? {#_2-2-what-is-risk}
 
 \[<a href="#ref-19" aria-label="References 19–21">19–21</a>\]
 
@@ -32,7 +32,7 @@ Risk is at the heart of everyday life. From a child making a decision to jump ou
 
 A key challenge with risk assessment and management is making assumptions explicit and finding the balance between subjective risk perceptions and objective evidence. *Risk assessment* is, therefore, a process of collating observations and perceptions of the world that can be justified by logical reasoning or comparisons with actual outcomes \[<a href="#ref-21" aria-label="Reference 21">21</a>\]. *Risk management*, on the other hand, is the process of developing and evaluating options to address the risks in a manner that is agreeable to people whose values may be impacted, bearing in mind agreement on how to address risk may involve a spectrum of (in)tolerance – from acceptance to rejection. *Risk Governance* is an overarching set of ongoing processes and principles that aims to ensure an awareness and education of the risks faced when certain actions occur, and to instil a sense of responsibility and accountability to all involved in managing it. It underpins collective decision-making and encompasses both risk assessment and management, including consideration of the legal, social, organisational and economic contexts in which risk is evaluated \[<a href="#ref-21" aria-label="Reference 21">21</a>\]. This Knowledge Area explores all these topics and provides insights into risk assessment, management and governance from a cyber security science perspective that is accessible to individuals, SMEs \[Small and Medium-sized Enterprise\] and large organisations alike.
 
-## 2.3 Why is risk assessment and management important?
+## 2.3 Why is risk assessment and management important? {#_2-3-why-is-risk-assessment-and-management-important}
 
 \[<a href="#ref-20" aria-label="References 20–23">20–23</a>\]
 
@@ -67,7 +67,7 @@ One of the major drivers for risk assessment and management is to demonstrate co
 
 Based on these factors, risk assessment and management is most certainly a process not a product. It is something that, when done well, has the potential to significantly improve the resilience of a system. When done badly (or not at all) it can lead to confusion, reputational damage, and serious impact on system functionality. It is a process that is sometimes perceived to be unimportant before one needs it, but critical for business continuity in a time of crisis. Throughout the process of risk assessment we must remain aware that risk perception varies significantly based on a variety of factors, and that despite objective evidence, it will not change. To use an example from \[<a href="#ref-20" aria-label="Reference 20">20</a>\], providing evidence that the annual risk from living next to a nuclear power plant is equivalent to the risk of riding an extra 3 miles in an automobile, does not necessarily reduce the perception of risk given the differences surrounding the general perception of the different scenarios. Intuitively, communication and a respect for qualitative and quantitative measures of risk assessment are core to its practice. Both measures exhibit ambiguity (e.g., \[<a href="#ref-29" aria-label="Reference 29">29</a>\]) and often we lack quality data on risk so evidence only goes so far. There will always be a need for subjective human judgment to determine relevance and management plans \[<a href="#ref-30" aria-label="Reference 30">30</a>\], which in itself comes with its own limitations such as lack of expert knowledge and cognitive bias \[<a href="#ref-31" aria-label="Reference 31">31</a>\].
 
-## 2.4 What is cyber risk assessment and management?
+## 2.4 What is cyber risk assessment and management? {#_2-4-what-is-cyber-risk-assessment-and-management}
 
 \[<a href="#ref-32" aria-label="Reference 32">32</a>\]
 
@@ -177,7 +177,7 @@ Part of the final risk assessment and management outcomes should be a list of ac
 
 \[<a href="#ref-27" aria-label="Reference 27">27</a>, <a href="#ref-32" aria-label="Reference 32">32</a>, <a href="#ref-44" aria-label="Reference 44">44</a>, <a href="#ref-45" aria-label="Reference 45">45</a>, <a href="#ref-48" aria-label="References 48–54">48–54</a>\]
 
-### 2.6.1 Component vs. Systems Perspectives
+### 2.6.1 Component vs. Systems Perspectives {#_2-6-1-component-vs-systems-perspectives}
 
 The UK NCSC guidance \[<a href="#ref-32" aria-label="Reference 32">32</a>\] breaks down risk management into *Component-driven risk management*, which focuses on technical components, and the threats and vulnerabilities they face (also known as bottom up); and *System-driven risk management*, which analyses systems as a whole (also known as top down). A major difference between the two is that component-driven approaches tend to focus on the specific risk to an individual component (e.g., hardware, software, data, staff), while system-driven approaches focus more on the goals of an entire system – requiring the definition of a higher level purpose and subsequent understanding of sub-systems and how various parts interact.
 
@@ -238,7 +238,7 @@ Figure 2.3: Guidelines for mapping risk management problem types to component or
 
 </figure>
 
-### 2.6.2 Elements of Risk
+### 2.6.2 Elements of Risk {#_2-6-2-elements-of-risk}
 
 While it is useful to avoid creating a universal definition of risk, to support inclusivity of different views and perspectives, it is important to have agreed definitions of the concepts that underpin risk assessment and management. This ensures a common language throughout the process and avoids talking at cross purposes. There are four concepts that are core to a risk assessment in most models – vulnerability, threat, likelihood and impact.
 
@@ -418,7 +418,7 @@ Efforts to continually monitor and control OT remotely have led to increasing co
 
 The cyber security of cyber-physical systems, including vulnerabilities, attacks and countermeasures is beyond the scope of this KA and is discussed in detail in the Cyber-Physical Systems Security Knowledge Area (Chapter 21). However, there is an important point to note around vulnerability management. Referring back to the previous Section on the topic, we noted that the continual identification of vulnerabilities is a crucial part of the risk governance process. We discussed the use of automated tools to support this potentially time intensive task. However, operational technology is particularly susceptible to adverse impact from automated scans. For instance, active scanning of legacy devices can disrupt their operations (e.g. impacting real-time properties or putting devices into stop mode) – rendering the device useless. Consideration for legacy systems when scanning for vulnerabilities is an important point to remember in the context of cyber-physical systems.
 
-### 2.6.6 Security Metrics
+### 2.6.6 Security Metrics {#_2-6-6-security-metrics}
 
 Security metrics is a long-standing area of contention within the risk community as there is debate over the value of measuring security. It is often difficult to quantify – with confidence – how *secure* an organisation is, or could be. Qualitative representations such as *low, medium, high* or *red, amber, green* are typically used in the absence of trusted quantitative data, but there is often a concern that such values are subjective and mean different things to different stakeholders. Open questions include: what features of a system should be measured for risk?, how to measure risk?, and why measure risk at all? Some metrics may be related to risk levels, some to system performance, and others related to service provision or reliability. Jaquith provides some useful pointers on what constitutes *good* and *bad* metrics to help select appropriate measures \[<a href="#ref-44" aria-label="Reference 44">44</a>\].
 

@@ -52,7 +52,7 @@ Finally, a note on terminology and presentation. ‘Alice’ and ‘Bob’ and s
 
 ## Content
 
-## 3.1 Introductory principles of law and legal research
+## 3.1 Introductory principles of law and legal research {#_3-1-introductory-principles-of-law-and-legal-research}
 
 Cyber security practitioners and researchers come from an incredibly wide array of educational backgrounds. Experience teaching legal and regulatory subjects to cyber security post-graduate students, and providing legal advice to cyber security practitioners, suggests that much of this knowledge area’s content will be novel to those whose education is based in science, technology, engineering, mathematics, many social sciences, and many of the humanities. These introductory observations are offered as an aid for those who are approaching the subject without significant experience.
 
@@ -441,7 +441,7 @@ Remedies available to persons whose privacy rights have been violated might incl
 
 Finally, some violations of privacy – especially unwarranted interception of communications during the course of transmission on a public network or unauthorised intrusions into data at rest – are defined as and may be prosecuted as crimes \[<a href="#ref-147" aria-label="Reference 147">147</a>\].
 
-## 3.4 Data protection
+## 3.4 Data protection {#_3-4-data-protection}
 
 \[<a href="#ref-85" aria-label="Reference 85">85</a>, <a href="#ref-86" aria-label="Reference 86">86</a>, <a href="#ref-148" aria-label="Reference 148">148</a>, <a href="#ref-149" aria-label="Reference 149">149</a>\]
 
@@ -614,7 +614,7 @@ The emergence in GDPR of the potential for ‘eight figure’ and ‘nine figure
 
 In July 2019, the Information Commissioner’s Office of the United Kingdom issued two notices of their intention to issue large fines under GDPR: a proposed fine of GB£183.39 million to British Airways[^3-85] and a proposed fine of GB£99.2 million to Marriott International, Inc.[^3-86] At time of writing, both companies have expressed their intention to contest the fines.
 
-## 3.5 Computer Crime
+## 3.5 Computer Crime {#_3-5-computer-crime}
 
 \[<a href="#ref-87" aria-label="References 87–89">87–89</a>\]
 
@@ -1391,7 +1391,7 @@ Although the principles of the law of armed conflict are not significantly in di
 
 Another difficulty in application concerns the intermingling of military and civilian cyber infrastructure. Under the law of armed conflict, if an object is used for both military and non-military purposes it becomes a military objective (\[<a href="#ref-82" aria-label="Reference 82">82</a>\] at R.101). This leads to the possibility that significant components of public cyber infrastructure, including dual-use data networking and cloud services infrastructure, could be characterised as a legitimate target of cyber attack in time of armed conflict (subject to other legal limitations such as the need to respect the principles of humanity and proportionality) (\[<a href="#ref-82" aria-label="Reference 82">82</a>\] at R.101, cmt.4-5). Some have argued that such outcomes point to the need to reconsider how public international law should operate in this context \[<a href="#ref-260" aria-label="Reference 260">260</a>\].
 
-## 3.13 Ethics
+## 3.13 Ethics {#_3-13-ethics}
 
 Cyber security practitioners often find themselves operating in positions of trust, where special knowledge and skills potentially give them asymmetric power to influence or disrupt the affairs of their clients or other members of the public. Those who act outside of a specific client relationship, such as product developers and academic researchers, exercise special skills in a manner that could cause harm to a wide variety of third parties. Practitioner activities often take place behind closed doors away from the glare of public scrutiny. This is a volatile mix. Ethical norms might assist in curbing behaviours that abuse positions of trust or otherwise present significant risk to the public.
 
