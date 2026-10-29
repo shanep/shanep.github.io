@@ -21,8 +21,9 @@
 //   - a link to another page of the site or the course lands on a page that
 //     exists, and its #anchor names an id on that page
 //   - an outside URL answers when fetched (each one once, a few at a time per
-//     host). A 404, a 410 or a host that does not exist fails. A 403, a 5xx or
-//     a timeout is only listed, because many sites turn away scripts.
+//     host). A 404, a 410 or an expired certificate fails. A 403, a 5xx, a
+//     timeout or a host that does not resolve is only listed, because many sites
+//     turn away scripts and a network's DNS filter can block a live host.
 //
 // Every page body, on the site and in Canvas, also gets the checks UDOIT (the
 // checker in Boise State's Canvas) runs: all-bold paragraphs, two links in a
@@ -220,7 +221,8 @@ function textSpacing() {
 //   - inline color or background color on a p, div, span or font whose text sets no
 //     font style or weight and is not wrapped in emphasis ("color alone")
 //   - an iframe, which UDOIT cannot look inside
-//   - more than 3000 words, which UDOIT only suggests splitting, so it is a warning
+//   - more than 3000 words, which UDOIT only suggests splitting. The CyBOK chapters
+//     are whole chapters on purpose, so this is a warning
 function udoitProblems(scope) {
   const root = document.querySelector(scope)
   if (!root) return { problems: [], words: 0 }
@@ -351,7 +353,9 @@ async function fetchExternal() {
       return { code: res.status }
     } catch (e) {
       const code = e.cause?.code ?? e.name
-      return { code, dead: ['ENOTFOUND', 'ECONNREFUSED', 'CERT_HAS_EXPIRED', 'ERR_TLS_CERT_ALTNAME_INVALID'].includes(code) }
+      // A host that does not resolve or refuses the connection is only listed, since a
+      // DNS filter on the network running the check turns away hosts that work elsewhere.
+      return { code, dead: ['CERT_HAS_EXPIRED', 'ERR_TLS_CERT_ALTNAME_INVALID'].includes(code) }
     }
   }
   const hosts = [...byHost.values()]
@@ -519,7 +523,7 @@ for (const [what, n] of Object.entries(failures)) console.log(`  ${String(n).pad
 const reviewIds = [...new Set(found.review.map((r) => r.id))].join(', ')
 console.log(`  ${String(found.review.length).padStart(4)}  needs-review groups from axe (${reviewIds || 'none'}); contrast ones are checked above`)
 console.log(`  ${String(found.long.length).padStart(4)}  pages over 3000 words, which UDOIT suggests splitting`)
-console.log(`  ${String(found.unreachable.length).padStart(4)}  of ${external.size} outside links turned the check away or timed out; open them by hand`)
+console.log(`  ${String(found.unreachable.length).padStart(4)}  of ${external.size} outside links turned the check away, timed out or did not resolve; open them by hand`)
 for (const list of [found.axe, found.contrast, found.links, found.udoit, found.broken, found.reflow, found.focus, found.canvas, found.brokenCanvas, found.targets, found.text, found.long, found.unreachable]) {
   for (const f of list.slice(0, 20)) console.log('  -', JSON.stringify(f).slice(0, 240))
 }
