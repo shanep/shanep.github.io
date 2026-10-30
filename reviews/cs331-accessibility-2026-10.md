@@ -109,9 +109,10 @@ It builds the site, then runs:
     A Canvas link into another course fails too, since Ally checks links without
     a login.
 11. **Ally**: the Accessibility Report in Canvas, read on October 29. The check
-    now fails on the two kinds of Ally problem it can see: a link into another
-    course, and an SVG file that hides itself from screen readers. Ally's image
-    contrast rule reads the pixels of each image, which the check cannot copy.
+    now fails on the kind of Ally problem it can see, a link into another
+    course. Ally's image contrast rule reads the pixels of each image, and its
+    image description rule wants a description stored in Ally for each image
+    file, so the check cannot copy either one.
 
 The last run, on October 29, 2026, printed the lines below. It covers the
 CyBOK pages on the website and in Canvas.
@@ -122,7 +123,6 @@ cs331 (WCAG 2.2 AAA): 84 site pages in light and dark mode, 94 Canvas bodies
      0  contrast under the minimum, worked out by hand
      0  link text problems (site)
      0  UDOIT problems (site)
-     0  SVG files Ally reads as having no description
      0  broken links (site)
      0  pages that do not reflow at 320 px
      0  tab stops with a focus problem
@@ -341,7 +341,7 @@ Ally's report on October 29 found 20 problems:
 | Ally issue | Count | Fix |
 | --- | --- | --- |
 | Broken links | 2 | The "How do I use the Dashboard?" guide moved, so Canvas Resources links to its new home. The instructor-only Learning Opportunities page linked a file in an eCampus course that only its members can open, so it links to the eCampus Faculty Development site instead |
-| Image with no description | 1 | The home page banner SVG hid itself from screen readers. It has a title now |
+| Image with no description | 1 | The home page banner. Ally scores each image file on its own and does not read an SVG's title, so the description is entered in Ally. A new upload of the banner gets a new file id and needs it again |
 | Image contrast | 17 | Not fixed, see below |
 
 The Dashboard link had moved for a while before Ally caught it. The Instructure
