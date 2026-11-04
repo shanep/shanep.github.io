@@ -5,6 +5,8 @@ outline: [2, 3]
 
 # Chapter 3: Law & Regulation, Part 1
 
+<div class="phpally-ignore">
+
 **Authors:** Robert Carolina (Royal Holloway, University of London)
 
 ::: info About this page
@@ -1474,3 +1476,5 @@ The above rules provide a reasonable indicator of the risk that cyber security f
 - <span id="ref-322">\[322\]</span> S. Pettypiece and E. Dexheimer, “Target Reaches \$67 Million Agreement With Visa Over Breach,” *Bloomberg*, 18 August 2015.
 - <span id="ref-323">\[323\]</span> J. Stempel and N. Bose, “Target in \$39.4 million settlement with banks over data breach,” *Reuters*, 3 December 2015.
 - <span id="ref-324">\[324\]</span> “Analysis of the Economic Impact of the Development Risk Clause as provided by Directive 85/374/EEC on Liability for Defective Products,” European Commission, Ares(2014)3310430 - 07/10/2014, Fondazione Rosselli, 2014.
+
+</div>

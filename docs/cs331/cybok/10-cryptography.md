@@ -5,6 +5,8 @@ outline: [2, 3]
 
 # Chapter 10: Cryptography
 
+<div class="phpally-ignore">
+
 **Authors:** Nigel Smart (KU Leuven)
 
 ::: info About this page
@@ -1162,3 +1164,5 @@ A textbook with less mathematical rigour than the previously mentioned one, but 
 - <span id="ref-972">\[972\]</span> C. Hazay and Y. Lindell, *[Efficient Secure Two-Party Protocols - Techniques and Constructions](https://doi.org/10.1007/978-3-642-14303-8)*, ser. Information Security and Cryptography. Springer, 2010.
 - <span id="ref-973">\[973\]</span> S. Mangard, E. Oswald, and T. Popp, *Power analysis attacks - revealing the secrets of smart cards*. Springer, 2007.
 - <span id="ref-974">\[974\]</span> M. Joye and M. Tunstall, Eds., *[Fault Analysis in Cryptography](https://doi.org/10.1007/978-3-642-29656-7)*, ser. Information Security and Cryptography. Springer, 2012.
+
+</div>

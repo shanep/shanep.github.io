@@ -5,6 +5,8 @@ outline: [2, 3]
 
 # Chapter 14: Authentication, Authorisation & Accountability
 
+<div class="phpally-ignore">
+
 **Authors:** Dieter Gollmann (Hamburg University of Technology &), Nanyang Technological, University Singapore
 
 ::: info About this page
@@ -739,3 +741,5 @@ Accountability services build on tamper resistant records of events. The evidenc
 - <span id="ref-1434">\[1434\]</span> R. Sommer and V. Paxson, “[Outside the closed world: On using machine learning for network intrusion detection](https://doi.org/10.1109/SP.2010.25),” in *31st IEEE Symposium on Security and Privacy, SP 2010, 16-19 May 2010, Berleley/Oakland, California, USA*. IEEE Computer Society, 2010, pp. 305–316.
 - <span id="ref-1435">\[1435\]</span> S. Eskandarian, E. Messeri, J. Bonneau, and D. Boneh, “[Certificate transparency with privacy](https://doi.org/10.1515/popets-2017-0052),” *Proc. Priv. Enhancing Technol.*, vol. 2017, no. 4, pp. 329–344, 2017.
 - <span id="ref-1436">\[1436\]</span> S. Sinclair and S. W. Smith, “[What’s wrong with access control in the real world?](https://doi.org/10.1109/MSP.2010.139)” *IEEE Secur. Priv.*, vol. 8, no. 4, pp. 74–77, 2010.
+
+</div>

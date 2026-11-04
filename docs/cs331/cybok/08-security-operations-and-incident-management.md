@@ -5,6 +5,8 @@ outline: [2, 3]
 
 # Chapter 8: Security Operations & Incident Management
 
+<div class="phpally-ignore">
+
 **Authors:** Hervé Debar (Telecom SudParis)
 
 ::: info About this page
@@ -850,3 +852,5 @@ From an operational standpoint, SOIM is very much a process, and the definition 
 - <span id="ref-910">\[910\]</span> A. Ahmad, J. Hadgkiss, and A. B. Ruighaver, “[Incident response teams - challenges in supporting the organisational security function](https://doi.org/10.1016/j.cose.2012.04.001),” *Comput. Secur.*, vol. 31, no. 5, pp. 643–652, 2012.
 - <span id="ref-911">\[911\]</span> I. A. Tøndel, M. B. Line, and M. G. Jaatun, “[Information security incident management: Current practice as reported in the literature](https://doi.org/10.1016/j.cose.2014.05.003),” *Comput. Secur.*, vol. 45, pp. 42–57, 2014.
 - <span id="ref-912">\[912\]</span> R. L. Baskerville, P. Spagnoletti, and J. Kim, “[Incident-centered information security: Managing a strategic balance between prevention and response](https://doi.org/10.1016/j.im.2013.11.004),” *Inf. Manag.*, vol. 51, no. 1, pp. 138–151, 2014.
+
+</div>

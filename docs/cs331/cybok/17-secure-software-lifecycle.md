@@ -5,6 +5,8 @@ outline: [2, 3]
 
 # Chapter 17: Secure Software Lifecycle
 
+<div class="phpally-ignore">
+
 **Authors:** Laurie Williams (North Carolina State University)
 
 ::: info About this page
@@ -1207,3 +1209,5 @@ Training materials are freely-available on the Internet. Some sites include:
 - <span id="ref-1644">\[1644\]</span> R. J. Anderson, “[Why information security is hard-an economic perspective](https://doi.org/10.1109/ACSAC.2001.991552),” in *17th Annual Computer Security Applications Conference (ACSAC 2001), 11-14 December 2001, New Orleans, Louisiana, USA*. IEEE Computer Society, 2001, pp. 358–365.
 - <span id="ref-1648">\[1648\]</span> R. Ross, V. Pillitteri, R. Graubart, D. Bodeau, and R. McQuaid, “[Developing cyber resilient systems: a systems security engineering approach](https://csrc.nist.gov/publications/detail/sp/800-160/vol-2/draft),” National Institute of Standards and Technology, Tech. Rep. Draft (FPD) SP 800-160 Volume 2, 2019.
 - <span id="ref-1649">\[1649\]</span> W. Newhouse, S. Keith, B. Scribner, and G. Witte, “[National Initiative for Cybersecurity Education (NICE) cybersecurity workforce framework](https://www.nist.gov/itl/applied-cybersecurity/nice/resources/nice-cybersecurity-workforce-framework),” National Institute of Standards and Technology, Tech. Rep. Special Publication 800-181, 2017.
+
+</div>

@@ -5,6 +5,8 @@ outline: [2, 3]
 
 # Chapter 4: Human Factors
 
+<div class="phpally-ignore">
+
 **Authors:** M. Angela Sasse (Ruhr Universität Bochum &), University College London, Awais Rashid (University of Bristol)
 
 ::: info About this page
@@ -533,3 +535,5 @@ Humans and technologies do not exist in isolation. Humans conceive new technolog
 - <span id="ref-412">\[412\]</span> D. D. Caputo, S. L. Pfleeger, M. A. Sasse, P. Ammann, J. Offutt, and L. Deng, “[Barriers to usable security? three organizational case studies](https://doi.org/10.1109/MSP.2016.95),” *IEEE Secur. Priv.*, vol. 14, no. 5, pp. 22–32, 2016.
 - <span id="ref-413">\[413\]</span> J. M. Haney, M. Theofanos, Y. Acar, and S. S. Prettyman, “["we make it a big deal in the company": Security mindsets in organizations that develop cryptographic products](https://www.usenix.org/conference/soups2018/presentation/haney-mindsets),” in *Fourteenth Symposium on Usable Privacy and Security, SOUPS 2018, Baltimore, MD, USA, August 12-14, 2018*, M. E. Zurko and H. R. Lipford, Eds. USENIX Association, 2018, pp. 357–373.
 - <span id="ref-414">\[414\]</span> R. Stevens, D. Votipka, E. M. Redmiles, C. Ahern, P. Sweeney, and M. L. Mazurek, “[The battle for new york: A case study of applied digital threat modeling at the enterprise level](https://www.usenix.org/conference/usenixsecurity18/presentation/stevens),” in *27th USENIX Security Symposium, USENIX Security 2018, Baltimore, MD, USA, August 15-17, 2018*, W. Enck and A. P. Felt, Eds. USENIX Association, 2018, pp. 621–637.
+
+</div>

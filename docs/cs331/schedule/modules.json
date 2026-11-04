@@ -620,6 +620,19 @@
     ]
   },
   {
+    "title": "\ud83d\ude0eSpring Break - Nothing Due (March 15 - March 21)",
+    "items": [
+      {
+        "kind": "header",
+        "title": "Enjoy your week off!",
+        "path": "",
+        "due_at": null,
+        "points": null,
+        "canvas_id": ""
+      }
+    ]
+  },
+  {
     "title": "Module 10: Keys, Certificates, PKI, and TLS (March 22 - March 28)",
     "items": [
       {

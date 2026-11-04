@@ -362,6 +362,14 @@ items = [
     "notes/week-09-review-and-catch-up.md",
 ]
 
+# The dates are in the title because the break is not a numbered week, so change
+# them when the course rolls to a new term.
+[[module]]
+title = "😎Spring Break - Nothing Due (March 15 - March 21)"
+items = [
+    { header = "Enjoy your week off!" },
+]
+
 [[module]]
 title = "Module 10: Keys, Certificates, PKI, and TLS"
 week  = 10

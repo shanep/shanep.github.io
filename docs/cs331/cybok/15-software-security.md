@@ -5,6 +5,8 @@ outline: [2, 3]
 
 # Chapter 15: Software Security
 
+<div class="phpally-ignore">
+
 **Authors:** Frank Piessens (KU Leuven)
 
 ::: info About this page
@@ -519,3 +521,5 @@ The Open Web Application Security Project (OWASP) is a not-for-profit, volunteer
 - <span id="ref-1459">\[1459\]</span> P. Larsen, A. Homescu, S. Brunthaler, and M. Franz, “[Sok: Automated software diversity](https://doi.org/10.1109/SP.2014.25),” in *2014 IEEE Symposium on Security and Privacy, SP 2014, Berkeley, CA, USA, May 18-21, 2014*. IEEE Computer Society, 2014, pp. 276–291.
 - <span id="ref-1460">\[1460\]</span> P. Holzinger, S. Triller, A. Bartel, and E. Bodden, “[An in-depth study of more than ten years of java exploitation](https://doi.org/10.1145/2976749.2978361),” in *Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security, Vienna, Austria, October 24-28, 2016*, E. R. Weippl, S. Katzenbeisser, C. Kruegel, A. C. Myers, and S. Halevi, Eds. ACM, 2016, pp. 779–790.
 - <span id="ref-1461">\[1461\]</span> B. Parno, J. M. McCune, and A. Perrig, “[Bootstrapping trust in commodity computers](https://doi.org/10.1109/SP.2010.32),” in *31st IEEE Symposium on Security and Privacy, SP 2010, 16-19 May 2010, Berleley/Oakland, California, USA*. IEEE Computer Society, 2010, pp. 414–429.
+
+</div>

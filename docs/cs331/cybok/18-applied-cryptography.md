@@ -5,6 +5,8 @@ outline: [2, 3]
 
 # Chapter 18: Applied Cryptography
 
+<div class="phpally-ignore">
+
 **Authors:** Kenneth G. Paterson (ETH Zürich)
 
 ::: info About this page
@@ -919,3 +921,5 @@ We anticipate significant developments in the following directions:
 - <span id="ref-1750">\[1750\]</span> A. Viand, P. Jattke, and A. Hithnawi, “[SoK: Fully homomorphic encryption compilers](https://arxiv.org/abs/2101.07078),” *CoRR*, vol. abs/2101.07078, 2021.
 - <span id="ref-1751">\[1751\]</span> M. Ion, B. Kreuter, A. E. Nergiz, S. Patel, S. Saxena, K. Seth, M. Raykova, D. Shanahan, and M. Yung, “[On deploying secure computing: Private intersection-sum-with-cardinality](https://doi.org/10.1109/EuroSP48549.2020.00031),” in *IEEE European Symposium on Security and Privacy, EuroS&P 2020, Genoa, Italy, September 7-11, 2020*. IEEE, 2020, pp. 370–389.
 - <span id="ref-1752">\[1752\]</span> T. Haines, S. J. Lewis, O. Pereira, and V. Teague, “[How not to prove your election outcome](https://doi.org/10.1109/SP40000.2020.00048),” in *2020 IEEE Symposium on Security and Privacy, SP 2020, San Francisco, CA, USA, May 18-21, 2020*. IEEE, 2020, pp. 644–660.
+
+</div>

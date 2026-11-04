@@ -5,6 +5,8 @@ outline: [2, 3]
 
 # Chapter 2: Risk Management & Governance
 
+<div class="phpally-ignore">
+
 **Authors:** Pete Burnap (Cardiff University)
 
 ::: info About this page
@@ -561,3 +563,5 @@ Risk governance is a cyclical and iterative process, and not something that can 
 - <span id="ref-70">\[70\]</span> NCSC, “[10 steps to incident management](https://www.ncsc.gov.uk/collection/10-steps-to-cyber-security?curPage=/collection/10-steps-to-cyber-security/the-10-steps/incident-management),” accessed: 2019-04-15.
 - <span id="ref-71">\[71\]</span> Y. Hou, J. M. Such, and A. Rashid, “[Understanding security requirements for industrial control system supply chains](https://doi.org/10.1109/SEsCPS.2019.00016),” in *Proceedings of the 5th International Workshop on Software Engineering for Smart Cyber-Physical Systems, SEsCPS@ICSE 2019, Montreal, QC, Canada, May 28, 2019*, T. Bures, B. R. Schmerl, J. S. Fitzgerald, and D. Weyns, Eds. IEEE / ACM, 2019, pp. 50–53.
 - <span id="ref-72">\[72\]</span> B. A. Sabbagh and S. Kowalski, “[A socio-technical framework for threat modeling a software supply chain](https://doi.org/10.1109/MSP.2015.72),” *IEEE Secur. Priv.*, vol. 13, no. 4, pp. 30–39, 2015.
+
+</div>

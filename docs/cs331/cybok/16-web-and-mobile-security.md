@@ -5,6 +5,8 @@ outline: [2, 3]
 
 # Chapter 16: Web & Mobile Security
 
+<div class="phpally-ignore">
+
 **Authors:** Sascha Fahl (Leibniz University Hannover)
 
 ::: info About this page
@@ -851,3 +853,5 @@ The official documentation for the Android development ecosystem, including secu
 - <span id="ref-1558">\[1558\]</span> OWASP, “[OWASP - password storage cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html),” 2019.
 - <span id="ref-1559">\[1559\]</span> Wikipedia contributors, “[List of data breaches — Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_data_breaches),” 2019.
 - <span id="ref-1560">\[1560\]</span> K. Thomas, J. Pullman, K. Yeo, A. Raghunathan, P. G. Kelley, L. Invernizzi, B. Benko, T. Pietraszek, S. Patel, D. Boneh, and E. Bursztein, “[Protecting accounts from credential stuffing with password breach alerting](https://www.usenix.org/conference/usenixsecurity19/presentation/thomas),” in *28th USENIX Security Symposium, USENIX Security 2019, Santa Clara, CA, USA, August 14-16, 2019*, N. Heninger and P. Traynor, Eds. USENIX Association, 2019, pp. 1556–1571.
+
+</div>

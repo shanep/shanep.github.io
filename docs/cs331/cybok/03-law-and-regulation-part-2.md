@@ -5,6 +5,8 @@ outline: [2, 3]
 
 # Chapter 3: Law & Regulation, Part 2
 
+<div class="phpally-ignore">
+
 **Authors:** Robert Carolina (Royal Holloway, University of London)
 
 ::: info About this page
@@ -786,3 +788,5 @@ What follow are a few subjects for consideration when constructing a legal risk 
 - <span id="ref-338">\[338\]</span> J. Markoff, “Apple’s Engineers, if Defiant, Would be in Sync With Ethics Code,” *The New York Times*, 18 March 2016.
 - <span id="ref-339">\[339\]</span> “United States v. Arthur Andersen LLP,” 374 F.3d 281 (5th Cir), *reversed by* \[340\], 2004.
 - <span id="ref-340">\[340\]</span> “Arthur Andersen LLP v. United States,” 544 U.S. 696 (US S.Ct), 2005.
+
+</div>

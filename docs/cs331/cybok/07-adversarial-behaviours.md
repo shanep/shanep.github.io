@@ -5,6 +5,8 @@ outline: [2, 3]
 
 # Chapter 7: Adversarial Behaviours
 
+<div class="phpally-ignore">
+
 **Authors:** Gianluca Stringhini (Boston University)
 
 ::: info About this page
@@ -569,3 +571,5 @@ In this document, we presented an overview of the adversarial behaviours that ex
 - <span id="ref-825">\[825\]</span> H. Liu, K. Levchenko, M. Félegyházi, C. Kreibich, G. Maier, G. M. Voelker, and S. Savage, “[On the effects of registrar-level intervention](https://www.usenix.org/conference/leet11/effects-registrar-level-intervention),” in *4th USENIX Workshop on Large-Scale Exploits and Emergent Threats, LEET ’11, Boston, MA, USA, March 29, 2011*, C. Kruegel, Ed. USENIX Association, 2011.
 - <span id="ref-826">\[826\]</span> D. B. Cornish, “The procedural analysis of offending and its relevance for situational prevention,” *Crime Prevention Studies*, vol. 3, pp. 151–196, 1994.
 - <span id="ref-827">\[827\]</span> R. Wortley, A. Sidebottom, N. Tilley, and G. Laycock, *Routledge Handbook of Crime Science*. Routledge, 2018.
+
+</div>

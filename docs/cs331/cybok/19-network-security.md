@@ -5,6 +5,8 @@ outline: [2, 3]
 
 # Chapter 19: Network Security
 
+<div class="phpally-ignore">
+
 **Authors:** Christian Rossow (CISPA Helmholtz Center), for Information Security, Sanjay Jha (University of New South Wales)
 
 ::: info About this page
@@ -751,3 +753,5 @@ Network security is too broad to be fully captured at reasonable detail within a
 - <span id="ref-1860">\[1860\]</span> S. Wendzel, S. Zander, B. Fechner, and C. Herdin, “[Pattern-based survey and categorization of network covert channel techniques](https://doi.org/10.1145/2684195),” *ACM Comput. Surv.*, vol. 47, no. 3, pp. 50:1–50:26, 2015.
 - <span id="ref-1861">\[1861\]</span> F. Massacci and N. C. Ngo, “Distributed financial exchanges: Security challenges and design principles,” *IEEE Security & Privacy*, 2020.
 - <span id="ref-1862">\[1862\]</span> F. Massacci, C. N. Ngo, J. Nie, D. Venturi, and J. Williams, “[Futuresmex: Secure, distributed futures market exchange](https://doi.org/10.1109/SP.2018.00028),” in *2018 IEEE Symposium on Security and Privacy, SP 2018, Proceedings, 21-23 May 2018, San Francisco, California, USA*. IEEE Computer Society, 2018, pp. 335–353.
+
+</div>

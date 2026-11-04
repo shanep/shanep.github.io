@@ -5,6 +5,8 @@ outline: [2, 3]
 
 # Chapter 1: Introduction
 
+<div class="phpally-ignore">
+
 **Authors:** Andrew Martin (University of Oxford), Awais Rashid (University of Bristol), Howard Chivers (University of York), Steve Schneider (University of Surrey), Emil Lupu (Imperial College London), George Danezis (University College London), Yulia Cherdantseva (Cardiff University)
 
 ::: info About this page
@@ -304,3 +306,5 @@ Supply chain security is transitioning from voluntary due diligence to statutory
 - <span id="ref-16">\[16\]</span> T. Moore, “[Security Economics Knowledge Guide](https://www.cybok.org/),” in *CyBOK Knowledge Guides and Topic Guides*, A. Rashid, Y. Cherdantseva, A. Martin, and S. Schneider, Eds. University of Bristol, 2024, kG Version 1.0.0.
 - <span id="ref-17">\[17\]</span> C. Topping, A. C. Dwyer, O. A. Michalec, B. Craggs, and A. Rashid, “[Beware suppliers bearing gifts!: Analysing coverage of supply chain cyber security in critical national infrastructure sectorial and cross-sectorial frameworks](https://doi.org/10.1016/j.cose.2021.102324),” *Comput. Secur.*, vol. 108, p. 102324, 2021.
 - <span id="ref-18">\[18\]</span> C. Topping, O. A. Michalec, and A. Rashid, “[Contrasting global approaches for identifying and managing cybersecurity risks in supply chains](https://doi.org/10.48550/arXiv.2208.02244),” *CoRR*, vol. abs/2208.02244, 2022.
+
+</div>

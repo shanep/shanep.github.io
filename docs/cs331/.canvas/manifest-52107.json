@@ -318,13 +318,13 @@
       "kind": "page",
       "page_url": "chapter-1-introduction",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "de6701942d03c7b0",
+          "body": "5ee99e2a50efcf41",
           "settings": "b6c29009aca8456f"
         },
         "repo": {
-          "body": "a21e50cc4c9b8919",
+          "body": "6577302e56a60af8",
           "settings": "b6c29009aca8456f"
         }
       },
@@ -336,13 +336,13 @@
       "kind": "page",
       "page_url": "chapter-2-risk-management-and-governance",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "84ae39b67d0a6b50",
+          "body": "38bb051f108d6e3e",
           "settings": "641f299d3a0566e5"
         },
         "repo": {
-          "body": "28eec6be1b3b6e38",
+          "body": "2c8661bd632018b4",
           "settings": "641f299d3a0566e5"
         }
       },
@@ -354,13 +354,13 @@
       "kind": "page",
       "page_url": "chapter-3-law-and-regulation-part-2",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "0ec8e62ced78f7cb",
+          "body": "5f5508e9a45c8dae",
           "settings": "eead6d1618362bc5"
         },
         "repo": {
-          "body": "75735f75b29d8ccb",
+          "body": "64401233f94251e7",
           "settings": "eead6d1618362bc5"
         }
       },
@@ -372,13 +372,13 @@
       "kind": "page",
       "page_url": "chapter-3-law-and-regulation-part-1",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "68549f774e7368d2",
+          "body": "03d62ccdae1eed36",
           "settings": "fe2a247bb0703d10"
         },
         "repo": {
-          "body": "a1a90eb0ed7da0f5",
+          "body": "1fe6e2667a991913",
           "settings": "fe2a247bb0703d10"
         }
       },
@@ -390,13 +390,13 @@
       "kind": "page",
       "page_url": "chapter-4-human-factors",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "10f7e643646e67ef",
+          "body": "5a42528a38d89192",
           "settings": "b4b7839dbb47ad1a"
         },
         "repo": {
-          "body": "429a052fb9473a8d",
+          "body": "a773b3e0fda123d8",
           "settings": "b4b7839dbb47ad1a"
         }
       },
@@ -408,13 +408,13 @@
       "kind": "page",
       "page_url": "chapter-5-privacy-and-online-rights",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "988b099b5b3ef7f9",
+          "body": "7c5eb637b0ec84d0",
           "settings": "4c9746b4b6343f0d"
         },
         "repo": {
-          "body": "6177b97deb6aa302",
+          "body": "a8c7ba577b129802",
           "settings": "4c9746b4b6343f0d"
         }
       },
@@ -426,13 +426,13 @@
       "kind": "page",
       "page_url": "chapter-6-malware-and-attack-technologies",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "9b318c5aaa294765",
+          "body": "9e8f3bfafb961872",
           "settings": "9a2a73c43c1d06ae"
         },
         "repo": {
-          "body": "062abb2a764a949a",
+          "body": "d191195b72e4452f",
           "settings": "9a2a73c43c1d06ae"
         }
       },
@@ -444,13 +444,13 @@
       "kind": "page",
       "page_url": "chapter-7-adversarial-behaviours",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "d307b5aa5fbdadd9",
+          "body": "2750bdd429e32f5b",
           "settings": "88860f196a5136f6"
         },
         "repo": {
-          "body": "12390083c42e6393",
+          "body": "2414c424fe818fff",
           "settings": "88860f196a5136f6"
         }
       },
@@ -462,13 +462,13 @@
       "kind": "page",
       "page_url": "chapter-8-security-operations-and-incident-management",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "5ac2c8572d48c150",
+          "body": "08c4a112fe5f4517",
           "settings": "4e729eca7a52a621"
         },
         "repo": {
-          "body": "8ef7018eb398335b",
+          "body": "cb86bf235e8ee7a8",
           "settings": "4e729eca7a52a621"
         }
       },
@@ -480,13 +480,13 @@
       "kind": "page",
       "page_url": "chapter-10-cryptography",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "a148e593b3483dff",
+          "body": "0287ebf6f2d2ce85",
           "settings": "1fa7050b2b2280a1"
         },
         "repo": {
-          "body": "a2dce04f7eee49fa",
+          "body": "9b0e7fd310262e1b",
           "settings": "1fa7050b2b2280a1"
         }
       },
@@ -498,13 +498,13 @@
       "kind": "page",
       "page_url": "chapter-14-authentication-authorisation-and-accountability",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "054f2f87c49ca07d",
+          "body": "89197afe1f65a487",
           "settings": "2dd8e4db235af9c5"
         },
         "repo": {
-          "body": "2f04450214bcad7b",
+          "body": "4497f664ca498d06",
           "settings": "2dd8e4db235af9c5"
         }
       },
@@ -516,13 +516,13 @@
       "kind": "page",
       "page_url": "chapter-15-software-security",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "d1efcee66ed4ac6d",
+          "body": "d7aa12bc9c9b3409",
           "settings": "f5a8eeb0476e5357"
         },
         "repo": {
-          "body": "9716829b297aa4fd",
+          "body": "3a540999af56f107",
           "settings": "f5a8eeb0476e5357"
         }
       },
@@ -534,13 +534,13 @@
       "kind": "page",
       "page_url": "chapter-16-web-and-mobile-security",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "21e6873230a1e924",
+          "body": "1d4ffce186a8d975",
           "settings": "3576a1654dd1b73f"
         },
         "repo": {
-          "body": "08317f48ad3be91f",
+          "body": "3449b72c97eb0436",
           "settings": "3576a1654dd1b73f"
         }
       },
@@ -552,13 +552,13 @@
       "kind": "page",
       "page_url": "chapter-17-secure-software-lifecycle",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "7b0827e680958e82",
+          "body": "b2ab174411a75969",
           "settings": "5ebc7af9d5de5a35"
         },
         "repo": {
-          "body": "0a1a7ddb6a4256bf",
+          "body": "2ca89081f3aaf037",
           "settings": "5ebc7af9d5de5a35"
         }
       },
@@ -570,13 +570,13 @@
       "kind": "page",
       "page_url": "chapter-18-applied-cryptography",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "dc0c392387f61298",
+          "body": "0cd033f712f355b7",
           "settings": "cbe46f0e799837f1"
         },
         "repo": {
-          "body": "d91251b7f0dca609",
+          "body": "24484e232f674725",
           "settings": "cbe46f0e799837f1"
         }
       },
@@ -588,13 +588,13 @@
       "kind": "page",
       "page_url": "chapter-19-network-security",
       "synced": {
-        "at": "2026-10-29T14:49:26.841Z",
+        "at": "2026-11-04T16:24:22.497Z",
         "canvas": {
-          "body": "1918d1d1ebcf37ba",
+          "body": "3728c13fc97eab52",
           "settings": "0543e7d7b6d6b436"
         },
         "repo": {
-          "body": "f81ed0c1abd7c3e8",
+          "body": "1ee4ae8e52776f80",
           "settings": "0543e7d7b6d6b436"
         }
       },
@@ -2908,6 +2908,15 @@
       },
       "repo": {
         "items": "85604514c70d192c"
+      }
+    },
+    "[[module]] \ud83d\ude0eSpring Break - Nothing Due (March 15 - March 21)": {
+      "at": "2026-11-04T16:25:43.749Z",
+      "canvas": {
+        "items": "f258db166bc667de"
+      },
+      "repo": {
+        "items": "f258db166bc667de"
       }
     }
   }

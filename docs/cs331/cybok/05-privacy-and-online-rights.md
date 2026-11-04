@@ -5,6 +5,8 @@ outline: [2, 3]
 
 # Chapter 5: Privacy & Online Rights
 
+<div class="phpally-ignore">
+
 **Authors:** Carmela Troncoso (École Polytechnique), Fédérale de Lausanne
 
 ::: info About this page
@@ -670,3 +672,5 @@ Preserving privacy and online rights is not only important for individuals, it i
 - <span id="ref-578">\[578\]</span> S. Gürses, C. Troncoso, and C. Diaz, “Engineering privacy by design reloaded,” in *Amsterdam Privacy Conference*, 2015.
 - <span id="ref-579">\[579\]</span> I. Wagner and D. Eckhoff, “[Technical privacy metrics: A systematic survey](https://doi.org/10.1145/3168389),” *ACM Comput. Surv.*, vol. 51, no. 3, pp. 57:1–57:38, 2018.
 - <span id="ref-580">\[580\]</span> J. Hoepman, “[Privacy design strategies - (extended abstract)](https://doi.org/10.1007/978-3-642-55415-5_38),” in *ICT Systems Security and Privacy Protection - 29th IFIP TC 11 International Conference, SEC 2014, Marrakech, Morocco, June 2-4, 2014. Proceedings*, ser. IFIP Advances in Information and Communication Technology, N. Cuppens-Boulahia, F. Cuppens, S. Jajodia, A. A. E. Kalam, and T. Sans, Eds. Springer, 2014, pp. 446–459.
+
+</div>
