@@ -32,7 +32,7 @@ Read the sections below, not the whole chapter. The whole chapter is [Chapter 19
 | [CyBOK §19.3.3](../cybok/19-network-security.md#_19-3-3-security-at-the-internet-layer) | §19.3.3 Security at the Internet Layer: IPv4, IPv6, routing, ICMP (Internet Control Message Protocol) | 686-691 | 5 pp | 35 min |
 | [CyBOK §19.4](../cybok/19-network-security.md#_19-4-network-security-tools) | §19.4 Network Security Tools | 697-703 | 6 pp | 40 min |
 
-§19.3.1 (application layer) and §19.3.4 (link layer) are not assigned, but §19.3.4.5 on network
+§19.3.1 (application layer) and §19.3.4 (link layer) are not assigned, but [§19.3.4.5](../cybok/19-network-security.md#_19-3-4-5-network-segmentation) on network
 segmentation is one page and worth the detour.
 
 ## Attacks by layer

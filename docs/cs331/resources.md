@@ -55,7 +55,7 @@ what is not.
 | 12 | Distributed Systems Security | 391 | Not assigned |
 | 13 | Formal Methods for Security | 423 | Not assigned |
 | 14 | Authentication, Authorisation & Accountability | 463 | **Weeks 5-6**: §14.1-14.3, §14.5, §14.6 |
-| 15 | Software Security | 495 | **Week 13**: §15.1.1, §15.2, §15.4 |
+| 15 | Software Security | 495 | **Week 13**: §15.1.1, §15.2, §15.4. **Week 14**: §15.1.2 |
 | 16 | Web & Mobile Security | 523 | **Week 14**: §16.2.6-16.2.8, §16.3.1, §16.4.1 |
 | 17 | Secure Software Lifecycle | 557 | **Week 13**: §17.7 only |
 | 18 | Applied Cryptography | 619 | **Week 10**: §18.3, §18.5.1 |

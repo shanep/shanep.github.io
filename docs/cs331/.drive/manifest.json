@@ -41,52 +41,52 @@
     },
     "module:Module 10: Keys, Certificates, PKI, and TLS": {
       "id": "1LgxkKxRcQXPE684UXCB7cF1K_8UoAHdT",
-      "name": "13 Module 10: Keys, Certificates, PKI, and TLS (March 22 - March 28)",
+      "name": "14 Module 10: Keys, Certificates, PKI, and TLS (March 22 - March 28)",
       "parent": "1nt-ZafvmbpE3W2-RQiw8S6GMg1mGHDY9",
       "sent": "",
-      "modified": "2026-10-23T19:42:27.530Z"
+      "modified": "2026-11-07T03:55:50.604Z"
     },
     "module:Module 11: Network Security and Attacks": {
       "id": "17KfAUfiRtIxG3bBxplKFcSwG-mLqYcSR",
-      "name": "14 Module 11: Network Security and Attacks (March 29 - April 4)",
+      "name": "15 Module 11: Network Security and Attacks (March 29 - April 4)",
       "parent": "1nt-ZafvmbpE3W2-RQiw8S6GMg1mGHDY9",
       "sent": "",
-      "modified": "2026-10-23T19:42:28.293Z"
+      "modified": "2026-11-07T03:55:51.473Z"
     },
     "module:Module 12: Malware and Adversarial Behaviors": {
       "id": "1YcGbFwFoCopZn6mpNvILsvDOE0rSbGU7",
-      "name": "15 Module 12: Malware and Adversarial Behaviors (April 5 - April 11)",
+      "name": "16 Module 12: Malware and Adversarial Behaviors (April 5 - April 11)",
       "parent": "1nt-ZafvmbpE3W2-RQiw8S6GMg1mGHDY9",
       "sent": "",
-      "modified": "2026-10-23T19:42:28.818Z"
+      "modified": "2026-11-07T03:55:52.457Z"
     },
     "module:Module 13: Software Security, Memory Safety, and Assurance": {
       "id": "1Fn9VSep_VfoJKFGzp2lsmUyWFbQ91_Km",
-      "name": "16 Module 13: Software Security, Memory Safety, and Assurance (April 12 - April 18)",
+      "name": "17 Module 13: Software Security, Memory Safety, and Assurance (April 12 - April 18)",
       "parent": "1nt-ZafvmbpE3W2-RQiw8S6GMg1mGHDY9",
       "sent": "",
-      "modified": "2026-10-23T19:42:29.564Z"
+      "modified": "2026-11-07T03:55:53.352Z"
     },
     "module:Module 14: Web Security and Injection": {
       "id": "1U_6xFTm3s2qW8u_mGlmruR9tUYhxOC2y",
-      "name": "17 Module 14: Web Security and Injection (April 19 - April 25)",
+      "name": "18 Module 14: Web Security and Injection (April 19 - April 25)",
       "parent": "1nt-ZafvmbpE3W2-RQiw8S6GMg1mGHDY9",
       "sent": "",
-      "modified": "2026-10-23T19:42:30.379Z"
+      "modified": "2026-11-07T03:55:54.340Z"
     },
     "module:Module 15: Security Operations, Detection, and Incident Response": {
       "id": "1i_Kv3qy80eYfaawiVF7r4A6cJAYGCrg1",
-      "name": "18 Module 15: Security Operations, Detection, and Incident Response (April 26 - April 30)",
+      "name": "19 Module 15: Security Operations, Detection, and Incident Response (April 26 - April 30)",
       "parent": "1nt-ZafvmbpE3W2-RQiw8S6GMg1mGHDY9",
       "sent": "",
-      "modified": "2026-10-23T19:42:31.095Z"
+      "modified": "2026-11-07T03:55:55.344Z"
     },
     "module:Module 16: Finals Week": {
       "id": "1bWcY9WrrzrPypAW_eqqmiF5Xc_LAixOA",
-      "name": "19 Module 16: Finals Week (May 3 - May 7)",
+      "name": "20 Module 16: Finals Week (May 3 - May 7)",
       "parent": "1nt-ZafvmbpE3W2-RQiw8S6GMg1mGHDY9",
       "sent": "",
-      "modified": "2026-10-23T19:42:31.798Z"
+      "modified": "2026-11-07T03:55:56.231Z"
     },
     "module:Module 1: What Is Cyber Security?": {
       "id": "1x3ZmNECxLzguW5wWbkdpo8IwIbyI5ovZ",
@@ -151,6 +151,13 @@
       "sent": "",
       "modified": "2026-10-23T19:42:26.784Z"
     },
+    "module:😎Spring Break - Nothing Due (March 15 - March 21)": {
+      "id": "1Z4pfAaZsGJZKiYg5OfOfwO8Nj1Q05C76",
+      "name": "13 😎Spring Break - Nothing Due (March 15 - March 21)",
+      "parent": "1nt-ZafvmbpE3W2-RQiw8S6GMg1mGHDY9",
+      "sent": "",
+      "modified": "2026-11-07T03:55:49.411Z"
+    },
     "other": {
       "id": "1KSkCvEMxHmJf4ImwAlABw2twKtR5P-he",
       "name": "Other",
@@ -164,78 +171,78 @@
       "id": "1tPvSOYQ7_BVgel08iv1SiGpsD8QSXhG6SCNBXjJ-RYo",
       "name": "05 0.05 Lab 0: Course Setup and CyBOK Navigation",
       "parent": "1dxvPTBFeG_Imj_D10b-l68t2Gy0VAMzb",
-      "sent": "a39f9817a4000782",
-      "modified": "2026-10-23T19:45:26.690Z"
+      "sent": "61d03e5bb7548649",
+      "modified": "2026-11-07T03:59:15.473Z"
     },
     "assignments/lab-01-security-principles-audit.md": {
       "id": "11fX0Jrb6b2eCL7lVXYuVDQSVkiKgibR6QiJlFm0fEqk",
       "name": "03 2.02 Lab 1: Security Principles Audit",
       "parent": "1idhKkLL99S0ijrNNUs8WOndUwJSwGpDl",
-      "sent": "b62b9d1c65ed4237",
-      "modified": "2026-10-23T19:45:36.557Z"
+      "sent": "c10247608b42dbd1",
+      "modified": "2026-11-07T03:59:28.602Z"
     },
     "assignments/lab-02-threat-model.md": {
       "id": "1UxtKrJE3mNqspbtZfAtDoqNgeAMOjcYGUDtUnxN8sDc",
       "name": "03 4.02 Lab 2: Threat Model a Small System",
       "parent": "1bAhzvNExfJUHEv9iMmSb9Wz6Q1x6BWxs",
-      "sent": "0c6fffd1bd60decc",
-      "modified": "2026-10-23T19:45:51.057Z"
+      "sent": "941b90b664a2ffb3",
+      "modified": "2026-11-07T03:59:43.496Z"
     },
     "assignments/lab-03-access-control-matrix.md": {
       "id": "1vvzXAXZAXZluKjasiKTCqt-YiajderxX0f0kX7LT-Lw",
       "name": "03 6.02 Lab 3: Access Control Matrix and Least Privilege",
       "parent": "1o2BEgHsZtwrwAe8UBEsXq1Ud9QTz5fcj",
-      "sent": "c1eb04daa505da7f",
-      "modified": "2026-10-23T19:46:05.571Z"
+      "sent": "d092f4f0077cd4da",
+      "modified": "2026-11-07T03:59:58.521Z"
     },
     "assignments/lab-04-symmetric-encryption.md": {
       "id": "1opV33VxHJUdzrOg_Vlsn5_bMXY9NFi7GcRYSVW03dRc",
       "name": "03 7.02 Lab 4: Symmetric Encryption in Practice",
       "parent": "1yQMnYGOcrBOQJlFV0UKavu5jKfuwbyaQ",
-      "sent": "73c71a92b2e2f8df",
-      "modified": "2026-10-23T19:46:11.193Z"
+      "sent": "01fca5549b49d337",
+      "modified": "2026-11-07T04:00:06.881Z"
     },
     "assignments/lab-05-hashing-and-signatures.md": {
       "id": "15QhONHO8EKu4CbTO9UgtToHnI7Qh1lf6bMWtyqY093k",
       "name": "03 8.02 Lab 5: Hashing and Signatures",
       "parent": "1B4EzkXD9NCjj_nUrC2SmSfeV68ore2jE",
-      "sent": "3c3fac9994dab595",
-      "modified": "2026-10-23T19:46:17.020Z"
+      "sent": "750a3d1628a5ce36",
+      "modified": "2026-11-07T04:00:14.597Z"
     },
     "assignments/lab-06-certificates-and-tls.md": {
       "id": "10CkzsRf6AzIu_60HP0KmxPnNtChrAZjKguzyBL5-uVI",
       "name": "03 10.02 Lab 6: Certificates and TLS",
       "parent": "1LgxkKxRcQXPE684UXCB7cF1K_8UoAHdT",
-      "sent": "642a3826dfaceb61",
-      "modified": "2026-10-23T19:46:28.199Z"
+      "sent": "e2c25009f31989df",
+      "modified": "2026-11-07T04:00:36.748Z"
     },
     "assignments/lab-07-malware-triage.md": {
       "id": "1La-1bC0YuwBUUB4WLzGLMBSSuTBXIQQbU8zpWxcp0EM",
       "name": "03 12.02 Lab 7: Malware Triage Without Malware",
       "parent": "1YcGbFwFoCopZn6mpNvILsvDOE0rSbGU7",
-      "sent": "c9a2dec7d2fba832",
-      "modified": "2026-10-23T19:46:42.012Z"
+      "sent": "7b826f0f96121b1f",
+      "modified": "2026-11-07T04:00:54.457Z"
     },
     "assignments/lab-08-memory-safety-and-assurance.md": {
       "id": "1SzwK0zZkDWZLq-E0Q_ftqAiZYrKcRWxCkG5Bi9PBME4",
       "name": "03 13.02 Lab 8: Memory Safety and Assurance Evidence",
       "parent": "1Fn9VSep_VfoJKFGzp2lsmUyWFbQ91_Km",
-      "sent": "820d3dbee893b8de",
-      "modified": "2026-10-23T19:46:47.854Z"
+      "sent": "56ccf0fe233c5315",
+      "modified": "2026-11-07T04:01:02.424Z"
     },
     "assignments/lab-09-sql-injection.md": {
       "id": "1x0ceEFDJD_5Psfvz2CwTfsn3nupH3_GvH_glrHFE8YI",
       "name": "03 14.02 Lab 9: SQL Injection",
       "parent": "1U_6xFTm3s2qW8u_mGlmruR9tUYhxOC2y",
-      "sent": "8fe0eec4f05f01a8",
-      "modified": "2026-10-23T19:46:53.883Z"
+      "sent": "89c1c904729526ed",
+      "modified": "2026-11-07T04:01:10.664Z"
     },
     "assignments/lab-10-log-analysis-and-incident-memo.md": {
       "id": "1rzzPhumg_0RsH68KR-JfZ438EfCkx_kEqZ9XougQ9O8",
       "name": "05 15.04 Lab 10: Log Analysis and Incident Memo",
       "parent": "1i_Kv3qy80eYfaawiVF7r4A6cJAYGCrg1",
-      "sent": "c0039e772395a85d",
-      "modified": "2026-10-23T19:47:04.076Z"
+      "sent": "028d93d1f908e7f0",
+      "modified": "2026-11-07T04:01:19.799Z"
     },
     "communicating.md": {
       "id": "1hRwXAAHkL2IqOvBn0_6gnuxTThsmV4dwCvg9tBaz_cY",
@@ -248,8 +255,8 @@
       "id": "132lYs1XK5YgOJ6rfJi-m1A1OKbi2jaKzVHUDnqbfLn8",
       "name": "02 Canvas Resources",
       "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
-      "sent": "e4ccf917176ab8d9",
-      "modified": "2026-10-23T19:45:05.907Z"
+      "sent": "5166d1177c8573ee",
+      "modified": "2026-11-07T03:58:10.903Z"
     },
     "course-resources/course-questions.md": {
       "id": "1vOIrpfcrd0YFtxMa-t15UCX17TnJy98ETejo0j6Gn0Y",
@@ -271,6 +278,391 @@
       "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
       "sent": "5f47eb9a97740d14",
       "modified": "2026-10-23T19:45:09.946Z"
+    },
+    "cybok/01-introduction.md": {
+      "id": "1YQqduqpSXeyLf82zGo8zCDnsPzlqIJOG5ch8Ld6V0nY",
+      "name": "09 Chapter 1: Introduction",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "7b7cc2b2f5319de0",
+      "modified": "2026-11-07T03:58:22.096Z"
+    },
+    "cybok/02-risk-management-and-governance.md": {
+      "id": "1-Fu5knihe9rXTewY47o-5E2CljK3pZWxQ9Ryi45uymQ",
+      "name": "10 Chapter 2: Risk Management & Governance",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "cc857ec950920949",
+      "modified": "2026-11-07T03:58:25.593Z"
+    },
+    "cybok/03-law-and-regulation-part-2.md": {
+      "id": "1iHC1skVP0pns6yqgLDdLQ-ll1RDlk2IFLke6oFka7R8",
+      "name": "12 Chapter 3: Law & Regulation, Part 2",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "68d2b27f69b26d47",
+      "modified": "2026-11-07T03:58:31.732Z"
+    },
+    "cybok/03-law-and-regulation.md": {
+      "id": "1Ksub6gq13jekQi39M6VPCZ1HwLu5pntAPsQ-QtLRNAA",
+      "name": "11 Chapter 3: Law & Regulation, Part 1",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "eddd8ebb1239ce70",
+      "modified": "2026-11-07T03:58:28.666Z"
+    },
+    "cybok/04-human-factors.md": {
+      "id": "1V7ReSiC77wUobHCnz5ahyGTb67gvKjUY9Zb7_W4SUgs",
+      "name": "13 Chapter 4: Human Factors",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "3e41921030c7f900",
+      "modified": "2026-11-07T03:58:34.452Z"
+    },
+    "cybok/05-privacy-and-online-rights.md": {
+      "id": "1uxBqBbtaeKBHFJq6S-B4O__8YWQO5hUpN0ifKfD200k",
+      "name": "14 Chapter 5: Privacy & Online Rights",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "338ed0a434630b6e",
+      "modified": "2026-11-07T03:58:37.626Z"
+    },
+    "cybok/06-malware-and-attack-technologies.md": {
+      "id": "1R0OyhdvMSIxWqYCDlN7KDz0oWEF757DmDisdJWAVfZg",
+      "name": "15 Chapter 6: Malware & Attack Technologies",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "aa7851279a2a7c86",
+      "modified": "2026-11-07T03:58:40.218Z"
+    },
+    "cybok/07-adversarial-behaviours.md": {
+      "id": "12hWwFZc218ed3IZ6yiLRl62xl755_LZZHXLoBPxHKzk",
+      "name": "16 Chapter 7: Adversarial Behaviours",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "d683750f94cece6b",
+      "modified": "2026-11-07T03:58:42.663Z"
+    },
+    "cybok/08-security-operations-and-incident-management.md": {
+      "id": "1aFCqSGLZkOgFSZ77J9YhrcLyD7O6FwYiepgptlW3VWY",
+      "name": "17 Chapter 8: Security Operations & Incident Management",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "437a11f5622dfbca",
+      "modified": "2026-11-07T03:58:46.703Z"
+    },
+    "cybok/10-cryptography.md": {
+      "id": "10WnZSDMTyTRybau-TyEkMPSDJDkRp8UFHG9p-DA1NSI",
+      "name": "18 Chapter 10: Cryptography",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "2a357564057177b8",
+      "modified": "2026-11-07T03:58:50.510Z"
+    },
+    "cybok/14-authentication-authorisation-and-accountability.md": {
+      "id": "1BNeLMZbLidgm1aJtzOwuX7nZRytjIjR-ygxYFCROB9E",
+      "name": "19 Chapter 14: Authentication, Authorisation & Accountability",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "b9726be7fb94604e",
+      "modified": "2026-11-07T03:58:53.523Z"
+    },
+    "cybok/15-software-security.md": {
+      "id": "169DOK4yLNRu7WMUSK3ZjLo3cftm6dLg_DFzZSiYwPjc",
+      "name": "20 Chapter 15: Software Security",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "7e5c87fcf8746277",
+      "modified": "2026-11-07T03:58:56.384Z"
+    },
+    "cybok/16-web-and-mobile-security.md": {
+      "id": "1wgsnQaGyF7GVLfGh2D_SggoBjFwclIHdH-LUr1rNWSs",
+      "name": "21 Chapter 16: Web & Mobile Security",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "2fe076029cbc0523",
+      "modified": "2026-11-07T03:58:58.848Z"
+    },
+    "cybok/17-secure-software-lifecycle.md": {
+      "id": "1d0DbBs9Q1D3HdyxiYJsnVxaVTenwfSCaJpkHmjS0aik",
+      "name": "22 Chapter 17: Secure Software Lifecycle",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "07ef2b23b0027737",
+      "modified": "2026-11-07T03:59:02.377Z"
+    },
+    "cybok/18-applied-cryptography.md": {
+      "id": "1YDZgJMkTVBXtiZacYD4H8XpERe9NO-8XHIsoN07XeJ8",
+      "name": "23 Chapter 18: Applied Cryptography",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "cfef6cff57be4530",
+      "modified": "2026-11-07T03:59:06.526Z"
+    },
+    "cybok/19-network-security.md": {
+      "id": "1mHnj6nDCL9uOH2rnASDM4zrfj1U4VKyRF4dTCCwQaRY",
+      "name": "24 Chapter 19: Network Security",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "7126f392a9c9c3b9",
+      "modified": "2026-11-07T03:59:09.441Z"
+    },
+    "cybok/images/figure-1-1.png": {
+      "id": "12Z3Xzw4gu6gY7vHeTQ0ZCxTu9Orhg6Hw",
+      "name": "figure-1-1.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "325811d61ebfbdae",
+      "modified": "2026-11-07T03:56:36.735Z"
+    },
+    "cybok/images/figure-10-2.png": {
+      "id": "1G7fFmWi7SfFI_oi0QPHhPcz4gqwb45ph",
+      "name": "figure-10-2.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "c0118e29a3c5acbd",
+      "modified": "2026-11-07T03:56:39.165Z"
+    },
+    "cybok/images/figure-10-3.png": {
+      "id": "1uodNiNjs6qHL4xh_hOTAJvz0L_KgVZ7f",
+      "name": "figure-10-3.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "97fc5ed620031798",
+      "modified": "2026-11-07T03:56:41.557Z"
+    },
+    "cybok/images/figure-10-4.png": {
+      "id": "1vo3Xxuy4zA6_X0apgMnC0wiGtw9v9AzN",
+      "name": "figure-10-4.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "386202cf37eb5f93",
+      "modified": "2026-11-07T03:56:43.639Z"
+    },
+    "cybok/images/figure-14-1.png": {
+      "id": "1YGTRQbmAuzmim-rQj7U_1g1nGV3SuKC_",
+      "name": "figure-14-1.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "2bfd2820c4b80c73",
+      "modified": "2026-11-07T03:56:45.824Z"
+    },
+    "cybok/images/figure-14-2.png": {
+      "id": "1HafSns5pI9l1md6jzFYEEP3aTa262m_8",
+      "name": "figure-14-2.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "3a0e1bfa103260ca",
+      "modified": "2026-11-07T03:56:48.110Z"
+    },
+    "cybok/images/figure-14-3.png": {
+      "id": "1w_kwqUT3ZvMnKEz5EPeF3584AnoN_Btd",
+      "name": "figure-14-3.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "642e071256be4ee1",
+      "modified": "2026-11-07T03:56:50.321Z"
+    },
+    "cybok/images/figure-14-4.png": {
+      "id": "1X8JtsC6bjN9b4Pg0Oa_TSJzK880_nIuT",
+      "name": "figure-14-4.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "814b6d84bf83e3b1",
+      "modified": "2026-11-07T03:56:52.526Z"
+    },
+    "cybok/images/figure-14-5.png": {
+      "id": "11lpF9p_BB2bNjOFoht0gSqij9cF1tIHP",
+      "name": "figure-14-5.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "c93e88e045ff20d4",
+      "modified": "2026-11-07T03:56:54.950Z"
+    },
+    "cybok/images/figure-16-1.png": {
+      "id": "16USg9w4t3rkOMMti19YkinyHZrUwZo9f",
+      "name": "figure-16-1.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "b5e17272996eddd4",
+      "modified": "2026-11-07T03:56:57.513Z"
+    },
+    "cybok/images/figure-16-2.png": {
+      "id": "1aV5bpAhcNoF_hJNq27ewCEj7efNlnMxN",
+      "name": "figure-16-2.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "908c2b08c2d990f7",
+      "modified": "2026-11-07T03:56:59.761Z"
+    },
+    "cybok/images/figure-16-3.png": {
+      "id": "1j7wkGjOraL4_geJBdqf7d8UdISb8OYg0",
+      "name": "figure-16-3.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "7ce9a820629cb12d",
+      "modified": "2026-11-07T03:57:02.186Z"
+    },
+    "cybok/images/figure-16-4.png": {
+      "id": "1BvynSZwRXOTUjo_8IpomOB20eutcIAdp",
+      "name": "figure-16-4.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "798dfde7490fdbaf",
+      "modified": "2026-11-07T03:57:04.737Z"
+    },
+    "cybok/images/figure-16-5.png": {
+      "id": "1EsTEhQvPvf_4aldzQzvbWi3ypi0SjKfV",
+      "name": "figure-16-5.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "b7208100eb2683e8",
+      "modified": "2026-11-07T03:57:07.233Z"
+    },
+    "cybok/images/figure-16-6.png": {
+      "id": "1kjzr_cN1dH-RatdxbraAGeXGERB0zEYb",
+      "name": "figure-16-6.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "5f6ab8d146db32c6",
+      "modified": "2026-11-07T03:57:09.717Z"
+    },
+    "cybok/images/figure-16-7.png": {
+      "id": "1sV-PrTUla4jVFXTdWni9mnkuYH3qNo7s",
+      "name": "figure-16-7.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "dbf489a3f19880cc",
+      "modified": "2026-11-07T03:57:11.997Z"
+    },
+    "cybok/images/figure-17-1.png": {
+      "id": "19MpX89BupVr5LhFgub_t5Elli1zCp-A6",
+      "name": "figure-17-1.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "a005a903744a78e4",
+      "modified": "2026-11-07T03:57:14.032Z"
+    },
+    "cybok/images/figure-17-2.png": {
+      "id": "1PYuirx0INl9yDXSiIn6KcJ_YLwF1BrBP",
+      "name": "figure-17-2.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "b8db55aecbfb4863",
+      "modified": "2026-11-07T03:57:16.242Z"
+    },
+    "cybok/images/figure-19-1.png": {
+      "id": "1R0jb3-W2-ChgPWAXZtrj8tTU7toTxuPu",
+      "name": "figure-19-1.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "74a11b385a397594",
+      "modified": "2026-11-07T03:57:18.510Z"
+    },
+    "cybok/images/figure-19-2.png": {
+      "id": "17PB3lWj_Snkd127gbCBBwtVOy-u8PPZl",
+      "name": "figure-19-2.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "9b906bc2f878b557",
+      "modified": "2026-11-07T03:57:20.950Z"
+    },
+    "cybok/images/figure-19-3.png": {
+      "id": "16wrm1Ig0d6Pm-0mPg-NhXwNySttWPcsV",
+      "name": "figure-19-3.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "5be70b4aca68b46d",
+      "modified": "2026-11-07T03:57:23.073Z"
+    },
+    "cybok/images/figure-19-4.png": {
+      "id": "17-RUORjjWm_A5GFl4au4BQpjKmqMF0_u",
+      "name": "figure-19-4.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "b99e8425fd3bbd2f",
+      "modified": "2026-11-07T03:57:25.393Z"
+    },
+    "cybok/images/figure-19-5.png": {
+      "id": "1i_WMWC2ds3Jz1q_qVZNS6tBXeNmCmlZ6",
+      "name": "figure-19-5.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "059ac02d0785ee5c",
+      "modified": "2026-11-07T03:57:27.788Z"
+    },
+    "cybok/images/figure-2-1.png": {
+      "id": "1Kfegw8x5QFgFgrzXl0kFdiE9lKBgVpDC",
+      "name": "figure-2-1.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "1c90a71a8a58c056",
+      "modified": "2026-11-07T03:57:30.128Z"
+    },
+    "cybok/images/figure-2-2.png": {
+      "id": "1mWv1G94vt9tO3LEXMw0SbMHfWdkdneCb",
+      "name": "figure-2-2.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "b59f63500df67617",
+      "modified": "2026-11-07T03:57:32.596Z"
+    },
+    "cybok/images/figure-2-4.png": {
+      "id": "1oRj22cTXHwozSjrkxr9DPPvzoRd_5a_G",
+      "name": "figure-2-4.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "4a3d8a632633f386",
+      "modified": "2026-11-07T03:57:34.951Z"
+    },
+    "cybok/images/figure-2-5.png": {
+      "id": "1JP9dCNWIJnNj1ENj2l1q8GHtw68TvBuM",
+      "name": "figure-2-5.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "6657e8591eaee526",
+      "modified": "2026-11-07T03:57:37.250Z"
+    },
+    "cybok/images/figure-2-6.png": {
+      "id": "1e9N6a4YlrKbv-lTJquFBE4-5sTbTPt_Y",
+      "name": "figure-2-6.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "0663618ad8c3be3d",
+      "modified": "2026-11-07T03:57:39.373Z"
+    },
+    "cybok/images/figure-4-1.png": {
+      "id": "1jJEHNV2IZKbnugTLPcN8VTd3NasLyq2X",
+      "name": "figure-4-1.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "a28c14a0457786e9",
+      "modified": "2026-11-07T03:57:41.596Z"
+    },
+    "cybok/images/figure-4-2.png": {
+      "id": "1hFAN3AT8ho0FadCA9W_UsIU7dRf7-DSt",
+      "name": "figure-4-2.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "904b53fb861e4f5f",
+      "modified": "2026-11-07T03:57:43.872Z"
+    },
+    "cybok/images/figure-4-3.png": {
+      "id": "1EgJjpQNl_Oe45bOA-S92Ia7VENrv3anB",
+      "name": "figure-4-3.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "34620964f6b62454",
+      "modified": "2026-11-07T03:57:46.427Z"
+    },
+    "cybok/images/figure-4-4.png": {
+      "id": "1zi1FvKKtnEmEenUHGOU7m8UKqZUHOwCT",
+      "name": "figure-4-4.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "9deaafe1535981c6",
+      "modified": "2026-11-07T03:57:48.521Z"
+    },
+    "cybok/images/figure-7-1.png": {
+      "id": "1PyYnK56dr97P6HOVRT37rzEFQGV3lSdv",
+      "name": "figure-7-1.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "82b33320f9e66e2a",
+      "modified": "2026-11-07T03:57:50.788Z"
+    },
+    "cybok/images/figure-8-1.png": {
+      "id": "1IWtKHHWXH9uyWGp3qOQD2n8O6c3uCs4s",
+      "name": "figure-8-1.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "61fad7c4f7064b6d",
+      "modified": "2026-11-07T03:57:53.163Z"
+    },
+    "cybok/images/figure-8-2.png": {
+      "id": "1RkumzKv_Nwd6RGWQCHyTUKkyPP1nXw_e",
+      "name": "figure-8-2.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "64548ce0148b8367",
+      "modified": "2026-11-07T03:57:55.697Z"
+    },
+    "cybok/images/figure-8-3.png": {
+      "id": "1yUMkov9ucckzj4dhWJTsUZxI69VXWzYr",
+      "name": "figure-8-3.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "54c37ad76626fbea",
+      "modified": "2026-11-07T03:57:58.013Z"
+    },
+    "cybok/images/figure-8-4.png": {
+      "id": "1gO9VDMlLlyPAFHlttf4bzkIcXkXtsIu2",
+      "name": "figure-8-4.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "3e8d730f27382c2a",
+      "modified": "2026-11-07T03:58:00.480Z"
+    },
+    "cybok/images/figure-8-5.png": {
+      "id": "1QFymfumd02bcuHrTNRUzXxYHr5Y3CjVS",
+      "name": "figure-8-5.png",
+      "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
+      "sent": "e73199cd793dcbda",
+      "modified": "2026-11-07T03:58:02.777Z"
+    },
+    "cybok/index.md": {
+      "id": "1b1rcL24xNqSQzUPgw1yMyceKK7H6DHgqH_Wb-mWHnUQ",
+      "name": "08 CyBOK Chapters",
+      "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
+      "sent": "a3efee4613012c71",
+      "modified": "2026-11-07T03:58:20.053Z"
     },
     "data/auth.log": {
       "id": "1CcjD23CY0I4rrLXqNNI-F7em_PVGM4zU",
@@ -297,15 +689,15 @@
       "id": "1ompbmm_pz0_Sk405eDU4ov6fkQzasbVDvVLXyL9qmrg",
       "name": "Incident report: NORTHWIND MEADOW",
       "parent": "1KSkCvEMxHmJf4ImwAlABw2twKtR5P-he",
-      "sent": "7cd18b104d7a3233",
-      "modified": "2026-10-23T19:47:12.108Z"
+      "sent": "df8ed43b8fa7d1b0",
+      "modified": "2026-11-07T04:01:29.140Z"
     },
     "data/index.md": {
       "id": "1EK9fbXRxBBZVzEQeam-OQ__nMWK0oSrEn6UQk2_PSVA",
       "name": "Course data files",
       "parent": "1KSkCvEMxHmJf4ImwAlABw2twKtR5P-he",
-      "sent": "d61608cb039e1098",
-      "modified": "2026-10-23T19:47:10.195Z"
+      "sent": "2041fc47a70000d7",
+      "modified": "2026-11-07T04:01:26.489Z"
     },
     "data/password_demo.py": {
       "id": "1VV53LYxRxaJVCSQEfpb-kePcAgQHdi8A",
@@ -318,8 +710,8 @@
       "id": "1MvLDL4UNBEc_7Ce3G5goVCLalbDBy-bPrIMbbT3EA9w",
       "name": "SnapVault: system description",
       "parent": "1KSkCvEMxHmJf4ImwAlABw2twKtR5P-he",
-      "sent": "aa479a722549575d",
-      "modified": "2026-10-23T19:47:13.829Z"
+      "sent": "ffa0fa63872556e9",
+      "modified": "2026-11-07T04:01:31.853Z"
     },
     "data/sign_demo.py": {
       "id": "1oMDG6K39zobcnzztfvXIaGw9hN4JSb6V",
@@ -353,43 +745,43 @@
       "id": "1QOEDflrMwhV5Qqf1doQOaCQ74NVzL_pt_Iym0EX89jI",
       "name": "03 0.03 D1: Introductions and the Security Mindset",
       "parent": "1dxvPTBFeG_Imj_D10b-l68t2Gy0VAMzb",
-      "sent": "1b771ee1d806a9af",
-      "modified": "2026-10-23T19:45:22.693Z"
+      "sent": "4a85b28b8e49fa69",
+      "modified": "2026-11-07T03:59:12.926Z"
     },
     "discussions/d02-ethics-and-privacy-case.md": {
       "id": "18KzeTBLNhRuRr6fXXq1GIvBdPLLjvV4QeH-rKTiV2Xc",
       "name": "03 3.02 D2: Ethics and Privacy Case",
       "parent": "1SLzCEp_emtafMLoPJ13aDiYi9eIFr-jj",
-      "sent": "43c9b2f875e0ed40",
-      "modified": "2026-10-23T19:45:42.717Z"
+      "sent": "d3fa2c71eaa72927",
+      "modified": "2026-11-07T03:59:35.880Z"
     },
     "discussions/d03-authentication-policy-critique.md": {
       "id": "1Gkdwe0F8aI805_4joEXhfgJs6L62RcZpfGlBKSmUddI",
       "name": "03 5.02 D3: Authentication Policy Critique",
       "parent": "1Jj1zlgcks3RwIxcN0ux9rtGkhr5uCvrb",
-      "sent": "d4b1c2fe2d0cb8c0",
-      "modified": "2026-10-23T19:45:57.230Z"
+      "sent": "ce7c018523120e60",
+      "modified": "2026-11-07T03:59:51.118Z"
     },
     "discussions/d04-network-security-in-the-news.md": {
       "id": "1JnIuzzpHSdVo8Jmva7Q10BPo46d9lNJKTOGlIIH0Fkc",
       "name": "03 11.02 D4: Network Security in the News",
       "parent": "17KfAUfiRtIxG3bBxplKFcSwG-mLqYcSR",
-      "sent": "23ce2d85f7d9b3eb",
-      "modified": "2026-10-23T19:46:34.007Z"
+      "sent": "7b5b02a87614e938",
+      "modified": "2026-11-07T04:00:45.731Z"
     },
     "discussions/d05-current-security-failure.md": {
       "id": "11L5Iht6fNDNrsv9PrL_kNa9mVWRMFuvyZ3WRYw3ulcI",
       "name": "03 15.02 D5: A Current Security Failure",
       "parent": "1i_Kv3qy80eYfaawiVF7r4A6cJAYGCrg1",
-      "sent": "cf7b1f7232879026",
-      "modified": "2026-10-23T19:47:00.201Z"
+      "sent": "3bb67616fd0b6348",
+      "modified": "2026-11-07T04:01:17.412Z"
     },
     "discussions/d06-final-reflection.md": {
       "id": "1yAIIcaRztkAdSMp4H5hsTxHpl6QEjg8ODPbTfn9zEc0",
       "name": "01 16.01 D6: Final Reflection",
       "parent": "1bWcY9WrrzrPypAW_eqqmiF5Xc_LAixOA",
-      "sent": "e8913f8547451e79",
-      "modified": "2026-10-23T19:47:06.154Z"
+      "sent": "fe5fe761e3d5952a",
+      "modified": "2026-11-07T04:01:22.314Z"
     },
     "docs/CyBOK_v1.2.0.pdf": {
       "id": "1MdECRsrAL7CMz1Jws5dUi8K-DCr8UzTT",
@@ -416,8 +808,8 @@
       "id": "1kCJ2hBZOOon8uc5zzm4b9rU9h7rLgqMT",
       "name": "cs331-banner.svg",
       "parent": "1eH1w0mjvpOWClySJq1jp85mA6hZ9gWMb",
-      "sent": "c4a32e89fbf38ed9",
-      "modified": "2026-10-23T19:44:31.839Z"
+      "sent": "8419c0506061cd5e",
+      "modified": "2026-11-07T04:01:24.716Z"
     },
     "images/me.jpg": {
       "id": "113qtwD-bGpNqagNNJoOjE8QNXMJ-qqKK",
@@ -430,8 +822,8 @@
       "id": "143Tii-BihrtNRUHtCuAC1-E7N8KW966N5u86gIS8vbE",
       "name": "00 Syllabus",
       "parent": "1nt-ZafvmbpE3W2-RQiw8S6GMg1mGHDY9",
-      "sent": "7d681a8420b32aa8",
-      "modified": "2026-10-23T19:44:55.477Z"
+      "sent": "79a8241c82448263",
+      "modified": "2026-11-07T03:58:06.099Z"
     },
     "instructor-resources/course-suggestions.md": {
       "id": "1SIAlR-CYR0JTtsHDAmDTkRatvKD0S3rZqH0nsjmFpM4",
@@ -451,8 +843,8 @@
       "id": "19FGqsch8FE4bcDGW7rt2XAcEJcSd6P5PBiY3Bb0z588",
       "name": "03 Learning Opportunities for Online Instructors",
       "parent": "1Zc6rNBTeURgCA5383IpiPWv_7m7I2iBK",
-      "sent": "4beed94f19772ca3",
-      "modified": "2026-10-23T19:45:01.989Z"
+      "sent": "a0056877fdfa6f5b",
+      "modified": "2026-11-07T03:58:08.547Z"
     },
     "instructor.md": {
       "id": "1O8nIN4B4E22CzwYA4txZqoSz1JAaEEcyRc9sbupjA9Y",
@@ -465,218 +857,218 @@
       "id": "1_heHBb68n-JTFB3hojd4sbhg2Ln4XmnQIhPvKkgpX9o",
       "name": "01 Module 1 Overview",
       "parent": "1x3ZmNECxLzguW5wWbkdpo8IwIbyI5ovZ",
-      "sent": "0db2ca9af4009266",
-      "modified": "2026-10-23T19:45:28.568Z"
+      "sent": "dcd01985dbd6c199",
+      "modified": "2026-11-07T03:59:17.718Z"
     },
     "notes/week-01-what-is-cyber-security.md": {
       "id": "1-fqNVIUVkvuPG0Pl43mfS31pap-hxAkhLAJgYTkfGX0",
       "name": "02 1.01 Readings and Lecture Notes",
       "parent": "1x3ZmNECxLzguW5wWbkdpo8IwIbyI5ovZ",
-      "sent": "c62acafb56f4471c",
-      "modified": "2026-10-23T19:45:30.673Z"
+      "sent": "5d3ef6bb59f45cee",
+      "modified": "2026-11-07T03:59:20.540Z"
     },
     "notes/week-02-overview.md": {
       "id": "16jTCTWyb9Uk5kX2T20yG6j2VlhgqwBSvaGynYjbpVLU",
       "name": "01 Module 2 Overview",
       "parent": "1idhKkLL99S0ijrNNUs8WOndUwJSwGpDl",
-      "sent": "7e58f4732228fea5",
-      "modified": "2026-10-23T19:45:32.473Z"
+      "sent": "112e0c1f27a99f73",
+      "modified": "2026-11-07T03:59:23.467Z"
     },
     "notes/week-02-security-principles-and-human-factors.md": {
       "id": "11eqdQ5neIncvG4kR-DvIxhAQ_OewJUhqLddxUPhyLjs",
       "name": "02 2.01 Readings and Lecture Notes",
       "parent": "1idhKkLL99S0ijrNNUs8WOndUwJSwGpDl",
-      "sent": "9c9a51e5c66c64f3",
-      "modified": "2026-10-23T19:45:34.508Z"
+      "sent": "20c9a367e23482da",
+      "modified": "2026-11-07T03:59:26.214Z"
     },
     "notes/week-03-law-ethics-and-privacy.md": {
       "id": "1cMKEq136A5LAUn2uFyR0oJ-1u35tASF-qV_aGLs0mK8",
       "name": "02 3.01 Readings and Lecture Notes",
       "parent": "1SLzCEp_emtafMLoPJ13aDiYi9eIFr-jj",
-      "sent": "0e6864a6dd45bb99",
-      "modified": "2026-10-23T19:45:40.852Z"
+      "sent": "0e30cf2b2a4b3d70",
+      "modified": "2026-11-07T03:59:33.408Z"
     },
     "notes/week-03-overview.md": {
       "id": "1AKr0_70CESkoVqFDSe5I-shqEpirOIsMUejKL9IYuX0",
       "name": "01 Module 3 Overview",
       "parent": "1SLzCEp_emtafMLoPJ13aDiYi9eIFr-jj",
-      "sent": "950f8ded1c746e64",
-      "modified": "2026-10-23T19:45:38.652Z"
+      "sent": "cc8e539d632dbcd7",
+      "modified": "2026-11-07T03:59:30.904Z"
     },
     "notes/week-04-overview.md": {
       "id": "1N7KTnSdThtwlswyFGn-dsuTBb-Ur7EN9qoyLzP3h8GQ",
       "name": "01 Module 4 Overview",
       "parent": "1bAhzvNExfJUHEv9iMmSb9Wz6Q1x6BWxs",
-      "sent": "053a82c5c24f66e3",
-      "modified": "2026-10-23T19:45:46.545Z"
+      "sent": "40370b42cbbd8c8d",
+      "modified": "2026-11-07T03:59:38.562Z"
     },
     "notes/week-04-risk-and-threat-modeling.md": {
       "id": "1czi9cHeuC0atU60dca-2Uhs-oey7fC2A7adeuj5X5Bs",
       "name": "02 4.01 Readings and Lecture Notes",
       "parent": "1bAhzvNExfJUHEv9iMmSb9Wz6Q1x6BWxs",
-      "sent": "8c534be7151e8959",
-      "modified": "2026-10-23T19:45:48.670Z"
+      "sent": "5beabd67c17e8f85",
+      "modified": "2026-11-07T03:59:40.717Z"
     },
     "notes/week-05-authentication-and-credentials.md": {
       "id": "1C19OMOZOOqj2Ok5hcQoiq1ZQXGQyvrP1hdlbdyLkGkM",
       "name": "02 5.01 Readings and Lecture Notes",
       "parent": "1Jj1zlgcks3RwIxcN0ux9rtGkhr5uCvrb",
-      "sent": "249a9a502a81dba2",
-      "modified": "2026-10-23T19:45:54.939Z"
+      "sent": "b510d17de9987989",
+      "modified": "2026-11-07T03:59:48.495Z"
     },
     "notes/week-05-overview.md": {
       "id": "1ZbmCDq6jkc67zWgBk2nr-F7ZW7K47FIaMVeS-kCCUZ8",
       "name": "01 Module 5 Overview",
       "parent": "1Jj1zlgcks3RwIxcN0ux9rtGkhr5uCvrb",
-      "sent": "f9f5dc9bd7a2bdac",
-      "modified": "2026-10-23T19:45:53.067Z"
+      "sent": "c81f823b61b685de",
+      "modified": "2026-11-07T03:59:46.012Z"
     },
     "notes/week-06-authorisation-and-access-control.md": {
       "id": "1z0-KAXZe_ggAXQAh4EfM_B7ys_RQihFwn3ITwKl8x40",
       "name": "02 6.01 Readings and Lecture Notes",
       "parent": "1o2BEgHsZtwrwAe8UBEsXq1Ud9QTz5fcj",
-      "sent": "69a7edde9262fc8f",
-      "modified": "2026-10-23T19:46:03.235Z"
+      "sent": "b7ecff41d0a94ca9",
+      "modified": "2026-11-07T03:59:56.144Z"
     },
     "notes/week-06-overview.md": {
       "id": "1c1D_I28ujPQoWO5QZkV5BXsGLFoldf2KpsD_ErZidKg",
       "name": "01 Module 6 Overview",
       "parent": "1o2BEgHsZtwrwAe8UBEsXq1Ud9QTz5fcj",
-      "sent": "2e91e278c1a39c7a",
-      "modified": "2026-10-23T19:46:01.263Z"
+      "sent": "bea60fa2ef116943",
+      "modified": "2026-11-07T03:59:53.678Z"
     },
     "notes/week-07-overview.md": {
       "id": "1tl7vJC_mC7_Iy0-YE6aibl_r-bEVC_L8gazucO6CJuA",
       "name": "01 Module 7 Overview",
       "parent": "1yQMnYGOcrBOQJlFV0UKavu5jKfuwbyaQ",
-      "sent": "54ce35cc650c2bab",
-      "modified": "2026-10-23T19:46:07.389Z"
+      "sent": "0eb6e8652e4886da",
+      "modified": "2026-11-07T04:00:01.595Z"
     },
     "notes/week-07-symmetric-cryptography.md": {
       "id": "1sIlBuJzq73cid6AK7_Wk6lyKRSn0mInHPzENTMt7CpI",
       "name": "02 7.01 Readings and Lecture Notes",
       "parent": "1yQMnYGOcrBOQJlFV0UKavu5jKfuwbyaQ",
-      "sent": "972ffdc99d7d5dbb",
-      "modified": "2026-10-23T19:46:09.327Z"
+      "sent": "80da2e894988688f",
+      "modified": "2026-11-07T04:00:04.091Z"
     },
     "notes/week-08-overview.md": {
       "id": "1y823K0XYlwUD3SK7SExWubdQJOylVU-NZLFbD4tJ2Us",
       "name": "01 Module 8 Overview",
       "parent": "1B4EzkXD9NCjj_nUrC2SmSfeV68ore2jE",
-      "sent": "47d581cfd943241b",
-      "modified": "2026-10-23T19:46:13.144Z"
+      "sent": "bacab62d3a3d54d7",
+      "modified": "2026-11-07T04:00:09.160Z"
     },
     "notes/week-08-public-key-cryptography.md": {
       "id": "1OWxZQli17oOb7VryLecaMVM0trs_drTc9NGQ5kuMwUc",
       "name": "02 8.01 Readings and Lecture Notes",
       "parent": "1B4EzkXD9NCjj_nUrC2SmSfeV68ore2jE",
-      "sent": "a710275a1fc3fe50",
-      "modified": "2026-10-23T19:46:14.873Z"
+      "sent": "a5b6dd67a2e5fbaf",
+      "modified": "2026-11-07T04:00:11.828Z"
     },
     "notes/week-09-overview.md": {
       "id": "1jnWCpqUoMevYYU5GB1YylwKE8V7dWItmgw9LGbNr_6I",
       "name": "01 Module 9 Overview",
       "parent": "1eKH7_NAK0x05u2O9Npbx5XgLss9TI_s6",
-      "sent": "9ec932008c364eb1",
-      "modified": "2026-10-23T19:46:19.024Z"
+      "sent": "29d8a6b63e4b88cc",
+      "modified": "2026-11-07T04:00:17.584Z"
     },
     "notes/week-09-review-and-catch-up.md": {
       "id": "1ptZGsCO7MY-IUQD5weTYi6qmXYWSLrgu8qXrrs_Ucn4",
       "name": "02 9.01 Readings and Lecture Notes",
       "parent": "1eKH7_NAK0x05u2O9Npbx5XgLss9TI_s6",
-      "sent": "aa47228a9f3d53bf",
-      "modified": "2026-10-23T19:46:21.911Z"
+      "sent": "d1781dd9bc12e5d6",
+      "modified": "2026-11-07T04:00:20.440Z"
     },
     "notes/week-10-keys-certificates-and-pki.md": {
       "id": "10eNN3i5Ki1JpKHkbqSzUxo8XftPcUhqLcVj1K8UcF7A",
       "name": "02 10.01 Readings and Lecture Notes",
       "parent": "1LgxkKxRcQXPE684UXCB7cF1K_8UoAHdT",
-      "sent": "e085e852da3bf4ad",
-      "modified": "2026-10-23T19:46:25.822Z"
+      "sent": "c2893514522f27e4",
+      "modified": "2026-11-07T04:00:34.138Z"
     },
     "notes/week-10-overview.md": {
       "id": "1SEg7eVEdeZdrygTpnVAZBnEpMm2LLyQTaTaDrOyBBbo",
       "name": "01 Module 10 Overview",
       "parent": "1LgxkKxRcQXPE684UXCB7cF1K_8UoAHdT",
-      "sent": "014adee26ac343fe",
-      "modified": "2026-10-23T19:46:23.837Z"
+      "sent": "92262322aab71125",
+      "modified": "2026-11-07T04:00:22.846Z"
     },
     "notes/week-11-network-security.md": {
       "id": "1PxaADZLfOmrUnV7UejprT9HHohXSYvSXKhey6ZujD2U",
       "name": "02 11.01 Readings and Lecture Notes",
       "parent": "17KfAUfiRtIxG3bBxplKFcSwG-mLqYcSR",
-      "sent": "1fe89e6f6354c9c8",
-      "modified": "2026-10-23T19:46:31.960Z"
+      "sent": "cd26d8dba3c84e2d",
+      "modified": "2026-11-07T04:00:42.602Z"
     },
     "notes/week-11-overview.md": {
       "id": "12j1IY1lHuQZJJfmsQ_2UgCeiZaGLkRHoc1_HoGWnMlQ",
       "name": "01 Module 11 Overview",
       "parent": "17KfAUfiRtIxG3bBxplKFcSwG-mLqYcSR",
-      "sent": "099b17b10ba91a8b",
-      "modified": "2026-10-23T19:46:30.100Z"
+      "sent": "8931adf5243d5eee",
+      "modified": "2026-11-07T04:00:39.697Z"
     },
     "notes/week-12-malware-and-adversarial-behaviours.md": {
       "id": "1cYNVKyIeET3Y3HnLXyaE204hHrixrDCGIqA1i335r3E",
       "name": "02 12.01 Readings and Lecture Notes",
       "parent": "1YcGbFwFoCopZn6mpNvILsvDOE0rSbGU7",
-      "sent": "a49dc83be7346ee9",
-      "modified": "2026-10-23T19:46:40.011Z"
+      "sent": "fbb9a68657dc20d8",
+      "modified": "2026-11-07T04:00:51.768Z"
     },
     "notes/week-12-overview.md": {
       "id": "1Lqv9KmffR7WKd3MG_yflOf7X4NI_rMM6jMpkYNKKQLk",
       "name": "01 Module 12 Overview",
       "parent": "1YcGbFwFoCopZn6mpNvILsvDOE0rSbGU7",
-      "sent": "728668417cb6c392",
-      "modified": "2026-10-23T19:46:38.098Z"
+      "sent": "c314d2822697f336",
+      "modified": "2026-11-07T04:00:49.323Z"
     },
     "notes/week-13-overview.md": {
       "id": "1KLkTIn8DonEubAAiDwKNFC5eDNk1KAXO9KSn-DMZVTM",
       "name": "01 Module 13 Overview",
       "parent": "1Fn9VSep_VfoJKFGzp2lsmUyWFbQ91_Km",
-      "sent": "6d272a8004470c94",
-      "modified": "2026-10-23T19:46:44.109Z"
+      "sent": "c97ef84368106c13",
+      "modified": "2026-11-07T04:00:57.030Z"
     },
     "notes/week-13-software-security-and-assurance.md": {
       "id": "1VVEu2QrasmkHfBX2UeAB8SMuVxVkeR_Y9K5v3CE4Utg",
       "name": "02 13.01 Readings and Lecture Notes",
       "parent": "1Fn9VSep_VfoJKFGzp2lsmUyWFbQ91_Km",
-      "sent": "503c16502c99548e",
-      "modified": "2026-10-23T19:46:46.103Z"
+      "sent": "1bd2e81dc6b91c37",
+      "modified": "2026-11-07T04:00:59.182Z"
     },
     "notes/week-14-overview.md": {
       "id": "1oB1zUuhXc2eilkkCjkKIOp9HGgmo_U9tkRa6q0gn11Y",
       "name": "01 Module 14 Overview",
       "parent": "1U_6xFTm3s2qW8u_mGlmruR9tUYhxOC2y",
-      "sent": "95d0ded6731de425",
-      "modified": "2026-10-23T19:46:49.747Z"
+      "sent": "c240858b59fc2eaf",
+      "modified": "2026-11-07T04:01:04.887Z"
     },
     "notes/week-14-web-security-and-injection.md": {
       "id": "1X8X6HHsxzG3FPbMXKx4sWKhwEAsTY18KCAbNxhLW_7k",
       "name": "02 14.01 Readings and Lecture Notes",
       "parent": "1U_6xFTm3s2qW8u_mGlmruR9tUYhxOC2y",
-      "sent": "4cfab2772ed9494f",
-      "modified": "2026-10-23T19:46:51.772Z"
+      "sent": "340b7711fe983113",
+      "modified": "2026-11-07T04:01:07.738Z"
     },
     "notes/week-15-overview.md": {
       "id": "1HDkBENF-dsdsNDypdGs4VPiR-kUh4UO8t0CQG4WK2zA",
       "name": "01 Module 15 Overview",
       "parent": "1i_Kv3qy80eYfaawiVF7r4A6cJAYGCrg1",
-      "sent": "9363fc33957c3d71",
-      "modified": "2026-10-23T19:46:55.999Z"
+      "sent": "3d9db26c9c4c5ed8",
+      "modified": "2026-11-07T04:01:12.760Z"
     },
     "notes/week-15-security-operations-and-incident-response.md": {
       "id": "1lWBHIG8oy1cmeA5NvXv5ohcv1s1_1t9X6ATdN65GISc",
       "name": "02 15.01 Readings and Lecture Notes",
       "parent": "1i_Kv3qy80eYfaawiVF7r4A6cJAYGCrg1",
-      "sent": "ab92f0295d6caeb1",
-      "modified": "2026-10-23T19:46:58.114Z"
+      "sent": "587bcb0b630c5d72",
+      "modified": "2026-11-07T04:01:15.224Z"
     },
     "objectives.md": {
       "id": "1ma8PKSXDnAf8rSvNxvHsrpsK2TLFITjYuI-BCaKQv_k",
       "name": "06 CS 331: Objective Alignment Sheet",
       "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
-      "sent": "b03502e0a169073b",
-      "modified": "2026-10-23T19:45:14.134Z"
+      "sent": "0d175d830c1cf51c",
+      "modified": "2026-11-07T03:58:16.001Z"
     },
     "reminders/d01-replies.md": {
       "id": "1B9Lp64kqYk0SnMuq2nTf1EfS-li3MVxo9cIKNInS9Ug",
@@ -717,8 +1109,8 @@
       "id": "1SVGAbcpofHBkeQQfZ0vzg0Gb4UT-h5NGwXrXVgMnmy8",
       "name": "05 CS 331: Readings and Resources",
       "parent": "1bNvhkuxvcMN-G6tpmWioPrSZztEryWTW",
-      "sent": "c21dc6452f018789",
-      "modified": "2026-10-23T19:45:11.980Z"
+      "sent": "0f25423eceac5ed0",
+      "modified": "2026-11-07T03:58:13.389Z"
     },
     "sheet:objectives.md": {
       "id": "1c33cIdK7hjZBAULJg-k4XdDAqjGM-7QMWyaqrzkbNOU",

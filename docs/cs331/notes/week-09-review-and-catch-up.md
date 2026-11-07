@@ -4,8 +4,8 @@
 
 ## Readings
 
-Nothing new. If you want to re-read anything from CyBOK (Cyber Security Body of Knowledge), the highest-value sections are §1.4 (the
-eight principles) and §14.3.1 (access control core concepts). Everything else is better reviewed
+Nothing new. If you want to re-read anything from CyBOK (Cyber Security Body of Knowledge), the highest-value sections are [§1.4](../cybok/01-introduction.md#_1-4-principles) (the
+eight principles) and [§14.3.1](../cybok/14-authentication-authorisation-and-accountability.md#_14-3-1-access-control) (access control core concepts). Everything else is better reviewed
 through your own graded work.
 
 ## How to spend the week
