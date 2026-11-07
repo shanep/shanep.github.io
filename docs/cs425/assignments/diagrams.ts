@@ -243,8 +243,130 @@ const gbn: Diagram = {
   },
 }
 
+const stack: Diagram = {
+  title: 'Where the stack runs',
+  caption: '',
+  desc:
+    'Two places. On your machine, curl connects to 127.0.0.1 port 8080, and QEMU user networking ' +
+    'carries that connection into the guest. QEMU user networking ends TCP itself and answers DNS ' +
+    'and ARP, and it writes every frame to build/packets.pcap for Wireshark. Inside QEMU, the ' +
+    'unikernel holds the layers you write, from the top: the HTTP server in G4, then TCP in G1 next ' +
+    'to UDP and DNS in G2, then IPv4, ICMP and routing in G2, then Ethernet and ARP in G3, then the ' +
+    'virtio-net driver in G4, which talks to QEMU user networking.',
+  wide: {
+    width: 700,
+    height: 444,
+    regions: [
+      { label: 'Your machine', place: 'mac', x: 8, y: 8, w: 252, h: 428 },
+      { label: 'The unikernel, inside QEMU', place: 'cloud', x: 280, y: 8, w: 412, h: 428 },
+    ],
+    nodes: [
+      { id: 'curl', x: 134, y: 72, w: 220, h: 46, lines: ['curl', '127.0.0.1:8080'] },
+      { id: 'slirp', x: 134, y: 228, w: 220, h: 70, lines: ['QEMU user networking', 'ends TCP itself,', 'answers DNS and ARP'] },
+      { id: 'pcap', x: 134, y: 384, w: 220, h: 46, lines: ['build/packets.pcap', 'open it in Wireshark'] },
+      { id: 'http', x: 392, y: 72, w: 184, h: 46, lines: ['HTTP server', 'G4 · http.c'] },
+      { id: 'tcp', x: 392, y: 150, w: 184, h: 46, lines: ['TCP', 'G1 · tcp.c'] },
+      { id: 'udp', x: 584, y: 150, w: 176, h: 46, lines: ['UDP and DNS', 'G2 · udp.c, dns.c'] },
+      { id: 'ip', x: 486, y: 228, w: 372, h: 46, lines: ['IPv4, ICMP and routing', 'G2 · ip.c'] },
+      { id: 'ipL', x: 392, y: 205, kind: 'point' },
+      { id: 'ipR', x: 584, y: 205, kind: 'point' },
+      { id: 'eth', x: 486, y: 306, w: 372, h: 46, lines: ['Ethernet and ARP', 'G3 · eth.c, stack.c'] },
+      { id: 'virtio', x: 486, y: 384, w: 372, h: 46, lines: ['virtio-net driver', 'G4 · virtio_net.c'] },
+    ],
+    edges: [
+      { from: 'http', to: 'tcp', arrow: false },
+      { from: 'tcp', to: 'ipL', arrow: false },
+      { from: 'udp', to: 'ipR', arrow: false },
+      { from: 'ip', to: 'eth', arrow: false },
+      { from: 'eth', to: 'virtio', arrow: false },
+      { from: 'curl', to: 'slirp', arrow: false },
+      { from: 'slirp', to: 'pcap' },
+      { from: 'slirp', to: 'virtio', via: [[270, 228], [270, 384]], arrow: false },
+    ],
+  },
+  narrow: {
+    width: 340,
+    height: 700,
+    regions: [
+      { label: 'Your machine', place: 'mac', x: 8, y: 8, w: 324, h: 262 },
+      { label: 'The unikernel, inside QEMU', place: 'cloud', x: 8, y: 288, w: 324, h: 404 },
+    ],
+    nodes: [
+      { id: 'curl', x: 160, y: 72, w: 250, h: 46, lines: ['curl', '127.0.0.1:8080'] },
+      { id: 'slirp', x: 160, y: 148, w: 250, h: 66, lines: ['QEMU user networking', 'ends TCP itself,', 'answers DNS and ARP'] },
+      { id: 'pcap', x: 160, y: 226, w: 250, h: 46, lines: ['build/packets.pcap', 'open it in Wireshark'] },
+      { id: 'http', x: 92, y: 352, w: 136, h: 46, lines: ['HTTP server', 'G4 · http.c'] },
+      { id: 'tcp', x: 92, y: 420, w: 136, h: 46, lines: ['TCP', 'G1 · tcp.c'] },
+      { id: 'udp', x: 236, y: 420, w: 136, h: 46, lines: ['UDP and DNS', 'G2 · udp.c, dns.c'] },
+      { id: 'ip', x: 164, y: 492, w: 280, h: 46, lines: ['IPv4, ICMP and routing', 'G2 · ip.c'] },
+      { id: 'ipL', x: 92, y: 469, kind: 'point' },
+      { id: 'ipR', x: 236, y: 469, kind: 'point' },
+      { id: 'eth', x: 164, y: 564, w: 280, h: 46, lines: ['Ethernet and ARP', 'G3 · eth.c, stack.c'] },
+      { id: 'virtio', x: 164, y: 638, w: 280, h: 46, lines: ['virtio-net driver', 'G4 · virtio_net.c'] },
+    ],
+    edges: [
+      { from: 'http', to: 'tcp', arrow: false },
+      { from: 'tcp', to: 'ipL', arrow: false },
+      { from: 'udp', to: 'ipR', arrow: false },
+      { from: 'ip', to: 'eth', arrow: false },
+      { from: 'eth', to: 'virtio', arrow: false },
+      { from: 'curl', to: 'slirp', arrow: false },
+      { from: 'slirp', to: 'pcap' },
+      { from: 'slirp', to: 'virtio', via: [[320, 148], [320, 638]], arrow: false },
+    ],
+  },
+}
+
+const harness: Diagram = {
+  title: 'The same stack under your tests',
+  caption: '',
+  desc:
+    'One Linux process, started by make check. Your Unity tests own the clock and call ' +
+    'sim_advance(). They drive two copies of your stack, each joined to the simulator through ' +
+    'netif_t. The simulator between them adds delay, a rate limit, a queue, loss, duplicates, ' +
+    'reordering and corruption. In the kernel, netif_t is your virtio-net driver instead.',
+  wide: {
+    width: 700,
+    height: 316,
+    regions: [{ label: 'One Linux process, make check', place: 'mac', x: 8, y: 8, w: 684, h: 300 }],
+    nodes: [
+      { id: 'tests', x: 350, y: 84, w: 300, h: 46, lines: ['Your Unity tests', 'own the clock, call sim_advance()'] },
+      { id: 'a', x: 105, y: 182, w: 150, h: 46, lines: ['Your stack', 'host A'] },
+      { id: 'sim', x: 350, y: 182, w: 190, h: 90, lines: ['Simulator', 'delay, rate, queue', 'loss, duplicates,', 'reordering, corruption'] },
+      { id: 'b', x: 595, y: 182, w: 150, h: 46, lines: ['Your stack', 'host B'] },
+      { id: 'note', x: 350, y: 276, kind: 'text', lines: ['In the kernel, netif_t is your virtio-net driver instead.'] },
+    ],
+    edges: [
+      { from: 'a', to: 'sim', label: 'netif_t', labelAt: [217, 164], arrow: false },
+      { from: 'sim', to: 'b', label: 'netif_t', labelAt: [483, 164], arrow: false },
+      { from: 'tests', to: 'a', via: [[105, 84]] },
+      { from: 'tests', to: 'b', via: [[595, 84]] },
+    ],
+  },
+  narrow: {
+    width: 340,
+    height: 500,
+    regions: [{ label: 'One Linux process, make check', place: 'mac', x: 8, y: 8, w: 324, h: 484 }],
+    nodes: [
+      { id: 'tests', x: 150, y: 84, w: 240, h: 62, lines: ['Your Unity tests', 'own the clock,', 'call sim_advance()'] },
+      { id: 'a', x: 150, y: 170, w: 240, h: 46, lines: ['Your stack', 'host A'] },
+      { id: 'sim', x: 150, y: 272, w: 240, h: 90, lines: ['Simulator', 'delay, rate, queue', 'loss, duplicates,', 'reordering, corruption'] },
+      { id: 'b', x: 150, y: 374, w: 240, h: 46, lines: ['Your stack', 'host B'] },
+      { id: 'note', x: 170, y: 444, kind: 'text', lines: ['In the kernel, netif_t is your', 'virtio-net driver instead.'] },
+    ],
+    edges: [
+      { from: 'tests', to: 'a' },
+      { from: 'a', to: 'sim', label: 'netif_t', labelAt: [190, 205], arrow: false },
+      { from: 'sim', to: 'b', label: 'netif_t', labelAt: [190, 334], arrow: false },
+      { from: 'tests', to: 'b', via: [[300, 84], [300, 374]] },
+    ],
+  },
+}
+
 export const files: Record<string, Diagram> = {
   'docs/public/cs425/assignments/p2-setup.svg': setup,
   'docs/public/cs425/assignments/p2-window.svg': sendWindow,
   'docs/public/cs425/assignments/p2-gbn-timeline.svg': gbn,
+  'docs/public/cs425/assignments/g-stack.svg': stack,
+  'docs/public/cs425/assignments/g-harness.svg': harness,
 }
