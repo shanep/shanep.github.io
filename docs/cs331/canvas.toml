@@ -213,8 +213,8 @@ items = [
     "instructor-resources/learning-opportunities.md",
 ]
 
-# Instructor Information, the readings page and the objectives are this course's
-# own; the other three are shared by every course from shared/course-resources/.
+# Instructor Information, the readings page, the list of CyBOK chapters and the
+# objectives are this course's own; the other three are shared by every course from shared/course-resources/.
 [[module]]
 title = "Course Resources"
 items = [
@@ -223,34 +223,17 @@ items = [
     "course-resources/online-success-resources.md",
     "course-resources/technology-support.md",
     "resources.md",
+    "cybok/index.md",
     "objectives.md",
     "course-resources/course-questions.md",
 ]
 
-[[module]]
-title = "CyBOK Chapters"
-items = [
-    "cybok/index.md",
-    "cybok/01-introduction.md",
-    "cybok/02-risk-management-and-governance.md",
-    "cybok/03-law-and-regulation.md",
-    "cybok/03-law-and-regulation-part-2.md",
-    "cybok/04-human-factors.md",
-    "cybok/05-privacy-and-online-rights.md",
-    "cybok/06-malware-and-attack-technologies.md",
-    "cybok/07-adversarial-behaviours.md",
-    "cybok/08-security-operations-and-incident-management.md",
-    "cybok/10-cryptography.md",
-    "cybok/14-authentication-authorisation-and-accountability.md",
-    "cybok/15-software-security.md",
-    "cybok/16-web-and-mobile-security.md",
-    "cybok/17-secure-software-lifecycle.md",
-    "cybok/18-applied-cryptography.md",
-    "cybok/19-network-security.md",
-]
-
 # Every module but Course Resources follows the shell: its overview page, then
 # its items under "Due by" text headers, each item numbered N.0K in its title.
+# The CyBOK chapters a week's notes link to come last, under their own header
+# and with no number. The notes assign sections, not whole chapters, so a chapter
+# under a "Due by" header would read as due. A chapter two weeks use is listed
+# in both modules.
 # `week` puts the dates in the module's name, from the term skeleton above.
 # D1 and Lab 0 are week 1 work, but they are course setup, so
 # they sit in Getting Started. The Getting to Know You Survey is the shell's own
@@ -277,6 +260,8 @@ page  = "notes/week-01-overview.md"
 items = [
     { header = "Due by Tuesday at 11:59 p.m. Mountain Time" },
     "notes/week-01-what-is-cyber-security.md",
+    { header = "CyBOK Chapters: read the sections the notes list" },
+    "cybok/01-introduction.md",
 ]
 
 [[module]]
@@ -287,6 +272,9 @@ items = [
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "notes/week-02-security-principles-and-human-factors.md",
     "assignments/lab-01-security-principles-audit.md",
+    { header = "CyBOK Chapters: read the sections the notes list" },
+    "cybok/01-introduction.md",
+    "cybok/04-human-factors.md",
 ]
 
 [[module]]
@@ -299,6 +287,10 @@ items = [
     "discussions/d02-ethics-and-privacy-case.md",
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "reminders/d02-replies.md",
+    { header = "CyBOK Chapters: read the sections the notes list" },
+    "cybok/03-law-and-regulation.md",
+    "cybok/03-law-and-regulation-part-2.md",
+    "cybok/05-privacy-and-online-rights.md",
 ]
 
 [[module]]
@@ -309,6 +301,8 @@ items = [
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "notes/week-04-risk-and-threat-modeling.md",
     "assignments/lab-02-threat-model.md",
+    { header = "CyBOK Chapters: read the sections the notes list" },
+    "cybok/02-risk-management-and-governance.md",
 ]
 
 [[module]]
@@ -321,6 +315,8 @@ items = [
     "discussions/d03-authentication-policy-critique.md",
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "reminders/d03-replies.md",
+    { header = "CyBOK Chapters: read the sections the notes list" },
+    "cybok/14-authentication-authorisation-and-accountability.md",
 ]
 
 [[module]]
@@ -331,6 +327,8 @@ items = [
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "notes/week-06-authorisation-and-access-control.md",
     "assignments/lab-03-access-control-matrix.md",
+    { header = "CyBOK Chapters: read the sections the notes list" },
+    "cybok/14-authentication-authorisation-and-accountability.md",
 ]
 
 [[module]]
@@ -341,6 +339,8 @@ items = [
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "notes/week-07-symmetric-cryptography.md",
     "assignments/lab-04-symmetric-encryption.md",
+    { header = "CyBOK Chapters: read the sections the notes list" },
+    "cybok/10-cryptography.md",
 ]
 
 [[module]]
@@ -351,6 +351,8 @@ items = [
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "notes/week-08-public-key-cryptography.md",
     "assignments/lab-05-hashing-and-signatures.md",
+    { header = "CyBOK Chapters: read the sections the notes list" },
+    "cybok/10-cryptography.md",
 ]
 
 # Week 9 is review and catch-up before spring break, with nothing due.
@@ -378,6 +380,8 @@ items = [
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "notes/week-10-keys-certificates-and-pki.md",
     "assignments/lab-06-certificates-and-tls.md",
+    { header = "CyBOK Chapters: read the sections the notes list" },
+    "cybok/18-applied-cryptography.md",
 ]
 
 [[module]]
@@ -390,6 +394,8 @@ items = [
     "discussions/d04-network-security-in-the-news.md",
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "reminders/d04-replies.md",
+    { header = "CyBOK Chapters: read the sections the notes list" },
+    "cybok/19-network-security.md",
 ]
 
 [[module]]
@@ -400,6 +406,9 @@ items = [
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "notes/week-12-malware-and-adversarial-behaviours.md",
     "assignments/lab-07-malware-triage.md",
+    { header = "CyBOK Chapters: read the sections the notes list" },
+    "cybok/06-malware-and-attack-technologies.md",
+    "cybok/07-adversarial-behaviours.md",
 ]
 
 [[module]]
@@ -410,6 +419,9 @@ items = [
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "notes/week-13-software-security-and-assurance.md",
     "assignments/lab-08-memory-safety-and-assurance.md",
+    { header = "CyBOK Chapters: read the sections the notes list" },
+    "cybok/15-software-security.md",
+    "cybok/17-secure-software-lifecycle.md",
 ]
 
 [[module]]
@@ -420,6 +432,9 @@ items = [
     { header = "Due by Sunday at 11:59 p.m. Mountain Time" },
     "notes/week-14-web-security-and-injection.md",
     "assignments/lab-09-sql-injection.md",
+    { header = "CyBOK Chapters: read the sections the notes list" },
+    "cybok/15-software-security.md",
+    "cybok/16-web-and-mobile-security.md",
 ]
 
 [[module]]
@@ -433,6 +448,8 @@ items = [
     { header = "Due by Friday at 11:59 p.m. Mountain Time" },
     "reminders/d05-replies.md",
     "assignments/lab-10-log-analysis-and-incident-memo.md",
+    { header = "CyBOK Chapters: read the sections the notes list" },
+    "cybok/08-security-operations-and-incident-management.md",
 ]
 
 # The finals-week item carries "**Finals week · ...**" instead of a week number,

@@ -2731,12 +2731,12 @@
   },
   "modules": {
     "[[module]] Course Resources": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
-        "items": "88bf924abd0ced1c"
+        "items": "c5d2a5aebeab23a7"
       },
       "repo": {
-        "items": "88bf924abd0ced1c"
+        "items": "c5d2a5aebeab23a7"
       }
     },
     "[[module]] CyBOK Chapters": {
@@ -2749,7 +2749,7 @@
       }
     },
     "[[module]] Getting Started (January 11 - January 17)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
         "items": "801435964cea3d13"
       },
@@ -2758,7 +2758,7 @@
       }
     },
     "[[module]] Instructor Resources (leave unpublished)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
         "items": "9f81ca7af4bea590"
       },
@@ -2767,61 +2767,61 @@
       }
     },
     "[[module]] Module 10: Keys, Certificates, PKI, and TLS (March 22 - March 28)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
-        "items": "42749f111bb31d2b"
+        "items": "d22dd99cabf6dad3"
       },
       "repo": {
-        "items": "42749f111bb31d2b"
+        "items": "d22dd99cabf6dad3"
       }
     },
     "[[module]] Module 11: Network Security and Attacks (March 29 - April 4)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
-        "items": "b692f703f0c1d884"
+        "items": "91ee37396321d4ed"
       },
       "repo": {
-        "items": "b692f703f0c1d884"
+        "items": "91ee37396321d4ed"
       }
     },
     "[[module]] Module 12: Malware and Adversarial Behaviors (April 5 - April 11)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
-        "items": "29dc082c902c2300"
+        "items": "9d524cf9b09363a0"
       },
       "repo": {
-        "items": "29dc082c902c2300"
+        "items": "9d524cf9b09363a0"
       }
     },
     "[[module]] Module 13: Software Security, Memory Safety, and Assurance (April 12 - April 18)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
-        "items": "4cd6124898735ab2"
+        "items": "77666b89d67f2cfd"
       },
       "repo": {
-        "items": "4cd6124898735ab2"
+        "items": "77666b89d67f2cfd"
       }
     },
     "[[module]] Module 14: Web Security and Injection (April 19 - April 25)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
-        "items": "34571087a49845e6"
+        "items": "679b73b873fe6916"
       },
       "repo": {
-        "items": "34571087a49845e6"
+        "items": "679b73b873fe6916"
       }
     },
     "[[module]] Module 15: Security Operations, Detection, and Incident Response (April 26 - April 30)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
-        "items": "5214881a2fded4ea"
+        "items": "f23845e6107e127d"
       },
       "repo": {
-        "items": "5214881a2fded4ea"
+        "items": "f23845e6107e127d"
       }
     },
     "[[module]] Module 16: Finals Week (May 3 - May 7)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
         "items": "501ba95b2ff80732"
       },
@@ -2830,79 +2830,79 @@
       }
     },
     "[[module]] Module 1: What Is Cyber Security? (January 11 - January 17)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
-        "items": "963d0655d29930ff"
+        "items": "f38f14dc5d0b5920"
       },
       "repo": {
-        "items": "963d0655d29930ff"
+        "items": "f38f14dc5d0b5920"
       }
     },
     "[[module]] Module 2: Security Principles and the Human Factor (January 18 - January 24)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
-        "items": "947b587087ec3e04"
+        "items": "cdc90fd046422245"
       },
       "repo": {
-        "items": "947b587087ec3e04"
+        "items": "cdc90fd046422245"
       }
     },
     "[[module]] Module 3: Law, Regulation, Ethics, and Privacy (January 25 - January 31)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
-        "items": "a6561079f545e0ff"
+        "items": "d2319c0222b7f111"
       },
       "repo": {
-        "items": "a6561079f545e0ff"
+        "items": "d2319c0222b7f111"
       }
     },
     "[[module]] Module 4: Risk Management and Threat Modeling (February 1 - February 7)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
-        "items": "d14e26154c6d1cc9"
+        "items": "c2325dd720afcf68"
       },
       "repo": {
-        "items": "d14e26154c6d1cc9"
+        "items": "c2325dd720afcf68"
       }
     },
     "[[module]] Module 5: Authentication and Credentials (February 8 - February 14)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
-        "items": "3330e1e273af5355"
+        "items": "c654b3fe5576e9f8"
       },
       "repo": {
-        "items": "3330e1e273af5355"
+        "items": "c654b3fe5576e9f8"
       }
     },
     "[[module]] Module 6: Authorization, Access Control, and Accountability (February 15 - February 21)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
-        "items": "6883ef6950b39378"
+        "items": "b3ee0b977d73c76d"
       },
       "repo": {
-        "items": "6883ef6950b39378"
+        "items": "b3ee0b977d73c76d"
       }
     },
     "[[module]] Module 7: Symmetric Cryptography (February 22 - February 28)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
-        "items": "92dc5b5432e59e52"
+        "items": "fc37cedb135073fa"
       },
       "repo": {
-        "items": "92dc5b5432e59e52"
+        "items": "fc37cedb135073fa"
       }
     },
     "[[module]] Module 8: Public-Key Cryptography, Hashing, and Signatures (March 1 - March 7)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
-        "items": "7f9eefe9399e1a77"
+        "items": "47788b25016a0fbb"
       },
       "repo": {
-        "items": "7f9eefe9399e1a77"
+        "items": "47788b25016a0fbb"
       }
     },
     "[[module]] Module 9: Review and Catch-Up (March 8 - March 14)": {
-      "at": "2026-10-29T14:49:26.841Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
         "items": "85604514c70d192c"
       },
@@ -2911,7 +2911,7 @@
       }
     },
     "[[module]] \ud83d\ude0eSpring Break - Nothing Due (March 15 - March 21)": {
-      "at": "2026-11-04T16:25:43.749Z",
+      "at": "2026-11-07T03:11:06.421Z",
       "canvas": {
         "items": "f258db166bc667de"
       },
