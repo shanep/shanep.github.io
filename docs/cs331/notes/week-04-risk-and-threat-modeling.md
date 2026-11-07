@@ -19,6 +19,8 @@
 
 ### CyBOK
 
+Read the sections below, not the whole chapter. The whole chapter is [Chapter 2: Risk Management & Governance](../cybok/02-risk-management-and-governance.md).
+
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK §2.2](../cybok/02-risk-management-and-governance.md#_2-2-what-is-risk) | §2.2 What is risk? | 20-21 | 1 p | 10 min |

@@ -21,6 +21,8 @@
 
 ### CyBOK
 
+Read the sections below, not the whole chapters. The whole chapters are [Chapter 16: Web & Mobile Security](../cybok/16-web-and-mobile-security.md) and [Chapter 15: Software Security](../cybok/15-software-security.md).
+
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK §16.2.6](../cybok/16-web-and-mobile-security.md#_16-2-6-web-pki-and-https) | §16.2.6-16.2.8 Web PKI (public key infrastructure) and HTTPS (Hypertext Transfer Protocol Secure), Authentication, Cookies | 536-540 | 4 pp | 25 min |

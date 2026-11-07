@@ -19,6 +19,8 @@
 
 ### CyBOK
 
+Read the sections below, not the whole chapters. The whole chapters are [Chapter 3: Law & Regulation, Part 1](../cybok/03-law-and-regulation.md), [Chapter 3: Law & Regulation, Part 2](../cybok/03-law-and-regulation-part-2.md) and [Chapter 5: Privacy & Online Rights](../cybok/05-privacy-and-online-rights.md).
+
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK §3.1](../cybok/03-law-and-regulation.md#_3-1-introductory-principles-of-law-and-legal-research) | §3.1 Introductory principles of law and legal research | 52-58 | 6 pp | 40 min |

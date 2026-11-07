@@ -21,6 +21,8 @@
 
 ### CyBOK
 
+Read the sections below, not the whole chapter. The whole chapter is [Chapter 14: Authentication, Authorisation & Accountability](../cybok/14-authentication-authorisation-and-accountability.md).
+
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK §14.5.1](../cybok/14-authentication-authorisation-and-accountability.md#_14-5-1-identity-management) | §14.5.1 Identity Management | 477-478 | 1 p | 10 min |

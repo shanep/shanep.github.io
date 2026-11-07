@@ -21,6 +21,8 @@
 
 ### CyBOK
 
+Read the sections below, not the whole chapter. The whole chapter is [Chapter 10: Cryptography](../cybok/10-cryptography.md).
+
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK §10.3](../cybok/10-cryptography.md#_10-3-information-theoretically-secure-constructions) | §10.3 Information-theoretically Secure Constructions: one-time pad, secret sharing | 327-329 | 2 pp | 15 min |

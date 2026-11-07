@@ -23,6 +23,8 @@
 
 ### CyBOK
 
+Read the sections below, not the whole chapter. The whole chapter is [Chapter 19: Network Security](../cybok/19-network-security.md).
+
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK §19.1](../cybok/19-network-security.md#_19-1-security-goals-and-attacker-models) | §19.1 Security Goals and Attacker Models | 672-674 | 2 pp | 15 min |

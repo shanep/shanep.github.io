@@ -22,6 +22,8 @@ is least privilege. Two administrators to approve a deletion is separation of pr
 
 ### CyBOK
 
+Read the sections below, not the whole chapters. The whole chapters are [Chapter 1: Introduction](../cybok/01-introduction.md) and [Chapter 4: Human Factors](../cybok/04-human-factors.md).
+
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK §1.4](../cybok/01-introduction.md#_1-4-principles) | §1.4 Principles: especially §1.4.1 Saltzer and Schroeder | 9-13 | 5 pp | 35 min |

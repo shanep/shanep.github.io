@@ -22,6 +22,8 @@
 
 ### CyBOK
 
+Read the sections below, not the whole chapter. The whole chapter is [Chapter 8: Security Operations & Incident Management](../cybok/08-security-operations-and-incident-management.md).
+
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK §8.1](../cybok/08-security-operations-and-incident-management.md#_8-1-fundamental-concepts) | §8.1 Fundamental concepts: workflows and vocabulary | 251-254 | 3 pp | 20 min |

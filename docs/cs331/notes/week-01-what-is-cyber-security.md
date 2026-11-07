@@ -21,6 +21,8 @@ Adapted from the [CyBOK (Cyber Security Body of Knowledge) Glossary](https://www
 
 ### CyBOK
 
+Read the sections below, not the whole chapter. The whole chapter is [Chapter 1: Introduction](../cybok/01-introduction.md).
+
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK §1.1](../cybok/01-introduction.md#_1-1-cyber-security-definition) | §1.1 Cyber Security Definition | 2-4 | 3 pp | 15 min |

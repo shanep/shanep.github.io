@@ -269,7 +269,7 @@ When they are not enforced by a type system, ownership models for safely managin
 
 An important challenge with secure coding guidelines is that their number tends to grow over time, and hence programmers are likely to deviate from the secure practices codified in the guidelines. Hence, it is important to provide tool support to check compliance of software with the coding rules. Section 15.3.1 discusses how static analysis tools can automatically detect violations against secure coding rules.
 
-## 15.3 Detection of Vulnerabilities
+## 15.3 Detection of Vulnerabilities {#_15-3-detection-of-vulnerabilities}
 
 \[<a href="#ref-1439" aria-label="Reference 1439">1439</a>, <a href="#ref-1456" aria-label="Reference 1456">1456</a>\] \[<a href="#ref-1450" aria-label="Reference 1450">1450</a>, c4\]
 

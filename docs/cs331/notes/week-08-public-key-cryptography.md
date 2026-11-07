@@ -20,6 +20,8 @@
 
 ### CyBOK
 
+Read the sections below, not the whole chapter. The whole chapter is [Chapter 10: Cryptography](../cybok/10-cryptography.md).
+
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK §10.6](../cybok/10-cryptography.md#_10-6-public-key-encryption) | §10.6 Public Key Encryption: KEM/DEM, RSA (Rivest-Shamir-Adleman), elliptic curves | 336-339 | 3 pp | 25 min |

@@ -25,6 +25,8 @@ Two of the reference monitor's three requirements are the *complete mediation* a
 
 ### CyBOK
 
+Read the sections below, not the whole chapter. The whole chapter is [Chapter 14: Authentication, Authorisation & Accountability](../cybok/14-authentication-authorisation-and-accountability.md).
+
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK §14.1](../cybok/14-authentication-authorisation-and-accountability.md#_14-1-introduction) | §14.1-14.2 Introduction and Content | 464-465 | 1 p | 5 min |

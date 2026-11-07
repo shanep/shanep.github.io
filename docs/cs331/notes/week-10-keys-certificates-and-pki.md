@@ -22,6 +22,8 @@
 
 ### CyBOK
 
+Read the sections below, not the whole chapter. The whole chapter is [Chapter 18: Applied Cryptography](../cybok/18-applied-cryptography.md).
+
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK §18.3.1](../cybok/18-applied-cryptography.md#_18-3-1-the-key-life-cycle) | §18.3.1 The Key Life-cycle | 651-653 | 2 pp | 15 min |

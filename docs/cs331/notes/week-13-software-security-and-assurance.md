@@ -24,6 +24,8 @@
 
 ### CyBOK
 
+Read the sections below, not the whole chapters. The whole chapters are [Chapter 15: Software Security](../cybok/15-software-security.md) and [Chapter 17: Secure Software Lifecycle](../cybok/17-secure-software-lifecycle.md).
+
 | Source | Sections | Printed pages | Length | Approx. time |
 | --- | --- | --- | --- | --- |
 | [CyBOK §15.1.1](../cybok/15-software-security.md#_15-1-1-memory-management-vulnerabilities) | §15.1.1 Memory Management Vulnerabilities | 498-499 | 1 p | 15 min |
@@ -32,7 +34,7 @@
 | [CyBOK §17.7](../cybok/17-secure-software-lifecycle.md#_17-7-assessment-of-the-secure-software-lifecycle) | §17.7 Assessment of the Secure Software Lifecycle: SAMM, BSIMM, Common Criteria | 604-608 | 4 pp | 25 min |
 
 ::: info §15.3 for Lab 8
-§15.3 (detection of vulnerabilities, static and dynamic analysis) is not assigned as reading, but
+[§15.3](../cybok/15-software-security.md#_15-3-detection-of-vulnerabilities) (detection of vulnerabilities, static and dynamic analysis) is not assigned as reading, but
 Lab 8 asks about it. Look at pages 511-516 when you get to that question.
 :::
 
