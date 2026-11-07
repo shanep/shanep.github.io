@@ -5,7 +5,7 @@ prev: false
 
 # A4 - Where Does This Datagram Go?
 
-**Week 7 · 20 points · pass/fail · one page of handwritten notes each, turned in at the end of class Thursday**
+**Week 9 · 20 points · pass/fail · one page of handwritten notes each, turned in at the end of class Thursday**
 
 ## Why you are doing this
 

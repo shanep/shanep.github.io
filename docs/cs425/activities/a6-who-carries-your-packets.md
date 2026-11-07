@@ -5,7 +5,7 @@ prev: false
 
 # A6 - Who Carries Your Packets?
 
-**Week 10 · 20 points · pass/fail · one paper worksheet each, turned in before you leave**
+**Week 11 · 20 points · pass/fail · one paper worksheet each, turned in before you leave**
 
 ## Why you are doing this
 

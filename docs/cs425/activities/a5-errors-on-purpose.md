@@ -5,7 +5,7 @@ prev: false
 
 # A5 - Errors on Purpose
 
-**Week 9 · 20 points · pass/fail · one paper worksheet each, turned in before you leave**
+**Week 11 · 20 points · pass/fail · one paper worksheet each, turned in before you leave**
 
 ## Why you are doing this
 

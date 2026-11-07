@@ -206,7 +206,7 @@
         "kind": "assignment",
         "title": "A4 - Where Does This Datagram Go?",
         "path": "activities/a4-where-does-it-go",
-        "due_at": "2026-10-08T23:59:00-06:00",
+        "due_at": "2026-10-20T23:59:00-06:00",
         "points": 20.0,
         "canvas_id": ""
       },
@@ -250,7 +250,7 @@
     ]
   },
   {
-    "title": "Week 9-10: The Network Layer - Control Plane",
+    "title": "Week 9-11: The Network Layer - Control Plane",
     "items": [
       {
         "kind": "page",
@@ -273,7 +273,7 @@
         "kind": "assignment",
         "title": "A5 - Errors on Purpose",
         "path": "activities/a5-errors-on-purpose",
-        "due_at": "2026-10-22T23:59:00-06:00",
+        "due_at": "2026-11-06T23:59:00-07:00",
         "points": 20.0,
         "canvas_id": ""
       },
@@ -298,7 +298,7 @@
         "kind": "assignment",
         "title": "A6 - Who Carries Your Packets?",
         "path": "activities/a6-who-carries-your-packets",
-        "due_at": "2026-10-29T23:59:00-06:00",
+        "due_at": "2026-11-06T23:59:00-07:00",
         "points": 20.0,
         "canvas_id": ""
       },
@@ -313,7 +313,7 @@
     ]
   },
   {
-    "title": "Week 11-12: The Link Layer and LANs",
+    "title": "Week 12: The Link Layer and LANs",
     "items": [
       {
         "kind": "page",
@@ -336,7 +336,7 @@
         "kind": "assignment",
         "title": "A7 - One Hop at a Time",
         "path": "activities/a7-one-hop-at-a-time",
-        "due_at": "2026-11-05T23:59:00-07:00",
+        "due_at": "2026-11-12T23:59:00-07:00",
         "points": 20.0,
         "canvas_id": ""
       },

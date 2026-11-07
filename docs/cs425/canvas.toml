@@ -155,16 +155,18 @@ discussion = "discussions/*.md"
 # P1 lands the week the application layer wraps up, and Friday gives the class
 # both lectures on SMTP and DNS before it is due instead of one.
 [override."assignments/p1.md"]
-due = "fri 23:59"
+due        = "fri 23:59"
+grace_days = 5
 
 # P2 is the transport project: students work on it in weeks 5-6, so it sits in that module,
 # and it is due Friday of week 7.
 [override."assignments/p2.md"]
 due = "fri 23:59"
 
-# P3 is due Friday of week 10, Oct 30.
+# P3 is due Friday of week 10, Oct 30, with 5 days of grace (to Nov 4).
 [override."assignments/p3.md"]
-due = "fri 23:59"
+due        = "fri 23:59"
+grace_days = 5
 
 # P4 is due Friday of week 13, Nov 20.
 [override."assignments/p4.md"]
@@ -181,6 +183,24 @@ due = "wed 23:59"
 # A3 moved to week 6 and is due that Tuesday, Sep 29.
 [override."activities/a3-claude-transport.md"]
 due = "tue 23:59"
+
+# The activities below were moved in Canvas after class, so these set the dates
+# students were given. Each is due the day shown with no grace period, except A7.
+# A4 is due Tuesday of week 9, Oct 20.
+[override."activities/a4-where-does-it-go.md"]
+due = "tue 23:59"
+
+# A5 and A6 are both due Friday of week 11, Nov 6.
+[override."activities/a5-errors-on-purpose.md"]
+due = "fri 23:59"
+
+[override."activities/a6-who-carries-your-packets.md"]
+due = "fri 23:59"
+
+# A7 is due Thursday of week 12, Nov 12, with one day of grace.
+[override."activities/a7-one-hop-at-a-time.md"]
+due        = "thu 23:59"
+grace_days = 1
 
 # M1 is a one hour take home mini-lab, due Thursday of week 6 (Oct 1) with the
 # usual two days of grace, rather than on a project Tuesday.
@@ -270,7 +290,7 @@ canvas = [
 # P3 is chapter 4 material, but it is due in week 10, so it lives here with the
 # weeks students are working on it rather than in week 7.
 [[module]]
-title  = "Week 9-10: The Network Layer - Control Plane"
+title  = "Week 9-11: The Network Layer - Control Plane"
 page   = "notes/ch05-network-control.md"
 items  = [
     { url = "https://shanepanter.com/cs425/activities/slides-a5", title = "A5 Slides" },
@@ -282,7 +302,7 @@ items  = [
 canvas = [{ quiz = 395699, title = "Chapter 5 - Knowledge Check" }]
 
 [[module]]
-title  = "Week 11-12: The Link Layer and LANs"
+title  = "Week 12: The Link Layer and LANs"
 page   = "notes/ch06-link.md"
 items  = [
     { url = "https://shanepanter.com/cs425/activities/slides-a7", title = "A7 Slides" },

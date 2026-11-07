@@ -5,7 +5,7 @@ prev: false
 
 # A7 - One Hop at a Time
 
-**Week 11 · 20 points · pass/fail · one paper worksheet per group, turned in before you leave**
+**Week 12 · 20 points · pass/fail · one paper worksheet per group, turned in before you leave**
 
 ## Why you are doing this
 
