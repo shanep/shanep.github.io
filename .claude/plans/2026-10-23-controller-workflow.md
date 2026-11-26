@@ -34,7 +34,7 @@ stage files in this checkout.
 Landed. `docs/teaching/agentic-workflow.md` (it was `docs/ai/workflow/index.md`) reads as a living white paper, not a narrative:
 "Live at head" is gone, the sections are renumbered (8 rules), section 4 is "One controller per
 repo, every worker in its own worktree" with the where-it-runs table, the plan file format and
-landing, and section 8 has the model and effort defaults. `docs/ai/claude/index.md` has the
+landing, and section 8 has the model and effort defaults. `docs/teaching/claude-code-setup.md` (it was `docs/ai/claude/index.md`) has the
 Hooks section (Claude Code hooks, plugin and project hooks, git hooks per repo). The
 "Small over heavy" install note waits until phase B lands.
 
